@@ -30,10 +30,10 @@ pub struct OIEAMBAGHBK {
     // message fields
     // @@protoc_insertion_point(field:OIEAMBAGHBK.OOFKOIMLCPA)
     pub OOFKOIMLCPA: bool,
-    // @@protoc_insertion_point(field:OIEAMBAGHBK.JALHKMEOOPN)
-    pub JALHKMEOOPN: u32,
     // @@protoc_insertion_point(field:OIEAMBAGHBK.item_list)
     pub item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:OIEAMBAGHBK.JALHKMEOOPN)
+    pub JALHKMEOOPN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OIEAMBAGHBK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl OIEAMBAGHBK {
             |m: &OIEAMBAGHBK| { &m.OOFKOIMLCPA },
             |m: &mut OIEAMBAGHBK| { &mut m.OOFKOIMLCPA },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JALHKMEOOPN",
-            |m: &OIEAMBAGHBK| { &m.JALHKMEOOPN },
-            |m: &mut OIEAMBAGHBK| { &mut m.JALHKMEOOPN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "item_list",
             |m: &OIEAMBAGHBK| { &m.item_list },
             |m: &mut OIEAMBAGHBK| { &mut m.item_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JALHKMEOOPN",
+            |m: &OIEAMBAGHBK| { &m.JALHKMEOOPN },
+            |m: &mut OIEAMBAGHBK| { &mut m.JALHKMEOOPN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OIEAMBAGHBK>(
             "OIEAMBAGHBK",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for OIEAMBAGHBK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                32 => {
                     self.OOFKOIMLCPA = is.read_bool()?;
                 },
-                40 => {
-                    self.JALHKMEOOPN = is.read_uint32()?;
-                },
-                82 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list)?;
+                },
+                120 => {
+                    self.JALHKMEOOPN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,12 +110,12 @@ impl ::protobuf::Message for OIEAMBAGHBK {
         if self.OOFKOIMLCPA != false {
             my_size += 1 + 1;
         }
-        if self.JALHKMEOOPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.JALHKMEOOPN);
-        }
         if let Some(v) = self.item_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.JALHKMEOOPN != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.JALHKMEOOPN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for OIEAMBAGHBK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.OOFKOIMLCPA != false {
-            os.write_bool(1, self.OOFKOIMLCPA)?;
-        }
-        if self.JALHKMEOOPN != 0 {
-            os.write_uint32(5, self.JALHKMEOOPN)?;
+            os.write_bool(4, self.OOFKOIMLCPA)?;
         }
         if let Some(v) = self.item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
+        if self.JALHKMEOOPN != 0 {
+            os.write_uint32(15, self.JALHKMEOOPN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for OIEAMBAGHBK {
 
     fn clear(&mut self) {
         self.OOFKOIMLCPA = false;
-        self.JALHKMEOOPN = 0;
         self.item_list.clear();
+        self.JALHKMEOOPN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OIEAMBAGHBK {
         static instance: OIEAMBAGHBK = OIEAMBAGHBK {
             OOFKOIMLCPA: false,
-            JALHKMEOOPN: 0,
             item_list: ::protobuf::MessageField::none(),
+            JALHKMEOOPN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for OIEAMBAGHBK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OIEAMBAGHBK.proto\x1a\x0eItemList.proto\"y\n\x0bOIEAMBAGHBK\x12\
-    \x20\n\x0bOOFKOIMLCPA\x18\x01\x20\x01(\x08R\x0bOOFKOIMLCPA\x12\x20\n\x0b\
-    JALHKMEOOPN\x18\x05\x20\x01(\rR\x0bJALHKMEOOPN\x12&\n\titem_list\x18\n\
-    \x20\x01(\x0b2\t.ItemListR\x08itemListb\x06proto3\
+    \x20\n\x0bOOFKOIMLCPA\x18\x04\x20\x01(\x08R\x0bOOFKOIMLCPA\x12&\n\titem_\
+    list\x18\x0c\x20\x01(\x0b2\t.ItemListR\x08itemList\x12\x20\n\x0bJALHKMEO\
+    OPN\x18\x0f\x20\x01(\rR\x0bJALHKMEOOPNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

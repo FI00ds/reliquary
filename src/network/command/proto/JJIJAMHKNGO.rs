@@ -89,10 +89,10 @@ impl ::protobuf::Message for JJIJAMHKNGO {
                 48 => {
                     self.GLEJFCIOMKC = is.read_bool()?;
                 },
-                64 => {
+                104 => {
                     self.EECIJBLGLNG = is.read_uint32()?;
                 },
-                72 => {
+                120 => {
                     self.CJPDGBPLFIG = is.read_uint32()?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for JJIJAMHKNGO {
             my_size += 1 + 1;
         }
         if self.EECIJBLGLNG != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.EECIJBLGLNG);
+            my_size += ::protobuf::rt::uint32_size(13, self.EECIJBLGLNG);
         }
         if self.CJPDGBPLFIG != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.CJPDGBPLFIG);
+            my_size += ::protobuf::rt::uint32_size(15, self.CJPDGBPLFIG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,10 +126,10 @@ impl ::protobuf::Message for JJIJAMHKNGO {
             os.write_bool(6, self.GLEJFCIOMKC)?;
         }
         if self.EECIJBLGLNG != 0 {
-            os.write_uint32(8, self.EECIJBLGLNG)?;
+            os.write_uint32(13, self.EECIJBLGLNG)?;
         }
         if self.CJPDGBPLFIG != 0 {
-            os.write_uint32(9, self.CJPDGBPLFIG)?;
+            os.write_uint32(15, self.CJPDGBPLFIG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for JJIJAMHKNGO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JJIJAMHKNGO.proto\"s\n\x0bJJIJAMHKNGO\x12\x20\n\x0bGLEJFCIOMKC\x18\
-    \x06\x20\x01(\x08R\x0bGLEJFCIOMKC\x12\x20\n\x0bEECIJBLGLNG\x18\x08\x20\
-    \x01(\rR\x0bEECIJBLGLNG\x12\x20\n\x0bCJPDGBPLFIG\x18\t\x20\x01(\rR\x0bCJ\
-    PDGBPLFIGb\x06proto3\
+    \x06\x20\x01(\x08R\x0bGLEJFCIOMKC\x12\x20\n\x0bEECIJBLGLNG\x18\r\x20\x01\
+    (\rR\x0bEECIJBLGLNG\x12\x20\n\x0bCJPDGBPLFIG\x18\x0f\x20\x01(\rR\x0bCJPD\
+    GBPLFIGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

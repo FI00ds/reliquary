@@ -89,7 +89,7 @@ impl ::protobuf::Message for KICEGHDKACP {
                 56 => {
                     self.FPKJONKIFLI = is.read_uint32()?;
                 },
-                98 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GNBKDCHLDGL)?;
                 },
                 120 => {
@@ -127,7 +127,7 @@ impl ::protobuf::Message for KICEGHDKACP {
             os.write_uint32(7, self.FPKJONKIFLI)?;
         }
         if let Some(v) = self.GNBKDCHLDGL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if self.passenger_id != 0 {
             os.write_uint32(15, self.passenger_id)?;
@@ -186,7 +186,7 @@ impl ::protobuf::reflect::ProtobufValue for KICEGHDKACP {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KICEGHDKACP.proto\x1a\x11JCPMKHCPCPN.proto\"\x82\x01\n\x0bKICEGHDK\
     ACP\x12\x20\n\x0bFPKJONKIFLI\x18\x07\x20\x01(\rR\x0bFPKJONKIFLI\x12.\n\
-    \x0bGNBKDCHLDGL\x18\x0c\x20\x01(\x0b2\x0c.JCPMKHCPCPNR\x0bGNBKDCHLDGL\
+    \x0bGNBKDCHLDGL\x18\x0e\x20\x01(\x0b2\x0c.JCPMKHCPCPNR\x0bGNBKDCHLDGL\
     \x12!\n\x0cpassenger_id\x18\x0f\x20\x01(\rR\x0bpassengerIdb\x06proto3\
 ";
 

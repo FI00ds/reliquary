@@ -28,8 +28,6 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HFBJNFJHKPO {
     // message fields
-    // @@protoc_insertion_point(field:HFBJNFJHKPO.BPHNEOLCKAD)
-    pub BPHNEOLCKAD: u32,
     // @@protoc_insertion_point(field:HFBJNFJHKPO.total_turns)
     pub total_turns: u32,
     // @@protoc_insertion_point(field:HFBJNFJHKPO.total_auto_turns)
@@ -40,6 +38,8 @@ pub struct HFBJNFJHKPO {
     pub cost_time: u32,
     // @@protoc_insertion_point(field:HFBJNFJHKPO.total_damage)
     pub total_damage: u32,
+    // @@protoc_insertion_point(field:HFBJNFJHKPO.BPHNEOLCKAD)
+    pub BPHNEOLCKAD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HFBJNFJHKPO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,11 +59,6 @@ impl HFBJNFJHKPO {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BPHNEOLCKAD",
-            |m: &HFBJNFJHKPO| { &m.BPHNEOLCKAD },
-            |m: &mut HFBJNFJHKPO| { &mut m.BPHNEOLCKAD },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "total_turns",
             |m: &HFBJNFJHKPO| { &m.total_turns },
@@ -89,6 +84,11 @@ impl HFBJNFJHKPO {
             |m: &HFBJNFJHKPO| { &m.total_damage },
             |m: &mut HFBJNFJHKPO| { &mut m.total_damage },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BPHNEOLCKAD",
+            |m: &HFBJNFJHKPO| { &m.BPHNEOLCKAD },
+            |m: &mut HFBJNFJHKPO| { &mut m.BPHNEOLCKAD },
+        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HFBJNFJHKPO>(
             "HFBJNFJHKPO",
             fields,
@@ -107,23 +107,23 @@ impl ::protobuf::Message for HFBJNFJHKPO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.BPHNEOLCKAD = is.read_uint32()?;
-                },
-                32 => {
+                16 => {
                     self.total_turns = is.read_uint32()?;
                 },
-                80 => {
+                40 => {
                     self.total_auto_turns = is.read_uint32()?;
                 },
-                96 => {
+                64 => {
                     self.LPLLIICLCHB = is.read_uint32()?;
                 },
-                112 => {
+                104 => {
                     self.cost_time = is.read_uint32()?;
                 },
-                120 => {
+                112 => {
                     self.total_damage = is.read_uint32()?;
+                },
+                120 => {
+                    self.BPHNEOLCKAD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,23 +137,23 @@ impl ::protobuf::Message for HFBJNFJHKPO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BPHNEOLCKAD != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.BPHNEOLCKAD);
-        }
         if self.total_turns != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.total_turns);
+            my_size += ::protobuf::rt::uint32_size(2, self.total_turns);
         }
         if self.total_auto_turns != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.total_auto_turns);
+            my_size += ::protobuf::rt::uint32_size(5, self.total_auto_turns);
         }
         if self.LPLLIICLCHB != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.LPLLIICLCHB);
+            my_size += ::protobuf::rt::uint32_size(8, self.LPLLIICLCHB);
         }
         if self.cost_time != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.cost_time);
+            my_size += ::protobuf::rt::uint32_size(13, self.cost_time);
         }
         if self.total_damage != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.total_damage);
+            my_size += ::protobuf::rt::uint32_size(14, self.total_damage);
+        }
+        if self.BPHNEOLCKAD != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.BPHNEOLCKAD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -161,23 +161,23 @@ impl ::protobuf::Message for HFBJNFJHKPO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BPHNEOLCKAD != 0 {
-            os.write_uint32(1, self.BPHNEOLCKAD)?;
-        }
         if self.total_turns != 0 {
-            os.write_uint32(4, self.total_turns)?;
+            os.write_uint32(2, self.total_turns)?;
         }
         if self.total_auto_turns != 0 {
-            os.write_uint32(10, self.total_auto_turns)?;
+            os.write_uint32(5, self.total_auto_turns)?;
         }
         if self.LPLLIICLCHB != 0 {
-            os.write_uint32(12, self.LPLLIICLCHB)?;
+            os.write_uint32(8, self.LPLLIICLCHB)?;
         }
         if self.cost_time != 0 {
-            os.write_uint32(14, self.cost_time)?;
+            os.write_uint32(13, self.cost_time)?;
         }
         if self.total_damage != 0 {
-            os.write_uint32(15, self.total_damage)?;
+            os.write_uint32(14, self.total_damage)?;
+        }
+        if self.BPHNEOLCKAD != 0 {
+            os.write_uint32(15, self.BPHNEOLCKAD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -196,23 +196,23 @@ impl ::protobuf::Message for HFBJNFJHKPO {
     }
 
     fn clear(&mut self) {
-        self.BPHNEOLCKAD = 0;
         self.total_turns = 0;
         self.total_auto_turns = 0;
         self.LPLLIICLCHB = 0;
         self.cost_time = 0;
         self.total_damage = 0;
+        self.BPHNEOLCKAD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HFBJNFJHKPO {
         static instance: HFBJNFJHKPO = HFBJNFJHKPO {
-            BPHNEOLCKAD: 0,
             total_turns: 0,
             total_auto_turns: 0,
             LPLLIICLCHB: 0,
             cost_time: 0,
             total_damage: 0,
+            BPHNEOLCKAD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -237,12 +237,12 @@ impl ::protobuf::reflect::ProtobufValue for HFBJNFJHKPO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HFBJNFJHKPO.proto\"\xdc\x01\n\x0bHFBJNFJHKPO\x12\x20\n\x0bBPHNEOLC\
-    KAD\x18\x01\x20\x01(\rR\x0bBPHNEOLCKAD\x12\x1f\n\x0btotal_turns\x18\x04\
-    \x20\x01(\rR\ntotalTurns\x12(\n\x10total_auto_turns\x18\n\x20\x01(\rR\
-    \x0etotalAutoTurns\x12\x20\n\x0bLPLLIICLCHB\x18\x0c\x20\x01(\rR\x0bLPLLI\
-    ICLCHB\x12\x1b\n\tcost_time\x18\x0e\x20\x01(\rR\x08costTime\x12!\n\x0cto\
-    tal_damage\x18\x0f\x20\x01(\rR\x0btotalDamageb\x06proto3\
+    \n\x11HFBJNFJHKPO.proto\"\xdc\x01\n\x0bHFBJNFJHKPO\x12\x1f\n\x0btotal_tu\
+    rns\x18\x02\x20\x01(\rR\ntotalTurns\x12(\n\x10total_auto_turns\x18\x05\
+    \x20\x01(\rR\x0etotalAutoTurns\x12\x20\n\x0bLPLLIICLCHB\x18\x08\x20\x01(\
+    \rR\x0bLPLLIICLCHB\x12\x1b\n\tcost_time\x18\r\x20\x01(\rR\x08costTime\
+    \x12!\n\x0ctotal_damage\x18\x0e\x20\x01(\rR\x0btotalDamage\x12\x20\n\x0b\
+    BPHNEOLCKAD\x18\x0f\x20\x01(\rR\x0bBPHNEOLCKADb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

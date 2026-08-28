@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BDNCOOANAEA {
     // message fields
-    // @@protoc_insertion_point(field:BDNCOOANAEA.EHDAKFEHPMF)
-    pub EHDAKFEHPMF: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:BDNCOOANAEA.NNFECNICMOD)
     pub NNFECNICMOD: u32,
+    // @@protoc_insertion_point(field:BDNCOOANAEA.source)
+    pub source: ::protobuf::EnumOrUnknown<super::H_d52b7439::H_d52b7439>,
     // @@protoc_insertion_point(field:BDNCOOANAEA.JCNLCNFHHDG)
     pub JCNLCNFHHDG: u32,
-    // @@protoc_insertion_point(field:BDNCOOANAEA.source)
-    pub source: ::protobuf::EnumOrUnknown<super::GridFightEquipCraftSource::GridFightEquipCraftSource>,
+    // @@protoc_insertion_point(field:BDNCOOANAEA.EHDAKFEHPMF)
+    pub EHDAKFEHPMF: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:BDNCOOANAEA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl BDNCOOANAEA {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EHDAKFEHPMF",
-            |m: &BDNCOOANAEA| { &m.EHDAKFEHPMF },
-            |m: &mut BDNCOOANAEA| { &mut m.EHDAKFEHPMF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NNFECNICMOD",
             |m: &BDNCOOANAEA| { &m.NNFECNICMOD },
             |m: &mut BDNCOOANAEA| { &mut m.NNFECNICMOD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "source",
+            |m: &BDNCOOANAEA| { &m.source },
+            |m: &mut BDNCOOANAEA| { &mut m.source },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JCNLCNFHHDG",
             |m: &BDNCOOANAEA| { &m.JCNLCNFHHDG },
             |m: &mut BDNCOOANAEA| { &mut m.JCNLCNFHHDG },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "source",
-            |m: &BDNCOOANAEA| { &m.source },
-            |m: &mut BDNCOOANAEA| { &mut m.source },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EHDAKFEHPMF",
+            |m: &BDNCOOANAEA| { &m.EHDAKFEHPMF },
+            |m: &mut BDNCOOANAEA| { &mut m.EHDAKFEHPMF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BDNCOOANAEA>(
             "BDNCOOANAEA",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for BDNCOOANAEA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EHDAKFEHPMF)?;
-                },
-                48 => {
-                    self.EHDAKFEHPMF.push(is.read_uint32()?);
+                32 => {
+                    self.NNFECNICMOD = is.read_uint32()?;
                 },
                 72 => {
-                    self.NNFECNICMOD = is.read_uint32()?;
+                    self.source = is.read_enum_or_unknown()?;
                 },
                 80 => {
                     self.JCNLCNFHHDG = is.read_uint32()?;
                 },
-                104 => {
-                    self.source = is.read_enum_or_unknown()?;
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.EHDAKFEHPMF)?;
+                },
+                120 => {
+                    self.EHDAKFEHPMF.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,32 +120,32 @@ impl ::protobuf::Message for BDNCOOANAEA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.EHDAKFEHPMF);
         if self.NNFECNICMOD != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.NNFECNICMOD);
+            my_size += ::protobuf::rt::uint32_size(4, self.NNFECNICMOD);
+        }
+        if self.source != ::protobuf::EnumOrUnknown::new(super::H_d52b7439::H_d52b7439::H_ad59efe4) {
+            my_size += ::protobuf::rt::int32_size(9, self.source.value());
         }
         if self.JCNLCNFHHDG != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.JCNLCNFHHDG);
         }
-        if self.source != ::protobuf::EnumOrUnknown::new(super::GridFightEquipCraftSource::GridFightEquipCraftSource::ACNPGGHPDJB_GDDBKIPOJFK) {
-            my_size += ::protobuf::rt::int32_size(13, self.source.value());
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.EHDAKFEHPMF);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(6, &self.EHDAKFEHPMF)?;
         if self.NNFECNICMOD != 0 {
-            os.write_uint32(9, self.NNFECNICMOD)?;
+            os.write_uint32(4, self.NNFECNICMOD)?;
+        }
+        if self.source != ::protobuf::EnumOrUnknown::new(super::H_d52b7439::H_d52b7439::H_ad59efe4) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.source))?;
         }
         if self.JCNLCNFHHDG != 0 {
             os.write_uint32(10, self.JCNLCNFHHDG)?;
         }
-        if self.source != ::protobuf::EnumOrUnknown::new(super::GridFightEquipCraftSource::GridFightEquipCraftSource::ACNPGGHPDJB_GDDBKIPOJFK) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.source))?;
-        }
+        os.write_repeated_packed_uint32(15, &self.EHDAKFEHPMF)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -163,19 +163,19 @@ impl ::protobuf::Message for BDNCOOANAEA {
     }
 
     fn clear(&mut self) {
-        self.EHDAKFEHPMF.clear();
         self.NNFECNICMOD = 0;
+        self.source = ::protobuf::EnumOrUnknown::new(super::H_d52b7439::H_d52b7439::H_ad59efe4);
         self.JCNLCNFHHDG = 0;
-        self.source = ::protobuf::EnumOrUnknown::new(super::GridFightEquipCraftSource::GridFightEquipCraftSource::ACNPGGHPDJB_GDDBKIPOJFK);
+        self.EHDAKFEHPMF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BDNCOOANAEA {
         static instance: BDNCOOANAEA = BDNCOOANAEA {
-            EHDAKFEHPMF: ::std::vec::Vec::new(),
             NNFECNICMOD: 0,
-            JCNLCNFHHDG: 0,
             source: ::protobuf::EnumOrUnknown::from_i32(0),
+            JCNLCNFHHDG: 0,
+            EHDAKFEHPMF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,11 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for BDNCOOANAEA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BDNCOOANAEA.proto\x1a\x1fGridFightEquipCraftSource.proto\"\xa7\x01\
-    \n\x0bBDNCOOANAEA\x12\x20\n\x0bEHDAKFEHPMF\x18\x06\x20\x03(\rR\x0bEHDAKF\
-    EHPMF\x12\x20\n\x0bNNFECNICMOD\x18\t\x20\x01(\rR\x0bNNFECNICMOD\x12\x20\
-    \n\x0bJCNLCNFHHDG\x18\n\x20\x01(\rR\x0bJCNLCNFHHDG\x122\n\x06source\x18\
-    \r\x20\x01(\x0e2\x1a.GridFightEquipCraftSourceR\x06sourceb\x06proto3\
+    \n\x11BDNCOOANAEA.proto\x1a\x10H_d52b7439.proto\"\x98\x01\n\x0bBDNCOOANA\
+    EA\x12\x20\n\x0bNNFECNICMOD\x18\x04\x20\x01(\rR\x0bNNFECNICMOD\x12#\n\
+    \x06source\x18\t\x20\x01(\x0e2\x0b.H_d52b7439R\x06source\x12\x20\n\x0bJC\
+    NLCNFHHDG\x18\n\x20\x01(\rR\x0bJCNLCNFHHDG\x12\x20\n\x0bEHDAKFEHPMF\x18\
+    \x0f\x20\x03(\rR\x0bEHDAKFEHPMFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -222,7 +222,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GridFightEquipCraftSource::file_descriptor().clone());
+            deps.push(super::H_d52b7439::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BDNCOOANAEA::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

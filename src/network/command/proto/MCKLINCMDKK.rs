@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct MCKLINCMDKK {
     // message fields
     // @@protoc_insertion_point(field:MCKLINCMDKK.LNBKFFIDEEJ)
-    pub LNBKFFIDEEJ: ::std::string::String,
+    pub LNBKFFIDEEJ: ::std::vec::Vec<u8>,
     // @@protoc_insertion_point(field:MCKLINCMDKK.OMFPICKPOCP)
     pub OMFPICKPOCP: u32,
     // special fields
@@ -79,10 +79,10 @@ impl ::protobuf::Message for MCKLINCMDKK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.LNBKFFIDEEJ = is.read_string()?;
+                90 => {
+                    self.LNBKFFIDEEJ = is.read_bytes()?;
                 },
-                56 => {
+                104 => {
                     self.OMFPICKPOCP = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for MCKLINCMDKK {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.LNBKFFIDEEJ.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.LNBKFFIDEEJ);
+            my_size += ::protobuf::rt::bytes_size(11, &self.LNBKFFIDEEJ);
         }
         if self.OMFPICKPOCP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.OMFPICKPOCP);
+            my_size += ::protobuf::rt::uint32_size(13, self.OMFPICKPOCP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for MCKLINCMDKK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.LNBKFFIDEEJ.is_empty() {
-            os.write_string(5, &self.LNBKFFIDEEJ)?;
+            os.write_bytes(11, &self.LNBKFFIDEEJ)?;
         }
         if self.OMFPICKPOCP != 0 {
-            os.write_uint32(7, self.OMFPICKPOCP)?;
+            os.write_uint32(13, self.OMFPICKPOCP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -139,7 +139,7 @@ impl ::protobuf::Message for MCKLINCMDKK {
 
     fn default_instance() -> &'static MCKLINCMDKK {
         static instance: MCKLINCMDKK = MCKLINCMDKK {
-            LNBKFFIDEEJ: ::std::string::String::new(),
+            LNBKFFIDEEJ: ::std::vec::Vec::new(),
             OMFPICKPOCP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for MCKLINCMDKK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MCKLINCMDKK.proto\"Q\n\x0bMCKLINCMDKK\x12\x20\n\x0bLNBKFFIDEEJ\x18\
-    \x05\x20\x01(\tR\x0bLNBKFFIDEEJ\x12\x20\n\x0bOMFPICKPOCP\x18\x07\x20\x01\
+    \x0b\x20\x01(\x0cR\x0bLNBKFFIDEEJ\x12\x20\n\x0bOMFPICKPOCP\x18\r\x20\x01\
     (\rR\x0bOMFPICKPOCPb\x06proto3\
 ";
 

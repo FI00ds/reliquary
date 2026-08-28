@@ -30,10 +30,10 @@ pub struct IAKFBFJCHFB {
     // message fields
     // @@protoc_insertion_point(field:IAKFBFJCHFB.EAFFACCBAAA)
     pub EAFFACCBAAA: u32,
-    // @@protoc_insertion_point(field:IAKFBFJCHFB.unique_id)
-    pub unique_id: u32,
     // @@protoc_insertion_point(field:IAKFBFJCHFB.card_id)
     pub card_id: u32,
+    // @@protoc_insertion_point(field:IAKFBFJCHFB.unique_id)
+    pub unique_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IAKFBFJCHFB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl IAKFBFJCHFB {
             |m: &mut IAKFBFJCHFB| { &mut m.EAFFACCBAAA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unique_id",
-            |m: &IAKFBFJCHFB| { &m.unique_id },
-            |m: &mut IAKFBFJCHFB| { &mut m.unique_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "card_id",
             |m: &IAKFBFJCHFB| { &m.card_id },
             |m: &mut IAKFBFJCHFB| { &mut m.card_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unique_id",
+            |m: &IAKFBFJCHFB| { &m.unique_id },
+            |m: &mut IAKFBFJCHFB| { &mut m.unique_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IAKFBFJCHFB>(
             "IAKFBFJCHFB",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for IAKFBFJCHFB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                48 => {
                     self.EAFFACCBAAA = is.read_uint32()?;
-                },
-                88 => {
-                    self.unique_id = is.read_uint32()?;
                 },
                 96 => {
                     self.card_id = is.read_uint32()?;
+                },
+                104 => {
+                    self.unique_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for IAKFBFJCHFB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.EAFFACCBAAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.EAFFACCBAAA);
-        }
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.EAFFACCBAAA);
         }
         if self.card_id != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.card_id);
+        }
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for IAKFBFJCHFB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EAFFACCBAAA != 0 {
-            os.write_uint32(8, self.EAFFACCBAAA)?;
-        }
-        if self.unique_id != 0 {
-            os.write_uint32(11, self.unique_id)?;
+            os.write_uint32(6, self.EAFFACCBAAA)?;
         }
         if self.card_id != 0 {
             os.write_uint32(12, self.card_id)?;
+        }
+        if self.unique_id != 0 {
+            os.write_uint32(13, self.unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for IAKFBFJCHFB {
 
     fn clear(&mut self) {
         self.EAFFACCBAAA = 0;
-        self.unique_id = 0;
         self.card_id = 0;
+        self.unique_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IAKFBFJCHFB {
         static instance: IAKFBFJCHFB = IAKFBFJCHFB {
             EAFFACCBAAA: 0,
-            unique_id: 0,
             card_id: 0,
+            unique_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for IAKFBFJCHFB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IAKFBFJCHFB.proto\"e\n\x0bIAKFBFJCHFB\x12\x20\n\x0bEAFFACCBAAA\x18\
-    \x08\x20\x01(\rR\x0bEAFFACCBAAA\x12\x1b\n\tunique_id\x18\x0b\x20\x01(\rR\
-    \x08uniqueId\x12\x17\n\x07card_id\x18\x0c\x20\x01(\rR\x06cardIdb\x06prot\
-    o3\
+    \x06\x20\x01(\rR\x0bEAFFACCBAAA\x12\x17\n\x07card_id\x18\x0c\x20\x01(\rR\
+    \x06cardId\x12\x1b\n\tunique_id\x18\r\x20\x01(\rR\x08uniqueIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

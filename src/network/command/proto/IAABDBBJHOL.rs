@@ -30,10 +30,10 @@ pub struct IAABDBBJHOL {
     // message fields
     // @@protoc_insertion_point(field:IAABDBBJHOL.is_overlock)
     pub is_overlock: bool,
-    // @@protoc_insertion_point(field:IAABDBBJHOL.LJNGPCKPJLF)
-    pub LJNGPCKPJLF: u32,
     // @@protoc_insertion_point(field:IAABDBBJHOL.division_id)
     pub division_id: u32,
+    // @@protoc_insertion_point(field:IAABDBBJHOL.LJNGPCKPJLF)
+    pub LJNGPCKPJLF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IAABDBBJHOL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl IAABDBBJHOL {
             |m: &mut IAABDBBJHOL| { &mut m.is_overlock },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LJNGPCKPJLF",
-            |m: &IAABDBBJHOL| { &m.LJNGPCKPJLF },
-            |m: &mut IAABDBBJHOL| { &mut m.LJNGPCKPJLF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "division_id",
             |m: &IAABDBBJHOL| { &m.division_id },
             |m: &mut IAABDBBJHOL| { &mut m.division_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LJNGPCKPJLF",
+            |m: &IAABDBBJHOL| { &m.LJNGPCKPJLF },
+            |m: &mut IAABDBBJHOL| { &mut m.LJNGPCKPJLF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IAABDBBJHOL>(
             "IAABDBBJHOL",
@@ -89,11 +89,11 @@ impl ::protobuf::Message for IAABDBBJHOL {
                 8 => {
                     self.is_overlock = is.read_bool()?;
                 },
-                56 => {
-                    self.LJNGPCKPJLF = is.read_uint32()?;
+                64 => {
+                    self.division_id = is.read_uint32()?;
                 },
                 112 => {
-                    self.division_id = is.read_uint32()?;
+                    self.LJNGPCKPJLF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,11 +110,11 @@ impl ::protobuf::Message for IAABDBBJHOL {
         if self.is_overlock != false {
             my_size += 1 + 1;
         }
-        if self.LJNGPCKPJLF != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.LJNGPCKPJLF);
-        }
         if self.division_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.division_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.division_id);
+        }
+        if self.LJNGPCKPJLF != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.LJNGPCKPJLF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,11 +125,11 @@ impl ::protobuf::Message for IAABDBBJHOL {
         if self.is_overlock != false {
             os.write_bool(1, self.is_overlock)?;
         }
-        if self.LJNGPCKPJLF != 0 {
-            os.write_uint32(7, self.LJNGPCKPJLF)?;
-        }
         if self.division_id != 0 {
-            os.write_uint32(14, self.division_id)?;
+            os.write_uint32(8, self.division_id)?;
+        }
+        if self.LJNGPCKPJLF != 0 {
+            os.write_uint32(14, self.LJNGPCKPJLF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for IAABDBBJHOL {
 
     fn clear(&mut self) {
         self.is_overlock = false;
-        self.LJNGPCKPJLF = 0;
         self.division_id = 0;
+        self.LJNGPCKPJLF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IAABDBBJHOL {
         static instance: IAABDBBJHOL = IAABDBBJHOL {
             is_overlock: false,
-            LJNGPCKPJLF: 0,
             division_id: 0,
+            LJNGPCKPJLF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for IAABDBBJHOL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IAABDBBJHOL.proto\"q\n\x0bIAABDBBJHOL\x12\x1f\n\x0bis_overlock\x18\
-    \x01\x20\x01(\x08R\nisOverlock\x12\x20\n\x0bLJNGPCKPJLF\x18\x07\x20\x01(\
-    \rR\x0bLJNGPCKPJLF\x12\x1f\n\x0bdivision_id\x18\x0e\x20\x01(\rR\ndivisio\
-    nIdb\x06proto3\
+    \x01\x20\x01(\x08R\nisOverlock\x12\x1f\n\x0bdivision_id\x18\x08\x20\x01(\
+    \rR\ndivisionId\x12\x20\n\x0bLJNGPCKPJLF\x18\x0e\x20\x01(\rR\x0bLJNGPCKP\
+    JLFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

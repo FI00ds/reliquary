@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FLCPJJMHAGO {
     // message fields
-    // @@protoc_insertion_point(field:FLCPJJMHAGO.max_level)
-    pub max_level: u32,
-    // @@protoc_insertion_point(field:FLCPJJMHAGO.AFEMBLFCCCH)
-    pub AFEMBLFCCCH: u32,
-    // @@protoc_insertion_point(field:FLCPJJMHAGO.level)
-    pub level: u32,
     // @@protoc_insertion_point(field:FLCPJJMHAGO.exp)
     pub exp: u32,
+    // @@protoc_insertion_point(field:FLCPJJMHAGO.HCBADDHNIDG)
+    pub HCBADDHNIDG: u32,
+    // @@protoc_insertion_point(field:FLCPJJMHAGO.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:FLCPJJMHAGO.AFEMBLFCCCH)
+    pub AFEMBLFCCCH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FLCPJJMHAGO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,14 +56,14 @@ impl FLCPJJMHAGO {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "max_level",
-            |m: &FLCPJJMHAGO| { &m.max_level },
-            |m: &mut FLCPJJMHAGO| { &mut m.max_level },
+            "exp",
+            |m: &FLCPJJMHAGO| { &m.exp },
+            |m: &mut FLCPJJMHAGO| { &mut m.exp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AFEMBLFCCCH",
-            |m: &FLCPJJMHAGO| { &m.AFEMBLFCCCH },
-            |m: &mut FLCPJJMHAGO| { &mut m.AFEMBLFCCCH },
+            "HCBADDHNIDG",
+            |m: &FLCPJJMHAGO| { &m.HCBADDHNIDG },
+            |m: &mut FLCPJJMHAGO| { &mut m.HCBADDHNIDG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
@@ -71,9 +71,9 @@ impl FLCPJJMHAGO {
             |m: &mut FLCPJJMHAGO| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "exp",
-            |m: &FLCPJJMHAGO| { &m.exp },
-            |m: &mut FLCPJJMHAGO| { &mut m.exp },
+            "AFEMBLFCCCH",
+            |m: &FLCPJJMHAGO| { &m.AFEMBLFCCCH },
+            |m: &mut FLCPJJMHAGO| { &mut m.AFEMBLFCCCH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FLCPJJMHAGO>(
             "FLCPJJMHAGO",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for FLCPJJMHAGO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.max_level = is.read_uint32()?;
-                },
                 32 => {
-                    self.AFEMBLFCCCH = is.read_uint32()?;
-                },
-                64 => {
-                    self.level = is.read_uint32()?;
+                    self.exp = is.read_uint32()?;
                 },
                 72 => {
-                    self.exp = is.read_uint32()?;
+                    self.HCBADDHNIDG = is.read_uint32()?;
+                },
+                88 => {
+                    self.level = is.read_uint32()?;
+                },
+                104 => {
+                    self.AFEMBLFCCCH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for FLCPJJMHAGO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.max_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.max_level);
+        if self.exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.exp);
         }
-        if self.AFEMBLFCCCH != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.AFEMBLFCCCH);
+        if self.HCBADDHNIDG != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.HCBADDHNIDG);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.level);
+            my_size += ::protobuf::rt::uint32_size(11, self.level);
         }
-        if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.exp);
+        if self.AFEMBLFCCCH != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.AFEMBLFCCCH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for FLCPJJMHAGO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.max_level != 0 {
-            os.write_uint32(2, self.max_level)?;
+        if self.exp != 0 {
+            os.write_uint32(4, self.exp)?;
         }
-        if self.AFEMBLFCCCH != 0 {
-            os.write_uint32(4, self.AFEMBLFCCCH)?;
+        if self.HCBADDHNIDG != 0 {
+            os.write_uint32(9, self.HCBADDHNIDG)?;
         }
         if self.level != 0 {
-            os.write_uint32(8, self.level)?;
+            os.write_uint32(11, self.level)?;
         }
-        if self.exp != 0 {
-            os.write_uint32(9, self.exp)?;
+        if self.AFEMBLFCCCH != 0 {
+            os.write_uint32(13, self.AFEMBLFCCCH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for FLCPJJMHAGO {
     }
 
     fn clear(&mut self) {
-        self.max_level = 0;
-        self.AFEMBLFCCCH = 0;
-        self.level = 0;
         self.exp = 0;
+        self.HCBADDHNIDG = 0;
+        self.level = 0;
+        self.AFEMBLFCCCH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FLCPJJMHAGO {
         static instance: FLCPJJMHAGO = FLCPJJMHAGO {
-            max_level: 0,
-            AFEMBLFCCCH: 0,
-            level: 0,
             exp: 0,
+            HCBADDHNIDG: 0,
+            level: 0,
+            AFEMBLFCCCH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for FLCPJJMHAGO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FLCPJJMHAGO.proto\"t\n\x0bFLCPJJMHAGO\x12\x1b\n\tmax_level\x18\x02\
-    \x20\x01(\rR\x08maxLevel\x12\x20\n\x0bAFEMBLFCCCH\x18\x04\x20\x01(\rR\
-    \x0bAFEMBLFCCCH\x12\x14\n\x05level\x18\x08\x20\x01(\rR\x05level\x12\x10\
-    \n\x03exp\x18\t\x20\x01(\rR\x03expb\x06proto3\
+    \n\x11FLCPJJMHAGO.proto\"y\n\x0bFLCPJJMHAGO\x12\x10\n\x03exp\x18\x04\x20\
+    \x01(\rR\x03exp\x12\x20\n\x0bHCBADDHNIDG\x18\t\x20\x01(\rR\x0bHCBADDHNID\
+    G\x12\x14\n\x05level\x18\x0b\x20\x01(\rR\x05level\x12\x20\n\x0bAFEMBLFCC\
+    CH\x18\r\x20\x01(\rR\x0bAFEMBLFCCCHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

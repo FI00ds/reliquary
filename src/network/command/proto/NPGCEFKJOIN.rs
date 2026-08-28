@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NPGCEFKJOIN {
     // message fields
-    // @@protoc_insertion_point(field:NPGCEFKJOIN.tech_id)
-    pub tech_id: u32,
-    // @@protoc_insertion_point(field:NPGCEFKJOIN.active)
-    pub active: bool,
+    // @@protoc_insertion_point(field:NPGCEFKJOIN.IOBJFEJFLJP)
+    pub IOBJFEJFLJP: bool,
+    // @@protoc_insertion_point(field:NPGCEFKJOIN.COPALFLACHO)
+    pub COPALFLACHO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NPGCEFKJOIN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl NPGCEFKJOIN {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "tech_id",
-            |m: &NPGCEFKJOIN| { &m.tech_id },
-            |m: &mut NPGCEFKJOIN| { &mut m.tech_id },
+            "IOBJFEJFLJP",
+            |m: &NPGCEFKJOIN| { &m.IOBJFEJFLJP },
+            |m: &mut NPGCEFKJOIN| { &mut m.IOBJFEJFLJP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "active",
-            |m: &NPGCEFKJOIN| { &m.active },
-            |m: &mut NPGCEFKJOIN| { &mut m.active },
+            "COPALFLACHO",
+            |m: &NPGCEFKJOIN| { &m.COPALFLACHO },
+            |m: &mut NPGCEFKJOIN| { &mut m.COPALFLACHO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NPGCEFKJOIN>(
             "NPGCEFKJOIN",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for NPGCEFKJOIN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.tech_id = is.read_uint32()?;
+                64 => {
+                    self.IOBJFEJFLJP = is.read_bool()?;
                 },
-                72 => {
-                    self.active = is.read_bool()?;
+                96 => {
+                    self.COPALFLACHO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for NPGCEFKJOIN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.tech_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.tech_id);
-        }
-        if self.active != false {
+        if self.IOBJFEJFLJP != false {
             my_size += 1 + 1;
+        }
+        if self.COPALFLACHO != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.COPALFLACHO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for NPGCEFKJOIN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.tech_id != 0 {
-            os.write_uint32(5, self.tech_id)?;
+        if self.IOBJFEJFLJP != false {
+            os.write_bool(8, self.IOBJFEJFLJP)?;
         }
-        if self.active != false {
-            os.write_bool(9, self.active)?;
+        if self.COPALFLACHO != 0 {
+            os.write_uint32(12, self.COPALFLACHO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for NPGCEFKJOIN {
     }
 
     fn clear(&mut self) {
-        self.tech_id = 0;
-        self.active = false;
+        self.IOBJFEJFLJP = false;
+        self.COPALFLACHO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NPGCEFKJOIN {
         static instance: NPGCEFKJOIN = NPGCEFKJOIN {
-            tech_id: 0,
-            active: false,
+            IOBJFEJFLJP: false,
+            COPALFLACHO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for NPGCEFKJOIN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NPGCEFKJOIN.proto\">\n\x0bNPGCEFKJOIN\x12\x17\n\x07tech_id\x18\x05\
-    \x20\x01(\rR\x06techId\x12\x16\n\x06active\x18\t\x20\x01(\x08R\x06active\
-    b\x06proto3\
+    \n\x11NPGCEFKJOIN.proto\"Q\n\x0bNPGCEFKJOIN\x12\x20\n\x0bIOBJFEJFLJP\x18\
+    \x08\x20\x01(\x08R\x0bIOBJFEJFLJP\x12\x20\n\x0bCOPALFLACHO\x18\x0c\x20\
+    \x01(\rR\x0bCOPALFLACHOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

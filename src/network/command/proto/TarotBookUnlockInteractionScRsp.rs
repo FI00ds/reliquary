@@ -82,10 +82,10 @@ impl ::protobuf::Message for TarotBookUnlockInteractionScRsp {
                 64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                122 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.CLNOMEFFHKG)?;
                 },
-                120 => {
+                104 => {
                     self.CLNOMEFFHKG.push(is.read_uint32()?);
                 },
                 tag => {
@@ -103,7 +103,7 @@ impl ::protobuf::Message for TarotBookUnlockInteractionScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.CLNOMEFFHKG);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.CLNOMEFFHKG);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -113,7 +113,7 @@ impl ::protobuf::Message for TarotBookUnlockInteractionScRsp {
         if self.retcode != 0 {
             os.write_uint32(8, self.retcode)?;
         }
-        os.write_repeated_packed_uint32(15, &self.CLNOMEFFHKG)?;
+        os.write_repeated_packed_uint32(13, &self.CLNOMEFFHKG)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for TarotBookUnlockInteractionScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%TarotBookUnlockInteractionScRsp.proto\"]\n\x1fTarotBookUnlockInteract\
     ionScRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12\x20\n\
-    \x0bCLNOMEFFHKG\x18\x0f\x20\x03(\rR\x0bCLNOMEFFHKGb\x06proto3\
+    \x0bCLNOMEFFHKG\x18\r\x20\x03(\rR\x0bCLNOMEFFHKGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

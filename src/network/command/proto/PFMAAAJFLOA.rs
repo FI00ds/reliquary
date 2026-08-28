@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PFMAAAJFLOA {
     // message fields
-    // @@protoc_insertion_point(field:PFMAAAJFLOA.LOGLBCPNAEL)
-    pub LOGLBCPNAEL: u32,
     // @@protoc_insertion_point(field:PFMAAAJFLOA.LHHJFMMCBAF)
     pub LHHJFMMCBAF: u32,
+    // @@protoc_insertion_point(field:PFMAAAJFLOA.LOGLBCPNAEL)
+    pub LOGLBCPNAEL: u32,
     // message oneof groups
     pub HGEOKHHJAIE: ::std::option::Option<pfmaaajfloa::HGEOKHHJAIE>,
     // special fields
@@ -50,7 +50,7 @@ impl PFMAAAJFLOA {
         ::std::default::Default::default()
     }
 
-    // uint32 FJLCMPAPIGA = 2;
+    // uint32 FJLCMPAPIGA = 4;
 
     pub fn FJLCMPAPIGA(&self) -> u32 {
         match self.HGEOKHHJAIE {
@@ -75,7 +75,7 @@ impl PFMAAAJFLOA {
         self.HGEOKHHJAIE = ::std::option::Option::Some(pfmaaajfloa::HGEOKHHJAIE::FJLCMPAPIGA(v))
     }
 
-    // .NKGAIPKINJE EBEMKMGCCGJ = 1;
+    // .NKGAIPKINJE EBEMKMGCCGJ = 2;
 
     pub fn EBEMKMGCCGJ(&self) -> &super::NKGAIPKINJE::NKGAIPKINJE {
         match self.HGEOKHHJAIE {
@@ -128,14 +128,14 @@ impl PFMAAAJFLOA {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LOGLBCPNAEL",
-            |m: &PFMAAAJFLOA| { &m.LOGLBCPNAEL },
-            |m: &mut PFMAAAJFLOA| { &mut m.LOGLBCPNAEL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LHHJFMMCBAF",
             |m: &PFMAAAJFLOA| { &m.LHHJFMMCBAF },
             |m: &mut PFMAAAJFLOA| { &mut m.LHHJFMMCBAF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LOGLBCPNAEL",
+            |m: &PFMAAAJFLOA| { &m.LOGLBCPNAEL },
+            |m: &mut PFMAAAJFLOA| { &mut m.LOGLBCPNAEL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "FJLCMPAPIGA",
@@ -169,16 +169,16 @@ impl ::protobuf::Message for PFMAAAJFLOA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.LOGLBCPNAEL = is.read_uint32()?;
-                },
-                80 => {
+                56 => {
                     self.LHHJFMMCBAF = is.read_uint32()?;
                 },
-                16 => {
+                80 => {
+                    self.LOGLBCPNAEL = is.read_uint32()?;
+                },
+                32 => {
                     self.HGEOKHHJAIE = ::std::option::Option::Some(pfmaaajfloa::HGEOKHHJAIE::FJLCMPAPIGA(is.read_uint32()?));
                 },
-                10 => {
+                18 => {
                     self.HGEOKHHJAIE = ::std::option::Option::Some(pfmaaajfloa::HGEOKHHJAIE::EBEMKMGCCGJ(is.read_message()?));
                 },
                 tag => {
@@ -193,16 +193,16 @@ impl ::protobuf::Message for PFMAAAJFLOA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LOGLBCPNAEL != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.LOGLBCPNAEL);
-        }
         if self.LHHJFMMCBAF != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.LHHJFMMCBAF);
+            my_size += ::protobuf::rt::uint32_size(7, self.LHHJFMMCBAF);
+        }
+        if self.LOGLBCPNAEL != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.LOGLBCPNAEL);
         }
         if let ::std::option::Option::Some(ref v) = self.HGEOKHHJAIE {
             match v {
                 &pfmaaajfloa::HGEOKHHJAIE::FJLCMPAPIGA(v) => {
-                    my_size += ::protobuf::rt::uint32_size(2, v);
+                    my_size += ::protobuf::rt::uint32_size(4, v);
                 },
                 &pfmaaajfloa::HGEOKHHJAIE::EBEMKMGCCGJ(ref v) => {
                     let len = v.compute_size();
@@ -216,19 +216,19 @@ impl ::protobuf::Message for PFMAAAJFLOA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LOGLBCPNAEL != 0 {
-            os.write_uint32(6, self.LOGLBCPNAEL)?;
-        }
         if self.LHHJFMMCBAF != 0 {
-            os.write_uint32(10, self.LHHJFMMCBAF)?;
+            os.write_uint32(7, self.LHHJFMMCBAF)?;
+        }
+        if self.LOGLBCPNAEL != 0 {
+            os.write_uint32(10, self.LOGLBCPNAEL)?;
         }
         if let ::std::option::Option::Some(ref v) = self.HGEOKHHJAIE {
             match v {
                 &pfmaaajfloa::HGEOKHHJAIE::FJLCMPAPIGA(v) => {
-                    os.write_uint32(2, v)?;
+                    os.write_uint32(4, v)?;
                 },
                 &pfmaaajfloa::HGEOKHHJAIE::EBEMKMGCCGJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
             };
         }
@@ -249,8 +249,8 @@ impl ::protobuf::Message for PFMAAAJFLOA {
     }
 
     fn clear(&mut self) {
-        self.LOGLBCPNAEL = 0;
         self.LHHJFMMCBAF = 0;
+        self.LOGLBCPNAEL = 0;
         self.HGEOKHHJAIE = ::std::option::Option::None;
         self.HGEOKHHJAIE = ::std::option::Option::None;
         self.special_fields.clear();
@@ -258,8 +258,8 @@ impl ::protobuf::Message for PFMAAAJFLOA {
 
     fn default_instance() -> &'static PFMAAAJFLOA {
         static instance: PFMAAAJFLOA = PFMAAAJFLOA {
-            LOGLBCPNAEL: 0,
             LHHJFMMCBAF: 0,
+            LOGLBCPNAEL: 0,
             HGEOKHHJAIE: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -316,9 +316,9 @@ pub mod pfmaaajfloa {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PFMAAAJFLOA.proto\x1a\x11NKGAIPKINJE.proto\"\xb6\x01\n\x0bPFMAAAJF\
-    LOA\x12\x20\n\x0bLOGLBCPNAEL\x18\x06\x20\x01(\rR\x0bLOGLBCPNAEL\x12\x20\
-    \n\x0bLHHJFMMCBAF\x18\n\x20\x01(\rR\x0bLHHJFMMCBAF\x12\"\n\x0bFJLCMPAPIG\
-    A\x18\x02\x20\x01(\rH\0R\x0bFJLCMPAPIGA\x120\n\x0bEBEMKMGCCGJ\x18\x01\
+    LOA\x12\x20\n\x0bLHHJFMMCBAF\x18\x07\x20\x01(\rR\x0bLHHJFMMCBAF\x12\x20\
+    \n\x0bLOGLBCPNAEL\x18\n\x20\x01(\rR\x0bLOGLBCPNAEL\x12\"\n\x0bFJLCMPAPIG\
+    A\x18\x04\x20\x01(\rH\0R\x0bFJLCMPAPIGA\x120\n\x0bEBEMKMGCCGJ\x18\x02\
     \x20\x01(\x0b2\x0c.NKGAIPKINJEH\0R\x0bEBEMKMGCCGJB\r\n\x0bHGEOKHHJAIEb\
     \x06proto3\
 ";

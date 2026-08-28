@@ -79,13 +79,13 @@ impl ::protobuf::Message for OCCAABPFBLF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                50 => {
                     is.read_repeated_packed_uint32_into(&mut self.AJHCCDONNEK)?;
                 },
-                56 => {
+                48 => {
                     self.AJHCCDONNEK.push(is.read_uint32()?);
                 },
-                72 => {
+                80 => {
                     self.slot = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for OCCAABPFBLF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.AJHCCDONNEK);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.AJHCCDONNEK);
         if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.slot);
+            my_size += ::protobuf::rt::uint32_size(10, self.slot);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for OCCAABPFBLF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(7, &self.AJHCCDONNEK)?;
+        os.write_repeated_packed_uint32(6, &self.AJHCCDONNEK)?;
         if self.slot != 0 {
-            os.write_uint32(9, self.slot)?;
+            os.write_uint32(10, self.slot)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for OCCAABPFBLF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OCCAABPFBLF.proto\"C\n\x0bOCCAABPFBLF\x12\x20\n\x0bAJHCCDONNEK\x18\
-    \x07\x20\x03(\rR\x0bAJHCCDONNEK\x12\x12\n\x04slot\x18\t\x20\x01(\rR\x04s\
+    \x06\x20\x03(\rR\x0bAJHCCDONNEK\x12\x12\n\x04slot\x18\n\x20\x01(\rR\x04s\
     lotb\x06proto3\
 ";
 

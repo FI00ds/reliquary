@@ -28,24 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KKPHDBMNNHB {
     // message fields
-    // @@protoc_insertion_point(field:KKPHDBMNNHB.stage_id)
-    pub stage_id: u32,
-    // @@protoc_insertion_point(field:KKPHDBMNNHB.cast_skill_info_list)
-    pub cast_skill_info_list: ::std::vec::Vec<super::HDLCAPDIKJI::HDLCAPDIKJI>,
+    // @@protoc_insertion_point(field:KKPHDBMNNHB.IBGMBIILIPB)
+    pub IBGMBIILIPB: ::std::vec::Vec<super::HDLCAPDIKJI::HDLCAPDIKJI>,
     // @@protoc_insertion_point(field:KKPHDBMNNHB.MNHPDBEDJLB)
     pub MNHPDBEDJLB: u32,
-    // @@protoc_insertion_point(field:KKPHDBMNNHB.PBNNCINCGGC)
-    pub PBNNCINCGGC: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:KKPHDBMNNHB.finish_time)
-    pub finish_time: u32,
-    // @@protoc_insertion_point(field:KKPHDBMNNHB.is_win)
-    pub is_win: bool,
     // @@protoc_insertion_point(field:KKPHDBMNNHB.CEDKBKPCCDJ)
     pub CEDKBKPCCDJ: u64,
-    // @@protoc_insertion_point(field:KKPHDBMNNHB.room_id)
-    pub room_id: u32,
+    // @@protoc_insertion_point(field:KKPHDBMNNHB.stage_id)
+    pub stage_id: u32,
     // @@protoc_insertion_point(field:KKPHDBMNNHB.IKOKEPJGHAF)
     pub IKOKEPJGHAF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:KKPHDBMNNHB.is_win)
+    pub is_win: bool,
+    // @@protoc_insertion_point(field:KKPHDBMNNHB.PBNNCINCGGC)
+    pub PBNNCINCGGC: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:KKPHDBMNNHB.IDIPBEPCIFG)
     pub IDIPBEPCIFG: u32,
     // special fields
@@ -65,37 +61,17 @@ impl KKPHDBMNNHB {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(10);
+        let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "stage_id",
-            |m: &KKPHDBMNNHB| { &m.stage_id },
-            |m: &mut KKPHDBMNNHB| { &mut m.stage_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "cast_skill_info_list",
-            |m: &KKPHDBMNNHB| { &m.cast_skill_info_list },
-            |m: &mut KKPHDBMNNHB| { &mut m.cast_skill_info_list },
+            "IBGMBIILIPB",
+            |m: &KKPHDBMNNHB| { &m.IBGMBIILIPB },
+            |m: &mut KKPHDBMNNHB| { &mut m.IBGMBIILIPB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MNHPDBEDJLB",
             |m: &KKPHDBMNNHB| { &m.MNHPDBEDJLB },
             |m: &mut KKPHDBMNNHB| { &mut m.MNHPDBEDJLB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PBNNCINCGGC",
-            |m: &KKPHDBMNNHB| { &m.PBNNCINCGGC },
-            |m: &mut KKPHDBMNNHB| { &mut m.PBNNCINCGGC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "finish_time",
-            |m: &KKPHDBMNNHB| { &m.finish_time },
-            |m: &mut KKPHDBMNNHB| { &mut m.finish_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_win",
-            |m: &KKPHDBMNNHB| { &m.is_win },
-            |m: &mut KKPHDBMNNHB| { &mut m.is_win },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CEDKBKPCCDJ",
@@ -103,14 +79,24 @@ impl KKPHDBMNNHB {
             |m: &mut KKPHDBMNNHB| { &mut m.CEDKBKPCCDJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "room_id",
-            |m: &KKPHDBMNNHB| { &m.room_id },
-            |m: &mut KKPHDBMNNHB| { &mut m.room_id },
+            "stage_id",
+            |m: &KKPHDBMNNHB| { &m.stage_id },
+            |m: &mut KKPHDBMNNHB| { &mut m.stage_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "IKOKEPJGHAF",
             |m: &KKPHDBMNNHB| { &m.IKOKEPJGHAF },
             |m: &mut KKPHDBMNNHB| { &mut m.IKOKEPJGHAF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_win",
+            |m: &KKPHDBMNNHB| { &m.is_win },
+            |m: &mut KKPHDBMNNHB| { &mut m.is_win },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PBNNCINCGGC",
+            |m: &KKPHDBMNNHB| { &m.PBNNCINCGGC },
+            |m: &mut KKPHDBMNNHB| { &mut m.PBNNCINCGGC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IDIPBEPCIFG",
@@ -135,38 +121,32 @@ impl ::protobuf::Message for KKPHDBMNNHB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.stage_id = is.read_uint32()?;
+                10 => {
+                    self.IBGMBIILIPB.push(is.read_message()?);
                 },
-                50 => {
-                    self.cast_skill_info_list.push(is.read_message()?);
-                },
-                64 => {
+                24 => {
                     self.MNHPDBEDJLB = is.read_uint32()?;
                 },
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PBNNCINCGGC)?;
-                },
-                72 => {
-                    self.PBNNCINCGGC.push(is.read_uint32()?);
-                },
-                80 => {
-                    self.finish_time = is.read_uint32()?;
-                },
-                88 => {
-                    self.is_win = is.read_bool()?;
-                },
-                96 => {
+                40 => {
                     self.CEDKBKPCCDJ = is.read_uint64()?;
                 },
-                104 => {
-                    self.room_id = is.read_uint32()?;
+                48 => {
+                    self.stage_id = is.read_uint32()?;
                 },
-                114 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.IKOKEPJGHAF)?;
                 },
-                112 => {
+                56 => {
                     self.IKOKEPJGHAF.push(is.read_uint32()?);
+                },
+                64 => {
+                    self.is_win = is.read_bool()?;
+                },
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.PBNNCINCGGC)?;
+                },
+                104 => {
+                    self.PBNNCINCGGC.push(is.read_uint32()?);
                 },
                 120 => {
                     self.IDIPBEPCIFG = is.read_uint32()?;
@@ -183,30 +163,24 @@ impl ::protobuf::Message for KKPHDBMNNHB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.stage_id);
-        }
-        for value in &self.cast_skill_info_list {
+        for value in &self.IBGMBIILIPB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.MNHPDBEDJLB != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.MNHPDBEDJLB);
+            my_size += ::protobuf::rt::uint32_size(3, self.MNHPDBEDJLB);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.PBNNCINCGGC);
-        if self.finish_time != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.finish_time);
+        if self.CEDKBKPCCDJ != 0 {
+            my_size += ::protobuf::rt::uint64_size(5, self.CEDKBKPCCDJ);
         }
+        if self.stage_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.stage_id);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.IKOKEPJGHAF);
         if self.is_win != false {
             my_size += 1 + 1;
         }
-        if self.CEDKBKPCCDJ != 0 {
-            my_size += ::protobuf::rt::uint64_size(12, self.CEDKBKPCCDJ);
-        }
-        if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.room_id);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.IKOKEPJGHAF);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.PBNNCINCGGC);
         if self.IDIPBEPCIFG != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.IDIPBEPCIFG);
         }
@@ -216,29 +190,23 @@ impl ::protobuf::Message for KKPHDBMNNHB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.stage_id != 0 {
-            os.write_uint32(4, self.stage_id)?;
-        }
-        for v in &self.cast_skill_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        for v in &self.IBGMBIILIPB {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         if self.MNHPDBEDJLB != 0 {
-            os.write_uint32(8, self.MNHPDBEDJLB)?;
-        }
-        os.write_repeated_packed_uint32(9, &self.PBNNCINCGGC)?;
-        if self.finish_time != 0 {
-            os.write_uint32(10, self.finish_time)?;
-        }
-        if self.is_win != false {
-            os.write_bool(11, self.is_win)?;
+            os.write_uint32(3, self.MNHPDBEDJLB)?;
         }
         if self.CEDKBKPCCDJ != 0 {
-            os.write_uint64(12, self.CEDKBKPCCDJ)?;
+            os.write_uint64(5, self.CEDKBKPCCDJ)?;
         }
-        if self.room_id != 0 {
-            os.write_uint32(13, self.room_id)?;
+        if self.stage_id != 0 {
+            os.write_uint32(6, self.stage_id)?;
         }
-        os.write_repeated_packed_uint32(14, &self.IKOKEPJGHAF)?;
+        os.write_repeated_packed_uint32(7, &self.IKOKEPJGHAF)?;
+        if self.is_win != false {
+            os.write_bool(8, self.is_win)?;
+        }
+        os.write_repeated_packed_uint32(13, &self.PBNNCINCGGC)?;
         if self.IDIPBEPCIFG != 0 {
             os.write_uint32(15, self.IDIPBEPCIFG)?;
         }
@@ -259,30 +227,26 @@ impl ::protobuf::Message for KKPHDBMNNHB {
     }
 
     fn clear(&mut self) {
-        self.stage_id = 0;
-        self.cast_skill_info_list.clear();
+        self.IBGMBIILIPB.clear();
         self.MNHPDBEDJLB = 0;
-        self.PBNNCINCGGC.clear();
-        self.finish_time = 0;
-        self.is_win = false;
         self.CEDKBKPCCDJ = 0;
-        self.room_id = 0;
+        self.stage_id = 0;
         self.IKOKEPJGHAF.clear();
+        self.is_win = false;
+        self.PBNNCINCGGC.clear();
         self.IDIPBEPCIFG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KKPHDBMNNHB {
         static instance: KKPHDBMNNHB = KKPHDBMNNHB {
-            stage_id: 0,
-            cast_skill_info_list: ::std::vec::Vec::new(),
+            IBGMBIILIPB: ::std::vec::Vec::new(),
             MNHPDBEDJLB: 0,
-            PBNNCINCGGC: ::std::vec::Vec::new(),
-            finish_time: 0,
-            is_win: false,
             CEDKBKPCCDJ: 0,
-            room_id: 0,
+            stage_id: 0,
             IKOKEPJGHAF: ::std::vec::Vec::new(),
+            is_win: false,
+            PBNNCINCGGC: ::std::vec::Vec::new(),
             IDIPBEPCIFG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -308,16 +272,14 @@ impl ::protobuf::reflect::ProtobufValue for KKPHDBMNNHB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KKPHDBMNNHB.proto\x1a\x11HDLCAPDIKJI.proto\"\xe2\x02\n\x0bKKPHDBMN\
-    NHB\x12\x19\n\x08stage_id\x18\x04\x20\x01(\rR\x07stageId\x12=\n\x14cast_\
-    skill_info_list\x18\x06\x20\x03(\x0b2\x0c.HDLCAPDIKJIR\x11castSkillInfoL\
-    ist\x12\x20\n\x0bMNHPDBEDJLB\x18\x08\x20\x01(\rR\x0bMNHPDBEDJLB\x12\x20\
-    \n\x0bPBNNCINCGGC\x18\t\x20\x03(\rR\x0bPBNNCINCGGC\x12\x1f\n\x0bfinish_t\
-    ime\x18\n\x20\x01(\rR\nfinishTime\x12\x15\n\x06is_win\x18\x0b\x20\x01(\
-    \x08R\x05isWin\x12\x20\n\x0bCEDKBKPCCDJ\x18\x0c\x20\x01(\x04R\x0bCEDKBKP\
-    CCDJ\x12\x17\n\x07room_id\x18\r\x20\x01(\rR\x06roomId\x12\x20\n\x0bIKOKE\
-    PJGHAF\x18\x0e\x20\x03(\rR\x0bIKOKEPJGHAF\x12\x20\n\x0bIDIPBEPCIFG\x18\
-    \x0f\x20\x01(\rR\x0bIDIPBEPCIFGb\x06proto3\
+    \n\x11KKPHDBMNNHB.proto\x1a\x11HDLCAPDIKJI.proto\"\x99\x02\n\x0bKKPHDBMN\
+    NHB\x12.\n\x0bIBGMBIILIPB\x18\x01\x20\x03(\x0b2\x0c.HDLCAPDIKJIR\x0bIBGM\
+    BIILIPB\x12\x20\n\x0bMNHPDBEDJLB\x18\x03\x20\x01(\rR\x0bMNHPDBEDJLB\x12\
+    \x20\n\x0bCEDKBKPCCDJ\x18\x05\x20\x01(\x04R\x0bCEDKBKPCCDJ\x12\x19\n\x08\
+    stage_id\x18\x06\x20\x01(\rR\x07stageId\x12\x20\n\x0bIKOKEPJGHAF\x18\x07\
+    \x20\x03(\rR\x0bIKOKEPJGHAF\x12\x15\n\x06is_win\x18\x08\x20\x01(\x08R\
+    \x05isWin\x12\x20\n\x0bPBNNCINCGGC\x18\r\x20\x03(\rR\x0bPBNNCINCGGC\x12\
+    \x20\n\x0bIDIPBEPCIFG\x18\x0f\x20\x01(\rR\x0bIDIPBEPCIFGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

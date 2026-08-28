@@ -30,8 +30,8 @@ pub struct KMGDCCNNGEE {
     // message fields
     // @@protoc_insertion_point(field:KMGDCCNNGEE.monster_battle_type)
     pub monster_battle_type: u32,
-    // @@protoc_insertion_point(field:KMGDCCNNGEE.room_uid)
-    pub room_uid: u64,
+    // @@protoc_insertion_point(field:KMGDCCNNGEE.CKLCDAGMFKP)
+    pub CKLCDAGMFKP: u64,
     // @@protoc_insertion_point(field:KMGDCCNNGEE.level_id)
     pub level_id: u32,
     // @@protoc_insertion_point(field:KMGDCCNNGEE.GNAMNBDIEKG)
@@ -46,16 +46,16 @@ pub struct KMGDCCNNGEE {
     pub ALHIONICLCM: ::std::vec::Vec<super::OGHAIFPHMPE::OGHAIFPHMPE>,
     // @@protoc_insertion_point(field:KMGDCCNNGEE.ILLEDJLNGNF)
     pub ILLEDJLNGNF: u32,
-    // @@protoc_insertion_point(field:KMGDCCNNGEE.result)
-    pub result: u32,
+    // @@protoc_insertion_point(field:KMGDCCNNGEE.JCHFCNFHCMM)
+    pub JCHFCNFHCMM: u32,
     // @@protoc_insertion_point(field:KMGDCCNNGEE.score_id)
     pub score_id: i32,
-    // @@protoc_insertion_point(field:KMGDCCNNGEE.total_score)
-    pub total_score: i32,
+    // @@protoc_insertion_point(field:KMGDCCNNGEE.DJEIMGGHMGM)
+    pub DJEIMGGHMGM: i32,
     // @@protoc_insertion_point(field:KMGDCCNNGEE.GOMOIKPMFBA)
     pub GOMOIKPMFBA: ::std::vec::Vec<super::PFPHCDCNOBN::PFPHCDCNOBN>,
-    // @@protoc_insertion_point(field:KMGDCCNNGEE.turn)
-    pub turn: u32,
+    // @@protoc_insertion_point(field:KMGDCCNNGEE.HJPBAJEPAGE)
+    pub HJPBAJEPAGE: u32,
     // @@protoc_insertion_point(field:KMGDCCNNGEE.FOCAJAMHKKA)
     pub FOCAJAMHKKA: u32,
     // @@protoc_insertion_point(field:KMGDCCNNGEE.BKIKJGAFKJD)
@@ -87,9 +87,9 @@ impl KMGDCCNNGEE {
             |m: &mut KMGDCCNNGEE| { &mut m.monster_battle_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "room_uid",
-            |m: &KMGDCCNNGEE| { &m.room_uid },
-            |m: &mut KMGDCCNNGEE| { &mut m.room_uid },
+            "CKLCDAGMFKP",
+            |m: &KMGDCCNNGEE| { &m.CKLCDAGMFKP },
+            |m: &mut KMGDCCNNGEE| { &mut m.CKLCDAGMFKP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level_id",
@@ -127,9 +127,9 @@ impl KMGDCCNNGEE {
             |m: &mut KMGDCCNNGEE| { &mut m.ILLEDJLNGNF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "result",
-            |m: &KMGDCCNNGEE| { &m.result },
-            |m: &mut KMGDCCNNGEE| { &mut m.result },
+            "JCHFCNFHCMM",
+            |m: &KMGDCCNNGEE| { &m.JCHFCNFHCMM },
+            |m: &mut KMGDCCNNGEE| { &mut m.JCHFCNFHCMM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "score_id",
@@ -137,9 +137,9 @@ impl KMGDCCNNGEE {
             |m: &mut KMGDCCNNGEE| { &mut m.score_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "total_score",
-            |m: &KMGDCCNNGEE| { &m.total_score },
-            |m: &mut KMGDCCNNGEE| { &mut m.total_score },
+            "DJEIMGGHMGM",
+            |m: &KMGDCCNNGEE| { &m.DJEIMGGHMGM },
+            |m: &mut KMGDCCNNGEE| { &mut m.DJEIMGGHMGM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "GOMOIKPMFBA",
@@ -147,9 +147,9 @@ impl KMGDCCNNGEE {
             |m: &mut KMGDCCNNGEE| { &mut m.GOMOIKPMFBA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "turn",
-            |m: &KMGDCCNNGEE| { &m.turn },
-            |m: &mut KMGDCCNNGEE| { &mut m.turn },
+            "HJPBAJEPAGE",
+            |m: &KMGDCCNNGEE| { &m.HJPBAJEPAGE },
+            |m: &mut KMGDCCNNGEE| { &mut m.HJPBAJEPAGE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FOCAJAMHKKA",
@@ -188,7 +188,7 @@ impl ::protobuf::Message for KMGDCCNNGEE {
                     self.monster_battle_type = is.read_uint32()?;
                 },
                 16 => {
-                    self.room_uid = is.read_uint64()?;
+                    self.CKLCDAGMFKP = is.read_uint64()?;
                 },
                 24 => {
                     self.level_id = is.read_uint32()?;
@@ -212,19 +212,19 @@ impl ::protobuf::Message for KMGDCCNNGEE {
                     self.ILLEDJLNGNF = is.read_uint32()?;
                 },
                 80 => {
-                    self.result = is.read_uint32()?;
+                    self.JCHFCNFHCMM = is.read_uint32()?;
                 },
                 88 => {
                     self.score_id = is.read_int32()?;
                 },
                 96 => {
-                    self.total_score = is.read_int32()?;
+                    self.DJEIMGGHMGM = is.read_int32()?;
                 },
                 106 => {
                     self.GOMOIKPMFBA.push(is.read_message()?);
                 },
                 112 => {
-                    self.turn = is.read_uint32()?;
+                    self.HJPBAJEPAGE = is.read_uint32()?;
                 },
                 120 => {
                     self.FOCAJAMHKKA = is.read_uint32()?;
@@ -250,8 +250,8 @@ impl ::protobuf::Message for KMGDCCNNGEE {
         if self.monster_battle_type != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.monster_battle_type);
         }
-        if self.room_uid != 0 {
-            my_size += ::protobuf::rt::uint64_size(2, self.room_uid);
+        if self.CKLCDAGMFKP != 0 {
+            my_size += ::protobuf::rt::uint64_size(2, self.CKLCDAGMFKP);
         }
         if self.level_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.level_id);
@@ -276,21 +276,21 @@ impl ::protobuf::Message for KMGDCCNNGEE {
         if self.ILLEDJLNGNF != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.ILLEDJLNGNF);
         }
-        if self.result != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.result);
+        if self.JCHFCNFHCMM != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.JCHFCNFHCMM);
         }
         if self.score_id != 0 {
             my_size += ::protobuf::rt::int32_size(11, self.score_id);
         }
-        if self.total_score != 0 {
-            my_size += ::protobuf::rt::int32_size(12, self.total_score);
+        if self.DJEIMGGHMGM != 0 {
+            my_size += ::protobuf::rt::int32_size(12, self.DJEIMGGHMGM);
         }
         for value in &self.GOMOIKPMFBA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.turn != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.turn);
+        if self.HJPBAJEPAGE != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.HJPBAJEPAGE);
         }
         if self.FOCAJAMHKKA != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.FOCAJAMHKKA);
@@ -310,8 +310,8 @@ impl ::protobuf::Message for KMGDCCNNGEE {
         if self.monster_battle_type != 0 {
             os.write_uint32(1, self.monster_battle_type)?;
         }
-        if self.room_uid != 0 {
-            os.write_uint64(2, self.room_uid)?;
+        if self.CKLCDAGMFKP != 0 {
+            os.write_uint64(2, self.CKLCDAGMFKP)?;
         }
         if self.level_id != 0 {
             os.write_uint32(3, self.level_id)?;
@@ -334,20 +334,20 @@ impl ::protobuf::Message for KMGDCCNNGEE {
         if self.ILLEDJLNGNF != 0 {
             os.write_uint32(9, self.ILLEDJLNGNF)?;
         }
-        if self.result != 0 {
-            os.write_uint32(10, self.result)?;
+        if self.JCHFCNFHCMM != 0 {
+            os.write_uint32(10, self.JCHFCNFHCMM)?;
         }
         if self.score_id != 0 {
             os.write_int32(11, self.score_id)?;
         }
-        if self.total_score != 0 {
-            os.write_int32(12, self.total_score)?;
+        if self.DJEIMGGHMGM != 0 {
+            os.write_int32(12, self.DJEIMGGHMGM)?;
         }
         for v in &self.GOMOIKPMFBA {
             ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
-        if self.turn != 0 {
-            os.write_uint32(14, self.turn)?;
+        if self.HJPBAJEPAGE != 0 {
+            os.write_uint32(14, self.HJPBAJEPAGE)?;
         }
         if self.FOCAJAMHKKA != 0 {
             os.write_uint32(15, self.FOCAJAMHKKA)?;
@@ -376,7 +376,7 @@ impl ::protobuf::Message for KMGDCCNNGEE {
 
     fn clear(&mut self) {
         self.monster_battle_type = 0;
-        self.room_uid = 0;
+        self.CKLCDAGMFKP = 0;
         self.level_id = 0;
         self.GNAMNBDIEKG = 0;
         self.BJODJNFGMCB.clear();
@@ -384,11 +384,11 @@ impl ::protobuf::Message for KMGDCCNNGEE {
         self.GAENFKKAKOI = 0;
         self.ALHIONICLCM.clear();
         self.ILLEDJLNGNF = 0;
-        self.result = 0;
+        self.JCHFCNFHCMM = 0;
         self.score_id = 0;
-        self.total_score = 0;
+        self.DJEIMGGHMGM = 0;
         self.GOMOIKPMFBA.clear();
-        self.turn = 0;
+        self.HJPBAJEPAGE = 0;
         self.FOCAJAMHKKA = 0;
         self.BKIKJGAFKJD = 0;
         self.ICBIJEMFLPM = 0;
@@ -398,7 +398,7 @@ impl ::protobuf::Message for KMGDCCNNGEE {
     fn default_instance() -> &'static KMGDCCNNGEE {
         static instance: KMGDCCNNGEE = KMGDCCNNGEE {
             monster_battle_type: 0,
-            room_uid: 0,
+            CKLCDAGMFKP: 0,
             level_id: 0,
             GNAMNBDIEKG: 0,
             BJODJNFGMCB: ::std::vec::Vec::new(),
@@ -406,11 +406,11 @@ impl ::protobuf::Message for KMGDCCNNGEE {
             GAENFKKAKOI: 0,
             ALHIONICLCM: ::std::vec::Vec::new(),
             ILLEDJLNGNF: 0,
-            result: 0,
+            JCHFCNFHCMM: 0,
             score_id: 0,
-            total_score: 0,
+            DJEIMGGHMGM: 0,
             GOMOIKPMFBA: ::std::vec::Vec::new(),
-            turn: 0,
+            HJPBAJEPAGE: 0,
             FOCAJAMHKKA: 0,
             BKIKJGAFKJD: 0,
             ICBIJEMFLPM: 0,
@@ -439,21 +439,22 @@ impl ::protobuf::reflect::ProtobufValue for KMGDCCNNGEE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KMGDCCNNGEE.proto\x1a\x11OGHAIFPHMPE.proto\x1a\x11PFPHCDCNOBN.prot\
-    o\"\xcb\x04\n\x0bKMGDCCNNGEE\x12.\n\x13monster_battle_type\x18\x01\x20\
-    \x01(\rR\x11monsterBattleType\x12\x19\n\x08room_uid\x18\x02\x20\x01(\x04\
-    R\x07roomUid\x12\x19\n\x08level_id\x18\x03\x20\x01(\rR\x07levelId\x12\
-    \x20\n\x0bGNAMNBDIEKG\x18\x04\x20\x01(\rR\x0bGNAMNBDIEKG\x12.\n\x0bBJODJ\
-    NFGMCB\x18\x05\x20\x03(\x0b2\x0c.OGHAIFPHMPER\x0bBJODJNFGMCB\x12\x12\n\
-    \x04rank\x18\x06\x20\x01(\rR\x04rank\x12\x20\n\x0bGAENFKKAKOI\x18\x07\
-    \x20\x01(\x04R\x0bGAENFKKAKOI\x12.\n\x0bALHIONICLCM\x18\x08\x20\x03(\x0b\
-    2\x0c.OGHAIFPHMPER\x0bALHIONICLCM\x12\x20\n\x0bILLEDJLNGNF\x18\t\x20\x01\
-    (\rR\x0bILLEDJLNGNF\x12\x16\n\x06result\x18\n\x20\x01(\rR\x06result\x12\
-    \x19\n\x08score_id\x18\x0b\x20\x01(\x05R\x07scoreId\x12\x1f\n\x0btotal_s\
-    core\x18\x0c\x20\x01(\x05R\ntotalScore\x12.\n\x0bGOMOIKPMFBA\x18\r\x20\
-    \x03(\x0b2\x0c.PFPHCDCNOBNR\x0bGOMOIKPMFBA\x12\x12\n\x04turn\x18\x0e\x20\
-    \x01(\rR\x04turn\x12\x20\n\x0bFOCAJAMHKKA\x18\x0f\x20\x01(\rR\x0bFOCAJAM\
-    HKKA\x12\x20\n\x0bBKIKJGAFKJD\x18\x10\x20\x01(\rR\x0bBKIKJGAFKJD\x12\x20\
-    \n\x0bICBIJEMFLPM\x18\x11\x20\x01(\rR\x0bICBIJEMFLPMb\x06proto3\
+    o\"\xeb\x04\n\x0bKMGDCCNNGEE\x12.\n\x13monster_battle_type\x18\x01\x20\
+    \x01(\rR\x11monsterBattleType\x12\x20\n\x0bCKLCDAGMFKP\x18\x02\x20\x01(\
+    \x04R\x0bCKLCDAGMFKP\x12\x19\n\x08level_id\x18\x03\x20\x01(\rR\x07levelI\
+    d\x12\x20\n\x0bGNAMNBDIEKG\x18\x04\x20\x01(\rR\x0bGNAMNBDIEKG\x12.\n\x0b\
+    BJODJNFGMCB\x18\x05\x20\x03(\x0b2\x0c.OGHAIFPHMPER\x0bBJODJNFGMCB\x12\
+    \x12\n\x04rank\x18\x06\x20\x01(\rR\x04rank\x12\x20\n\x0bGAENFKKAKOI\x18\
+    \x07\x20\x01(\x04R\x0bGAENFKKAKOI\x12.\n\x0bALHIONICLCM\x18\x08\x20\x03(\
+    \x0b2\x0c.OGHAIFPHMPER\x0bALHIONICLCM\x12\x20\n\x0bILLEDJLNGNF\x18\t\x20\
+    \x01(\rR\x0bILLEDJLNGNF\x12\x20\n\x0bJCHFCNFHCMM\x18\n\x20\x01(\rR\x0bJC\
+    HFCNFHCMM\x12\x19\n\x08score_id\x18\x0b\x20\x01(\x05R\x07scoreId\x12\x20\
+    \n\x0bDJEIMGGHMGM\x18\x0c\x20\x01(\x05R\x0bDJEIMGGHMGM\x12.\n\x0bGOMOIKP\
+    MFBA\x18\r\x20\x03(\x0b2\x0c.PFPHCDCNOBNR\x0bGOMOIKPMFBA\x12\x20\n\x0bHJ\
+    PBAJEPAGE\x18\x0e\x20\x01(\rR\x0bHJPBAJEPAGE\x12\x20\n\x0bFOCAJAMHKKA\
+    \x18\x0f\x20\x01(\rR\x0bFOCAJAMHKKA\x12\x20\n\x0bBKIKJGAFKJD\x18\x10\x20\
+    \x01(\rR\x0bBKIKJGAFKJD\x12\x20\n\x0bICBIJEMFLPM\x18\x11\x20\x01(\rR\x0b\
+    ICBIJEMFLPMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

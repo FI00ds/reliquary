@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BIKNPJPLDAO {
     // message fields
-    // @@protoc_insertion_point(field:BIKNPJPLDAO.HFHJGBHHBKM)
-    pub HFHJGBHHBKM: ::std::vec::Vec<super::ANAJELDHDBH::ANAJELDHDBH>,
-    // @@protoc_insertion_point(field:BIKNPJPLDAO.FNHDDAMNKCG)
-    pub FNHDDAMNKCG: ::std::vec::Vec<super::ANAJELDHDBH::ANAJELDHDBH>,
     // @@protoc_insertion_point(field:BIKNPJPLDAO.MBOBGNPLLOO)
     pub MBOBGNPLLOO: u32,
     // @@protoc_insertion_point(field:BIKNPJPLDAO.total_damage)
     pub total_damage: f64,
+    // @@protoc_insertion_point(field:BIKNPJPLDAO.FNHDDAMNKCG)
+    pub FNHDDAMNKCG: ::std::vec::Vec<super::ANAJELDHDBH::ANAJELDHDBH>,
+    // @@protoc_insertion_point(field:BIKNPJPLDAO.HFHJGBHHBKM)
+    pub HFHJGBHHBKM: ::std::vec::Vec<super::ANAJELDHDBH::ANAJELDHDBH>,
     // @@protoc_insertion_point(field:BIKNPJPLDAO.OBKCFGAJLJJ)
     pub OBKCFGAJLJJ: u32,
     // special fields
@@ -57,16 +57,6 @@ impl BIKNPJPLDAO {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HFHJGBHHBKM",
-            |m: &BIKNPJPLDAO| { &m.HFHJGBHHBKM },
-            |m: &mut BIKNPJPLDAO| { &mut m.HFHJGBHHBKM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FNHDDAMNKCG",
-            |m: &BIKNPJPLDAO| { &m.FNHDDAMNKCG },
-            |m: &mut BIKNPJPLDAO| { &mut m.FNHDDAMNKCG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MBOBGNPLLOO",
             |m: &BIKNPJPLDAO| { &m.MBOBGNPLLOO },
@@ -76,6 +66,16 @@ impl BIKNPJPLDAO {
             "total_damage",
             |m: &BIKNPJPLDAO| { &m.total_damage },
             |m: &mut BIKNPJPLDAO| { &mut m.total_damage },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FNHDDAMNKCG",
+            |m: &BIKNPJPLDAO| { &m.FNHDDAMNKCG },
+            |m: &mut BIKNPJPLDAO| { &mut m.FNHDDAMNKCG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HFHJGBHHBKM",
+            |m: &BIKNPJPLDAO| { &m.HFHJGBHHBKM },
+            |m: &mut BIKNPJPLDAO| { &mut m.HFHJGBHHBKM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OBKCFGAJLJJ",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for BIKNPJPLDAO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.HFHJGBHHBKM.push(is.read_message()?);
-                },
-                66 => {
-                    self.FNHDDAMNKCG.push(is.read_message()?);
-                },
-                72 => {
+                16 => {
                     self.MBOBGNPLLOO = is.read_uint32()?;
                 },
-                97 => {
+                41 => {
                     self.total_damage = is.read_double()?;
                 },
-                112 => {
+                50 => {
+                    self.FNHDDAMNKCG.push(is.read_message()?);
+                },
+                82 => {
+                    self.HFHJGBHHBKM.push(is.read_message()?);
+                },
+                96 => {
                     self.OBKCFGAJLJJ = is.read_uint32()?;
                 },
                 tag => {
@@ -127,22 +127,22 @@ impl ::protobuf::Message for BIKNPJPLDAO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.HFHJGBHHBKM {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.FNHDDAMNKCG {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if self.MBOBGNPLLOO != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.MBOBGNPLLOO);
+            my_size += ::protobuf::rt::uint32_size(2, self.MBOBGNPLLOO);
         }
         if self.total_damage != 0. {
             my_size += 1 + 8;
         }
+        for value in &self.FNHDDAMNKCG {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.HFHJGBHHBKM {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if self.OBKCFGAJLJJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.OBKCFGAJLJJ);
+            my_size += ::protobuf::rt::uint32_size(12, self.OBKCFGAJLJJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,20 +150,20 @@ impl ::protobuf::Message for BIKNPJPLDAO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.HFHJGBHHBKM {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
-        for v in &self.FNHDDAMNKCG {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
         if self.MBOBGNPLLOO != 0 {
-            os.write_uint32(9, self.MBOBGNPLLOO)?;
+            os.write_uint32(2, self.MBOBGNPLLOO)?;
         }
         if self.total_damage != 0. {
-            os.write_double(12, self.total_damage)?;
+            os.write_double(5, self.total_damage)?;
         }
+        for v in &self.FNHDDAMNKCG {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
+        for v in &self.HFHJGBHHBKM {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
         if self.OBKCFGAJLJJ != 0 {
-            os.write_uint32(14, self.OBKCFGAJLJJ)?;
+            os.write_uint32(12, self.OBKCFGAJLJJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,20 +182,20 @@ impl ::protobuf::Message for BIKNPJPLDAO {
     }
 
     fn clear(&mut self) {
-        self.HFHJGBHHBKM.clear();
-        self.FNHDDAMNKCG.clear();
         self.MBOBGNPLLOO = 0;
         self.total_damage = 0.;
+        self.FNHDDAMNKCG.clear();
+        self.HFHJGBHHBKM.clear();
         self.OBKCFGAJLJJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BIKNPJPLDAO {
         static instance: BIKNPJPLDAO = BIKNPJPLDAO {
-            HFHJGBHHBKM: ::std::vec::Vec::new(),
-            FNHDDAMNKCG: ::std::vec::Vec::new(),
             MBOBGNPLLOO: 0,
             total_damage: 0.,
+            FNHDDAMNKCG: ::std::vec::Vec::new(),
+            HFHJGBHHBKM: ::std::vec::Vec::new(),
             OBKCFGAJLJJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -222,11 +222,11 @@ impl ::protobuf::reflect::ProtobufValue for BIKNPJPLDAO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BIKNPJPLDAO.proto\x1a\x11ANAJELDHDBH.proto\"\xd4\x01\n\x0bBIKNPJPL\
-    DAO\x12.\n\x0bHFHJGBHHBKM\x18\x06\x20\x03(\x0b2\x0c.ANAJELDHDBHR\x0bHFHJ\
-    GBHHBKM\x12.\n\x0bFNHDDAMNKCG\x18\x08\x20\x03(\x0b2\x0c.ANAJELDHDBHR\x0b\
-    FNHDDAMNKCG\x12\x20\n\x0bMBOBGNPLLOO\x18\t\x20\x01(\rR\x0bMBOBGNPLLOO\
-    \x12!\n\x0ctotal_damage\x18\x0c\x20\x01(\x01R\x0btotalDamage\x12\x20\n\
-    \x0bOBKCFGAJLJJ\x18\x0e\x20\x01(\rR\x0bOBKCFGAJLJJb\x06proto3\
+    DAO\x12\x20\n\x0bMBOBGNPLLOO\x18\x02\x20\x01(\rR\x0bMBOBGNPLLOO\x12!\n\
+    \x0ctotal_damage\x18\x05\x20\x01(\x01R\x0btotalDamage\x12.\n\x0bFNHDDAMN\
+    KCG\x18\x06\x20\x03(\x0b2\x0c.ANAJELDHDBHR\x0bFNHDDAMNKCG\x12.\n\x0bHFHJ\
+    GBHHBKM\x18\n\x20\x03(\x0b2\x0c.ANAJELDHDBHR\x0bHFHJGBHHBKM\x12\x20\n\
+    \x0bOBKCFGAJLJJ\x18\x0c\x20\x01(\rR\x0bOBKCFGAJLJJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -45,7 +45,7 @@ impl HJCAJKHNCDH {
         ::std::default::Default::default()
     }
 
-    // .AFCBKJEFKPG AIGPJLHBNEH = 9;
+    // .AFCBKJEFKPG AIGPJLHBNEH = 15;
 
     pub fn AIGPJLHBNEH(&self) -> &super::AFCBKJEFKPG::AFCBKJEFKPG {
         match self.MNLCHEJKDHO {
@@ -94,7 +94,7 @@ impl HJCAJKHNCDH {
         }
     }
 
-    // .AFCBKJEFKPG JNIOBAPDKLN = 3;
+    // .AFCBKJEFKPG JNIOBAPDKLN = 5;
 
     pub fn JNIOBAPDKLN(&self) -> &super::AFCBKJEFKPG::AFCBKJEFKPG {
         match self.MNLCHEJKDHO {
@@ -143,7 +143,7 @@ impl HJCAJKHNCDH {
         }
     }
 
-    // uint32 MLAGBPIANKG = 1;
+    // uint32 MLAGBPIANKG = 3;
 
     pub fn MLAGBPIANKG(&self) -> u32 {
         match self.MNLCHEJKDHO {
@@ -210,13 +210,13 @@ impl ::protobuf::Message for HJCAJKHNCDH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                122 => {
                     self.MNLCHEJKDHO = ::std::option::Option::Some(hjcajkhncdh::MNLCHEJKDHO::AIGPJLHBNEH(is.read_message()?));
                 },
-                26 => {
+                42 => {
                     self.MNLCHEJKDHO = ::std::option::Option::Some(hjcajkhncdh::MNLCHEJKDHO::JNIOBAPDKLN(is.read_message()?));
                 },
-                8 => {
+                24 => {
                     self.MNLCHEJKDHO = ::std::option::Option::Some(hjcajkhncdh::MNLCHEJKDHO::MLAGBPIANKG(is.read_uint32()?));
                 },
                 tag => {
@@ -242,7 +242,7 @@ impl ::protobuf::Message for HJCAJKHNCDH {
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &hjcajkhncdh::MNLCHEJKDHO::MLAGBPIANKG(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1, v);
+                    my_size += ::protobuf::rt::uint32_size(3, v);
                 },
             };
         }
@@ -255,13 +255,13 @@ impl ::protobuf::Message for HJCAJKHNCDH {
         if let ::std::option::Option::Some(ref v) = self.MNLCHEJKDHO {
             match v {
                 &hjcajkhncdh::MNLCHEJKDHO::AIGPJLHBNEH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
                 &hjcajkhncdh::MNLCHEJKDHO::JNIOBAPDKLN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
                 &hjcajkhncdh::MNLCHEJKDHO::MLAGBPIANKG(v) => {
-                    os.write_uint32(1, v)?;
+                    os.write_uint32(3, v)?;
                 },
             };
         }
@@ -348,10 +348,10 @@ pub mod hjcajkhncdh {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HJCAJKHNCDH.proto\x1a\x11AFCBKJEFKPG.proto\"\xa4\x01\n\x0bHJCAJKHN\
-    CDH\x120\n\x0bAIGPJLHBNEH\x18\t\x20\x01(\x0b2\x0c.AFCBKJEFKPGH\0R\x0bAIG\
-    PJLHBNEH\x120\n\x0bJNIOBAPDKLN\x18\x03\x20\x01(\x0b2\x0c.AFCBKJEFKPGH\0R\
-    \x0bJNIOBAPDKLN\x12\"\n\x0bMLAGBPIANKG\x18\x01\x20\x01(\rH\0R\x0bMLAGBPI\
-    ANKGB\r\n\x0bMNLCHEJKDHOb\x06proto3\
+    CDH\x120\n\x0bAIGPJLHBNEH\x18\x0f\x20\x01(\x0b2\x0c.AFCBKJEFKPGH\0R\x0bA\
+    IGPJLHBNEH\x120\n\x0bJNIOBAPDKLN\x18\x05\x20\x01(\x0b2\x0c.AFCBKJEFKPGH\
+    \0R\x0bJNIOBAPDKLN\x12\"\n\x0bMLAGBPIANKG\x18\x03\x20\x01(\rH\0R\x0bMLAG\
+    BPIANKGB\r\n\x0bMNLCHEJKDHOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

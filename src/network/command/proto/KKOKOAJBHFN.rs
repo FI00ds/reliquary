@@ -48,8 +48,8 @@ pub struct KKOKOAJBHFN {
     pub COGGJELNFCN: ::protobuf::MessageField<super::CKODNPNBOEN::CKODNPNBOEN>,
     // @@protoc_insertion_point(field:KKOKOAJBHFN.IDBGCLFLCGE)
     pub IDBGCLFLCGE: ::protobuf::MessageField<super::CKODNPNBOEN::CKODNPNBOEN>,
-    // @@protoc_insertion_point(field:KKOKOAJBHFN.result)
-    pub result: u32,
+    // @@protoc_insertion_point(field:KKOKOAJBHFN.JCHFCNFHCMM)
+    pub JCHFCNFHCMM: u32,
     // @@protoc_insertion_point(field:KKOKOAJBHFN.OLIIDBMFHCH)
     pub OLIIDBMFHCH: ::protobuf::MessageField<super::HLMNDLOMPKP::HLMNDLOMPKP>,
     // @@protoc_insertion_point(field:KKOKOAJBHFN.CDHIEPDFEIB)
@@ -128,9 +128,9 @@ impl KKOKOAJBHFN {
             |m: &mut KKOKOAJBHFN| { &mut m.IDBGCLFLCGE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "result",
-            |m: &KKOKOAJBHFN| { &m.result },
-            |m: &mut KKOKOAJBHFN| { &mut m.result },
+            "JCHFCNFHCMM",
+            |m: &KKOKOAJBHFN| { &m.JCHFCNFHCMM },
+            |m: &mut KKOKOAJBHFN| { &mut m.JCHFCNFHCMM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HLMNDLOMPKP::HLMNDLOMPKP>(
             "OLIIDBMFHCH",
@@ -204,7 +204,7 @@ impl ::protobuf::Message for KKOKOAJBHFN {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.IDBGCLFLCGE)?;
                 },
                 88 => {
-                    self.result = is.read_uint32()?;
+                    self.JCHFCNFHCMM = is.read_uint32()?;
                 },
                 98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OLIIDBMFHCH)?;
@@ -260,8 +260,8 @@ impl ::protobuf::Message for KKOKOAJBHFN {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.result != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.result);
+        if self.JCHFCNFHCMM != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.JCHFCNFHCMM);
         }
         if let Some(v) = self.OLIIDBMFHCH.as_ref() {
             let len = v.compute_size();
@@ -311,8 +311,8 @@ impl ::protobuf::Message for KKOKOAJBHFN {
         if let Some(v) = self.IDBGCLFLCGE.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        if self.result != 0 {
-            os.write_uint32(11, self.result)?;
+        if self.JCHFCNFHCMM != 0 {
+            os.write_uint32(11, self.JCHFCNFHCMM)?;
         }
         if let Some(v) = self.OLIIDBMFHCH.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
@@ -353,7 +353,7 @@ impl ::protobuf::Message for KKOKOAJBHFN {
         self.MHBEHHMJHOM.clear();
         self.COGGJELNFCN.clear();
         self.IDBGCLFLCGE.clear();
-        self.result = 0;
+        self.JCHFCNFHCMM = 0;
         self.OLIIDBMFHCH.clear();
         self.CDHIEPDFEIB.clear();
         self.MPHFJHCDEEG = 0;
@@ -373,7 +373,7 @@ impl ::protobuf::Message for KKOKOAJBHFN {
             MHBEHHMJHOM: ::std::vec::Vec::new(),
             COGGJELNFCN: ::protobuf::MessageField::none(),
             IDBGCLFLCGE: ::protobuf::MessageField::none(),
-            result: 0,
+            JCHFCNFHCMM: 0,
             OLIIDBMFHCH: ::protobuf::MessageField::none(),
             CDHIEPDFEIB: ::protobuf::MessageField::none(),
             MPHFJHCDEEG: 0,
@@ -403,7 +403,7 @@ impl ::protobuf::reflect::ProtobufValue for KKOKOAJBHFN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KKOKOAJBHFN.proto\x1a\x11CKODNPNBOEN.proto\x1a\x11HLMNDLOMPKP.prot\
-    o\"\xb9\x04\n\x0bKKOKOAJBHFN\x12\x17\n\x07room_id\x18\x01\x20\x01(\x04R\
+    o\"\xc3\x04\n\x0bKKOKOAJBHFN\x12\x17\n\x07room_id\x18\x01\x20\x01(\x04R\
     \x06roomId\x12\x20\n\x0bGLHKJMBKKPI\x18\x02\x20\x01(\rR\x0bGLHKJMBKKPI\
     \x12\x20\n\x0bGAENFKKAKOI\x18\x03\x20\x01(\rR\x0bGAENFKKAKOI\x12\x20\n\
     \x0bOOJGMIMJAGC\x18\x04\x20\x01(\rR\x0bOOJGMIMJAGC\x12\x20\n\x0bCJNHAILK\
@@ -412,11 +412,11 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x07\x20\x01(\rR\x0bMMNJJHDBJCI\x12\x20\n\x0bMHBEHHMJHOM\x18\x08\x20\x03\
     (\rR\x0bMHBEHHMJHOM\x12.\n\x0bCOGGJELNFCN\x18\t\x20\x01(\x0b2\x0c.CKODNP\
     NBOENR\x0bCOGGJELNFCN\x12.\n\x0bIDBGCLFLCGE\x18\n\x20\x01(\x0b2\x0c.CKOD\
-    NPNBOENR\x0bIDBGCLFLCGE\x12\x16\n\x06result\x18\x0b\x20\x01(\rR\x06resul\
-    t\x12.\n\x0bOLIIDBMFHCH\x18\x0c\x20\x01(\x0b2\x0c.HLMNDLOMPKPR\x0bOLIIDB\
-    MFHCH\x12.\n\x0bCDHIEPDFEIB\x18\r\x20\x01(\x0b2\x0c.HLMNDLOMPKPR\x0bCDHI\
-    EPDFEIB\x12\x20\n\x0bMPHFJHCDEEG\x18\x0e\x20\x01(\rR\x0bMPHFJHCDEEG\x12\
-    \x1b\n\tcost_time\x18\x0f\x20\x01(\rR\x08costTimeb\x06proto3\
+    NPNBOENR\x0bIDBGCLFLCGE\x12\x20\n\x0bJCHFCNFHCMM\x18\x0b\x20\x01(\rR\x0b\
+    JCHFCNFHCMM\x12.\n\x0bOLIIDBMFHCH\x18\x0c\x20\x01(\x0b2\x0c.HLMNDLOMPKPR\
+    \x0bOLIIDBMFHCH\x12.\n\x0bCDHIEPDFEIB\x18\r\x20\x01(\x0b2\x0c.HLMNDLOMPK\
+    PR\x0bCDHIEPDFEIB\x12\x20\n\x0bMPHFJHCDEEG\x18\x0e\x20\x01(\rR\x0bMPHFJH\
+    CDEEG\x12\x1b\n\tcost_time\x18\x0f\x20\x01(\rR\x08costTimeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

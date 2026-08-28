@@ -79,7 +79,7 @@ impl ::protobuf::Message for GNLBCCHFILK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                32 => {
                     self.BJDEBHMKJBC = is.read_bool()?;
                 },
                 106 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for GNLBCCHFILK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BJDEBHMKJBC != false {
-            os.write_bool(7, self.BJDEBHMKJBC)?;
+            os.write_bool(4, self.BJDEBHMKJBC)?;
         }
         if let Some(v) = self.KDFKDNLNDHN.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for GNLBCCHFILK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GNLBCCHFILK.proto\x1a\x11BDJLHJDPEEK.proto\"_\n\x0bGNLBCCHFILK\x12\
-    \x20\n\x0bBJDEBHMKJBC\x18\x07\x20\x01(\x08R\x0bBJDEBHMKJBC\x12.\n\x0bKDF\
+    \x20\n\x0bBJDEBHMKJBC\x18\x04\x20\x01(\x08R\x0bBJDEBHMKJBC\x12.\n\x0bKDF\
     KDNLNDHN\x18\r\x20\x01(\x0b2\x0c.BDJLHJDPEEKR\x0bKDFKDNLNDHNb\x06proto3\
 ";
 

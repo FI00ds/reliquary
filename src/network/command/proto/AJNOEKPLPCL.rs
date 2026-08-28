@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AJNOEKPLPCL {
     // message fields
-    // @@protoc_insertion_point(field:AJNOEKPLPCL.DNAPFBANFHJ)
-    pub DNAPFBANFHJ: u32,
+    // @@protoc_insertion_point(field:AJNOEKPLPCL.KHGGMKAFFLF)
+    pub KHGGMKAFFLF: u32,
     // @@protoc_insertion_point(field:AJNOEKPLPCL.ICKJKIENKFI)
     pub ICKJKIENKFI: u32,
-    // @@protoc_insertion_point(field:AJNOEKPLPCL.MJIPOJPBKNB)
-    pub MJIPOJPBKNB: bool,
-    // @@protoc_insertion_point(field:AJNOEKPLPCL.cur_layer)
-    pub cur_layer: u32,
-    // @@protoc_insertion_point(field:AJNOEKPLPCL.FMCPHDJEIDC)
-    pub FMCPHDJEIDC: u32,
-    // @@protoc_insertion_point(field:AJNOEKPLPCL.PKKDALHLCLA)
-    pub PKKDALHLCLA: u32,
     // @@protoc_insertion_point(field:AJNOEKPLPCL.IEOGEFBLNEL)
     pub IEOGEFBLNEL: u32,
+    // @@protoc_insertion_point(field:AJNOEKPLPCL.PKKDALHLCLA)
+    pub PKKDALHLCLA: u32,
+    // @@protoc_insertion_point(field:AJNOEKPLPCL.DNAPFBANFHJ)
+    pub DNAPFBANFHJ: u32,
+    // @@protoc_insertion_point(field:AJNOEKPLPCL.MJIPOJPBKNB)
+    pub MJIPOJPBKNB: bool,
+    // @@protoc_insertion_point(field:AJNOEKPLPCL.FMCPHDJEIDC)
+    pub FMCPHDJEIDC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AJNOEKPLPCL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,9 +62,9 @@ impl AJNOEKPLPCL {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNAPFBANFHJ",
-            |m: &AJNOEKPLPCL| { &m.DNAPFBANFHJ },
-            |m: &mut AJNOEKPLPCL| { &mut m.DNAPFBANFHJ },
+            "KHGGMKAFFLF",
+            |m: &AJNOEKPLPCL| { &m.KHGGMKAFFLF },
+            |m: &mut AJNOEKPLPCL| { &mut m.KHGGMKAFFLF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ICKJKIENKFI",
@@ -72,19 +72,9 @@ impl AJNOEKPLPCL {
             |m: &mut AJNOEKPLPCL| { &mut m.ICKJKIENKFI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MJIPOJPBKNB",
-            |m: &AJNOEKPLPCL| { &m.MJIPOJPBKNB },
-            |m: &mut AJNOEKPLPCL| { &mut m.MJIPOJPBKNB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_layer",
-            |m: &AJNOEKPLPCL| { &m.cur_layer },
-            |m: &mut AJNOEKPLPCL| { &mut m.cur_layer },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FMCPHDJEIDC",
-            |m: &AJNOEKPLPCL| { &m.FMCPHDJEIDC },
-            |m: &mut AJNOEKPLPCL| { &mut m.FMCPHDJEIDC },
+            "IEOGEFBLNEL",
+            |m: &AJNOEKPLPCL| { &m.IEOGEFBLNEL },
+            |m: &mut AJNOEKPLPCL| { &mut m.IEOGEFBLNEL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PKKDALHLCLA",
@@ -92,9 +82,19 @@ impl AJNOEKPLPCL {
             |m: &mut AJNOEKPLPCL| { &mut m.PKKDALHLCLA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IEOGEFBLNEL",
-            |m: &AJNOEKPLPCL| { &m.IEOGEFBLNEL },
-            |m: &mut AJNOEKPLPCL| { &mut m.IEOGEFBLNEL },
+            "DNAPFBANFHJ",
+            |m: &AJNOEKPLPCL| { &m.DNAPFBANFHJ },
+            |m: &mut AJNOEKPLPCL| { &mut m.DNAPFBANFHJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MJIPOJPBKNB",
+            |m: &AJNOEKPLPCL| { &m.MJIPOJPBKNB },
+            |m: &mut AJNOEKPLPCL| { &mut m.MJIPOJPBKNB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FMCPHDJEIDC",
+            |m: &AJNOEKPLPCL| { &m.FMCPHDJEIDC },
+            |m: &mut AJNOEKPLPCL| { &mut m.FMCPHDJEIDC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AJNOEKPLPCL>(
             "AJNOEKPLPCL",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for AJNOEKPLPCL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.DNAPFBANFHJ = is.read_uint32()?;
+                8 => {
+                    self.KHGGMKAFFLF = is.read_uint32()?;
                 },
-                32 => {
+                24 => {
                     self.ICKJKIENKFI = is.read_uint32()?;
                 },
-                48 => {
-                    self.MJIPOJPBKNB = is.read_bool()?;
+                32 => {
+                    self.IEOGEFBLNEL = is.read_uint32()?;
                 },
-                56 => {
-                    self.cur_layer = is.read_uint32()?;
-                },
-                64 => {
-                    self.FMCPHDJEIDC = is.read_uint32()?;
-                },
-                112 => {
+                40 => {
                     self.PKKDALHLCLA = is.read_uint32()?;
                 },
+                48 => {
+                    self.DNAPFBANFHJ = is.read_uint32()?;
+                },
+                56 => {
+                    self.MJIPOJPBKNB = is.read_bool()?;
+                },
                 120 => {
-                    self.IEOGEFBLNEL = is.read_uint32()?;
+                    self.FMCPHDJEIDC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,26 +147,26 @@ impl ::protobuf::Message for AJNOEKPLPCL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DNAPFBANFHJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.DNAPFBANFHJ);
+        if self.KHGGMKAFFLF != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.KHGGMKAFFLF);
         }
         if self.ICKJKIENKFI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.ICKJKIENKFI);
+            my_size += ::protobuf::rt::uint32_size(3, self.ICKJKIENKFI);
+        }
+        if self.IEOGEFBLNEL != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.IEOGEFBLNEL);
+        }
+        if self.PKKDALHLCLA != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.PKKDALHLCLA);
+        }
+        if self.DNAPFBANFHJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.DNAPFBANFHJ);
         }
         if self.MJIPOJPBKNB != false {
             my_size += 1 + 1;
         }
-        if self.cur_layer != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.cur_layer);
-        }
         if self.FMCPHDJEIDC != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.FMCPHDJEIDC);
-        }
-        if self.PKKDALHLCLA != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.PKKDALHLCLA);
-        }
-        if self.IEOGEFBLNEL != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.IEOGEFBLNEL);
+            my_size += ::protobuf::rt::uint32_size(15, self.FMCPHDJEIDC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -174,26 +174,26 @@ impl ::protobuf::Message for AJNOEKPLPCL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DNAPFBANFHJ != 0 {
-            os.write_uint32(3, self.DNAPFBANFHJ)?;
+        if self.KHGGMKAFFLF != 0 {
+            os.write_uint32(1, self.KHGGMKAFFLF)?;
         }
         if self.ICKJKIENKFI != 0 {
-            os.write_uint32(4, self.ICKJKIENKFI)?;
-        }
-        if self.MJIPOJPBKNB != false {
-            os.write_bool(6, self.MJIPOJPBKNB)?;
-        }
-        if self.cur_layer != 0 {
-            os.write_uint32(7, self.cur_layer)?;
-        }
-        if self.FMCPHDJEIDC != 0 {
-            os.write_uint32(8, self.FMCPHDJEIDC)?;
-        }
-        if self.PKKDALHLCLA != 0 {
-            os.write_uint32(14, self.PKKDALHLCLA)?;
+            os.write_uint32(3, self.ICKJKIENKFI)?;
         }
         if self.IEOGEFBLNEL != 0 {
-            os.write_uint32(15, self.IEOGEFBLNEL)?;
+            os.write_uint32(4, self.IEOGEFBLNEL)?;
+        }
+        if self.PKKDALHLCLA != 0 {
+            os.write_uint32(5, self.PKKDALHLCLA)?;
+        }
+        if self.DNAPFBANFHJ != 0 {
+            os.write_uint32(6, self.DNAPFBANFHJ)?;
+        }
+        if self.MJIPOJPBKNB != false {
+            os.write_bool(7, self.MJIPOJPBKNB)?;
+        }
+        if self.FMCPHDJEIDC != 0 {
+            os.write_uint32(15, self.FMCPHDJEIDC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -212,25 +212,25 @@ impl ::protobuf::Message for AJNOEKPLPCL {
     }
 
     fn clear(&mut self) {
-        self.DNAPFBANFHJ = 0;
+        self.KHGGMKAFFLF = 0;
         self.ICKJKIENKFI = 0;
-        self.MJIPOJPBKNB = false;
-        self.cur_layer = 0;
-        self.FMCPHDJEIDC = 0;
-        self.PKKDALHLCLA = 0;
         self.IEOGEFBLNEL = 0;
+        self.PKKDALHLCLA = 0;
+        self.DNAPFBANFHJ = 0;
+        self.MJIPOJPBKNB = false;
+        self.FMCPHDJEIDC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AJNOEKPLPCL {
         static instance: AJNOEKPLPCL = AJNOEKPLPCL {
-            DNAPFBANFHJ: 0,
+            KHGGMKAFFLF: 0,
             ICKJKIENKFI: 0,
-            MJIPOJPBKNB: false,
-            cur_layer: 0,
-            FMCPHDJEIDC: 0,
-            PKKDALHLCLA: 0,
             IEOGEFBLNEL: 0,
+            PKKDALHLCLA: 0,
+            DNAPFBANFHJ: 0,
+            MJIPOJPBKNB: false,
+            FMCPHDJEIDC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -255,13 +255,13 @@ impl ::protobuf::reflect::ProtobufValue for AJNOEKPLPCL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AJNOEKPLPCL.proto\"\xf6\x01\n\x0bAJNOEKPLPCL\x12\x20\n\x0bDNAPFBAN\
-    FHJ\x18\x03\x20\x01(\rR\x0bDNAPFBANFHJ\x12\x20\n\x0bICKJKIENKFI\x18\x04\
-    \x20\x01(\rR\x0bICKJKIENKFI\x12\x20\n\x0bMJIPOJPBKNB\x18\x06\x20\x01(\
-    \x08R\x0bMJIPOJPBKNB\x12\x1b\n\tcur_layer\x18\x07\x20\x01(\rR\x08curLaye\
-    r\x12\x20\n\x0bFMCPHDJEIDC\x18\x08\x20\x01(\rR\x0bFMCPHDJEIDC\x12\x20\n\
-    \x0bPKKDALHLCLA\x18\x0e\x20\x01(\rR\x0bPKKDALHLCLA\x12\x20\n\x0bIEOGEFBL\
-    NEL\x18\x0f\x20\x01(\rR\x0bIEOGEFBLNELb\x06proto3\
+    \n\x11AJNOEKPLPCL.proto\"\xfb\x01\n\x0bAJNOEKPLPCL\x12\x20\n\x0bKHGGMKAF\
+    FLF\x18\x01\x20\x01(\rR\x0bKHGGMKAFFLF\x12\x20\n\x0bICKJKIENKFI\x18\x03\
+    \x20\x01(\rR\x0bICKJKIENKFI\x12\x20\n\x0bIEOGEFBLNEL\x18\x04\x20\x01(\rR\
+    \x0bIEOGEFBLNEL\x12\x20\n\x0bPKKDALHLCLA\x18\x05\x20\x01(\rR\x0bPKKDALHL\
+    CLA\x12\x20\n\x0bDNAPFBANFHJ\x18\x06\x20\x01(\rR\x0bDNAPFBANFHJ\x12\x20\
+    \n\x0bMJIPOJPBKNB\x18\x07\x20\x01(\x08R\x0bMJIPOJPBKNB\x12\x20\n\x0bFMCP\
+    HDJEIDC\x18\x0f\x20\x01(\rR\x0bFMCPHDJEIDCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

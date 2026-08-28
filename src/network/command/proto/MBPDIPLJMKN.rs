@@ -27,9 +27,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 // @@protoc_insertion_point(message:MBPDIPLJMKN)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MBPDIPLJMKN {
-    // message fields
-    // @@protoc_insertion_point(field:MBPDIPLJMKN.GGMPEGMEHPD)
-    pub GGMPEGMEHPD: ::protobuf::MessageField<super::ELGLKEAPLGM::ELGLKEAPLGM>,
+    // message oneof groups
+    pub OFJBCEDFLKL: ::std::option::Option<mbpdipljmkn::OFJBCEDFLKL>,
     // special fields
     // @@protoc_insertion_point(special_field:MBPDIPLJMKN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -46,14 +45,66 @@ impl MBPDIPLJMKN {
         ::std::default::Default::default()
     }
 
+    // .ELGLKEAPLGM GGMPEGMEHPD = 5;
+
+    pub fn GGMPEGMEHPD(&self) -> &super::ELGLKEAPLGM::ELGLKEAPLGM {
+        match self.OFJBCEDFLKL {
+            ::std::option::Option::Some(mbpdipljmkn::OFJBCEDFLKL::GGMPEGMEHPD(ref v)) => v,
+            _ => <super::ELGLKEAPLGM::ELGLKEAPLGM as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_GGMPEGMEHPD(&mut self) {
+        self.OFJBCEDFLKL = ::std::option::Option::None;
+    }
+
+    pub fn has_GGMPEGMEHPD(&self) -> bool {
+        match self.OFJBCEDFLKL {
+            ::std::option::Option::Some(mbpdipljmkn::OFJBCEDFLKL::GGMPEGMEHPD(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_GGMPEGMEHPD(&mut self, v: super::ELGLKEAPLGM::ELGLKEAPLGM) {
+        self.OFJBCEDFLKL = ::std::option::Option::Some(mbpdipljmkn::OFJBCEDFLKL::GGMPEGMEHPD(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_GGMPEGMEHPD(&mut self) -> &mut super::ELGLKEAPLGM::ELGLKEAPLGM {
+        if let ::std::option::Option::Some(mbpdipljmkn::OFJBCEDFLKL::GGMPEGMEHPD(_)) = self.OFJBCEDFLKL {
+        } else {
+            self.OFJBCEDFLKL = ::std::option::Option::Some(mbpdipljmkn::OFJBCEDFLKL::GGMPEGMEHPD(super::ELGLKEAPLGM::ELGLKEAPLGM::new()));
+        }
+        match self.OFJBCEDFLKL {
+            ::std::option::Option::Some(mbpdipljmkn::OFJBCEDFLKL::GGMPEGMEHPD(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_GGMPEGMEHPD(&mut self) -> super::ELGLKEAPLGM::ELGLKEAPLGM {
+        if self.has_GGMPEGMEHPD() {
+            match self.OFJBCEDFLKL.take() {
+                ::std::option::Option::Some(mbpdipljmkn::OFJBCEDFLKL::GGMPEGMEHPD(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::ELGLKEAPLGM::ELGLKEAPLGM::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
-        let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ELGLKEAPLGM::ELGLKEAPLGM>(
+        let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ELGLKEAPLGM::ELGLKEAPLGM>(
             "GGMPEGMEHPD",
-            |m: &MBPDIPLJMKN| { &m.GGMPEGMEHPD },
-            |m: &mut MBPDIPLJMKN| { &mut m.GGMPEGMEHPD },
+            MBPDIPLJMKN::has_GGMPEGMEHPD,
+            MBPDIPLJMKN::GGMPEGMEHPD,
+            MBPDIPLJMKN::mut_GGMPEGMEHPD,
+            MBPDIPLJMKN::set_GGMPEGMEHPD,
         ));
+        oneofs.push(mbpdipljmkn::OFJBCEDFLKL::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MBPDIPLJMKN>(
             "MBPDIPLJMKN",
             fields,
@@ -72,8 +123,8 @@ impl ::protobuf::Message for MBPDIPLJMKN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GGMPEGMEHPD)?;
+                42 => {
+                    self.OFJBCEDFLKL = ::std::option::Option::Some(mbpdipljmkn::OFJBCEDFLKL::GGMPEGMEHPD(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,9 +138,13 @@ impl ::protobuf::Message for MBPDIPLJMKN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.GGMPEGMEHPD.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if let ::std::option::Option::Some(ref v) = self.OFJBCEDFLKL {
+            match v {
+                &mbpdipljmkn::OFJBCEDFLKL::GGMPEGMEHPD(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+            };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +152,12 @@ impl ::protobuf::Message for MBPDIPLJMKN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.GGMPEGMEHPD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let ::std::option::Option::Some(ref v) = self.OFJBCEDFLKL {
+            match v {
+                &mbpdipljmkn::OFJBCEDFLKL::GGMPEGMEHPD(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                },
+            };
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +176,13 @@ impl ::protobuf::Message for MBPDIPLJMKN {
     }
 
     fn clear(&mut self) {
-        self.GGMPEGMEHPD.clear();
+        self.OFJBCEDFLKL = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MBPDIPLJMKN {
         static instance: MBPDIPLJMKN = MBPDIPLJMKN {
-            GGMPEGMEHPD: ::protobuf::MessageField::none(),
+            OFJBCEDFLKL: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,10 +206,38 @@ impl ::protobuf::reflect::ProtobufValue for MBPDIPLJMKN {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
+/// Nested message and enums of message `MBPDIPLJMKN`
+pub mod mbpdipljmkn {
+
+    #[derive(Clone,PartialEq,Debug)]
+    #[non_exhaustive]
+    // @@protoc_insertion_point(oneof:MBPDIPLJMKN.OFJBCEDFLKL)
+    pub enum OFJBCEDFLKL {
+        // @@protoc_insertion_point(oneof_field:MBPDIPLJMKN.GGMPEGMEHPD)
+        GGMPEGMEHPD(super::super::ELGLKEAPLGM::ELGLKEAPLGM),
+    }
+
+    impl ::protobuf::Oneof for OFJBCEDFLKL {
+    }
+
+    impl ::protobuf::OneofFull for OFJBCEDFLKL {
+        fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
+            static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
+            descriptor.get(|| <super::MBPDIPLJMKN as ::protobuf::MessageFull>::descriptor().oneof_by_name("OFJBCEDFLKL").unwrap()).clone()
+        }
+    }
+
+    impl OFJBCEDFLKL {
+        pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<OFJBCEDFLKL>("OFJBCEDFLKL")
+        }
+    }
+}
+
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MBPDIPLJMKN.proto\x1a\x11ELGLKEAPLGM.proto\"=\n\x0bMBPDIPLJMKN\x12\
-    .\n\x0bGGMPEGMEHPD\x18\x08\x20\x01(\x0b2\x0c.ELGLKEAPLGMR\x0bGGMPEGMEHPD\
-    b\x06proto3\
+    \n\x11MBPDIPLJMKN.proto\x1a\x11ELGLKEAPLGM.proto\"N\n\x0bMBPDIPLJMKN\x12\
+    0\n\x0bGGMPEGMEHPD\x18\x05\x20\x01(\x0b2\x0c.ELGLKEAPLGMH\0R\x0bGGMPEGME\
+    HPDB\r\n\x0bOFJBCEDFLKLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

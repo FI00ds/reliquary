@@ -34,8 +34,8 @@ pub struct MDGIOENHBEJ {
     pub OAPACMJOIKC: ::std::string::String,
     // @@protoc_insertion_point(field:MDGIOENHBEJ.ENHLKLFLCKG)
     pub ENHLKLFLCKG: u32,
-    // @@protoc_insertion_point(field:MDGIOENHBEJ.tag)
-    pub tag: ::protobuf::MessageField<super::KKNGAGGAJKC::KKNGAGGAJKC>,
+    // @@protoc_insertion_point(field:MDGIOENHBEJ.NHALJPDONCP)
+    pub NHALJPDONCP: ::protobuf::MessageField<super::KKNGAGGAJKC::KKNGAGGAJKC>,
     // special fields
     // @@protoc_insertion_point(special_field:MDGIOENHBEJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -71,9 +71,9 @@ impl MDGIOENHBEJ {
             |m: &mut MDGIOENHBEJ| { &mut m.ENHLKLFLCKG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KKNGAGGAJKC::KKNGAGGAJKC>(
-            "tag",
-            |m: &MDGIOENHBEJ| { &m.tag },
-            |m: &mut MDGIOENHBEJ| { &mut m.tag },
+            "NHALJPDONCP",
+            |m: &MDGIOENHBEJ| { &m.NHALJPDONCP },
+            |m: &mut MDGIOENHBEJ| { &mut m.NHALJPDONCP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MDGIOENHBEJ>(
             "MDGIOENHBEJ",
@@ -103,7 +103,7 @@ impl ::protobuf::Message for MDGIOENHBEJ {
                     self.ENHLKLFLCKG = is.read_uint32()?;
                 },
                 34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.tag)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NHALJPDONCP)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -126,7 +126,7 @@ impl ::protobuf::Message for MDGIOENHBEJ {
         if self.ENHLKLFLCKG != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.ENHLKLFLCKG);
         }
-        if let Some(v) = self.tag.as_ref() {
+        if let Some(v) = self.NHALJPDONCP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -145,7 +145,7 @@ impl ::protobuf::Message for MDGIOENHBEJ {
         if self.ENHLKLFLCKG != 0 {
             os.write_uint32(3, self.ENHLKLFLCKG)?;
         }
-        if let Some(v) = self.tag.as_ref() {
+        if let Some(v) = self.NHALJPDONCP.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -168,7 +168,7 @@ impl ::protobuf::Message for MDGIOENHBEJ {
         self.title.clear();
         self.OAPACMJOIKC.clear();
         self.ENHLKLFLCKG = 0;
-        self.tag.clear();
+        self.NHALJPDONCP.clear();
         self.special_fields.clear();
     }
 
@@ -177,7 +177,7 @@ impl ::protobuf::Message for MDGIOENHBEJ {
             title: ::std::string::String::new(),
             OAPACMJOIKC: ::std::string::String::new(),
             ENHLKLFLCKG: 0,
-            tag: ::protobuf::MessageField::none(),
+            NHALJPDONCP: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for MDGIOENHBEJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MDGIOENHBEJ.proto\x1a\x11KKNGAGGAJKC.proto\"\x87\x01\n\x0bMDGIOENH\
+    \n\x11MDGIOENHBEJ.proto\x1a\x11KKNGAGGAJKC.proto\"\x97\x01\n\x0bMDGIOENH\
     BEJ\x12\x14\n\x05title\x18\x01\x20\x01(\tR\x05title\x12\x20\n\x0bOAPACMJ\
     OIKC\x18\x02\x20\x01(\tR\x0bOAPACMJOIKC\x12\x20\n\x0bENHLKLFLCKG\x18\x03\
-    \x20\x01(\rR\x0bENHLKLFLCKG\x12\x1e\n\x03tag\x18\x04\x20\x01(\x0b2\x0c.K\
-    KNGAGGAJKCR\x03tagb\x06proto3\
+    \x20\x01(\rR\x0bENHLKLFLCKG\x12.\n\x0bNHALJPDONCP\x18\x04\x20\x01(\x0b2\
+    \x0c.KKNGAGGAJKCR\x0bNHALJPDONCPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

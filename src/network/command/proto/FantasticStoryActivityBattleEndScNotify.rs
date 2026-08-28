@@ -86,13 +86,13 @@ impl ::protobuf::Message for FantasticStoryActivityBattleEndScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                40 => {
                     self.battle_id = is.read_uint32()?;
                 },
-                64 => {
+                80 => {
                     self.FHBNGHINHOG = is.read_uint32()?;
                 },
-                80 => {
+                120 => {
                     self.OFHBPNGDEGO = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for FantasticStoryActivityBattleEndScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.battle_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.battle_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.battle_id);
         }
         if self.FHBNGHINHOG != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.FHBNGHINHOG);
+            my_size += ::protobuf::rt::uint32_size(10, self.FHBNGHINHOG);
         }
         if self.OFHBPNGDEGO != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.OFHBPNGDEGO);
+            my_size += ::protobuf::rt::uint32_size(15, self.OFHBPNGDEGO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for FantasticStoryActivityBattleEndScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.battle_id != 0 {
-            os.write_uint32(3, self.battle_id)?;
+            os.write_uint32(5, self.battle_id)?;
         }
         if self.FHBNGHINHOG != 0 {
-            os.write_uint32(8, self.FHBNGHINHOG)?;
+            os.write_uint32(10, self.FHBNGHINHOG)?;
         }
         if self.OFHBPNGDEGO != 0 {
-            os.write_uint32(10, self.OFHBPNGDEGO)?;
+            os.write_uint32(15, self.OFHBPNGDEGO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for FantasticStoryActivityBattleEndScNot
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n-FantasticStoryActivityBattleEndScNotify.proto\"\x8a\x01\n'FantasticSt\
-    oryActivityBattleEndScNotify\x12\x1b\n\tbattle_id\x18\x03\x20\x01(\rR\
-    \x08battleId\x12\x20\n\x0bFHBNGHINHOG\x18\x08\x20\x01(\rR\x0bFHBNGHINHOG\
-    \x12\x20\n\x0bOFHBPNGDEGO\x18\n\x20\x01(\rR\x0bOFHBPNGDEGOb\x06proto3\
+    oryActivityBattleEndScNotify\x12\x1b\n\tbattle_id\x18\x05\x20\x01(\rR\
+    \x08battleId\x12\x20\n\x0bFHBNGHINHOG\x18\n\x20\x01(\rR\x0bFHBNGHINHOG\
+    \x12\x20\n\x0bOFHBPNGDEGO\x18\x0f\x20\x01(\rR\x0bOFHBPNGDEGOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

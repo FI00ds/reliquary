@@ -27,28 +27,28 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:BigDataRecommendType)
 pub enum BigDataRecommendType {
-    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BIG_DATA_RECOMMEND_TYPE_NONE)
-    BIG_DATA_RECOMMEND_TYPE_NONE = 0,
-    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BIG_DATA_RECOMMEND_TYPE_EQUIPMENT)
-    BIG_DATA_RECOMMEND_TYPE_EQUIPMENT = 1,
-    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BIG_DATA_RECOMMEND_TYPE_RELIC_SUIT)
-    BIG_DATA_RECOMMEND_TYPE_RELIC_SUIT = 2,
-    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BIG_DATA_RECOMMEND_TYPE_RELIC_AVATAR)
-    BIG_DATA_RECOMMEND_TYPE_RELIC_AVATAR = 3,
-    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BIG_DATA_RECOMMEND_TYPE_AVATAR_RELIC)
-    BIG_DATA_RECOMMEND_TYPE_AVATAR_RELIC = 4,
-    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BIG_DATA_RECOMMEND_TYPE_LOCAL_LEGEND)
-    BIG_DATA_RECOMMEND_TYPE_LOCAL_LEGEND = 5,
-    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_MOB)
-    BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_MOB = 6,
-    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_BOSS)
-    BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_BOSS = 7,
-    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BIG_DATA_RECOMMEND_TYPE_CHALLENGE)
-    BIG_DATA_RECOMMEND_TYPE_CHALLENGE = 8,
-    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BIG_DATA_RECOMMEND_TYPE_HMFFBIANKBF)
-    BIG_DATA_RECOMMEND_TYPE_HMFFBIANKBF = 9,
-    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BIG_DATA_RECOMMEND_TYPE_IGDNEOELFKC)
-    BIG_DATA_RECOMMEND_TYPE_IGDNEOELFKC = 10,
+    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BigDataRecommendType_NLCDGIPGFDJ)
+    BigDataRecommendType_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BigDataRecommendType_PAGPNOKLNOM)
+    BigDataRecommendType_PAGPNOKLNOM = 1,
+    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BigDataRecommendType_NFNOJNDKNKG)
+    BigDataRecommendType_NFNOJNDKNKG = 2,
+    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BigDataRecommendType_PFKDAPEDKEJ)
+    BigDataRecommendType_PFKDAPEDKEJ = 3,
+    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BigDataRecommendType_CEDKKONBPDG)
+    BigDataRecommendType_CEDKKONBPDG = 4,
+    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BigDataRecommendType_JHOEBNNMKHB)
+    BigDataRecommendType_JHOEBNNMKHB = 5,
+    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BigDataRecommendType_KMDNDLKKDLH)
+    BigDataRecommendType_KMDNDLKKDLH = 6,
+    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BigDataRecommendType_DJKDPGDLLFM)
+    BigDataRecommendType_DJKDPGDLLFM = 7,
+    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BigDataRecommendType_OCDLPDDMCLP)
+    BigDataRecommendType_OCDLPDDMCLP = 8,
+    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BigDataRecommendType_OEAKBCLIHGH)
+    BigDataRecommendType_OEAKBCLIHGH = 9,
+    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BigDataRecommendType_IGDNEOELFKC)
+    BigDataRecommendType_IGDNEOELFKC = 10,
 }
 
 impl ::protobuf::Enum for BigDataRecommendType {
@@ -60,50 +60,50 @@ impl ::protobuf::Enum for BigDataRecommendType {
 
     fn from_i32(value: i32) -> ::std::option::Option<BigDataRecommendType> {
         match value {
-            0 => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE),
-            1 => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_EQUIPMENT),
-            2 => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_RELIC_SUIT),
-            3 => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_RELIC_AVATAR),
-            4 => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_AVATAR_RELIC),
-            5 => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_LOCAL_LEGEND),
-            6 => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_MOB),
-            7 => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_BOSS),
-            8 => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_CHALLENGE),
-            9 => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_HMFFBIANKBF),
-            10 => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_IGDNEOELFKC),
+            0 => ::std::option::Option::Some(BigDataRecommendType::BigDataRecommendType_NLCDGIPGFDJ),
+            1 => ::std::option::Option::Some(BigDataRecommendType::BigDataRecommendType_PAGPNOKLNOM),
+            2 => ::std::option::Option::Some(BigDataRecommendType::BigDataRecommendType_NFNOJNDKNKG),
+            3 => ::std::option::Option::Some(BigDataRecommendType::BigDataRecommendType_PFKDAPEDKEJ),
+            4 => ::std::option::Option::Some(BigDataRecommendType::BigDataRecommendType_CEDKKONBPDG),
+            5 => ::std::option::Option::Some(BigDataRecommendType::BigDataRecommendType_JHOEBNNMKHB),
+            6 => ::std::option::Option::Some(BigDataRecommendType::BigDataRecommendType_KMDNDLKKDLH),
+            7 => ::std::option::Option::Some(BigDataRecommendType::BigDataRecommendType_DJKDPGDLLFM),
+            8 => ::std::option::Option::Some(BigDataRecommendType::BigDataRecommendType_OCDLPDDMCLP),
+            9 => ::std::option::Option::Some(BigDataRecommendType::BigDataRecommendType_OEAKBCLIHGH),
+            10 => ::std::option::Option::Some(BigDataRecommendType::BigDataRecommendType_IGDNEOELFKC),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<BigDataRecommendType> {
         match str {
-            "BIG_DATA_RECOMMEND_TYPE_NONE" => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE),
-            "BIG_DATA_RECOMMEND_TYPE_EQUIPMENT" => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_EQUIPMENT),
-            "BIG_DATA_RECOMMEND_TYPE_RELIC_SUIT" => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_RELIC_SUIT),
-            "BIG_DATA_RECOMMEND_TYPE_RELIC_AVATAR" => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_RELIC_AVATAR),
-            "BIG_DATA_RECOMMEND_TYPE_AVATAR_RELIC" => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_AVATAR_RELIC),
-            "BIG_DATA_RECOMMEND_TYPE_LOCAL_LEGEND" => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_LOCAL_LEGEND),
-            "BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_MOB" => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_MOB),
-            "BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_BOSS" => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_BOSS),
-            "BIG_DATA_RECOMMEND_TYPE_CHALLENGE" => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_CHALLENGE),
-            "BIG_DATA_RECOMMEND_TYPE_HMFFBIANKBF" => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_HMFFBIANKBF),
-            "BIG_DATA_RECOMMEND_TYPE_IGDNEOELFKC" => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_IGDNEOELFKC),
+            "BigDataRecommendType_NLCDGIPGFDJ" => ::std::option::Option::Some(BigDataRecommendType::BigDataRecommendType_NLCDGIPGFDJ),
+            "BigDataRecommendType_PAGPNOKLNOM" => ::std::option::Option::Some(BigDataRecommendType::BigDataRecommendType_PAGPNOKLNOM),
+            "BigDataRecommendType_NFNOJNDKNKG" => ::std::option::Option::Some(BigDataRecommendType::BigDataRecommendType_NFNOJNDKNKG),
+            "BigDataRecommendType_PFKDAPEDKEJ" => ::std::option::Option::Some(BigDataRecommendType::BigDataRecommendType_PFKDAPEDKEJ),
+            "BigDataRecommendType_CEDKKONBPDG" => ::std::option::Option::Some(BigDataRecommendType::BigDataRecommendType_CEDKKONBPDG),
+            "BigDataRecommendType_JHOEBNNMKHB" => ::std::option::Option::Some(BigDataRecommendType::BigDataRecommendType_JHOEBNNMKHB),
+            "BigDataRecommendType_KMDNDLKKDLH" => ::std::option::Option::Some(BigDataRecommendType::BigDataRecommendType_KMDNDLKKDLH),
+            "BigDataRecommendType_DJKDPGDLLFM" => ::std::option::Option::Some(BigDataRecommendType::BigDataRecommendType_DJKDPGDLLFM),
+            "BigDataRecommendType_OCDLPDDMCLP" => ::std::option::Option::Some(BigDataRecommendType::BigDataRecommendType_OCDLPDDMCLP),
+            "BigDataRecommendType_OEAKBCLIHGH" => ::std::option::Option::Some(BigDataRecommendType::BigDataRecommendType_OEAKBCLIHGH),
+            "BigDataRecommendType_IGDNEOELFKC" => ::std::option::Option::Some(BigDataRecommendType::BigDataRecommendType_IGDNEOELFKC),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [BigDataRecommendType] = &[
-        BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE,
-        BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_EQUIPMENT,
-        BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_RELIC_SUIT,
-        BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_RELIC_AVATAR,
-        BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_AVATAR_RELIC,
-        BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_LOCAL_LEGEND,
-        BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_MOB,
-        BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_BOSS,
-        BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_CHALLENGE,
-        BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_HMFFBIANKBF,
-        BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_IGDNEOELFKC,
+        BigDataRecommendType::BigDataRecommendType_NLCDGIPGFDJ,
+        BigDataRecommendType::BigDataRecommendType_PAGPNOKLNOM,
+        BigDataRecommendType::BigDataRecommendType_NFNOJNDKNKG,
+        BigDataRecommendType::BigDataRecommendType_PFKDAPEDKEJ,
+        BigDataRecommendType::BigDataRecommendType_CEDKKONBPDG,
+        BigDataRecommendType::BigDataRecommendType_JHOEBNNMKHB,
+        BigDataRecommendType::BigDataRecommendType_KMDNDLKKDLH,
+        BigDataRecommendType::BigDataRecommendType_DJKDPGDLLFM,
+        BigDataRecommendType::BigDataRecommendType_OCDLPDDMCLP,
+        BigDataRecommendType::BigDataRecommendType_OEAKBCLIHGH,
+        BigDataRecommendType::BigDataRecommendType_IGDNEOELFKC,
     ];
 }
 
@@ -121,7 +121,7 @@ impl ::protobuf::EnumFull for BigDataRecommendType {
 
 impl ::std::default::Default for BigDataRecommendType {
     fn default() -> Self {
-        BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE
+        BigDataRecommendType::BigDataRecommendType_NLCDGIPGFDJ
     }
 }
 
@@ -132,16 +132,15 @@ impl BigDataRecommendType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aBigDataRecommendType.proto*\xdf\x03\n\x14BigDataRecommendType\x12\
-    \x20\n\x1cBIG_DATA_RECOMMEND_TYPE_NONE\x10\0\x12%\n!BIG_DATA_RECOMMEND_T\
-    YPE_EQUIPMENT\x10\x01\x12&\n\"BIG_DATA_RECOMMEND_TYPE_RELIC_SUIT\x10\x02\
-    \x12(\n$BIG_DATA_RECOMMEND_TYPE_RELIC_AVATAR\x10\x03\x12(\n$BIG_DATA_REC\
-    OMMEND_TYPE_AVATAR_RELIC\x10\x04\x12(\n$BIG_DATA_RECOMMEND_TYPE_LOCAL_LE\
-    GEND\x10\x05\x12.\n*BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_MOB\x10\x06\
-    \x12/\n+BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_BOSS\x10\x07\x12%\n!BIG_D\
-    ATA_RECOMMEND_TYPE_CHALLENGE\x10\x08\x12'\n#BIG_DATA_RECOMMEND_TYPE_HMFF\
-    BIANKBF\x10\t\x12'\n#BIG_DATA_RECOMMEND_TYPE_IGDNEOELFKC\x10\nb\x06proto\
-    3\
+    \n\x1aBigDataRecommendType.proto*\xb8\x03\n\x14BigDataRecommendType\x12$\
+    \n\x20BigDataRecommendType_NLCDGIPGFDJ\x10\0\x12$\n\x20BigDataRecommendT\
+    ype_PAGPNOKLNOM\x10\x01\x12$\n\x20BigDataRecommendType_NFNOJNDKNKG\x10\
+    \x02\x12$\n\x20BigDataRecommendType_PFKDAPEDKEJ\x10\x03\x12$\n\x20BigDat\
+    aRecommendType_CEDKKONBPDG\x10\x04\x12$\n\x20BigDataRecommendType_JHOEBN\
+    NMKHB\x10\x05\x12$\n\x20BigDataRecommendType_KMDNDLKKDLH\x10\x06\x12$\n\
+    \x20BigDataRecommendType_DJKDPGDLLFM\x10\x07\x12$\n\x20BigDataRecommendT\
+    ype_OCDLPDDMCLP\x10\x08\x12$\n\x20BigDataRecommendType_OEAKBCLIHGH\x10\t\
+    \x12$\n\x20BigDataRecommendType_IGDNEOELFKC\x10\nb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -46,8 +46,8 @@ pub struct HPOLJGDGOEI {
     pub COGGJELNFCN: ::protobuf::MessageField<super::CKODNPNBOEN::CKODNPNBOEN>,
     // @@protoc_insertion_point(field:HPOLJGDGOEI.FAOOHIBOJNE)
     pub FAOOHIBOJNE: ::protobuf::MessageField<super::CKODNPNBOEN::CKODNPNBOEN>,
-    // @@protoc_insertion_point(field:HPOLJGDGOEI.result)
-    pub result: u32,
+    // @@protoc_insertion_point(field:HPOLJGDGOEI.JCHFCNFHCMM)
+    pub JCHFCNFHCMM: u32,
     // @@protoc_insertion_point(field:HPOLJGDGOEI.COFIBFHADAO)
     pub COFIBFHADAO: ::protobuf::MessageField<super::EFBNNINLDMM::EFBNNINLDMM>,
     // @@protoc_insertion_point(field:HPOLJGDGOEI.IHHECACIABO)
@@ -125,9 +125,9 @@ impl HPOLJGDGOEI {
             |m: &mut HPOLJGDGOEI| { &mut m.FAOOHIBOJNE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "result",
-            |m: &HPOLJGDGOEI| { &m.result },
-            |m: &mut HPOLJGDGOEI| { &mut m.result },
+            "JCHFCNFHCMM",
+            |m: &HPOLJGDGOEI| { &m.JCHFCNFHCMM },
+            |m: &mut HPOLJGDGOEI| { &mut m.JCHFCNFHCMM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EFBNNINLDMM::EFBNNINLDMM>(
             "COFIBFHADAO",
@@ -208,7 +208,7 @@ impl ::protobuf::Message for HPOLJGDGOEI {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FAOOHIBOJNE)?;
                 },
                 88 => {
-                    self.result = is.read_uint32()?;
+                    self.JCHFCNFHCMM = is.read_uint32()?;
                 },
                 98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.COFIBFHADAO)?;
@@ -267,8 +267,8 @@ impl ::protobuf::Message for HPOLJGDGOEI {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.result != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.result);
+        if self.JCHFCNFHCMM != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.JCHFCNFHCMM);
         }
         if let Some(v) = self.COFIBFHADAO.as_ref() {
             let len = v.compute_size();
@@ -321,8 +321,8 @@ impl ::protobuf::Message for HPOLJGDGOEI {
         if let Some(v) = self.FAOOHIBOJNE.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        if self.result != 0 {
-            os.write_uint32(11, self.result)?;
+        if self.JCHFCNFHCMM != 0 {
+            os.write_uint32(11, self.JCHFCNFHCMM)?;
         }
         if let Some(v) = self.COFIBFHADAO.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
@@ -368,7 +368,7 @@ impl ::protobuf::Message for HPOLJGDGOEI {
         self.MHBEHHMJHOM.clear();
         self.COGGJELNFCN.clear();
         self.FAOOHIBOJNE.clear();
-        self.result = 0;
+        self.JCHFCNFHCMM = 0;
         self.COFIBFHADAO.clear();
         self.IHHECACIABO.clear();
         self.score_id = 0;
@@ -389,7 +389,7 @@ impl ::protobuf::Message for HPOLJGDGOEI {
             MHBEHHMJHOM: ::std::vec::Vec::new(),
             COGGJELNFCN: ::protobuf::MessageField::none(),
             FAOOHIBOJNE: ::protobuf::MessageField::none(),
-            result: 0,
+            JCHFCNFHCMM: 0,
             COFIBFHADAO: ::protobuf::MessageField::none(),
             IHHECACIABO: ::protobuf::MessageField::none(),
             score_id: 0,
@@ -421,7 +421,7 @@ impl ::protobuf::reflect::ProtobufValue for HPOLJGDGOEI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HPOLJGDGOEI.proto\x1a\x11CKODNPNBOEN.proto\x1a\x11EFBNNINLDMM.prot\
-    o\"\xd4\x04\n\x0bHPOLJGDGOEI\x12\x17\n\x07room_id\x18\x01\x20\x01(\x04R\
+    o\"\xde\x04\n\x0bHPOLJGDGOEI\x12\x17\n\x07room_id\x18\x01\x20\x01(\x04R\
     \x06roomId\x12\x20\n\x0bMPDHNFNCIEA\x18\x02\x20\x01(\rR\x0bMPDHNFNCIEA\
     \x12\x20\n\x0bPJGILAADCPN\x18\x03\x20\x01(\rR\x0bPJGILAADCPN\x12\x20\n\
     \x0bDLLADAJAKAG\x18\x04\x20\x01(\rR\x0bDLLADAJAKAG\x12\x20\n\x0bEIDALFJE\
@@ -429,13 +429,13 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x06\x20\x01(\rR\x0bMMNJJHDBJCI\x12\x20\n\x0bMHBEHHMJHOM\x18\x07\x20\x03\
     (\rR\x0bMHBEHHMJHOM\x12.\n\x0bCOGGJELNFCN\x18\x08\x20\x01(\x0b2\x0c.CKOD\
     NPNBOENR\x0bCOGGJELNFCN\x12.\n\x0bFAOOHIBOJNE\x18\t\x20\x01(\x0b2\x0c.CK\
-    ODNPNBOENR\x0bFAOOHIBOJNE\x12\x16\n\x06result\x18\x0b\x20\x01(\rR\x06res\
-    ult\x12.\n\x0bCOFIBFHADAO\x18\x0c\x20\x01(\x0b2\x0c.EFBNNINLDMMR\x0bCOFI\
-    BFHADAO\x12.\n\x0bIHHECACIABO\x18\r\x20\x01(\x0b2\x0c.EFBNNINLDMMR\x0bIH\
-    HECACIABO\x12\x19\n\x08score_id\x18\x0e\x20\x01(\rR\x07scoreId\x12\x20\n\
-    \x0bHBAAIBHPNOJ\x18\x0f\x20\x01(\rR\x0bHBAAIBHPNOJ\x12\x1b\n\tcost_time\
-    \x18\x10\x20\x01(\rR\x08costTime\x12.\n\x13monster_battle_type\x18\x11\
-    \x20\x01(\rR\x11monsterBattleTypeb\x06proto3\
+    ODNPNBOENR\x0bFAOOHIBOJNE\x12\x20\n\x0bJCHFCNFHCMM\x18\x0b\x20\x01(\rR\
+    \x0bJCHFCNFHCMM\x12.\n\x0bCOFIBFHADAO\x18\x0c\x20\x01(\x0b2\x0c.EFBNNINL\
+    DMMR\x0bCOFIBFHADAO\x12.\n\x0bIHHECACIABO\x18\r\x20\x01(\x0b2\x0c.EFBNNI\
+    NLDMMR\x0bIHHECACIABO\x12\x19\n\x08score_id\x18\x0e\x20\x01(\rR\x07score\
+    Id\x12\x20\n\x0bHBAAIBHPNOJ\x18\x0f\x20\x01(\rR\x0bHBAAIBHPNOJ\x12\x1b\n\
+    \tcost_time\x18\x10\x20\x01(\rR\x08costTime\x12.\n\x13monster_battle_typ\
+    e\x18\x11\x20\x01(\rR\x11monsterBattleTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct DABKPEFPBOL {
     // message fields
     // @@protoc_insertion_point(field:DABKPEFPBOL.IGHFGADJCMG)
-    pub IGHFGADJCMG: ::std::string::String,
+    pub IGHFGADJCMG: ::std::vec::Vec<u8>,
     // @@protoc_insertion_point(field:DABKPEFPBOL.EIKOEBDEGGA)
     pub EIKOEBDEGGA: u32,
     // special fields
@@ -79,10 +79,10 @@ impl ::protobuf::Message for DABKPEFPBOL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.IGHFGADJCMG = is.read_string()?;
+                58 => {
+                    self.IGHFGADJCMG = is.read_bytes()?;
                 },
-                120 => {
+                104 => {
                     self.EIKOEBDEGGA = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for DABKPEFPBOL {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.IGHFGADJCMG.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.IGHFGADJCMG);
+            my_size += ::protobuf::rt::bytes_size(7, &self.IGHFGADJCMG);
         }
         if self.EIKOEBDEGGA != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.EIKOEBDEGGA);
+            my_size += ::protobuf::rt::uint32_size(13, self.EIKOEBDEGGA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for DABKPEFPBOL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.IGHFGADJCMG.is_empty() {
-            os.write_string(6, &self.IGHFGADJCMG)?;
+            os.write_bytes(7, &self.IGHFGADJCMG)?;
         }
         if self.EIKOEBDEGGA != 0 {
-            os.write_uint32(15, self.EIKOEBDEGGA)?;
+            os.write_uint32(13, self.EIKOEBDEGGA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -139,7 +139,7 @@ impl ::protobuf::Message for DABKPEFPBOL {
 
     fn default_instance() -> &'static DABKPEFPBOL {
         static instance: DABKPEFPBOL = DABKPEFPBOL {
-            IGHFGADJCMG: ::std::string::String::new(),
+            IGHFGADJCMG: ::std::vec::Vec::new(),
             EIKOEBDEGGA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for DABKPEFPBOL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DABKPEFPBOL.proto\"Q\n\x0bDABKPEFPBOL\x12\x20\n\x0bIGHFGADJCMG\x18\
-    \x06\x20\x01(\tR\x0bIGHFGADJCMG\x12\x20\n\x0bEIKOEBDEGGA\x18\x0f\x20\x01\
+    \x07\x20\x01(\x0cR\x0bIGHFGADJCMG\x12\x20\n\x0bEIKOEBDEGGA\x18\r\x20\x01\
     (\rR\x0bEIKOEBDEGGAb\x06proto3\
 ";
 

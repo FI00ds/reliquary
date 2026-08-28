@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ELGLKEAPLGM {
     // message fields
-    // @@protoc_insertion_point(field:ELGLKEAPLGM.grid_fight_equipment_id)
-    pub grid_fight_equipment_id: u32,
+    // @@protoc_insertion_point(field:ELGLKEAPLGM.H_ac273741)
+    pub H_ac273741: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ELGLKEAPLGM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ELGLKEAPLGM {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "grid_fight_equipment_id",
-            |m: &ELGLKEAPLGM| { &m.grid_fight_equipment_id },
-            |m: &mut ELGLKEAPLGM| { &mut m.grid_fight_equipment_id },
+            "H_ac273741",
+            |m: &ELGLKEAPLGM| { &m.H_ac273741 },
+            |m: &mut ELGLKEAPLGM| { &mut m.H_ac273741 },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ELGLKEAPLGM>(
             "ELGLKEAPLGM",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ELGLKEAPLGM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.grid_fight_equipment_id = is.read_uint32()?;
+                40 => {
+                    self.H_ac273741 = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for ELGLKEAPLGM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.grid_fight_equipment_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.grid_fight_equipment_id);
+        if self.H_ac273741 != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.H_ac273741);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for ELGLKEAPLGM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.grid_fight_equipment_id != 0 {
-            os.write_uint32(11, self.grid_fight_equipment_id)?;
+        if self.H_ac273741 != 0 {
+            os.write_uint32(5, self.H_ac273741)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for ELGLKEAPLGM {
     }
 
     fn clear(&mut self) {
-        self.grid_fight_equipment_id = 0;
+        self.H_ac273741 = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ELGLKEAPLGM {
         static instance: ELGLKEAPLGM = ELGLKEAPLGM {
-            grid_fight_equipment_id: 0,
+            H_ac273741: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for ELGLKEAPLGM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ELGLKEAPLGM.proto\"D\n\x0bELGLKEAPLGM\x125\n\x17grid_fight_equipme\
-    nt_id\x18\x0b\x20\x01(\rR\x14gridFightEquipmentIdb\x06proto3\
+    \n\x11ELGLKEAPLGM.proto\",\n\x0bELGLKEAPLGM\x12\x1d\n\nH_ac273741\x18\
+    \x05\x20\x01(\rR\tHAc273741b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

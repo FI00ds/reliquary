@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GEGLJDELBHA {
     // message fields
-    // @@protoc_insertion_point(field:GEGLJDELBHA.world_level)
-    pub world_level: u32,
-    // @@protoc_insertion_point(field:GEGLJDELBHA.raid_id)
-    pub raid_id: u32,
-    // @@protoc_insertion_point(field:GEGLJDELBHA.MOPHKIGKDIK)
-    pub MOPHKIGKDIK: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
     // @@protoc_insertion_point(field:GEGLJDELBHA.lineup)
     pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
+    // @@protoc_insertion_point(field:GEGLJDELBHA.raid_id)
+    pub raid_id: u32,
+    // @@protoc_insertion_point(field:GEGLJDELBHA.world_level)
+    pub world_level: u32,
+    // @@protoc_insertion_point(field:GEGLJDELBHA.MOPHKIGKDIK)
+    pub MOPHKIGKDIK: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:GEGLJDELBHA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl GEGLJDELBHA {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "world_level",
-            |m: &GEGLJDELBHA| { &m.world_level },
-            |m: &mut GEGLJDELBHA| { &mut m.world_level },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
+            "lineup",
+            |m: &GEGLJDELBHA| { &m.lineup },
+            |m: &mut GEGLJDELBHA| { &mut m.lineup },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "raid_id",
             |m: &GEGLJDELBHA| { &m.raid_id },
             |m: &mut GEGLJDELBHA| { &mut m.raid_id },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "world_level",
+            |m: &GEGLJDELBHA| { &m.world_level },
+            |m: &mut GEGLJDELBHA| { &mut m.world_level },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
             "MOPHKIGKDIK",
             |m: &GEGLJDELBHA| { &m.MOPHKIGKDIK },
             |m: &mut GEGLJDELBHA| { &mut m.MOPHKIGKDIK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
-            "lineup",
-            |m: &GEGLJDELBHA| { &m.lineup },
-            |m: &mut GEGLJDELBHA| { &mut m.lineup },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GEGLJDELBHA>(
             "GEGLJDELBHA",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for GEGLJDELBHA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.world_level = is.read_uint32()?;
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
                 64 => {
                     self.raid_id = is.read_uint32()?;
                 },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MOPHKIGKDIK)?;
+                96 => {
+                    self.world_level = is.read_uint32()?;
                 },
                 106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MOPHKIGKDIK)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for GEGLJDELBHA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.world_level);
+        if let Some(v) = self.lineup.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.raid_id != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.raid_id);
         }
-        if let Some(v) = self.MOPHKIGKDIK.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.world_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.world_level);
         }
-        if let Some(v) = self.lineup.as_ref() {
+        if let Some(v) = self.MOPHKIGKDIK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -137,16 +137,16 @@ impl ::protobuf::Message for GEGLJDELBHA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.world_level != 0 {
-            os.write_uint32(6, self.world_level)?;
+        if let Some(v) = self.lineup.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if self.raid_id != 0 {
             os.write_uint32(8, self.raid_id)?;
         }
-        if let Some(v) = self.MOPHKIGKDIK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if self.world_level != 0 {
+            os.write_uint32(12, self.world_level)?;
         }
-        if let Some(v) = self.lineup.as_ref() {
+        if let Some(v) = self.MOPHKIGKDIK.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -166,19 +166,19 @@ impl ::protobuf::Message for GEGLJDELBHA {
     }
 
     fn clear(&mut self) {
-        self.world_level = 0;
-        self.raid_id = 0;
-        self.MOPHKIGKDIK.clear();
         self.lineup.clear();
+        self.raid_id = 0;
+        self.world_level = 0;
+        self.MOPHKIGKDIK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GEGLJDELBHA {
         static instance: GEGLJDELBHA = GEGLJDELBHA {
-            world_level: 0,
-            raid_id: 0,
-            MOPHKIGKDIK: ::protobuf::MessageField::none(),
             lineup: ::protobuf::MessageField::none(),
+            raid_id: 0,
+            world_level: 0,
+            MOPHKIGKDIK: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,10 +204,10 @@ impl ::protobuf::reflect::ProtobufValue for GEGLJDELBHA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GEGLJDELBHA.proto\x1a\x10LineupInfo.proto\x1a\x0fSceneInfo.proto\"\
-    \x9a\x01\n\x0bGEGLJDELBHA\x12\x1f\n\x0bworld_level\x18\x06\x20\x01(\rR\n\
-    worldLevel\x12\x17\n\x07raid_id\x18\x08\x20\x01(\rR\x06raidId\x12,\n\x0b\
-    MOPHKIGKDIK\x18\x0c\x20\x01(\x0b2\n.SceneInfoR\x0bMOPHKIGKDIK\x12#\n\x06\
-    lineup\x18\r\x20\x01(\x0b2\x0b.LineupInfoR\x06lineupb\x06proto3\
+    \x9a\x01\n\x0bGEGLJDELBHA\x12#\n\x06lineup\x18\x06\x20\x01(\x0b2\x0b.Lin\
+    eupInfoR\x06lineup\x12\x17\n\x07raid_id\x18\x08\x20\x01(\rR\x06raidId\
+    \x12\x1f\n\x0bworld_level\x18\x0c\x20\x01(\rR\nworldLevel\x12,\n\x0bMOPH\
+    KIGKDIK\x18\r\x20\x01(\x0b2\n.SceneInfoR\x0bMOPHKIGKDIKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

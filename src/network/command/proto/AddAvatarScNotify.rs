@@ -32,10 +32,10 @@ pub struct AddAvatarScNotify {
     pub base_avatar_id: u32,
     // @@protoc_insertion_point(field:AddAvatarScNotify.src)
     pub src: ::protobuf::EnumOrUnknown<super::AddAvatarSrcState::AddAvatarSrcState>,
-    // @@protoc_insertion_point(field:AddAvatarScNotify.is_new)
-    pub is_new: bool,
     // @@protoc_insertion_point(field:AddAvatarScNotify.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:AddAvatarScNotify.is_new)
+    pub is_new: bool,
     // special fields
     // @@protoc_insertion_point(special_field:AddAvatarScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,15 +65,15 @@ impl AddAvatarScNotify {
             |m: &AddAvatarScNotify| { &m.src },
             |m: &mut AddAvatarScNotify| { &mut m.src },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_new",
-            |m: &AddAvatarScNotify| { &m.is_new },
-            |m: &mut AddAvatarScNotify| { &mut m.is_new },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
             |m: &AddAvatarScNotify| { &m.reward },
             |m: &mut AddAvatarScNotify| { &mut m.reward },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_new",
+            |m: &AddAvatarScNotify| { &m.is_new },
+            |m: &mut AddAvatarScNotify| { &mut m.is_new },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AddAvatarScNotify>(
             "AddAvatarScNotify",
@@ -96,14 +96,14 @@ impl ::protobuf::Message for AddAvatarScNotify {
                 24 => {
                     self.base_avatar_id = is.read_uint32()?;
                 },
-                40 => {
+                32 => {
                     self.src = is.read_enum_or_unknown()?;
                 },
-                56 => {
-                    self.is_new = is.read_bool()?;
-                },
-                82 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                },
+                104 => {
+                    self.is_new = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,14 +121,14 @@ impl ::protobuf::Message for AddAvatarScNotify {
             my_size += ::protobuf::rt::uint32_size(3, self.base_avatar_id);
         }
         if self.src != ::protobuf::EnumOrUnknown::new(super::AddAvatarSrcState::AddAvatarSrcState::ADD_AVATAR_SRC_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.src.value());
-        }
-        if self.is_new != false {
-            my_size += 1 + 1;
+            my_size += ::protobuf::rt::int32_size(4, self.src.value());
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.is_new != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -140,13 +140,13 @@ impl ::protobuf::Message for AddAvatarScNotify {
             os.write_uint32(3, self.base_avatar_id)?;
         }
         if self.src != ::protobuf::EnumOrUnknown::new(super::AddAvatarSrcState::AddAvatarSrcState::ADD_AVATAR_SRC_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.src))?;
-        }
-        if self.is_new != false {
-            os.write_bool(7, self.is_new)?;
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.src))?;
         }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if self.is_new != false {
+            os.write_bool(13, self.is_new)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::Message for AddAvatarScNotify {
     fn clear(&mut self) {
         self.base_avatar_id = 0;
         self.src = ::protobuf::EnumOrUnknown::new(super::AddAvatarSrcState::AddAvatarSrcState::ADD_AVATAR_SRC_NONE);
-        self.is_new = false;
         self.reward.clear();
+        self.is_new = false;
         self.special_fields.clear();
     }
 
@@ -176,8 +176,8 @@ impl ::protobuf::Message for AddAvatarScNotify {
         static instance: AddAvatarScNotify = AddAvatarScNotify {
             base_avatar_id: 0,
             src: ::protobuf::EnumOrUnknown::from_i32(0),
-            is_new: false,
             reward: ::protobuf::MessageField::none(),
+            is_new: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,9 +204,9 @@ impl ::protobuf::reflect::ProtobufValue for AddAvatarScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17AddAvatarScNotify.proto\x1a\x17AddAvatarSrcState.proto\x1a\x0eItem\
     List.proto\"\x99\x01\n\x11AddAvatarScNotify\x12$\n\x0ebase_avatar_id\x18\
-    \x03\x20\x01(\rR\x0cbaseAvatarId\x12$\n\x03src\x18\x05\x20\x01(\x0e2\x12\
-    .AddAvatarSrcStateR\x03src\x12\x15\n\x06is_new\x18\x07\x20\x01(\x08R\x05\
-    isNew\x12!\n\x06reward\x18\n\x20\x01(\x0b2\t.ItemListR\x06rewardb\x06pro\
+    \x03\x20\x01(\rR\x0cbaseAvatarId\x12$\n\x03src\x18\x04\x20\x01(\x0e2\x12\
+    .AddAvatarSrcStateR\x03src\x12!\n\x06reward\x18\x08\x20\x01(\x0b2\t.Item\
+    ListR\x06reward\x12\x15\n\x06is_new\x18\r\x20\x01(\x08R\x05isNewb\x06pro\
     to3\
 ";
 

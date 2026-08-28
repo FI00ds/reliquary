@@ -27,20 +27,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:BattleModuleType)
 pub enum BattleModuleType {
-    // @@protoc_insertion_point(enum_value:BattleModuleType.JJMFOABLOCE_OHDOHHFAKMC)
-    JJMFOABLOCE_OHDOHHFAKMC = 0,
-    // @@protoc_insertion_point(enum_value:BattleModuleType.JJMFOABLOCE_FDKBEDIMCBJ)
-    JJMFOABLOCE_FDKBEDIMCBJ = 1,
-    // @@protoc_insertion_point(enum_value:BattleModuleType.JJMFOABLOCE_BPCBHKHDGMH)
-    JJMFOABLOCE_BPCBHKHDGMH = 2,
-    // @@protoc_insertion_point(enum_value:BattleModuleType.JJMFOABLOCE_GEAIEKPGNGD)
-    JJMFOABLOCE_GEAIEKPGNGD = 3,
-    // @@protoc_insertion_point(enum_value:BattleModuleType.JJMFOABLOCE_EKJFDFEANNH)
-    JJMFOABLOCE_EKJFDFEANNH = 4,
-    // @@protoc_insertion_point(enum_value:BattleModuleType.JJMFOABLOCE_BIOGDPANCLB)
-    JJMFOABLOCE_BIOGDPANCLB = 5,
-    // @@protoc_insertion_point(enum_value:BattleModuleType.JJMFOABLOCE_DPALIHINPFN)
-    JJMFOABLOCE_DPALIHINPFN = 6,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.BattleModuleType_BattleModuleMaze)
+    BattleModuleType_BattleModuleMaze = 0,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.BattleModuleType_BattleModuleChallenge)
+    BattleModuleType_BattleModuleChallenge = 1,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.BattleModuleType_BattleModuleCocoon)
+    BattleModuleType_BattleModuleCocoon = 2,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.BattleModuleType_BattleModuleRogue)
+    BattleModuleType_BattleModuleRogue = 3,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.BattleModuleType_BattleModuleChallengeActivity)
+    BattleModuleType_BattleModuleChallengeActivity = 4,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.BattleModuleType_BattleModuleTrialLevel)
+    BattleModuleType_BattleModuleTrialLevel = 5,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.BattleModuleType_BattleModuleAetherDivide)
+    BattleModuleType_BattleModuleAetherDivide = 6,
 }
 
 impl ::protobuf::Enum for BattleModuleType {
@@ -52,38 +52,38 @@ impl ::protobuf::Enum for BattleModuleType {
 
     fn from_i32(value: i32) -> ::std::option::Option<BattleModuleType> {
         match value {
-            0 => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_OHDOHHFAKMC),
-            1 => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_FDKBEDIMCBJ),
-            2 => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_BPCBHKHDGMH),
-            3 => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_GEAIEKPGNGD),
-            4 => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_EKJFDFEANNH),
-            5 => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_BIOGDPANCLB),
-            6 => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_DPALIHINPFN),
+            0 => ::std::option::Option::Some(BattleModuleType::BattleModuleType_BattleModuleMaze),
+            1 => ::std::option::Option::Some(BattleModuleType::BattleModuleType_BattleModuleChallenge),
+            2 => ::std::option::Option::Some(BattleModuleType::BattleModuleType_BattleModuleCocoon),
+            3 => ::std::option::Option::Some(BattleModuleType::BattleModuleType_BattleModuleRogue),
+            4 => ::std::option::Option::Some(BattleModuleType::BattleModuleType_BattleModuleChallengeActivity),
+            5 => ::std::option::Option::Some(BattleModuleType::BattleModuleType_BattleModuleTrialLevel),
+            6 => ::std::option::Option::Some(BattleModuleType::BattleModuleType_BattleModuleAetherDivide),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<BattleModuleType> {
         match str {
-            "JJMFOABLOCE_OHDOHHFAKMC" => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_OHDOHHFAKMC),
-            "JJMFOABLOCE_FDKBEDIMCBJ" => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_FDKBEDIMCBJ),
-            "JJMFOABLOCE_BPCBHKHDGMH" => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_BPCBHKHDGMH),
-            "JJMFOABLOCE_GEAIEKPGNGD" => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_GEAIEKPGNGD),
-            "JJMFOABLOCE_EKJFDFEANNH" => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_EKJFDFEANNH),
-            "JJMFOABLOCE_BIOGDPANCLB" => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_BIOGDPANCLB),
-            "JJMFOABLOCE_DPALIHINPFN" => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_DPALIHINPFN),
+            "BattleModuleType_BattleModuleMaze" => ::std::option::Option::Some(BattleModuleType::BattleModuleType_BattleModuleMaze),
+            "BattleModuleType_BattleModuleChallenge" => ::std::option::Option::Some(BattleModuleType::BattleModuleType_BattleModuleChallenge),
+            "BattleModuleType_BattleModuleCocoon" => ::std::option::Option::Some(BattleModuleType::BattleModuleType_BattleModuleCocoon),
+            "BattleModuleType_BattleModuleRogue" => ::std::option::Option::Some(BattleModuleType::BattleModuleType_BattleModuleRogue),
+            "BattleModuleType_BattleModuleChallengeActivity" => ::std::option::Option::Some(BattleModuleType::BattleModuleType_BattleModuleChallengeActivity),
+            "BattleModuleType_BattleModuleTrialLevel" => ::std::option::Option::Some(BattleModuleType::BattleModuleType_BattleModuleTrialLevel),
+            "BattleModuleType_BattleModuleAetherDivide" => ::std::option::Option::Some(BattleModuleType::BattleModuleType_BattleModuleAetherDivide),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [BattleModuleType] = &[
-        BattleModuleType::JJMFOABLOCE_OHDOHHFAKMC,
-        BattleModuleType::JJMFOABLOCE_FDKBEDIMCBJ,
-        BattleModuleType::JJMFOABLOCE_BPCBHKHDGMH,
-        BattleModuleType::JJMFOABLOCE_GEAIEKPGNGD,
-        BattleModuleType::JJMFOABLOCE_EKJFDFEANNH,
-        BattleModuleType::JJMFOABLOCE_BIOGDPANCLB,
-        BattleModuleType::JJMFOABLOCE_DPALIHINPFN,
+        BattleModuleType::BattleModuleType_BattleModuleMaze,
+        BattleModuleType::BattleModuleType_BattleModuleChallenge,
+        BattleModuleType::BattleModuleType_BattleModuleCocoon,
+        BattleModuleType::BattleModuleType_BattleModuleRogue,
+        BattleModuleType::BattleModuleType_BattleModuleChallengeActivity,
+        BattleModuleType::BattleModuleType_BattleModuleTrialLevel,
+        BattleModuleType::BattleModuleType_BattleModuleAetherDivide,
     ];
 }
 
@@ -101,7 +101,7 @@ impl ::protobuf::EnumFull for BattleModuleType {
 
 impl ::std::default::Default for BattleModuleType {
     fn default() -> Self {
-        BattleModuleType::JJMFOABLOCE_OHDOHHFAKMC
+        BattleModuleType::BattleModuleType_BattleModuleMaze
     }
 }
 
@@ -112,12 +112,13 @@ impl BattleModuleType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16BattleModuleType.proto*\xdd\x01\n\x10BattleModuleType\x12\x1b\n\
-    \x17JJMFOABLOCE_OHDOHHFAKMC\x10\0\x12\x1b\n\x17JJMFOABLOCE_FDKBEDIMCBJ\
-    \x10\x01\x12\x1b\n\x17JJMFOABLOCE_BPCBHKHDGMH\x10\x02\x12\x1b\n\x17JJMFO\
-    ABLOCE_GEAIEKPGNGD\x10\x03\x12\x1b\n\x17JJMFOABLOCE_EKJFDFEANNH\x10\x04\
-    \x12\x1b\n\x17JJMFOABLOCE_BIOGDPANCLB\x10\x05\x12\x1b\n\x17JJMFOABLOCE_D\
-    PALIHINPFN\x10\x06b\x06proto3\
+    \n\x16BattleModuleType.proto*\xc6\x02\n\x10BattleModuleType\x12%\n!Battl\
+    eModuleType_BattleModuleMaze\x10\0\x12*\n&BattleModuleType_BattleModuleC\
+    hallenge\x10\x01\x12'\n#BattleModuleType_BattleModuleCocoon\x10\x02\x12&\
+    \n\"BattleModuleType_BattleModuleRogue\x10\x03\x122\n.BattleModuleType_B\
+    attleModuleChallengeActivity\x10\x04\x12+\n'BattleModuleType_BattleModul\
+    eTrialLevel\x10\x05\x12-\n)BattleModuleType_BattleModuleAetherDivide\x10\
+    \x06b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

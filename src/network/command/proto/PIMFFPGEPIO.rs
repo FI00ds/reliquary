@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PIMFFPGEPIO {
     // message fields
+    // @@protoc_insertion_point(field:PIMFFPGEPIO.type)
+    pub type_: ::protobuf::EnumOrUnknown<super::BMHIHBHECKD::BMHIHBHECKD>,
     // @@protoc_insertion_point(field:PIMFFPGEPIO.JALHKMEOOPN)
     pub JALHKMEOOPN: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:PIMFFPGEPIO.OKFMBDEECCH)
     pub OKFMBDEECCH: ::std::vec::Vec<::std::string::String>,
-    // @@protoc_insertion_point(field:PIMFFPGEPIO.type)
-    pub type_: ::protobuf::EnumOrUnknown<super::BMHIHBHECKD::BMHIHBHECKD>,
     // special fields
     // @@protoc_insertion_point(special_field:PIMFFPGEPIO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl PIMFFPGEPIO {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "type",
+            |m: &PIMFFPGEPIO| { &m.type_ },
+            |m: &mut PIMFFPGEPIO| { &mut m.type_ },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "JALHKMEOOPN",
             |m: &PIMFFPGEPIO| { &m.JALHKMEOOPN },
@@ -62,11 +67,6 @@ impl PIMFFPGEPIO {
             "OKFMBDEECCH",
             |m: &PIMFFPGEPIO| { &m.OKFMBDEECCH },
             |m: &mut PIMFFPGEPIO| { &mut m.OKFMBDEECCH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "type",
-            |m: &PIMFFPGEPIO| { &m.type_ },
-            |m: &mut PIMFFPGEPIO| { &mut m.type_ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PIMFFPGEPIO>(
             "PIMFFPGEPIO",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for PIMFFPGEPIO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                8 => {
+                    self.type_ = is.read_enum_or_unknown()?;
+                },
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.JALHKMEOOPN)?;
                 },
-                40 => {
+                16 => {
                     self.JALHKMEOOPN.push(is.read_uint32()?);
                 },
                 58 => {
                     self.OKFMBDEECCH.push(is.read_string()?);
-                },
-                64 => {
-                    self.type_ = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,26 +110,26 @@ impl ::protobuf::Message for PIMFFPGEPIO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.JALHKMEOOPN);
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::BMHIHBHECKD::BMHIHBHECKD::BMHIHBHECKD_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(1, self.type_.value());
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.JALHKMEOOPN);
         for value in &self.OKFMBDEECCH {
             my_size += ::protobuf::rt::string_size(7, &value);
         };
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::BMHIHBHECKD::BMHIHBHECKD::BMHIHBHECKD_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(8, self.type_.value());
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.JALHKMEOOPN)?;
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::BMHIHBHECKD::BMHIHBHECKD::BMHIHBHECKD_NLCDGIPGFDJ) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+        }
+        os.write_repeated_packed_uint32(2, &self.JALHKMEOOPN)?;
         for v in &self.OKFMBDEECCH {
             os.write_string(7, &v)?;
         };
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::BMHIHBHECKD::BMHIHBHECKD::BMHIHBHECKD_NLCDGIPGFDJ) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.type_))?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,17 +147,17 @@ impl ::protobuf::Message for PIMFFPGEPIO {
     }
 
     fn clear(&mut self) {
+        self.type_ = ::protobuf::EnumOrUnknown::new(super::BMHIHBHECKD::BMHIHBHECKD::BMHIHBHECKD_NLCDGIPGFDJ);
         self.JALHKMEOOPN.clear();
         self.OKFMBDEECCH.clear();
-        self.type_ = ::protobuf::EnumOrUnknown::new(super::BMHIHBHECKD::BMHIHBHECKD::BMHIHBHECKD_NLCDGIPGFDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PIMFFPGEPIO {
         static instance: PIMFFPGEPIO = PIMFFPGEPIO {
+            type_: ::protobuf::EnumOrUnknown::from_i32(0),
             JALHKMEOOPN: ::std::vec::Vec::new(),
             OKFMBDEECCH: ::std::vec::Vec::new(),
-            type_: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for PIMFFPGEPIO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PIMFFPGEPIO.proto\x1a\x11BMHIHBHECKD.proto\"s\n\x0bPIMFFPGEPIO\x12\
-    \x20\n\x0bJALHKMEOOPN\x18\x05\x20\x03(\rR\x0bJALHKMEOOPN\x12\x20\n\x0bOK\
-    FMBDEECCH\x18\x07\x20\x03(\tR\x0bOKFMBDEECCH\x12\x20\n\x04type\x18\x08\
-    \x20\x01(\x0e2\x0c.BMHIHBHECKDR\x04typeb\x06proto3\
+    \x20\n\x04type\x18\x01\x20\x01(\x0e2\x0c.BMHIHBHECKDR\x04type\x12\x20\n\
+    \x0bJALHKMEOOPN\x18\x02\x20\x03(\rR\x0bJALHKMEOOPN\x12\x20\n\x0bOKFMBDEE\
+    CCH\x18\x07\x20\x03(\tR\x0bOKFMBDEECCHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

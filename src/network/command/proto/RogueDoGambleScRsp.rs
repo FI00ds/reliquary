@@ -30,10 +30,10 @@ pub struct RogueDoGambleScRsp {
     // message fields
     // @@protoc_insertion_point(field:RogueDoGambleScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:RogueDoGambleScRsp.HNCCDEPDNEG)
-    pub HNCCDEPDNEG: u32,
     // @@protoc_insertion_point(field:RogueDoGambleScRsp.DOOECGPIMBD)
     pub DOOECGPIMBD: u32,
+    // @@protoc_insertion_point(field:RogueDoGambleScRsp.HNCCDEPDNEG)
+    pub HNCCDEPDNEG: u32,
     // @@protoc_insertion_point(field:RogueDoGambleScRsp.KOBBMDFPNKA)
     pub KOBBMDFPNKA: ::protobuf::MessageField<super::HKOEAOPNEAC::HKOEAOPNEAC>,
     // special fields
@@ -61,14 +61,14 @@ impl RogueDoGambleScRsp {
             |m: &mut RogueDoGambleScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HNCCDEPDNEG",
-            |m: &RogueDoGambleScRsp| { &m.HNCCDEPDNEG },
-            |m: &mut RogueDoGambleScRsp| { &mut m.HNCCDEPDNEG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DOOECGPIMBD",
             |m: &RogueDoGambleScRsp| { &m.DOOECGPIMBD },
             |m: &mut RogueDoGambleScRsp| { &mut m.DOOECGPIMBD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HNCCDEPDNEG",
+            |m: &RogueDoGambleScRsp| { &m.HNCCDEPDNEG },
+            |m: &mut RogueDoGambleScRsp| { &mut m.HNCCDEPDNEG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HKOEAOPNEAC::HKOEAOPNEAC>(
             "KOBBMDFPNKA",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for RogueDoGambleScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                80 => {
-                    self.HNCCDEPDNEG = is.read_uint32()?;
-                },
-                96 => {
+                72 => {
                     self.DOOECGPIMBD = is.read_uint32()?;
                 },
-                114 => {
+                88 => {
+                    self.HNCCDEPDNEG = is.read_uint32()?;
+                },
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KOBBMDFPNKA)?;
                 },
                 tag => {
@@ -118,13 +118,13 @@ impl ::protobuf::Message for RogueDoGambleScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
-        }
-        if self.HNCCDEPDNEG != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.HNCCDEPDNEG);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         if self.DOOECGPIMBD != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.DOOECGPIMBD);
+            my_size += ::protobuf::rt::uint32_size(9, self.DOOECGPIMBD);
+        }
+        if self.HNCCDEPDNEG != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.HNCCDEPDNEG);
         }
         if let Some(v) = self.KOBBMDFPNKA.as_ref() {
             let len = v.compute_size();
@@ -137,16 +137,16 @@ impl ::protobuf::Message for RogueDoGambleScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
-        }
-        if self.HNCCDEPDNEG != 0 {
-            os.write_uint32(10, self.HNCCDEPDNEG)?;
+            os.write_uint32(8, self.retcode)?;
         }
         if self.DOOECGPIMBD != 0 {
-            os.write_uint32(12, self.DOOECGPIMBD)?;
+            os.write_uint32(9, self.DOOECGPIMBD)?;
+        }
+        if self.HNCCDEPDNEG != 0 {
+            os.write_uint32(11, self.HNCCDEPDNEG)?;
         }
         if let Some(v) = self.KOBBMDFPNKA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::Message for RogueDoGambleScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.HNCCDEPDNEG = 0;
         self.DOOECGPIMBD = 0;
+        self.HNCCDEPDNEG = 0;
         self.KOBBMDFPNKA.clear();
         self.special_fields.clear();
     }
@@ -175,8 +175,8 @@ impl ::protobuf::Message for RogueDoGambleScRsp {
     fn default_instance() -> &'static RogueDoGambleScRsp {
         static instance: RogueDoGambleScRsp = RogueDoGambleScRsp {
             retcode: 0,
-            HNCCDEPDNEG: 0,
             DOOECGPIMBD: 0,
+            HNCCDEPDNEG: 0,
             KOBBMDFPNKA: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueDoGambleScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18RogueDoGambleScRsp.proto\x1a\x11HKOEAOPNEAC.proto\"\xa2\x01\n\x12R\
-    ogueDoGambleScRsp\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\
-    \x12\x20\n\x0bHNCCDEPDNEG\x18\n\x20\x01(\rR\x0bHNCCDEPDNEG\x12\x20\n\x0b\
-    DOOECGPIMBD\x18\x0c\x20\x01(\rR\x0bDOOECGPIMBD\x12.\n\x0bKOBBMDFPNKA\x18\
-    \x0e\x20\x01(\x0b2\x0c.HKOEAOPNEACR\x0bKOBBMDFPNKAb\x06proto3\
+    ogueDoGambleScRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\
+    \x12\x20\n\x0bDOOECGPIMBD\x18\t\x20\x01(\rR\x0bDOOECGPIMBD\x12\x20\n\x0b\
+    HNCCDEPDNEG\x18\x0b\x20\x01(\rR\x0bHNCCDEPDNEG\x12.\n\x0bKOBBMDFPNKA\x18\
+    \x0c\x20\x01(\x0b2\x0c.HKOEAOPNEACR\x0bKOBBMDFPNKAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

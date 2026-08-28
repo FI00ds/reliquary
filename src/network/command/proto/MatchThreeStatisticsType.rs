@@ -27,34 +27,34 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:MatchThreeStatisticsType)
 pub enum MatchThreeStatisticsType {
-    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.JHGPKBIJHDE_AKHAIBHBLFL)
-    JHGPKBIJHDE_AKHAIBHBLFL = 0,
-    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.JHGPKBIJHDE_IKGFLPIKBME)
-    JHGPKBIJHDE_IKGFLPIKBME = 1,
-    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.JHGPKBIJHDE_FPBHKCHPDJD)
-    JHGPKBIJHDE_FPBHKCHPDJD = 2,
-    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.JHGPKBIJHDE_CGMJACLCLOI)
-    JHGPKBIJHDE_CGMJACLCLOI = 3,
-    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.JHGPKBIJHDE_OEMMEEEJGJN)
-    JHGPKBIJHDE_OEMMEEEJGJN = 4,
-    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.JHGPKBIJHDE_GGCOALCKJLG)
-    JHGPKBIJHDE_GGCOALCKJLG = 5,
-    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.JHGPKBIJHDE_DEDJLNBBFJD)
-    JHGPKBIJHDE_DEDJLNBBFJD = 6,
-    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.JHGPKBIJHDE_LCIJPPIJBKC)
-    JHGPKBIJHDE_LCIJPPIJBKC = 7,
-    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.JHGPKBIJHDE_EAKEHNFBDBN)
-    JHGPKBIJHDE_EAKEHNFBDBN = 8,
-    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.JHGPKBIJHDE_ALMCCADJLKA)
-    JHGPKBIJHDE_ALMCCADJLKA = 9,
-    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.JHGPKBIJHDE_COLMJCGJDCC)
-    JHGPKBIJHDE_COLMJCGJDCC = 10,
-    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.JHGPKBIJHDE_MDBAFCNEPJP)
-    JHGPKBIJHDE_MDBAFCNEPJP = 11,
-    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.JHGPKBIJHDE_OFOKPFFONKH)
-    JHGPKBIJHDE_OFOKPFFONKH = 12,
-    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.JHGPKBIJHDE_DBNNDMDFHEK)
-    JHGPKBIJHDE_DBNNDMDFHEK = 13,
+    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.MatchThreeStatisticsType_MatchThreeStatisticsNone)
+    MatchThreeStatisticsType_MatchThreeStatisticsNone = 0,
+    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.MatchThreeStatisticsType_MatchThreeStatisticsFirst)
+    MatchThreeStatisticsType_MatchThreeStatisticsFirst = 1,
+    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.MatchThreeStatisticsType_MatchThreeStatisticsSecond)
+    MatchThreeStatisticsType_MatchThreeStatisticsSecond = 2,
+    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.MatchThreeStatisticsType_MatchThreeStatisticsThird)
+    MatchThreeStatisticsType_MatchThreeStatisticsThird = 3,
+    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.MatchThreeStatisticsType_MatchThreeStatisticsFruit)
+    MatchThreeStatisticsType_MatchThreeStatisticsFruit = 4,
+    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.MatchThreeStatisticsType_MatchThreeStatisticsSkill)
+    MatchThreeStatisticsType_MatchThreeStatisticsSkill = 5,
+    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.MatchThreeStatisticsType_MatchThreeStatisticsDefeat)
+    MatchThreeStatisticsType_MatchThreeStatisticsDefeat = 6,
+    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.MatchThreeStatisticsType_MatchThreeStatisticsBomb)
+    MatchThreeStatisticsType_MatchThreeStatisticsBomb = 7,
+    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.MatchThreeStatisticsType_MatchThreeStatisticsDamage)
+    MatchThreeStatisticsType_MatchThreeStatisticsDamage = 8,
+    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.MatchThreeStatisticsType_MatchThreeStatisticsEnergy)
+    MatchThreeStatisticsType_MatchThreeStatisticsEnergy = 9,
+    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.MatchThreeStatisticsType_MatchThreeStatisticsSwapBomb)
+    MatchThreeStatisticsType_MatchThreeStatisticsSwapBomb = 10,
+    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.MatchThreeStatisticsType_MatchThreeStatisticsUseItem)
+    MatchThreeStatisticsType_MatchThreeStatisticsUseItem = 11,
+    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.MatchThreeStatisticsType_MatchThreeStatisticsSoloMaxStep)
+    MatchThreeStatisticsType_MatchThreeStatisticsSoloMaxStep = 12,
+    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.MatchThreeStatisticsType_MatchThreeStatisticsSoloScore)
+    MatchThreeStatisticsType_MatchThreeStatisticsSoloScore = 13,
 }
 
 impl ::protobuf::Enum for MatchThreeStatisticsType {
@@ -66,59 +66,59 @@ impl ::protobuf::Enum for MatchThreeStatisticsType {
 
     fn from_i32(value: i32) -> ::std::option::Option<MatchThreeStatisticsType> {
         match value {
-            0 => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_AKHAIBHBLFL),
-            1 => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_IKGFLPIKBME),
-            2 => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_FPBHKCHPDJD),
-            3 => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_CGMJACLCLOI),
-            4 => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_OEMMEEEJGJN),
-            5 => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_GGCOALCKJLG),
-            6 => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_DEDJLNBBFJD),
-            7 => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_LCIJPPIJBKC),
-            8 => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_EAKEHNFBDBN),
-            9 => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_ALMCCADJLKA),
-            10 => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_COLMJCGJDCC),
-            11 => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_MDBAFCNEPJP),
-            12 => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_OFOKPFFONKH),
-            13 => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_DBNNDMDFHEK),
+            0 => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsNone),
+            1 => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsFirst),
+            2 => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsSecond),
+            3 => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsThird),
+            4 => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsFruit),
+            5 => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsSkill),
+            6 => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsDefeat),
+            7 => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsBomb),
+            8 => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsDamage),
+            9 => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsEnergy),
+            10 => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsSwapBomb),
+            11 => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsUseItem),
+            12 => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsSoloMaxStep),
+            13 => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsSoloScore),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<MatchThreeStatisticsType> {
         match str {
-            "JHGPKBIJHDE_AKHAIBHBLFL" => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_AKHAIBHBLFL),
-            "JHGPKBIJHDE_IKGFLPIKBME" => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_IKGFLPIKBME),
-            "JHGPKBIJHDE_FPBHKCHPDJD" => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_FPBHKCHPDJD),
-            "JHGPKBIJHDE_CGMJACLCLOI" => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_CGMJACLCLOI),
-            "JHGPKBIJHDE_OEMMEEEJGJN" => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_OEMMEEEJGJN),
-            "JHGPKBIJHDE_GGCOALCKJLG" => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_GGCOALCKJLG),
-            "JHGPKBIJHDE_DEDJLNBBFJD" => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_DEDJLNBBFJD),
-            "JHGPKBIJHDE_LCIJPPIJBKC" => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_LCIJPPIJBKC),
-            "JHGPKBIJHDE_EAKEHNFBDBN" => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_EAKEHNFBDBN),
-            "JHGPKBIJHDE_ALMCCADJLKA" => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_ALMCCADJLKA),
-            "JHGPKBIJHDE_COLMJCGJDCC" => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_COLMJCGJDCC),
-            "JHGPKBIJHDE_MDBAFCNEPJP" => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_MDBAFCNEPJP),
-            "JHGPKBIJHDE_OFOKPFFONKH" => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_OFOKPFFONKH),
-            "JHGPKBIJHDE_DBNNDMDFHEK" => ::std::option::Option::Some(MatchThreeStatisticsType::JHGPKBIJHDE_DBNNDMDFHEK),
+            "MatchThreeStatisticsType_MatchThreeStatisticsNone" => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsNone),
+            "MatchThreeStatisticsType_MatchThreeStatisticsFirst" => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsFirst),
+            "MatchThreeStatisticsType_MatchThreeStatisticsSecond" => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsSecond),
+            "MatchThreeStatisticsType_MatchThreeStatisticsThird" => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsThird),
+            "MatchThreeStatisticsType_MatchThreeStatisticsFruit" => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsFruit),
+            "MatchThreeStatisticsType_MatchThreeStatisticsSkill" => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsSkill),
+            "MatchThreeStatisticsType_MatchThreeStatisticsDefeat" => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsDefeat),
+            "MatchThreeStatisticsType_MatchThreeStatisticsBomb" => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsBomb),
+            "MatchThreeStatisticsType_MatchThreeStatisticsDamage" => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsDamage),
+            "MatchThreeStatisticsType_MatchThreeStatisticsEnergy" => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsEnergy),
+            "MatchThreeStatisticsType_MatchThreeStatisticsSwapBomb" => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsSwapBomb),
+            "MatchThreeStatisticsType_MatchThreeStatisticsUseItem" => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsUseItem),
+            "MatchThreeStatisticsType_MatchThreeStatisticsSoloMaxStep" => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsSoloMaxStep),
+            "MatchThreeStatisticsType_MatchThreeStatisticsSoloScore" => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsSoloScore),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [MatchThreeStatisticsType] = &[
-        MatchThreeStatisticsType::JHGPKBIJHDE_AKHAIBHBLFL,
-        MatchThreeStatisticsType::JHGPKBIJHDE_IKGFLPIKBME,
-        MatchThreeStatisticsType::JHGPKBIJHDE_FPBHKCHPDJD,
-        MatchThreeStatisticsType::JHGPKBIJHDE_CGMJACLCLOI,
-        MatchThreeStatisticsType::JHGPKBIJHDE_OEMMEEEJGJN,
-        MatchThreeStatisticsType::JHGPKBIJHDE_GGCOALCKJLG,
-        MatchThreeStatisticsType::JHGPKBIJHDE_DEDJLNBBFJD,
-        MatchThreeStatisticsType::JHGPKBIJHDE_LCIJPPIJBKC,
-        MatchThreeStatisticsType::JHGPKBIJHDE_EAKEHNFBDBN,
-        MatchThreeStatisticsType::JHGPKBIJHDE_ALMCCADJLKA,
-        MatchThreeStatisticsType::JHGPKBIJHDE_COLMJCGJDCC,
-        MatchThreeStatisticsType::JHGPKBIJHDE_MDBAFCNEPJP,
-        MatchThreeStatisticsType::JHGPKBIJHDE_OFOKPFFONKH,
-        MatchThreeStatisticsType::JHGPKBIJHDE_DBNNDMDFHEK,
+        MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsNone,
+        MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsFirst,
+        MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsSecond,
+        MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsThird,
+        MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsFruit,
+        MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsSkill,
+        MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsDefeat,
+        MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsBomb,
+        MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsDamage,
+        MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsEnergy,
+        MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsSwapBomb,
+        MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsUseItem,
+        MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsSoloMaxStep,
+        MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsSoloScore,
     ];
 }
 
@@ -136,7 +136,7 @@ impl ::protobuf::EnumFull for MatchThreeStatisticsType {
 
 impl ::std::default::Default for MatchThreeStatisticsType {
     fn default() -> Self {
-        MatchThreeStatisticsType::JHGPKBIJHDE_AKHAIBHBLFL
+        MatchThreeStatisticsType::MatchThreeStatisticsType_MatchThreeStatisticsNone
     }
 }
 
@@ -147,16 +147,21 @@ impl MatchThreeStatisticsType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eMatchThreeStatisticsType.proto*\xb0\x03\n\x18MatchThreeStatisticsT\
-    ype\x12\x1b\n\x17JHGPKBIJHDE_AKHAIBHBLFL\x10\0\x12\x1b\n\x17JHGPKBIJHDE_\
-    IKGFLPIKBME\x10\x01\x12\x1b\n\x17JHGPKBIJHDE_FPBHKCHPDJD\x10\x02\x12\x1b\
-    \n\x17JHGPKBIJHDE_CGMJACLCLOI\x10\x03\x12\x1b\n\x17JHGPKBIJHDE_OEMMEEEJG\
-    JN\x10\x04\x12\x1b\n\x17JHGPKBIJHDE_GGCOALCKJLG\x10\x05\x12\x1b\n\x17JHG\
-    PKBIJHDE_DEDJLNBBFJD\x10\x06\x12\x1b\n\x17JHGPKBIJHDE_LCIJPPIJBKC\x10\
-    \x07\x12\x1b\n\x17JHGPKBIJHDE_EAKEHNFBDBN\x10\x08\x12\x1b\n\x17JHGPKBIJH\
-    DE_ALMCCADJLKA\x10\t\x12\x1b\n\x17JHGPKBIJHDE_COLMJCGJDCC\x10\n\x12\x1b\
-    \n\x17JHGPKBIJHDE_MDBAFCNEPJP\x10\x0b\x12\x1b\n\x17JHGPKBIJHDE_OFOKPFFON\
-    KH\x10\x0c\x12\x1b\n\x17JHGPKBIJHDE_DBNNDMDFHEK\x10\rb\x06proto3\
+    \n\x1eMatchThreeStatisticsType.proto*\xbb\x06\n\x18MatchThreeStatisticsT\
+    ype\x125\n1MatchThreeStatisticsType_MatchThreeStatisticsNone\x10\0\x126\
+    \n2MatchThreeStatisticsType_MatchThreeStatisticsFirst\x10\x01\x127\n3Mat\
+    chThreeStatisticsType_MatchThreeStatisticsSecond\x10\x02\x126\n2MatchThr\
+    eeStatisticsType_MatchThreeStatisticsThird\x10\x03\x126\n2MatchThreeStat\
+    isticsType_MatchThreeStatisticsFruit\x10\x04\x126\n2MatchThreeStatistics\
+    Type_MatchThreeStatisticsSkill\x10\x05\x127\n3MatchThreeStatisticsType_M\
+    atchThreeStatisticsDefeat\x10\x06\x125\n1MatchThreeStatisticsType_MatchT\
+    hreeStatisticsBomb\x10\x07\x127\n3MatchThreeStatisticsType_MatchThreeSta\
+    tisticsDamage\x10\x08\x127\n3MatchThreeStatisticsType_MatchThreeStatisti\
+    csEnergy\x10\t\x129\n5MatchThreeStatisticsType_MatchThreeStatisticsSwapB\
+    omb\x10\n\x128\n4MatchThreeStatisticsType_MatchThreeStatisticsUseItem\
+    \x10\x0b\x12<\n8MatchThreeStatisticsType_MatchThreeStatisticsSoloMaxStep\
+    \x10\x0c\x12:\n6MatchThreeStatisticsType_MatchThreeStatisticsSoloScore\
+    \x10\rb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

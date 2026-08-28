@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetRollShopInfoScRsp {
     // message fields
+    // @@protoc_insertion_point(field:GetRollShopInfoScRsp.shop_group_id_list)
+    pub shop_group_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetRollShopInfoScRsp.gacha_random)
     pub gacha_random: u32,
     // @@protoc_insertion_point(field:GetRollShopInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetRollShopInfoScRsp.shop_group_id_list)
-    pub shop_group_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetRollShopInfoScRsp.roll_shop_id)
     pub roll_shop_id: u32,
     // special fields
@@ -55,6 +55,11 @@ impl GetRollShopInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "shop_group_id_list",
+            |m: &GetRollShopInfoScRsp| { &m.shop_group_id_list },
+            |m: &mut GetRollShopInfoScRsp| { &mut m.shop_group_id_list },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "gacha_random",
             |m: &GetRollShopInfoScRsp| { &m.gacha_random },
@@ -64,11 +69,6 @@ impl GetRollShopInfoScRsp {
             "retcode",
             |m: &GetRollShopInfoScRsp| { &m.retcode },
             |m: &mut GetRollShopInfoScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "shop_group_id_list",
-            |m: &GetRollShopInfoScRsp| { &m.shop_group_id_list },
-            |m: &mut GetRollShopInfoScRsp| { &mut m.shop_group_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "roll_shop_id",
@@ -93,19 +93,19 @@ impl ::protobuf::Message for GetRollShopInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.gacha_random = is.read_uint32()?;
-                },
-                40 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                74 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.shop_group_id_list)?;
                 },
-                72 => {
+                8 => {
                     self.shop_group_id_list.push(is.read_uint32()?);
                 },
-                80 => {
+                24 => {
+                    self.gacha_random = is.read_uint32()?;
+                },
+                32 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                88 => {
                     self.roll_shop_id = is.read_uint32()?;
                 },
                 tag => {
@@ -120,15 +120,15 @@ impl ::protobuf::Message for GetRollShopInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.shop_group_id_list);
         if self.gacha_random != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.gacha_random);
+            my_size += ::protobuf::rt::uint32_size(3, self.gacha_random);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.shop_group_id_list);
         if self.roll_shop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.roll_shop_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.roll_shop_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for GetRollShopInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(1, &self.shop_group_id_list)?;
         if self.gacha_random != 0 {
-            os.write_uint32(2, self.gacha_random)?;
+            os.write_uint32(3, self.gacha_random)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
-        os.write_repeated_packed_uint32(9, &self.shop_group_id_list)?;
         if self.roll_shop_id != 0 {
-            os.write_uint32(10, self.roll_shop_id)?;
+            os.write_uint32(11, self.roll_shop_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,18 +163,18 @@ impl ::protobuf::Message for GetRollShopInfoScRsp {
     }
 
     fn clear(&mut self) {
+        self.shop_group_id_list.clear();
         self.gacha_random = 0;
         self.retcode = 0;
-        self.shop_group_id_list.clear();
         self.roll_shop_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRollShopInfoScRsp {
         static instance: GetRollShopInfoScRsp = GetRollShopInfoScRsp {
+            shop_group_id_list: ::std::vec::Vec::new(),
             gacha_random: 0,
             retcode: 0,
-            shop_group_id_list: ::std::vec::Vec::new(),
             roll_shop_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for GetRollShopInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aGetRollShopInfoScRsp.proto\"\xa2\x01\n\x14GetRollShopInfoScRsp\x12\
-    !\n\x0cgacha_random\x18\x02\x20\x01(\rR\x0bgachaRandom\x12\x18\n\x07retc\
-    ode\x18\x05\x20\x01(\rR\x07retcode\x12+\n\x12shop_group_id_list\x18\t\
-    \x20\x03(\rR\x0fshopGroupIdList\x12\x20\n\x0croll_shop_id\x18\n\x20\x01(\
-    \rR\nrollShopIdb\x06proto3\
+    +\n\x12shop_group_id_list\x18\x01\x20\x03(\rR\x0fshopGroupIdList\x12!\n\
+    \x0cgacha_random\x18\x03\x20\x01(\rR\x0bgachaRandom\x12\x18\n\x07retcode\
+    \x18\x04\x20\x01(\rR\x07retcode\x12\x20\n\x0croll_shop_id\x18\x0b\x20\
+    \x01(\rR\nrollShopIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,10 +30,10 @@ pub struct CakeRaceGetFriendRankingInfoListScRsp {
     // message fields
     // @@protoc_insertion_point(field:CakeRaceGetFriendRankingInfoListScRsp.LPBBJFFNACA)
     pub LPBBJFFNACA: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:CakeRaceGetFriendRankingInfoListScRsp.MLPHLIHFGKG)
-    pub MLPHLIHFGKG: ::std::vec::Vec<super::JBHLNAHOJOH::JBHLNAHOJOH>,
     // @@protoc_insertion_point(field:CakeRaceGetFriendRankingInfoListScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:CakeRaceGetFriendRankingInfoListScRsp.MLPHLIHFGKG)
+    pub MLPHLIHFGKG: ::std::vec::Vec<super::JBHLNAHOJOH::JBHLNAHOJOH>,
     // special fields
     // @@protoc_insertion_point(special_field:CakeRaceGetFriendRankingInfoListScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl CakeRaceGetFriendRankingInfoListScRsp {
             |m: &CakeRaceGetFriendRankingInfoListScRsp| { &m.LPBBJFFNACA },
             |m: &mut CakeRaceGetFriendRankingInfoListScRsp| { &mut m.LPBBJFFNACA },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MLPHLIHFGKG",
-            |m: &CakeRaceGetFriendRankingInfoListScRsp| { &m.MLPHLIHFGKG },
-            |m: &mut CakeRaceGetFriendRankingInfoListScRsp| { &mut m.MLPHLIHFGKG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &CakeRaceGetFriendRankingInfoListScRsp| { &m.retcode },
             |m: &mut CakeRaceGetFriendRankingInfoListScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "MLPHLIHFGKG",
+            |m: &CakeRaceGetFriendRankingInfoListScRsp| { &m.MLPHLIHFGKG },
+            |m: &mut CakeRaceGetFriendRankingInfoListScRsp| { &mut m.MLPHLIHFGKG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CakeRaceGetFriendRankingInfoListScRsp>(
             "CakeRaceGetFriendRankingInfoListScRsp",
@@ -92,11 +92,11 @@ impl ::protobuf::Message for CakeRaceGetFriendRankingInfoListScRsp {
                 24 => {
                     self.LPBBJFFNACA.push(is.read_uint32()?);
                 },
-                90 => {
-                    self.MLPHLIHFGKG.push(is.read_message()?);
-                },
-                120 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
+                },
+                114 => {
+                    self.MLPHLIHFGKG.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,13 +111,13 @@ impl ::protobuf::Message for CakeRaceGetFriendRankingInfoListScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.LPBBJFFNACA);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        }
         for value in &self.MLPHLIHFGKG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -125,12 +125,12 @@ impl ::protobuf::Message for CakeRaceGetFriendRankingInfoListScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         os.write_repeated_packed_uint32(3, &self.LPBBJFFNACA)?;
-        for v in &self.MLPHLIHFGKG {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
+        for v in &self.MLPHLIHFGKG {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,16 +149,16 @@ impl ::protobuf::Message for CakeRaceGetFriendRankingInfoListScRsp {
 
     fn clear(&mut self) {
         self.LPBBJFFNACA.clear();
-        self.MLPHLIHFGKG.clear();
         self.retcode = 0;
+        self.MLPHLIHFGKG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CakeRaceGetFriendRankingInfoListScRsp {
         static instance: CakeRaceGetFriendRankingInfoListScRsp = CakeRaceGetFriendRankingInfoListScRsp {
             LPBBJFFNACA: ::std::vec::Vec::new(),
-            MLPHLIHFGKG: ::std::vec::Vec::new(),
             retcode: 0,
+            MLPHLIHFGKG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for CakeRaceGetFriendRankingInfoListScRs
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+CakeRaceGetFriendRankingInfoListScRsp.proto\x1a\x11JBHLNAHOJOH.proto\
     \"\x93\x01\n%CakeRaceGetFriendRankingInfoListScRsp\x12\x20\n\x0bLPBBJFFN\
-    ACA\x18\x03\x20\x03(\rR\x0bLPBBJFFNACA\x12.\n\x0bMLPHLIHFGKG\x18\x0b\x20\
-    \x03(\x0b2\x0c.JBHLNAHOJOHR\x0bMLPHLIHFGKG\x12\x18\n\x07retcode\x18\x0f\
-    \x20\x01(\rR\x07retcodeb\x06proto3\
+    ACA\x18\x03\x20\x03(\rR\x0bLPBBJFFNACA\x12\x18\n\x07retcode\x18\x05\x20\
+    \x01(\rR\x07retcode\x12.\n\x0bMLPHLIHFGKG\x18\x0e\x20\x03(\x0b2\x0c.JBHL\
+    NAHOJOHR\x0bMLPHLIHFGKGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

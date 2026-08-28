@@ -30,10 +30,10 @@ pub struct ChimeraDuelSaveFriendPvpLineupScRsp {
     // message fields
     // @@protoc_insertion_point(field:ChimeraDuelSaveFriendPvpLineupScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ChimeraDuelSaveFriendPvpLineupScRsp.slot)
-    pub slot: u32,
     // @@protoc_insertion_point(field:ChimeraDuelSaveFriendPvpLineupScRsp.lineup)
     pub lineup: ::protobuf::MessageField<super::PNCNGIAMLCA::PNCNGIAMLCA>,
+    // @@protoc_insertion_point(field:ChimeraDuelSaveFriendPvpLineupScRsp.slot)
+    pub slot: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChimeraDuelSaveFriendPvpLineupScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl ChimeraDuelSaveFriendPvpLineupScRsp {
             |m: &ChimeraDuelSaveFriendPvpLineupScRsp| { &m.retcode },
             |m: &mut ChimeraDuelSaveFriendPvpLineupScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "slot",
-            |m: &ChimeraDuelSaveFriendPvpLineupScRsp| { &m.slot },
-            |m: &mut ChimeraDuelSaveFriendPvpLineupScRsp| { &mut m.slot },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PNCNGIAMLCA::PNCNGIAMLCA>(
             "lineup",
             |m: &ChimeraDuelSaveFriendPvpLineupScRsp| { &m.lineup },
             |m: &mut ChimeraDuelSaveFriendPvpLineupScRsp| { &mut m.lineup },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "slot",
+            |m: &ChimeraDuelSaveFriendPvpLineupScRsp| { &m.slot },
+            |m: &mut ChimeraDuelSaveFriendPvpLineupScRsp| { &mut m.slot },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChimeraDuelSaveFriendPvpLineupScRsp>(
             "ChimeraDuelSaveFriendPvpLineupScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ChimeraDuelSaveFriendPvpLineupScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                48 => {
-                    self.slot = is.read_uint32()?;
-                },
-                114 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
+                },
+                88 => {
+                    self.slot = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for ChimeraDuelSaveFriendPvpLineupScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
-        }
-        if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.slot);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         if let Some(v) = self.lineup.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.slot != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.slot);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for ChimeraDuelSaveFriendPvpLineupScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
-        }
-        if self.slot != 0 {
-            os.write_uint32(6, self.slot)?;
+            os.write_uint32(7, self.retcode)?;
         }
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if self.slot != 0 {
+            os.write_uint32(11, self.slot)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for ChimeraDuelSaveFriendPvpLineupScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.slot = 0;
         self.lineup.clear();
+        self.slot = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChimeraDuelSaveFriendPvpLineupScRsp {
         static instance: ChimeraDuelSaveFriendPvpLineupScRsp = ChimeraDuelSaveFriendPvpLineupScRsp {
             retcode: 0,
-            slot: 0,
             lineup: ::protobuf::MessageField::none(),
+            slot: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for ChimeraDuelSaveFriendPvpLineupScRsp 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)ChimeraDuelSaveFriendPvpLineupScRsp.proto\x1a\x11PNCNGIAMLCA.proto\"y\
-    \n#ChimeraDuelSaveFriendPvpLineupScRsp\x12\x18\n\x07retcode\x18\x02\x20\
-    \x01(\rR\x07retcode\x12\x12\n\x04slot\x18\x06\x20\x01(\rR\x04slot\x12$\n\
-    \x06lineup\x18\x0e\x20\x01(\x0b2\x0c.PNCNGIAMLCAR\x06lineupb\x06proto3\
+    \n#ChimeraDuelSaveFriendPvpLineupScRsp\x12\x18\n\x07retcode\x18\x07\x20\
+    \x01(\rR\x07retcode\x12$\n\x06lineup\x18\t\x20\x01(\x0b2\x0c.PNCNGIAMLCA\
+    R\x06lineup\x12\x12\n\x04slot\x18\x0b\x20\x01(\rR\x04slotb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

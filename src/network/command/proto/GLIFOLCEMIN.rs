@@ -79,10 +79,10 @@ impl ::protobuf::Message for GLIFOLCEMIN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                8 => {
                     self.PIFOEGCGKLC = is.read_uint32()?;
                 },
-                120 => {
+                88 => {
                     self.KEJGCDOGEDD = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GLIFOLCEMIN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PIFOEGCGKLC != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.PIFOEGCGKLC);
+            my_size += ::protobuf::rt::uint32_size(1, self.PIFOEGCGKLC);
         }
         if self.KEJGCDOGEDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.KEJGCDOGEDD);
+            my_size += ::protobuf::rt::uint32_size(11, self.KEJGCDOGEDD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GLIFOLCEMIN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PIFOEGCGKLC != 0 {
-            os.write_uint32(11, self.PIFOEGCGKLC)?;
+            os.write_uint32(1, self.PIFOEGCGKLC)?;
         }
         if self.KEJGCDOGEDD != 0 {
-            os.write_uint32(15, self.KEJGCDOGEDD)?;
+            os.write_uint32(11, self.KEJGCDOGEDD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for GLIFOLCEMIN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GLIFOLCEMIN.proto\"Q\n\x0bGLIFOLCEMIN\x12\x20\n\x0bPIFOEGCGKLC\x18\
-    \x0b\x20\x01(\rR\x0bPIFOEGCGKLC\x12\x20\n\x0bKEJGCDOGEDD\x18\x0f\x20\x01\
+    \x01\x20\x01(\rR\x0bPIFOEGCGKLC\x12\x20\n\x0bKEJGCDOGEDD\x18\x0b\x20\x01\
     (\rR\x0bKEJGCDOGEDDb\x06proto3\
 ";
 

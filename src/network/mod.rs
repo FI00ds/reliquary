@@ -50,14 +50,14 @@
 use std::collections::{HashMap, VecDeque};
 use std::fmt::Write;
 
-use base64::prelude::BASE64_STANDARD;
 use base64::Engine;
+use base64::prelude::BASE64_STANDARD;
 use thiserror::Error;
 use tracing::{info, info_span, instrument, trace, warn};
 
+use crate::network::command::GameCommand;
 use crate::network::command::command_id;
 use crate::network::command::proto::PlayerGetTokenScRsp::PlayerGetTokenScRsp;
-use crate::network::command::GameCommand;
 use crate::network::connection::parse_connection_packet;
 use crate::network::crypto::{
     decrypt_command, get_game_version, lookup_initial_key, new_key_from_seed,

@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NMDKHGGGMBC {
     // message fields
-    // @@protoc_insertion_point(field:NMDKHGGGMBC.HMIOHPIMLCE)
-    pub HMIOHPIMLCE: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:NMDKHGGGMBC.exp)
-    pub exp: u32,
-    // @@protoc_insertion_point(field:NMDKHGGGMBC.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:NMDKHGGGMBC.max_level)
-    pub max_level: u32,
     // @@protoc_insertion_point(field:NMDKHGGGMBC.AFEMBLFCCCH)
     pub AFEMBLFCCCH: u32,
+    // @@protoc_insertion_point(field:NMDKHGGGMBC.HCBADDHNIDG)
+    pub HCBADDHNIDG: u32,
+    // @@protoc_insertion_point(field:NMDKHGGGMBC.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:NMDKHGGGMBC.exp)
+    pub exp: u32,
+    // @@protoc_insertion_point(field:NMDKHGGGMBC.HMIOHPIMLCE)
+    pub HMIOHPIMLCE: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:NMDKHGGGMBC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,15 +57,15 @@ impl NMDKHGGGMBC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HMIOHPIMLCE",
-            |m: &NMDKHGGGMBC| { &m.HMIOHPIMLCE },
-            |m: &mut NMDKHGGGMBC| { &mut m.HMIOHPIMLCE },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AFEMBLFCCCH",
+            |m: &NMDKHGGGMBC| { &m.AFEMBLFCCCH },
+            |m: &mut NMDKHGGGMBC| { &mut m.AFEMBLFCCCH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "exp",
-            |m: &NMDKHGGGMBC| { &m.exp },
-            |m: &mut NMDKHGGGMBC| { &mut m.exp },
+            "HCBADDHNIDG",
+            |m: &NMDKHGGGMBC| { &m.HCBADDHNIDG },
+            |m: &mut NMDKHGGGMBC| { &mut m.HCBADDHNIDG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
@@ -73,14 +73,14 @@ impl NMDKHGGGMBC {
             |m: &mut NMDKHGGGMBC| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "max_level",
-            |m: &NMDKHGGGMBC| { &m.max_level },
-            |m: &mut NMDKHGGGMBC| { &mut m.max_level },
+            "exp",
+            |m: &NMDKHGGGMBC| { &m.exp },
+            |m: &mut NMDKHGGGMBC| { &mut m.exp },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AFEMBLFCCCH",
-            |m: &NMDKHGGGMBC| { &m.AFEMBLFCCCH },
-            |m: &mut NMDKHGGGMBC| { &mut m.AFEMBLFCCCH },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HMIOHPIMLCE",
+            |m: &NMDKHGGGMBC| { &m.HMIOHPIMLCE },
+            |m: &mut NMDKHGGGMBC| { &mut m.HMIOHPIMLCE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NMDKHGGGMBC>(
             "NMDKHGGGMBC",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for NMDKHGGGMBC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HMIOHPIMLCE)?;
+                40 => {
+                    self.AFEMBLFCCCH = is.read_uint32()?;
                 },
-                48 => {
-                    self.HMIOHPIMLCE.push(is.read_uint32()?);
+                64 => {
+                    self.HCBADDHNIDG = is.read_uint32()?;
                 },
-                72 => {
-                    self.exp = is.read_uint32()?;
-                },
-                88 => {
+                80 => {
                     self.level = is.read_uint32()?;
                 },
                 96 => {
-                    self.max_level = is.read_uint32()?;
+                    self.exp = is.read_uint32()?;
                 },
-                104 => {
-                    self.AFEMBLFCCCH = is.read_uint32()?;
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HMIOHPIMLCE)?;
+                },
+                112 => {
+                    self.HMIOHPIMLCE.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,38 +130,38 @@ impl ::protobuf::Message for NMDKHGGGMBC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.HMIOHPIMLCE);
-        if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.exp);
+        if self.AFEMBLFCCCH != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.AFEMBLFCCCH);
+        }
+        if self.HCBADDHNIDG != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.HCBADDHNIDG);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.level);
+            my_size += ::protobuf::rt::uint32_size(10, self.level);
         }
-        if self.max_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.max_level);
+        if self.exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.exp);
         }
-        if self.AFEMBLFCCCH != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.AFEMBLFCCCH);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.HMIOHPIMLCE);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(6, &self.HMIOHPIMLCE)?;
-        if self.exp != 0 {
-            os.write_uint32(9, self.exp)?;
+        if self.AFEMBLFCCCH != 0 {
+            os.write_uint32(5, self.AFEMBLFCCCH)?;
+        }
+        if self.HCBADDHNIDG != 0 {
+            os.write_uint32(8, self.HCBADDHNIDG)?;
         }
         if self.level != 0 {
-            os.write_uint32(11, self.level)?;
+            os.write_uint32(10, self.level)?;
         }
-        if self.max_level != 0 {
-            os.write_uint32(12, self.max_level)?;
+        if self.exp != 0 {
+            os.write_uint32(12, self.exp)?;
         }
-        if self.AFEMBLFCCCH != 0 {
-            os.write_uint32(13, self.AFEMBLFCCCH)?;
-        }
+        os.write_repeated_packed_uint32(14, &self.HMIOHPIMLCE)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -179,21 +179,21 @@ impl ::protobuf::Message for NMDKHGGGMBC {
     }
 
     fn clear(&mut self) {
-        self.HMIOHPIMLCE.clear();
-        self.exp = 0;
-        self.level = 0;
-        self.max_level = 0;
         self.AFEMBLFCCCH = 0;
+        self.HCBADDHNIDG = 0;
+        self.level = 0;
+        self.exp = 0;
+        self.HMIOHPIMLCE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NMDKHGGGMBC {
         static instance: NMDKHGGGMBC = NMDKHGGGMBC {
-            HMIOHPIMLCE: ::std::vec::Vec::new(),
-            exp: 0,
-            level: 0,
-            max_level: 0,
             AFEMBLFCCCH: 0,
+            HCBADDHNIDG: 0,
+            level: 0,
+            exp: 0,
+            HMIOHPIMLCE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -218,11 +218,11 @@ impl ::protobuf::reflect::ProtobufValue for NMDKHGGGMBC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NMDKHGGGMBC.proto\"\x96\x01\n\x0bNMDKHGGGMBC\x12\x20\n\x0bHMIOHPIM\
-    LCE\x18\x06\x20\x03(\rR\x0bHMIOHPIMLCE\x12\x10\n\x03exp\x18\t\x20\x01(\r\
-    R\x03exp\x12\x14\n\x05level\x18\x0b\x20\x01(\rR\x05level\x12\x1b\n\tmax_\
-    level\x18\x0c\x20\x01(\rR\x08maxLevel\x12\x20\n\x0bAFEMBLFCCCH\x18\r\x20\
-    \x01(\rR\x0bAFEMBLFCCCHb\x06proto3\
+    \n\x11NMDKHGGGMBC.proto\"\x9b\x01\n\x0bNMDKHGGGMBC\x12\x20\n\x0bAFEMBLFC\
+    CCH\x18\x05\x20\x01(\rR\x0bAFEMBLFCCCH\x12\x20\n\x0bHCBADDHNIDG\x18\x08\
+    \x20\x01(\rR\x0bHCBADDHNIDG\x12\x14\n\x05level\x18\n\x20\x01(\rR\x05leve\
+    l\x12\x10\n\x03exp\x18\x0c\x20\x01(\rR\x03exp\x12\x20\n\x0bHMIOHPIMLCE\
+    \x18\x0e\x20\x03(\rR\x0bHMIOHPIMLCEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

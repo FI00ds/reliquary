@@ -82,7 +82,7 @@ impl ::protobuf::Message for TrialActivityDataChangeScNotify {
                 10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.trial_activity_info)?;
                 },
-                74 => {
+                82 => {
                     self.OBOPMFBGBAE.push(is.read_message()?);
                 },
                 tag => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for TrialActivityDataChangeScNotify {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         for v in &self.OBOPMFBGBAE {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -170,7 +170,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n%TrialActivityDataChangeScNotify.proto\x1a\x11PAALDKHKOLE.proto\x1a\
     \x17TrialActivityInfo.proto\"\x95\x01\n\x1fTrialActivityDataChangeScNoti\
     fy\x12B\n\x13trial_activity_info\x18\x01\x20\x01(\x0b2\x12.TrialActivity\
-    InfoR\x11trialActivityInfo\x12.\n\x0bOBOPMFBGBAE\x18\t\x20\x03(\x0b2\x0c\
+    InfoR\x11trialActivityInfo\x12.\n\x0bOBOPMFBGBAE\x18\n\x20\x03(\x0b2\x0c\
     .PAALDKHKOLER\x0bOBOPMFBGBAEb\x06proto3\
 ";
 

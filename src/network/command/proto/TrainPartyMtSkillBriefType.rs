@@ -27,16 +27,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:TrainPartyMtSkillBriefType)
 pub enum TrainPartyMtSkillBriefType {
-    // @@protoc_insertion_point(enum_value:TrainPartyMtSkillBriefType.ANMELOCBHGK_ODCHAJHNFDF)
-    ANMELOCBHGK_ODCHAJHNFDF = 0,
-    // @@protoc_insertion_point(enum_value:TrainPartyMtSkillBriefType.ANMELOCBHGK_ENDBHCELNKL)
-    ANMELOCBHGK_ENDBHCELNKL = 1,
-    // @@protoc_insertion_point(enum_value:TrainPartyMtSkillBriefType.ANMELOCBHGK_AMFLHLKGLFL)
-    ANMELOCBHGK_AMFLHLKGLFL = 2,
-    // @@protoc_insertion_point(enum_value:TrainPartyMtSkillBriefType.ANMELOCBHGK_ECPMEDNEOGE)
-    ANMELOCBHGK_ECPMEDNEOGE = 3,
-    // @@protoc_insertion_point(enum_value:TrainPartyMtSkillBriefType.ANMELOCBHGK_NHLNOHDCPHH)
-    ANMELOCBHGK_NHLNOHDCPHH = 4,
+    // @@protoc_insertion_point(enum_value:TrainPartyMtSkillBriefType.TrainPartyMtSkillBriefType_KMtSkillNone)
+    TrainPartyMtSkillBriefType_KMtSkillNone = 0,
+    // @@protoc_insertion_point(enum_value:TrainPartyMtSkillBriefType.TrainPartyMtSkillBriefType_KMtSkillModifyBase)
+    TrainPartyMtSkillBriefType_KMtSkillModifyBase = 1,
+    // @@protoc_insertion_point(enum_value:TrainPartyMtSkillBriefType.TrainPartyMtSkillBriefType_KMtSkillModifyRatio)
+    TrainPartyMtSkillBriefType_KMtSkillModifyRatio = 2,
+    // @@protoc_insertion_point(enum_value:TrainPartyMtSkillBriefType.TrainPartyMtSkillBriefType_KMtSkillMultiplyRatio)
+    TrainPartyMtSkillBriefType_KMtSkillMultiplyRatio = 3,
+    // @@protoc_insertion_point(enum_value:TrainPartyMtSkillBriefType.TrainPartyMtSkillBriefType_KMtSkillSelfDestroy)
+    TrainPartyMtSkillBriefType_KMtSkillSelfDestroy = 4,
 }
 
 impl ::protobuf::Enum for TrainPartyMtSkillBriefType {
@@ -48,32 +48,32 @@ impl ::protobuf::Enum for TrainPartyMtSkillBriefType {
 
     fn from_i32(value: i32) -> ::std::option::Option<TrainPartyMtSkillBriefType> {
         match value {
-            0 => ::std::option::Option::Some(TrainPartyMtSkillBriefType::ANMELOCBHGK_ODCHAJHNFDF),
-            1 => ::std::option::Option::Some(TrainPartyMtSkillBriefType::ANMELOCBHGK_ENDBHCELNKL),
-            2 => ::std::option::Option::Some(TrainPartyMtSkillBriefType::ANMELOCBHGK_AMFLHLKGLFL),
-            3 => ::std::option::Option::Some(TrainPartyMtSkillBriefType::ANMELOCBHGK_ECPMEDNEOGE),
-            4 => ::std::option::Option::Some(TrainPartyMtSkillBriefType::ANMELOCBHGK_NHLNOHDCPHH),
+            0 => ::std::option::Option::Some(TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_KMtSkillNone),
+            1 => ::std::option::Option::Some(TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_KMtSkillModifyBase),
+            2 => ::std::option::Option::Some(TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_KMtSkillModifyRatio),
+            3 => ::std::option::Option::Some(TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_KMtSkillMultiplyRatio),
+            4 => ::std::option::Option::Some(TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_KMtSkillSelfDestroy),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<TrainPartyMtSkillBriefType> {
         match str {
-            "ANMELOCBHGK_ODCHAJHNFDF" => ::std::option::Option::Some(TrainPartyMtSkillBriefType::ANMELOCBHGK_ODCHAJHNFDF),
-            "ANMELOCBHGK_ENDBHCELNKL" => ::std::option::Option::Some(TrainPartyMtSkillBriefType::ANMELOCBHGK_ENDBHCELNKL),
-            "ANMELOCBHGK_AMFLHLKGLFL" => ::std::option::Option::Some(TrainPartyMtSkillBriefType::ANMELOCBHGK_AMFLHLKGLFL),
-            "ANMELOCBHGK_ECPMEDNEOGE" => ::std::option::Option::Some(TrainPartyMtSkillBriefType::ANMELOCBHGK_ECPMEDNEOGE),
-            "ANMELOCBHGK_NHLNOHDCPHH" => ::std::option::Option::Some(TrainPartyMtSkillBriefType::ANMELOCBHGK_NHLNOHDCPHH),
+            "TrainPartyMtSkillBriefType_KMtSkillNone" => ::std::option::Option::Some(TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_KMtSkillNone),
+            "TrainPartyMtSkillBriefType_KMtSkillModifyBase" => ::std::option::Option::Some(TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_KMtSkillModifyBase),
+            "TrainPartyMtSkillBriefType_KMtSkillModifyRatio" => ::std::option::Option::Some(TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_KMtSkillModifyRatio),
+            "TrainPartyMtSkillBriefType_KMtSkillMultiplyRatio" => ::std::option::Option::Some(TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_KMtSkillMultiplyRatio),
+            "TrainPartyMtSkillBriefType_KMtSkillSelfDestroy" => ::std::option::Option::Some(TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_KMtSkillSelfDestroy),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [TrainPartyMtSkillBriefType] = &[
-        TrainPartyMtSkillBriefType::ANMELOCBHGK_ODCHAJHNFDF,
-        TrainPartyMtSkillBriefType::ANMELOCBHGK_ENDBHCELNKL,
-        TrainPartyMtSkillBriefType::ANMELOCBHGK_AMFLHLKGLFL,
-        TrainPartyMtSkillBriefType::ANMELOCBHGK_ECPMEDNEOGE,
-        TrainPartyMtSkillBriefType::ANMELOCBHGK_NHLNOHDCPHH,
+        TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_KMtSkillNone,
+        TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_KMtSkillModifyBase,
+        TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_KMtSkillModifyRatio,
+        TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_KMtSkillMultiplyRatio,
+        TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_KMtSkillSelfDestroy,
     ];
 }
 
@@ -91,7 +91,7 @@ impl ::protobuf::EnumFull for TrainPartyMtSkillBriefType {
 
 impl ::std::default::Default for TrainPartyMtSkillBriefType {
     fn default() -> Self {
-        TrainPartyMtSkillBriefType::ANMELOCBHGK_ODCHAJHNFDF
+        TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_KMtSkillNone
     }
 }
 
@@ -102,11 +102,12 @@ impl TrainPartyMtSkillBriefType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20TrainPartyMtSkillBriefType.proto*\xad\x01\n\x1aTrainPartyMtSkillBr\
-    iefType\x12\x1b\n\x17ANMELOCBHGK_ODCHAJHNFDF\x10\0\x12\x1b\n\x17ANMELOCB\
-    HGK_ENDBHCELNKL\x10\x01\x12\x1b\n\x17ANMELOCBHGK_AMFLHLKGLFL\x10\x02\x12\
-    \x1b\n\x17ANMELOCBHGK_ECPMEDNEOGE\x10\x03\x12\x1b\n\x17ANMELOCBHGK_NHLNO\
-    HDCPHH\x10\x04b\x06proto3\
+    \n\x20TrainPartyMtSkillBriefType.proto*\x9a\x02\n\x1aTrainPartyMtSkillBr\
+    iefType\x12+\n'TrainPartyMtSkillBriefType_KMtSkillNone\x10\0\x121\n-Trai\
+    nPartyMtSkillBriefType_KMtSkillModifyBase\x10\x01\x122\n.TrainPartyMtSki\
+    llBriefType_KMtSkillModifyRatio\x10\x02\x124\n0TrainPartyMtSkillBriefTyp\
+    e_KMtSkillMultiplyRatio\x10\x03\x122\n.TrainPartyMtSkillBriefType_KMtSki\
+    llSelfDestroy\x10\x04b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

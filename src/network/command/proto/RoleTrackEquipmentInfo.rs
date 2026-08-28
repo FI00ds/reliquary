@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RoleTrackEquipmentInfo {
     // message fields
-    // @@protoc_insertion_point(field:RoleTrackEquipmentInfo.BGFFICLCKHE)
-    pub BGFFICLCKHE: u32,
-    // @@protoc_insertion_point(field:RoleTrackEquipmentInfo.priority)
-    pub priority: u32,
+    // @@protoc_insertion_point(field:RoleTrackEquipmentInfo.H_c3f67d36)
+    pub H_c3f67d36: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RoleTrackEquipmentInfo.NALMBOOCCIN)
+    pub NALMBOOCCIN: u32,
     // @@protoc_insertion_point(field:RoleTrackEquipmentInfo.MCJMHBIECMN)
     pub MCJMHBIECMN: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:RoleTrackEquipmentInfo.source)
-    pub source: ::protobuf::EnumOrUnknown<super::GridFightEquipTrackSource::GridFightEquipTrackSource>,
-    // @@protoc_insertion_point(field:RoleTrackEquipmentInfo.grid_fight_item_list)
-    pub grid_fight_item_list: ::std::vec::Vec<u32>,
+    pub source: ::protobuf::EnumOrUnknown<super::H_e8fbf219::H_e8fbf219>,
+    // @@protoc_insertion_point(field:RoleTrackEquipmentInfo.BGFFICLCKHE)
+    pub BGFFICLCKHE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RoleTrackEquipmentInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,15 +57,15 @@ impl RoleTrackEquipmentInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BGFFICLCKHE",
-            |m: &RoleTrackEquipmentInfo| { &m.BGFFICLCKHE },
-            |m: &mut RoleTrackEquipmentInfo| { &mut m.BGFFICLCKHE },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "H_c3f67d36",
+            |m: &RoleTrackEquipmentInfo| { &m.H_c3f67d36 },
+            |m: &mut RoleTrackEquipmentInfo| { &mut m.H_c3f67d36 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "priority",
-            |m: &RoleTrackEquipmentInfo| { &m.priority },
-            |m: &mut RoleTrackEquipmentInfo| { &mut m.priority },
+            "NALMBOOCCIN",
+            |m: &RoleTrackEquipmentInfo| { &m.NALMBOOCCIN },
+            |m: &mut RoleTrackEquipmentInfo| { &mut m.NALMBOOCCIN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "MCJMHBIECMN",
@@ -77,10 +77,10 @@ impl RoleTrackEquipmentInfo {
             |m: &RoleTrackEquipmentInfo| { &m.source },
             |m: &mut RoleTrackEquipmentInfo| { &mut m.source },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "grid_fight_item_list",
-            |m: &RoleTrackEquipmentInfo| { &m.grid_fight_item_list },
-            |m: &mut RoleTrackEquipmentInfo| { &mut m.grid_fight_item_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BGFFICLCKHE",
+            |m: &RoleTrackEquipmentInfo| { &m.BGFFICLCKHE },
+            |m: &mut RoleTrackEquipmentInfo| { &mut m.BGFFICLCKHE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RoleTrackEquipmentInfo>(
             "RoleTrackEquipmentInfo",
@@ -100,26 +100,26 @@ impl ::protobuf::Message for RoleTrackEquipmentInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.H_c3f67d36)?;
+                },
                 24 => {
-                    self.BGFFICLCKHE = is.read_uint32()?;
-                },
-                64 => {
-                    self.priority = is.read_uint32()?;
-                },
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.MCJMHBIECMN)?;
+                    self.H_c3f67d36.push(is.read_uint32()?);
                 },
                 72 => {
+                    self.NALMBOOCCIN = is.read_uint32()?;
+                },
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.MCJMHBIECMN)?;
+                },
+                88 => {
                     self.MCJMHBIECMN.push(is.read_uint32()?);
                 },
                 96 => {
                     self.source = is.read_enum_or_unknown()?;
                 },
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.grid_fight_item_list)?;
-                },
-                104 => {
-                    self.grid_fight_item_list.push(is.read_uint32()?);
+                112 => {
+                    self.BGFFICLCKHE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -133,34 +133,34 @@ impl ::protobuf::Message for RoleTrackEquipmentInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BGFFICLCKHE != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.BGFFICLCKHE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.H_c3f67d36);
+        if self.NALMBOOCCIN != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.NALMBOOCCIN);
         }
-        if self.priority != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.priority);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.MCJMHBIECMN);
-        if self.source != ::protobuf::EnumOrUnknown::new(super::GridFightEquipTrackSource::GridFightEquipTrackSource::IHMJHLGKLHP_FAHMBODELMP) {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.MCJMHBIECMN);
+        if self.source != ::protobuf::EnumOrUnknown::new(super::H_e8fbf219::H_e8fbf219::H_2b6311cd) {
             my_size += ::protobuf::rt::int32_size(12, self.source.value());
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.grid_fight_item_list);
+        if self.BGFFICLCKHE != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.BGFFICLCKHE);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BGFFICLCKHE != 0 {
-            os.write_uint32(3, self.BGFFICLCKHE)?;
+        os.write_repeated_packed_uint32(3, &self.H_c3f67d36)?;
+        if self.NALMBOOCCIN != 0 {
+            os.write_uint32(9, self.NALMBOOCCIN)?;
         }
-        if self.priority != 0 {
-            os.write_uint32(8, self.priority)?;
-        }
-        os.write_repeated_packed_uint32(9, &self.MCJMHBIECMN)?;
-        if self.source != ::protobuf::EnumOrUnknown::new(super::GridFightEquipTrackSource::GridFightEquipTrackSource::IHMJHLGKLHP_FAHMBODELMP) {
+        os.write_repeated_packed_uint32(11, &self.MCJMHBIECMN)?;
+        if self.source != ::protobuf::EnumOrUnknown::new(super::H_e8fbf219::H_e8fbf219::H_2b6311cd) {
             os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.source))?;
         }
-        os.write_repeated_packed_uint32(13, &self.grid_fight_item_list)?;
+        if self.BGFFICLCKHE != 0 {
+            os.write_uint32(14, self.BGFFICLCKHE)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -178,21 +178,21 @@ impl ::protobuf::Message for RoleTrackEquipmentInfo {
     }
 
     fn clear(&mut self) {
-        self.BGFFICLCKHE = 0;
-        self.priority = 0;
+        self.H_c3f67d36.clear();
+        self.NALMBOOCCIN = 0;
         self.MCJMHBIECMN.clear();
-        self.source = ::protobuf::EnumOrUnknown::new(super::GridFightEquipTrackSource::GridFightEquipTrackSource::IHMJHLGKLHP_FAHMBODELMP);
-        self.grid_fight_item_list.clear();
+        self.source = ::protobuf::EnumOrUnknown::new(super::H_e8fbf219::H_e8fbf219::H_2b6311cd);
+        self.BGFFICLCKHE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RoleTrackEquipmentInfo {
         static instance: RoleTrackEquipmentInfo = RoleTrackEquipmentInfo {
-            BGFFICLCKHE: 0,
-            priority: 0,
+            H_c3f67d36: ::std::vec::Vec::new(),
+            NALMBOOCCIN: 0,
             MCJMHBIECMN: ::std::vec::Vec::new(),
             source: ::protobuf::EnumOrUnknown::from_i32(0),
-            grid_fight_item_list: ::std::vec::Vec::new(),
+            BGFFICLCKHE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -217,13 +217,12 @@ impl ::protobuf::reflect::ProtobufValue for RoleTrackEquipmentInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cRoleTrackEquipmentInfo.proto\x1a\x1fGridFightEquipTrackSource.prot\
-    o\"\xdd\x01\n\x16RoleTrackEquipmentInfo\x12\x20\n\x0bBGFFICLCKHE\x18\x03\
-    \x20\x01(\rR\x0bBGFFICLCKHE\x12\x1a\n\x08priority\x18\x08\x20\x01(\rR\
-    \x08priority\x12\x20\n\x0bMCJMHBIECMN\x18\t\x20\x03(\rR\x0bMCJMHBIECMN\
-    \x122\n\x06source\x18\x0c\x20\x01(\x0e2\x1a.GridFightEquipTrackSourceR\
-    \x06source\x12/\n\x14grid_fight_item_list\x18\r\x20\x03(\rR\x11gridFight\
-    ItemListb\x06proto3\
+    \n\x1cRoleTrackEquipmentInfo.proto\x1a\x10H_e8fbf219.proto\"\xc2\x01\n\
+    \x16RoleTrackEquipmentInfo\x12\x1d\n\nH_c3f67d36\x18\x03\x20\x03(\rR\tHC\
+    3f67d36\x12\x20\n\x0bNALMBOOCCIN\x18\t\x20\x01(\rR\x0bNALMBOOCCIN\x12\
+    \x20\n\x0bMCJMHBIECMN\x18\x0b\x20\x03(\rR\x0bMCJMHBIECMN\x12#\n\x06sourc\
+    e\x18\x0c\x20\x01(\x0e2\x0b.H_e8fbf219R\x06source\x12\x20\n\x0bBGFFICLCK\
+    HE\x18\x0e\x20\x01(\rR\x0bBGFFICLCKHEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -241,7 +240,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GridFightEquipTrackSource::file_descriptor().clone());
+            deps.push(super::H_e8fbf219::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RoleTrackEquipmentInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

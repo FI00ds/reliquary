@@ -79,10 +79,10 @@ impl ::protobuf::Message for FightGameStartScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                26 => {
                     self.DFLEOIGPLNM.push(is.read_message()?);
                 },
-                90 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KAEDKFOMADJ)?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for FightGameStartScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.DFLEOIGPLNM {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         if let Some(v) = self.KAEDKFOMADJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,8 +169,8 @@ impl ::protobuf::reflect::ProtobufValue for FightGameStartScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cFightGameStartScNotify.proto\x1a\x11BFBHKJLJJBJ.proto\x1a\x11LMLNN\
     HKJEIP.proto\"x\n\x16FightGameStartScNotify\x12.\n\x0bDFLEOIGPLNM\x18\
-    \x01\x20\x03(\x0b2\x0c.LMLNNHKJEIPR\x0bDFLEOIGPLNM\x12.\n\x0bKAEDKFOMADJ\
-    \x18\x0b\x20\x01(\x0b2\x0c.BFBHKJLJJBJR\x0bKAEDKFOMADJb\x06proto3\
+    \x03\x20\x03(\x0b2\x0c.LMLNNHKJEIPR\x0bDFLEOIGPLNM\x12.\n\x0bKAEDKFOMADJ\
+    \x18\x07\x20\x01(\x0b2\x0c.BFBHKJLJJBJR\x0bKAEDKFOMADJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

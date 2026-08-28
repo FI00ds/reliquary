@@ -32,8 +32,8 @@ pub struct OJMPKMNINGK {
     pub CFKKKPNKHEL: u32,
     // @@protoc_insertion_point(field:OJMPKMNINGK.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:OJMPKMNINGK.is_locked)
-    pub is_locked: bool,
+    // @@protoc_insertion_point(field:OJMPKMNINGK.AALCCPJCBME)
+    pub AALCCPJCBME: bool,
     // @@protoc_insertion_point(field:OJMPKMNINGK.dice_slot_id)
     pub dice_slot_id: u32,
     // @@protoc_insertion_point(field:OJMPKMNINGK.AAABHNMAENN)
@@ -68,9 +68,9 @@ impl OJMPKMNINGK {
             |m: &mut OJMPKMNINGK| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_locked",
-            |m: &OJMPKMNINGK| { &m.is_locked },
-            |m: &mut OJMPKMNINGK| { &mut m.is_locked },
+            "AALCCPJCBME",
+            |m: &OJMPKMNINGK| { &m.AALCCPJCBME },
+            |m: &mut OJMPKMNINGK| { &mut m.AALCCPJCBME },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "dice_slot_id",
@@ -107,7 +107,7 @@ impl ::protobuf::Message for OJMPKMNINGK {
                     self.level = is.read_uint32()?;
                 },
                 24 => {
-                    self.is_locked = is.read_bool()?;
+                    self.AALCCPJCBME = is.read_bool()?;
                 },
                 32 => {
                     self.dice_slot_id = is.read_uint32()?;
@@ -145,7 +145,7 @@ impl ::protobuf::Message for OJMPKMNINGK {
         if self.level != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.level);
         }
-        if self.is_locked != false {
+        if self.AALCCPJCBME != false {
             my_size += 1 + 1;
         }
         if self.dice_slot_id != 0 {
@@ -169,8 +169,8 @@ impl ::protobuf::Message for OJMPKMNINGK {
         if self.level != 0 {
             os.write_uint32(2, self.level)?;
         }
-        if self.is_locked != false {
-            os.write_bool(3, self.is_locked)?;
+        if self.AALCCPJCBME != false {
+            os.write_bool(3, self.AALCCPJCBME)?;
         }
         if self.dice_slot_id != 0 {
             os.write_uint32(4, self.dice_slot_id)?;
@@ -203,7 +203,7 @@ impl ::protobuf::Message for OJMPKMNINGK {
     fn clear(&mut self) {
         self.CFKKKPNKHEL = 0;
         self.level = 0;
-        self.is_locked = false;
+        self.AALCCPJCBME = false;
         self.dice_slot_id = 0;
         self.AAABHNMAENN.clear();
         self.special_fields.clear();
@@ -233,14 +233,14 @@ impl ::protobuf::reflect::ProtobufValue for OJMPKMNINGK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OJMPKMNINGK.proto\"\x85\x02\n\x0bOJMPKMNINGK\x12\x20\n\x0bCFKKKPNK\
+    \n\x11OJMPKMNINGK.proto\"\x8a\x02\n\x0bOJMPKMNINGK\x12\x20\n\x0bCFKKKPNK\
     HEL\x18\x01\x20\x01(\rR\x0bCFKKKPNKHEL\x12\x14\n\x05level\x18\x02\x20\
-    \x01(\rR\x05level\x12\x1b\n\tis_locked\x18\x03\x20\x01(\x08R\x08isLocked\
-    \x12\x20\n\x0cdice_slot_id\x18\x04\x20\x01(\rR\ndiceSlotId\x12?\n\x0bAAA\
-    BHNMAENN\x18\x05\x20\x03(\x0b2\x1d.OJMPKMNINGK.AAABHNMAENNEntryR\x0bAAAB\
-    HNMAENN\x1a>\n\x10AAABHNMAENNEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\
-    \x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06pr\
-    oto3\
+    \x01(\rR\x05level\x12\x20\n\x0bAALCCPJCBME\x18\x03\x20\x01(\x08R\x0bAALC\
+    CPJCBME\x12\x20\n\x0cdice_slot_id\x18\x04\x20\x01(\rR\ndiceSlotId\x12?\n\
+    \x0bAAABHNMAENN\x18\x05\x20\x03(\x0b2\x1d.OJMPKMNINGK.AAABHNMAENNEntryR\
+    \x0bAAABHNMAENN\x1a>\n\x10AAABHNMAENNEntry\x12\x10\n\x03key\x18\x01\x20\
+    \x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\
+    \x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

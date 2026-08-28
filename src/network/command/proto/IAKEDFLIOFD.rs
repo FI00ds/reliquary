@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IAKEDFLIOFD {
     // message fields
-    // @@protoc_insertion_point(field:IAKEDFLIOFD.PLPJNCDKMAD)
-    pub PLPJNCDKMAD: u32,
-    // @@protoc_insertion_point(field:IAKEDFLIOFD.JJPMDBCPJBA)
-    pub JJPMDBCPJBA: u32,
     // @@protoc_insertion_point(field:IAKEDFLIOFD.DAEMEBCKHIK)
     pub DAEMEBCKHIK: u32,
     // @@protoc_insertion_point(field:IAKEDFLIOFD.IONLFBNMOFP)
     pub IONLFBNMOFP: u32,
+    // @@protoc_insertion_point(field:IAKEDFLIOFD.JJPMDBCPJBA)
+    pub JJPMDBCPJBA: u32,
+    // @@protoc_insertion_point(field:IAKEDFLIOFD.PLPJNCDKMAD)
+    pub PLPJNCDKMAD: u32,
     // @@protoc_insertion_point(field:IAKEDFLIOFD.MFBAKLCBPCJ)
-    pub MFBAKLCBPCJ: ::std::vec::Vec<super::GridFightSupplyRoleInfo::GridFightSupplyRoleInfo>,
+    pub MFBAKLCBPCJ: ::std::vec::Vec<super::H_51528db4::H_51528db4>,
     // special fields
     // @@protoc_insertion_point(special_field:IAKEDFLIOFD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,16 +58,6 @@ impl IAKEDFLIOFD {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PLPJNCDKMAD",
-            |m: &IAKEDFLIOFD| { &m.PLPJNCDKMAD },
-            |m: &mut IAKEDFLIOFD| { &mut m.PLPJNCDKMAD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JJPMDBCPJBA",
-            |m: &IAKEDFLIOFD| { &m.JJPMDBCPJBA },
-            |m: &mut IAKEDFLIOFD| { &mut m.JJPMDBCPJBA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DAEMEBCKHIK",
             |m: &IAKEDFLIOFD| { &m.DAEMEBCKHIK },
             |m: &mut IAKEDFLIOFD| { &mut m.DAEMEBCKHIK },
@@ -76,6 +66,16 @@ impl IAKEDFLIOFD {
             "IONLFBNMOFP",
             |m: &IAKEDFLIOFD| { &m.IONLFBNMOFP },
             |m: &mut IAKEDFLIOFD| { &mut m.IONLFBNMOFP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JJPMDBCPJBA",
+            |m: &IAKEDFLIOFD| { &m.JJPMDBCPJBA },
+            |m: &mut IAKEDFLIOFD| { &mut m.JJPMDBCPJBA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PLPJNCDKMAD",
+            |m: &IAKEDFLIOFD| { &m.PLPJNCDKMAD },
+            |m: &mut IAKEDFLIOFD| { &mut m.PLPJNCDKMAD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "MFBAKLCBPCJ",
@@ -101,18 +101,18 @@ impl ::protobuf::Message for IAKEDFLIOFD {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.PLPJNCDKMAD = is.read_uint32()?;
-                },
-                32 => {
-                    self.JJPMDBCPJBA = is.read_uint32()?;
-                },
-                56 => {
                     self.DAEMEBCKHIK = is.read_uint32()?;
                 },
-                104 => {
+                32 => {
                     self.IONLFBNMOFP = is.read_uint32()?;
                 },
-                114 => {
+                64 => {
+                    self.JJPMDBCPJBA = is.read_uint32()?;
+                },
+                80 => {
+                    self.PLPJNCDKMAD = is.read_uint32()?;
+                },
+                122 => {
                     self.MFBAKLCBPCJ.push(is.read_message()?);
                 },
                 tag => {
@@ -127,17 +127,17 @@ impl ::protobuf::Message for IAKEDFLIOFD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PLPJNCDKMAD != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.PLPJNCDKMAD);
-        }
-        if self.JJPMDBCPJBA != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.JJPMDBCPJBA);
-        }
         if self.DAEMEBCKHIK != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.DAEMEBCKHIK);
+            my_size += ::protobuf::rt::uint32_size(1, self.DAEMEBCKHIK);
         }
         if self.IONLFBNMOFP != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.IONLFBNMOFP);
+            my_size += ::protobuf::rt::uint32_size(4, self.IONLFBNMOFP);
+        }
+        if self.JJPMDBCPJBA != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.JJPMDBCPJBA);
+        }
+        if self.PLPJNCDKMAD != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.PLPJNCDKMAD);
         }
         for value in &self.MFBAKLCBPCJ {
             let len = value.compute_size();
@@ -149,20 +149,20 @@ impl ::protobuf::Message for IAKEDFLIOFD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PLPJNCDKMAD != 0 {
-            os.write_uint32(1, self.PLPJNCDKMAD)?;
-        }
-        if self.JJPMDBCPJBA != 0 {
-            os.write_uint32(4, self.JJPMDBCPJBA)?;
-        }
         if self.DAEMEBCKHIK != 0 {
-            os.write_uint32(7, self.DAEMEBCKHIK)?;
+            os.write_uint32(1, self.DAEMEBCKHIK)?;
         }
         if self.IONLFBNMOFP != 0 {
-            os.write_uint32(13, self.IONLFBNMOFP)?;
+            os.write_uint32(4, self.IONLFBNMOFP)?;
+        }
+        if self.JJPMDBCPJBA != 0 {
+            os.write_uint32(8, self.JJPMDBCPJBA)?;
+        }
+        if self.PLPJNCDKMAD != 0 {
+            os.write_uint32(10, self.PLPJNCDKMAD)?;
         }
         for v in &self.MFBAKLCBPCJ {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for IAKEDFLIOFD {
     }
 
     fn clear(&mut self) {
-        self.PLPJNCDKMAD = 0;
-        self.JJPMDBCPJBA = 0;
         self.DAEMEBCKHIK = 0;
         self.IONLFBNMOFP = 0;
+        self.JJPMDBCPJBA = 0;
+        self.PLPJNCDKMAD = 0;
         self.MFBAKLCBPCJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IAKEDFLIOFD {
         static instance: IAKEDFLIOFD = IAKEDFLIOFD {
-            PLPJNCDKMAD: 0,
-            JJPMDBCPJBA: 0,
             DAEMEBCKHIK: 0,
             IONLFBNMOFP: 0,
+            JJPMDBCPJBA: 0,
+            PLPJNCDKMAD: 0,
             MFBAKLCBPCJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -220,12 +220,12 @@ impl ::protobuf::reflect::ProtobufValue for IAKEDFLIOFD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IAKEDFLIOFD.proto\x1a\x1dGridFightSupplyRoleInfo.proto\"\xd1\x01\n\
-    \x0bIAKEDFLIOFD\x12\x20\n\x0bPLPJNCDKMAD\x18\x01\x20\x01(\rR\x0bPLPJNCDK\
-    MAD\x12\x20\n\x0bJJPMDBCPJBA\x18\x04\x20\x01(\rR\x0bJJPMDBCPJBA\x12\x20\
-    \n\x0bDAEMEBCKHIK\x18\x07\x20\x01(\rR\x0bDAEMEBCKHIK\x12\x20\n\x0bIONLFB\
-    NMOFP\x18\r\x20\x01(\rR\x0bIONLFBNMOFP\x12:\n\x0bMFBAKLCBPCJ\x18\x0e\x20\
-    \x03(\x0b2\x18.GridFightSupplyRoleInfoR\x0bMFBAKLCBPCJb\x06proto3\
+    \n\x11IAKEDFLIOFD.proto\x1a\x10H_51528db4.proto\"\xc4\x01\n\x0bIAKEDFLIO\
+    FD\x12\x20\n\x0bDAEMEBCKHIK\x18\x01\x20\x01(\rR\x0bDAEMEBCKHIK\x12\x20\n\
+    \x0bIONLFBNMOFP\x18\x04\x20\x01(\rR\x0bIONLFBNMOFP\x12\x20\n\x0bJJPMDBCP\
+    JBA\x18\x08\x20\x01(\rR\x0bJJPMDBCPJBA\x12\x20\n\x0bPLPJNCDKMAD\x18\n\
+    \x20\x01(\rR\x0bPLPJNCDKMAD\x12-\n\x0bMFBAKLCBPCJ\x18\x0f\x20\x03(\x0b2\
+    \x0b.H_51528db4R\x0bMFBAKLCBPCJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -243,7 +243,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GridFightSupplyRoleInfo::file_descriptor().clone());
+            deps.push(super::H_51528db4::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(IAKEDFLIOFD::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

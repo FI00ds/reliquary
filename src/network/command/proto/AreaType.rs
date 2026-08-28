@@ -27,20 +27,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:AreaType)
 pub enum AreaType {
-    // @@protoc_insertion_point(enum_value:AreaType.AREA_NONE)
-    AREA_NONE = 0,
-    // @@protoc_insertion_point(enum_value:AreaType.AREA_CN)
-    AREA_CN = 1,
-    // @@protoc_insertion_point(enum_value:AreaType.AREA_JP)
-    AREA_JP = 2,
-    // @@protoc_insertion_point(enum_value:AreaType.AREA_ASIA)
-    AREA_ASIA = 3,
-    // @@protoc_insertion_point(enum_value:AreaType.AREA_WEST)
-    AREA_WEST = 4,
-    // @@protoc_insertion_point(enum_value:AreaType.AREA_KR)
-    AREA_KR = 5,
-    // @@protoc_insertion_point(enum_value:AreaType.AREA_OVERSEAS)
-    AREA_OVERSEAS = 6,
+    // @@protoc_insertion_point(enum_value:AreaType.AreaType_AKFGIEKMPND)
+    AreaType_AKFGIEKMPND = 0,
+    // @@protoc_insertion_point(enum_value:AreaType.AreaType_GFPLLNHAPGA)
+    AreaType_GFPLLNHAPGA = 1,
+    // @@protoc_insertion_point(enum_value:AreaType.AreaType_JGIIAHNGBMC)
+    AreaType_JGIIAHNGBMC = 2,
+    // @@protoc_insertion_point(enum_value:AreaType.AreaType_EBGCNMOMOIM)
+    AreaType_EBGCNMOMOIM = 3,
+    // @@protoc_insertion_point(enum_value:AreaType.AreaType_BIIIAOCBMLJ)
+    AreaType_BIIIAOCBMLJ = 4,
+    // @@protoc_insertion_point(enum_value:AreaType.AreaType_FJFFDCAAJIH)
+    AreaType_FJFFDCAAJIH = 5,
+    // @@protoc_insertion_point(enum_value:AreaType.AreaType_BMNGFIGPNDM)
+    AreaType_BMNGFIGPNDM = 6,
 }
 
 impl ::protobuf::Enum for AreaType {
@@ -52,38 +52,38 @@ impl ::protobuf::Enum for AreaType {
 
     fn from_i32(value: i32) -> ::std::option::Option<AreaType> {
         match value {
-            0 => ::std::option::Option::Some(AreaType::AREA_NONE),
-            1 => ::std::option::Option::Some(AreaType::AREA_CN),
-            2 => ::std::option::Option::Some(AreaType::AREA_JP),
-            3 => ::std::option::Option::Some(AreaType::AREA_ASIA),
-            4 => ::std::option::Option::Some(AreaType::AREA_WEST),
-            5 => ::std::option::Option::Some(AreaType::AREA_KR),
-            6 => ::std::option::Option::Some(AreaType::AREA_OVERSEAS),
+            0 => ::std::option::Option::Some(AreaType::AreaType_AKFGIEKMPND),
+            1 => ::std::option::Option::Some(AreaType::AreaType_GFPLLNHAPGA),
+            2 => ::std::option::Option::Some(AreaType::AreaType_JGIIAHNGBMC),
+            3 => ::std::option::Option::Some(AreaType::AreaType_EBGCNMOMOIM),
+            4 => ::std::option::Option::Some(AreaType::AreaType_BIIIAOCBMLJ),
+            5 => ::std::option::Option::Some(AreaType::AreaType_FJFFDCAAJIH),
+            6 => ::std::option::Option::Some(AreaType::AreaType_BMNGFIGPNDM),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<AreaType> {
         match str {
-            "AREA_NONE" => ::std::option::Option::Some(AreaType::AREA_NONE),
-            "AREA_CN" => ::std::option::Option::Some(AreaType::AREA_CN),
-            "AREA_JP" => ::std::option::Option::Some(AreaType::AREA_JP),
-            "AREA_ASIA" => ::std::option::Option::Some(AreaType::AREA_ASIA),
-            "AREA_WEST" => ::std::option::Option::Some(AreaType::AREA_WEST),
-            "AREA_KR" => ::std::option::Option::Some(AreaType::AREA_KR),
-            "AREA_OVERSEAS" => ::std::option::Option::Some(AreaType::AREA_OVERSEAS),
+            "AreaType_AKFGIEKMPND" => ::std::option::Option::Some(AreaType::AreaType_AKFGIEKMPND),
+            "AreaType_GFPLLNHAPGA" => ::std::option::Option::Some(AreaType::AreaType_GFPLLNHAPGA),
+            "AreaType_JGIIAHNGBMC" => ::std::option::Option::Some(AreaType::AreaType_JGIIAHNGBMC),
+            "AreaType_EBGCNMOMOIM" => ::std::option::Option::Some(AreaType::AreaType_EBGCNMOMOIM),
+            "AreaType_BIIIAOCBMLJ" => ::std::option::Option::Some(AreaType::AreaType_BIIIAOCBMLJ),
+            "AreaType_FJFFDCAAJIH" => ::std::option::Option::Some(AreaType::AreaType_FJFFDCAAJIH),
+            "AreaType_BMNGFIGPNDM" => ::std::option::Option::Some(AreaType::AreaType_BMNGFIGPNDM),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [AreaType] = &[
-        AreaType::AREA_NONE,
-        AreaType::AREA_CN,
-        AreaType::AREA_JP,
-        AreaType::AREA_ASIA,
-        AreaType::AREA_WEST,
-        AreaType::AREA_KR,
-        AreaType::AREA_OVERSEAS,
+        AreaType::AreaType_AKFGIEKMPND,
+        AreaType::AreaType_GFPLLNHAPGA,
+        AreaType::AreaType_JGIIAHNGBMC,
+        AreaType::AreaType_EBGCNMOMOIM,
+        AreaType::AreaType_BIIIAOCBMLJ,
+        AreaType::AreaType_FJFFDCAAJIH,
+        AreaType::AreaType_BMNGFIGPNDM,
     ];
 }
 
@@ -101,7 +101,7 @@ impl ::protobuf::EnumFull for AreaType {
 
 impl ::std::default::Default for AreaType {
     fn default() -> Self {
-        AreaType::AREA_NONE
+        AreaType::AreaType_AKFGIEKMPND
     }
 }
 
@@ -112,10 +112,11 @@ impl AreaType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0eAreaType.proto*q\n\x08AreaType\x12\r\n\tAREA_NONE\x10\0\x12\x0b\n\
-    \x07AREA_CN\x10\x01\x12\x0b\n\x07AREA_JP\x10\x02\x12\r\n\tAREA_ASIA\x10\
-    \x03\x12\r\n\tAREA_WEST\x10\x04\x12\x0b\n\x07AREA_KR\x10\x05\x12\x11\n\r\
-    AREA_OVERSEAS\x10\x06b\x06proto3\
+    \n\x0eAreaType.proto*\xc0\x01\n\x08AreaType\x12\x18\n\x14AreaType_AKFGIE\
+    KMPND\x10\0\x12\x18\n\x14AreaType_GFPLLNHAPGA\x10\x01\x12\x18\n\x14AreaT\
+    ype_JGIIAHNGBMC\x10\x02\x12\x18\n\x14AreaType_EBGCNMOMOIM\x10\x03\x12\
+    \x18\n\x14AreaType_BIIIAOCBMLJ\x10\x04\x12\x18\n\x14AreaType_FJFFDCAAJIH\
+    \x10\x05\x12\x18\n\x14AreaType_BMNGFIGPNDM\x10\x06b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

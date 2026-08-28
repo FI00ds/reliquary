@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PFLOIHLLMEE {
     // message fields
-    // @@protoc_insertion_point(field:PFLOIHLLMEE.basic)
-    pub basic: ::protobuf::MessageField<super::CBOLONJDHHL::CBOLONJDHHL>,
+    // @@protoc_insertion_point(field:PFLOIHLLMEE.NDLIKNEKDLL)
+    pub NDLIKNEKDLL: ::protobuf::MessageField<super::CBOLONJDHHL::CBOLONJDHHL>,
     // @@protoc_insertion_point(field:PFLOIHLLMEE.AMEABNLMMGB)
     pub AMEABNLMMGB: ::protobuf::MessageField<super::CGNGOLJKBMP::CGNGOLJKBMP>,
     // message oneof groups
@@ -50,7 +50,7 @@ impl PFLOIHLLMEE {
         ::std::default::Default::default()
     }
 
-    // .NAMCKJLAFCN FBHCKMGOCJJ = 349;
+    // .NAMCKJLAFCN FBHCKMGOCJJ = 1128;
 
     pub fn FBHCKMGOCJJ(&self) -> &super::NAMCKJLAFCN::NAMCKJLAFCN {
         match self.KKNBOACNCON {
@@ -99,7 +99,7 @@ impl PFLOIHLLMEE {
         }
     }
 
-    // .AMOHFCEEBNK HAJEGKBFFAF = 1144;
+    // .AMOHFCEEBNK HAJEGKBFFAF = 1172;
 
     pub fn HAJEGKBFFAF(&self) -> &super::AMOHFCEEBNK::AMOHFCEEBNK {
         match self.KKNBOACNCON {
@@ -148,7 +148,7 @@ impl PFLOIHLLMEE {
         }
     }
 
-    // .CABKLLAKHKO OPDEIFOCJEF = 244;
+    // .CABKLLAKHKO OPDEIFOCJEF = 1645;
 
     pub fn OPDEIFOCJEF(&self) -> &super::CABKLLAKHKO::CABKLLAKHKO {
         match self.KKNBOACNCON {
@@ -201,9 +201,9 @@ impl PFLOIHLLMEE {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CBOLONJDHHL::CBOLONJDHHL>(
-            "basic",
-            |m: &PFLOIHLLMEE| { &m.basic },
-            |m: &mut PFLOIHLLMEE| { &mut m.basic },
+            "NDLIKNEKDLL",
+            |m: &PFLOIHLLMEE| { &m.NDLIKNEKDLL },
+            |m: &mut PFLOIHLLMEE| { &mut m.NDLIKNEKDLL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CGNGOLJKBMP::CGNGOLJKBMP>(
             "AMEABNLMMGB",
@@ -251,18 +251,18 @@ impl ::protobuf::Message for PFLOIHLLMEE {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.basic)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NDLIKNEKDLL)?;
                 },
-                98 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.AMEABNLMMGB)?;
                 },
-                2794 => {
+                9026 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pfloihllmee::KKNBOACNCON::FBHCKMGOCJJ(is.read_message()?));
                 },
-                9154 => {
+                9378 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pfloihllmee::KKNBOACNCON::HAJEGKBFFAF(is.read_message()?));
                 },
-                1954 => {
+                13162 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pfloihllmee::KKNBOACNCON::OPDEIFOCJEF(is.read_message()?));
                 },
                 tag => {
@@ -277,7 +277,7 @@ impl ::protobuf::Message for PFLOIHLLMEE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.basic.as_ref() {
+        if let Some(v) = self.NDLIKNEKDLL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -307,22 +307,22 @@ impl ::protobuf::Message for PFLOIHLLMEE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.basic.as_ref() {
+        if let Some(v) = self.NDLIKNEKDLL.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if let Some(v) = self.AMEABNLMMGB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &pfloihllmee::KKNBOACNCON::FBHCKMGOCJJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(349, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1128, v, os)?;
                 },
                 &pfloihllmee::KKNBOACNCON::HAJEGKBFFAF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1144, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1172, v, os)?;
                 },
                 &pfloihllmee::KKNBOACNCON::OPDEIFOCJEF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(244, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1645, v, os)?;
                 },
             };
         }
@@ -343,7 +343,7 @@ impl ::protobuf::Message for PFLOIHLLMEE {
     }
 
     fn clear(&mut self) {
-        self.basic.clear();
+        self.NDLIKNEKDLL.clear();
         self.AMEABNLMMGB.clear();
         self.KKNBOACNCON = ::std::option::Option::None;
         self.KKNBOACNCON = ::std::option::Option::None;
@@ -353,7 +353,7 @@ impl ::protobuf::Message for PFLOIHLLMEE {
 
     fn default_instance() -> &'static PFLOIHLLMEE {
         static instance: PFLOIHLLMEE = PFLOIHLLMEE {
-            basic: ::protobuf::MessageField::none(),
+            NDLIKNEKDLL: ::protobuf::MessageField::none(),
             AMEABNLMMGB: ::protobuf::MessageField::none(),
             KKNBOACNCON: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -414,13 +414,13 @@ pub mod pfloihllmee {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PFLOIHLLMEE.proto\x1a\x11AMOHFCEEBNK.proto\x1a\x11CABKLLAKHKO.prot\
     o\x1a\x11CBOLONJDHHL.proto\x1a\x11CGNGOLJKBMP.proto\x1a\x11NAMCKJLAFCN.p\
-    roto\"\x89\x02\n\x0bPFLOIHLLMEE\x12\"\n\x05basic\x18\x03\x20\x01(\x0b2\
-    \x0c.CBOLONJDHHLR\x05basic\x12.\n\x0bAMEABNLMMGB\x18\x0c\x20\x01(\x0b2\
-    \x0c.CGNGOLJKBMPR\x0bAMEABNLMMGB\x121\n\x0bFBHCKMGOCJJ\x18\xdd\x02\x20\
-    \x01(\x0b2\x0c.NAMCKJLAFCNH\0R\x0bFBHCKMGOCJJ\x121\n\x0bHAJEGKBFFAF\x18\
-    \xf8\x08\x20\x01(\x0b2\x0c.AMOHFCEEBNKH\0R\x0bHAJEGKBFFAF\x121\n\x0bOPDE\
-    IFOCJEF\x18\xf4\x01\x20\x01(\x0b2\x0c.CABKLLAKHKOH\0R\x0bOPDEIFOCJEFB\r\
-    \n\x0bKKNBOACNCONb\x06proto3\
+    roto\"\x95\x02\n\x0bPFLOIHLLMEE\x12.\n\x0bNDLIKNEKDLL\x18\x03\x20\x01(\
+    \x0b2\x0c.CBOLONJDHHLR\x0bNDLIKNEKDLL\x12.\n\x0bAMEABNLMMGB\x18\r\x20\
+    \x01(\x0b2\x0c.CGNGOLJKBMPR\x0bAMEABNLMMGB\x121\n\x0bFBHCKMGOCJJ\x18\xe8\
+    \x08\x20\x01(\x0b2\x0c.NAMCKJLAFCNH\0R\x0bFBHCKMGOCJJ\x121\n\x0bHAJEGKBF\
+    FAF\x18\x94\t\x20\x01(\x0b2\x0c.AMOHFCEEBNKH\0R\x0bHAJEGKBFFAF\x121\n\
+    \x0bOPDEIFOCJEF\x18\xed\x0c\x20\x01(\x0b2\x0c.CABKLLAKHKOH\0R\x0bOPDEIFO\
+    CJEFB\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

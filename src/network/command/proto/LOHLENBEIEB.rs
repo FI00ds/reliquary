@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LOHLENBEIEB {
     // message fields
+    // @@protoc_insertion_point(field:LOHLENBEIEB.AFDNFCBCFBF)
+    pub AFDNFCBCFBF: f32,
+    // @@protoc_insertion_point(field:LOHLENBEIEB.KKKIONIDKFA)
+    pub KKKIONIDKFA: bool,
     // @@protoc_insertion_point(field:LOHLENBEIEB.MNLINFEODPJ)
     pub MNLINFEODPJ: i32,
-    // @@protoc_insertion_point(field:LOHLENBEIEB.ratio)
-    pub ratio: f32,
-    // @@protoc_insertion_point(field:LOHLENBEIEB.is_valid)
-    pub is_valid: bool,
     // special fields
     // @@protoc_insertion_point(special_field:LOHLENBEIEB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl LOHLENBEIEB {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AFDNFCBCFBF",
+            |m: &LOHLENBEIEB| { &m.AFDNFCBCFBF },
+            |m: &mut LOHLENBEIEB| { &mut m.AFDNFCBCFBF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KKKIONIDKFA",
+            |m: &LOHLENBEIEB| { &m.KKKIONIDKFA },
+            |m: &mut LOHLENBEIEB| { &mut m.KKKIONIDKFA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MNLINFEODPJ",
             |m: &LOHLENBEIEB| { &m.MNLINFEODPJ },
             |m: &mut LOHLENBEIEB| { &mut m.MNLINFEODPJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ratio",
-            |m: &LOHLENBEIEB| { &m.ratio },
-            |m: &mut LOHLENBEIEB| { &mut m.ratio },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_valid",
-            |m: &LOHLENBEIEB| { &m.is_valid },
-            |m: &mut LOHLENBEIEB| { &mut m.is_valid },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LOHLENBEIEB>(
             "LOHLENBEIEB",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for LOHLENBEIEB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                13 => {
+                    self.AFDNFCBCFBF = is.read_float()?;
+                },
+                40 => {
+                    self.KKKIONIDKFA = is.read_bool()?;
+                },
+                64 => {
                     self.MNLINFEODPJ = is.read_int32()?;
-                },
-                61 => {
-                    self.ratio = is.read_float()?;
-                },
-                112 => {
-                    self.is_valid = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for LOHLENBEIEB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MNLINFEODPJ != 0 {
-            my_size += ::protobuf::rt::int32_size(1, self.MNLINFEODPJ);
-        }
-        if self.ratio != 0. {
+        if self.AFDNFCBCFBF != 0. {
             my_size += 1 + 4;
         }
-        if self.is_valid != false {
+        if self.KKKIONIDKFA != false {
             my_size += 1 + 1;
+        }
+        if self.MNLINFEODPJ != 0 {
+            my_size += ::protobuf::rt::int32_size(8, self.MNLINFEODPJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for LOHLENBEIEB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.AFDNFCBCFBF != 0. {
+            os.write_float(1, self.AFDNFCBCFBF)?;
+        }
+        if self.KKKIONIDKFA != false {
+            os.write_bool(5, self.KKKIONIDKFA)?;
+        }
         if self.MNLINFEODPJ != 0 {
-            os.write_int32(1, self.MNLINFEODPJ)?;
-        }
-        if self.ratio != 0. {
-            os.write_float(7, self.ratio)?;
-        }
-        if self.is_valid != false {
-            os.write_bool(14, self.is_valid)?;
+            os.write_int32(8, self.MNLINFEODPJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for LOHLENBEIEB {
     }
 
     fn clear(&mut self) {
+        self.AFDNFCBCFBF = 0.;
+        self.KKKIONIDKFA = false;
         self.MNLINFEODPJ = 0;
-        self.ratio = 0.;
-        self.is_valid = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LOHLENBEIEB {
         static instance: LOHLENBEIEB = LOHLENBEIEB {
+            AFDNFCBCFBF: 0.,
+            KKKIONIDKFA: false,
             MNLINFEODPJ: 0,
-            ratio: 0.,
-            is_valid: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for LOHLENBEIEB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LOHLENBEIEB.proto\"`\n\x0bLOHLENBEIEB\x12\x20\n\x0bMNLINFEODPJ\x18\
-    \x01\x20\x01(\x05R\x0bMNLINFEODPJ\x12\x14\n\x05ratio\x18\x07\x20\x01(\
-    \x02R\x05ratio\x12\x19\n\x08is_valid\x18\x0e\x20\x01(\x08R\x07isValidb\
-    \x06proto3\
+    \n\x11LOHLENBEIEB.proto\"s\n\x0bLOHLENBEIEB\x12\x20\n\x0bAFDNFCBCFBF\x18\
+    \x01\x20\x01(\x02R\x0bAFDNFCBCFBF\x12\x20\n\x0bKKKIONIDKFA\x18\x05\x20\
+    \x01(\x08R\x0bKKKIONIDKFA\x12\x20\n\x0bMNLINFEODPJ\x18\x08\x20\x01(\x05R\
+    \x0bMNLINFEODPJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

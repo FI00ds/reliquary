@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EKLIDIDKFHC {
     // message fields
+    // @@protoc_insertion_point(field:EKLIDIDKFHC.OAINNDAHIMG)
+    pub OAINNDAHIMG: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:EKLIDIDKFHC.BACAOLDADMC)
     pub BACAOLDADMC: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:EKLIDIDKFHC.IGOOJKMPMDC)
     pub IGOOJKMPMDC: u32,
     // @@protoc_insertion_point(field:EKLIDIDKFHC.KLMIBJIKIBB)
     pub KLMIBJIKIBB: u32,
-    // @@protoc_insertion_point(field:EKLIDIDKFHC.OAINNDAHIMG)
-    pub OAINNDAHIMG: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:EKLIDIDKFHC.base_avatar_id)
     pub base_avatar_id: u32,
     // special fields
@@ -58,6 +58,11 @@ impl EKLIDIDKFHC {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
+            "OAINNDAHIMG",
+            |m: &EKLIDIDKFHC| { &m.OAINNDAHIMG },
+            |m: &mut EKLIDIDKFHC| { &mut m.OAINNDAHIMG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
             "BACAOLDADMC",
             |m: &EKLIDIDKFHC| { &m.BACAOLDADMC },
             |m: &mut EKLIDIDKFHC| { &mut m.BACAOLDADMC },
@@ -71,11 +76,6 @@ impl EKLIDIDKFHC {
             "KLMIBJIKIBB",
             |m: &EKLIDIDKFHC| { &m.KLMIBJIKIBB },
             |m: &mut EKLIDIDKFHC| { &mut m.KLMIBJIKIBB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
-            "OAINNDAHIMG",
-            |m: &EKLIDIDKFHC| { &m.OAINNDAHIMG },
-            |m: &mut EKLIDIDKFHC| { &mut m.OAINNDAHIMG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "base_avatar_id",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for EKLIDIDKFHC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BACAOLDADMC)?;
-                },
-                40 => {
-                    self.IGOOJKMPMDC = is.read_uint32()?;
-                },
-                64 => {
-                    self.KLMIBJIKIBB = is.read_uint32()?;
-                },
-                98 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OAINNDAHIMG)?;
                 },
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BACAOLDADMC)?;
+                },
+                56 => {
+                    self.IGOOJKMPMDC = is.read_uint32()?;
+                },
                 104 => {
+                    self.KLMIBJIKIBB = is.read_uint32()?;
+                },
+                120 => {
                     self.base_avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -127,22 +127,22 @@ impl ::protobuf::Message for EKLIDIDKFHC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if let Some(v) = self.OAINNDAHIMG.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if let Some(v) = self.BACAOLDADMC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.IGOOJKMPMDC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.IGOOJKMPMDC);
+            my_size += ::protobuf::rt::uint32_size(7, self.IGOOJKMPMDC);
         }
         if self.KLMIBJIKIBB != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.KLMIBJIKIBB);
-        }
-        if let Some(v) = self.OAINNDAHIMG.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += ::protobuf::rt::uint32_size(13, self.KLMIBJIKIBB);
         }
         if self.base_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.base_avatar_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.base_avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,20 +150,20 @@ impl ::protobuf::Message for EKLIDIDKFHC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if let Some(v) = self.OAINNDAHIMG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
         if let Some(v) = self.BACAOLDADMC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if self.IGOOJKMPMDC != 0 {
-            os.write_uint32(5, self.IGOOJKMPMDC)?;
+            os.write_uint32(7, self.IGOOJKMPMDC)?;
         }
         if self.KLMIBJIKIBB != 0 {
-            os.write_uint32(8, self.KLMIBJIKIBB)?;
-        }
-        if let Some(v) = self.OAINNDAHIMG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            os.write_uint32(13, self.KLMIBJIKIBB)?;
         }
         if self.base_avatar_id != 0 {
-            os.write_uint32(13, self.base_avatar_id)?;
+            os.write_uint32(15, self.base_avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,20 +182,20 @@ impl ::protobuf::Message for EKLIDIDKFHC {
     }
 
     fn clear(&mut self) {
+        self.OAINNDAHIMG.clear();
         self.BACAOLDADMC.clear();
         self.IGOOJKMPMDC = 0;
         self.KLMIBJIKIBB = 0;
-        self.OAINNDAHIMG.clear();
         self.base_avatar_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EKLIDIDKFHC {
         static instance: EKLIDIDKFHC = EKLIDIDKFHC {
+            OAINNDAHIMG: ::protobuf::MessageField::none(),
             BACAOLDADMC: ::protobuf::MessageField::none(),
             IGOOJKMPMDC: 0,
             KLMIBJIKIBB: 0,
-            OAINNDAHIMG: ::protobuf::MessageField::none(),
             base_avatar_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -222,11 +222,11 @@ impl ::protobuf::reflect::ProtobufValue for EKLIDIDKFHC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EKLIDIDKFHC.proto\x1a\x12ItemCostData.proto\"\xd9\x01\n\x0bEKLIDID\
-    KFHC\x12/\n\x0bBACAOLDADMC\x18\x01\x20\x01(\x0b2\r.ItemCostDataR\x0bBACA\
-    OLDADMC\x12\x20\n\x0bIGOOJKMPMDC\x18\x05\x20\x01(\rR\x0bIGOOJKMPMDC\x12\
-    \x20\n\x0bKLMIBJIKIBB\x18\x08\x20\x01(\rR\x0bKLMIBJIKIBB\x12/\n\x0bOAINN\
-    DAHIMG\x18\x0c\x20\x01(\x0b2\r.ItemCostDataR\x0bOAINNDAHIMG\x12$\n\x0eba\
-    se_avatar_id\x18\r\x20\x01(\rR\x0cbaseAvatarIdb\x06proto3\
+    KFHC\x12/\n\x0bOAINNDAHIMG\x18\x02\x20\x01(\x0b2\r.ItemCostDataR\x0bOAIN\
+    NDAHIMG\x12/\n\x0bBACAOLDADMC\x18\x06\x20\x01(\x0b2\r.ItemCostDataR\x0bB\
+    ACAOLDADMC\x12\x20\n\x0bIGOOJKMPMDC\x18\x07\x20\x01(\rR\x0bIGOOJKMPMDC\
+    \x12\x20\n\x0bKLMIBJIKIBB\x18\r\x20\x01(\rR\x0bKLMIBJIKIBB\x12$\n\x0ebas\
+    e_avatar_id\x18\x0f\x20\x01(\rR\x0cbaseAvatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -82,7 +82,7 @@ impl ::protobuf::Message for FGFJNANBJJI {
                 40 => {
                     self.CLLLEMMKDMB = is.read_uint32()?;
                 },
-                80 => {
+                96 => {
                     self.is_finish = is.read_bool()?;
                 },
                 tag => {
@@ -113,7 +113,7 @@ impl ::protobuf::Message for FGFJNANBJJI {
             os.write_uint32(5, self.CLLLEMMKDMB)?;
         }
         if self.is_finish != false {
-            os.write_bool(10, self.is_finish)?;
+            os.write_bool(12, self.is_finish)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for FGFJNANBJJI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FGFJNANBJJI.proto\"L\n\x0bFGFJNANBJJI\x12\x20\n\x0bCLLLEMMKDMB\x18\
-    \x05\x20\x01(\rR\x0bCLLLEMMKDMB\x12\x1b\n\tis_finish\x18\n\x20\x01(\x08R\
-    \x08isFinishb\x06proto3\
+    \x05\x20\x01(\rR\x0bCLLLEMMKDMB\x12\x1b\n\tis_finish\x18\x0c\x20\x01(\
+    \x08R\x08isFinishb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,7 +79,7 @@ impl ::protobuf::Message for TravelBrochureApplyPasterListScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
                 122 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for TravelBrochureApplyPasterListScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         if let Some(v) = self.EDLLNJIEFBO.as_ref() {
             let len = v.compute_size();
@@ -111,7 +111,7 @@ impl ::protobuf::Message for TravelBrochureApplyPasterListScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         if let Some(v) = self.EDLLNJIEFBO.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochureApplyPasterListScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(TravelBrochureApplyPasterListScRsp.proto\x1a\x11KJMKOJEHMII.proto\"n\
-    \n\"TravelBrochureApplyPasterListScRsp\x12\x18\n\x07retcode\x18\x01\x20\
+    \n\"TravelBrochureApplyPasterListScRsp\x12\x18\n\x07retcode\x18\x08\x20\
     \x01(\rR\x07retcode\x12.\n\x0bEDLLNJIEFBO\x18\x0f\x20\x01(\x0b2\x0c.KJMK\
     OJEHMIIR\x0bEDLLNJIEFBOb\x06proto3\
 ";

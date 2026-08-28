@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAvatarDataCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetAvatarDataCsReq.is_get_all)
-    pub is_get_all: bool,
+    // @@protoc_insertion_point(field:GetAvatarDataCsReq.MGHNIADPNPL)
+    pub MGHNIADPNPL: bool,
     // @@protoc_insertion_point(field:GetAvatarDataCsReq.NOEPBNMJFGL)
     pub NOEPBNMJFGL: ::std::vec::Vec<u32>,
     // special fields
@@ -52,9 +52,9 @@ impl GetAvatarDataCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_get_all",
-            |m: &GetAvatarDataCsReq| { &m.is_get_all },
-            |m: &mut GetAvatarDataCsReq| { &mut m.is_get_all },
+            "MGHNIADPNPL",
+            |m: &GetAvatarDataCsReq| { &m.MGHNIADPNPL },
+            |m: &mut GetAvatarDataCsReq| { &mut m.MGHNIADPNPL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "NOEPBNMJFGL",
@@ -79,13 +79,13 @@ impl ::protobuf::Message for GetAvatarDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.is_get_all = is.read_bool()?;
+                80 => {
+                    self.MGHNIADPNPL = is.read_bool()?;
                 },
-                98 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.NOEPBNMJFGL)?;
                 },
-                96 => {
+                104 => {
                     self.NOEPBNMJFGL.push(is.read_uint32()?);
                 },
                 tag => {
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GetAvatarDataCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_get_all != false {
+        if self.MGHNIADPNPL != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.NOEPBNMJFGL);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.NOEPBNMJFGL);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_get_all != false {
-            os.write_bool(3, self.is_get_all)?;
+        if self.MGHNIADPNPL != false {
+            os.write_bool(10, self.MGHNIADPNPL)?;
         }
-        os.write_repeated_packed_uint32(12, &self.NOEPBNMJFGL)?;
+        os.write_repeated_packed_uint32(13, &self.NOEPBNMJFGL)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,14 +131,14 @@ impl ::protobuf::Message for GetAvatarDataCsReq {
     }
 
     fn clear(&mut self) {
-        self.is_get_all = false;
+        self.MGHNIADPNPL = false;
         self.NOEPBNMJFGL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAvatarDataCsReq {
         static instance: GetAvatarDataCsReq = GetAvatarDataCsReq {
-            is_get_all: false,
+            MGHNIADPNPL: false,
             NOEPBNMJFGL: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for GetAvatarDataCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18GetAvatarDataCsReq.proto\"T\n\x12GetAvatarDataCsReq\x12\x1c\n\nis_\
-    get_all\x18\x03\x20\x01(\x08R\x08isGetAll\x12\x20\n\x0bNOEPBNMJFGL\x18\
-    \x0c\x20\x03(\rR\x0bNOEPBNMJFGLb\x06proto3\
+    \n\x18GetAvatarDataCsReq.proto\"X\n\x12GetAvatarDataCsReq\x12\x20\n\x0bM\
+    GHNIADPNPL\x18\n\x20\x01(\x08R\x0bMGHNIADPNPL\x12\x20\n\x0bNOEPBNMJFGL\
+    \x18\r\x20\x03(\rR\x0bNOEPBNMJFGLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

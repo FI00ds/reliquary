@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ANFMHBGNNEG {
     // message fields
-    // @@protoc_insertion_point(field:ANFMHBGNNEG.room_ext_info)
-    pub room_ext_info: ::protobuf::MessageField<super::PJMGBLIFDFP::PJMGBLIFDFP>,
+    // @@protoc_insertion_point(field:ANFMHBGNNEG.EMIJCKENBKJ)
+    pub EMIJCKENBKJ: ::protobuf::MessageField<super::PJMGBLIFDFP::PJMGBLIFDFP>,
     // special fields
     // @@protoc_insertion_point(special_field:ANFMHBGNNEG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ANFMHBGNNEG {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PJMGBLIFDFP::PJMGBLIFDFP>(
-            "room_ext_info",
-            |m: &ANFMHBGNNEG| { &m.room_ext_info },
-            |m: &mut ANFMHBGNNEG| { &mut m.room_ext_info },
+            "EMIJCKENBKJ",
+            |m: &ANFMHBGNNEG| { &m.EMIJCKENBKJ },
+            |m: &mut ANFMHBGNNEG| { &mut m.EMIJCKENBKJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ANFMHBGNNEG>(
             "ANFMHBGNNEG",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ANFMHBGNNEG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.room_ext_info)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EMIJCKENBKJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for ANFMHBGNNEG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.room_ext_info.as_ref() {
+        if let Some(v) = self.EMIJCKENBKJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for ANFMHBGNNEG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.room_ext_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if let Some(v) = self.EMIJCKENBKJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for ANFMHBGNNEG {
     }
 
     fn clear(&mut self) {
-        self.room_ext_info.clear();
+        self.EMIJCKENBKJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ANFMHBGNNEG {
         static instance: ANFMHBGNNEG = ANFMHBGNNEG {
-            room_ext_info: ::protobuf::MessageField::none(),
+            EMIJCKENBKJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for ANFMHBGNNEG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ANFMHBGNNEG.proto\x1a\x11PJMGBLIFDFP.proto\"?\n\x0bANFMHBGNNEG\x12\
-    0\n\rroom_ext_info\x18\x0f\x20\x01(\x0b2\x0c.PJMGBLIFDFPR\x0broomExtInfo\
+    \n\x11ANFMHBGNNEG.proto\x1a\x11PJMGBLIFDFP.proto\"=\n\x0bANFMHBGNNEG\x12\
+    .\n\x0bEMIJCKENBKJ\x18\x07\x20\x01(\x0b2\x0c.PJMGBLIFDFPR\x0bEMIJCKENBKJ\
     b\x06proto3\
 ";
 

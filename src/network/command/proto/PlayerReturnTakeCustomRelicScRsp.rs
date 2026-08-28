@@ -86,13 +86,13 @@ impl ::protobuf::Message for PlayerReturnTakeCustomRelicScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                74 => {
+                58 => {
                     self.relic_list.push(is.read_message()?);
                 },
-                112 => {
+                104 => {
                     self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -108,14 +108,14 @@ impl ::protobuf::Message for PlayerReturnTakeCustomRelicScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         for value in &self.relic_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for PlayerReturnTakeCustomRelicScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         for v in &self.relic_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         if self.avatar_id != 0 {
-            os.write_uint32(14, self.avatar_id)?;
+            os.write_uint32(13, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for PlayerReturnTakeCustomRelicScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&PlayerReturnTakeCustomRelicScRsp.proto\x1a\x0bRelic.proto\"\x80\x01\n\
-    \x20PlayerReturnTakeCustomRelicScRsp\x12\x18\n\x07retcode\x18\x06\x20\
-    \x01(\rR\x07retcode\x12%\n\nrelic_list\x18\t\x20\x03(\x0b2\x06.RelicR\tr\
-    elicList\x12\x1b\n\tavatar_id\x18\x0e\x20\x01(\rR\x08avatarIdb\x06proto3\
+    \x20PlayerReturnTakeCustomRelicScRsp\x12\x18\n\x07retcode\x18\x01\x20\
+    \x01(\rR\x07retcode\x12%\n\nrelic_list\x18\x07\x20\x03(\x0b2\x06.RelicR\
+    \trelicList\x12\x1b\n\tavatar_id\x18\r\x20\x01(\rR\x08avatarIdb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

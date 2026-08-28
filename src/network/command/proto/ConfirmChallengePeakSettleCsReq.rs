@@ -79,7 +79,7 @@ impl ::protobuf::Message for ConfirmChallengePeakSettleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                48 => {
                     self.IOBCIMIPEOM = is.read_bool()?;
                 },
                 104 => {
@@ -110,7 +110,7 @@ impl ::protobuf::Message for ConfirmChallengePeakSettleCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IOBCIMIPEOM != false {
-            os.write_bool(1, self.IOBCIMIPEOM)?;
+            os.write_bool(6, self.IOBCIMIPEOM)?;
         }
         if self.peak_id != 0 {
             os.write_uint32(13, self.peak_id)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for ConfirmChallengePeakSettleCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%ConfirmChallengePeakSettleCsReq.proto\"\\\n\x1fConfirmChallengePeakSe\
-    ttleCsReq\x12\x20\n\x0bIOBCIMIPEOM\x18\x01\x20\x01(\x08R\x0bIOBCIMIPEOM\
+    ttleCsReq\x12\x20\n\x0bIOBCIMIPEOM\x18\x06\x20\x01(\x08R\x0bIOBCIMIPEOM\
     \x12\x17\n\x07peak_id\x18\r\x20\x01(\rR\x06peakIdb\x06proto3\
 ";
 

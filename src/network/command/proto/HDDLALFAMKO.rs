@@ -79,7 +79,7 @@ impl ::protobuf::Message for HDDLALFAMKO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                112 => {
                     self.KDJACPBDHAE = is.read_enum_or_unknown()?;
                 },
                 122 => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for HDDLALFAMKO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KDJACPBDHAE != ::protobuf::EnumOrUnknown::new(super::LAEHICCBBFN::LAEHICCBBFN::LAEHICCBBFN_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(6, self.KDJACPBDHAE.value());
+            my_size += ::protobuf::rt::int32_size(14, self.KDJACPBDHAE.value());
         }
         my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.LPBBJFFNACA);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -111,7 +111,7 @@ impl ::protobuf::Message for HDDLALFAMKO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KDJACPBDHAE != ::protobuf::EnumOrUnknown::new(super::LAEHICCBBFN::LAEHICCBBFN::LAEHICCBBFN_NLCDGIPGFDJ) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.KDJACPBDHAE))?;
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.KDJACPBDHAE))?;
         }
         os.write_repeated_packed_uint32(15, &self.LPBBJFFNACA)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for HDDLALFAMKO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HDDLALFAMKO.proto\x1a\x11LAEHICCBBFN.proto\"_\n\x0bHDDLALFAMKO\x12\
-    .\n\x0bKDJACPBDHAE\x18\x06\x20\x01(\x0e2\x0c.LAEHICCBBFNR\x0bKDJACPBDHAE\
+    .\n\x0bKDJACPBDHAE\x18\x0e\x20\x01(\x0e2\x0c.LAEHICCBBFNR\x0bKDJACPBDHAE\
     \x12\x20\n\x0bLPBBJFFNACA\x18\x0f\x20\x03(\rR\x0bLPBBJFFNACAb\x06proto3\
 ";
 

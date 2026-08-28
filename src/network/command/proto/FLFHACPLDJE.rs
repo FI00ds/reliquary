@@ -45,7 +45,7 @@ impl FLFHACPLDJE {
         ::std::default::Default::default()
     }
 
-    // .PGECGKEKFNC BDPIMPJOJBK = 1;
+    // .PGECGKEKFNC BDPIMPJOJBK = 11;
 
     pub fn BDPIMPJOJBK(&self) -> &super::PGECGKEKFNC::PGECGKEKFNC {
         match self.OFJBCEDFLKL {
@@ -94,7 +94,7 @@ impl FLFHACPLDJE {
         }
     }
 
-    // uint32 gold = 8;
+    // uint32 gold = 4;
 
     pub fn gold(&self) -> u32 {
         match self.OFJBCEDFLKL {
@@ -154,10 +154,10 @@ impl ::protobuf::Message for FLFHACPLDJE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                90 => {
                     self.OFJBCEDFLKL = ::std::option::Option::Some(flfhacpldje::OFJBCEDFLKL::BDPIMPJOJBK(is.read_message()?));
                 },
-                64 => {
+                32 => {
                     self.OFJBCEDFLKL = ::std::option::Option::Some(flfhacpldje::OFJBCEDFLKL::Gold(is.read_uint32()?));
                 },
                 tag => {
@@ -179,7 +179,7 @@ impl ::protobuf::Message for FLFHACPLDJE {
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &flfhacpldje::OFJBCEDFLKL::Gold(v) => {
-                    my_size += ::protobuf::rt::uint32_size(8, v);
+                    my_size += ::protobuf::rt::uint32_size(4, v);
                 },
             };
         }
@@ -192,10 +192,10 @@ impl ::protobuf::Message for FLFHACPLDJE {
         if let ::std::option::Option::Some(ref v) = self.OFJBCEDFLKL {
             match v {
                 &flfhacpldje::OFJBCEDFLKL::BDPIMPJOJBK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
                 &flfhacpldje::OFJBCEDFLKL::Gold(v) => {
-                    os.write_uint32(8, v)?;
+                    os.write_uint32(4, v)?;
                 },
             };
         }
@@ -279,8 +279,8 @@ pub mod flfhacpldje {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FLFHACPLDJE.proto\x1a\x11PGECGKEKFNC.proto\"d\n\x0bFLFHACPLDJE\x12\
-    0\n\x0bBDPIMPJOJBK\x18\x01\x20\x01(\x0b2\x0c.PGECGKEKFNCH\0R\x0bBDPIMPJO\
-    JBK\x12\x14\n\x04gold\x18\x08\x20\x01(\rH\0R\x04goldB\r\n\x0bOFJBCEDFLKL\
+    0\n\x0bBDPIMPJOJBK\x18\x0b\x20\x01(\x0b2\x0c.PGECGKEKFNCH\0R\x0bBDPIMPJO\
+    JBK\x12\x14\n\x04gold\x18\x04\x20\x01(\rH\0R\x04goldB\r\n\x0bOFJBCEDFLKL\
     b\x06proto3\
 ";
 

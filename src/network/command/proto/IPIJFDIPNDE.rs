@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct IPIJFDIPNDE {
     // message fields
     // @@protoc_insertion_point(field:IPIJFDIPNDE.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::DiceCombatAvatar::DiceCombatAvatar>,
+    pub avatar_list: ::std::vec::Vec<super::NPIJFFFFKBK::NPIJFFFFKBK>,
     // @@protoc_insertion_point(field:IPIJFDIPNDE.BAEGDJILMBL)
     pub BAEGDJILMBL: ::protobuf::MessageField<super::BOFHHEBDEOD::BOFHHEBDEOD>,
     // @@protoc_insertion_point(field:IPIJFDIPNDE.AEPFOJHNNFH)
@@ -259,14 +259,14 @@ impl ::protobuf::reflect::ProtobufValue for IPIJFDIPNDE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IPIJFDIPNDE.proto\x1a\x11BOFHHEBDEOD.proto\x1a\x11CMNLOKDOFEF.prot\
-    o\x1a\x16DiceCombatAvatar.proto\"\xa9\x02\n\x0bIPIJFDIPNDE\x122\n\x0bava\
-    tar_list\x18\x01\x20\x03(\x0b2\x11.DiceCombatAvatarR\navatarList\x12.\n\
-    \x0bBAEGDJILMBL\x18\x02\x20\x01(\x0b2\x0c.BOFHHEBDEODR\x0bBAEGDJILMBL\
-    \x12.\n\x0bAEPFOJHNNFH\x18\x03\x20\x01(\x0b2\x0c.CMNLOKDOFEFR\x0bAEPFOJH\
-    NNFH\x12\x20\n\x0bEECIJBLGLNG\x18\x04\x20\x01(\rR\x0bEECIJBLGLNG\x12\x20\
-    \n\x0bEMHHCEMGBEM\x18\x05\x20\x01(\rR\x0bEMHHCEMGBEM\x12\x20\n\x0bGMCAHO\
-    PDHLI\x18\x06\x20\x01(\rR\x0bGMCAHOPDHLI\x12\x20\n\x0bKDFJPPOLFEB\x18\
-    \x07\x20\x01(\x08R\x0bKDFJPPOLFEBb\x06proto3\
+    o\x1a\x11NPIJFFFFKBK.proto\"\xa4\x02\n\x0bIPIJFDIPNDE\x12-\n\x0bavatar_l\
+    ist\x18\x01\x20\x03(\x0b2\x0c.NPIJFFFFKBKR\navatarList\x12.\n\x0bBAEGDJI\
+    LMBL\x18\x02\x20\x01(\x0b2\x0c.BOFHHEBDEODR\x0bBAEGDJILMBL\x12.\n\x0bAEP\
+    FOJHNNFH\x18\x03\x20\x01(\x0b2\x0c.CMNLOKDOFEFR\x0bAEPFOJHNNFH\x12\x20\n\
+    \x0bEECIJBLGLNG\x18\x04\x20\x01(\rR\x0bEECIJBLGLNG\x12\x20\n\x0bEMHHCEMG\
+    BEM\x18\x05\x20\x01(\rR\x0bEMHHCEMGBEM\x12\x20\n\x0bGMCAHOPDHLI\x18\x06\
+    \x20\x01(\rR\x0bGMCAHOPDHLI\x12\x20\n\x0bKDFJPPOLFEB\x18\x07\x20\x01(\
+    \x08R\x0bKDFJPPOLFEBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -286,7 +286,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             let mut deps = ::std::vec::Vec::with_capacity(3);
             deps.push(super::BOFHHEBDEOD::file_descriptor().clone());
             deps.push(super::CMNLOKDOFEF::file_descriptor().clone());
-            deps.push(super::DiceCombatAvatar::file_descriptor().clone());
+            deps.push(super::NPIJFFFFKBK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(IPIJFDIPNDE::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

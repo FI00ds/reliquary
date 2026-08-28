@@ -45,7 +45,7 @@ impl KFOOLGFCNDN {
         ::std::default::Default::default()
     }
 
-    // .AALCHOPCBEM EFBPPPNPBKH = 11;
+    // .AALCHOPCBEM EFBPPPNPBKH = 14;
 
     pub fn EFBPPPNPBKH(&self) -> &super::AALCHOPCBEM::AALCHOPCBEM {
         match self.CNHEJLOEFAA {
@@ -94,7 +94,7 @@ impl KFOOLGFCNDN {
         }
     }
 
-    // .FIBKOLLMPMM IFCFIPGIIME = 6;
+    // .FIBKOLLMPMM IFCFIPGIIME = 4;
 
     pub fn IFCFIPGIIME(&self) -> &super::FIBKOLLMPMM::FIBKOLLMPMM {
         match self.CNHEJLOEFAA {
@@ -143,7 +143,7 @@ impl KFOOLGFCNDN {
         }
     }
 
-    // .LJBOELCMGFK OCIHLGBPALK = 15;
+    // .LJBOELCMGFK OCIHLGBPALK = 12;
 
     pub fn OCIHLGBPALK(&self) -> &super::LJBOELCMGFK::LJBOELCMGFK {
         match self.CNHEJLOEFAA {
@@ -192,7 +192,7 @@ impl KFOOLGFCNDN {
         }
     }
 
-    // .GDDLBMCHIED NNLBNIJJPAH = 2;
+    // .GDDLBMCHIED NNLBNIJJPAH = 8;
 
     pub fn NNLBNIJJPAH(&self) -> &super::GDDLBMCHIED::GDDLBMCHIED {
         match self.CNHEJLOEFAA {
@@ -241,7 +241,7 @@ impl KFOOLGFCNDN {
         }
     }
 
-    // .GEEPIPMBGJD DJBMEHBKNDF = 14;
+    // .GEEPIPMBGJD DJBMEHBKNDF = 15;
 
     pub fn DJBMEHBKNDF(&self) -> &super::GEEPIPMBGJD::GEEPIPMBGJD {
         match self.CNHEJLOEFAA {
@@ -290,7 +290,7 @@ impl KFOOLGFCNDN {
         }
     }
 
-    // .MLJEJCFJPLE BAMNOFCJMPP = 9;
+    // .MLJEJCFJPLE BAMNOFCJMPP = 13;
 
     pub fn BAMNOFCJMPP(&self) -> &super::MLJEJCFJPLE::MLJEJCFJPLE {
         match self.CNHEJLOEFAA {
@@ -403,22 +403,22 @@ impl ::protobuf::Message for KFOOLGFCNDN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                114 => {
                     self.CNHEJLOEFAA = ::std::option::Option::Some(kfoolgfcndn::CNHEJLOEFAA::EFBPPPNPBKH(is.read_message()?));
                 },
-                50 => {
+                34 => {
                     self.CNHEJLOEFAA = ::std::option::Option::Some(kfoolgfcndn::CNHEJLOEFAA::IFCFIPGIIME(is.read_message()?));
                 },
-                122 => {
+                98 => {
                     self.CNHEJLOEFAA = ::std::option::Option::Some(kfoolgfcndn::CNHEJLOEFAA::OCIHLGBPALK(is.read_message()?));
                 },
-                18 => {
+                66 => {
                     self.CNHEJLOEFAA = ::std::option::Option::Some(kfoolgfcndn::CNHEJLOEFAA::NNLBNIJJPAH(is.read_message()?));
                 },
-                114 => {
+                122 => {
                     self.CNHEJLOEFAA = ::std::option::Option::Some(kfoolgfcndn::CNHEJLOEFAA::DJBMEHBKNDF(is.read_message()?));
                 },
-                74 => {
+                106 => {
                     self.CNHEJLOEFAA = ::std::option::Option::Some(kfoolgfcndn::CNHEJLOEFAA::BAMNOFCJMPP(is.read_message()?));
                 },
                 tag => {
@@ -470,22 +470,22 @@ impl ::protobuf::Message for KFOOLGFCNDN {
         if let ::std::option::Option::Some(ref v) = self.CNHEJLOEFAA {
             match v {
                 &kfoolgfcndn::CNHEJLOEFAA::EFBPPPNPBKH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-                },
-                &kfoolgfcndn::CNHEJLOEFAA::IFCFIPGIIME(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-                },
-                &kfoolgfcndn::CNHEJLOEFAA::OCIHLGBPALK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-                },
-                &kfoolgfcndn::CNHEJLOEFAA::NNLBNIJJPAH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-                },
-                &kfoolgfcndn::CNHEJLOEFAA::DJBMEHBKNDF(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
+                &kfoolgfcndn::CNHEJLOEFAA::IFCFIPGIIME(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                },
+                &kfoolgfcndn::CNHEJLOEFAA::OCIHLGBPALK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                },
+                &kfoolgfcndn::CNHEJLOEFAA::NNLBNIJJPAH(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                },
+                &kfoolgfcndn::CNHEJLOEFAA::DJBMEHBKNDF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                },
                 &kfoolgfcndn::CNHEJLOEFAA::BAMNOFCJMPP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
             };
         }
@@ -583,12 +583,12 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KFOOLGFCNDN.proto\x1a\x11AALCHOPCBEM.proto\x1a\x11FIBKOLLMPMM.prot\
     o\x1a\x11GDDLBMCHIED.proto\x1a\x11GEEPIPMBGJD.proto\x1a\x11LJBOELCMGFK.p\
     roto\x1a\x11MLJEJCFJPLE.proto\"\xc8\x02\n\x0bKFOOLGFCNDN\x120\n\x0bEFBPP\
-    PNPBKH\x18\x0b\x20\x01(\x0b2\x0c.AALCHOPCBEMH\0R\x0bEFBPPPNPBKH\x120\n\
-    \x0bIFCFIPGIIME\x18\x06\x20\x01(\x0b2\x0c.FIBKOLLMPMMH\0R\x0bIFCFIPGIIME\
-    \x120\n\x0bOCIHLGBPALK\x18\x0f\x20\x01(\x0b2\x0c.LJBOELCMGFKH\0R\x0bOCIH\
-    LGBPALK\x120\n\x0bNNLBNIJJPAH\x18\x02\x20\x01(\x0b2\x0c.GDDLBMCHIEDH\0R\
-    \x0bNNLBNIJJPAH\x120\n\x0bDJBMEHBKNDF\x18\x0e\x20\x01(\x0b2\x0c.GEEPIPMB\
-    GJDH\0R\x0bDJBMEHBKNDF\x120\n\x0bBAMNOFCJMPP\x18\t\x20\x01(\x0b2\x0c.MLJ\
+    PNPBKH\x18\x0e\x20\x01(\x0b2\x0c.AALCHOPCBEMH\0R\x0bEFBPPPNPBKH\x120\n\
+    \x0bIFCFIPGIIME\x18\x04\x20\x01(\x0b2\x0c.FIBKOLLMPMMH\0R\x0bIFCFIPGIIME\
+    \x120\n\x0bOCIHLGBPALK\x18\x0c\x20\x01(\x0b2\x0c.LJBOELCMGFKH\0R\x0bOCIH\
+    LGBPALK\x120\n\x0bNNLBNIJJPAH\x18\x08\x20\x01(\x0b2\x0c.GDDLBMCHIEDH\0R\
+    \x0bNNLBNIJJPAH\x120\n\x0bDJBMEHBKNDF\x18\x0f\x20\x01(\x0b2\x0c.GEEPIPMB\
+    GJDH\0R\x0bDJBMEHBKNDF\x120\n\x0bBAMNOFCJMPP\x18\r\x20\x01(\x0b2\x0c.MLJ\
     EJCFJPLEH\0R\x0bBAMNOFCJMPPB\r\n\x0bCNHEJLOEFAAb\x06proto3\
 ";
 

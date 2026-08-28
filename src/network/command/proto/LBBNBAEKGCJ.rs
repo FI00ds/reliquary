@@ -97,7 +97,7 @@ impl LBBNBAEKGCJ {
         }
     }
 
-    // .KLNGFBHIADA FKPDOHGKJJK = 8;
+    // .KLNGFBHIADA FKPDOHGKJJK = 9;
 
     pub fn FKPDOHGKJJK(&self) -> &super::KLNGFBHIADA::KLNGFBHIADA {
         match self.KKNBOACNCON {
@@ -187,13 +187,13 @@ impl ::protobuf::Message for LBBNBAEKGCJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                5488 => {
+                6768 => {
                     self.AFPHLNMGPHK = is.read_uint32()?;
                 },
                 42 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(lbbnbaekgcj::KKNBOACNCON::NMIJKPKNPLE(is.read_message()?));
                 },
-                66 => {
+                74 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(lbbnbaekgcj::KKNBOACNCON::FKPDOHGKJJK(is.read_message()?));
                 },
                 tag => {
@@ -209,7 +209,7 @@ impl ::protobuf::Message for LBBNBAEKGCJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.AFPHLNMGPHK != 0 {
-            my_size += ::protobuf::rt::uint32_size(686, self.AFPHLNMGPHK);
+            my_size += ::protobuf::rt::uint32_size(846, self.AFPHLNMGPHK);
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
@@ -230,7 +230,7 @@ impl ::protobuf::Message for LBBNBAEKGCJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.AFPHLNMGPHK != 0 {
-            os.write_uint32(686, self.AFPHLNMGPHK)?;
+            os.write_uint32(846, self.AFPHLNMGPHK)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
@@ -238,7 +238,7 @@ impl ::protobuf::Message for LBBNBAEKGCJ {
                     ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
                 &lbbnbaekgcj::KKNBOACNCON::FKPDOHGKJJK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
             };
         }
@@ -324,10 +324,10 @@ pub mod lbbnbaekgcj {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LBBNBAEKGCJ.proto\x1a\x11IEALCLFLDMP.proto\x1a\x11KLNGFBHIADA.prot\
-    o\"\xa3\x01\n\x0bLBBNBAEKGCJ\x12!\n\x0bAFPHLNMGPHK\x18\xae\x05\x20\x01(\
+    o\"\xa3\x01\n\x0bLBBNBAEKGCJ\x12!\n\x0bAFPHLNMGPHK\x18\xce\x06\x20\x01(\
     \rR\x0bAFPHLNMGPHK\x120\n\x0bNMIJKPKNPLE\x18\x05\x20\x01(\x0b2\x0c.IEALC\
-    LFLDMPH\0R\x0bNMIJKPKNPLE\x120\n\x0bFKPDOHGKJJK\x18\x08\x20\x01(\x0b2\
-    \x0c.KLNGFBHIADAH\0R\x0bFKPDOHGKJJKB\r\n\x0bKKNBOACNCONb\x06proto3\
+    LFLDMPH\0R\x0bNMIJKPKNPLE\x120\n\x0bFKPDOHGKJJK\x18\t\x20\x01(\x0b2\x0c.\
+    KLNGFBHIADAH\0R\x0bFKPDOHGKJJKB\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

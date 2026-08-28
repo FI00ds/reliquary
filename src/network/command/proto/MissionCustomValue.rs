@@ -86,13 +86,13 @@ impl ::protobuf::Message for MissionCustomValue {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                58 => {
                     self.BGDFHBAANLB = is.read_string()?;
                 },
-                24 => {
+                64 => {
                     self.index = is.read_uint32()?;
                 },
-                48 => {
+                96 => {
                     self.custom_value = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for MissionCustomValue {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.BGDFHBAANLB.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.BGDFHBAANLB);
+            my_size += ::protobuf::rt::string_size(7, &self.BGDFHBAANLB);
         }
         if self.index != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.index);
+            my_size += ::protobuf::rt::uint32_size(8, self.index);
         }
         if self.custom_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.custom_value);
+            my_size += ::protobuf::rt::uint32_size(12, self.custom_value);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for MissionCustomValue {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.BGDFHBAANLB.is_empty() {
-            os.write_string(2, &self.BGDFHBAANLB)?;
+            os.write_string(7, &self.BGDFHBAANLB)?;
         }
         if self.index != 0 {
-            os.write_uint32(3, self.index)?;
+            os.write_uint32(8, self.index)?;
         }
         if self.custom_value != 0 {
-            os.write_uint32(6, self.custom_value)?;
+            os.write_uint32(12, self.custom_value)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for MissionCustomValue {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18MissionCustomValue.proto\"o\n\x12MissionCustomValue\x12\x20\n\x0bB\
-    GDFHBAANLB\x18\x02\x20\x01(\tR\x0bBGDFHBAANLB\x12\x14\n\x05index\x18\x03\
-    \x20\x01(\rR\x05index\x12!\n\x0ccustom_value\x18\x06\x20\x01(\rR\x0bcust\
+    GDFHBAANLB\x18\x07\x20\x01(\tR\x0bBGDFHBAANLB\x12\x14\n\x05index\x18\x08\
+    \x20\x01(\rR\x05index\x12!\n\x0ccustom_value\x18\x0c\x20\x01(\rR\x0bcust\
     omValueb\x06proto3\
 ";
 

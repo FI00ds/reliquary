@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EBIDBCOBLNM {
     // message fields
-    // @@protoc_insertion_point(field:EBIDBCOBLNM.BNLNGGCHFNF)
-    pub BNLNGGCHFNF: u32,
     // @@protoc_insertion_point(field:EBIDBCOBLNM.IHDPGGCJIAK)
     pub IHDPGGCJIAK: u32,
+    // @@protoc_insertion_point(field:EBIDBCOBLNM.BNLNGGCHFNF)
+    pub BNLNGGCHFNF: u32,
     // @@protoc_insertion_point(field:EBIDBCOBLNM.FOPMPMPNCOA)
     pub FOPMPMPNCOA: u32,
     // special fields
@@ -54,14 +54,14 @@ impl EBIDBCOBLNM {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BNLNGGCHFNF",
-            |m: &EBIDBCOBLNM| { &m.BNLNGGCHFNF },
-            |m: &mut EBIDBCOBLNM| { &mut m.BNLNGGCHFNF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IHDPGGCJIAK",
             |m: &EBIDBCOBLNM| { &m.IHDPGGCJIAK },
             |m: &mut EBIDBCOBLNM| { &mut m.IHDPGGCJIAK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BNLNGGCHFNF",
+            |m: &EBIDBCOBLNM| { &m.BNLNGGCHFNF },
+            |m: &mut EBIDBCOBLNM| { &mut m.BNLNGGCHFNF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FOPMPMPNCOA",
@@ -86,11 +86,11 @@ impl ::protobuf::Message for EBIDBCOBLNM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.BNLNGGCHFNF = is.read_uint32()?;
-                },
-                48 => {
+                24 => {
                     self.IHDPGGCJIAK = is.read_uint32()?;
+                },
+                32 => {
+                    self.BNLNGGCHFNF = is.read_uint32()?;
                 },
                 120 => {
                     self.FOPMPMPNCOA = is.read_uint32()?;
@@ -107,11 +107,11 @@ impl ::protobuf::Message for EBIDBCOBLNM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BNLNGGCHFNF != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.BNLNGGCHFNF);
-        }
         if self.IHDPGGCJIAK != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.IHDPGGCJIAK);
+            my_size += ::protobuf::rt::uint32_size(3, self.IHDPGGCJIAK);
+        }
+        if self.BNLNGGCHFNF != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.BNLNGGCHFNF);
         }
         if self.FOPMPMPNCOA != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.FOPMPMPNCOA);
@@ -122,11 +122,11 @@ impl ::protobuf::Message for EBIDBCOBLNM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BNLNGGCHFNF != 0 {
-            os.write_uint32(2, self.BNLNGGCHFNF)?;
-        }
         if self.IHDPGGCJIAK != 0 {
-            os.write_uint32(6, self.IHDPGGCJIAK)?;
+            os.write_uint32(3, self.IHDPGGCJIAK)?;
+        }
+        if self.BNLNGGCHFNF != 0 {
+            os.write_uint32(4, self.BNLNGGCHFNF)?;
         }
         if self.FOPMPMPNCOA != 0 {
             os.write_uint32(15, self.FOPMPMPNCOA)?;
@@ -148,16 +148,16 @@ impl ::protobuf::Message for EBIDBCOBLNM {
     }
 
     fn clear(&mut self) {
-        self.BNLNGGCHFNF = 0;
         self.IHDPGGCJIAK = 0;
+        self.BNLNGGCHFNF = 0;
         self.FOPMPMPNCOA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EBIDBCOBLNM {
         static instance: EBIDBCOBLNM = EBIDBCOBLNM {
-            BNLNGGCHFNF: 0,
             IHDPGGCJIAK: 0,
+            BNLNGGCHFNF: 0,
             FOPMPMPNCOA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for EBIDBCOBLNM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EBIDBCOBLNM.proto\"s\n\x0bEBIDBCOBLNM\x12\x20\n\x0bBNLNGGCHFNF\x18\
-    \x02\x20\x01(\rR\x0bBNLNGGCHFNF\x12\x20\n\x0bIHDPGGCJIAK\x18\x06\x20\x01\
-    (\rR\x0bIHDPGGCJIAK\x12\x20\n\x0bFOPMPMPNCOA\x18\x0f\x20\x01(\rR\x0bFOPM\
+    \n\x11EBIDBCOBLNM.proto\"s\n\x0bEBIDBCOBLNM\x12\x20\n\x0bIHDPGGCJIAK\x18\
+    \x03\x20\x01(\rR\x0bIHDPGGCJIAK\x12\x20\n\x0bBNLNGGCHFNF\x18\x04\x20\x01\
+    (\rR\x0bBNLNGGCHFNF\x12\x20\n\x0bFOPMPMPNCOA\x18\x0f\x20\x01(\rR\x0bFOPM\
     PMPNCOAb\x06proto3\
 ";
 

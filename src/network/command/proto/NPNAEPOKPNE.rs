@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NPNAEPOKPNE {
     // message fields
-    // @@protoc_insertion_point(field:NPNAEPOKPNE.coord)
-    pub coord: ::protobuf::MessageField<super::OPOCANGAEHJ::OPOCANGAEHJ>,
+    // @@protoc_insertion_point(field:NPNAEPOKPNE.FOCNBOANONM)
+    pub FOCNBOANONM: ::protobuf::MessageField<super::OPOCANGAEHJ::OPOCANGAEHJ>,
     // @@protoc_insertion_point(field:NPNAEPOKPNE.LIAMHNFAPNL)
     pub LIAMHNFAPNL: ::std::vec::Vec<f32>,
     // special fields
@@ -52,9 +52,9 @@ impl NPNAEPOKPNE {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OPOCANGAEHJ::OPOCANGAEHJ>(
-            "coord",
-            |m: &NPNAEPOKPNE| { &m.coord },
-            |m: &mut NPNAEPOKPNE| { &mut m.coord },
+            "FOCNBOANONM",
+            |m: &NPNAEPOKPNE| { &m.FOCNBOANONM },
+            |m: &mut NPNAEPOKPNE| { &mut m.FOCNBOANONM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "LIAMHNFAPNL",
@@ -79,13 +79,13 @@ impl ::protobuf::Message for NPNAEPOKPNE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.coord)?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FOCNBOANONM)?;
                 },
-                82 => {
+                58 => {
                     is.read_repeated_packed_float_into(&mut self.LIAMHNFAPNL)?;
                 },
-                85 => {
+                61 => {
                     self.LIAMHNFAPNL.push(is.read_float()?);
                 },
                 tag => {
@@ -100,21 +100,21 @@ impl ::protobuf::Message for NPNAEPOKPNE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.coord.as_ref() {
+        if let Some(v) = self.FOCNBOANONM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_float_size(10, &self.LIAMHNFAPNL);
+        my_size += ::protobuf::rt::vec_packed_float_size(7, &self.LIAMHNFAPNL);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.coord.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let Some(v) = self.FOCNBOANONM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        os.write_repeated_packed_float(10, &self.LIAMHNFAPNL)?;
+        os.write_repeated_packed_float(7, &self.LIAMHNFAPNL)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -132,14 +132,14 @@ impl ::protobuf::Message for NPNAEPOKPNE {
     }
 
     fn clear(&mut self) {
-        self.coord.clear();
+        self.FOCNBOANONM.clear();
         self.LIAMHNFAPNL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NPNAEPOKPNE {
         static instance: NPNAEPOKPNE = NPNAEPOKPNE {
-            coord: ::protobuf::MessageField::none(),
+            FOCNBOANONM: ::protobuf::MessageField::none(),
             LIAMHNFAPNL: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,10 @@ impl ::protobuf::reflect::ProtobufValue for NPNAEPOKPNE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NPNAEPOKPNE.proto\x1a\x11OPOCANGAEHJ.proto\"S\n\x0bNPNAEPOKPNE\x12\
-    \"\n\x05coord\x18\x08\x20\x01(\x0b2\x0c.OPOCANGAEHJR\x05coord\x12\x20\n\
-    \x0bLIAMHNFAPNL\x18\n\x20\x03(\x02R\x0bLIAMHNFAPNLb\x06proto3\
+    \n\x11NPNAEPOKPNE.proto\x1a\x11OPOCANGAEHJ.proto\"_\n\x0bNPNAEPOKPNE\x12\
+    .\n\x0bFOCNBOANONM\x18\x03\x20\x01(\x0b2\x0c.OPOCANGAEHJR\x0bFOCNBOANONM\
+    \x12\x20\n\x0bLIAMHNFAPNL\x18\x07\x20\x03(\x02R\x0bLIAMHNFAPNLb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

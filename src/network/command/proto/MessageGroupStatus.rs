@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:MessageGroupStatus)
 pub enum MessageGroupStatus {
-    // @@protoc_insertion_point(enum_value:MessageGroupStatus.MESSAGE_GROUP_NONE)
-    MESSAGE_GROUP_NONE = 0,
-    // @@protoc_insertion_point(enum_value:MessageGroupStatus.MESSAGE_GROUP_DOING)
-    MESSAGE_GROUP_DOING = 1,
-    // @@protoc_insertion_point(enum_value:MessageGroupStatus.MESSAGE_GROUP_FINISH)
-    MESSAGE_GROUP_FINISH = 2,
-    // @@protoc_insertion_point(enum_value:MessageGroupStatus.MESSAGE_GROUP_FROZEN)
-    MESSAGE_GROUP_FROZEN = 3,
+    // @@protoc_insertion_point(enum_value:MessageGroupStatus.MessageGroupStatus_MessageGroupNone)
+    MessageGroupStatus_MessageGroupNone = 0,
+    // @@protoc_insertion_point(enum_value:MessageGroupStatus.MessageGroupStatus_MessageGroupDoing)
+    MessageGroupStatus_MessageGroupDoing = 1,
+    // @@protoc_insertion_point(enum_value:MessageGroupStatus.MessageGroupStatus_MessageGroupFinish)
+    MessageGroupStatus_MessageGroupFinish = 2,
+    // @@protoc_insertion_point(enum_value:MessageGroupStatus.MessageGroupStatus_MessageGroupFrozen)
+    MessageGroupStatus_MessageGroupFrozen = 3,
 }
 
 impl ::protobuf::Enum for MessageGroupStatus {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for MessageGroupStatus {
 
     fn from_i32(value: i32) -> ::std::option::Option<MessageGroupStatus> {
         match value {
-            0 => ::std::option::Option::Some(MessageGroupStatus::MESSAGE_GROUP_NONE),
-            1 => ::std::option::Option::Some(MessageGroupStatus::MESSAGE_GROUP_DOING),
-            2 => ::std::option::Option::Some(MessageGroupStatus::MESSAGE_GROUP_FINISH),
-            3 => ::std::option::Option::Some(MessageGroupStatus::MESSAGE_GROUP_FROZEN),
+            0 => ::std::option::Option::Some(MessageGroupStatus::MessageGroupStatus_MessageGroupNone),
+            1 => ::std::option::Option::Some(MessageGroupStatus::MessageGroupStatus_MessageGroupDoing),
+            2 => ::std::option::Option::Some(MessageGroupStatus::MessageGroupStatus_MessageGroupFinish),
+            3 => ::std::option::Option::Some(MessageGroupStatus::MessageGroupStatus_MessageGroupFrozen),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<MessageGroupStatus> {
         match str {
-            "MESSAGE_GROUP_NONE" => ::std::option::Option::Some(MessageGroupStatus::MESSAGE_GROUP_NONE),
-            "MESSAGE_GROUP_DOING" => ::std::option::Option::Some(MessageGroupStatus::MESSAGE_GROUP_DOING),
-            "MESSAGE_GROUP_FINISH" => ::std::option::Option::Some(MessageGroupStatus::MESSAGE_GROUP_FINISH),
-            "MESSAGE_GROUP_FROZEN" => ::std::option::Option::Some(MessageGroupStatus::MESSAGE_GROUP_FROZEN),
+            "MessageGroupStatus_MessageGroupNone" => ::std::option::Option::Some(MessageGroupStatus::MessageGroupStatus_MessageGroupNone),
+            "MessageGroupStatus_MessageGroupDoing" => ::std::option::Option::Some(MessageGroupStatus::MessageGroupStatus_MessageGroupDoing),
+            "MessageGroupStatus_MessageGroupFinish" => ::std::option::Option::Some(MessageGroupStatus::MessageGroupStatus_MessageGroupFinish),
+            "MessageGroupStatus_MessageGroupFrozen" => ::std::option::Option::Some(MessageGroupStatus::MessageGroupStatus_MessageGroupFrozen),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [MessageGroupStatus] = &[
-        MessageGroupStatus::MESSAGE_GROUP_NONE,
-        MessageGroupStatus::MESSAGE_GROUP_DOING,
-        MessageGroupStatus::MESSAGE_GROUP_FINISH,
-        MessageGroupStatus::MESSAGE_GROUP_FROZEN,
+        MessageGroupStatus::MessageGroupStatus_MessageGroupNone,
+        MessageGroupStatus::MessageGroupStatus_MessageGroupDoing,
+        MessageGroupStatus::MessageGroupStatus_MessageGroupFinish,
+        MessageGroupStatus::MessageGroupStatus_MessageGroupFrozen,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for MessageGroupStatus {
 
 impl ::std::default::Default for MessageGroupStatus {
     fn default() -> Self {
-        MessageGroupStatus::MESSAGE_GROUP_NONE
+        MessageGroupStatus::MessageGroupStatus_MessageGroupNone
     }
 }
 
@@ -97,10 +97,10 @@ impl MessageGroupStatus {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18MessageGroupStatus.proto*y\n\x12MessageGroupStatus\x12\x16\n\x12ME\
-    SSAGE_GROUP_NONE\x10\0\x12\x17\n\x13MESSAGE_GROUP_DOING\x10\x01\x12\x18\
-    \n\x14MESSAGE_GROUP_FINISH\x10\x02\x12\x18\n\x14MESSAGE_GROUP_FROZEN\x10\
-    \x03b\x06proto3\
+    \n\x18MessageGroupStatus.proto*\xbd\x01\n\x12MessageGroupStatus\x12'\n#M\
+    essageGroupStatus_MessageGroupNone\x10\0\x12(\n$MessageGroupStatus_Messa\
+    geGroupDoing\x10\x01\x12)\n%MessageGroupStatus_MessageGroupFinish\x10\
+    \x02\x12)\n%MessageGroupStatus_MessageGroupFrozen\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

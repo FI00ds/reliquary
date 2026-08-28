@@ -79,10 +79,10 @@ impl ::protobuf::Message for AKMCODLAEKI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                17 => {
+                9 => {
                     self.value = is.read_double()?;
                 },
-                26 => {
+                50 => {
                     self.key = is.read_string()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for AKMCODLAEKI {
             my_size += 1 + 8;
         }
         if !self.key.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.key);
+            my_size += ::protobuf::rt::string_size(6, &self.key);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for AKMCODLAEKI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.value != 0. {
-            os.write_double(2, self.value)?;
+            os.write_double(1, self.value)?;
         }
         if !self.key.is_empty() {
-            os.write_string(3, &self.key)?;
+            os.write_string(6, &self.key)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for AKMCODLAEKI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AKMCODLAEKI.proto\"5\n\x0bAKMCODLAEKI\x12\x14\n\x05value\x18\x02\
-    \x20\x01(\x01R\x05value\x12\x10\n\x03key\x18\x03\x20\x01(\tR\x03keyb\x06\
+    \n\x11AKMCODLAEKI.proto\"5\n\x0bAKMCODLAEKI\x12\x14\n\x05value\x18\x01\
+    \x20\x01(\x01R\x05value\x12\x10\n\x03key\x18\x06\x20\x01(\tR\x03keyb\x06\
     proto3\
 ";
 

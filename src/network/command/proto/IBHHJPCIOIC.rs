@@ -33,7 +33,7 @@ pub struct IBHHJPCIOIC {
     // @@protoc_insertion_point(field:IBHHJPCIOIC.JKMHAJHIKIK)
     pub JKMHAJHIKIK: ::std::collections::HashMap<::std::string::String, super::MOHMAHDOBDO::MOHMAHDOBDO>,
     // @@protoc_insertion_point(field:IBHHJPCIOIC.AFMFNCGCNHI)
-    pub AFMFNCGCNHI: ::std::string::String,
+    pub AFMFNCGCNHI: ::std::vec::Vec<u8>,
     // special fields
     // @@protoc_insertion_point(special_field:IBHHJPCIOIC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -105,7 +105,7 @@ impl ::protobuf::Message for IBHHJPCIOIC {
                     self.JKMHAJHIKIK.insert(key, value);
                 },
                 26 => {
-                    self.AFMFNCGCNHI = is.read_string()?;
+                    self.AFMFNCGCNHI = is.read_bytes()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,7 +130,7 @@ impl ::protobuf::Message for IBHHJPCIOIC {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
         if !self.AFMFNCGCNHI.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.AFMFNCGCNHI);
+            my_size += ::protobuf::rt::bytes_size(3, &self.AFMFNCGCNHI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -152,7 +152,7 @@ impl ::protobuf::Message for IBHHJPCIOIC {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         if !self.AFMFNCGCNHI.is_empty() {
-            os.write_string(3, &self.AFMFNCGCNHI)?;
+            os.write_bytes(3, &self.AFMFNCGCNHI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -204,10 +204,10 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IBHHJPCIOIC.proto\x1a\x11MOHMAHDOBDO.proto\"\xe0\x01\n\x0bIBHHJPCI\
     OIC\x12\x20\n\x0bECLAGOJMMBO\x18\x01\x20\x01(\x08R\x0bECLAGOJMMBO\x12?\n\
     \x0bJKMHAJHIKIK\x18\x02\x20\x03(\x0b2\x1d.IBHHJPCIOIC.JKMHAJHIKIKEntryR\
-    \x0bJKMHAJHIKIK\x12\x20\n\x0bAFMFNCGCNHI\x18\x03\x20\x01(\tR\x0bAFMFNCGC\
-    NHI\x1aL\n\x10JKMHAJHIKIKEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03k\
-    ey\x12\"\n\x05value\x18\x02\x20\x01(\x0b2\x0c.MOHMAHDOBDOR\x05value:\x02\
-    8\x01b\x06proto3\
+    \x0bJKMHAJHIKIK\x12\x20\n\x0bAFMFNCGCNHI\x18\x03\x20\x01(\x0cR\x0bAFMFNC\
+    GCNHI\x1aL\n\x10JKMHAJHIKIKEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\
+    \x03key\x12\"\n\x05value\x18\x02\x20\x01(\x0b2\x0c.MOHMAHDOBDOR\x05value\
+    :\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

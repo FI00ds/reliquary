@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IKCONCOKNAN {
     // message fields
-    // @@protoc_insertion_point(field:IKCONCOKNAN.ABOHPPHHPEI)
-    pub ABOHPPHHPEI: u32,
-    // @@protoc_insertion_point(field:IKCONCOKNAN.GHKDAJNDBBA)
-    pub GHKDAJNDBBA: u32,
-    // @@protoc_insertion_point(field:IKCONCOKNAN.height)
-    pub height: u32,
+    // @@protoc_insertion_point(field:IKCONCOKNAN.NKPKPNKBBAP)
+    pub NKPKPNKBBAP: u32,
     // @@protoc_insertion_point(field:IKCONCOKNAN.CPPCIGMJALM)
     pub CPPCIGMJALM: ::std::vec::Vec<super::CGMCMAKMJDK::CGMCMAKMJDK>,
-    // @@protoc_insertion_point(field:IKCONCOKNAN.width)
-    pub width: u32,
+    // @@protoc_insertion_point(field:IKCONCOKNAN.ABOHPPHHPEI)
+    pub ABOHPPHHPEI: u32,
+    // @@protoc_insertion_point(field:IKCONCOKNAN.HBAMPJPOOLM)
+    pub HBAMPJPOOLM: u32,
+    // @@protoc_insertion_point(field:IKCONCOKNAN.GHKDAJNDBBA)
+    pub GHKDAJNDBBA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IKCONCOKNAN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,19 +58,9 @@ impl IKCONCOKNAN {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ABOHPPHHPEI",
-            |m: &IKCONCOKNAN| { &m.ABOHPPHHPEI },
-            |m: &mut IKCONCOKNAN| { &mut m.ABOHPPHHPEI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GHKDAJNDBBA",
-            |m: &IKCONCOKNAN| { &m.GHKDAJNDBBA },
-            |m: &mut IKCONCOKNAN| { &mut m.GHKDAJNDBBA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "height",
-            |m: &IKCONCOKNAN| { &m.height },
-            |m: &mut IKCONCOKNAN| { &mut m.height },
+            "NKPKPNKBBAP",
+            |m: &IKCONCOKNAN| { &m.NKPKPNKBBAP },
+            |m: &mut IKCONCOKNAN| { &mut m.NKPKPNKBBAP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "CPPCIGMJALM",
@@ -78,9 +68,19 @@ impl IKCONCOKNAN {
             |m: &mut IKCONCOKNAN| { &mut m.CPPCIGMJALM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "width",
-            |m: &IKCONCOKNAN| { &m.width },
-            |m: &mut IKCONCOKNAN| { &mut m.width },
+            "ABOHPPHHPEI",
+            |m: &IKCONCOKNAN| { &m.ABOHPPHHPEI },
+            |m: &mut IKCONCOKNAN| { &mut m.ABOHPPHHPEI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HBAMPJPOOLM",
+            |m: &IKCONCOKNAN| { &m.HBAMPJPOOLM },
+            |m: &mut IKCONCOKNAN| { &mut m.HBAMPJPOOLM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GHKDAJNDBBA",
+            |m: &IKCONCOKNAN| { &m.GHKDAJNDBBA },
+            |m: &mut IKCONCOKNAN| { &mut m.GHKDAJNDBBA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IKCONCOKNAN>(
             "IKCONCOKNAN",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for IKCONCOKNAN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.ABOHPPHHPEI = is.read_uint32()?;
+                8 => {
+                    self.NKPKPNKBBAP = is.read_uint32()?;
                 },
-                32 => {
-                    self.GHKDAJNDBBA = is.read_uint32()?;
-                },
-                40 => {
-                    self.height = is.read_uint32()?;
-                },
-                106 => {
+                42 => {
                     self.CPPCIGMJALM.push(is.read_message()?);
                 },
-                120 => {
-                    self.width = is.read_uint32()?;
+                48 => {
+                    self.ABOHPPHHPEI = is.read_uint32()?;
+                },
+                88 => {
+                    self.HBAMPJPOOLM = is.read_uint32()?;
+                },
+                104 => {
+                    self.GHKDAJNDBBA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +127,21 @@ impl ::protobuf::Message for IKCONCOKNAN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ABOHPPHHPEI != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ABOHPPHHPEI);
-        }
-        if self.GHKDAJNDBBA != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.GHKDAJNDBBA);
-        }
-        if self.height != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.height);
+        if self.NKPKPNKBBAP != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.NKPKPNKBBAP);
         }
         for value in &self.CPPCIGMJALM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.width != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.width);
+        if self.ABOHPPHHPEI != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.ABOHPPHHPEI);
+        }
+        if self.HBAMPJPOOLM != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.HBAMPJPOOLM);
+        }
+        if self.GHKDAJNDBBA != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.GHKDAJNDBBA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for IKCONCOKNAN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ABOHPPHHPEI != 0 {
-            os.write_uint32(3, self.ABOHPPHHPEI)?;
-        }
-        if self.GHKDAJNDBBA != 0 {
-            os.write_uint32(4, self.GHKDAJNDBBA)?;
-        }
-        if self.height != 0 {
-            os.write_uint32(5, self.height)?;
+        if self.NKPKPNKBBAP != 0 {
+            os.write_uint32(1, self.NKPKPNKBBAP)?;
         }
         for v in &self.CPPCIGMJALM {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
-        if self.width != 0 {
-            os.write_uint32(15, self.width)?;
+        if self.ABOHPPHHPEI != 0 {
+            os.write_uint32(6, self.ABOHPPHHPEI)?;
+        }
+        if self.HBAMPJPOOLM != 0 {
+            os.write_uint32(11, self.HBAMPJPOOLM)?;
+        }
+        if self.GHKDAJNDBBA != 0 {
+            os.write_uint32(13, self.GHKDAJNDBBA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for IKCONCOKNAN {
     }
 
     fn clear(&mut self) {
-        self.ABOHPPHHPEI = 0;
-        self.GHKDAJNDBBA = 0;
-        self.height = 0;
+        self.NKPKPNKBBAP = 0;
         self.CPPCIGMJALM.clear();
-        self.width = 0;
+        self.ABOHPPHHPEI = 0;
+        self.HBAMPJPOOLM = 0;
+        self.GHKDAJNDBBA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IKCONCOKNAN {
         static instance: IKCONCOKNAN = IKCONCOKNAN {
-            ABOHPPHHPEI: 0,
-            GHKDAJNDBBA: 0,
-            height: 0,
+            NKPKPNKBBAP: 0,
             CPPCIGMJALM: ::std::vec::Vec::new(),
-            width: 0,
+            ABOHPPHHPEI: 0,
+            HBAMPJPOOLM: 0,
+            GHKDAJNDBBA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,12 +220,12 @@ impl ::protobuf::reflect::ProtobufValue for IKCONCOKNAN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IKCONCOKNAN.proto\x1a\x11CGMCMAKMJDK.proto\"\xaf\x01\n\x0bIKCONCOK\
-    NAN\x12\x20\n\x0bABOHPPHHPEI\x18\x03\x20\x01(\rR\x0bABOHPPHHPEI\x12\x20\
-    \n\x0bGHKDAJNDBBA\x18\x04\x20\x01(\rR\x0bGHKDAJNDBBA\x12\x16\n\x06height\
-    \x18\x05\x20\x01(\rR\x06height\x12.\n\x0bCPPCIGMJALM\x18\r\x20\x03(\x0b2\
-    \x0c.CGMCMAKMJDKR\x0bCPPCIGMJALM\x12\x14\n\x05width\x18\x0f\x20\x01(\rR\
-    \x05widthb\x06proto3\
+    \n\x11IKCONCOKNAN.proto\x1a\x11CGMCMAKMJDK.proto\"\xc5\x01\n\x0bIKCONCOK\
+    NAN\x12\x20\n\x0bNKPKPNKBBAP\x18\x01\x20\x01(\rR\x0bNKPKPNKBBAP\x12.\n\
+    \x0bCPPCIGMJALM\x18\x05\x20\x03(\x0b2\x0c.CGMCMAKMJDKR\x0bCPPCIGMJALM\
+    \x12\x20\n\x0bABOHPPHHPEI\x18\x06\x20\x01(\rR\x0bABOHPPHHPEI\x12\x20\n\
+    \x0bHBAMPJPOOLM\x18\x0b\x20\x01(\rR\x0bHBAMPJPOOLM\x12\x20\n\x0bGHKDAJND\
+    BBA\x18\r\x20\x01(\rR\x0bGHKDAJNDBBAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

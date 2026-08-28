@@ -27,26 +27,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:AvatarType)
 pub enum AvatarType {
-    // @@protoc_insertion_point(enum_value:AvatarType.AVATAR_TYPE_NONE)
-    AVATAR_TYPE_NONE = 0,
-    // @@protoc_insertion_point(enum_value:AvatarType.AVATAR_TRIAL_TYPE)
-    AVATAR_TRIAL_TYPE = 1,
-    // @@protoc_insertion_point(enum_value:AvatarType.AVATAR_LIMIT_TYPE)
-    AVATAR_LIMIT_TYPE = 2,
-    // @@protoc_insertion_point(enum_value:AvatarType.AVATAR_FORMAL_TYPE)
-    AVATAR_FORMAL_TYPE = 3,
-    // @@protoc_insertion_point(enum_value:AvatarType.AVATAR_ASSIST_TYPE)
-    AVATAR_ASSIST_TYPE = 4,
-    // @@protoc_insertion_point(enum_value:AvatarType.AVATAR_AETHER_DIVIDE_TYPE)
-    AVATAR_AETHER_DIVIDE_TYPE = 5,
-    // @@protoc_insertion_point(enum_value:AvatarType.AVATAR_UPGRADE_AVAILABLE_TYPE)
-    AVATAR_UPGRADE_AVAILABLE_TYPE = 6,
-    // @@protoc_insertion_point(enum_value:AvatarType.AVATAR_GRID_FIGHT_TYPE)
-    AVATAR_GRID_FIGHT_TYPE = 7,
-    // @@protoc_insertion_point(enum_value:AvatarType.AVATAR_GLJDNDMIGIP)
-    AVATAR_GLJDNDMIGIP = 8,
-    // @@protoc_insertion_point(enum_value:AvatarType.AvatarType_GPMNKEOADPI)
-    AvatarType_GPMNKEOADPI = 9,
+    // @@protoc_insertion_point(enum_value:AvatarType.AvatarType_None)
+    AvatarType_None = 0,
+    // @@protoc_insertion_point(enum_value:AvatarType.AvatarType_AvatarTrialType)
+    AvatarType_AvatarTrialType = 1,
+    // @@protoc_insertion_point(enum_value:AvatarType.AvatarType_AvatarLimitType)
+    AvatarType_AvatarLimitType = 2,
+    // @@protoc_insertion_point(enum_value:AvatarType.AvatarType_AvatarFormalType)
+    AvatarType_AvatarFormalType = 3,
+    // @@protoc_insertion_point(enum_value:AvatarType.AvatarType_AvatarAssistType)
+    AvatarType_AvatarAssistType = 4,
+    // @@protoc_insertion_point(enum_value:AvatarType.AvatarType_AvatarAetherDivideType)
+    AvatarType_AvatarAetherDivideType = 5,
+    // @@protoc_insertion_point(enum_value:AvatarType.AvatarType_AvatarUpgradeAvailableType)
+    AvatarType_AvatarUpgradeAvailableType = 6,
+    // @@protoc_insertion_point(enum_value:AvatarType.H_126baada)
+    H_126baada = 7,
+    // @@protoc_insertion_point(enum_value:AvatarType.AvatarType_AvatarFixedPathType)
+    AvatarType_AvatarFixedPathType = 8,
+    // @@protoc_insertion_point(enum_value:AvatarType.AvatarType_AvatarReturnAssistType)
+    AvatarType_AvatarReturnAssistType = 9,
 }
 
 impl ::protobuf::Enum for AvatarType {
@@ -58,47 +58,47 @@ impl ::protobuf::Enum for AvatarType {
 
     fn from_i32(value: i32) -> ::std::option::Option<AvatarType> {
         match value {
-            0 => ::std::option::Option::Some(AvatarType::AVATAR_TYPE_NONE),
-            1 => ::std::option::Option::Some(AvatarType::AVATAR_TRIAL_TYPE),
-            2 => ::std::option::Option::Some(AvatarType::AVATAR_LIMIT_TYPE),
-            3 => ::std::option::Option::Some(AvatarType::AVATAR_FORMAL_TYPE),
-            4 => ::std::option::Option::Some(AvatarType::AVATAR_ASSIST_TYPE),
-            5 => ::std::option::Option::Some(AvatarType::AVATAR_AETHER_DIVIDE_TYPE),
-            6 => ::std::option::Option::Some(AvatarType::AVATAR_UPGRADE_AVAILABLE_TYPE),
-            7 => ::std::option::Option::Some(AvatarType::AVATAR_GRID_FIGHT_TYPE),
-            8 => ::std::option::Option::Some(AvatarType::AVATAR_GLJDNDMIGIP),
-            9 => ::std::option::Option::Some(AvatarType::AvatarType_GPMNKEOADPI),
+            0 => ::std::option::Option::Some(AvatarType::AvatarType_None),
+            1 => ::std::option::Option::Some(AvatarType::AvatarType_AvatarTrialType),
+            2 => ::std::option::Option::Some(AvatarType::AvatarType_AvatarLimitType),
+            3 => ::std::option::Option::Some(AvatarType::AvatarType_AvatarFormalType),
+            4 => ::std::option::Option::Some(AvatarType::AvatarType_AvatarAssistType),
+            5 => ::std::option::Option::Some(AvatarType::AvatarType_AvatarAetherDivideType),
+            6 => ::std::option::Option::Some(AvatarType::AvatarType_AvatarUpgradeAvailableType),
+            7 => ::std::option::Option::Some(AvatarType::H_126baada),
+            8 => ::std::option::Option::Some(AvatarType::AvatarType_AvatarFixedPathType),
+            9 => ::std::option::Option::Some(AvatarType::AvatarType_AvatarReturnAssistType),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<AvatarType> {
         match str {
-            "AVATAR_TYPE_NONE" => ::std::option::Option::Some(AvatarType::AVATAR_TYPE_NONE),
-            "AVATAR_TRIAL_TYPE" => ::std::option::Option::Some(AvatarType::AVATAR_TRIAL_TYPE),
-            "AVATAR_LIMIT_TYPE" => ::std::option::Option::Some(AvatarType::AVATAR_LIMIT_TYPE),
-            "AVATAR_FORMAL_TYPE" => ::std::option::Option::Some(AvatarType::AVATAR_FORMAL_TYPE),
-            "AVATAR_ASSIST_TYPE" => ::std::option::Option::Some(AvatarType::AVATAR_ASSIST_TYPE),
-            "AVATAR_AETHER_DIVIDE_TYPE" => ::std::option::Option::Some(AvatarType::AVATAR_AETHER_DIVIDE_TYPE),
-            "AVATAR_UPGRADE_AVAILABLE_TYPE" => ::std::option::Option::Some(AvatarType::AVATAR_UPGRADE_AVAILABLE_TYPE),
-            "AVATAR_GRID_FIGHT_TYPE" => ::std::option::Option::Some(AvatarType::AVATAR_GRID_FIGHT_TYPE),
-            "AVATAR_GLJDNDMIGIP" => ::std::option::Option::Some(AvatarType::AVATAR_GLJDNDMIGIP),
-            "AvatarType_GPMNKEOADPI" => ::std::option::Option::Some(AvatarType::AvatarType_GPMNKEOADPI),
+            "AvatarType_None" => ::std::option::Option::Some(AvatarType::AvatarType_None),
+            "AvatarType_AvatarTrialType" => ::std::option::Option::Some(AvatarType::AvatarType_AvatarTrialType),
+            "AvatarType_AvatarLimitType" => ::std::option::Option::Some(AvatarType::AvatarType_AvatarLimitType),
+            "AvatarType_AvatarFormalType" => ::std::option::Option::Some(AvatarType::AvatarType_AvatarFormalType),
+            "AvatarType_AvatarAssistType" => ::std::option::Option::Some(AvatarType::AvatarType_AvatarAssistType),
+            "AvatarType_AvatarAetherDivideType" => ::std::option::Option::Some(AvatarType::AvatarType_AvatarAetherDivideType),
+            "AvatarType_AvatarUpgradeAvailableType" => ::std::option::Option::Some(AvatarType::AvatarType_AvatarUpgradeAvailableType),
+            "H_126baada" => ::std::option::Option::Some(AvatarType::H_126baada),
+            "AvatarType_AvatarFixedPathType" => ::std::option::Option::Some(AvatarType::AvatarType_AvatarFixedPathType),
+            "AvatarType_AvatarReturnAssistType" => ::std::option::Option::Some(AvatarType::AvatarType_AvatarReturnAssistType),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [AvatarType] = &[
-        AvatarType::AVATAR_TYPE_NONE,
-        AvatarType::AVATAR_TRIAL_TYPE,
-        AvatarType::AVATAR_LIMIT_TYPE,
-        AvatarType::AVATAR_FORMAL_TYPE,
-        AvatarType::AVATAR_ASSIST_TYPE,
-        AvatarType::AVATAR_AETHER_DIVIDE_TYPE,
-        AvatarType::AVATAR_UPGRADE_AVAILABLE_TYPE,
-        AvatarType::AVATAR_GRID_FIGHT_TYPE,
-        AvatarType::AVATAR_GLJDNDMIGIP,
-        AvatarType::AvatarType_GPMNKEOADPI,
+        AvatarType::AvatarType_None,
+        AvatarType::AvatarType_AvatarTrialType,
+        AvatarType::AvatarType_AvatarLimitType,
+        AvatarType::AvatarType_AvatarFormalType,
+        AvatarType::AvatarType_AvatarAssistType,
+        AvatarType::AvatarType_AvatarAetherDivideType,
+        AvatarType::AvatarType_AvatarUpgradeAvailableType,
+        AvatarType::H_126baada,
+        AvatarType::AvatarType_AvatarFixedPathType,
+        AvatarType::AvatarType_AvatarReturnAssistType,
     ];
 }
 
@@ -116,7 +116,7 @@ impl ::protobuf::EnumFull for AvatarType {
 
 impl ::std::default::Default for AvatarType {
     fn default() -> Self {
-        AvatarType::AVATAR_TYPE_NONE
+        AvatarType::AvatarType_None
     }
 }
 
@@ -127,13 +127,14 @@ impl AvatarType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x10AvatarType.proto*\x92\x02\n\nAvatarType\x12\x14\n\x10AVATAR_TYPE_N\
-    ONE\x10\0\x12\x15\n\x11AVATAR_TRIAL_TYPE\x10\x01\x12\x15\n\x11AVATAR_LIM\
-    IT_TYPE\x10\x02\x12\x16\n\x12AVATAR_FORMAL_TYPE\x10\x03\x12\x16\n\x12AVA\
-    TAR_ASSIST_TYPE\x10\x04\x12\x1d\n\x19AVATAR_AETHER_DIVIDE_TYPE\x10\x05\
-    \x12!\n\x1dAVATAR_UPGRADE_AVAILABLE_TYPE\x10\x06\x12\x1a\n\x16AVATAR_GRI\
-    D_FIGHT_TYPE\x10\x07\x12\x16\n\x12AVATAR_GLJDNDMIGIP\x10\x08\x12\x1a\n\
-    \x16AvatarType_GPMNKEOADPI\x10\tb\x06proto3\
+    \n\x10AvatarType.proto*\xd0\x02\n\nAvatarType\x12\x13\n\x0fAvatarType_No\
+    ne\x10\0\x12\x1e\n\x1aAvatarType_AvatarTrialType\x10\x01\x12\x1e\n\x1aAv\
+    atarType_AvatarLimitType\x10\x02\x12\x1f\n\x1bAvatarType_AvatarFormalTyp\
+    e\x10\x03\x12\x1f\n\x1bAvatarType_AvatarAssistType\x10\x04\x12%\n!Avatar\
+    Type_AvatarAetherDivideType\x10\x05\x12)\n%AvatarType_AvatarUpgradeAvail\
+    ableType\x10\x06\x12\x0e\n\nH_126baada\x10\x07\x12\"\n\x1eAvatarType_Ava\
+    tarFixedPathType\x10\x08\x12%\n!AvatarType_AvatarReturnAssistType\x10\tb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

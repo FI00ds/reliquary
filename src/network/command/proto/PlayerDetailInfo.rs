@@ -28,44 +28,44 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerDetailInfo {
     // message fields
-    // @@protoc_insertion_point(field:PlayerDetailInfo.is_banned)
-    pub is_banned: bool,
-    // @@protoc_insertion_point(field:PlayerDetailInfo.DJONELMIFEE)
-    pub DJONELMIFEE: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerDetailInfo.head_icon)
-    pub head_icon: u32,
-    // @@protoc_insertion_point(field:PlayerDetailInfo.signature)
-    pub signature: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerDetailInfo.HCGMAGDFAAO)
-    pub HCGMAGDFAAO: u32,
-    // @@protoc_insertion_point(field:PlayerDetailInfo.IJKOMIKFKEK)
-    pub IJKOMIKFKEK: ::std::string::String,
     // @@protoc_insertion_point(field:PlayerDetailInfo.uid)
     pub uid: u32,
-    // @@protoc_insertion_point(field:PlayerDetailInfo.HIEAPDNNNEI)
-    pub HIEAPDNNNEI: bool,
-    // @@protoc_insertion_point(field:PlayerDetailInfo.display_avatar_list)
-    pub display_avatar_list: ::std::vec::Vec<super::DisplayAvatarDetailInfo::DisplayAvatarDetailInfo>,
-    // @@protoc_insertion_point(field:PlayerDetailInfo.record_info)
-    pub record_info: ::protobuf::MessageField<super::PlayerRecordInfo::PlayerRecordInfo>,
     // @@protoc_insertion_point(field:PlayerDetailInfo.world_level)
     pub world_level: u32,
-    // @@protoc_insertion_point(field:PlayerDetailInfo.GEJFMBBHNLN)
-    pub GEJFMBBHNLN: u32,
     // @@protoc_insertion_point(field:PlayerDetailInfo.platform)
     pub platform: ::protobuf::EnumOrUnknown<super::PlatformType::PlatformType>,
-    // @@protoc_insertion_point(field:PlayerDetailInfo.nickname)
-    pub nickname: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerDetailInfo.record_info)
+    pub record_info: ::protobuf::MessageField<super::PlayerRecordInfo::PlayerRecordInfo>,
+    // @@protoc_insertion_point(field:PlayerDetailInfo.signature)
+    pub signature: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerDetailInfo.display_avatar_list)
+    pub display_avatar_list: ::std::vec::Vec<super::DisplayAvatarDetailInfo::DisplayAvatarDetailInfo>,
+    // @@protoc_insertion_point(field:PlayerDetailInfo.platform_uuid)
+    pub platform_uuid: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerDetailInfo.is_banned)
+    pub is_banned: bool,
     // @@protoc_insertion_point(field:PlayerDetailInfo.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:PlayerDetailInfo.head_icon)
+    pub head_icon: u32,
+    // @@protoc_insertion_point(field:PlayerDetailInfo.platform_nick)
+    pub platform_nick: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerDetailInfo.nickname)
+    pub nickname: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerDetailInfo.GEJFMBBHNLN)
+    pub GEJFMBBHNLN: u32,
+    // @@protoc_insertion_point(field:PlayerDetailInfo.HIEAPDNNNEI)
+    pub HIEAPDNNNEI: bool,
+    // @@protoc_insertion_point(field:PlayerDetailInfo.HCGMAGDFAAO)
+    pub HCGMAGDFAAO: u32,
+    // @@protoc_insertion_point(field:PlayerDetailInfo.chat_bubble)
+    pub chat_bubble: u32,
+    // @@protoc_insertion_point(field:PlayerDetailInfo.player_outfit_data)
+    pub player_outfit_data: ::protobuf::MessageField<super::CJLCPMDGIBO::CJLCPMDGIBO>,
     // @@protoc_insertion_point(field:PlayerDetailInfo.gender)
     pub gender: u32,
-    // @@protoc_insertion_point(field:PlayerDetailInfo.KINOEHKMFML)
-    pub KINOEHKMFML: u32,
     // @@protoc_insertion_point(field:PlayerDetailInfo.assist_avatar_list)
     pub assist_avatar_list: ::std::vec::Vec<super::DisplayAvatarDetailInfo::DisplayAvatarDetailInfo>,
-    // @@protoc_insertion_point(field:PlayerDetailInfo.DHKFCDAGHDM)
-    pub DHKFCDAGHDM: ::protobuf::MessageField<super::CJLCPMDGIBO::CJLCPMDGIBO>,
     // @@protoc_insertion_point(field:PlayerDetailInfo.AIHNDIAFGPM)
     pub AIHNDIAFGPM: ::protobuf::MessageField<super::OIIPJFDNPAH::OIIPJFDNPAH>,
     // @@protoc_insertion_point(field:PlayerDetailInfo.BOKLABGLEFL)
@@ -92,54 +92,9 @@ impl PlayerDetailInfo {
         let mut fields = ::std::vec::Vec::with_capacity(22);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_banned",
-            |m: &PlayerDetailInfo| { &m.is_banned },
-            |m: &mut PlayerDetailInfo| { &mut m.is_banned },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DJONELMIFEE",
-            |m: &PlayerDetailInfo| { &m.DJONELMIFEE },
-            |m: &mut PlayerDetailInfo| { &mut m.DJONELMIFEE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "head_icon",
-            |m: &PlayerDetailInfo| { &m.head_icon },
-            |m: &mut PlayerDetailInfo| { &mut m.head_icon },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "signature",
-            |m: &PlayerDetailInfo| { &m.signature },
-            |m: &mut PlayerDetailInfo| { &mut m.signature },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HCGMAGDFAAO",
-            |m: &PlayerDetailInfo| { &m.HCGMAGDFAAO },
-            |m: &mut PlayerDetailInfo| { &mut m.HCGMAGDFAAO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IJKOMIKFKEK",
-            |m: &PlayerDetailInfo| { &m.IJKOMIKFKEK },
-            |m: &mut PlayerDetailInfo| { &mut m.IJKOMIKFKEK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "uid",
             |m: &PlayerDetailInfo| { &m.uid },
             |m: &mut PlayerDetailInfo| { &mut m.uid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HIEAPDNNNEI",
-            |m: &PlayerDetailInfo| { &m.HIEAPDNNNEI },
-            |m: &mut PlayerDetailInfo| { &mut m.HIEAPDNNNEI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "display_avatar_list",
-            |m: &PlayerDetailInfo| { &m.display_avatar_list },
-            |m: &mut PlayerDetailInfo| { &mut m.display_avatar_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerRecordInfo::PlayerRecordInfo>(
-            "record_info",
-            |m: &PlayerDetailInfo| { &m.record_info },
-            |m: &mut PlayerDetailInfo| { &mut m.record_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "world_level",
@@ -147,19 +102,34 @@ impl PlayerDetailInfo {
             |m: &mut PlayerDetailInfo| { &mut m.world_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GEJFMBBHNLN",
-            |m: &PlayerDetailInfo| { &m.GEJFMBBHNLN },
-            |m: &mut PlayerDetailInfo| { &mut m.GEJFMBBHNLN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "platform",
             |m: &PlayerDetailInfo| { &m.platform },
             |m: &mut PlayerDetailInfo| { &mut m.platform },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerRecordInfo::PlayerRecordInfo>(
+            "record_info",
+            |m: &PlayerDetailInfo| { &m.record_info },
+            |m: &mut PlayerDetailInfo| { &mut m.record_info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "nickname",
-            |m: &PlayerDetailInfo| { &m.nickname },
-            |m: &mut PlayerDetailInfo| { &mut m.nickname },
+            "signature",
+            |m: &PlayerDetailInfo| { &m.signature },
+            |m: &mut PlayerDetailInfo| { &mut m.signature },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "display_avatar_list",
+            |m: &PlayerDetailInfo| { &m.display_avatar_list },
+            |m: &mut PlayerDetailInfo| { &mut m.display_avatar_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "platform_uuid",
+            |m: &PlayerDetailInfo| { &m.platform_uuid },
+            |m: &mut PlayerDetailInfo| { &mut m.platform_uuid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_banned",
+            |m: &PlayerDetailInfo| { &m.is_banned },
+            |m: &mut PlayerDetailInfo| { &mut m.is_banned },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
@@ -167,24 +137,54 @@ impl PlayerDetailInfo {
             |m: &mut PlayerDetailInfo| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "head_icon",
+            |m: &PlayerDetailInfo| { &m.head_icon },
+            |m: &mut PlayerDetailInfo| { &mut m.head_icon },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "platform_nick",
+            |m: &PlayerDetailInfo| { &m.platform_nick },
+            |m: &mut PlayerDetailInfo| { &mut m.platform_nick },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "nickname",
+            |m: &PlayerDetailInfo| { &m.nickname },
+            |m: &mut PlayerDetailInfo| { &mut m.nickname },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GEJFMBBHNLN",
+            |m: &PlayerDetailInfo| { &m.GEJFMBBHNLN },
+            |m: &mut PlayerDetailInfo| { &mut m.GEJFMBBHNLN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HIEAPDNNNEI",
+            |m: &PlayerDetailInfo| { &m.HIEAPDNNNEI },
+            |m: &mut PlayerDetailInfo| { &mut m.HIEAPDNNNEI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HCGMAGDFAAO",
+            |m: &PlayerDetailInfo| { &m.HCGMAGDFAAO },
+            |m: &mut PlayerDetailInfo| { &mut m.HCGMAGDFAAO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "chat_bubble",
+            |m: &PlayerDetailInfo| { &m.chat_bubble },
+            |m: &mut PlayerDetailInfo| { &mut m.chat_bubble },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CJLCPMDGIBO::CJLCPMDGIBO>(
+            "player_outfit_data",
+            |m: &PlayerDetailInfo| { &m.player_outfit_data },
+            |m: &mut PlayerDetailInfo| { &mut m.player_outfit_data },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "gender",
             |m: &PlayerDetailInfo| { &m.gender },
             |m: &mut PlayerDetailInfo| { &mut m.gender },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KINOEHKMFML",
-            |m: &PlayerDetailInfo| { &m.KINOEHKMFML },
-            |m: &mut PlayerDetailInfo| { &mut m.KINOEHKMFML },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "assist_avatar_list",
             |m: &PlayerDetailInfo| { &m.assist_avatar_list },
             |m: &mut PlayerDetailInfo| { &mut m.assist_avatar_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CJLCPMDGIBO::CJLCPMDGIBO>(
-            "DHKFCDAGHDM",
-            |m: &PlayerDetailInfo| { &m.DHKFCDAGHDM },
-            |m: &mut PlayerDetailInfo| { &mut m.DHKFCDAGHDM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OIIPJFDNPAH::OIIPJFDNPAH>(
             "AIHNDIAFGPM",
@@ -220,69 +220,69 @@ impl ::protobuf::Message for PlayerDetailInfo {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.is_banned = is.read_bool()?;
-                },
-                18 => {
-                    self.DJONELMIFEE = is.read_string()?;
-                },
-                24 => {
-                    self.head_icon = is.read_uint32()?;
-                },
-                34 => {
-                    self.signature = is.read_string()?;
-                },
-                40 => {
-                    self.HCGMAGDFAAO = is.read_uint32()?;
-                },
-                50 => {
-                    self.IJKOMIKFKEK = is.read_string()?;
-                },
-                56 => {
                     self.uid = is.read_uint32()?;
                 },
-                64 => {
-                    self.HIEAPDNNNEI = is.read_bool()?;
-                },
-                74 => {
-                    self.display_avatar_list.push(is.read_message()?);
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.record_info)?;
-                },
-                88 => {
+                16 => {
                     self.world_level = is.read_uint32()?;
                 },
-                96 => {
-                    self.GEJFMBBHNLN = is.read_uint32()?;
-                },
-                104 => {
+                24 => {
                     self.platform = is.read_enum_or_unknown()?;
                 },
-                114 => {
-                    self.nickname = is.read_string()?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.record_info)?;
                 },
-                120 => {
+                42 => {
+                    self.signature = is.read_string()?;
+                },
+                50 => {
+                    self.display_avatar_list.push(is.read_message()?);
+                },
+                58 => {
+                    self.platform_uuid = is.read_string()?;
+                },
+                64 => {
+                    self.is_banned = is.read_bool()?;
+                },
+                72 => {
                     self.level = is.read_uint32()?;
                 },
-                1840 => {
+                80 => {
+                    self.head_icon = is.read_uint32()?;
+                },
+                90 => {
+                    self.platform_nick = is.read_string()?;
+                },
+                98 => {
+                    self.nickname = is.read_string()?;
+                },
+                104 => {
+                    self.GEJFMBBHNLN = is.read_uint32()?;
+                },
+                112 => {
+                    self.HIEAPDNNNEI = is.read_bool()?;
+                },
+                120 => {
+                    self.HCGMAGDFAAO = is.read_uint32()?;
+                },
+                2376 => {
+                    self.chat_bubble = is.read_uint32()?;
+                },
+                4418 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_outfit_data)?;
+                },
+                5064 => {
                     self.gender = is.read_uint32()?;
                 },
-                5192 => {
-                    self.KINOEHKMFML = is.read_uint32()?;
-                },
-                7042 => {
+                9330 => {
                     self.assist_avatar_list.push(is.read_message()?);
                 },
-                8770 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DHKFCDAGHDM)?;
-                },
-                9274 => {
+                9826 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.AIHNDIAFGPM)?;
                 },
-                11314 => {
+                12922 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BOKLABGLEFL)?;
                 },
-                13626 => {
+                14962 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.head_frame_info)?;
                 },
                 tag => {
@@ -297,67 +297,67 @@ impl ::protobuf::Message for PlayerDetailInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_banned != false {
-            my_size += 1 + 1;
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.uid);
         }
-        if !self.DJONELMIFEE.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.DJONELMIFEE);
+        if self.world_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.world_level);
         }
-        if self.head_icon != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.head_icon);
+        if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
+            my_size += ::protobuf::rt::int32_size(3, self.platform.value());
+        }
+        if let Some(v) = self.record_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if !self.signature.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.signature);
-        }
-        if self.HCGMAGDFAAO != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HCGMAGDFAAO);
-        }
-        if !self.IJKOMIKFKEK.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.IJKOMIKFKEK);
-        }
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.uid);
-        }
-        if self.HIEAPDNNNEI != false {
-            my_size += 1 + 1;
+            my_size += ::protobuf::rt::string_size(5, &self.signature);
         }
         for value in &self.display_avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.record_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if !self.platform_uuid.is_empty() {
+            my_size += ::protobuf::rt::string_size(7, &self.platform_uuid);
         }
-        if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.world_level);
-        }
-        if self.GEJFMBBHNLN != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.GEJFMBBHNLN);
-        }
-        if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
-            my_size += ::protobuf::rt::int32_size(13, self.platform.value());
-        }
-        if !self.nickname.is_empty() {
-            my_size += ::protobuf::rt::string_size(14, &self.nickname);
+        if self.is_banned != false {
+            my_size += 1 + 1;
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.level);
+            my_size += ::protobuf::rt::uint32_size(9, self.level);
+        }
+        if self.head_icon != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.head_icon);
+        }
+        if !self.platform_nick.is_empty() {
+            my_size += ::protobuf::rt::string_size(11, &self.platform_nick);
+        }
+        if !self.nickname.is_empty() {
+            my_size += ::protobuf::rt::string_size(12, &self.nickname);
+        }
+        if self.GEJFMBBHNLN != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.GEJFMBBHNLN);
+        }
+        if self.HIEAPDNNNEI != false {
+            my_size += 1 + 1;
+        }
+        if self.HCGMAGDFAAO != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.HCGMAGDFAAO);
+        }
+        if self.chat_bubble != 0 {
+            my_size += ::protobuf::rt::uint32_size(297, self.chat_bubble);
+        }
+        if let Some(v) = self.player_outfit_data.as_ref() {
+            let len = v.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.gender != 0 {
-            my_size += ::protobuf::rt::uint32_size(230, self.gender);
-        }
-        if self.KINOEHKMFML != 0 {
-            my_size += ::protobuf::rt::uint32_size(649, self.KINOEHKMFML);
+            my_size += ::protobuf::rt::uint32_size(633, self.gender);
         }
         for value in &self.assist_avatar_list {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.DHKFCDAGHDM.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.AIHNDIAFGPM.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -376,71 +376,71 @@ impl ::protobuf::Message for PlayerDetailInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_banned != false {
-            os.write_bool(1, self.is_banned)?;
-        }
-        if !self.DJONELMIFEE.is_empty() {
-            os.write_string(2, &self.DJONELMIFEE)?;
-        }
-        if self.head_icon != 0 {
-            os.write_uint32(3, self.head_icon)?;
-        }
-        if !self.signature.is_empty() {
-            os.write_string(4, &self.signature)?;
-        }
-        if self.HCGMAGDFAAO != 0 {
-            os.write_uint32(5, self.HCGMAGDFAAO)?;
-        }
-        if !self.IJKOMIKFKEK.is_empty() {
-            os.write_string(6, &self.IJKOMIKFKEK)?;
-        }
         if self.uid != 0 {
-            os.write_uint32(7, self.uid)?;
-        }
-        if self.HIEAPDNNNEI != false {
-            os.write_bool(8, self.HIEAPDNNNEI)?;
-        }
-        for v in &self.display_avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
-        if let Some(v) = self.record_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            os.write_uint32(1, self.uid)?;
         }
         if self.world_level != 0 {
-            os.write_uint32(11, self.world_level)?;
-        }
-        if self.GEJFMBBHNLN != 0 {
-            os.write_uint32(12, self.GEJFMBBHNLN)?;
+            os.write_uint32(2, self.world_level)?;
         }
         if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.platform))?;
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.platform))?;
         }
-        if !self.nickname.is_empty() {
-            os.write_string(14, &self.nickname)?;
+        if let Some(v) = self.record_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        if !self.signature.is_empty() {
+            os.write_string(5, &self.signature)?;
+        }
+        for v in &self.display_avatar_list {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
+        if !self.platform_uuid.is_empty() {
+            os.write_string(7, &self.platform_uuid)?;
+        }
+        if self.is_banned != false {
+            os.write_bool(8, self.is_banned)?;
         }
         if self.level != 0 {
-            os.write_uint32(15, self.level)?;
+            os.write_uint32(9, self.level)?;
+        }
+        if self.head_icon != 0 {
+            os.write_uint32(10, self.head_icon)?;
+        }
+        if !self.platform_nick.is_empty() {
+            os.write_string(11, &self.platform_nick)?;
+        }
+        if !self.nickname.is_empty() {
+            os.write_string(12, &self.nickname)?;
+        }
+        if self.GEJFMBBHNLN != 0 {
+            os.write_uint32(13, self.GEJFMBBHNLN)?;
+        }
+        if self.HIEAPDNNNEI != false {
+            os.write_bool(14, self.HIEAPDNNNEI)?;
+        }
+        if self.HCGMAGDFAAO != 0 {
+            os.write_uint32(15, self.HCGMAGDFAAO)?;
+        }
+        if self.chat_bubble != 0 {
+            os.write_uint32(297, self.chat_bubble)?;
+        }
+        if let Some(v) = self.player_outfit_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(552, v, os)?;
         }
         if self.gender != 0 {
-            os.write_uint32(230, self.gender)?;
-        }
-        if self.KINOEHKMFML != 0 {
-            os.write_uint32(649, self.KINOEHKMFML)?;
+            os.write_uint32(633, self.gender)?;
         }
         for v in &self.assist_avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(880, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1166, v, os)?;
         };
-        if let Some(v) = self.DHKFCDAGHDM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1096, v, os)?;
-        }
         if let Some(v) = self.AIHNDIAFGPM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1159, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1228, v, os)?;
         }
         if let Some(v) = self.BOKLABGLEFL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1414, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1615, v, os)?;
         }
         if let Some(v) = self.head_frame_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1703, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1870, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -459,25 +459,25 @@ impl ::protobuf::Message for PlayerDetailInfo {
     }
 
     fn clear(&mut self) {
-        self.is_banned = false;
-        self.DJONELMIFEE.clear();
-        self.head_icon = 0;
-        self.signature.clear();
-        self.HCGMAGDFAAO = 0;
-        self.IJKOMIKFKEK.clear();
         self.uid = 0;
-        self.HIEAPDNNNEI = false;
-        self.display_avatar_list.clear();
-        self.record_info.clear();
         self.world_level = 0;
-        self.GEJFMBBHNLN = 0;
         self.platform = ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR);
-        self.nickname.clear();
+        self.record_info.clear();
+        self.signature.clear();
+        self.display_avatar_list.clear();
+        self.platform_uuid.clear();
+        self.is_banned = false;
         self.level = 0;
+        self.head_icon = 0;
+        self.platform_nick.clear();
+        self.nickname.clear();
+        self.GEJFMBBHNLN = 0;
+        self.HIEAPDNNNEI = false;
+        self.HCGMAGDFAAO = 0;
+        self.chat_bubble = 0;
+        self.player_outfit_data.clear();
         self.gender = 0;
-        self.KINOEHKMFML = 0;
         self.assist_avatar_list.clear();
-        self.DHKFCDAGHDM.clear();
         self.AIHNDIAFGPM.clear();
         self.BOKLABGLEFL.clear();
         self.head_frame_info.clear();
@@ -486,25 +486,25 @@ impl ::protobuf::Message for PlayerDetailInfo {
 
     fn default_instance() -> &'static PlayerDetailInfo {
         static instance: PlayerDetailInfo = PlayerDetailInfo {
-            is_banned: false,
-            DJONELMIFEE: ::std::string::String::new(),
-            head_icon: 0,
-            signature: ::std::string::String::new(),
-            HCGMAGDFAAO: 0,
-            IJKOMIKFKEK: ::std::string::String::new(),
             uid: 0,
-            HIEAPDNNNEI: false,
-            display_avatar_list: ::std::vec::Vec::new(),
-            record_info: ::protobuf::MessageField::none(),
             world_level: 0,
-            GEJFMBBHNLN: 0,
             platform: ::protobuf::EnumOrUnknown::from_i32(0),
-            nickname: ::std::string::String::new(),
+            record_info: ::protobuf::MessageField::none(),
+            signature: ::std::string::String::new(),
+            display_avatar_list: ::std::vec::Vec::new(),
+            platform_uuid: ::std::string::String::new(),
+            is_banned: false,
             level: 0,
+            head_icon: 0,
+            platform_nick: ::std::string::String::new(),
+            nickname: ::std::string::String::new(),
+            GEJFMBBHNLN: 0,
+            HIEAPDNNNEI: false,
+            HCGMAGDFAAO: 0,
+            chat_bubble: 0,
+            player_outfit_data: ::protobuf::MessageField::none(),
             gender: 0,
-            KINOEHKMFML: 0,
             assist_avatar_list: ::std::vec::Vec::new(),
-            DHKFCDAGHDM: ::protobuf::MessageField::none(),
             AIHNDIAFGPM: ::protobuf::MessageField::none(),
             BOKLABGLEFL: ::protobuf::MessageField::none(),
             head_frame_info: ::protobuf::MessageField::none(),
@@ -535,28 +535,28 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16PlayerDetailInfo.proto\x1a\x11CJLCPMDGIBO.proto\x1a\x1dDisplayAvat\
     arDetailInfo.proto\x1a\x13HeadFrameInfo.proto\x1a\x11OHKDPNBGPOA.proto\
     \x1a\x11OIIPJFDNPAH.proto\x1a\x12PlatformType.proto\x1a\x16PlayerRecordI\
-    nfo.proto\"\xf3\x06\n\x10PlayerDetailInfo\x12\x1b\n\tis_banned\x18\x01\
-    \x20\x01(\x08R\x08isBanned\x12\x20\n\x0bDJONELMIFEE\x18\x02\x20\x01(\tR\
-    \x0bDJONELMIFEE\x12\x1b\n\thead_icon\x18\x03\x20\x01(\rR\x08headIcon\x12\
-    \x1c\n\tsignature\x18\x04\x20\x01(\tR\tsignature\x12\x20\n\x0bHCGMAGDFAA\
-    O\x18\x05\x20\x01(\rR\x0bHCGMAGDFAAO\x12\x20\n\x0bIJKOMIKFKEK\x18\x06\
-    \x20\x01(\tR\x0bIJKOMIKFKEK\x12\x10\n\x03uid\x18\x07\x20\x01(\rR\x03uid\
-    \x12\x20\n\x0bHIEAPDNNNEI\x18\x08\x20\x01(\x08R\x0bHIEAPDNNNEI\x12H\n\
-    \x13display_avatar_list\x18\t\x20\x03(\x0b2\x18.DisplayAvatarDetailInfoR\
-    \x11displayAvatarList\x122\n\x0brecord_info\x18\n\x20\x01(\x0b2\x11.Play\
-    erRecordInfoR\nrecordInfo\x12\x1f\n\x0bworld_level\x18\x0b\x20\x01(\rR\n\
-    worldLevel\x12\x20\n\x0bGEJFMBBHNLN\x18\x0c\x20\x01(\rR\x0bGEJFMBBHNLN\
-    \x12)\n\x08platform\x18\r\x20\x01(\x0e2\r.PlatformTypeR\x08platform\x12\
-    \x1a\n\x08nickname\x18\x0e\x20\x01(\tR\x08nickname\x12\x14\n\x05level\
-    \x18\x0f\x20\x01(\rR\x05level\x12\x17\n\x06gender\x18\xe6\x01\x20\x01(\r\
-    R\x06gender\x12!\n\x0bKINOEHKMFML\x18\x89\x05\x20\x01(\rR\x0bKINOEHKMFML\
-    \x12G\n\x12assist_avatar_list\x18\xf0\x06\x20\x03(\x0b2\x18.DisplayAvata\
-    rDetailInfoR\x10assistAvatarList\x12/\n\x0bDHKFCDAGHDM\x18\xc8\x08\x20\
-    \x01(\x0b2\x0c.CJLCPMDGIBOR\x0bDHKFCDAGHDM\x12/\n\x0bAIHNDIAFGPM\x18\x87\
-    \t\x20\x01(\x0b2\x0c.OIIPJFDNPAHR\x0bAIHNDIAFGPM\x12/\n\x0bBOKLABGLEFL\
-    \x18\x86\x0b\x20\x01(\x0b2\x0c.OHKDPNBGPOAR\x0bBOKLABGLEFL\x127\n\x0fhea\
-    d_frame_info\x18\xa7\r\x20\x01(\x0b2\x0e.HeadFrameInfoR\rheadFrameInfob\
-    \x06proto3\
+    nfo.proto\"\x84\x07\n\x10PlayerDetailInfo\x12\x10\n\x03uid\x18\x01\x20\
+    \x01(\rR\x03uid\x12\x1f\n\x0bworld_level\x18\x02\x20\x01(\rR\nworldLevel\
+    \x12)\n\x08platform\x18\x03\x20\x01(\x0e2\r.PlatformTypeR\x08platform\
+    \x122\n\x0brecord_info\x18\x04\x20\x01(\x0b2\x11.PlayerRecordInfoR\nreco\
+    rdInfo\x12\x1c\n\tsignature\x18\x05\x20\x01(\tR\tsignature\x12H\n\x13dis\
+    play_avatar_list\x18\x06\x20\x03(\x0b2\x18.DisplayAvatarDetailInfoR\x11d\
+    isplayAvatarList\x12#\n\rplatform_uuid\x18\x07\x20\x01(\tR\x0cplatformUu\
+    id\x12\x1b\n\tis_banned\x18\x08\x20\x01(\x08R\x08isBanned\x12\x14\n\x05l\
+    evel\x18\t\x20\x01(\rR\x05level\x12\x1b\n\thead_icon\x18\n\x20\x01(\rR\
+    \x08headIcon\x12#\n\rplatform_nick\x18\x0b\x20\x01(\tR\x0cplatformNick\
+    \x12\x1a\n\x08nickname\x18\x0c\x20\x01(\tR\x08nickname\x12\x20\n\x0bGEJF\
+    MBBHNLN\x18\r\x20\x01(\rR\x0bGEJFMBBHNLN\x12\x20\n\x0bHIEAPDNNNEI\x18\
+    \x0e\x20\x01(\x08R\x0bHIEAPDNNNEI\x12\x20\n\x0bHCGMAGDFAAO\x18\x0f\x20\
+    \x01(\rR\x0bHCGMAGDFAAO\x12\x20\n\x0bchat_bubble\x18\xa9\x02\x20\x01(\rR\
+    \nchatBubble\x12;\n\x12player_outfit_data\x18\xa8\x04\x20\x01(\x0b2\x0c.\
+    CJLCPMDGIBOR\x10playerOutfitData\x12\x17\n\x06gender\x18\xf9\x04\x20\x01\
+    (\rR\x06gender\x12G\n\x12assist_avatar_list\x18\x8e\t\x20\x03(\x0b2\x18.\
+    DisplayAvatarDetailInfoR\x10assistAvatarList\x12/\n\x0bAIHNDIAFGPM\x18\
+    \xcc\t\x20\x01(\x0b2\x0c.OIIPJFDNPAHR\x0bAIHNDIAFGPM\x12/\n\x0bBOKLABGLE\
+    FL\x18\xcf\x0c\x20\x01(\x0b2\x0c.OHKDPNBGPOAR\x0bBOKLABGLEFL\x127\n\x0fh\
+    ead_frame_info\x18\xce\x0e\x20\x01(\x0b2\x0e.HeadFrameInfoR\rheadFrameIn\
+    fob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

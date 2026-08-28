@@ -28,10 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BELNLOJAFCM {
     // message fields
-    // @@protoc_insertion_point(field:BELNLOJAFCM.HLLLIKPGOFG)
-    pub HLLLIKPGOFG: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:BELNLOJAFCM.JHBAAHGLFCB)
     pub JHBAAHGLFCB: ::protobuf::MessageField<super::DGHPIDMDOJM::DGHPIDMDOJM>,
+    // @@protoc_insertion_point(field:BELNLOJAFCM.HLLLIKPGOFG)
+    pub HLLLIKPGOFG: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:BELNLOJAFCM.DMANODGKMOH)
+    pub DMANODGKMOH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BELNLOJAFCM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,17 +51,22 @@ impl BELNLOJAFCM {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DGHPIDMDOJM::DGHPIDMDOJM>(
+            "JHBAAHGLFCB",
+            |m: &BELNLOJAFCM| { &m.JHBAAHGLFCB },
+            |m: &mut BELNLOJAFCM| { &mut m.JHBAAHGLFCB },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "HLLLIKPGOFG",
             |m: &BELNLOJAFCM| { &m.HLLLIKPGOFG },
             |m: &mut BELNLOJAFCM| { &mut m.HLLLIKPGOFG },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DGHPIDMDOJM::DGHPIDMDOJM>(
-            "JHBAAHGLFCB",
-            |m: &BELNLOJAFCM| { &m.JHBAAHGLFCB },
-            |m: &mut BELNLOJAFCM| { &mut m.JHBAAHGLFCB },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DMANODGKMOH",
+            |m: &BELNLOJAFCM| { &m.DMANODGKMOH },
+            |m: &mut BELNLOJAFCM| { &mut m.DMANODGKMOH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BELNLOJAFCM>(
             "BELNLOJAFCM",
@@ -80,13 +87,16 @@ impl ::protobuf::Message for BELNLOJAFCM {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JHBAAHGLFCB)?;
+                },
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.HLLLIKPGOFG)?;
                 },
-                32 => {
+                72 => {
                     self.HLLLIKPGOFG.push(is.read_uint32()?);
                 },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JHBAAHGLFCB)?;
+                88 => {
+                    self.DMANODGKMOH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,10 +110,13 @@ impl ::protobuf::Message for BELNLOJAFCM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.HLLLIKPGOFG);
         if let Some(v) = self.JHBAAHGLFCB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.HLLLIKPGOFG);
+        if self.DMANODGKMOH != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.DMANODGKMOH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,9 +124,12 @@ impl ::protobuf::Message for BELNLOJAFCM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(4, &self.HLLLIKPGOFG)?;
         if let Some(v) = self.JHBAAHGLFCB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        os.write_repeated_packed_uint32(9, &self.HLLLIKPGOFG)?;
+        if self.DMANODGKMOH != 0 {
+            os.write_uint32(11, self.DMANODGKMOH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +148,17 @@ impl ::protobuf::Message for BELNLOJAFCM {
     }
 
     fn clear(&mut self) {
-        self.HLLLIKPGOFG.clear();
         self.JHBAAHGLFCB.clear();
+        self.HLLLIKPGOFG.clear();
+        self.DMANODGKMOH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BELNLOJAFCM {
         static instance: BELNLOJAFCM = BELNLOJAFCM {
-            HLLLIKPGOFG: ::std::vec::Vec::new(),
             JHBAAHGLFCB: ::protobuf::MessageField::none(),
+            HLLLIKPGOFG: ::std::vec::Vec::new(),
+            DMANODGKMOH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for BELNLOJAFCM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BELNLOJAFCM.proto\x1a\x11DGHPIDMDOJM.proto\"_\n\x0bBELNLOJAFCM\x12\
-    \x20\n\x0bHLLLIKPGOFG\x18\x04\x20\x03(\rR\x0bHLLLIKPGOFG\x12.\n\x0bJHBAA\
-    HGLFCB\x18\x07\x20\x01(\x0b2\x0c.DGHPIDMDOJMR\x0bJHBAAHGLFCBb\x06proto3\
+    \n\x11BELNLOJAFCM.proto\x1a\x11DGHPIDMDOJM.proto\"\x81\x01\n\x0bBELNLOJA\
+    FCM\x12.\n\x0bJHBAAHGLFCB\x18\x04\x20\x01(\x0b2\x0c.DGHPIDMDOJMR\x0bJHBA\
+    AHGLFCB\x12\x20\n\x0bHLLLIKPGOFG\x18\t\x20\x03(\rR\x0bHLLLIKPGOFG\x12\
+    \x20\n\x0bDMANODGKMOH\x18\x0b\x20\x01(\rR\x0bDMANODGKMOHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

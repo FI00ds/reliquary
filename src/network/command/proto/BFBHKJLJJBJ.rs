@@ -100,7 +100,7 @@ impl ::protobuf::Message for BFBHKJLJJBJ {
         if self.NOPDGKNKEEH != 0 {
             my_size += ::protobuf::rt::uint64_size(1, self.NOPDGKNKEEH);
         }
-        if self.MFLEPLDCJBC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ) {
+        if self.MFLEPLDCJBC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None) {
             my_size += ::protobuf::rt::int32_size(2, self.MFLEPLDCJBC.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -112,7 +112,7 @@ impl ::protobuf::Message for BFBHKJLJJBJ {
         if self.NOPDGKNKEEH != 0 {
             os.write_uint64(1, self.NOPDGKNKEEH)?;
         }
-        if self.MFLEPLDCJBC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ) {
+        if self.MFLEPLDCJBC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None) {
             os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.MFLEPLDCJBC))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -133,7 +133,7 @@ impl ::protobuf::Message for BFBHKJLJJBJ {
 
     fn clear(&mut self) {
         self.NOPDGKNKEEH = 0;
-        self.MFLEPLDCJBC = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ);
+        self.MFLEPLDCJBC = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None);
         self.special_fields.clear();
     }
 

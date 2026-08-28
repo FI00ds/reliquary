@@ -82,7 +82,7 @@ impl ::protobuf::Message for StartMatchCsReq {
                 32 => {
                     self.GJNMHILINHC = is.read_enum_or_unknown()?;
                 },
-                90 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JIDKDPPPDPF)?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for StartMatchCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GJNMHILINHC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ) {
+        if self.GJNMHILINHC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None) {
             my_size += ::protobuf::rt::int32_size(4, self.GJNMHILINHC.value());
         }
         if let Some(v) = self.JIDKDPPPDPF.as_ref() {
@@ -110,11 +110,11 @@ impl ::protobuf::Message for StartMatchCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GJNMHILINHC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ) {
+        if self.GJNMHILINHC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None) {
             os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.GJNMHILINHC))?;
         }
         if let Some(v) = self.JIDKDPPPDPF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,7 +133,7 @@ impl ::protobuf::Message for StartMatchCsReq {
     }
 
     fn clear(&mut self) {
-        self.GJNMHILINHC = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ);
+        self.GJNMHILINHC = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None);
         self.JIDKDPPPDPF.clear();
         self.special_fields.clear();
     }
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for StartMatchCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15StartMatchCsReq.proto\x1a\x13FightGameMode.proto\x1a\x16LobbyGameE\
     xtInfo.proto\"x\n\x0fStartMatchCsReq\x120\n\x0bGJNMHILINHC\x18\x04\x20\
-    \x01(\x0e2\x0e.FightGameModeR\x0bGJNMHILINHC\x123\n\x0bJIDKDPPPDPF\x18\
-    \x0b\x20\x01(\x0b2\x11.LobbyGameExtInfoR\x0bJIDKDPPPDPFb\x06proto3\
+    \x01(\x0e2\x0e.FightGameModeR\x0bGJNMHILINHC\x123\n\x0bJIDKDPPPDPF\x18\n\
+    \x20\x01(\x0b2\x11.LobbyGameExtInfoR\x0bJIDKDPPPDPFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

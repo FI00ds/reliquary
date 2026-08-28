@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CNBHPJFFLEF {
     // message fields
-    // @@protoc_insertion_point(field:CNBHPJFFLEF.is_effect)
-    pub is_effect: bool,
+    // @@protoc_insertion_point(field:CNBHPJFFLEF.MAHFOHBJDBH)
+    pub MAHFOHBJDBH: bool,
     // @@protoc_insertion_point(field:CNBHPJFFLEF.OJNEFBJHCCK)
     pub OJNEFBJHCCK: ::std::vec::Vec<u32>,
     // special fields
@@ -52,9 +52,9 @@ impl CNBHPJFFLEF {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_effect",
-            |m: &CNBHPJFFLEF| { &m.is_effect },
-            |m: &mut CNBHPJFFLEF| { &mut m.is_effect },
+            "MAHFOHBJDBH",
+            |m: &CNBHPJFFLEF| { &m.MAHFOHBJDBH },
+            |m: &mut CNBHPJFFLEF| { &mut m.MAHFOHBJDBH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "OJNEFBJHCCK",
@@ -79,13 +79,13 @@ impl ::protobuf::Message for CNBHPJFFLEF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.is_effect = is.read_bool()?;
+                8 => {
+                    self.MAHFOHBJDBH = is.read_bool()?;
                 },
-                82 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.OJNEFBJHCCK)?;
                 },
-                80 => {
+                24 => {
                     self.OJNEFBJHCCK.push(is.read_uint32()?);
                 },
                 tag => {
@@ -100,20 +100,20 @@ impl ::protobuf::Message for CNBHPJFFLEF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_effect != false {
+        if self.MAHFOHBJDBH != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.OJNEFBJHCCK);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.OJNEFBJHCCK);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_effect != false {
-            os.write_bool(3, self.is_effect)?;
+        if self.MAHFOHBJDBH != false {
+            os.write_bool(1, self.MAHFOHBJDBH)?;
         }
-        os.write_repeated_packed_uint32(10, &self.OJNEFBJHCCK)?;
+        os.write_repeated_packed_uint32(3, &self.OJNEFBJHCCK)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,14 +131,14 @@ impl ::protobuf::Message for CNBHPJFFLEF {
     }
 
     fn clear(&mut self) {
-        self.is_effect = false;
+        self.MAHFOHBJDBH = false;
         self.OJNEFBJHCCK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CNBHPJFFLEF {
         static instance: CNBHPJFFLEF = CNBHPJFFLEF {
-            is_effect: false,
+            MAHFOHBJDBH: false,
             OJNEFBJHCCK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for CNBHPJFFLEF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CNBHPJFFLEF.proto\"L\n\x0bCNBHPJFFLEF\x12\x1b\n\tis_effect\x18\x03\
-    \x20\x01(\x08R\x08isEffect\x12\x20\n\x0bOJNEFBJHCCK\x18\n\x20\x03(\rR\
-    \x0bOJNEFBJHCCKb\x06proto3\
+    \n\x11CNBHPJFFLEF.proto\"Q\n\x0bCNBHPJFFLEF\x12\x20\n\x0bMAHFOHBJDBH\x18\
+    \x01\x20\x01(\x08R\x0bMAHFOHBJDBH\x12\x20\n\x0bOJNEFBJHCCK\x18\x03\x20\
+    \x03(\rR\x0bOJNEFBJHCCKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RevcMsgScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RevcMsgScNotify.source_uid)
-    pub source_uid: u32,
     // @@protoc_insertion_point(field:RevcMsgScNotify.chat_type)
     pub chat_type: ::protobuf::EnumOrUnknown<super::ChatType::ChatType>,
+    // @@protoc_insertion_point(field:RevcMsgScNotify.to_uid)
+    pub to_uid: u32,
     // @@protoc_insertion_point(field:RevcMsgScNotify.recv_message_data)
     pub recv_message_data: ::protobuf::MessageField<super::ChatMessageData::ChatMessageData>,
     // special fields
@@ -54,14 +54,14 @@ impl RevcMsgScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "source_uid",
-            |m: &RevcMsgScNotify| { &m.source_uid },
-            |m: &mut RevcMsgScNotify| { &mut m.source_uid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "chat_type",
             |m: &RevcMsgScNotify| { &m.chat_type },
             |m: &mut RevcMsgScNotify| { &mut m.chat_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "to_uid",
+            |m: &RevcMsgScNotify| { &m.to_uid },
+            |m: &mut RevcMsgScNotify| { &mut m.to_uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChatMessageData::ChatMessageData>(
             "recv_message_data",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for RevcMsgScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.source_uid = is.read_uint32()?;
-                },
-                32 => {
+                40 => {
                     self.chat_type = is.read_enum_or_unknown()?;
                 },
-                98 => {
+                72 => {
+                    self.to_uid = is.read_uint32()?;
+                },
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.recv_message_data)?;
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for RevcMsgScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.source_uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.source_uid);
+        if self.chat_type != ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::ChatType_None) {
+            my_size += ::protobuf::rt::int32_size(5, self.chat_type.value());
         }
-        if self.chat_type != ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::CHAT_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.chat_type.value());
+        if self.to_uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.to_uid);
         }
         if let Some(v) = self.recv_message_data.as_ref() {
             let len = v.compute_size();
@@ -123,14 +123,14 @@ impl ::protobuf::Message for RevcMsgScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.source_uid != 0 {
-            os.write_uint32(2, self.source_uid)?;
+        if self.chat_type != ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::ChatType_None) {
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.chat_type))?;
         }
-        if self.chat_type != ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::CHAT_TYPE_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.chat_type))?;
+        if self.to_uid != 0 {
+            os.write_uint32(9, self.to_uid)?;
         }
         if let Some(v) = self.recv_message_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for RevcMsgScNotify {
     }
 
     fn clear(&mut self) {
-        self.source_uid = 0;
-        self.chat_type = ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::CHAT_TYPE_NONE);
+        self.chat_type = ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::ChatType_None);
+        self.to_uid = 0;
         self.recv_message_data.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RevcMsgScNotify {
         static instance: RevcMsgScNotify = RevcMsgScNotify {
-            source_uid: 0,
             chat_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            to_uid: 0,
             recv_message_data: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for RevcMsgScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15RevcMsgScNotify.proto\x1a\x15ChatMessageData.proto\x1a\x0eChatType\
-    .proto\"\x96\x01\n\x0fRevcMsgScNotify\x12\x1d\n\nsource_uid\x18\x02\x20\
-    \x01(\rR\tsourceUid\x12&\n\tchat_type\x18\x04\x20\x01(\x0e2\t.ChatTypeR\
-    \x08chatType\x12<\n\x11recv_message_data\x18\x0c\x20\x01(\x0b2\x10.ChatM\
-    essageDataR\x0frecvMessageDatab\x06proto3\
+    .proto\"\x8e\x01\n\x0fRevcMsgScNotify\x12&\n\tchat_type\x18\x05\x20\x01(\
+    \x0e2\t.ChatTypeR\x08chatType\x12\x15\n\x06to_uid\x18\t\x20\x01(\rR\x05t\
+    oUid\x12<\n\x11recv_message_data\x18\x0b\x20\x01(\x0b2\x10.ChatMessageDa\
+    taR\x0frecvMessageDatab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

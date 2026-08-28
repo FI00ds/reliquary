@@ -86,13 +86,13 @@ impl ::protobuf::Message for TakeApRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                56 => {
                     self.level = is.read_uint32()?;
                 },
-                48 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for TakeApRewardScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.level);
+            my_size += ::protobuf::rt::uint32_size(7, self.level);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
@@ -124,13 +124,13 @@ impl ::protobuf::Message for TakeApRewardScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.level != 0 {
-            os.write_uint32(1, self.level)?;
+            os.write_uint32(7, self.level)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeApRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17TakeApRewardScRsp.proto\x1a\x0eItemList.proto\"f\n\x11TakeApReward\
-    ScRsp\x12\x14\n\x05level\x18\x01\x20\x01(\rR\x05level\x12\x18\n\x07retco\
-    de\x18\x06\x20\x01(\rR\x07retcode\x12!\n\x06reward\x18\r\x20\x01(\x0b2\t\
+    ScRsp\x12\x14\n\x05level\x18\x07\x20\x01(\rR\x05level\x12\x18\n\x07retco\
+    de\x18\n\x20\x01(\rR\x07retcode\x12!\n\x06reward\x18\x0b\x20\x01(\x0b2\t\
     .ItemListR\x06rewardb\x06proto3\
 ";
 

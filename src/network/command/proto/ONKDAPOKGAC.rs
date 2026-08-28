@@ -36,8 +36,8 @@ pub struct ONKDAPOKGAC {
     pub level: u32,
     // @@protoc_insertion_point(field:ONKDAPOKGAC.index)
     pub index: u32,
-    // @@protoc_insertion_point(field:ONKDAPOKGAC.skin_id)
-    pub skin_id: u32,
+    // @@protoc_insertion_point(field:ONKDAPOKGAC.MDOJNENGCFE)
+    pub MDOJNENGCFE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ONKDAPOKGAC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -78,9 +78,9 @@ impl ONKDAPOKGAC {
             |m: &mut ONKDAPOKGAC| { &mut m.index },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "skin_id",
-            |m: &ONKDAPOKGAC| { &m.skin_id },
-            |m: &mut ONKDAPOKGAC| { &mut m.skin_id },
+            "MDOJNENGCFE",
+            |m: &ONKDAPOKGAC| { &m.MDOJNENGCFE },
+            |m: &mut ONKDAPOKGAC| { &mut m.MDOJNENGCFE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ONKDAPOKGAC>(
             "ONKDAPOKGAC",
@@ -113,7 +113,7 @@ impl ::protobuf::Message for ONKDAPOKGAC {
                     self.index = is.read_uint32()?;
                 },
                 40 => {
-                    self.skin_id = is.read_uint32()?;
+                    self.MDOJNENGCFE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,7 +127,7 @@ impl ::protobuf::Message for ONKDAPOKGAC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
+        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None) {
             my_size += ::protobuf::rt::int32_size(1, self.avatar_type.value());
         }
         if self.id != 0 {
@@ -139,8 +139,8 @@ impl ::protobuf::Message for ONKDAPOKGAC {
         if self.index != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.index);
         }
-        if self.skin_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.skin_id);
+        if self.MDOJNENGCFE != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.MDOJNENGCFE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,7 +148,7 @@ impl ::protobuf::Message for ONKDAPOKGAC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
+        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None) {
             os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
         }
         if self.id != 0 {
@@ -160,8 +160,8 @@ impl ::protobuf::Message for ONKDAPOKGAC {
         if self.index != 0 {
             os.write_uint32(4, self.index)?;
         }
-        if self.skin_id != 0 {
-            os.write_uint32(5, self.skin_id)?;
+        if self.MDOJNENGCFE != 0 {
+            os.write_uint32(5, self.MDOJNENGCFE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,11 +180,11 @@ impl ::protobuf::Message for ONKDAPOKGAC {
     }
 
     fn clear(&mut self) {
-        self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
+        self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None);
         self.id = 0;
         self.level = 0;
         self.index = 0;
-        self.skin_id = 0;
+        self.MDOJNENGCFE = 0;
         self.special_fields.clear();
     }
 
@@ -194,7 +194,7 @@ impl ::protobuf::Message for ONKDAPOKGAC {
             id: 0,
             level: 0,
             index: 0,
-            skin_id: 0,
+            MDOJNENGCFE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for ONKDAPOKGAC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ONKDAPOKGAC.proto\x1a\x10AvatarType.proto\"\x90\x01\n\x0bONKDAPOKG\
+    \n\x11ONKDAPOKGAC.proto\x1a\x10AvatarType.proto\"\x99\x01\n\x0bONKDAPOKG\
     AC\x12,\n\x0bavatar_type\x18\x01\x20\x01(\x0e2\x0b.AvatarTypeR\navatarTy\
     pe\x12\x0e\n\x02id\x18\x02\x20\x01(\rR\x02id\x12\x14\n\x05level\x18\x03\
     \x20\x01(\rR\x05level\x12\x14\n\x05index\x18\x04\x20\x01(\rR\x05index\
-    \x12\x17\n\x07skin_id\x18\x05\x20\x01(\rR\x06skinIdb\x06proto3\
+    \x12\x20\n\x0bMDOJNENGCFE\x18\x05\x20\x01(\rR\x0bMDOJNENGCFEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

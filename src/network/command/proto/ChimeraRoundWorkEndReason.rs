@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:ChimeraRoundWorkEndReason)
 pub enum ChimeraRoundWorkEndReason {
-    // @@protoc_insertion_point(enum_value:ChimeraRoundWorkEndReason.POCJMDKMABI_KMOKDKCLMLD)
-    POCJMDKMABI_KMOKDKCLMLD = 0,
-    // @@protoc_insertion_point(enum_value:ChimeraRoundWorkEndReason.POCJMDKMABI_BKGPAKHJNKM)
-    POCJMDKMABI_BKGPAKHJNKM = 1,
-    // @@protoc_insertion_point(enum_value:ChimeraRoundWorkEndReason.POCJMDKMABI_LJEMJMCLGDH)
-    POCJMDKMABI_LJEMJMCLGDH = 2,
-    // @@protoc_insertion_point(enum_value:ChimeraRoundWorkEndReason.POCJMDKMABI_KLEKCFHLOGO)
-    POCJMDKMABI_KLEKCFHLOGO = 3,
+    // @@protoc_insertion_point(enum_value:ChimeraRoundWorkEndReason.ChimeraRoundWorkEndReason_ChimeraRoundWorkEndNone)
+    ChimeraRoundWorkEndReason_ChimeraRoundWorkEndNone = 0,
+    // @@protoc_insertion_point(enum_value:ChimeraRoundWorkEndReason.ChimeraRoundWorkEndReason_ChimeraRoundWorkEndSucc)
+    ChimeraRoundWorkEndReason_ChimeraRoundWorkEndSucc = 1,
+    // @@protoc_insertion_point(enum_value:ChimeraRoundWorkEndReason.ChimeraRoundWorkEndReason_ChimeraRoundWorkEndFail)
+    ChimeraRoundWorkEndReason_ChimeraRoundWorkEndFail = 2,
+    // @@protoc_insertion_point(enum_value:ChimeraRoundWorkEndReason.ChimeraRoundWorkEndReason_ChimeraRoundWorkEndLeave)
+    ChimeraRoundWorkEndReason_ChimeraRoundWorkEndLeave = 3,
 }
 
 impl ::protobuf::Enum for ChimeraRoundWorkEndReason {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for ChimeraRoundWorkEndReason {
 
     fn from_i32(value: i32) -> ::std::option::Option<ChimeraRoundWorkEndReason> {
         match value {
-            0 => ::std::option::Option::Some(ChimeraRoundWorkEndReason::POCJMDKMABI_KMOKDKCLMLD),
-            1 => ::std::option::Option::Some(ChimeraRoundWorkEndReason::POCJMDKMABI_BKGPAKHJNKM),
-            2 => ::std::option::Option::Some(ChimeraRoundWorkEndReason::POCJMDKMABI_LJEMJMCLGDH),
-            3 => ::std::option::Option::Some(ChimeraRoundWorkEndReason::POCJMDKMABI_KLEKCFHLOGO),
+            0 => ::std::option::Option::Some(ChimeraRoundWorkEndReason::ChimeraRoundWorkEndReason_ChimeraRoundWorkEndNone),
+            1 => ::std::option::Option::Some(ChimeraRoundWorkEndReason::ChimeraRoundWorkEndReason_ChimeraRoundWorkEndSucc),
+            2 => ::std::option::Option::Some(ChimeraRoundWorkEndReason::ChimeraRoundWorkEndReason_ChimeraRoundWorkEndFail),
+            3 => ::std::option::Option::Some(ChimeraRoundWorkEndReason::ChimeraRoundWorkEndReason_ChimeraRoundWorkEndLeave),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<ChimeraRoundWorkEndReason> {
         match str {
-            "POCJMDKMABI_KMOKDKCLMLD" => ::std::option::Option::Some(ChimeraRoundWorkEndReason::POCJMDKMABI_KMOKDKCLMLD),
-            "POCJMDKMABI_BKGPAKHJNKM" => ::std::option::Option::Some(ChimeraRoundWorkEndReason::POCJMDKMABI_BKGPAKHJNKM),
-            "POCJMDKMABI_LJEMJMCLGDH" => ::std::option::Option::Some(ChimeraRoundWorkEndReason::POCJMDKMABI_LJEMJMCLGDH),
-            "POCJMDKMABI_KLEKCFHLOGO" => ::std::option::Option::Some(ChimeraRoundWorkEndReason::POCJMDKMABI_KLEKCFHLOGO),
+            "ChimeraRoundWorkEndReason_ChimeraRoundWorkEndNone" => ::std::option::Option::Some(ChimeraRoundWorkEndReason::ChimeraRoundWorkEndReason_ChimeraRoundWorkEndNone),
+            "ChimeraRoundWorkEndReason_ChimeraRoundWorkEndSucc" => ::std::option::Option::Some(ChimeraRoundWorkEndReason::ChimeraRoundWorkEndReason_ChimeraRoundWorkEndSucc),
+            "ChimeraRoundWorkEndReason_ChimeraRoundWorkEndFail" => ::std::option::Option::Some(ChimeraRoundWorkEndReason::ChimeraRoundWorkEndReason_ChimeraRoundWorkEndFail),
+            "ChimeraRoundWorkEndReason_ChimeraRoundWorkEndLeave" => ::std::option::Option::Some(ChimeraRoundWorkEndReason::ChimeraRoundWorkEndReason_ChimeraRoundWorkEndLeave),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [ChimeraRoundWorkEndReason] = &[
-        ChimeraRoundWorkEndReason::POCJMDKMABI_KMOKDKCLMLD,
-        ChimeraRoundWorkEndReason::POCJMDKMABI_BKGPAKHJNKM,
-        ChimeraRoundWorkEndReason::POCJMDKMABI_LJEMJMCLGDH,
-        ChimeraRoundWorkEndReason::POCJMDKMABI_KLEKCFHLOGO,
+        ChimeraRoundWorkEndReason::ChimeraRoundWorkEndReason_ChimeraRoundWorkEndNone,
+        ChimeraRoundWorkEndReason::ChimeraRoundWorkEndReason_ChimeraRoundWorkEndSucc,
+        ChimeraRoundWorkEndReason::ChimeraRoundWorkEndReason_ChimeraRoundWorkEndFail,
+        ChimeraRoundWorkEndReason::ChimeraRoundWorkEndReason_ChimeraRoundWorkEndLeave,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for ChimeraRoundWorkEndReason {
 
 impl ::std::default::Default for ChimeraRoundWorkEndReason {
     fn default() -> Self {
-        ChimeraRoundWorkEndReason::POCJMDKMABI_KMOKDKCLMLD
+        ChimeraRoundWorkEndReason::ChimeraRoundWorkEndReason_ChimeraRoundWorkEndNone
     }
 }
 
@@ -97,10 +97,11 @@ impl ChimeraRoundWorkEndReason {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fChimeraRoundWorkEndReason.proto*\x8f\x01\n\x19ChimeraRoundWorkEndR\
-    eason\x12\x1b\n\x17POCJMDKMABI_KMOKDKCLMLD\x10\0\x12\x1b\n\x17POCJMDKMAB\
-    I_BKGPAKHJNKM\x10\x01\x12\x1b\n\x17POCJMDKMABI_LJEMJMCLGDH\x10\x02\x12\
-    \x1b\n\x17POCJMDKMABI_KLEKCFHLOGO\x10\x03b\x06proto3\
+    \n\x1fChimeraRoundWorkEndReason.proto*\xf8\x01\n\x19ChimeraRoundWorkEndR\
+    eason\x125\n1ChimeraRoundWorkEndReason_ChimeraRoundWorkEndNone\x10\0\x12\
+    5\n1ChimeraRoundWorkEndReason_ChimeraRoundWorkEndSucc\x10\x01\x125\n1Chi\
+    meraRoundWorkEndReason_ChimeraRoundWorkEndFail\x10\x02\x126\n2ChimeraRou\
+    ndWorkEndReason_ChimeraRoundWorkEndLeave\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

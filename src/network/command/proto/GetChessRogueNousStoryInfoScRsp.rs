@@ -86,10 +86,10 @@ impl ::protobuf::Message for GetChessRogueNousStoryInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                42 => {
+                58 => {
                     self.FNKLMMACCMJ.push(is.read_message()?);
                 },
                 90 => {
@@ -108,7 +108,7 @@ impl ::protobuf::Message for GetChessRogueNousStoryInfoScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         for value in &self.FNKLMMACCMJ {
             let len = value.compute_size();
@@ -125,10 +125,10 @@ impl ::protobuf::Message for GetChessRogueNousStoryInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         for v in &self.FNKLMMACCMJ {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         for v in &self.POABJDELNGH {
             ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
@@ -187,8 +187,8 @@ impl ::protobuf::reflect::ProtobufValue for GetChessRogueNousStoryInfoScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%GetChessRogueNousStoryInfoScRsp.proto\x1a\x11BKJCADFCHAB.proto\x1a\
     \x11PJBODOPJFGA.proto\"\x9b\x01\n\x1fGetChessRogueNousStoryInfoScRsp\x12\
-    \x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12.\n\x0bFNKLMMACCMJ\
-    \x18\x05\x20\x03(\x0b2\x0c.PJBODOPJFGAR\x0bFNKLMMACCMJ\x12.\n\x0bPOABJDE\
+    \x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12.\n\x0bFNKLMMACCMJ\
+    \x18\x07\x20\x03(\x0b2\x0c.PJBODOPJFGAR\x0bFNKLMMACCMJ\x12.\n\x0bPOABJDE\
     LNGH\x18\x0b\x20\x03(\x0b2\x0c.BKJCADFCHABR\x0bPOABJDELNGHb\x06proto3\
 ";
 

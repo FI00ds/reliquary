@@ -30,10 +30,10 @@ pub struct TakeTalkRewardScRsp {
     // message fields
     // @@protoc_insertion_point(field:TakeTalkRewardScRsp.MJALBOEAKME)
     pub MJALBOEAKME: u32,
-    // @@protoc_insertion_point(field:TakeTalkRewardScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:TakeTalkRewardScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakeTalkRewardScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeTalkRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl TakeTalkRewardScRsp {
             |m: &TakeTalkRewardScRsp| { &m.MJALBOEAKME },
             |m: &mut TakeTalkRewardScRsp| { &mut m.MJALBOEAKME },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &TakeTalkRewardScRsp| { &m.retcode },
-            |m: &mut TakeTalkRewardScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
             |m: &TakeTalkRewardScRsp| { &m.reward },
             |m: &mut TakeTalkRewardScRsp| { &mut m.reward },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &TakeTalkRewardScRsp| { &m.retcode },
+            |m: &mut TakeTalkRewardScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeTalkRewardScRsp>(
             "TakeTalkRewardScRsp",
@@ -89,11 +89,11 @@ impl ::protobuf::Message for TakeTalkRewardScRsp {
                 8 => {
                     self.MJALBOEAKME = is.read_uint32()?;
                 },
-                88 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                122 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                },
+                40 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,12 +110,12 @@ impl ::protobuf::Message for TakeTalkRewardScRsp {
         if self.MJALBOEAKME != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.MJALBOEAKME);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
-        }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,11 +126,11 @@ impl ::protobuf::Message for TakeTalkRewardScRsp {
         if self.MJALBOEAKME != 0 {
             os.write_uint32(1, self.MJALBOEAKME)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
-        }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(5, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for TakeTalkRewardScRsp {
 
     fn clear(&mut self) {
         self.MJALBOEAKME = 0;
-        self.retcode = 0;
         self.reward.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeTalkRewardScRsp {
         static instance: TakeTalkRewardScRsp = TakeTalkRewardScRsp {
             MJALBOEAKME: 0,
-            retcode: 0,
             reward: ::protobuf::MessageField::none(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,8 +186,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeTalkRewardScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19TakeTalkRewardScRsp.proto\x1a\x0eItemList.proto\"t\n\x13TakeTalkRe\
     wardScRsp\x12\x20\n\x0bMJALBOEAKME\x18\x01\x20\x01(\rR\x0bMJALBOEAKME\
-    \x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12!\n\x06reward\
-    \x18\x0f\x20\x01(\x0b2\t.ItemListR\x06rewardb\x06proto3\
+    \x12!\n\x06reward\x18\x04\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x18\n\
+    \x07retcode\x18\x05\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

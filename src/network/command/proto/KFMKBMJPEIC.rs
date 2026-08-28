@@ -32,10 +32,10 @@ pub struct KFMKBMJPEIC {
     pub DNNCAGJIOAP: u32,
     // @@protoc_insertion_point(field:KFMKBMJPEIC.IHCDDIPNJKO)
     pub IHCDDIPNJKO: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:KFMKBMJPEIC.grid_fight_equipment_list)
-    pub grid_fight_equipment_list: ::std::vec::Vec<super::BattleGridFightEquipInfo::BattleGridFightEquipInfo>,
+    // @@protoc_insertion_point(field:KFMKBMJPEIC.H_7e8b12bb)
+    pub H_7e8b12bb: ::std::vec::Vec<super::ACFLKPFDHIM::ACFLKPFDHIM>,
     // @@protoc_insertion_point(field:KFMKBMJPEIC.BANBECDCDHG)
-    pub BANBECDCDHG: ::std::collections::HashMap<::std::string::String, i32>,
+    pub BANBECDCDHG: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:KFMKBMJPEIC.POJGKJENENA)
     pub POJGKJENENA: ::std::vec::Vec<super::FHCEIOHLADG::FHCEIOHLADG>,
     // special fields
@@ -68,9 +68,9 @@ impl KFMKBMJPEIC {
             |m: &mut KFMKBMJPEIC| { &mut m.IHCDDIPNJKO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "grid_fight_equipment_list",
-            |m: &KFMKBMJPEIC| { &m.grid_fight_equipment_list },
-            |m: &mut KFMKBMJPEIC| { &mut m.grid_fight_equipment_list },
+            "H_7e8b12bb",
+            |m: &KFMKBMJPEIC| { &m.H_7e8b12bb },
+            |m: &mut KFMKBMJPEIC| { &mut m.H_7e8b12bb },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "BANBECDCDHG",
@@ -110,7 +110,7 @@ impl ::protobuf::Message for KFMKBMJPEIC {
                     self.IHCDDIPNJKO.push(is.read_uint32()?);
                 },
                 26 => {
-                    self.grid_fight_equipment_list.push(is.read_message()?);
+                    self.H_7e8b12bb.push(is.read_message()?);
                 },
                 34 => {
                     let len = is.read_raw_varint32()?;
@@ -119,8 +119,8 @@ impl ::protobuf::Message for KFMKBMJPEIC {
                     let mut value = ::std::default::Default::default();
                     while let Some(tag) = is.read_raw_tag_or_eof()? {
                         match tag {
-                            10 => key = is.read_string()?,
-                            16 => value = is.read_int32()?,
+                            8 => key = is.read_uint32()?,
+                            16 => value = is.read_uint32()?,
                             _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
                         };
                     }
@@ -146,14 +146,14 @@ impl ::protobuf::Message for KFMKBMJPEIC {
             my_size += ::protobuf::rt::uint32_size(1, self.DNNCAGJIOAP);
         }
         my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.IHCDDIPNJKO);
-        for value in &self.grid_fight_equipment_list {
+        for value in &self.H_7e8b12bb {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         for (k, v) in &self.BANBECDCDHG {
             let mut entry_size = 0;
-            entry_size += ::protobuf::rt::string_size(1, &k);
-            entry_size += ::protobuf::rt::int32_size(2, *v);
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
         for value in &self.POJGKJENENA {
@@ -170,17 +170,17 @@ impl ::protobuf::Message for KFMKBMJPEIC {
             os.write_uint32(1, self.DNNCAGJIOAP)?;
         }
         os.write_repeated_packed_uint32(2, &self.IHCDDIPNJKO)?;
-        for v in &self.grid_fight_equipment_list {
+        for v in &self.H_7e8b12bb {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         for (k, v) in &self.BANBECDCDHG {
             let mut entry_size = 0;
-            entry_size += ::protobuf::rt::string_size(1, &k);
-            entry_size += ::protobuf::rt::int32_size(2, *v);
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
             os.write_raw_varint32(34)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
-            os.write_string(1, &k)?;
-            os.write_int32(2, *v)?;
+            os.write_uint32(1, *k)?;
+            os.write_uint32(2, *v)?;
         };
         for v in &self.POJGKJENENA {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
@@ -204,7 +204,7 @@ impl ::protobuf::Message for KFMKBMJPEIC {
     fn clear(&mut self) {
         self.DNNCAGJIOAP = 0;
         self.IHCDDIPNJKO.clear();
-        self.grid_fight_equipment_list.clear();
+        self.H_7e8b12bb.clear();
         self.BANBECDCDHG.clear();
         self.POJGKJENENA.clear();
         self.special_fields.clear();
@@ -234,16 +234,15 @@ impl ::protobuf::reflect::ProtobufValue for KFMKBMJPEIC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KFMKBMJPEIC.proto\x1a\x1eBattleGridFightEquipInfo.proto\x1a\x11FHC\
-    EIOHLADG.proto\"\xd8\x02\n\x0bKFMKBMJPEIC\x12\x20\n\x0bDNNCAGJIOAP\x18\
-    \x01\x20\x01(\rR\x0bDNNCAGJIOAP\x12\x20\n\x0bIHCDDIPNJKO\x18\x02\x20\x03\
-    (\rR\x0bIHCDDIPNJKO\x12T\n\x19grid_fight_equipment_list\x18\x03\x20\x03(\
-    \x0b2\x19.BattleGridFightEquipInfoR\x16gridFightEquipmentList\x12?\n\x0b\
-    BANBECDCDHG\x18\x04\x20\x03(\x0b2\x1d.KFMKBMJPEIC.BANBECDCDHGEntryR\x0bB\
-    ANBECDCDHG\x12.\n\x0bPOJGKJENENA\x18\x05\x20\x03(\x0b2\x0c.FHCEIOHLADGR\
-    \x0bPOJGKJENENA\x1a>\n\x10BANBECDCDHGEntry\x12\x10\n\x03key\x18\x01\x20\
-    \x01(\tR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\x05R\x05value:\x028\
-    \x01b\x06proto3\
+    \n\x11KFMKBMJPEIC.proto\x1a\x11ACFLKPFDHIM.proto\x1a\x11FHCEIOHLADG.prot\
+    o\"\xaf\x02\n\x0bKFMKBMJPEIC\x12\x20\n\x0bDNNCAGJIOAP\x18\x01\x20\x01(\r\
+    R\x0bDNNCAGJIOAP\x12\x20\n\x0bIHCDDIPNJKO\x18\x02\x20\x03(\rR\x0bIHCDDIP\
+    NJKO\x12+\n\nH_7e8b12bb\x18\x03\x20\x03(\x0b2\x0c.ACFLKPFDHIMR\tH7e8b12b\
+    b\x12?\n\x0bBANBECDCDHG\x18\x04\x20\x03(\x0b2\x1d.KFMKBMJPEIC.BANBECDCDH\
+    GEntryR\x0bBANBECDCDHG\x12.\n\x0bPOJGKJENENA\x18\x05\x20\x03(\x0b2\x0c.F\
+    HCEIOHLADGR\x0bPOJGKJENENA\x1a>\n\x10BANBECDCDHGEntry\x12\x10\n\x03key\
+    \x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05va\
+    lue:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -261,7 +260,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::BattleGridFightEquipInfo::file_descriptor().clone());
+            deps.push(super::ACFLKPFDHIM::file_descriptor().clone());
             deps.push(super::FHCEIOHLADG::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(KFMKBMJPEIC::generated_message_descriptor_data());

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KIJJCOBOJFM {
     // message fields
-    // @@protoc_insertion_point(field:KIJJCOBOJFM.text_join_item_id)
-    pub text_join_item_id: u32,
+    // @@protoc_insertion_point(field:KIJJCOBOJFM.MFOFNOPEBEN)
+    pub MFOFNOPEBEN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KIJJCOBOJFM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl KIJJCOBOJFM {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "text_join_item_id",
-            |m: &KIJJCOBOJFM| { &m.text_join_item_id },
-            |m: &mut KIJJCOBOJFM| { &mut m.text_join_item_id },
+            "MFOFNOPEBEN",
+            |m: &KIJJCOBOJFM| { &m.MFOFNOPEBEN },
+            |m: &mut KIJJCOBOJFM| { &mut m.MFOFNOPEBEN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KIJJCOBOJFM>(
             "KIJJCOBOJFM",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for KIJJCOBOJFM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.text_join_item_id = is.read_uint32()?;
+                80 => {
+                    self.MFOFNOPEBEN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for KIJJCOBOJFM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.text_join_item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.text_join_item_id);
+        if self.MFOFNOPEBEN != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.MFOFNOPEBEN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for KIJJCOBOJFM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.text_join_item_id != 0 {
-            os.write_uint32(15, self.text_join_item_id)?;
+        if self.MFOFNOPEBEN != 0 {
+            os.write_uint32(10, self.MFOFNOPEBEN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for KIJJCOBOJFM {
     }
 
     fn clear(&mut self) {
-        self.text_join_item_id = 0;
+        self.MFOFNOPEBEN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KIJJCOBOJFM {
         static instance: KIJJCOBOJFM = KIJJCOBOJFM {
-            text_join_item_id: 0,
+            MFOFNOPEBEN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for KIJJCOBOJFM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KIJJCOBOJFM.proto\"8\n\x0bKIJJCOBOJFM\x12)\n\x11text_join_item_id\
-    \x18\x0f\x20\x01(\rR\x0etextJoinItemIdb\x06proto3\
+    \n\x11KIJJCOBOJFM.proto\"/\n\x0bKIJJCOBOJFM\x12\x20\n\x0bMFOFNOPEBEN\x18\
+    \n\x20\x01(\rR\x0bMFOFNOPEBENb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

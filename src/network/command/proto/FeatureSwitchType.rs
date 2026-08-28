@@ -27,202 +27,204 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:FeatureSwitchType)
 pub enum FeatureSwitchType {
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_OLLFDOONPPH)
-    BLOHGFCFEEL_OLLFDOONPPH = 0,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_CMPBOEFPAFF)
-    BLOHGFCFEEL_CMPBOEFPAFF = 1,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_NPMMMJEABDA)
-    BLOHGFCFEEL_NPMMMJEABDA = 2,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_LDFMLGODBCI)
-    BLOHGFCFEEL_LDFMLGODBCI = 3,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_IMFCEBAFAOD)
-    BLOHGFCFEEL_IMFCEBAFAOD = 4,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_PMJOGFFOGGA)
-    BLOHGFCFEEL_PMJOGFFOGGA = 5,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_GMGNBIKFFJG)
-    BLOHGFCFEEL_GMGNBIKFFJG = 6,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_NEHKLAFBDHN)
-    BLOHGFCFEEL_NEHKLAFBDHN = 7,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_CJLCHBBLENG)
-    BLOHGFCFEEL_CJLCHBBLENG = 8,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_JNKNFAIIGMK)
-    BLOHGFCFEEL_JNKNFAIIGMK = 9,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_GMKIADNCPNI)
-    BLOHGFCFEEL_GMKIADNCPNI = 10,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_MGICOLCGDAB)
-    BLOHGFCFEEL_MGICOLCGDAB = 11,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_NGPACINNIMD)
-    BLOHGFCFEEL_NGPACINNIMD = 12,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_OAIEBHMHLEP)
-    BLOHGFCFEEL_OAIEBHMHLEP = 13,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_FIPDOKKDAAC)
-    BLOHGFCFEEL_FIPDOKKDAAC = 14,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_APHDKDPMEFF)
-    BLOHGFCFEEL_APHDKDPMEFF = 15,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_PIFHPBHFBOB)
-    BLOHGFCFEEL_PIFHPBHFBOB = 16,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_EGGFIKODABA)
-    BLOHGFCFEEL_EGGFIKODABA = 17,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_PHOKAODFGGN)
-    BLOHGFCFEEL_PHOKAODFGGN = 18,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_DDJKAMDEFOB)
-    BLOHGFCFEEL_DDJKAMDEFOB = 19,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_BFNCHIOOEGI)
-    BLOHGFCFEEL_BFNCHIOOEGI = 20,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_EAKICFJGJCG)
-    BLOHGFCFEEL_EAKICFJGJCG = 21,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_JLJGFFJBMAP)
-    BLOHGFCFEEL_JLJGFFJBMAP = 22,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_DBMIBEJDGNK)
-    BLOHGFCFEEL_DBMIBEJDGNK = 23,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_LIHGIPDAMEE)
-    BLOHGFCFEEL_LIHGIPDAMEE = 24,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_PBMEFECMLBN)
-    BLOHGFCFEEL_PBMEFECMLBN = 25,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_NJIBBLDHBPA)
-    BLOHGFCFEEL_NJIBBLDHBPA = 26,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_JNOJKPFDENE)
-    BLOHGFCFEEL_JNOJKPFDENE = 27,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_HHNGOAPLCAJ)
-    BLOHGFCFEEL_HHNGOAPLCAJ = 28,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_PJIADEFEOCE)
-    BLOHGFCFEEL_PJIADEFEOCE = 29,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_ELJKDENKLBB)
-    BLOHGFCFEEL_ELJKDENKLBB = 30,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_HPHLHNECBNC)
-    BLOHGFCFEEL_HPHLHNECBNC = 32,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_ODBDMOCCODH)
-    BLOHGFCFEEL_ODBDMOCCODH = 33,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_CACHILIJDAO)
-    BLOHGFCFEEL_CACHILIJDAO = 34,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_AEILDNIMLHF)
-    BLOHGFCFEEL_AEILDNIMLHF = 35,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_PNLHBBLODFA)
-    BLOHGFCFEEL_PNLHBBLODFA = 36,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_FJBIEBHJGON)
-    BLOHGFCFEEL_FJBIEBHJGON = 37,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_AOJPPBMCIEJ)
-    BLOHGFCFEEL_AOJPPBMCIEJ = 38,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_MEEHJJDBMKP)
-    BLOHGFCFEEL_MEEHJJDBMKP = 39,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_ODPBAGEBPGL)
-    BLOHGFCFEEL_ODPBAGEBPGL = 40,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_MIJANGMGPKL)
-    BLOHGFCFEEL_MIJANGMGPKL = 41,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_CGHNMCHABLO)
-    BLOHGFCFEEL_CGHNMCHABLO = 42,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_FBKIFMKMLNO)
-    BLOHGFCFEEL_FBKIFMKMLNO = 43,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_HLFPEFNLMLE)
-    BLOHGFCFEEL_HLFPEFNLMLE = 44,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_BIFDPCPBGLN)
-    BLOHGFCFEEL_BIFDPCPBGLN = 45,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_DCPIMKDCFLE)
-    BLOHGFCFEEL_DCPIMKDCFLE = 46,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_KJDBBPEHCNO)
-    BLOHGFCFEEL_KJDBBPEHCNO = 47,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_NIBGLJHFMNO)
-    BLOHGFCFEEL_NIBGLJHFMNO = 48,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_HOPBLPLCJLO)
-    BLOHGFCFEEL_HOPBLPLCJLO = 49,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_FOHOHLFLEEJ)
-    BLOHGFCFEEL_FOHOHLFLEEJ = 50,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_NAFKMFKGKPN)
-    BLOHGFCFEEL_NAFKMFKGKPN = 51,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_OIAKLFCDFCK)
-    BLOHGFCFEEL_OIAKLFCDFCK = 52,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_KFILNDOMNAA)
-    BLOHGFCFEEL_KFILNDOMNAA = 53,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_OBEDFFDLDKD)
-    BLOHGFCFEEL_OBEDFFDLDKD = 54,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_FHJBILODKOO)
-    BLOHGFCFEEL_FHJBILODKOO = 55,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_IBKCCGOBPLK)
-    BLOHGFCFEEL_IBKCCGOBPLK = 56,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_MJHMECNJIFB)
-    BLOHGFCFEEL_MJHMECNJIFB = 58,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_GIFAIEODMBC)
-    BLOHGFCFEEL_GIFAIEODMBC = 59,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_GALJOECHLAA)
-    BLOHGFCFEEL_GALJOECHLAA = 60,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_NHEFHKBDCMC)
-    BLOHGFCFEEL_NHEFHKBDCMC = 61,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_CKNEFAPKNBD)
-    BLOHGFCFEEL_CKNEFAPKNBD = 62,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_FJKMNDDEKOA)
-    BLOHGFCFEEL_FJKMNDDEKOA = 63,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_FFNGHDIANMA)
-    BLOHGFCFEEL_FFNGHDIANMA = 64,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_KEEENOCCNND)
-    BLOHGFCFEEL_KEEENOCCNND = 65,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_GPLCBDBKCPD)
-    BLOHGFCFEEL_GPLCBDBKCPD = 66,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_KEFJFJDBPKG)
-    BLOHGFCFEEL_KEFJFJDBPKG = 67,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_ACFLOIONODA)
-    BLOHGFCFEEL_ACFLOIONODA = 68,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_OPGDDDOGGOE)
-    BLOHGFCFEEL_OPGDDDOGGOE = 69,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_OMBHMDBLDEJ)
-    BLOHGFCFEEL_OMBHMDBLDEJ = 70,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_NCIHPLBABNC)
-    BLOHGFCFEEL_NCIHPLBABNC = 71,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_AKGLHLMIKMM)
-    BLOHGFCFEEL_AKGLHLMIKMM = 72,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_BCLMECHBIKB)
-    BLOHGFCFEEL_BCLMECHBIKB = 73,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_GEBMCAOAIEJ)
-    BLOHGFCFEEL_GEBMCAOAIEJ = 74,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_EGGIGABAHPO)
-    BLOHGFCFEEL_EGGIGABAHPO = 75,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_KJMDGIIOPOO)
-    BLOHGFCFEEL_KJMDGIIOPOO = 76,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_FCJAFAGBGLG)
-    BLOHGFCFEEL_FCJAFAGBGLG = 77,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_KNGBCAFGALI)
-    BLOHGFCFEEL_KNGBCAFGALI = 78,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_HGGNFJCKBDA)
-    BLOHGFCFEEL_HGGNFJCKBDA = 79,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_FANNNOPGFBB)
-    BLOHGFCFEEL_FANNNOPGFBB = 80,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_BFJNFBIJINB)
-    BLOHGFCFEEL_BFJNFBIJINB = 81,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_JGKMCBGFJLL)
-    BLOHGFCFEEL_JGKMCBGFJLL = 82,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_AJBAFCAMEMH)
-    BLOHGFCFEEL_AJBAFCAMEMH = 83,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_OCDKAOGLBPC)
-    BLOHGFCFEEL_OCDKAOGLBPC = 84,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_NCHIOPJLMFE)
-    BLOHGFCFEEL_NCHIOPJLMFE = 85,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_POEHEEKBHLH)
-    BLOHGFCFEEL_POEHEEKBHLH = 86,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_EBGFEKLFJDB)
-    BLOHGFCFEEL_EBGFEKLFJDB = 87,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_JOJLKCIGHAJ)
-    BLOHGFCFEEL_JOJLKCIGHAJ = 88,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_IGBCOPCFPAI)
-    BLOHGFCFEEL_IGBCOPCFPAI = 89,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_GAFEEBBCOEK)
-    BLOHGFCFEEL_GAFEEBBCOEK = 90,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_COOFLDLKDFM)
-    BLOHGFCFEEL_COOFLDLKDFM = 91,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_KNMALPBJLJL)
-    BLOHGFCFEEL_KNMALPBJLJL = 92,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_IPDDHMBDLJI)
-    BLOHGFCFEEL_IPDDHMBDLJI = 93,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_ANCKMNILOCG)
-    BLOHGFCFEEL_ANCKMNILOCG = 94,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_KACOHBEJFOD)
-    BLOHGFCFEEL_KACOHBEJFOD = 95,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_KGMKFOPKJPK)
-    BLOHGFCFEEL_KGMKFOPKJPK = 96,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_HBMLKNFMGEN)
-    BLOHGFCFEEL_HBMLKNFMGEN = 97,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_AFNFHMPAPFN)
-    BLOHGFCFEEL_AFNFHMPAPFN = 98,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_MOMBNANDPNO)
-    BLOHGFCFEEL_MOMBNANDPNO = 99,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchNone)
+    FeatureSwitchType_FeatureSwitchNone = 0,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchShop)
+    FeatureSwitchType_FeatureSwitchShop = 1,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchLineupName)
+    FeatureSwitchType_FeatureSwitchLineupName = 2,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchRechargeShop)
+    FeatureSwitchType_FeatureSwitchRechargeShop = 3,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchNickname)
+    FeatureSwitchType_FeatureSwitchNickname = 4,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchSignature)
+    FeatureSwitchType_FeatureSwitchSignature = 5,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchBattlepass)
+    FeatureSwitchType_FeatureSwitchBattlepass = 6,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchPunkLord)
+    FeatureSwitchType_FeatureSwitchPunkLord = 7,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchMonthcardDaily)
+    FeatureSwitchType_FeatureSwitchMonthcardDaily = 8,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchPictureShare)
+    FeatureSwitchType_FeatureSwitchPictureShare = 9,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchRogue)
+    FeatureSwitchType_FeatureSwitchRogue = 10,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchChallenge)
+    FeatureSwitchType_FeatureSwitchChallenge = 11,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchCocoon)
+    FeatureSwitchType_FeatureSwitchCocoon = 12,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchRaid)
+    FeatureSwitchType_FeatureSwitchRaid = 13,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchMazePlaneEvent)
+    FeatureSwitchType_FeatureSwitchMazePlaneEvent = 14,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchActivityPanel)
+    FeatureSwitchType_FeatureSwitchActivityPanel = 15,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchMailbox)
+    FeatureSwitchType_FeatureSwitchMailbox = 16,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchQuest)
+    FeatureSwitchType_FeatureSwitchQuest = 17,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchGacha)
+    FeatureSwitchType_FeatureSwitchGacha = 18,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchChat)
+    FeatureSwitchType_FeatureSwitchChat = 19,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchModifyFriendAlias)
+    FeatureSwitchType_FeatureSwitchModifyFriendAlias = 20,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchUseItem)
+    FeatureSwitchType_FeatureSwitchUseItem = 21,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchActivitySchedule)
+    FeatureSwitchType_FeatureSwitchActivitySchedule = 22,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchFarmElement)
+    FeatureSwitchType_FeatureSwitchFarmElement = 23,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchAchievementLevel)
+    FeatureSwitchType_FeatureSwitchAchievementLevel = 24,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchDailyActiveLevel)
+    FeatureSwitchType_FeatureSwitchDailyActiveLevel = 25,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchPlayerReturn)
+    FeatureSwitchType_FeatureSwitchPlayerReturn = 26,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchFirstSetNickname)
+    FeatureSwitchType_FeatureSwitchFirstSetNickname = 27,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchMainMissionReward)
+    FeatureSwitchType_FeatureSwitchMainMissionReward = 28,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchSubMissionReward)
+    FeatureSwitchType_FeatureSwitchSubMissionReward = 29,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchPamMission)
+    FeatureSwitchType_FeatureSwitchPamMission = 30,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchDestroyItem)
+    FeatureSwitchType_FeatureSwitchDestroyItem = 32,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchConsumeItemTurn)
+    FeatureSwitchType_FeatureSwitchConsumeItemTurn = 33,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchRogueModifier)
+    FeatureSwitchType_FeatureSwitchRogueModifier = 34,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchChessRogue)
+    FeatureSwitchType_FeatureSwitchChessRogue = 35,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchChessRogueBoard)
+    FeatureSwitchType_FeatureSwitchChessRogueBoard = 36,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchRollShop)
+    FeatureSwitchType_FeatureSwitchRollShop = 37,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchH5Return)
+    FeatureSwitchType_FeatureSwitchH5Return = 38,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchOffering)
+    FeatureSwitchType_FeatureSwitchOffering = 39,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchServerRedPoint)
+    FeatureSwitchType_FeatureSwitchServerRedPoint = 40,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchMonopolyOptionRatio)
+    FeatureSwitchType_FeatureSwitchMonopolyOptionRatio = 41,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchMonopolyGetRaffleTicket)
+    FeatureSwitchType_FeatureSwitchMonopolyGetRaffleTicket = 42,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchMonopolyTakeRaffleReward)
+    FeatureSwitchType_FeatureSwitchMonopolyTakeRaffleReward = 43,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchChallengeRecommendLineup)
+    FeatureSwitchType_FeatureSwitchChallengeRecommendLineup = 44,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchPsnMemberShipCheck)
+    FeatureSwitchType_FeatureSwitchPsnMemberShipCheck = 45,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchPlayerBoardDevelopment)
+    FeatureSwitchType_FeatureSwitchPlayerBoardDevelopment = 46,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchPvp)
+    FeatureSwitchType_FeatureSwitchPvp = 47,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchRogueMode)
+    FeatureSwitchType_FeatureSwitchRogueMode = 48,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchRogueTournUgc)
+    FeatureSwitchType_FeatureSwitchRogueTournUgc = 49,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchRelicFilterPlanName)
+    FeatureSwitchType_FeatureSwitchRelicFilterPlanName = 50,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchMazeItemUseBuffDrop)
+    FeatureSwitchType_FeatureSwitchMazeItemUseBuffDrop = 51,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchRedDot)
+    FeatureSwitchType_FeatureSwitchRedDot = 52,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchGameStateService)
+    FeatureSwitchType_FeatureSwitchGameStateService = 53,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchBenefitIndex)
+    FeatureSwitchType_FeatureSwitchBenefitIndex = 54,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchRogueTournBuildRef)
+    FeatureSwitchType_FeatureSwitchRogueTournBuildRef = 55,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchPreAvatarSetGrowthTarget)
+    FeatureSwitchType_FeatureSwitchPreAvatarSetGrowthTarget = 56,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchImportRelicFilterPlan)
+    FeatureSwitchType_FeatureSwitchImportRelicFilterPlan = 58,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchGachaDecideItem)
+    FeatureSwitchType_FeatureSwitchGachaDecideItem = 59,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchItemSync)
+    FeatureSwitchType_FeatureSwitchItemSync = 60,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchRechargeBenefit)
+    FeatureSwitchType_FeatureSwitchRechargeBenefit = 61,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchRechargeGift)
+    FeatureSwitchType_FeatureSwitchRechargeGift = 62,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchRogueTournBuildRefShareCode)
+    FeatureSwitchType_FeatureSwitchRogueTournBuildRefShareCode = 63,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchGachaAvatarToast)
+    FeatureSwitchType_FeatureSwitchGachaAvatarToast = 64,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchRogueTournBuildRefShareCodeRename)
+    FeatureSwitchType_FeatureSwitchRogueTournBuildRefShareCodeRename = 65,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchRelicSmartDiscard)
+    FeatureSwitchType_FeatureSwitchRelicSmartDiscard = 66,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchPlanetfesSocial)
+    FeatureSwitchType_FeatureSwitchPlanetfesSocial = 67,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchRelicReforge)
+    FeatureSwitchType_FeatureSwitchRelicReforge = 68,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchRelicCompose)
+    FeatureSwitchType_FeatureSwitchRelicCompose = 69,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchRelicDecompose)
+    FeatureSwitchType_FeatureSwitchRelicDecompose = 70,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchRogueTournCocoon)
+    FeatureSwitchType_FeatureSwitchRogueTournCocoon = 71,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchItemCompose)
+    FeatureSwitchType_FeatureSwitchItemCompose = 72,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchGrowMaterialAutoComplete)
+    FeatureSwitchType_FeatureSwitchGrowMaterialAutoComplete = 73,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchSkipPerformance)
+    FeatureSwitchType_FeatureSwitchSkipPerformance = 74,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchFate)
+    FeatureSwitchType_FeatureSwitchFate = 75,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchFateAvatarHandbook)
+    FeatureSwitchType_FeatureSwitchFateAvatarHandbook = 76,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchElfRestaurant)
+    FeatureSwitchType_FeatureSwitchElfRestaurant = 77,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchBattleTimeoutLegal)
+    FeatureSwitchType_FeatureSwitchBattleTimeoutLegal = 78,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchHipplen)
+    FeatureSwitchType_FeatureSwitchHipplen = 79,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchHipplenEffect)
+    FeatureSwitchType_FeatureSwitchHipplenEffect = 80,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchReplayPerformance)
+    FeatureSwitchType_FeatureSwitchReplayPerformance = 81,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.H_fef37035)
+    H_fef37035 = 82,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchRelicBox)
+    FeatureSwitchType_FeatureSwitchRelicBox = 83,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.H_78868128)
+    H_78868128 = 84,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.H_eb0c1fcf)
+    H_eb0c1fcf = 85,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.H_e5dfd291)
+    H_e5dfd291 = 86,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchBanGotoPage)
+    FeatureSwitchType_FeatureSwitchBanGotoPage = 87,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchReportSensitiveWordCheck)
+    FeatureSwitchType_FeatureSwitchReportSensitiveWordCheck = 88,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchAvatarSkinId)
+    FeatureSwitchType_FeatureSwitchAvatarSkinId = 89,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchAiPam)
+    FeatureSwitchType_FeatureSwitchAiPam = 90,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchBattleCheckPass)
+    FeatureSwitchType_FeatureSwitchBattleCheckPass = 91,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchIdleLiveCustomTitle)
+    FeatureSwitchType_FeatureSwitchIdleLiveCustomTitle = 92,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.H_24da5caa)
+    H_24da5caa = 93,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchSocialPlay)
+    FeatureSwitchType_FeatureSwitchSocialPlay = 94,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchRelicPresetPlanName)
+    FeatureSwitchType_FeatureSwitchRelicPresetPlanName = 95,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchOutfitPreview)
+    FeatureSwitchType_FeatureSwitchOutfitPreview = 96,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchRogueProcessorQueueCutting)
+    FeatureSwitchType_FeatureSwitchRogueProcessorQueueCutting = 97,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchChooseDelivery)
+    FeatureSwitchType_FeatureSwitchChooseDelivery = 98,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchUnlockContentPackage)
+    FeatureSwitchType_FeatureSwitchUnlockContentPackage = 99,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchAcceleratePerformance)
+    FeatureSwitchType_FeatureSwitchAcceleratePerformance = 102,
 }
 
 impl ::protobuf::Enum for FeatureSwitchType {
@@ -234,311 +236,314 @@ impl ::protobuf::Enum for FeatureSwitchType {
 
     fn from_i32(value: i32) -> ::std::option::Option<FeatureSwitchType> {
         match value {
-            0 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_OLLFDOONPPH),
-            1 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_CMPBOEFPAFF),
-            2 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_NPMMMJEABDA),
-            3 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_LDFMLGODBCI),
-            4 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_IMFCEBAFAOD),
-            5 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_PMJOGFFOGGA),
-            6 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_GMGNBIKFFJG),
-            7 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_NEHKLAFBDHN),
-            8 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_CJLCHBBLENG),
-            9 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_JNKNFAIIGMK),
-            10 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_GMKIADNCPNI),
-            11 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_MGICOLCGDAB),
-            12 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_NGPACINNIMD),
-            13 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_OAIEBHMHLEP),
-            14 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_FIPDOKKDAAC),
-            15 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_APHDKDPMEFF),
-            16 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_PIFHPBHFBOB),
-            17 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_EGGFIKODABA),
-            18 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_PHOKAODFGGN),
-            19 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_DDJKAMDEFOB),
-            20 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_BFNCHIOOEGI),
-            21 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_EAKICFJGJCG),
-            22 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_JLJGFFJBMAP),
-            23 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_DBMIBEJDGNK),
-            24 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_LIHGIPDAMEE),
-            25 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_PBMEFECMLBN),
-            26 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_NJIBBLDHBPA),
-            27 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_JNOJKPFDENE),
-            28 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_HHNGOAPLCAJ),
-            29 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_PJIADEFEOCE),
-            30 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_ELJKDENKLBB),
-            32 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_HPHLHNECBNC),
-            33 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_ODBDMOCCODH),
-            34 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_CACHILIJDAO),
-            35 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_AEILDNIMLHF),
-            36 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_PNLHBBLODFA),
-            37 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_FJBIEBHJGON),
-            38 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_AOJPPBMCIEJ),
-            39 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_MEEHJJDBMKP),
-            40 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_ODPBAGEBPGL),
-            41 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_MIJANGMGPKL),
-            42 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_CGHNMCHABLO),
-            43 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_FBKIFMKMLNO),
-            44 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_HLFPEFNLMLE),
-            45 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_BIFDPCPBGLN),
-            46 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_DCPIMKDCFLE),
-            47 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_KJDBBPEHCNO),
-            48 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_NIBGLJHFMNO),
-            49 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_HOPBLPLCJLO),
-            50 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_FOHOHLFLEEJ),
-            51 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_NAFKMFKGKPN),
-            52 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_OIAKLFCDFCK),
-            53 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_KFILNDOMNAA),
-            54 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_OBEDFFDLDKD),
-            55 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_FHJBILODKOO),
-            56 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_IBKCCGOBPLK),
-            58 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_MJHMECNJIFB),
-            59 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_GIFAIEODMBC),
-            60 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_GALJOECHLAA),
-            61 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_NHEFHKBDCMC),
-            62 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_CKNEFAPKNBD),
-            63 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_FJKMNDDEKOA),
-            64 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_FFNGHDIANMA),
-            65 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_KEEENOCCNND),
-            66 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_GPLCBDBKCPD),
-            67 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_KEFJFJDBPKG),
-            68 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_ACFLOIONODA),
-            69 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_OPGDDDOGGOE),
-            70 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_OMBHMDBLDEJ),
-            71 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_NCIHPLBABNC),
-            72 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_AKGLHLMIKMM),
-            73 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_BCLMECHBIKB),
-            74 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_GEBMCAOAIEJ),
-            75 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_EGGIGABAHPO),
-            76 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_KJMDGIIOPOO),
-            77 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_FCJAFAGBGLG),
-            78 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_KNGBCAFGALI),
-            79 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_HGGNFJCKBDA),
-            80 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_FANNNOPGFBB),
-            81 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_BFJNFBIJINB),
-            82 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_JGKMCBGFJLL),
-            83 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_AJBAFCAMEMH),
-            84 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_OCDKAOGLBPC),
-            85 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_NCHIOPJLMFE),
-            86 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_POEHEEKBHLH),
-            87 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_EBGFEKLFJDB),
-            88 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_JOJLKCIGHAJ),
-            89 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_IGBCOPCFPAI),
-            90 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_GAFEEBBCOEK),
-            91 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_COOFLDLKDFM),
-            92 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_KNMALPBJLJL),
-            93 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_IPDDHMBDLJI),
-            94 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_ANCKMNILOCG),
-            95 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_KACOHBEJFOD),
-            96 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_KGMKFOPKJPK),
-            97 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_HBMLKNFMGEN),
-            98 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_AFNFHMPAPFN),
-            99 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_MOMBNANDPNO),
+            0 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchNone),
+            1 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchShop),
+            2 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchLineupName),
+            3 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRechargeShop),
+            4 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchNickname),
+            5 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchSignature),
+            6 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchBattlepass),
+            7 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchPunkLord),
+            8 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchMonthcardDaily),
+            9 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchPictureShare),
+            10 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogue),
+            11 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchChallenge),
+            12 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchCocoon),
+            13 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRaid),
+            14 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchMazePlaneEvent),
+            15 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchActivityPanel),
+            16 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchMailbox),
+            17 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchQuest),
+            18 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchGacha),
+            19 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchChat),
+            20 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchModifyFriendAlias),
+            21 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchUseItem),
+            22 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchActivitySchedule),
+            23 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchFarmElement),
+            24 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchAchievementLevel),
+            25 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchDailyActiveLevel),
+            26 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchPlayerReturn),
+            27 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchFirstSetNickname),
+            28 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchMainMissionReward),
+            29 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchSubMissionReward),
+            30 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchPamMission),
+            32 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchDestroyItem),
+            33 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchConsumeItemTurn),
+            34 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueModifier),
+            35 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchChessRogue),
+            36 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchChessRogueBoard),
+            37 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRollShop),
+            38 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchH5Return),
+            39 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchOffering),
+            40 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchServerRedPoint),
+            41 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchMonopolyOptionRatio),
+            42 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchMonopolyGetRaffleTicket),
+            43 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchMonopolyTakeRaffleReward),
+            44 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchChallengeRecommendLineup),
+            45 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchPsnMemberShipCheck),
+            46 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchPlayerBoardDevelopment),
+            47 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchPvp),
+            48 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueMode),
+            49 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueTournUgc),
+            50 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicFilterPlanName),
+            51 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchMazeItemUseBuffDrop),
+            52 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRedDot),
+            53 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchGameStateService),
+            54 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchBenefitIndex),
+            55 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueTournBuildRef),
+            56 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchPreAvatarSetGrowthTarget),
+            58 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchImportRelicFilterPlan),
+            59 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchGachaDecideItem),
+            60 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchItemSync),
+            61 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRechargeBenefit),
+            62 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRechargeGift),
+            63 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueTournBuildRefShareCode),
+            64 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchGachaAvatarToast),
+            65 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueTournBuildRefShareCodeRename),
+            66 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicSmartDiscard),
+            67 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchPlanetfesSocial),
+            68 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicReforge),
+            69 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicCompose),
+            70 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicDecompose),
+            71 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueTournCocoon),
+            72 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchItemCompose),
+            73 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchGrowMaterialAutoComplete),
+            74 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchSkipPerformance),
+            75 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchFate),
+            76 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchFateAvatarHandbook),
+            77 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchElfRestaurant),
+            78 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchBattleTimeoutLegal),
+            79 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchHipplen),
+            80 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchHipplenEffect),
+            81 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchReplayPerformance),
+            82 => ::std::option::Option::Some(FeatureSwitchType::H_fef37035),
+            83 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicBox),
+            84 => ::std::option::Option::Some(FeatureSwitchType::H_78868128),
+            85 => ::std::option::Option::Some(FeatureSwitchType::H_eb0c1fcf),
+            86 => ::std::option::Option::Some(FeatureSwitchType::H_e5dfd291),
+            87 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchBanGotoPage),
+            88 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchReportSensitiveWordCheck),
+            89 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchAvatarSkinId),
+            90 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchAiPam),
+            91 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchBattleCheckPass),
+            92 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchIdleLiveCustomTitle),
+            93 => ::std::option::Option::Some(FeatureSwitchType::H_24da5caa),
+            94 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchSocialPlay),
+            95 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicPresetPlanName),
+            96 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchOutfitPreview),
+            97 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueProcessorQueueCutting),
+            98 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchChooseDelivery),
+            99 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchUnlockContentPackage),
+            102 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchAcceleratePerformance),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<FeatureSwitchType> {
         match str {
-            "BLOHGFCFEEL_OLLFDOONPPH" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_OLLFDOONPPH),
-            "BLOHGFCFEEL_CMPBOEFPAFF" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_CMPBOEFPAFF),
-            "BLOHGFCFEEL_NPMMMJEABDA" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_NPMMMJEABDA),
-            "BLOHGFCFEEL_LDFMLGODBCI" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_LDFMLGODBCI),
-            "BLOHGFCFEEL_IMFCEBAFAOD" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_IMFCEBAFAOD),
-            "BLOHGFCFEEL_PMJOGFFOGGA" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_PMJOGFFOGGA),
-            "BLOHGFCFEEL_GMGNBIKFFJG" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_GMGNBIKFFJG),
-            "BLOHGFCFEEL_NEHKLAFBDHN" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_NEHKLAFBDHN),
-            "BLOHGFCFEEL_CJLCHBBLENG" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_CJLCHBBLENG),
-            "BLOHGFCFEEL_JNKNFAIIGMK" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_JNKNFAIIGMK),
-            "BLOHGFCFEEL_GMKIADNCPNI" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_GMKIADNCPNI),
-            "BLOHGFCFEEL_MGICOLCGDAB" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_MGICOLCGDAB),
-            "BLOHGFCFEEL_NGPACINNIMD" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_NGPACINNIMD),
-            "BLOHGFCFEEL_OAIEBHMHLEP" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_OAIEBHMHLEP),
-            "BLOHGFCFEEL_FIPDOKKDAAC" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_FIPDOKKDAAC),
-            "BLOHGFCFEEL_APHDKDPMEFF" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_APHDKDPMEFF),
-            "BLOHGFCFEEL_PIFHPBHFBOB" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_PIFHPBHFBOB),
-            "BLOHGFCFEEL_EGGFIKODABA" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_EGGFIKODABA),
-            "BLOHGFCFEEL_PHOKAODFGGN" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_PHOKAODFGGN),
-            "BLOHGFCFEEL_DDJKAMDEFOB" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_DDJKAMDEFOB),
-            "BLOHGFCFEEL_BFNCHIOOEGI" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_BFNCHIOOEGI),
-            "BLOHGFCFEEL_EAKICFJGJCG" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_EAKICFJGJCG),
-            "BLOHGFCFEEL_JLJGFFJBMAP" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_JLJGFFJBMAP),
-            "BLOHGFCFEEL_DBMIBEJDGNK" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_DBMIBEJDGNK),
-            "BLOHGFCFEEL_LIHGIPDAMEE" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_LIHGIPDAMEE),
-            "BLOHGFCFEEL_PBMEFECMLBN" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_PBMEFECMLBN),
-            "BLOHGFCFEEL_NJIBBLDHBPA" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_NJIBBLDHBPA),
-            "BLOHGFCFEEL_JNOJKPFDENE" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_JNOJKPFDENE),
-            "BLOHGFCFEEL_HHNGOAPLCAJ" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_HHNGOAPLCAJ),
-            "BLOHGFCFEEL_PJIADEFEOCE" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_PJIADEFEOCE),
-            "BLOHGFCFEEL_ELJKDENKLBB" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_ELJKDENKLBB),
-            "BLOHGFCFEEL_HPHLHNECBNC" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_HPHLHNECBNC),
-            "BLOHGFCFEEL_ODBDMOCCODH" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_ODBDMOCCODH),
-            "BLOHGFCFEEL_CACHILIJDAO" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_CACHILIJDAO),
-            "BLOHGFCFEEL_AEILDNIMLHF" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_AEILDNIMLHF),
-            "BLOHGFCFEEL_PNLHBBLODFA" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_PNLHBBLODFA),
-            "BLOHGFCFEEL_FJBIEBHJGON" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_FJBIEBHJGON),
-            "BLOHGFCFEEL_AOJPPBMCIEJ" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_AOJPPBMCIEJ),
-            "BLOHGFCFEEL_MEEHJJDBMKP" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_MEEHJJDBMKP),
-            "BLOHGFCFEEL_ODPBAGEBPGL" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_ODPBAGEBPGL),
-            "BLOHGFCFEEL_MIJANGMGPKL" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_MIJANGMGPKL),
-            "BLOHGFCFEEL_CGHNMCHABLO" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_CGHNMCHABLO),
-            "BLOHGFCFEEL_FBKIFMKMLNO" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_FBKIFMKMLNO),
-            "BLOHGFCFEEL_HLFPEFNLMLE" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_HLFPEFNLMLE),
-            "BLOHGFCFEEL_BIFDPCPBGLN" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_BIFDPCPBGLN),
-            "BLOHGFCFEEL_DCPIMKDCFLE" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_DCPIMKDCFLE),
-            "BLOHGFCFEEL_KJDBBPEHCNO" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_KJDBBPEHCNO),
-            "BLOHGFCFEEL_NIBGLJHFMNO" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_NIBGLJHFMNO),
-            "BLOHGFCFEEL_HOPBLPLCJLO" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_HOPBLPLCJLO),
-            "BLOHGFCFEEL_FOHOHLFLEEJ" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_FOHOHLFLEEJ),
-            "BLOHGFCFEEL_NAFKMFKGKPN" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_NAFKMFKGKPN),
-            "BLOHGFCFEEL_OIAKLFCDFCK" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_OIAKLFCDFCK),
-            "BLOHGFCFEEL_KFILNDOMNAA" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_KFILNDOMNAA),
-            "BLOHGFCFEEL_OBEDFFDLDKD" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_OBEDFFDLDKD),
-            "BLOHGFCFEEL_FHJBILODKOO" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_FHJBILODKOO),
-            "BLOHGFCFEEL_IBKCCGOBPLK" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_IBKCCGOBPLK),
-            "BLOHGFCFEEL_MJHMECNJIFB" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_MJHMECNJIFB),
-            "BLOHGFCFEEL_GIFAIEODMBC" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_GIFAIEODMBC),
-            "BLOHGFCFEEL_GALJOECHLAA" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_GALJOECHLAA),
-            "BLOHGFCFEEL_NHEFHKBDCMC" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_NHEFHKBDCMC),
-            "BLOHGFCFEEL_CKNEFAPKNBD" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_CKNEFAPKNBD),
-            "BLOHGFCFEEL_FJKMNDDEKOA" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_FJKMNDDEKOA),
-            "BLOHGFCFEEL_FFNGHDIANMA" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_FFNGHDIANMA),
-            "BLOHGFCFEEL_KEEENOCCNND" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_KEEENOCCNND),
-            "BLOHGFCFEEL_GPLCBDBKCPD" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_GPLCBDBKCPD),
-            "BLOHGFCFEEL_KEFJFJDBPKG" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_KEFJFJDBPKG),
-            "BLOHGFCFEEL_ACFLOIONODA" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_ACFLOIONODA),
-            "BLOHGFCFEEL_OPGDDDOGGOE" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_OPGDDDOGGOE),
-            "BLOHGFCFEEL_OMBHMDBLDEJ" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_OMBHMDBLDEJ),
-            "BLOHGFCFEEL_NCIHPLBABNC" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_NCIHPLBABNC),
-            "BLOHGFCFEEL_AKGLHLMIKMM" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_AKGLHLMIKMM),
-            "BLOHGFCFEEL_BCLMECHBIKB" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_BCLMECHBIKB),
-            "BLOHGFCFEEL_GEBMCAOAIEJ" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_GEBMCAOAIEJ),
-            "BLOHGFCFEEL_EGGIGABAHPO" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_EGGIGABAHPO),
-            "BLOHGFCFEEL_KJMDGIIOPOO" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_KJMDGIIOPOO),
-            "BLOHGFCFEEL_FCJAFAGBGLG" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_FCJAFAGBGLG),
-            "BLOHGFCFEEL_KNGBCAFGALI" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_KNGBCAFGALI),
-            "BLOHGFCFEEL_HGGNFJCKBDA" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_HGGNFJCKBDA),
-            "BLOHGFCFEEL_FANNNOPGFBB" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_FANNNOPGFBB),
-            "BLOHGFCFEEL_BFJNFBIJINB" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_BFJNFBIJINB),
-            "BLOHGFCFEEL_JGKMCBGFJLL" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_JGKMCBGFJLL),
-            "BLOHGFCFEEL_AJBAFCAMEMH" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_AJBAFCAMEMH),
-            "BLOHGFCFEEL_OCDKAOGLBPC" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_OCDKAOGLBPC),
-            "BLOHGFCFEEL_NCHIOPJLMFE" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_NCHIOPJLMFE),
-            "BLOHGFCFEEL_POEHEEKBHLH" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_POEHEEKBHLH),
-            "BLOHGFCFEEL_EBGFEKLFJDB" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_EBGFEKLFJDB),
-            "BLOHGFCFEEL_JOJLKCIGHAJ" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_JOJLKCIGHAJ),
-            "BLOHGFCFEEL_IGBCOPCFPAI" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_IGBCOPCFPAI),
-            "BLOHGFCFEEL_GAFEEBBCOEK" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_GAFEEBBCOEK),
-            "BLOHGFCFEEL_COOFLDLKDFM" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_COOFLDLKDFM),
-            "BLOHGFCFEEL_KNMALPBJLJL" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_KNMALPBJLJL),
-            "BLOHGFCFEEL_IPDDHMBDLJI" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_IPDDHMBDLJI),
-            "BLOHGFCFEEL_ANCKMNILOCG" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_ANCKMNILOCG),
-            "BLOHGFCFEEL_KACOHBEJFOD" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_KACOHBEJFOD),
-            "BLOHGFCFEEL_KGMKFOPKJPK" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_KGMKFOPKJPK),
-            "BLOHGFCFEEL_HBMLKNFMGEN" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_HBMLKNFMGEN),
-            "BLOHGFCFEEL_AFNFHMPAPFN" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_AFNFHMPAPFN),
-            "BLOHGFCFEEL_MOMBNANDPNO" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_MOMBNANDPNO),
+            "FeatureSwitchType_FeatureSwitchNone" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchNone),
+            "FeatureSwitchType_FeatureSwitchShop" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchShop),
+            "FeatureSwitchType_FeatureSwitchLineupName" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchLineupName),
+            "FeatureSwitchType_FeatureSwitchRechargeShop" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRechargeShop),
+            "FeatureSwitchType_FeatureSwitchNickname" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchNickname),
+            "FeatureSwitchType_FeatureSwitchSignature" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchSignature),
+            "FeatureSwitchType_FeatureSwitchBattlepass" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchBattlepass),
+            "FeatureSwitchType_FeatureSwitchPunkLord" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchPunkLord),
+            "FeatureSwitchType_FeatureSwitchMonthcardDaily" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchMonthcardDaily),
+            "FeatureSwitchType_FeatureSwitchPictureShare" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchPictureShare),
+            "FeatureSwitchType_FeatureSwitchRogue" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogue),
+            "FeatureSwitchType_FeatureSwitchChallenge" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchChallenge),
+            "FeatureSwitchType_FeatureSwitchCocoon" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchCocoon),
+            "FeatureSwitchType_FeatureSwitchRaid" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRaid),
+            "FeatureSwitchType_FeatureSwitchMazePlaneEvent" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchMazePlaneEvent),
+            "FeatureSwitchType_FeatureSwitchActivityPanel" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchActivityPanel),
+            "FeatureSwitchType_FeatureSwitchMailbox" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchMailbox),
+            "FeatureSwitchType_FeatureSwitchQuest" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchQuest),
+            "FeatureSwitchType_FeatureSwitchGacha" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchGacha),
+            "FeatureSwitchType_FeatureSwitchChat" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchChat),
+            "FeatureSwitchType_FeatureSwitchModifyFriendAlias" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchModifyFriendAlias),
+            "FeatureSwitchType_FeatureSwitchUseItem" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchUseItem),
+            "FeatureSwitchType_FeatureSwitchActivitySchedule" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchActivitySchedule),
+            "FeatureSwitchType_FeatureSwitchFarmElement" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchFarmElement),
+            "FeatureSwitchType_FeatureSwitchAchievementLevel" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchAchievementLevel),
+            "FeatureSwitchType_FeatureSwitchDailyActiveLevel" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchDailyActiveLevel),
+            "FeatureSwitchType_FeatureSwitchPlayerReturn" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchPlayerReturn),
+            "FeatureSwitchType_FeatureSwitchFirstSetNickname" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchFirstSetNickname),
+            "FeatureSwitchType_FeatureSwitchMainMissionReward" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchMainMissionReward),
+            "FeatureSwitchType_FeatureSwitchSubMissionReward" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchSubMissionReward),
+            "FeatureSwitchType_FeatureSwitchPamMission" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchPamMission),
+            "FeatureSwitchType_FeatureSwitchDestroyItem" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchDestroyItem),
+            "FeatureSwitchType_FeatureSwitchConsumeItemTurn" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchConsumeItemTurn),
+            "FeatureSwitchType_FeatureSwitchRogueModifier" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueModifier),
+            "FeatureSwitchType_FeatureSwitchChessRogue" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchChessRogue),
+            "FeatureSwitchType_FeatureSwitchChessRogueBoard" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchChessRogueBoard),
+            "FeatureSwitchType_FeatureSwitchRollShop" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRollShop),
+            "FeatureSwitchType_FeatureSwitchH5Return" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchH5Return),
+            "FeatureSwitchType_FeatureSwitchOffering" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchOffering),
+            "FeatureSwitchType_FeatureSwitchServerRedPoint" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchServerRedPoint),
+            "FeatureSwitchType_FeatureSwitchMonopolyOptionRatio" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchMonopolyOptionRatio),
+            "FeatureSwitchType_FeatureSwitchMonopolyGetRaffleTicket" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchMonopolyGetRaffleTicket),
+            "FeatureSwitchType_FeatureSwitchMonopolyTakeRaffleReward" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchMonopolyTakeRaffleReward),
+            "FeatureSwitchType_FeatureSwitchChallengeRecommendLineup" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchChallengeRecommendLineup),
+            "FeatureSwitchType_FeatureSwitchPsnMemberShipCheck" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchPsnMemberShipCheck),
+            "FeatureSwitchType_FeatureSwitchPlayerBoardDevelopment" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchPlayerBoardDevelopment),
+            "FeatureSwitchType_FeatureSwitchPvp" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchPvp),
+            "FeatureSwitchType_FeatureSwitchRogueMode" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueMode),
+            "FeatureSwitchType_FeatureSwitchRogueTournUgc" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueTournUgc),
+            "FeatureSwitchType_FeatureSwitchRelicFilterPlanName" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicFilterPlanName),
+            "FeatureSwitchType_FeatureSwitchMazeItemUseBuffDrop" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchMazeItemUseBuffDrop),
+            "FeatureSwitchType_FeatureSwitchRedDot" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRedDot),
+            "FeatureSwitchType_FeatureSwitchGameStateService" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchGameStateService),
+            "FeatureSwitchType_FeatureSwitchBenefitIndex" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchBenefitIndex),
+            "FeatureSwitchType_FeatureSwitchRogueTournBuildRef" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueTournBuildRef),
+            "FeatureSwitchType_FeatureSwitchPreAvatarSetGrowthTarget" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchPreAvatarSetGrowthTarget),
+            "FeatureSwitchType_FeatureSwitchImportRelicFilterPlan" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchImportRelicFilterPlan),
+            "FeatureSwitchType_FeatureSwitchGachaDecideItem" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchGachaDecideItem),
+            "FeatureSwitchType_FeatureSwitchItemSync" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchItemSync),
+            "FeatureSwitchType_FeatureSwitchRechargeBenefit" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRechargeBenefit),
+            "FeatureSwitchType_FeatureSwitchRechargeGift" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRechargeGift),
+            "FeatureSwitchType_FeatureSwitchRogueTournBuildRefShareCode" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueTournBuildRefShareCode),
+            "FeatureSwitchType_FeatureSwitchGachaAvatarToast" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchGachaAvatarToast),
+            "FeatureSwitchType_FeatureSwitchRogueTournBuildRefShareCodeRename" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueTournBuildRefShareCodeRename),
+            "FeatureSwitchType_FeatureSwitchRelicSmartDiscard" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicSmartDiscard),
+            "FeatureSwitchType_FeatureSwitchPlanetfesSocial" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchPlanetfesSocial),
+            "FeatureSwitchType_FeatureSwitchRelicReforge" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicReforge),
+            "FeatureSwitchType_FeatureSwitchRelicCompose" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicCompose),
+            "FeatureSwitchType_FeatureSwitchRelicDecompose" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicDecompose),
+            "FeatureSwitchType_FeatureSwitchRogueTournCocoon" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueTournCocoon),
+            "FeatureSwitchType_FeatureSwitchItemCompose" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchItemCompose),
+            "FeatureSwitchType_FeatureSwitchGrowMaterialAutoComplete" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchGrowMaterialAutoComplete),
+            "FeatureSwitchType_FeatureSwitchSkipPerformance" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchSkipPerformance),
+            "FeatureSwitchType_FeatureSwitchFate" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchFate),
+            "FeatureSwitchType_FeatureSwitchFateAvatarHandbook" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchFateAvatarHandbook),
+            "FeatureSwitchType_FeatureSwitchElfRestaurant" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchElfRestaurant),
+            "FeatureSwitchType_FeatureSwitchBattleTimeoutLegal" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchBattleTimeoutLegal),
+            "FeatureSwitchType_FeatureSwitchHipplen" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchHipplen),
+            "FeatureSwitchType_FeatureSwitchHipplenEffect" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchHipplenEffect),
+            "FeatureSwitchType_FeatureSwitchReplayPerformance" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchReplayPerformance),
+            "H_fef37035" => ::std::option::Option::Some(FeatureSwitchType::H_fef37035),
+            "FeatureSwitchType_FeatureSwitchRelicBox" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicBox),
+            "H_78868128" => ::std::option::Option::Some(FeatureSwitchType::H_78868128),
+            "H_eb0c1fcf" => ::std::option::Option::Some(FeatureSwitchType::H_eb0c1fcf),
+            "H_e5dfd291" => ::std::option::Option::Some(FeatureSwitchType::H_e5dfd291),
+            "FeatureSwitchType_FeatureSwitchBanGotoPage" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchBanGotoPage),
+            "FeatureSwitchType_FeatureSwitchReportSensitiveWordCheck" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchReportSensitiveWordCheck),
+            "FeatureSwitchType_FeatureSwitchAvatarSkinId" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchAvatarSkinId),
+            "FeatureSwitchType_FeatureSwitchAiPam" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchAiPam),
+            "FeatureSwitchType_FeatureSwitchBattleCheckPass" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchBattleCheckPass),
+            "FeatureSwitchType_FeatureSwitchIdleLiveCustomTitle" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchIdleLiveCustomTitle),
+            "H_24da5caa" => ::std::option::Option::Some(FeatureSwitchType::H_24da5caa),
+            "FeatureSwitchType_FeatureSwitchSocialPlay" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchSocialPlay),
+            "FeatureSwitchType_FeatureSwitchRelicPresetPlanName" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicPresetPlanName),
+            "FeatureSwitchType_FeatureSwitchOutfitPreview" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchOutfitPreview),
+            "FeatureSwitchType_FeatureSwitchRogueProcessorQueueCutting" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueProcessorQueueCutting),
+            "FeatureSwitchType_FeatureSwitchChooseDelivery" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchChooseDelivery),
+            "FeatureSwitchType_FeatureSwitchUnlockContentPackage" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchUnlockContentPackage),
+            "FeatureSwitchType_FeatureSwitchAcceleratePerformance" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchAcceleratePerformance),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [FeatureSwitchType] = &[
-        FeatureSwitchType::BLOHGFCFEEL_OLLFDOONPPH,
-        FeatureSwitchType::BLOHGFCFEEL_CMPBOEFPAFF,
-        FeatureSwitchType::BLOHGFCFEEL_NPMMMJEABDA,
-        FeatureSwitchType::BLOHGFCFEEL_LDFMLGODBCI,
-        FeatureSwitchType::BLOHGFCFEEL_IMFCEBAFAOD,
-        FeatureSwitchType::BLOHGFCFEEL_PMJOGFFOGGA,
-        FeatureSwitchType::BLOHGFCFEEL_GMGNBIKFFJG,
-        FeatureSwitchType::BLOHGFCFEEL_NEHKLAFBDHN,
-        FeatureSwitchType::BLOHGFCFEEL_CJLCHBBLENG,
-        FeatureSwitchType::BLOHGFCFEEL_JNKNFAIIGMK,
-        FeatureSwitchType::BLOHGFCFEEL_GMKIADNCPNI,
-        FeatureSwitchType::BLOHGFCFEEL_MGICOLCGDAB,
-        FeatureSwitchType::BLOHGFCFEEL_NGPACINNIMD,
-        FeatureSwitchType::BLOHGFCFEEL_OAIEBHMHLEP,
-        FeatureSwitchType::BLOHGFCFEEL_FIPDOKKDAAC,
-        FeatureSwitchType::BLOHGFCFEEL_APHDKDPMEFF,
-        FeatureSwitchType::BLOHGFCFEEL_PIFHPBHFBOB,
-        FeatureSwitchType::BLOHGFCFEEL_EGGFIKODABA,
-        FeatureSwitchType::BLOHGFCFEEL_PHOKAODFGGN,
-        FeatureSwitchType::BLOHGFCFEEL_DDJKAMDEFOB,
-        FeatureSwitchType::BLOHGFCFEEL_BFNCHIOOEGI,
-        FeatureSwitchType::BLOHGFCFEEL_EAKICFJGJCG,
-        FeatureSwitchType::BLOHGFCFEEL_JLJGFFJBMAP,
-        FeatureSwitchType::BLOHGFCFEEL_DBMIBEJDGNK,
-        FeatureSwitchType::BLOHGFCFEEL_LIHGIPDAMEE,
-        FeatureSwitchType::BLOHGFCFEEL_PBMEFECMLBN,
-        FeatureSwitchType::BLOHGFCFEEL_NJIBBLDHBPA,
-        FeatureSwitchType::BLOHGFCFEEL_JNOJKPFDENE,
-        FeatureSwitchType::BLOHGFCFEEL_HHNGOAPLCAJ,
-        FeatureSwitchType::BLOHGFCFEEL_PJIADEFEOCE,
-        FeatureSwitchType::BLOHGFCFEEL_ELJKDENKLBB,
-        FeatureSwitchType::BLOHGFCFEEL_HPHLHNECBNC,
-        FeatureSwitchType::BLOHGFCFEEL_ODBDMOCCODH,
-        FeatureSwitchType::BLOHGFCFEEL_CACHILIJDAO,
-        FeatureSwitchType::BLOHGFCFEEL_AEILDNIMLHF,
-        FeatureSwitchType::BLOHGFCFEEL_PNLHBBLODFA,
-        FeatureSwitchType::BLOHGFCFEEL_FJBIEBHJGON,
-        FeatureSwitchType::BLOHGFCFEEL_AOJPPBMCIEJ,
-        FeatureSwitchType::BLOHGFCFEEL_MEEHJJDBMKP,
-        FeatureSwitchType::BLOHGFCFEEL_ODPBAGEBPGL,
-        FeatureSwitchType::BLOHGFCFEEL_MIJANGMGPKL,
-        FeatureSwitchType::BLOHGFCFEEL_CGHNMCHABLO,
-        FeatureSwitchType::BLOHGFCFEEL_FBKIFMKMLNO,
-        FeatureSwitchType::BLOHGFCFEEL_HLFPEFNLMLE,
-        FeatureSwitchType::BLOHGFCFEEL_BIFDPCPBGLN,
-        FeatureSwitchType::BLOHGFCFEEL_DCPIMKDCFLE,
-        FeatureSwitchType::BLOHGFCFEEL_KJDBBPEHCNO,
-        FeatureSwitchType::BLOHGFCFEEL_NIBGLJHFMNO,
-        FeatureSwitchType::BLOHGFCFEEL_HOPBLPLCJLO,
-        FeatureSwitchType::BLOHGFCFEEL_FOHOHLFLEEJ,
-        FeatureSwitchType::BLOHGFCFEEL_NAFKMFKGKPN,
-        FeatureSwitchType::BLOHGFCFEEL_OIAKLFCDFCK,
-        FeatureSwitchType::BLOHGFCFEEL_KFILNDOMNAA,
-        FeatureSwitchType::BLOHGFCFEEL_OBEDFFDLDKD,
-        FeatureSwitchType::BLOHGFCFEEL_FHJBILODKOO,
-        FeatureSwitchType::BLOHGFCFEEL_IBKCCGOBPLK,
-        FeatureSwitchType::BLOHGFCFEEL_MJHMECNJIFB,
-        FeatureSwitchType::BLOHGFCFEEL_GIFAIEODMBC,
-        FeatureSwitchType::BLOHGFCFEEL_GALJOECHLAA,
-        FeatureSwitchType::BLOHGFCFEEL_NHEFHKBDCMC,
-        FeatureSwitchType::BLOHGFCFEEL_CKNEFAPKNBD,
-        FeatureSwitchType::BLOHGFCFEEL_FJKMNDDEKOA,
-        FeatureSwitchType::BLOHGFCFEEL_FFNGHDIANMA,
-        FeatureSwitchType::BLOHGFCFEEL_KEEENOCCNND,
-        FeatureSwitchType::BLOHGFCFEEL_GPLCBDBKCPD,
-        FeatureSwitchType::BLOHGFCFEEL_KEFJFJDBPKG,
-        FeatureSwitchType::BLOHGFCFEEL_ACFLOIONODA,
-        FeatureSwitchType::BLOHGFCFEEL_OPGDDDOGGOE,
-        FeatureSwitchType::BLOHGFCFEEL_OMBHMDBLDEJ,
-        FeatureSwitchType::BLOHGFCFEEL_NCIHPLBABNC,
-        FeatureSwitchType::BLOHGFCFEEL_AKGLHLMIKMM,
-        FeatureSwitchType::BLOHGFCFEEL_BCLMECHBIKB,
-        FeatureSwitchType::BLOHGFCFEEL_GEBMCAOAIEJ,
-        FeatureSwitchType::BLOHGFCFEEL_EGGIGABAHPO,
-        FeatureSwitchType::BLOHGFCFEEL_KJMDGIIOPOO,
-        FeatureSwitchType::BLOHGFCFEEL_FCJAFAGBGLG,
-        FeatureSwitchType::BLOHGFCFEEL_KNGBCAFGALI,
-        FeatureSwitchType::BLOHGFCFEEL_HGGNFJCKBDA,
-        FeatureSwitchType::BLOHGFCFEEL_FANNNOPGFBB,
-        FeatureSwitchType::BLOHGFCFEEL_BFJNFBIJINB,
-        FeatureSwitchType::BLOHGFCFEEL_JGKMCBGFJLL,
-        FeatureSwitchType::BLOHGFCFEEL_AJBAFCAMEMH,
-        FeatureSwitchType::BLOHGFCFEEL_OCDKAOGLBPC,
-        FeatureSwitchType::BLOHGFCFEEL_NCHIOPJLMFE,
-        FeatureSwitchType::BLOHGFCFEEL_POEHEEKBHLH,
-        FeatureSwitchType::BLOHGFCFEEL_EBGFEKLFJDB,
-        FeatureSwitchType::BLOHGFCFEEL_JOJLKCIGHAJ,
-        FeatureSwitchType::BLOHGFCFEEL_IGBCOPCFPAI,
-        FeatureSwitchType::BLOHGFCFEEL_GAFEEBBCOEK,
-        FeatureSwitchType::BLOHGFCFEEL_COOFLDLKDFM,
-        FeatureSwitchType::BLOHGFCFEEL_KNMALPBJLJL,
-        FeatureSwitchType::BLOHGFCFEEL_IPDDHMBDLJI,
-        FeatureSwitchType::BLOHGFCFEEL_ANCKMNILOCG,
-        FeatureSwitchType::BLOHGFCFEEL_KACOHBEJFOD,
-        FeatureSwitchType::BLOHGFCFEEL_KGMKFOPKJPK,
-        FeatureSwitchType::BLOHGFCFEEL_HBMLKNFMGEN,
-        FeatureSwitchType::BLOHGFCFEEL_AFNFHMPAPFN,
-        FeatureSwitchType::BLOHGFCFEEL_MOMBNANDPNO,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchNone,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchShop,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchLineupName,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchRechargeShop,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchNickname,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchSignature,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchBattlepass,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchPunkLord,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchMonthcardDaily,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchPictureShare,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogue,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchChallenge,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchCocoon,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchRaid,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchMazePlaneEvent,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchActivityPanel,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchMailbox,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchQuest,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchGacha,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchChat,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchModifyFriendAlias,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchUseItem,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchActivitySchedule,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchFarmElement,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchAchievementLevel,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchDailyActiveLevel,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchPlayerReturn,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchFirstSetNickname,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchMainMissionReward,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchSubMissionReward,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchPamMission,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchDestroyItem,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchConsumeItemTurn,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueModifier,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchChessRogue,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchChessRogueBoard,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchRollShop,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchH5Return,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchOffering,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchServerRedPoint,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchMonopolyOptionRatio,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchMonopolyGetRaffleTicket,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchMonopolyTakeRaffleReward,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchChallengeRecommendLineup,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchPsnMemberShipCheck,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchPlayerBoardDevelopment,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchPvp,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueMode,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueTournUgc,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicFilterPlanName,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchMazeItemUseBuffDrop,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchRedDot,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchGameStateService,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchBenefitIndex,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueTournBuildRef,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchPreAvatarSetGrowthTarget,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchImportRelicFilterPlan,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchGachaDecideItem,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchItemSync,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchRechargeBenefit,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchRechargeGift,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueTournBuildRefShareCode,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchGachaAvatarToast,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueTournBuildRefShareCodeRename,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicSmartDiscard,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchPlanetfesSocial,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicReforge,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicCompose,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicDecompose,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueTournCocoon,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchItemCompose,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchGrowMaterialAutoComplete,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchSkipPerformance,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchFate,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchFateAvatarHandbook,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchElfRestaurant,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchBattleTimeoutLegal,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchHipplen,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchHipplenEffect,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchReplayPerformance,
+        FeatureSwitchType::H_fef37035,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicBox,
+        FeatureSwitchType::H_78868128,
+        FeatureSwitchType::H_eb0c1fcf,
+        FeatureSwitchType::H_e5dfd291,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchBanGotoPage,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchReportSensitiveWordCheck,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchAvatarSkinId,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchAiPam,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchBattleCheckPass,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchIdleLiveCustomTitle,
+        FeatureSwitchType::H_24da5caa,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchSocialPlay,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicPresetPlanName,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchOutfitPreview,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueProcessorQueueCutting,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchChooseDelivery,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchUnlockContentPackage,
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchAcceleratePerformance,
     ];
 }
 
@@ -550,104 +555,105 @@ impl ::protobuf::EnumFull for FeatureSwitchType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            FeatureSwitchType::BLOHGFCFEEL_OLLFDOONPPH => 0,
-            FeatureSwitchType::BLOHGFCFEEL_CMPBOEFPAFF => 1,
-            FeatureSwitchType::BLOHGFCFEEL_NPMMMJEABDA => 2,
-            FeatureSwitchType::BLOHGFCFEEL_LDFMLGODBCI => 3,
-            FeatureSwitchType::BLOHGFCFEEL_IMFCEBAFAOD => 4,
-            FeatureSwitchType::BLOHGFCFEEL_PMJOGFFOGGA => 5,
-            FeatureSwitchType::BLOHGFCFEEL_GMGNBIKFFJG => 6,
-            FeatureSwitchType::BLOHGFCFEEL_NEHKLAFBDHN => 7,
-            FeatureSwitchType::BLOHGFCFEEL_CJLCHBBLENG => 8,
-            FeatureSwitchType::BLOHGFCFEEL_JNKNFAIIGMK => 9,
-            FeatureSwitchType::BLOHGFCFEEL_GMKIADNCPNI => 10,
-            FeatureSwitchType::BLOHGFCFEEL_MGICOLCGDAB => 11,
-            FeatureSwitchType::BLOHGFCFEEL_NGPACINNIMD => 12,
-            FeatureSwitchType::BLOHGFCFEEL_OAIEBHMHLEP => 13,
-            FeatureSwitchType::BLOHGFCFEEL_FIPDOKKDAAC => 14,
-            FeatureSwitchType::BLOHGFCFEEL_APHDKDPMEFF => 15,
-            FeatureSwitchType::BLOHGFCFEEL_PIFHPBHFBOB => 16,
-            FeatureSwitchType::BLOHGFCFEEL_EGGFIKODABA => 17,
-            FeatureSwitchType::BLOHGFCFEEL_PHOKAODFGGN => 18,
-            FeatureSwitchType::BLOHGFCFEEL_DDJKAMDEFOB => 19,
-            FeatureSwitchType::BLOHGFCFEEL_BFNCHIOOEGI => 20,
-            FeatureSwitchType::BLOHGFCFEEL_EAKICFJGJCG => 21,
-            FeatureSwitchType::BLOHGFCFEEL_JLJGFFJBMAP => 22,
-            FeatureSwitchType::BLOHGFCFEEL_DBMIBEJDGNK => 23,
-            FeatureSwitchType::BLOHGFCFEEL_LIHGIPDAMEE => 24,
-            FeatureSwitchType::BLOHGFCFEEL_PBMEFECMLBN => 25,
-            FeatureSwitchType::BLOHGFCFEEL_NJIBBLDHBPA => 26,
-            FeatureSwitchType::BLOHGFCFEEL_JNOJKPFDENE => 27,
-            FeatureSwitchType::BLOHGFCFEEL_HHNGOAPLCAJ => 28,
-            FeatureSwitchType::BLOHGFCFEEL_PJIADEFEOCE => 29,
-            FeatureSwitchType::BLOHGFCFEEL_ELJKDENKLBB => 30,
-            FeatureSwitchType::BLOHGFCFEEL_HPHLHNECBNC => 31,
-            FeatureSwitchType::BLOHGFCFEEL_ODBDMOCCODH => 32,
-            FeatureSwitchType::BLOHGFCFEEL_CACHILIJDAO => 33,
-            FeatureSwitchType::BLOHGFCFEEL_AEILDNIMLHF => 34,
-            FeatureSwitchType::BLOHGFCFEEL_PNLHBBLODFA => 35,
-            FeatureSwitchType::BLOHGFCFEEL_FJBIEBHJGON => 36,
-            FeatureSwitchType::BLOHGFCFEEL_AOJPPBMCIEJ => 37,
-            FeatureSwitchType::BLOHGFCFEEL_MEEHJJDBMKP => 38,
-            FeatureSwitchType::BLOHGFCFEEL_ODPBAGEBPGL => 39,
-            FeatureSwitchType::BLOHGFCFEEL_MIJANGMGPKL => 40,
-            FeatureSwitchType::BLOHGFCFEEL_CGHNMCHABLO => 41,
-            FeatureSwitchType::BLOHGFCFEEL_FBKIFMKMLNO => 42,
-            FeatureSwitchType::BLOHGFCFEEL_HLFPEFNLMLE => 43,
-            FeatureSwitchType::BLOHGFCFEEL_BIFDPCPBGLN => 44,
-            FeatureSwitchType::BLOHGFCFEEL_DCPIMKDCFLE => 45,
-            FeatureSwitchType::BLOHGFCFEEL_KJDBBPEHCNO => 46,
-            FeatureSwitchType::BLOHGFCFEEL_NIBGLJHFMNO => 47,
-            FeatureSwitchType::BLOHGFCFEEL_HOPBLPLCJLO => 48,
-            FeatureSwitchType::BLOHGFCFEEL_FOHOHLFLEEJ => 49,
-            FeatureSwitchType::BLOHGFCFEEL_NAFKMFKGKPN => 50,
-            FeatureSwitchType::BLOHGFCFEEL_OIAKLFCDFCK => 51,
-            FeatureSwitchType::BLOHGFCFEEL_KFILNDOMNAA => 52,
-            FeatureSwitchType::BLOHGFCFEEL_OBEDFFDLDKD => 53,
-            FeatureSwitchType::BLOHGFCFEEL_FHJBILODKOO => 54,
-            FeatureSwitchType::BLOHGFCFEEL_IBKCCGOBPLK => 55,
-            FeatureSwitchType::BLOHGFCFEEL_MJHMECNJIFB => 56,
-            FeatureSwitchType::BLOHGFCFEEL_GIFAIEODMBC => 57,
-            FeatureSwitchType::BLOHGFCFEEL_GALJOECHLAA => 58,
-            FeatureSwitchType::BLOHGFCFEEL_NHEFHKBDCMC => 59,
-            FeatureSwitchType::BLOHGFCFEEL_CKNEFAPKNBD => 60,
-            FeatureSwitchType::BLOHGFCFEEL_FJKMNDDEKOA => 61,
-            FeatureSwitchType::BLOHGFCFEEL_FFNGHDIANMA => 62,
-            FeatureSwitchType::BLOHGFCFEEL_KEEENOCCNND => 63,
-            FeatureSwitchType::BLOHGFCFEEL_GPLCBDBKCPD => 64,
-            FeatureSwitchType::BLOHGFCFEEL_KEFJFJDBPKG => 65,
-            FeatureSwitchType::BLOHGFCFEEL_ACFLOIONODA => 66,
-            FeatureSwitchType::BLOHGFCFEEL_OPGDDDOGGOE => 67,
-            FeatureSwitchType::BLOHGFCFEEL_OMBHMDBLDEJ => 68,
-            FeatureSwitchType::BLOHGFCFEEL_NCIHPLBABNC => 69,
-            FeatureSwitchType::BLOHGFCFEEL_AKGLHLMIKMM => 70,
-            FeatureSwitchType::BLOHGFCFEEL_BCLMECHBIKB => 71,
-            FeatureSwitchType::BLOHGFCFEEL_GEBMCAOAIEJ => 72,
-            FeatureSwitchType::BLOHGFCFEEL_EGGIGABAHPO => 73,
-            FeatureSwitchType::BLOHGFCFEEL_KJMDGIIOPOO => 74,
-            FeatureSwitchType::BLOHGFCFEEL_FCJAFAGBGLG => 75,
-            FeatureSwitchType::BLOHGFCFEEL_KNGBCAFGALI => 76,
-            FeatureSwitchType::BLOHGFCFEEL_HGGNFJCKBDA => 77,
-            FeatureSwitchType::BLOHGFCFEEL_FANNNOPGFBB => 78,
-            FeatureSwitchType::BLOHGFCFEEL_BFJNFBIJINB => 79,
-            FeatureSwitchType::BLOHGFCFEEL_JGKMCBGFJLL => 80,
-            FeatureSwitchType::BLOHGFCFEEL_AJBAFCAMEMH => 81,
-            FeatureSwitchType::BLOHGFCFEEL_OCDKAOGLBPC => 82,
-            FeatureSwitchType::BLOHGFCFEEL_NCHIOPJLMFE => 83,
-            FeatureSwitchType::BLOHGFCFEEL_POEHEEKBHLH => 84,
-            FeatureSwitchType::BLOHGFCFEEL_EBGFEKLFJDB => 85,
-            FeatureSwitchType::BLOHGFCFEEL_JOJLKCIGHAJ => 86,
-            FeatureSwitchType::BLOHGFCFEEL_IGBCOPCFPAI => 87,
-            FeatureSwitchType::BLOHGFCFEEL_GAFEEBBCOEK => 88,
-            FeatureSwitchType::BLOHGFCFEEL_COOFLDLKDFM => 89,
-            FeatureSwitchType::BLOHGFCFEEL_KNMALPBJLJL => 90,
-            FeatureSwitchType::BLOHGFCFEEL_IPDDHMBDLJI => 91,
-            FeatureSwitchType::BLOHGFCFEEL_ANCKMNILOCG => 92,
-            FeatureSwitchType::BLOHGFCFEEL_KACOHBEJFOD => 93,
-            FeatureSwitchType::BLOHGFCFEEL_KGMKFOPKJPK => 94,
-            FeatureSwitchType::BLOHGFCFEEL_HBMLKNFMGEN => 95,
-            FeatureSwitchType::BLOHGFCFEEL_AFNFHMPAPFN => 96,
-            FeatureSwitchType::BLOHGFCFEEL_MOMBNANDPNO => 97,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchNone => 0,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchShop => 1,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchLineupName => 2,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchRechargeShop => 3,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchNickname => 4,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchSignature => 5,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchBattlepass => 6,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchPunkLord => 7,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchMonthcardDaily => 8,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchPictureShare => 9,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogue => 10,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchChallenge => 11,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchCocoon => 12,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchRaid => 13,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchMazePlaneEvent => 14,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchActivityPanel => 15,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchMailbox => 16,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchQuest => 17,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchGacha => 18,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchChat => 19,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchModifyFriendAlias => 20,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchUseItem => 21,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchActivitySchedule => 22,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchFarmElement => 23,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchAchievementLevel => 24,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchDailyActiveLevel => 25,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchPlayerReturn => 26,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchFirstSetNickname => 27,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchMainMissionReward => 28,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchSubMissionReward => 29,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchPamMission => 30,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchDestroyItem => 31,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchConsumeItemTurn => 32,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueModifier => 33,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchChessRogue => 34,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchChessRogueBoard => 35,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchRollShop => 36,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchH5Return => 37,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchOffering => 38,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchServerRedPoint => 39,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchMonopolyOptionRatio => 40,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchMonopolyGetRaffleTicket => 41,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchMonopolyTakeRaffleReward => 42,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchChallengeRecommendLineup => 43,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchPsnMemberShipCheck => 44,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchPlayerBoardDevelopment => 45,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchPvp => 46,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueMode => 47,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueTournUgc => 48,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicFilterPlanName => 49,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchMazeItemUseBuffDrop => 50,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchRedDot => 51,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchGameStateService => 52,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchBenefitIndex => 53,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueTournBuildRef => 54,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchPreAvatarSetGrowthTarget => 55,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchImportRelicFilterPlan => 56,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchGachaDecideItem => 57,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchItemSync => 58,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchRechargeBenefit => 59,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchRechargeGift => 60,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueTournBuildRefShareCode => 61,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchGachaAvatarToast => 62,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueTournBuildRefShareCodeRename => 63,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicSmartDiscard => 64,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchPlanetfesSocial => 65,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicReforge => 66,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicCompose => 67,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicDecompose => 68,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueTournCocoon => 69,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchItemCompose => 70,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchGrowMaterialAutoComplete => 71,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchSkipPerformance => 72,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchFate => 73,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchFateAvatarHandbook => 74,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchElfRestaurant => 75,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchBattleTimeoutLegal => 76,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchHipplen => 77,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchHipplenEffect => 78,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchReplayPerformance => 79,
+            FeatureSwitchType::H_fef37035 => 80,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicBox => 81,
+            FeatureSwitchType::H_78868128 => 82,
+            FeatureSwitchType::H_eb0c1fcf => 83,
+            FeatureSwitchType::H_e5dfd291 => 84,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchBanGotoPage => 85,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchReportSensitiveWordCheck => 86,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchAvatarSkinId => 87,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchAiPam => 88,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchBattleCheckPass => 89,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchIdleLiveCustomTitle => 90,
+            FeatureSwitchType::H_24da5caa => 91,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchSocialPlay => 92,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicPresetPlanName => 93,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchOutfitPreview => 94,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchRogueProcessorQueueCutting => 95,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchChooseDelivery => 96,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchUnlockContentPackage => 97,
+            FeatureSwitchType::FeatureSwitchType_FeatureSwitchAcceleratePerformance => 98,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -655,7 +661,7 @@ impl ::protobuf::EnumFull for FeatureSwitchType {
 
 impl ::std::default::Default for FeatureSwitchType {
     fn default() -> Self {
-        FeatureSwitchType::BLOHGFCFEEL_OLLFDOONPPH
+        FeatureSwitchType::FeatureSwitchType_FeatureSwitchNone
     }
 }
 
@@ -666,67 +672,86 @@ impl FeatureSwitchType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17FeatureSwitchType.proto*\xad\x16\n\x11FeatureSwitchType\x12\x1b\n\
-    \x17BLOHGFCFEEL_OLLFDOONPPH\x10\0\x12\x1b\n\x17BLOHGFCFEEL_CMPBOEFPAFF\
-    \x10\x01\x12\x1b\n\x17BLOHGFCFEEL_NPMMMJEABDA\x10\x02\x12\x1b\n\x17BLOHG\
-    FCFEEL_LDFMLGODBCI\x10\x03\x12\x1b\n\x17BLOHGFCFEEL_IMFCEBAFAOD\x10\x04\
-    \x12\x1b\n\x17BLOHGFCFEEL_PMJOGFFOGGA\x10\x05\x12\x1b\n\x17BLOHGFCFEEL_G\
-    MGNBIKFFJG\x10\x06\x12\x1b\n\x17BLOHGFCFEEL_NEHKLAFBDHN\x10\x07\x12\x1b\
-    \n\x17BLOHGFCFEEL_CJLCHBBLENG\x10\x08\x12\x1b\n\x17BLOHGFCFEEL_JNKNFAIIG\
-    MK\x10\t\x12\x1b\n\x17BLOHGFCFEEL_GMKIADNCPNI\x10\n\x12\x1b\n\x17BLOHGFC\
-    FEEL_MGICOLCGDAB\x10\x0b\x12\x1b\n\x17BLOHGFCFEEL_NGPACINNIMD\x10\x0c\
-    \x12\x1b\n\x17BLOHGFCFEEL_OAIEBHMHLEP\x10\r\x12\x1b\n\x17BLOHGFCFEEL_FIP\
-    DOKKDAAC\x10\x0e\x12\x1b\n\x17BLOHGFCFEEL_APHDKDPMEFF\x10\x0f\x12\x1b\n\
-    \x17BLOHGFCFEEL_PIFHPBHFBOB\x10\x10\x12\x1b\n\x17BLOHGFCFEEL_EGGFIKODABA\
-    \x10\x11\x12\x1b\n\x17BLOHGFCFEEL_PHOKAODFGGN\x10\x12\x12\x1b\n\x17BLOHG\
-    FCFEEL_DDJKAMDEFOB\x10\x13\x12\x1b\n\x17BLOHGFCFEEL_BFNCHIOOEGI\x10\x14\
-    \x12\x1b\n\x17BLOHGFCFEEL_EAKICFJGJCG\x10\x15\x12\x1b\n\x17BLOHGFCFEEL_J\
-    LJGFFJBMAP\x10\x16\x12\x1b\n\x17BLOHGFCFEEL_DBMIBEJDGNK\x10\x17\x12\x1b\
-    \n\x17BLOHGFCFEEL_LIHGIPDAMEE\x10\x18\x12\x1b\n\x17BLOHGFCFEEL_PBMEFECML\
-    BN\x10\x19\x12\x1b\n\x17BLOHGFCFEEL_NJIBBLDHBPA\x10\x1a\x12\x1b\n\x17BLO\
-    HGFCFEEL_JNOJKPFDENE\x10\x1b\x12\x1b\n\x17BLOHGFCFEEL_HHNGOAPLCAJ\x10\
-    \x1c\x12\x1b\n\x17BLOHGFCFEEL_PJIADEFEOCE\x10\x1d\x12\x1b\n\x17BLOHGFCFE\
-    EL_ELJKDENKLBB\x10\x1e\x12\x1b\n\x17BLOHGFCFEEL_HPHLHNECBNC\x10\x20\x12\
-    \x1b\n\x17BLOHGFCFEEL_ODBDMOCCODH\x10!\x12\x1b\n\x17BLOHGFCFEEL_CACHILIJ\
-    DAO\x10\"\x12\x1b\n\x17BLOHGFCFEEL_AEILDNIMLHF\x10#\x12\x1b\n\x17BLOHGFC\
-    FEEL_PNLHBBLODFA\x10$\x12\x1b\n\x17BLOHGFCFEEL_FJBIEBHJGON\x10%\x12\x1b\
-    \n\x17BLOHGFCFEEL_AOJPPBMCIEJ\x10&\x12\x1b\n\x17BLOHGFCFEEL_MEEHJJDBMKP\
-    \x10'\x12\x1b\n\x17BLOHGFCFEEL_ODPBAGEBPGL\x10(\x12\x1b\n\x17BLOHGFCFEEL\
-    _MIJANGMGPKL\x10)\x12\x1b\n\x17BLOHGFCFEEL_CGHNMCHABLO\x10*\x12\x1b\n\
-    \x17BLOHGFCFEEL_FBKIFMKMLNO\x10+\x12\x1b\n\x17BLOHGFCFEEL_HLFPEFNLMLE\
-    \x10,\x12\x1b\n\x17BLOHGFCFEEL_BIFDPCPBGLN\x10-\x12\x1b\n\x17BLOHGFCFEEL\
-    _DCPIMKDCFLE\x10.\x12\x1b\n\x17BLOHGFCFEEL_KJDBBPEHCNO\x10/\x12\x1b\n\
-    \x17BLOHGFCFEEL_NIBGLJHFMNO\x100\x12\x1b\n\x17BLOHGFCFEEL_HOPBLPLCJLO\
-    \x101\x12\x1b\n\x17BLOHGFCFEEL_FOHOHLFLEEJ\x102\x12\x1b\n\x17BLOHGFCFEEL\
-    _NAFKMFKGKPN\x103\x12\x1b\n\x17BLOHGFCFEEL_OIAKLFCDFCK\x104\x12\x1b\n\
-    \x17BLOHGFCFEEL_KFILNDOMNAA\x105\x12\x1b\n\x17BLOHGFCFEEL_OBEDFFDLDKD\
-    \x106\x12\x1b\n\x17BLOHGFCFEEL_FHJBILODKOO\x107\x12\x1b\n\x17BLOHGFCFEEL\
-    _IBKCCGOBPLK\x108\x12\x1b\n\x17BLOHGFCFEEL_MJHMECNJIFB\x10:\x12\x1b\n\
-    \x17BLOHGFCFEEL_GIFAIEODMBC\x10;\x12\x1b\n\x17BLOHGFCFEEL_GALJOECHLAA\
-    \x10<\x12\x1b\n\x17BLOHGFCFEEL_NHEFHKBDCMC\x10=\x12\x1b\n\x17BLOHGFCFEEL\
-    _CKNEFAPKNBD\x10>\x12\x1b\n\x17BLOHGFCFEEL_FJKMNDDEKOA\x10?\x12\x1b\n\
-    \x17BLOHGFCFEEL_FFNGHDIANMA\x10@\x12\x1b\n\x17BLOHGFCFEEL_KEEENOCCNND\
-    \x10A\x12\x1b\n\x17BLOHGFCFEEL_GPLCBDBKCPD\x10B\x12\x1b\n\x17BLOHGFCFEEL\
-    _KEFJFJDBPKG\x10C\x12\x1b\n\x17BLOHGFCFEEL_ACFLOIONODA\x10D\x12\x1b\n\
-    \x17BLOHGFCFEEL_OPGDDDOGGOE\x10E\x12\x1b\n\x17BLOHGFCFEEL_OMBHMDBLDEJ\
-    \x10F\x12\x1b\n\x17BLOHGFCFEEL_NCIHPLBABNC\x10G\x12\x1b\n\x17BLOHGFCFEEL\
-    _AKGLHLMIKMM\x10H\x12\x1b\n\x17BLOHGFCFEEL_BCLMECHBIKB\x10I\x12\x1b\n\
-    \x17BLOHGFCFEEL_GEBMCAOAIEJ\x10J\x12\x1b\n\x17BLOHGFCFEEL_EGGIGABAHPO\
-    \x10K\x12\x1b\n\x17BLOHGFCFEEL_KJMDGIIOPOO\x10L\x12\x1b\n\x17BLOHGFCFEEL\
-    _FCJAFAGBGLG\x10M\x12\x1b\n\x17BLOHGFCFEEL_KNGBCAFGALI\x10N\x12\x1b\n\
-    \x17BLOHGFCFEEL_HGGNFJCKBDA\x10O\x12\x1b\n\x17BLOHGFCFEEL_FANNNOPGFBB\
-    \x10P\x12\x1b\n\x17BLOHGFCFEEL_BFJNFBIJINB\x10Q\x12\x1b\n\x17BLOHGFCFEEL\
-    _JGKMCBGFJLL\x10R\x12\x1b\n\x17BLOHGFCFEEL_AJBAFCAMEMH\x10S\x12\x1b\n\
-    \x17BLOHGFCFEEL_OCDKAOGLBPC\x10T\x12\x1b\n\x17BLOHGFCFEEL_NCHIOPJLMFE\
-    \x10U\x12\x1b\n\x17BLOHGFCFEEL_POEHEEKBHLH\x10V\x12\x1b\n\x17BLOHGFCFEEL\
-    _EBGFEKLFJDB\x10W\x12\x1b\n\x17BLOHGFCFEEL_JOJLKCIGHAJ\x10X\x12\x1b\n\
-    \x17BLOHGFCFEEL_IGBCOPCFPAI\x10Y\x12\x1b\n\x17BLOHGFCFEEL_GAFEEBBCOEK\
-    \x10Z\x12\x1b\n\x17BLOHGFCFEEL_COOFLDLKDFM\x10[\x12\x1b\n\x17BLOHGFCFEEL\
-    _KNMALPBJLJL\x10\\\x12\x1b\n\x17BLOHGFCFEEL_IPDDHMBDLJI\x10]\x12\x1b\n\
-    \x17BLOHGFCFEEL_ANCKMNILOCG\x10^\x12\x1b\n\x17BLOHGFCFEEL_KACOHBEJFOD\
-    \x10_\x12\x1b\n\x17BLOHGFCFEEL_KGMKFOPKJPK\x10`\x12\x1b\n\x17BLOHGFCFEEL\
-    _HBMLKNFMGEN\x10a\x12\x1b\n\x17BLOHGFCFEEL_AFNFHMPAPFN\x10b\x12\x1b\n\
-    \x17BLOHGFCFEEL_MOMBNANDPNO\x10cb\x06proto3\
+    \n\x17FeatureSwitchType.proto*\xf7%\n\x11FeatureSwitchType\x12'\n#Featur\
+    eSwitchType_FeatureSwitchNone\x10\0\x12'\n#FeatureSwitchType_FeatureSwit\
+    chShop\x10\x01\x12-\n)FeatureSwitchType_FeatureSwitchLineupName\x10\x02\
+    \x12/\n+FeatureSwitchType_FeatureSwitchRechargeShop\x10\x03\x12+\n'Featu\
+    reSwitchType_FeatureSwitchNickname\x10\x04\x12,\n(FeatureSwitchType_Feat\
+    ureSwitchSignature\x10\x05\x12-\n)FeatureSwitchType_FeatureSwitchBattlep\
+    ass\x10\x06\x12+\n'FeatureSwitchType_FeatureSwitchPunkLord\x10\x07\x121\
+    \n-FeatureSwitchType_FeatureSwitchMonthcardDaily\x10\x08\x12/\n+FeatureS\
+    witchType_FeatureSwitchPictureShare\x10\t\x12(\n$FeatureSwitchType_Featu\
+    reSwitchRogue\x10\n\x12,\n(FeatureSwitchType_FeatureSwitchChallenge\x10\
+    \x0b\x12)\n%FeatureSwitchType_FeatureSwitchCocoon\x10\x0c\x12'\n#Feature\
+    SwitchType_FeatureSwitchRaid\x10\r\x121\n-FeatureSwitchType_FeatureSwitc\
+    hMazePlaneEvent\x10\x0e\x120\n,FeatureSwitchType_FeatureSwitchActivityPa\
+    nel\x10\x0f\x12*\n&FeatureSwitchType_FeatureSwitchMailbox\x10\x10\x12(\n\
+    $FeatureSwitchType_FeatureSwitchQuest\x10\x11\x12(\n$FeatureSwitchType_F\
+    eatureSwitchGacha\x10\x12\x12'\n#FeatureSwitchType_FeatureSwitchChat\x10\
+    \x13\x124\n0FeatureSwitchType_FeatureSwitchModifyFriendAlias\x10\x14\x12\
+    *\n&FeatureSwitchType_FeatureSwitchUseItem\x10\x15\x123\n/FeatureSwitchT\
+    ype_FeatureSwitchActivitySchedule\x10\x16\x12.\n*FeatureSwitchType_Featu\
+    reSwitchFarmElement\x10\x17\x123\n/FeatureSwitchType_FeatureSwitchAchiev\
+    ementLevel\x10\x18\x123\n/FeatureSwitchType_FeatureSwitchDailyActiveLeve\
+    l\x10\x19\x12/\n+FeatureSwitchType_FeatureSwitchPlayerReturn\x10\x1a\x12\
+    3\n/FeatureSwitchType_FeatureSwitchFirstSetNickname\x10\x1b\x124\n0Featu\
+    reSwitchType_FeatureSwitchMainMissionReward\x10\x1c\x123\n/FeatureSwitch\
+    Type_FeatureSwitchSubMissionReward\x10\x1d\x12-\n)FeatureSwitchType_Feat\
+    ureSwitchPamMission\x10\x1e\x12.\n*FeatureSwitchType_FeatureSwitchDestro\
+    yItem\x10\x20\x122\n.FeatureSwitchType_FeatureSwitchConsumeItemTurn\x10!\
+    \x120\n,FeatureSwitchType_FeatureSwitchRogueModifier\x10\"\x12-\n)Featur\
+    eSwitchType_FeatureSwitchChessRogue\x10#\x122\n.FeatureSwitchType_Featur\
+    eSwitchChessRogueBoard\x10$\x12+\n'FeatureSwitchType_FeatureSwitchRollSh\
+    op\x10%\x12+\n'FeatureSwitchType_FeatureSwitchH5Return\x10&\x12+\n'Featu\
+    reSwitchType_FeatureSwitchOffering\x10'\x121\n-FeatureSwitchType_Feature\
+    SwitchServerRedPoint\x10(\x126\n2FeatureSwitchType_FeatureSwitchMonopoly\
+    OptionRatio\x10)\x12:\n6FeatureSwitchType_FeatureSwitchMonopolyGetRaffle\
+    Ticket\x10*\x12;\n7FeatureSwitchType_FeatureSwitchMonopolyTakeRaffleRewa\
+    rd\x10+\x12;\n7FeatureSwitchType_FeatureSwitchChallengeRecommendLineup\
+    \x10,\x125\n1FeatureSwitchType_FeatureSwitchPsnMemberShipCheck\x10-\x129\
+    \n5FeatureSwitchType_FeatureSwitchPlayerBoardDevelopment\x10.\x12&\n\"Fe\
+    atureSwitchType_FeatureSwitchPvp\x10/\x12,\n(FeatureSwitchType_FeatureSw\
+    itchRogueMode\x100\x120\n,FeatureSwitchType_FeatureSwitchRogueTournUgc\
+    \x101\x126\n2FeatureSwitchType_FeatureSwitchRelicFilterPlanName\x102\x12\
+    6\n2FeatureSwitchType_FeatureSwitchMazeItemUseBuffDrop\x103\x12)\n%Featu\
+    reSwitchType_FeatureSwitchRedDot\x104\x123\n/FeatureSwitchType_FeatureSw\
+    itchGameStateService\x105\x12/\n+FeatureSwitchType_FeatureSwitchBenefitI\
+    ndex\x106\x125\n1FeatureSwitchType_FeatureSwitchRogueTournBuildRef\x107\
+    \x12;\n7FeatureSwitchType_FeatureSwitchPreAvatarSetGrowthTarget\x108\x12\
+    8\n4FeatureSwitchType_FeatureSwitchImportRelicFilterPlan\x10:\x122\n.Fea\
+    tureSwitchType_FeatureSwitchGachaDecideItem\x10;\x12+\n'FeatureSwitchTyp\
+    e_FeatureSwitchItemSync\x10<\x122\n.FeatureSwitchType_FeatureSwitchRecha\
+    rgeBenefit\x10=\x12/\n+FeatureSwitchType_FeatureSwitchRechargeGift\x10>\
+    \x12>\n:FeatureSwitchType_FeatureSwitchRogueTournBuildRefShareCode\x10?\
+    \x123\n/FeatureSwitchType_FeatureSwitchGachaAvatarToast\x10@\x12D\n@Feat\
+    ureSwitchType_FeatureSwitchRogueTournBuildRefShareCodeRename\x10A\x124\n\
+    0FeatureSwitchType_FeatureSwitchRelicSmartDiscard\x10B\x122\n.FeatureSwi\
+    tchType_FeatureSwitchPlanetfesSocial\x10C\x12/\n+FeatureSwitchType_Featu\
+    reSwitchRelicReforge\x10D\x12/\n+FeatureSwitchType_FeatureSwitchRelicCom\
+    pose\x10E\x121\n-FeatureSwitchType_FeatureSwitchRelicDecompose\x10F\x123\
+    \n/FeatureSwitchType_FeatureSwitchRogueTournCocoon\x10G\x12.\n*FeatureSw\
+    itchType_FeatureSwitchItemCompose\x10H\x12;\n7FeatureSwitchType_FeatureS\
+    witchGrowMaterialAutoComplete\x10I\x122\n.FeatureSwitchType_FeatureSwitc\
+    hSkipPerformance\x10J\x12'\n#FeatureSwitchType_FeatureSwitchFate\x10K\
+    \x125\n1FeatureSwitchType_FeatureSwitchFateAvatarHandbook\x10L\x120\n,Fe\
+    atureSwitchType_FeatureSwitchElfRestaurant\x10M\x125\n1FeatureSwitchType\
+    _FeatureSwitchBattleTimeoutLegal\x10N\x12*\n&FeatureSwitchType_FeatureSw\
+    itchHipplen\x10O\x120\n,FeatureSwitchType_FeatureSwitchHipplenEffect\x10\
+    P\x124\n0FeatureSwitchType_FeatureSwitchReplayPerformance\x10Q\x12\x0e\n\
+    \nH_fef37035\x10R\x12+\n'FeatureSwitchType_FeatureSwitchRelicBox\x10S\
+    \x12\x0e\n\nH_78868128\x10T\x12\x0e\n\nH_eb0c1fcf\x10U\x12\x0e\n\nH_e5df\
+    d291\x10V\x12.\n*FeatureSwitchType_FeatureSwitchBanGotoPage\x10W\x12;\n7\
+    FeatureSwitchType_FeatureSwitchReportSensitiveWordCheck\x10X\x12/\n+Feat\
+    ureSwitchType_FeatureSwitchAvatarSkinId\x10Y\x12(\n$FeatureSwitchType_Fe\
+    atureSwitchAiPam\x10Z\x122\n.FeatureSwitchType_FeatureSwitchBattleCheckP\
+    ass\x10[\x126\n2FeatureSwitchType_FeatureSwitchIdleLiveCustomTitle\x10\\\
+    \x12\x0e\n\nH_24da5caa\x10]\x12-\n)FeatureSwitchType_FeatureSwitchSocial\
+    Play\x10^\x126\n2FeatureSwitchType_FeatureSwitchRelicPresetPlanName\x10_\
+    \x120\n,FeatureSwitchType_FeatureSwitchOutfitPreview\x10`\x12=\n9Feature\
+    SwitchType_FeatureSwitchRogueProcessorQueueCutting\x10a\x121\n-FeatureSw\
+    itchType_FeatureSwitchChooseDelivery\x10b\x127\n3FeatureSwitchType_Featu\
+    reSwitchUnlockContentPackage\x10c\x128\n4FeatureSwitchType_FeatureSwitch\
+    AcceleratePerformance\x10fb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

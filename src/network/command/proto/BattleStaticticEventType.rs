@@ -31,8 +31,8 @@ pub enum BattleStaticticEventType {
     BATTLE_STATICTIC_EVENT_NONE = 0,
     // @@protoc_insertion_point(enum_value:BattleStaticticEventType.BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_ADD_EXPLORE)
     BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_ADD_EXPLORE = 1,
-    // @@protoc_insertion_point(enum_value:BattleStaticticEventType.BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_OPEN_GRID)
-    BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_OPEN_GRID = 2,
+    // @@protoc_insertion_point(enum_value:BattleStaticticEventType.H_c4327409)
+    H_c4327409 = 2,
     // @@protoc_insertion_point(enum_value:BattleStaticticEventType.BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_PICKUP_ITEM)
     BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_PICKUP_ITEM = 3,
     // @@protoc_insertion_point(enum_value:BattleStaticticEventType.BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_USE_BUFF)
@@ -56,7 +56,7 @@ impl ::protobuf::Enum for BattleStaticticEventType {
         match value {
             0 => ::std::option::Option::Some(BattleStaticticEventType::BATTLE_STATICTIC_EVENT_NONE),
             1 => ::std::option::Option::Some(BattleStaticticEventType::BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_ADD_EXPLORE),
-            2 => ::std::option::Option::Some(BattleStaticticEventType::BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_OPEN_GRID),
+            2 => ::std::option::Option::Some(BattleStaticticEventType::H_c4327409),
             3 => ::std::option::Option::Some(BattleStaticticEventType::BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_PICKUP_ITEM),
             4 => ::std::option::Option::Some(BattleStaticticEventType::BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_USE_BUFF),
             5 => ::std::option::Option::Some(BattleStaticticEventType::BATTLE_STATICTIC_EVENT_TELEVISION_ACTIVITY_UPDATE_MAZE_BUFF_LAYER),
@@ -70,7 +70,7 @@ impl ::protobuf::Enum for BattleStaticticEventType {
         match str {
             "BATTLE_STATICTIC_EVENT_NONE" => ::std::option::Option::Some(BattleStaticticEventType::BATTLE_STATICTIC_EVENT_NONE),
             "BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_ADD_EXPLORE" => ::std::option::Option::Some(BattleStaticticEventType::BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_ADD_EXPLORE),
-            "BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_OPEN_GRID" => ::std::option::Option::Some(BattleStaticticEventType::BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_OPEN_GRID),
+            "H_c4327409" => ::std::option::Option::Some(BattleStaticticEventType::H_c4327409),
             "BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_PICKUP_ITEM" => ::std::option::Option::Some(BattleStaticticEventType::BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_PICKUP_ITEM),
             "BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_USE_BUFF" => ::std::option::Option::Some(BattleStaticticEventType::BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_USE_BUFF),
             "BATTLE_STATICTIC_EVENT_TELEVISION_ACTIVITY_UPDATE_MAZE_BUFF_LAYER" => ::std::option::Option::Some(BattleStaticticEventType::BATTLE_STATICTIC_EVENT_TELEVISION_ACTIVITY_UPDATE_MAZE_BUFF_LAYER),
@@ -83,7 +83,7 @@ impl ::protobuf::Enum for BattleStaticticEventType {
     const VALUES: &'static [BattleStaticticEventType] = &[
         BattleStaticticEventType::BATTLE_STATICTIC_EVENT_NONE,
         BattleStaticticEventType::BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_ADD_EXPLORE,
-        BattleStaticticEventType::BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_OPEN_GRID,
+        BattleStaticticEventType::H_c4327409,
         BattleStaticticEventType::BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_PICKUP_ITEM,
         BattleStaticticEventType::BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_USE_BUFF,
         BattleStaticticEventType::BATTLE_STATICTIC_EVENT_TELEVISION_ACTIVITY_UPDATE_MAZE_BUFF_LAYER,
@@ -117,15 +117,15 @@ impl BattleStaticticEventType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eBattleStaticticEventType.proto*\xd9\x03\n\x18BattleStaticticEventT\
+    \n\x1eBattleStaticticEventType.proto*\xb2\x03\n\x18BattleStaticticEventT\
     ype\x12\x1f\n\x1bBATTLE_STATICTIC_EVENT_NONE\x10\0\x127\n3BATTLE_STATICT\
-    IC_EVENT_TREASURE_DUNGEON_ADD_EXPLORE\x10\x01\x125\n1BATTLE_STATICTIC_EV\
-    ENT_TREASURE_DUNGEON_OPEN_GRID\x10\x02\x127\n3BATTLE_STATICTIC_EVENT_TRE\
-    ASURE_DUNGEON_PICKUP_ITEM\x10\x03\x124\n0BATTLE_STATICTIC_EVENT_TREASURE\
-    _DUNGEON_USE_BUFF\x10\x04\x12E\nABATTLE_STATICTIC_EVENT_TELEVISION_ACTIV\
-    ITY_UPDATE_MAZE_BUFF_LAYER\x10\x05\x127\n3BATTLE_STATICTIC_EVENT_ROGUE_T\
-    OURN_TITAN_EXTRA_COIN\x10\x06\x12=\n9BATTLE_STATICTIC_EVENT_ROGUE_TOURN_\
-    TITAN_EXTRA_COIN_TIMES\x10\x07b\x06proto3\
+    IC_EVENT_TREASURE_DUNGEON_ADD_EXPLORE\x10\x01\x12\x0e\n\nH_c4327409\x10\
+    \x02\x127\n3BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_PICKUP_ITEM\x10\x03\
+    \x124\n0BATTLE_STATICTIC_EVENT_TREASURE_DUNGEON_USE_BUFF\x10\x04\x12E\nA\
+    BATTLE_STATICTIC_EVENT_TELEVISION_ACTIVITY_UPDATE_MAZE_BUFF_LAYER\x10\
+    \x05\x127\n3BATTLE_STATICTIC_EVENT_ROGUE_TOURN_TITAN_EXTRA_COIN\x10\x06\
+    \x12=\n9BATTLE_STATICTIC_EVENT_ROGUE_TOURN_TITAN_EXTRA_COIN_TIMES\x10\
+    \x07b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

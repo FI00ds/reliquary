@@ -86,19 +86,19 @@ impl ::protobuf::Message for ENOBKLGCHOD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.NOEPBNMJFGL)?;
                 },
-                40 => {
+                8 => {
                     self.NOEPBNMJFGL.push(is.read_uint32()?);
                 },
-                66 => {
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.unfinished_story_line_id_list)?;
                 },
-                64 => {
+                88 => {
                     self.unfinished_story_line_id_list.push(is.read_uint32()?);
                 },
-                74 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MFEODNJNGDP)?;
                 },
                 tag => {
@@ -113,8 +113,8 @@ impl ::protobuf::Message for ENOBKLGCHOD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.NOEPBNMJFGL);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.unfinished_story_line_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.NOEPBNMJFGL);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.unfinished_story_line_id_list);
         if let Some(v) = self.MFEODNJNGDP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -125,10 +125,10 @@ impl ::protobuf::Message for ENOBKLGCHOD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.NOEPBNMJFGL)?;
-        os.write_repeated_packed_uint32(8, &self.unfinished_story_line_id_list)?;
+        os.write_repeated_packed_uint32(1, &self.NOEPBNMJFGL)?;
+        os.write_repeated_packed_uint32(11, &self.unfinished_story_line_id_list)?;
         if let Some(v) = self.MFEODNJNGDP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for ENOBKLGCHOD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ENOBKLGCHOD.proto\x1a\x11KCMFAIBMOHB.proto\"\xa1\x01\n\x0bENOBKLGC\
-    HOD\x12\x20\n\x0bNOEPBNMJFGL\x18\x05\x20\x03(\rR\x0bNOEPBNMJFGL\x12@\n\
-    \x1dunfinished_story_line_id_list\x18\x08\x20\x03(\rR\x19unfinishedStory\
-    LineIdList\x12.\n\x0bMFEODNJNGDP\x18\t\x20\x01(\x0b2\x0c.KCMFAIBMOHBR\
+    HOD\x12\x20\n\x0bNOEPBNMJFGL\x18\x01\x20\x03(\rR\x0bNOEPBNMJFGL\x12@\n\
+    \x1dunfinished_story_line_id_list\x18\x0b\x20\x03(\rR\x19unfinishedStory\
+    LineIdList\x12.\n\x0bMFEODNJNGDP\x18\x0c\x20\x01(\x0b2\x0c.KCMFAIBMOHBR\
     \x0bMFEODNJNGDPb\x06proto3\
 ";
 

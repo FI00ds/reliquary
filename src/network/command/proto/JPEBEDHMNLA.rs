@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JPEBEDHMNLA {
     // message fields
-    // @@protoc_insertion_point(field:JPEBEDHMNLA.unique_id)
-    pub unique_id: u32,
-    // @@protoc_insertion_point(field:JPEBEDHMNLA.pos)
-    pub pos: u32,
-    // @@protoc_insertion_point(field:JPEBEDHMNLA.grid_fight_equipment_id)
-    pub grid_fight_equipment_id: u32,
     // @@protoc_insertion_point(field:JPEBEDHMNLA.CCBIIDDBFGK)
     pub CCBIIDDBFGK: u32,
+    // @@protoc_insertion_point(field:JPEBEDHMNLA.pos_index)
+    pub pos_index: u32,
     // @@protoc_insertion_point(field:JPEBEDHMNLA.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:JPEBEDHMNLA.H_ac273741)
+    pub H_ac273741: u32,
+    // @@protoc_insertion_point(field:JPEBEDHMNLA.unique_id)
+    pub unique_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:JPEBEDHMNLA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,29 +58,29 @@ impl JPEBEDHMNLA {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unique_id",
-            |m: &JPEBEDHMNLA| { &m.unique_id },
-            |m: &mut JPEBEDHMNLA| { &mut m.unique_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "pos",
-            |m: &JPEBEDHMNLA| { &m.pos },
-            |m: &mut JPEBEDHMNLA| { &mut m.pos },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "grid_fight_equipment_id",
-            |m: &JPEBEDHMNLA| { &m.grid_fight_equipment_id },
-            |m: &mut JPEBEDHMNLA| { &mut m.grid_fight_equipment_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CCBIIDDBFGK",
             |m: &JPEBEDHMNLA| { &m.CCBIIDDBFGK },
             |m: &mut JPEBEDHMNLA| { &mut m.CCBIIDDBFGK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "pos_index",
+            |m: &JPEBEDHMNLA| { &m.pos_index },
+            |m: &mut JPEBEDHMNLA| { &mut m.pos_index },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &JPEBEDHMNLA| { &m.level },
             |m: &mut JPEBEDHMNLA| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "H_ac273741",
+            |m: &JPEBEDHMNLA| { &m.H_ac273741 },
+            |m: &mut JPEBEDHMNLA| { &mut m.H_ac273741 },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unique_id",
+            |m: &JPEBEDHMNLA| { &m.unique_id },
+            |m: &mut JPEBEDHMNLA| { &mut m.unique_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JPEBEDHMNLA>(
             "JPEBEDHMNLA",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for JPEBEDHMNLA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.unique_id = is.read_uint32()?;
-                },
-                24 => {
-                    self.pos = is.read_uint32()?;
-                },
-                64 => {
-                    self.grid_fight_equipment_id = is.read_uint32()?;
-                },
-                80 => {
+                32 => {
                     self.CCBIIDDBFGK = is.read_uint32()?;
                 },
-                104 => {
+                56 => {
+                    self.pos_index = is.read_uint32()?;
+                },
+                64 => {
                     self.level = is.read_uint32()?;
+                },
+                104 => {
+                    self.H_ac273741 = is.read_uint32()?;
+                },
+                120 => {
+                    self.unique_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for JPEBEDHMNLA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.unique_id);
-        }
-        if self.pos != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.pos);
-        }
-        if self.grid_fight_equipment_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.grid_fight_equipment_id);
-        }
         if self.CCBIIDDBFGK != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.CCBIIDDBFGK);
+            my_size += ::protobuf::rt::uint32_size(4, self.CCBIIDDBFGK);
+        }
+        if self.pos_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.pos_index);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.level);
+            my_size += ::protobuf::rt::uint32_size(8, self.level);
+        }
+        if self.H_ac273741 != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.H_ac273741);
+        }
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for JPEBEDHMNLA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.unique_id != 0 {
-            os.write_uint32(2, self.unique_id)?;
-        }
-        if self.pos != 0 {
-            os.write_uint32(3, self.pos)?;
-        }
-        if self.grid_fight_equipment_id != 0 {
-            os.write_uint32(8, self.grid_fight_equipment_id)?;
-        }
         if self.CCBIIDDBFGK != 0 {
-            os.write_uint32(10, self.CCBIIDDBFGK)?;
+            os.write_uint32(4, self.CCBIIDDBFGK)?;
+        }
+        if self.pos_index != 0 {
+            os.write_uint32(7, self.pos_index)?;
         }
         if self.level != 0 {
-            os.write_uint32(13, self.level)?;
+            os.write_uint32(8, self.level)?;
+        }
+        if self.H_ac273741 != 0 {
+            os.write_uint32(13, self.H_ac273741)?;
+        }
+        if self.unique_id != 0 {
+            os.write_uint32(15, self.unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for JPEBEDHMNLA {
     }
 
     fn clear(&mut self) {
-        self.unique_id = 0;
-        self.pos = 0;
-        self.grid_fight_equipment_id = 0;
         self.CCBIIDDBFGK = 0;
+        self.pos_index = 0;
         self.level = 0;
+        self.H_ac273741 = 0;
+        self.unique_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JPEBEDHMNLA {
         static instance: JPEBEDHMNLA = JPEBEDHMNLA {
-            unique_id: 0,
-            pos: 0,
-            grid_fight_equipment_id: 0,
             CCBIIDDBFGK: 0,
+            pos_index: 0,
             level: 0,
+            H_ac273741: 0,
+            unique_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for JPEBEDHMNLA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JPEBEDHMNLA.proto\"\xab\x01\n\x0bJPEBEDHMNLA\x12\x1b\n\tunique_id\
-    \x18\x02\x20\x01(\rR\x08uniqueId\x12\x10\n\x03pos\x18\x03\x20\x01(\rR\
-    \x03pos\x125\n\x17grid_fight_equipment_id\x18\x08\x20\x01(\rR\x14gridFig\
-    htEquipmentId\x12\x20\n\x0bCCBIIDDBFGK\x18\n\x20\x01(\rR\x0bCCBIIDDBFGK\
-    \x12\x14\n\x05level\x18\r\x20\x01(\rR\x05levelb\x06proto3\
+    \n\x11JPEBEDHMNLA.proto\"\x9e\x01\n\x0bJPEBEDHMNLA\x12\x20\n\x0bCCBIIDDB\
+    FGK\x18\x04\x20\x01(\rR\x0bCCBIIDDBFGK\x12\x1b\n\tpos_index\x18\x07\x20\
+    \x01(\rR\x08posIndex\x12\x14\n\x05level\x18\x08\x20\x01(\rR\x05level\x12\
+    \x1d\n\nH_ac273741\x18\r\x20\x01(\rR\tHAc273741\x12\x1b\n\tunique_id\x18\
+    \x0f\x20\x01(\rR\x08uniqueIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

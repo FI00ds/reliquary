@@ -79,10 +79,10 @@ impl ::protobuf::Message for IMIHIMCHHIP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                40 => {
                     self.item_value = is.read_uint32()?;
                 },
-                72 => {
+                64 => {
                     self.OIDJFIFJDHL = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for IMIHIMCHHIP {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.item_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.item_value);
+            my_size += ::protobuf::rt::uint32_size(5, self.item_value);
         }
         if self.OIDJFIFJDHL != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.OIDJFIFJDHL);
+            my_size += ::protobuf::rt::uint32_size(8, self.OIDJFIFJDHL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for IMIHIMCHHIP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.item_value != 0 {
-            os.write_uint32(8, self.item_value)?;
+            os.write_uint32(5, self.item_value)?;
         }
         if self.OIDJFIFJDHL != 0 {
-            os.write_uint32(9, self.OIDJFIFJDHL)?;
+            os.write_uint32(8, self.OIDJFIFJDHL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for IMIHIMCHHIP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IMIHIMCHHIP.proto\"N\n\x0bIMIHIMCHHIP\x12\x1d\n\nitem_value\x18\
-    \x08\x20\x01(\rR\titemValue\x12\x20\n\x0bOIDJFIFJDHL\x18\t\x20\x01(\rR\
+    \x05\x20\x01(\rR\titemValue\x12\x20\n\x0bOIDJFIFJDHL\x18\x08\x20\x01(\rR\
     \x0bOIDJFIFJDHLb\x06proto3\
 ";
 

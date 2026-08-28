@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:MessageSectionStatus)
 pub enum MessageSectionStatus {
-    // @@protoc_insertion_point(enum_value:MessageSectionStatus.MESSAGE_SECTION_NONE)
-    MESSAGE_SECTION_NONE = 0,
-    // @@protoc_insertion_point(enum_value:MessageSectionStatus.MESSAGE_SECTION_DOING)
-    MESSAGE_SECTION_DOING = 1,
-    // @@protoc_insertion_point(enum_value:MessageSectionStatus.MESSAGE_SECTION_FINISH)
-    MESSAGE_SECTION_FINISH = 2,
-    // @@protoc_insertion_point(enum_value:MessageSectionStatus.MESSAGE_SECTION_FROZEN)
-    MESSAGE_SECTION_FROZEN = 3,
+    // @@protoc_insertion_point(enum_value:MessageSectionStatus.MessageSectionStatus_MessageSectionNone)
+    MessageSectionStatus_MessageSectionNone = 0,
+    // @@protoc_insertion_point(enum_value:MessageSectionStatus.MessageSectionStatus_MessageSectionDoing)
+    MessageSectionStatus_MessageSectionDoing = 1,
+    // @@protoc_insertion_point(enum_value:MessageSectionStatus.MessageSectionStatus_MessageSectionFinish)
+    MessageSectionStatus_MessageSectionFinish = 2,
+    // @@protoc_insertion_point(enum_value:MessageSectionStatus.MessageSectionStatus_MessageSectionFrozen)
+    MessageSectionStatus_MessageSectionFrozen = 3,
 }
 
 impl ::protobuf::Enum for MessageSectionStatus {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for MessageSectionStatus {
 
     fn from_i32(value: i32) -> ::std::option::Option<MessageSectionStatus> {
         match value {
-            0 => ::std::option::Option::Some(MessageSectionStatus::MESSAGE_SECTION_NONE),
-            1 => ::std::option::Option::Some(MessageSectionStatus::MESSAGE_SECTION_DOING),
-            2 => ::std::option::Option::Some(MessageSectionStatus::MESSAGE_SECTION_FINISH),
-            3 => ::std::option::Option::Some(MessageSectionStatus::MESSAGE_SECTION_FROZEN),
+            0 => ::std::option::Option::Some(MessageSectionStatus::MessageSectionStatus_MessageSectionNone),
+            1 => ::std::option::Option::Some(MessageSectionStatus::MessageSectionStatus_MessageSectionDoing),
+            2 => ::std::option::Option::Some(MessageSectionStatus::MessageSectionStatus_MessageSectionFinish),
+            3 => ::std::option::Option::Some(MessageSectionStatus::MessageSectionStatus_MessageSectionFrozen),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<MessageSectionStatus> {
         match str {
-            "MESSAGE_SECTION_NONE" => ::std::option::Option::Some(MessageSectionStatus::MESSAGE_SECTION_NONE),
-            "MESSAGE_SECTION_DOING" => ::std::option::Option::Some(MessageSectionStatus::MESSAGE_SECTION_DOING),
-            "MESSAGE_SECTION_FINISH" => ::std::option::Option::Some(MessageSectionStatus::MESSAGE_SECTION_FINISH),
-            "MESSAGE_SECTION_FROZEN" => ::std::option::Option::Some(MessageSectionStatus::MESSAGE_SECTION_FROZEN),
+            "MessageSectionStatus_MessageSectionNone" => ::std::option::Option::Some(MessageSectionStatus::MessageSectionStatus_MessageSectionNone),
+            "MessageSectionStatus_MessageSectionDoing" => ::std::option::Option::Some(MessageSectionStatus::MessageSectionStatus_MessageSectionDoing),
+            "MessageSectionStatus_MessageSectionFinish" => ::std::option::Option::Some(MessageSectionStatus::MessageSectionStatus_MessageSectionFinish),
+            "MessageSectionStatus_MessageSectionFrozen" => ::std::option::Option::Some(MessageSectionStatus::MessageSectionStatus_MessageSectionFrozen),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [MessageSectionStatus] = &[
-        MessageSectionStatus::MESSAGE_SECTION_NONE,
-        MessageSectionStatus::MESSAGE_SECTION_DOING,
-        MessageSectionStatus::MESSAGE_SECTION_FINISH,
-        MessageSectionStatus::MESSAGE_SECTION_FROZEN,
+        MessageSectionStatus::MessageSectionStatus_MessageSectionNone,
+        MessageSectionStatus::MessageSectionStatus_MessageSectionDoing,
+        MessageSectionStatus::MessageSectionStatus_MessageSectionFinish,
+        MessageSectionStatus::MessageSectionStatus_MessageSectionFrozen,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for MessageSectionStatus {
 
 impl ::std::default::Default for MessageSectionStatus {
     fn default() -> Self {
-        MessageSectionStatus::MESSAGE_SECTION_NONE
+        MessageSectionStatus::MessageSectionStatus_MessageSectionNone
     }
 }
 
@@ -97,10 +97,11 @@ impl MessageSectionStatus {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aMessageSectionStatus.proto*\x83\x01\n\x14MessageSectionStatus\x12\
-    \x18\n\x14MESSAGE_SECTION_NONE\x10\0\x12\x19\n\x15MESSAGE_SECTION_DOING\
-    \x10\x01\x12\x1a\n\x16MESSAGE_SECTION_FINISH\x10\x02\x12\x1a\n\x16MESSAG\
-    E_SECTION_FROZEN\x10\x03b\x06proto3\
+    \n\x1aMessageSectionStatus.proto*\xcf\x01\n\x14MessageSectionStatus\x12+\
+    \n'MessageSectionStatus_MessageSectionNone\x10\0\x12,\n(MessageSectionSt\
+    atus_MessageSectionDoing\x10\x01\x12-\n)MessageSectionStatus_MessageSect\
+    ionFinish\x10\x02\x12-\n)MessageSectionStatus_MessageSectionFrozen\x10\
+    \x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

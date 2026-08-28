@@ -30,14 +30,14 @@ pub struct ONLFOIONDAF {
     // message fields
     // @@protoc_insertion_point(field:ONLFOIONDAF.JJNGGKPAKME)
     pub JJNGGKPAKME: u32,
-    // @@protoc_insertion_point(field:ONLFOIONDAF.interval)
-    pub interval: u32,
     // @@protoc_insertion_point(field:ONLFOIONDAF.PNFOOPNCDCH)
     pub PNFOOPNCDCH: u32,
-    // @@protoc_insertion_point(field:ONLFOIONDAF.start_time)
-    pub start_time: i64,
     // @@protoc_insertion_point(field:ONLFOIONDAF.JMCJKPPKAIF)
     pub JMCJKPPKAIF: bool,
+    // @@protoc_insertion_point(field:ONLFOIONDAF.JKDFIMCIKFJ)
+    pub JKDFIMCIKFJ: u32,
+    // @@protoc_insertion_point(field:ONLFOIONDAF.IFEPJHGNCOI)
+    pub IFEPJHGNCOI: i64,
     // special fields
     // @@protoc_insertion_point(special_field:ONLFOIONDAF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,24 +63,24 @@ impl ONLFOIONDAF {
             |m: &mut ONLFOIONDAF| { &mut m.JJNGGKPAKME },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "interval",
-            |m: &ONLFOIONDAF| { &m.interval },
-            |m: &mut ONLFOIONDAF| { &mut m.interval },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PNFOOPNCDCH",
             |m: &ONLFOIONDAF| { &m.PNFOOPNCDCH },
             |m: &mut ONLFOIONDAF| { &mut m.PNFOOPNCDCH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "start_time",
-            |m: &ONLFOIONDAF| { &m.start_time },
-            |m: &mut ONLFOIONDAF| { &mut m.start_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JMCJKPPKAIF",
             |m: &ONLFOIONDAF| { &m.JMCJKPPKAIF },
             |m: &mut ONLFOIONDAF| { &mut m.JMCJKPPKAIF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JKDFIMCIKFJ",
+            |m: &ONLFOIONDAF| { &m.JKDFIMCIKFJ },
+            |m: &mut ONLFOIONDAF| { &mut m.JKDFIMCIKFJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IFEPJHGNCOI",
+            |m: &ONLFOIONDAF| { &m.IFEPJHGNCOI },
+            |m: &mut ONLFOIONDAF| { &mut m.IFEPJHGNCOI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ONLFOIONDAF>(
             "ONLFOIONDAF",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for ONLFOIONDAF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                32 => {
                     self.JJNGGKPAKME = is.read_uint32()?;
                 },
-                32 => {
-                    self.interval = is.read_uint32()?;
-                },
-                56 => {
+                40 => {
                     self.PNFOOPNCDCH = is.read_uint32()?;
                 },
-                64 => {
-                    self.start_time = is.read_int64()?;
+                56 => {
+                    self.JMCJKPPKAIF = is.read_bool()?;
+                },
+                88 => {
+                    self.JKDFIMCIKFJ = is.read_uint32()?;
                 },
                 96 => {
-                    self.JMCJKPPKAIF = is.read_bool()?;
+                    self.IFEPJHGNCOI = is.read_int64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,19 +128,19 @@ impl ::protobuf::Message for ONLFOIONDAF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.JJNGGKPAKME != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.JJNGGKPAKME);
-        }
-        if self.interval != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.interval);
+            my_size += ::protobuf::rt::uint32_size(4, self.JJNGGKPAKME);
         }
         if self.PNFOOPNCDCH != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.PNFOOPNCDCH);
-        }
-        if self.start_time != 0 {
-            my_size += ::protobuf::rt::int64_size(8, self.start_time);
+            my_size += ::protobuf::rt::uint32_size(5, self.PNFOOPNCDCH);
         }
         if self.JMCJKPPKAIF != false {
             my_size += 1 + 1;
+        }
+        if self.JKDFIMCIKFJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.JKDFIMCIKFJ);
+        }
+        if self.IFEPJHGNCOI != 0 {
+            my_size += ::protobuf::rt::int64_size(12, self.IFEPJHGNCOI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,19 +149,19 @@ impl ::protobuf::Message for ONLFOIONDAF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JJNGGKPAKME != 0 {
-            os.write_uint32(3, self.JJNGGKPAKME)?;
-        }
-        if self.interval != 0 {
-            os.write_uint32(4, self.interval)?;
+            os.write_uint32(4, self.JJNGGKPAKME)?;
         }
         if self.PNFOOPNCDCH != 0 {
-            os.write_uint32(7, self.PNFOOPNCDCH)?;
-        }
-        if self.start_time != 0 {
-            os.write_int64(8, self.start_time)?;
+            os.write_uint32(5, self.PNFOOPNCDCH)?;
         }
         if self.JMCJKPPKAIF != false {
-            os.write_bool(12, self.JMCJKPPKAIF)?;
+            os.write_bool(7, self.JMCJKPPKAIF)?;
+        }
+        if self.JKDFIMCIKFJ != 0 {
+            os.write_uint32(11, self.JKDFIMCIKFJ)?;
+        }
+        if self.IFEPJHGNCOI != 0 {
+            os.write_int64(12, self.IFEPJHGNCOI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for ONLFOIONDAF {
 
     fn clear(&mut self) {
         self.JJNGGKPAKME = 0;
-        self.interval = 0;
         self.PNFOOPNCDCH = 0;
-        self.start_time = 0;
         self.JMCJKPPKAIF = false;
+        self.JKDFIMCIKFJ = 0;
+        self.IFEPJHGNCOI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ONLFOIONDAF {
         static instance: ONLFOIONDAF = ONLFOIONDAF {
             JJNGGKPAKME: 0,
-            interval: 0,
             PNFOOPNCDCH: 0,
-            start_time: 0,
             JMCJKPPKAIF: false,
+            JKDFIMCIKFJ: 0,
+            IFEPJHGNCOI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,12 @@ impl ::protobuf::reflect::ProtobufValue for ONLFOIONDAF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ONLFOIONDAF.proto\"\xae\x01\n\x0bONLFOIONDAF\x12\x20\n\x0bJJNGGKPA\
-    KME\x18\x03\x20\x01(\rR\x0bJJNGGKPAKME\x12\x1a\n\x08interval\x18\x04\x20\
-    \x01(\rR\x08interval\x12\x20\n\x0bPNFOOPNCDCH\x18\x07\x20\x01(\rR\x0bPNF\
-    OOPNCDCH\x12\x1d\n\nstart_time\x18\x08\x20\x01(\x03R\tstartTime\x12\x20\
-    \n\x0bJMCJKPPKAIF\x18\x0c\x20\x01(\x08R\x0bJMCJKPPKAIFb\x06proto3\
+    \n\x11ONLFOIONDAF.proto\"\xb7\x01\n\x0bONLFOIONDAF\x12\x20\n\x0bJJNGGKPA\
+    KME\x18\x04\x20\x01(\rR\x0bJJNGGKPAKME\x12\x20\n\x0bPNFOOPNCDCH\x18\x05\
+    \x20\x01(\rR\x0bPNFOOPNCDCH\x12\x20\n\x0bJMCJKPPKAIF\x18\x07\x20\x01(\
+    \x08R\x0bJMCJKPPKAIF\x12\x20\n\x0bJKDFIMCIKFJ\x18\x0b\x20\x01(\rR\x0bJKD\
+    FIMCIKFJ\x12\x20\n\x0bIFEPJHGNCOI\x18\x0c\x20\x01(\x03R\x0bIFEPJHGNCOIb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

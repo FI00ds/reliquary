@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NJMOBNILIHI {
     // message fields
-    // @@protoc_insertion_point(field:NJMOBNILIHI.NELHEHHFCCM)
-    pub NELHEHHFCCM: ::protobuf::EnumOrUnknown<super::DevelopmentType::DevelopmentType>,
     // @@protoc_insertion_point(field:NJMOBNILIHI.time)
     pub time: i64,
+    // @@protoc_insertion_point(field:NJMOBNILIHI.NELHEHHFCCM)
+    pub NELHEHHFCCM: ::protobuf::EnumOrUnknown<super::DevelopmentType::DevelopmentType>,
     // message oneof groups
     pub NNMAOMHPNBK: ::std::option::Option<njmobnilihi::NNMAOMHPNBK>,
     // special fields
@@ -50,7 +50,7 @@ impl NJMOBNILIHI {
         ::std::default::Default::default()
     }
 
-    // .KHFEGOFPHHC DCODKLADIJM = 668;
+    // .KHFEGOFPHHC DCODKLADIJM = 1077;
 
     pub fn DCODKLADIJM(&self) -> &super::KHFEGOFPHHC::KHFEGOFPHHC {
         match self.NNMAOMHPNBK {
@@ -99,7 +99,7 @@ impl NJMOBNILIHI {
         }
     }
 
-    // .MOOGABJBJAG ELJOEBBHDPB = 1259;
+    // .MOOGABJBJAG ELJOEBBHDPB = 1559;
 
     pub fn ELJOEBBHDPB(&self) -> &super::MOOGABJBJAG::MOOGABJBJAG {
         match self.NNMAOMHPNBK {
@@ -148,7 +148,7 @@ impl NJMOBNILIHI {
         }
     }
 
-    // uint32 avatar_id = 712;
+    // uint32 avatar_id = 2044;
 
     pub fn avatar_id(&self) -> u32 {
         match self.NNMAOMHPNBK {
@@ -173,7 +173,7 @@ impl NJMOBNILIHI {
         self.NNMAOMHPNBK = ::std::option::Option::Some(njmobnilihi::NNMAOMHPNBK::AvatarId(v))
     }
 
-    // uint32 KAJCFPKEGBP = 1411;
+    // uint32 KAJCFPKEGBP = 1060;
 
     pub fn KAJCFPKEGBP(&self) -> u32 {
         match self.NNMAOMHPNBK {
@@ -198,7 +198,7 @@ impl NJMOBNILIHI {
         self.NNMAOMHPNBK = ::std::option::Option::Some(njmobnilihi::NNMAOMHPNBK::KAJCFPKEGBP(v))
     }
 
-    // .CFNEMEIDMID IIBJEGJMOKJ = 1610;
+    // .CFNEMEIDMID IIBJEGJMOKJ = 572;
 
     pub fn IIBJEGJMOKJ(&self) -> &super::CFNEMEIDMID::CFNEMEIDMID {
         match self.NNMAOMHPNBK {
@@ -247,7 +247,7 @@ impl NJMOBNILIHI {
         }
     }
 
-    // uint32 panel_id = 1857;
+    // uint32 panel_id = 711;
 
     pub fn panel_id(&self) -> u32 {
         match self.NNMAOMHPNBK {
@@ -272,7 +272,7 @@ impl NJMOBNILIHI {
         self.NNMAOMHPNBK = ::std::option::Option::Some(njmobnilihi::NNMAOMHPNBK::PanelId(v))
     }
 
-    // .JBKJGBMMKFI AGKKAFEFGOB = 1662;
+    // .JBKJGBMMKFI AGKKAFEFGOB = 1869;
 
     pub fn AGKKAFEFGOB(&self) -> &super::JBKJGBMMKFI::JBKJGBMMKFI {
         match self.NNMAOMHPNBK {
@@ -321,7 +321,7 @@ impl NJMOBNILIHI {
         }
     }
 
-    // .IENCCMEAIAJ IMILIFMDLBI = 1446;
+    // .IENCCMEAIAJ IMILIFMDLBI = 624;
 
     pub fn IMILIFMDLBI(&self) -> &super::IENCCMEAIAJ::IENCCMEAIAJ {
         match self.NNMAOMHPNBK {
@@ -370,7 +370,7 @@ impl NJMOBNILIHI {
         }
     }
 
-    // .LJJIEAPLOOI BNNDODHIKCE = 1595;
+    // .LJJIEAPLOOI BNNDODHIKCE = 938;
 
     pub fn BNNDODHIKCE(&self) -> &super::LJJIEAPLOOI::LJJIEAPLOOI {
         match self.NNMAOMHPNBK {
@@ -419,7 +419,7 @@ impl NJMOBNILIHI {
         }
     }
 
-    // .KGBAFBEMICB DHKCMBFCALH = 244;
+    // .KGBAFBEMICB DHKCMBFCALH = 646;
 
     pub fn DHKCMBFCALH(&self) -> &super::KGBAFBEMICB::KGBAFBEMICB {
         match self.NNMAOMHPNBK {
@@ -472,14 +472,14 @@ impl NJMOBNILIHI {
         let mut fields = ::std::vec::Vec::with_capacity(12);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NELHEHHFCCM",
-            |m: &NJMOBNILIHI| { &m.NELHEHHFCCM },
-            |m: &mut NJMOBNILIHI| { &mut m.NELHEHHFCCM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "time",
             |m: &NJMOBNILIHI| { &m.time },
             |m: &mut NJMOBNILIHI| { &mut m.time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NELHEHHFCCM",
+            |m: &NJMOBNILIHI| { &m.NELHEHHFCCM },
+            |m: &mut NJMOBNILIHI| { &mut m.NELHEHHFCCM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KHFEGOFPHHC::KHFEGOFPHHC>(
             "DCODKLADIJM",
@@ -567,40 +567,40 @@ impl ::protobuf::Message for NJMOBNILIHI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.NELHEHHFCCM = is.read_enum_or_unknown()?;
-                },
-                80 => {
+                16 => {
                     self.time = is.read_int64()?;
                 },
-                5346 => {
+                104 => {
+                    self.NELHEHHFCCM = is.read_enum_or_unknown()?;
+                },
+                8618 => {
                     self.NNMAOMHPNBK = ::std::option::Option::Some(njmobnilihi::NNMAOMHPNBK::DCODKLADIJM(is.read_message()?));
                 },
-                10074 => {
+                12474 => {
                     self.NNMAOMHPNBK = ::std::option::Option::Some(njmobnilihi::NNMAOMHPNBK::ELJOEBBHDPB(is.read_message()?));
                 },
-                5696 => {
+                16352 => {
                     self.NNMAOMHPNBK = ::std::option::Option::Some(njmobnilihi::NNMAOMHPNBK::AvatarId(is.read_uint32()?));
                 },
-                11288 => {
+                8480 => {
                     self.NNMAOMHPNBK = ::std::option::Option::Some(njmobnilihi::NNMAOMHPNBK::KAJCFPKEGBP(is.read_uint32()?));
                 },
-                12882 => {
+                4578 => {
                     self.NNMAOMHPNBK = ::std::option::Option::Some(njmobnilihi::NNMAOMHPNBK::IIBJEGJMOKJ(is.read_message()?));
                 },
-                14856 => {
+                5688 => {
                     self.NNMAOMHPNBK = ::std::option::Option::Some(njmobnilihi::NNMAOMHPNBK::PanelId(is.read_uint32()?));
                 },
-                13298 => {
+                14954 => {
                     self.NNMAOMHPNBK = ::std::option::Option::Some(njmobnilihi::NNMAOMHPNBK::AGKKAFEFGOB(is.read_message()?));
                 },
-                11570 => {
+                4994 => {
                     self.NNMAOMHPNBK = ::std::option::Option::Some(njmobnilihi::NNMAOMHPNBK::IMILIFMDLBI(is.read_message()?));
                 },
-                12762 => {
+                7506 => {
                     self.NNMAOMHPNBK = ::std::option::Option::Some(njmobnilihi::NNMAOMHPNBK::BNNDODHIKCE(is.read_message()?));
                 },
-                1954 => {
+                5170 => {
                     self.NNMAOMHPNBK = ::std::option::Option::Some(njmobnilihi::NNMAOMHPNBK::DHKCMBFCALH(is.read_message()?));
                 },
                 tag => {
@@ -615,11 +615,11 @@ impl ::protobuf::Message for NJMOBNILIHI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NELHEHHFCCM != ::protobuf::EnumOrUnknown::new(super::DevelopmentType::DevelopmentType::KMJKPKLCPNM_BEEHIFFKOIH) {
-            my_size += ::protobuf::rt::int32_size(3, self.NELHEHHFCCM.value());
-        }
         if self.time != 0 {
-            my_size += ::protobuf::rt::int64_size(10, self.time);
+            my_size += ::protobuf::rt::int64_size(2, self.time);
+        }
+        if self.NELHEHHFCCM != ::protobuf::EnumOrUnknown::new(super::DevelopmentType::DevelopmentType::DevelopmentType_DevelopmentNone) {
+            my_size += ::protobuf::rt::int32_size(13, self.NELHEHHFCCM.value());
         }
         if let ::std::option::Option::Some(ref v) = self.NNMAOMHPNBK {
             match v {
@@ -632,17 +632,17 @@ impl ::protobuf::Message for NJMOBNILIHI {
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &njmobnilihi::NNMAOMHPNBK::AvatarId(v) => {
-                    my_size += ::protobuf::rt::uint32_size(712, v);
+                    my_size += ::protobuf::rt::uint32_size(2044, v);
                 },
                 &njmobnilihi::NNMAOMHPNBK::KAJCFPKEGBP(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1411, v);
+                    my_size += ::protobuf::rt::uint32_size(1060, v);
                 },
                 &njmobnilihi::NNMAOMHPNBK::IIBJEGJMOKJ(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &njmobnilihi::NNMAOMHPNBK::PanelId(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1857, v);
+                    my_size += ::protobuf::rt::uint32_size(711, v);
                 },
                 &njmobnilihi::NNMAOMHPNBK::AGKKAFEFGOB(ref v) => {
                     let len = v.compute_size();
@@ -668,43 +668,43 @@ impl ::protobuf::Message for NJMOBNILIHI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NELHEHHFCCM != ::protobuf::EnumOrUnknown::new(super::DevelopmentType::DevelopmentType::KMJKPKLCPNM_BEEHIFFKOIH) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.NELHEHHFCCM))?;
-        }
         if self.time != 0 {
-            os.write_int64(10, self.time)?;
+            os.write_int64(2, self.time)?;
+        }
+        if self.NELHEHHFCCM != ::protobuf::EnumOrUnknown::new(super::DevelopmentType::DevelopmentType::DevelopmentType_DevelopmentNone) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.NELHEHHFCCM))?;
         }
         if let ::std::option::Option::Some(ref v) = self.NNMAOMHPNBK {
             match v {
                 &njmobnilihi::NNMAOMHPNBK::DCODKLADIJM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(668, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1077, v, os)?;
                 },
                 &njmobnilihi::NNMAOMHPNBK::ELJOEBBHDPB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1259, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1559, v, os)?;
                 },
                 &njmobnilihi::NNMAOMHPNBK::AvatarId(v) => {
-                    os.write_uint32(712, v)?;
+                    os.write_uint32(2044, v)?;
                 },
                 &njmobnilihi::NNMAOMHPNBK::KAJCFPKEGBP(v) => {
-                    os.write_uint32(1411, v)?;
+                    os.write_uint32(1060, v)?;
                 },
                 &njmobnilihi::NNMAOMHPNBK::IIBJEGJMOKJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1610, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(572, v, os)?;
                 },
                 &njmobnilihi::NNMAOMHPNBK::PanelId(v) => {
-                    os.write_uint32(1857, v)?;
+                    os.write_uint32(711, v)?;
                 },
                 &njmobnilihi::NNMAOMHPNBK::AGKKAFEFGOB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1662, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1869, v, os)?;
                 },
                 &njmobnilihi::NNMAOMHPNBK::IMILIFMDLBI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1446, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(624, v, os)?;
                 },
                 &njmobnilihi::NNMAOMHPNBK::BNNDODHIKCE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1595, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(938, v, os)?;
                 },
                 &njmobnilihi::NNMAOMHPNBK::DHKCMBFCALH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(244, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(646, v, os)?;
                 },
             };
         }
@@ -725,8 +725,8 @@ impl ::protobuf::Message for NJMOBNILIHI {
     }
 
     fn clear(&mut self) {
-        self.NELHEHHFCCM = ::protobuf::EnumOrUnknown::new(super::DevelopmentType::DevelopmentType::KMJKPKLCPNM_BEEHIFFKOIH);
         self.time = 0;
+        self.NELHEHHFCCM = ::protobuf::EnumOrUnknown::new(super::DevelopmentType::DevelopmentType::DevelopmentType_DevelopmentNone);
         self.NNMAOMHPNBK = ::std::option::Option::None;
         self.NNMAOMHPNBK = ::std::option::Option::None;
         self.NNMAOMHPNBK = ::std::option::Option::None;
@@ -742,8 +742,8 @@ impl ::protobuf::Message for NJMOBNILIHI {
 
     fn default_instance() -> &'static NJMOBNILIHI {
         static instance: NJMOBNILIHI = NJMOBNILIHI {
-            NELHEHHFCCM: ::protobuf::EnumOrUnknown::from_i32(0),
             time: 0,
+            NELHEHHFCCM: ::protobuf::EnumOrUnknown::from_i32(0),
             NNMAOMHPNBK: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -818,19 +818,19 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NJMOBNILIHI.proto\x1a\x11CFNEMEIDMID.proto\x1a\x15DevelopmentType.\
     proto\x1a\x11IENCCMEAIAJ.proto\x1a\x11JBKJGBMMKFI.proto\x1a\x11KGBAFBEMI\
     CB.proto\x1a\x11KHFEGOFPHHC.proto\x1a\x11LJJIEAPLOOI.proto\x1a\x11MOOGAB\
-    JBJAG.proto\"\xac\x04\n\x0bNJMOBNILIHI\x122\n\x0bNELHEHHFCCM\x18\x03\x20\
-    \x01(\x0e2\x10.DevelopmentTypeR\x0bNELHEHHFCCM\x12\x12\n\x04time\x18\n\
-    \x20\x01(\x03R\x04time\x121\n\x0bDCODKLADIJM\x18\x9c\x05\x20\x01(\x0b2\
-    \x0c.KHFEGOFPHHCH\0R\x0bDCODKLADIJM\x121\n\x0bELJOEBBHDPB\x18\xeb\t\x20\
+    JBJAG.proto\"\xac\x04\n\x0bNJMOBNILIHI\x12\x12\n\x04time\x18\x02\x20\x01\
+    (\x03R\x04time\x122\n\x0bNELHEHHFCCM\x18\r\x20\x01(\x0e2\x10.Development\
+    TypeR\x0bNELHEHHFCCM\x121\n\x0bDCODKLADIJM\x18\xb5\x08\x20\x01(\x0b2\x0c\
+    .KHFEGOFPHHCH\0R\x0bDCODKLADIJM\x121\n\x0bELJOEBBHDPB\x18\x97\x0c\x20\
     \x01(\x0b2\x0c.MOOGABJBJAGH\0R\x0bELJOEBBHDPB\x12\x1e\n\tavatar_id\x18\
-    \xc8\x05\x20\x01(\rH\0R\x08avatarId\x12#\n\x0bKAJCFPKEGBP\x18\x83\x0b\
-    \x20\x01(\rH\0R\x0bKAJCFPKEGBP\x121\n\x0bIIBJEGJMOKJ\x18\xca\x0c\x20\x01\
-    (\x0b2\x0c.CFNEMEIDMIDH\0R\x0bIIBJEGJMOKJ\x12\x1c\n\x08panel_id\x18\xc1\
-    \x0e\x20\x01(\rH\0R\x07panelId\x121\n\x0bAGKKAFEFGOB\x18\xfe\x0c\x20\x01\
-    (\x0b2\x0c.JBKJGBMMKFIH\0R\x0bAGKKAFEFGOB\x121\n\x0bIMILIFMDLBI\x18\xa6\
-    \x0b\x20\x01(\x0b2\x0c.IENCCMEAIAJH\0R\x0bIMILIFMDLBI\x121\n\x0bBNNDODHI\
-    KCE\x18\xbb\x0c\x20\x01(\x0b2\x0c.LJJIEAPLOOIH\0R\x0bBNNDODHIKCE\x121\n\
-    \x0bDHKCMBFCALH\x18\xf4\x01\x20\x01(\x0b2\x0c.KGBAFBEMICBH\0R\x0bDHKCMBF\
+    \xfc\x0f\x20\x01(\rH\0R\x08avatarId\x12#\n\x0bKAJCFPKEGBP\x18\xa4\x08\
+    \x20\x01(\rH\0R\x0bKAJCFPKEGBP\x121\n\x0bIIBJEGJMOKJ\x18\xbc\x04\x20\x01\
+    (\x0b2\x0c.CFNEMEIDMIDH\0R\x0bIIBJEGJMOKJ\x12\x1c\n\x08panel_id\x18\xc7\
+    \x05\x20\x01(\rH\0R\x07panelId\x121\n\x0bAGKKAFEFGOB\x18\xcd\x0e\x20\x01\
+    (\x0b2\x0c.JBKJGBMMKFIH\0R\x0bAGKKAFEFGOB\x121\n\x0bIMILIFMDLBI\x18\xf0\
+    \x04\x20\x01(\x0b2\x0c.IENCCMEAIAJH\0R\x0bIMILIFMDLBI\x121\n\x0bBNNDODHI\
+    KCE\x18\xaa\x07\x20\x01(\x0b2\x0c.LJJIEAPLOOIH\0R\x0bBNNDODHIKCE\x121\n\
+    \x0bDHKCMBFCALH\x18\x86\x05\x20\x01(\x0b2\x0c.KGBAFBEMICBH\0R\x0bDHKCMBF\
     CALHB\r\n\x0bNNMAOMHPNBKb\x06proto3\
 ";
 

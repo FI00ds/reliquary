@@ -30,10 +30,10 @@ pub struct JIEAANCEIJP {
     // message fields
     // @@protoc_insertion_point(field:JIEAANCEIJP.turn_counter)
     pub turn_counter: u32,
-    // @@protoc_insertion_point(field:JIEAANCEIJP.random_counter)
-    pub random_counter: u32,
-    // @@protoc_insertion_point(field:JIEAANCEIJP.snapshot_list)
-    pub snapshot_list: ::std::vec::Vec<super::HOLHBEOHEJD::HOLHBEOHEJD>,
+    // @@protoc_insertion_point(field:JIEAANCEIJP.KAPJNJDCACL)
+    pub KAPJNJDCACL: u32,
+    // @@protoc_insertion_point(field:JIEAANCEIJP.HNIMJFPACHC)
+    pub HNIMJFPACHC: ::std::vec::Vec<super::HOLHBEOHEJD::HOLHBEOHEJD>,
     // @@protoc_insertion_point(field:JIEAANCEIJP.AMCPMEAOJJK)
     pub AMCPMEAOJJK: u32,
     // special fields
@@ -61,14 +61,14 @@ impl JIEAANCEIJP {
             |m: &mut JIEAANCEIJP| { &mut m.turn_counter },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "random_counter",
-            |m: &JIEAANCEIJP| { &m.random_counter },
-            |m: &mut JIEAANCEIJP| { &mut m.random_counter },
+            "KAPJNJDCACL",
+            |m: &JIEAANCEIJP| { &m.KAPJNJDCACL },
+            |m: &mut JIEAANCEIJP| { &mut m.KAPJNJDCACL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "snapshot_list",
-            |m: &JIEAANCEIJP| { &m.snapshot_list },
-            |m: &mut JIEAANCEIJP| { &mut m.snapshot_list },
+            "HNIMJFPACHC",
+            |m: &JIEAANCEIJP| { &m.HNIMJFPACHC },
+            |m: &mut JIEAANCEIJP| { &mut m.HNIMJFPACHC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AMCPMEAOJJK",
@@ -97,10 +97,10 @@ impl ::protobuf::Message for JIEAANCEIJP {
                     self.turn_counter = is.read_uint32()?;
                 },
                 16 => {
-                    self.random_counter = is.read_uint32()?;
+                    self.KAPJNJDCACL = is.read_uint32()?;
                 },
                 34 => {
-                    self.snapshot_list.push(is.read_message()?);
+                    self.HNIMJFPACHC.push(is.read_message()?);
                 },
                 48 => {
                     self.AMCPMEAOJJK = is.read_uint32()?;
@@ -120,10 +120,10 @@ impl ::protobuf::Message for JIEAANCEIJP {
         if self.turn_counter != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.turn_counter);
         }
-        if self.random_counter != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.random_counter);
+        if self.KAPJNJDCACL != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.KAPJNJDCACL);
         }
-        for value in &self.snapshot_list {
+        for value in &self.HNIMJFPACHC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -139,10 +139,10 @@ impl ::protobuf::Message for JIEAANCEIJP {
         if self.turn_counter != 0 {
             os.write_uint32(1, self.turn_counter)?;
         }
-        if self.random_counter != 0 {
-            os.write_uint32(2, self.random_counter)?;
+        if self.KAPJNJDCACL != 0 {
+            os.write_uint32(2, self.KAPJNJDCACL)?;
         }
-        for v in &self.snapshot_list {
+        for v in &self.HNIMJFPACHC {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         if self.AMCPMEAOJJK != 0 {
@@ -166,8 +166,8 @@ impl ::protobuf::Message for JIEAANCEIJP {
 
     fn clear(&mut self) {
         self.turn_counter = 0;
-        self.random_counter = 0;
-        self.snapshot_list.clear();
+        self.KAPJNJDCACL = 0;
+        self.HNIMJFPACHC.clear();
         self.AMCPMEAOJJK = 0;
         self.special_fields.clear();
     }
@@ -175,8 +175,8 @@ impl ::protobuf::Message for JIEAANCEIJP {
     fn default_instance() -> &'static JIEAANCEIJP {
         static instance: JIEAANCEIJP = JIEAANCEIJP {
             turn_counter: 0,
-            random_counter: 0,
-            snapshot_list: ::std::vec::Vec::new(),
+            KAPJNJDCACL: 0,
+            HNIMJFPACHC: ::std::vec::Vec::new(),
             AMCPMEAOJJK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for JIEAANCEIJP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JIEAANCEIJP.proto\x1a\x11HOLHBEOHEJD.proto\"\xac\x01\n\x0bJIEAANCE\
-    IJP\x12!\n\x0cturn_counter\x18\x01\x20\x01(\rR\x0bturnCounter\x12%\n\x0e\
-    random_counter\x18\x02\x20\x01(\rR\rrandomCounter\x121\n\rsnapshot_list\
-    \x18\x04\x20\x03(\x0b2\x0c.HOLHBEOHEJDR\x0csnapshotList\x12\x20\n\x0bAMC\
-    PMEAOJJK\x18\x06\x20\x01(\rR\x0bAMCPMEAOJJKb\x06proto3\
+    \n\x11JIEAANCEIJP.proto\x1a\x11HOLHBEOHEJD.proto\"\xa4\x01\n\x0bJIEAANCE\
+    IJP\x12!\n\x0cturn_counter\x18\x01\x20\x01(\rR\x0bturnCounter\x12\x20\n\
+    \x0bKAPJNJDCACL\x18\x02\x20\x01(\rR\x0bKAPJNJDCACL\x12.\n\x0bHNIMJFPACHC\
+    \x18\x04\x20\x03(\x0b2\x0c.HOLHBEOHEJDR\x0bHNIMJFPACHC\x12\x20\n\x0bAMCP\
+    MEAOJJK\x18\x06\x20\x01(\rR\x0bAMCPMEAOJJKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

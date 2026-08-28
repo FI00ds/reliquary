@@ -82,7 +82,7 @@ impl ::protobuf::Message for IKMLLJNNKJB {
                 58 => {
                     self.item_list.push(is.read_message()?);
                 },
-                74 => {
+                106 => {
                     self.transfer_item_list.push(is.read_message()?);
                 },
                 tag => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for IKMLLJNNKJB {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         for v in &self.transfer_item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,7 +169,7 @@ impl ::protobuf::reflect::ProtobufValue for IKMLLJNNKJB {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IKMLLJNNKJB.proto\x1a\x11AIMNHEHKIMI.proto\x1a\x11FMKMEFMOJGJ.prot\
     o\"t\n\x0bIKMLLJNNKJB\x12)\n\titem_list\x18\x07\x20\x03(\x0b2\x0c.FMKMEF\
-    MOJGJR\x08itemList\x12:\n\x12transfer_item_list\x18\t\x20\x03(\x0b2\x0c.\
+    MOJGJR\x08itemList\x12:\n\x12transfer_item_list\x18\r\x20\x03(\x0b2\x0c.\
     AIMNHEHKIMIR\x10transferItemListb\x06proto3\
 ";
 

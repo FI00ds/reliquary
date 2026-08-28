@@ -27,138 +27,144 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:VirtualItemType)
 pub enum VirtualItemType {
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_NONE)
-    VIRTUAL_ITEM_NONE = 0,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_HCOIN)
-    VIRTUAL_ITEM_HCOIN = 1,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_SCOIN)
-    VIRTUAL_ITEM_SCOIN = 2,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_MCOIN)
-    VIRTUAL_ITEM_MCOIN = 3,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_STAMINA)
-    VIRTUAL_ITEM_STAMINA = 11,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_RESERVE_STAMINA)
-    VIRTUAL_ITEM_RESERVE_STAMINA = 12,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_AVATAR_EXP)
-    VIRTUAL_ITEM_AVATAR_EXP = 21,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_EXP)
-    VIRTUAL_ITEM_EXP = 22,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_DAILY_ACTIVE_POINT)
-    VIRTUAL_ITEM_DAILY_ACTIVE_POINT = 23,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_MP_MAX)
-    VIRTUAL_ITEM_MP_MAX = 24,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_PLAYER_RETURN_POINT)
-    VIRTUAL_ITEM_PLAYER_RETURN_POINT = 25,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_BATTLE_COLLEGE_POINT)
-    VIRTUAL_ITEM_BATTLE_COLLEGE_POINT = 26,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_ROGUE_COIN)
-    VIRTUAL_ITEM_ROGUE_COIN = 31,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_ROGUE_TALENT_COIN)
-    VIRTUAL_ITEM_ROGUE_TALENT_COIN = 32,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_ROGUE_REWARD_KEY)
-    VIRTUAL_ITEM_ROGUE_REWARD_KEY = 33,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_ROGUE_SUPER_REWARD_KEY)
-    VIRTUAL_ITEM_ROGUE_SUPER_REWARD_KEY = 34,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_ACHIEVEMENT_EXP)
-    VIRTUAL_ITEM_ACHIEVEMENT_EXP = 41,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_BP_EXP)
-    VIRTUAL_ITEM_BP_EXP = 51,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_BP_REAL_EXP)
-    VIRTUAL_ITEM_BP_REAL_EXP = 52,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_MUSEUM_FUNDS)
-    VIRTUAL_ITEM_MUSEUM_FUNDS = 53,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_TRAINPARTY_BUILDING_FUNDS)
-    VIRTUAL_TRAINPARTY_BUILDING_FUNDS = 54,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_TRAINPARTY_AREA_UNLOCK_COIN)
-    VIRTUAL_TRAINPARTY_AREA_UNLOCK_COIN = 55,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_TRAINPARTY_MOBILITY)
-    VIRTUAL_TRAINPARTY_MOBILITY = 56,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_WARRIOR_EXP)
-    VIRTUAL_ITEM_WARRIOR_EXP = 190,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_ROGUE_EXP)
-    VIRTUAL_ITEM_ROGUE_EXP = 191,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_MAGE_EXP)
-    VIRTUAL_ITEM_MAGE_EXP = 192,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_SHAMAN_EXP)
-    VIRTUAL_ITEM_SHAMAN_EXP = 193,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_WARLOCK_EXP)
-    VIRTUAL_ITEM_WARLOCK_EXP = 194,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_KNIGHT_EXP)
-    VIRTUAL_ITEM_KNIGHT_EXP = 195,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_PRIEST_EXP)
-    VIRTUAL_ITEM_PRIEST_EXP = 196,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_PUNK_LORD_POINT)
-    VIRTUAL_ITEM_PUNK_LORD_POINT = 100000,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_GAMEPLAY_COUNTER_MONSTER_SNEAK_VISION)
-    VIRTUAL_ITEM_GAMEPLAY_COUNTER_MONSTER_SNEAK_VISION = 280001,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_GAMEPLAY_COUNTER_WOLF_BRO_BULLET)
-    VIRTUAL_ITEM_GAMEPLAY_COUNTER_WOLF_BRO_BULLET = 280002,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_ALLEY_FUNDS)
-    VIRTUAL_ITEM_ALLEY_FUNDS = 281001,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_ROGUE_PUMAN_COUPON)
-    VIRTUAL_ITEM_ROGUE_PUMAN_COUPON = 281012,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_MONTH_CARD)
-    VIRTUAL_ITEM_MONTH_CARD = 300101,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_BP_NORMAL)
-    VIRTUAL_ITEM_BP_NORMAL = 300102,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_BP_DELUXE)
-    VIRTUAL_ITEM_BP_DELUXE = 300103,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_BP_UPGRADE)
-    VIRTUAL_ITEM_BP_UPGRADE = 300104,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_HELIOBUS_FANS)
-    VIRTUAL_ITEM_HELIOBUS_FANS = 281002,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_SPACE_ZOO_HYBRID_ITEM)
-    VIRTUAL_ITEM_SPACE_ZOO_HYBRID_ITEM = 281003,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_SPACE_ZOO_EXP_POINT)
-    VIRTUAL_ITEM_SPACE_ZOO_EXP_POINT = 281004,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_ROGUE_NOUS_TALENT_COIN)
-    VIRTUAL_ITEM_ROGUE_NOUS_TALENT_COIN = 281013,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_EVOLVE_BUILD_COIN)
-    VIRTUAL_ITEM_EVOLVE_BUILD_COIN = 281019,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_DRINK_MAKER_TIP)
-    VIRTUAL_ITEM_DRINK_MAKER_TIP = 281005,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_MONOPOLY_DICE)
-    VIRTUAL_ITEM_MONOPOLY_DICE = 281014,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_MONOPOLY_COIN)
-    VIRTUAL_ITEM_MONOPOLY_COIN = 281015,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_MONOPOLY_CHEATDICE)
-    VIRTUAL_ITEM_MONOPOLY_CHEATDICE = 281016,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_MONOPOLY_REROLL)
-    VIRTUAL_ITEM_MONOPOLY_REROLL = 281017,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_ROGUE_TOURN_PERMANENT_TALENT_COIN)
-    VIRTUAL_ITEM_ROGUE_TOURN_PERMANENT_TALENT_COIN = 281018,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_ROGUE_TOURN_SEASON_TALENT_COIN)
-    VIRTUAL_ITEM_ROGUE_TOURN_SEASON_TALENT_COIN = 281020,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_ROGUE_TOURN_EXP)
-    VIRTUAL_ITEM_ROGUE_TOURN_EXP = 281022,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_MATCHTHREE_COIN)
-    VIRTUAL_ITEM_MATCHTHREE_COIN = 281024,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_SWORD_TRAINING_SKILL_POINT)
-    VIRTUAL_ITEM_SWORD_TRAINING_SKILL_POINT = 281023,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_FIGHT_FEST_COIN)
-    VIRTUAL_ITEM_FIGHT_FEST_COIN = 281025,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_ROGUE_MAGIC_TALENT_COIN)
-    VIRTUAL_ITEM_ROGUE_MAGIC_TALENT_COIN = 281026,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_EVOLVE_BUILD_SC_COIN)
-    VIRTUAL_ITEM_EVOLVE_BUILD_SC_COIN = 281027,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_EVOLVE_BUILD_REWARD_EXP)
-    VIRTUAL_ITEM_EVOLVE_BUILD_REWARD_EXP = 281028,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_MATCHTHREE_V2_COIN)
-    VIRTUAL_ITEM_MATCHTHREE_V2_COIN = 281029,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_GRID_FIGHT_COIN)
-    VIRTUAL_ITEM_GRID_FIGHT_COIN = 281031,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_GRID_FIGHT_TALENT_COIN)
-    VIRTUAL_ITEM_GRID_FIGHT_TALENT_COIN = 281032,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_GRID_FIGHT_SEASON_EXP)
-    VIRTUAL_ITEM_GRID_FIGHT_SEASON_EXP = 281033,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_GRID_FIGHT_GAMEPLAY_EXP)
-    VIRTUAL_ITEM_GRID_FIGHT_GAMEPLAY_EXP = 281034,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_GRID_FIGHT_FREE_REFRESH_TIMES)
-    VIRTUAL_ITEM_GRID_FIGHT_FREE_REFRESH_TIMES = 281035,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_CAKE_RACE_COIN)
-    VIRTUAL_ITEM_CAKE_RACE_COIN = 281038,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_CAKE_RACE_SCORE)
-    VIRTUAL_ITEM_CAKE_RACE_SCORE = 281039,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemNone)
+    VirtualItemType_VirtualItemNone = 0,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemHcoin)
+    VirtualItemType_VirtualItemHcoin = 1,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemScoin)
+    VirtualItemType_VirtualItemScoin = 2,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemMcoin)
+    VirtualItemType_VirtualItemMcoin = 3,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemStamina)
+    VirtualItemType_VirtualItemStamina = 11,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemReserveStamina)
+    VirtualItemType_VirtualItemReserveStamina = 12,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemAvatarExp)
+    VirtualItemType_VirtualItemAvatarExp = 21,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemExp)
+    VirtualItemType_VirtualItemExp = 22,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemDailyActivePoint)
+    VirtualItemType_VirtualItemDailyActivePoint = 23,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemMpMax)
+    VirtualItemType_VirtualItemMpMax = 24,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemPlayerReturnPoint)
+    VirtualItemType_VirtualItemPlayerReturnPoint = 25,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemBattleCollegePoint)
+    VirtualItemType_VirtualItemBattleCollegePoint = 26,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemRogueCoin)
+    VirtualItemType_VirtualItemRogueCoin = 31,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemRogueTalentCoin)
+    VirtualItemType_VirtualItemRogueTalentCoin = 32,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemRogueRewardKey)
+    VirtualItemType_VirtualItemRogueRewardKey = 33,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemRogueSuperRewardKey)
+    VirtualItemType_VirtualItemRogueSuperRewardKey = 34,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemAchievementExp)
+    VirtualItemType_VirtualItemAchievementExp = 41,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemBpExp)
+    VirtualItemType_VirtualItemBpExp = 51,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemBpRealExp)
+    VirtualItemType_VirtualItemBpRealExp = 52,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemMuseumFunds)
+    VirtualItemType_VirtualItemMuseumFunds = 53,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualTrainpartyBuildingFunds)
+    VirtualItemType_VirtualTrainpartyBuildingFunds = 54,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualTrainpartyAreaUnlockCoin)
+    VirtualItemType_VirtualTrainpartyAreaUnlockCoin = 55,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualTrainpartyMobility)
+    VirtualItemType_VirtualTrainpartyMobility = 56,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemWarriorExp)
+    VirtualItemType_VirtualItemWarriorExp = 190,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemRogueExp)
+    VirtualItemType_VirtualItemRogueExp = 191,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemMageExp)
+    VirtualItemType_VirtualItemMageExp = 192,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemShamanExp)
+    VirtualItemType_VirtualItemShamanExp = 193,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemWarlockExp)
+    VirtualItemType_VirtualItemWarlockExp = 194,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemKnightExp)
+    VirtualItemType_VirtualItemKnightExp = 195,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemPriestExp)
+    VirtualItemType_VirtualItemPriestExp = 196,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemPunkLordPoint)
+    VirtualItemType_VirtualItemPunkLordPoint = 100000,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemGameplayCounterMonsterSneakVision)
+    VirtualItemType_VirtualItemGameplayCounterMonsterSneakVision = 280001,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemGameplayCounterWolfBroBullet)
+    VirtualItemType_VirtualItemGameplayCounterWolfBroBullet = 280002,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemAlleyFunds)
+    VirtualItemType_VirtualItemAlleyFunds = 281001,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemRoguePumanCoupon)
+    VirtualItemType_VirtualItemRoguePumanCoupon = 281012,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemMonthCard)
+    VirtualItemType_VirtualItemMonthCard = 300101,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemBpNormal)
+    VirtualItemType_VirtualItemBpNormal = 300102,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemBpDeluxe)
+    VirtualItemType_VirtualItemBpDeluxe = 300103,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemBpUpgrade)
+    VirtualItemType_VirtualItemBpUpgrade = 300104,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemHeliobusFans)
+    VirtualItemType_VirtualItemHeliobusFans = 281002,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemSpaceZooHybridItem)
+    VirtualItemType_VirtualItemSpaceZooHybridItem = 281003,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemSpaceZooExpPoint)
+    VirtualItemType_VirtualItemSpaceZooExpPoint = 281004,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemRogueNousTalentCoin)
+    VirtualItemType_VirtualItemRogueNousTalentCoin = 281013,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemEvolveBuildCoin)
+    VirtualItemType_VirtualItemEvolveBuildCoin = 281019,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemDrinkMakerTip)
+    VirtualItemType_VirtualItemDrinkMakerTip = 281005,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemMonopolyDice)
+    VirtualItemType_VirtualItemMonopolyDice = 281014,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemMonopolyCoin)
+    VirtualItemType_VirtualItemMonopolyCoin = 281015,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemMonopolyCheatdice)
+    VirtualItemType_VirtualItemMonopolyCheatdice = 281016,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemMonopolyReroll)
+    VirtualItemType_VirtualItemMonopolyReroll = 281017,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemRogueTournPermanentTalentCoin)
+    VirtualItemType_VirtualItemRogueTournPermanentTalentCoin = 281018,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemRogueTournSeasonTalentCoin)
+    VirtualItemType_VirtualItemRogueTournSeasonTalentCoin = 281020,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemRogueTournExp)
+    VirtualItemType_VirtualItemRogueTournExp = 281022,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemMatchthreeCoin)
+    VirtualItemType_VirtualItemMatchthreeCoin = 281024,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemSwordTrainingSkillPoint)
+    VirtualItemType_VirtualItemSwordTrainingSkillPoint = 281023,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemFightFestCoin)
+    VirtualItemType_VirtualItemFightFestCoin = 281025,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemRogueMagicTalentCoin)
+    VirtualItemType_VirtualItemRogueMagicTalentCoin = 281026,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemEvolveBuildScCoin)
+    VirtualItemType_VirtualItemEvolveBuildScCoin = 281027,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemEvolveBuildRewardExp)
+    VirtualItemType_VirtualItemEvolveBuildRewardExp = 281028,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemMatchthreeV2Coin)
+    VirtualItemType_VirtualItemMatchthreeV2Coin = 281029,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemRogueTournSeasonTalentCoinS3)
+    VirtualItemType_VirtualItemRogueTournSeasonTalentCoinS3 = 281030,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.H_52813ac4)
+    H_52813ac4 = 281031,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.H_0026b4a7)
+    H_0026b4a7 = 281032,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.H_c7cbb8b6)
+    H_c7cbb8b6 = 281033,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.H_1b1d546e)
+    H_1b1d546e = 281034,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.H_4356cff9)
+    H_4356cff9 = 281035,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemFiveDimMoney)
+    VirtualItemType_VirtualItemFiveDimMoney = 281036,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemChimeraDuelMasterMoney)
+    VirtualItemType_VirtualItemChimeraDuelMasterMoney = 281037,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemCakeRaceCoin)
+    VirtualItemType_VirtualItemCakeRaceCoin = 281038,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemCakeRaceScore)
+    VirtualItemType_VirtualItemCakeRaceScore = 281039,
 }
 
 impl ::protobuf::Enum for VirtualItemType {
@@ -170,215 +176,224 @@ impl ::protobuf::Enum for VirtualItemType {
 
     fn from_i32(value: i32) -> ::std::option::Option<VirtualItemType> {
         match value {
-            0 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_NONE),
-            1 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_HCOIN),
-            2 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_SCOIN),
-            3 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MCOIN),
-            11 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_STAMINA),
-            12 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_RESERVE_STAMINA),
-            21 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_AVATAR_EXP),
-            22 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_EXP),
-            23 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_DAILY_ACTIVE_POINT),
-            24 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MP_MAX),
-            25 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_PLAYER_RETURN_POINT),
-            26 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_BATTLE_COLLEGE_POINT),
-            31 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_COIN),
-            32 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_TALENT_COIN),
-            33 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_REWARD_KEY),
-            34 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_SUPER_REWARD_KEY),
-            41 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ACHIEVEMENT_EXP),
-            51 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_BP_EXP),
-            52 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_BP_REAL_EXP),
-            53 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MUSEUM_FUNDS),
-            54 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_TRAINPARTY_BUILDING_FUNDS),
-            55 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_TRAINPARTY_AREA_UNLOCK_COIN),
-            56 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_TRAINPARTY_MOBILITY),
-            190 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_WARRIOR_EXP),
-            191 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_EXP),
-            192 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MAGE_EXP),
-            193 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_SHAMAN_EXP),
-            194 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_WARLOCK_EXP),
-            195 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_KNIGHT_EXP),
-            196 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_PRIEST_EXP),
-            100000 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_PUNK_LORD_POINT),
-            280001 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_GAMEPLAY_COUNTER_MONSTER_SNEAK_VISION),
-            280002 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_GAMEPLAY_COUNTER_WOLF_BRO_BULLET),
-            281001 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ALLEY_FUNDS),
-            281012 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_PUMAN_COUPON),
-            300101 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MONTH_CARD),
-            300102 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_BP_NORMAL),
-            300103 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_BP_DELUXE),
-            300104 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_BP_UPGRADE),
-            281002 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_HELIOBUS_FANS),
-            281003 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_SPACE_ZOO_HYBRID_ITEM),
-            281004 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_SPACE_ZOO_EXP_POINT),
-            281013 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_NOUS_TALENT_COIN),
-            281019 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_EVOLVE_BUILD_COIN),
-            281005 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_DRINK_MAKER_TIP),
-            281014 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MONOPOLY_DICE),
-            281015 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MONOPOLY_COIN),
-            281016 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MONOPOLY_CHEATDICE),
-            281017 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MONOPOLY_REROLL),
-            281018 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_TOURN_PERMANENT_TALENT_COIN),
-            281020 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_TOURN_SEASON_TALENT_COIN),
-            281022 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_TOURN_EXP),
-            281024 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MATCHTHREE_COIN),
-            281023 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_SWORD_TRAINING_SKILL_POINT),
-            281025 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_FIGHT_FEST_COIN),
-            281026 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_MAGIC_TALENT_COIN),
-            281027 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_EVOLVE_BUILD_SC_COIN),
-            281028 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_EVOLVE_BUILD_REWARD_EXP),
-            281029 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MATCHTHREE_V2_COIN),
-            281031 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_GRID_FIGHT_COIN),
-            281032 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_GRID_FIGHT_TALENT_COIN),
-            281033 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_GRID_FIGHT_SEASON_EXP),
-            281034 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_GRID_FIGHT_GAMEPLAY_EXP),
-            281035 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_GRID_FIGHT_FREE_REFRESH_TIMES),
-            281038 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_CAKE_RACE_COIN),
-            281039 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_CAKE_RACE_SCORE),
+            0 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemNone),
+            1 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemHcoin),
+            2 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemScoin),
+            3 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemMcoin),
+            11 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemStamina),
+            12 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemReserveStamina),
+            21 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemAvatarExp),
+            22 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemExp),
+            23 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemDailyActivePoint),
+            24 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemMpMax),
+            25 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemPlayerReturnPoint),
+            26 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemBattleCollegePoint),
+            31 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRogueCoin),
+            32 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRogueTalentCoin),
+            33 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRogueRewardKey),
+            34 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRogueSuperRewardKey),
+            41 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemAchievementExp),
+            51 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemBpExp),
+            52 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemBpRealExp),
+            53 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemMuseumFunds),
+            54 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualTrainpartyBuildingFunds),
+            55 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualTrainpartyAreaUnlockCoin),
+            56 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualTrainpartyMobility),
+            190 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemWarriorExp),
+            191 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRogueExp),
+            192 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemMageExp),
+            193 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemShamanExp),
+            194 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemWarlockExp),
+            195 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemKnightExp),
+            196 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemPriestExp),
+            100000 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemPunkLordPoint),
+            280001 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemGameplayCounterMonsterSneakVision),
+            280002 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemGameplayCounterWolfBroBullet),
+            281001 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemAlleyFunds),
+            281012 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRoguePumanCoupon),
+            300101 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemMonthCard),
+            300102 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemBpNormal),
+            300103 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemBpDeluxe),
+            300104 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemBpUpgrade),
+            281002 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemHeliobusFans),
+            281003 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemSpaceZooHybridItem),
+            281004 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemSpaceZooExpPoint),
+            281013 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRogueNousTalentCoin),
+            281019 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemEvolveBuildCoin),
+            281005 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemDrinkMakerTip),
+            281014 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemMonopolyDice),
+            281015 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemMonopolyCoin),
+            281016 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemMonopolyCheatdice),
+            281017 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemMonopolyReroll),
+            281018 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRogueTournPermanentTalentCoin),
+            281020 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRogueTournSeasonTalentCoin),
+            281022 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRogueTournExp),
+            281024 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemMatchthreeCoin),
+            281023 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemSwordTrainingSkillPoint),
+            281025 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemFightFestCoin),
+            281026 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRogueMagicTalentCoin),
+            281027 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemEvolveBuildScCoin),
+            281028 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemEvolveBuildRewardExp),
+            281029 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemMatchthreeV2Coin),
+            281030 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRogueTournSeasonTalentCoinS3),
+            281031 => ::std::option::Option::Some(VirtualItemType::H_52813ac4),
+            281032 => ::std::option::Option::Some(VirtualItemType::H_0026b4a7),
+            281033 => ::std::option::Option::Some(VirtualItemType::H_c7cbb8b6),
+            281034 => ::std::option::Option::Some(VirtualItemType::H_1b1d546e),
+            281035 => ::std::option::Option::Some(VirtualItemType::H_4356cff9),
+            281036 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemFiveDimMoney),
+            281037 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemChimeraDuelMasterMoney),
+            281038 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemCakeRaceCoin),
+            281039 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemCakeRaceScore),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<VirtualItemType> {
         match str {
-            "VIRTUAL_ITEM_NONE" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_NONE),
-            "VIRTUAL_ITEM_HCOIN" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_HCOIN),
-            "VIRTUAL_ITEM_SCOIN" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_SCOIN),
-            "VIRTUAL_ITEM_MCOIN" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MCOIN),
-            "VIRTUAL_ITEM_STAMINA" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_STAMINA),
-            "VIRTUAL_ITEM_RESERVE_STAMINA" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_RESERVE_STAMINA),
-            "VIRTUAL_ITEM_AVATAR_EXP" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_AVATAR_EXP),
-            "VIRTUAL_ITEM_EXP" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_EXP),
-            "VIRTUAL_ITEM_DAILY_ACTIVE_POINT" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_DAILY_ACTIVE_POINT),
-            "VIRTUAL_ITEM_MP_MAX" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MP_MAX),
-            "VIRTUAL_ITEM_PLAYER_RETURN_POINT" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_PLAYER_RETURN_POINT),
-            "VIRTUAL_ITEM_BATTLE_COLLEGE_POINT" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_BATTLE_COLLEGE_POINT),
-            "VIRTUAL_ITEM_ROGUE_COIN" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_COIN),
-            "VIRTUAL_ITEM_ROGUE_TALENT_COIN" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_TALENT_COIN),
-            "VIRTUAL_ITEM_ROGUE_REWARD_KEY" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_REWARD_KEY),
-            "VIRTUAL_ITEM_ROGUE_SUPER_REWARD_KEY" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_SUPER_REWARD_KEY),
-            "VIRTUAL_ITEM_ACHIEVEMENT_EXP" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ACHIEVEMENT_EXP),
-            "VIRTUAL_ITEM_BP_EXP" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_BP_EXP),
-            "VIRTUAL_ITEM_BP_REAL_EXP" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_BP_REAL_EXP),
-            "VIRTUAL_ITEM_MUSEUM_FUNDS" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MUSEUM_FUNDS),
-            "VIRTUAL_TRAINPARTY_BUILDING_FUNDS" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_TRAINPARTY_BUILDING_FUNDS),
-            "VIRTUAL_TRAINPARTY_AREA_UNLOCK_COIN" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_TRAINPARTY_AREA_UNLOCK_COIN),
-            "VIRTUAL_TRAINPARTY_MOBILITY" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_TRAINPARTY_MOBILITY),
-            "VIRTUAL_ITEM_WARRIOR_EXP" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_WARRIOR_EXP),
-            "VIRTUAL_ITEM_ROGUE_EXP" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_EXP),
-            "VIRTUAL_ITEM_MAGE_EXP" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MAGE_EXP),
-            "VIRTUAL_ITEM_SHAMAN_EXP" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_SHAMAN_EXP),
-            "VIRTUAL_ITEM_WARLOCK_EXP" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_WARLOCK_EXP),
-            "VIRTUAL_ITEM_KNIGHT_EXP" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_KNIGHT_EXP),
-            "VIRTUAL_ITEM_PRIEST_EXP" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_PRIEST_EXP),
-            "VIRTUAL_ITEM_PUNK_LORD_POINT" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_PUNK_LORD_POINT),
-            "VIRTUAL_ITEM_GAMEPLAY_COUNTER_MONSTER_SNEAK_VISION" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_GAMEPLAY_COUNTER_MONSTER_SNEAK_VISION),
-            "VIRTUAL_ITEM_GAMEPLAY_COUNTER_WOLF_BRO_BULLET" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_GAMEPLAY_COUNTER_WOLF_BRO_BULLET),
-            "VIRTUAL_ITEM_ALLEY_FUNDS" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ALLEY_FUNDS),
-            "VIRTUAL_ITEM_ROGUE_PUMAN_COUPON" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_PUMAN_COUPON),
-            "VIRTUAL_ITEM_MONTH_CARD" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MONTH_CARD),
-            "VIRTUAL_ITEM_BP_NORMAL" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_BP_NORMAL),
-            "VIRTUAL_ITEM_BP_DELUXE" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_BP_DELUXE),
-            "VIRTUAL_ITEM_BP_UPGRADE" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_BP_UPGRADE),
-            "VIRTUAL_ITEM_HELIOBUS_FANS" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_HELIOBUS_FANS),
-            "VIRTUAL_ITEM_SPACE_ZOO_HYBRID_ITEM" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_SPACE_ZOO_HYBRID_ITEM),
-            "VIRTUAL_ITEM_SPACE_ZOO_EXP_POINT" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_SPACE_ZOO_EXP_POINT),
-            "VIRTUAL_ITEM_ROGUE_NOUS_TALENT_COIN" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_NOUS_TALENT_COIN),
-            "VIRTUAL_ITEM_EVOLVE_BUILD_COIN" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_EVOLVE_BUILD_COIN),
-            "VIRTUAL_ITEM_DRINK_MAKER_TIP" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_DRINK_MAKER_TIP),
-            "VIRTUAL_ITEM_MONOPOLY_DICE" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MONOPOLY_DICE),
-            "VIRTUAL_ITEM_MONOPOLY_COIN" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MONOPOLY_COIN),
-            "VIRTUAL_ITEM_MONOPOLY_CHEATDICE" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MONOPOLY_CHEATDICE),
-            "VIRTUAL_ITEM_MONOPOLY_REROLL" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MONOPOLY_REROLL),
-            "VIRTUAL_ITEM_ROGUE_TOURN_PERMANENT_TALENT_COIN" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_TOURN_PERMANENT_TALENT_COIN),
-            "VIRTUAL_ITEM_ROGUE_TOURN_SEASON_TALENT_COIN" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_TOURN_SEASON_TALENT_COIN),
-            "VIRTUAL_ITEM_ROGUE_TOURN_EXP" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_TOURN_EXP),
-            "VIRTUAL_ITEM_MATCHTHREE_COIN" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MATCHTHREE_COIN),
-            "VIRTUAL_ITEM_SWORD_TRAINING_SKILL_POINT" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_SWORD_TRAINING_SKILL_POINT),
-            "VIRTUAL_ITEM_FIGHT_FEST_COIN" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_FIGHT_FEST_COIN),
-            "VIRTUAL_ITEM_ROGUE_MAGIC_TALENT_COIN" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_MAGIC_TALENT_COIN),
-            "VIRTUAL_ITEM_EVOLVE_BUILD_SC_COIN" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_EVOLVE_BUILD_SC_COIN),
-            "VIRTUAL_ITEM_EVOLVE_BUILD_REWARD_EXP" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_EVOLVE_BUILD_REWARD_EXP),
-            "VIRTUAL_ITEM_MATCHTHREE_V2_COIN" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MATCHTHREE_V2_COIN),
-            "VIRTUAL_ITEM_GRID_FIGHT_COIN" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_GRID_FIGHT_COIN),
-            "VIRTUAL_ITEM_GRID_FIGHT_TALENT_COIN" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_GRID_FIGHT_TALENT_COIN),
-            "VIRTUAL_ITEM_GRID_FIGHT_SEASON_EXP" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_GRID_FIGHT_SEASON_EXP),
-            "VIRTUAL_ITEM_GRID_FIGHT_GAMEPLAY_EXP" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_GRID_FIGHT_GAMEPLAY_EXP),
-            "VIRTUAL_ITEM_GRID_FIGHT_FREE_REFRESH_TIMES" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_GRID_FIGHT_FREE_REFRESH_TIMES),
-            "VIRTUAL_ITEM_CAKE_RACE_COIN" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_CAKE_RACE_COIN),
-            "VIRTUAL_ITEM_CAKE_RACE_SCORE" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_CAKE_RACE_SCORE),
+            "VirtualItemType_VirtualItemNone" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemNone),
+            "VirtualItemType_VirtualItemHcoin" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemHcoin),
+            "VirtualItemType_VirtualItemScoin" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemScoin),
+            "VirtualItemType_VirtualItemMcoin" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemMcoin),
+            "VirtualItemType_VirtualItemStamina" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemStamina),
+            "VirtualItemType_VirtualItemReserveStamina" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemReserveStamina),
+            "VirtualItemType_VirtualItemAvatarExp" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemAvatarExp),
+            "VirtualItemType_VirtualItemExp" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemExp),
+            "VirtualItemType_VirtualItemDailyActivePoint" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemDailyActivePoint),
+            "VirtualItemType_VirtualItemMpMax" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemMpMax),
+            "VirtualItemType_VirtualItemPlayerReturnPoint" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemPlayerReturnPoint),
+            "VirtualItemType_VirtualItemBattleCollegePoint" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemBattleCollegePoint),
+            "VirtualItemType_VirtualItemRogueCoin" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRogueCoin),
+            "VirtualItemType_VirtualItemRogueTalentCoin" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRogueTalentCoin),
+            "VirtualItemType_VirtualItemRogueRewardKey" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRogueRewardKey),
+            "VirtualItemType_VirtualItemRogueSuperRewardKey" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRogueSuperRewardKey),
+            "VirtualItemType_VirtualItemAchievementExp" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemAchievementExp),
+            "VirtualItemType_VirtualItemBpExp" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemBpExp),
+            "VirtualItemType_VirtualItemBpRealExp" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemBpRealExp),
+            "VirtualItemType_VirtualItemMuseumFunds" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemMuseumFunds),
+            "VirtualItemType_VirtualTrainpartyBuildingFunds" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualTrainpartyBuildingFunds),
+            "VirtualItemType_VirtualTrainpartyAreaUnlockCoin" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualTrainpartyAreaUnlockCoin),
+            "VirtualItemType_VirtualTrainpartyMobility" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualTrainpartyMobility),
+            "VirtualItemType_VirtualItemWarriorExp" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemWarriorExp),
+            "VirtualItemType_VirtualItemRogueExp" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRogueExp),
+            "VirtualItemType_VirtualItemMageExp" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemMageExp),
+            "VirtualItemType_VirtualItemShamanExp" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemShamanExp),
+            "VirtualItemType_VirtualItemWarlockExp" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemWarlockExp),
+            "VirtualItemType_VirtualItemKnightExp" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemKnightExp),
+            "VirtualItemType_VirtualItemPriestExp" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemPriestExp),
+            "VirtualItemType_VirtualItemPunkLordPoint" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemPunkLordPoint),
+            "VirtualItemType_VirtualItemGameplayCounterMonsterSneakVision" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemGameplayCounterMonsterSneakVision),
+            "VirtualItemType_VirtualItemGameplayCounterWolfBroBullet" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemGameplayCounterWolfBroBullet),
+            "VirtualItemType_VirtualItemAlleyFunds" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemAlleyFunds),
+            "VirtualItemType_VirtualItemRoguePumanCoupon" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRoguePumanCoupon),
+            "VirtualItemType_VirtualItemMonthCard" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemMonthCard),
+            "VirtualItemType_VirtualItemBpNormal" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemBpNormal),
+            "VirtualItemType_VirtualItemBpDeluxe" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemBpDeluxe),
+            "VirtualItemType_VirtualItemBpUpgrade" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemBpUpgrade),
+            "VirtualItemType_VirtualItemHeliobusFans" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemHeliobusFans),
+            "VirtualItemType_VirtualItemSpaceZooHybridItem" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemSpaceZooHybridItem),
+            "VirtualItemType_VirtualItemSpaceZooExpPoint" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemSpaceZooExpPoint),
+            "VirtualItemType_VirtualItemRogueNousTalentCoin" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRogueNousTalentCoin),
+            "VirtualItemType_VirtualItemEvolveBuildCoin" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemEvolveBuildCoin),
+            "VirtualItemType_VirtualItemDrinkMakerTip" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemDrinkMakerTip),
+            "VirtualItemType_VirtualItemMonopolyDice" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemMonopolyDice),
+            "VirtualItemType_VirtualItemMonopolyCoin" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemMonopolyCoin),
+            "VirtualItemType_VirtualItemMonopolyCheatdice" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemMonopolyCheatdice),
+            "VirtualItemType_VirtualItemMonopolyReroll" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemMonopolyReroll),
+            "VirtualItemType_VirtualItemRogueTournPermanentTalentCoin" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRogueTournPermanentTalentCoin),
+            "VirtualItemType_VirtualItemRogueTournSeasonTalentCoin" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRogueTournSeasonTalentCoin),
+            "VirtualItemType_VirtualItemRogueTournExp" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRogueTournExp),
+            "VirtualItemType_VirtualItemMatchthreeCoin" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemMatchthreeCoin),
+            "VirtualItemType_VirtualItemSwordTrainingSkillPoint" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemSwordTrainingSkillPoint),
+            "VirtualItemType_VirtualItemFightFestCoin" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemFightFestCoin),
+            "VirtualItemType_VirtualItemRogueMagicTalentCoin" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRogueMagicTalentCoin),
+            "VirtualItemType_VirtualItemEvolveBuildScCoin" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemEvolveBuildScCoin),
+            "VirtualItemType_VirtualItemEvolveBuildRewardExp" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemEvolveBuildRewardExp),
+            "VirtualItemType_VirtualItemMatchthreeV2Coin" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemMatchthreeV2Coin),
+            "VirtualItemType_VirtualItemRogueTournSeasonTalentCoinS3" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRogueTournSeasonTalentCoinS3),
+            "H_52813ac4" => ::std::option::Option::Some(VirtualItemType::H_52813ac4),
+            "H_0026b4a7" => ::std::option::Option::Some(VirtualItemType::H_0026b4a7),
+            "H_c7cbb8b6" => ::std::option::Option::Some(VirtualItemType::H_c7cbb8b6),
+            "H_1b1d546e" => ::std::option::Option::Some(VirtualItemType::H_1b1d546e),
+            "H_4356cff9" => ::std::option::Option::Some(VirtualItemType::H_4356cff9),
+            "VirtualItemType_VirtualItemFiveDimMoney" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemFiveDimMoney),
+            "VirtualItemType_VirtualItemChimeraDuelMasterMoney" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemChimeraDuelMasterMoney),
+            "VirtualItemType_VirtualItemCakeRaceCoin" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemCakeRaceCoin),
+            "VirtualItemType_VirtualItemCakeRaceScore" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemCakeRaceScore),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [VirtualItemType] = &[
-        VirtualItemType::VIRTUAL_ITEM_NONE,
-        VirtualItemType::VIRTUAL_ITEM_HCOIN,
-        VirtualItemType::VIRTUAL_ITEM_SCOIN,
-        VirtualItemType::VIRTUAL_ITEM_MCOIN,
-        VirtualItemType::VIRTUAL_ITEM_STAMINA,
-        VirtualItemType::VIRTUAL_ITEM_RESERVE_STAMINA,
-        VirtualItemType::VIRTUAL_ITEM_AVATAR_EXP,
-        VirtualItemType::VIRTUAL_ITEM_EXP,
-        VirtualItemType::VIRTUAL_ITEM_DAILY_ACTIVE_POINT,
-        VirtualItemType::VIRTUAL_ITEM_MP_MAX,
-        VirtualItemType::VIRTUAL_ITEM_PLAYER_RETURN_POINT,
-        VirtualItemType::VIRTUAL_ITEM_BATTLE_COLLEGE_POINT,
-        VirtualItemType::VIRTUAL_ITEM_ROGUE_COIN,
-        VirtualItemType::VIRTUAL_ITEM_ROGUE_TALENT_COIN,
-        VirtualItemType::VIRTUAL_ITEM_ROGUE_REWARD_KEY,
-        VirtualItemType::VIRTUAL_ITEM_ROGUE_SUPER_REWARD_KEY,
-        VirtualItemType::VIRTUAL_ITEM_ACHIEVEMENT_EXP,
-        VirtualItemType::VIRTUAL_ITEM_BP_EXP,
-        VirtualItemType::VIRTUAL_ITEM_BP_REAL_EXP,
-        VirtualItemType::VIRTUAL_ITEM_MUSEUM_FUNDS,
-        VirtualItemType::VIRTUAL_TRAINPARTY_BUILDING_FUNDS,
-        VirtualItemType::VIRTUAL_TRAINPARTY_AREA_UNLOCK_COIN,
-        VirtualItemType::VIRTUAL_TRAINPARTY_MOBILITY,
-        VirtualItemType::VIRTUAL_ITEM_WARRIOR_EXP,
-        VirtualItemType::VIRTUAL_ITEM_ROGUE_EXP,
-        VirtualItemType::VIRTUAL_ITEM_MAGE_EXP,
-        VirtualItemType::VIRTUAL_ITEM_SHAMAN_EXP,
-        VirtualItemType::VIRTUAL_ITEM_WARLOCK_EXP,
-        VirtualItemType::VIRTUAL_ITEM_KNIGHT_EXP,
-        VirtualItemType::VIRTUAL_ITEM_PRIEST_EXP,
-        VirtualItemType::VIRTUAL_ITEM_PUNK_LORD_POINT,
-        VirtualItemType::VIRTUAL_ITEM_GAMEPLAY_COUNTER_MONSTER_SNEAK_VISION,
-        VirtualItemType::VIRTUAL_ITEM_GAMEPLAY_COUNTER_WOLF_BRO_BULLET,
-        VirtualItemType::VIRTUAL_ITEM_ALLEY_FUNDS,
-        VirtualItemType::VIRTUAL_ITEM_ROGUE_PUMAN_COUPON,
-        VirtualItemType::VIRTUAL_ITEM_MONTH_CARD,
-        VirtualItemType::VIRTUAL_ITEM_BP_NORMAL,
-        VirtualItemType::VIRTUAL_ITEM_BP_DELUXE,
-        VirtualItemType::VIRTUAL_ITEM_BP_UPGRADE,
-        VirtualItemType::VIRTUAL_ITEM_HELIOBUS_FANS,
-        VirtualItemType::VIRTUAL_ITEM_SPACE_ZOO_HYBRID_ITEM,
-        VirtualItemType::VIRTUAL_ITEM_SPACE_ZOO_EXP_POINT,
-        VirtualItemType::VIRTUAL_ITEM_ROGUE_NOUS_TALENT_COIN,
-        VirtualItemType::VIRTUAL_ITEM_EVOLVE_BUILD_COIN,
-        VirtualItemType::VIRTUAL_ITEM_DRINK_MAKER_TIP,
-        VirtualItemType::VIRTUAL_ITEM_MONOPOLY_DICE,
-        VirtualItemType::VIRTUAL_ITEM_MONOPOLY_COIN,
-        VirtualItemType::VIRTUAL_ITEM_MONOPOLY_CHEATDICE,
-        VirtualItemType::VIRTUAL_ITEM_MONOPOLY_REROLL,
-        VirtualItemType::VIRTUAL_ITEM_ROGUE_TOURN_PERMANENT_TALENT_COIN,
-        VirtualItemType::VIRTUAL_ITEM_ROGUE_TOURN_SEASON_TALENT_COIN,
-        VirtualItemType::VIRTUAL_ITEM_ROGUE_TOURN_EXP,
-        VirtualItemType::VIRTUAL_ITEM_MATCHTHREE_COIN,
-        VirtualItemType::VIRTUAL_ITEM_SWORD_TRAINING_SKILL_POINT,
-        VirtualItemType::VIRTUAL_ITEM_FIGHT_FEST_COIN,
-        VirtualItemType::VIRTUAL_ITEM_ROGUE_MAGIC_TALENT_COIN,
-        VirtualItemType::VIRTUAL_ITEM_EVOLVE_BUILD_SC_COIN,
-        VirtualItemType::VIRTUAL_ITEM_EVOLVE_BUILD_REWARD_EXP,
-        VirtualItemType::VIRTUAL_ITEM_MATCHTHREE_V2_COIN,
-        VirtualItemType::VIRTUAL_ITEM_GRID_FIGHT_COIN,
-        VirtualItemType::VIRTUAL_ITEM_GRID_FIGHT_TALENT_COIN,
-        VirtualItemType::VIRTUAL_ITEM_GRID_FIGHT_SEASON_EXP,
-        VirtualItemType::VIRTUAL_ITEM_GRID_FIGHT_GAMEPLAY_EXP,
-        VirtualItemType::VIRTUAL_ITEM_GRID_FIGHT_FREE_REFRESH_TIMES,
-        VirtualItemType::VIRTUAL_ITEM_CAKE_RACE_COIN,
-        VirtualItemType::VIRTUAL_ITEM_CAKE_RACE_SCORE,
+        VirtualItemType::VirtualItemType_VirtualItemNone,
+        VirtualItemType::VirtualItemType_VirtualItemHcoin,
+        VirtualItemType::VirtualItemType_VirtualItemScoin,
+        VirtualItemType::VirtualItemType_VirtualItemMcoin,
+        VirtualItemType::VirtualItemType_VirtualItemStamina,
+        VirtualItemType::VirtualItemType_VirtualItemReserveStamina,
+        VirtualItemType::VirtualItemType_VirtualItemAvatarExp,
+        VirtualItemType::VirtualItemType_VirtualItemExp,
+        VirtualItemType::VirtualItemType_VirtualItemDailyActivePoint,
+        VirtualItemType::VirtualItemType_VirtualItemMpMax,
+        VirtualItemType::VirtualItemType_VirtualItemPlayerReturnPoint,
+        VirtualItemType::VirtualItemType_VirtualItemBattleCollegePoint,
+        VirtualItemType::VirtualItemType_VirtualItemRogueCoin,
+        VirtualItemType::VirtualItemType_VirtualItemRogueTalentCoin,
+        VirtualItemType::VirtualItemType_VirtualItemRogueRewardKey,
+        VirtualItemType::VirtualItemType_VirtualItemRogueSuperRewardKey,
+        VirtualItemType::VirtualItemType_VirtualItemAchievementExp,
+        VirtualItemType::VirtualItemType_VirtualItemBpExp,
+        VirtualItemType::VirtualItemType_VirtualItemBpRealExp,
+        VirtualItemType::VirtualItemType_VirtualItemMuseumFunds,
+        VirtualItemType::VirtualItemType_VirtualTrainpartyBuildingFunds,
+        VirtualItemType::VirtualItemType_VirtualTrainpartyAreaUnlockCoin,
+        VirtualItemType::VirtualItemType_VirtualTrainpartyMobility,
+        VirtualItemType::VirtualItemType_VirtualItemWarriorExp,
+        VirtualItemType::VirtualItemType_VirtualItemRogueExp,
+        VirtualItemType::VirtualItemType_VirtualItemMageExp,
+        VirtualItemType::VirtualItemType_VirtualItemShamanExp,
+        VirtualItemType::VirtualItemType_VirtualItemWarlockExp,
+        VirtualItemType::VirtualItemType_VirtualItemKnightExp,
+        VirtualItemType::VirtualItemType_VirtualItemPriestExp,
+        VirtualItemType::VirtualItemType_VirtualItemPunkLordPoint,
+        VirtualItemType::VirtualItemType_VirtualItemGameplayCounterMonsterSneakVision,
+        VirtualItemType::VirtualItemType_VirtualItemGameplayCounterWolfBroBullet,
+        VirtualItemType::VirtualItemType_VirtualItemAlleyFunds,
+        VirtualItemType::VirtualItemType_VirtualItemRoguePumanCoupon,
+        VirtualItemType::VirtualItemType_VirtualItemMonthCard,
+        VirtualItemType::VirtualItemType_VirtualItemBpNormal,
+        VirtualItemType::VirtualItemType_VirtualItemBpDeluxe,
+        VirtualItemType::VirtualItemType_VirtualItemBpUpgrade,
+        VirtualItemType::VirtualItemType_VirtualItemHeliobusFans,
+        VirtualItemType::VirtualItemType_VirtualItemSpaceZooHybridItem,
+        VirtualItemType::VirtualItemType_VirtualItemSpaceZooExpPoint,
+        VirtualItemType::VirtualItemType_VirtualItemRogueNousTalentCoin,
+        VirtualItemType::VirtualItemType_VirtualItemEvolveBuildCoin,
+        VirtualItemType::VirtualItemType_VirtualItemDrinkMakerTip,
+        VirtualItemType::VirtualItemType_VirtualItemMonopolyDice,
+        VirtualItemType::VirtualItemType_VirtualItemMonopolyCoin,
+        VirtualItemType::VirtualItemType_VirtualItemMonopolyCheatdice,
+        VirtualItemType::VirtualItemType_VirtualItemMonopolyReroll,
+        VirtualItemType::VirtualItemType_VirtualItemRogueTournPermanentTalentCoin,
+        VirtualItemType::VirtualItemType_VirtualItemRogueTournSeasonTalentCoin,
+        VirtualItemType::VirtualItemType_VirtualItemRogueTournExp,
+        VirtualItemType::VirtualItemType_VirtualItemMatchthreeCoin,
+        VirtualItemType::VirtualItemType_VirtualItemSwordTrainingSkillPoint,
+        VirtualItemType::VirtualItemType_VirtualItemFightFestCoin,
+        VirtualItemType::VirtualItemType_VirtualItemRogueMagicTalentCoin,
+        VirtualItemType::VirtualItemType_VirtualItemEvolveBuildScCoin,
+        VirtualItemType::VirtualItemType_VirtualItemEvolveBuildRewardExp,
+        VirtualItemType::VirtualItemType_VirtualItemMatchthreeV2Coin,
+        VirtualItemType::VirtualItemType_VirtualItemRogueTournSeasonTalentCoinS3,
+        VirtualItemType::H_52813ac4,
+        VirtualItemType::H_0026b4a7,
+        VirtualItemType::H_c7cbb8b6,
+        VirtualItemType::H_1b1d546e,
+        VirtualItemType::H_4356cff9,
+        VirtualItemType::VirtualItemType_VirtualItemFiveDimMoney,
+        VirtualItemType::VirtualItemType_VirtualItemChimeraDuelMasterMoney,
+        VirtualItemType::VirtualItemType_VirtualItemCakeRaceCoin,
+        VirtualItemType::VirtualItemType_VirtualItemCakeRaceScore,
     ];
 }
 
@@ -390,72 +405,75 @@ impl ::protobuf::EnumFull for VirtualItemType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            VirtualItemType::VIRTUAL_ITEM_NONE => 0,
-            VirtualItemType::VIRTUAL_ITEM_HCOIN => 1,
-            VirtualItemType::VIRTUAL_ITEM_SCOIN => 2,
-            VirtualItemType::VIRTUAL_ITEM_MCOIN => 3,
-            VirtualItemType::VIRTUAL_ITEM_STAMINA => 4,
-            VirtualItemType::VIRTUAL_ITEM_RESERVE_STAMINA => 5,
-            VirtualItemType::VIRTUAL_ITEM_AVATAR_EXP => 6,
-            VirtualItemType::VIRTUAL_ITEM_EXP => 7,
-            VirtualItemType::VIRTUAL_ITEM_DAILY_ACTIVE_POINT => 8,
-            VirtualItemType::VIRTUAL_ITEM_MP_MAX => 9,
-            VirtualItemType::VIRTUAL_ITEM_PLAYER_RETURN_POINT => 10,
-            VirtualItemType::VIRTUAL_ITEM_BATTLE_COLLEGE_POINT => 11,
-            VirtualItemType::VIRTUAL_ITEM_ROGUE_COIN => 12,
-            VirtualItemType::VIRTUAL_ITEM_ROGUE_TALENT_COIN => 13,
-            VirtualItemType::VIRTUAL_ITEM_ROGUE_REWARD_KEY => 14,
-            VirtualItemType::VIRTUAL_ITEM_ROGUE_SUPER_REWARD_KEY => 15,
-            VirtualItemType::VIRTUAL_ITEM_ACHIEVEMENT_EXP => 16,
-            VirtualItemType::VIRTUAL_ITEM_BP_EXP => 17,
-            VirtualItemType::VIRTUAL_ITEM_BP_REAL_EXP => 18,
-            VirtualItemType::VIRTUAL_ITEM_MUSEUM_FUNDS => 19,
-            VirtualItemType::VIRTUAL_TRAINPARTY_BUILDING_FUNDS => 20,
-            VirtualItemType::VIRTUAL_TRAINPARTY_AREA_UNLOCK_COIN => 21,
-            VirtualItemType::VIRTUAL_TRAINPARTY_MOBILITY => 22,
-            VirtualItemType::VIRTUAL_ITEM_WARRIOR_EXP => 23,
-            VirtualItemType::VIRTUAL_ITEM_ROGUE_EXP => 24,
-            VirtualItemType::VIRTUAL_ITEM_MAGE_EXP => 25,
-            VirtualItemType::VIRTUAL_ITEM_SHAMAN_EXP => 26,
-            VirtualItemType::VIRTUAL_ITEM_WARLOCK_EXP => 27,
-            VirtualItemType::VIRTUAL_ITEM_KNIGHT_EXP => 28,
-            VirtualItemType::VIRTUAL_ITEM_PRIEST_EXP => 29,
-            VirtualItemType::VIRTUAL_ITEM_PUNK_LORD_POINT => 30,
-            VirtualItemType::VIRTUAL_ITEM_GAMEPLAY_COUNTER_MONSTER_SNEAK_VISION => 31,
-            VirtualItemType::VIRTUAL_ITEM_GAMEPLAY_COUNTER_WOLF_BRO_BULLET => 32,
-            VirtualItemType::VIRTUAL_ITEM_ALLEY_FUNDS => 33,
-            VirtualItemType::VIRTUAL_ITEM_ROGUE_PUMAN_COUPON => 34,
-            VirtualItemType::VIRTUAL_ITEM_MONTH_CARD => 35,
-            VirtualItemType::VIRTUAL_ITEM_BP_NORMAL => 36,
-            VirtualItemType::VIRTUAL_ITEM_BP_DELUXE => 37,
-            VirtualItemType::VIRTUAL_ITEM_BP_UPGRADE => 38,
-            VirtualItemType::VIRTUAL_ITEM_HELIOBUS_FANS => 39,
-            VirtualItemType::VIRTUAL_ITEM_SPACE_ZOO_HYBRID_ITEM => 40,
-            VirtualItemType::VIRTUAL_ITEM_SPACE_ZOO_EXP_POINT => 41,
-            VirtualItemType::VIRTUAL_ITEM_ROGUE_NOUS_TALENT_COIN => 42,
-            VirtualItemType::VIRTUAL_ITEM_EVOLVE_BUILD_COIN => 43,
-            VirtualItemType::VIRTUAL_ITEM_DRINK_MAKER_TIP => 44,
-            VirtualItemType::VIRTUAL_ITEM_MONOPOLY_DICE => 45,
-            VirtualItemType::VIRTUAL_ITEM_MONOPOLY_COIN => 46,
-            VirtualItemType::VIRTUAL_ITEM_MONOPOLY_CHEATDICE => 47,
-            VirtualItemType::VIRTUAL_ITEM_MONOPOLY_REROLL => 48,
-            VirtualItemType::VIRTUAL_ITEM_ROGUE_TOURN_PERMANENT_TALENT_COIN => 49,
-            VirtualItemType::VIRTUAL_ITEM_ROGUE_TOURN_SEASON_TALENT_COIN => 50,
-            VirtualItemType::VIRTUAL_ITEM_ROGUE_TOURN_EXP => 51,
-            VirtualItemType::VIRTUAL_ITEM_MATCHTHREE_COIN => 52,
-            VirtualItemType::VIRTUAL_ITEM_SWORD_TRAINING_SKILL_POINT => 53,
-            VirtualItemType::VIRTUAL_ITEM_FIGHT_FEST_COIN => 54,
-            VirtualItemType::VIRTUAL_ITEM_ROGUE_MAGIC_TALENT_COIN => 55,
-            VirtualItemType::VIRTUAL_ITEM_EVOLVE_BUILD_SC_COIN => 56,
-            VirtualItemType::VIRTUAL_ITEM_EVOLVE_BUILD_REWARD_EXP => 57,
-            VirtualItemType::VIRTUAL_ITEM_MATCHTHREE_V2_COIN => 58,
-            VirtualItemType::VIRTUAL_ITEM_GRID_FIGHT_COIN => 59,
-            VirtualItemType::VIRTUAL_ITEM_GRID_FIGHT_TALENT_COIN => 60,
-            VirtualItemType::VIRTUAL_ITEM_GRID_FIGHT_SEASON_EXP => 61,
-            VirtualItemType::VIRTUAL_ITEM_GRID_FIGHT_GAMEPLAY_EXP => 62,
-            VirtualItemType::VIRTUAL_ITEM_GRID_FIGHT_FREE_REFRESH_TIMES => 63,
-            VirtualItemType::VIRTUAL_ITEM_CAKE_RACE_COIN => 64,
-            VirtualItemType::VIRTUAL_ITEM_CAKE_RACE_SCORE => 65,
+            VirtualItemType::VirtualItemType_VirtualItemNone => 0,
+            VirtualItemType::VirtualItemType_VirtualItemHcoin => 1,
+            VirtualItemType::VirtualItemType_VirtualItemScoin => 2,
+            VirtualItemType::VirtualItemType_VirtualItemMcoin => 3,
+            VirtualItemType::VirtualItemType_VirtualItemStamina => 4,
+            VirtualItemType::VirtualItemType_VirtualItemReserveStamina => 5,
+            VirtualItemType::VirtualItemType_VirtualItemAvatarExp => 6,
+            VirtualItemType::VirtualItemType_VirtualItemExp => 7,
+            VirtualItemType::VirtualItemType_VirtualItemDailyActivePoint => 8,
+            VirtualItemType::VirtualItemType_VirtualItemMpMax => 9,
+            VirtualItemType::VirtualItemType_VirtualItemPlayerReturnPoint => 10,
+            VirtualItemType::VirtualItemType_VirtualItemBattleCollegePoint => 11,
+            VirtualItemType::VirtualItemType_VirtualItemRogueCoin => 12,
+            VirtualItemType::VirtualItemType_VirtualItemRogueTalentCoin => 13,
+            VirtualItemType::VirtualItemType_VirtualItemRogueRewardKey => 14,
+            VirtualItemType::VirtualItemType_VirtualItemRogueSuperRewardKey => 15,
+            VirtualItemType::VirtualItemType_VirtualItemAchievementExp => 16,
+            VirtualItemType::VirtualItemType_VirtualItemBpExp => 17,
+            VirtualItemType::VirtualItemType_VirtualItemBpRealExp => 18,
+            VirtualItemType::VirtualItemType_VirtualItemMuseumFunds => 19,
+            VirtualItemType::VirtualItemType_VirtualTrainpartyBuildingFunds => 20,
+            VirtualItemType::VirtualItemType_VirtualTrainpartyAreaUnlockCoin => 21,
+            VirtualItemType::VirtualItemType_VirtualTrainpartyMobility => 22,
+            VirtualItemType::VirtualItemType_VirtualItemWarriorExp => 23,
+            VirtualItemType::VirtualItemType_VirtualItemRogueExp => 24,
+            VirtualItemType::VirtualItemType_VirtualItemMageExp => 25,
+            VirtualItemType::VirtualItemType_VirtualItemShamanExp => 26,
+            VirtualItemType::VirtualItemType_VirtualItemWarlockExp => 27,
+            VirtualItemType::VirtualItemType_VirtualItemKnightExp => 28,
+            VirtualItemType::VirtualItemType_VirtualItemPriestExp => 29,
+            VirtualItemType::VirtualItemType_VirtualItemPunkLordPoint => 30,
+            VirtualItemType::VirtualItemType_VirtualItemGameplayCounterMonsterSneakVision => 31,
+            VirtualItemType::VirtualItemType_VirtualItemGameplayCounterWolfBroBullet => 32,
+            VirtualItemType::VirtualItemType_VirtualItemAlleyFunds => 33,
+            VirtualItemType::VirtualItemType_VirtualItemRoguePumanCoupon => 34,
+            VirtualItemType::VirtualItemType_VirtualItemMonthCard => 35,
+            VirtualItemType::VirtualItemType_VirtualItemBpNormal => 36,
+            VirtualItemType::VirtualItemType_VirtualItemBpDeluxe => 37,
+            VirtualItemType::VirtualItemType_VirtualItemBpUpgrade => 38,
+            VirtualItemType::VirtualItemType_VirtualItemHeliobusFans => 39,
+            VirtualItemType::VirtualItemType_VirtualItemSpaceZooHybridItem => 40,
+            VirtualItemType::VirtualItemType_VirtualItemSpaceZooExpPoint => 41,
+            VirtualItemType::VirtualItemType_VirtualItemRogueNousTalentCoin => 42,
+            VirtualItemType::VirtualItemType_VirtualItemEvolveBuildCoin => 43,
+            VirtualItemType::VirtualItemType_VirtualItemDrinkMakerTip => 44,
+            VirtualItemType::VirtualItemType_VirtualItemMonopolyDice => 45,
+            VirtualItemType::VirtualItemType_VirtualItemMonopolyCoin => 46,
+            VirtualItemType::VirtualItemType_VirtualItemMonopolyCheatdice => 47,
+            VirtualItemType::VirtualItemType_VirtualItemMonopolyReroll => 48,
+            VirtualItemType::VirtualItemType_VirtualItemRogueTournPermanentTalentCoin => 49,
+            VirtualItemType::VirtualItemType_VirtualItemRogueTournSeasonTalentCoin => 50,
+            VirtualItemType::VirtualItemType_VirtualItemRogueTournExp => 51,
+            VirtualItemType::VirtualItemType_VirtualItemMatchthreeCoin => 52,
+            VirtualItemType::VirtualItemType_VirtualItemSwordTrainingSkillPoint => 53,
+            VirtualItemType::VirtualItemType_VirtualItemFightFestCoin => 54,
+            VirtualItemType::VirtualItemType_VirtualItemRogueMagicTalentCoin => 55,
+            VirtualItemType::VirtualItemType_VirtualItemEvolveBuildScCoin => 56,
+            VirtualItemType::VirtualItemType_VirtualItemEvolveBuildRewardExp => 57,
+            VirtualItemType::VirtualItemType_VirtualItemMatchthreeV2Coin => 58,
+            VirtualItemType::VirtualItemType_VirtualItemRogueTournSeasonTalentCoinS3 => 59,
+            VirtualItemType::H_52813ac4 => 60,
+            VirtualItemType::H_0026b4a7 => 61,
+            VirtualItemType::H_c7cbb8b6 => 62,
+            VirtualItemType::H_1b1d546e => 63,
+            VirtualItemType::H_4356cff9 => 64,
+            VirtualItemType::VirtualItemType_VirtualItemFiveDimMoney => 65,
+            VirtualItemType::VirtualItemType_VirtualItemChimeraDuelMasterMoney => 66,
+            VirtualItemType::VirtualItemType_VirtualItemCakeRaceCoin => 67,
+            VirtualItemType::VirtualItemType_VirtualItemCakeRaceScore => 68,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -463,7 +481,7 @@ impl ::protobuf::EnumFull for VirtualItemType {
 
 impl ::std::default::Default for VirtualItemType {
     fn default() -> Self {
-        VirtualItemType::VIRTUAL_ITEM_NONE
+        VirtualItemType::VirtualItemType_VirtualItemNone
     }
 }
 
@@ -474,56 +492,65 @@ impl VirtualItemType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15VirtualItemType.proto*\xc7\x12\n\x0fVirtualItemType\x12\x15\n\x11V\
-    IRTUAL_ITEM_NONE\x10\0\x12\x16\n\x12VIRTUAL_ITEM_HCOIN\x10\x01\x12\x16\n\
-    \x12VIRTUAL_ITEM_SCOIN\x10\x02\x12\x16\n\x12VIRTUAL_ITEM_MCOIN\x10\x03\
-    \x12\x18\n\x14VIRTUAL_ITEM_STAMINA\x10\x0b\x12\x20\n\x1cVIRTUAL_ITEM_RES\
-    ERVE_STAMINA\x10\x0c\x12\x1b\n\x17VIRTUAL_ITEM_AVATAR_EXP\x10\x15\x12\
-    \x14\n\x10VIRTUAL_ITEM_EXP\x10\x16\x12#\n\x1fVIRTUAL_ITEM_DAILY_ACTIVE_P\
-    OINT\x10\x17\x12\x17\n\x13VIRTUAL_ITEM_MP_MAX\x10\x18\x12$\n\x20VIRTUAL_\
-    ITEM_PLAYER_RETURN_POINT\x10\x19\x12%\n!VIRTUAL_ITEM_BATTLE_COLLEGE_POIN\
-    T\x10\x1a\x12\x1b\n\x17VIRTUAL_ITEM_ROGUE_COIN\x10\x1f\x12\"\n\x1eVIRTUA\
-    L_ITEM_ROGUE_TALENT_COIN\x10\x20\x12!\n\x1dVIRTUAL_ITEM_ROGUE_REWARD_KEY\
-    \x10!\x12'\n#VIRTUAL_ITEM_ROGUE_SUPER_REWARD_KEY\x10\"\x12\x20\n\x1cVIRT\
-    UAL_ITEM_ACHIEVEMENT_EXP\x10)\x12\x17\n\x13VIRTUAL_ITEM_BP_EXP\x103\x12\
-    \x1c\n\x18VIRTUAL_ITEM_BP_REAL_EXP\x104\x12\x1d\n\x19VIRTUAL_ITEM_MUSEUM\
-    _FUNDS\x105\x12%\n!VIRTUAL_TRAINPARTY_BUILDING_FUNDS\x106\x12'\n#VIRTUAL\
-    _TRAINPARTY_AREA_UNLOCK_COIN\x107\x12\x1f\n\x1bVIRTUAL_TRAINPARTY_MOBILI\
-    TY\x108\x12\x1d\n\x18VIRTUAL_ITEM_WARRIOR_EXP\x10\xbe\x01\x12\x1b\n\x16V\
-    IRTUAL_ITEM_ROGUE_EXP\x10\xbf\x01\x12\x1a\n\x15VIRTUAL_ITEM_MAGE_EXP\x10\
-    \xc0\x01\x12\x1c\n\x17VIRTUAL_ITEM_SHAMAN_EXP\x10\xc1\x01\x12\x1d\n\x18V\
-    IRTUAL_ITEM_WARLOCK_EXP\x10\xc2\x01\x12\x1c\n\x17VIRTUAL_ITEM_KNIGHT_EXP\
-    \x10\xc3\x01\x12\x1c\n\x17VIRTUAL_ITEM_PRIEST_EXP\x10\xc4\x01\x12\"\n\
-    \x1cVIRTUAL_ITEM_PUNK_LORD_POINT\x10\xa0\x8d\x06\x128\n2VIRTUAL_ITEM_GAM\
-    EPLAY_COUNTER_MONSTER_SNEAK_VISION\x10\xc1\x8b\x11\x123\n-VIRTUAL_ITEM_G\
-    AMEPLAY_COUNTER_WOLF_BRO_BULLET\x10\xc2\x8b\x11\x12\x1e\n\x18VIRTUAL_ITE\
-    M_ALLEY_FUNDS\x10\xa9\x93\x11\x12%\n\x1fVIRTUAL_ITEM_ROGUE_PUMAN_COUPON\
-    \x10\xb4\x93\x11\x12\x1d\n\x17VIRTUAL_ITEM_MONTH_CARD\x10\xc5\xa8\x12\
-    \x12\x1c\n\x16VIRTUAL_ITEM_BP_NORMAL\x10\xc6\xa8\x12\x12\x1c\n\x16VIRTUA\
-    L_ITEM_BP_DELUXE\x10\xc7\xa8\x12\x12\x1d\n\x17VIRTUAL_ITEM_BP_UPGRADE\
-    \x10\xc8\xa8\x12\x12\x20\n\x1aVIRTUAL_ITEM_HELIOBUS_FANS\x10\xaa\x93\x11\
-    \x12(\n\"VIRTUAL_ITEM_SPACE_ZOO_HYBRID_ITEM\x10\xab\x93\x11\x12&\n\x20VI\
-    RTUAL_ITEM_SPACE_ZOO_EXP_POINT\x10\xac\x93\x11\x12)\n#VIRTUAL_ITEM_ROGUE\
-    _NOUS_TALENT_COIN\x10\xb5\x93\x11\x12$\n\x1eVIRTUAL_ITEM_EVOLVE_BUILD_CO\
-    IN\x10\xbb\x93\x11\x12\"\n\x1cVIRTUAL_ITEM_DRINK_MAKER_TIP\x10\xad\x93\
-    \x11\x12\x20\n\x1aVIRTUAL_ITEM_MONOPOLY_DICE\x10\xb6\x93\x11\x12\x20\n\
-    \x1aVIRTUAL_ITEM_MONOPOLY_COIN\x10\xb7\x93\x11\x12%\n\x1fVIRTUAL_ITEM_MO\
-    NOPOLY_CHEATDICE\x10\xb8\x93\x11\x12\"\n\x1cVIRTUAL_ITEM_MONOPOLY_REROLL\
-    \x10\xb9\x93\x11\x124\n.VIRTUAL_ITEM_ROGUE_TOURN_PERMANENT_TALENT_COIN\
-    \x10\xba\x93\x11\x121\n+VIRTUAL_ITEM_ROGUE_TOURN_SEASON_TALENT_COIN\x10\
-    \xbc\x93\x11\x12\"\n\x1cVIRTUAL_ITEM_ROGUE_TOURN_EXP\x10\xbe\x93\x11\x12\
-    \"\n\x1cVIRTUAL_ITEM_MATCHTHREE_COIN\x10\xc0\x93\x11\x12-\n'VIRTUAL_ITEM\
-    _SWORD_TRAINING_SKILL_POINT\x10\xbf\x93\x11\x12\"\n\x1cVIRTUAL_ITEM_FIGH\
-    T_FEST_COIN\x10\xc1\x93\x11\x12*\n$VIRTUAL_ITEM_ROGUE_MAGIC_TALENT_COIN\
-    \x10\xc2\x93\x11\x12'\n!VIRTUAL_ITEM_EVOLVE_BUILD_SC_COIN\x10\xc3\x93\
-    \x11\x12*\n$VIRTUAL_ITEM_EVOLVE_BUILD_REWARD_EXP\x10\xc4\x93\x11\x12%\n\
-    \x1fVIRTUAL_ITEM_MATCHTHREE_V2_COIN\x10\xc5\x93\x11\x12\"\n\x1cVIRTUAL_I\
-    TEM_GRID_FIGHT_COIN\x10\xc7\x93\x11\x12)\n#VIRTUAL_ITEM_GRID_FIGHT_TALEN\
-    T_COIN\x10\xc8\x93\x11\x12(\n\"VIRTUAL_ITEM_GRID_FIGHT_SEASON_EXP\x10\
-    \xc9\x93\x11\x12*\n$VIRTUAL_ITEM_GRID_FIGHT_GAMEPLAY_EXP\x10\xca\x93\x11\
-    \x120\n*VIRTUAL_ITEM_GRID_FIGHT_FREE_REFRESH_TIMES\x10\xcb\x93\x11\x12!\
-    \n\x1bVIRTUAL_ITEM_CAKE_RACE_COIN\x10\xce\x93\x11\x12\"\n\x1cVIRTUAL_ITE\
-    M_CAKE_RACE_SCORE\x10\xcf\x93\x11b\x06proto3\
+    \n\x15VirtualItemType.proto*\xe5\x18\n\x0fVirtualItemType\x12#\n\x1fVirt\
+    ualItemType_VirtualItemNone\x10\0\x12$\n\x20VirtualItemType_VirtualItemH\
+    coin\x10\x01\x12$\n\x20VirtualItemType_VirtualItemScoin\x10\x02\x12$\n\
+    \x20VirtualItemType_VirtualItemMcoin\x10\x03\x12&\n\"VirtualItemType_Vir\
+    tualItemStamina\x10\x0b\x12-\n)VirtualItemType_VirtualItemReserveStamina\
+    \x10\x0c\x12(\n$VirtualItemType_VirtualItemAvatarExp\x10\x15\x12\"\n\x1e\
+    VirtualItemType_VirtualItemExp\x10\x16\x12/\n+VirtualItemType_VirtualIte\
+    mDailyActivePoint\x10\x17\x12$\n\x20VirtualItemType_VirtualItemMpMax\x10\
+    \x18\x120\n,VirtualItemType_VirtualItemPlayerReturnPoint\x10\x19\x121\n-\
+    VirtualItemType_VirtualItemBattleCollegePoint\x10\x1a\x12(\n$VirtualItem\
+    Type_VirtualItemRogueCoin\x10\x1f\x12.\n*VirtualItemType_VirtualItemRogu\
+    eTalentCoin\x10\x20\x12-\n)VirtualItemType_VirtualItemRogueRewardKey\x10\
+    !\x122\n.VirtualItemType_VirtualItemRogueSuperRewardKey\x10\"\x12-\n)Vir\
+    tualItemType_VirtualItemAchievementExp\x10)\x12$\n\x20VirtualItemType_Vi\
+    rtualItemBpExp\x103\x12(\n$VirtualItemType_VirtualItemBpRealExp\x104\x12\
+    *\n&VirtualItemType_VirtualItemMuseumFunds\x105\x122\n.VirtualItemType_V\
+    irtualTrainpartyBuildingFunds\x106\x123\n/VirtualItemType_VirtualTrainpa\
+    rtyAreaUnlockCoin\x107\x12-\n)VirtualItemType_VirtualTrainpartyMobility\
+    \x108\x12*\n%VirtualItemType_VirtualItemWarriorExp\x10\xbe\x01\x12(\n#Vi\
+    rtualItemType_VirtualItemRogueExp\x10\xbf\x01\x12'\n\"VirtualItemType_Vi\
+    rtualItemMageExp\x10\xc0\x01\x12)\n$VirtualItemType_VirtualItemShamanExp\
+    \x10\xc1\x01\x12*\n%VirtualItemType_VirtualItemWarlockExp\x10\xc2\x01\
+    \x12)\n$VirtualItemType_VirtualItemKnightExp\x10\xc3\x01\x12)\n$VirtualI\
+    temType_VirtualItemPriestExp\x10\xc4\x01\x12.\n(VirtualItemType_VirtualI\
+    temPunkLordPoint\x10\xa0\x8d\x06\x12B\n<VirtualItemType_VirtualItemGamep\
+    layCounterMonsterSneakVision\x10\xc1\x8b\x11\x12=\n7VirtualItemType_Virt\
+    ualItemGameplayCounterWolfBroBullet\x10\xc2\x8b\x11\x12+\n%VirtualItemTy\
+    pe_VirtualItemAlleyFunds\x10\xa9\x93\x11\x121\n+VirtualItemType_VirtualI\
+    temRoguePumanCoupon\x10\xb4\x93\x11\x12*\n$VirtualItemType_VirtualItemMo\
+    nthCard\x10\xc5\xa8\x12\x12)\n#VirtualItemType_VirtualItemBpNormal\x10\
+    \xc6\xa8\x12\x12)\n#VirtualItemType_VirtualItemBpDeluxe\x10\xc7\xa8\x12\
+    \x12*\n$VirtualItemType_VirtualItemBpUpgrade\x10\xc8\xa8\x12\x12-\n'Virt\
+    ualItemType_VirtualItemHeliobusFans\x10\xaa\x93\x11\x123\n-VirtualItemTy\
+    pe_VirtualItemSpaceZooHybridItem\x10\xab\x93\x11\x121\n+VirtualItemType_\
+    VirtualItemSpaceZooExpPoint\x10\xac\x93\x11\x124\n.VirtualItemType_Virtu\
+    alItemRogueNousTalentCoin\x10\xb5\x93\x11\x120\n*VirtualItemType_Virtual\
+    ItemEvolveBuildCoin\x10\xbb\x93\x11\x12.\n(VirtualItemType_VirtualItemDr\
+    inkMakerTip\x10\xad\x93\x11\x12-\n'VirtualItemType_VirtualItemMonopolyDi\
+    ce\x10\xb6\x93\x11\x12-\n'VirtualItemType_VirtualItemMonopolyCoin\x10\
+    \xb7\x93\x11\x122\n,VirtualItemType_VirtualItemMonopolyCheatdice\x10\xb8\
+    \x93\x11\x12/\n)VirtualItemType_VirtualItemMonopolyReroll\x10\xb9\x93\
+    \x11\x12>\n8VirtualItemType_VirtualItemRogueTournPermanentTalentCoin\x10\
+    \xba\x93\x11\x12;\n5VirtualItemType_VirtualItemRogueTournSeasonTalentCoi\
+    n\x10\xbc\x93\x11\x12.\n(VirtualItemType_VirtualItemRogueTournExp\x10\
+    \xbe\x93\x11\x12/\n)VirtualItemType_VirtualItemMatchthreeCoin\x10\xc0\
+    \x93\x11\x128\n2VirtualItemType_VirtualItemSwordTrainingSkillPoint\x10\
+    \xbf\x93\x11\x12.\n(VirtualItemType_VirtualItemFightFestCoin\x10\xc1\x93\
+    \x11\x125\n/VirtualItemType_VirtualItemRogueMagicTalentCoin\x10\xc2\x93\
+    \x11\x122\n,VirtualItemType_VirtualItemEvolveBuildScCoin\x10\xc3\x93\x11\
+    \x125\n/VirtualItemType_VirtualItemEvolveBuildRewardExp\x10\xc4\x93\x11\
+    \x121\n+VirtualItemType_VirtualItemMatchthreeV2Coin\x10\xc5\x93\x11\x12=\
+    \n7VirtualItemType_VirtualItemRogueTournSeasonTalentCoinS3\x10\xc6\x93\
+    \x11\x12\x10\n\nH_52813ac4\x10\xc7\x93\x11\x12\x10\n\nH_0026b4a7\x10\xc8\
+    \x93\x11\x12\x10\n\nH_c7cbb8b6\x10\xc9\x93\x11\x12\x10\n\nH_1b1d546e\x10\
+    \xca\x93\x11\x12\x10\n\nH_4356cff9\x10\xcb\x93\x11\x12-\n'VirtualItemTyp\
+    e_VirtualItemFiveDimMoney\x10\xcc\x93\x11\x127\n1VirtualItemType_Virtual\
+    ItemChimeraDuelMasterMoney\x10\xcd\x93\x11\x12-\n'VirtualItemType_Virtua\
+    lItemCakeRaceCoin\x10\xce\x93\x11\x12.\n(VirtualItemType_VirtualItemCake\
+    RaceScore\x10\xcf\x93\x11b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

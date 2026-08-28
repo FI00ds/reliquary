@@ -30,10 +30,10 @@ pub struct OEMOIGDNPNP {
     // message fields
     // @@protoc_insertion_point(field:OEMOIGDNPNP.card_id)
     pub card_id: u32,
-    // @@protoc_insertion_point(field:OEMOIGDNPNP.param)
-    pub param: f64,
-    // @@protoc_insertion_point(field:OEMOIGDNPNP.is_enable)
-    pub is_enable: bool,
+    // @@protoc_insertion_point(field:OEMOIGDNPNP.display_value)
+    pub display_value: f64,
+    // @@protoc_insertion_point(field:OEMOIGDNPNP.BBLMMNLCMGM)
+    pub BBLMMNLCMGM: bool,
     // @@protoc_insertion_point(field:OEMOIGDNPNP.switch_list)
     pub switch_list: ::std::vec::Vec<f64>,
     // special fields
@@ -61,14 +61,14 @@ impl OEMOIGDNPNP {
             |m: &mut OEMOIGDNPNP| { &mut m.card_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "param",
-            |m: &OEMOIGDNPNP| { &m.param },
-            |m: &mut OEMOIGDNPNP| { &mut m.param },
+            "display_value",
+            |m: &OEMOIGDNPNP| { &m.display_value },
+            |m: &mut OEMOIGDNPNP| { &mut m.display_value },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_enable",
-            |m: &OEMOIGDNPNP| { &m.is_enable },
-            |m: &mut OEMOIGDNPNP| { &mut m.is_enable },
+            "BBLMMNLCMGM",
+            |m: &OEMOIGDNPNP| { &m.BBLMMNLCMGM },
+            |m: &mut OEMOIGDNPNP| { &mut m.BBLMMNLCMGM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "switch_list",
@@ -97,10 +97,10 @@ impl ::protobuf::Message for OEMOIGDNPNP {
                     self.card_id = is.read_uint32()?;
                 },
                 17 => {
-                    self.param = is.read_double()?;
+                    self.display_value = is.read_double()?;
                 },
                 24 => {
-                    self.is_enable = is.read_bool()?;
+                    self.BBLMMNLCMGM = is.read_bool()?;
                 },
                 34 => {
                     is.read_repeated_packed_double_into(&mut self.switch_list)?;
@@ -123,10 +123,10 @@ impl ::protobuf::Message for OEMOIGDNPNP {
         if self.card_id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.card_id);
         }
-        if self.param != 0. {
+        if self.display_value != 0. {
             my_size += 1 + 8;
         }
-        if self.is_enable != false {
+        if self.BBLMMNLCMGM != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::vec_packed_double_size(4, &self.switch_list);
@@ -139,11 +139,11 @@ impl ::protobuf::Message for OEMOIGDNPNP {
         if self.card_id != 0 {
             os.write_uint32(1, self.card_id)?;
         }
-        if self.param != 0. {
-            os.write_double(2, self.param)?;
+        if self.display_value != 0. {
+            os.write_double(2, self.display_value)?;
         }
-        if self.is_enable != false {
-            os.write_bool(3, self.is_enable)?;
+        if self.BBLMMNLCMGM != false {
+            os.write_bool(3, self.BBLMMNLCMGM)?;
         }
         os.write_repeated_packed_double(4, &self.switch_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -164,8 +164,8 @@ impl ::protobuf::Message for OEMOIGDNPNP {
 
     fn clear(&mut self) {
         self.card_id = 0;
-        self.param = 0.;
-        self.is_enable = false;
+        self.display_value = 0.;
+        self.BBLMMNLCMGM = false;
         self.switch_list.clear();
         self.special_fields.clear();
     }
@@ -173,8 +173,8 @@ impl ::protobuf::Message for OEMOIGDNPNP {
     fn default_instance() -> &'static OEMOIGDNPNP {
         static instance: OEMOIGDNPNP = OEMOIGDNPNP {
             card_id: 0,
-            param: 0.,
-            is_enable: false,
+            display_value: 0.,
+            BBLMMNLCMGM: false,
             switch_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -200,10 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for OEMOIGDNPNP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OEMOIGDNPNP.proto\"z\n\x0bOEMOIGDNPNP\x12\x17\n\x07card_id\x18\x01\
-    \x20\x01(\rR\x06cardId\x12\x14\n\x05param\x18\x02\x20\x01(\x01R\x05param\
-    \x12\x1b\n\tis_enable\x18\x03\x20\x01(\x08R\x08isEnable\x12\x1f\n\x0bswi\
-    tch_list\x18\x04\x20\x03(\x01R\nswitchListb\x06proto3\
+    \n\x11OEMOIGDNPNP.proto\"\x8e\x01\n\x0bOEMOIGDNPNP\x12\x17\n\x07card_id\
+    \x18\x01\x20\x01(\rR\x06cardId\x12#\n\rdisplay_value\x18\x02\x20\x01(\
+    \x01R\x0cdisplayValue\x12\x20\n\x0bBBLMMNLCMGM\x18\x03\x20\x01(\x08R\x0b\
+    BBLMMNLCMGM\x12\x1f\n\x0bswitch_list\x18\x04\x20\x03(\x01R\nswitchListb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

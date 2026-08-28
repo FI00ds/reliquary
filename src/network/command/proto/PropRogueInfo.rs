@@ -30,10 +30,10 @@ pub struct PropRogueInfo {
     // message fields
     // @@protoc_insertion_point(field:PropRogueInfo.room_id)
     pub room_id: u32,
-    // @@protoc_insertion_point(field:PropRogueInfo.GECOCMLBBPE)
-    pub GECOCMLBBPE: u32,
     // @@protoc_insertion_point(field:PropRogueInfo.MAJKFIMPOOF)
     pub MAJKFIMPOOF: u32,
+    // @@protoc_insertion_point(field:PropRogueInfo.GECOCMLBBPE)
+    pub GECOCMLBBPE: u32,
     // @@protoc_insertion_point(field:PropRogueInfo.KKMEFDEFLBI)
     pub KKMEFDEFLBI: u32,
     // special fields
@@ -61,14 +61,14 @@ impl PropRogueInfo {
             |m: &mut PropRogueInfo| { &mut m.room_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GECOCMLBBPE",
-            |m: &PropRogueInfo| { &m.GECOCMLBBPE },
-            |m: &mut PropRogueInfo| { &mut m.GECOCMLBBPE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MAJKFIMPOOF",
             |m: &PropRogueInfo| { &m.MAJKFIMPOOF },
             |m: &mut PropRogueInfo| { &mut m.MAJKFIMPOOF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GECOCMLBBPE",
+            |m: &PropRogueInfo| { &m.GECOCMLBBPE },
+            |m: &mut PropRogueInfo| { &mut m.GECOCMLBBPE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KKMEFDEFLBI",
@@ -97,10 +97,10 @@ impl ::protobuf::Message for PropRogueInfo {
                     self.room_id = is.read_uint32()?;
                 },
                 48 => {
-                    self.GECOCMLBBPE = is.read_uint32()?;
-                },
-                64 => {
                     self.MAJKFIMPOOF = is.read_uint32()?;
+                },
+                96 => {
+                    self.GECOCMLBBPE = is.read_uint32()?;
                 },
                 104 => {
                     self.KKMEFDEFLBI = is.read_uint32()?;
@@ -120,11 +120,11 @@ impl ::protobuf::Message for PropRogueInfo {
         if self.room_id != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.room_id);
         }
-        if self.GECOCMLBBPE != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.GECOCMLBBPE);
-        }
         if self.MAJKFIMPOOF != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.MAJKFIMPOOF);
+            my_size += ::protobuf::rt::uint32_size(6, self.MAJKFIMPOOF);
+        }
+        if self.GECOCMLBBPE != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.GECOCMLBBPE);
         }
         if self.KKMEFDEFLBI != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.KKMEFDEFLBI);
@@ -138,11 +138,11 @@ impl ::protobuf::Message for PropRogueInfo {
         if self.room_id != 0 {
             os.write_uint32(5, self.room_id)?;
         }
-        if self.GECOCMLBBPE != 0 {
-            os.write_uint32(6, self.GECOCMLBBPE)?;
-        }
         if self.MAJKFIMPOOF != 0 {
-            os.write_uint32(8, self.MAJKFIMPOOF)?;
+            os.write_uint32(6, self.MAJKFIMPOOF)?;
+        }
+        if self.GECOCMLBBPE != 0 {
+            os.write_uint32(12, self.GECOCMLBBPE)?;
         }
         if self.KKMEFDEFLBI != 0 {
             os.write_uint32(13, self.KKMEFDEFLBI)?;
@@ -165,8 +165,8 @@ impl ::protobuf::Message for PropRogueInfo {
 
     fn clear(&mut self) {
         self.room_id = 0;
-        self.GECOCMLBBPE = 0;
         self.MAJKFIMPOOF = 0;
+        self.GECOCMLBBPE = 0;
         self.KKMEFDEFLBI = 0;
         self.special_fields.clear();
     }
@@ -174,8 +174,8 @@ impl ::protobuf::Message for PropRogueInfo {
     fn default_instance() -> &'static PropRogueInfo {
         static instance: PropRogueInfo = PropRogueInfo {
             room_id: 0,
-            GECOCMLBBPE: 0,
             MAJKFIMPOOF: 0,
+            GECOCMLBBPE: 0,
             KKMEFDEFLBI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,9 +202,9 @@ impl ::protobuf::reflect::ProtobufValue for PropRogueInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13PropRogueInfo.proto\"\x8e\x01\n\rPropRogueInfo\x12\x17\n\x07room_i\
-    d\x18\x05\x20\x01(\rR\x06roomId\x12\x20\n\x0bGECOCMLBBPE\x18\x06\x20\x01\
-    (\rR\x0bGECOCMLBBPE\x12\x20\n\x0bMAJKFIMPOOF\x18\x08\x20\x01(\rR\x0bMAJK\
-    FIMPOOF\x12\x20\n\x0bKKMEFDEFLBI\x18\r\x20\x01(\rR\x0bKKMEFDEFLBIb\x06pr\
+    d\x18\x05\x20\x01(\rR\x06roomId\x12\x20\n\x0bMAJKFIMPOOF\x18\x06\x20\x01\
+    (\rR\x0bMAJKFIMPOOF\x12\x20\n\x0bGECOCMLBBPE\x18\x0c\x20\x01(\rR\x0bGECO\
+    CMLBBPE\x12\x20\n\x0bKKMEFDEFLBI\x18\r\x20\x01(\rR\x0bKKMEFDEFLBIb\x06pr\
     oto3\
 ";
 

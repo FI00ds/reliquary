@@ -79,10 +79,10 @@ impl ::protobuf::Message for PlanetFesUnlockChange {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BBEKBJPHEJK)?;
                 },
-                120 => {
+                72 => {
                     self.has_passed = is.read_bool()?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for PlanetFesUnlockChange {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.BBEKBJPHEJK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.has_passed != false {
-            os.write_bool(15, self.has_passed)?;
+            os.write_bool(9, self.has_passed)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesUnlockChange {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bPlanetFesUnlockChange.proto\x1a\x11HBONEFMPKKO.proto\"f\n\x15Plane\
-    tFesUnlockChange\x12.\n\x0bBBEKBJPHEJK\x18\x05\x20\x01(\x0b2\x0c.HBONEFM\
-    PKKOR\x0bBBEKBJPHEJK\x12\x1d\n\nhas_passed\x18\x0f\x20\x01(\x08R\thasPas\
-    sedb\x06proto3\
+    tFesUnlockChange\x12.\n\x0bBBEKBJPHEJK\x18\x01\x20\x01(\x0b2\x0c.HBONEFM\
+    PKKOR\x0bBBEKBJPHEJK\x12\x1d\n\nhas_passed\x18\t\x20\x01(\x08R\thasPasse\
+    db\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

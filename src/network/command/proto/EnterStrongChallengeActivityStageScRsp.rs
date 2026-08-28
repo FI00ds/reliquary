@@ -89,10 +89,10 @@ impl ::protobuf::Message for EnterStrongChallengeActivityStageScRsp {
                 8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                40 => {
+                56 => {
                     self.stage_id = is.read_uint32()?;
                 },
-                98 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
                 },
                 tag => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for EnterStrongChallengeActivityStageScRsp {
             my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.stage_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.stage_id);
         }
         if let Some(v) = self.battle_info.as_ref() {
             let len = v.compute_size();
@@ -127,10 +127,10 @@ impl ::protobuf::Message for EnterStrongChallengeActivityStageScRsp {
             os.write_uint32(1, self.retcode)?;
         }
         if self.stage_id != 0 {
-            os.write_uint32(5, self.stage_id)?;
+            os.write_uint32(7, self.stage_id)?;
         }
         if let Some(v) = self.battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,8 +186,8 @@ impl ::protobuf::reflect::ProtobufValue for EnterStrongChallengeActivityStageScR
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n,EnterStrongChallengeActivityStageScRsp.proto\x1a\x15SceneBattleInfo.p\
     roto\"\x90\x01\n&EnterStrongChallengeActivityStageScRsp\x12\x18\n\x07ret\
-    code\x18\x01\x20\x01(\rR\x07retcode\x12\x19\n\x08stage_id\x18\x05\x20\
-    \x01(\rR\x07stageId\x121\n\x0bbattle_info\x18\x0c\x20\x01(\x0b2\x10.Scen\
+    code\x18\x01\x20\x01(\rR\x07retcode\x12\x19\n\x08stage_id\x18\x07\x20\
+    \x01(\rR\x07stageId\x121\n\x0bbattle_info\x18\x0e\x20\x01(\x0b2\x10.Scen\
     eBattleInfoR\nbattleInfob\x06proto3\
 ";
 

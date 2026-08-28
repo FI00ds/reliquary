@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CEDCMIMKJHK {
     // message fields
+    // @@protoc_insertion_point(field:CEDCMIMKJHK.FEBKMOCOJLE)
+    pub FEBKMOCOJLE: bool,
     // @@protoc_insertion_point(field:CEDCMIMKJHK.avatar_id)
     pub avatar_id: u32,
-    // @@protoc_insertion_point(field:CEDCMIMKJHK.is_open)
-    pub is_open: bool,
     // special fields
     // @@protoc_insertion_point(special_field:CEDCMIMKJHK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl CEDCMIMKJHK {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FEBKMOCOJLE",
+            |m: &CEDCMIMKJHK| { &m.FEBKMOCOJLE },
+            |m: &mut CEDCMIMKJHK| { &mut m.FEBKMOCOJLE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
             |m: &CEDCMIMKJHK| { &m.avatar_id },
             |m: &mut CEDCMIMKJHK| { &mut m.avatar_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_open",
-            |m: &CEDCMIMKJHK| { &m.is_open },
-            |m: &mut CEDCMIMKJHK| { &mut m.is_open },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CEDCMIMKJHK>(
             "CEDCMIMKJHK",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for CEDCMIMKJHK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.avatar_id = is.read_uint32()?;
+                48 => {
+                    self.FEBKMOCOJLE = is.read_bool()?;
                 },
-                96 => {
-                    self.is_open = is.read_bool()?;
+                112 => {
+                    self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for CEDCMIMKJHK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.avatar_id);
-        }
-        if self.is_open != false {
+        if self.FEBKMOCOJLE != false {
             my_size += 1 + 1;
+        }
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for CEDCMIMKJHK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.avatar_id != 0 {
-            os.write_uint32(11, self.avatar_id)?;
+        if self.FEBKMOCOJLE != false {
+            os.write_bool(6, self.FEBKMOCOJLE)?;
         }
-        if self.is_open != false {
-            os.write_bool(12, self.is_open)?;
+        if self.avatar_id != 0 {
+            os.write_uint32(14, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for CEDCMIMKJHK {
     }
 
     fn clear(&mut self) {
+        self.FEBKMOCOJLE = false;
         self.avatar_id = 0;
-        self.is_open = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CEDCMIMKJHK {
         static instance: CEDCMIMKJHK = CEDCMIMKJHK {
+            FEBKMOCOJLE: false,
             avatar_id: 0,
-            is_open: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for CEDCMIMKJHK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CEDCMIMKJHK.proto\"C\n\x0bCEDCMIMKJHK\x12\x1b\n\tavatar_id\x18\x0b\
-    \x20\x01(\rR\x08avatarId\x12\x17\n\x07is_open\x18\x0c\x20\x01(\x08R\x06i\
-    sOpenb\x06proto3\
+    \n\x11CEDCMIMKJHK.proto\"L\n\x0bCEDCMIMKJHK\x12\x20\n\x0bFEBKMOCOJLE\x18\
+    \x06\x20\x01(\x08R\x0bFEBKMOCOJLE\x12\x1b\n\tavatar_id\x18\x0e\x20\x01(\
+    \rR\x08avatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

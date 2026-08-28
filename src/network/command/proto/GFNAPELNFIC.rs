@@ -30,8 +30,8 @@ pub struct GFNAPELNFIC {
     // message fields
     // @@protoc_insertion_point(field:GFNAPELNFIC.CLFBBAPEPML)
     pub CLFBBAPEPML: u32,
-    // @@protoc_insertion_point(field:GFNAPELNFIC.is_locked)
-    pub is_locked: bool,
+    // @@protoc_insertion_point(field:GFNAPELNFIC.AALCCPJCBME)
+    pub AALCCPJCBME: bool,
     // @@protoc_insertion_point(field:GFNAPELNFIC.JBNMAOFOFPE)
     pub JBNMAOFOFPE: ::protobuf::MessageField<super::DKPHAFPGDLO::DKPHAFPGDLO>,
     // special fields
@@ -59,9 +59,9 @@ impl GFNAPELNFIC {
             |m: &mut GFNAPELNFIC| { &mut m.CLFBBAPEPML },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_locked",
-            |m: &GFNAPELNFIC| { &m.is_locked },
-            |m: &mut GFNAPELNFIC| { &mut m.is_locked },
+            "AALCCPJCBME",
+            |m: &GFNAPELNFIC| { &m.AALCCPJCBME },
+            |m: &mut GFNAPELNFIC| { &mut m.AALCCPJCBME },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DKPHAFPGDLO::DKPHAFPGDLO>(
             "JBNMAOFOFPE",
@@ -90,7 +90,7 @@ impl ::protobuf::Message for GFNAPELNFIC {
                     self.CLFBBAPEPML = is.read_uint32()?;
                 },
                 16 => {
-                    self.is_locked = is.read_bool()?;
+                    self.AALCCPJCBME = is.read_bool()?;
                 },
                 26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JBNMAOFOFPE)?;
@@ -110,7 +110,7 @@ impl ::protobuf::Message for GFNAPELNFIC {
         if self.CLFBBAPEPML != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.CLFBBAPEPML);
         }
-        if self.is_locked != false {
+        if self.AALCCPJCBME != false {
             my_size += 1 + 1;
         }
         if let Some(v) = self.JBNMAOFOFPE.as_ref() {
@@ -126,8 +126,8 @@ impl ::protobuf::Message for GFNAPELNFIC {
         if self.CLFBBAPEPML != 0 {
             os.write_uint32(1, self.CLFBBAPEPML)?;
         }
-        if self.is_locked != false {
-            os.write_bool(2, self.is_locked)?;
+        if self.AALCCPJCBME != false {
+            os.write_bool(2, self.AALCCPJCBME)?;
         }
         if let Some(v) = self.JBNMAOFOFPE.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
@@ -150,7 +150,7 @@ impl ::protobuf::Message for GFNAPELNFIC {
 
     fn clear(&mut self) {
         self.CLFBBAPEPML = 0;
-        self.is_locked = false;
+        self.AALCCPJCBME = false;
         self.JBNMAOFOFPE.clear();
         self.special_fields.clear();
     }
@@ -158,7 +158,7 @@ impl ::protobuf::Message for GFNAPELNFIC {
     fn default_instance() -> &'static GFNAPELNFIC {
         static instance: GFNAPELNFIC = GFNAPELNFIC {
             CLFBBAPEPML: 0,
-            is_locked: false,
+            AALCCPJCBME: false,
             JBNMAOFOFPE: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for GFNAPELNFIC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GFNAPELNFIC.proto\x1a\x11DKPHAFPGDLO.proto\"|\n\x0bGFNAPELNFIC\x12\
-    \x20\n\x0bCLFBBAPEPML\x18\x01\x20\x01(\rR\x0bCLFBBAPEPML\x12\x1b\n\tis_l\
-    ocked\x18\x02\x20\x01(\x08R\x08isLocked\x12.\n\x0bJBNMAOFOFPE\x18\x03\
-    \x20\x01(\x0b2\x0c.DKPHAFPGDLOR\x0bJBNMAOFOFPEb\x06proto3\
+    \n\x11GFNAPELNFIC.proto\x1a\x11DKPHAFPGDLO.proto\"\x81\x01\n\x0bGFNAPELN\
+    FIC\x12\x20\n\x0bCLFBBAPEPML\x18\x01\x20\x01(\rR\x0bCLFBBAPEPML\x12\x20\
+    \n\x0bAALCCPJCBME\x18\x02\x20\x01(\x08R\x0bAALCCPJCBME\x12.\n\x0bJBNMAOF\
+    OFPE\x18\x03\x20\x01(\x0b2\x0c.DKPHAFPGDLOR\x0bJBNMAOFOFPEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,10 +30,10 @@ pub struct FateShopSellBuffScRsp {
     // message fields
     // @@protoc_insertion_point(field:FateShopSellBuffScRsp.PMCPIECGEHH)
     pub PMCPIECGEHH: bool,
-    // @@protoc_insertion_point(field:FateShopSellBuffScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:FateShopSellBuffScRsp.JDIFHPAFPID)
     pub JDIFHPAFPID: u32,
+    // @@protoc_insertion_point(field:FateShopSellBuffScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:FateShopSellBuffScRsp.PCJOBDNLEAI)
     pub PCJOBDNLEAI: u32,
     // special fields
@@ -61,14 +61,14 @@ impl FateShopSellBuffScRsp {
             |m: &mut FateShopSellBuffScRsp| { &mut m.PMCPIECGEHH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &FateShopSellBuffScRsp| { &m.retcode },
-            |m: &mut FateShopSellBuffScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JDIFHPAFPID",
             |m: &FateShopSellBuffScRsp| { &m.JDIFHPAFPID },
             |m: &mut FateShopSellBuffScRsp| { &mut m.JDIFHPAFPID },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &FateShopSellBuffScRsp| { &m.retcode },
+            |m: &mut FateShopSellBuffScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PCJOBDNLEAI",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for FateShopSellBuffScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                24 => {
                     self.PMCPIECGEHH = is.read_bool()?;
                 },
-                72 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                88 => {
+                40 => {
                     self.JDIFHPAFPID = is.read_uint32()?;
                 },
-                104 => {
+                48 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                120 => {
                     self.PCJOBDNLEAI = is.read_uint32()?;
                 },
                 tag => {
@@ -120,14 +120,14 @@ impl ::protobuf::Message for FateShopSellBuffScRsp {
         if self.PMCPIECGEHH != false {
             my_size += 1 + 1;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
-        }
         if self.JDIFHPAFPID != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.JDIFHPAFPID);
+            my_size += ::protobuf::rt::uint32_size(5, self.JDIFHPAFPID);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         if self.PCJOBDNLEAI != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.PCJOBDNLEAI);
+            my_size += ::protobuf::rt::uint32_size(15, self.PCJOBDNLEAI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,16 +136,16 @@ impl ::protobuf::Message for FateShopSellBuffScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PMCPIECGEHH != false {
-            os.write_bool(8, self.PMCPIECGEHH)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_bool(3, self.PMCPIECGEHH)?;
         }
         if self.JDIFHPAFPID != 0 {
-            os.write_uint32(11, self.JDIFHPAFPID)?;
+            os.write_uint32(5, self.JDIFHPAFPID)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(6, self.retcode)?;
         }
         if self.PCJOBDNLEAI != 0 {
-            os.write_uint32(13, self.PCJOBDNLEAI)?;
+            os.write_uint32(15, self.PCJOBDNLEAI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::Message for FateShopSellBuffScRsp {
 
     fn clear(&mut self) {
         self.PMCPIECGEHH = false;
-        self.retcode = 0;
         self.JDIFHPAFPID = 0;
+        self.retcode = 0;
         self.PCJOBDNLEAI = 0;
         self.special_fields.clear();
     }
@@ -174,8 +174,8 @@ impl ::protobuf::Message for FateShopSellBuffScRsp {
     fn default_instance() -> &'static FateShopSellBuffScRsp {
         static instance: FateShopSellBuffScRsp = FateShopSellBuffScRsp {
             PMCPIECGEHH: false,
-            retcode: 0,
             JDIFHPAFPID: 0,
+            retcode: 0,
             PCJOBDNLEAI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for FateShopSellBuffScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bFateShopSellBuffScRsp.proto\"\x97\x01\n\x15FateShopSellBuffScRsp\
-    \x12\x20\n\x0bPMCPIECGEHH\x18\x08\x20\x01(\x08R\x0bPMCPIECGEHH\x12\x18\n\
-    \x07retcode\x18\t\x20\x01(\rR\x07retcode\x12\x20\n\x0bJDIFHPAFPID\x18\
-    \x0b\x20\x01(\rR\x0bJDIFHPAFPID\x12\x20\n\x0bPCJOBDNLEAI\x18\r\x20\x01(\
-    \rR\x0bPCJOBDNLEAIb\x06proto3\
+    \x12\x20\n\x0bPMCPIECGEHH\x18\x03\x20\x01(\x08R\x0bPMCPIECGEHH\x12\x20\n\
+    \x0bJDIFHPAFPID\x18\x05\x20\x01(\rR\x0bJDIFHPAFPID\x12\x18\n\x07retcode\
+    \x18\x06\x20\x01(\rR\x07retcode\x12\x20\n\x0bPCJOBDNLEAI\x18\x0f\x20\x01\
+    (\rR\x0bPCJOBDNLEAIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

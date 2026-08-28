@@ -27,20 +27,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:GetStuffType)
 pub enum GetStuffType {
-    // @@protoc_insertion_point(enum_value:GetStuffType.FILBJDAJPAA_AADOIEIDPKC)
-    FILBJDAJPAA_AADOIEIDPKC = 0,
-    // @@protoc_insertion_point(enum_value:GetStuffType.FILBJDAJPAA_KLEADAAONJI)
-    FILBJDAJPAA_KLEADAAONJI = 1,
-    // @@protoc_insertion_point(enum_value:GetStuffType.FILBJDAJPAA_JIJFOLELOHP)
-    FILBJDAJPAA_JIJFOLELOHP = 2,
-    // @@protoc_insertion_point(enum_value:GetStuffType.FILBJDAJPAA_KCMIPOEAKOM)
-    FILBJDAJPAA_KCMIPOEAKOM = 3,
-    // @@protoc_insertion_point(enum_value:GetStuffType.FILBJDAJPAA_MFCAHCCMCHA)
-    FILBJDAJPAA_MFCAHCCMCHA = 4,
-    // @@protoc_insertion_point(enum_value:GetStuffType.FILBJDAJPAA_DCJDPBHNEEN)
-    FILBJDAJPAA_DCJDPBHNEEN = 5,
-    // @@protoc_insertion_point(enum_value:GetStuffType.FILBJDAJPAA_CBECLOHPGNJ)
-    FILBJDAJPAA_CBECLOHPGNJ = 6,
+    // @@protoc_insertion_point(enum_value:GetStuffType.GetStuffType_Unknow)
+    GetStuffType_Unknow = 0,
+    // @@protoc_insertion_point(enum_value:GetStuffType.GetStuffType_MissionReward)
+    GetStuffType_MissionReward = 1,
+    // @@protoc_insertion_point(enum_value:GetStuffType.GetStuffType_EventBuyStuff)
+    GetStuffType_EventBuyStuff = 2,
+    // @@protoc_insertion_point(enum_value:GetStuffType.GetStuffType_MarketBuyStuff)
+    GetStuffType_MarketBuyStuff = 3,
+    // @@protoc_insertion_point(enum_value:GetStuffType.GetStuffType_QuestReward)
+    GetStuffType_QuestReward = 4,
+    // @@protoc_insertion_point(enum_value:GetStuffType.GetStuffType_Initial)
+    GetStuffType_Initial = 5,
+    // @@protoc_insertion_point(enum_value:GetStuffType.GetStuffType_PhaseFinishReward)
+    GetStuffType_PhaseFinishReward = 6,
 }
 
 impl ::protobuf::Enum for GetStuffType {
@@ -52,38 +52,38 @@ impl ::protobuf::Enum for GetStuffType {
 
     fn from_i32(value: i32) -> ::std::option::Option<GetStuffType> {
         match value {
-            0 => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_AADOIEIDPKC),
-            1 => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_KLEADAAONJI),
-            2 => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_JIJFOLELOHP),
-            3 => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_KCMIPOEAKOM),
-            4 => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_MFCAHCCMCHA),
-            5 => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_DCJDPBHNEEN),
-            6 => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_CBECLOHPGNJ),
+            0 => ::std::option::Option::Some(GetStuffType::GetStuffType_Unknow),
+            1 => ::std::option::Option::Some(GetStuffType::GetStuffType_MissionReward),
+            2 => ::std::option::Option::Some(GetStuffType::GetStuffType_EventBuyStuff),
+            3 => ::std::option::Option::Some(GetStuffType::GetStuffType_MarketBuyStuff),
+            4 => ::std::option::Option::Some(GetStuffType::GetStuffType_QuestReward),
+            5 => ::std::option::Option::Some(GetStuffType::GetStuffType_Initial),
+            6 => ::std::option::Option::Some(GetStuffType::GetStuffType_PhaseFinishReward),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<GetStuffType> {
         match str {
-            "FILBJDAJPAA_AADOIEIDPKC" => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_AADOIEIDPKC),
-            "FILBJDAJPAA_KLEADAAONJI" => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_KLEADAAONJI),
-            "FILBJDAJPAA_JIJFOLELOHP" => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_JIJFOLELOHP),
-            "FILBJDAJPAA_KCMIPOEAKOM" => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_KCMIPOEAKOM),
-            "FILBJDAJPAA_MFCAHCCMCHA" => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_MFCAHCCMCHA),
-            "FILBJDAJPAA_DCJDPBHNEEN" => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_DCJDPBHNEEN),
-            "FILBJDAJPAA_CBECLOHPGNJ" => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_CBECLOHPGNJ),
+            "GetStuffType_Unknow" => ::std::option::Option::Some(GetStuffType::GetStuffType_Unknow),
+            "GetStuffType_MissionReward" => ::std::option::Option::Some(GetStuffType::GetStuffType_MissionReward),
+            "GetStuffType_EventBuyStuff" => ::std::option::Option::Some(GetStuffType::GetStuffType_EventBuyStuff),
+            "GetStuffType_MarketBuyStuff" => ::std::option::Option::Some(GetStuffType::GetStuffType_MarketBuyStuff),
+            "GetStuffType_QuestReward" => ::std::option::Option::Some(GetStuffType::GetStuffType_QuestReward),
+            "GetStuffType_Initial" => ::std::option::Option::Some(GetStuffType::GetStuffType_Initial),
+            "GetStuffType_PhaseFinishReward" => ::std::option::Option::Some(GetStuffType::GetStuffType_PhaseFinishReward),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [GetStuffType] = &[
-        GetStuffType::FILBJDAJPAA_AADOIEIDPKC,
-        GetStuffType::FILBJDAJPAA_KLEADAAONJI,
-        GetStuffType::FILBJDAJPAA_JIJFOLELOHP,
-        GetStuffType::FILBJDAJPAA_KCMIPOEAKOM,
-        GetStuffType::FILBJDAJPAA_MFCAHCCMCHA,
-        GetStuffType::FILBJDAJPAA_DCJDPBHNEEN,
-        GetStuffType::FILBJDAJPAA_CBECLOHPGNJ,
+        GetStuffType::GetStuffType_Unknow,
+        GetStuffType::GetStuffType_MissionReward,
+        GetStuffType::GetStuffType_EventBuyStuff,
+        GetStuffType::GetStuffType_MarketBuyStuff,
+        GetStuffType::GetStuffType_QuestReward,
+        GetStuffType::GetStuffType_Initial,
+        GetStuffType::GetStuffType_PhaseFinishReward,
     ];
 }
 
@@ -101,7 +101,7 @@ impl ::protobuf::EnumFull for GetStuffType {
 
 impl ::std::default::Default for GetStuffType {
     fn default() -> Self {
-        GetStuffType::FILBJDAJPAA_AADOIEIDPKC
+        GetStuffType::GetStuffType_Unknow
     }
 }
 
@@ -112,12 +112,12 @@ impl GetStuffType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12GetStuffType.proto*\xd9\x01\n\x0cGetStuffType\x12\x1b\n\x17FILBJDA\
-    JPAA_AADOIEIDPKC\x10\0\x12\x1b\n\x17FILBJDAJPAA_KLEADAAONJI\x10\x01\x12\
-    \x1b\n\x17FILBJDAJPAA_JIJFOLELOHP\x10\x02\x12\x1b\n\x17FILBJDAJPAA_KCMIP\
-    OEAKOM\x10\x03\x12\x1b\n\x17FILBJDAJPAA_MFCAHCCMCHA\x10\x04\x12\x1b\n\
-    \x17FILBJDAJPAA_DCJDPBHNEEN\x10\x05\x12\x1b\n\x17FILBJDAJPAA_CBECLOHPGNJ\
-    \x10\x06b\x06proto3\
+    \n\x12GetStuffType.proto*\xe4\x01\n\x0cGetStuffType\x12\x17\n\x13GetStuf\
+    fType_Unknow\x10\0\x12\x1e\n\x1aGetStuffType_MissionReward\x10\x01\x12\
+    \x1e\n\x1aGetStuffType_EventBuyStuff\x10\x02\x12\x1f\n\x1bGetStuffType_M\
+    arketBuyStuff\x10\x03\x12\x1c\n\x18GetStuffType_QuestReward\x10\x04\x12\
+    \x18\n\x14GetStuffType_Initial\x10\x05\x12\"\n\x1eGetStuffType_PhaseFini\
+    shReward\x10\x06b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

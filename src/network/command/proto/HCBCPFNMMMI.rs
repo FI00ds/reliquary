@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HCBCPFNMMMI {
     // message fields
-    // @@protoc_insertion_point(field:HCBCPFNMMMI.OMFGAABELHE)
-    pub OMFGAABELHE: u32,
     // @@protoc_insertion_point(field:HCBCPFNMMMI.IGOOJKMPMDC)
     pub IGOOJKMPMDC: u32,
+    // @@protoc_insertion_point(field:HCBCPFNMMMI.OMFGAABELHE)
+    pub OMFGAABELHE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HCBCPFNMMMI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl HCBCPFNMMMI {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OMFGAABELHE",
-            |m: &HCBCPFNMMMI| { &m.OMFGAABELHE },
-            |m: &mut HCBCPFNMMMI| { &mut m.OMFGAABELHE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IGOOJKMPMDC",
             |m: &HCBCPFNMMMI| { &m.IGOOJKMPMDC },
             |m: &mut HCBCPFNMMMI| { &mut m.IGOOJKMPMDC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OMFGAABELHE",
+            |m: &HCBCPFNMMMI| { &m.OMFGAABELHE },
+            |m: &mut HCBCPFNMMMI| { &mut m.OMFGAABELHE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HCBCPFNMMMI>(
             "HCBCPFNMMMI",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for HCBCPFNMMMI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.OMFGAABELHE = is.read_uint32()?;
-                },
-                40 => {
+                48 => {
                     self.IGOOJKMPMDC = is.read_uint32()?;
+                },
+                64 => {
+                    self.OMFGAABELHE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for HCBCPFNMMMI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OMFGAABELHE != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.OMFGAABELHE);
-        }
         if self.IGOOJKMPMDC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.IGOOJKMPMDC);
+            my_size += ::protobuf::rt::uint32_size(6, self.IGOOJKMPMDC);
+        }
+        if self.OMFGAABELHE != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.OMFGAABELHE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for HCBCPFNMMMI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OMFGAABELHE != 0 {
-            os.write_uint32(3, self.OMFGAABELHE)?;
-        }
         if self.IGOOJKMPMDC != 0 {
-            os.write_uint32(5, self.IGOOJKMPMDC)?;
+            os.write_uint32(6, self.IGOOJKMPMDC)?;
+        }
+        if self.OMFGAABELHE != 0 {
+            os.write_uint32(8, self.OMFGAABELHE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for HCBCPFNMMMI {
     }
 
     fn clear(&mut self) {
-        self.OMFGAABELHE = 0;
         self.IGOOJKMPMDC = 0;
+        self.OMFGAABELHE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HCBCPFNMMMI {
         static instance: HCBCPFNMMMI = HCBCPFNMMMI {
-            OMFGAABELHE: 0,
             IGOOJKMPMDC: 0,
+            OMFGAABELHE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for HCBCPFNMMMI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HCBCPFNMMMI.proto\"Q\n\x0bHCBCPFNMMMI\x12\x20\n\x0bOMFGAABELHE\x18\
-    \x03\x20\x01(\rR\x0bOMFGAABELHE\x12\x20\n\x0bIGOOJKMPMDC\x18\x05\x20\x01\
-    (\rR\x0bIGOOJKMPMDCb\x06proto3\
+    \n\x11HCBCPFNMMMI.proto\"Q\n\x0bHCBCPFNMMMI\x12\x20\n\x0bIGOOJKMPMDC\x18\
+    \x06\x20\x01(\rR\x0bIGOOJKMPMDC\x12\x20\n\x0bOMFGAABELHE\x18\x08\x20\x01\
+    (\rR\x0bOMFGAABELHEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

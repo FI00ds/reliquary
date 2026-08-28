@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SelectRogueCommonDialogueOptionScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SelectRogueCommonDialogueOptionScRsp.AIAFEKGBFIF)
-    pub AIAFEKGBFIF: u32,
-    // @@protoc_insertion_point(field:SelectRogueCommonDialogueOptionScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:SelectRogueCommonDialogueOptionScRsp.HAFOKMHCGFM)
     pub HAFOKMHCGFM: u32,
     // @@protoc_insertion_point(field:SelectRogueCommonDialogueOptionScRsp.CGINGCNCPCO)
     pub CGINGCNCPCO: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:SelectRogueCommonDialogueOptionScRsp.ONOLNGOHEMF)
     pub ONOLNGOHEMF: ::protobuf::MessageField<super::HFEOGNAMHCG::HFEOGNAMHCG>,
+    // @@protoc_insertion_point(field:SelectRogueCommonDialogueOptionScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:SelectRogueCommonDialogueOptionScRsp.AIAFEKGBFIF)
+    pub AIAFEKGBFIF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SelectRogueCommonDialogueOptionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,16 +58,6 @@ impl SelectRogueCommonDialogueOptionScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AIAFEKGBFIF",
-            |m: &SelectRogueCommonDialogueOptionScRsp| { &m.AIAFEKGBFIF },
-            |m: &mut SelectRogueCommonDialogueOptionScRsp| { &mut m.AIAFEKGBFIF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SelectRogueCommonDialogueOptionScRsp| { &m.retcode },
-            |m: &mut SelectRogueCommonDialogueOptionScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HAFOKMHCGFM",
             |m: &SelectRogueCommonDialogueOptionScRsp| { &m.HAFOKMHCGFM },
             |m: &mut SelectRogueCommonDialogueOptionScRsp| { &mut m.HAFOKMHCGFM },
@@ -81,6 +71,16 @@ impl SelectRogueCommonDialogueOptionScRsp {
             "ONOLNGOHEMF",
             |m: &SelectRogueCommonDialogueOptionScRsp| { &m.ONOLNGOHEMF },
             |m: &mut SelectRogueCommonDialogueOptionScRsp| { &mut m.ONOLNGOHEMF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &SelectRogueCommonDialogueOptionScRsp| { &m.retcode },
+            |m: &mut SelectRogueCommonDialogueOptionScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AIAFEKGBFIF",
+            |m: &SelectRogueCommonDialogueOptionScRsp| { &m.AIAFEKGBFIF },
+            |m: &mut SelectRogueCommonDialogueOptionScRsp| { &mut m.AIAFEKGBFIF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SelectRogueCommonDialogueOptionScRsp>(
             "SelectRogueCommonDialogueOptionScRsp",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for SelectRogueCommonDialogueOptionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.AIAFEKGBFIF = is.read_uint32()?;
-                },
-                80 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                96 => {
+                8 => {
                     self.HAFOKMHCGFM = is.read_uint32()?;
                 },
-                114 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.CGINGCNCPCO)?;
                 },
-                112 => {
+                24 => {
                     self.CGINGCNCPCO.push(is.read_uint32()?);
                 },
-                122 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ONOLNGOHEMF)?;
+                },
+                104 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                112 => {
+                    self.AIAFEKGBFIF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,19 +130,19 @@ impl ::protobuf::Message for SelectRogueCommonDialogueOptionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AIAFEKGBFIF != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.AIAFEKGBFIF);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
-        }
         if self.HAFOKMHCGFM != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.HAFOKMHCGFM);
+            my_size += ::protobuf::rt::uint32_size(1, self.HAFOKMHCGFM);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.CGINGCNCPCO);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.CGINGCNCPCO);
         if let Some(v) = self.ONOLNGOHEMF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        }
+        if self.AIAFEKGBFIF != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.AIAFEKGBFIF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,18 +150,18 @@ impl ::protobuf::Message for SelectRogueCommonDialogueOptionScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AIAFEKGBFIF != 0 {
-            os.write_uint32(5, self.AIAFEKGBFIF)?;
+        if self.HAFOKMHCGFM != 0 {
+            os.write_uint32(1, self.HAFOKMHCGFM)?;
+        }
+        os.write_repeated_packed_uint32(3, &self.CGINGCNCPCO)?;
+        if let Some(v) = self.ONOLNGOHEMF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
-        if self.HAFOKMHCGFM != 0 {
-            os.write_uint32(12, self.HAFOKMHCGFM)?;
-        }
-        os.write_repeated_packed_uint32(14, &self.CGINGCNCPCO)?;
-        if let Some(v) = self.ONOLNGOHEMF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if self.AIAFEKGBFIF != 0 {
+            os.write_uint32(14, self.AIAFEKGBFIF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for SelectRogueCommonDialogueOptionScRsp {
     }
 
     fn clear(&mut self) {
-        self.AIAFEKGBFIF = 0;
-        self.retcode = 0;
         self.HAFOKMHCGFM = 0;
         self.CGINGCNCPCO.clear();
         self.ONOLNGOHEMF.clear();
+        self.retcode = 0;
+        self.AIAFEKGBFIF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SelectRogueCommonDialogueOptionScRsp {
         static instance: SelectRogueCommonDialogueOptionScRsp = SelectRogueCommonDialogueOptionScRsp {
-            AIAFEKGBFIF: 0,
-            retcode: 0,
             HAFOKMHCGFM: 0,
             CGINGCNCPCO: ::std::vec::Vec::new(),
             ONOLNGOHEMF: ::protobuf::MessageField::none(),
+            retcode: 0,
+            AIAFEKGBFIF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,12 +220,12 @@ impl ::protobuf::reflect::ProtobufValue for SelectRogueCommonDialogueOptionScRsp
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*SelectRogueCommonDialogueOptionScRsp.proto\x1a\x11HFEOGNAMHCG.proto\"\
-    \xd6\x01\n$SelectRogueCommonDialogueOptionScRsp\x12\x20\n\x0bAIAFEKGBFIF\
-    \x18\x05\x20\x01(\rR\x0bAIAFEKGBFIF\x12\x18\n\x07retcode\x18\n\x20\x01(\
-    \rR\x07retcode\x12\x20\n\x0bHAFOKMHCGFM\x18\x0c\x20\x01(\rR\x0bHAFOKMHCG\
-    FM\x12\x20\n\x0bCGINGCNCPCO\x18\x0e\x20\x03(\rR\x0bCGINGCNCPCO\x12.\n\
-    \x0bONOLNGOHEMF\x18\x0f\x20\x01(\x0b2\x0c.HFEOGNAMHCGR\x0bONOLNGOHEMFb\
-    \x06proto3\
+    \xd6\x01\n$SelectRogueCommonDialogueOptionScRsp\x12\x20\n\x0bHAFOKMHCGFM\
+    \x18\x01\x20\x01(\rR\x0bHAFOKMHCGFM\x12\x20\n\x0bCGINGCNCPCO\x18\x03\x20\
+    \x03(\rR\x0bCGINGCNCPCO\x12.\n\x0bONOLNGOHEMF\x18\x08\x20\x01(\x0b2\x0c.\
+    HFEOGNAMHCGR\x0bONOLNGOHEMF\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07re\
+    tcode\x12\x20\n\x0bAIAFEKGBFIF\x18\x0e\x20\x01(\rR\x0bAIAFEKGBFIFb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

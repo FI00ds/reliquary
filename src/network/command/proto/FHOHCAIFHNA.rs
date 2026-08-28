@@ -30,14 +30,14 @@ pub struct FHOHCAIFHNA {
     // message fields
     // @@protoc_insertion_point(field:FHOHCAIFHNA.HILINOJPLGA)
     pub HILINOJPLGA: u32,
-    // @@protoc_insertion_point(field:FHOHCAIFHNA.difficulty_ratio)
-    pub difficulty_ratio: f64,
+    // @@protoc_insertion_point(field:FHOHCAIFHNA.HCANMIJAFLG)
+    pub HCANMIJAFLG: f64,
     // @@protoc_insertion_point(field:FHOHCAIFHNA.PGGDEHKKINP)
     pub PGGDEHKKINP: u32,
-    // @@protoc_insertion_point(field:FHOHCAIFHNA.style_level)
-    pub style_level: u32,
-    // @@protoc_insertion_point(field:FHOHCAIFHNA.style_exp)
-    pub style_exp: u32,
+    // @@protoc_insertion_point(field:FHOHCAIFHNA.KMPCNDJHHAO)
+    pub KMPCNDJHHAO: u32,
+    // @@protoc_insertion_point(field:FHOHCAIFHNA.IKJLLFLCHNF)
+    pub IKJLLFLCHNF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FHOHCAIFHNA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,9 +63,9 @@ impl FHOHCAIFHNA {
             |m: &mut FHOHCAIFHNA| { &mut m.HILINOJPLGA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "difficulty_ratio",
-            |m: &FHOHCAIFHNA| { &m.difficulty_ratio },
-            |m: &mut FHOHCAIFHNA| { &mut m.difficulty_ratio },
+            "HCANMIJAFLG",
+            |m: &FHOHCAIFHNA| { &m.HCANMIJAFLG },
+            |m: &mut FHOHCAIFHNA| { &mut m.HCANMIJAFLG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PGGDEHKKINP",
@@ -73,14 +73,14 @@ impl FHOHCAIFHNA {
             |m: &mut FHOHCAIFHNA| { &mut m.PGGDEHKKINP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "style_level",
-            |m: &FHOHCAIFHNA| { &m.style_level },
-            |m: &mut FHOHCAIFHNA| { &mut m.style_level },
+            "KMPCNDJHHAO",
+            |m: &FHOHCAIFHNA| { &m.KMPCNDJHHAO },
+            |m: &mut FHOHCAIFHNA| { &mut m.KMPCNDJHHAO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "style_exp",
-            |m: &FHOHCAIFHNA| { &m.style_exp },
-            |m: &mut FHOHCAIFHNA| { &mut m.style_exp },
+            "IKJLLFLCHNF",
+            |m: &FHOHCAIFHNA| { &m.IKJLLFLCHNF },
+            |m: &mut FHOHCAIFHNA| { &mut m.IKJLLFLCHNF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FHOHCAIFHNA>(
             "FHOHCAIFHNA",
@@ -104,16 +104,16 @@ impl ::protobuf::Message for FHOHCAIFHNA {
                     self.HILINOJPLGA = is.read_uint32()?;
                 },
                 17 => {
-                    self.difficulty_ratio = is.read_double()?;
+                    self.HCANMIJAFLG = is.read_double()?;
                 },
                 88 => {
                     self.PGGDEHKKINP = is.read_uint32()?;
                 },
                 96 => {
-                    self.style_level = is.read_uint32()?;
+                    self.KMPCNDJHHAO = is.read_uint32()?;
                 },
                 104 => {
-                    self.style_exp = is.read_uint32()?;
+                    self.IKJLLFLCHNF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,17 +130,17 @@ impl ::protobuf::Message for FHOHCAIFHNA {
         if self.HILINOJPLGA != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.HILINOJPLGA);
         }
-        if self.difficulty_ratio != 0. {
+        if self.HCANMIJAFLG != 0. {
             my_size += 1 + 8;
         }
         if self.PGGDEHKKINP != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.PGGDEHKKINP);
         }
-        if self.style_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.style_level);
+        if self.KMPCNDJHHAO != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.KMPCNDJHHAO);
         }
-        if self.style_exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.style_exp);
+        if self.IKJLLFLCHNF != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.IKJLLFLCHNF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -151,17 +151,17 @@ impl ::protobuf::Message for FHOHCAIFHNA {
         if self.HILINOJPLGA != 0 {
             os.write_uint32(1, self.HILINOJPLGA)?;
         }
-        if self.difficulty_ratio != 0. {
-            os.write_double(2, self.difficulty_ratio)?;
+        if self.HCANMIJAFLG != 0. {
+            os.write_double(2, self.HCANMIJAFLG)?;
         }
         if self.PGGDEHKKINP != 0 {
             os.write_uint32(11, self.PGGDEHKKINP)?;
         }
-        if self.style_level != 0 {
-            os.write_uint32(12, self.style_level)?;
+        if self.KMPCNDJHHAO != 0 {
+            os.write_uint32(12, self.KMPCNDJHHAO)?;
         }
-        if self.style_exp != 0 {
-            os.write_uint32(13, self.style_exp)?;
+        if self.IKJLLFLCHNF != 0 {
+            os.write_uint32(13, self.IKJLLFLCHNF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for FHOHCAIFHNA {
 
     fn clear(&mut self) {
         self.HILINOJPLGA = 0;
-        self.difficulty_ratio = 0.;
+        self.HCANMIJAFLG = 0.;
         self.PGGDEHKKINP = 0;
-        self.style_level = 0;
-        self.style_exp = 0;
+        self.KMPCNDJHHAO = 0;
+        self.IKJLLFLCHNF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FHOHCAIFHNA {
         static instance: FHOHCAIFHNA = FHOHCAIFHNA {
             HILINOJPLGA: 0,
-            difficulty_ratio: 0.,
+            HCANMIJAFLG: 0.,
             PGGDEHKKINP: 0,
-            style_level: 0,
-            style_exp: 0,
+            KMPCNDJHHAO: 0,
+            IKJLLFLCHNF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,12 +219,12 @@ impl ::protobuf::reflect::ProtobufValue for FHOHCAIFHNA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FHOHCAIFHNA.proto\"\xba\x01\n\x0bFHOHCAIFHNA\x12\x20\n\x0bHILINOJP\
-    LGA\x18\x01\x20\x01(\rR\x0bHILINOJPLGA\x12)\n\x10difficulty_ratio\x18\
-    \x02\x20\x01(\x01R\x0fdifficultyRatio\x12\x20\n\x0bPGGDEHKKINP\x18\x0b\
-    \x20\x01(\rR\x0bPGGDEHKKINP\x12\x1f\n\x0bstyle_level\x18\x0c\x20\x01(\rR\
-    \nstyleLevel\x12\x1b\n\tstyle_exp\x18\r\x20\x01(\rR\x08styleExpb\x06prot\
-    o3\
+    \n\x11FHOHCAIFHNA.proto\"\xb7\x01\n\x0bFHOHCAIFHNA\x12\x20\n\x0bHILINOJP\
+    LGA\x18\x01\x20\x01(\rR\x0bHILINOJPLGA\x12\x20\n\x0bHCANMIJAFLG\x18\x02\
+    \x20\x01(\x01R\x0bHCANMIJAFLG\x12\x20\n\x0bPGGDEHKKINP\x18\x0b\x20\x01(\
+    \rR\x0bPGGDEHKKINP\x12\x20\n\x0bKMPCNDJHHAO\x18\x0c\x20\x01(\rR\x0bKMPCN\
+    DJHHAO\x12\x20\n\x0bIKJLLFLCHNF\x18\r\x20\x01(\rR\x0bIKJLLFLCHNFb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

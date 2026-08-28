@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRogueCommonDialogueOptionFinishScNotify {
     // message fields
+    // @@protoc_insertion_point(field:SyncRogueCommonDialogueOptionFinishScNotify.AIAFEKGBFIF)
+    pub AIAFEKGBFIF: u32,
     // @@protoc_insertion_point(field:SyncRogueCommonDialogueOptionFinishScNotify.HAFOKMHCGFM)
     pub HAFOKMHCGFM: u32,
     // @@protoc_insertion_point(field:SyncRogueCommonDialogueOptionFinishScNotify.FJPGAOHGEBH)
     pub FJPGAOHGEBH: ::protobuf::MessageField<super::KDODFHMDAJI::KDODFHMDAJI>,
-    // @@protoc_insertion_point(field:SyncRogueCommonDialogueOptionFinishScNotify.AIAFEKGBFIF)
-    pub AIAFEKGBFIF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueCommonDialogueOptionFinishScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl SyncRogueCommonDialogueOptionFinishScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AIAFEKGBFIF",
+            |m: &SyncRogueCommonDialogueOptionFinishScNotify| { &m.AIAFEKGBFIF },
+            |m: &mut SyncRogueCommonDialogueOptionFinishScNotify| { &mut m.AIAFEKGBFIF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HAFOKMHCGFM",
             |m: &SyncRogueCommonDialogueOptionFinishScNotify| { &m.HAFOKMHCGFM },
             |m: &mut SyncRogueCommonDialogueOptionFinishScNotify| { &mut m.HAFOKMHCGFM },
@@ -62,11 +67,6 @@ impl SyncRogueCommonDialogueOptionFinishScNotify {
             "FJPGAOHGEBH",
             |m: &SyncRogueCommonDialogueOptionFinishScNotify| { &m.FJPGAOHGEBH },
             |m: &mut SyncRogueCommonDialogueOptionFinishScNotify| { &mut m.FJPGAOHGEBH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AIAFEKGBFIF",
-            |m: &SyncRogueCommonDialogueOptionFinishScNotify| { &m.AIAFEKGBFIF },
-            |m: &mut SyncRogueCommonDialogueOptionFinishScNotify| { &mut m.AIAFEKGBFIF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRogueCommonDialogueOptionFinishScNotify>(
             "SyncRogueCommonDialogueOptionFinishScNotify",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SyncRogueCommonDialogueOptionFinishScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                24 => {
+                    self.AIAFEKGBFIF = is.read_uint32()?;
+                },
+                64 => {
                     self.HAFOKMHCGFM = is.read_uint32()?;
                 },
-                74 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FJPGAOHGEBH)?;
-                },
-                112 => {
-                    self.AIAFEKGBFIF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for SyncRogueCommonDialogueOptionFinishScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.AIAFEKGBFIF != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.AIAFEKGBFIF);
+        }
         if self.HAFOKMHCGFM != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.HAFOKMHCGFM);
+            my_size += ::protobuf::rt::uint32_size(8, self.HAFOKMHCGFM);
         }
         if let Some(v) = self.FJPGAOHGEBH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.AIAFEKGBFIF != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.AIAFEKGBFIF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for SyncRogueCommonDialogueOptionFinishScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.AIAFEKGBFIF != 0 {
+            os.write_uint32(3, self.AIAFEKGBFIF)?;
+        }
         if self.HAFOKMHCGFM != 0 {
-            os.write_uint32(2, self.HAFOKMHCGFM)?;
+            os.write_uint32(8, self.HAFOKMHCGFM)?;
         }
         if let Some(v) = self.FJPGAOHGEBH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        }
-        if self.AIAFEKGBFIF != 0 {
-            os.write_uint32(14, self.AIAFEKGBFIF)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for SyncRogueCommonDialogueOptionFinishScNotify {
     }
 
     fn clear(&mut self) {
+        self.AIAFEKGBFIF = 0;
         self.HAFOKMHCGFM = 0;
         self.FJPGAOHGEBH.clear();
-        self.AIAFEKGBFIF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueCommonDialogueOptionFinishScNotify {
         static instance: SyncRogueCommonDialogueOptionFinishScNotify = SyncRogueCommonDialogueOptionFinishScNotify {
+            AIAFEKGBFIF: 0,
             HAFOKMHCGFM: 0,
             FJPGAOHGEBH: ::protobuf::MessageField::none(),
-            AIAFEKGBFIF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueCommonDialogueOptionFinishS
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n1SyncRogueCommonDialogueOptionFinishScNotify.proto\x1a\x11KDODFHMDAJI.\
     proto\"\xa1\x01\n+SyncRogueCommonDialogueOptionFinishScNotify\x12\x20\n\
-    \x0bHAFOKMHCGFM\x18\x02\x20\x01(\rR\x0bHAFOKMHCGFM\x12.\n\x0bFJPGAOHGEBH\
-    \x18\t\x20\x01(\x0b2\x0c.KDODFHMDAJIR\x0bFJPGAOHGEBH\x12\x20\n\x0bAIAFEK\
-    GBFIF\x18\x0e\x20\x01(\rR\x0bAIAFEKGBFIFb\x06proto3\
+    \x0bAIAFEKGBFIF\x18\x03\x20\x01(\rR\x0bAIAFEKGBFIF\x12\x20\n\x0bHAFOKMHC\
+    GFM\x18\x08\x20\x01(\rR\x0bHAFOKMHCGFM\x12.\n\x0bFJPGAOHGEBH\x18\x0e\x20\
+    \x01(\x0b2\x0c.KDODFHMDAJIR\x0bFJPGAOHGEBHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

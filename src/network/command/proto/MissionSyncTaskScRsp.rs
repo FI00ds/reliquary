@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MissionSyncTaskScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MissionSyncTaskScRsp.key)
-    pub key: ::std::string::String,
     // @@protoc_insertion_point(field:MissionSyncTaskScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:MissionSyncTaskScRsp.key)
+    pub key: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:MissionSyncTaskScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl MissionSyncTaskScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "key",
-            |m: &MissionSyncTaskScRsp| { &m.key },
-            |m: &mut MissionSyncTaskScRsp| { &mut m.key },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &MissionSyncTaskScRsp| { &m.retcode },
             |m: &mut MissionSyncTaskScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "key",
+            |m: &MissionSyncTaskScRsp| { &m.key },
+            |m: &mut MissionSyncTaskScRsp| { &mut m.key },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MissionSyncTaskScRsp>(
             "MissionSyncTaskScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for MissionSyncTaskScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.key = is.read_string()?;
-                },
-                72 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
+                },
+                74 => {
+                    self.key = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for MissionSyncTaskScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.key.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.key);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        }
+        if !self.key.is_empty() {
+            my_size += ::protobuf::rt::string_size(9, &self.key);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for MissionSyncTaskScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.key.is_empty() {
-            os.write_string(6, &self.key)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
+        }
+        if !self.key.is_empty() {
+            os.write_string(9, &self.key)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for MissionSyncTaskScRsp {
     }
 
     fn clear(&mut self) {
-        self.key.clear();
         self.retcode = 0;
+        self.key.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MissionSyncTaskScRsp {
         static instance: MissionSyncTaskScRsp = MissionSyncTaskScRsp {
-            key: ::std::string::String::new(),
             retcode: 0,
+            key: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for MissionSyncTaskScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aMissionSyncTaskScRsp.proto\"B\n\x14MissionSyncTaskScRsp\x12\x10\n\
-    \x03key\x18\x06\x20\x01(\tR\x03key\x12\x18\n\x07retcode\x18\t\x20\x01(\r\
-    R\x07retcodeb\x06proto3\
+    \n\x1aMissionSyncTaskScRsp.proto\"B\n\x14MissionSyncTaskScRsp\x12\x18\n\
+    \x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x10\n\x03key\x18\t\x20\
+    \x01(\tR\x03keyb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

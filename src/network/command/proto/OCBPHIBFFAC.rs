@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OCBPHIBFFAC {
     // message fields
-    // @@protoc_insertion_point(field:OCBPHIBFFAC.CJDOEPKKJGC)
-    pub CJDOEPKKJGC: ::std::vec::Vec<super::KVP::KVP>,
     // @@protoc_insertion_point(field:OCBPHIBFFAC.FANDKFADKKM)
     pub FANDKFADKKM: u32,
+    // @@protoc_insertion_point(field:OCBPHIBFFAC.CJDOEPKKJGC)
+    pub CJDOEPKKJGC: ::std::vec::Vec<super::KVP::KVP>,
     // @@protoc_insertion_point(field:OCBPHIBFFAC.LNGEAIJIODK)
     pub LNGEAIJIODK: u32,
     // @@protoc_insertion_point(field:OCBPHIBFFAC.uid)
@@ -55,15 +55,15 @@ impl OCBPHIBFFAC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CJDOEPKKJGC",
-            |m: &OCBPHIBFFAC| { &m.CJDOEPKKJGC },
-            |m: &mut OCBPHIBFFAC| { &mut m.CJDOEPKKJGC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FANDKFADKKM",
             |m: &OCBPHIBFFAC| { &m.FANDKFADKKM },
             |m: &mut OCBPHIBFFAC| { &mut m.FANDKFADKKM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CJDOEPKKJGC",
+            |m: &OCBPHIBFFAC| { &m.CJDOEPKKJGC },
+            |m: &mut OCBPHIBFFAC| { &mut m.CJDOEPKKJGC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LNGEAIJIODK",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for OCBPHIBFFAC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.CJDOEPKKJGC.push(is.read_message()?);
-                },
-                48 => {
+                8 => {
                     self.FANDKFADKKM = is.read_uint32()?;
+                },
+                50 => {
+                    self.CJDOEPKKJGC.push(is.read_message()?);
                 },
                 72 => {
                     self.LNGEAIJIODK = is.read_uint32()?;
                 },
-                88 => {
+                120 => {
                     self.uid = is.read_uint32()?;
                 },
                 tag => {
@@ -117,18 +117,18 @@ impl ::protobuf::Message for OCBPHIBFFAC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.FANDKFADKKM != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.FANDKFADKKM);
+        }
         for value in &self.CJDOEPKKJGC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.FANDKFADKKM != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FANDKFADKKM);
-        }
         if self.LNGEAIJIODK != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.LNGEAIJIODK);
         }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.uid);
+            my_size += ::protobuf::rt::uint32_size(15, self.uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for OCBPHIBFFAC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.CJDOEPKKJGC {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
         if self.FANDKFADKKM != 0 {
-            os.write_uint32(6, self.FANDKFADKKM)?;
+            os.write_uint32(1, self.FANDKFADKKM)?;
         }
+        for v in &self.CJDOEPKKJGC {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
         if self.LNGEAIJIODK != 0 {
             os.write_uint32(9, self.LNGEAIJIODK)?;
         }
         if self.uid != 0 {
-            os.write_uint32(11, self.uid)?;
+            os.write_uint32(15, self.uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::Message for OCBPHIBFFAC {
     }
 
     fn clear(&mut self) {
-        self.CJDOEPKKJGC.clear();
         self.FANDKFADKKM = 0;
+        self.CJDOEPKKJGC.clear();
         self.LNGEAIJIODK = 0;
         self.uid = 0;
         self.special_fields.clear();
@@ -174,8 +174,8 @@ impl ::protobuf::Message for OCBPHIBFFAC {
 
     fn default_instance() -> &'static OCBPHIBFFAC {
         static instance: OCBPHIBFFAC = OCBPHIBFFAC {
-            CJDOEPKKJGC: ::std::vec::Vec::new(),
             FANDKFADKKM: 0,
+            CJDOEPKKJGC: ::std::vec::Vec::new(),
             LNGEAIJIODK: 0,
             uid: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for OCBPHIBFFAC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OCBPHIBFFAC.proto\x1a\tKVP.proto\"\x8b\x01\n\x0bOCBPHIBFFAC\x12&\n\
-    \x0bCJDOEPKKJGC\x18\x05\x20\x03(\x0b2\x04.KVPR\x0bCJDOEPKKJGC\x12\x20\n\
-    \x0bFANDKFADKKM\x18\x06\x20\x01(\rR\x0bFANDKFADKKM\x12\x20\n\x0bLNGEAIJI\
-    ODK\x18\t\x20\x01(\rR\x0bLNGEAIJIODK\x12\x10\n\x03uid\x18\x0b\x20\x01(\r\
-    R\x03uidb\x06proto3\
+    \n\x11OCBPHIBFFAC.proto\x1a\tKVP.proto\"\x8b\x01\n\x0bOCBPHIBFFAC\x12\
+    \x20\n\x0bFANDKFADKKM\x18\x01\x20\x01(\rR\x0bFANDKFADKKM\x12&\n\x0bCJDOE\
+    PKKJGC\x18\x06\x20\x03(\x0b2\x04.KVPR\x0bCJDOEPKKJGC\x12\x20\n\x0bLNGEAI\
+    JIODK\x18\t\x20\x01(\rR\x0bLNGEAIJIODK\x12\x10\n\x03uid\x18\x0f\x20\x01(\
+    \rR\x03uidb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

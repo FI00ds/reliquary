@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KPIHDPGDMKB {
     // message fields
-    // @@protoc_insertion_point(field:KPIHDPGDMKB.OCAGIAKNGPG)
-    pub OCAGIAKNGPG: u32,
-    // @@protoc_insertion_point(field:KPIHDPGDMKB.NBBABABPEBE)
-    pub NBBABABPEBE: u32,
     // @@protoc_insertion_point(field:KPIHDPGDMKB.DGJPGMGPCCE)
     pub DGJPGMGPCCE: u32,
+    // @@protoc_insertion_point(field:KPIHDPGDMKB.NBBABABPEBE)
+    pub NBBABABPEBE: u32,
+    // @@protoc_insertion_point(field:KPIHDPGDMKB.OCAGIAKNGPG)
+    pub OCAGIAKNGPG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KPIHDPGDMKB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl KPIHDPGDMKB {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OCAGIAKNGPG",
-            |m: &KPIHDPGDMKB| { &m.OCAGIAKNGPG },
-            |m: &mut KPIHDPGDMKB| { &mut m.OCAGIAKNGPG },
+            "DGJPGMGPCCE",
+            |m: &KPIHDPGDMKB| { &m.DGJPGMGPCCE },
+            |m: &mut KPIHDPGDMKB| { &mut m.DGJPGMGPCCE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NBBABABPEBE",
@@ -64,9 +64,9 @@ impl KPIHDPGDMKB {
             |m: &mut KPIHDPGDMKB| { &mut m.NBBABABPEBE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DGJPGMGPCCE",
-            |m: &KPIHDPGDMKB| { &m.DGJPGMGPCCE },
-            |m: &mut KPIHDPGDMKB| { &mut m.DGJPGMGPCCE },
+            "OCAGIAKNGPG",
+            |m: &KPIHDPGDMKB| { &m.OCAGIAKNGPG },
+            |m: &mut KPIHDPGDMKB| { &mut m.OCAGIAKNGPG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KPIHDPGDMKB>(
             "KPIHDPGDMKB",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for KPIHDPGDMKB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.OCAGIAKNGPG = is.read_uint32()?;
+                16 => {
+                    self.DGJPGMGPCCE = is.read_uint32()?;
                 },
-                32 => {
+                72 => {
                     self.NBBABABPEBE = is.read_uint32()?;
                 },
-                64 => {
-                    self.DGJPGMGPCCE = is.read_uint32()?;
+                112 => {
+                    self.OCAGIAKNGPG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for KPIHDPGDMKB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OCAGIAKNGPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.OCAGIAKNGPG);
+        if self.DGJPGMGPCCE != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.DGJPGMGPCCE);
         }
         if self.NBBABABPEBE != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.NBBABABPEBE);
+            my_size += ::protobuf::rt::uint32_size(9, self.NBBABABPEBE);
         }
-        if self.DGJPGMGPCCE != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.DGJPGMGPCCE);
+        if self.OCAGIAKNGPG != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.OCAGIAKNGPG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for KPIHDPGDMKB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OCAGIAKNGPG != 0 {
-            os.write_uint32(3, self.OCAGIAKNGPG)?;
+        if self.DGJPGMGPCCE != 0 {
+            os.write_uint32(2, self.DGJPGMGPCCE)?;
         }
         if self.NBBABABPEBE != 0 {
-            os.write_uint32(4, self.NBBABABPEBE)?;
+            os.write_uint32(9, self.NBBABABPEBE)?;
         }
-        if self.DGJPGMGPCCE != 0 {
-            os.write_uint32(8, self.DGJPGMGPCCE)?;
+        if self.OCAGIAKNGPG != 0 {
+            os.write_uint32(14, self.OCAGIAKNGPG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for KPIHDPGDMKB {
     }
 
     fn clear(&mut self) {
-        self.OCAGIAKNGPG = 0;
-        self.NBBABABPEBE = 0;
         self.DGJPGMGPCCE = 0;
+        self.NBBABABPEBE = 0;
+        self.OCAGIAKNGPG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KPIHDPGDMKB {
         static instance: KPIHDPGDMKB = KPIHDPGDMKB {
-            OCAGIAKNGPG: 0,
-            NBBABABPEBE: 0,
             DGJPGMGPCCE: 0,
+            NBBABABPEBE: 0,
+            OCAGIAKNGPG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for KPIHDPGDMKB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KPIHDPGDMKB.proto\"s\n\x0bKPIHDPGDMKB\x12\x20\n\x0bOCAGIAKNGPG\x18\
-    \x03\x20\x01(\rR\x0bOCAGIAKNGPG\x12\x20\n\x0bNBBABABPEBE\x18\x04\x20\x01\
-    (\rR\x0bNBBABABPEBE\x12\x20\n\x0bDGJPGMGPCCE\x18\x08\x20\x01(\rR\x0bDGJP\
-    GMGPCCEb\x06proto3\
+    \n\x11KPIHDPGDMKB.proto\"s\n\x0bKPIHDPGDMKB\x12\x20\n\x0bDGJPGMGPCCE\x18\
+    \x02\x20\x01(\rR\x0bDGJPGMGPCCE\x12\x20\n\x0bNBBABABPEBE\x18\t\x20\x01(\
+    \rR\x0bNBBABABPEBE\x12\x20\n\x0bOCAGIAKNGPG\x18\x0e\x20\x01(\rR\x0bOCAGI\
+    AKNGPGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

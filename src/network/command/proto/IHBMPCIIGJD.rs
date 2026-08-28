@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IHBMPCIIGJD {
     // message fields
-    // @@protoc_insertion_point(field:IHBMPCIIGJD.DBMFBJCHNKN)
-    pub DBMFBJCHNKN: bool,
-    // @@protoc_insertion_point(field:IHBMPCIIGJD.can_interact)
-    pub can_interact: bool,
-    // @@protoc_insertion_point(field:IHBMPCIIGJD.GDNEHLEOMOM)
-    pub GDNEHLEOMOM: u32,
+    // @@protoc_insertion_point(field:IHBMPCIIGJD.MNAOCHOKFFJ)
+    pub MNAOCHOKFFJ: bool,
     // @@protoc_insertion_point(field:IHBMPCIIGJD.OHCCEFIALGL)
     pub OHCCEFIALGL: u32,
+    // @@protoc_insertion_point(field:IHBMPCIIGJD.AALCCPJCBME)
+    pub AALCCPJCBME: bool,
+    // @@protoc_insertion_point(field:IHBMPCIIGJD.DBMFBJCHNKN)
+    pub DBMFBJCHNKN: bool,
     // @@protoc_insertion_point(field:IHBMPCIIGJD.BBBINMPJCGI)
     pub BBBINMPJCGI: bool,
     // @@protoc_insertion_point(field:IHBMPCIIGJD.EILBAOLILAM)
     pub EILBAOLILAM: u32,
-    // @@protoc_insertion_point(field:IHBMPCIIGJD.is_locked)
-    pub is_locked: bool,
+    // @@protoc_insertion_point(field:IHBMPCIIGJD.GDNEHLEOMOM)
+    pub GDNEHLEOMOM: u32,
     // @@protoc_insertion_point(field:IHBMPCIIGJD.buff_list)
     pub buff_list: ::std::vec::Vec<super::KMCCCOKIOFD::KMCCCOKIOFD>,
     // special fields
@@ -64,24 +64,24 @@ impl IHBMPCIIGJD {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DBMFBJCHNKN",
-            |m: &IHBMPCIIGJD| { &m.DBMFBJCHNKN },
-            |m: &mut IHBMPCIIGJD| { &mut m.DBMFBJCHNKN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "can_interact",
-            |m: &IHBMPCIIGJD| { &m.can_interact },
-            |m: &mut IHBMPCIIGJD| { &mut m.can_interact },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GDNEHLEOMOM",
-            |m: &IHBMPCIIGJD| { &m.GDNEHLEOMOM },
-            |m: &mut IHBMPCIIGJD| { &mut m.GDNEHLEOMOM },
+            "MNAOCHOKFFJ",
+            |m: &IHBMPCIIGJD| { &m.MNAOCHOKFFJ },
+            |m: &mut IHBMPCIIGJD| { &mut m.MNAOCHOKFFJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OHCCEFIALGL",
             |m: &IHBMPCIIGJD| { &m.OHCCEFIALGL },
             |m: &mut IHBMPCIIGJD| { &mut m.OHCCEFIALGL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AALCCPJCBME",
+            |m: &IHBMPCIIGJD| { &m.AALCCPJCBME },
+            |m: &mut IHBMPCIIGJD| { &mut m.AALCCPJCBME },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DBMFBJCHNKN",
+            |m: &IHBMPCIIGJD| { &m.DBMFBJCHNKN },
+            |m: &mut IHBMPCIIGJD| { &mut m.DBMFBJCHNKN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BBBINMPJCGI",
@@ -94,9 +94,9 @@ impl IHBMPCIIGJD {
             |m: &mut IHBMPCIIGJD| { &mut m.EILBAOLILAM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_locked",
-            |m: &IHBMPCIIGJD| { &m.is_locked },
-            |m: &mut IHBMPCIIGJD| { &mut m.is_locked },
+            "GDNEHLEOMOM",
+            |m: &IHBMPCIIGJD| { &m.GDNEHLEOMOM },
+            |m: &mut IHBMPCIIGJD| { &mut m.GDNEHLEOMOM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "buff_list",
@@ -122,27 +122,27 @@ impl ::protobuf::Message for IHBMPCIIGJD {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.DBMFBJCHNKN = is.read_bool()?;
+                    self.MNAOCHOKFFJ = is.read_bool()?;
                 },
                 32 => {
-                    self.can_interact = is.read_bool()?;
-                },
-                40 => {
-                    self.GDNEHLEOMOM = is.read_uint32()?;
-                },
-                48 => {
                     self.OHCCEFIALGL = is.read_uint32()?;
                 },
+                48 => {
+                    self.AALCCPJCBME = is.read_bool()?;
+                },
                 64 => {
+                    self.DBMFBJCHNKN = is.read_bool()?;
+                },
+                80 => {
                     self.BBBINMPJCGI = is.read_bool()?;
                 },
-                72 => {
+                96 => {
                     self.EILBAOLILAM = is.read_uint32()?;
                 },
-                96 => {
-                    self.is_locked = is.read_bool()?;
+                104 => {
+                    self.GDNEHLEOMOM = is.read_uint32()?;
                 },
-                12546 => {
+                6506 => {
                     self.buff_list.push(is.read_message()?);
                 },
                 tag => {
@@ -157,26 +157,26 @@ impl ::protobuf::Message for IHBMPCIIGJD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DBMFBJCHNKN != false {
+        if self.MNAOCHOKFFJ != false {
             my_size += 1 + 1;
-        }
-        if self.can_interact != false {
-            my_size += 1 + 1;
-        }
-        if self.GDNEHLEOMOM != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.GDNEHLEOMOM);
         }
         if self.OHCCEFIALGL != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.OHCCEFIALGL);
+            my_size += ::protobuf::rt::uint32_size(4, self.OHCCEFIALGL);
+        }
+        if self.AALCCPJCBME != false {
+            my_size += 1 + 1;
+        }
+        if self.DBMFBJCHNKN != false {
+            my_size += 1 + 1;
         }
         if self.BBBINMPJCGI != false {
             my_size += 1 + 1;
         }
         if self.EILBAOLILAM != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.EILBAOLILAM);
+            my_size += ::protobuf::rt::uint32_size(12, self.EILBAOLILAM);
         }
-        if self.is_locked != false {
-            my_size += 1 + 1;
+        if self.GDNEHLEOMOM != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.GDNEHLEOMOM);
         }
         for value in &self.buff_list {
             let len = value.compute_size();
@@ -188,29 +188,29 @@ impl ::protobuf::Message for IHBMPCIIGJD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DBMFBJCHNKN != false {
-            os.write_bool(1, self.DBMFBJCHNKN)?;
-        }
-        if self.can_interact != false {
-            os.write_bool(4, self.can_interact)?;
-        }
-        if self.GDNEHLEOMOM != 0 {
-            os.write_uint32(5, self.GDNEHLEOMOM)?;
+        if self.MNAOCHOKFFJ != false {
+            os.write_bool(1, self.MNAOCHOKFFJ)?;
         }
         if self.OHCCEFIALGL != 0 {
-            os.write_uint32(6, self.OHCCEFIALGL)?;
+            os.write_uint32(4, self.OHCCEFIALGL)?;
+        }
+        if self.AALCCPJCBME != false {
+            os.write_bool(6, self.AALCCPJCBME)?;
+        }
+        if self.DBMFBJCHNKN != false {
+            os.write_bool(8, self.DBMFBJCHNKN)?;
         }
         if self.BBBINMPJCGI != false {
-            os.write_bool(8, self.BBBINMPJCGI)?;
+            os.write_bool(10, self.BBBINMPJCGI)?;
         }
         if self.EILBAOLILAM != 0 {
-            os.write_uint32(9, self.EILBAOLILAM)?;
+            os.write_uint32(12, self.EILBAOLILAM)?;
         }
-        if self.is_locked != false {
-            os.write_bool(12, self.is_locked)?;
+        if self.GDNEHLEOMOM != 0 {
+            os.write_uint32(13, self.GDNEHLEOMOM)?;
         }
         for v in &self.buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1568, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(813, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -229,26 +229,26 @@ impl ::protobuf::Message for IHBMPCIIGJD {
     }
 
     fn clear(&mut self) {
-        self.DBMFBJCHNKN = false;
-        self.can_interact = false;
-        self.GDNEHLEOMOM = 0;
+        self.MNAOCHOKFFJ = false;
         self.OHCCEFIALGL = 0;
+        self.AALCCPJCBME = false;
+        self.DBMFBJCHNKN = false;
         self.BBBINMPJCGI = false;
         self.EILBAOLILAM = 0;
-        self.is_locked = false;
+        self.GDNEHLEOMOM = 0;
         self.buff_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IHBMPCIIGJD {
         static instance: IHBMPCIIGJD = IHBMPCIIGJD {
-            DBMFBJCHNKN: false,
-            can_interact: false,
-            GDNEHLEOMOM: 0,
+            MNAOCHOKFFJ: false,
             OHCCEFIALGL: 0,
+            AALCCPJCBME: false,
+            DBMFBJCHNKN: false,
             BBBINMPJCGI: false,
             EILBAOLILAM: 0,
-            is_locked: false,
+            GDNEHLEOMOM: 0,
             buff_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -274,15 +274,15 @@ impl ::protobuf::reflect::ProtobufValue for IHBMPCIIGJD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IHBMPCIIGJD.proto\x1a\x11KMCCCOKIOFD.proto\"\xa3\x02\n\x0bIHBMPCII\
-    GJD\x12\x20\n\x0bDBMFBJCHNKN\x18\x01\x20\x01(\x08R\x0bDBMFBJCHNKN\x12!\n\
-    \x0ccan_interact\x18\x04\x20\x01(\x08R\x0bcanInteract\x12\x20\n\x0bGDNEH\
-    LEOMOM\x18\x05\x20\x01(\rR\x0bGDNEHLEOMOM\x12\x20\n\x0bOHCCEFIALGL\x18\
-    \x06\x20\x01(\rR\x0bOHCCEFIALGL\x12\x20\n\x0bBBBINMPJCGI\x18\x08\x20\x01\
-    (\x08R\x0bBBBINMPJCGI\x12\x20\n\x0bEILBAOLILAM\x18\t\x20\x01(\rR\x0bEILB\
-    AOLILAM\x12\x1b\n\tis_locked\x18\x0c\x20\x01(\x08R\x08isLocked\x12*\n\tb\
-    uff_list\x18\xa0\x0c\x20\x03(\x0b2\x0c.KMCCCOKIOFDR\x08buffListb\x06prot\
-    o3\
+    \n\x11IHBMPCIIGJD.proto\x1a\x11KMCCCOKIOFD.proto\"\xa7\x02\n\x0bIHBMPCII\
+    GJD\x12\x20\n\x0bMNAOCHOKFFJ\x18\x01\x20\x01(\x08R\x0bMNAOCHOKFFJ\x12\
+    \x20\n\x0bOHCCEFIALGL\x18\x04\x20\x01(\rR\x0bOHCCEFIALGL\x12\x20\n\x0bAA\
+    LCCPJCBME\x18\x06\x20\x01(\x08R\x0bAALCCPJCBME\x12\x20\n\x0bDBMFBJCHNKN\
+    \x18\x08\x20\x01(\x08R\x0bDBMFBJCHNKN\x12\x20\n\x0bBBBINMPJCGI\x18\n\x20\
+    \x01(\x08R\x0bBBBINMPJCGI\x12\x20\n\x0bEILBAOLILAM\x18\x0c\x20\x01(\rR\
+    \x0bEILBAOLILAM\x12\x20\n\x0bGDNEHLEOMOM\x18\r\x20\x01(\rR\x0bGDNEHLEOMO\
+    M\x12*\n\tbuff_list\x18\xad\x06\x20\x03(\x0b2\x0c.KMCCCOKIOFDR\x08buffLi\
+    stb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

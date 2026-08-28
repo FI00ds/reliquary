@@ -48,7 +48,7 @@ impl RelicPresetUpdatePlanCsReq {
         ::std::default::Default::default()
     }
 
-    // .HPPOINFLEPJ relic_list = 12;
+    // .HPPOINFLEPJ relic_list = 3;
 
     pub fn relic_list(&self) -> &super::HPPOINFLEPJ::HPPOINFLEPJ {
         match self.KKNBOACNCON {
@@ -186,10 +186,10 @@ impl ::protobuf::Message for RelicPresetUpdatePlanCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                88 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                98 => {
+                26 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(is.read_message()?));
                 },
                 106 => {
@@ -208,7 +208,7 @@ impl ::protobuf::Message for RelicPresetUpdatePlanCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.unique_id);
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
@@ -228,12 +228,12 @@ impl ::protobuf::Message for RelicPresetUpdatePlanCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.unique_id != 0 {
-            os.write_uint32(15, self.unique_id)?;
+            os.write_uint32(11, self.unique_id)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
                 &relic_preset_update_plan_cs_req::KKNBOACNCON::Name(ref v) => {
                     os.write_string(13, v)?;
@@ -322,8 +322,8 @@ pub mod relic_preset_update_plan_cs_req {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20RelicPresetUpdatePlanCsReq.proto\x1a\x11HPPOINFLEPJ.proto\"\x8d\
-    \x01\n\x1aRelicPresetUpdatePlanCsReq\x12\x1b\n\tunique_id\x18\x0f\x20\
-    \x01(\rR\x08uniqueId\x12-\n\nrelic_list\x18\x0c\x20\x01(\x0b2\x0c.HPPOIN\
+    \x01\n\x1aRelicPresetUpdatePlanCsReq\x12\x1b\n\tunique_id\x18\x0b\x20\
+    \x01(\rR\x08uniqueId\x12-\n\nrelic_list\x18\x03\x20\x01(\x0b2\x0c.HPPOIN\
     FLEPJH\0R\trelicList\x12\x14\n\x04name\x18\r\x20\x01(\tH\0R\x04nameB\r\n\
     \x0bKKNBOACNCONb\x06proto3\
 ";

@@ -50,7 +50,7 @@ impl GNCJNHIOKDL {
         ::std::default::Default::default()
     }
 
-    // uint32 ECHFGJHHGOG = 1;
+    // uint32 ECHFGJHHGOG = 10;
 
     pub fn ECHFGJHHGOG(&self) -> u32 {
         match self.PGNIENCDODA {
@@ -75,7 +75,7 @@ impl GNCJNHIOKDL {
         self.PGNIENCDODA = ::std::option::Option::Some(gncjnhiokdl::PGNIENCDODA::ECHFGJHHGOG(v))
     }
 
-    // uint32 NDEDLLMEFBJ = 9;
+    // uint32 NDEDLLMEFBJ = 4;
 
     pub fn NDEDLLMEFBJ(&self) -> u32 {
         match self.PGNIENCDODA {
@@ -100,7 +100,7 @@ impl GNCJNHIOKDL {
         self.PGNIENCDODA = ::std::option::Option::Some(gncjnhiokdl::PGNIENCDODA::NDEDLLMEFBJ(v))
     }
 
-    // .KVP CJKEIMBCMEP = 3;
+    // .KVP CJKEIMBCMEP = 9;
 
     pub fn CJKEIMBCMEP(&self) -> &super::KVP::KVP {
         match self.PGNIENCDODA {
@@ -200,19 +200,19 @@ impl ::protobuf::Message for GNCJNHIOKDL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                24 => {
                     self.CKHCLKOALKE = is.read_uint32()?;
                 },
                 64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                8 => {
+                80 => {
                     self.PGNIENCDODA = ::std::option::Option::Some(gncjnhiokdl::PGNIENCDODA::ECHFGJHHGOG(is.read_uint32()?));
                 },
-                72 => {
+                32 => {
                     self.PGNIENCDODA = ::std::option::Option::Some(gncjnhiokdl::PGNIENCDODA::NDEDLLMEFBJ(is.read_uint32()?));
                 },
-                26 => {
+                74 => {
                     self.PGNIENCDODA = ::std::option::Option::Some(gncjnhiokdl::PGNIENCDODA::CJKEIMBCMEP(is.read_message()?));
                 },
                 tag => {
@@ -228,7 +228,7 @@ impl ::protobuf::Message for GNCJNHIOKDL {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CKHCLKOALKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.CKHCLKOALKE);
+            my_size += ::protobuf::rt::uint32_size(3, self.CKHCLKOALKE);
         }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.retcode);
@@ -236,10 +236,10 @@ impl ::protobuf::Message for GNCJNHIOKDL {
         if let ::std::option::Option::Some(ref v) = self.PGNIENCDODA {
             match v {
                 &gncjnhiokdl::PGNIENCDODA::ECHFGJHHGOG(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1, v);
+                    my_size += ::protobuf::rt::uint32_size(10, v);
                 },
                 &gncjnhiokdl::PGNIENCDODA::NDEDLLMEFBJ(v) => {
-                    my_size += ::protobuf::rt::uint32_size(9, v);
+                    my_size += ::protobuf::rt::uint32_size(4, v);
                 },
                 &gncjnhiokdl::PGNIENCDODA::CJKEIMBCMEP(ref v) => {
                     let len = v.compute_size();
@@ -254,7 +254,7 @@ impl ::protobuf::Message for GNCJNHIOKDL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CKHCLKOALKE != 0 {
-            os.write_uint32(2, self.CKHCLKOALKE)?;
+            os.write_uint32(3, self.CKHCLKOALKE)?;
         }
         if self.retcode != 0 {
             os.write_uint32(8, self.retcode)?;
@@ -262,13 +262,13 @@ impl ::protobuf::Message for GNCJNHIOKDL {
         if let ::std::option::Option::Some(ref v) = self.PGNIENCDODA {
             match v {
                 &gncjnhiokdl::PGNIENCDODA::ECHFGJHHGOG(v) => {
-                    os.write_uint32(1, v)?;
+                    os.write_uint32(10, v)?;
                 },
                 &gncjnhiokdl::PGNIENCDODA::NDEDLLMEFBJ(v) => {
-                    os.write_uint32(9, v)?;
+                    os.write_uint32(4, v)?;
                 },
                 &gncjnhiokdl::PGNIENCDODA::CJKEIMBCMEP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
             };
         }
@@ -359,10 +359,10 @@ pub mod gncjnhiokdl {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GNCJNHIOKDL.proto\x1a\tKVP.proto\"\xca\x01\n\x0bGNCJNHIOKDL\x12\
-    \x20\n\x0bCKHCLKOALKE\x18\x02\x20\x01(\rR\x0bCKHCLKOALKE\x12\x18\n\x07re\
-    tcode\x18\x08\x20\x01(\rR\x07retcode\x12\"\n\x0bECHFGJHHGOG\x18\x01\x20\
-    \x01(\rH\0R\x0bECHFGJHHGOG\x12\"\n\x0bNDEDLLMEFBJ\x18\t\x20\x01(\rH\0R\
-    \x0bNDEDLLMEFBJ\x12(\n\x0bCJKEIMBCMEP\x18\x03\x20\x01(\x0b2\x04.KVPH\0R\
+    \x20\n\x0bCKHCLKOALKE\x18\x03\x20\x01(\rR\x0bCKHCLKOALKE\x12\x18\n\x07re\
+    tcode\x18\x08\x20\x01(\rR\x07retcode\x12\"\n\x0bECHFGJHHGOG\x18\n\x20\
+    \x01(\rH\0R\x0bECHFGJHHGOG\x12\"\n\x0bNDEDLLMEFBJ\x18\x04\x20\x01(\rH\0R\
+    \x0bNDEDLLMEFBJ\x12(\n\x0bCJKEIMBCMEP\x18\t\x20\x01(\x0b2\x04.KVPH\0R\
     \x0bCJKEIMBCMEPB\r\n\x0bPGNIENCDODAb\x06proto3\
 ";
 

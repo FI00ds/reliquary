@@ -27,28 +27,28 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:RogueModifierSourceType)
 pub enum RogueModifierSourceType {
-    // @@protoc_insertion_point(enum_value:RogueModifierSourceType.AMEIKAGDIFC_PBGOAOGCPLA)
-    AMEIKAGDIFC_PBGOAOGCPLA = 0,
-    // @@protoc_insertion_point(enum_value:RogueModifierSourceType.AMEIKAGDIFC_OLKBMGLCENL)
-    AMEIKAGDIFC_OLKBMGLCENL = 1,
-    // @@protoc_insertion_point(enum_value:RogueModifierSourceType.AMEIKAGDIFC_ALPFGINEKIL)
-    AMEIKAGDIFC_ALPFGINEKIL = 2,
-    // @@protoc_insertion_point(enum_value:RogueModifierSourceType.AMEIKAGDIFC_NNDCINJLBPI)
-    AMEIKAGDIFC_NNDCINJLBPI = 3,
-    // @@protoc_insertion_point(enum_value:RogueModifierSourceType.AMEIKAGDIFC_MAPKBMAHBKE)
-    AMEIKAGDIFC_MAPKBMAHBKE = 4,
-    // @@protoc_insertion_point(enum_value:RogueModifierSourceType.AMEIKAGDIFC_DMGFEOBEAFD)
-    AMEIKAGDIFC_DMGFEOBEAFD = 5,
-    // @@protoc_insertion_point(enum_value:RogueModifierSourceType.AMEIKAGDIFC_BCPOMCGMFFK)
-    AMEIKAGDIFC_BCPOMCGMFFK = 6,
-    // @@protoc_insertion_point(enum_value:RogueModifierSourceType.AMEIKAGDIFC_LFAHFLJMFNK)
-    AMEIKAGDIFC_LFAHFLJMFNK = 7,
-    // @@protoc_insertion_point(enum_value:RogueModifierSourceType.AMEIKAGDIFC_NOAMEMMFGKP)
-    AMEIKAGDIFC_NOAMEMMFGKP = 8,
-    // @@protoc_insertion_point(enum_value:RogueModifierSourceType.AMEIKAGDIFC_HKOAHEKCJAE)
-    AMEIKAGDIFC_HKOAHEKCJAE = 9,
-    // @@protoc_insertion_point(enum_value:RogueModifierSourceType.AMEIKAGDIFC_IHGDLAJAJMA)
-    AMEIKAGDIFC_IHGDLAJAJMA = 10,
+    // @@protoc_insertion_point(enum_value:RogueModifierSourceType.RogueModifierSourceType_RogueModifierSourceNone)
+    RogueModifierSourceType_RogueModifierSourceNone = 0,
+    // @@protoc_insertion_point(enum_value:RogueModifierSourceType.RogueModifierSourceType_RogueModifierSourceDiceRoll)
+    RogueModifierSourceType_RogueModifierSourceDiceRoll = 1,
+    // @@protoc_insertion_point(enum_value:RogueModifierSourceType.RogueModifierSourceType_RogueModifierSourceAeon)
+    RogueModifierSourceType_RogueModifierSourceAeon = 2,
+    // @@protoc_insertion_point(enum_value:RogueModifierSourceType.RogueModifierSourceType_RogueModifierSourceBoardEvent)
+    RogueModifierSourceType_RogueModifierSourceBoardEvent = 3,
+    // @@protoc_insertion_point(enum_value:RogueModifierSourceType.RogueModifierSourceType_RogueModifierSourceDialogEvent)
+    RogueModifierSourceType_RogueModifierSourceDialogEvent = 4,
+    // @@protoc_insertion_point(enum_value:RogueModifierSourceType.RogueModifierSourceType_RogueModifierSourceMiracle)
+    RogueModifierSourceType_RogueModifierSourceMiracle = 5,
+    // @@protoc_insertion_point(enum_value:RogueModifierSourceType.RogueModifierSourceType_RogueModifierSourceCellMark)
+    RogueModifierSourceType_RogueModifierSourceCellMark = 6,
+    // @@protoc_insertion_point(enum_value:RogueModifierSourceType.RogueModifierSourceType_RogueModifierSourceAeonTalent)
+    RogueModifierSourceType_RogueModifierSourceAeonTalent = 7,
+    // @@protoc_insertion_point(enum_value:RogueModifierSourceType.RogueModifierSourceType_RogueModifierSourceBossDecay)
+    RogueModifierSourceType_RogueModifierSourceBossDecay = 8,
+    // @@protoc_insertion_point(enum_value:RogueModifierSourceType.RogueModifierSourceType_RogueModifierSourceDiceBranch)
+    RogueModifierSourceType_RogueModifierSourceDiceBranch = 9,
+    // @@protoc_insertion_point(enum_value:RogueModifierSourceType.RogueModifierSourceType_RogueModifierSourcePersonaStyle)
+    RogueModifierSourceType_RogueModifierSourcePersonaStyle = 10,
 }
 
 impl ::protobuf::Enum for RogueModifierSourceType {
@@ -60,50 +60,50 @@ impl ::protobuf::Enum for RogueModifierSourceType {
 
     fn from_i32(value: i32) -> ::std::option::Option<RogueModifierSourceType> {
         match value {
-            0 => ::std::option::Option::Some(RogueModifierSourceType::AMEIKAGDIFC_PBGOAOGCPLA),
-            1 => ::std::option::Option::Some(RogueModifierSourceType::AMEIKAGDIFC_OLKBMGLCENL),
-            2 => ::std::option::Option::Some(RogueModifierSourceType::AMEIKAGDIFC_ALPFGINEKIL),
-            3 => ::std::option::Option::Some(RogueModifierSourceType::AMEIKAGDIFC_NNDCINJLBPI),
-            4 => ::std::option::Option::Some(RogueModifierSourceType::AMEIKAGDIFC_MAPKBMAHBKE),
-            5 => ::std::option::Option::Some(RogueModifierSourceType::AMEIKAGDIFC_DMGFEOBEAFD),
-            6 => ::std::option::Option::Some(RogueModifierSourceType::AMEIKAGDIFC_BCPOMCGMFFK),
-            7 => ::std::option::Option::Some(RogueModifierSourceType::AMEIKAGDIFC_LFAHFLJMFNK),
-            8 => ::std::option::Option::Some(RogueModifierSourceType::AMEIKAGDIFC_NOAMEMMFGKP),
-            9 => ::std::option::Option::Some(RogueModifierSourceType::AMEIKAGDIFC_HKOAHEKCJAE),
-            10 => ::std::option::Option::Some(RogueModifierSourceType::AMEIKAGDIFC_IHGDLAJAJMA),
+            0 => ::std::option::Option::Some(RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceNone),
+            1 => ::std::option::Option::Some(RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceDiceRoll),
+            2 => ::std::option::Option::Some(RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceAeon),
+            3 => ::std::option::Option::Some(RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceBoardEvent),
+            4 => ::std::option::Option::Some(RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceDialogEvent),
+            5 => ::std::option::Option::Some(RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceMiracle),
+            6 => ::std::option::Option::Some(RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceCellMark),
+            7 => ::std::option::Option::Some(RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceAeonTalent),
+            8 => ::std::option::Option::Some(RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceBossDecay),
+            9 => ::std::option::Option::Some(RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceDiceBranch),
+            10 => ::std::option::Option::Some(RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourcePersonaStyle),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<RogueModifierSourceType> {
         match str {
-            "AMEIKAGDIFC_PBGOAOGCPLA" => ::std::option::Option::Some(RogueModifierSourceType::AMEIKAGDIFC_PBGOAOGCPLA),
-            "AMEIKAGDIFC_OLKBMGLCENL" => ::std::option::Option::Some(RogueModifierSourceType::AMEIKAGDIFC_OLKBMGLCENL),
-            "AMEIKAGDIFC_ALPFGINEKIL" => ::std::option::Option::Some(RogueModifierSourceType::AMEIKAGDIFC_ALPFGINEKIL),
-            "AMEIKAGDIFC_NNDCINJLBPI" => ::std::option::Option::Some(RogueModifierSourceType::AMEIKAGDIFC_NNDCINJLBPI),
-            "AMEIKAGDIFC_MAPKBMAHBKE" => ::std::option::Option::Some(RogueModifierSourceType::AMEIKAGDIFC_MAPKBMAHBKE),
-            "AMEIKAGDIFC_DMGFEOBEAFD" => ::std::option::Option::Some(RogueModifierSourceType::AMEIKAGDIFC_DMGFEOBEAFD),
-            "AMEIKAGDIFC_BCPOMCGMFFK" => ::std::option::Option::Some(RogueModifierSourceType::AMEIKAGDIFC_BCPOMCGMFFK),
-            "AMEIKAGDIFC_LFAHFLJMFNK" => ::std::option::Option::Some(RogueModifierSourceType::AMEIKAGDIFC_LFAHFLJMFNK),
-            "AMEIKAGDIFC_NOAMEMMFGKP" => ::std::option::Option::Some(RogueModifierSourceType::AMEIKAGDIFC_NOAMEMMFGKP),
-            "AMEIKAGDIFC_HKOAHEKCJAE" => ::std::option::Option::Some(RogueModifierSourceType::AMEIKAGDIFC_HKOAHEKCJAE),
-            "AMEIKAGDIFC_IHGDLAJAJMA" => ::std::option::Option::Some(RogueModifierSourceType::AMEIKAGDIFC_IHGDLAJAJMA),
+            "RogueModifierSourceType_RogueModifierSourceNone" => ::std::option::Option::Some(RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceNone),
+            "RogueModifierSourceType_RogueModifierSourceDiceRoll" => ::std::option::Option::Some(RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceDiceRoll),
+            "RogueModifierSourceType_RogueModifierSourceAeon" => ::std::option::Option::Some(RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceAeon),
+            "RogueModifierSourceType_RogueModifierSourceBoardEvent" => ::std::option::Option::Some(RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceBoardEvent),
+            "RogueModifierSourceType_RogueModifierSourceDialogEvent" => ::std::option::Option::Some(RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceDialogEvent),
+            "RogueModifierSourceType_RogueModifierSourceMiracle" => ::std::option::Option::Some(RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceMiracle),
+            "RogueModifierSourceType_RogueModifierSourceCellMark" => ::std::option::Option::Some(RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceCellMark),
+            "RogueModifierSourceType_RogueModifierSourceAeonTalent" => ::std::option::Option::Some(RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceAeonTalent),
+            "RogueModifierSourceType_RogueModifierSourceBossDecay" => ::std::option::Option::Some(RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceBossDecay),
+            "RogueModifierSourceType_RogueModifierSourceDiceBranch" => ::std::option::Option::Some(RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceDiceBranch),
+            "RogueModifierSourceType_RogueModifierSourcePersonaStyle" => ::std::option::Option::Some(RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourcePersonaStyle),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [RogueModifierSourceType] = &[
-        RogueModifierSourceType::AMEIKAGDIFC_PBGOAOGCPLA,
-        RogueModifierSourceType::AMEIKAGDIFC_OLKBMGLCENL,
-        RogueModifierSourceType::AMEIKAGDIFC_ALPFGINEKIL,
-        RogueModifierSourceType::AMEIKAGDIFC_NNDCINJLBPI,
-        RogueModifierSourceType::AMEIKAGDIFC_MAPKBMAHBKE,
-        RogueModifierSourceType::AMEIKAGDIFC_DMGFEOBEAFD,
-        RogueModifierSourceType::AMEIKAGDIFC_BCPOMCGMFFK,
-        RogueModifierSourceType::AMEIKAGDIFC_LFAHFLJMFNK,
-        RogueModifierSourceType::AMEIKAGDIFC_NOAMEMMFGKP,
-        RogueModifierSourceType::AMEIKAGDIFC_HKOAHEKCJAE,
-        RogueModifierSourceType::AMEIKAGDIFC_IHGDLAJAJMA,
+        RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceNone,
+        RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceDiceRoll,
+        RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceAeon,
+        RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceBoardEvent,
+        RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceDialogEvent,
+        RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceMiracle,
+        RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceCellMark,
+        RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceAeonTalent,
+        RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceBossDecay,
+        RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceDiceBranch,
+        RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourcePersonaStyle,
     ];
 }
 
@@ -121,7 +121,7 @@ impl ::protobuf::EnumFull for RogueModifierSourceType {
 
 impl ::std::default::Default for RogueModifierSourceType {
     fn default() -> Self {
-        RogueModifierSourceType::AMEIKAGDIFC_PBGOAOGCPLA
+        RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceNone
     }
 }
 
@@ -132,14 +132,18 @@ impl RogueModifierSourceType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dRogueModifierSourceType.proto*\xd8\x02\n\x17RogueModifierSourceTyp\
-    e\x12\x1b\n\x17AMEIKAGDIFC_PBGOAOGCPLA\x10\0\x12\x1b\n\x17AMEIKAGDIFC_OL\
-    KBMGLCENL\x10\x01\x12\x1b\n\x17AMEIKAGDIFC_ALPFGINEKIL\x10\x02\x12\x1b\n\
-    \x17AMEIKAGDIFC_NNDCINJLBPI\x10\x03\x12\x1b\n\x17AMEIKAGDIFC_MAPKBMAHBKE\
-    \x10\x04\x12\x1b\n\x17AMEIKAGDIFC_DMGFEOBEAFD\x10\x05\x12\x1b\n\x17AMEIK\
-    AGDIFC_BCPOMCGMFFK\x10\x06\x12\x1b\n\x17AMEIKAGDIFC_LFAHFLJMFNK\x10\x07\
-    \x12\x1b\n\x17AMEIKAGDIFC_NOAMEMMFGKP\x10\x08\x12\x1b\n\x17AMEIKAGDIFC_H\
-    KOAHEKCJAE\x10\t\x12\x1b\n\x17AMEIKAGDIFC_IHGDLAJAJMA\x10\nb\x06proto3\
+    \n\x1dRogueModifierSourceType.proto*\x91\x05\n\x17RogueModifierSourceTyp\
+    e\x123\n/RogueModifierSourceType_RogueModifierSourceNone\x10\0\x127\n3Ro\
+    gueModifierSourceType_RogueModifierSourceDiceRoll\x10\x01\x123\n/RogueMo\
+    difierSourceType_RogueModifierSourceAeon\x10\x02\x129\n5RogueModifierSou\
+    rceType_RogueModifierSourceBoardEvent\x10\x03\x12:\n6RogueModifierSource\
+    Type_RogueModifierSourceDialogEvent\x10\x04\x126\n2RogueModifierSourceTy\
+    pe_RogueModifierSourceMiracle\x10\x05\x127\n3RogueModifierSourceType_Rog\
+    ueModifierSourceCellMark\x10\x06\x129\n5RogueModifierSourceType_RogueMod\
+    ifierSourceAeonTalent\x10\x07\x128\n4RogueModifierSourceType_RogueModifi\
+    erSourceBossDecay\x10\x08\x129\n5RogueModifierSourceType_RogueModifierSo\
+    urceDiceBranch\x10\t\x12;\n7RogueModifierSourceType_RogueModifierSourceP\
+    ersonaStyle\x10\nb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -34,8 +34,8 @@ pub struct GPGLNCGCLLG {
     pub OFFBANGOOKI: u32,
     // @@protoc_insertion_point(field:GPGLNCGCLLG.skill_id)
     pub skill_id: u32,
-    // @@protoc_insertion_point(field:GPGLNCGCLLG.param)
-    pub param: i32,
+    // @@protoc_insertion_point(field:GPGLNCGCLLG.display_value)
+    pub display_value: i32,
     // special fields
     // @@protoc_insertion_point(special_field:GPGLNCGCLLG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -71,9 +71,9 @@ impl GPGLNCGCLLG {
             |m: &mut GPGLNCGCLLG| { &mut m.skill_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "param",
-            |m: &GPGLNCGCLLG| { &m.param },
-            |m: &mut GPGLNCGCLLG| { &mut m.param },
+            "display_value",
+            |m: &GPGLNCGCLLG| { &m.display_value },
+            |m: &mut GPGLNCGCLLG| { &mut m.display_value },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GPGLNCGCLLG>(
             "GPGLNCGCLLG",
@@ -103,7 +103,7 @@ impl ::protobuf::Message for GPGLNCGCLLG {
                     self.skill_id = is.read_uint32()?;
                 },
                 32 => {
-                    self.param = is.read_int32()?;
+                    self.display_value = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -126,8 +126,8 @@ impl ::protobuf::Message for GPGLNCGCLLG {
         if self.skill_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.skill_id);
         }
-        if self.param != 0 {
-            my_size += ::protobuf::rt::int32_size(4, self.param);
+        if self.display_value != 0 {
+            my_size += ::protobuf::rt::int32_size(4, self.display_value);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -144,8 +144,8 @@ impl ::protobuf::Message for GPGLNCGCLLG {
         if self.skill_id != 0 {
             os.write_uint32(3, self.skill_id)?;
         }
-        if self.param != 0 {
-            os.write_int32(4, self.param)?;
+        if self.display_value != 0 {
+            os.write_int32(4, self.display_value)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::Message for GPGLNCGCLLG {
         self.item_id = 0;
         self.OFFBANGOOKI = 0;
         self.skill_id = 0;
-        self.param = 0;
+        self.display_value = 0;
         self.special_fields.clear();
     }
 
@@ -176,7 +176,7 @@ impl ::protobuf::Message for GPGLNCGCLLG {
             item_id: 0,
             OFFBANGOOKI: 0,
             skill_id: 0,
-            param: 0,
+            display_value: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for GPGLNCGCLLG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GPGLNCGCLLG.proto\"y\n\x0bGPGLNCGCLLG\x12\x17\n\x07item_id\x18\x01\
-    \x20\x01(\rR\x06itemId\x12\x20\n\x0bOFFBANGOOKI\x18\x02\x20\x01(\rR\x0bO\
-    FFBANGOOKI\x12\x19\n\x08skill_id\x18\x03\x20\x01(\rR\x07skillId\x12\x14\
-    \n\x05param\x18\x04\x20\x01(\x05R\x05paramb\x06proto3\
+    \n\x11GPGLNCGCLLG.proto\"\x88\x01\n\x0bGPGLNCGCLLG\x12\x17\n\x07item_id\
+    \x18\x01\x20\x01(\rR\x06itemId\x12\x20\n\x0bOFFBANGOOKI\x18\x02\x20\x01(\
+    \rR\x0bOFFBANGOOKI\x12\x19\n\x08skill_id\x18\x03\x20\x01(\rR\x07skillId\
+    \x12#\n\rdisplay_value\x18\x04\x20\x01(\x05R\x0cdisplayValueb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

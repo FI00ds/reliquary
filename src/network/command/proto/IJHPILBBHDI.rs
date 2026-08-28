@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct IJHPILBBHDI {
     // message fields
     // @@protoc_insertion_point(field:IJHPILBBHDI.status)
-    pub status: ::protobuf::EnumOrUnknown<super::EGCFNCBLHJC::EGCFNCBLHJC>,
+    pub status: ::protobuf::EnumOrUnknown<ijhpilbbhdi::bbibcfckpjh::EGCFNCBLHJC>,
     // @@protoc_insertion_point(field:IJHPILBBHDI.index)
     pub index: u32,
     // special fields
@@ -79,10 +79,10 @@ impl ::protobuf::Message for IJHPILBBHDI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                56 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
-                88 => {
+                104 => {
                     self.index = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for IJHPILBBHDI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.status != ::protobuf::EnumOrUnknown::new(super::EGCFNCBLHJC::EGCFNCBLHJC::EGCFNCBLHJC_EDHBOMMOKGM) {
-            my_size += ::protobuf::rt::int32_size(2, self.status.value());
+        if self.status != ::protobuf::EnumOrUnknown::new(ijhpilbbhdi::bbibcfckpjh::EGCFNCBLHJC::EGCFNCBLHJC_EDHBOMMOKGM) {
+            my_size += ::protobuf::rt::int32_size(7, self.status.value());
         }
         if self.index != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.index);
+            my_size += ::protobuf::rt::uint32_size(13, self.index);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for IJHPILBBHDI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.status != ::protobuf::EnumOrUnknown::new(super::EGCFNCBLHJC::EGCFNCBLHJC::EGCFNCBLHJC_EDHBOMMOKGM) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        if self.status != ::protobuf::EnumOrUnknown::new(ijhpilbbhdi::bbibcfckpjh::EGCFNCBLHJC::EGCFNCBLHJC_EDHBOMMOKGM) {
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         if self.index != 0 {
-            os.write_uint32(11, self.index)?;
+            os.write_uint32(13, self.index)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,7 +132,7 @@ impl ::protobuf::Message for IJHPILBBHDI {
     }
 
     fn clear(&mut self) {
-        self.status = ::protobuf::EnumOrUnknown::new(super::EGCFNCBLHJC::EGCFNCBLHJC::EGCFNCBLHJC_EDHBOMMOKGM);
+        self.status = ::protobuf::EnumOrUnknown::new(ijhpilbbhdi::bbibcfckpjh::EGCFNCBLHJC::EGCFNCBLHJC_EDHBOMMOKGM);
         self.index = 0;
         self.special_fields.clear();
     }
@@ -164,10 +164,189 @@ impl ::protobuf::reflect::ProtobufValue for IJHPILBBHDI {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
+/// Nested message and enums of message `IJHPILBBHDI`
+pub mod ijhpilbbhdi {
+    // @@protoc_insertion_point(message:IJHPILBBHDI.BBIBCFCKPJH)
+    #[derive(PartialEq,Clone,Default,Debug)]
+    pub struct BBIBCFCKPJH {
+        // special fields
+        // @@protoc_insertion_point(special_field:IJHPILBBHDI.BBIBCFCKPJH.special_fields)
+        pub special_fields: ::protobuf::SpecialFields,
+    }
+
+    impl<'a> ::std::default::Default for &'a BBIBCFCKPJH {
+        fn default() -> &'a BBIBCFCKPJH {
+            <BBIBCFCKPJH as ::protobuf::Message>::default_instance()
+        }
+    }
+
+    impl BBIBCFCKPJH {
+        pub fn new() -> BBIBCFCKPJH {
+            ::std::default::Default::default()
+        }
+
+        pub(in super) fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
+            let mut fields = ::std::vec::Vec::with_capacity(0);
+            let mut oneofs = ::std::vec::Vec::with_capacity(0);
+            ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BBIBCFCKPJH>(
+                "IJHPILBBHDI.BBIBCFCKPJH",
+                fields,
+                oneofs,
+            )
+        }
+    }
+
+    impl ::protobuf::Message for BBIBCFCKPJH {
+        const NAME: &'static str = "BBIBCFCKPJH";
+
+        fn is_initialized(&self) -> bool {
+            true
+        }
+
+        fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
+            while let Some(tag) = is.read_raw_tag_or_eof()? {
+                match tag {
+                    tag => {
+                        ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
+                    },
+                };
+            }
+            ::std::result::Result::Ok(())
+        }
+
+        // Compute sizes of nested messages
+        #[allow(unused_variables)]
+        fn compute_size(&self) -> u64 {
+            let mut my_size = 0;
+            my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
+            self.special_fields.cached_size().set(my_size as u32);
+            my_size
+        }
+
+        fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+            os.write_unknown_fields(self.special_fields.unknown_fields())?;
+            ::std::result::Result::Ok(())
+        }
+
+        fn special_fields(&self) -> &::protobuf::SpecialFields {
+            &self.special_fields
+        }
+
+        fn mut_special_fields(&mut self) -> &mut ::protobuf::SpecialFields {
+            &mut self.special_fields
+        }
+
+        fn new() -> BBIBCFCKPJH {
+            BBIBCFCKPJH::new()
+        }
+
+        fn clear(&mut self) {
+            self.special_fields.clear();
+        }
+
+        fn default_instance() -> &'static BBIBCFCKPJH {
+            static instance: BBIBCFCKPJH = BBIBCFCKPJH {
+                special_fields: ::protobuf::SpecialFields::new(),
+            };
+            &instance
+        }
+    }
+
+    impl ::protobuf::MessageFull for BBIBCFCKPJH {
+        fn descriptor() -> ::protobuf::reflect::MessageDescriptor {
+            static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::MessageDescriptor> = ::protobuf::rt::Lazy::new();
+            descriptor.get(|| super::file_descriptor().message_by_package_relative_name("IJHPILBBHDI.BBIBCFCKPJH").unwrap()).clone()
+        }
+    }
+
+    impl ::std::fmt::Display for BBIBCFCKPJH {
+        fn fmt(&self, f: &mut ::std::fmt::Formatter<'_>) -> ::std::fmt::Result {
+            ::protobuf::text_format::fmt(self, f)
+        }
+    }
+
+    impl ::protobuf::reflect::ProtobufValue for BBIBCFCKPJH {
+        type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
+    }
+
+    /// Nested message and enums of message `BBIBCFCKPJH`
+    pub mod bbibcfckpjh {
+        #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
+        // @@protoc_insertion_point(enum:IJHPILBBHDI.BBIBCFCKPJH.EGCFNCBLHJC)
+        pub enum EGCFNCBLHJC {
+            // @@protoc_insertion_point(enum_value:IJHPILBBHDI.BBIBCFCKPJH.EGCFNCBLHJC.EGCFNCBLHJC_EDHBOMMOKGM)
+            EGCFNCBLHJC_EDHBOMMOKGM = 0,
+            // @@protoc_insertion_point(enum_value:IJHPILBBHDI.BBIBCFCKPJH.EGCFNCBLHJC.EGCFNCBLHJC_ACBHGLIBJBG)
+            EGCFNCBLHJC_ACBHGLIBJBG = 1,
+            // @@protoc_insertion_point(enum_value:IJHPILBBHDI.BBIBCFCKPJH.EGCFNCBLHJC.EGCFNCBLHJC_LJLKNDIACEO)
+            EGCFNCBLHJC_LJLKNDIACEO = 2,
+        }
+
+        impl ::protobuf::Enum for EGCFNCBLHJC {
+            const NAME: &'static str = "EGCFNCBLHJC";
+
+            fn value(&self) -> i32 {
+                *self as i32
+            }
+
+            fn from_i32(value: i32) -> ::std::option::Option<EGCFNCBLHJC> {
+                match value {
+                    0 => ::std::option::Option::Some(EGCFNCBLHJC::EGCFNCBLHJC_EDHBOMMOKGM),
+                    1 => ::std::option::Option::Some(EGCFNCBLHJC::EGCFNCBLHJC_ACBHGLIBJBG),
+                    2 => ::std::option::Option::Some(EGCFNCBLHJC::EGCFNCBLHJC_LJLKNDIACEO),
+                    _ => ::std::option::Option::None
+                }
+            }
+
+            fn from_str(str: &str) -> ::std::option::Option<EGCFNCBLHJC> {
+                match str {
+                    "EGCFNCBLHJC_EDHBOMMOKGM" => ::std::option::Option::Some(EGCFNCBLHJC::EGCFNCBLHJC_EDHBOMMOKGM),
+                    "EGCFNCBLHJC_ACBHGLIBJBG" => ::std::option::Option::Some(EGCFNCBLHJC::EGCFNCBLHJC_ACBHGLIBJBG),
+                    "EGCFNCBLHJC_LJLKNDIACEO" => ::std::option::Option::Some(EGCFNCBLHJC::EGCFNCBLHJC_LJLKNDIACEO),
+                    _ => ::std::option::Option::None
+                }
+            }
+
+            const VALUES: &'static [EGCFNCBLHJC] = &[
+                EGCFNCBLHJC::EGCFNCBLHJC_EDHBOMMOKGM,
+                EGCFNCBLHJC::EGCFNCBLHJC_ACBHGLIBJBG,
+                EGCFNCBLHJC::EGCFNCBLHJC_LJLKNDIACEO,
+            ];
+        }
+
+        impl ::protobuf::EnumFull for EGCFNCBLHJC {
+            fn enum_descriptor() -> ::protobuf::reflect::EnumDescriptor {
+                static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::EnumDescriptor> = ::protobuf::rt::Lazy::new();
+                descriptor.get(|| super::super::file_descriptor().enum_by_package_relative_name("IJHPILBBHDI.BBIBCFCKPJH.EGCFNCBLHJC").unwrap()).clone()
+            }
+
+            fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
+                let index = *self as usize;
+                Self::enum_descriptor().value_by_index(index)
+            }
+        }
+
+        impl ::std::default::Default for EGCFNCBLHJC {
+            fn default() -> Self {
+                EGCFNCBLHJC::EGCFNCBLHJC_EDHBOMMOKGM
+            }
+        }
+
+        impl EGCFNCBLHJC {
+            pub(in super::super) fn generated_enum_descriptor_data() -> ::protobuf::reflect::GeneratedEnumDescriptorData {
+                ::protobuf::reflect::GeneratedEnumDescriptorData::new::<EGCFNCBLHJC>("IJHPILBBHDI.BBIBCFCKPJH.EGCFNCBLHJC")
+            }
+        }
+    }
+}
+
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IJHPILBBHDI.proto\x1a\x11EGCFNCBLHJC.proto\"I\n\x0bIJHPILBBHDI\x12\
-    $\n\x06status\x18\x02\x20\x01(\x0e2\x0c.EGCFNCBLHJCR\x06status\x12\x14\n\
-    \x05index\x18\x0b\x20\x01(\rR\x05indexb\x06proto3\
+    \n\x11IJHPILBBHDI.proto\x1a\x11EGCFNCBLHJC.proto\"\xd6\x01\n\x0bIJHPILBB\
+    HDI\x12<\n\x06status\x18\x07\x20\x01(\x0e2$.IJHPILBBHDI.BBIBCFCKPJH.EGCF\
+    NCBLHJCR\x06status\x12\x14\n\x05index\x18\r\x20\x01(\rR\x05index\x1as\n\
+    \x0bBBIBCFCKPJH\"d\n\x0bEGCFNCBLHJC\x12\x1b\n\x17EGCFNCBLHJC_EDHBOMMOKGM\
+    \x10\0\x12\x1b\n\x17EGCFNCBLHJC_ACBHGLIBJBG\x10\x01\x12\x1b\n\x17EGCFNCB\
+    LHJC_LJLKNDIACEO\x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -186,9 +365,11 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
             deps.push(super::EGCFNCBLHJC::file_descriptor().clone());
-            let mut messages = ::std::vec::Vec::with_capacity(1);
+            let mut messages = ::std::vec::Vec::with_capacity(2);
             messages.push(IJHPILBBHDI::generated_message_descriptor_data());
-            let mut enums = ::std::vec::Vec::with_capacity(0);
+            messages.push(ijhpilbbhdi::BBIBCFCKPJH::generated_message_descriptor_data());
+            let mut enums = ::std::vec::Vec::with_capacity(1);
+            enums.push(ijhpilbbhdi::bbibcfckpjh::EGCFNCBLHJC::generated_enum_descriptor_data());
             ::protobuf::reflect::GeneratedFileDescriptor::new_generated(
                 file_descriptor_proto(),
                 deps,

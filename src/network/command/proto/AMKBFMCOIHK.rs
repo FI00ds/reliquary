@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AMKBFMCOIHK {
     // message fields
-    // @@protoc_insertion_point(field:AMKBFMCOIHK.source_type)
-    pub source_type: ::protobuf::EnumOrUnknown<super::CGOGDJKALMH::CGOGDJKALMH>,
-    // @@protoc_insertion_point(field:AMKBFMCOIHK.id)
-    pub id: u32,
+    // @@protoc_insertion_point(field:AMKBFMCOIHK.NFMKOFNEKLA)
+    pub NFMKOFNEKLA: ::protobuf::EnumOrUnknown<super::CGOGDJKALMH::CGOGDJKALMH>,
     // @@protoc_insertion_point(field:AMKBFMCOIHK.ANJMFPKJHOH)
     pub ANJMFPKJHOH: ::protobuf::EnumOrUnknown<super::DifficultyAdjustmentType::DifficultyAdjustmentType>,
+    // @@protoc_insertion_point(field:AMKBFMCOIHK.id)
+    pub id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AMKBFMCOIHK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl AMKBFMCOIHK {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "source_type",
-            |m: &AMKBFMCOIHK| { &m.source_type },
-            |m: &mut AMKBFMCOIHK| { &mut m.source_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "id",
-            |m: &AMKBFMCOIHK| { &m.id },
-            |m: &mut AMKBFMCOIHK| { &mut m.id },
+            "NFMKOFNEKLA",
+            |m: &AMKBFMCOIHK| { &m.NFMKOFNEKLA },
+            |m: &mut AMKBFMCOIHK| { &mut m.NFMKOFNEKLA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ANJMFPKJHOH",
             |m: &AMKBFMCOIHK| { &m.ANJMFPKJHOH },
             |m: &mut AMKBFMCOIHK| { &mut m.ANJMFPKJHOH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "id",
+            |m: &AMKBFMCOIHK| { &m.id },
+            |m: &mut AMKBFMCOIHK| { &mut m.id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AMKBFMCOIHK>(
             "AMKBFMCOIHK",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for AMKBFMCOIHK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                32 => {
+                    self.NFMKOFNEKLA = is.read_enum_or_unknown()?;
+                },
                 72 => {
-                    self.source_type = is.read_enum_or_unknown()?;
+                    self.ANJMFPKJHOH = is.read_enum_or_unknown()?;
                 },
                 88 => {
                     self.id = is.read_uint32()?;
-                },
-                104 => {
-                    self.ANJMFPKJHOH = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for AMKBFMCOIHK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.source_type != ::protobuf::EnumOrUnknown::new(super::CGOGDJKALMH::CGOGDJKALMH::CGOGDJKALMH_FHFJLAIAGEH) {
-            my_size += ::protobuf::rt::int32_size(9, self.source_type.value());
+        if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::CGOGDJKALMH::CGOGDJKALMH::CGOGDJKALMH_FHFJLAIAGEH) {
+            my_size += ::protobuf::rt::int32_size(4, self.NFMKOFNEKLA.value());
+        }
+        if self.ANJMFPKJHOH != ::protobuf::EnumOrUnknown::new(super::DifficultyAdjustmentType::DifficultyAdjustmentType::DifficultyAdjustmentType_DifficultyAjustmentTypeDefault) {
+            my_size += ::protobuf::rt::int32_size(9, self.ANJMFPKJHOH.value());
         }
         if self.id != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.id);
-        }
-        if self.ANJMFPKJHOH != ::protobuf::EnumOrUnknown::new(super::DifficultyAdjustmentType::DifficultyAdjustmentType::JNECPMMFEKP_AANHCEGHCFA) {
-            my_size += ::protobuf::rt::int32_size(13, self.ANJMFPKJHOH.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for AMKBFMCOIHK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.source_type != ::protobuf::EnumOrUnknown::new(super::CGOGDJKALMH::CGOGDJKALMH::CGOGDJKALMH_FHFJLAIAGEH) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.source_type))?;
+        if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::CGOGDJKALMH::CGOGDJKALMH::CGOGDJKALMH_FHFJLAIAGEH) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.NFMKOFNEKLA))?;
+        }
+        if self.ANJMFPKJHOH != ::protobuf::EnumOrUnknown::new(super::DifficultyAdjustmentType::DifficultyAdjustmentType::DifficultyAdjustmentType_DifficultyAjustmentTypeDefault) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.ANJMFPKJHOH))?;
         }
         if self.id != 0 {
             os.write_uint32(11, self.id)?;
-        }
-        if self.ANJMFPKJHOH != ::protobuf::EnumOrUnknown::new(super::DifficultyAdjustmentType::DifficultyAdjustmentType::JNECPMMFEKP_AANHCEGHCFA) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.ANJMFPKJHOH))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for AMKBFMCOIHK {
     }
 
     fn clear(&mut self) {
-        self.source_type = ::protobuf::EnumOrUnknown::new(super::CGOGDJKALMH::CGOGDJKALMH::CGOGDJKALMH_FHFJLAIAGEH);
+        self.NFMKOFNEKLA = ::protobuf::EnumOrUnknown::new(super::CGOGDJKALMH::CGOGDJKALMH::CGOGDJKALMH_FHFJLAIAGEH);
+        self.ANJMFPKJHOH = ::protobuf::EnumOrUnknown::new(super::DifficultyAdjustmentType::DifficultyAdjustmentType::DifficultyAdjustmentType_DifficultyAjustmentTypeDefault);
         self.id = 0;
-        self.ANJMFPKJHOH = ::protobuf::EnumOrUnknown::new(super::DifficultyAdjustmentType::DifficultyAdjustmentType::JNECPMMFEKP_AANHCEGHCFA);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AMKBFMCOIHK {
         static instance: AMKBFMCOIHK = AMKBFMCOIHK {
-            source_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            id: 0,
+            NFMKOFNEKLA: ::protobuf::EnumOrUnknown::from_i32(0),
             ANJMFPKJHOH: ::protobuf::EnumOrUnknown::from_i32(0),
+            id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for AMKBFMCOIHK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AMKBFMCOIHK.proto\x1a\x11CGOGDJKALMH.proto\x1a\x1eDifficultyAdjust\
-    mentType.proto\"\x89\x01\n\x0bAMKBFMCOIHK\x12-\n\x0bsource_type\x18\t\
-    \x20\x01(\x0e2\x0c.CGOGDJKALMHR\nsourceType\x12\x0e\n\x02id\x18\x0b\x20\
-    \x01(\rR\x02id\x12;\n\x0bANJMFPKJHOH\x18\r\x20\x01(\x0e2\x19.DifficultyA\
-    djustmentTypeR\x0bANJMFPKJHOHb\x06proto3\
+    mentType.proto\"\x8a\x01\n\x0bAMKBFMCOIHK\x12.\n\x0bNFMKOFNEKLA\x18\x04\
+    \x20\x01(\x0e2\x0c.CGOGDJKALMHR\x0bNFMKOFNEKLA\x12;\n\x0bANJMFPKJHOH\x18\
+    \t\x20\x01(\x0e2\x19.DifficultyAdjustmentTypeR\x0bANJMFPKJHOH\x12\x0e\n\
+    \x02id\x18\x0b\x20\x01(\rR\x02idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

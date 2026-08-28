@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NGEBIKIHIDD {
     // message fields
-    // @@protoc_insertion_point(field:NGEBIKIHIDD.BGAFHIOEHFH)
-    pub BGAFHIOEHFH: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:NGEBIKIHIDD.LGIPILAKIKB)
     pub LGIPILAKIKB: u32,
+    // @@protoc_insertion_point(field:NGEBIKIHIDD.BGAFHIOEHFH)
+    pub BGAFHIOEHFH: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:NGEBIKIHIDD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl NGEBIKIHIDD {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BGAFHIOEHFH",
-            |m: &NGEBIKIHIDD| { &m.BGAFHIOEHFH },
-            |m: &mut NGEBIKIHIDD| { &mut m.BGAFHIOEHFH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LGIPILAKIKB",
             |m: &NGEBIKIHIDD| { &m.LGIPILAKIKB },
             |m: &mut NGEBIKIHIDD| { &mut m.LGIPILAKIKB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BGAFHIOEHFH",
+            |m: &NGEBIKIHIDD| { &m.BGAFHIOEHFH },
+            |m: &mut NGEBIKIHIDD| { &mut m.BGAFHIOEHFH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NGEBIKIHIDD>(
             "NGEBIKIHIDD",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for NGEBIKIHIDD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                24 => {
+                    self.LGIPILAKIKB = is.read_uint32()?;
+                },
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.BGAFHIOEHFH)?;
                 },
-                8 => {
+                64 => {
                     self.BGAFHIOEHFH.push(is.read_uint32()?);
-                },
-                112 => {
-                    self.LGIPILAKIKB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for NGEBIKIHIDD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.BGAFHIOEHFH);
         if self.LGIPILAKIKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.LGIPILAKIKB);
+            my_size += ::protobuf::rt::uint32_size(3, self.LGIPILAKIKB);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.BGAFHIOEHFH);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.BGAFHIOEHFH)?;
         if self.LGIPILAKIKB != 0 {
-            os.write_uint32(14, self.LGIPILAKIKB)?;
+            os.write_uint32(3, self.LGIPILAKIKB)?;
         }
+        os.write_repeated_packed_uint32(8, &self.BGAFHIOEHFH)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for NGEBIKIHIDD {
     }
 
     fn clear(&mut self) {
-        self.BGAFHIOEHFH.clear();
         self.LGIPILAKIKB = 0;
+        self.BGAFHIOEHFH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NGEBIKIHIDD {
         static instance: NGEBIKIHIDD = NGEBIKIHIDD {
-            BGAFHIOEHFH: ::std::vec::Vec::new(),
             LGIPILAKIKB: 0,
+            BGAFHIOEHFH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for NGEBIKIHIDD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NGEBIKIHIDD.proto\"Q\n\x0bNGEBIKIHIDD\x12\x20\n\x0bBGAFHIOEHFH\x18\
-    \x01\x20\x03(\rR\x0bBGAFHIOEHFH\x12\x20\n\x0bLGIPILAKIKB\x18\x0e\x20\x01\
-    (\rR\x0bLGIPILAKIKBb\x06proto3\
+    \n\x11NGEBIKIHIDD.proto\"Q\n\x0bNGEBIKIHIDD\x12\x20\n\x0bLGIPILAKIKB\x18\
+    \x03\x20\x01(\rR\x0bLGIPILAKIKB\x12\x20\n\x0bBGAFHIOEHFH\x18\x08\x20\x03\
+    (\rR\x0bBGAFHIOEHFHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

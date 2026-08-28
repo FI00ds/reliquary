@@ -97,7 +97,7 @@ impl ::protobuf::Message for MessageChatData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.message_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
+        if self.message_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MsgType_None) {
             my_size += ::protobuf::rt::int32_size(1, self.message_type.value());
         }
         if let Some(v) = self.chat_data.as_ref() {
@@ -110,7 +110,7 @@ impl ::protobuf::Message for MessageChatData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.message_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
+        if self.message_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MsgType_None) {
             os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.message_type))?;
         }
         if let Some(v) = self.chat_data.as_ref() {
@@ -133,7 +133,7 @@ impl ::protobuf::Message for MessageChatData {
     }
 
     fn clear(&mut self) {
-        self.message_type = ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE);
+        self.message_type = ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MsgType_None);
         self.chat_data.clear();
         self.special_fields.clear();
     }

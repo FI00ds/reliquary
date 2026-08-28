@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetTrainWorldIdCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetTrainWorldIdCsReq.CFDCEEMIOCO)
-    pub CFDCEEMIOCO: u32,
+    // @@protoc_insertion_point(field:SetTrainWorldIdCsReq.train_world_id)
+    pub train_world_id: u32,
     // @@protoc_insertion_point(field:SetTrainWorldIdCsReq.interact_id)
     pub interact_id: u64,
     // special fields
@@ -52,9 +52,9 @@ impl SetTrainWorldIdCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CFDCEEMIOCO",
-            |m: &SetTrainWorldIdCsReq| { &m.CFDCEEMIOCO },
-            |m: &mut SetTrainWorldIdCsReq| { &mut m.CFDCEEMIOCO },
+            "train_world_id",
+            |m: &SetTrainWorldIdCsReq| { &m.train_world_id },
+            |m: &mut SetTrainWorldIdCsReq| { &mut m.train_world_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "interact_id",
@@ -79,8 +79,8 @@ impl ::protobuf::Message for SetTrainWorldIdCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.CFDCEEMIOCO = is.read_uint32()?;
+                96 => {
+                    self.train_world_id = is.read_uint32()?;
                 },
                 120 => {
                     self.interact_id = is.read_uint64()?;
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SetTrainWorldIdCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CFDCEEMIOCO != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.CFDCEEMIOCO);
+        if self.train_world_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.train_world_id);
         }
         if self.interact_id != 0 {
             my_size += ::protobuf::rt::uint64_size(15, self.interact_id);
@@ -109,8 +109,8 @@ impl ::protobuf::Message for SetTrainWorldIdCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CFDCEEMIOCO != 0 {
-            os.write_uint32(7, self.CFDCEEMIOCO)?;
+        if self.train_world_id != 0 {
+            os.write_uint32(12, self.train_world_id)?;
         }
         if self.interact_id != 0 {
             os.write_uint64(15, self.interact_id)?;
@@ -132,14 +132,14 @@ impl ::protobuf::Message for SetTrainWorldIdCsReq {
     }
 
     fn clear(&mut self) {
-        self.CFDCEEMIOCO = 0;
+        self.train_world_id = 0;
         self.interact_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetTrainWorldIdCsReq {
         static instance: SetTrainWorldIdCsReq = SetTrainWorldIdCsReq {
-            CFDCEEMIOCO: 0,
+            train_world_id: 0,
             interact_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for SetTrainWorldIdCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aSetTrainWorldIdCsReq.proto\"Y\n\x14SetTrainWorldIdCsReq\x12\x20\n\
-    \x0bCFDCEEMIOCO\x18\x07\x20\x01(\rR\x0bCFDCEEMIOCO\x12\x1f\n\x0binteract\
+    \n\x1aSetTrainWorldIdCsReq.proto\"]\n\x14SetTrainWorldIdCsReq\x12$\n\x0e\
+    train_world_id\x18\x0c\x20\x01(\rR\x0ctrainWorldId\x12\x1f\n\x0binteract\
     _id\x18\x0f\x20\x01(\x04R\ninteractIdb\x06proto3\
 ";
 

@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LIKNJLCIAGI {
     // message fields
-    // @@protoc_insertion_point(field:LIKNJLCIAGI.time_stamp)
-    pub time_stamp: u64,
-    // @@protoc_insertion_point(field:LIKNJLCIAGI.x)
-    pub x: f32,
     // @@protoc_insertion_point(field:LIKNJLCIAGI.y)
     pub y: f32,
-    // @@protoc_insertion_point(field:LIKNJLCIAGI.z)
-    pub z: f32,
+    // @@protoc_insertion_point(field:LIKNJLCIAGI.x)
+    pub x: f32,
     // @@protoc_insertion_point(field:LIKNJLCIAGI.NJDHHMLEHFL)
     pub NJDHHMLEHFL: f32,
+    // @@protoc_insertion_point(field:LIKNJLCIAGI.z)
+    pub z: f32,
+    // @@protoc_insertion_point(field:LIKNJLCIAGI.MFCHJFPOCIA)
+    pub MFCHJFPOCIA: u64,
     // special fields
     // @@protoc_insertion_point(special_field:LIKNJLCIAGI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,9 @@ impl LIKNJLCIAGI {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "time_stamp",
-            |m: &LIKNJLCIAGI| { &m.time_stamp },
-            |m: &mut LIKNJLCIAGI| { &mut m.time_stamp },
+            "y",
+            |m: &LIKNJLCIAGI| { &m.y },
+            |m: &mut LIKNJLCIAGI| { &mut m.y },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "x",
@@ -68,9 +68,9 @@ impl LIKNJLCIAGI {
             |m: &mut LIKNJLCIAGI| { &mut m.x },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "y",
-            |m: &LIKNJLCIAGI| { &m.y },
-            |m: &mut LIKNJLCIAGI| { &mut m.y },
+            "NJDHHMLEHFL",
+            |m: &LIKNJLCIAGI| { &m.NJDHHMLEHFL },
+            |m: &mut LIKNJLCIAGI| { &mut m.NJDHHMLEHFL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "z",
@@ -78,9 +78,9 @@ impl LIKNJLCIAGI {
             |m: &mut LIKNJLCIAGI| { &mut m.z },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NJDHHMLEHFL",
-            |m: &LIKNJLCIAGI| { &m.NJDHHMLEHFL },
-            |m: &mut LIKNJLCIAGI| { &mut m.NJDHHMLEHFL },
+            "MFCHJFPOCIA",
+            |m: &LIKNJLCIAGI| { &m.MFCHJFPOCIA },
+            |m: &mut LIKNJLCIAGI| { &mut m.MFCHJFPOCIA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LIKNJLCIAGI>(
             "LIKNJLCIAGI",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for LIKNJLCIAGI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.time_stamp = is.read_uint64()?;
-                },
-                37 => {
-                    self.x = is.read_float()?;
-                },
-                53 => {
+                29 => {
                     self.y = is.read_float()?;
                 },
+                45 => {
+                    self.x = is.read_float()?;
+                },
                 85 => {
+                    self.NJDHHMLEHFL = is.read_float()?;
+                },
+                93 => {
                     self.z = is.read_float()?;
                 },
-                109 => {
-                    self.NJDHHMLEHFL = is.read_float()?;
+                120 => {
+                    self.MFCHJFPOCIA = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for LIKNJLCIAGI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.time_stamp != 0 {
-            my_size += ::protobuf::rt::uint64_size(1, self.time_stamp);
+        if self.y != 0. {
+            my_size += 1 + 4;
         }
         if self.x != 0. {
             my_size += 1 + 4;
         }
-        if self.y != 0. {
+        if self.NJDHHMLEHFL != 0. {
             my_size += 1 + 4;
         }
         if self.z != 0. {
             my_size += 1 + 4;
         }
-        if self.NJDHHMLEHFL != 0. {
-            my_size += 1 + 4;
+        if self.MFCHJFPOCIA != 0 {
+            my_size += ::protobuf::rt::uint64_size(15, self.MFCHJFPOCIA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for LIKNJLCIAGI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.time_stamp != 0 {
-            os.write_uint64(1, self.time_stamp)?;
+        if self.y != 0. {
+            os.write_float(3, self.y)?;
         }
         if self.x != 0. {
-            os.write_float(4, self.x)?;
-        }
-        if self.y != 0. {
-            os.write_float(6, self.y)?;
-        }
-        if self.z != 0. {
-            os.write_float(10, self.z)?;
+            os.write_float(5, self.x)?;
         }
         if self.NJDHHMLEHFL != 0. {
-            os.write_float(13, self.NJDHHMLEHFL)?;
+            os.write_float(10, self.NJDHHMLEHFL)?;
+        }
+        if self.z != 0. {
+            os.write_float(11, self.z)?;
+        }
+        if self.MFCHJFPOCIA != 0 {
+            os.write_uint64(15, self.MFCHJFPOCIA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for LIKNJLCIAGI {
     }
 
     fn clear(&mut self) {
-        self.time_stamp = 0;
-        self.x = 0.;
         self.y = 0.;
-        self.z = 0.;
+        self.x = 0.;
         self.NJDHHMLEHFL = 0.;
+        self.z = 0.;
+        self.MFCHJFPOCIA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LIKNJLCIAGI {
         static instance: LIKNJLCIAGI = LIKNJLCIAGI {
-            time_stamp: 0,
-            x: 0.,
             y: 0.,
-            z: 0.,
+            x: 0.,
             NJDHHMLEHFL: 0.,
+            z: 0.,
+            MFCHJFPOCIA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for LIKNJLCIAGI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LIKNJLCIAGI.proto\"x\n\x0bLIKNJLCIAGI\x12\x1d\n\ntime_stamp\x18\
-    \x01\x20\x01(\x04R\ttimeStamp\x12\x0c\n\x01x\x18\x04\x20\x01(\x02R\x01x\
-    \x12\x0c\n\x01y\x18\x06\x20\x01(\x02R\x01y\x12\x0c\n\x01z\x18\n\x20\x01(\
-    \x02R\x01z\x12\x20\n\x0bNJDHHMLEHFL\x18\r\x20\x01(\x02R\x0bNJDHHMLEHFLb\
-    \x06proto3\
+    \n\x11LIKNJLCIAGI.proto\"{\n\x0bLIKNJLCIAGI\x12\x0c\n\x01y\x18\x03\x20\
+    \x01(\x02R\x01y\x12\x0c\n\x01x\x18\x05\x20\x01(\x02R\x01x\x12\x20\n\x0bN\
+    JDHHMLEHFL\x18\n\x20\x01(\x02R\x0bNJDHHMLEHFL\x12\x0c\n\x01z\x18\x0b\x20\
+    \x01(\x02R\x01z\x12\x20\n\x0bMFCHJFPOCIA\x18\x0f\x20\x01(\x04R\x0bMFCHJF\
+    POCIAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

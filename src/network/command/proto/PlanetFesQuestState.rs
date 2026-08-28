@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:PlanetFesQuestState)
 pub enum PlanetFesQuestState {
-    // @@protoc_insertion_point(enum_value:PlanetFesQuestState.CNLAEDCLICP_MDPJCGEMOLG)
-    CNLAEDCLICP_MDPJCGEMOLG = 0,
-    // @@protoc_insertion_point(enum_value:PlanetFesQuestState.CNLAEDCLICP_GBJIHFOIGHD)
-    CNLAEDCLICP_GBJIHFOIGHD = 1,
-    // @@protoc_insertion_point(enum_value:PlanetFesQuestState.CNLAEDCLICP_BILKPNLJBFA)
-    CNLAEDCLICP_BILKPNLJBFA = 2,
-    // @@protoc_insertion_point(enum_value:PlanetFesQuestState.CNLAEDCLICP_CGIIKAHOIKL)
-    CNLAEDCLICP_CGIIKAHOIKL = 3,
+    // @@protoc_insertion_point(enum_value:PlanetFesQuestState.PlanetFesQuestState_PlanetFesQuestNone)
+    PlanetFesQuestState_PlanetFesQuestNone = 0,
+    // @@protoc_insertion_point(enum_value:PlanetFesQuestState.PlanetFesQuestState_PlanetFesQuestDoing)
+    PlanetFesQuestState_PlanetFesQuestDoing = 1,
+    // @@protoc_insertion_point(enum_value:PlanetFesQuestState.PlanetFesQuestState_PlanetFesQuestFinish)
+    PlanetFesQuestState_PlanetFesQuestFinish = 2,
+    // @@protoc_insertion_point(enum_value:PlanetFesQuestState.PlanetFesQuestState_PlanetFesQuestClose)
+    PlanetFesQuestState_PlanetFesQuestClose = 3,
 }
 
 impl ::protobuf::Enum for PlanetFesQuestState {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for PlanetFesQuestState {
 
     fn from_i32(value: i32) -> ::std::option::Option<PlanetFesQuestState> {
         match value {
-            0 => ::std::option::Option::Some(PlanetFesQuestState::CNLAEDCLICP_MDPJCGEMOLG),
-            1 => ::std::option::Option::Some(PlanetFesQuestState::CNLAEDCLICP_GBJIHFOIGHD),
-            2 => ::std::option::Option::Some(PlanetFesQuestState::CNLAEDCLICP_BILKPNLJBFA),
-            3 => ::std::option::Option::Some(PlanetFesQuestState::CNLAEDCLICP_CGIIKAHOIKL),
+            0 => ::std::option::Option::Some(PlanetFesQuestState::PlanetFesQuestState_PlanetFesQuestNone),
+            1 => ::std::option::Option::Some(PlanetFesQuestState::PlanetFesQuestState_PlanetFesQuestDoing),
+            2 => ::std::option::Option::Some(PlanetFesQuestState::PlanetFesQuestState_PlanetFesQuestFinish),
+            3 => ::std::option::Option::Some(PlanetFesQuestState::PlanetFesQuestState_PlanetFesQuestClose),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<PlanetFesQuestState> {
         match str {
-            "CNLAEDCLICP_MDPJCGEMOLG" => ::std::option::Option::Some(PlanetFesQuestState::CNLAEDCLICP_MDPJCGEMOLG),
-            "CNLAEDCLICP_GBJIHFOIGHD" => ::std::option::Option::Some(PlanetFesQuestState::CNLAEDCLICP_GBJIHFOIGHD),
-            "CNLAEDCLICP_BILKPNLJBFA" => ::std::option::Option::Some(PlanetFesQuestState::CNLAEDCLICP_BILKPNLJBFA),
-            "CNLAEDCLICP_CGIIKAHOIKL" => ::std::option::Option::Some(PlanetFesQuestState::CNLAEDCLICP_CGIIKAHOIKL),
+            "PlanetFesQuestState_PlanetFesQuestNone" => ::std::option::Option::Some(PlanetFesQuestState::PlanetFesQuestState_PlanetFesQuestNone),
+            "PlanetFesQuestState_PlanetFesQuestDoing" => ::std::option::Option::Some(PlanetFesQuestState::PlanetFesQuestState_PlanetFesQuestDoing),
+            "PlanetFesQuestState_PlanetFesQuestFinish" => ::std::option::Option::Some(PlanetFesQuestState::PlanetFesQuestState_PlanetFesQuestFinish),
+            "PlanetFesQuestState_PlanetFesQuestClose" => ::std::option::Option::Some(PlanetFesQuestState::PlanetFesQuestState_PlanetFesQuestClose),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [PlanetFesQuestState] = &[
-        PlanetFesQuestState::CNLAEDCLICP_MDPJCGEMOLG,
-        PlanetFesQuestState::CNLAEDCLICP_GBJIHFOIGHD,
-        PlanetFesQuestState::CNLAEDCLICP_BILKPNLJBFA,
-        PlanetFesQuestState::CNLAEDCLICP_CGIIKAHOIKL,
+        PlanetFesQuestState::PlanetFesQuestState_PlanetFesQuestNone,
+        PlanetFesQuestState::PlanetFesQuestState_PlanetFesQuestDoing,
+        PlanetFesQuestState::PlanetFesQuestState_PlanetFesQuestFinish,
+        PlanetFesQuestState::PlanetFesQuestState_PlanetFesQuestClose,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for PlanetFesQuestState {
 
 impl ::std::default::Default for PlanetFesQuestState {
     fn default() -> Self {
-        PlanetFesQuestState::CNLAEDCLICP_MDPJCGEMOLG
+        PlanetFesQuestState::PlanetFesQuestState_PlanetFesQuestNone
     }
 }
 
@@ -97,10 +97,11 @@ impl PlanetFesQuestState {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19PlanetFesQuestState.proto*\x89\x01\n\x13PlanetFesQuestState\x12\
-    \x1b\n\x17CNLAEDCLICP_MDPJCGEMOLG\x10\0\x12\x1b\n\x17CNLAEDCLICP_GBJIHFO\
-    IGHD\x10\x01\x12\x1b\n\x17CNLAEDCLICP_BILKPNLJBFA\x10\x02\x12\x1b\n\x17C\
-    NLAEDCLICP_CGIIKAHOIKL\x10\x03b\x06proto3\
+    \n\x19PlanetFesQuestState.proto*\xc9\x01\n\x13PlanetFesQuestState\x12*\n\
+    &PlanetFesQuestState_PlanetFesQuestNone\x10\0\x12+\n'PlanetFesQuestState\
+    _PlanetFesQuestDoing\x10\x01\x12,\n(PlanetFesQuestState_PlanetFesQuestFi\
+    nish\x10\x02\x12+\n'PlanetFesQuestState_PlanetFesQuestClose\x10\x03b\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

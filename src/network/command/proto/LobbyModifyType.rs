@@ -27,44 +27,44 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:LobbyModifyType)
 pub enum LobbyModifyType {
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.CJHHGHKGAIL_NLCDGIPGFDJ)
-    CJHHGHKGAIL_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.CJHHGHKGAIL_BPOCOHFIAOH)
-    CJHHGHKGAIL_BPOCOHFIAOH = 1,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.CJHHGHKGAIL_HMOGOHOFPFG)
-    CJHHGHKGAIL_HMOGOHOFPFG = 2,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.CJHHGHKGAIL_NCIPEHOHDMG)
-    CJHHGHKGAIL_NCIPEHOHDMG = 3,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.CJHHGHKGAIL_BHMEGEPHBIC)
-    CJHHGHKGAIL_BHMEGEPHBIC = 4,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.CJHHGHKGAIL_EHINOPGCAEE)
-    CJHHGHKGAIL_EHINOPGCAEE = 5,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.CJHHGHKGAIL_PINPKNJDKLP)
-    CJHHGHKGAIL_PINPKNJDKLP = 6,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.CJHHGHKGAIL_OIINGMJAHFA)
-    CJHHGHKGAIL_OIINGMJAHFA = 7,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.CJHHGHKGAIL_ACEBEKCCMEG)
-    CJHHGHKGAIL_ACEBEKCCMEG = 8,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.CJHHGHKGAIL_HIOFMONBFLO)
-    CJHHGHKGAIL_HIOFMONBFLO = 9,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.CJHHGHKGAIL_NDMLJELOPCM)
-    CJHHGHKGAIL_NDMLJELOPCM = 10,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.CJHHGHKGAIL_KOKIHLKEJOL)
-    CJHHGHKGAIL_KOKIHLKEJOL = 11,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.CJHHGHKGAIL_CGDOBHJPMHI)
-    CJHHGHKGAIL_CGDOBHJPMHI = 12,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.CJHHGHKGAIL_MNFOFJKGCHL)
-    CJHHGHKGAIL_MNFOFJKGCHL = 13,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.CJHHGHKGAIL_MNPCJLJIKML)
-    CJHHGHKGAIL_MNPCJLJIKML = 14,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.CJHHGHKGAIL_HDOBALIFGCG)
-    CJHHGHKGAIL_HDOBALIFGCG = 15,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.CJHHGHKGAIL_HIGMNPCOONG)
-    CJHHGHKGAIL_HIGMNPCOONG = 16,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.CJHHGHKGAIL_KPKNEPLALOK)
-    CJHHGHKGAIL_KPKNEPLALOK = 17,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.CJHHGHKGAIL_NGIGCKJNPJC)
-    CJHHGHKGAIL_NGIGCKJNPJC = 18,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_None)
+    LobbyModifyType_None = 0,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_Idle)
+    LobbyModifyType_Idle = 1,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_Ready)
+    LobbyModifyType_Ready = 2,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_Operating)
+    LobbyModifyType_Operating = 3,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_CancelMatch)
+    LobbyModifyType_CancelMatch = 4,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_Match)
+    LobbyModifyType_Match = 5,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_QuitLobby)
+    LobbyModifyType_QuitLobby = 6,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_KickOut)
+    LobbyModifyType_KickOut = 7,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_TimeOut)
+    LobbyModifyType_TimeOut = 8,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_JoinLobby)
+    LobbyModifyType_JoinLobby = 9,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_LobbyDismiss)
+    LobbyModifyType_LobbyDismiss = 10,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_MatchTimeOut)
+    LobbyModifyType_MatchTimeOut = 11,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_FightStart)
+    LobbyModifyType_FightStart = 12,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_Logout)
+    LobbyModifyType_Logout = 13,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_FightEnd)
+    LobbyModifyType_FightEnd = 14,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_FightRoomDestroyInInit)
+    LobbyModifyType_FightRoomDestroyInInit = 15,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_LobbyStartFight)
+    LobbyModifyType_LobbyStartFight = 16,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_LobbyStartFightTimeout)
+    LobbyModifyType_LobbyStartFightTimeout = 17,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_LobbyRoomExtInfo)
+    LobbyModifyType_LobbyRoomExtInfo = 18,
 }
 
 impl ::protobuf::Enum for LobbyModifyType {
@@ -76,74 +76,74 @@ impl ::protobuf::Enum for LobbyModifyType {
 
     fn from_i32(value: i32) -> ::std::option::Option<LobbyModifyType> {
         match value {
-            0 => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_NLCDGIPGFDJ),
-            1 => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_BPOCOHFIAOH),
-            2 => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_HMOGOHOFPFG),
-            3 => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_NCIPEHOHDMG),
-            4 => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_BHMEGEPHBIC),
-            5 => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_EHINOPGCAEE),
-            6 => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_PINPKNJDKLP),
-            7 => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_OIINGMJAHFA),
-            8 => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_ACEBEKCCMEG),
-            9 => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_HIOFMONBFLO),
-            10 => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_NDMLJELOPCM),
-            11 => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_KOKIHLKEJOL),
-            12 => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_CGDOBHJPMHI),
-            13 => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_MNFOFJKGCHL),
-            14 => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_MNPCJLJIKML),
-            15 => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_HDOBALIFGCG),
-            16 => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_HIGMNPCOONG),
-            17 => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_KPKNEPLALOK),
-            18 => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_NGIGCKJNPJC),
+            0 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_None),
+            1 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_Idle),
+            2 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_Ready),
+            3 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_Operating),
+            4 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_CancelMatch),
+            5 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_Match),
+            6 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_QuitLobby),
+            7 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_KickOut),
+            8 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_TimeOut),
+            9 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_JoinLobby),
+            10 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_LobbyDismiss),
+            11 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_MatchTimeOut),
+            12 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_FightStart),
+            13 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_Logout),
+            14 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_FightEnd),
+            15 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_FightRoomDestroyInInit),
+            16 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_LobbyStartFight),
+            17 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_LobbyStartFightTimeout),
+            18 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_LobbyRoomExtInfo),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<LobbyModifyType> {
         match str {
-            "CJHHGHKGAIL_NLCDGIPGFDJ" => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_NLCDGIPGFDJ),
-            "CJHHGHKGAIL_BPOCOHFIAOH" => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_BPOCOHFIAOH),
-            "CJHHGHKGAIL_HMOGOHOFPFG" => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_HMOGOHOFPFG),
-            "CJHHGHKGAIL_NCIPEHOHDMG" => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_NCIPEHOHDMG),
-            "CJHHGHKGAIL_BHMEGEPHBIC" => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_BHMEGEPHBIC),
-            "CJHHGHKGAIL_EHINOPGCAEE" => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_EHINOPGCAEE),
-            "CJHHGHKGAIL_PINPKNJDKLP" => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_PINPKNJDKLP),
-            "CJHHGHKGAIL_OIINGMJAHFA" => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_OIINGMJAHFA),
-            "CJHHGHKGAIL_ACEBEKCCMEG" => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_ACEBEKCCMEG),
-            "CJHHGHKGAIL_HIOFMONBFLO" => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_HIOFMONBFLO),
-            "CJHHGHKGAIL_NDMLJELOPCM" => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_NDMLJELOPCM),
-            "CJHHGHKGAIL_KOKIHLKEJOL" => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_KOKIHLKEJOL),
-            "CJHHGHKGAIL_CGDOBHJPMHI" => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_CGDOBHJPMHI),
-            "CJHHGHKGAIL_MNFOFJKGCHL" => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_MNFOFJKGCHL),
-            "CJHHGHKGAIL_MNPCJLJIKML" => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_MNPCJLJIKML),
-            "CJHHGHKGAIL_HDOBALIFGCG" => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_HDOBALIFGCG),
-            "CJHHGHKGAIL_HIGMNPCOONG" => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_HIGMNPCOONG),
-            "CJHHGHKGAIL_KPKNEPLALOK" => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_KPKNEPLALOK),
-            "CJHHGHKGAIL_NGIGCKJNPJC" => ::std::option::Option::Some(LobbyModifyType::CJHHGHKGAIL_NGIGCKJNPJC),
+            "LobbyModifyType_None" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_None),
+            "LobbyModifyType_Idle" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_Idle),
+            "LobbyModifyType_Ready" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_Ready),
+            "LobbyModifyType_Operating" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_Operating),
+            "LobbyModifyType_CancelMatch" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_CancelMatch),
+            "LobbyModifyType_Match" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_Match),
+            "LobbyModifyType_QuitLobby" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_QuitLobby),
+            "LobbyModifyType_KickOut" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_KickOut),
+            "LobbyModifyType_TimeOut" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_TimeOut),
+            "LobbyModifyType_JoinLobby" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_JoinLobby),
+            "LobbyModifyType_LobbyDismiss" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_LobbyDismiss),
+            "LobbyModifyType_MatchTimeOut" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_MatchTimeOut),
+            "LobbyModifyType_FightStart" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_FightStart),
+            "LobbyModifyType_Logout" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_Logout),
+            "LobbyModifyType_FightEnd" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_FightEnd),
+            "LobbyModifyType_FightRoomDestroyInInit" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_FightRoomDestroyInInit),
+            "LobbyModifyType_LobbyStartFight" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_LobbyStartFight),
+            "LobbyModifyType_LobbyStartFightTimeout" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_LobbyStartFightTimeout),
+            "LobbyModifyType_LobbyRoomExtInfo" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_LobbyRoomExtInfo),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [LobbyModifyType] = &[
-        LobbyModifyType::CJHHGHKGAIL_NLCDGIPGFDJ,
-        LobbyModifyType::CJHHGHKGAIL_BPOCOHFIAOH,
-        LobbyModifyType::CJHHGHKGAIL_HMOGOHOFPFG,
-        LobbyModifyType::CJHHGHKGAIL_NCIPEHOHDMG,
-        LobbyModifyType::CJHHGHKGAIL_BHMEGEPHBIC,
-        LobbyModifyType::CJHHGHKGAIL_EHINOPGCAEE,
-        LobbyModifyType::CJHHGHKGAIL_PINPKNJDKLP,
-        LobbyModifyType::CJHHGHKGAIL_OIINGMJAHFA,
-        LobbyModifyType::CJHHGHKGAIL_ACEBEKCCMEG,
-        LobbyModifyType::CJHHGHKGAIL_HIOFMONBFLO,
-        LobbyModifyType::CJHHGHKGAIL_NDMLJELOPCM,
-        LobbyModifyType::CJHHGHKGAIL_KOKIHLKEJOL,
-        LobbyModifyType::CJHHGHKGAIL_CGDOBHJPMHI,
-        LobbyModifyType::CJHHGHKGAIL_MNFOFJKGCHL,
-        LobbyModifyType::CJHHGHKGAIL_MNPCJLJIKML,
-        LobbyModifyType::CJHHGHKGAIL_HDOBALIFGCG,
-        LobbyModifyType::CJHHGHKGAIL_HIGMNPCOONG,
-        LobbyModifyType::CJHHGHKGAIL_KPKNEPLALOK,
-        LobbyModifyType::CJHHGHKGAIL_NGIGCKJNPJC,
+        LobbyModifyType::LobbyModifyType_None,
+        LobbyModifyType::LobbyModifyType_Idle,
+        LobbyModifyType::LobbyModifyType_Ready,
+        LobbyModifyType::LobbyModifyType_Operating,
+        LobbyModifyType::LobbyModifyType_CancelMatch,
+        LobbyModifyType::LobbyModifyType_Match,
+        LobbyModifyType::LobbyModifyType_QuitLobby,
+        LobbyModifyType::LobbyModifyType_KickOut,
+        LobbyModifyType::LobbyModifyType_TimeOut,
+        LobbyModifyType::LobbyModifyType_JoinLobby,
+        LobbyModifyType::LobbyModifyType_LobbyDismiss,
+        LobbyModifyType::LobbyModifyType_MatchTimeOut,
+        LobbyModifyType::LobbyModifyType_FightStart,
+        LobbyModifyType::LobbyModifyType_Logout,
+        LobbyModifyType::LobbyModifyType_FightEnd,
+        LobbyModifyType::LobbyModifyType_FightRoomDestroyInInit,
+        LobbyModifyType::LobbyModifyType_LobbyStartFight,
+        LobbyModifyType::LobbyModifyType_LobbyStartFightTimeout,
+        LobbyModifyType::LobbyModifyType_LobbyRoomExtInfo,
     ];
 }
 
@@ -161,7 +161,7 @@ impl ::protobuf::EnumFull for LobbyModifyType {
 
 impl ::std::default::Default for LobbyModifyType {
     fn default() -> Self {
-        LobbyModifyType::CJHHGHKGAIL_NLCDGIPGFDJ
+        LobbyModifyType::LobbyModifyType_None
     }
 }
 
@@ -172,19 +172,20 @@ impl LobbyModifyType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15LobbyModifyType.proto*\xb8\x04\n\x0fLobbyModifyType\x12\x1b\n\x17C\
-    JHHGHKGAIL_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17CJHHGHKGAIL_BPOCOHFIAOH\x10\
-    \x01\x12\x1b\n\x17CJHHGHKGAIL_HMOGOHOFPFG\x10\x02\x12\x1b\n\x17CJHHGHKGA\
-    IL_NCIPEHOHDMG\x10\x03\x12\x1b\n\x17CJHHGHKGAIL_BHMEGEPHBIC\x10\x04\x12\
-    \x1b\n\x17CJHHGHKGAIL_EHINOPGCAEE\x10\x05\x12\x1b\n\x17CJHHGHKGAIL_PINPK\
-    NJDKLP\x10\x06\x12\x1b\n\x17CJHHGHKGAIL_OIINGMJAHFA\x10\x07\x12\x1b\n\
-    \x17CJHHGHKGAIL_ACEBEKCCMEG\x10\x08\x12\x1b\n\x17CJHHGHKGAIL_HIOFMONBFLO\
-    \x10\t\x12\x1b\n\x17CJHHGHKGAIL_NDMLJELOPCM\x10\n\x12\x1b\n\x17CJHHGHKGA\
-    IL_KOKIHLKEJOL\x10\x0b\x12\x1b\n\x17CJHHGHKGAIL_CGDOBHJPMHI\x10\x0c\x12\
-    \x1b\n\x17CJHHGHKGAIL_MNFOFJKGCHL\x10\r\x12\x1b\n\x17CJHHGHKGAIL_MNPCJLJ\
-    IKML\x10\x0e\x12\x1b\n\x17CJHHGHKGAIL_HDOBALIFGCG\x10\x0f\x12\x1b\n\x17C\
-    JHHGHKGAIL_HIGMNPCOONG\x10\x10\x12\x1b\n\x17CJHHGHKGAIL_KPKNEPLALOK\x10\
-    \x11\x12\x1b\n\x17CJHHGHKGAIL_NGIGCKJNPJC\x10\x12b\x06proto3\
+    \n\x15LobbyModifyType.proto*\xf4\x04\n\x0fLobbyModifyType\x12\x18\n\x14L\
+    obbyModifyType_None\x10\0\x12\x18\n\x14LobbyModifyType_Idle\x10\x01\x12\
+    \x19\n\x15LobbyModifyType_Ready\x10\x02\x12\x1d\n\x19LobbyModifyType_Ope\
+    rating\x10\x03\x12\x1f\n\x1bLobbyModifyType_CancelMatch\x10\x04\x12\x19\
+    \n\x15LobbyModifyType_Match\x10\x05\x12\x1d\n\x19LobbyModifyType_QuitLob\
+    by\x10\x06\x12\x1b\n\x17LobbyModifyType_KickOut\x10\x07\x12\x1b\n\x17Lob\
+    byModifyType_TimeOut\x10\x08\x12\x1d\n\x19LobbyModifyType_JoinLobby\x10\
+    \t\x12\x20\n\x1cLobbyModifyType_LobbyDismiss\x10\n\x12\x20\n\x1cLobbyMod\
+    ifyType_MatchTimeOut\x10\x0b\x12\x1e\n\x1aLobbyModifyType_FightStart\x10\
+    \x0c\x12\x1a\n\x16LobbyModifyType_Logout\x10\r\x12\x1c\n\x18LobbyModifyT\
+    ype_FightEnd\x10\x0e\x12*\n&LobbyModifyType_FightRoomDestroyInInit\x10\
+    \x0f\x12#\n\x1fLobbyModifyType_LobbyStartFight\x10\x10\x12*\n&LobbyModif\
+    yType_LobbyStartFightTimeout\x10\x11\x12$\n\x20LobbyModifyType_LobbyRoom\
+    ExtInfo\x10\x12b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

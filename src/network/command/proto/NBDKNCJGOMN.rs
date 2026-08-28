@@ -79,7 +79,7 @@ impl ::protobuf::Message for NBDKNCJGOMN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KOBBMDFPNKA)?;
                 },
                 112 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for NBDKNCJGOMN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.KOBBMDFPNKA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.FOKPPMBIDID != 0 {
             os.write_uint32(14, self.FOKPPMBIDID)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for NBDKNCJGOMN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NBDKNCJGOMN.proto\x1a\x11HKOEAOPNEAC.proto\"_\n\x0bNBDKNCJGOMN\x12\
-    .\n\x0bKOBBMDFPNKA\x18\x04\x20\x01(\x0b2\x0c.HKOEAOPNEACR\x0bKOBBMDFPNKA\
+    .\n\x0bKOBBMDFPNKA\x18\t\x20\x01(\x0b2\x0c.HKOEAOPNEACR\x0bKOBBMDFPNKA\
     \x12\x20\n\x0bFOKPPMBIDID\x18\x0e\x20\x01(\rR\x0bFOKPPMBIDIDb\x06proto3\
 ";
 

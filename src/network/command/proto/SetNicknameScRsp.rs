@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetNicknameScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetNicknameScRsp.set_time)
-    pub set_time: i64,
     // @@protoc_insertion_point(field:SetNicknameScRsp.is_modify)
     pub is_modify: bool,
+    // @@protoc_insertion_point(field:SetNicknameScRsp.set_time)
+    pub set_time: i64,
     // @@protoc_insertion_point(field:SetNicknameScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -54,14 +54,14 @@ impl SetNicknameScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "set_time",
-            |m: &SetNicknameScRsp| { &m.set_time },
-            |m: &mut SetNicknameScRsp| { &mut m.set_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_modify",
             |m: &SetNicknameScRsp| { &m.is_modify },
             |m: &mut SetNicknameScRsp| { &mut m.is_modify },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "set_time",
+            |m: &SetNicknameScRsp| { &m.set_time },
+            |m: &mut SetNicknameScRsp| { &mut m.set_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for SetNicknameScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.set_time = is.read_int64()?;
-                },
-                64 => {
+                48 => {
                     self.is_modify = is.read_bool()?;
                 },
-                120 => {
+                64 => {
+                    self.set_time = is.read_int64()?;
+                },
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SetNicknameScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.set_time != 0 {
-            my_size += ::protobuf::rt::int64_size(1, self.set_time);
-        }
         if self.is_modify != false {
             my_size += 1 + 1;
         }
+        if self.set_time != 0 {
+            my_size += ::protobuf::rt::int64_size(8, self.set_time);
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for SetNicknameScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.set_time != 0 {
-            os.write_int64(1, self.set_time)?;
-        }
         if self.is_modify != false {
-            os.write_bool(8, self.is_modify)?;
+            os.write_bool(6, self.is_modify)?;
+        }
+        if self.set_time != 0 {
+            os.write_int64(8, self.set_time)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for SetNicknameScRsp {
     }
 
     fn clear(&mut self) {
-        self.set_time = 0;
         self.is_modify = false;
+        self.set_time = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetNicknameScRsp {
         static instance: SetNicknameScRsp = SetNicknameScRsp {
-            set_time: 0,
             is_modify: false,
+            set_time: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for SetNicknameScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16SetNicknameScRsp.proto\"d\n\x10SetNicknameScRsp\x12\x19\n\x08set_t\
-    ime\x18\x01\x20\x01(\x03R\x07setTime\x12\x1b\n\tis_modify\x18\x08\x20\
-    \x01(\x08R\x08isModify\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retco\
-    deb\x06proto3\
+    \n\x16SetNicknameScRsp.proto\"d\n\x10SetNicknameScRsp\x12\x1b\n\tis_modi\
+    fy\x18\x06\x20\x01(\x08R\x08isModify\x12\x19\n\x08set_time\x18\x08\x20\
+    \x01(\x03R\x07setTime\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcod\
+    eb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

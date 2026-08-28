@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MHNNEFBOPIE {
     // message fields
-    // @@protoc_insertion_point(field:MHNNEFBOPIE.op_uid)
-    pub op_uid: u32,
+    // @@protoc_insertion_point(field:MHNNEFBOPIE.IKDEIJCEDIO)
+    pub IKDEIJCEDIO: u32,
     // @@protoc_insertion_point(field:MHNNEFBOPIE.JENKGODEIOM)
     pub JENKGODEIOM: ::std::vec::Vec<super::JOLAHHGIFHA::JOLAHHGIFHA>,
     // special fields
@@ -52,9 +52,9 @@ impl MHNNEFBOPIE {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "op_uid",
-            |m: &MHNNEFBOPIE| { &m.op_uid },
-            |m: &mut MHNNEFBOPIE| { &mut m.op_uid },
+            "IKDEIJCEDIO",
+            |m: &MHNNEFBOPIE| { &m.IKDEIJCEDIO },
+            |m: &mut MHNNEFBOPIE| { &mut m.IKDEIJCEDIO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "JENKGODEIOM",
@@ -80,7 +80,7 @@ impl ::protobuf::Message for MHNNEFBOPIE {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.op_uid = is.read_uint32()?;
+                    self.IKDEIJCEDIO = is.read_uint32()?;
                 },
                 18 => {
                     self.JENKGODEIOM.push(is.read_message()?);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for MHNNEFBOPIE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.op_uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.op_uid);
+        if self.IKDEIJCEDIO != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.IKDEIJCEDIO);
         }
         for value in &self.JENKGODEIOM {
             let len = value.compute_size();
@@ -110,8 +110,8 @@ impl ::protobuf::Message for MHNNEFBOPIE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.op_uid != 0 {
-            os.write_uint32(1, self.op_uid)?;
+        if self.IKDEIJCEDIO != 0 {
+            os.write_uint32(1, self.IKDEIJCEDIO)?;
         }
         for v in &self.JENKGODEIOM {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
@@ -133,14 +133,14 @@ impl ::protobuf::Message for MHNNEFBOPIE {
     }
 
     fn clear(&mut self) {
-        self.op_uid = 0;
+        self.IKDEIJCEDIO = 0;
         self.JENKGODEIOM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MHNNEFBOPIE {
         static instance: MHNNEFBOPIE = MHNNEFBOPIE {
-            op_uid: 0,
+            IKDEIJCEDIO: 0,
             JENKGODEIOM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for MHNNEFBOPIE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MHNNEFBOPIE.proto\x1a\x11JOLAHHGIFHA.proto\"T\n\x0bMHNNEFBOPIE\x12\
-    \x15\n\x06op_uid\x18\x01\x20\x01(\rR\x05opUid\x12.\n\x0bJENKGODEIOM\x18\
-    \x02\x20\x03(\x0b2\x0c.JOLAHHGIFHAR\x0bJENKGODEIOMb\x06proto3\
+    \n\x11MHNNEFBOPIE.proto\x1a\x11JOLAHHGIFHA.proto\"_\n\x0bMHNNEFBOPIE\x12\
+    \x20\n\x0bIKDEIJCEDIO\x18\x01\x20\x01(\rR\x0bIKDEIJCEDIO\x12.\n\x0bJENKG\
+    ODEIOM\x18\x02\x20\x03(\x0b2\x0c.JOLAHHGIFHAR\x0bJENKGODEIOMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

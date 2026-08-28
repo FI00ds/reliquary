@@ -30,16 +30,16 @@ pub struct GGHOBPBFFOB {
     // message fields
     // @@protoc_insertion_point(field:GGHOBPBFFOB.PAOEJKABFEP)
     pub PAOEJKABFEP: ::std::vec::Vec<super::Vector::Vector>,
-    // @@protoc_insertion_point(field:GGHOBPBFFOB.is_bullet_activated)
-    pub is_bullet_activated: bool,
-    // @@protoc_insertion_point(field:GGHOBPBFFOB.BBEMIGELGJC)
-    pub BBEMIGELGJC: ::protobuf::MessageField<super::KDFPANILFOH::KDFPANILFOH>,
-    // @@protoc_insertion_point(field:GGHOBPBFFOB.uuid)
-    pub uuid: ::std::string::String,
-    // @@protoc_insertion_point(field:GGHOBPBFFOB.id)
-    pub id: u32,
     // @@protoc_insertion_point(field:GGHOBPBFFOB.CHCOPKAKBNO)
     pub CHCOPKAKBNO: u32,
+    // @@protoc_insertion_point(field:GGHOBPBFFOB.BBEMIGELGJC)
+    pub BBEMIGELGJC: ::protobuf::MessageField<super::KDFPANILFOH::KDFPANILFOH>,
+    // @@protoc_insertion_point(field:GGHOBPBFFOB.id)
+    pub id: u32,
+    // @@protoc_insertion_point(field:GGHOBPBFFOB.KEKFKKANACK)
+    pub KEKFKKANACK: bool,
+    // @@protoc_insertion_point(field:GGHOBPBFFOB.uuid)
+    pub uuid: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:GGHOBPBFFOB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,9 +65,9 @@ impl GGHOBPBFFOB {
             |m: &mut GGHOBPBFFOB| { &mut m.PAOEJKABFEP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_bullet_activated",
-            |m: &GGHOBPBFFOB| { &m.is_bullet_activated },
-            |m: &mut GGHOBPBFFOB| { &mut m.is_bullet_activated },
+            "CHCOPKAKBNO",
+            |m: &GGHOBPBFFOB| { &m.CHCOPKAKBNO },
+            |m: &mut GGHOBPBFFOB| { &mut m.CHCOPKAKBNO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KDFPANILFOH::KDFPANILFOH>(
             "BBEMIGELGJC",
@@ -75,19 +75,19 @@ impl GGHOBPBFFOB {
             |m: &mut GGHOBPBFFOB| { &mut m.BBEMIGELGJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uuid",
-            |m: &GGHOBPBFFOB| { &m.uuid },
-            |m: &mut GGHOBPBFFOB| { &mut m.uuid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
             |m: &GGHOBPBFFOB| { &m.id },
             |m: &mut GGHOBPBFFOB| { &mut m.id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CHCOPKAKBNO",
-            |m: &GGHOBPBFFOB| { &m.CHCOPKAKBNO },
-            |m: &mut GGHOBPBFFOB| { &mut m.CHCOPKAKBNO },
+            "KEKFKKANACK",
+            |m: &GGHOBPBFFOB| { &m.KEKFKKANACK },
+            |m: &mut GGHOBPBFFOB| { &mut m.KEKFKKANACK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "uuid",
+            |m: &GGHOBPBFFOB| { &m.uuid },
+            |m: &mut GGHOBPBFFOB| { &mut m.uuid },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GGHOBPBFFOB>(
             "GGHOBPBFFOB",
@@ -111,19 +111,19 @@ impl ::protobuf::Message for GGHOBPBFFOB {
                     self.PAOEJKABFEP.push(is.read_message()?);
                 },
                 40 => {
-                    self.is_bullet_activated = is.read_bool()?;
+                    self.CHCOPKAKBNO = is.read_uint32()?;
                 },
-                58 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BBEMIGELGJC)?;
                 },
-                74 => {
-                    self.uuid = is.read_string()?;
-                },
-                80 => {
+                104 => {
                     self.id = is.read_uint32()?;
                 },
-                88 => {
-                    self.CHCOPKAKBNO = is.read_uint32()?;
+                112 => {
+                    self.KEKFKKANACK = is.read_bool()?;
+                },
+                122 => {
+                    self.uuid = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -141,21 +141,21 @@ impl ::protobuf::Message for GGHOBPBFFOB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.is_bullet_activated != false {
-            my_size += 1 + 1;
+        if self.CHCOPKAKBNO != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.CHCOPKAKBNO);
         }
         if let Some(v) = self.BBEMIGELGJC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if !self.uuid.is_empty() {
-            my_size += ::protobuf::rt::string_size(9, &self.uuid);
-        }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.id);
+            my_size += ::protobuf::rt::uint32_size(13, self.id);
         }
-        if self.CHCOPKAKBNO != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.CHCOPKAKBNO);
+        if self.KEKFKKANACK != false {
+            my_size += 1 + 1;
+        }
+        if !self.uuid.is_empty() {
+            my_size += ::protobuf::rt::string_size(15, &self.uuid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -166,20 +166,20 @@ impl ::protobuf::Message for GGHOBPBFFOB {
         for v in &self.PAOEJKABFEP {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        if self.is_bullet_activated != false {
-            os.write_bool(5, self.is_bullet_activated)?;
+        if self.CHCOPKAKBNO != 0 {
+            os.write_uint32(5, self.CHCOPKAKBNO)?;
         }
         if let Some(v) = self.BBEMIGELGJC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if !self.uuid.is_empty() {
-            os.write_string(9, &self.uuid)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if self.id != 0 {
-            os.write_uint32(10, self.id)?;
+            os.write_uint32(13, self.id)?;
         }
-        if self.CHCOPKAKBNO != 0 {
-            os.write_uint32(11, self.CHCOPKAKBNO)?;
+        if self.KEKFKKANACK != false {
+            os.write_bool(14, self.KEKFKKANACK)?;
+        }
+        if !self.uuid.is_empty() {
+            os.write_string(15, &self.uuid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -199,22 +199,22 @@ impl ::protobuf::Message for GGHOBPBFFOB {
 
     fn clear(&mut self) {
         self.PAOEJKABFEP.clear();
-        self.is_bullet_activated = false;
-        self.BBEMIGELGJC.clear();
-        self.uuid.clear();
-        self.id = 0;
         self.CHCOPKAKBNO = 0;
+        self.BBEMIGELGJC.clear();
+        self.id = 0;
+        self.KEKFKKANACK = false;
+        self.uuid.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GGHOBPBFFOB {
         static instance: GGHOBPBFFOB = GGHOBPBFFOB {
             PAOEJKABFEP: ::std::vec::Vec::new(),
-            is_bullet_activated: false,
-            BBEMIGELGJC: ::protobuf::MessageField::none(),
-            uuid: ::std::string::String::new(),
-            id: 0,
             CHCOPKAKBNO: 0,
+            BBEMIGELGJC: ::protobuf::MessageField::none(),
+            id: 0,
+            KEKFKKANACK: false,
+            uuid: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -240,12 +240,12 @@ impl ::protobuf::reflect::ProtobufValue for GGHOBPBFFOB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GGHOBPBFFOB.proto\x1a\x11KDFPANILFOH.proto\x1a\x0cVector.proto\"\
-    \xde\x01\n\x0bGGHOBPBFFOB\x12)\n\x0bPAOEJKABFEP\x18\x01\x20\x03(\x0b2\
-    \x07.VectorR\x0bPAOEJKABFEP\x12.\n\x13is_bullet_activated\x18\x05\x20\
-    \x01(\x08R\x11isBulletActivated\x12.\n\x0bBBEMIGELGJC\x18\x07\x20\x01(\
-    \x0b2\x0c.KDFPANILFOHR\x0bBBEMIGELGJC\x12\x12\n\x04uuid\x18\t\x20\x01(\t\
-    R\x04uuid\x12\x0e\n\x02id\x18\n\x20\x01(\rR\x02id\x12\x20\n\x0bCHCOPKAKB\
-    NO\x18\x0b\x20\x01(\rR\x0bCHCOPKAKBNOb\x06proto3\
+    \xd0\x01\n\x0bGGHOBPBFFOB\x12)\n\x0bPAOEJKABFEP\x18\x01\x20\x03(\x0b2\
+    \x07.VectorR\x0bPAOEJKABFEP\x12\x20\n\x0bCHCOPKAKBNO\x18\x05\x20\x01(\rR\
+    \x0bCHCOPKAKBNO\x12.\n\x0bBBEMIGELGJC\x18\n\x20\x01(\x0b2\x0c.KDFPANILFO\
+    HR\x0bBBEMIGELGJC\x12\x0e\n\x02id\x18\r\x20\x01(\rR\x02id\x12\x20\n\x0bK\
+    EKFKKANACK\x18\x0e\x20\x01(\x08R\x0bKEKFKKANACK\x12\x12\n\x04uuid\x18\
+    \x0f\x20\x01(\tR\x04uuidb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

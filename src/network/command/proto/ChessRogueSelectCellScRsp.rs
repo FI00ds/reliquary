@@ -82,7 +82,7 @@ impl ::protobuf::Message for ChessRogueSelectCellScRsp {
                 32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                66 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.EEGHDAJOHJO)?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for ChessRogueSelectCellScRsp {
             os.write_uint32(4, self.retcode)?;
         }
         if let Some(v) = self.EEGHDAJOHJO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueSelectCellScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fChessRogueSelectCellScRsp.proto\x1a\x11NAPFNBJDIOO.proto\"e\n\x19C\
     hessRogueSelectCellScRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07ret\
-    code\x12.\n\x0bEEGHDAJOHJO\x18\x08\x20\x01(\x0b2\x0c.NAPFNBJDIOOR\x0bEEG\
+    code\x12.\n\x0bEEGHDAJOHJO\x18\x0e\x20\x01(\x0b2\x0c.NAPFNBJDIOOR\x0bEEG\
     HDAJOHJOb\x06proto3\
 ";
 

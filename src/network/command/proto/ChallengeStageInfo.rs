@@ -27,9 +27,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 // @@protoc_insertion_point(message:ChallengeStageInfo)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengeStageInfo {
-    // message fields
-    // @@protoc_insertion_point(field:ChallengeStageInfo.boss_info)
-    pub boss_info: ::protobuf::MessageField<super::ChallengeBossInfo::ChallengeBossInfo>,
+    // message oneof groups
+    pub KKNBOACNCON: ::std::option::Option<challenge_stage_info::KKNBOACNCON>,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengeStageInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -46,14 +45,66 @@ impl ChallengeStageInfo {
         ::std::default::Default::default()
     }
 
+    // .ChallengeBossInfo boss_info = 11;
+
+    pub fn boss_info(&self) -> &super::ChallengeBossInfo::ChallengeBossInfo {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(challenge_stage_info::KKNBOACNCON::BossInfo(ref v)) => v,
+            _ => <super::ChallengeBossInfo::ChallengeBossInfo as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_boss_info(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_boss_info(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(challenge_stage_info::KKNBOACNCON::BossInfo(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_boss_info(&mut self, v: super::ChallengeBossInfo::ChallengeBossInfo) {
+        self.KKNBOACNCON = ::std::option::Option::Some(challenge_stage_info::KKNBOACNCON::BossInfo(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_boss_info(&mut self) -> &mut super::ChallengeBossInfo::ChallengeBossInfo {
+        if let ::std::option::Option::Some(challenge_stage_info::KKNBOACNCON::BossInfo(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(challenge_stage_info::KKNBOACNCON::BossInfo(super::ChallengeBossInfo::ChallengeBossInfo::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(challenge_stage_info::KKNBOACNCON::BossInfo(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_boss_info(&mut self) -> super::ChallengeBossInfo::ChallengeBossInfo {
+        if self.has_boss_info() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(challenge_stage_info::KKNBOACNCON::BossInfo(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::ChallengeBossInfo::ChallengeBossInfo::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
-        let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeBossInfo::ChallengeBossInfo>(
+        let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChallengeBossInfo::ChallengeBossInfo>(
             "boss_info",
-            |m: &ChallengeStageInfo| { &m.boss_info },
-            |m: &mut ChallengeStageInfo| { &mut m.boss_info },
+            ChallengeStageInfo::has_boss_info,
+            ChallengeStageInfo::boss_info,
+            ChallengeStageInfo::mut_boss_info,
+            ChallengeStageInfo::set_boss_info,
         ));
+        oneofs.push(challenge_stage_info::KKNBOACNCON::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeStageInfo>(
             "ChallengeStageInfo",
             fields,
@@ -72,8 +123,8 @@ impl ::protobuf::Message for ChallengeStageInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.boss_info)?;
+                90 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(challenge_stage_info::KKNBOACNCON::BossInfo(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,9 +138,13 @@ impl ::protobuf::Message for ChallengeStageInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.boss_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
+            match v {
+                &challenge_stage_info::KKNBOACNCON::BossInfo(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+            };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +152,12 @@ impl ::protobuf::Message for ChallengeStageInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.boss_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
+            match v {
+                &challenge_stage_info::KKNBOACNCON::BossInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                },
+            };
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +176,13 @@ impl ::protobuf::Message for ChallengeStageInfo {
     }
 
     fn clear(&mut self) {
-        self.boss_info.clear();
+        self.KKNBOACNCON = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeStageInfo {
         static instance: ChallengeStageInfo = ChallengeStageInfo {
-            boss_info: ::protobuf::MessageField::none(),
+            KKNBOACNCON: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,10 +206,38 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeStageInfo {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
+/// Nested message and enums of message `ChallengeStageInfo`
+pub mod challenge_stage_info {
+
+    #[derive(Clone,PartialEq,Debug)]
+    #[non_exhaustive]
+    // @@protoc_insertion_point(oneof:ChallengeStageInfo.KKNBOACNCON)
+    pub enum KKNBOACNCON {
+        // @@protoc_insertion_point(oneof_field:ChallengeStageInfo.boss_info)
+        BossInfo(super::super::ChallengeBossInfo::ChallengeBossInfo),
+    }
+
+    impl ::protobuf::Oneof for KKNBOACNCON {
+    }
+
+    impl ::protobuf::OneofFull for KKNBOACNCON {
+        fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
+            static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
+            descriptor.get(|| <super::ChallengeStageInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("KKNBOACNCON").unwrap()).clone()
+        }
+    }
+
+    impl KKNBOACNCON {
+        pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<KKNBOACNCON>("KKNBOACNCON")
+        }
+    }
+}
+
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18ChallengeStageInfo.proto\x1a\x17ChallengeBossInfo.proto\"E\n\x12Ch\
-    allengeStageInfo\x12/\n\tboss_info\x18\x06\x20\x01(\x0b2\x12.ChallengeBo\
-    ssInfoR\x08bossInfob\x06proto3\
+    \n\x18ChallengeStageInfo.proto\x1a\x17ChallengeBossInfo.proto\"V\n\x12Ch\
+    allengeStageInfo\x121\n\tboss_info\x18\x0b\x20\x01(\x0b2\x12.ChallengeBo\
+    ssInfoH\0R\x08bossInfoB\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

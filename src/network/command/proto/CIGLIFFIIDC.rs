@@ -100,7 +100,7 @@ impl ::protobuf::Message for CIGLIFFIIDC {
         if self.NABJDHEPELK != ::protobuf::EnumOrUnknown::new(super::LKFBIALLBDK::LKFBIALLBDK::LKFBIALLBDK_EFAGELOKHAH) {
             my_size += ::protobuf::rt::int32_size(1, self.NABJDHEPELK.value());
         }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::LobbyCharacterStatus::LobbyCharacterStatus::JPJAJPOGCJJ_NLCDGIPGFDJ) {
+        if self.status != ::protobuf::EnumOrUnknown::new(super::LobbyCharacterStatus::LobbyCharacterStatus::LobbyCharacterStatus_None) {
             my_size += ::protobuf::rt::int32_size(2, self.status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -112,7 +112,7 @@ impl ::protobuf::Message for CIGLIFFIIDC {
         if self.NABJDHEPELK != ::protobuf::EnumOrUnknown::new(super::LKFBIALLBDK::LKFBIALLBDK::LKFBIALLBDK_EFAGELOKHAH) {
             os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.NABJDHEPELK))?;
         }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::LobbyCharacterStatus::LobbyCharacterStatus::JPJAJPOGCJJ_NLCDGIPGFDJ) {
+        if self.status != ::protobuf::EnumOrUnknown::new(super::LobbyCharacterStatus::LobbyCharacterStatus::LobbyCharacterStatus_None) {
             os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -133,7 +133,7 @@ impl ::protobuf::Message for CIGLIFFIIDC {
 
     fn clear(&mut self) {
         self.NABJDHEPELK = ::protobuf::EnumOrUnknown::new(super::LKFBIALLBDK::LKFBIALLBDK::LKFBIALLBDK_EFAGELOKHAH);
-        self.status = ::protobuf::EnumOrUnknown::new(super::LobbyCharacterStatus::LobbyCharacterStatus::JPJAJPOGCJJ_NLCDGIPGFDJ);
+        self.status = ::protobuf::EnumOrUnknown::new(super::LobbyCharacterStatus::LobbyCharacterStatus::LobbyCharacterStatus_None);
         self.special_fields.clear();
     }
 

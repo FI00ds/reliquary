@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:TurnFoodSwitch)
 pub enum TurnFoodSwitch {
-    // @@protoc_insertion_point(enum_value:TurnFoodSwitch.FHLEKKNDBBE_NLCDGIPGFDJ)
-    FHLEKKNDBBE_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:TurnFoodSwitch.FHLEKKNDBBE_attack)
-    FHLEKKNDBBE_attack = 1,
-    // @@protoc_insertion_point(enum_value:TurnFoodSwitch.FHLEKKNDBBE_FJLOGNFECHI)
-    FHLEKKNDBBE_FJLOGNFECHI = 2,
+    // @@protoc_insertion_point(enum_value:TurnFoodSwitch.TurnFoodSwitch_None)
+    TurnFoodSwitch_None = 0,
+    // @@protoc_insertion_point(enum_value:TurnFoodSwitch.TurnFoodSwitch_Attack)
+    TurnFoodSwitch_Attack = 1,
+    // @@protoc_insertion_point(enum_value:TurnFoodSwitch.TurnFoodSwitch_Define)
+    TurnFoodSwitch_Define = 2,
 }
 
 impl ::protobuf::Enum for TurnFoodSwitch {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for TurnFoodSwitch {
 
     fn from_i32(value: i32) -> ::std::option::Option<TurnFoodSwitch> {
         match value {
-            0 => ::std::option::Option::Some(TurnFoodSwitch::FHLEKKNDBBE_NLCDGIPGFDJ),
-            1 => ::std::option::Option::Some(TurnFoodSwitch::FHLEKKNDBBE_attack),
-            2 => ::std::option::Option::Some(TurnFoodSwitch::FHLEKKNDBBE_FJLOGNFECHI),
+            0 => ::std::option::Option::Some(TurnFoodSwitch::TurnFoodSwitch_None),
+            1 => ::std::option::Option::Some(TurnFoodSwitch::TurnFoodSwitch_Attack),
+            2 => ::std::option::Option::Some(TurnFoodSwitch::TurnFoodSwitch_Define),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<TurnFoodSwitch> {
         match str {
-            "FHLEKKNDBBE_NLCDGIPGFDJ" => ::std::option::Option::Some(TurnFoodSwitch::FHLEKKNDBBE_NLCDGIPGFDJ),
-            "FHLEKKNDBBE_attack" => ::std::option::Option::Some(TurnFoodSwitch::FHLEKKNDBBE_attack),
-            "FHLEKKNDBBE_FJLOGNFECHI" => ::std::option::Option::Some(TurnFoodSwitch::FHLEKKNDBBE_FJLOGNFECHI),
+            "TurnFoodSwitch_None" => ::std::option::Option::Some(TurnFoodSwitch::TurnFoodSwitch_None),
+            "TurnFoodSwitch_Attack" => ::std::option::Option::Some(TurnFoodSwitch::TurnFoodSwitch_Attack),
+            "TurnFoodSwitch_Define" => ::std::option::Option::Some(TurnFoodSwitch::TurnFoodSwitch_Define),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [TurnFoodSwitch] = &[
-        TurnFoodSwitch::FHLEKKNDBBE_NLCDGIPGFDJ,
-        TurnFoodSwitch::FHLEKKNDBBE_attack,
-        TurnFoodSwitch::FHLEKKNDBBE_FJLOGNFECHI,
+        TurnFoodSwitch::TurnFoodSwitch_None,
+        TurnFoodSwitch::TurnFoodSwitch_Attack,
+        TurnFoodSwitch::TurnFoodSwitch_Define,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for TurnFoodSwitch {
 
 impl ::std::default::Default for TurnFoodSwitch {
     fn default() -> Self {
-        TurnFoodSwitch::FHLEKKNDBBE_NLCDGIPGFDJ
+        TurnFoodSwitch::TurnFoodSwitch_None
     }
 }
 
@@ -92,9 +92,9 @@ impl TurnFoodSwitch {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14TurnFoodSwitch.proto*b\n\x0eTurnFoodSwitch\x12\x1b\n\x17FHLEKKNDBB\
-    E_NLCDGIPGFDJ\x10\0\x12\x16\n\x12FHLEKKNDBBE_attack\x10\x01\x12\x1b\n\
-    \x17FHLEKKNDBBE_FJLOGNFECHI\x10\x02b\x06proto3\
+    \n\x14TurnFoodSwitch.proto*_\n\x0eTurnFoodSwitch\x12\x17\n\x13TurnFoodSw\
+    itch_None\x10\0\x12\x19\n\x15TurnFoodSwitch_Attack\x10\x01\x12\x19\n\x15\
+    TurnFoodSwitch_Define\x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

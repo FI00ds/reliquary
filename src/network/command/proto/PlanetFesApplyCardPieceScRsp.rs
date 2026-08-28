@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesApplyCardPieceScRsp {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesApplyCardPieceScRsp.BLGLDJHOMNO)
-    pub BLGLDJHOMNO: u32,
     // @@protoc_insertion_point(field:PlanetFesApplyCardPieceScRsp.GLDGCHLDMJE)
     pub GLDGCHLDMJE: i64,
-    // @@protoc_insertion_point(field:PlanetFesApplyCardPieceScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:PlanetFesApplyCardPieceScRsp.teleport_id)
+    pub teleport_id: u32,
     // @@protoc_insertion_point(field:PlanetFesApplyCardPieceScRsp.GOPCDFEIOEA)
     pub GOPCDFEIOEA: bool,
     // @@protoc_insertion_point(field:PlanetFesApplyCardPieceScRsp.OEEGPNOCFLP)
     pub OEEGPNOCFLP: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:PlanetFesApplyCardPieceScRsp.teleport_id)
-    pub teleport_id: u32,
+    // @@protoc_insertion_point(field:PlanetFesApplyCardPieceScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:PlanetFesApplyCardPieceScRsp.BLGLDJHOMNO)
+    pub BLGLDJHOMNO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesApplyCardPieceScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,19 +60,14 @@ impl PlanetFesApplyCardPieceScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BLGLDJHOMNO",
-            |m: &PlanetFesApplyCardPieceScRsp| { &m.BLGLDJHOMNO },
-            |m: &mut PlanetFesApplyCardPieceScRsp| { &mut m.BLGLDJHOMNO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GLDGCHLDMJE",
             |m: &PlanetFesApplyCardPieceScRsp| { &m.GLDGCHLDMJE },
             |m: &mut PlanetFesApplyCardPieceScRsp| { &mut m.GLDGCHLDMJE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &PlanetFesApplyCardPieceScRsp| { &m.retcode },
-            |m: &mut PlanetFesApplyCardPieceScRsp| { &mut m.retcode },
+            "teleport_id",
+            |m: &PlanetFesApplyCardPieceScRsp| { &m.teleport_id },
+            |m: &mut PlanetFesApplyCardPieceScRsp| { &mut m.teleport_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GOPCDFEIOEA",
@@ -85,9 +80,14 @@ impl PlanetFesApplyCardPieceScRsp {
             |m: &mut PlanetFesApplyCardPieceScRsp| { &mut m.OEEGPNOCFLP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "teleport_id",
-            |m: &PlanetFesApplyCardPieceScRsp| { &m.teleport_id },
-            |m: &mut PlanetFesApplyCardPieceScRsp| { &mut m.teleport_id },
+            "retcode",
+            |m: &PlanetFesApplyCardPieceScRsp| { &m.retcode },
+            |m: &mut PlanetFesApplyCardPieceScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BLGLDJHOMNO",
+            |m: &PlanetFesApplyCardPieceScRsp| { &m.BLGLDJHOMNO },
+            |m: &mut PlanetFesApplyCardPieceScRsp| { &mut m.BLGLDJHOMNO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesApplyCardPieceScRsp>(
             "PlanetFesApplyCardPieceScRsp",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for PlanetFesApplyCardPieceScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.BLGLDJHOMNO = is.read_uint32()?;
-                },
                 48 => {
                     self.GLDGCHLDMJE = is.read_int64()?;
                 },
-                56 => {
-                    self.retcode = is.read_uint32()?;
+                64 => {
+                    self.teleport_id = is.read_uint32()?;
                 },
-                80 => {
+                88 => {
                     self.GOPCDFEIOEA = is.read_bool()?;
                 },
-                114 => {
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.OEEGPNOCFLP)?;
                 },
-                112 => {
+                96 => {
                     self.OEEGPNOCFLP.push(is.read_uint32()?);
                 },
-                120 => {
-                    self.teleport_id = is.read_uint32()?;
+                104 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                112 => {
+                    self.BLGLDJHOMNO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,21 +140,21 @@ impl ::protobuf::Message for PlanetFesApplyCardPieceScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BLGLDJHOMNO != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.BLGLDJHOMNO);
-        }
         if self.GLDGCHLDMJE != 0 {
             my_size += ::protobuf::rt::int64_size(6, self.GLDGCHLDMJE);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        if self.teleport_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.teleport_id);
         }
         if self.GOPCDFEIOEA != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.OEEGPNOCFLP);
-        if self.teleport_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.teleport_id);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.OEEGPNOCFLP);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        }
+        if self.BLGLDJHOMNO != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.BLGLDJHOMNO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,21 +162,21 @@ impl ::protobuf::Message for PlanetFesApplyCardPieceScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BLGLDJHOMNO != 0 {
-            os.write_uint32(4, self.BLGLDJHOMNO)?;
-        }
         if self.GLDGCHLDMJE != 0 {
             os.write_int64(6, self.GLDGCHLDMJE)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+        if self.teleport_id != 0 {
+            os.write_uint32(8, self.teleport_id)?;
         }
         if self.GOPCDFEIOEA != false {
-            os.write_bool(10, self.GOPCDFEIOEA)?;
+            os.write_bool(11, self.GOPCDFEIOEA)?;
         }
-        os.write_repeated_packed_uint32(14, &self.OEEGPNOCFLP)?;
-        if self.teleport_id != 0 {
-            os.write_uint32(15, self.teleport_id)?;
+        os.write_repeated_packed_uint32(12, &self.OEEGPNOCFLP)?;
+        if self.retcode != 0 {
+            os.write_uint32(13, self.retcode)?;
+        }
+        if self.BLGLDJHOMNO != 0 {
+            os.write_uint32(14, self.BLGLDJHOMNO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -195,23 +195,23 @@ impl ::protobuf::Message for PlanetFesApplyCardPieceScRsp {
     }
 
     fn clear(&mut self) {
-        self.BLGLDJHOMNO = 0;
         self.GLDGCHLDMJE = 0;
-        self.retcode = 0;
+        self.teleport_id = 0;
         self.GOPCDFEIOEA = false;
         self.OEEGPNOCFLP.clear();
-        self.teleport_id = 0;
+        self.retcode = 0;
+        self.BLGLDJHOMNO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesApplyCardPieceScRsp {
         static instance: PlanetFesApplyCardPieceScRsp = PlanetFesApplyCardPieceScRsp {
-            BLGLDJHOMNO: 0,
             GLDGCHLDMJE: 0,
-            retcode: 0,
+            teleport_id: 0,
             GOPCDFEIOEA: false,
             OEEGPNOCFLP: ::std::vec::Vec::new(),
-            teleport_id: 0,
+            retcode: 0,
+            BLGLDJHOMNO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -237,12 +237,12 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesApplyCardPieceScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"PlanetFesApplyCardPieceScRsp.proto\"\xe1\x01\n\x1cPlanetFesApplyCard\
-    PieceScRsp\x12\x20\n\x0bBLGLDJHOMNO\x18\x04\x20\x01(\rR\x0bBLGLDJHOMNO\
-    \x12\x20\n\x0bGLDGCHLDMJE\x18\x06\x20\x01(\x03R\x0bGLDGCHLDMJE\x12\x18\n\
-    \x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12\x20\n\x0bGOPCDFEIOEA\x18\
-    \n\x20\x01(\x08R\x0bGOPCDFEIOEA\x12\x20\n\x0bOEEGPNOCFLP\x18\x0e\x20\x03\
-    (\rR\x0bOEEGPNOCFLP\x12\x1f\n\x0bteleport_id\x18\x0f\x20\x01(\rR\ntelepo\
-    rtIdb\x06proto3\
+    PieceScRsp\x12\x20\n\x0bGLDGCHLDMJE\x18\x06\x20\x01(\x03R\x0bGLDGCHLDMJE\
+    \x12\x1f\n\x0bteleport_id\x18\x08\x20\x01(\rR\nteleportId\x12\x20\n\x0bG\
+    OPCDFEIOEA\x18\x0b\x20\x01(\x08R\x0bGOPCDFEIOEA\x12\x20\n\x0bOEEGPNOCFLP\
+    \x18\x0c\x20\x03(\rR\x0bOEEGPNOCFLP\x12\x18\n\x07retcode\x18\r\x20\x01(\
+    \rR\x07retcode\x12\x20\n\x0bBLGLDJHOMNO\x18\x0e\x20\x01(\rR\x0bBLGLDJHOM\
+    NOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:MissionStatus)
 pub enum MissionStatus {
-    // @@protoc_insertion_point(enum_value:MissionStatus.MISSION_NONE)
-    MISSION_NONE = 0,
-    // @@protoc_insertion_point(enum_value:MissionStatus.MISSION_DOING)
-    MISSION_DOING = 1,
-    // @@protoc_insertion_point(enum_value:MissionStatus.MISSION_FINISH)
-    MISSION_FINISH = 2,
-    // @@protoc_insertion_point(enum_value:MissionStatus.MISSION_PREPARED)
-    MISSION_PREPARED = 3,
+    // @@protoc_insertion_point(enum_value:MissionStatus.MissionStatus_MissionNone)
+    MissionStatus_MissionNone = 0,
+    // @@protoc_insertion_point(enum_value:MissionStatus.MissionStatus_MissionDoing)
+    MissionStatus_MissionDoing = 1,
+    // @@protoc_insertion_point(enum_value:MissionStatus.MissionStatus_MissionFinish)
+    MissionStatus_MissionFinish = 2,
+    // @@protoc_insertion_point(enum_value:MissionStatus.MissionStatus_MissionPrepared)
+    MissionStatus_MissionPrepared = 3,
 }
 
 impl ::protobuf::Enum for MissionStatus {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for MissionStatus {
 
     fn from_i32(value: i32) -> ::std::option::Option<MissionStatus> {
         match value {
-            0 => ::std::option::Option::Some(MissionStatus::MISSION_NONE),
-            1 => ::std::option::Option::Some(MissionStatus::MISSION_DOING),
-            2 => ::std::option::Option::Some(MissionStatus::MISSION_FINISH),
-            3 => ::std::option::Option::Some(MissionStatus::MISSION_PREPARED),
+            0 => ::std::option::Option::Some(MissionStatus::MissionStatus_MissionNone),
+            1 => ::std::option::Option::Some(MissionStatus::MissionStatus_MissionDoing),
+            2 => ::std::option::Option::Some(MissionStatus::MissionStatus_MissionFinish),
+            3 => ::std::option::Option::Some(MissionStatus::MissionStatus_MissionPrepared),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<MissionStatus> {
         match str {
-            "MISSION_NONE" => ::std::option::Option::Some(MissionStatus::MISSION_NONE),
-            "MISSION_DOING" => ::std::option::Option::Some(MissionStatus::MISSION_DOING),
-            "MISSION_FINISH" => ::std::option::Option::Some(MissionStatus::MISSION_FINISH),
-            "MISSION_PREPARED" => ::std::option::Option::Some(MissionStatus::MISSION_PREPARED),
+            "MissionStatus_MissionNone" => ::std::option::Option::Some(MissionStatus::MissionStatus_MissionNone),
+            "MissionStatus_MissionDoing" => ::std::option::Option::Some(MissionStatus::MissionStatus_MissionDoing),
+            "MissionStatus_MissionFinish" => ::std::option::Option::Some(MissionStatus::MissionStatus_MissionFinish),
+            "MissionStatus_MissionPrepared" => ::std::option::Option::Some(MissionStatus::MissionStatus_MissionPrepared),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [MissionStatus] = &[
-        MissionStatus::MISSION_NONE,
-        MissionStatus::MISSION_DOING,
-        MissionStatus::MISSION_FINISH,
-        MissionStatus::MISSION_PREPARED,
+        MissionStatus::MissionStatus_MissionNone,
+        MissionStatus::MissionStatus_MissionDoing,
+        MissionStatus::MissionStatus_MissionFinish,
+        MissionStatus::MissionStatus_MissionPrepared,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for MissionStatus {
 
 impl ::std::default::Default for MissionStatus {
     fn default() -> Self {
-        MissionStatus::MISSION_NONE
+        MissionStatus::MissionStatus_MissionNone
     }
 }
 
@@ -97,9 +97,10 @@ impl MissionStatus {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13MissionStatus.proto*^\n\rMissionStatus\x12\x10\n\x0cMISSION_NONE\
-    \x10\0\x12\x11\n\rMISSION_DOING\x10\x01\x12\x12\n\x0eMISSION_FINISH\x10\
-    \x02\x12\x14\n\x10MISSION_PREPARED\x10\x03b\x06proto3\
+    \n\x13MissionStatus.proto*\x92\x01\n\rMissionStatus\x12\x1d\n\x19Mission\
+    Status_MissionNone\x10\0\x12\x1e\n\x1aMissionStatus_MissionDoing\x10\x01\
+    \x12\x1f\n\x1bMissionStatus_MissionFinish\x10\x02\x12!\n\x1dMissionStatu\
+    s_MissionPrepared\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -31,7 +31,7 @@ pub struct ENHOPAHGCMA {
     // @@protoc_insertion_point(field:ENHOPAHGCMA.config_id)
     pub config_id: u32,
     // @@protoc_insertion_point(field:ENHOPAHGCMA.DNOBAJNIGAC)
-    pub DNOBAJNIGAC: ::std::string::String,
+    pub DNOBAJNIGAC: ::std::vec::Vec<u8>,
     // @@protoc_insertion_point(field:ENHOPAHGCMA.EKHEAFBKDFP)
     pub EKHEAFBKDFP: u32,
     // @@protoc_insertion_point(field:ENHOPAHGCMA.LNGJODEPCDN)
@@ -100,16 +100,16 @@ impl ::protobuf::Message for ENHOPAHGCMA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                8 => {
                     self.config_id = is.read_uint32()?;
                 },
-                42 => {
-                    self.DNOBAJNIGAC = is.read_string()?;
+                34 => {
+                    self.DNOBAJNIGAC = is.read_bytes()?;
                 },
                 48 => {
                     self.EKHEAFBKDFP = is.read_uint32()?;
                 },
-                88 => {
+                56 => {
                     self.LNGJODEPCDN = is.read_uint32()?;
                 },
                 98 => {
@@ -128,16 +128,16 @@ impl ::protobuf::Message for ENHOPAHGCMA {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.config_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.config_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.config_id);
         }
         if !self.DNOBAJNIGAC.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.DNOBAJNIGAC);
+            my_size += ::protobuf::rt::bytes_size(4, &self.DNOBAJNIGAC);
         }
         if self.EKHEAFBKDFP != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.EKHEAFBKDFP);
         }
         if self.LNGJODEPCDN != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LNGJODEPCDN);
+            my_size += ::protobuf::rt::uint32_size(7, self.LNGJODEPCDN);
         }
         if let Some(v) = self.IFPFJIIFALA.as_ref() {
             let len = v.compute_size();
@@ -150,16 +150,16 @@ impl ::protobuf::Message for ENHOPAHGCMA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.config_id != 0 {
-            os.write_uint32(2, self.config_id)?;
+            os.write_uint32(1, self.config_id)?;
         }
         if !self.DNOBAJNIGAC.is_empty() {
-            os.write_string(5, &self.DNOBAJNIGAC)?;
+            os.write_bytes(4, &self.DNOBAJNIGAC)?;
         }
         if self.EKHEAFBKDFP != 0 {
             os.write_uint32(6, self.EKHEAFBKDFP)?;
         }
         if self.LNGJODEPCDN != 0 {
-            os.write_uint32(11, self.LNGJODEPCDN)?;
+            os.write_uint32(7, self.LNGJODEPCDN)?;
         }
         if let Some(v) = self.IFPFJIIFALA.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
@@ -192,7 +192,7 @@ impl ::protobuf::Message for ENHOPAHGCMA {
     fn default_instance() -> &'static ENHOPAHGCMA {
         static instance: ENHOPAHGCMA = ENHOPAHGCMA {
             config_id: 0,
-            DNOBAJNIGAC: ::std::string::String::new(),
+            DNOBAJNIGAC: ::std::vec::Vec::new(),
             EKHEAFBKDFP: 0,
             LNGJODEPCDN: 0,
             IFPFJIIFALA: ::protobuf::MessageField::none(),
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for ENHOPAHGCMA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ENHOPAHGCMA.proto\x1a\x10MotionInfo.proto\"\xbf\x01\n\x0bENHOPAHGC\
-    MA\x12\x1b\n\tconfig_id\x18\x02\x20\x01(\rR\x08configId\x12\x20\n\x0bDNO\
-    BAJNIGAC\x18\x05\x20\x01(\tR\x0bDNOBAJNIGAC\x12\x20\n\x0bEKHEAFBKDFP\x18\
-    \x06\x20\x01(\rR\x0bEKHEAFBKDFP\x12\x20\n\x0bLNGJODEPCDN\x18\x0b\x20\x01\
-    (\rR\x0bLNGJODEPCDN\x12-\n\x0bIFPFJIIFALA\x18\x0c\x20\x01(\x0b2\x0b.Moti\
-    onInfoR\x0bIFPFJIIFALAb\x06proto3\
+    MA\x12\x1b\n\tconfig_id\x18\x01\x20\x01(\rR\x08configId\x12\x20\n\x0bDNO\
+    BAJNIGAC\x18\x04\x20\x01(\x0cR\x0bDNOBAJNIGAC\x12\x20\n\x0bEKHEAFBKDFP\
+    \x18\x06\x20\x01(\rR\x0bEKHEAFBKDFP\x12\x20\n\x0bLNGJODEPCDN\x18\x07\x20\
+    \x01(\rR\x0bLNGJODEPCDN\x12-\n\x0bIFPFJIIFALA\x18\x0c\x20\x01(\x0b2\x0b.\
+    MotionInfoR\x0bIFPFJIIFALAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

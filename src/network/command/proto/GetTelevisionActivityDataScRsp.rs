@@ -79,7 +79,7 @@ impl ::protobuf::Message for GetTelevisionActivityDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                74 => {
                     self.AKDFABDHHIO.push(is.read_message()?);
                 },
                 120 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for GetTelevisionActivityDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.AKDFABDHHIO {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         if self.retcode != 0 {
             os.write_uint32(15, self.retcode)?;
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for GetTelevisionActivityDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$GetTelevisionActivityDataScRsp.proto\x1a\x11PAAIMLDHJCI.proto\"j\n\
-    \x1eGetTelevisionActivityDataScRsp\x12.\n\x0bAKDFABDHHIO\x18\x06\x20\x03\
-    (\x0b2\x0c.PAAIMLDHJCIR\x0bAKDFABDHHIO\x12\x18\n\x07retcode\x18\x0f\x20\
+    \x1eGetTelevisionActivityDataScRsp\x12.\n\x0bAKDFABDHHIO\x18\t\x20\x03(\
+    \x0b2\x0c.PAAIMLDHJCIR\x0bAKDFABDHHIO\x12\x18\n\x07retcode\x18\x0f\x20\
     \x01(\rR\x07retcodeb\x06proto3\
 ";
 

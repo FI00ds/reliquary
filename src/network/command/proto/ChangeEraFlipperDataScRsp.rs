@@ -82,7 +82,7 @@ impl ::protobuf::Message for ChangeEraFlipperDataScRsp {
                 40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                58 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.data)?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for ChangeEraFlipperDataScRsp {
             os.write_uint32(5, self.retcode)?;
         }
         if let Some(v) = self.data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for ChangeEraFlipperDataScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fChangeEraFlipperDataScRsp.proto\x1a\x11KKFMGCNDHGH.proto\"W\n\x19C\
     hangeEraFlipperDataScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07ret\
-    code\x12\x20\n\x04data\x18\x07\x20\x01(\x0b2\x0c.KKFMGCNDHGHR\x04datab\
+    code\x12\x20\n\x04data\x18\x0c\x20\x01(\x0b2\x0c.KKFMGCNDHGHR\x04datab\
     \x06proto3\
 ";
 

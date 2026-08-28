@@ -30,8 +30,8 @@ pub struct PAGLMEAGPPC {
     // message fields
     // @@protoc_insertion_point(field:PAGLMEAGPPC.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:PAGLMEAGPPC.AJKOKAJABFG)
-    pub AJKOKAJABFG: ::std::vec::Vec<super::EOAJKNKDAOD::EOAJKNKDAOD>,
+    // @@protoc_insertion_point(field:PAGLMEAGPPC.maze_group_list)
+    pub maze_group_list: ::std::vec::Vec<super::EOAJKNKDAOD::EOAJKNKDAOD>,
     // special fields
     // @@protoc_insertion_point(special_field:PAGLMEAGPPC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl PAGLMEAGPPC {
             |m: &mut PAGLMEAGPPC| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AJKOKAJABFG",
-            |m: &PAGLMEAGPPC| { &m.AJKOKAJABFG },
-            |m: &mut PAGLMEAGPPC| { &mut m.AJKOKAJABFG },
+            "maze_group_list",
+            |m: &PAGLMEAGPPC| { &m.maze_group_list },
+            |m: &mut PAGLMEAGPPC| { &mut m.maze_group_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PAGLMEAGPPC>(
             "PAGLMEAGPPC",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PAGLMEAGPPC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                90 => {
-                    self.AJKOKAJABFG.push(is.read_message()?);
+                58 => {
+                    self.maze_group_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for PAGLMEAGPPC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
-        for value in &self.AJKOKAJABFG {
+        for value in &self.maze_group_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,10 +111,10 @@ impl ::protobuf::Message for PAGLMEAGPPC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
-        for v in &self.AJKOKAJABFG {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        for v in &self.maze_group_list {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for PAGLMEAGPPC {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.AJKOKAJABFG.clear();
+        self.maze_group_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PAGLMEAGPPC {
         static instance: PAGLMEAGPPC = PAGLMEAGPPC {
             retcode: 0,
-            AJKOKAJABFG: ::std::vec::Vec::new(),
+            maze_group_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for PAGLMEAGPPC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PAGLMEAGPPC.proto\x1a\x11EOAJKNKDAOD.proto\"W\n\x0bPAGLMEAGPPC\x12\
-    \x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12.\n\x0bAJKOKAJABFG\x18\
-    \x0b\x20\x03(\x0b2\x0c.EOAJKNKDAODR\x0bAJKOKAJABFGb\x06proto3\
+    \n\x11PAGLMEAGPPC.proto\x1a\x11EOAJKNKDAOD.proto\"]\n\x0bPAGLMEAGPPC\x12\
+    \x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x124\n\x0fmaze_group_li\
+    st\x18\x07\x20\x03(\x0b2\x0c.EOAJKNKDAODR\rmazeGroupListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

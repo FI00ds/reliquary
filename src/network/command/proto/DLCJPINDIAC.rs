@@ -99,7 +99,7 @@ impl DLCJPINDIAC {
         }
     }
 
-    // .PLICOOFLBIB KCICNNFJEAC = 1;
+    // .PLICOOFLBIB KCICNNFJEAC = 13;
 
     pub fn KCICNNFJEAC(&self) -> &super::PLICOOFLBIB::PLICOOFLBIB {
         match self.KKNBOACNCON {
@@ -148,7 +148,7 @@ impl DLCJPINDIAC {
         }
     }
 
-    // .BCKBEMGGGIF LENBIENEFIB = 11;
+    // .BCKBEMGGGIF LENBIENEFIB = 12;
 
     pub fn LENBIENEFIB(&self) -> &super::BCKBEMGGGIF::BCKBEMGGGIF {
         match self.KKNBOACNCON {
@@ -197,7 +197,7 @@ impl DLCJPINDIAC {
         }
     }
 
-    // .GKJHNGLHOBA ONNAKPKDLHO = 3;
+    // .GKJHNGLHOBA ONNAKPKDLHO = 8;
 
     pub fn ONNAKPKDLHO(&self) -> &super::GKJHNGLHOBA::GKJHNGLHOBA {
         match self.KKNBOACNCON {
@@ -306,22 +306,22 @@ impl ::protobuf::Message for DLCJPINDIAC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                32 => {
                     self.PPOAGPGEAFH = is.read_uint32()?;
                 },
-                80 => {
+                40 => {
                     self.uid = is.read_uint32()?;
                 },
                 122 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::BJKBADEMEOE(is.read_message()?));
                 },
-                10 => {
+                106 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::KCICNNFJEAC(is.read_message()?));
                 },
-                90 => {
+                98 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::LENBIENEFIB(is.read_message()?));
                 },
-                26 => {
+                66 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::ONNAKPKDLHO(is.read_message()?));
                 },
                 tag => {
@@ -337,10 +337,10 @@ impl ::protobuf::Message for DLCJPINDIAC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PPOAGPGEAFH != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.PPOAGPGEAFH);
+            my_size += ::protobuf::rt::uint32_size(4, self.PPOAGPGEAFH);
         }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.uid);
+            my_size += ::protobuf::rt::uint32_size(5, self.uid);
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
@@ -369,10 +369,10 @@ impl ::protobuf::Message for DLCJPINDIAC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PPOAGPGEAFH != 0 {
-            os.write_uint32(7, self.PPOAGPGEAFH)?;
+            os.write_uint32(4, self.PPOAGPGEAFH)?;
         }
         if self.uid != 0 {
-            os.write_uint32(10, self.uid)?;
+            os.write_uint32(5, self.uid)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
@@ -380,13 +380,13 @@ impl ::protobuf::Message for DLCJPINDIAC {
                     ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
                 &dlcjpindiac::KKNBOACNCON::KCICNNFJEAC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
                 &dlcjpindiac::KKNBOACNCON::LENBIENEFIB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
                 &dlcjpindiac::KKNBOACNCON::ONNAKPKDLHO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
             };
         }
@@ -481,13 +481,13 @@ pub mod dlcjpindiac {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DLCJPINDIAC.proto\x1a\x11BCKBEMGGGIF.proto\x1a\x11DGLBOFKGGLL.prot\
     o\x1a\x11GKJHNGLHOBA.proto\x1a\x11PLICOOFLBIB.proto\"\x98\x02\n\x0bDLCJP\
-    INDIAC\x12\x20\n\x0bPPOAGPGEAFH\x18\x07\x20\x01(\rR\x0bPPOAGPGEAFH\x12\
-    \x10\n\x03uid\x18\n\x20\x01(\rR\x03uid\x120\n\x0bBJKBADEMEOE\x18\x0f\x20\
-    \x01(\x0b2\x0c.DGLBOFKGGLLH\0R\x0bBJKBADEMEOE\x120\n\x0bKCICNNFJEAC\x18\
-    \x01\x20\x01(\x0b2\x0c.PLICOOFLBIBH\0R\x0bKCICNNFJEAC\x120\n\x0bLENBIENE\
-    FIB\x18\x0b\x20\x01(\x0b2\x0c.BCKBEMGGGIFH\0R\x0bLENBIENEFIB\x120\n\x0bO\
-    NNAKPKDLHO\x18\x03\x20\x01(\x0b2\x0c.GKJHNGLHOBAH\0R\x0bONNAKPKDLHOB\r\n\
-    \x0bKKNBOACNCONb\x06proto3\
+    INDIAC\x12\x20\n\x0bPPOAGPGEAFH\x18\x04\x20\x01(\rR\x0bPPOAGPGEAFH\x12\
+    \x10\n\x03uid\x18\x05\x20\x01(\rR\x03uid\x120\n\x0bBJKBADEMEOE\x18\x0f\
+    \x20\x01(\x0b2\x0c.DGLBOFKGGLLH\0R\x0bBJKBADEMEOE\x120\n\x0bKCICNNFJEAC\
+    \x18\r\x20\x01(\x0b2\x0c.PLICOOFLBIBH\0R\x0bKCICNNFJEAC\x120\n\x0bLENBIE\
+    NEFIB\x18\x0c\x20\x01(\x0b2\x0c.BCKBEMGGGIFH\0R\x0bLENBIENEFIB\x120\n\
+    \x0bONNAKPKDLHO\x18\x08\x20\x01(\x0b2\x0c.GKJHNGLHOBAH\0R\x0bONNAKPKDLHO\
+    B\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,10 +27,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:GameplayCounterType)
 pub enum GameplayCounterType {
-    // @@protoc_insertion_point(enum_value:GameplayCounterType.GAMEPLAY_COUNTER_NONE)
-    GAMEPLAY_COUNTER_NONE = 0,
-    // @@protoc_insertion_point(enum_value:GameplayCounterType.GAMEPLAY_COUNTER_MONSTER_SNEAK_VISION)
-    GAMEPLAY_COUNTER_MONSTER_SNEAK_VISION = 280001,
+    // @@protoc_insertion_point(enum_value:GameplayCounterType.GameplayCounterType_LHAAKHBFCCA)
+    GameplayCounterType_LHAAKHBFCCA = 0,
+    // @@protoc_insertion_point(enum_value:GameplayCounterType.GameplayCounterType_CFEFLNLPLND)
+    GameplayCounterType_CFEFLNLPLND = 280001,
 }
 
 impl ::protobuf::Enum for GameplayCounterType {
@@ -42,23 +42,23 @@ impl ::protobuf::Enum for GameplayCounterType {
 
     fn from_i32(value: i32) -> ::std::option::Option<GameplayCounterType> {
         match value {
-            0 => ::std::option::Option::Some(GameplayCounterType::GAMEPLAY_COUNTER_NONE),
-            280001 => ::std::option::Option::Some(GameplayCounterType::GAMEPLAY_COUNTER_MONSTER_SNEAK_VISION),
+            0 => ::std::option::Option::Some(GameplayCounterType::GameplayCounterType_LHAAKHBFCCA),
+            280001 => ::std::option::Option::Some(GameplayCounterType::GameplayCounterType_CFEFLNLPLND),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<GameplayCounterType> {
         match str {
-            "GAMEPLAY_COUNTER_NONE" => ::std::option::Option::Some(GameplayCounterType::GAMEPLAY_COUNTER_NONE),
-            "GAMEPLAY_COUNTER_MONSTER_SNEAK_VISION" => ::std::option::Option::Some(GameplayCounterType::GAMEPLAY_COUNTER_MONSTER_SNEAK_VISION),
+            "GameplayCounterType_LHAAKHBFCCA" => ::std::option::Option::Some(GameplayCounterType::GameplayCounterType_LHAAKHBFCCA),
+            "GameplayCounterType_CFEFLNLPLND" => ::std::option::Option::Some(GameplayCounterType::GameplayCounterType_CFEFLNLPLND),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [GameplayCounterType] = &[
-        GameplayCounterType::GAMEPLAY_COUNTER_NONE,
-        GameplayCounterType::GAMEPLAY_COUNTER_MONSTER_SNEAK_VISION,
+        GameplayCounterType::GameplayCounterType_LHAAKHBFCCA,
+        GameplayCounterType::GameplayCounterType_CFEFLNLPLND,
     ];
 }
 
@@ -70,8 +70,8 @@ impl ::protobuf::EnumFull for GameplayCounterType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            GameplayCounterType::GAMEPLAY_COUNTER_NONE => 0,
-            GameplayCounterType::GAMEPLAY_COUNTER_MONSTER_SNEAK_VISION => 1,
+            GameplayCounterType::GameplayCounterType_LHAAKHBFCCA => 0,
+            GameplayCounterType::GameplayCounterType_CFEFLNLPLND => 1,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -79,7 +79,7 @@ impl ::protobuf::EnumFull for GameplayCounterType {
 
 impl ::std::default::Default for GameplayCounterType {
     fn default() -> Self {
-        GameplayCounterType::GAMEPLAY_COUNTER_NONE
+        GameplayCounterType::GameplayCounterType_LHAAKHBFCCA
     }
 }
 
@@ -90,9 +90,9 @@ impl GameplayCounterType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19GameplayCounterType.proto*]\n\x13GameplayCounterType\x12\x19\n\x15\
-    GAMEPLAY_COUNTER_NONE\x10\0\x12+\n%GAMEPLAY_COUNTER_MONSTER_SNEAK_VISION\
-    \x10\xc1\x8b\x11b\x06proto3\
+    \n\x19GameplayCounterType.proto*a\n\x13GameplayCounterType\x12#\n\x1fGam\
+    eplayCounterType_LHAAKHBFCCA\x10\0\x12%\n\x1fGameplayCounterType_CFEFLNL\
+    PLND\x10\xc1\x8b\x11b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

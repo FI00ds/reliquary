@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneIdentifier {
     // message fields
-    // @@protoc_insertion_point(field:SceneIdentifier.floor_id)
-    pub floor_id: u32,
     // @@protoc_insertion_point(field:SceneIdentifier.content_id)
     pub content_id: u32,
     // @@protoc_insertion_point(field:SceneIdentifier.game_story_line_id)
     pub game_story_line_id: u32,
-    // @@protoc_insertion_point(field:SceneIdentifier.teleport_info)
-    pub teleport_info: ::protobuf::MessageField<super::TeleportInfo::TeleportInfo>,
+    // @@protoc_insertion_point(field:SceneIdentifier.floor_id)
+    pub floor_id: u32,
+    // message oneof groups
+    pub teleport_nigger: ::std::option::Option<scene_identifier::Teleport_nigger>,
     // special fields
     // @@protoc_insertion_point(special_field:SceneIdentifier.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,58 @@ impl SceneIdentifier {
         ::std::default::Default::default()
     }
 
+    // .TeleportInfo teleport_info = 1871;
+
+    pub fn teleport_info(&self) -> &super::TeleportInfo::TeleportInfo {
+        match self.teleport_nigger {
+            ::std::option::Option::Some(scene_identifier::Teleport_nigger::TeleportInfo(ref v)) => v,
+            _ => <super::TeleportInfo::TeleportInfo as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_teleport_info(&mut self) {
+        self.teleport_nigger = ::std::option::Option::None;
+    }
+
+    pub fn has_teleport_info(&self) -> bool {
+        match self.teleport_nigger {
+            ::std::option::Option::Some(scene_identifier::Teleport_nigger::TeleportInfo(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_teleport_info(&mut self, v: super::TeleportInfo::TeleportInfo) {
+        self.teleport_nigger = ::std::option::Option::Some(scene_identifier::Teleport_nigger::TeleportInfo(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_teleport_info(&mut self) -> &mut super::TeleportInfo::TeleportInfo {
+        if let ::std::option::Option::Some(scene_identifier::Teleport_nigger::TeleportInfo(_)) = self.teleport_nigger {
+        } else {
+            self.teleport_nigger = ::std::option::Option::Some(scene_identifier::Teleport_nigger::TeleportInfo(super::TeleportInfo::TeleportInfo::new()));
+        }
+        match self.teleport_nigger {
+            ::std::option::Option::Some(scene_identifier::Teleport_nigger::TeleportInfo(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_teleport_info(&mut self) -> super::TeleportInfo::TeleportInfo {
+        if self.has_teleport_info() {
+            match self.teleport_nigger.take() {
+                ::std::option::Option::Some(scene_identifier::Teleport_nigger::TeleportInfo(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::TeleportInfo::TeleportInfo::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
-        let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "floor_id",
-            |m: &SceneIdentifier| { &m.floor_id },
-            |m: &mut SceneIdentifier| { &mut m.floor_id },
-        ));
+        let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "content_id",
             |m: &SceneIdentifier| { &m.content_id },
@@ -70,11 +114,19 @@ impl SceneIdentifier {
             |m: &SceneIdentifier| { &m.game_story_line_id },
             |m: &mut SceneIdentifier| { &mut m.game_story_line_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::TeleportInfo::TeleportInfo>(
-            "teleport_info",
-            |m: &SceneIdentifier| { &m.teleport_info },
-            |m: &mut SceneIdentifier| { &mut m.teleport_info },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "floor_id",
+            |m: &SceneIdentifier| { &m.floor_id },
+            |m: &mut SceneIdentifier| { &mut m.floor_id },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::TeleportInfo::TeleportInfo>(
+            "teleport_info",
+            SceneIdentifier::has_teleport_info,
+            SceneIdentifier::teleport_info,
+            SceneIdentifier::mut_teleport_info,
+            SceneIdentifier::set_teleport_info,
+        ));
+        oneofs.push(scene_identifier::Teleport_nigger::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneIdentifier>(
             "SceneIdentifier",
             fields,
@@ -93,17 +145,17 @@ impl ::protobuf::Message for SceneIdentifier {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.floor_id = is.read_uint32()?;
-                },
-                16 => {
+                24 => {
                     self.content_id = is.read_uint32()?;
                 },
-                88 => {
+                80 => {
                     self.game_story_line_id = is.read_uint32()?;
                 },
-                8282 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.teleport_info)?;
+                96 => {
+                    self.floor_id = is.read_uint32()?;
+                },
+                14970 => {
+                    self.teleport_nigger = ::std::option::Option::Some(scene_identifier::Teleport_nigger::TeleportInfo(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +169,22 @@ impl ::protobuf::Message for SceneIdentifier {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.floor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.floor_id);
-        }
         if self.content_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.content_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.content_id);
         }
         if self.game_story_line_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.game_story_line_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.game_story_line_id);
         }
-        if let Some(v) = self.teleport_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.floor_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.floor_id);
+        }
+        if let ::std::option::Option::Some(ref v) = self.teleport_nigger {
+            match v {
+                &scene_identifier::Teleport_nigger::TeleportInfo(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+            };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +192,21 @@ impl ::protobuf::Message for SceneIdentifier {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.floor_id != 0 {
-            os.write_uint32(1, self.floor_id)?;
-        }
         if self.content_id != 0 {
-            os.write_uint32(2, self.content_id)?;
+            os.write_uint32(3, self.content_id)?;
         }
         if self.game_story_line_id != 0 {
-            os.write_uint32(11, self.game_story_line_id)?;
+            os.write_uint32(10, self.game_story_line_id)?;
         }
-        if let Some(v) = self.teleport_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1035, v, os)?;
+        if self.floor_id != 0 {
+            os.write_uint32(12, self.floor_id)?;
+        }
+        if let ::std::option::Option::Some(ref v) = self.teleport_nigger {
+            match v {
+                &scene_identifier::Teleport_nigger::TeleportInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1871, v, os)?;
+                },
+            };
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +225,19 @@ impl ::protobuf::Message for SceneIdentifier {
     }
 
     fn clear(&mut self) {
-        self.floor_id = 0;
         self.content_id = 0;
         self.game_story_line_id = 0;
-        self.teleport_info.clear();
+        self.floor_id = 0;
+        self.teleport_nigger = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneIdentifier {
         static instance: SceneIdentifier = SceneIdentifier {
-            floor_id: 0,
             content_id: 0,
             game_story_line_id: 0,
-            teleport_info: ::protobuf::MessageField::none(),
+            floor_id: 0,
+            teleport_nigger: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,12 +261,41 @@ impl ::protobuf::reflect::ProtobufValue for SceneIdentifier {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
+/// Nested message and enums of message `SceneIdentifier`
+pub mod scene_identifier {
+
+    #[derive(Clone,PartialEq,Debug)]
+    #[non_exhaustive]
+    // @@protoc_insertion_point(oneof:SceneIdentifier.teleport_nigger)
+    pub enum Teleport_nigger {
+        // @@protoc_insertion_point(oneof_field:SceneIdentifier.teleport_info)
+        TeleportInfo(super::super::TeleportInfo::TeleportInfo),
+    }
+
+    impl ::protobuf::Oneof for Teleport_nigger {
+    }
+
+    impl ::protobuf::OneofFull for Teleport_nigger {
+        fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
+            static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
+            descriptor.get(|| <super::SceneIdentifier as ::protobuf::MessageFull>::descriptor().oneof_by_name("teleport_nigger").unwrap()).clone()
+        }
+    }
+
+    impl Teleport_nigger {
+        pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<Teleport_nigger>("teleport_nigger")
+        }
+    }
+}
+
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15SceneIdentifier.proto\x1a\x12TeleportInfo.proto\"\xad\x01\n\x0fSce\
-    neIdentifier\x12\x19\n\x08floor_id\x18\x01\x20\x01(\rR\x07floorId\x12\
-    \x1d\n\ncontent_id\x18\x02\x20\x01(\rR\tcontentId\x12+\n\x12game_story_l\
-    ine_id\x18\x0b\x20\x01(\rR\x0fgameStoryLineId\x123\n\rteleport_info\x18\
-    \x8b\x08\x20\x01(\x0b2\r.TeleportInfoR\x0cteleportInfob\x06proto3\
+    \n\x15SceneIdentifier.proto\x1a\x12TeleportInfo.proto\"\xc2\x01\n\x0fSce\
+    neIdentifier\x12\x1d\n\ncontent_id\x18\x03\x20\x01(\rR\tcontentId\x12+\n\
+    \x12game_story_line_id\x18\n\x20\x01(\rR\x0fgameStoryLineId\x12\x19\n\
+    \x08floor_id\x18\x0c\x20\x01(\rR\x07floorId\x125\n\rteleport_info\x18\
+    \xcf\x0e\x20\x01(\x0b2\r.TeleportInfoH\0R\x0cteleportInfoB\x11\n\x0ftele\
+    port_niggerb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,13 +79,13 @@ impl ::protobuf::Message for LIELJCGKNJN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                48 => {
                     self.PGMABEHJJAB = is.read_uint32()?;
                 },
-                90 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.ACIMPFCLEEF)?;
                 },
-                88 => {
+                104 => {
                     self.ACIMPFCLEEF.push(is.read_uint32()?);
                 },
                 tag => {
@@ -101,9 +101,9 @@ impl ::protobuf::Message for LIELJCGKNJN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PGMABEHJJAB != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.PGMABEHJJAB);
+            my_size += ::protobuf::rt::uint32_size(6, self.PGMABEHJJAB);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.ACIMPFCLEEF);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.ACIMPFCLEEF);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -111,9 +111,9 @@ impl ::protobuf::Message for LIELJCGKNJN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PGMABEHJJAB != 0 {
-            os.write_uint32(3, self.PGMABEHJJAB)?;
+            os.write_uint32(6, self.PGMABEHJJAB)?;
         }
-        os.write_repeated_packed_uint32(11, &self.ACIMPFCLEEF)?;
+        os.write_repeated_packed_uint32(13, &self.ACIMPFCLEEF)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for LIELJCGKNJN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LIELJCGKNJN.proto\"Q\n\x0bLIELJCGKNJN\x12\x20\n\x0bPGMABEHJJAB\x18\
-    \x03\x20\x01(\rR\x0bPGMABEHJJAB\x12\x20\n\x0bACIMPFCLEEF\x18\x0b\x20\x03\
-    (\rR\x0bACIMPFCLEEFb\x06proto3\
+    \x06\x20\x01(\rR\x0bPGMABEHJJAB\x12\x20\n\x0bACIMPFCLEEF\x18\r\x20\x03(\
+    \rR\x0bACIMPFCLEEFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

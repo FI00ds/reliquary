@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetPlayerOutfitCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetPlayerOutfitCsReq.DHKFCDAGHDM)
-    pub DHKFCDAGHDM: ::protobuf::MessageField<super::CJLCPMDGIBO::CJLCPMDGIBO>,
+    // @@protoc_insertion_point(field:SetPlayerOutfitCsReq.player_outfit_data)
+    pub player_outfit_data: ::protobuf::MessageField<super::CJLCPMDGIBO::CJLCPMDGIBO>,
     // special fields
     // @@protoc_insertion_point(special_field:SetPlayerOutfitCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SetPlayerOutfitCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CJLCPMDGIBO::CJLCPMDGIBO>(
-            "DHKFCDAGHDM",
-            |m: &SetPlayerOutfitCsReq| { &m.DHKFCDAGHDM },
-            |m: &mut SetPlayerOutfitCsReq| { &mut m.DHKFCDAGHDM },
+            "player_outfit_data",
+            |m: &SetPlayerOutfitCsReq| { &m.player_outfit_data },
+            |m: &mut SetPlayerOutfitCsReq| { &mut m.player_outfit_data },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetPlayerOutfitCsReq>(
             "SetPlayerOutfitCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SetPlayerOutfitCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DHKFCDAGHDM)?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_outfit_data)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for SetPlayerOutfitCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.DHKFCDAGHDM.as_ref() {
+        if let Some(v) = self.player_outfit_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SetPlayerOutfitCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DHKFCDAGHDM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if let Some(v) = self.player_outfit_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SetPlayerOutfitCsReq {
     }
 
     fn clear(&mut self) {
-        self.DHKFCDAGHDM.clear();
+        self.player_outfit_data.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetPlayerOutfitCsReq {
         static instance: SetPlayerOutfitCsReq = SetPlayerOutfitCsReq {
-            DHKFCDAGHDM: ::protobuf::MessageField::none(),
+            player_outfit_data: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for SetPlayerOutfitCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aSetPlayerOutfitCsReq.proto\x1a\x11CJLCPMDGIBO.proto\"F\n\x14SetPla\
-    yerOutfitCsReq\x12.\n\x0bDHKFCDAGHDM\x18\r\x20\x01(\x0b2\x0c.CJLCPMDGIBO\
-    R\x0bDHKFCDAGHDMb\x06proto3\
+    \n\x1aSetPlayerOutfitCsReq.proto\x1a\x11CJLCPMDGIBO.proto\"R\n\x14SetPla\
+    yerOutfitCsReq\x12:\n\x12player_outfit_data\x18\x0b\x20\x01(\x0b2\x0c.CJ\
+    LCPMDGIBOR\x10playerOutfitDatab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

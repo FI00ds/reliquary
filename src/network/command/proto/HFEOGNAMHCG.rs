@@ -30,10 +30,10 @@ pub struct HFEOGNAMHCG {
     // message fields
     // @@protoc_insertion_point(field:HFEOGNAMHCG.AIAFEKGBFIF)
     pub AIAFEKGBFIF: u32,
-    // @@protoc_insertion_point(field:HFEOGNAMHCG.owner)
-    pub owner: ::protobuf::MessageField<super::LEHBIBDGEHG::LEHBIBDGEHG>,
     // @@protoc_insertion_point(field:HFEOGNAMHCG.KFNMIEMBJGD)
     pub KFNMIEMBJGD: ::std::vec::Vec<super::KDODFHMDAJI::KDODFHMDAJI>,
+    // @@protoc_insertion_point(field:HFEOGNAMHCG.EOBLJJBOBIN)
+    pub EOBLJJBOBIN: ::protobuf::MessageField<super::LEHBIBDGEHG::LEHBIBDGEHG>,
     // special fields
     // @@protoc_insertion_point(special_field:HFEOGNAMHCG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl HFEOGNAMHCG {
             |m: &HFEOGNAMHCG| { &m.AIAFEKGBFIF },
             |m: &mut HFEOGNAMHCG| { &mut m.AIAFEKGBFIF },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LEHBIBDGEHG::LEHBIBDGEHG>(
-            "owner",
-            |m: &HFEOGNAMHCG| { &m.owner },
-            |m: &mut HFEOGNAMHCG| { &mut m.owner },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "KFNMIEMBJGD",
             |m: &HFEOGNAMHCG| { &m.KFNMIEMBJGD },
             |m: &mut HFEOGNAMHCG| { &mut m.KFNMIEMBJGD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LEHBIBDGEHG::LEHBIBDGEHG>(
+            "EOBLJJBOBIN",
+            |m: &HFEOGNAMHCG| { &m.EOBLJJBOBIN },
+            |m: &mut HFEOGNAMHCG| { &mut m.EOBLJJBOBIN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HFEOGNAMHCG>(
             "HFEOGNAMHCG",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for HFEOGNAMHCG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                40 => {
                     self.AIAFEKGBFIF = is.read_uint32()?;
                 },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.owner)?;
-                },
-                98 => {
+                106 => {
                     self.KFNMIEMBJGD.push(is.read_message()?);
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EOBLJJBOBIN)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,16 +108,16 @@ impl ::protobuf::Message for HFEOGNAMHCG {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.AIAFEKGBFIF != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.AIAFEKGBFIF);
-        }
-        if let Some(v) = self.owner.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += ::protobuf::rt::uint32_size(5, self.AIAFEKGBFIF);
         }
         for value in &self.KFNMIEMBJGD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if let Some(v) = self.EOBLJJBOBIN.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -125,14 +125,14 @@ impl ::protobuf::Message for HFEOGNAMHCG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.AIAFEKGBFIF != 0 {
-            os.write_uint32(4, self.AIAFEKGBFIF)?;
-        }
-        if let Some(v) = self.owner.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            os.write_uint32(5, self.AIAFEKGBFIF)?;
         }
         for v in &self.KFNMIEMBJGD {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
+        if let Some(v) = self.EOBLJJBOBIN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -151,16 +151,16 @@ impl ::protobuf::Message for HFEOGNAMHCG {
 
     fn clear(&mut self) {
         self.AIAFEKGBFIF = 0;
-        self.owner.clear();
         self.KFNMIEMBJGD.clear();
+        self.EOBLJJBOBIN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HFEOGNAMHCG {
         static instance: HFEOGNAMHCG = HFEOGNAMHCG {
             AIAFEKGBFIF: 0,
-            owner: ::protobuf::MessageField::none(),
             KFNMIEMBJGD: ::std::vec::Vec::new(),
+            EOBLJJBOBIN: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for HFEOGNAMHCG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HFEOGNAMHCG.proto\x1a\x11KDODFHMDAJI.proto\x1a\x11LEHBIBDGEHG.prot\
-    o\"\x83\x01\n\x0bHFEOGNAMHCG\x12\x20\n\x0bAIAFEKGBFIF\x18\x04\x20\x01(\r\
-    R\x0bAIAFEKGBFIF\x12\"\n\x05owner\x18\n\x20\x01(\x0b2\x0c.LEHBIBDGEHGR\
-    \x05owner\x12.\n\x0bKFNMIEMBJGD\x18\x0c\x20\x03(\x0b2\x0c.KDODFHMDAJIR\
-    \x0bKFNMIEMBJGDb\x06proto3\
+    o\"\x8f\x01\n\x0bHFEOGNAMHCG\x12\x20\n\x0bAIAFEKGBFIF\x18\x05\x20\x01(\r\
+    R\x0bAIAFEKGBFIF\x12.\n\x0bKFNMIEMBJGD\x18\r\x20\x03(\x0b2\x0c.KDODFHMDA\
+    JIR\x0bKFNMIEMBJGD\x12.\n\x0bEOBLJJBOBIN\x18\x0e\x20\x01(\x0b2\x0c.LEHBI\
+    BDGEHGR\x0bEOBLJJBOBINb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

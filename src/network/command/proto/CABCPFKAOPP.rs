@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CABCPFKAOPP {
     // message fields
-    // @@protoc_insertion_point(field:CABCPFKAOPP.KDIDDHIDNCG)
-    pub KDIDDHIDNCG: u32,
-    // @@protoc_insertion_point(field:CABCPFKAOPP.GCDGGBLOJIC)
-    pub GCDGGBLOJIC: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:CABCPFKAOPP.NFPADEPIKML)
     pub NFPADEPIKML: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:CABCPFKAOPP.OEKIFIKBMFI)
     pub OEKIFIKBMFI: u32,
+    // @@protoc_insertion_point(field:CABCPFKAOPP.GCDGGBLOJIC)
+    pub GCDGGBLOJIC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:CABCPFKAOPP.KDIDDHIDNCG)
+    pub KDIDDHIDNCG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CABCPFKAOPP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,16 +55,6 @@ impl CABCPFKAOPP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KDIDDHIDNCG",
-            |m: &CABCPFKAOPP| { &m.KDIDDHIDNCG },
-            |m: &mut CABCPFKAOPP| { &mut m.KDIDDHIDNCG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GCDGGBLOJIC",
-            |m: &CABCPFKAOPP| { &m.GCDGGBLOJIC },
-            |m: &mut CABCPFKAOPP| { &mut m.GCDGGBLOJIC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "NFPADEPIKML",
             |m: &CABCPFKAOPP| { &m.NFPADEPIKML },
@@ -74,6 +64,16 @@ impl CABCPFKAOPP {
             "OEKIFIKBMFI",
             |m: &CABCPFKAOPP| { &m.OEKIFIKBMFI },
             |m: &mut CABCPFKAOPP| { &mut m.OEKIFIKBMFI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GCDGGBLOJIC",
+            |m: &CABCPFKAOPP| { &m.GCDGGBLOJIC },
+            |m: &mut CABCPFKAOPP| { &mut m.GCDGGBLOJIC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KDIDDHIDNCG",
+            |m: &CABCPFKAOPP| { &m.KDIDDHIDNCG },
+            |m: &mut CABCPFKAOPP| { &mut m.KDIDDHIDNCG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CABCPFKAOPP>(
             "CABCPFKAOPP",
@@ -93,23 +93,23 @@ impl ::protobuf::Message for CABCPFKAOPP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.KDIDDHIDNCG = is.read_uint32()?;
-                },
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.GCDGGBLOJIC)?;
-                },
-                64 => {
-                    self.GCDGGBLOJIC.push(is.read_uint32()?);
-                },
-                82 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.NFPADEPIKML)?;
                 },
-                80 => {
+                16 => {
                     self.NFPADEPIKML.push(is.read_uint32()?);
                 },
-                88 => {
+                64 => {
                     self.OEKIFIKBMFI = is.read_uint32()?;
+                },
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.GCDGGBLOJIC)?;
+                },
+                104 => {
+                    self.GCDGGBLOJIC.push(is.read_uint32()?);
+                },
+                120 => {
+                    self.KDIDDHIDNCG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -123,13 +123,13 @@ impl ::protobuf::Message for CABCPFKAOPP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KDIDDHIDNCG != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.KDIDDHIDNCG);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.GCDGGBLOJIC);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.NFPADEPIKML);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.NFPADEPIKML);
         if self.OEKIFIKBMFI != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.OEKIFIKBMFI);
+            my_size += ::protobuf::rt::uint32_size(8, self.OEKIFIKBMFI);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.GCDGGBLOJIC);
+        if self.KDIDDHIDNCG != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.KDIDDHIDNCG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,13 +137,13 @@ impl ::protobuf::Message for CABCPFKAOPP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KDIDDHIDNCG != 0 {
-            os.write_uint32(1, self.KDIDDHIDNCG)?;
-        }
-        os.write_repeated_packed_uint32(8, &self.GCDGGBLOJIC)?;
-        os.write_repeated_packed_uint32(10, &self.NFPADEPIKML)?;
+        os.write_repeated_packed_uint32(2, &self.NFPADEPIKML)?;
         if self.OEKIFIKBMFI != 0 {
-            os.write_uint32(11, self.OEKIFIKBMFI)?;
+            os.write_uint32(8, self.OEKIFIKBMFI)?;
+        }
+        os.write_repeated_packed_uint32(13, &self.GCDGGBLOJIC)?;
+        if self.KDIDDHIDNCG != 0 {
+            os.write_uint32(15, self.KDIDDHIDNCG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -162,19 +162,19 @@ impl ::protobuf::Message for CABCPFKAOPP {
     }
 
     fn clear(&mut self) {
-        self.KDIDDHIDNCG = 0;
-        self.GCDGGBLOJIC.clear();
         self.NFPADEPIKML.clear();
         self.OEKIFIKBMFI = 0;
+        self.GCDGGBLOJIC.clear();
+        self.KDIDDHIDNCG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CABCPFKAOPP {
         static instance: CABCPFKAOPP = CABCPFKAOPP {
-            KDIDDHIDNCG: 0,
-            GCDGGBLOJIC: ::std::vec::Vec::new(),
             NFPADEPIKML: ::std::vec::Vec::new(),
             OEKIFIKBMFI: 0,
+            GCDGGBLOJIC: ::std::vec::Vec::new(),
+            KDIDDHIDNCG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -199,11 +199,11 @@ impl ::protobuf::reflect::ProtobufValue for CABCPFKAOPP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CABCPFKAOPP.proto\"\x95\x01\n\x0bCABCPFKAOPP\x12\x20\n\x0bKDIDDHID\
-    NCG\x18\x01\x20\x01(\rR\x0bKDIDDHIDNCG\x12\x20\n\x0bGCDGGBLOJIC\x18\x08\
-    \x20\x03(\rR\x0bGCDGGBLOJIC\x12\x20\n\x0bNFPADEPIKML\x18\n\x20\x03(\rR\
-    \x0bNFPADEPIKML\x12\x20\n\x0bOEKIFIKBMFI\x18\x0b\x20\x01(\rR\x0bOEKIFIKB\
-    MFIb\x06proto3\
+    \n\x11CABCPFKAOPP.proto\"\x95\x01\n\x0bCABCPFKAOPP\x12\x20\n\x0bNFPADEPI\
+    KML\x18\x02\x20\x03(\rR\x0bNFPADEPIKML\x12\x20\n\x0bOEKIFIKBMFI\x18\x08\
+    \x20\x01(\rR\x0bOEKIFIKBMFI\x12\x20\n\x0bGCDGGBLOJIC\x18\r\x20\x03(\rR\
+    \x0bGCDGGBLOJIC\x12\x20\n\x0bKDIDDHIDNCG\x18\x0f\x20\x01(\rR\x0bKDIDDHID\
+    NCGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -45,7 +45,7 @@ impl FHBDPOJEEMJ {
         ::std::default::Default::default()
     }
 
-    // .DJEECBNBGMN HHBPBGMNGPN = 13;
+    // .DJEECBNBGMN HHBPBGMNGPN = 4;
 
     pub fn HHBPBGMNGPN(&self) -> &super::DJEECBNBGMN::DJEECBNBGMN {
         match self.KOEFMOAPDGI {
@@ -94,7 +94,7 @@ impl FHBDPOJEEMJ {
         }
     }
 
-    // .EGAILAEBLIG ECCLOKPNFHP = 1;
+    // .EGAILAEBLIG ECCLOKPNFHP = 6;
 
     pub fn ECCLOKPNFHP(&self) -> &super::EGAILAEBLIG::EGAILAEBLIG {
         match self.KOEFMOAPDGI {
@@ -143,7 +143,7 @@ impl FHBDPOJEEMJ {
         }
     }
 
-    // .HLEBBGFAKAK HDFLCOIDCPE = 6;
+    // .HLEBBGFAKAK HDFLCOIDCPE = 11;
 
     pub fn HDFLCOIDCPE(&self) -> &super::HLEBBGFAKAK::HLEBBGFAKAK {
         match self.KOEFMOAPDGI {
@@ -235,13 +235,13 @@ impl ::protobuf::Message for FHBDPOJEEMJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                34 => {
                     self.KOEFMOAPDGI = ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::HHBPBGMNGPN(is.read_message()?));
                 },
-                10 => {
+                50 => {
                     self.KOEFMOAPDGI = ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::ECCLOKPNFHP(is.read_message()?));
                 },
-                50 => {
+                90 => {
                     self.KOEFMOAPDGI = ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::HDFLCOIDCPE(is.read_message()?));
                 },
                 tag => {
@@ -281,13 +281,13 @@ impl ::protobuf::Message for FHBDPOJEEMJ {
         if let ::std::option::Option::Some(ref v) = self.KOEFMOAPDGI {
             match v {
                 &fhbdpojeemj::KOEFMOAPDGI::HHBPBGMNGPN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
                 &fhbdpojeemj::KOEFMOAPDGI::ECCLOKPNFHP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
                 &fhbdpojeemj::KOEFMOAPDGI::HDFLCOIDCPE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
             };
         }
@@ -375,10 +375,10 @@ pub mod fhbdpojeemj {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FHBDPOJEEMJ.proto\x1a\x11DJEECBNBGMN.proto\x1a\x11EGAILAEBLIG.prot\
     o\x1a\x11HLEBBGFAKAK.proto\"\xb2\x01\n\x0bFHBDPOJEEMJ\x120\n\x0bHHBPBGMN\
-    GPN\x18\r\x20\x01(\x0b2\x0c.DJEECBNBGMNH\0R\x0bHHBPBGMNGPN\x120\n\x0bECC\
-    LOKPNFHP\x18\x01\x20\x01(\x0b2\x0c.EGAILAEBLIGH\0R\x0bECCLOKPNFHP\x120\n\
-    \x0bHDFLCOIDCPE\x18\x06\x20\x01(\x0b2\x0c.HLEBBGFAKAKH\0R\x0bHDFLCOIDCPE\
-    B\r\n\x0bKOEFMOAPDGIb\x06proto3\
+    GPN\x18\x04\x20\x01(\x0b2\x0c.DJEECBNBGMNH\0R\x0bHHBPBGMNGPN\x120\n\x0bE\
+    CCLOKPNFHP\x18\x06\x20\x01(\x0b2\x0c.EGAILAEBLIGH\0R\x0bECCLOKPNFHP\x120\
+    \n\x0bHDFLCOIDCPE\x18\x0b\x20\x01(\x0b2\x0c.HLEBBGFAKAKH\0R\x0bHDFLCOIDC\
+    PEB\r\n\x0bKOEFMOAPDGIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

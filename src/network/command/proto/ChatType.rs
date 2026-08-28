@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:ChatType)
 pub enum ChatType {
-    // @@protoc_insertion_point(enum_value:ChatType.CHAT_TYPE_NONE)
-    CHAT_TYPE_NONE = 0,
-    // @@protoc_insertion_point(enum_value:ChatType.CHAT_TYPE_PRIVATE)
-    CHAT_TYPE_PRIVATE = 1,
-    // @@protoc_insertion_point(enum_value:ChatType.CHAT_TYPE_GROUP)
-    CHAT_TYPE_GROUP = 2,
+    // @@protoc_insertion_point(enum_value:ChatType.ChatType_None)
+    ChatType_None = 0,
+    // @@protoc_insertion_point(enum_value:ChatType.ChatType_Private)
+    ChatType_Private = 1,
+    // @@protoc_insertion_point(enum_value:ChatType.ChatType_Group)
+    ChatType_Group = 2,
 }
 
 impl ::protobuf::Enum for ChatType {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for ChatType {
 
     fn from_i32(value: i32) -> ::std::option::Option<ChatType> {
         match value {
-            0 => ::std::option::Option::Some(ChatType::CHAT_TYPE_NONE),
-            1 => ::std::option::Option::Some(ChatType::CHAT_TYPE_PRIVATE),
-            2 => ::std::option::Option::Some(ChatType::CHAT_TYPE_GROUP),
+            0 => ::std::option::Option::Some(ChatType::ChatType_None),
+            1 => ::std::option::Option::Some(ChatType::ChatType_Private),
+            2 => ::std::option::Option::Some(ChatType::ChatType_Group),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<ChatType> {
         match str {
-            "CHAT_TYPE_NONE" => ::std::option::Option::Some(ChatType::CHAT_TYPE_NONE),
-            "CHAT_TYPE_PRIVATE" => ::std::option::Option::Some(ChatType::CHAT_TYPE_PRIVATE),
-            "CHAT_TYPE_GROUP" => ::std::option::Option::Some(ChatType::CHAT_TYPE_GROUP),
+            "ChatType_None" => ::std::option::Option::Some(ChatType::ChatType_None),
+            "ChatType_Private" => ::std::option::Option::Some(ChatType::ChatType_Private),
+            "ChatType_Group" => ::std::option::Option::Some(ChatType::ChatType_Group),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [ChatType] = &[
-        ChatType::CHAT_TYPE_NONE,
-        ChatType::CHAT_TYPE_PRIVATE,
-        ChatType::CHAT_TYPE_GROUP,
+        ChatType::ChatType_None,
+        ChatType::ChatType_Private,
+        ChatType::ChatType_Group,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for ChatType {
 
 impl ::std::default::Default for ChatType {
     fn default() -> Self {
-        ChatType::CHAT_TYPE_NONE
+        ChatType::ChatType_None
     }
 }
 
@@ -92,9 +92,9 @@ impl ChatType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0eChatType.proto*J\n\x08ChatType\x12\x12\n\x0eCHAT_TYPE_NONE\x10\0\
-    \x12\x15\n\x11CHAT_TYPE_PRIVATE\x10\x01\x12\x13\n\x0fCHAT_TYPE_GROUP\x10\
-    \x02b\x06proto3\
+    \n\x0eChatType.proto*G\n\x08ChatType\x12\x11\n\rChatType_None\x10\0\x12\
+    \x14\n\x10ChatType_Private\x10\x01\x12\x12\n\x0eChatType_Group\x10\x02b\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

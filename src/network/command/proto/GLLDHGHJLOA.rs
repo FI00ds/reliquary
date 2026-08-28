@@ -30,20 +30,20 @@ pub struct GLLDHGHJLOA {
     // message fields
     // @@protoc_insertion_point(field:GLLDHGHJLOA.nickname)
     pub nickname: ::std::string::String,
-    // @@protoc_insertion_point(field:GLLDHGHJLOA.uid)
-    pub uid: u32,
-    // @@protoc_insertion_point(field:GLLDHGHJLOA.IPINHNFCIOE)
-    pub IPINHNFCIOE: u32,
-    // @@protoc_insertion_point(field:GLLDHGHJLOA.BCGOAIPKGIK)
-    pub BCGOAIPKGIK: ::std::vec::Vec<super::NHDGNBKBNDB::NHDGNBKBNDB>,
-    // @@protoc_insertion_point(field:GLLDHGHJLOA.AJFJLCKPNAM)
-    pub AJFJLCKPNAM: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GLLDHGHJLOA.hp)
-    pub hp: u32,
     // @@protoc_insertion_point(field:GLLDHGHJLOA.KIMKENNLHEH)
     pub KIMKENNLHEH: u32,
+    // @@protoc_insertion_point(field:GLLDHGHJLOA.uid)
+    pub uid: u32,
     // @@protoc_insertion_point(field:GLLDHGHJLOA.head_icon)
     pub head_icon: u32,
+    // @@protoc_insertion_point(field:GLLDHGHJLOA.AJFJLCKPNAM)
+    pub AJFJLCKPNAM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GLLDHGHJLOA.BCGOAIPKGIK)
+    pub BCGOAIPKGIK: ::std::vec::Vec<super::NHDGNBKBNDB::NHDGNBKBNDB>,
+    // @@protoc_insertion_point(field:GLLDHGHJLOA.IPINHNFCIOE)
+    pub IPINHNFCIOE: u32,
+    // @@protoc_insertion_point(field:GLLDHGHJLOA.hp)
+    pub hp: u32,
     // @@protoc_insertion_point(field:GLLDHGHJLOA.rank)
     pub rank: u32,
     // special fields
@@ -71,39 +71,39 @@ impl GLLDHGHJLOA {
             |m: &mut GLLDHGHJLOA| { &mut m.nickname },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KIMKENNLHEH",
+            |m: &GLLDHGHJLOA| { &m.KIMKENNLHEH },
+            |m: &mut GLLDHGHJLOA| { &mut m.KIMKENNLHEH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "uid",
             |m: &GLLDHGHJLOA| { &m.uid },
             |m: &mut GLLDHGHJLOA| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IPINHNFCIOE",
-            |m: &GLLDHGHJLOA| { &m.IPINHNFCIOE },
-            |m: &mut GLLDHGHJLOA| { &mut m.IPINHNFCIOE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BCGOAIPKGIK",
-            |m: &GLLDHGHJLOA| { &m.BCGOAIPKGIK },
-            |m: &mut GLLDHGHJLOA| { &mut m.BCGOAIPKGIK },
+            "head_icon",
+            |m: &GLLDHGHJLOA| { &m.head_icon },
+            |m: &mut GLLDHGHJLOA| { &mut m.head_icon },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "AJFJLCKPNAM",
             |m: &GLLDHGHJLOA| { &m.AJFJLCKPNAM },
             |m: &mut GLLDHGHJLOA| { &mut m.AJFJLCKPNAM },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BCGOAIPKGIK",
+            |m: &GLLDHGHJLOA| { &m.BCGOAIPKGIK },
+            |m: &mut GLLDHGHJLOA| { &mut m.BCGOAIPKGIK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IPINHNFCIOE",
+            |m: &GLLDHGHJLOA| { &m.IPINHNFCIOE },
+            |m: &mut GLLDHGHJLOA| { &mut m.IPINHNFCIOE },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "hp",
             |m: &GLLDHGHJLOA| { &m.hp },
             |m: &mut GLLDHGHJLOA| { &mut m.hp },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KIMKENNLHEH",
-            |m: &GLLDHGHJLOA| { &m.KIMKENNLHEH },
-            |m: &mut GLLDHGHJLOA| { &mut m.KIMKENNLHEH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "head_icon",
-            |m: &GLLDHGHJLOA| { &m.head_icon },
-            |m: &mut GLLDHGHJLOA| { &mut m.head_icon },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rank",
@@ -131,31 +131,31 @@ impl ::protobuf::Message for GLLDHGHJLOA {
                 18 => {
                     self.nickname = is.read_string()?;
                 },
-                40 => {
+                24 => {
+                    self.KIMKENNLHEH = is.read_uint32()?;
+                },
+                32 => {
                     self.uid = is.read_uint32()?;
                 },
                 48 => {
-                    self.IPINHNFCIOE = is.read_uint32()?;
-                },
-                58 => {
-                    self.BCGOAIPKGIK.push(is.read_message()?);
-                },
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.AJFJLCKPNAM)?;
-                },
-                64 => {
-                    self.AJFJLCKPNAM.push(is.read_uint32()?);
-                },
-                80 => {
-                    self.hp = is.read_uint32()?;
-                },
-                88 => {
-                    self.KIMKENNLHEH = is.read_uint32()?;
-                },
-                96 => {
                     self.head_icon = is.read_uint32()?;
                 },
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.AJFJLCKPNAM)?;
+                },
+                56 => {
+                    self.AJFJLCKPNAM.push(is.read_uint32()?);
+                },
+                66 => {
+                    self.BCGOAIPKGIK.push(is.read_message()?);
+                },
+                80 => {
+                    self.IPINHNFCIOE = is.read_uint32()?;
+                },
                 104 => {
+                    self.hp = is.read_uint32()?;
+                },
+                112 => {
                     self.rank = is.read_uint32()?;
                 },
                 tag => {
@@ -173,28 +173,28 @@ impl ::protobuf::Message for GLLDHGHJLOA {
         if !self.nickname.is_empty() {
             my_size += ::protobuf::rt::string_size(2, &self.nickname);
         }
+        if self.KIMKENNLHEH != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.KIMKENNLHEH);
+        }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.uid);
+            my_size += ::protobuf::rt::uint32_size(4, self.uid);
         }
-        if self.IPINHNFCIOE != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.IPINHNFCIOE);
+        if self.head_icon != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.head_icon);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.AJFJLCKPNAM);
         for value in &self.BCGOAIPKGIK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.AJFJLCKPNAM);
+        if self.IPINHNFCIOE != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.IPINHNFCIOE);
+        }
         if self.hp != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.hp);
-        }
-        if self.KIMKENNLHEH != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.KIMKENNLHEH);
-        }
-        if self.head_icon != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.head_icon);
+            my_size += ::protobuf::rt::uint32_size(13, self.hp);
         }
         if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.rank);
+            my_size += ::protobuf::rt::uint32_size(14, self.rank);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -205,27 +205,27 @@ impl ::protobuf::Message for GLLDHGHJLOA {
         if !self.nickname.is_empty() {
             os.write_string(2, &self.nickname)?;
         }
-        if self.uid != 0 {
-            os.write_uint32(5, self.uid)?;
-        }
-        if self.IPINHNFCIOE != 0 {
-            os.write_uint32(6, self.IPINHNFCIOE)?;
-        }
-        for v in &self.BCGOAIPKGIK {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
-        os.write_repeated_packed_uint32(8, &self.AJFJLCKPNAM)?;
-        if self.hp != 0 {
-            os.write_uint32(10, self.hp)?;
-        }
         if self.KIMKENNLHEH != 0 {
-            os.write_uint32(11, self.KIMKENNLHEH)?;
+            os.write_uint32(3, self.KIMKENNLHEH)?;
+        }
+        if self.uid != 0 {
+            os.write_uint32(4, self.uid)?;
         }
         if self.head_icon != 0 {
-            os.write_uint32(12, self.head_icon)?;
+            os.write_uint32(6, self.head_icon)?;
+        }
+        os.write_repeated_packed_uint32(7, &self.AJFJLCKPNAM)?;
+        for v in &self.BCGOAIPKGIK {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
+        if self.IPINHNFCIOE != 0 {
+            os.write_uint32(10, self.IPINHNFCIOE)?;
+        }
+        if self.hp != 0 {
+            os.write_uint32(13, self.hp)?;
         }
         if self.rank != 0 {
-            os.write_uint32(13, self.rank)?;
+            os.write_uint32(14, self.rank)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -245,13 +245,13 @@ impl ::protobuf::Message for GLLDHGHJLOA {
 
     fn clear(&mut self) {
         self.nickname.clear();
-        self.uid = 0;
-        self.IPINHNFCIOE = 0;
-        self.BCGOAIPKGIK.clear();
-        self.AJFJLCKPNAM.clear();
-        self.hp = 0;
         self.KIMKENNLHEH = 0;
+        self.uid = 0;
         self.head_icon = 0;
+        self.AJFJLCKPNAM.clear();
+        self.BCGOAIPKGIK.clear();
+        self.IPINHNFCIOE = 0;
+        self.hp = 0;
         self.rank = 0;
         self.special_fields.clear();
     }
@@ -259,13 +259,13 @@ impl ::protobuf::Message for GLLDHGHJLOA {
     fn default_instance() -> &'static GLLDHGHJLOA {
         static instance: GLLDHGHJLOA = GLLDHGHJLOA {
             nickname: ::std::string::String::new(),
-            uid: 0,
-            IPINHNFCIOE: 0,
-            BCGOAIPKGIK: ::std::vec::Vec::new(),
-            AJFJLCKPNAM: ::std::vec::Vec::new(),
-            hp: 0,
             KIMKENNLHEH: 0,
+            uid: 0,
             head_icon: 0,
+            AJFJLCKPNAM: ::std::vec::Vec::new(),
+            BCGOAIPKGIK: ::std::vec::Vec::new(),
+            IPINHNFCIOE: 0,
+            hp: 0,
             rank: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -292,13 +292,13 @@ impl ::protobuf::reflect::ProtobufValue for GLLDHGHJLOA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GLLDHGHJLOA.proto\x1a\x11NHDGNBKBNDB.proto\"\x92\x02\n\x0bGLLDHGHJ\
-    LOA\x12\x1a\n\x08nickname\x18\x02\x20\x01(\tR\x08nickname\x12\x10\n\x03u\
-    id\x18\x05\x20\x01(\rR\x03uid\x12\x20\n\x0bIPINHNFCIOE\x18\x06\x20\x01(\
-    \rR\x0bIPINHNFCIOE\x12.\n\x0bBCGOAIPKGIK\x18\x07\x20\x03(\x0b2\x0c.NHDGN\
-    BKBNDBR\x0bBCGOAIPKGIK\x12\x20\n\x0bAJFJLCKPNAM\x18\x08\x20\x03(\rR\x0bA\
-    JFJLCKPNAM\x12\x0e\n\x02hp\x18\n\x20\x01(\rR\x02hp\x12\x20\n\x0bKIMKENNL\
-    HEH\x18\x0b\x20\x01(\rR\x0bKIMKENNLHEH\x12\x1b\n\thead_icon\x18\x0c\x20\
-    \x01(\rR\x08headIcon\x12\x12\n\x04rank\x18\r\x20\x01(\rR\x04rankb\x06pro\
+    LOA\x12\x1a\n\x08nickname\x18\x02\x20\x01(\tR\x08nickname\x12\x20\n\x0bK\
+    IMKENNLHEH\x18\x03\x20\x01(\rR\x0bKIMKENNLHEH\x12\x10\n\x03uid\x18\x04\
+    \x20\x01(\rR\x03uid\x12\x1b\n\thead_icon\x18\x06\x20\x01(\rR\x08headIcon\
+    \x12\x20\n\x0bAJFJLCKPNAM\x18\x07\x20\x03(\rR\x0bAJFJLCKPNAM\x12.\n\x0bB\
+    CGOAIPKGIK\x18\x08\x20\x03(\x0b2\x0c.NHDGNBKBNDBR\x0bBCGOAIPKGIK\x12\x20\
+    \n\x0bIPINHNFCIOE\x18\n\x20\x01(\rR\x0bIPINHNFCIOE\x12\x0e\n\x02hp\x18\r\
+    \x20\x01(\rR\x02hp\x12\x12\n\x04rank\x18\x0e\x20\x01(\rR\x04rankb\x06pro\
     to3\
 ";
 

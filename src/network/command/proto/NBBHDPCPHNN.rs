@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NBBHDPCPHNN {
     // message fields
-    // @@protoc_insertion_point(field:NBBHDPCPHNN.buff_amplification_map)
-    pub buff_amplification_map: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:NBBHDPCPHNN.NGOMJIFBBBP)
-    pub NGOMJIFBBBP: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:NBBHDPCPHNN.ICCMJHJLPCD)
-    pub ICCMJHJLPCD: ::std::vec::Vec<super::AGPKFBLGDIH::AGPKFBLGDIH>,
-    // @@protoc_insertion_point(field:NBBHDPCPHNN.buff_list)
-    pub buff_list: ::std::vec::Vec<super::FateBuffData::FateBuffData>,
     // @@protoc_insertion_point(field:NBBHDPCPHNN.MHLNGFBOIDP)
     pub MHLNGFBOIDP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:NBBHDPCPHNN.NGOMJIFBBBP)
+    pub NGOMJIFBBBP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:NBBHDPCPHNN.buff_list)
+    pub buff_list: ::std::vec::Vec<super::FateBuffData::FateBuffData>,
+    // @@protoc_insertion_point(field:NBBHDPCPHNN.EHNHILFAHGP)
+    pub EHNHILFAHGP: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:NBBHDPCPHNN.ICCMJHJLPCD)
+    pub ICCMJHJLPCD: ::std::vec::Vec<super::AGPKFBLGDIH::AGPKFBLGDIH>,
     // @@protoc_insertion_point(field:NBBHDPCPHNN.JIMBJHLMHLO)
     pub JIMBJHLMHLO: u32,
     // special fields
@@ -59,10 +59,10 @@ impl NBBHDPCPHNN {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "buff_amplification_map",
-            |m: &NBBHDPCPHNN| { &m.buff_amplification_map },
-            |m: &mut NBBHDPCPHNN| { &mut m.buff_amplification_map },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "MHLNGFBOIDP",
+            |m: &NBBHDPCPHNN| { &m.MHLNGFBOIDP },
+            |m: &mut NBBHDPCPHNN| { &mut m.MHLNGFBOIDP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "NGOMJIFBBBP",
@@ -70,19 +70,19 @@ impl NBBHDPCPHNN {
             |m: &mut NBBHDPCPHNN| { &mut m.NGOMJIFBBBP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ICCMJHJLPCD",
-            |m: &NBBHDPCPHNN| { &m.ICCMJHJLPCD },
-            |m: &mut NBBHDPCPHNN| { &mut m.ICCMJHJLPCD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "buff_list",
             |m: &NBBHDPCPHNN| { &m.buff_list },
             |m: &mut NBBHDPCPHNN| { &mut m.buff_list },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "EHNHILFAHGP",
+            |m: &NBBHDPCPHNN| { &m.EHNHILFAHGP },
+            |m: &mut NBBHDPCPHNN| { &mut m.EHNHILFAHGP },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MHLNGFBOIDP",
-            |m: &NBBHDPCPHNN| { &m.MHLNGFBOIDP },
-            |m: &mut NBBHDPCPHNN| { &mut m.MHLNGFBOIDP },
+            "ICCMJHJLPCD",
+            |m: &NBBHDPCPHNN| { &m.ICCMJHJLPCD },
+            |m: &mut NBBHDPCPHNN| { &mut m.ICCMJHJLPCD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JIMBJHLMHLO",
@@ -107,7 +107,22 @@ impl ::protobuf::Message for NBBHDPCPHNN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.MHLNGFBOIDP)?;
+                },
+                8 => {
+                    self.MHLNGFBOIDP.push(is.read_uint32()?);
+                },
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.NGOMJIFBBBP)?;
+                },
+                24 => {
+                    self.NGOMJIFBBBP.push(is.read_uint32()?);
+                },
+                42 => {
+                    self.buff_list.push(is.read_message()?);
+                },
+                98 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -120,25 +135,10 @@ impl ::protobuf::Message for NBBHDPCPHNN {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.buff_amplification_map.insert(key, value);
-                },
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NGOMJIFBBBP)?;
-                },
-                40 => {
-                    self.NGOMJIFBBBP.push(is.read_uint32()?);
-                },
-                98 => {
-                    self.ICCMJHJLPCD.push(is.read_message()?);
+                    self.EHNHILFAHGP.insert(key, value);
                 },
                 106 => {
-                    self.buff_list.push(is.read_message()?);
-                },
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.MHLNGFBOIDP)?;
-                },
-                112 => {
-                    self.MHLNGFBOIDP.push(is.read_uint32()?);
+                    self.ICCMJHJLPCD.push(is.read_message()?);
                 },
                 120 => {
                     self.JIMBJHLMHLO = is.read_uint32()?;
@@ -155,22 +155,22 @@ impl ::protobuf::Message for NBBHDPCPHNN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for (k, v) in &self.buff_amplification_map {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.MHLNGFBOIDP);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.NGOMJIFBBBP);
+        for value in &self.buff_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for (k, v) in &self.EHNHILFAHGP {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.NGOMJIFBBBP);
         for value in &self.ICCMJHJLPCD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.buff_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.MHLNGFBOIDP);
         if self.JIMBJHLMHLO != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.JIMBJHLMHLO);
         }
@@ -180,23 +180,23 @@ impl ::protobuf::Message for NBBHDPCPHNN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for (k, v) in &self.buff_amplification_map {
+        os.write_repeated_packed_uint32(1, &self.MHLNGFBOIDP)?;
+        os.write_repeated_packed_uint32(3, &self.NGOMJIFBBBP)?;
+        for v in &self.buff_list {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        };
+        for (k, v) in &self.EHNHILFAHGP {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(18)?; // Tag.
+            os.write_raw_varint32(98)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        os.write_repeated_packed_uint32(5, &self.NGOMJIFBBBP)?;
         for v in &self.ICCMJHJLPCD {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
-        for v in &self.buff_list {
             ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
-        os.write_repeated_packed_uint32(14, &self.MHLNGFBOIDP)?;
         if self.JIMBJHLMHLO != 0 {
             os.write_uint32(15, self.JIMBJHLMHLO)?;
         }
@@ -217,11 +217,11 @@ impl ::protobuf::Message for NBBHDPCPHNN {
     }
 
     fn clear(&mut self) {
-        self.buff_amplification_map.clear();
-        self.NGOMJIFBBBP.clear();
-        self.ICCMJHJLPCD.clear();
-        self.buff_list.clear();
         self.MHLNGFBOIDP.clear();
+        self.NGOMJIFBBBP.clear();
+        self.buff_list.clear();
+        self.EHNHILFAHGP.clear();
+        self.ICCMJHJLPCD.clear();
         self.JIMBJHLMHLO = 0;
         self.special_fields.clear();
     }
@@ -251,15 +251,15 @@ impl ::protobuf::reflect::ProtobufValue for NBBHDPCPHNN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NBBHDPCPHNN.proto\x1a\x11AGPKFBLGDIH.proto\x1a\x12FateBuffData.pro\
-    to\"\xf6\x02\n\x0bNBBHDPCPHNN\x12\\\n\x16buff_amplification_map\x18\x02\
-    \x20\x03(\x0b2&.NBBHDPCPHNN.BuffAmplificationMapEntryR\x14buffAmplificat\
-    ionMap\x12\x20\n\x0bNGOMJIFBBBP\x18\x05\x20\x03(\rR\x0bNGOMJIFBBBP\x12.\
-    \n\x0bICCMJHJLPCD\x18\x0c\x20\x03(\x0b2\x0c.AGPKFBLGDIHR\x0bICCMJHJLPCD\
-    \x12*\n\tbuff_list\x18\r\x20\x03(\x0b2\r.FateBuffDataR\x08buffList\x12\
-    \x20\n\x0bMHLNGFBOIDP\x18\x0e\x20\x03(\rR\x0bMHLNGFBOIDP\x12\x20\n\x0bJI\
-    MBJHLMHLO\x18\x0f\x20\x01(\rR\x0bJIMBJHLMHLO\x1aG\n\x19BuffAmplification\
-    MapEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\
-    \x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
+    to\"\xd0\x02\n\x0bNBBHDPCPHNN\x12\x20\n\x0bMHLNGFBOIDP\x18\x01\x20\x03(\
+    \rR\x0bMHLNGFBOIDP\x12\x20\n\x0bNGOMJIFBBBP\x18\x03\x20\x03(\rR\x0bNGOMJ\
+    IFBBBP\x12*\n\tbuff_list\x18\x05\x20\x03(\x0b2\r.FateBuffDataR\x08buffLi\
+    st\x12?\n\x0bEHNHILFAHGP\x18\x0c\x20\x03(\x0b2\x1d.NBBHDPCPHNN.EHNHILFAH\
+    GPEntryR\x0bEHNHILFAHGP\x12.\n\x0bICCMJHJLPCD\x18\r\x20\x03(\x0b2\x0c.AG\
+    PKFBLGDIHR\x0bICCMJHJLPCD\x12\x20\n\x0bJIMBJHLMHLO\x18\x0f\x20\x01(\rR\
+    \x0bJIMBJHLMHLO\x1a>\n\x10EHNHILFAHGPEntry\x12\x10\n\x03key\x18\x01\x20\
+    \x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\
+    \x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

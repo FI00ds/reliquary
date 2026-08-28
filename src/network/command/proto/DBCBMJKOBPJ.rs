@@ -38,22 +38,22 @@ pub struct DBCBMJKOBPJ {
     pub world_level: u32,
     // @@protoc_insertion_point(field:DBCBMJKOBPJ.battle_target_info)
     pub battle_target_info: ::std::collections::HashMap<u32, super::BattleTargetList::BattleTargetList>,
-    // @@protoc_insertion_point(field:DBCBMJKOBPJ.battle_action_event_id)
-    pub battle_action_event_id: ::protobuf::MessageField<super::EDCFKACPFNB::EDCFKACPFNB>,
+    // @@protoc_insertion_point(field:DBCBMJKOBPJ.FGOAKDCBIOE)
+    pub FGOAKDCBIOE: ::protobuf::MessageField<super::EDCFKACPFNB::EDCFKACPFNB>,
     // @@protoc_insertion_point(field:DBCBMJKOBPJ.EEIPNLJNJAL)
     pub EEIPNLJNJAL: ::std::vec::Vec<super::BattleAvatar::BattleAvatar>,
-    // @@protoc_insertion_point(field:DBCBMJKOBPJ.battle_evolve_build_data)
-    pub battle_evolve_build_data: ::protobuf::MessageField<super::BattleGridFightSpecialBattleInfo::BattleGridFightSpecialBattleInfo>,
-    // @@protoc_insertion_point(field:DBCBMJKOBPJ.battle_sword_training_data)
-    pub battle_sword_training_data: ::protobuf::MessageField<super::KIAICMELIMM::KIAICMELIMM>,
+    // @@protoc_insertion_point(field:DBCBMJKOBPJ.PMCEKILFBIO)
+    pub PMCEKILFBIO: ::protobuf::MessageField<super::H_9412efba::H_9412efba>,
+    // @@protoc_insertion_point(field:DBCBMJKOBPJ.DFABBGKGDEI)
+    pub DFABBGKGDEI: ::protobuf::MessageField<super::KIAICMELIMM::KIAICMELIMM>,
     // @@protoc_insertion_point(field:DBCBMJKOBPJ.battle_rogue_magic_info)
     pub battle_rogue_magic_info: ::protobuf::MessageField<super::BattleRogueMagicInfo::BattleRogueMagicInfo>,
-    // @@protoc_insertion_point(field:DBCBMJKOBPJ.battle_fate_data)
-    pub battle_fate_data: ::protobuf::MessageField<super::PKPFAHEBJIO::PKPFAHEBJIO>,
-    // @@protoc_insertion_point(field:DBCBMJKOBPJ.battle_grid_fight_data)
-    pub battle_grid_fight_data: ::protobuf::MessageField<super::GridFightInfo::GridFightInfo>,
-    // @@protoc_insertion_point(field:DBCBMJKOBPJ.battle_fate_rin_data)
-    pub battle_fate_rin_data: ::protobuf::MessageField<super::GLIBGKGGEJL::GLIBGKGGEJL>,
+    // @@protoc_insertion_point(field:DBCBMJKOBPJ.LDPLAOHNLAP)
+    pub LDPLAOHNLAP: ::protobuf::MessageField<super::PKPFAHEBJIO::PKPFAHEBJIO>,
+    // @@protoc_insertion_point(field:DBCBMJKOBPJ.EIGMKOJOEEI)
+    pub EIGMKOJOEEI: ::protobuf::MessageField<super::OJCBOMCCPDB::OJCBOMCCPDB>,
+    // @@protoc_insertion_point(field:DBCBMJKOBPJ.PJOJCJNLAAP)
+    pub PJOJCJNLAAP: ::protobuf::MessageField<super::GLIBGKGGEJL::GLIBGKGGEJL>,
     // special fields
     // @@protoc_insertion_point(special_field:DBCBMJKOBPJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -99,24 +99,24 @@ impl DBCBMJKOBPJ {
             |m: &mut DBCBMJKOBPJ| { &mut m.battle_target_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EDCFKACPFNB::EDCFKACPFNB>(
-            "battle_action_event_id",
-            |m: &DBCBMJKOBPJ| { &m.battle_action_event_id },
-            |m: &mut DBCBMJKOBPJ| { &mut m.battle_action_event_id },
+            "FGOAKDCBIOE",
+            |m: &DBCBMJKOBPJ| { &m.FGOAKDCBIOE },
+            |m: &mut DBCBMJKOBPJ| { &mut m.FGOAKDCBIOE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "EEIPNLJNJAL",
             |m: &DBCBMJKOBPJ| { &m.EEIPNLJNJAL },
             |m: &mut DBCBMJKOBPJ| { &mut m.EEIPNLJNJAL },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BattleGridFightSpecialBattleInfo::BattleGridFightSpecialBattleInfo>(
-            "battle_evolve_build_data",
-            |m: &DBCBMJKOBPJ| { &m.battle_evolve_build_data },
-            |m: &mut DBCBMJKOBPJ| { &mut m.battle_evolve_build_data },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::H_9412efba::H_9412efba>(
+            "PMCEKILFBIO",
+            |m: &DBCBMJKOBPJ| { &m.PMCEKILFBIO },
+            |m: &mut DBCBMJKOBPJ| { &mut m.PMCEKILFBIO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KIAICMELIMM::KIAICMELIMM>(
-            "battle_sword_training_data",
-            |m: &DBCBMJKOBPJ| { &m.battle_sword_training_data },
-            |m: &mut DBCBMJKOBPJ| { &mut m.battle_sword_training_data },
+            "DFABBGKGDEI",
+            |m: &DBCBMJKOBPJ| { &m.DFABBGKGDEI },
+            |m: &mut DBCBMJKOBPJ| { &mut m.DFABBGKGDEI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BattleRogueMagicInfo::BattleRogueMagicInfo>(
             "battle_rogue_magic_info",
@@ -124,19 +124,19 @@ impl DBCBMJKOBPJ {
             |m: &mut DBCBMJKOBPJ| { &mut m.battle_rogue_magic_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PKPFAHEBJIO::PKPFAHEBJIO>(
-            "battle_fate_data",
-            |m: &DBCBMJKOBPJ| { &m.battle_fate_data },
-            |m: &mut DBCBMJKOBPJ| { &mut m.battle_fate_data },
+            "LDPLAOHNLAP",
+            |m: &DBCBMJKOBPJ| { &m.LDPLAOHNLAP },
+            |m: &mut DBCBMJKOBPJ| { &mut m.LDPLAOHNLAP },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightInfo::GridFightInfo>(
-            "battle_grid_fight_data",
-            |m: &DBCBMJKOBPJ| { &m.battle_grid_fight_data },
-            |m: &mut DBCBMJKOBPJ| { &mut m.battle_grid_fight_data },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OJCBOMCCPDB::OJCBOMCCPDB>(
+            "EIGMKOJOEEI",
+            |m: &DBCBMJKOBPJ| { &m.EIGMKOJOEEI },
+            |m: &mut DBCBMJKOBPJ| { &mut m.EIGMKOJOEEI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GLIBGKGGEJL::GLIBGKGGEJL>(
-            "battle_fate_rin_data",
-            |m: &DBCBMJKOBPJ| { &m.battle_fate_rin_data },
-            |m: &mut DBCBMJKOBPJ| { &mut m.battle_fate_rin_data },
+            "PJOJCJNLAAP",
+            |m: &DBCBMJKOBPJ| { &m.PJOJCJNLAAP },
+            |m: &mut DBCBMJKOBPJ| { &mut m.PJOJCJNLAAP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DBCBMJKOBPJ>(
             "DBCBMJKOBPJ",
@@ -184,28 +184,28 @@ impl ::protobuf::Message for DBCBMJKOBPJ {
                     self.battle_target_info.insert(key, value);
                 },
                 82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_action_event_id)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FGOAKDCBIOE)?;
                 },
                 90 => {
                     self.EEIPNLJNJAL.push(is.read_message()?);
                 },
                 98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_evolve_build_data)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PMCEKILFBIO)?;
                 },
                 106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_sword_training_data)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DFABBGKGDEI)?;
                 },
                 114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_rogue_magic_info)?;
                 },
                 122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_fate_data)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LDPLAOHNLAP)?;
                 },
                 130 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_grid_fight_data)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EIGMKOJOEEI)?;
                 },
                 138 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_fate_rin_data)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PJOJCJNLAAP)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -241,7 +241,7 @@ impl ::protobuf::Message for DBCBMJKOBPJ {
             entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if let Some(v) = self.battle_action_event_id.as_ref() {
+        if let Some(v) = self.FGOAKDCBIOE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -249,11 +249,11 @@ impl ::protobuf::Message for DBCBMJKOBPJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.battle_evolve_build_data.as_ref() {
+        if let Some(v) = self.PMCEKILFBIO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.battle_sword_training_data.as_ref() {
+        if let Some(v) = self.DFABBGKGDEI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -261,15 +261,15 @@ impl ::protobuf::Message for DBCBMJKOBPJ {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.battle_fate_data.as_ref() {
+        if let Some(v) = self.LDPLAOHNLAP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.battle_grid_fight_data.as_ref() {
+        if let Some(v) = self.EIGMKOJOEEI.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.battle_fate_rin_data.as_ref() {
+        if let Some(v) = self.PJOJCJNLAAP.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -301,28 +301,28 @@ impl ::protobuf::Message for DBCBMJKOBPJ {
             os.write_uint32(1, *k)?;
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        if let Some(v) = self.battle_action_event_id.as_ref() {
+        if let Some(v) = self.FGOAKDCBIOE.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         for v in &self.EEIPNLJNJAL {
             ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
-        if let Some(v) = self.battle_evolve_build_data.as_ref() {
+        if let Some(v) = self.PMCEKILFBIO.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
-        if let Some(v) = self.battle_sword_training_data.as_ref() {
+        if let Some(v) = self.DFABBGKGDEI.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         if let Some(v) = self.battle_rogue_magic_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
-        if let Some(v) = self.battle_fate_data.as_ref() {
+        if let Some(v) = self.LDPLAOHNLAP.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
-        if let Some(v) = self.battle_grid_fight_data.as_ref() {
+        if let Some(v) = self.EIGMKOJOEEI.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(16, v, os)?;
         }
-        if let Some(v) = self.battle_fate_rin_data.as_ref() {
+        if let Some(v) = self.PJOJCJNLAAP.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(17, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -347,14 +347,14 @@ impl ::protobuf::Message for DBCBMJKOBPJ {
         self.buff_list.clear();
         self.world_level = 0;
         self.battle_target_info.clear();
-        self.battle_action_event_id.clear();
+        self.FGOAKDCBIOE.clear();
         self.EEIPNLJNJAL.clear();
-        self.battle_evolve_build_data.clear();
-        self.battle_sword_training_data.clear();
+        self.PMCEKILFBIO.clear();
+        self.DFABBGKGDEI.clear();
         self.battle_rogue_magic_info.clear();
-        self.battle_fate_data.clear();
-        self.battle_grid_fight_data.clear();
-        self.battle_fate_rin_data.clear();
+        self.LDPLAOHNLAP.clear();
+        self.EIGMKOJOEEI.clear();
+        self.PJOJCJNLAAP.clear();
         self.special_fields.clear();
     }
 
@@ -383,29 +383,27 @@ impl ::protobuf::reflect::ProtobufValue for DBCBMJKOBPJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DBCBMJKOBPJ.proto\x1a\x12BattleAvatar.proto\x1a\x10BattleBuff.prot\
-    o\x1a&BattleGridFightSpecialBattleInfo.proto\x1a\x17BattleMonsterWave.pr\
-    oto\x1a\x1aBattleRogueMagicInfo.proto\x1a\x16BattleTargetList.proto\x1a\
-    \x11EDCFKACPFNB.proto\x1a\x11GLIBGKGGEJL.proto\x1a\x13GridFightInfo.prot\
-    o\x1a\x11KIAICMELIMM.proto\x1a\x11PKPFAHEBJIO.proto\"\x97\x07\n\x0bDBCBM\
-    JKOBPJ\x12.\n\x0bavatar_list\x18\x01\x20\x03(\x0b2\r.BattleAvatarR\navat\
-    arList\x12>\n\x11monster_wave_list\x18\x02\x20\x03(\x0b2\x12.BattleMonst\
-    erWaveR\x0fmonsterWaveList\x12(\n\tbuff_list\x18\x03\x20\x03(\x0b2\x0b.B\
-    attleBuffR\x08buffList\x12\x1f\n\x0bworld_level\x18\x07\x20\x01(\rR\nwor\
-    ldLevel\x12P\n\x12battle_target_info\x18\t\x20\x03(\x0b2\".DBCBMJKOBPJ.B\
-    attleTargetInfoEntryR\x10battleTargetInfo\x12A\n\x16battle_action_event_\
-    id\x18\n\x20\x01(\x0b2\x0c.EDCFKACPFNBR\x13battleActionEventId\x12/\n\
-    \x0bEEIPNLJNJAL\x18\x0b\x20\x03(\x0b2\r.BattleAvatarR\x0bEEIPNLJNJAL\x12\
-    Z\n\x18battle_evolve_build_data\x18\x0c\x20\x01(\x0b2!.BattleGridFightSp\
-    ecialBattleInfoR\x15battleEvolveBuildData\x12I\n\x1abattle_sword_trainin\
-    g_data\x18\r\x20\x01(\x0b2\x0c.KIAICMELIMMR\x17battleSwordTrainingData\
-    \x12L\n\x17battle_rogue_magic_info\x18\x0e\x20\x01(\x0b2\x15.BattleRogue\
-    MagicInfoR\x14battleRogueMagicInfo\x126\n\x10battle_fate_data\x18\x0f\
-    \x20\x01(\x0b2\x0c.PKPFAHEBJIOR\x0ebattleFateData\x12C\n\x16battle_grid_\
-    fight_data\x18\x10\x20\x01(\x0b2\x0e.GridFightInfoR\x13battleGridFightDa\
-    ta\x12=\n\x14battle_fate_rin_data\x18\x11\x20\x01(\x0b2\x0c.GLIBGKGGEJLR\
-    \x11battleFateRinData\x1aV\n\x15BattleTargetInfoEntry\x12\x10\n\x03key\
-    \x18\x01\x20\x01(\rR\x03key\x12'\n\x05value\x18\x02\x20\x01(\x0b2\x11.Ba\
-    ttleTargetListR\x05value:\x028\x01b\x06proto3\
+    o\x1a\x17BattleMonsterWave.proto\x1a\x1aBattleRogueMagicInfo.proto\x1a\
+    \x16BattleTargetList.proto\x1a\x11EDCFKACPFNB.proto\x1a\x11GLIBGKGGEJL.p\
+    roto\x1a\x10H_9412efba.proto\x1a\x11KIAICMELIMM.proto\x1a\x11OJCBOMCCPDB\
+    .proto\x1a\x11PKPFAHEBJIO.proto\"\x90\x06\n\x0bDBCBMJKOBPJ\x12.\n\x0bava\
+    tar_list\x18\x01\x20\x03(\x0b2\r.BattleAvatarR\navatarList\x12>\n\x11mon\
+    ster_wave_list\x18\x02\x20\x03(\x0b2\x12.BattleMonsterWaveR\x0fmonsterWa\
+    veList\x12(\n\tbuff_list\x18\x03\x20\x03(\x0b2\x0b.BattleBuffR\x08buffLi\
+    st\x12\x1f\n\x0bworld_level\x18\x07\x20\x01(\rR\nworldLevel\x12P\n\x12ba\
+    ttle_target_info\x18\t\x20\x03(\x0b2\".DBCBMJKOBPJ.BattleTargetInfoEntry\
+    R\x10battleTargetInfo\x12.\n\x0bFGOAKDCBIOE\x18\n\x20\x01(\x0b2\x0c.EDCF\
+    KACPFNBR\x0bFGOAKDCBIOE\x12/\n\x0bEEIPNLJNJAL\x18\x0b\x20\x03(\x0b2\r.Ba\
+    ttleAvatarR\x0bEEIPNLJNJAL\x12-\n\x0bPMCEKILFBIO\x18\x0c\x20\x01(\x0b2\
+    \x0b.H_9412efbaR\x0bPMCEKILFBIO\x12.\n\x0bDFABBGKGDEI\x18\r\x20\x01(\x0b\
+    2\x0c.KIAICMELIMMR\x0bDFABBGKGDEI\x12L\n\x17battle_rogue_magic_info\x18\
+    \x0e\x20\x01(\x0b2\x15.BattleRogueMagicInfoR\x14battleRogueMagicInfo\x12\
+    .\n\x0bLDPLAOHNLAP\x18\x0f\x20\x01(\x0b2\x0c.PKPFAHEBJIOR\x0bLDPLAOHNLAP\
+    \x12.\n\x0bEIGMKOJOEEI\x18\x10\x20\x01(\x0b2\x0c.OJCBOMCCPDBR\x0bEIGMKOJ\
+    OEEI\x12.\n\x0bPJOJCJNLAAP\x18\x11\x20\x01(\x0b2\x0c.GLIBGKGGEJLR\x0bPJO\
+    JCJNLAAP\x1aV\n\x15BattleTargetInfoEntry\x12\x10\n\x03key\x18\x01\x20\
+    \x01(\rR\x03key\x12'\n\x05value\x18\x02\x20\x01(\x0b2\x11.BattleTargetLi\
+    stR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -425,14 +423,14 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             let mut deps = ::std::vec::Vec::with_capacity(11);
             deps.push(super::BattleAvatar::file_descriptor().clone());
             deps.push(super::BattleBuff::file_descriptor().clone());
-            deps.push(super::BattleGridFightSpecialBattleInfo::file_descriptor().clone());
             deps.push(super::BattleMonsterWave::file_descriptor().clone());
             deps.push(super::BattleRogueMagicInfo::file_descriptor().clone());
             deps.push(super::BattleTargetList::file_descriptor().clone());
             deps.push(super::EDCFKACPFNB::file_descriptor().clone());
             deps.push(super::GLIBGKGGEJL::file_descriptor().clone());
-            deps.push(super::GridFightInfo::file_descriptor().clone());
+            deps.push(super::H_9412efba::file_descriptor().clone());
             deps.push(super::KIAICMELIMM::file_descriptor().clone());
+            deps.push(super::OJCBOMCCPDB::file_descriptor().clone());
             deps.push(super::PKPFAHEBJIO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(DBCBMJKOBPJ::generated_message_descriptor_data());

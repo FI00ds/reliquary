@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ONPMJJOCBMM {
     // message fields
-    // @@protoc_insertion_point(field:ONPMJJOCBMM.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:ONPMJJOCBMM.LNGJODEPCDN)
     pub LNGJODEPCDN: u32,
+    // @@protoc_insertion_point(field:ONPMJJOCBMM.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ONPMJJOCBMM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ONPMJJOCBMM {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &ONPMJJOCBMM| { &m.retcode },
-            |m: &mut ONPMJJOCBMM| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LNGJODEPCDN",
             |m: &ONPMJJOCBMM| { &m.LNGJODEPCDN },
             |m: &mut ONPMJJOCBMM| { &mut m.LNGJODEPCDN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &ONPMJJOCBMM| { &m.retcode },
+            |m: &mut ONPMJJOCBMM| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ONPMJJOCBMM>(
             "ONPMJJOCBMM",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for ONPMJJOCBMM {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 80 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                88 => {
                     self.LNGJODEPCDN = is.read_uint32()?;
+                },
+                104 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ONPMJJOCBMM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
-        }
         if self.LNGJODEPCDN != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LNGJODEPCDN);
+            my_size += ::protobuf::rt::uint32_size(10, self.LNGJODEPCDN);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ONPMJJOCBMM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
-        }
         if self.LNGJODEPCDN != 0 {
-            os.write_uint32(11, self.LNGJODEPCDN)?;
+            os.write_uint32(10, self.LNGJODEPCDN)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for ONPMJJOCBMM {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.LNGJODEPCDN = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ONPMJJOCBMM {
         static instance: ONPMJJOCBMM = ONPMJJOCBMM {
-            retcode: 0,
             LNGJODEPCDN: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ONPMJJOCBMM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ONPMJJOCBMM.proto\"I\n\x0bONPMJJOCBMM\x12\x18\n\x07retcode\x18\n\
-    \x20\x01(\rR\x07retcode\x12\x20\n\x0bLNGJODEPCDN\x18\x0b\x20\x01(\rR\x0b\
-    LNGJODEPCDNb\x06proto3\
+    \n\x11ONPMJJOCBMM.proto\"I\n\x0bONPMJJOCBMM\x12\x20\n\x0bLNGJODEPCDN\x18\
+    \n\x20\x01(\rR\x0bLNGJODEPCDN\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07\
+    retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

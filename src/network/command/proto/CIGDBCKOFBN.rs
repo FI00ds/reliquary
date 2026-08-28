@@ -82,7 +82,7 @@ impl ::protobuf::Message for CIGDBCKOFBN {
                 16 => {
                     self.NPNMLPNBHDP = is.read_uint32()?;
                 },
-                80 => {
+                72 => {
                     self.ALAJJMKOMML = is.read_bool()?;
                 },
                 tag => {
@@ -113,7 +113,7 @@ impl ::protobuf::Message for CIGDBCKOFBN {
             os.write_uint32(2, self.NPNMLPNBHDP)?;
         }
         if self.ALAJJMKOMML != false {
-            os.write_bool(10, self.ALAJJMKOMML)?;
+            os.write_bool(9, self.ALAJJMKOMML)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for CIGDBCKOFBN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CIGDBCKOFBN.proto\"Q\n\x0bCIGDBCKOFBN\x12\x20\n\x0bNPNMLPNBHDP\x18\
-    \x02\x20\x01(\rR\x0bNPNMLPNBHDP\x12\x20\n\x0bALAJJMKOMML\x18\n\x20\x01(\
+    \x02\x20\x01(\rR\x0bNPNMLPNBHDP\x12\x20\n\x0bALAJJMKOMML\x18\t\x20\x01(\
     \x08R\x0bALAJJMKOMMLb\x06proto3\
 ";
 

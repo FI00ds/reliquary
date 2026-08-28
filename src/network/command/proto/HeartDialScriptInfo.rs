@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HeartDialScriptInfo {
     // message fields
-    // @@protoc_insertion_point(field:HeartDialScriptInfo.script_id)
-    pub script_id: u32,
-    // @@protoc_insertion_point(field:HeartDialScriptInfo.EEKCKFGHGEH)
-    pub EEKCKFGHGEH: bool,
     // @@protoc_insertion_point(field:HeartDialScriptInfo.step)
     pub step: ::protobuf::EnumOrUnknown<super::HeartDialStepType::HeartDialStepType>,
-    // @@protoc_insertion_point(field:HeartDialScriptInfo.cur_emotion_type)
-    pub cur_emotion_type: ::protobuf::EnumOrUnknown<super::HeartDialEmotionType::HeartDialEmotionType>,
     // @@protoc_insertion_point(field:HeartDialScriptInfo.LHCOJIEBFFM)
     pub LHCOJIEBFFM: bool,
+    // @@protoc_insertion_point(field:HeartDialScriptInfo.EEKCKFGHGEH)
+    pub EEKCKFGHGEH: bool,
+    // @@protoc_insertion_point(field:HeartDialScriptInfo.cur_emotion_type)
+    pub cur_emotion_type: ::protobuf::EnumOrUnknown<super::HeartDialEmotionType::HeartDialEmotionType>,
+    // @@protoc_insertion_point(field:HeartDialScriptInfo.script_id)
+    pub script_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HeartDialScriptInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,14 @@ impl HeartDialScriptInfo {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "script_id",
-            |m: &HeartDialScriptInfo| { &m.script_id },
-            |m: &mut HeartDialScriptInfo| { &mut m.script_id },
+            "step",
+            |m: &HeartDialScriptInfo| { &m.step },
+            |m: &mut HeartDialScriptInfo| { &mut m.step },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LHCOJIEBFFM",
+            |m: &HeartDialScriptInfo| { &m.LHCOJIEBFFM },
+            |m: &mut HeartDialScriptInfo| { &mut m.LHCOJIEBFFM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EEKCKFGHGEH",
@@ -68,19 +73,14 @@ impl HeartDialScriptInfo {
             |m: &mut HeartDialScriptInfo| { &mut m.EEKCKFGHGEH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "step",
-            |m: &HeartDialScriptInfo| { &m.step },
-            |m: &mut HeartDialScriptInfo| { &mut m.step },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cur_emotion_type",
             |m: &HeartDialScriptInfo| { &m.cur_emotion_type },
             |m: &mut HeartDialScriptInfo| { &mut m.cur_emotion_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LHCOJIEBFFM",
-            |m: &HeartDialScriptInfo| { &m.LHCOJIEBFFM },
-            |m: &mut HeartDialScriptInfo| { &mut m.LHCOJIEBFFM },
+            "script_id",
+            |m: &HeartDialScriptInfo| { &m.script_id },
+            |m: &mut HeartDialScriptInfo| { &mut m.script_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HeartDialScriptInfo>(
             "HeartDialScriptInfo",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for HeartDialScriptInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.script_id = is.read_uint32()?;
+                8 => {
+                    self.step = is.read_enum_or_unknown()?;
+                },
+                16 => {
+                    self.LHCOJIEBFFM = is.read_bool()?;
                 },
                 88 => {
                     self.EEKCKFGHGEH = is.read_bool()?;
-                },
-                96 => {
-                    self.step = is.read_enum_or_unknown()?;
                 },
                 112 => {
                     self.cur_emotion_type = is.read_enum_or_unknown()?;
                 },
                 120 => {
-                    self.LHCOJIEBFFM = is.read_bool()?;
+                    self.script_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for HeartDialScriptInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.script_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.script_id);
+        if self.step != ::protobuf::EnumOrUnknown::new(super::HeartDialStepType::HeartDialStepType::HeartDialStepType_COEEJALELPF) {
+            my_size += ::protobuf::rt::int32_size(1, self.step.value());
+        }
+        if self.LHCOJIEBFFM != false {
+            my_size += 1 + 1;
         }
         if self.EEKCKFGHGEH != false {
             my_size += 1 + 1;
         }
-        if self.step != ::protobuf::EnumOrUnknown::new(super::HeartDialStepType::HeartDialStepType::HeartDialStepType_COEEJALELPF) {
-            my_size += ::protobuf::rt::int32_size(12, self.step.value());
-        }
         if self.cur_emotion_type != ::protobuf::EnumOrUnknown::new(super::HeartDialEmotionType::HeartDialEmotionType::HEART_DIAL_EMOTION_TYPE_PEACE) {
             my_size += ::protobuf::rt::int32_size(14, self.cur_emotion_type.value());
         }
-        if self.LHCOJIEBFFM != false {
-            my_size += 1 + 1;
+        if self.script_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.script_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for HeartDialScriptInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.script_id != 0 {
-            os.write_uint32(5, self.script_id)?;
+        if self.step != ::protobuf::EnumOrUnknown::new(super::HeartDialStepType::HeartDialStepType::HeartDialStepType_COEEJALELPF) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.step))?;
+        }
+        if self.LHCOJIEBFFM != false {
+            os.write_bool(2, self.LHCOJIEBFFM)?;
         }
         if self.EEKCKFGHGEH != false {
             os.write_bool(11, self.EEKCKFGHGEH)?;
         }
-        if self.step != ::protobuf::EnumOrUnknown::new(super::HeartDialStepType::HeartDialStepType::HeartDialStepType_COEEJALELPF) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.step))?;
-        }
         if self.cur_emotion_type != ::protobuf::EnumOrUnknown::new(super::HeartDialEmotionType::HeartDialEmotionType::HEART_DIAL_EMOTION_TYPE_PEACE) {
             os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.cur_emotion_type))?;
         }
-        if self.LHCOJIEBFFM != false {
-            os.write_bool(15, self.LHCOJIEBFFM)?;
+        if self.script_id != 0 {
+            os.write_uint32(15, self.script_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for HeartDialScriptInfo {
     }
 
     fn clear(&mut self) {
-        self.script_id = 0;
-        self.EEKCKFGHGEH = false;
         self.step = ::protobuf::EnumOrUnknown::new(super::HeartDialStepType::HeartDialStepType::HeartDialStepType_COEEJALELPF);
-        self.cur_emotion_type = ::protobuf::EnumOrUnknown::new(super::HeartDialEmotionType::HeartDialEmotionType::HEART_DIAL_EMOTION_TYPE_PEACE);
         self.LHCOJIEBFFM = false;
+        self.EEKCKFGHGEH = false;
+        self.cur_emotion_type = ::protobuf::EnumOrUnknown::new(super::HeartDialEmotionType::HeartDialEmotionType::HEART_DIAL_EMOTION_TYPE_PEACE);
+        self.script_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HeartDialScriptInfo {
         static instance: HeartDialScriptInfo = HeartDialScriptInfo {
-            script_id: 0,
-            EEKCKFGHGEH: false,
             step: ::protobuf::EnumOrUnknown::from_i32(0),
-            cur_emotion_type: ::protobuf::EnumOrUnknown::from_i32(0),
             LHCOJIEBFFM: false,
+            EEKCKFGHGEH: false,
+            cur_emotion_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            script_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,12 +220,12 @@ impl ::protobuf::reflect::ProtobufValue for HeartDialScriptInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19HeartDialScriptInfo.proto\x1a\x1aHeartDialEmotionType.proto\x1a\
-    \x17HeartDialStepType.proto\"\xdf\x01\n\x13HeartDialScriptInfo\x12\x1b\n\
-    \tscript_id\x18\x05\x20\x01(\rR\x08scriptId\x12\x20\n\x0bEEKCKFGHGEH\x18\
-    \x0b\x20\x01(\x08R\x0bEEKCKFGHGEH\x12&\n\x04step\x18\x0c\x20\x01(\x0e2\
-    \x12.HeartDialStepTypeR\x04step\x12?\n\x10cur_emotion_type\x18\x0e\x20\
-    \x01(\x0e2\x15.HeartDialEmotionTypeR\x0ecurEmotionType\x12\x20\n\x0bLHCO\
-    JIEBFFM\x18\x0f\x20\x01(\x08R\x0bLHCOJIEBFFMb\x06proto3\
+    \x17HeartDialStepType.proto\"\xdf\x01\n\x13HeartDialScriptInfo\x12&\n\
+    \x04step\x18\x01\x20\x01(\x0e2\x12.HeartDialStepTypeR\x04step\x12\x20\n\
+    \x0bLHCOJIEBFFM\x18\x02\x20\x01(\x08R\x0bLHCOJIEBFFM\x12\x20\n\x0bEEKCKF\
+    GHGEH\x18\x0b\x20\x01(\x08R\x0bEEKCKFGHGEH\x12?\n\x10cur_emotion_type\
+    \x18\x0e\x20\x01(\x0e2\x15.HeartDialEmotionTypeR\x0ecurEmotionType\x12\
+    \x1b\n\tscript_id\x18\x0f\x20\x01(\rR\x08scriptIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,13 +29,13 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct BCCONKJHDJL {
     // message fields
     // @@protoc_insertion_point(field:BCCONKJHDJL.FKKGLFOHGGA)
-    pub FKKGLFOHGGA: ::protobuf::EnumOrUnknown<super::GridFightDropType::GridFightDropType>,
+    pub FKKGLFOHGGA: ::protobuf::EnumOrUnknown<super::H_7185d650::H_7185d650>,
     // @@protoc_insertion_point(field:BCCONKJHDJL.FNLMKJLKLFH)
     pub FNLMKJLKLFH: u32,
     // @@protoc_insertion_point(field:BCCONKJHDJL.num)
     pub num: u32,
-    // @@protoc_insertion_point(field:BCCONKJHDJL.param)
-    pub param: ::protobuf::MessageField<super::AOHKKFHDALO::AOHKKFHDALO>,
+    // @@protoc_insertion_point(field:BCCONKJHDJL.display_value)
+    pub display_value: ::protobuf::MessageField<super::AOHKKFHDALO::AOHKKFHDALO>,
     // special fields
     // @@protoc_insertion_point(special_field:BCCONKJHDJL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -71,9 +71,9 @@ impl BCCONKJHDJL {
             |m: &mut BCCONKJHDJL| { &mut m.num },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AOHKKFHDALO::AOHKKFHDALO>(
-            "param",
-            |m: &BCCONKJHDJL| { &m.param },
-            |m: &mut BCCONKJHDJL| { &mut m.param },
+            "display_value",
+            |m: &BCCONKJHDJL| { &m.display_value },
+            |m: &mut BCCONKJHDJL| { &mut m.display_value },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BCCONKJHDJL>(
             "BCCONKJHDJL",
@@ -103,7 +103,7 @@ impl ::protobuf::Message for BCCONKJHDJL {
                     self.num = is.read_uint32()?;
                 },
                 42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.param)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.display_value)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,7 +117,7 @@ impl ::protobuf::Message for BCCONKJHDJL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FKKGLFOHGGA != ::protobuf::EnumOrUnknown::new(super::GridFightDropType::GridFightDropType::MJJIFGINJAJ_NLCDGIPGFDJ) {
+        if self.FKKGLFOHGGA != ::protobuf::EnumOrUnknown::new(super::H_7185d650::H_7185d650::H_ef1fcda2) {
             my_size += ::protobuf::rt::int32_size(1, self.FKKGLFOHGGA.value());
         }
         if self.FNLMKJLKLFH != 0 {
@@ -126,7 +126,7 @@ impl ::protobuf::Message for BCCONKJHDJL {
         if self.num != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.num);
         }
-        if let Some(v) = self.param.as_ref() {
+        if let Some(v) = self.display_value.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -136,7 +136,7 @@ impl ::protobuf::Message for BCCONKJHDJL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FKKGLFOHGGA != ::protobuf::EnumOrUnknown::new(super::GridFightDropType::GridFightDropType::MJJIFGINJAJ_NLCDGIPGFDJ) {
+        if self.FKKGLFOHGGA != ::protobuf::EnumOrUnknown::new(super::H_7185d650::H_7185d650::H_ef1fcda2) {
             os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.FKKGLFOHGGA))?;
         }
         if self.FNLMKJLKLFH != 0 {
@@ -145,7 +145,7 @@ impl ::protobuf::Message for BCCONKJHDJL {
         if self.num != 0 {
             os.write_uint32(3, self.num)?;
         }
-        if let Some(v) = self.param.as_ref() {
+        if let Some(v) = self.display_value.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -165,10 +165,10 @@ impl ::protobuf::Message for BCCONKJHDJL {
     }
 
     fn clear(&mut self) {
-        self.FKKGLFOHGGA = ::protobuf::EnumOrUnknown::new(super::GridFightDropType::GridFightDropType::MJJIFGINJAJ_NLCDGIPGFDJ);
+        self.FKKGLFOHGGA = ::protobuf::EnumOrUnknown::new(super::H_7185d650::H_7185d650::H_ef1fcda2);
         self.FNLMKJLKLFH = 0;
         self.num = 0;
-        self.param.clear();
+        self.display_value.clear();
         self.special_fields.clear();
     }
 
@@ -177,7 +177,7 @@ impl ::protobuf::Message for BCCONKJHDJL {
             FKKGLFOHGGA: ::protobuf::EnumOrUnknown::from_i32(0),
             FNLMKJLKLFH: 0,
             num: 0,
-            param: ::protobuf::MessageField::none(),
+            display_value: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,12 +202,12 @@ impl ::protobuf::reflect::ProtobufValue for BCCONKJHDJL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BCCONKJHDJL.proto\x1a\x11AOHKKFHDALO.proto\x1a\x17GridFightDropTyp\
-    e.proto\"\x9b\x01\n\x0bBCCONKJHDJL\x124\n\x0bFKKGLFOHGGA\x18\x01\x20\x01\
-    (\x0e2\x12.GridFightDropTypeR\x0bFKKGLFOHGGA\x12\x20\n\x0bFNLMKJLKLFH\
-    \x18\x02\x20\x01(\rR\x0bFNLMKJLKLFH\x12\x10\n\x03num\x18\x03\x20\x01(\rR\
-    \x03num\x12\"\n\x05param\x18\x05\x20\x01(\x0b2\x0c.AOHKKFHDALOR\x05param\
-    b\x06proto3\
+    \n\x11BCCONKJHDJL.proto\x1a\x11AOHKKFHDALO.proto\x1a\x10H_7185d650.proto\
+    \"\xa3\x01\n\x0bBCCONKJHDJL\x12-\n\x0bFKKGLFOHGGA\x18\x01\x20\x01(\x0e2\
+    \x0b.H_7185d650R\x0bFKKGLFOHGGA\x12\x20\n\x0bFNLMKJLKLFH\x18\x02\x20\x01\
+    (\rR\x0bFNLMKJLKLFH\x12\x10\n\x03num\x18\x03\x20\x01(\rR\x03num\x121\n\r\
+    display_value\x18\x05\x20\x01(\x0b2\x0c.AOHKKFHDALOR\x0cdisplayValueb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,7 +226,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::AOHKKFHDALO::file_descriptor().clone());
-            deps.push(super::GridFightDropType::file_descriptor().clone());
+            deps.push(super::H_7185d650::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BCCONKJHDJL::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

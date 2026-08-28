@@ -82,7 +82,7 @@ impl ::protobuf::Message for EnterChallengeNextPhaseScRsp {
                 24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for EnterChallengeNextPhaseScRsp {
             os.write_uint32(3, self.retcode)?;
         }
         if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for EnterChallengeNextPhaseScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"EnterChallengeNextPhaseScRsp.proto\x1a\x0fSceneInfo.proto\"Z\n\x1cEn\
     terChallengeNextPhaseScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07r\
-    etcode\x12\x20\n\x05scene\x18\r\x20\x01(\x0b2\n.SceneInfoR\x05sceneb\x06\
+    etcode\x12\x20\n\x05scene\x18\n\x20\x01(\x0b2\n.SceneInfoR\x05sceneb\x06\
     proto3\
 ";
 

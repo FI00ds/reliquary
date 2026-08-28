@@ -79,10 +79,10 @@ impl ::protobuf::Message for GLILLENEIJK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                24 => {
                     self.GNIFODGCPAA = is.read_uint32()?;
                 },
-                112 => {
+                88 => {
                     self.FFFNGBKHOEA = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GLILLENEIJK {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.GNIFODGCPAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.GNIFODGCPAA);
+            my_size += ::protobuf::rt::uint32_size(3, self.GNIFODGCPAA);
         }
         if self.FFFNGBKHOEA != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.FFFNGBKHOEA);
+            my_size += ::protobuf::rt::uint32_size(11, self.FFFNGBKHOEA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GLILLENEIJK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.GNIFODGCPAA != 0 {
-            os.write_uint32(8, self.GNIFODGCPAA)?;
+            os.write_uint32(3, self.GNIFODGCPAA)?;
         }
         if self.FFFNGBKHOEA != 0 {
-            os.write_uint32(14, self.FFFNGBKHOEA)?;
+            os.write_uint32(11, self.FFFNGBKHOEA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for GLILLENEIJK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GLILLENEIJK.proto\"Q\n\x0bGLILLENEIJK\x12\x20\n\x0bGNIFODGCPAA\x18\
-    \x08\x20\x01(\rR\x0bGNIFODGCPAA\x12\x20\n\x0bFFFNGBKHOEA\x18\x0e\x20\x01\
+    \x03\x20\x01(\rR\x0bGNIFODGCPAA\x12\x20\n\x0bFFFNGBKHOEA\x18\x0b\x20\x01\
     (\rR\x0bFFFNGBKHOEAb\x06proto3\
 ";
 

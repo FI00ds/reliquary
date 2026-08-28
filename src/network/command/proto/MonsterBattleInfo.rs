@@ -62,16 +62,16 @@ pub struct MonsterBattleInfo {
     pub MBDMCJLFJOO: f64,
     // @@protoc_insertion_point(field:MonsterBattleInfo.delay_cumulate)
     pub delay_cumulate: f64,
-    // @@protoc_insertion_point(field:MonsterBattleInfo.death_source)
-    pub death_source: ::protobuf::EnumOrUnknown<super::KPOIEOPCEJL::KPOIEOPCEJL>,
+    // @@protoc_insertion_point(field:MonsterBattleInfo.HFELBILEHNM)
+    pub HFELBILEHNM: ::protobuf::EnumOrUnknown<super::KPOIEOPCEJL::KPOIEOPCEJL>,
     // @@protoc_insertion_point(field:MonsterBattleInfo.wave)
     pub wave: u32,
     // @@protoc_insertion_point(field:MonsterBattleInfo.JFDOMCHHBIF)
     pub JFDOMCHHBIF: i32,
     // @@protoc_insertion_point(field:MonsterBattleInfo.phase)
     pub phase: u32,
-    // @@protoc_insertion_point(field:MonsterBattleInfo.max_phase)
-    pub max_phase: u32,
+    // @@protoc_insertion_point(field:MonsterBattleInfo.NMKKAAGNCPC)
+    pub NMKKAAGNCPC: u32,
     // @@protoc_insertion_point(field:MonsterBattleInfo.GCAEPLJHCFE)
     pub GCAEPLJHCFE: ::protobuf::EnumOrUnknown<super::HDFAPKLGEFM::HDFAPKLGEFM>,
     // @@protoc_insertion_point(field:MonsterBattleInfo.skill_info)
@@ -86,6 +86,8 @@ pub struct MonsterBattleInfo {
     pub IBENGEOJFOJ: f64,
     // @@protoc_insertion_point(field:MonsterBattleInfo.AHKJLOJDNIC)
     pub AHKJLOJDNIC: ::protobuf::EnumOrUnknown<super::NLNEBDEEONP::NLNEBDEEONP>,
+    // @@protoc_insertion_point(field:MonsterBattleInfo.FAGBLGNJGDN)
+    pub FAGBLGNJGDN: bool,
     // special fields
     // @@protoc_insertion_point(special_field:MonsterBattleInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -103,7 +105,7 @@ impl MonsterBattleInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(29);
+        let mut fields = ::std::vec::Vec::with_capacity(30);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "entity_id",
@@ -191,9 +193,9 @@ impl MonsterBattleInfo {
             |m: &mut MonsterBattleInfo| { &mut m.delay_cumulate },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "death_source",
-            |m: &MonsterBattleInfo| { &m.death_source },
-            |m: &mut MonsterBattleInfo| { &mut m.death_source },
+            "HFELBILEHNM",
+            |m: &MonsterBattleInfo| { &m.HFELBILEHNM },
+            |m: &mut MonsterBattleInfo| { &mut m.HFELBILEHNM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "wave",
@@ -211,9 +213,9 @@ impl MonsterBattleInfo {
             |m: &mut MonsterBattleInfo| { &mut m.phase },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "max_phase",
-            |m: &MonsterBattleInfo| { &m.max_phase },
-            |m: &mut MonsterBattleInfo| { &mut m.max_phase },
+            "NMKKAAGNCPC",
+            |m: &MonsterBattleInfo| { &m.NMKKAAGNCPC },
+            |m: &mut MonsterBattleInfo| { &mut m.NMKKAAGNCPC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GCAEPLJHCFE",
@@ -249,6 +251,11 @@ impl MonsterBattleInfo {
             "AHKJLOJDNIC",
             |m: &MonsterBattleInfo| { &m.AHKJLOJDNIC },
             |m: &mut MonsterBattleInfo| { &mut m.AHKJLOJDNIC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FAGBLGNJGDN",
+            |m: &MonsterBattleInfo| { &m.FAGBLGNJGDN },
+            |m: &mut MonsterBattleInfo| { &mut m.FAGBLGNJGDN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonsterBattleInfo>(
             "MonsterBattleInfo",
@@ -320,7 +327,7 @@ impl ::protobuf::Message for MonsterBattleInfo {
                     self.delay_cumulate = is.read_double()?;
                 },
                 160 => {
-                    self.death_source = is.read_enum_or_unknown()?;
+                    self.HFELBILEHNM = is.read_enum_or_unknown()?;
                 },
                 168 => {
                     self.wave = is.read_uint32()?;
@@ -332,7 +339,7 @@ impl ::protobuf::Message for MonsterBattleInfo {
                     self.phase = is.read_uint32()?;
                 },
                 192 => {
-                    self.max_phase = is.read_uint32()?;
+                    self.NMKKAAGNCPC = is.read_uint32()?;
                 },
                 200 => {
                     self.GCAEPLJHCFE = is.read_enum_or_unknown()?;
@@ -354,6 +361,9 @@ impl ::protobuf::Message for MonsterBattleInfo {
                 },
                 248 => {
                     self.AHKJLOJDNIC = is.read_enum_or_unknown()?;
+                },
+                256 => {
+                    self.FAGBLGNJGDN = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -421,8 +431,8 @@ impl ::protobuf::Message for MonsterBattleInfo {
         if self.delay_cumulate != 0. {
             my_size += 2 + 8;
         }
-        if self.death_source != ::protobuf::EnumOrUnknown::new(super::KPOIEOPCEJL::KPOIEOPCEJL::KPOIEOPCEJL_PJAAADFOKKC) {
-            my_size += ::protobuf::rt::int32_size(20, self.death_source.value());
+        if self.HFELBILEHNM != ::protobuf::EnumOrUnknown::new(super::KPOIEOPCEJL::KPOIEOPCEJL::KPOIEOPCEJL_PJAAADFOKKC) {
+            my_size += ::protobuf::rt::int32_size(20, self.HFELBILEHNM.value());
         }
         if self.wave != 0 {
             my_size += ::protobuf::rt::uint32_size(21, self.wave);
@@ -433,8 +443,8 @@ impl ::protobuf::Message for MonsterBattleInfo {
         if self.phase != 0 {
             my_size += ::protobuf::rt::uint32_size(23, self.phase);
         }
-        if self.max_phase != 0 {
-            my_size += ::protobuf::rt::uint32_size(24, self.max_phase);
+        if self.NMKKAAGNCPC != 0 {
+            my_size += ::protobuf::rt::uint32_size(24, self.NMKKAAGNCPC);
         }
         if self.GCAEPLJHCFE != ::protobuf::EnumOrUnknown::new(super::HDFAPKLGEFM::HDFAPKLGEFM::HDFAPKLGEFM_LCOKOJCGKHP) {
             my_size += ::protobuf::rt::int32_size(25, self.GCAEPLJHCFE.value());
@@ -458,6 +468,9 @@ impl ::protobuf::Message for MonsterBattleInfo {
         }
         if self.AHKJLOJDNIC != ::protobuf::EnumOrUnknown::new(super::NLNEBDEEONP::NLNEBDEEONP::NLNEBDEEONP_HHDDIFHGNHD) {
             my_size += ::protobuf::rt::int32_size(31, self.AHKJLOJDNIC.value());
+        }
+        if self.FAGBLGNJGDN != false {
+            my_size += 2 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -516,8 +529,8 @@ impl ::protobuf::Message for MonsterBattleInfo {
         if self.delay_cumulate != 0. {
             os.write_double(19, self.delay_cumulate)?;
         }
-        if self.death_source != ::protobuf::EnumOrUnknown::new(super::KPOIEOPCEJL::KPOIEOPCEJL::KPOIEOPCEJL_PJAAADFOKKC) {
-            os.write_enum(20, ::protobuf::EnumOrUnknown::value(&self.death_source))?;
+        if self.HFELBILEHNM != ::protobuf::EnumOrUnknown::new(super::KPOIEOPCEJL::KPOIEOPCEJL::KPOIEOPCEJL_PJAAADFOKKC) {
+            os.write_enum(20, ::protobuf::EnumOrUnknown::value(&self.HFELBILEHNM))?;
         }
         if self.wave != 0 {
             os.write_uint32(21, self.wave)?;
@@ -528,8 +541,8 @@ impl ::protobuf::Message for MonsterBattleInfo {
         if self.phase != 0 {
             os.write_uint32(23, self.phase)?;
         }
-        if self.max_phase != 0 {
-            os.write_uint32(24, self.max_phase)?;
+        if self.NMKKAAGNCPC != 0 {
+            os.write_uint32(24, self.NMKKAAGNCPC)?;
         }
         if self.GCAEPLJHCFE != ::protobuf::EnumOrUnknown::new(super::HDFAPKLGEFM::HDFAPKLGEFM::HDFAPKLGEFM_LCOKOJCGKHP) {
             os.write_enum(25, ::protobuf::EnumOrUnknown::value(&self.GCAEPLJHCFE))?;
@@ -551,6 +564,9 @@ impl ::protobuf::Message for MonsterBattleInfo {
         }
         if self.AHKJLOJDNIC != ::protobuf::EnumOrUnknown::new(super::NLNEBDEEONP::NLNEBDEEONP::NLNEBDEEONP_HHDDIFHGNHD) {
             os.write_enum(31, ::protobuf::EnumOrUnknown::value(&self.AHKJLOJDNIC))?;
+        }
+        if self.FAGBLGNJGDN != false {
+            os.write_bool(32, self.FAGBLGNJGDN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -586,11 +602,11 @@ impl ::protobuf::Message for MonsterBattleInfo {
         self.stage_type = 0;
         self.MBDMCJLFJOO = 0.;
         self.delay_cumulate = 0.;
-        self.death_source = ::protobuf::EnumOrUnknown::new(super::KPOIEOPCEJL::KPOIEOPCEJL::KPOIEOPCEJL_PJAAADFOKKC);
+        self.HFELBILEHNM = ::protobuf::EnumOrUnknown::new(super::KPOIEOPCEJL::KPOIEOPCEJL::KPOIEOPCEJL_PJAAADFOKKC);
         self.wave = 0;
         self.JFDOMCHHBIF = 0;
         self.phase = 0;
-        self.max_phase = 0;
+        self.NMKKAAGNCPC = 0;
         self.GCAEPLJHCFE = ::protobuf::EnumOrUnknown::new(super::HDFAPKLGEFM::HDFAPKLGEFM::HDFAPKLGEFM_LCOKOJCGKHP);
         self.skill_info.clear();
         self.CBMLFOBDNCO = 0;
@@ -598,6 +614,7 @@ impl ::protobuf::Message for MonsterBattleInfo {
         self.NCDGNNJABJJ = 0.;
         self.IBENGEOJFOJ = 0.;
         self.AHKJLOJDNIC = ::protobuf::EnumOrUnknown::new(super::NLNEBDEEONP::NLNEBDEEONP::NLNEBDEEONP_HHDDIFHGNHD);
+        self.FAGBLGNJGDN = false;
         self.special_fields.clear();
     }
 
@@ -620,11 +637,11 @@ impl ::protobuf::Message for MonsterBattleInfo {
             stage_type: 0,
             MBDMCJLFJOO: 0.,
             delay_cumulate: 0.,
-            death_source: ::protobuf::EnumOrUnknown::from_i32(0),
+            HFELBILEHNM: ::protobuf::EnumOrUnknown::from_i32(0),
             wave: 0,
             JFDOMCHHBIF: 0,
             phase: 0,
-            max_phase: 0,
+            NMKKAAGNCPC: 0,
             GCAEPLJHCFE: ::protobuf::EnumOrUnknown::from_i32(0),
             skill_info: ::std::vec::Vec::new(),
             CBMLFOBDNCO: 0,
@@ -632,6 +649,7 @@ impl ::protobuf::Message for MonsterBattleInfo {
             NCDGNNJABJJ: 0.,
             IBENGEOJFOJ: 0.,
             AHKJLOJDNIC: ::protobuf::EnumOrUnknown::from_i32(0),
+            FAGBLGNJGDN: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -659,7 +677,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17MonsterBattleInfo.proto\x1a\x11AOFMDLLDIHG.proto\x1a\x1aAttackDama\
     geProperty.proto\x1a\x11CKCDIAAFICJ.proto\x1a\x11HDFAPKLGEFM.proto\x1a\
     \x11IGMOKOENLDK.proto\x1a\x11KPOIEOPCEJL.proto\x1a\x11NLNEBDEEONP.proto\
-    \x1a\x16SkillUseProperty.proto\"\xd9\x08\n\x11MonsterBattleInfo\x12\x1b\
+    \x1a\x16SkillUseProperty.proto\"\xff\x08\n\x11MonsterBattleInfo\x12\x1b\
     \n\tentity_id\x18\x01\x20\x01(\rR\x08entityId\x12\x1d\n\nmonster_id\x18\
     \x02\x20\x01(\rR\tmonsterId\x12\x20\n\x0bPKFMOFPMBBJ\x18\x03\x20\x01(\rR\
     \x0bPKFMOFPMBBJ\x12\x20\n\x0bNCKAICABJIK\x18\x04\x20\x01(\rR\x0bNCKAICAB\
@@ -674,18 +692,19 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     opertyR\x10attackTypeDamage\x122\n\x0bskill_times\x18\x10\x20\x03(\x0b2\
     \x11.SkillUsePropertyR\nskillTimes\x12\x1d\n\nstage_type\x18\x11\x20\x01\
     (\rR\tstageType\x12\x20\n\x0bMBDMCJLFJOO\x18\x12\x20\x01(\x01R\x0bMBDMCJ\
-    LFJOO\x12%\n\x0edelay_cumulate\x18\x13\x20\x01(\x01R\rdelayCumulate\x12/\
-    \n\x0cdeath_source\x18\x14\x20\x01(\x0e2\x0c.KPOIEOPCEJLR\x0bdeathSource\
+    LFJOO\x12%\n\x0edelay_cumulate\x18\x13\x20\x01(\x01R\rdelayCumulate\x12.\
+    \n\x0bHFELBILEHNM\x18\x14\x20\x01(\x0e2\x0c.KPOIEOPCEJLR\x0bHFELBILEHNM\
     \x12\x12\n\x04wave\x18\x15\x20\x01(\rR\x04wave\x12\x20\n\x0bJFDOMCHHBIF\
     \x18\x16\x20\x01(\x05R\x0bJFDOMCHHBIF\x12\x14\n\x05phase\x18\x17\x20\x01\
-    (\rR\x05phase\x12\x1b\n\tmax_phase\x18\x18\x20\x01(\rR\x08maxPhase\x12.\
-    \n\x0bGCAEPLJHCFE\x18\x19\x20\x01(\x0e2\x0c.HDFAPKLGEFMR\x0bGCAEPLJHCFE\
-    \x12+\n\nskill_info\x18\x1a\x20\x03(\x0b2\x0c.AOFMDLLDIHGR\tskillInfo\
-    \x12\x20\n\x0bCBMLFOBDNCO\x18\x1b\x20\x01(\rR\x0bCBMLFOBDNCO\x12.\n\x0bA\
-    KGJOPBLPNE\x18\x1c\x20\x03(\x0b2\x0c.CKCDIAAFICJR\x0bAKGJOPBLPNE\x12\x20\
-    \n\x0bNCDGNNJABJJ\x18\x1d\x20\x01(\x01R\x0bNCDGNNJABJJ\x12\x20\n\x0bIBEN\
-    GEOJFOJ\x18\x1e\x20\x01(\x01R\x0bIBENGEOJFOJ\x12.\n\x0bAHKJLOJDNIC\x18\
-    \x1f\x20\x01(\x0e2\x0c.NLNEBDEEONPR\x0bAHKJLOJDNICb\x06proto3\
+    (\rR\x05phase\x12\x20\n\x0bNMKKAAGNCPC\x18\x18\x20\x01(\rR\x0bNMKKAAGNCP\
+    C\x12.\n\x0bGCAEPLJHCFE\x18\x19\x20\x01(\x0e2\x0c.HDFAPKLGEFMR\x0bGCAEPL\
+    JHCFE\x12+\n\nskill_info\x18\x1a\x20\x03(\x0b2\x0c.AOFMDLLDIHGR\tskillIn\
+    fo\x12\x20\n\x0bCBMLFOBDNCO\x18\x1b\x20\x01(\rR\x0bCBMLFOBDNCO\x12.\n\
+    \x0bAKGJOPBLPNE\x18\x1c\x20\x03(\x0b2\x0c.CKCDIAAFICJR\x0bAKGJOPBLPNE\
+    \x12\x20\n\x0bNCDGNNJABJJ\x18\x1d\x20\x01(\x01R\x0bNCDGNNJABJJ\x12\x20\n\
+    \x0bIBENGEOJFOJ\x18\x1e\x20\x01(\x01R\x0bIBENGEOJFOJ\x12.\n\x0bAHKJLOJDN\
+    IC\x18\x1f\x20\x01(\x0e2\x0c.NLNEBDEEONPR\x0bAHKJLOJDNIC\x12\x20\n\x0bFA\
+    GBLGNJGDN\x18\x20\x20\x01(\x08R\x0bFAGBLGNJGDNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

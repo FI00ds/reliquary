@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OGHAIFPHMPE {
     // message fields
-    // @@protoc_insertion_point(field:OGHAIFPHMPE.seal_id)
-    pub seal_id: u32,
+    // @@protoc_insertion_point(field:OGHAIFPHMPE.JJFOLKFOOLI)
+    pub JJFOLKFOOLI: u32,
     // @@protoc_insertion_point(field:OGHAIFPHMPE.FLCPFPJBJBO)
     pub FLCPFPJBJBO: i32,
     // @@protoc_insertion_point(field:OGHAIFPHMPE.GOBDOHJFGHN)
     pub GOBDOHJFGHN: i32,
-    // @@protoc_insertion_point(field:OGHAIFPHMPE.sub_seal_id)
-    pub sub_seal_id: u32,
+    // @@protoc_insertion_point(field:OGHAIFPHMPE.EABAEHIBIJC)
+    pub EABAEHIBIJC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OGHAIFPHMPE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,9 +56,9 @@ impl OGHAIFPHMPE {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "seal_id",
-            |m: &OGHAIFPHMPE| { &m.seal_id },
-            |m: &mut OGHAIFPHMPE| { &mut m.seal_id },
+            "JJFOLKFOOLI",
+            |m: &OGHAIFPHMPE| { &m.JJFOLKFOOLI },
+            |m: &mut OGHAIFPHMPE| { &mut m.JJFOLKFOOLI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FLCPFPJBJBO",
@@ -71,9 +71,9 @@ impl OGHAIFPHMPE {
             |m: &mut OGHAIFPHMPE| { &mut m.GOBDOHJFGHN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "sub_seal_id",
-            |m: &OGHAIFPHMPE| { &m.sub_seal_id },
-            |m: &mut OGHAIFPHMPE| { &mut m.sub_seal_id },
+            "EABAEHIBIJC",
+            |m: &OGHAIFPHMPE| { &m.EABAEHIBIJC },
+            |m: &mut OGHAIFPHMPE| { &mut m.EABAEHIBIJC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OGHAIFPHMPE>(
             "OGHAIFPHMPE",
@@ -94,7 +94,7 @@ impl ::protobuf::Message for OGHAIFPHMPE {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.seal_id = is.read_uint32()?;
+                    self.JJFOLKFOOLI = is.read_uint32()?;
                 },
                 16 => {
                     self.FLCPFPJBJBO = is.read_int32()?;
@@ -103,7 +103,7 @@ impl ::protobuf::Message for OGHAIFPHMPE {
                     self.GOBDOHJFGHN = is.read_int32()?;
                 },
                 32 => {
-                    self.sub_seal_id = is.read_uint32()?;
+                    self.EABAEHIBIJC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,8 +117,8 @@ impl ::protobuf::Message for OGHAIFPHMPE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.seal_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.seal_id);
+        if self.JJFOLKFOOLI != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.JJFOLKFOOLI);
         }
         if self.FLCPFPJBJBO != 0 {
             my_size += ::protobuf::rt::int32_size(2, self.FLCPFPJBJBO);
@@ -126,8 +126,8 @@ impl ::protobuf::Message for OGHAIFPHMPE {
         if self.GOBDOHJFGHN != 0 {
             my_size += ::protobuf::rt::int32_size(3, self.GOBDOHJFGHN);
         }
-        if self.sub_seal_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.sub_seal_id);
+        if self.EABAEHIBIJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.EABAEHIBIJC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,8 +135,8 @@ impl ::protobuf::Message for OGHAIFPHMPE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.seal_id != 0 {
-            os.write_uint32(1, self.seal_id)?;
+        if self.JJFOLKFOOLI != 0 {
+            os.write_uint32(1, self.JJFOLKFOOLI)?;
         }
         if self.FLCPFPJBJBO != 0 {
             os.write_int32(2, self.FLCPFPJBJBO)?;
@@ -144,8 +144,8 @@ impl ::protobuf::Message for OGHAIFPHMPE {
         if self.GOBDOHJFGHN != 0 {
             os.write_int32(3, self.GOBDOHJFGHN)?;
         }
-        if self.sub_seal_id != 0 {
-            os.write_uint32(4, self.sub_seal_id)?;
+        if self.EABAEHIBIJC != 0 {
+            os.write_uint32(4, self.EABAEHIBIJC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for OGHAIFPHMPE {
     }
 
     fn clear(&mut self) {
-        self.seal_id = 0;
+        self.JJFOLKFOOLI = 0;
         self.FLCPFPJBJBO = 0;
         self.GOBDOHJFGHN = 0;
-        self.sub_seal_id = 0;
+        self.EABAEHIBIJC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OGHAIFPHMPE {
         static instance: OGHAIFPHMPE = OGHAIFPHMPE {
-            seal_id: 0,
+            JJFOLKFOOLI: 0,
             FLCPFPJBJBO: 0,
             GOBDOHJFGHN: 0,
-            sub_seal_id: 0,
+            EABAEHIBIJC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for OGHAIFPHMPE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OGHAIFPHMPE.proto\"\x8a\x01\n\x0bOGHAIFPHMPE\x12\x17\n\x07seal_id\
-    \x18\x01\x20\x01(\rR\x06sealId\x12\x20\n\x0bFLCPFPJBJBO\x18\x02\x20\x01(\
-    \x05R\x0bFLCPFPJBJBO\x12\x20\n\x0bGOBDOHJFGHN\x18\x03\x20\x01(\x05R\x0bG\
-    OBDOHJFGHN\x12\x1e\n\x0bsub_seal_id\x18\x04\x20\x01(\rR\tsubSealIdb\x06p\
-    roto3\
+    \n\x11OGHAIFPHMPE.proto\"\x95\x01\n\x0bOGHAIFPHMPE\x12\x20\n\x0bJJFOLKFO\
+    OLI\x18\x01\x20\x01(\rR\x0bJJFOLKFOOLI\x12\x20\n\x0bFLCPFPJBJBO\x18\x02\
+    \x20\x01(\x05R\x0bFLCPFPJBJBO\x12\x20\n\x0bGOBDOHJFGHN\x18\x03\x20\x01(\
+    \x05R\x0bGOBDOHJFGHN\x12\x20\n\x0bEABAEHIBIJC\x18\x04\x20\x01(\rR\x0bEAB\
+    AEHIBIJCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

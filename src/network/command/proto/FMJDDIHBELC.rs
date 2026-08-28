@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FMJDDIHBELC {
     // message fields
-    // @@protoc_insertion_point(field:FMJDDIHBELC.grid_fight_lineup_hp)
-    pub grid_fight_lineup_hp: u32,
+    // @@protoc_insertion_point(field:FMJDDIHBELC.H_cccff526)
+    pub H_cccff526: u32,
     // @@protoc_insertion_point(field:FMJDDIHBELC.PPKKHHNEOHB)
     pub PPKKHHNEOHB: u32,
     // special fields
@@ -52,9 +52,9 @@ impl FMJDDIHBELC {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "grid_fight_lineup_hp",
-            |m: &FMJDDIHBELC| { &m.grid_fight_lineup_hp },
-            |m: &mut FMJDDIHBELC| { &mut m.grid_fight_lineup_hp },
+            "H_cccff526",
+            |m: &FMJDDIHBELC| { &m.H_cccff526 },
+            |m: &mut FMJDDIHBELC| { &mut m.H_cccff526 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PPKKHHNEOHB",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for FMJDDIHBELC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.grid_fight_lineup_hp = is.read_uint32()?;
+                64 => {
+                    self.H_cccff526 = is.read_uint32()?;
                 },
-                56 => {
+                80 => {
                     self.PPKKHHNEOHB = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FMJDDIHBELC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.grid_fight_lineup_hp != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.grid_fight_lineup_hp);
+        if self.H_cccff526 != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.H_cccff526);
         }
         if self.PPKKHHNEOHB != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.PPKKHHNEOHB);
+            my_size += ::protobuf::rt::uint32_size(10, self.PPKKHHNEOHB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for FMJDDIHBELC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.grid_fight_lineup_hp != 0 {
-            os.write_uint32(5, self.grid_fight_lineup_hp)?;
+        if self.H_cccff526 != 0 {
+            os.write_uint32(8, self.H_cccff526)?;
         }
         if self.PPKKHHNEOHB != 0 {
-            os.write_uint32(7, self.PPKKHHNEOHB)?;
+            os.write_uint32(10, self.PPKKHHNEOHB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for FMJDDIHBELC {
     }
 
     fn clear(&mut self) {
-        self.grid_fight_lineup_hp = 0;
+        self.H_cccff526 = 0;
         self.PPKKHHNEOHB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FMJDDIHBELC {
         static instance: FMJDDIHBELC = FMJDDIHBELC {
-            grid_fight_lineup_hp: 0,
+            H_cccff526: 0,
             PPKKHHNEOHB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for FMJDDIHBELC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FMJDDIHBELC.proto\"`\n\x0bFMJDDIHBELC\x12/\n\x14grid_fight_lineup_\
-    hp\x18\x05\x20\x01(\rR\x11gridFightLineupHp\x12\x20\n\x0bPPKKHHNEOHB\x18\
-    \x07\x20\x01(\rR\x0bPPKKHHNEOHBb\x06proto3\
+    \n\x11FMJDDIHBELC.proto\"N\n\x0bFMJDDIHBELC\x12\x1d\n\nH_cccff526\x18\
+    \x08\x20\x01(\rR\tHCccff526\x12\x20\n\x0bPPKKHHNEOHB\x18\n\x20\x01(\rR\
+    \x0bPPKKHHNEOHBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

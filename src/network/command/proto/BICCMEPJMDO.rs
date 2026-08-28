@@ -30,10 +30,10 @@ pub struct BICCMEPJMDO {
     // message fields
     // @@protoc_insertion_point(field:BICCMEPJMDO.unique_id)
     pub unique_id: i32,
-    // @@protoc_insertion_point(field:BICCMEPJMDO.direction)
-    pub direction: i32,
     // @@protoc_insertion_point(field:BICCMEPJMDO.GOOAMHHLHPJ)
     pub GOOAMHHLHPJ: ::protobuf::MessageField<super::KIAKKNFLEPN::KIAKKNFLEPN>,
+    // @@protoc_insertion_point(field:BICCMEPJMDO.LJDHGFECMHJ)
+    pub LJDHGFECMHJ: i32,
     // special fields
     // @@protoc_insertion_point(special_field:BICCMEPJMDO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl BICCMEPJMDO {
             |m: &BICCMEPJMDO| { &m.unique_id },
             |m: &mut BICCMEPJMDO| { &mut m.unique_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "direction",
-            |m: &BICCMEPJMDO| { &m.direction },
-            |m: &mut BICCMEPJMDO| { &mut m.direction },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KIAKKNFLEPN::KIAKKNFLEPN>(
             "GOOAMHHLHPJ",
             |m: &BICCMEPJMDO| { &m.GOOAMHHLHPJ },
             |m: &mut BICCMEPJMDO| { &mut m.GOOAMHHLHPJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LJDHGFECMHJ",
+            |m: &BICCMEPJMDO| { &m.LJDHGFECMHJ },
+            |m: &mut BICCMEPJMDO| { &mut m.LJDHGFECMHJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BICCMEPJMDO>(
             "BICCMEPJMDO",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for BICCMEPJMDO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                32 => {
                     self.unique_id = is.read_int32()?;
                 },
-                32 => {
-                    self.direction = is.read_int32()?;
-                },
-                82 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GOOAMHHLHPJ)?;
+                },
+                120 => {
+                    self.LJDHGFECMHJ = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for BICCMEPJMDO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::int32_size(1, self.unique_id);
-        }
-        if self.direction != 0 {
-            my_size += ::protobuf::rt::int32_size(4, self.direction);
+            my_size += ::protobuf::rt::int32_size(4, self.unique_id);
         }
         if let Some(v) = self.GOOAMHHLHPJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.LJDHGFECMHJ != 0 {
+            my_size += ::protobuf::rt::int32_size(15, self.LJDHGFECMHJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for BICCMEPJMDO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.unique_id != 0 {
-            os.write_int32(1, self.unique_id)?;
-        }
-        if self.direction != 0 {
-            os.write_int32(4, self.direction)?;
+            os.write_int32(4, self.unique_id)?;
         }
         if let Some(v) = self.GOOAMHHLHPJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        }
+        if self.LJDHGFECMHJ != 0 {
+            os.write_int32(15, self.LJDHGFECMHJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for BICCMEPJMDO {
 
     fn clear(&mut self) {
         self.unique_id = 0;
-        self.direction = 0;
         self.GOOAMHHLHPJ.clear();
+        self.LJDHGFECMHJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BICCMEPJMDO {
         static instance: BICCMEPJMDO = BICCMEPJMDO {
             unique_id: 0,
-            direction: 0,
             GOOAMHHLHPJ: ::protobuf::MessageField::none(),
+            LJDHGFECMHJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for BICCMEPJMDO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BICCMEPJMDO.proto\x1a\x11KIAKKNFLEPN.proto\"x\n\x0bBICCMEPJMDO\x12\
-    \x1b\n\tunique_id\x18\x01\x20\x01(\x05R\x08uniqueId\x12\x1c\n\tdirection\
-    \x18\x04\x20\x01(\x05R\tdirection\x12.\n\x0bGOOAMHHLHPJ\x18\n\x20\x01(\
-    \x0b2\x0c.KIAKKNFLEPNR\x0bGOOAMHHLHPJb\x06proto3\
+    \n\x11BICCMEPJMDO.proto\x1a\x11KIAKKNFLEPN.proto\"|\n\x0bBICCMEPJMDO\x12\
+    \x1b\n\tunique_id\x18\x04\x20\x01(\x05R\x08uniqueId\x12.\n\x0bGOOAMHHLHP\
+    J\x18\r\x20\x01(\x0b2\x0c.KIAKKNFLEPNR\x0bGOOAMHHLHPJ\x12\x20\n\x0bLJDHG\
+    FECMHJ\x18\x0f\x20\x01(\x05R\x0bLJDHGFECMHJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

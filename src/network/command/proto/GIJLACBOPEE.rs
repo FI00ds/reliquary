@@ -30,10 +30,10 @@ pub struct GIJLACBOPEE {
     // message fields
     // @@protoc_insertion_point(field:GIJLACBOPEE.HJMEJNMAILK)
     pub HJMEJNMAILK: u32,
-    // @@protoc_insertion_point(field:GIJLACBOPEE.queue_position)
-    pub queue_position: u32,
     // @@protoc_insertion_point(field:GIJLACBOPEE.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:GIJLACBOPEE.queue_position)
+    pub queue_position: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GIJLACBOPEE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl GIJLACBOPEE {
             |m: &mut GIJLACBOPEE| { &mut m.HJMEJNMAILK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "queue_position",
-            |m: &GIJLACBOPEE| { &m.queue_position },
-            |m: &mut GIJLACBOPEE| { &mut m.queue_position },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &GIJLACBOPEE| { &m.level },
             |m: &mut GIJLACBOPEE| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "queue_position",
+            |m: &GIJLACBOPEE| { &m.queue_position },
+            |m: &mut GIJLACBOPEE| { &mut m.queue_position },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GIJLACBOPEE>(
             "GIJLACBOPEE",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GIJLACBOPEE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                32 => {
                     self.HJMEJNMAILK = is.read_uint32()?;
                 },
-                72 => {
-                    self.queue_position = is.read_uint32()?;
-                },
-                96 => {
+                80 => {
                     self.level = is.read_uint32()?;
+                },
+                120 => {
+                    self.queue_position = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for GIJLACBOPEE {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HJMEJNMAILK != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HJMEJNMAILK);
-        }
-        if self.queue_position != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.queue_position);
+            my_size += ::protobuf::rt::uint32_size(4, self.HJMEJNMAILK);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.level);
+            my_size += ::protobuf::rt::uint32_size(10, self.level);
+        }
+        if self.queue_position != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.queue_position);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for GIJLACBOPEE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HJMEJNMAILK != 0 {
-            os.write_uint32(5, self.HJMEJNMAILK)?;
-        }
-        if self.queue_position != 0 {
-            os.write_uint32(9, self.queue_position)?;
+            os.write_uint32(4, self.HJMEJNMAILK)?;
         }
         if self.level != 0 {
-            os.write_uint32(12, self.level)?;
+            os.write_uint32(10, self.level)?;
+        }
+        if self.queue_position != 0 {
+            os.write_uint32(15, self.queue_position)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for GIJLACBOPEE {
 
     fn clear(&mut self) {
         self.HJMEJNMAILK = 0;
-        self.queue_position = 0;
         self.level = 0;
+        self.queue_position = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GIJLACBOPEE {
         static instance: GIJLACBOPEE = GIJLACBOPEE {
             HJMEJNMAILK: 0,
-            queue_position: 0,
             level: 0,
+            queue_position: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for GIJLACBOPEE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GIJLACBOPEE.proto\"l\n\x0bGIJLACBOPEE\x12\x20\n\x0bHJMEJNMAILK\x18\
-    \x05\x20\x01(\rR\x0bHJMEJNMAILK\x12%\n\x0equeue_position\x18\t\x20\x01(\
-    \rR\rqueuePosition\x12\x14\n\x05level\x18\x0c\x20\x01(\rR\x05levelb\x06p\
-    roto3\
+    \x04\x20\x01(\rR\x0bHJMEJNMAILK\x12\x14\n\x05level\x18\n\x20\x01(\rR\x05\
+    level\x12%\n\x0equeue_position\x18\x0f\x20\x01(\rR\rqueuePositionb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

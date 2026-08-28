@@ -30,10 +30,10 @@ pub struct EntityBuffChangeInfo {
     // message fields
     // @@protoc_insertion_point(field:EntityBuffChangeInfo.reason)
     pub reason: ::protobuf::EnumOrUnknown<super::SceneEntityBuffChangeType::SceneEntityBuffChangeType>,
-    // @@protoc_insertion_point(field:EntityBuffChangeInfo.cast_entity_id)
-    pub cast_entity_id: u32,
     // @@protoc_insertion_point(field:EntityBuffChangeInfo.entity_id)
     pub entity_id: u32,
+    // @@protoc_insertion_point(field:EntityBuffChangeInfo.cast_entity_id)
+    pub cast_entity_id: u32,
     // message oneof groups
     pub KKNBOACNCON: ::std::option::Option<entity_buff_change_info::KKNBOACNCON>,
     // special fields
@@ -52,7 +52,7 @@ impl EntityBuffChangeInfo {
         ::std::default::Default::default()
     }
 
-    // .BuffInfo buff_change_info = 3;
+    // .BuffInfo buff_change_info = 5;
 
     pub fn buff_change_info(&self) -> &super::BuffInfo::BuffInfo {
         match self.KKNBOACNCON {
@@ -101,7 +101,7 @@ impl EntityBuffChangeInfo {
         }
     }
 
-    // uint32 remove_buff_id = 9;
+    // uint32 remove_buff_id = 11;
 
     pub fn remove_buff_id(&self) -> u32 {
         match self.KKNBOACNCON {
@@ -135,14 +135,14 @@ impl EntityBuffChangeInfo {
             |m: &mut EntityBuffChangeInfo| { &mut m.reason },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cast_entity_id",
-            |m: &EntityBuffChangeInfo| { &m.cast_entity_id },
-            |m: &mut EntityBuffChangeInfo| { &mut m.cast_entity_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "entity_id",
             |m: &EntityBuffChangeInfo| { &m.entity_id },
             |m: &mut EntityBuffChangeInfo| { &mut m.entity_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cast_entity_id",
+            |m: &EntityBuffChangeInfo| { &m.cast_entity_id },
+            |m: &mut EntityBuffChangeInfo| { &mut m.cast_entity_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BuffInfo::BuffInfo>(
             "buff_change_info",
@@ -176,19 +176,19 @@ impl ::protobuf::Message for EntityBuffChangeInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                56 => {
                     self.reason = is.read_enum_or_unknown()?;
-                },
-                64 => {
-                    self.cast_entity_id = is.read_uint32()?;
                 },
                 96 => {
                     self.entity_id = is.read_uint32()?;
                 },
-                26 => {
+                120 => {
+                    self.cast_entity_id = is.read_uint32()?;
+                },
+                42 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(entity_buff_change_info::KKNBOACNCON::BuffChangeInfo(is.read_message()?));
                 },
-                72 => {
+                88 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(entity_buff_change_info::KKNBOACNCON::RemoveBuffId(is.read_uint32()?));
                 },
                 tag => {
@@ -204,13 +204,13 @@ impl ::protobuf::Message for EntityBuffChangeInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.reason != ::protobuf::EnumOrUnknown::new(super::SceneEntityBuffChangeType::SceneEntityBuffChangeType::SCENE_ENTITY_BUFF_CHANGE_TYPE_DEFAULT) {
-            my_size += ::protobuf::rt::int32_size(1, self.reason.value());
-        }
-        if self.cast_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.cast_entity_id);
+            my_size += ::protobuf::rt::int32_size(7, self.reason.value());
         }
         if self.entity_id != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.entity_id);
+        }
+        if self.cast_entity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.cast_entity_id);
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
@@ -219,7 +219,7 @@ impl ::protobuf::Message for EntityBuffChangeInfo {
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &entity_buff_change_info::KKNBOACNCON::RemoveBuffId(v) => {
-                    my_size += ::protobuf::rt::uint32_size(9, v);
+                    my_size += ::protobuf::rt::uint32_size(11, v);
                 },
             };
         }
@@ -230,21 +230,21 @@ impl ::protobuf::Message for EntityBuffChangeInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.reason != ::protobuf::EnumOrUnknown::new(super::SceneEntityBuffChangeType::SceneEntityBuffChangeType::SCENE_ENTITY_BUFF_CHANGE_TYPE_DEFAULT) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.reason))?;
-        }
-        if self.cast_entity_id != 0 {
-            os.write_uint32(8, self.cast_entity_id)?;
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.reason))?;
         }
         if self.entity_id != 0 {
             os.write_uint32(12, self.entity_id)?;
         }
+        if self.cast_entity_id != 0 {
+            os.write_uint32(15, self.cast_entity_id)?;
+        }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &entity_buff_change_info::KKNBOACNCON::BuffChangeInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
                 &entity_buff_change_info::KKNBOACNCON::RemoveBuffId(v) => {
-                    os.write_uint32(9, v)?;
+                    os.write_uint32(11, v)?;
                 },
             };
         }
@@ -266,8 +266,8 @@ impl ::protobuf::Message for EntityBuffChangeInfo {
 
     fn clear(&mut self) {
         self.reason = ::protobuf::EnumOrUnknown::new(super::SceneEntityBuffChangeType::SceneEntityBuffChangeType::SCENE_ENTITY_BUFF_CHANGE_TYPE_DEFAULT);
-        self.cast_entity_id = 0;
         self.entity_id = 0;
+        self.cast_entity_id = 0;
         self.KKNBOACNCON = ::std::option::Option::None;
         self.KKNBOACNCON = ::std::option::Option::None;
         self.special_fields.clear();
@@ -276,8 +276,8 @@ impl ::protobuf::Message for EntityBuffChangeInfo {
     fn default_instance() -> &'static EntityBuffChangeInfo {
         static instance: EntityBuffChangeInfo = EntityBuffChangeInfo {
             reason: ::protobuf::EnumOrUnknown::from_i32(0),
-            cast_entity_id: 0,
             entity_id: 0,
+            cast_entity_id: 0,
             KKNBOACNCON: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -335,11 +335,12 @@ pub mod entity_buff_change_info {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aEntityBuffChangeInfo.proto\x1a\x0eBuffInfo.proto\x1a\x1fSceneEntit\
     yBuffChangeType.proto\"\xfb\x01\n\x14EntityBuffChangeInfo\x122\n\x06reas\
-    on\x18\x01\x20\x01(\x0e2\x1a.SceneEntityBuffChangeTypeR\x06reason\x12$\n\
-    \x0ecast_entity_id\x18\x08\x20\x01(\rR\x0ccastEntityId\x12\x1b\n\tentity\
-    _id\x18\x0c\x20\x01(\rR\x08entityId\x125\n\x10buff_change_info\x18\x03\
-    \x20\x01(\x0b2\t.BuffInfoH\0R\x0ebuffChangeInfo\x12&\n\x0eremove_buff_id\
-    \x18\t\x20\x01(\rH\0R\x0cremoveBuffIdB\r\n\x0bKKNBOACNCONb\x06proto3\
+    on\x18\x07\x20\x01(\x0e2\x1a.SceneEntityBuffChangeTypeR\x06reason\x12\
+    \x1b\n\tentity_id\x18\x0c\x20\x01(\rR\x08entityId\x12$\n\x0ecast_entity_\
+    id\x18\x0f\x20\x01(\rR\x0ccastEntityId\x125\n\x10buff_change_info\x18\
+    \x05\x20\x01(\x0b2\t.BuffInfoH\0R\x0ebuffChangeInfo\x12&\n\x0eremove_buf\
+    f_id\x18\x0b\x20\x01(\rH\0R\x0cremoveBuffIdB\r\n\x0bKKNBOACNCONb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -45,7 +45,7 @@ impl MCDONFNGMJE {
         ::std::default::Default::default()
     }
 
-    // .DFKMNLIJMFB MGACFLNJLCK = 9;
+    // .DFKMNLIJMFB MGACFLNJLCK = 6;
 
     pub fn MGACFLNJLCK(&self) -> &super::DFKMNLIJMFB::DFKMNLIJMFB {
         match self.CGIFMOFGECO {
@@ -94,7 +94,7 @@ impl MCDONFNGMJE {
         }
     }
 
-    // .JECIOGKPHFN MKMLKGOOAMK = 14;
+    // .JECIOGKPHFN MKMLKGOOAMK = 8;
 
     pub fn MKMLKGOOAMK(&self) -> &super::JECIOGKPHFN::JECIOGKPHFN {
         match self.CGIFMOFGECO {
@@ -143,7 +143,7 @@ impl MCDONFNGMJE {
         }
     }
 
-    // .JKLCLLAFHOC LPAAMNFFAIB = 6;
+    // .JKLCLLAFHOC LPAAMNFFAIB = 5;
 
     pub fn LPAAMNFFAIB(&self) -> &super::JKLCLLAFHOC::JKLCLLAFHOC {
         match self.CGIFMOFGECO {
@@ -235,13 +235,13 @@ impl ::protobuf::Message for MCDONFNGMJE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                50 => {
                     self.CGIFMOFGECO = ::std::option::Option::Some(mcdonfngmje::CGIFMOFGECO::MGACFLNJLCK(is.read_message()?));
                 },
-                114 => {
+                66 => {
                     self.CGIFMOFGECO = ::std::option::Option::Some(mcdonfngmje::CGIFMOFGECO::MKMLKGOOAMK(is.read_message()?));
                 },
-                50 => {
+                42 => {
                     self.CGIFMOFGECO = ::std::option::Option::Some(mcdonfngmje::CGIFMOFGECO::LPAAMNFFAIB(is.read_message()?));
                 },
                 tag => {
@@ -281,13 +281,13 @@ impl ::protobuf::Message for MCDONFNGMJE {
         if let ::std::option::Option::Some(ref v) = self.CGIFMOFGECO {
             match v {
                 &mcdonfngmje::CGIFMOFGECO::MGACFLNJLCK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
                 &mcdonfngmje::CGIFMOFGECO::MKMLKGOOAMK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
                 &mcdonfngmje::CGIFMOFGECO::LPAAMNFFAIB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
             };
         }
@@ -375,10 +375,10 @@ pub mod mcdonfngmje {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MCDONFNGMJE.proto\x1a\x11DFKMNLIJMFB.proto\x1a\x11JECIOGKPHFN.prot\
     o\x1a\x11JKLCLLAFHOC.proto\"\xb2\x01\n\x0bMCDONFNGMJE\x120\n\x0bMGACFLNJ\
-    LCK\x18\t\x20\x01(\x0b2\x0c.DFKMNLIJMFBH\0R\x0bMGACFLNJLCK\x120\n\x0bMKM\
-    LKGOOAMK\x18\x0e\x20\x01(\x0b2\x0c.JECIOGKPHFNH\0R\x0bMKMLKGOOAMK\x120\n\
-    \x0bLPAAMNFFAIB\x18\x06\x20\x01(\x0b2\x0c.JKLCLLAFHOCH\0R\x0bLPAAMNFFAIB\
-    B\r\n\x0bCGIFMOFGECOb\x06proto3\
+    LCK\x18\x06\x20\x01(\x0b2\x0c.DFKMNLIJMFBH\0R\x0bMGACFLNJLCK\x120\n\x0bM\
+    KMLKGOOAMK\x18\x08\x20\x01(\x0b2\x0c.JECIOGKPHFNH\0R\x0bMKMLKGOOAMK\x120\
+    \n\x0bLPAAMNFFAIB\x18\x05\x20\x01(\x0b2\x0c.JKLCLLAFHOCH\0R\x0bLPAAMNFFA\
+    IBB\r\n\x0bCGIFMOFGECOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

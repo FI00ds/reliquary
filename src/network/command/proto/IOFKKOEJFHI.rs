@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IOFKKOEJFHI {
     // message fields
-    // @@protoc_insertion_point(field:IOFKKOEJFHI.game_mode)
-    pub game_mode: ::protobuf::EnumOrUnknown<super::PJCMNENIEHH::PJCMNENIEHH>,
+    // @@protoc_insertion_point(field:IOFKKOEJFHI.HKEACDBJCOD)
+    pub HKEACDBJCOD: ::protobuf::EnumOrUnknown<super::PJCMNENIEHH::PJCMNENIEHH>,
     // @@protoc_insertion_point(field:IOFKKOEJFHI.lineup_list)
     pub lineup_list: ::std::vec::Vec<super::JOLHIMGJGBO::JOLHIMGJGBO>,
     // special fields
@@ -52,9 +52,9 @@ impl IOFKKOEJFHI {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "game_mode",
-            |m: &IOFKKOEJFHI| { &m.game_mode },
-            |m: &mut IOFKKOEJFHI| { &mut m.game_mode },
+            "HKEACDBJCOD",
+            |m: &IOFKKOEJFHI| { &m.HKEACDBJCOD },
+            |m: &mut IOFKKOEJFHI| { &mut m.HKEACDBJCOD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "lineup_list",
@@ -80,7 +80,7 @@ impl ::protobuf::Message for IOFKKOEJFHI {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.game_mode = is.read_enum_or_unknown()?;
+                    self.HKEACDBJCOD = is.read_enum_or_unknown()?;
                 },
                 18 => {
                     self.lineup_list.push(is.read_message()?);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for IOFKKOEJFHI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.game_mode != ::protobuf::EnumOrUnknown::new(super::PJCMNENIEHH::PJCMNENIEHH::PJCMNENIEHH_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(1, self.game_mode.value());
+        if self.HKEACDBJCOD != ::protobuf::EnumOrUnknown::new(super::PJCMNENIEHH::PJCMNENIEHH::PJCMNENIEHH_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(1, self.HKEACDBJCOD.value());
         }
         for value in &self.lineup_list {
             let len = value.compute_size();
@@ -110,8 +110,8 @@ impl ::protobuf::Message for IOFKKOEJFHI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.game_mode != ::protobuf::EnumOrUnknown::new(super::PJCMNENIEHH::PJCMNENIEHH::PJCMNENIEHH_NLCDGIPGFDJ) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.game_mode))?;
+        if self.HKEACDBJCOD != ::protobuf::EnumOrUnknown::new(super::PJCMNENIEHH::PJCMNENIEHH::PJCMNENIEHH_NLCDGIPGFDJ) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.HKEACDBJCOD))?;
         }
         for v in &self.lineup_list {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
@@ -133,14 +133,14 @@ impl ::protobuf::Message for IOFKKOEJFHI {
     }
 
     fn clear(&mut self) {
-        self.game_mode = ::protobuf::EnumOrUnknown::new(super::PJCMNENIEHH::PJCMNENIEHH::PJCMNENIEHH_NLCDGIPGFDJ);
+        self.HKEACDBJCOD = ::protobuf::EnumOrUnknown::new(super::PJCMNENIEHH::PJCMNENIEHH::PJCMNENIEHH_NLCDGIPGFDJ);
         self.lineup_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IOFKKOEJFHI {
         static instance: IOFKKOEJFHI = IOFKKOEJFHI {
-            game_mode: ::protobuf::EnumOrUnknown::from_i32(0),
+            HKEACDBJCOD: ::protobuf::EnumOrUnknown::from_i32(0),
             lineup_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for IOFKKOEJFHI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IOFKKOEJFHI.proto\x1a\x11JOLHIMGJGBO.proto\x1a\x11PJCMNENIEHH.prot\
-    o\"g\n\x0bIOFKKOEJFHI\x12)\n\tgame_mode\x18\x01\x20\x01(\x0e2\x0c.PJCMNE\
-    NIEHHR\x08gameMode\x12-\n\x0blineup_list\x18\x02\x20\x03(\x0b2\x0c.JOLHI\
-    MGJGBOR\nlineupListb\x06proto3\
+    o\"l\n\x0bIOFKKOEJFHI\x12.\n\x0bHKEACDBJCOD\x18\x01\x20\x01(\x0e2\x0c.PJ\
+    CMNENIEHHR\x0bHKEACDBJCOD\x12-\n\x0blineup_list\x18\x02\x20\x03(\x0b2\
+    \x0c.JOLHIMGJGBOR\nlineupListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

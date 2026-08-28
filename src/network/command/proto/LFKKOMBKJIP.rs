@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LFKKOMBKJIP {
     // message fields
-    // @@protoc_insertion_point(field:LFKKOMBKJIP.tag)
-    pub tag: ::std::string::String,
+    // @@protoc_insertion_point(field:LFKKOMBKJIP.NHALJPDONCP)
+    pub NHALJPDONCP: ::std::string::String,
     // @@protoc_insertion_point(field:LFKKOMBKJIP.value)
     pub value: ::std::string::String,
     // special fields
@@ -52,9 +52,9 @@ impl LFKKOMBKJIP {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "tag",
-            |m: &LFKKOMBKJIP| { &m.tag },
-            |m: &mut LFKKOMBKJIP| { &mut m.tag },
+            "NHALJPDONCP",
+            |m: &LFKKOMBKJIP| { &m.NHALJPDONCP },
+            |m: &mut LFKKOMBKJIP| { &mut m.NHALJPDONCP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "value",
@@ -80,7 +80,7 @@ impl ::protobuf::Message for LFKKOMBKJIP {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    self.tag = is.read_string()?;
+                    self.NHALJPDONCP = is.read_string()?;
                 },
                 18 => {
                     self.value = is.read_string()?;
@@ -97,8 +97,8 @@ impl ::protobuf::Message for LFKKOMBKJIP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.tag.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.tag);
+        if !self.NHALJPDONCP.is_empty() {
+            my_size += ::protobuf::rt::string_size(1, &self.NHALJPDONCP);
         }
         if !self.value.is_empty() {
             my_size += ::protobuf::rt::string_size(2, &self.value);
@@ -109,8 +109,8 @@ impl ::protobuf::Message for LFKKOMBKJIP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.tag.is_empty() {
-            os.write_string(1, &self.tag)?;
+        if !self.NHALJPDONCP.is_empty() {
+            os.write_string(1, &self.NHALJPDONCP)?;
         }
         if !self.value.is_empty() {
             os.write_string(2, &self.value)?;
@@ -132,14 +132,14 @@ impl ::protobuf::Message for LFKKOMBKJIP {
     }
 
     fn clear(&mut self) {
-        self.tag.clear();
+        self.NHALJPDONCP.clear();
         self.value.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LFKKOMBKJIP {
         static instance: LFKKOMBKJIP = LFKKOMBKJIP {
-            tag: ::std::string::String::new(),
+            NHALJPDONCP: ::std::string::String::new(),
             value: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for LFKKOMBKJIP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LFKKOMBKJIP.proto\"5\n\x0bLFKKOMBKJIP\x12\x10\n\x03tag\x18\x01\x20\
-    \x01(\tR\x03tag\x12\x14\n\x05value\x18\x02\x20\x01(\tR\x05valueb\x06prot\
-    o3\
+    \n\x11LFKKOMBKJIP.proto\"E\n\x0bLFKKOMBKJIP\x12\x20\n\x0bNHALJPDONCP\x18\
+    \x01\x20\x01(\tR\x0bNHALJPDONCP\x12\x14\n\x05value\x18\x02\x20\x01(\tR\
+    \x05valueb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

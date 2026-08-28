@@ -86,13 +86,13 @@ impl ::protobuf::Message for GOLHAKEGKCL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                48 => {
                     self.DCPDNBALDOA = is.read_uint32()?;
                 },
-                88 => {
+                64 => {
                     self.HFNNNGHBHGG = is.read_uint32()?;
                 },
-                96 => {
+                120 => {
                     self.item_id = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for GOLHAKEGKCL {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.DCPDNBALDOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.DCPDNBALDOA);
+            my_size += ::protobuf::rt::uint32_size(6, self.DCPDNBALDOA);
         }
         if self.HFNNNGHBHGG != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.HFNNNGHBHGG);
+            my_size += ::protobuf::rt::uint32_size(8, self.HFNNNGHBHGG);
         }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.item_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for GOLHAKEGKCL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DCPDNBALDOA != 0 {
-            os.write_uint32(10, self.DCPDNBALDOA)?;
+            os.write_uint32(6, self.DCPDNBALDOA)?;
         }
         if self.HFNNNGHBHGG != 0 {
-            os.write_uint32(11, self.HFNNNGHBHGG)?;
+            os.write_uint32(8, self.HFNNNGHBHGG)?;
         }
         if self.item_id != 0 {
-            os.write_uint32(12, self.item_id)?;
+            os.write_uint32(15, self.item_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for GOLHAKEGKCL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GOLHAKEGKCL.proto\"j\n\x0bGOLHAKEGKCL\x12\x20\n\x0bDCPDNBALDOA\x18\
-    \n\x20\x01(\rR\x0bDCPDNBALDOA\x12\x20\n\x0bHFNNNGHBHGG\x18\x0b\x20\x01(\
-    \rR\x0bHFNNNGHBHGG\x12\x17\n\x07item_id\x18\x0c\x20\x01(\rR\x06itemIdb\
+    \x06\x20\x01(\rR\x0bDCPDNBALDOA\x12\x20\n\x0bHFNNNGHBHGG\x18\x08\x20\x01\
+    (\rR\x0bHFNNNGHBHGG\x12\x17\n\x07item_id\x18\x0f\x20\x01(\rR\x06itemIdb\
     \x06proto3\
 ";
 

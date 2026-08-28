@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct GetFirstTalkNpcScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetFirstTalkNpcScRsp.npc_meet_status_list)
-    pub npc_meet_status_list: ::std::vec::Vec<super::FirstNpcTalkInfo::FirstNpcTalkInfo>,
+    pub npc_meet_status_list: ::std::vec::Vec<super::ILKADBIDKAA::ILKADBIDKAA>,
     // @@protoc_insertion_point(field:GetFirstTalkNpcScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -82,7 +82,7 @@ impl ::protobuf::Message for GetFirstTalkNpcScRsp {
                 10 => {
                     self.npc_meet_status_list.push(is.read_message()?);
                 },
-                72 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for GetFirstTalkNpcScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for GetFirstTalkNpcScRsp {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetFirstTalkNpcScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aGetFirstTalkNpcScRsp.proto\x1a\x16FirstNpcTalkInfo.proto\"t\n\x14G\
-    etFirstTalkNpcScRsp\x12B\n\x14npc_meet_status_list\x18\x01\x20\x03(\x0b2\
-    \x11.FirstNpcTalkInfoR\x11npcMeetStatusList\x12\x18\n\x07retcode\x18\t\
-    \x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1aGetFirstTalkNpcScRsp.proto\x1a\x11ILKADBIDKAA.proto\"o\n\x14GetFir\
+    stTalkNpcScRsp\x12=\n\x14npc_meet_status_list\x18\x01\x20\x03(\x0b2\x0c.\
+    ILKADBIDKAAR\x11npcMeetStatusList\x12\x18\n\x07retcode\x18\x06\x20\x01(\
+    \rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FirstNpcTalkInfo::file_descriptor().clone());
+            deps.push(super::ILKADBIDKAA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetFirstTalkNpcScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

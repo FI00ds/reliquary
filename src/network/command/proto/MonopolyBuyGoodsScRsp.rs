@@ -89,10 +89,10 @@ impl ::protobuf::Message for MonopolyBuyGoodsScRsp {
                 40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                104 => {
+                64 => {
                     self.goods_id = is.read_uint32()?;
                 },
-                120 => {
+                72 => {
                     self.shop_id = is.read_uint32()?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for MonopolyBuyGoodsScRsp {
             my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         if self.goods_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.goods_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.goods_id);
         }
         if self.shop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.shop_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.shop_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,10 +126,10 @@ impl ::protobuf::Message for MonopolyBuyGoodsScRsp {
             os.write_uint32(5, self.retcode)?;
         }
         if self.goods_id != 0 {
-            os.write_uint32(13, self.goods_id)?;
+            os.write_uint32(8, self.goods_id)?;
         }
         if self.shop_id != 0 {
-            os.write_uint32(15, self.shop_id)?;
+            os.write_uint32(9, self.shop_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyBuyGoodsScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bMonopolyBuyGoodsScRsp.proto\"e\n\x15MonopolyBuyGoodsScRsp\x12\x18\
-    \n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x19\n\x08goods_id\x18\r\
-    \x20\x01(\rR\x07goodsId\x12\x17\n\x07shop_id\x18\x0f\x20\x01(\rR\x06shop\
-    Idb\x06proto3\
+    \n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x19\n\x08goods_id\x18\
+    \x08\x20\x01(\rR\x07goodsId\x12\x17\n\x07shop_id\x18\t\x20\x01(\rR\x06sh\
+    opIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

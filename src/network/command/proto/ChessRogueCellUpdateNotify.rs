@@ -93,13 +93,13 @@ impl ::protobuf::Message for ChessRogueCellUpdateNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                8 => {
                     self.AIHCKNAMPBP = is.read_uint32()?;
                 },
-                56 => {
+                16 => {
                     self.CFAOFCGJBMA = is.read_enum_or_unknown()?;
                 },
-                80 => {
+                64 => {
                     self.reason = is.read_enum_or_unknown()?;
                 },
                 122 => {
@@ -118,13 +118,13 @@ impl ::protobuf::Message for ChessRogueCellUpdateNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.AIHCKNAMPBP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.AIHCKNAMPBP);
+            my_size += ::protobuf::rt::uint32_size(1, self.AIHCKNAMPBP);
         }
-        if self.CFAOFCGJBMA != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::AMEIKAGDIFC_PBGOAOGCPLA) {
-            my_size += ::protobuf::rt::int32_size(7, self.CFAOFCGJBMA.value());
+        if self.CFAOFCGJBMA != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceNone) {
+            my_size += ::protobuf::rt::int32_size(2, self.CFAOFCGJBMA.value());
         }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::AIMCAMJABNA::AIMCAMJABNA::AIMCAMJABNA_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(10, self.reason.value());
+            my_size += ::protobuf::rt::int32_size(8, self.reason.value());
         }
         for value in &self.CPPCIGMJALM {
             let len = value.compute_size();
@@ -137,13 +137,13 @@ impl ::protobuf::Message for ChessRogueCellUpdateNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.AIHCKNAMPBP != 0 {
-            os.write_uint32(4, self.AIHCKNAMPBP)?;
+            os.write_uint32(1, self.AIHCKNAMPBP)?;
         }
-        if self.CFAOFCGJBMA != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::AMEIKAGDIFC_PBGOAOGCPLA) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.CFAOFCGJBMA))?;
+        if self.CFAOFCGJBMA != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceNone) {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.CFAOFCGJBMA))?;
         }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::AIMCAMJABNA::AIMCAMJABNA::AIMCAMJABNA_NLCDGIPGFDJ) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.reason))?;
         }
         for v in &self.CPPCIGMJALM {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
@@ -166,7 +166,7 @@ impl ::protobuf::Message for ChessRogueCellUpdateNotify {
 
     fn clear(&mut self) {
         self.AIHCKNAMPBP = 0;
-        self.CFAOFCGJBMA = ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::AMEIKAGDIFC_PBGOAOGCPLA);
+        self.CFAOFCGJBMA = ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceNone);
         self.reason = ::protobuf::EnumOrUnknown::new(super::AIMCAMJABNA::AIMCAMJABNA::AIMCAMJABNA_NLCDGIPGFDJ);
         self.CPPCIGMJALM.clear();
         self.special_fields.clear();
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueCellUpdateNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20ChessRogueCellUpdateNotify.proto\x1a\x11AIMCAMJABNA.proto\x1a\x11C\
     GMCMAKMJDK.proto\x1a\x1dRogueModifierSourceType.proto\"\xd0\x01\n\x1aChe\
-    ssRogueCellUpdateNotify\x12\x20\n\x0bAIHCKNAMPBP\x18\x04\x20\x01(\rR\x0b\
-    AIHCKNAMPBP\x12:\n\x0bCFAOFCGJBMA\x18\x07\x20\x01(\x0e2\x18.RogueModifie\
-    rSourceTypeR\x0bCFAOFCGJBMA\x12$\n\x06reason\x18\n\x20\x01(\x0e2\x0c.AIM\
-    CAMJABNAR\x06reason\x12.\n\x0bCPPCIGMJALM\x18\x0f\x20\x03(\x0b2\x0c.CGMC\
-    MAKMJDKR\x0bCPPCIGMJALMb\x06proto3\
+    ssRogueCellUpdateNotify\x12\x20\n\x0bAIHCKNAMPBP\x18\x01\x20\x01(\rR\x0b\
+    AIHCKNAMPBP\x12:\n\x0bCFAOFCGJBMA\x18\x02\x20\x01(\x0e2\x18.RogueModifie\
+    rSourceTypeR\x0bCFAOFCGJBMA\x12$\n\x06reason\x18\x08\x20\x01(\x0e2\x0c.A\
+    IMCAMJABNAR\x06reason\x12.\n\x0bCPPCIGMJALM\x18\x0f\x20\x03(\x0b2\x0c.CG\
+    MCMAKMJDKR\x0bCPPCIGMJALMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

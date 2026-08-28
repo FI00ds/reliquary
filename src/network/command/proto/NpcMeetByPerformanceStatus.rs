@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NpcMeetByPerformanceStatus {
     // message fields
-    // @@protoc_insertion_point(field:NpcMeetByPerformanceStatus.is_meet)
-    pub is_meet: bool,
+    // @@protoc_insertion_point(field:NpcMeetByPerformanceStatus.OKPLPEELPBC)
+    pub OKPLPEELPBC: bool,
     // @@protoc_insertion_point(field:NpcMeetByPerformanceStatus.performance_id)
     pub performance_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl NpcMeetByPerformanceStatus {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_meet",
-            |m: &NpcMeetByPerformanceStatus| { &m.is_meet },
-            |m: &mut NpcMeetByPerformanceStatus| { &mut m.is_meet },
+            "OKPLPEELPBC",
+            |m: &NpcMeetByPerformanceStatus| { &m.OKPLPEELPBC },
+            |m: &mut NpcMeetByPerformanceStatus| { &mut m.OKPLPEELPBC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "performance_id",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for NpcMeetByPerformanceStatus {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.is_meet = is.read_bool()?;
+                8 => {
+                    self.OKPLPEELPBC = is.read_bool()?;
                 },
-                120 => {
+                72 => {
                     self.performance_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for NpcMeetByPerformanceStatus {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_meet != false {
+        if self.OKPLPEELPBC != false {
             my_size += 1 + 1;
         }
         if self.performance_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.performance_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.performance_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for NpcMeetByPerformanceStatus {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_meet != false {
-            os.write_bool(2, self.is_meet)?;
+        if self.OKPLPEELPBC != false {
+            os.write_bool(1, self.OKPLPEELPBC)?;
         }
         if self.performance_id != 0 {
-            os.write_uint32(15, self.performance_id)?;
+            os.write_uint32(9, self.performance_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for NpcMeetByPerformanceStatus {
     }
 
     fn clear(&mut self) {
-        self.is_meet = false;
+        self.OKPLPEELPBC = false;
         self.performance_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NpcMeetByPerformanceStatus {
         static instance: NpcMeetByPerformanceStatus = NpcMeetByPerformanceStatus {
-            is_meet: false,
+            OKPLPEELPBC: false,
             performance_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for NpcMeetByPerformanceStatus {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20NpcMeetByPerformanceStatus.proto\"\\\n\x1aNpcMeetByPerformanceStat\
-    us\x12\x17\n\x07is_meet\x18\x02\x20\x01(\x08R\x06isMeet\x12%\n\x0eperfor\
-    mance_id\x18\x0f\x20\x01(\rR\rperformanceIdb\x06proto3\
+    \n\x20NpcMeetByPerformanceStatus.proto\"e\n\x1aNpcMeetByPerformanceStatu\
+    s\x12\x20\n\x0bOKPLPEELPBC\x18\x01\x20\x01(\x08R\x0bOKPLPEELPBC\x12%\n\
+    \x0eperformance_id\x18\t\x20\x01(\rR\rperformanceIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

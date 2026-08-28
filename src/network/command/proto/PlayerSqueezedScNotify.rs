@@ -31,7 +31,7 @@ pub struct PlayerSqueezedScNotify {
     // @@protoc_insertion_point(field:PlayerSqueezedScNotify.black_info)
     pub black_info: ::protobuf::MessageField<super::BlackInfo::BlackInfo>,
     // @@protoc_insertion_point(field:PlayerSqueezedScNotify.kick_type)
-    pub kick_type: ::protobuf::EnumOrUnknown<super::KickType::KickType>,
+    pub kick_type: ::protobuf::EnumOrUnknown<player_squeezed_sc_notify::KickType>,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerSqueezedScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -79,10 +79,10 @@ impl ::protobuf::Message for PlayerSqueezedScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.black_info)?;
                 },
-                72 => {
+                88 => {
                     self.kick_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -101,8 +101,8 @@ impl ::protobuf::Message for PlayerSqueezedScNotify {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.kick_type != ::protobuf::EnumOrUnknown::new(super::KickType::KickType::KICK_SQUEEZED) {
-            my_size += ::protobuf::rt::int32_size(9, self.kick_type.value());
+        if self.kick_type != ::protobuf::EnumOrUnknown::new(player_squeezed_sc_notify::KickType::KICK_SQUEEZED) {
+            my_size += ::protobuf::rt::int32_size(11, self.kick_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for PlayerSqueezedScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.black_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
-        if self.kick_type != ::protobuf::EnumOrUnknown::new(super::KickType::KickType::KICK_SQUEEZED) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.kick_type))?;
+        if self.kick_type != ::protobuf::EnumOrUnknown::new(player_squeezed_sc_notify::KickType::KICK_SQUEEZED) {
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.kick_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,7 +134,7 @@ impl ::protobuf::Message for PlayerSqueezedScNotify {
 
     fn clear(&mut self) {
         self.black_info.clear();
-        self.kick_type = ::protobuf::EnumOrUnknown::new(super::KickType::KickType::KICK_SQUEEZED);
+        self.kick_type = ::protobuf::EnumOrUnknown::new(player_squeezed_sc_notify::KickType::KICK_SQUEEZED);
         self.special_fields.clear();
     }
 
@@ -165,11 +165,100 @@ impl ::protobuf::reflect::ProtobufValue for PlayerSqueezedScNotify {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
+/// Nested message and enums of message `PlayerSqueezedScNotify`
+pub mod player_squeezed_sc_notify {
+    #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
+    // @@protoc_insertion_point(enum:PlayerSqueezedScNotify.KickType)
+    pub enum KickType {
+        // @@protoc_insertion_point(enum_value:PlayerSqueezedScNotify.KickType.KICK_SQUEEZED)
+        KICK_SQUEEZED = 0,
+        // @@protoc_insertion_point(enum_value:PlayerSqueezedScNotify.KickType.KICK_BLACK)
+        KICK_BLACK = 1,
+        // @@protoc_insertion_point(enum_value:PlayerSqueezedScNotify.KickType.KICK_CHANGE_PWD)
+        KICK_CHANGE_PWD = 2,
+        // @@protoc_insertion_point(enum_value:PlayerSqueezedScNotify.KickType.KICK_LOGIN_WHITE_TIMEOUT)
+        KICK_LOGIN_WHITE_TIMEOUT = 3,
+        // @@protoc_insertion_point(enum_value:PlayerSqueezedScNotify.KickType.KICK_ACE_ANTI_CHEATER)
+        KICK_ACE_ANTI_CHEATER = 4,
+        // @@protoc_insertion_point(enum_value:PlayerSqueezedScNotify.KickType.KICK_BY_GM)
+        KICK_BY_GM = 5,
+    }
+
+    impl ::protobuf::Enum for KickType {
+        const NAME: &'static str = "KickType";
+
+        fn value(&self) -> i32 {
+            *self as i32
+        }
+
+        fn from_i32(value: i32) -> ::std::option::Option<KickType> {
+            match value {
+                0 => ::std::option::Option::Some(KickType::KICK_SQUEEZED),
+                1 => ::std::option::Option::Some(KickType::KICK_BLACK),
+                2 => ::std::option::Option::Some(KickType::KICK_CHANGE_PWD),
+                3 => ::std::option::Option::Some(KickType::KICK_LOGIN_WHITE_TIMEOUT),
+                4 => ::std::option::Option::Some(KickType::KICK_ACE_ANTI_CHEATER),
+                5 => ::std::option::Option::Some(KickType::KICK_BY_GM),
+                _ => ::std::option::Option::None
+            }
+        }
+
+        fn from_str(str: &str) -> ::std::option::Option<KickType> {
+            match str {
+                "KICK_SQUEEZED" => ::std::option::Option::Some(KickType::KICK_SQUEEZED),
+                "KICK_BLACK" => ::std::option::Option::Some(KickType::KICK_BLACK),
+                "KICK_CHANGE_PWD" => ::std::option::Option::Some(KickType::KICK_CHANGE_PWD),
+                "KICK_LOGIN_WHITE_TIMEOUT" => ::std::option::Option::Some(KickType::KICK_LOGIN_WHITE_TIMEOUT),
+                "KICK_ACE_ANTI_CHEATER" => ::std::option::Option::Some(KickType::KICK_ACE_ANTI_CHEATER),
+                "KICK_BY_GM" => ::std::option::Option::Some(KickType::KICK_BY_GM),
+                _ => ::std::option::Option::None
+            }
+        }
+
+        const VALUES: &'static [KickType] = &[
+            KickType::KICK_SQUEEZED,
+            KickType::KICK_BLACK,
+            KickType::KICK_CHANGE_PWD,
+            KickType::KICK_LOGIN_WHITE_TIMEOUT,
+            KickType::KICK_ACE_ANTI_CHEATER,
+            KickType::KICK_BY_GM,
+        ];
+    }
+
+    impl ::protobuf::EnumFull for KickType {
+        fn enum_descriptor() -> ::protobuf::reflect::EnumDescriptor {
+            static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::EnumDescriptor> = ::protobuf::rt::Lazy::new();
+            descriptor.get(|| super::file_descriptor().enum_by_package_relative_name("PlayerSqueezedScNotify.KickType").unwrap()).clone()
+        }
+
+        fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
+            let index = *self as usize;
+            Self::enum_descriptor().value_by_index(index)
+        }
+    }
+
+    impl ::std::default::Default for KickType {
+        fn default() -> Self {
+            KickType::KICK_SQUEEZED
+        }
+    }
+
+    impl KickType {
+        pub(in super) fn generated_enum_descriptor_data() -> ::protobuf::reflect::GeneratedEnumDescriptorData {
+            ::protobuf::reflect::GeneratedEnumDescriptorData::new::<KickType>("PlayerSqueezedScNotify.KickType")
+        }
+    }
+}
+
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cPlayerSqueezedScNotify.proto\x1a\x0fBlackInfo.proto\x1a\x0eKickTyp\
-    e.proto\"k\n\x16PlayerSqueezedScNotify\x12)\n\nblack_info\x18\x08\x20\
-    \x01(\x0b2\n.BlackInfoR\tblackInfo\x12&\n\tkick_type\x18\t\x20\x01(\x0e2\
-    \t.KickTypeR\x08kickTypeb\x06proto3\
+    e.proto\"\x90\x02\n\x16PlayerSqueezedScNotify\x12)\n\nblack_info\x18\x01\
+    \x20\x01(\x0b2\n.BlackInfoR\tblackInfo\x12=\n\tkick_type\x18\x0b\x20\x01\
+    (\x0e2\x20.PlayerSqueezedScNotify.KickTypeR\x08kickType\"\x8b\x01\n\x08K\
+    ickType\x12\x11\n\rKICK_SQUEEZED\x10\0\x12\x0e\n\nKICK_BLACK\x10\x01\x12\
+    \x13\n\x0fKICK_CHANGE_PWD\x10\x02\x12\x1c\n\x18KICK_LOGIN_WHITE_TIMEOUT\
+    \x10\x03\x12\x19\n\x15KICK_ACE_ANTI_CHEATER\x10\x04\x12\x0e\n\nKICK_BY_G\
+    M\x10\x05b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -191,7 +280,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             deps.push(super::KickType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PlayerSqueezedScNotify::generated_message_descriptor_data());
-            let mut enums = ::std::vec::Vec::with_capacity(0);
+            let mut enums = ::std::vec::Vec::with_capacity(1);
+            enums.push(player_squeezed_sc_notify::KickType::generated_enum_descriptor_data());
             ::protobuf::reflect::GeneratedFileDescriptor::new_generated(
                 file_descriptor_proto(),
                 deps,

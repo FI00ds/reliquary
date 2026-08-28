@@ -27,9 +27,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 // @@protoc_insertion_point(message:BPDKJKJGECM)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BPDKJKJGECM {
-    // message fields
-    // @@protoc_insertion_point(field:BPDKJKJGECM.NJFNFNBKEMK)
-    pub NJFNFNBKEMK: ::protobuf::MessageField<super::NECNANNNGBN::NECNANNNGBN>,
+    // message oneof groups
+    pub PNBLCPHJNNO: ::std::option::Option<bpdkjkjgecm::PNBLCPHJNNO>,
     // special fields
     // @@protoc_insertion_point(special_field:BPDKJKJGECM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -46,14 +45,66 @@ impl BPDKJKJGECM {
         ::std::default::Default::default()
     }
 
+    // .NECNANNNGBN NJFNFNBKEMK = 1;
+
+    pub fn NJFNFNBKEMK(&self) -> &super::NECNANNNGBN::NECNANNNGBN {
+        match self.PNBLCPHJNNO {
+            ::std::option::Option::Some(bpdkjkjgecm::PNBLCPHJNNO::NJFNFNBKEMK(ref v)) => v,
+            _ => <super::NECNANNNGBN::NECNANNNGBN as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_NJFNFNBKEMK(&mut self) {
+        self.PNBLCPHJNNO = ::std::option::Option::None;
+    }
+
+    pub fn has_NJFNFNBKEMK(&self) -> bool {
+        match self.PNBLCPHJNNO {
+            ::std::option::Option::Some(bpdkjkjgecm::PNBLCPHJNNO::NJFNFNBKEMK(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_NJFNFNBKEMK(&mut self, v: super::NECNANNNGBN::NECNANNNGBN) {
+        self.PNBLCPHJNNO = ::std::option::Option::Some(bpdkjkjgecm::PNBLCPHJNNO::NJFNFNBKEMK(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_NJFNFNBKEMK(&mut self) -> &mut super::NECNANNNGBN::NECNANNNGBN {
+        if let ::std::option::Option::Some(bpdkjkjgecm::PNBLCPHJNNO::NJFNFNBKEMK(_)) = self.PNBLCPHJNNO {
+        } else {
+            self.PNBLCPHJNNO = ::std::option::Option::Some(bpdkjkjgecm::PNBLCPHJNNO::NJFNFNBKEMK(super::NECNANNNGBN::NECNANNNGBN::new()));
+        }
+        match self.PNBLCPHJNNO {
+            ::std::option::Option::Some(bpdkjkjgecm::PNBLCPHJNNO::NJFNFNBKEMK(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_NJFNFNBKEMK(&mut self) -> super::NECNANNNGBN::NECNANNNGBN {
+        if self.has_NJFNFNBKEMK() {
+            match self.PNBLCPHJNNO.take() {
+                ::std::option::Option::Some(bpdkjkjgecm::PNBLCPHJNNO::NJFNFNBKEMK(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::NECNANNNGBN::NECNANNNGBN::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
-        let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NECNANNNGBN::NECNANNNGBN>(
+        let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NECNANNNGBN::NECNANNNGBN>(
             "NJFNFNBKEMK",
-            |m: &BPDKJKJGECM| { &m.NJFNFNBKEMK },
-            |m: &mut BPDKJKJGECM| { &mut m.NJFNFNBKEMK },
+            BPDKJKJGECM::has_NJFNFNBKEMK,
+            BPDKJKJGECM::NJFNFNBKEMK,
+            BPDKJKJGECM::mut_NJFNFNBKEMK,
+            BPDKJKJGECM::set_NJFNFNBKEMK,
         ));
+        oneofs.push(bpdkjkjgecm::PNBLCPHJNNO::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BPDKJKJGECM>(
             "BPDKJKJGECM",
             fields,
@@ -72,8 +123,8 @@ impl ::protobuf::Message for BPDKJKJGECM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NJFNFNBKEMK)?;
+                10 => {
+                    self.PNBLCPHJNNO = ::std::option::Option::Some(bpdkjkjgecm::PNBLCPHJNNO::NJFNFNBKEMK(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,9 +138,13 @@ impl ::protobuf::Message for BPDKJKJGECM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.NJFNFNBKEMK.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if let ::std::option::Option::Some(ref v) = self.PNBLCPHJNNO {
+            match v {
+                &bpdkjkjgecm::PNBLCPHJNNO::NJFNFNBKEMK(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+            };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +152,12 @@ impl ::protobuf::Message for BPDKJKJGECM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.NJFNFNBKEMK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let ::std::option::Option::Some(ref v) = self.PNBLCPHJNNO {
+            match v {
+                &bpdkjkjgecm::PNBLCPHJNNO::NJFNFNBKEMK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                },
+            };
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +176,13 @@ impl ::protobuf::Message for BPDKJKJGECM {
     }
 
     fn clear(&mut self) {
-        self.NJFNFNBKEMK.clear();
+        self.PNBLCPHJNNO = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BPDKJKJGECM {
         static instance: BPDKJKJGECM = BPDKJKJGECM {
-            NJFNFNBKEMK: ::protobuf::MessageField::none(),
+            PNBLCPHJNNO: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,10 +206,38 @@ impl ::protobuf::reflect::ProtobufValue for BPDKJKJGECM {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
+/// Nested message and enums of message `BPDKJKJGECM`
+pub mod bpdkjkjgecm {
+
+    #[derive(Clone,PartialEq,Debug)]
+    #[non_exhaustive]
+    // @@protoc_insertion_point(oneof:BPDKJKJGECM.PNBLCPHJNNO)
+    pub enum PNBLCPHJNNO {
+        // @@protoc_insertion_point(oneof_field:BPDKJKJGECM.NJFNFNBKEMK)
+        NJFNFNBKEMK(super::super::NECNANNNGBN::NECNANNNGBN),
+    }
+
+    impl ::protobuf::Oneof for PNBLCPHJNNO {
+    }
+
+    impl ::protobuf::OneofFull for PNBLCPHJNNO {
+        fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
+            static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
+            descriptor.get(|| <super::BPDKJKJGECM as ::protobuf::MessageFull>::descriptor().oneof_by_name("PNBLCPHJNNO").unwrap()).clone()
+        }
+    }
+
+    impl PNBLCPHJNNO {
+        pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<PNBLCPHJNNO>("PNBLCPHJNNO")
+        }
+    }
+}
+
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BPDKJKJGECM.proto\x1a\x11NECNANNNGBN.proto\"=\n\x0bBPDKJKJGECM\x12\
-    .\n\x0bNJFNFNBKEMK\x18\n\x20\x01(\x0b2\x0c.NECNANNNGBNR\x0bNJFNFNBKEMKb\
-    \x06proto3\
+    \n\x11BPDKJKJGECM.proto\x1a\x11NECNANNNGBN.proto\"N\n\x0bBPDKJKJGECM\x12\
+    0\n\x0bNJFNFNBKEMK\x18\x01\x20\x01(\x0b2\x0c.NECNANNNGBNH\0R\x0bNJFNFNBK\
+    EMKB\r\n\x0bPNBLCPHJNNOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

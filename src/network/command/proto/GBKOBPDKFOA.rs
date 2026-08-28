@@ -45,7 +45,7 @@ impl GBKOBPDKFOA {
         ::std::default::Default::default()
     }
 
-    // .GJJNNBKCJKF FNJBFPALOAO = 2;
+    // .GJJNNBKCJKF FNJBFPALOAO = 4;
 
     pub fn FNJBFPALOAO(&self) -> &super::GJJNNBKCJKF::GJJNNBKCJKF {
         match self.FJIANHMABAB {
@@ -94,7 +94,7 @@ impl GBKOBPDKFOA {
         }
     }
 
-    // .NJPJKJBMKGB PAGPNOKLNOM = 5;
+    // .NJPJKJBMKGB PAGPNOKLNOM = 15;
 
     pub fn PAGPNOKLNOM(&self) -> &super::NJPJKJBMKGB::NJPJKJBMKGB {
         match self.FJIANHMABAB {
@@ -143,7 +143,7 @@ impl GBKOBPDKFOA {
         }
     }
 
-    // .HOKMNINJPBP LCMADDIMION = 7;
+    // .HOKMNINJPBP LCMADDIMION = 11;
 
     pub fn LCMADDIMION(&self) -> &super::HOKMNINJPBP::HOKMNINJPBP {
         match self.FJIANHMABAB {
@@ -235,13 +235,13 @@ impl ::protobuf::Message for GBKOBPDKFOA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                34 => {
                     self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::FNJBFPALOAO(is.read_message()?));
                 },
-                42 => {
+                122 => {
                     self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::PAGPNOKLNOM(is.read_message()?));
                 },
-                58 => {
+                90 => {
                     self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::LCMADDIMION(is.read_message()?));
                 },
                 tag => {
@@ -281,13 +281,13 @@ impl ::protobuf::Message for GBKOBPDKFOA {
         if let ::std::option::Option::Some(ref v) = self.FJIANHMABAB {
             match v {
                 &gbkobpdkfoa::FJIANHMABAB::FNJBFPALOAO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
                 &gbkobpdkfoa::FJIANHMABAB::PAGPNOKLNOM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
                 &gbkobpdkfoa::FJIANHMABAB::LCMADDIMION(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
             };
         }
@@ -375,9 +375,9 @@ pub mod gbkobpdkfoa {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GBKOBPDKFOA.proto\x1a\x11GJJNNBKCJKF.proto\x1a\x11HOKMNINJPBP.prot\
     o\x1a\x11NJPJKJBMKGB.proto\"\xb2\x01\n\x0bGBKOBPDKFOA\x120\n\x0bFNJBFPAL\
-    OAO\x18\x02\x20\x01(\x0b2\x0c.GJJNNBKCJKFH\0R\x0bFNJBFPALOAO\x120\n\x0bP\
-    AGPNOKLNOM\x18\x05\x20\x01(\x0b2\x0c.NJPJKJBMKGBH\0R\x0bPAGPNOKLNOM\x120\
-    \n\x0bLCMADDIMION\x18\x07\x20\x01(\x0b2\x0c.HOKMNINJPBPH\0R\x0bLCMADDIMI\
+    OAO\x18\x04\x20\x01(\x0b2\x0c.GJJNNBKCJKFH\0R\x0bFNJBFPALOAO\x120\n\x0bP\
+    AGPNOKLNOM\x18\x0f\x20\x01(\x0b2\x0c.NJPJKJBMKGBH\0R\x0bPAGPNOKLNOM\x120\
+    \n\x0bLCMADDIMION\x18\x0b\x20\x01(\x0b2\x0c.HOKMNINJPBPH\0R\x0bLCMADDIMI\
     ONB\r\n\x0bFJIANHMABABb\x06proto3\
 ";
 

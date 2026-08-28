@@ -30,10 +30,10 @@ pub struct LOEBAOEFMDC {
     // message fields
     // @@protoc_insertion_point(field:LOEBAOEFMDC.HCFJIJHLJDM)
     pub HCFJIJHLJDM: u32,
-    // @@protoc_insertion_point(field:LOEBAOEFMDC.FNFJOCEGFBI)
-    pub FNFJOCEGFBI: bool,
     // @@protoc_insertion_point(field:LOEBAOEFMDC.HABHOAMCGLH)
     pub HABHOAMCGLH: u32,
+    // @@protoc_insertion_point(field:LOEBAOEFMDC.FNFJOCEGFBI)
+    pub FNFJOCEGFBI: bool,
     // special fields
     // @@protoc_insertion_point(special_field:LOEBAOEFMDC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl LOEBAOEFMDC {
             |m: &mut LOEBAOEFMDC| { &mut m.HCFJIJHLJDM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FNFJOCEGFBI",
-            |m: &LOEBAOEFMDC| { &m.FNFJOCEGFBI },
-            |m: &mut LOEBAOEFMDC| { &mut m.FNFJOCEGFBI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HABHOAMCGLH",
             |m: &LOEBAOEFMDC| { &m.HABHOAMCGLH },
             |m: &mut LOEBAOEFMDC| { &mut m.HABHOAMCGLH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FNFJOCEGFBI",
+            |m: &LOEBAOEFMDC| { &m.FNFJOCEGFBI },
+            |m: &mut LOEBAOEFMDC| { &mut m.FNFJOCEGFBI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LOEBAOEFMDC>(
             "LOEBAOEFMDC",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for LOEBAOEFMDC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                40 => {
                     self.HCFJIJHLJDM = is.read_uint32()?;
                 },
-                56 => {
-                    self.FNFJOCEGFBI = is.read_bool()?;
+                72 => {
+                    self.HABHOAMCGLH = is.read_uint32()?;
                 },
                 120 => {
-                    self.HABHOAMCGLH = is.read_uint32()?;
+                    self.FNFJOCEGFBI = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for LOEBAOEFMDC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HCFJIJHLJDM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.HCFJIJHLJDM);
+            my_size += ::protobuf::rt::uint32_size(5, self.HCFJIJHLJDM);
+        }
+        if self.HABHOAMCGLH != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.HABHOAMCGLH);
         }
         if self.FNFJOCEGFBI != false {
             my_size += 1 + 1;
-        }
-        if self.HABHOAMCGLH != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.HABHOAMCGLH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for LOEBAOEFMDC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HCFJIJHLJDM != 0 {
-            os.write_uint32(3, self.HCFJIJHLJDM)?;
-        }
-        if self.FNFJOCEGFBI != false {
-            os.write_bool(7, self.FNFJOCEGFBI)?;
+            os.write_uint32(5, self.HCFJIJHLJDM)?;
         }
         if self.HABHOAMCGLH != 0 {
-            os.write_uint32(15, self.HABHOAMCGLH)?;
+            os.write_uint32(9, self.HABHOAMCGLH)?;
+        }
+        if self.FNFJOCEGFBI != false {
+            os.write_bool(15, self.FNFJOCEGFBI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for LOEBAOEFMDC {
 
     fn clear(&mut self) {
         self.HCFJIJHLJDM = 0;
-        self.FNFJOCEGFBI = false;
         self.HABHOAMCGLH = 0;
+        self.FNFJOCEGFBI = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LOEBAOEFMDC {
         static instance: LOEBAOEFMDC = LOEBAOEFMDC {
             HCFJIJHLJDM: 0,
-            FNFJOCEGFBI: false,
             HABHOAMCGLH: 0,
+            FNFJOCEGFBI: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for LOEBAOEFMDC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LOEBAOEFMDC.proto\"s\n\x0bLOEBAOEFMDC\x12\x20\n\x0bHCFJIJHLJDM\x18\
-    \x03\x20\x01(\rR\x0bHCFJIJHLJDM\x12\x20\n\x0bFNFJOCEGFBI\x18\x07\x20\x01\
-    (\x08R\x0bFNFJOCEGFBI\x12\x20\n\x0bHABHOAMCGLH\x18\x0f\x20\x01(\rR\x0bHA\
-    BHOAMCGLHb\x06proto3\
+    \x05\x20\x01(\rR\x0bHCFJIJHLJDM\x12\x20\n\x0bHABHOAMCGLH\x18\t\x20\x01(\
+    \rR\x0bHABHOAMCGLH\x12\x20\n\x0bFNFJOCEGFBI\x18\x0f\x20\x01(\x08R\x0bFNF\
+    JOCEGFBIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,16 +27,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:PlanetFesCustomKey)
 pub enum PlanetFesCustomKey {
-    // @@protoc_insertion_point(enum_value:PlanetFesCustomKey.FEGJOAPIMCK_NLCDGIPGFDJ)
-    FEGJOAPIMCK_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:PlanetFesCustomKey.FEGJOAPIMCK_HHBCDDHGFEO)
-    FEGJOAPIMCK_HHBCDDHGFEO = 1,
-    // @@protoc_insertion_point(enum_value:PlanetFesCustomKey.FEGJOAPIMCK_DHHOGPFPJGL)
-    FEGJOAPIMCK_DHHOGPFPJGL = 2,
-    // @@protoc_insertion_point(enum_value:PlanetFesCustomKey.FEGJOAPIMCK_OANGMEDLOBL)
-    FEGJOAPIMCK_OANGMEDLOBL = 3,
-    // @@protoc_insertion_point(enum_value:PlanetFesCustomKey.FEGJOAPIMCK_CFOLBLCAPFB)
-    FEGJOAPIMCK_CFOLBLCAPFB = 4,
+    // @@protoc_insertion_point(enum_value:PlanetFesCustomKey.PlanetFesCustomKey_None)
+    PlanetFesCustomKey_None = 0,
+    // @@protoc_insertion_point(enum_value:PlanetFesCustomKey.PlanetFesCustomKey_UnlockInfiniteBusinessDayPerformance)
+    PlanetFesCustomKey_UnlockInfiniteBusinessDayPerformance = 1,
+    // @@protoc_insertion_point(enum_value:PlanetFesCustomKey.PlanetFesCustomKey_BusinessDayStartPerformanceLastSeenDay)
+    PlanetFesCustomKey_BusinessDayStartPerformanceLastSeenDay = 2,
+    // @@protoc_insertion_point(enum_value:PlanetFesCustomKey.PlanetFesCustomKey_BusinessDayUnlockPerformanceLastSeenDay)
+    PlanetFesCustomKey_BusinessDayUnlockPerformanceLastSeenDay = 3,
+    // @@protoc_insertion_point(enum_value:PlanetFesCustomKey.PlanetFesCustomKey_SummaryShow)
+    PlanetFesCustomKey_SummaryShow = 4,
 }
 
 impl ::protobuf::Enum for PlanetFesCustomKey {
@@ -48,32 +48,32 @@ impl ::protobuf::Enum for PlanetFesCustomKey {
 
     fn from_i32(value: i32) -> ::std::option::Option<PlanetFesCustomKey> {
         match value {
-            0 => ::std::option::Option::Some(PlanetFesCustomKey::FEGJOAPIMCK_NLCDGIPGFDJ),
-            1 => ::std::option::Option::Some(PlanetFesCustomKey::FEGJOAPIMCK_HHBCDDHGFEO),
-            2 => ::std::option::Option::Some(PlanetFesCustomKey::FEGJOAPIMCK_DHHOGPFPJGL),
-            3 => ::std::option::Option::Some(PlanetFesCustomKey::FEGJOAPIMCK_OANGMEDLOBL),
-            4 => ::std::option::Option::Some(PlanetFesCustomKey::FEGJOAPIMCK_CFOLBLCAPFB),
+            0 => ::std::option::Option::Some(PlanetFesCustomKey::PlanetFesCustomKey_None),
+            1 => ::std::option::Option::Some(PlanetFesCustomKey::PlanetFesCustomKey_UnlockInfiniteBusinessDayPerformance),
+            2 => ::std::option::Option::Some(PlanetFesCustomKey::PlanetFesCustomKey_BusinessDayStartPerformanceLastSeenDay),
+            3 => ::std::option::Option::Some(PlanetFesCustomKey::PlanetFesCustomKey_BusinessDayUnlockPerformanceLastSeenDay),
+            4 => ::std::option::Option::Some(PlanetFesCustomKey::PlanetFesCustomKey_SummaryShow),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<PlanetFesCustomKey> {
         match str {
-            "FEGJOAPIMCK_NLCDGIPGFDJ" => ::std::option::Option::Some(PlanetFesCustomKey::FEGJOAPIMCK_NLCDGIPGFDJ),
-            "FEGJOAPIMCK_HHBCDDHGFEO" => ::std::option::Option::Some(PlanetFesCustomKey::FEGJOAPIMCK_HHBCDDHGFEO),
-            "FEGJOAPIMCK_DHHOGPFPJGL" => ::std::option::Option::Some(PlanetFesCustomKey::FEGJOAPIMCK_DHHOGPFPJGL),
-            "FEGJOAPIMCK_OANGMEDLOBL" => ::std::option::Option::Some(PlanetFesCustomKey::FEGJOAPIMCK_OANGMEDLOBL),
-            "FEGJOAPIMCK_CFOLBLCAPFB" => ::std::option::Option::Some(PlanetFesCustomKey::FEGJOAPIMCK_CFOLBLCAPFB),
+            "PlanetFesCustomKey_None" => ::std::option::Option::Some(PlanetFesCustomKey::PlanetFesCustomKey_None),
+            "PlanetFesCustomKey_UnlockInfiniteBusinessDayPerformance" => ::std::option::Option::Some(PlanetFesCustomKey::PlanetFesCustomKey_UnlockInfiniteBusinessDayPerformance),
+            "PlanetFesCustomKey_BusinessDayStartPerformanceLastSeenDay" => ::std::option::Option::Some(PlanetFesCustomKey::PlanetFesCustomKey_BusinessDayStartPerformanceLastSeenDay),
+            "PlanetFesCustomKey_BusinessDayUnlockPerformanceLastSeenDay" => ::std::option::Option::Some(PlanetFesCustomKey::PlanetFesCustomKey_BusinessDayUnlockPerformanceLastSeenDay),
+            "PlanetFesCustomKey_SummaryShow" => ::std::option::Option::Some(PlanetFesCustomKey::PlanetFesCustomKey_SummaryShow),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [PlanetFesCustomKey] = &[
-        PlanetFesCustomKey::FEGJOAPIMCK_NLCDGIPGFDJ,
-        PlanetFesCustomKey::FEGJOAPIMCK_HHBCDDHGFEO,
-        PlanetFesCustomKey::FEGJOAPIMCK_DHHOGPFPJGL,
-        PlanetFesCustomKey::FEGJOAPIMCK_OANGMEDLOBL,
-        PlanetFesCustomKey::FEGJOAPIMCK_CFOLBLCAPFB,
+        PlanetFesCustomKey::PlanetFesCustomKey_None,
+        PlanetFesCustomKey::PlanetFesCustomKey_UnlockInfiniteBusinessDayPerformance,
+        PlanetFesCustomKey::PlanetFesCustomKey_BusinessDayStartPerformanceLastSeenDay,
+        PlanetFesCustomKey::PlanetFesCustomKey_BusinessDayUnlockPerformanceLastSeenDay,
+        PlanetFesCustomKey::PlanetFesCustomKey_SummaryShow,
     ];
 }
 
@@ -91,7 +91,7 @@ impl ::protobuf::EnumFull for PlanetFesCustomKey {
 
 impl ::std::default::Default for PlanetFesCustomKey {
     fn default() -> Self {
-        PlanetFesCustomKey::FEGJOAPIMCK_NLCDGIPGFDJ
+        PlanetFesCustomKey::PlanetFesCustomKey_None
     }
 }
 
@@ -102,11 +102,12 @@ impl PlanetFesCustomKey {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18PlanetFesCustomKey.proto*\xa5\x01\n\x12PlanetFesCustomKey\x12\x1b\
-    \n\x17FEGJOAPIMCK_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17FEGJOAPIMCK_HHBCDDHGFEO\
-    \x10\x01\x12\x1b\n\x17FEGJOAPIMCK_DHHOGPFPJGL\x10\x02\x12\x1b\n\x17FEGJO\
-    APIMCK_OANGMEDLOBL\x10\x03\x12\x1b\n\x17FEGJOAPIMCK_CFOLBLCAPFB\x10\x04b\
-    \x06proto3\
+    \n\x18PlanetFesCustomKey.proto*\x91\x02\n\x12PlanetFesCustomKey\x12\x1b\
+    \n\x17PlanetFesCustomKey_None\x10\0\x12;\n7PlanetFesCustomKey_UnlockInfi\
+    niteBusinessDayPerformance\x10\x01\x12=\n9PlanetFesCustomKey_BusinessDay\
+    StartPerformanceLastSeenDay\x10\x02\x12>\n:PlanetFesCustomKey_BusinessDa\
+    yUnlockPerformanceLastSeenDay\x10\x03\x12\"\n\x1ePlanetFesCustomKey_Summ\
+    aryShow\x10\x04b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

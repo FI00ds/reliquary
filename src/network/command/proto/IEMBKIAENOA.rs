@@ -38,8 +38,8 @@ pub struct IEMBKIAENOA {
     pub DLLADAJAKAG: u32,
     // @@protoc_insertion_point(field:IEMBKIAENOA.EIDALFJEAFP)
     pub EIDALFJEAFP: bool,
-    // @@protoc_insertion_point(field:IEMBKIAENOA.turn)
-    pub turn: u32,
+    // @@protoc_insertion_point(field:IEMBKIAENOA.HJPBAJEPAGE)
+    pub HJPBAJEPAGE: u32,
     // @@protoc_insertion_point(field:IEMBKIAENOA.FDAOAJKBJKM)
     pub FDAOAJKBJKM: u32,
     // @@protoc_insertion_point(field:IEMBKIAENOA.COGGJELNFCN)
@@ -109,9 +109,9 @@ impl IEMBKIAENOA {
             |m: &mut IEMBKIAENOA| { &mut m.EIDALFJEAFP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "turn",
-            |m: &IEMBKIAENOA| { &m.turn },
-            |m: &mut IEMBKIAENOA| { &mut m.turn },
+            "HJPBAJEPAGE",
+            |m: &IEMBKIAENOA| { &m.HJPBAJEPAGE },
+            |m: &mut IEMBKIAENOA| { &mut m.HJPBAJEPAGE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FDAOAJKBJKM",
@@ -207,7 +207,7 @@ impl ::protobuf::Message for IEMBKIAENOA {
                     self.EIDALFJEAFP = is.read_bool()?;
                 },
                 48 => {
-                    self.turn = is.read_uint32()?;
+                    self.HJPBAJEPAGE = is.read_uint32()?;
                 },
                 56 => {
                     self.FDAOAJKBJKM = is.read_uint32()?;
@@ -272,8 +272,8 @@ impl ::protobuf::Message for IEMBKIAENOA {
         if self.EIDALFJEAFP != false {
             my_size += 1 + 1;
         }
-        if self.turn != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.turn);
+        if self.HJPBAJEPAGE != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.HJPBAJEPAGE);
         }
         if self.FDAOAJKBJKM != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.FDAOAJKBJKM);
@@ -338,8 +338,8 @@ impl ::protobuf::Message for IEMBKIAENOA {
         if self.EIDALFJEAFP != false {
             os.write_bool(5, self.EIDALFJEAFP)?;
         }
-        if self.turn != 0 {
-            os.write_uint32(6, self.turn)?;
+        if self.HJPBAJEPAGE != 0 {
+            os.write_uint32(6, self.HJPBAJEPAGE)?;
         }
         if self.FDAOAJKBJKM != 0 {
             os.write_uint32(7, self.FDAOAJKBJKM)?;
@@ -399,7 +399,7 @@ impl ::protobuf::Message for IEMBKIAENOA {
         self.PJGILAADCPN = 0;
         self.DLLADAJAKAG = 0;
         self.EIDALFJEAFP = false;
-        self.turn = 0;
+        self.HJPBAJEPAGE = 0;
         self.FDAOAJKBJKM = 0;
         self.COGGJELNFCN.clear();
         self.FAOOHIBOJNE.clear();
@@ -422,7 +422,7 @@ impl ::protobuf::Message for IEMBKIAENOA {
             PJGILAADCPN: 0,
             DLLADAJAKAG: 0,
             EIDALFJEAFP: false,
-            turn: 0,
+            HJPBAJEPAGE: 0,
             FDAOAJKBJKM: 0,
             COGGJELNFCN: ::protobuf::MessageField::none(),
             FAOOHIBOJNE: ::protobuf::MessageField::none(),
@@ -460,23 +460,23 @@ impl ::protobuf::reflect::ProtobufValue for IEMBKIAENOA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IEMBKIAENOA.proto\x1a\x11CKODNPNBOEN.proto\x1a\x11FDNOPLPDLFC.prot\
-    o\"\xa8\x05\n\x0bIEMBKIAENOA\x12\x17\n\x07room_id\x18\x01\x20\x01(\x04R\
+    o\"\xb6\x05\n\x0bIEMBKIAENOA\x12\x17\n\x07room_id\x18\x01\x20\x01(\x04R\
     \x06roomId\x12\x20\n\x0bMPDHNFNCIEA\x18\x02\x20\x01(\rR\x0bMPDHNFNCIEA\
     \x12\x20\n\x0bPJGILAADCPN\x18\x03\x20\x01(\rR\x0bPJGILAADCPN\x12\x20\n\
     \x0bDLLADAJAKAG\x18\x04\x20\x01(\rR\x0bDLLADAJAKAG\x12\x20\n\x0bEIDALFJE\
-    AFP\x18\x05\x20\x01(\x08R\x0bEIDALFJEAFP\x12\x12\n\x04turn\x18\x06\x20\
-    \x01(\rR\x04turn\x12\x20\n\x0bFDAOAJKBJKM\x18\x07\x20\x01(\rR\x0bFDAOAJK\
-    BJKM\x12.\n\x0bCOGGJELNFCN\x18\x08\x20\x01(\x0b2\x0c.CKODNPNBOENR\x0bCOG\
-    GJELNFCN\x12.\n\x0bFAOOHIBOJNE\x18\t\x20\x01(\x0b2\x0c.CKODNPNBOENR\x0bF\
-    AOOHIBOJNE\x12.\n\x0bIDBGCLFLCGE\x18\n\x20\x01(\x0b2\x0c.CKODNPNBOENR\
-    \x0bIDBGCLFLCGE\x12\x1f\n\x0battack_type\x18\x0b\x20\x01(\rR\nattackType\
-    \x12.\n\x0bADHHMELLEHA\x18\x0c\x20\x01(\x0b2\x0c.FDNOPLPDLFCR\x0bADHHMEL\
-    LEHA\x12.\n\x0bOAMGGAMOLBH\x18\r\x20\x01(\x0b2\x0c.FDNOPLPDLFCR\x0bOAMGG\
-    AMOLBH\x12.\n\x0bKNMNGCBMNMJ\x18\x0e\x20\x01(\x0b2\x0c.FDNOPLPDLFCR\x0bK\
-    NMNGCBMNMJ\x12\x20\n\x0bECMLCBNLBBG\x18\x0f\x20\x01(\rR\x0bECMLCBNLBBG\
-    \x12\x20\n\x0bBLHPCHNPNLA\x18\x10\x20\x01(\rR\x0bBLHPCHNPNLA\x12\x1b\n\t\
-    cost_time\x18\x11\x20\x01(\rR\x08costTime\x12\x20\n\x0bICFPOKDIOLI\x18\
-    \x12\x20\x01(\rR\x0bICFPOKDIOLIb\x06proto3\
+    AFP\x18\x05\x20\x01(\x08R\x0bEIDALFJEAFP\x12\x20\n\x0bHJPBAJEPAGE\x18\
+    \x06\x20\x01(\rR\x0bHJPBAJEPAGE\x12\x20\n\x0bFDAOAJKBJKM\x18\x07\x20\x01\
+    (\rR\x0bFDAOAJKBJKM\x12.\n\x0bCOGGJELNFCN\x18\x08\x20\x01(\x0b2\x0c.CKOD\
+    NPNBOENR\x0bCOGGJELNFCN\x12.\n\x0bFAOOHIBOJNE\x18\t\x20\x01(\x0b2\x0c.CK\
+    ODNPNBOENR\x0bFAOOHIBOJNE\x12.\n\x0bIDBGCLFLCGE\x18\n\x20\x01(\x0b2\x0c.\
+    CKODNPNBOENR\x0bIDBGCLFLCGE\x12\x1f\n\x0battack_type\x18\x0b\x20\x01(\rR\
+    \nattackType\x12.\n\x0bADHHMELLEHA\x18\x0c\x20\x01(\x0b2\x0c.FDNOPLPDLFC\
+    R\x0bADHHMELLEHA\x12.\n\x0bOAMGGAMOLBH\x18\r\x20\x01(\x0b2\x0c.FDNOPLPDL\
+    FCR\x0bOAMGGAMOLBH\x12.\n\x0bKNMNGCBMNMJ\x18\x0e\x20\x01(\x0b2\x0c.FDNOP\
+    LPDLFCR\x0bKNMNGCBMNMJ\x12\x20\n\x0bECMLCBNLBBG\x18\x0f\x20\x01(\rR\x0bE\
+    CMLCBNLBBG\x12\x20\n\x0bBLHPCHNPNLA\x18\x10\x20\x01(\rR\x0bBLHPCHNPNLA\
+    \x12\x1b\n\tcost_time\x18\x11\x20\x01(\rR\x08costTime\x12\x20\n\x0bICFPO\
+    KDIOLI\x18\x12\x20\x01(\rR\x0bICFPOKDIOLIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

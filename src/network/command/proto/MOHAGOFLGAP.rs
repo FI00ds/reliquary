@@ -34,12 +34,12 @@ pub struct MOHAGOFLGAP {
     pub level: u32,
     // @@protoc_insertion_point(field:MOHAGOFLGAP.nickname)
     pub nickname: ::std::string::String,
-    // @@protoc_insertion_point(field:MOHAGOFLGAP.icon)
-    pub icon: u32,
+    // @@protoc_insertion_point(field:MOHAGOFLGAP.MJPKBIGCFOM)
+    pub MJPKBIGCFOM: u32,
     // @@protoc_insertion_point(field:MOHAGOFLGAP.platform)
     pub platform: ::protobuf::EnumOrUnknown<super::PlatformType::PlatformType>,
-    // @@protoc_insertion_point(field:MOHAGOFLGAP.IJKOMIKFKEK)
-    pub IJKOMIKFKEK: ::std::string::String,
+    // @@protoc_insertion_point(field:MOHAGOFLGAP.platform_uuid)
+    pub platform_uuid: ::std::string::String,
     // @@protoc_insertion_point(field:MOHAGOFLGAP.EBMNJMIKNPP)
     pub EBMNJMIKNPP: ::std::string::String,
     // @@protoc_insertion_point(field:MOHAGOFLGAP.version)
@@ -83,9 +83,9 @@ impl MOHAGOFLGAP {
             |m: &mut MOHAGOFLGAP| { &mut m.nickname },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "icon",
-            |m: &MOHAGOFLGAP| { &m.icon },
-            |m: &mut MOHAGOFLGAP| { &mut m.icon },
+            "MJPKBIGCFOM",
+            |m: &MOHAGOFLGAP| { &m.MJPKBIGCFOM },
+            |m: &mut MOHAGOFLGAP| { &mut m.MJPKBIGCFOM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "platform",
@@ -93,9 +93,9 @@ impl MOHAGOFLGAP {
             |m: &mut MOHAGOFLGAP| { &mut m.platform },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IJKOMIKFKEK",
-            |m: &MOHAGOFLGAP| { &m.IJKOMIKFKEK },
-            |m: &mut MOHAGOFLGAP| { &mut m.IJKOMIKFKEK },
+            "platform_uuid",
+            |m: &MOHAGOFLGAP| { &m.platform_uuid },
+            |m: &mut MOHAGOFLGAP| { &mut m.platform_uuid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EBMNJMIKNPP",
@@ -145,13 +145,13 @@ impl ::protobuf::Message for MOHAGOFLGAP {
                     self.nickname = is.read_string()?;
                 },
                 32 => {
-                    self.icon = is.read_uint32()?;
+                    self.MJPKBIGCFOM = is.read_uint32()?;
                 },
                 40 => {
                     self.platform = is.read_enum_or_unknown()?;
                 },
                 50 => {
-                    self.IJKOMIKFKEK = is.read_string()?;
+                    self.platform_uuid = is.read_string()?;
                 },
                 58 => {
                     self.EBMNJMIKNPP = is.read_string()?;
@@ -186,14 +186,14 @@ impl ::protobuf::Message for MOHAGOFLGAP {
         if !self.nickname.is_empty() {
             my_size += ::protobuf::rt::string_size(3, &self.nickname);
         }
-        if self.icon != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.icon);
+        if self.MJPKBIGCFOM != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.MJPKBIGCFOM);
         }
         if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
             my_size += ::protobuf::rt::int32_size(5, self.platform.value());
         }
-        if !self.IJKOMIKFKEK.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.IJKOMIKFKEK);
+        if !self.platform_uuid.is_empty() {
+            my_size += ::protobuf::rt::string_size(6, &self.platform_uuid);
         }
         if !self.EBMNJMIKNPP.is_empty() {
             my_size += ::protobuf::rt::string_size(7, &self.EBMNJMIKNPP);
@@ -222,14 +222,14 @@ impl ::protobuf::Message for MOHAGOFLGAP {
         if !self.nickname.is_empty() {
             os.write_string(3, &self.nickname)?;
         }
-        if self.icon != 0 {
-            os.write_uint32(4, self.icon)?;
+        if self.MJPKBIGCFOM != 0 {
+            os.write_uint32(4, self.MJPKBIGCFOM)?;
         }
         if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
             os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.platform))?;
         }
-        if !self.IJKOMIKFKEK.is_empty() {
-            os.write_string(6, &self.IJKOMIKFKEK)?;
+        if !self.platform_uuid.is_empty() {
+            os.write_string(6, &self.platform_uuid)?;
         }
         if !self.EBMNJMIKNPP.is_empty() {
             os.write_string(7, &self.EBMNJMIKNPP)?;
@@ -263,9 +263,9 @@ impl ::protobuf::Message for MOHAGOFLGAP {
         self.uid = 0;
         self.level = 0;
         self.nickname.clear();
-        self.icon = 0;
+        self.MJPKBIGCFOM = 0;
         self.platform = ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR);
-        self.IJKOMIKFKEK.clear();
+        self.platform_uuid.clear();
         self.EBMNJMIKNPP.clear();
         self.version = 0;
         self.OCLBMMNNMFC = false;
@@ -278,9 +278,9 @@ impl ::protobuf::Message for MOHAGOFLGAP {
             uid: 0,
             level: 0,
             nickname: ::std::string::String::new(),
-            icon: 0,
+            MJPKBIGCFOM: 0,
             platform: ::protobuf::EnumOrUnknown::from_i32(0),
-            IJKOMIKFKEK: ::std::string::String::new(),
+            platform_uuid: ::std::string::String::new(),
             EBMNJMIKNPP: ::std::string::String::new(),
             version: 0,
             OCLBMMNNMFC: false,
@@ -309,15 +309,16 @@ impl ::protobuf::reflect::ProtobufValue for MOHAGOFLGAP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MOHAGOFLGAP.proto\x1a\x12PlatformType.proto\"\xb2\x02\n\x0bMOHAGOF\
+    \n\x11MOHAGOFLGAP.proto\x1a\x12PlatformType.proto\"\xc3\x02\n\x0bMOHAGOF\
     LGAP\x12\x10\n\x03uid\x18\x01\x20\x01(\rR\x03uid\x12\x14\n\x05level\x18\
     \x02\x20\x01(\rR\x05level\x12\x1a\n\x08nickname\x18\x03\x20\x01(\tR\x08n\
-    ickname\x12\x12\n\x04icon\x18\x04\x20\x01(\rR\x04icon\x12)\n\x08platform\
-    \x18\x05\x20\x01(\x0e2\r.PlatformTypeR\x08platform\x12\x20\n\x0bIJKOMIKF\
-    KEK\x18\x06\x20\x01(\tR\x0bIJKOMIKFKEK\x12\x20\n\x0bEBMNJMIKNPP\x18\x07\
-    \x20\x01(\tR\x0bEBMNJMIKNPP\x12\x18\n\x07version\x18\x08\x20\x01(\x04R\
-    \x07version\x12\x20\n\x0bOCLBMMNNMFC\x18\t\x20\x01(\x08R\x0bOCLBMMNNMFC\
-    \x12\x20\n\x0bMIDBIPHKLJO\x18\n\x20\x01(\rR\x0bMIDBIPHKLJOb\x06proto3\
+    ickname\x12\x20\n\x0bMJPKBIGCFOM\x18\x04\x20\x01(\rR\x0bMJPKBIGCFOM\x12)\
+    \n\x08platform\x18\x05\x20\x01(\x0e2\r.PlatformTypeR\x08platform\x12#\n\
+    \rplatform_uuid\x18\x06\x20\x01(\tR\x0cplatformUuid\x12\x20\n\x0bEBMNJMI\
+    KNPP\x18\x07\x20\x01(\tR\x0bEBMNJMIKNPP\x12\x18\n\x07version\x18\x08\x20\
+    \x01(\x04R\x07version\x12\x20\n\x0bOCLBMMNNMFC\x18\t\x20\x01(\x08R\x0bOC\
+    LBMMNNMFC\x12\x20\n\x0bMIDBIPHKLJO\x18\n\x20\x01(\rR\x0bMIDBIPHKLJOb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

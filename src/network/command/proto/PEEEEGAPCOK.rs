@@ -30,8 +30,8 @@ pub struct PEEEEGAPCOK {
     // message fields
     // @@protoc_insertion_point(field:PEEEEGAPCOK.PLPPPCEPBDO)
     pub PLPPPCEPBDO: u32,
-    // @@protoc_insertion_point(field:PEEEEGAPCOK.op_uid)
-    pub op_uid: u32,
+    // @@protoc_insertion_point(field:PEEEEGAPCOK.IKDEIJCEDIO)
+    pub IKDEIJCEDIO: u32,
     // @@protoc_insertion_point(field:PEEEEGAPCOK.OOCPKIGPEHP)
     pub OOCPKIGPEHP: u32,
     // @@protoc_insertion_point(field:PEEEEGAPCOK.CMIEOOODDIA)
@@ -63,9 +63,9 @@ impl PEEEEGAPCOK {
             |m: &mut PEEEEGAPCOK| { &mut m.PLPPPCEPBDO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "op_uid",
-            |m: &PEEEEGAPCOK| { &m.op_uid },
-            |m: &mut PEEEEGAPCOK| { &mut m.op_uid },
+            "IKDEIJCEDIO",
+            |m: &PEEEEGAPCOK| { &m.IKDEIJCEDIO },
+            |m: &mut PEEEEGAPCOK| { &mut m.IKDEIJCEDIO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OOCPKIGPEHP",
@@ -104,7 +104,7 @@ impl ::protobuf::Message for PEEEEGAPCOK {
                     self.PLPPPCEPBDO = is.read_uint32()?;
                 },
                 16 => {
-                    self.op_uid = is.read_uint32()?;
+                    self.IKDEIJCEDIO = is.read_uint32()?;
                 },
                 24 => {
                     self.OOCPKIGPEHP = is.read_uint32()?;
@@ -130,8 +130,8 @@ impl ::protobuf::Message for PEEEEGAPCOK {
         if self.PLPPPCEPBDO != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.PLPPPCEPBDO);
         }
-        if self.op_uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.op_uid);
+        if self.IKDEIJCEDIO != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.IKDEIJCEDIO);
         }
         if self.OOCPKIGPEHP != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.OOCPKIGPEHP);
@@ -151,8 +151,8 @@ impl ::protobuf::Message for PEEEEGAPCOK {
         if self.PLPPPCEPBDO != 0 {
             os.write_uint32(1, self.PLPPPCEPBDO)?;
         }
-        if self.op_uid != 0 {
-            os.write_uint32(2, self.op_uid)?;
+        if self.IKDEIJCEDIO != 0 {
+            os.write_uint32(2, self.IKDEIJCEDIO)?;
         }
         if self.OOCPKIGPEHP != 0 {
             os.write_uint32(3, self.OOCPKIGPEHP)?;
@@ -181,7 +181,7 @@ impl ::protobuf::Message for PEEEEGAPCOK {
 
     fn clear(&mut self) {
         self.PLPPPCEPBDO = 0;
-        self.op_uid = 0;
+        self.IKDEIJCEDIO = 0;
         self.OOCPKIGPEHP = 0;
         self.CMIEOOODDIA = 0;
         self.AALDPOAKJBK.clear();
@@ -191,7 +191,7 @@ impl ::protobuf::Message for PEEEEGAPCOK {
     fn default_instance() -> &'static PEEEEGAPCOK {
         static instance: PEEEEGAPCOK = PEEEEGAPCOK {
             PLPPPCEPBDO: 0,
-            op_uid: 0,
+            IKDEIJCEDIO: 0,
             OOCPKIGPEHP: 0,
             CMIEOOODDIA: 0,
             AALDPOAKJBK: ::std::string::String::new(),
@@ -219,11 +219,12 @@ impl ::protobuf::reflect::ProtobufValue for PEEEEGAPCOK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PEEEEGAPCOK.proto\"\xac\x01\n\x0bPEEEEGAPCOK\x12\x20\n\x0bPLPPPCEP\
-    BDO\x18\x01\x20\x01(\rR\x0bPLPPPCEPBDO\x12\x15\n\x06op_uid\x18\x02\x20\
-    \x01(\rR\x05opUid\x12\x20\n\x0bOOCPKIGPEHP\x18\x03\x20\x01(\rR\x0bOOCPKI\
-    GPEHP\x12\x20\n\x0bCMIEOOODDIA\x18\x04\x20\x01(\x03R\x0bCMIEOOODDIA\x12\
-    \x20\n\x0bAALDPOAKJBK\x18\x05\x20\x01(\tR\x0bAALDPOAKJBKb\x06proto3\
+    \n\x11PEEEEGAPCOK.proto\"\xb7\x01\n\x0bPEEEEGAPCOK\x12\x20\n\x0bPLPPPCEP\
+    BDO\x18\x01\x20\x01(\rR\x0bPLPPPCEPBDO\x12\x20\n\x0bIKDEIJCEDIO\x18\x02\
+    \x20\x01(\rR\x0bIKDEIJCEDIO\x12\x20\n\x0bOOCPKIGPEHP\x18\x03\x20\x01(\rR\
+    \x0bOOCPKIGPEHP\x12\x20\n\x0bCMIEOOODDIA\x18\x04\x20\x01(\x03R\x0bCMIEOO\
+    ODDIA\x12\x20\n\x0bAALDPOAKJBK\x18\x05\x20\x01(\tR\x0bAALDPOAKJBKb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

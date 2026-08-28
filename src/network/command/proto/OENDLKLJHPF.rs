@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OENDLKLJHPF {
     // message fields
-    // @@protoc_insertion_point(field:OENDLKLJHPF.LKJHCMMPBDL)
-    pub LKJHCMMPBDL: u32,
     // @@protoc_insertion_point(field:OENDLKLJHPF.IIIMCOINAOG)
     pub IIIMCOINAOG: u32,
     // @@protoc_insertion_point(field:OENDLKLJHPF.op_type)
     pub op_type: ::protobuf::EnumOrUnknown<super::DDNJKAMIHHI::DDNJKAMIHHI>,
     // @@protoc_insertion_point(field:OENDLKLJHPF.group_id)
     pub group_id: u32,
+    // @@protoc_insertion_point(field:OENDLKLJHPF.LKJHCMMPBDL)
+    pub LKJHCMMPBDL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OENDLKLJHPF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,11 +56,6 @@ impl OENDLKLJHPF {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LKJHCMMPBDL",
-            |m: &OENDLKLJHPF| { &m.LKJHCMMPBDL },
-            |m: &mut OENDLKLJHPF| { &mut m.LKJHCMMPBDL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IIIMCOINAOG",
             |m: &OENDLKLJHPF| { &m.IIIMCOINAOG },
             |m: &mut OENDLKLJHPF| { &mut m.IIIMCOINAOG },
@@ -74,6 +69,11 @@ impl OENDLKLJHPF {
             "group_id",
             |m: &OENDLKLJHPF| { &m.group_id },
             |m: &mut OENDLKLJHPF| { &mut m.group_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LKJHCMMPBDL",
+            |m: &OENDLKLJHPF| { &m.LKJHCMMPBDL },
+            |m: &mut OENDLKLJHPF| { &mut m.LKJHCMMPBDL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OENDLKLJHPF>(
             "OENDLKLJHPF",
@@ -93,10 +93,7 @@ impl ::protobuf::Message for OENDLKLJHPF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.LKJHCMMPBDL = is.read_uint32()?;
-                },
-                32 => {
+                16 => {
                     self.IIIMCOINAOG = is.read_uint32()?;
                 },
                 48 => {
@@ -104,6 +101,9 @@ impl ::protobuf::Message for OENDLKLJHPF {
                 },
                 56 => {
                     self.group_id = is.read_uint32()?;
+                },
+                96 => {
+                    self.LKJHCMMPBDL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,11 +117,8 @@ impl ::protobuf::Message for OENDLKLJHPF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LKJHCMMPBDL != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LKJHCMMPBDL);
-        }
         if self.IIIMCOINAOG != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.IIIMCOINAOG);
+            my_size += ::protobuf::rt::uint32_size(2, self.IIIMCOINAOG);
         }
         if self.op_type != ::protobuf::EnumOrUnknown::new(super::DDNJKAMIHHI::DDNJKAMIHHI::DDNJKAMIHHI_NLCDGIPGFDJ) {
             my_size += ::protobuf::rt::int32_size(6, self.op_type.value());
@@ -129,23 +126,26 @@ impl ::protobuf::Message for OENDLKLJHPF {
         if self.group_id != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.group_id);
         }
+        if self.LKJHCMMPBDL != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.LKJHCMMPBDL);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LKJHCMMPBDL != 0 {
-            os.write_uint32(1, self.LKJHCMMPBDL)?;
-        }
         if self.IIIMCOINAOG != 0 {
-            os.write_uint32(4, self.IIIMCOINAOG)?;
+            os.write_uint32(2, self.IIIMCOINAOG)?;
         }
         if self.op_type != ::protobuf::EnumOrUnknown::new(super::DDNJKAMIHHI::DDNJKAMIHHI::DDNJKAMIHHI_NLCDGIPGFDJ) {
             os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.op_type))?;
         }
         if self.group_id != 0 {
             os.write_uint32(7, self.group_id)?;
+        }
+        if self.LKJHCMMPBDL != 0 {
+            os.write_uint32(12, self.LKJHCMMPBDL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for OENDLKLJHPF {
     }
 
     fn clear(&mut self) {
-        self.LKJHCMMPBDL = 0;
         self.IIIMCOINAOG = 0;
         self.op_type = ::protobuf::EnumOrUnknown::new(super::DDNJKAMIHHI::DDNJKAMIHHI::DDNJKAMIHHI_NLCDGIPGFDJ);
         self.group_id = 0;
+        self.LKJHCMMPBDL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OENDLKLJHPF {
         static instance: OENDLKLJHPF = OENDLKLJHPF {
-            LKJHCMMPBDL: 0,
             IIIMCOINAOG: 0,
             op_type: ::protobuf::EnumOrUnknown::from_i32(0),
             group_id: 0,
+            LKJHCMMPBDL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for OENDLKLJHPF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OENDLKLJHPF.proto\x1a\x11DDNJKAMIHHI.proto\"\x93\x01\n\x0bOENDLKLJ\
-    HPF\x12\x20\n\x0bLKJHCMMPBDL\x18\x01\x20\x01(\rR\x0bLKJHCMMPBDL\x12\x20\
-    \n\x0bIIIMCOINAOG\x18\x04\x20\x01(\rR\x0bIIIMCOINAOG\x12%\n\x07op_type\
-    \x18\x06\x20\x01(\x0e2\x0c.DDNJKAMIHHIR\x06opType\x12\x19\n\x08group_id\
-    \x18\x07\x20\x01(\rR\x07groupIdb\x06proto3\
+    HPF\x12\x20\n\x0bIIIMCOINAOG\x18\x02\x20\x01(\rR\x0bIIIMCOINAOG\x12%\n\
+    \x07op_type\x18\x06\x20\x01(\x0e2\x0c.DDNJKAMIHHIR\x06opType\x12\x19\n\
+    \x08group_id\x18\x07\x20\x01(\rR\x07groupId\x12\x20\n\x0bLKJHCMMPBDL\x18\
+    \x0c\x20\x01(\rR\x0bLKJHCMMPBDLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

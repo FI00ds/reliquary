@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HIHEHNIAGPF {
     // message fields
-    // @@protoc_insertion_point(field:HIHEHNIAGPF.FBDENECLHIH)
-    pub FBDENECLHIH: u32,
     // @@protoc_insertion_point(field:HIHEHNIAGPF.progress)
     pub progress: u32,
+    // @@protoc_insertion_point(field:HIHEHNIAGPF.FBDENECLHIH)
+    pub FBDENECLHIH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HIHEHNIAGPF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl HIHEHNIAGPF {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FBDENECLHIH",
-            |m: &HIHEHNIAGPF| { &m.FBDENECLHIH },
-            |m: &mut HIHEHNIAGPF| { &mut m.FBDENECLHIH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "progress",
             |m: &HIHEHNIAGPF| { &m.progress },
             |m: &mut HIHEHNIAGPF| { &mut m.progress },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FBDENECLHIH",
+            |m: &HIHEHNIAGPF| { &m.FBDENECLHIH },
+            |m: &mut HIHEHNIAGPF| { &mut m.FBDENECLHIH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HIHEHNIAGPF>(
             "HIHEHNIAGPF",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for HIHEHNIAGPF {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 32 => {
-                    self.FBDENECLHIH = is.read_uint32()?;
-                },
-                72 => {
                     self.progress = is.read_uint32()?;
+                },
+                88 => {
+                    self.FBDENECLHIH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for HIHEHNIAGPF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FBDENECLHIH != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.FBDENECLHIH);
-        }
         if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.progress);
+            my_size += ::protobuf::rt::uint32_size(4, self.progress);
+        }
+        if self.FBDENECLHIH != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.FBDENECLHIH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for HIHEHNIAGPF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FBDENECLHIH != 0 {
-            os.write_uint32(4, self.FBDENECLHIH)?;
-        }
         if self.progress != 0 {
-            os.write_uint32(9, self.progress)?;
+            os.write_uint32(4, self.progress)?;
+        }
+        if self.FBDENECLHIH != 0 {
+            os.write_uint32(11, self.FBDENECLHIH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for HIHEHNIAGPF {
     }
 
     fn clear(&mut self) {
-        self.FBDENECLHIH = 0;
         self.progress = 0;
+        self.FBDENECLHIH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HIHEHNIAGPF {
         static instance: HIHEHNIAGPF = HIHEHNIAGPF {
-            FBDENECLHIH: 0,
             progress: 0,
+            FBDENECLHIH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for HIHEHNIAGPF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HIHEHNIAGPF.proto\"K\n\x0bHIHEHNIAGPF\x12\x20\n\x0bFBDENECLHIH\x18\
-    \x04\x20\x01(\rR\x0bFBDENECLHIH\x12\x1a\n\x08progress\x18\t\x20\x01(\rR\
-    \x08progressb\x06proto3\
+    \n\x11HIHEHNIAGPF.proto\"K\n\x0bHIHEHNIAGPF\x12\x1a\n\x08progress\x18\
+    \x04\x20\x01(\rR\x08progress\x12\x20\n\x0bFBDENECLHIH\x18\x0b\x20\x01(\r\
+    R\x0bFBDENECLHIHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

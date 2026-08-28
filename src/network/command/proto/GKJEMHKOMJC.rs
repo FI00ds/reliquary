@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GKJEMHKOMJC {
     // message fields
+    // @@protoc_insertion_point(field:GKJEMHKOMJC.CFFCNEDGCJJ)
+    pub CFFCNEDGCJJ: ::std::vec::Vec<super::JOGCCINEHFJ::JOGCCINEHFJ>,
+    // @@protoc_insertion_point(field:GKJEMHKOMJC.max_hp)
+    pub max_hp: i32,
+    // @@protoc_insertion_point(field:GKJEMHKOMJC.avatar_id)
+    pub avatar_id: u32,
+    // @@protoc_insertion_point(field:GKJEMHKOMJC.status)
+    pub status: ::protobuf::EnumOrUnknown<super::FateMasterStatusType::FateMasterStatusType>,
     // @@protoc_insertion_point(field:GKJEMHKOMJC.rank)
     pub rank: u32,
     // @@protoc_insertion_point(field:GKJEMHKOMJC.hp)
     pub hp: i32,
-    // @@protoc_insertion_point(field:GKJEMHKOMJC.CFFCNEDGCJJ)
-    pub CFFCNEDGCJJ: ::std::vec::Vec<super::JOGCCINEHFJ::JOGCCINEHFJ>,
-    // @@protoc_insertion_point(field:GKJEMHKOMJC.status)
-    pub status: ::protobuf::EnumOrUnknown<super::FateMasterStatusType::FateMasterStatusType>,
-    // @@protoc_insertion_point(field:GKJEMHKOMJC.avatar_id)
-    pub avatar_id: u32,
-    // @@protoc_insertion_point(field:GKJEMHKOMJC.max_hp)
-    pub max_hp: i32,
     // special fields
     // @@protoc_insertion_point(special_field:GKJEMHKOMJC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,6 +59,26 @@ impl GKJEMHKOMJC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CFFCNEDGCJJ",
+            |m: &GKJEMHKOMJC| { &m.CFFCNEDGCJJ },
+            |m: &mut GKJEMHKOMJC| { &mut m.CFFCNEDGCJJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "max_hp",
+            |m: &GKJEMHKOMJC| { &m.max_hp },
+            |m: &mut GKJEMHKOMJC| { &mut m.max_hp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "avatar_id",
+            |m: &GKJEMHKOMJC| { &m.avatar_id },
+            |m: &mut GKJEMHKOMJC| { &mut m.avatar_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "status",
+            |m: &GKJEMHKOMJC| { &m.status },
+            |m: &mut GKJEMHKOMJC| { &mut m.status },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rank",
             |m: &GKJEMHKOMJC| { &m.rank },
@@ -68,26 +88,6 @@ impl GKJEMHKOMJC {
             "hp",
             |m: &GKJEMHKOMJC| { &m.hp },
             |m: &mut GKJEMHKOMJC| { &mut m.hp },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CFFCNEDGCJJ",
-            |m: &GKJEMHKOMJC| { &m.CFFCNEDGCJJ },
-            |m: &mut GKJEMHKOMJC| { &mut m.CFFCNEDGCJJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "status",
-            |m: &GKJEMHKOMJC| { &m.status },
-            |m: &mut GKJEMHKOMJC| { &mut m.status },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_id",
-            |m: &GKJEMHKOMJC| { &m.avatar_id },
-            |m: &mut GKJEMHKOMJC| { &mut m.avatar_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "max_hp",
-            |m: &GKJEMHKOMJC| { &m.max_hp },
-            |m: &mut GKJEMHKOMJC| { &mut m.max_hp },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GKJEMHKOMJC>(
             "GKJEMHKOMJC",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for GKJEMHKOMJC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.rank = is.read_uint32()?;
-                },
-                56 => {
-                    self.hp = is.read_int32()?;
-                },
-                66 => {
+                26 => {
                     self.CFFCNEDGCJJ.push(is.read_message()?);
                 },
-                72 => {
-                    self.status = is.read_enum_or_unknown()?;
+                64 => {
+                    self.max_hp = is.read_int32()?;
                 },
-                88 => {
+                72 => {
                     self.avatar_id = is.read_uint32()?;
                 },
+                96 => {
+                    self.status = is.read_enum_or_unknown()?;
+                },
+                104 => {
+                    self.rank = is.read_uint32()?;
+                },
                 112 => {
-                    self.max_hp = is.read_int32()?;
+                    self.hp = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,24 +137,24 @@ impl ::protobuf::Message for GKJEMHKOMJC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.rank);
-        }
-        if self.hp != 0 {
-            my_size += ::protobuf::rt::int32_size(7, self.hp);
-        }
         for value in &self.CFFCNEDGCJJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.status != ::protobuf::EnumOrUnknown::new(super::FateMasterStatusType::FateMasterStatusType::KNGLNMKNGJD_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(9, self.status.value());
+        if self.max_hp != 0 {
+            my_size += ::protobuf::rt::int32_size(8, self.max_hp);
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.avatar_id);
         }
-        if self.max_hp != 0 {
-            my_size += ::protobuf::rt::int32_size(14, self.max_hp);
+        if self.status != ::protobuf::EnumOrUnknown::new(super::FateMasterStatusType::FateMasterStatusType::FateMasterStatusType_None) {
+            my_size += ::protobuf::rt::int32_size(12, self.status.value());
+        }
+        if self.rank != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.rank);
+        }
+        if self.hp != 0 {
+            my_size += ::protobuf::rt::int32_size(14, self.hp);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for GKJEMHKOMJC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.rank != 0 {
-            os.write_uint32(5, self.rank)?;
-        }
-        if self.hp != 0 {
-            os.write_int32(7, self.hp)?;
-        }
         for v in &self.CFFCNEDGCJJ {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
-        if self.status != ::protobuf::EnumOrUnknown::new(super::FateMasterStatusType::FateMasterStatusType::KNGLNMKNGJD_NLCDGIPGFDJ) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        if self.max_hp != 0 {
+            os.write_int32(8, self.max_hp)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(11, self.avatar_id)?;
+            os.write_uint32(9, self.avatar_id)?;
         }
-        if self.max_hp != 0 {
-            os.write_int32(14, self.max_hp)?;
+        if self.status != ::protobuf::EnumOrUnknown::new(super::FateMasterStatusType::FateMasterStatusType::FateMasterStatusType_None) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        }
+        if self.rank != 0 {
+            os.write_uint32(13, self.rank)?;
+        }
+        if self.hp != 0 {
+            os.write_int32(14, self.hp)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,23 +197,23 @@ impl ::protobuf::Message for GKJEMHKOMJC {
     }
 
     fn clear(&mut self) {
+        self.CFFCNEDGCJJ.clear();
+        self.max_hp = 0;
+        self.avatar_id = 0;
+        self.status = ::protobuf::EnumOrUnknown::new(super::FateMasterStatusType::FateMasterStatusType::FateMasterStatusType_None);
         self.rank = 0;
         self.hp = 0;
-        self.CFFCNEDGCJJ.clear();
-        self.status = ::protobuf::EnumOrUnknown::new(super::FateMasterStatusType::FateMasterStatusType::KNGLNMKNGJD_NLCDGIPGFDJ);
-        self.avatar_id = 0;
-        self.max_hp = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GKJEMHKOMJC {
         static instance: GKJEMHKOMJC = GKJEMHKOMJC {
+            CFFCNEDGCJJ: ::std::vec::Vec::new(),
+            max_hp: 0,
+            avatar_id: 0,
+            status: ::protobuf::EnumOrUnknown::from_i32(0),
             rank: 0,
             hp: 0,
-            CFFCNEDGCJJ: ::std::vec::Vec::new(),
-            status: ::protobuf::EnumOrUnknown::from_i32(0),
-            avatar_id: 0,
-            max_hp: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,12 +239,12 @@ impl ::protobuf::reflect::ProtobufValue for GKJEMHKOMJC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GKJEMHKOMJC.proto\x1a\x1aFateMasterStatusType.proto\x1a\x11JOGCCIN\
-    EHFJ.proto\"\xc4\x01\n\x0bGKJEMHKOMJC\x12\x12\n\x04rank\x18\x05\x20\x01(\
-    \rR\x04rank\x12\x0e\n\x02hp\x18\x07\x20\x01(\x05R\x02hp\x12.\n\x0bCFFCNE\
-    DGCJJ\x18\x08\x20\x03(\x0b2\x0c.JOGCCINEHFJR\x0bCFFCNEDGCJJ\x12-\n\x06st\
-    atus\x18\t\x20\x01(\x0e2\x15.FateMasterStatusTypeR\x06status\x12\x1b\n\t\
-    avatar_id\x18\x0b\x20\x01(\rR\x08avatarId\x12\x15\n\x06max_hp\x18\x0e\
-    \x20\x01(\x05R\x05maxHpb\x06proto3\
+    EHFJ.proto\"\xc4\x01\n\x0bGKJEMHKOMJC\x12.\n\x0bCFFCNEDGCJJ\x18\x03\x20\
+    \x03(\x0b2\x0c.JOGCCINEHFJR\x0bCFFCNEDGCJJ\x12\x15\n\x06max_hp\x18\x08\
+    \x20\x01(\x05R\x05maxHp\x12\x1b\n\tavatar_id\x18\t\x20\x01(\rR\x08avatar\
+    Id\x12-\n\x06status\x18\x0c\x20\x01(\x0e2\x15.FateMasterStatusTypeR\x06s\
+    tatus\x12\x12\n\x04rank\x18\r\x20\x01(\rR\x04rank\x12\x0e\n\x02hp\x18\
+    \x0e\x20\x01(\x05R\x02hpb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

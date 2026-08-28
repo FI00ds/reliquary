@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HDLMAPACKNH {
     // message fields
-    // @@protoc_insertion_point(field:HDLMAPACKNH.DIDBBOCNHBJ)
-    pub DIDBBOCNHBJ: u32,
     // @@protoc_insertion_point(field:HDLMAPACKNH.GOCFOJJIAHL)
     pub GOCFOJJIAHL: u32,
+    // @@protoc_insertion_point(field:HDLMAPACKNH.DIDBBOCNHBJ)
+    pub DIDBBOCNHBJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HDLMAPACKNH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl HDLMAPACKNH {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DIDBBOCNHBJ",
-            |m: &HDLMAPACKNH| { &m.DIDBBOCNHBJ },
-            |m: &mut HDLMAPACKNH| { &mut m.DIDBBOCNHBJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GOCFOJJIAHL",
             |m: &HDLMAPACKNH| { &m.GOCFOJJIAHL },
             |m: &mut HDLMAPACKNH| { &mut m.GOCFOJJIAHL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DIDBBOCNHBJ",
+            |m: &HDLMAPACKNH| { &m.DIDBBOCNHBJ },
+            |m: &mut HDLMAPACKNH| { &mut m.DIDBBOCNHBJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HDLMAPACKNH>(
             "HDLMAPACKNH",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for HDLMAPACKNH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                40 => {
+                    self.GOCFOJJIAHL = is.read_uint32()?;
+                },
                 80 => {
                     self.DIDBBOCNHBJ = is.read_uint32()?;
-                },
-                104 => {
-                    self.GOCFOJJIAHL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for HDLMAPACKNH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.GOCFOJJIAHL != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.GOCFOJJIAHL);
+        }
         if self.DIDBBOCNHBJ != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.DIDBBOCNHBJ);
-        }
-        if self.GOCFOJJIAHL != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.GOCFOJJIAHL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for HDLMAPACKNH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.GOCFOJJIAHL != 0 {
+            os.write_uint32(5, self.GOCFOJJIAHL)?;
+        }
         if self.DIDBBOCNHBJ != 0 {
             os.write_uint32(10, self.DIDBBOCNHBJ)?;
-        }
-        if self.GOCFOJJIAHL != 0 {
-            os.write_uint32(13, self.GOCFOJJIAHL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for HDLMAPACKNH {
     }
 
     fn clear(&mut self) {
-        self.DIDBBOCNHBJ = 0;
         self.GOCFOJJIAHL = 0;
+        self.DIDBBOCNHBJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HDLMAPACKNH {
         static instance: HDLMAPACKNH = HDLMAPACKNH {
-            DIDBBOCNHBJ: 0,
             GOCFOJJIAHL: 0,
+            DIDBBOCNHBJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for HDLMAPACKNH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HDLMAPACKNH.proto\"Q\n\x0bHDLMAPACKNH\x12\x20\n\x0bDIDBBOCNHBJ\x18\
-    \n\x20\x01(\rR\x0bDIDBBOCNHBJ\x12\x20\n\x0bGOCFOJJIAHL\x18\r\x20\x01(\rR\
-    \x0bGOCFOJJIAHLb\x06proto3\
+    \n\x11HDLMAPACKNH.proto\"Q\n\x0bHDLMAPACKNH\x12\x20\n\x0bGOCFOJJIAHL\x18\
+    \x05\x20\x01(\rR\x0bGOCFOJJIAHL\x12\x20\n\x0bDIDBBOCNHBJ\x18\n\x20\x01(\
+    \rR\x0bDIDBBOCNHBJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

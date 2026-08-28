@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournLevelInfoUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournLevelInfoUpdateScNotify.reason)
-    pub reason: ::protobuf::EnumOrUnknown<super::FKNGOGLNKIG::FKNGOGLNKIG>,
     // @@protoc_insertion_point(field:RogueTournLevelInfoUpdateScNotify.NNFFPJOLDHK)
     pub NNFFPJOLDHK: ::std::vec::Vec<super::IJNFOHJGPBC::IJNFOHJGPBC>,
     // @@protoc_insertion_point(field:RogueTournLevelInfoUpdateScNotify.status)
     pub status: ::protobuf::EnumOrUnknown<super::RogueTournLevelStatus::RogueTournLevelStatus>,
     // @@protoc_insertion_point(field:RogueTournLevelInfoUpdateScNotify.BJHMFOAGMBF)
     pub BJHMFOAGMBF: u32,
+    // @@protoc_insertion_point(field:RogueTournLevelInfoUpdateScNotify.reason)
+    pub reason: ::protobuf::EnumOrUnknown<super::FKNGOGLNKIG::FKNGOGLNKIG>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournLevelInfoUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,11 +55,6 @@ impl RogueTournLevelInfoUpdateScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "reason",
-            |m: &RogueTournLevelInfoUpdateScNotify| { &m.reason },
-            |m: &mut RogueTournLevelInfoUpdateScNotify| { &mut m.reason },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "NNFFPJOLDHK",
             |m: &RogueTournLevelInfoUpdateScNotify| { &m.NNFFPJOLDHK },
@@ -74,6 +69,11 @@ impl RogueTournLevelInfoUpdateScNotify {
             "BJHMFOAGMBF",
             |m: &RogueTournLevelInfoUpdateScNotify| { &m.BJHMFOAGMBF },
             |m: &mut RogueTournLevelInfoUpdateScNotify| { &mut m.BJHMFOAGMBF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "reason",
+            |m: &RogueTournLevelInfoUpdateScNotify| { &m.reason },
+            |m: &mut RogueTournLevelInfoUpdateScNotify| { &mut m.reason },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournLevelInfoUpdateScNotify>(
             "RogueTournLevelInfoUpdateScNotify",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for RogueTournLevelInfoUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.reason = is.read_enum_or_unknown()?;
-                },
-                34 => {
+                10 => {
                     self.NNFFPJOLDHK.push(is.read_message()?);
                 },
-                40 => {
+                24 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
-                80 => {
+                64 => {
                     self.BJHMFOAGMBF = is.read_uint32()?;
+                },
+                120 => {
+                    self.reason = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for RogueTournLevelInfoUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::FKNGOGLNKIG::FKNGOGLNKIG::FKNGOGLNKIG_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(2, self.reason.value());
-        }
         for value in &self.NNFFPJOLDHK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::NHMPGNHBBLC_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(5, self.status.value());
+        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::RogueTournLevelStatus_None) {
+            my_size += ::protobuf::rt::int32_size(3, self.status.value());
         }
         if self.BJHMFOAGMBF != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.BJHMFOAGMBF);
+            my_size += ::protobuf::rt::uint32_size(8, self.BJHMFOAGMBF);
+        }
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::FKNGOGLNKIG::FKNGOGLNKIG::FKNGOGLNKIG_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(15, self.reason.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for RogueTournLevelInfoUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::FKNGOGLNKIG::FKNGOGLNKIG::FKNGOGLNKIG_NLCDGIPGFDJ) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.reason))?;
-        }
         for v in &self.NNFFPJOLDHK {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::NHMPGNHBBLC_NLCDGIPGFDJ) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::RogueTournLevelStatus_None) {
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         if self.BJHMFOAGMBF != 0 {
-            os.write_uint32(10, self.BJHMFOAGMBF)?;
+            os.write_uint32(8, self.BJHMFOAGMBF)?;
+        }
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::FKNGOGLNKIG::FKNGOGLNKIG::FKNGOGLNKIG_NLCDGIPGFDJ) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.reason))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for RogueTournLevelInfoUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.reason = ::protobuf::EnumOrUnknown::new(super::FKNGOGLNKIG::FKNGOGLNKIG::FKNGOGLNKIG_NLCDGIPGFDJ);
         self.NNFFPJOLDHK.clear();
-        self.status = ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::NHMPGNHBBLC_NLCDGIPGFDJ);
+        self.status = ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::RogueTournLevelStatus_None);
         self.BJHMFOAGMBF = 0;
+        self.reason = ::protobuf::EnumOrUnknown::new(super::FKNGOGLNKIG::FKNGOGLNKIG::FKNGOGLNKIG_NLCDGIPGFDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournLevelInfoUpdateScNotify {
         static instance: RogueTournLevelInfoUpdateScNotify = RogueTournLevelInfoUpdateScNotify {
-            reason: ::protobuf::EnumOrUnknown::from_i32(0),
             NNFFPJOLDHK: ::std::vec::Vec::new(),
             status: ::protobuf::EnumOrUnknown::from_i32(0),
             BJHMFOAGMBF: 0,
+            reason: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournLevelInfoUpdateScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'RogueTournLevelInfoUpdateScNotify.proto\x1a\x11FKNGOGLNKIG.proto\x1a\
     \x11IJNFOHJGPBC.proto\x1a\x1bRogueTournLevelStatus.proto\"\xcb\x01\n!Rog\
-    ueTournLevelInfoUpdateScNotify\x12$\n\x06reason\x18\x02\x20\x01(\x0e2\
-    \x0c.FKNGOGLNKIGR\x06reason\x12.\n\x0bNNFFPJOLDHK\x18\x04\x20\x03(\x0b2\
-    \x0c.IJNFOHJGPBCR\x0bNNFFPJOLDHK\x12.\n\x06status\x18\x05\x20\x01(\x0e2\
-    \x16.RogueTournLevelStatusR\x06status\x12\x20\n\x0bBJHMFOAGMBF\x18\n\x20\
-    \x01(\rR\x0bBJHMFOAGMBFb\x06proto3\
+    ueTournLevelInfoUpdateScNotify\x12.\n\x0bNNFFPJOLDHK\x18\x01\x20\x03(\
+    \x0b2\x0c.IJNFOHJGPBCR\x0bNNFFPJOLDHK\x12.\n\x06status\x18\x03\x20\x01(\
+    \x0e2\x16.RogueTournLevelStatusR\x06status\x12\x20\n\x0bBJHMFOAGMBF\x18\
+    \x08\x20\x01(\rR\x0bBJHMFOAGMBF\x12$\n\x06reason\x18\x0f\x20\x01(\x0e2\
+    \x0c.FKNGOGLNKIGR\x06reasonb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

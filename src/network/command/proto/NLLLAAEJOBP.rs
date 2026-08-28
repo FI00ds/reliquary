@@ -79,13 +79,13 @@ impl ::protobuf::Message for NLLLAAEJOBP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                48 => {
                     self.tid = is.read_uint32()?;
                 },
-                106 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.DMNHPNAPGNB)?;
                 },
-                104 => {
+                80 => {
                     self.DMNHPNAPGNB.push(is.read_uint32()?);
                 },
                 tag => {
@@ -101,9 +101,9 @@ impl ::protobuf::Message for NLLLAAEJOBP {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.tid != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.tid);
+            my_size += ::protobuf::rt::uint32_size(6, self.tid);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.DMNHPNAPGNB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.DMNHPNAPGNB);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -111,9 +111,9 @@ impl ::protobuf::Message for NLLLAAEJOBP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.tid != 0 {
-            os.write_uint32(11, self.tid)?;
+            os.write_uint32(6, self.tid)?;
         }
-        os.write_repeated_packed_uint32(13, &self.DMNHPNAPGNB)?;
+        os.write_repeated_packed_uint32(10, &self.DMNHPNAPGNB)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -164,8 +164,8 @@ impl ::protobuf::reflect::ProtobufValue for NLLLAAEJOBP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NLLLAAEJOBP.proto\"A\n\x0bNLLLAAEJOBP\x12\x10\n\x03tid\x18\x0b\x20\
-    \x01(\rR\x03tid\x12\x20\n\x0bDMNHPNAPGNB\x18\r\x20\x03(\rR\x0bDMNHPNAPGN\
+    \n\x11NLLLAAEJOBP.proto\"A\n\x0bNLLLAAEJOBP\x12\x10\n\x03tid\x18\x06\x20\
+    \x01(\rR\x03tid\x12\x20\n\x0bDMNHPNAPGNB\x18\n\x20\x03(\rR\x0bDMNHPNAPGN\
     Bb\x06proto3\
 ";
 

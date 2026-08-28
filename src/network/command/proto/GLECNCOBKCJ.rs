@@ -30,10 +30,10 @@ pub struct GLECNCOBKCJ {
     // message fields
     // @@protoc_insertion_point(field:GLECNCOBKCJ.LKBHAFLMOLA)
     pub LKBHAFLMOLA: u32,
-    // @@protoc_insertion_point(field:GLECNCOBKCJ.PKJHFPFOABL)
-    pub PKJHFPFOABL: u32,
     // @@protoc_insertion_point(field:GLECNCOBKCJ.avatar_id)
     pub avatar_id: u32,
+    // @@protoc_insertion_point(field:GLECNCOBKCJ.PKJHFPFOABL)
+    pub PKJHFPFOABL: u32,
     // @@protoc_insertion_point(field:GLECNCOBKCJ.NFDJOCBMLCI)
     pub NFDJOCBMLCI: ::protobuf::MessageField<super::NCFKHDIKCNI::NCFKHDIKCNI>,
     // special fields
@@ -61,14 +61,14 @@ impl GLECNCOBKCJ {
             |m: &mut GLECNCOBKCJ| { &mut m.LKBHAFLMOLA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PKJHFPFOABL",
-            |m: &GLECNCOBKCJ| { &m.PKJHFPFOABL },
-            |m: &mut GLECNCOBKCJ| { &mut m.PKJHFPFOABL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
             |m: &GLECNCOBKCJ| { &m.avatar_id },
             |m: &mut GLECNCOBKCJ| { &mut m.avatar_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PKJHFPFOABL",
+            |m: &GLECNCOBKCJ| { &m.PKJHFPFOABL },
+            |m: &mut GLECNCOBKCJ| { &mut m.PKJHFPFOABL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NCFKHDIKCNI::NCFKHDIKCNI>(
             "NFDJOCBMLCI",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for GLECNCOBKCJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                8 => {
                     self.LKBHAFLMOLA = is.read_uint32()?;
                 },
-                48 => {
-                    self.PKJHFPFOABL = is.read_uint32()?;
-                },
-                56 => {
+                32 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                82 => {
+                96 => {
+                    self.PKJHFPFOABL = is.read_uint32()?;
+                },
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NFDJOCBMLCI)?;
                 },
                 tag => {
@@ -118,13 +118,13 @@ impl ::protobuf::Message for GLECNCOBKCJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LKBHAFLMOLA != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.LKBHAFLMOLA);
-        }
-        if self.PKJHFPFOABL != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.PKJHFPFOABL);
+            my_size += ::protobuf::rt::uint32_size(1, self.LKBHAFLMOLA);
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.avatar_id);
+        }
+        if self.PKJHFPFOABL != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.PKJHFPFOABL);
         }
         if let Some(v) = self.NFDJOCBMLCI.as_ref() {
             let len = v.compute_size();
@@ -137,16 +137,16 @@ impl ::protobuf::Message for GLECNCOBKCJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LKBHAFLMOLA != 0 {
-            os.write_uint32(4, self.LKBHAFLMOLA)?;
-        }
-        if self.PKJHFPFOABL != 0 {
-            os.write_uint32(6, self.PKJHFPFOABL)?;
+            os.write_uint32(1, self.LKBHAFLMOLA)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(7, self.avatar_id)?;
+            os.write_uint32(4, self.avatar_id)?;
+        }
+        if self.PKJHFPFOABL != 0 {
+            os.write_uint32(12, self.PKJHFPFOABL)?;
         }
         if let Some(v) = self.NFDJOCBMLCI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::Message for GLECNCOBKCJ {
 
     fn clear(&mut self) {
         self.LKBHAFLMOLA = 0;
-        self.PKJHFPFOABL = 0;
         self.avatar_id = 0;
+        self.PKJHFPFOABL = 0;
         self.NFDJOCBMLCI.clear();
         self.special_fields.clear();
     }
@@ -175,8 +175,8 @@ impl ::protobuf::Message for GLECNCOBKCJ {
     fn default_instance() -> &'static GLECNCOBKCJ {
         static instance: GLECNCOBKCJ = GLECNCOBKCJ {
             LKBHAFLMOLA: 0,
-            PKJHFPFOABL: 0,
             avatar_id: 0,
+            PKJHFPFOABL: 0,
             NFDJOCBMLCI: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for GLECNCOBKCJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GLECNCOBKCJ.proto\x1a\x11NCFKHDIKCNI.proto\"\x9e\x01\n\x0bGLECNCOB\
-    KCJ\x12\x20\n\x0bLKBHAFLMOLA\x18\x04\x20\x01(\rR\x0bLKBHAFLMOLA\x12\x20\
-    \n\x0bPKJHFPFOABL\x18\x06\x20\x01(\rR\x0bPKJHFPFOABL\x12\x1b\n\tavatar_i\
-    d\x18\x07\x20\x01(\rR\x08avatarId\x12.\n\x0bNFDJOCBMLCI\x18\n\x20\x01(\
-    \x0b2\x0c.NCFKHDIKCNIR\x0bNFDJOCBMLCIb\x06proto3\
+    KCJ\x12\x20\n\x0bLKBHAFLMOLA\x18\x01\x20\x01(\rR\x0bLKBHAFLMOLA\x12\x1b\
+    \n\tavatar_id\x18\x04\x20\x01(\rR\x08avatarId\x12\x20\n\x0bPKJHFPFOABL\
+    \x18\x0c\x20\x01(\rR\x0bPKJHFPFOABL\x12.\n\x0bNFDJOCBMLCI\x18\x0f\x20\
+    \x01(\x0b2\x0c.NCFKHDIKCNIR\x0bNFDJOCBMLCIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

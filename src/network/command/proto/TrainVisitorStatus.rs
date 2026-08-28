@@ -27,16 +27,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:TrainVisitorStatus)
 pub enum TrainVisitorStatus {
-    // @@protoc_insertion_point(enum_value:TrainVisitorStatus.LDMCCFPAPOL_NLCDGIPGFDJ)
-    LDMCCFPAPOL_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:TrainVisitorStatus.LDMCCFPAPOL_KPJGDHLENIP)
-    LDMCCFPAPOL_KPJGDHLENIP = 1,
-    // @@protoc_insertion_point(enum_value:TrainVisitorStatus.LDMCCFPAPOL_PGAACLCKFFO)
-    LDMCCFPAPOL_PGAACLCKFFO = 2,
-    // @@protoc_insertion_point(enum_value:TrainVisitorStatus.LDMCCFPAPOL_FBAEFCEPHHI)
-    LDMCCFPAPOL_FBAEFCEPHHI = 3,
-    // @@protoc_insertion_point(enum_value:TrainVisitorStatus.LDMCCFPAPOL_HKMJGGPKGIM)
-    LDMCCFPAPOL_HKMJGGPKGIM = 4,
+    // @@protoc_insertion_point(enum_value:TrainVisitorStatus.TrainVisitorStatus_None)
+    TrainVisitorStatus_None = 0,
+    // @@protoc_insertion_point(enum_value:TrainVisitorStatus.TrainVisitorStatus_Init)
+    TrainVisitorStatus_Init = 1,
+    // @@protoc_insertion_point(enum_value:TrainVisitorStatus.TrainVisitorStatus_GetOn)
+    TrainVisitorStatus_GetOn = 2,
+    // @@protoc_insertion_point(enum_value:TrainVisitorStatus.TrainVisitorStatus_GetOff)
+    TrainVisitorStatus_GetOff = 3,
+    // @@protoc_insertion_point(enum_value:TrainVisitorStatus.TrainVisitorStatus_BeTrainMember)
+    TrainVisitorStatus_BeTrainMember = 4,
 }
 
 impl ::protobuf::Enum for TrainVisitorStatus {
@@ -48,32 +48,32 @@ impl ::protobuf::Enum for TrainVisitorStatus {
 
     fn from_i32(value: i32) -> ::std::option::Option<TrainVisitorStatus> {
         match value {
-            0 => ::std::option::Option::Some(TrainVisitorStatus::LDMCCFPAPOL_NLCDGIPGFDJ),
-            1 => ::std::option::Option::Some(TrainVisitorStatus::LDMCCFPAPOL_KPJGDHLENIP),
-            2 => ::std::option::Option::Some(TrainVisitorStatus::LDMCCFPAPOL_PGAACLCKFFO),
-            3 => ::std::option::Option::Some(TrainVisitorStatus::LDMCCFPAPOL_FBAEFCEPHHI),
-            4 => ::std::option::Option::Some(TrainVisitorStatus::LDMCCFPAPOL_HKMJGGPKGIM),
+            0 => ::std::option::Option::Some(TrainVisitorStatus::TrainVisitorStatus_None),
+            1 => ::std::option::Option::Some(TrainVisitorStatus::TrainVisitorStatus_Init),
+            2 => ::std::option::Option::Some(TrainVisitorStatus::TrainVisitorStatus_GetOn),
+            3 => ::std::option::Option::Some(TrainVisitorStatus::TrainVisitorStatus_GetOff),
+            4 => ::std::option::Option::Some(TrainVisitorStatus::TrainVisitorStatus_BeTrainMember),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<TrainVisitorStatus> {
         match str {
-            "LDMCCFPAPOL_NLCDGIPGFDJ" => ::std::option::Option::Some(TrainVisitorStatus::LDMCCFPAPOL_NLCDGIPGFDJ),
-            "LDMCCFPAPOL_KPJGDHLENIP" => ::std::option::Option::Some(TrainVisitorStatus::LDMCCFPAPOL_KPJGDHLENIP),
-            "LDMCCFPAPOL_PGAACLCKFFO" => ::std::option::Option::Some(TrainVisitorStatus::LDMCCFPAPOL_PGAACLCKFFO),
-            "LDMCCFPAPOL_FBAEFCEPHHI" => ::std::option::Option::Some(TrainVisitorStatus::LDMCCFPAPOL_FBAEFCEPHHI),
-            "LDMCCFPAPOL_HKMJGGPKGIM" => ::std::option::Option::Some(TrainVisitorStatus::LDMCCFPAPOL_HKMJGGPKGIM),
+            "TrainVisitorStatus_None" => ::std::option::Option::Some(TrainVisitorStatus::TrainVisitorStatus_None),
+            "TrainVisitorStatus_Init" => ::std::option::Option::Some(TrainVisitorStatus::TrainVisitorStatus_Init),
+            "TrainVisitorStatus_GetOn" => ::std::option::Option::Some(TrainVisitorStatus::TrainVisitorStatus_GetOn),
+            "TrainVisitorStatus_GetOff" => ::std::option::Option::Some(TrainVisitorStatus::TrainVisitorStatus_GetOff),
+            "TrainVisitorStatus_BeTrainMember" => ::std::option::Option::Some(TrainVisitorStatus::TrainVisitorStatus_BeTrainMember),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [TrainVisitorStatus] = &[
-        TrainVisitorStatus::LDMCCFPAPOL_NLCDGIPGFDJ,
-        TrainVisitorStatus::LDMCCFPAPOL_KPJGDHLENIP,
-        TrainVisitorStatus::LDMCCFPAPOL_PGAACLCKFFO,
-        TrainVisitorStatus::LDMCCFPAPOL_FBAEFCEPHHI,
-        TrainVisitorStatus::LDMCCFPAPOL_HKMJGGPKGIM,
+        TrainVisitorStatus::TrainVisitorStatus_None,
+        TrainVisitorStatus::TrainVisitorStatus_Init,
+        TrainVisitorStatus::TrainVisitorStatus_GetOn,
+        TrainVisitorStatus::TrainVisitorStatus_GetOff,
+        TrainVisitorStatus::TrainVisitorStatus_BeTrainMember,
     ];
 }
 
@@ -91,7 +91,7 @@ impl ::protobuf::EnumFull for TrainVisitorStatus {
 
 impl ::std::default::Default for TrainVisitorStatus {
     fn default() -> Self {
-        TrainVisitorStatus::LDMCCFPAPOL_NLCDGIPGFDJ
+        TrainVisitorStatus::TrainVisitorStatus_None
     }
 }
 
@@ -102,11 +102,11 @@ impl TrainVisitorStatus {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18TrainVisitorStatus.proto*\xa5\x01\n\x12TrainVisitorStatus\x12\x1b\
-    \n\x17LDMCCFPAPOL_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17LDMCCFPAPOL_KPJGDHLENIP\
-    \x10\x01\x12\x1b\n\x17LDMCCFPAPOL_PGAACLCKFFO\x10\x02\x12\x1b\n\x17LDMCC\
-    FPAPOL_FBAEFCEPHHI\x10\x03\x12\x1b\n\x17LDMCCFPAPOL_HKMJGGPKGIM\x10\x04b\
-    \x06proto3\
+    \n\x18TrainVisitorStatus.proto*\xb1\x01\n\x12TrainVisitorStatus\x12\x1b\
+    \n\x17TrainVisitorStatus_None\x10\0\x12\x1b\n\x17TrainVisitorStatus_Init\
+    \x10\x01\x12\x1c\n\x18TrainVisitorStatus_GetOn\x10\x02\x12\x1d\n\x19Trai\
+    nVisitorStatus_GetOff\x10\x03\x12$\n\x20TrainVisitorStatus_BeTrainMember\
+    \x10\x04b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

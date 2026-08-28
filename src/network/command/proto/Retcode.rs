@@ -2101,140 +2101,140 @@ pub enum Retcode {
     RET_ELF_RESTAURANT_NO_REWARD = 6849,
     // @@protoc_insertion_point(enum_value:Retcode.RET_ELF_RESTAURANT_NOT_INIT)
     RET_ELF_RESTAURANT_NOT_INIT = 6850,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_CONF_MISS)
-    RET_GRID_FIGHT_CONF_MISS = 6900,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_ROLE_NOT_EXIST)
-    RET_GRID_FIGHT_ROLE_NOT_EXIST = 6901,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_ROLE_ALREADY_EXIST)
-    RET_GRID_FIGHT_ROLE_ALREADY_EXIST = 6902,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_POS_EXIST_ROLE)
-    RET_GRID_FIGHT_POS_EXIST_ROLE = 6903,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_POS_NOT_VALID)
-    RET_GRID_FIGHT_POS_NOT_VALID = 6904,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_COIN_NOT_ENOUGH)
-    RET_GRID_FIGHT_COIN_NOT_ENOUGH = 6905,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_EQUIP_NOT_EXIST)
-    RET_GRID_FIGHT_EQUIP_NOT_EXIST = 6906,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_EQUIP_CANNOT_DRESS)
-    RET_GRID_FIGHT_EQUIP_CANNOT_DRESS = 6907,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_PARAM_NOT_MATCH)
-    RET_GRID_FIGHT_PARAM_NOT_MATCH = 6908,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_EQUIP_DRESS_SAME)
-    RET_GRID_FIGHT_EQUIP_DRESS_SAME = 6909,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_EQUIP_DRESSED)
-    RET_GRID_FIGHT_EQUIP_DRESSED = 6910,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_RANDOM_ERR)
-    RET_GRID_FIGHT_RANDOM_ERR = 6911,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_GOODS_SOLD)
-    RET_GRID_FIGHT_GOODS_SOLD = 6912,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_ITEM_NOT_ENOUGH)
-    RET_GRID_FIGHT_ITEM_NOT_ENOUGH = 6913,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_GAMEPLAY_LEVEL_MAX)
-    RET_GRID_FIGHT_GAMEPLAY_LEVEL_MAX = 6914,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_ALREADY_IN_GAMEPLAY)
-    RET_GRID_FIGHT_ALREADY_IN_GAMEPLAY = 6915,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_EQUIP_TRAIT_LIMIT)
-    RET_GRID_FIGHT_EQUIP_TRAIT_LIMIT = 6916,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_REGION_FULL)
-    RET_GRID_FIGHT_REGION_FULL = 6917,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_TEMPORARY_EQUIP)
-    RET_GRID_FIGHT_TEMPORARY_EQUIP = 6918,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_NOT_IN_GAMEPLAY)
-    RET_GRID_FIGHT_NOT_IN_GAMEPLAY = 6919,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_ADD_EQUIP_FAIL)
-    RET_GRID_FIGHT_ADD_EQUIP_FAIL = 6920,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_ADD_CONSUMABLE_FAIL)
-    RET_GRID_FIGHT_ADD_CONSUMABLE_FAIL = 6921,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_CREATE_ROLE_FAIL)
-    RET_GRID_FIGHT_CREATE_ROLE_FAIL = 6922,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_CANNOT_UPGRADE)
-    RET_GRID_FIGHT_CANNOT_UPGRADE = 6923,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_NO_EMPTY_POS)
-    RET_GRID_FIGHT_NO_EMPTY_POS = 6924,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_FORGE_NOT_EXIST)
-    RET_GRID_FIGHT_FORGE_NOT_EXIST = 6925,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_ADD_FORGE_FAIL)
-    RET_GRID_FIGHT_ADD_FORGE_FAIL = 6926,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_ORB_NOT_ENOUGH)
-    RET_GRID_FIGHT_ORB_NOT_ENOUGH = 6927,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_ORB_NOT_EXIST)
-    RET_GRID_FIGHT_ORB_NOT_EXIST = 6928,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_SUPPLY_NO_REROLL)
-    RET_GRID_FIGHT_SUPPLY_NO_REROLL = 6929,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_HIGH_RARIY_FOR_COPY)
-    RET_GRID_FIGHT_HIGH_RARIY_FOR_COPY = 6930,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_ROLE_FULL_FOR_COPY)
-    RET_GRID_FIGHT_ROLE_FULL_FOR_COPY = 6931,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_UNDRESS_EQUIP_FAIL)
-    RET_GRID_FIGHT_UNDRESS_EQUIP_FAIL = 6932,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_DATA_LOCKED)
-    RET_GRID_FIGHT_DATA_LOCKED = 6933,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_SAME_ROLE_IN_BATTLE)
-    RET_GRID_FIGHT_SAME_ROLE_IN_BATTLE = 6934,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_SUPPLY_ALL_SELECTED)
-    RET_GRID_FIGHT_SUPPLY_ALL_SELECTED = 6935,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_TRAIT_TRACK_MAX)
-    RET_GRID_FIGHT_TRAIT_TRACK_MAX = 6936,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_POS_BAN)
-    RET_GRID_FIGHT_POS_BAN = 6937,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_POS_EXIST_ITEM)
-    RET_GRID_FIGHT_POS_EXIST_ITEM = 6938,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_TALENT_ENABLED)
-    RET_GRID_FIGHT_TALENT_ENABLED = 6939,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_TALENT_COST_NOT_ENOUGH)
-    RET_GRID_FIGHT_TALENT_COST_NOT_ENOUGH = 6940,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_TALENT_PRE_NOT_ENABLED)
-    RET_GRID_FIGHT_TALENT_PRE_NOT_ENABLED = 6941,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_DIVISION_INVALID)
-    RET_GRID_FIGHT_DIVISION_INVALID = 6942,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_TALENT_PERMANENT_LIMIT)
-    RET_GRID_FIGHT_TALENT_PERMANENT_LIMIT = 6943,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_WEEKLY_REWARD_TAKEN)
-    RET_GRID_FIGHT_WEEKLY_REWARD_TAKEN = 6944,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_WEEKLY_SCORE_NOT_ENOUGH)
-    RET_GRID_FIGHT_WEEKLY_SCORE_NOT_ENOUGH = 6945,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_CRAFT_COST_EQUIP_DRESSED)
-    RET_GRID_FIGHT_CRAFT_COST_EQUIP_DRESSED = 6946,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_CREATE_NPC_FAIL)
-    RET_GRID_FIGHT_CREATE_NPC_FAIL = 6947,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_NO_POS_CAN_PLACE)
-    RET_GRID_FIGHT_NO_POS_CAN_PLACE = 6948,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_NPC_POS_LIMIT)
-    RET_GRID_FIGHT_NPC_POS_LIMIT = 6949,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_CRAFT_EQUIP_ON_DIFF_ROLE)
-    RET_GRID_FIGHT_CRAFT_EQUIP_ON_DIFF_ROLE = 6950,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_GLOBAL_HP_NOT_ENOUGH)
-    RET_GRID_FIGHT_GLOBAL_HP_NOT_ENOUGH = 6951,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_EQUIP_TRACK_MAX)
-    RET_GRID_FIGHT_EQUIP_TRACK_MAX = 6952,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_NPC_NOT_EXIST)
-    RET_GRID_FIGHT_NPC_NOT_EXIST = 6953,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_RECYCLE_ROLE_IN_TUTORIAL)
-    RET_GRID_FIGHT_RECYCLE_ROLE_IN_TUTORIAL = 6954,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_TUTORIAL_TASK_NOT_FINISHED)
-    RET_GRID_FIGHT_TUTORIAL_TASK_NOT_FINISHED = 6955,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_TUTORIAL_UPDATE_POS_ININVALID)
-    RET_GRID_FIGHT_TUTORIAL_UPDATE_POS_ININVALID = 6956,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_NO_REROLL_CNT)
-    RET_GRID_FIGHT_NO_REROLL_CNT = 6957,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_TUTORIAL_REFRESH_SHOP_LIMITED)
-    RET_GRID_FIGHT_TUTORIAL_REFRESH_SHOP_LIMITED = 6958,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_TUTORIAL_BUY_SHOP_LIMITED)
-    RET_GRID_FIGHT_TUTORIAL_BUY_SHOP_LIMITED = 6959,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_OC_UNLOCK_QUEST_NOT_FINISHED)
-    RET_GRID_FIGHT_OC_UNLOCK_QUEST_NOT_FINISHED = 6960,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_FORGE_LIMIT_SELECT_IDX_IN_TUTORIAL)
-    RET_GRID_FIGHT_FORGE_LIMIT_SELECT_IDX_IN_TUTORIAL = 6961,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_GAME_REF_ID_TOO_LONG)
-    RET_GRID_FIGHT_GAME_REF_ID_TOO_LONG = 6962,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_FEATURE_SWITCH_CLOSED)
-    RET_GRID_FIGHT_FEATURE_SWITCH_CLOSED = 6963,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_EQUIP_TRAIT_EXCLUSIVE)
-    RET_GRID_FIGHT_EQUIP_TRAIT_EXCLUSIVE = 6964,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_SHOP_LOCKED)
-    RET_GRID_FIGHT_SHOP_LOCKED = 6965,
-    // @@protoc_insertion_point(enum_value:Retcode.RET_GRID_FIGHT_BUY_EXP_LOCKED)
-    RET_GRID_FIGHT_BUY_EXP_LOCKED = 6966,
+    // @@protoc_insertion_point(enum_value:Retcode.H_d869b636)
+    H_d869b636 = 6900,
+    // @@protoc_insertion_point(enum_value:Retcode.H_d44ee1dc)
+    H_d44ee1dc = 6901,
+    // @@protoc_insertion_point(enum_value:Retcode.H_f239b91a)
+    H_f239b91a = 6902,
+    // @@protoc_insertion_point(enum_value:Retcode.H_e30c2a91)
+    H_e30c2a91 = 6903,
+    // @@protoc_insertion_point(enum_value:Retcode.H_ec80811b)
+    H_ec80811b = 6904,
+    // @@protoc_insertion_point(enum_value:Retcode.H_0f1a150e)
+    H_0f1a150e = 6905,
+    // @@protoc_insertion_point(enum_value:Retcode.H_4dfe6d73)
+    H_4dfe6d73 = 6906,
+    // @@protoc_insertion_point(enum_value:Retcode.H_354138f5)
+    H_354138f5 = 6907,
+    // @@protoc_insertion_point(enum_value:Retcode.H_a5b6461a)
+    H_a5b6461a = 6908,
+    // @@protoc_insertion_point(enum_value:Retcode.H_b6c11427)
+    H_b6c11427 = 6909,
+    // @@protoc_insertion_point(enum_value:Retcode.H_9d91e8c7)
+    H_9d91e8c7 = 6910,
+    // @@protoc_insertion_point(enum_value:Retcode.H_b7274413)
+    H_b7274413 = 6911,
+    // @@protoc_insertion_point(enum_value:Retcode.H_38d20d6b)
+    H_38d20d6b = 6912,
+    // @@protoc_insertion_point(enum_value:Retcode.H_94f2cca1)
+    H_94f2cca1 = 6913,
+    // @@protoc_insertion_point(enum_value:Retcode.H_d7cbc3da)
+    H_d7cbc3da = 6914,
+    // @@protoc_insertion_point(enum_value:Retcode.H_d4c71a26)
+    H_d4c71a26 = 6915,
+    // @@protoc_insertion_point(enum_value:Retcode.H_5e42835b)
+    H_5e42835b = 6916,
+    // @@protoc_insertion_point(enum_value:Retcode.H_07e6751a)
+    H_07e6751a = 6917,
+    // @@protoc_insertion_point(enum_value:Retcode.H_4c423326)
+    H_4c423326 = 6918,
+    // @@protoc_insertion_point(enum_value:Retcode.H_945e8d98)
+    H_945e8d98 = 6919,
+    // @@protoc_insertion_point(enum_value:Retcode.H_74813a7e)
+    H_74813a7e = 6920,
+    // @@protoc_insertion_point(enum_value:Retcode.H_b63079da)
+    H_b63079da = 6921,
+    // @@protoc_insertion_point(enum_value:Retcode.H_c002c322)
+    H_c002c322 = 6922,
+    // @@protoc_insertion_point(enum_value:Retcode.H_0418809b)
+    H_0418809b = 6923,
+    // @@protoc_insertion_point(enum_value:Retcode.H_34407f43)
+    H_34407f43 = 6924,
+    // @@protoc_insertion_point(enum_value:Retcode.H_640192fd)
+    H_640192fd = 6925,
+    // @@protoc_insertion_point(enum_value:Retcode.H_e5f52af6)
+    H_e5f52af6 = 6926,
+    // @@protoc_insertion_point(enum_value:Retcode.H_6a99d432)
+    H_6a99d432 = 6927,
+    // @@protoc_insertion_point(enum_value:Retcode.H_f3b484c6)
+    H_f3b484c6 = 6928,
+    // @@protoc_insertion_point(enum_value:Retcode.H_2da2290f)
+    H_2da2290f = 6929,
+    // @@protoc_insertion_point(enum_value:Retcode.H_3f0cbb13)
+    H_3f0cbb13 = 6930,
+    // @@protoc_insertion_point(enum_value:Retcode.H_f0fe1921)
+    H_f0fe1921 = 6931,
+    // @@protoc_insertion_point(enum_value:Retcode.H_825cf23c)
+    H_825cf23c = 6932,
+    // @@protoc_insertion_point(enum_value:Retcode.H_2583fff0)
+    H_2583fff0 = 6933,
+    // @@protoc_insertion_point(enum_value:Retcode.H_522bb1b6)
+    H_522bb1b6 = 6934,
+    // @@protoc_insertion_point(enum_value:Retcode.H_32ba9962)
+    H_32ba9962 = 6935,
+    // @@protoc_insertion_point(enum_value:Retcode.H_d5065312)
+    H_d5065312 = 6936,
+    // @@protoc_insertion_point(enum_value:Retcode.H_e90f267e)
+    H_e90f267e = 6937,
+    // @@protoc_insertion_point(enum_value:Retcode.H_982ee922)
+    H_982ee922 = 6938,
+    // @@protoc_insertion_point(enum_value:Retcode.H_d32f5c5d)
+    H_d32f5c5d = 6939,
+    // @@protoc_insertion_point(enum_value:Retcode.H_c8c2aeeb)
+    H_c8c2aeeb = 6940,
+    // @@protoc_insertion_point(enum_value:Retcode.H_212f6bc7)
+    H_212f6bc7 = 6941,
+    // @@protoc_insertion_point(enum_value:Retcode.H_33528b73)
+    H_33528b73 = 6942,
+    // @@protoc_insertion_point(enum_value:Retcode.H_1a4a8a51)
+    H_1a4a8a51 = 6943,
+    // @@protoc_insertion_point(enum_value:Retcode.H_5bb836dc)
+    H_5bb836dc = 6944,
+    // @@protoc_insertion_point(enum_value:Retcode.H_14074cb7)
+    H_14074cb7 = 6945,
+    // @@protoc_insertion_point(enum_value:Retcode.H_a0e92fb6)
+    H_a0e92fb6 = 6946,
+    // @@protoc_insertion_point(enum_value:Retcode.H_6411ead7)
+    H_6411ead7 = 6947,
+    // @@protoc_insertion_point(enum_value:Retcode.H_5bc39997)
+    H_5bc39997 = 6948,
+    // @@protoc_insertion_point(enum_value:Retcode.H_d97d7b7e)
+    H_d97d7b7e = 6949,
+    // @@protoc_insertion_point(enum_value:Retcode.H_5912d79f)
+    H_5912d79f = 6950,
+    // @@protoc_insertion_point(enum_value:Retcode.H_2f256751)
+    H_2f256751 = 6951,
+    // @@protoc_insertion_point(enum_value:Retcode.H_83dbcab9)
+    H_83dbcab9 = 6952,
+    // @@protoc_insertion_point(enum_value:Retcode.H_1d12b566)
+    H_1d12b566 = 6953,
+    // @@protoc_insertion_point(enum_value:Retcode.H_ca212293)
+    H_ca212293 = 6954,
+    // @@protoc_insertion_point(enum_value:Retcode.H_04eeb9d1)
+    H_04eeb9d1 = 6955,
+    // @@protoc_insertion_point(enum_value:Retcode.H_bc283fe4)
+    H_bc283fe4 = 6956,
+    // @@protoc_insertion_point(enum_value:Retcode.H_8a481a3c)
+    H_8a481a3c = 6957,
+    // @@protoc_insertion_point(enum_value:Retcode.H_aa556a9f)
+    H_aa556a9f = 6958,
+    // @@protoc_insertion_point(enum_value:Retcode.H_738df32c)
+    H_738df32c = 6959,
+    // @@protoc_insertion_point(enum_value:Retcode.H_f4acc9c4)
+    H_f4acc9c4 = 6960,
+    // @@protoc_insertion_point(enum_value:Retcode.H_84ec977e)
+    H_84ec977e = 6961,
+    // @@protoc_insertion_point(enum_value:Retcode.H_c9463c2a)
+    H_c9463c2a = 6962,
+    // @@protoc_insertion_point(enum_value:Retcode.H_5886160a)
+    H_5886160a = 6963,
+    // @@protoc_insertion_point(enum_value:Retcode.H_505d6ba8)
+    H_505d6ba8 = 6964,
+    // @@protoc_insertion_point(enum_value:Retcode.H_91a288ca)
+    H_91a288ca = 6965,
+    // @@protoc_insertion_point(enum_value:Retcode.H_9a54d994)
+    H_9a54d994 = 6966,
     // @@protoc_insertion_point(enum_value:Retcode.RET_HIPPLEN_AGENDA_WORK_UNAVAIBLE)
     RET_HIPPLEN_AGENDA_WORK_UNAVAIBLE = 7001,
     // @@protoc_insertion_point(enum_value:Retcode.RET_HIPPLEN_AGENDA_WORK_CONFLICT)
@@ -3419,73 +3419,73 @@ impl ::protobuf::Enum for Retcode {
             6848 => ::std::option::Option::Some(Retcode::RET_ELF_RESTAURANT_TRADE_ORDER_NOT_EXIST),
             6849 => ::std::option::Option::Some(Retcode::RET_ELF_RESTAURANT_NO_REWARD),
             6850 => ::std::option::Option::Some(Retcode::RET_ELF_RESTAURANT_NOT_INIT),
-            6900 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_CONF_MISS),
-            6901 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_ROLE_NOT_EXIST),
-            6902 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_ROLE_ALREADY_EXIST),
-            6903 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_POS_EXIST_ROLE),
-            6904 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_POS_NOT_VALID),
-            6905 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_COIN_NOT_ENOUGH),
-            6906 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_EQUIP_NOT_EXIST),
-            6907 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_EQUIP_CANNOT_DRESS),
-            6908 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_PARAM_NOT_MATCH),
-            6909 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_EQUIP_DRESS_SAME),
-            6910 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_EQUIP_DRESSED),
-            6911 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_RANDOM_ERR),
-            6912 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_GOODS_SOLD),
-            6913 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_ITEM_NOT_ENOUGH),
-            6914 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_GAMEPLAY_LEVEL_MAX),
-            6915 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_ALREADY_IN_GAMEPLAY),
-            6916 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_EQUIP_TRAIT_LIMIT),
-            6917 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_REGION_FULL),
-            6918 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_TEMPORARY_EQUIP),
-            6919 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_NOT_IN_GAMEPLAY),
-            6920 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_ADD_EQUIP_FAIL),
-            6921 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_ADD_CONSUMABLE_FAIL),
-            6922 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_CREATE_ROLE_FAIL),
-            6923 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_CANNOT_UPGRADE),
-            6924 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_NO_EMPTY_POS),
-            6925 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_FORGE_NOT_EXIST),
-            6926 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_ADD_FORGE_FAIL),
-            6927 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_ORB_NOT_ENOUGH),
-            6928 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_ORB_NOT_EXIST),
-            6929 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_SUPPLY_NO_REROLL),
-            6930 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_HIGH_RARIY_FOR_COPY),
-            6931 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_ROLE_FULL_FOR_COPY),
-            6932 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_UNDRESS_EQUIP_FAIL),
-            6933 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_DATA_LOCKED),
-            6934 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_SAME_ROLE_IN_BATTLE),
-            6935 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_SUPPLY_ALL_SELECTED),
-            6936 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_TRAIT_TRACK_MAX),
-            6937 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_POS_BAN),
-            6938 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_POS_EXIST_ITEM),
-            6939 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_TALENT_ENABLED),
-            6940 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_TALENT_COST_NOT_ENOUGH),
-            6941 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_TALENT_PRE_NOT_ENABLED),
-            6942 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_DIVISION_INVALID),
-            6943 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_TALENT_PERMANENT_LIMIT),
-            6944 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_WEEKLY_REWARD_TAKEN),
-            6945 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_WEEKLY_SCORE_NOT_ENOUGH),
-            6946 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_CRAFT_COST_EQUIP_DRESSED),
-            6947 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_CREATE_NPC_FAIL),
-            6948 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_NO_POS_CAN_PLACE),
-            6949 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_NPC_POS_LIMIT),
-            6950 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_CRAFT_EQUIP_ON_DIFF_ROLE),
-            6951 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_GLOBAL_HP_NOT_ENOUGH),
-            6952 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_EQUIP_TRACK_MAX),
-            6953 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_NPC_NOT_EXIST),
-            6954 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_RECYCLE_ROLE_IN_TUTORIAL),
-            6955 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_TUTORIAL_TASK_NOT_FINISHED),
-            6956 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_TUTORIAL_UPDATE_POS_ININVALID),
-            6957 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_NO_REROLL_CNT),
-            6958 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_TUTORIAL_REFRESH_SHOP_LIMITED),
-            6959 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_TUTORIAL_BUY_SHOP_LIMITED),
-            6960 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_OC_UNLOCK_QUEST_NOT_FINISHED),
-            6961 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_FORGE_LIMIT_SELECT_IDX_IN_TUTORIAL),
-            6962 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_GAME_REF_ID_TOO_LONG),
-            6963 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_FEATURE_SWITCH_CLOSED),
-            6964 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_EQUIP_TRAIT_EXCLUSIVE),
-            6965 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_SHOP_LOCKED),
-            6966 => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_BUY_EXP_LOCKED),
+            6900 => ::std::option::Option::Some(Retcode::H_d869b636),
+            6901 => ::std::option::Option::Some(Retcode::H_d44ee1dc),
+            6902 => ::std::option::Option::Some(Retcode::H_f239b91a),
+            6903 => ::std::option::Option::Some(Retcode::H_e30c2a91),
+            6904 => ::std::option::Option::Some(Retcode::H_ec80811b),
+            6905 => ::std::option::Option::Some(Retcode::H_0f1a150e),
+            6906 => ::std::option::Option::Some(Retcode::H_4dfe6d73),
+            6907 => ::std::option::Option::Some(Retcode::H_354138f5),
+            6908 => ::std::option::Option::Some(Retcode::H_a5b6461a),
+            6909 => ::std::option::Option::Some(Retcode::H_b6c11427),
+            6910 => ::std::option::Option::Some(Retcode::H_9d91e8c7),
+            6911 => ::std::option::Option::Some(Retcode::H_b7274413),
+            6912 => ::std::option::Option::Some(Retcode::H_38d20d6b),
+            6913 => ::std::option::Option::Some(Retcode::H_94f2cca1),
+            6914 => ::std::option::Option::Some(Retcode::H_d7cbc3da),
+            6915 => ::std::option::Option::Some(Retcode::H_d4c71a26),
+            6916 => ::std::option::Option::Some(Retcode::H_5e42835b),
+            6917 => ::std::option::Option::Some(Retcode::H_07e6751a),
+            6918 => ::std::option::Option::Some(Retcode::H_4c423326),
+            6919 => ::std::option::Option::Some(Retcode::H_945e8d98),
+            6920 => ::std::option::Option::Some(Retcode::H_74813a7e),
+            6921 => ::std::option::Option::Some(Retcode::H_b63079da),
+            6922 => ::std::option::Option::Some(Retcode::H_c002c322),
+            6923 => ::std::option::Option::Some(Retcode::H_0418809b),
+            6924 => ::std::option::Option::Some(Retcode::H_34407f43),
+            6925 => ::std::option::Option::Some(Retcode::H_640192fd),
+            6926 => ::std::option::Option::Some(Retcode::H_e5f52af6),
+            6927 => ::std::option::Option::Some(Retcode::H_6a99d432),
+            6928 => ::std::option::Option::Some(Retcode::H_f3b484c6),
+            6929 => ::std::option::Option::Some(Retcode::H_2da2290f),
+            6930 => ::std::option::Option::Some(Retcode::H_3f0cbb13),
+            6931 => ::std::option::Option::Some(Retcode::H_f0fe1921),
+            6932 => ::std::option::Option::Some(Retcode::H_825cf23c),
+            6933 => ::std::option::Option::Some(Retcode::H_2583fff0),
+            6934 => ::std::option::Option::Some(Retcode::H_522bb1b6),
+            6935 => ::std::option::Option::Some(Retcode::H_32ba9962),
+            6936 => ::std::option::Option::Some(Retcode::H_d5065312),
+            6937 => ::std::option::Option::Some(Retcode::H_e90f267e),
+            6938 => ::std::option::Option::Some(Retcode::H_982ee922),
+            6939 => ::std::option::Option::Some(Retcode::H_d32f5c5d),
+            6940 => ::std::option::Option::Some(Retcode::H_c8c2aeeb),
+            6941 => ::std::option::Option::Some(Retcode::H_212f6bc7),
+            6942 => ::std::option::Option::Some(Retcode::H_33528b73),
+            6943 => ::std::option::Option::Some(Retcode::H_1a4a8a51),
+            6944 => ::std::option::Option::Some(Retcode::H_5bb836dc),
+            6945 => ::std::option::Option::Some(Retcode::H_14074cb7),
+            6946 => ::std::option::Option::Some(Retcode::H_a0e92fb6),
+            6947 => ::std::option::Option::Some(Retcode::H_6411ead7),
+            6948 => ::std::option::Option::Some(Retcode::H_5bc39997),
+            6949 => ::std::option::Option::Some(Retcode::H_d97d7b7e),
+            6950 => ::std::option::Option::Some(Retcode::H_5912d79f),
+            6951 => ::std::option::Option::Some(Retcode::H_2f256751),
+            6952 => ::std::option::Option::Some(Retcode::H_83dbcab9),
+            6953 => ::std::option::Option::Some(Retcode::H_1d12b566),
+            6954 => ::std::option::Option::Some(Retcode::H_ca212293),
+            6955 => ::std::option::Option::Some(Retcode::H_04eeb9d1),
+            6956 => ::std::option::Option::Some(Retcode::H_bc283fe4),
+            6957 => ::std::option::Option::Some(Retcode::H_8a481a3c),
+            6958 => ::std::option::Option::Some(Retcode::H_aa556a9f),
+            6959 => ::std::option::Option::Some(Retcode::H_738df32c),
+            6960 => ::std::option::Option::Some(Retcode::H_f4acc9c4),
+            6961 => ::std::option::Option::Some(Retcode::H_84ec977e),
+            6962 => ::std::option::Option::Some(Retcode::H_c9463c2a),
+            6963 => ::std::option::Option::Some(Retcode::H_5886160a),
+            6964 => ::std::option::Option::Some(Retcode::H_505d6ba8),
+            6965 => ::std::option::Option::Some(Retcode::H_91a288ca),
+            6966 => ::std::option::Option::Some(Retcode::H_9a54d994),
             7001 => ::std::option::Option::Some(Retcode::RET_HIPPLEN_AGENDA_WORK_UNAVAIBLE),
             7002 => ::std::option::Option::Some(Retcode::RET_HIPPLEN_AGENDA_WORK_CONFLICT),
             7003 => ::std::option::Option::Some(Retcode::RET_HIPPLEN_AGENDA_ACTION_LACK),
@@ -4597,73 +4597,73 @@ impl ::protobuf::Enum for Retcode {
             "RET_ELF_RESTAURANT_TRADE_ORDER_NOT_EXIST" => ::std::option::Option::Some(Retcode::RET_ELF_RESTAURANT_TRADE_ORDER_NOT_EXIST),
             "RET_ELF_RESTAURANT_NO_REWARD" => ::std::option::Option::Some(Retcode::RET_ELF_RESTAURANT_NO_REWARD),
             "RET_ELF_RESTAURANT_NOT_INIT" => ::std::option::Option::Some(Retcode::RET_ELF_RESTAURANT_NOT_INIT),
-            "RET_GRID_FIGHT_CONF_MISS" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_CONF_MISS),
-            "RET_GRID_FIGHT_ROLE_NOT_EXIST" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_ROLE_NOT_EXIST),
-            "RET_GRID_FIGHT_ROLE_ALREADY_EXIST" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_ROLE_ALREADY_EXIST),
-            "RET_GRID_FIGHT_POS_EXIST_ROLE" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_POS_EXIST_ROLE),
-            "RET_GRID_FIGHT_POS_NOT_VALID" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_POS_NOT_VALID),
-            "RET_GRID_FIGHT_COIN_NOT_ENOUGH" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_COIN_NOT_ENOUGH),
-            "RET_GRID_FIGHT_EQUIP_NOT_EXIST" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_EQUIP_NOT_EXIST),
-            "RET_GRID_FIGHT_EQUIP_CANNOT_DRESS" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_EQUIP_CANNOT_DRESS),
-            "RET_GRID_FIGHT_PARAM_NOT_MATCH" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_PARAM_NOT_MATCH),
-            "RET_GRID_FIGHT_EQUIP_DRESS_SAME" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_EQUIP_DRESS_SAME),
-            "RET_GRID_FIGHT_EQUIP_DRESSED" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_EQUIP_DRESSED),
-            "RET_GRID_FIGHT_RANDOM_ERR" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_RANDOM_ERR),
-            "RET_GRID_FIGHT_GOODS_SOLD" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_GOODS_SOLD),
-            "RET_GRID_FIGHT_ITEM_NOT_ENOUGH" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_ITEM_NOT_ENOUGH),
-            "RET_GRID_FIGHT_GAMEPLAY_LEVEL_MAX" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_GAMEPLAY_LEVEL_MAX),
-            "RET_GRID_FIGHT_ALREADY_IN_GAMEPLAY" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_ALREADY_IN_GAMEPLAY),
-            "RET_GRID_FIGHT_EQUIP_TRAIT_LIMIT" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_EQUIP_TRAIT_LIMIT),
-            "RET_GRID_FIGHT_REGION_FULL" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_REGION_FULL),
-            "RET_GRID_FIGHT_TEMPORARY_EQUIP" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_TEMPORARY_EQUIP),
-            "RET_GRID_FIGHT_NOT_IN_GAMEPLAY" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_NOT_IN_GAMEPLAY),
-            "RET_GRID_FIGHT_ADD_EQUIP_FAIL" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_ADD_EQUIP_FAIL),
-            "RET_GRID_FIGHT_ADD_CONSUMABLE_FAIL" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_ADD_CONSUMABLE_FAIL),
-            "RET_GRID_FIGHT_CREATE_ROLE_FAIL" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_CREATE_ROLE_FAIL),
-            "RET_GRID_FIGHT_CANNOT_UPGRADE" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_CANNOT_UPGRADE),
-            "RET_GRID_FIGHT_NO_EMPTY_POS" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_NO_EMPTY_POS),
-            "RET_GRID_FIGHT_FORGE_NOT_EXIST" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_FORGE_NOT_EXIST),
-            "RET_GRID_FIGHT_ADD_FORGE_FAIL" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_ADD_FORGE_FAIL),
-            "RET_GRID_FIGHT_ORB_NOT_ENOUGH" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_ORB_NOT_ENOUGH),
-            "RET_GRID_FIGHT_ORB_NOT_EXIST" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_ORB_NOT_EXIST),
-            "RET_GRID_FIGHT_SUPPLY_NO_REROLL" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_SUPPLY_NO_REROLL),
-            "RET_GRID_FIGHT_HIGH_RARIY_FOR_COPY" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_HIGH_RARIY_FOR_COPY),
-            "RET_GRID_FIGHT_ROLE_FULL_FOR_COPY" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_ROLE_FULL_FOR_COPY),
-            "RET_GRID_FIGHT_UNDRESS_EQUIP_FAIL" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_UNDRESS_EQUIP_FAIL),
-            "RET_GRID_FIGHT_DATA_LOCKED" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_DATA_LOCKED),
-            "RET_GRID_FIGHT_SAME_ROLE_IN_BATTLE" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_SAME_ROLE_IN_BATTLE),
-            "RET_GRID_FIGHT_SUPPLY_ALL_SELECTED" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_SUPPLY_ALL_SELECTED),
-            "RET_GRID_FIGHT_TRAIT_TRACK_MAX" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_TRAIT_TRACK_MAX),
-            "RET_GRID_FIGHT_POS_BAN" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_POS_BAN),
-            "RET_GRID_FIGHT_POS_EXIST_ITEM" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_POS_EXIST_ITEM),
-            "RET_GRID_FIGHT_TALENT_ENABLED" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_TALENT_ENABLED),
-            "RET_GRID_FIGHT_TALENT_COST_NOT_ENOUGH" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_TALENT_COST_NOT_ENOUGH),
-            "RET_GRID_FIGHT_TALENT_PRE_NOT_ENABLED" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_TALENT_PRE_NOT_ENABLED),
-            "RET_GRID_FIGHT_DIVISION_INVALID" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_DIVISION_INVALID),
-            "RET_GRID_FIGHT_TALENT_PERMANENT_LIMIT" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_TALENT_PERMANENT_LIMIT),
-            "RET_GRID_FIGHT_WEEKLY_REWARD_TAKEN" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_WEEKLY_REWARD_TAKEN),
-            "RET_GRID_FIGHT_WEEKLY_SCORE_NOT_ENOUGH" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_WEEKLY_SCORE_NOT_ENOUGH),
-            "RET_GRID_FIGHT_CRAFT_COST_EQUIP_DRESSED" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_CRAFT_COST_EQUIP_DRESSED),
-            "RET_GRID_FIGHT_CREATE_NPC_FAIL" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_CREATE_NPC_FAIL),
-            "RET_GRID_FIGHT_NO_POS_CAN_PLACE" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_NO_POS_CAN_PLACE),
-            "RET_GRID_FIGHT_NPC_POS_LIMIT" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_NPC_POS_LIMIT),
-            "RET_GRID_FIGHT_CRAFT_EQUIP_ON_DIFF_ROLE" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_CRAFT_EQUIP_ON_DIFF_ROLE),
-            "RET_GRID_FIGHT_GLOBAL_HP_NOT_ENOUGH" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_GLOBAL_HP_NOT_ENOUGH),
-            "RET_GRID_FIGHT_EQUIP_TRACK_MAX" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_EQUIP_TRACK_MAX),
-            "RET_GRID_FIGHT_NPC_NOT_EXIST" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_NPC_NOT_EXIST),
-            "RET_GRID_FIGHT_RECYCLE_ROLE_IN_TUTORIAL" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_RECYCLE_ROLE_IN_TUTORIAL),
-            "RET_GRID_FIGHT_TUTORIAL_TASK_NOT_FINISHED" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_TUTORIAL_TASK_NOT_FINISHED),
-            "RET_GRID_FIGHT_TUTORIAL_UPDATE_POS_ININVALID" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_TUTORIAL_UPDATE_POS_ININVALID),
-            "RET_GRID_FIGHT_NO_REROLL_CNT" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_NO_REROLL_CNT),
-            "RET_GRID_FIGHT_TUTORIAL_REFRESH_SHOP_LIMITED" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_TUTORIAL_REFRESH_SHOP_LIMITED),
-            "RET_GRID_FIGHT_TUTORIAL_BUY_SHOP_LIMITED" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_TUTORIAL_BUY_SHOP_LIMITED),
-            "RET_GRID_FIGHT_OC_UNLOCK_QUEST_NOT_FINISHED" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_OC_UNLOCK_QUEST_NOT_FINISHED),
-            "RET_GRID_FIGHT_FORGE_LIMIT_SELECT_IDX_IN_TUTORIAL" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_FORGE_LIMIT_SELECT_IDX_IN_TUTORIAL),
-            "RET_GRID_FIGHT_GAME_REF_ID_TOO_LONG" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_GAME_REF_ID_TOO_LONG),
-            "RET_GRID_FIGHT_FEATURE_SWITCH_CLOSED" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_FEATURE_SWITCH_CLOSED),
-            "RET_GRID_FIGHT_EQUIP_TRAIT_EXCLUSIVE" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_EQUIP_TRAIT_EXCLUSIVE),
-            "RET_GRID_FIGHT_SHOP_LOCKED" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_SHOP_LOCKED),
-            "RET_GRID_FIGHT_BUY_EXP_LOCKED" => ::std::option::Option::Some(Retcode::RET_GRID_FIGHT_BUY_EXP_LOCKED),
+            "H_d869b636" => ::std::option::Option::Some(Retcode::H_d869b636),
+            "H_d44ee1dc" => ::std::option::Option::Some(Retcode::H_d44ee1dc),
+            "H_f239b91a" => ::std::option::Option::Some(Retcode::H_f239b91a),
+            "H_e30c2a91" => ::std::option::Option::Some(Retcode::H_e30c2a91),
+            "H_ec80811b" => ::std::option::Option::Some(Retcode::H_ec80811b),
+            "H_0f1a150e" => ::std::option::Option::Some(Retcode::H_0f1a150e),
+            "H_4dfe6d73" => ::std::option::Option::Some(Retcode::H_4dfe6d73),
+            "H_354138f5" => ::std::option::Option::Some(Retcode::H_354138f5),
+            "H_a5b6461a" => ::std::option::Option::Some(Retcode::H_a5b6461a),
+            "H_b6c11427" => ::std::option::Option::Some(Retcode::H_b6c11427),
+            "H_9d91e8c7" => ::std::option::Option::Some(Retcode::H_9d91e8c7),
+            "H_b7274413" => ::std::option::Option::Some(Retcode::H_b7274413),
+            "H_38d20d6b" => ::std::option::Option::Some(Retcode::H_38d20d6b),
+            "H_94f2cca1" => ::std::option::Option::Some(Retcode::H_94f2cca1),
+            "H_d7cbc3da" => ::std::option::Option::Some(Retcode::H_d7cbc3da),
+            "H_d4c71a26" => ::std::option::Option::Some(Retcode::H_d4c71a26),
+            "H_5e42835b" => ::std::option::Option::Some(Retcode::H_5e42835b),
+            "H_07e6751a" => ::std::option::Option::Some(Retcode::H_07e6751a),
+            "H_4c423326" => ::std::option::Option::Some(Retcode::H_4c423326),
+            "H_945e8d98" => ::std::option::Option::Some(Retcode::H_945e8d98),
+            "H_74813a7e" => ::std::option::Option::Some(Retcode::H_74813a7e),
+            "H_b63079da" => ::std::option::Option::Some(Retcode::H_b63079da),
+            "H_c002c322" => ::std::option::Option::Some(Retcode::H_c002c322),
+            "H_0418809b" => ::std::option::Option::Some(Retcode::H_0418809b),
+            "H_34407f43" => ::std::option::Option::Some(Retcode::H_34407f43),
+            "H_640192fd" => ::std::option::Option::Some(Retcode::H_640192fd),
+            "H_e5f52af6" => ::std::option::Option::Some(Retcode::H_e5f52af6),
+            "H_6a99d432" => ::std::option::Option::Some(Retcode::H_6a99d432),
+            "H_f3b484c6" => ::std::option::Option::Some(Retcode::H_f3b484c6),
+            "H_2da2290f" => ::std::option::Option::Some(Retcode::H_2da2290f),
+            "H_3f0cbb13" => ::std::option::Option::Some(Retcode::H_3f0cbb13),
+            "H_f0fe1921" => ::std::option::Option::Some(Retcode::H_f0fe1921),
+            "H_825cf23c" => ::std::option::Option::Some(Retcode::H_825cf23c),
+            "H_2583fff0" => ::std::option::Option::Some(Retcode::H_2583fff0),
+            "H_522bb1b6" => ::std::option::Option::Some(Retcode::H_522bb1b6),
+            "H_32ba9962" => ::std::option::Option::Some(Retcode::H_32ba9962),
+            "H_d5065312" => ::std::option::Option::Some(Retcode::H_d5065312),
+            "H_e90f267e" => ::std::option::Option::Some(Retcode::H_e90f267e),
+            "H_982ee922" => ::std::option::Option::Some(Retcode::H_982ee922),
+            "H_d32f5c5d" => ::std::option::Option::Some(Retcode::H_d32f5c5d),
+            "H_c8c2aeeb" => ::std::option::Option::Some(Retcode::H_c8c2aeeb),
+            "H_212f6bc7" => ::std::option::Option::Some(Retcode::H_212f6bc7),
+            "H_33528b73" => ::std::option::Option::Some(Retcode::H_33528b73),
+            "H_1a4a8a51" => ::std::option::Option::Some(Retcode::H_1a4a8a51),
+            "H_5bb836dc" => ::std::option::Option::Some(Retcode::H_5bb836dc),
+            "H_14074cb7" => ::std::option::Option::Some(Retcode::H_14074cb7),
+            "H_a0e92fb6" => ::std::option::Option::Some(Retcode::H_a0e92fb6),
+            "H_6411ead7" => ::std::option::Option::Some(Retcode::H_6411ead7),
+            "H_5bc39997" => ::std::option::Option::Some(Retcode::H_5bc39997),
+            "H_d97d7b7e" => ::std::option::Option::Some(Retcode::H_d97d7b7e),
+            "H_5912d79f" => ::std::option::Option::Some(Retcode::H_5912d79f),
+            "H_2f256751" => ::std::option::Option::Some(Retcode::H_2f256751),
+            "H_83dbcab9" => ::std::option::Option::Some(Retcode::H_83dbcab9),
+            "H_1d12b566" => ::std::option::Option::Some(Retcode::H_1d12b566),
+            "H_ca212293" => ::std::option::Option::Some(Retcode::H_ca212293),
+            "H_04eeb9d1" => ::std::option::Option::Some(Retcode::H_04eeb9d1),
+            "H_bc283fe4" => ::std::option::Option::Some(Retcode::H_bc283fe4),
+            "H_8a481a3c" => ::std::option::Option::Some(Retcode::H_8a481a3c),
+            "H_aa556a9f" => ::std::option::Option::Some(Retcode::H_aa556a9f),
+            "H_738df32c" => ::std::option::Option::Some(Retcode::H_738df32c),
+            "H_f4acc9c4" => ::std::option::Option::Some(Retcode::H_f4acc9c4),
+            "H_84ec977e" => ::std::option::Option::Some(Retcode::H_84ec977e),
+            "H_c9463c2a" => ::std::option::Option::Some(Retcode::H_c9463c2a),
+            "H_5886160a" => ::std::option::Option::Some(Retcode::H_5886160a),
+            "H_505d6ba8" => ::std::option::Option::Some(Retcode::H_505d6ba8),
+            "H_91a288ca" => ::std::option::Option::Some(Retcode::H_91a288ca),
+            "H_9a54d994" => ::std::option::Option::Some(Retcode::H_9a54d994),
             "RET_HIPPLEN_AGENDA_WORK_UNAVAIBLE" => ::std::option::Option::Some(Retcode::RET_HIPPLEN_AGENDA_WORK_UNAVAIBLE),
             "RET_HIPPLEN_AGENDA_WORK_CONFLICT" => ::std::option::Option::Some(Retcode::RET_HIPPLEN_AGENDA_WORK_CONFLICT),
             "RET_HIPPLEN_AGENDA_ACTION_LACK" => ::std::option::Option::Some(Retcode::RET_HIPPLEN_AGENDA_ACTION_LACK),
@@ -5774,73 +5774,73 @@ impl ::protobuf::Enum for Retcode {
         Retcode::RET_ELF_RESTAURANT_TRADE_ORDER_NOT_EXIST,
         Retcode::RET_ELF_RESTAURANT_NO_REWARD,
         Retcode::RET_ELF_RESTAURANT_NOT_INIT,
-        Retcode::RET_GRID_FIGHT_CONF_MISS,
-        Retcode::RET_GRID_FIGHT_ROLE_NOT_EXIST,
-        Retcode::RET_GRID_FIGHT_ROLE_ALREADY_EXIST,
-        Retcode::RET_GRID_FIGHT_POS_EXIST_ROLE,
-        Retcode::RET_GRID_FIGHT_POS_NOT_VALID,
-        Retcode::RET_GRID_FIGHT_COIN_NOT_ENOUGH,
-        Retcode::RET_GRID_FIGHT_EQUIP_NOT_EXIST,
-        Retcode::RET_GRID_FIGHT_EQUIP_CANNOT_DRESS,
-        Retcode::RET_GRID_FIGHT_PARAM_NOT_MATCH,
-        Retcode::RET_GRID_FIGHT_EQUIP_DRESS_SAME,
-        Retcode::RET_GRID_FIGHT_EQUIP_DRESSED,
-        Retcode::RET_GRID_FIGHT_RANDOM_ERR,
-        Retcode::RET_GRID_FIGHT_GOODS_SOLD,
-        Retcode::RET_GRID_FIGHT_ITEM_NOT_ENOUGH,
-        Retcode::RET_GRID_FIGHT_GAMEPLAY_LEVEL_MAX,
-        Retcode::RET_GRID_FIGHT_ALREADY_IN_GAMEPLAY,
-        Retcode::RET_GRID_FIGHT_EQUIP_TRAIT_LIMIT,
-        Retcode::RET_GRID_FIGHT_REGION_FULL,
-        Retcode::RET_GRID_FIGHT_TEMPORARY_EQUIP,
-        Retcode::RET_GRID_FIGHT_NOT_IN_GAMEPLAY,
-        Retcode::RET_GRID_FIGHT_ADD_EQUIP_FAIL,
-        Retcode::RET_GRID_FIGHT_ADD_CONSUMABLE_FAIL,
-        Retcode::RET_GRID_FIGHT_CREATE_ROLE_FAIL,
-        Retcode::RET_GRID_FIGHT_CANNOT_UPGRADE,
-        Retcode::RET_GRID_FIGHT_NO_EMPTY_POS,
-        Retcode::RET_GRID_FIGHT_FORGE_NOT_EXIST,
-        Retcode::RET_GRID_FIGHT_ADD_FORGE_FAIL,
-        Retcode::RET_GRID_FIGHT_ORB_NOT_ENOUGH,
-        Retcode::RET_GRID_FIGHT_ORB_NOT_EXIST,
-        Retcode::RET_GRID_FIGHT_SUPPLY_NO_REROLL,
-        Retcode::RET_GRID_FIGHT_HIGH_RARIY_FOR_COPY,
-        Retcode::RET_GRID_FIGHT_ROLE_FULL_FOR_COPY,
-        Retcode::RET_GRID_FIGHT_UNDRESS_EQUIP_FAIL,
-        Retcode::RET_GRID_FIGHT_DATA_LOCKED,
-        Retcode::RET_GRID_FIGHT_SAME_ROLE_IN_BATTLE,
-        Retcode::RET_GRID_FIGHT_SUPPLY_ALL_SELECTED,
-        Retcode::RET_GRID_FIGHT_TRAIT_TRACK_MAX,
-        Retcode::RET_GRID_FIGHT_POS_BAN,
-        Retcode::RET_GRID_FIGHT_POS_EXIST_ITEM,
-        Retcode::RET_GRID_FIGHT_TALENT_ENABLED,
-        Retcode::RET_GRID_FIGHT_TALENT_COST_NOT_ENOUGH,
-        Retcode::RET_GRID_FIGHT_TALENT_PRE_NOT_ENABLED,
-        Retcode::RET_GRID_FIGHT_DIVISION_INVALID,
-        Retcode::RET_GRID_FIGHT_TALENT_PERMANENT_LIMIT,
-        Retcode::RET_GRID_FIGHT_WEEKLY_REWARD_TAKEN,
-        Retcode::RET_GRID_FIGHT_WEEKLY_SCORE_NOT_ENOUGH,
-        Retcode::RET_GRID_FIGHT_CRAFT_COST_EQUIP_DRESSED,
-        Retcode::RET_GRID_FIGHT_CREATE_NPC_FAIL,
-        Retcode::RET_GRID_FIGHT_NO_POS_CAN_PLACE,
-        Retcode::RET_GRID_FIGHT_NPC_POS_LIMIT,
-        Retcode::RET_GRID_FIGHT_CRAFT_EQUIP_ON_DIFF_ROLE,
-        Retcode::RET_GRID_FIGHT_GLOBAL_HP_NOT_ENOUGH,
-        Retcode::RET_GRID_FIGHT_EQUIP_TRACK_MAX,
-        Retcode::RET_GRID_FIGHT_NPC_NOT_EXIST,
-        Retcode::RET_GRID_FIGHT_RECYCLE_ROLE_IN_TUTORIAL,
-        Retcode::RET_GRID_FIGHT_TUTORIAL_TASK_NOT_FINISHED,
-        Retcode::RET_GRID_FIGHT_TUTORIAL_UPDATE_POS_ININVALID,
-        Retcode::RET_GRID_FIGHT_NO_REROLL_CNT,
-        Retcode::RET_GRID_FIGHT_TUTORIAL_REFRESH_SHOP_LIMITED,
-        Retcode::RET_GRID_FIGHT_TUTORIAL_BUY_SHOP_LIMITED,
-        Retcode::RET_GRID_FIGHT_OC_UNLOCK_QUEST_NOT_FINISHED,
-        Retcode::RET_GRID_FIGHT_FORGE_LIMIT_SELECT_IDX_IN_TUTORIAL,
-        Retcode::RET_GRID_FIGHT_GAME_REF_ID_TOO_LONG,
-        Retcode::RET_GRID_FIGHT_FEATURE_SWITCH_CLOSED,
-        Retcode::RET_GRID_FIGHT_EQUIP_TRAIT_EXCLUSIVE,
-        Retcode::RET_GRID_FIGHT_SHOP_LOCKED,
-        Retcode::RET_GRID_FIGHT_BUY_EXP_LOCKED,
+        Retcode::H_d869b636,
+        Retcode::H_d44ee1dc,
+        Retcode::H_f239b91a,
+        Retcode::H_e30c2a91,
+        Retcode::H_ec80811b,
+        Retcode::H_0f1a150e,
+        Retcode::H_4dfe6d73,
+        Retcode::H_354138f5,
+        Retcode::H_a5b6461a,
+        Retcode::H_b6c11427,
+        Retcode::H_9d91e8c7,
+        Retcode::H_b7274413,
+        Retcode::H_38d20d6b,
+        Retcode::H_94f2cca1,
+        Retcode::H_d7cbc3da,
+        Retcode::H_d4c71a26,
+        Retcode::H_5e42835b,
+        Retcode::H_07e6751a,
+        Retcode::H_4c423326,
+        Retcode::H_945e8d98,
+        Retcode::H_74813a7e,
+        Retcode::H_b63079da,
+        Retcode::H_c002c322,
+        Retcode::H_0418809b,
+        Retcode::H_34407f43,
+        Retcode::H_640192fd,
+        Retcode::H_e5f52af6,
+        Retcode::H_6a99d432,
+        Retcode::H_f3b484c6,
+        Retcode::H_2da2290f,
+        Retcode::H_3f0cbb13,
+        Retcode::H_f0fe1921,
+        Retcode::H_825cf23c,
+        Retcode::H_2583fff0,
+        Retcode::H_522bb1b6,
+        Retcode::H_32ba9962,
+        Retcode::H_d5065312,
+        Retcode::H_e90f267e,
+        Retcode::H_982ee922,
+        Retcode::H_d32f5c5d,
+        Retcode::H_c8c2aeeb,
+        Retcode::H_212f6bc7,
+        Retcode::H_33528b73,
+        Retcode::H_1a4a8a51,
+        Retcode::H_5bb836dc,
+        Retcode::H_14074cb7,
+        Retcode::H_a0e92fb6,
+        Retcode::H_6411ead7,
+        Retcode::H_5bc39997,
+        Retcode::H_d97d7b7e,
+        Retcode::H_5912d79f,
+        Retcode::H_2f256751,
+        Retcode::H_83dbcab9,
+        Retcode::H_1d12b566,
+        Retcode::H_ca212293,
+        Retcode::H_04eeb9d1,
+        Retcode::H_bc283fe4,
+        Retcode::H_8a481a3c,
+        Retcode::H_aa556a9f,
+        Retcode::H_738df32c,
+        Retcode::H_f4acc9c4,
+        Retcode::H_84ec977e,
+        Retcode::H_c9463c2a,
+        Retcode::H_5886160a,
+        Retcode::H_505d6ba8,
+        Retcode::H_91a288ca,
+        Retcode::H_9a54d994,
         Retcode::RET_HIPPLEN_AGENDA_WORK_UNAVAIBLE,
         Retcode::RET_HIPPLEN_AGENDA_WORK_CONFLICT,
         Retcode::RET_HIPPLEN_AGENDA_ACTION_LACK,
@@ -6957,73 +6957,73 @@ impl ::protobuf::EnumFull for Retcode {
             Retcode::RET_ELF_RESTAURANT_TRADE_ORDER_NOT_EXIST => 1034,
             Retcode::RET_ELF_RESTAURANT_NO_REWARD => 1035,
             Retcode::RET_ELF_RESTAURANT_NOT_INIT => 1036,
-            Retcode::RET_GRID_FIGHT_CONF_MISS => 1037,
-            Retcode::RET_GRID_FIGHT_ROLE_NOT_EXIST => 1038,
-            Retcode::RET_GRID_FIGHT_ROLE_ALREADY_EXIST => 1039,
-            Retcode::RET_GRID_FIGHT_POS_EXIST_ROLE => 1040,
-            Retcode::RET_GRID_FIGHT_POS_NOT_VALID => 1041,
-            Retcode::RET_GRID_FIGHT_COIN_NOT_ENOUGH => 1042,
-            Retcode::RET_GRID_FIGHT_EQUIP_NOT_EXIST => 1043,
-            Retcode::RET_GRID_FIGHT_EQUIP_CANNOT_DRESS => 1044,
-            Retcode::RET_GRID_FIGHT_PARAM_NOT_MATCH => 1045,
-            Retcode::RET_GRID_FIGHT_EQUIP_DRESS_SAME => 1046,
-            Retcode::RET_GRID_FIGHT_EQUIP_DRESSED => 1047,
-            Retcode::RET_GRID_FIGHT_RANDOM_ERR => 1048,
-            Retcode::RET_GRID_FIGHT_GOODS_SOLD => 1049,
-            Retcode::RET_GRID_FIGHT_ITEM_NOT_ENOUGH => 1050,
-            Retcode::RET_GRID_FIGHT_GAMEPLAY_LEVEL_MAX => 1051,
-            Retcode::RET_GRID_FIGHT_ALREADY_IN_GAMEPLAY => 1052,
-            Retcode::RET_GRID_FIGHT_EQUIP_TRAIT_LIMIT => 1053,
-            Retcode::RET_GRID_FIGHT_REGION_FULL => 1054,
-            Retcode::RET_GRID_FIGHT_TEMPORARY_EQUIP => 1055,
-            Retcode::RET_GRID_FIGHT_NOT_IN_GAMEPLAY => 1056,
-            Retcode::RET_GRID_FIGHT_ADD_EQUIP_FAIL => 1057,
-            Retcode::RET_GRID_FIGHT_ADD_CONSUMABLE_FAIL => 1058,
-            Retcode::RET_GRID_FIGHT_CREATE_ROLE_FAIL => 1059,
-            Retcode::RET_GRID_FIGHT_CANNOT_UPGRADE => 1060,
-            Retcode::RET_GRID_FIGHT_NO_EMPTY_POS => 1061,
-            Retcode::RET_GRID_FIGHT_FORGE_NOT_EXIST => 1062,
-            Retcode::RET_GRID_FIGHT_ADD_FORGE_FAIL => 1063,
-            Retcode::RET_GRID_FIGHT_ORB_NOT_ENOUGH => 1064,
-            Retcode::RET_GRID_FIGHT_ORB_NOT_EXIST => 1065,
-            Retcode::RET_GRID_FIGHT_SUPPLY_NO_REROLL => 1066,
-            Retcode::RET_GRID_FIGHT_HIGH_RARIY_FOR_COPY => 1067,
-            Retcode::RET_GRID_FIGHT_ROLE_FULL_FOR_COPY => 1068,
-            Retcode::RET_GRID_FIGHT_UNDRESS_EQUIP_FAIL => 1069,
-            Retcode::RET_GRID_FIGHT_DATA_LOCKED => 1070,
-            Retcode::RET_GRID_FIGHT_SAME_ROLE_IN_BATTLE => 1071,
-            Retcode::RET_GRID_FIGHT_SUPPLY_ALL_SELECTED => 1072,
-            Retcode::RET_GRID_FIGHT_TRAIT_TRACK_MAX => 1073,
-            Retcode::RET_GRID_FIGHT_POS_BAN => 1074,
-            Retcode::RET_GRID_FIGHT_POS_EXIST_ITEM => 1075,
-            Retcode::RET_GRID_FIGHT_TALENT_ENABLED => 1076,
-            Retcode::RET_GRID_FIGHT_TALENT_COST_NOT_ENOUGH => 1077,
-            Retcode::RET_GRID_FIGHT_TALENT_PRE_NOT_ENABLED => 1078,
-            Retcode::RET_GRID_FIGHT_DIVISION_INVALID => 1079,
-            Retcode::RET_GRID_FIGHT_TALENT_PERMANENT_LIMIT => 1080,
-            Retcode::RET_GRID_FIGHT_WEEKLY_REWARD_TAKEN => 1081,
-            Retcode::RET_GRID_FIGHT_WEEKLY_SCORE_NOT_ENOUGH => 1082,
-            Retcode::RET_GRID_FIGHT_CRAFT_COST_EQUIP_DRESSED => 1083,
-            Retcode::RET_GRID_FIGHT_CREATE_NPC_FAIL => 1084,
-            Retcode::RET_GRID_FIGHT_NO_POS_CAN_PLACE => 1085,
-            Retcode::RET_GRID_FIGHT_NPC_POS_LIMIT => 1086,
-            Retcode::RET_GRID_FIGHT_CRAFT_EQUIP_ON_DIFF_ROLE => 1087,
-            Retcode::RET_GRID_FIGHT_GLOBAL_HP_NOT_ENOUGH => 1088,
-            Retcode::RET_GRID_FIGHT_EQUIP_TRACK_MAX => 1089,
-            Retcode::RET_GRID_FIGHT_NPC_NOT_EXIST => 1090,
-            Retcode::RET_GRID_FIGHT_RECYCLE_ROLE_IN_TUTORIAL => 1091,
-            Retcode::RET_GRID_FIGHT_TUTORIAL_TASK_NOT_FINISHED => 1092,
-            Retcode::RET_GRID_FIGHT_TUTORIAL_UPDATE_POS_ININVALID => 1093,
-            Retcode::RET_GRID_FIGHT_NO_REROLL_CNT => 1094,
-            Retcode::RET_GRID_FIGHT_TUTORIAL_REFRESH_SHOP_LIMITED => 1095,
-            Retcode::RET_GRID_FIGHT_TUTORIAL_BUY_SHOP_LIMITED => 1096,
-            Retcode::RET_GRID_FIGHT_OC_UNLOCK_QUEST_NOT_FINISHED => 1097,
-            Retcode::RET_GRID_FIGHT_FORGE_LIMIT_SELECT_IDX_IN_TUTORIAL => 1098,
-            Retcode::RET_GRID_FIGHT_GAME_REF_ID_TOO_LONG => 1099,
-            Retcode::RET_GRID_FIGHT_FEATURE_SWITCH_CLOSED => 1100,
-            Retcode::RET_GRID_FIGHT_EQUIP_TRAIT_EXCLUSIVE => 1101,
-            Retcode::RET_GRID_FIGHT_SHOP_LOCKED => 1102,
-            Retcode::RET_GRID_FIGHT_BUY_EXP_LOCKED => 1103,
+            Retcode::H_d869b636 => 1037,
+            Retcode::H_d44ee1dc => 1038,
+            Retcode::H_f239b91a => 1039,
+            Retcode::H_e30c2a91 => 1040,
+            Retcode::H_ec80811b => 1041,
+            Retcode::H_0f1a150e => 1042,
+            Retcode::H_4dfe6d73 => 1043,
+            Retcode::H_354138f5 => 1044,
+            Retcode::H_a5b6461a => 1045,
+            Retcode::H_b6c11427 => 1046,
+            Retcode::H_9d91e8c7 => 1047,
+            Retcode::H_b7274413 => 1048,
+            Retcode::H_38d20d6b => 1049,
+            Retcode::H_94f2cca1 => 1050,
+            Retcode::H_d7cbc3da => 1051,
+            Retcode::H_d4c71a26 => 1052,
+            Retcode::H_5e42835b => 1053,
+            Retcode::H_07e6751a => 1054,
+            Retcode::H_4c423326 => 1055,
+            Retcode::H_945e8d98 => 1056,
+            Retcode::H_74813a7e => 1057,
+            Retcode::H_b63079da => 1058,
+            Retcode::H_c002c322 => 1059,
+            Retcode::H_0418809b => 1060,
+            Retcode::H_34407f43 => 1061,
+            Retcode::H_640192fd => 1062,
+            Retcode::H_e5f52af6 => 1063,
+            Retcode::H_6a99d432 => 1064,
+            Retcode::H_f3b484c6 => 1065,
+            Retcode::H_2da2290f => 1066,
+            Retcode::H_3f0cbb13 => 1067,
+            Retcode::H_f0fe1921 => 1068,
+            Retcode::H_825cf23c => 1069,
+            Retcode::H_2583fff0 => 1070,
+            Retcode::H_522bb1b6 => 1071,
+            Retcode::H_32ba9962 => 1072,
+            Retcode::H_d5065312 => 1073,
+            Retcode::H_e90f267e => 1074,
+            Retcode::H_982ee922 => 1075,
+            Retcode::H_d32f5c5d => 1076,
+            Retcode::H_c8c2aeeb => 1077,
+            Retcode::H_212f6bc7 => 1078,
+            Retcode::H_33528b73 => 1079,
+            Retcode::H_1a4a8a51 => 1080,
+            Retcode::H_5bb836dc => 1081,
+            Retcode::H_14074cb7 => 1082,
+            Retcode::H_a0e92fb6 => 1083,
+            Retcode::H_6411ead7 => 1084,
+            Retcode::H_5bc39997 => 1085,
+            Retcode::H_d97d7b7e => 1086,
+            Retcode::H_5912d79f => 1087,
+            Retcode::H_2f256751 => 1088,
+            Retcode::H_83dbcab9 => 1089,
+            Retcode::H_1d12b566 => 1090,
+            Retcode::H_ca212293 => 1091,
+            Retcode::H_04eeb9d1 => 1092,
+            Retcode::H_bc283fe4 => 1093,
+            Retcode::H_8a481a3c => 1094,
+            Retcode::H_aa556a9f => 1095,
+            Retcode::H_738df32c => 1096,
+            Retcode::H_f4acc9c4 => 1097,
+            Retcode::H_84ec977e => 1098,
+            Retcode::H_c9463c2a => 1099,
+            Retcode::H_5886160a => 1100,
+            Retcode::H_505d6ba8 => 1101,
+            Retcode::H_91a288ca => 1102,
+            Retcode::H_9a54d994 => 1103,
             Retcode::RET_HIPPLEN_AGENDA_WORK_UNAVAIBLE => 1104,
             Retcode::RET_HIPPLEN_AGENDA_WORK_CONFLICT => 1105,
             Retcode::RET_HIPPLEN_AGENDA_ACTION_LACK => 1106,
@@ -7110,7 +7110,7 @@ impl Retcode {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\rRetcode.proto*\x94\xd3\x02\n\x07Retcode\x12\x0c\n\x08RET_SUCC\x10\0\
+    \n\rRetcode.proto*\xc7\xc7\x02\n\x07Retcode\x12\x0c\n\x08RET_SUCC\x10\0\
     \x12\x0c\n\x08RET_FAIL\x10\x01\x12\x1d\n\x19RET_SERVER_INTERNAL_ERROR\
     \x10\x02\x12\x0f\n\x0bRET_TIMEOUT\x10\x03\x12\x14\n\x10RET_REPEATED_REQ\
     \x10\x04\x12\x18\n\x14RET_REQ_PARA_INVALID\x10\x05\x12\x19\n\x15RET_PLAY\
@@ -7859,100 +7859,81 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     HOP_ITEM_NOT_EXIST\x10\xbe5\x12-\n(RET_ELF_RESTAURANT_SHOP_ITEM_COUNT_LI\
     MIT\x10\xbf5\x12-\n(RET_ELF_RESTAURANT_TRADE_ORDER_NOT_EXIST\x10\xc05\
     \x12!\n\x1cRET_ELF_RESTAURANT_NO_REWARD\x10\xc15\x12\x20\n\x1bRET_ELF_RE\
-    STAURANT_NOT_INIT\x10\xc25\x12\x1d\n\x18RET_GRID_FIGHT_CONF_MISS\x10\xf4\
-    5\x12\"\n\x1dRET_GRID_FIGHT_ROLE_NOT_EXIST\x10\xf55\x12&\n!RET_GRID_FIGH\
-    T_ROLE_ALREADY_EXIST\x10\xf65\x12\"\n\x1dRET_GRID_FIGHT_POS_EXIST_ROLE\
-    \x10\xf75\x12!\n\x1cRET_GRID_FIGHT_POS_NOT_VALID\x10\xf85\x12#\n\x1eRET_\
-    GRID_FIGHT_COIN_NOT_ENOUGH\x10\xf95\x12#\n\x1eRET_GRID_FIGHT_EQUIP_NOT_E\
-    XIST\x10\xfa5\x12&\n!RET_GRID_FIGHT_EQUIP_CANNOT_DRESS\x10\xfb5\x12#\n\
-    \x1eRET_GRID_FIGHT_PARAM_NOT_MATCH\x10\xfc5\x12$\n\x1fRET_GRID_FIGHT_EQU\
-    IP_DRESS_SAME\x10\xfd5\x12!\n\x1cRET_GRID_FIGHT_EQUIP_DRESSED\x10\xfe5\
-    \x12\x1e\n\x19RET_GRID_FIGHT_RANDOM_ERR\x10\xff5\x12\x1e\n\x19RET_GRID_F\
-    IGHT_GOODS_SOLD\x10\x806\x12#\n\x1eRET_GRID_FIGHT_ITEM_NOT_ENOUGH\x10\
-    \x816\x12&\n!RET_GRID_FIGHT_GAMEPLAY_LEVEL_MAX\x10\x826\x12'\n\"RET_GRID\
-    _FIGHT_ALREADY_IN_GAMEPLAY\x10\x836\x12%\n\x20RET_GRID_FIGHT_EQUIP_TRAIT\
-    _LIMIT\x10\x846\x12\x1f\n\x1aRET_GRID_FIGHT_REGION_FULL\x10\x856\x12#\n\
-    \x1eRET_GRID_FIGHT_TEMPORARY_EQUIP\x10\x866\x12#\n\x1eRET_GRID_FIGHT_NOT\
-    _IN_GAMEPLAY\x10\x876\x12\"\n\x1dRET_GRID_FIGHT_ADD_EQUIP_FAIL\x10\x886\
-    \x12'\n\"RET_GRID_FIGHT_ADD_CONSUMABLE_FAIL\x10\x896\x12$\n\x1fRET_GRID_\
-    FIGHT_CREATE_ROLE_FAIL\x10\x8a6\x12\"\n\x1dRET_GRID_FIGHT_CANNOT_UPGRADE\
-    \x10\x8b6\x12\x20\n\x1bRET_GRID_FIGHT_NO_EMPTY_POS\x10\x8c6\x12#\n\x1eRE\
-    T_GRID_FIGHT_FORGE_NOT_EXIST\x10\x8d6\x12\"\n\x1dRET_GRID_FIGHT_ADD_FORG\
-    E_FAIL\x10\x8e6\x12\"\n\x1dRET_GRID_FIGHT_ORB_NOT_ENOUGH\x10\x8f6\x12!\n\
-    \x1cRET_GRID_FIGHT_ORB_NOT_EXIST\x10\x906\x12$\n\x1fRET_GRID_FIGHT_SUPPL\
-    Y_NO_REROLL\x10\x916\x12'\n\"RET_GRID_FIGHT_HIGH_RARIY_FOR_COPY\x10\x926\
-    \x12&\n!RET_GRID_FIGHT_ROLE_FULL_FOR_COPY\x10\x936\x12&\n!RET_GRID_FIGHT\
-    _UNDRESS_EQUIP_FAIL\x10\x946\x12\x1f\n\x1aRET_GRID_FIGHT_DATA_LOCKED\x10\
-    \x956\x12'\n\"RET_GRID_FIGHT_SAME_ROLE_IN_BATTLE\x10\x966\x12'\n\"RET_GR\
-    ID_FIGHT_SUPPLY_ALL_SELECTED\x10\x976\x12#\n\x1eRET_GRID_FIGHT_TRAIT_TRA\
-    CK_MAX\x10\x986\x12\x1b\n\x16RET_GRID_FIGHT_POS_BAN\x10\x996\x12\"\n\x1d\
-    RET_GRID_FIGHT_POS_EXIST_ITEM\x10\x9a6\x12\"\n\x1dRET_GRID_FIGHT_TALENT_\
-    ENABLED\x10\x9b6\x12*\n%RET_GRID_FIGHT_TALENT_COST_NOT_ENOUGH\x10\x9c6\
-    \x12*\n%RET_GRID_FIGHT_TALENT_PRE_NOT_ENABLED\x10\x9d6\x12$\n\x1fRET_GRI\
-    D_FIGHT_DIVISION_INVALID\x10\x9e6\x12*\n%RET_GRID_FIGHT_TALENT_PERMANENT\
-    _LIMIT\x10\x9f6\x12'\n\"RET_GRID_FIGHT_WEEKLY_REWARD_TAKEN\x10\xa06\x12+\
-    \n&RET_GRID_FIGHT_WEEKLY_SCORE_NOT_ENOUGH\x10\xa16\x12,\n'RET_GRID_FIGHT\
-    _CRAFT_COST_EQUIP_DRESSED\x10\xa26\x12#\n\x1eRET_GRID_FIGHT_CREATE_NPC_F\
-    AIL\x10\xa36\x12$\n\x1fRET_GRID_FIGHT_NO_POS_CAN_PLACE\x10\xa46\x12!\n\
-    \x1cRET_GRID_FIGHT_NPC_POS_LIMIT\x10\xa56\x12,\n'RET_GRID_FIGHT_CRAFT_EQ\
-    UIP_ON_DIFF_ROLE\x10\xa66\x12(\n#RET_GRID_FIGHT_GLOBAL_HP_NOT_ENOUGH\x10\
-    \xa76\x12#\n\x1eRET_GRID_FIGHT_EQUIP_TRACK_MAX\x10\xa86\x12!\n\x1cRET_GR\
-    ID_FIGHT_NPC_NOT_EXIST\x10\xa96\x12,\n'RET_GRID_FIGHT_RECYCLE_ROLE_IN_TU\
-    TORIAL\x10\xaa6\x12.\n)RET_GRID_FIGHT_TUTORIAL_TASK_NOT_FINISHED\x10\xab\
-    6\x121\n,RET_GRID_FIGHT_TUTORIAL_UPDATE_POS_ININVALID\x10\xac6\x12!\n\
-    \x1cRET_GRID_FIGHT_NO_REROLL_CNT\x10\xad6\x121\n,RET_GRID_FIGHT_TUTORIAL\
-    _REFRESH_SHOP_LIMITED\x10\xae6\x12-\n(RET_GRID_FIGHT_TUTORIAL_BUY_SHOP_L\
-    IMITED\x10\xaf6\x120\n+RET_GRID_FIGHT_OC_UNLOCK_QUEST_NOT_FINISHED\x10\
-    \xb06\x126\n1RET_GRID_FIGHT_FORGE_LIMIT_SELECT_IDX_IN_TUTORIAL\x10\xb16\
-    \x12(\n#RET_GRID_FIGHT_GAME_REF_ID_TOO_LONG\x10\xb26\x12)\n$RET_GRID_FIG\
-    HT_FEATURE_SWITCH_CLOSED\x10\xb36\x12)\n$RET_GRID_FIGHT_EQUIP_TRAIT_EXCL\
-    USIVE\x10\xb46\x12\x1f\n\x1aRET_GRID_FIGHT_SHOP_LOCKED\x10\xb56\x12\"\n\
-    \x1dRET_GRID_FIGHT_BUY_EXP_LOCKED\x10\xb66\x12&\n!RET_HIPPLEN_AGENDA_WOR\
-    K_UNAVAIBLE\x10\xd96\x12%\n\x20RET_HIPPLEN_AGENDA_WORK_CONFLICT\x10\xda6\
-    \x12#\n\x1eRET_HIPPLEN_AGENDA_ACTION_LACK\x10\xdb6\x12#\n\x1eRET_HIPPLEN\
-    _AGENDA_ENERGY_LACK\x10\xdc6\x12*\n%RET_HIPPLEN_AGENDA_NO_WORK_FOR_SETTL\
-    E\x10\xdd6\x12,\n'RET_HIPPLEN_AGENDA_SETTLE_WORK_MISMATCH\x10\xde6\x12&\
-    \n!RET_HIPPLEN_PHASE_CONFIG_NO_FOUND\x10\xdf6\x12+\n&RET_HIPPLEN_TRIAL_M\
-    ISSION_NOT_FINISHED\x10\xe06\x12&\n!RET_HIPPLEN_AGENDA_SET_WHEN_TRIAL\
-    \x10\xe16\x12'\n\"RET_HIPPLEN_AGENDA_OPEN_CYCLE_FAIL\x10\xe26\x12+\n&RET\
-    _HIPPLEN_AGENDA_SETTLE_PARA_INVALID\x10\xe36\x12&\n!RET_HIPPLEN_AGENDA_W\
-    ORK_SET_TWICE\x10\xe46\x12)\n$RET_HIPPLEN_AGENDA_WORK_SETTLE_TWICE\x10\
-    \xe56\x12\"\n\x1dRET_HIPPLEN_OUTFIT_NOT_WEARED\x10\xe66\x12\x1f\n\x1aRET\
-    _HIPPLEN_OUTFIT_NOT_OWN\x10\xe76\x12\x1f\n\x1aRET_HIPPLEN_OUTFIT_INVALID\
-    \x10\xe86\x12#\n\x1eRET_HIPPLEN_OUTFIT_TYPE_WEARED\x10\xe96\x12\"\n\x1dR\
-    ET_HIPPLEN_AGENDA_WORK_EMPTY\x10\xea6\x12\x1c\n\x17RET_HIPPLEN_ENDING_LO\
-    CK\x10\xeb6\x12,\n'RET_HIPPLEN_ENDING_REWARD_ALREADY_TAKEN\x10\xec6\x12\
-    \x1b\n\x16RET_HIPPLEN_TRAIT_LOCK\x10\xed6\x12#\n\x1eRET_HIPPLEN_AGENDA_A\
-    CTION_LEFT\x10\xee6\x124\n/RET_HIPPLEN_BACKWARD_TRIAL_MISSION_NOT_FINISH\
-    ED\x10\xef6\x12#\n\x1eRET_RELICBOX_HAS_PENDING_RELIC\x10\x8b7\x12\"\n\
-    \x1dRET_RELICBOX_NO_PENDING_RELIC\x10\x8c7\x12'\n\"RET_RELICBOX_TARGET_A\
-    VATAR_INVALID\x10\x8d7\x12*\n%RET_RELICBOX_TARGET_RELIC_SET_INVALID\x10\
-    \x8e7\x12&\n!RET_RELICBOX_ALLOW_POSITION_EMPTY\x10\x8f7\x12(\n#RET_RELIC\
-    BOX_RELIC_CONFIG_NOT_FOUND\x10\x907\x12'\n\"RET_RELICBOX_MAIN_AFFIX_ID_I\
-    NVALID\x10\x917\x12#\n\x1eRET_RELICBOX_SUB_AFFIX_INVALID\x10\x927\x12#\n\
-    \x1eRET_RELICBOX_RELIC_CREATE_FAIL\x10\x937\x12&\n!RET_RELICBOX_LIB_CONF\
-    IG_NOT_FOUND\x10\x947\x12\x1d\n\x18RET_RELICBOX_SHIELD_LOCK\x10\x957\x12\
-    '\n\"RET_RELICBOX_CUSTOM_AVATAR_INVALID\x10\x967\x12*\n%RET_RELICBOX_CUS\
-    TOM_RELIC_SET_INVALID\x10\x977\x12\x1e\n\x19RET_RELICBOX_RELIC_IN_BOX\
-    \x10\x987\x12&\n!RET_RELICBOX_OPEN_TARGET_CONFLICT\x10\x997\x12$\n\x1fRE\
-    T_RELICBOX_RELIC_TYPE_INVALID\x10\x9a7\x12\x18\n\x13Retcode_MBCABOJAPNF\
-    \x10\xbd7\x12\x18\n\x13Retcode_PJJKJLFAJMD\x10\xbe7\x12\x18\n\x13Retcode\
-    _JMOAEJMMLFK\x10\xbf7\x12\x18\n\x13Retcode_OGAKNDBOHIK\x10\xc07\x12\x18\
-    \n\x13Retcode_NLNCPEKBKBG\x10\xc17\x12\x18\n\x13Retcode_CNIOINHAGJI\x10\
-    \xc27\x12\x18\n\x13Retcode_OKAMEKOLPDB\x10\xc37\x12\x18\n\x13Retcode_NBI\
-    CFEMBGEB\x10\xc47\x12\x18\n\x13Retcode_GFBENDMKGMN\x10\xc57\x12\x18\n\
-    \x13Retcode_DFJINCHMDBH\x10\xc67\x12\x18\n\x13Retcode_FDCKOELBPFF\x10\
-    \xc77\x12\x18\n\x13Retcode_JHLELIFPINJ\x10\xc87\x12\x18\n\x13Retcode_HKG\
-    AOKDKFKC\x10\xc97\x12\x18\n\x13Retcode_MIIGHHKMGHM\x10\xca7\x12\x18\n\
-    \x13Retcode_AGEIOBENCMJ\x10\xcb7\x12\x18\n\x13Retcode_CBPGALLJEPD\x10\
-    \xcc7\x12\x18\n\x13Retcode_LFJCDIGAPNK\x10\xcd7\x12\x18\n\x13Retcode_NHB\
-    DPKEMHJC\x10\xce7\x12\x18\n\x13Retcode_EFBLJHOPKNH\x10\xa18\x12\x18\n\
-    \x13Retcode_DCJIIAHBEAG\x10\xa28\x12\x18\n\x13Retcode_KEMIBMAFOMD\x10\
-    \xa38\x12\x18\n\x13Retcode_FGFMKAFHIOH\x10\xa48\x12\x18\n\x13Retcode_JDH\
-    MBJEKFEG\x10\xa58\x12\x18\n\x13Retcode_PBPLIBBEKCE\x10\xa68\x12\x18\n\
-    \x13Retcode_ONFIDLGNKCA\x10\xa78\x12\x18\n\x13Retcode_AELGHBIMHAO\x10\
-    \xa88\x12\x18\n\x13Retcode_BFELLHHPKFO\x10\x859\x12\x18\n\x13Retcode_CAB\
-    LNLCHHLP\x10\x869\x12\x18\n\x13Retcode_DBBIPGKBKDH\x10\x879b\x06proto3\
+    STAURANT_NOT_INIT\x10\xc25\x12\x0f\n\nH_d869b636\x10\xf45\x12\x0f\n\nH_d\
+    44ee1dc\x10\xf55\x12\x0f\n\nH_f239b91a\x10\xf65\x12\x0f\n\nH_e30c2a91\
+    \x10\xf75\x12\x0f\n\nH_ec80811b\x10\xf85\x12\x0f\n\nH_0f1a150e\x10\xf95\
+    \x12\x0f\n\nH_4dfe6d73\x10\xfa5\x12\x0f\n\nH_354138f5\x10\xfb5\x12\x0f\n\
+    \nH_a5b6461a\x10\xfc5\x12\x0f\n\nH_b6c11427\x10\xfd5\x12\x0f\n\nH_9d91e8\
+    c7\x10\xfe5\x12\x0f\n\nH_b7274413\x10\xff5\x12\x0f\n\nH_38d20d6b\x10\x80\
+    6\x12\x0f\n\nH_94f2cca1\x10\x816\x12\x0f\n\nH_d7cbc3da\x10\x826\x12\x0f\
+    \n\nH_d4c71a26\x10\x836\x12\x0f\n\nH_5e42835b\x10\x846\x12\x0f\n\nH_07e6\
+    751a\x10\x856\x12\x0f\n\nH_4c423326\x10\x866\x12\x0f\n\nH_945e8d98\x10\
+    \x876\x12\x0f\n\nH_74813a7e\x10\x886\x12\x0f\n\nH_b63079da\x10\x896\x12\
+    \x0f\n\nH_c002c322\x10\x8a6\x12\x0f\n\nH_0418809b\x10\x8b6\x12\x0f\n\nH_\
+    34407f43\x10\x8c6\x12\x0f\n\nH_640192fd\x10\x8d6\x12\x0f\n\nH_e5f52af6\
+    \x10\x8e6\x12\x0f\n\nH_6a99d432\x10\x8f6\x12\x0f\n\nH_f3b484c6\x10\x906\
+    \x12\x0f\n\nH_2da2290f\x10\x916\x12\x0f\n\nH_3f0cbb13\x10\x926\x12\x0f\n\
+    \nH_f0fe1921\x10\x936\x12\x0f\n\nH_825cf23c\x10\x946\x12\x0f\n\nH_2583ff\
+    f0\x10\x956\x12\x0f\n\nH_522bb1b6\x10\x966\x12\x0f\n\nH_32ba9962\x10\x97\
+    6\x12\x0f\n\nH_d5065312\x10\x986\x12\x0f\n\nH_e90f267e\x10\x996\x12\x0f\
+    \n\nH_982ee922\x10\x9a6\x12\x0f\n\nH_d32f5c5d\x10\x9b6\x12\x0f\n\nH_c8c2\
+    aeeb\x10\x9c6\x12\x0f\n\nH_212f6bc7\x10\x9d6\x12\x0f\n\nH_33528b73\x10\
+    \x9e6\x12\x0f\n\nH_1a4a8a51\x10\x9f6\x12\x0f\n\nH_5bb836dc\x10\xa06\x12\
+    \x0f\n\nH_14074cb7\x10\xa16\x12\x0f\n\nH_a0e92fb6\x10\xa26\x12\x0f\n\nH_\
+    6411ead7\x10\xa36\x12\x0f\n\nH_5bc39997\x10\xa46\x12\x0f\n\nH_d97d7b7e\
+    \x10\xa56\x12\x0f\n\nH_5912d79f\x10\xa66\x12\x0f\n\nH_2f256751\x10\xa76\
+    \x12\x0f\n\nH_83dbcab9\x10\xa86\x12\x0f\n\nH_1d12b566\x10\xa96\x12\x0f\n\
+    \nH_ca212293\x10\xaa6\x12\x0f\n\nH_04eeb9d1\x10\xab6\x12\x0f\n\nH_bc283f\
+    e4\x10\xac6\x12\x0f\n\nH_8a481a3c\x10\xad6\x12\x0f\n\nH_aa556a9f\x10\xae\
+    6\x12\x0f\n\nH_738df32c\x10\xaf6\x12\x0f\n\nH_f4acc9c4\x10\xb06\x12\x0f\
+    \n\nH_84ec977e\x10\xb16\x12\x0f\n\nH_c9463c2a\x10\xb26\x12\x0f\n\nH_5886\
+    160a\x10\xb36\x12\x0f\n\nH_505d6ba8\x10\xb46\x12\x0f\n\nH_91a288ca\x10\
+    \xb56\x12\x0f\n\nH_9a54d994\x10\xb66\x12&\n!RET_HIPPLEN_AGENDA_WORK_UNAV\
+    AIBLE\x10\xd96\x12%\n\x20RET_HIPPLEN_AGENDA_WORK_CONFLICT\x10\xda6\x12#\
+    \n\x1eRET_HIPPLEN_AGENDA_ACTION_LACK\x10\xdb6\x12#\n\x1eRET_HIPPLEN_AGEN\
+    DA_ENERGY_LACK\x10\xdc6\x12*\n%RET_HIPPLEN_AGENDA_NO_WORK_FOR_SETTLE\x10\
+    \xdd6\x12,\n'RET_HIPPLEN_AGENDA_SETTLE_WORK_MISMATCH\x10\xde6\x12&\n!RET\
+    _HIPPLEN_PHASE_CONFIG_NO_FOUND\x10\xdf6\x12+\n&RET_HIPPLEN_TRIAL_MISSION\
+    _NOT_FINISHED\x10\xe06\x12&\n!RET_HIPPLEN_AGENDA_SET_WHEN_TRIAL\x10\xe16\
+    \x12'\n\"RET_HIPPLEN_AGENDA_OPEN_CYCLE_FAIL\x10\xe26\x12+\n&RET_HIPPLEN_\
+    AGENDA_SETTLE_PARA_INVALID\x10\xe36\x12&\n!RET_HIPPLEN_AGENDA_WORK_SET_T\
+    WICE\x10\xe46\x12)\n$RET_HIPPLEN_AGENDA_WORK_SETTLE_TWICE\x10\xe56\x12\"\
+    \n\x1dRET_HIPPLEN_OUTFIT_NOT_WEARED\x10\xe66\x12\x1f\n\x1aRET_HIPPLEN_OU\
+    TFIT_NOT_OWN\x10\xe76\x12\x1f\n\x1aRET_HIPPLEN_OUTFIT_INVALID\x10\xe86\
+    \x12#\n\x1eRET_HIPPLEN_OUTFIT_TYPE_WEARED\x10\xe96\x12\"\n\x1dRET_HIPPLE\
+    N_AGENDA_WORK_EMPTY\x10\xea6\x12\x1c\n\x17RET_HIPPLEN_ENDING_LOCK\x10\
+    \xeb6\x12,\n'RET_HIPPLEN_ENDING_REWARD_ALREADY_TAKEN\x10\xec6\x12\x1b\n\
+    \x16RET_HIPPLEN_TRAIT_LOCK\x10\xed6\x12#\n\x1eRET_HIPPLEN_AGENDA_ACTION_\
+    LEFT\x10\xee6\x124\n/RET_HIPPLEN_BACKWARD_TRIAL_MISSION_NOT_FINISHED\x10\
+    \xef6\x12#\n\x1eRET_RELICBOX_HAS_PENDING_RELIC\x10\x8b7\x12\"\n\x1dRET_R\
+    ELICBOX_NO_PENDING_RELIC\x10\x8c7\x12'\n\"RET_RELICBOX_TARGET_AVATAR_INV\
+    ALID\x10\x8d7\x12*\n%RET_RELICBOX_TARGET_RELIC_SET_INVALID\x10\x8e7\x12&\
+    \n!RET_RELICBOX_ALLOW_POSITION_EMPTY\x10\x8f7\x12(\n#RET_RELICBOX_RELIC_\
+    CONFIG_NOT_FOUND\x10\x907\x12'\n\"RET_RELICBOX_MAIN_AFFIX_ID_INVALID\x10\
+    \x917\x12#\n\x1eRET_RELICBOX_SUB_AFFIX_INVALID\x10\x927\x12#\n\x1eRET_RE\
+    LICBOX_RELIC_CREATE_FAIL\x10\x937\x12&\n!RET_RELICBOX_LIB_CONFIG_NOT_FOU\
+    ND\x10\x947\x12\x1d\n\x18RET_RELICBOX_SHIELD_LOCK\x10\x957\x12'\n\"RET_R\
+    ELICBOX_CUSTOM_AVATAR_INVALID\x10\x967\x12*\n%RET_RELICBOX_CUSTOM_RELIC_\
+    SET_INVALID\x10\x977\x12\x1e\n\x19RET_RELICBOX_RELIC_IN_BOX\x10\x987\x12\
+    &\n!RET_RELICBOX_OPEN_TARGET_CONFLICT\x10\x997\x12$\n\x1fRET_RELICBOX_RE\
+    LIC_TYPE_INVALID\x10\x9a7\x12\x18\n\x13Retcode_MBCABOJAPNF\x10\xbd7\x12\
+    \x18\n\x13Retcode_PJJKJLFAJMD\x10\xbe7\x12\x18\n\x13Retcode_JMOAEJMMLFK\
+    \x10\xbf7\x12\x18\n\x13Retcode_OGAKNDBOHIK\x10\xc07\x12\x18\n\x13Retcode\
+    _NLNCPEKBKBG\x10\xc17\x12\x18\n\x13Retcode_CNIOINHAGJI\x10\xc27\x12\x18\
+    \n\x13Retcode_OKAMEKOLPDB\x10\xc37\x12\x18\n\x13Retcode_NBICFEMBGEB\x10\
+    \xc47\x12\x18\n\x13Retcode_GFBENDMKGMN\x10\xc57\x12\x18\n\x13Retcode_DFJ\
+    INCHMDBH\x10\xc67\x12\x18\n\x13Retcode_FDCKOELBPFF\x10\xc77\x12\x18\n\
+    \x13Retcode_JHLELIFPINJ\x10\xc87\x12\x18\n\x13Retcode_HKGAOKDKFKC\x10\
+    \xc97\x12\x18\n\x13Retcode_MIIGHHKMGHM\x10\xca7\x12\x18\n\x13Retcode_AGE\
+    IOBENCMJ\x10\xcb7\x12\x18\n\x13Retcode_CBPGALLJEPD\x10\xcc7\x12\x18\n\
+    \x13Retcode_LFJCDIGAPNK\x10\xcd7\x12\x18\n\x13Retcode_NHBDPKEMHJC\x10\
+    \xce7\x12\x18\n\x13Retcode_EFBLJHOPKNH\x10\xa18\x12\x18\n\x13Retcode_DCJ\
+    IIAHBEAG\x10\xa28\x12\x18\n\x13Retcode_KEMIBMAFOMD\x10\xa38\x12\x18\n\
+    \x13Retcode_FGFMKAFHIOH\x10\xa48\x12\x18\n\x13Retcode_JDHMBJEKFEG\x10\
+    \xa58\x12\x18\n\x13Retcode_PBPLIBBEKCE\x10\xa68\x12\x18\n\x13Retcode_ONF\
+    IDLGNKCA\x10\xa78\x12\x18\n\x13Retcode_AELGHBIMHAO\x10\xa88\x12\x18\n\
+    \x13Retcode_BFELLHHPKFO\x10\x859\x12\x18\n\x13Retcode_CABLNLCHHLP\x10\
+    \x869\x12\x18\n\x13Retcode_DBBIPGKBKDH\x10\x879b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

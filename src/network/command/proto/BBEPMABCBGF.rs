@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BBEPMABCBGF {
     // message fields
-    // @@protoc_insertion_point(field:BBEPMABCBGF.KDFDFBHKCNG)
-    pub KDFDFBHKCNG: u32,
-    // @@protoc_insertion_point(field:BBEPMABCBGF.HEIHPAPJHID)
-    pub HEIHPAPJHID: u32,
     // @@protoc_insertion_point(field:BBEPMABCBGF.DOHOMJBJLLG)
     pub DOHOMJBJLLG: u32,
-    // @@protoc_insertion_point(field:BBEPMABCBGF.uid)
-    pub uid: u32,
+    // @@protoc_insertion_point(field:BBEPMABCBGF.KDFDFBHKCNG)
+    pub KDFDFBHKCNG: u32,
     // @@protoc_insertion_point(field:BBEPMABCBGF.OECIPJIPKEG)
     pub OECIPJIPKEG: u32,
+    // @@protoc_insertion_point(field:BBEPMABCBGF.uid)
+    pub uid: u32,
+    // @@protoc_insertion_point(field:BBEPMABCBGF.HEIHPAPJHID)
+    pub HEIHPAPJHID: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BBEPMABCBGF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,19 +58,19 @@ impl BBEPMABCBGF {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DOHOMJBJLLG",
+            |m: &BBEPMABCBGF| { &m.DOHOMJBJLLG },
+            |m: &mut BBEPMABCBGF| { &mut m.DOHOMJBJLLG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KDFDFBHKCNG",
             |m: &BBEPMABCBGF| { &m.KDFDFBHKCNG },
             |m: &mut BBEPMABCBGF| { &mut m.KDFDFBHKCNG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HEIHPAPJHID",
-            |m: &BBEPMABCBGF| { &m.HEIHPAPJHID },
-            |m: &mut BBEPMABCBGF| { &mut m.HEIHPAPJHID },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DOHOMJBJLLG",
-            |m: &BBEPMABCBGF| { &m.DOHOMJBJLLG },
-            |m: &mut BBEPMABCBGF| { &mut m.DOHOMJBJLLG },
+            "OECIPJIPKEG",
+            |m: &BBEPMABCBGF| { &m.OECIPJIPKEG },
+            |m: &mut BBEPMABCBGF| { &mut m.OECIPJIPKEG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "uid",
@@ -78,9 +78,9 @@ impl BBEPMABCBGF {
             |m: &mut BBEPMABCBGF| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OECIPJIPKEG",
-            |m: &BBEPMABCBGF| { &m.OECIPJIPKEG },
-            |m: &mut BBEPMABCBGF| { &mut m.OECIPJIPKEG },
+            "HEIHPAPJHID",
+            |m: &BBEPMABCBGF| { &m.HEIHPAPJHID },
+            |m: &mut BBEPMABCBGF| { &mut m.HEIHPAPJHID },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BBEPMABCBGF>(
             "BBEPMABCBGF",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for BBEPMABCBGF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.KDFDFBHKCNG = is.read_uint32()?;
-                },
-                48 => {
-                    self.HEIHPAPJHID = is.read_uint32()?;
-                },
                 56 => {
                     self.DOHOMJBJLLG = is.read_uint32()?;
                 },
                 64 => {
-                    self.uid = is.read_uint32()?;
+                    self.KDFDFBHKCNG = is.read_uint32()?;
                 },
                 72 => {
                     self.OECIPJIPKEG = is.read_uint32()?;
+                },
+                104 => {
+                    self.uid = is.read_uint32()?;
+                },
+                112 => {
+                    self.HEIHPAPJHID = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for BBEPMABCBGF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KDFDFBHKCNG != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.KDFDFBHKCNG);
-        }
-        if self.HEIHPAPJHID != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HEIHPAPJHID);
-        }
         if self.DOHOMJBJLLG != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.DOHOMJBJLLG);
         }
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.uid);
+        if self.KDFDFBHKCNG != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.KDFDFBHKCNG);
         }
         if self.OECIPJIPKEG != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.OECIPJIPKEG);
+        }
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.uid);
+        }
+        if self.HEIHPAPJHID != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.HEIHPAPJHID);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for BBEPMABCBGF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KDFDFBHKCNG != 0 {
-            os.write_uint32(1, self.KDFDFBHKCNG)?;
-        }
-        if self.HEIHPAPJHID != 0 {
-            os.write_uint32(6, self.HEIHPAPJHID)?;
-        }
         if self.DOHOMJBJLLG != 0 {
             os.write_uint32(7, self.DOHOMJBJLLG)?;
         }
-        if self.uid != 0 {
-            os.write_uint32(8, self.uid)?;
+        if self.KDFDFBHKCNG != 0 {
+            os.write_uint32(8, self.KDFDFBHKCNG)?;
         }
         if self.OECIPJIPKEG != 0 {
             os.write_uint32(9, self.OECIPJIPKEG)?;
+        }
+        if self.uid != 0 {
+            os.write_uint32(13, self.uid)?;
+        }
+        if self.HEIHPAPJHID != 0 {
+            os.write_uint32(14, self.HEIHPAPJHID)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for BBEPMABCBGF {
     }
 
     fn clear(&mut self) {
-        self.KDFDFBHKCNG = 0;
-        self.HEIHPAPJHID = 0;
         self.DOHOMJBJLLG = 0;
-        self.uid = 0;
+        self.KDFDFBHKCNG = 0;
         self.OECIPJIPKEG = 0;
+        self.uid = 0;
+        self.HEIHPAPJHID = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BBEPMABCBGF {
         static instance: BBEPMABCBGF = BBEPMABCBGF {
-            KDFDFBHKCNG: 0,
-            HEIHPAPJHID: 0,
             DOHOMJBJLLG: 0,
-            uid: 0,
+            KDFDFBHKCNG: 0,
             OECIPJIPKEG: 0,
+            uid: 0,
+            HEIHPAPJHID: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for BBEPMABCBGF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BBEPMABCBGF.proto\"\xa7\x01\n\x0bBBEPMABCBGF\x12\x20\n\x0bKDFDFBHK\
-    CNG\x18\x01\x20\x01(\rR\x0bKDFDFBHKCNG\x12\x20\n\x0bHEIHPAPJHID\x18\x06\
-    \x20\x01(\rR\x0bHEIHPAPJHID\x12\x20\n\x0bDOHOMJBJLLG\x18\x07\x20\x01(\rR\
-    \x0bDOHOMJBJLLG\x12\x10\n\x03uid\x18\x08\x20\x01(\rR\x03uid\x12\x20\n\
-    \x0bOECIPJIPKEG\x18\t\x20\x01(\rR\x0bOECIPJIPKEGb\x06proto3\
+    \n\x11BBEPMABCBGF.proto\"\xa7\x01\n\x0bBBEPMABCBGF\x12\x20\n\x0bDOHOMJBJ\
+    LLG\x18\x07\x20\x01(\rR\x0bDOHOMJBJLLG\x12\x20\n\x0bKDFDFBHKCNG\x18\x08\
+    \x20\x01(\rR\x0bKDFDFBHKCNG\x12\x20\n\x0bOECIPJIPKEG\x18\t\x20\x01(\rR\
+    \x0bOECIPJIPKEG\x12\x10\n\x03uid\x18\r\x20\x01(\rR\x03uid\x12\x20\n\x0bH\
+    EIHPAPJHID\x18\x0e\x20\x01(\rR\x0bHEIHPAPJHIDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

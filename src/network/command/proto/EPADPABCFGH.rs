@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EPADPABCFGH {
     // message fields
-    // @@protoc_insertion_point(field:EPADPABCFGH.pos)
-    pub pos: u32,
     // @@protoc_insertion_point(field:EPADPABCFGH.IAAHNOFKNGN)
     pub IAAHNOFKNGN: u32,
+    // @@protoc_insertion_point(field:EPADPABCFGH.pos_index)
+    pub pos_index: u32,
     // @@protoc_insertion_point(field:EPADPABCFGH.unique_id)
     pub unique_id: u32,
     // special fields
@@ -54,14 +54,14 @@ impl EPADPABCFGH {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "pos",
-            |m: &EPADPABCFGH| { &m.pos },
-            |m: &mut EPADPABCFGH| { &mut m.pos },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IAAHNOFKNGN",
             |m: &EPADPABCFGH| { &m.IAAHNOFKNGN },
             |m: &mut EPADPABCFGH| { &mut m.IAAHNOFKNGN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "pos_index",
+            |m: &EPADPABCFGH| { &m.pos_index },
+            |m: &mut EPADPABCFGH| { &mut m.pos_index },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unique_id",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for EPADPABCFGH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.pos = is.read_uint32()?;
-                },
-                32 => {
+                8 => {
                     self.IAAHNOFKNGN = is.read_uint32()?;
                 },
-                40 => {
+                56 => {
+                    self.pos_index = is.read_uint32()?;
+                },
+                120 => {
                     self.unique_id = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for EPADPABCFGH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.pos != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.pos);
-        }
         if self.IAAHNOFKNGN != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.IAAHNOFKNGN);
+            my_size += ::protobuf::rt::uint32_size(1, self.IAAHNOFKNGN);
+        }
+        if self.pos_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.pos_index);
         }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for EPADPABCFGH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.pos != 0 {
-            os.write_uint32(3, self.pos)?;
-        }
         if self.IAAHNOFKNGN != 0 {
-            os.write_uint32(4, self.IAAHNOFKNGN)?;
+            os.write_uint32(1, self.IAAHNOFKNGN)?;
+        }
+        if self.pos_index != 0 {
+            os.write_uint32(7, self.pos_index)?;
         }
         if self.unique_id != 0 {
-            os.write_uint32(5, self.unique_id)?;
+            os.write_uint32(15, self.unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for EPADPABCFGH {
     }
 
     fn clear(&mut self) {
-        self.pos = 0;
         self.IAAHNOFKNGN = 0;
+        self.pos_index = 0;
         self.unique_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EPADPABCFGH {
         static instance: EPADPABCFGH = EPADPABCFGH {
-            pos: 0,
             IAAHNOFKNGN: 0,
+            pos_index: 0,
             unique_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for EPADPABCFGH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EPADPABCFGH.proto\"^\n\x0bEPADPABCFGH\x12\x10\n\x03pos\x18\x03\x20\
-    \x01(\rR\x03pos\x12\x20\n\x0bIAAHNOFKNGN\x18\x04\x20\x01(\rR\x0bIAAHNOFK\
-    NGN\x12\x1b\n\tunique_id\x18\x05\x20\x01(\rR\x08uniqueIdb\x06proto3\
+    \n\x11EPADPABCFGH.proto\"i\n\x0bEPADPABCFGH\x12\x20\n\x0bIAAHNOFKNGN\x18\
+    \x01\x20\x01(\rR\x0bIAAHNOFKNGN\x12\x1b\n\tpos_index\x18\x07\x20\x01(\rR\
+    \x08posIndex\x12\x1b\n\tunique_id\x18\x0f\x20\x01(\rR\x08uniqueIdb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,8 +30,8 @@ pub struct CJOCEJLPADK {
     // message fields
     // @@protoc_insertion_point(field:CJOCEJLPADK.monster_battle_type)
     pub monster_battle_type: u32,
-    // @@protoc_insertion_point(field:CJOCEJLPADK.room_uid)
-    pub room_uid: u64,
+    // @@protoc_insertion_point(field:CJOCEJLPADK.CKLCDAGMFKP)
+    pub CKLCDAGMFKP: u64,
     // @@protoc_insertion_point(field:CJOCEJLPADK.level_id)
     pub level_id: u32,
     // @@protoc_insertion_point(field:CJOCEJLPADK.GNAMNBDIEKG)
@@ -71,9 +71,9 @@ impl CJOCEJLPADK {
             |m: &mut CJOCEJLPADK| { &mut m.monster_battle_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "room_uid",
-            |m: &CJOCEJLPADK| { &m.room_uid },
-            |m: &mut CJOCEJLPADK| { &mut m.room_uid },
+            "CKLCDAGMFKP",
+            |m: &CJOCEJLPADK| { &m.CKLCDAGMFKP },
+            |m: &mut CJOCEJLPADK| { &mut m.CKLCDAGMFKP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level_id",
@@ -132,7 +132,7 @@ impl ::protobuf::Message for CJOCEJLPADK {
                     self.monster_battle_type = is.read_uint32()?;
                 },
                 16 => {
-                    self.room_uid = is.read_uint64()?;
+                    self.CKLCDAGMFKP = is.read_uint64()?;
                 },
                 24 => {
                     self.level_id = is.read_uint32()?;
@@ -170,8 +170,8 @@ impl ::protobuf::Message for CJOCEJLPADK {
         if self.monster_battle_type != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.monster_battle_type);
         }
-        if self.room_uid != 0 {
-            my_size += ::protobuf::rt::uint64_size(2, self.room_uid);
+        if self.CKLCDAGMFKP != 0 {
+            my_size += ::protobuf::rt::uint64_size(2, self.CKLCDAGMFKP);
         }
         if self.level_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.level_id);
@@ -205,8 +205,8 @@ impl ::protobuf::Message for CJOCEJLPADK {
         if self.monster_battle_type != 0 {
             os.write_uint32(1, self.monster_battle_type)?;
         }
-        if self.room_uid != 0 {
-            os.write_uint64(2, self.room_uid)?;
+        if self.CKLCDAGMFKP != 0 {
+            os.write_uint64(2, self.CKLCDAGMFKP)?;
         }
         if self.level_id != 0 {
             os.write_uint32(3, self.level_id)?;
@@ -247,7 +247,7 @@ impl ::protobuf::Message for CJOCEJLPADK {
 
     fn clear(&mut self) {
         self.monster_battle_type = 0;
-        self.room_uid = 0;
+        self.CKLCDAGMFKP = 0;
         self.level_id = 0;
         self.GNAMNBDIEKG = 0;
         self.BJODJNFGMCB.clear();
@@ -261,7 +261,7 @@ impl ::protobuf::Message for CJOCEJLPADK {
     fn default_instance() -> &'static CJOCEJLPADK {
         static instance: CJOCEJLPADK = CJOCEJLPADK {
             monster_battle_type: 0,
-            room_uid: 0,
+            CKLCDAGMFKP: 0,
             level_id: 0,
             GNAMNBDIEKG: 0,
             BJODJNFGMCB: ::std::vec::Vec::new(),
@@ -293,16 +293,16 @@ impl ::protobuf::reflect::ProtobufValue for CJOCEJLPADK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CJOCEJLPADK.proto\x1a\x11OGHAIFPHMPE.proto\"\xcd\x02\n\x0bCJOCEJLP\
+    \n\x11CJOCEJLPADK.proto\x1a\x11OGHAIFPHMPE.proto\"\xd4\x02\n\x0bCJOCEJLP\
     ADK\x12.\n\x13monster_battle_type\x18\x01\x20\x01(\rR\x11monsterBattleTy\
-    pe\x12\x19\n\x08room_uid\x18\x02\x20\x01(\x04R\x07roomUid\x12\x19\n\x08l\
-    evel_id\x18\x03\x20\x01(\rR\x07levelId\x12\x20\n\x0bGNAMNBDIEKG\x18\x04\
-    \x20\x01(\rR\x0bGNAMNBDIEKG\x12.\n\x0bBJODJNFGMCB\x18\x05\x20\x03(\x0b2\
-    \x0c.OGHAIFPHMPER\x0bBJODJNFGMCB\x12\x12\n\x04rank\x18\x06\x20\x01(\rR\
-    \x04rank\x12\x20\n\x0bGAENFKKAKOI\x18\x07\x20\x01(\x04R\x0bGAENFKKAKOI\
-    \x12.\n\x0bALHIONICLCM\x18\x08\x20\x03(\x0b2\x0c.OGHAIFPHMPER\x0bALHIONI\
-    CLCM\x12\x20\n\x0bILLEDJLNGNF\x18\t\x20\x01(\rR\x0bILLEDJLNGNFb\x06proto\
-    3\
+    pe\x12\x20\n\x0bCKLCDAGMFKP\x18\x02\x20\x01(\x04R\x0bCKLCDAGMFKP\x12\x19\
+    \n\x08level_id\x18\x03\x20\x01(\rR\x07levelId\x12\x20\n\x0bGNAMNBDIEKG\
+    \x18\x04\x20\x01(\rR\x0bGNAMNBDIEKG\x12.\n\x0bBJODJNFGMCB\x18\x05\x20\
+    \x03(\x0b2\x0c.OGHAIFPHMPER\x0bBJODJNFGMCB\x12\x12\n\x04rank\x18\x06\x20\
+    \x01(\rR\x04rank\x12\x20\n\x0bGAENFKKAKOI\x18\x07\x20\x01(\x04R\x0bGAENF\
+    KKAKOI\x12.\n\x0bALHIONICLCM\x18\x08\x20\x03(\x0b2\x0c.OGHAIFPHMPER\x0bA\
+    LHIONICLCM\x12\x20\n\x0bILLEDJLNGNF\x18\t\x20\x01(\rR\x0bILLEDJLNGNFb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

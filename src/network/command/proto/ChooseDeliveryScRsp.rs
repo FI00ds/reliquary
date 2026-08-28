@@ -30,10 +30,10 @@ pub struct ChooseDeliveryScRsp {
     // message fields
     // @@protoc_insertion_point(field:ChooseDeliveryScRsp.IHFNFDKLFIC)
     pub IHFNFDKLFIC: u32,
-    // @@protoc_insertion_point(field:ChooseDeliveryScRsp.DJOBNPIAEJP)
-    pub DJOBNPIAEJP: ::std::vec::Vec<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:ChooseDeliveryScRsp.group_id)
     pub group_id: u32,
+    // @@protoc_insertion_point(field:ChooseDeliveryScRsp.DJOBNPIAEJP)
+    pub DJOBNPIAEJP: ::std::vec::Vec<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:ChooseDeliveryScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -60,15 +60,15 @@ impl ChooseDeliveryScRsp {
             |m: &ChooseDeliveryScRsp| { &m.IHFNFDKLFIC },
             |m: &mut ChooseDeliveryScRsp| { &mut m.IHFNFDKLFIC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DJOBNPIAEJP",
-            |m: &ChooseDeliveryScRsp| { &m.DJOBNPIAEJP },
-            |m: &mut ChooseDeliveryScRsp| { &mut m.DJOBNPIAEJP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
             |m: &ChooseDeliveryScRsp| { &m.group_id },
             |m: &mut ChooseDeliveryScRsp| { &mut m.group_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DJOBNPIAEJP",
+            |m: &ChooseDeliveryScRsp| { &m.DJOBNPIAEJP },
+            |m: &mut ChooseDeliveryScRsp| { &mut m.DJOBNPIAEJP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for ChooseDeliveryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                64 => {
                     self.IHFNFDKLFIC = is.read_uint32()?;
-                },
-                50 => {
-                    self.DJOBNPIAEJP.push(is.read_message()?);
                 },
                 80 => {
                     self.group_id = is.read_uint32()?;
                 },
-                104 => {
+                98 => {
+                    self.DJOBNPIAEJP.push(is.read_message()?);
+                },
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -118,17 +118,17 @@ impl ::protobuf::Message for ChooseDeliveryScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IHFNFDKLFIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.IHFNFDKLFIC);
+            my_size += ::protobuf::rt::uint32_size(8, self.IHFNFDKLFIC);
+        }
+        if self.group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.group_id);
         }
         for value in &self.DJOBNPIAEJP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.group_id);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for ChooseDeliveryScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IHFNFDKLFIC != 0 {
-            os.write_uint32(4, self.IHFNFDKLFIC)?;
+            os.write_uint32(8, self.IHFNFDKLFIC)?;
         }
-        for v in &self.DJOBNPIAEJP {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
         if self.group_id != 0 {
             os.write_uint32(10, self.group_id)?;
         }
+        for v in &self.DJOBNPIAEJP {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::Message for ChooseDeliveryScRsp {
 
     fn clear(&mut self) {
         self.IHFNFDKLFIC = 0;
-        self.DJOBNPIAEJP.clear();
         self.group_id = 0;
+        self.DJOBNPIAEJP.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
@@ -175,8 +175,8 @@ impl ::protobuf::Message for ChooseDeliveryScRsp {
     fn default_instance() -> &'static ChooseDeliveryScRsp {
         static instance: ChooseDeliveryScRsp = ChooseDeliveryScRsp {
             IHFNFDKLFIC: 0,
-            DJOBNPIAEJP: ::std::vec::Vec::new(),
             group_id: 0,
+            DJOBNPIAEJP: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for ChooseDeliveryScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19ChooseDeliveryScRsp.proto\x1a\x0eItemList.proto\"\x99\x01\n\x13Cho\
-    oseDeliveryScRsp\x12\x20\n\x0bIHFNFDKLFIC\x18\x04\x20\x01(\rR\x0bIHFNFDK\
-    LFIC\x12+\n\x0bDJOBNPIAEJP\x18\x06\x20\x03(\x0b2\t.ItemListR\x0bDJOBNPIA\
-    EJP\x12\x19\n\x08group_id\x18\n\x20\x01(\rR\x07groupId\x12\x18\n\x07retc\
-    ode\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
+    oseDeliveryScRsp\x12\x20\n\x0bIHFNFDKLFIC\x18\x08\x20\x01(\rR\x0bIHFNFDK\
+    LFIC\x12\x19\n\x08group_id\x18\n\x20\x01(\rR\x07groupId\x12+\n\x0bDJOBNP\
+    IAEJP\x18\x0c\x20\x03(\x0b2\t.ItemListR\x0bDJOBNPIAEJP\x12\x18\n\x07retc\
+    ode\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

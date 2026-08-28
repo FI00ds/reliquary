@@ -93,16 +93,16 @@ impl ::protobuf::Message for SetGrowthTargetAvatarScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                80 => {
+                72 => {
                     self.growth_avatar_id = is.read_uint32()?;
                 },
-                96 => {
+                112 => {
                     self.FLINDJJJFLB.push(is.read_enum_or_unknown()?);
                 },
-                98 => {
+                114 => {
                     ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.FLINDJJJFLB)?
                 },
                 120 => {
@@ -121,12 +121,12 @@ impl ::protobuf::Message for SetGrowthTargetAvatarScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         if self.growth_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.growth_avatar_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.growth_avatar_id);
         }
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(12, &self.FLINDJJJFLB);
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(14, &self.FLINDJJJFLB);
         if self.JFAADMONJNF != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.JFAADMONJNF);
         }
@@ -137,12 +137,12 @@ impl ::protobuf::Message for SetGrowthTargetAvatarScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
         if self.growth_avatar_id != 0 {
-            os.write_uint32(10, self.growth_avatar_id)?;
+            os.write_uint32(9, self.growth_avatar_id)?;
         }
-        os.write_repeated_packed_enum_or_unknown(12, &self.FLINDJJJFLB)?;
+        os.write_repeated_packed_enum_or_unknown(14, &self.FLINDJJJFLB)?;
         if self.JFAADMONJNF != 0 {
             os.write_uint32(15, self.JFAADMONJNF)?;
         }
@@ -201,9 +201,9 @@ impl ::protobuf::reflect::ProtobufValue for SetGrowthTargetAvatarScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20SetGrowthTargetAvatarScRsp.proto\x1a\x11CFMDKNCDDAL.proto\"\xb2\
-    \x01\n\x1aSetGrowthTargetAvatarScRsp\x12\x18\n\x07retcode\x18\x04\x20\
-    \x01(\rR\x07retcode\x12(\n\x10growth_avatar_id\x18\n\x20\x01(\rR\x0egrow\
-    thAvatarId\x12.\n\x0bFLINDJJJFLB\x18\x0c\x20\x03(\x0e2\x0c.CFMDKNCDDALR\
+    \x01\n\x1aSetGrowthTargetAvatarScRsp\x12\x18\n\x07retcode\x18\x05\x20\
+    \x01(\rR\x07retcode\x12(\n\x10growth_avatar_id\x18\t\x20\x01(\rR\x0egrow\
+    thAvatarId\x12.\n\x0bFLINDJJJFLB\x18\x0e\x20\x03(\x0e2\x0c.CFMDKNCDDALR\
     \x0bFLINDJJJFLB\x12\x20\n\x0bJFAADMONJNF\x18\x0f\x20\x01(\rR\x0bJFAADMON\
     JNFb\x06proto3\
 ";

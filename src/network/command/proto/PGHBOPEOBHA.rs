@@ -86,10 +86,10 @@ impl ::protobuf::Message for PGHBOPEOBHA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                24 => {
                     self.script_id = is.read_uint32()?;
                 },
-                32 => {
+                80 => {
                     self.unique_id = is.read_uint64()?;
                 },
                 104 => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for PGHBOPEOBHA {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.script_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.script_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.script_id);
         }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(4, self.unique_id);
+            my_size += ::protobuf::rt::uint64_size(10, self.unique_id);
         }
         if self.JGPHDBDHKKO != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.JGPHDBDHKKO);
@@ -123,10 +123,10 @@ impl ::protobuf::Message for PGHBOPEOBHA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.script_id != 0 {
-            os.write_uint32(1, self.script_id)?;
+            os.write_uint32(3, self.script_id)?;
         }
         if self.unique_id != 0 {
-            os.write_uint64(4, self.unique_id)?;
+            os.write_uint64(10, self.unique_id)?;
         }
         if self.JGPHDBDHKKO != 0 {
             os.write_uint32(13, self.JGPHDBDHKKO)?;
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for PGHBOPEOBHA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PGHBOPEOBHA.proto\"i\n\x0bPGHBOPEOBHA\x12\x1b\n\tscript_id\x18\x01\
-    \x20\x01(\rR\x08scriptId\x12\x1b\n\tunique_id\x18\x04\x20\x01(\x04R\x08u\
-    niqueId\x12\x20\n\x0bJGPHDBDHKKO\x18\r\x20\x01(\rR\x0bJGPHDBDHKKOb\x06pr\
-    oto3\
+    \n\x11PGHBOPEOBHA.proto\"i\n\x0bPGHBOPEOBHA\x12\x1b\n\tscript_id\x18\x03\
+    \x20\x01(\rR\x08scriptId\x12\x1b\n\tunique_id\x18\n\x20\x01(\x04R\x08uni\
+    queId\x12\x20\n\x0bJGPHDBDHKKO\x18\r\x20\x01(\rR\x0bJGPHDBDHKKOb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,16 +27,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:QuestStatus)
 pub enum QuestStatus {
-    // @@protoc_insertion_point(enum_value:QuestStatus.QUEST_NONE)
-    QUEST_NONE = 0,
-    // @@protoc_insertion_point(enum_value:QuestStatus.QUEST_DOING)
-    QUEST_DOING = 1,
-    // @@protoc_insertion_point(enum_value:QuestStatus.QUEST_FINISH)
-    QUEST_FINISH = 2,
-    // @@protoc_insertion_point(enum_value:QuestStatus.QUEST_CLOSE)
-    QUEST_CLOSE = 3,
-    // @@protoc_insertion_point(enum_value:QuestStatus.QUEST_DELETE)
-    QUEST_DELETE = 4,
+    // @@protoc_insertion_point(enum_value:QuestStatus.QuestStatus_QuestNone)
+    QuestStatus_QuestNone = 0,
+    // @@protoc_insertion_point(enum_value:QuestStatus.QuestStatus_QuestDoing)
+    QuestStatus_QuestDoing = 1,
+    // @@protoc_insertion_point(enum_value:QuestStatus.QuestStatus_QuestFinish)
+    QuestStatus_QuestFinish = 2,
+    // @@protoc_insertion_point(enum_value:QuestStatus.QuestStatus_QuestClose)
+    QuestStatus_QuestClose = 3,
+    // @@protoc_insertion_point(enum_value:QuestStatus.QuestStatus_QuestDelete)
+    QuestStatus_QuestDelete = 4,
 }
 
 impl ::protobuf::Enum for QuestStatus {
@@ -48,32 +48,32 @@ impl ::protobuf::Enum for QuestStatus {
 
     fn from_i32(value: i32) -> ::std::option::Option<QuestStatus> {
         match value {
-            0 => ::std::option::Option::Some(QuestStatus::QUEST_NONE),
-            1 => ::std::option::Option::Some(QuestStatus::QUEST_DOING),
-            2 => ::std::option::Option::Some(QuestStatus::QUEST_FINISH),
-            3 => ::std::option::Option::Some(QuestStatus::QUEST_CLOSE),
-            4 => ::std::option::Option::Some(QuestStatus::QUEST_DELETE),
+            0 => ::std::option::Option::Some(QuestStatus::QuestStatus_QuestNone),
+            1 => ::std::option::Option::Some(QuestStatus::QuestStatus_QuestDoing),
+            2 => ::std::option::Option::Some(QuestStatus::QuestStatus_QuestFinish),
+            3 => ::std::option::Option::Some(QuestStatus::QuestStatus_QuestClose),
+            4 => ::std::option::Option::Some(QuestStatus::QuestStatus_QuestDelete),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<QuestStatus> {
         match str {
-            "QUEST_NONE" => ::std::option::Option::Some(QuestStatus::QUEST_NONE),
-            "QUEST_DOING" => ::std::option::Option::Some(QuestStatus::QUEST_DOING),
-            "QUEST_FINISH" => ::std::option::Option::Some(QuestStatus::QUEST_FINISH),
-            "QUEST_CLOSE" => ::std::option::Option::Some(QuestStatus::QUEST_CLOSE),
-            "QUEST_DELETE" => ::std::option::Option::Some(QuestStatus::QUEST_DELETE),
+            "QuestStatus_QuestNone" => ::std::option::Option::Some(QuestStatus::QuestStatus_QuestNone),
+            "QuestStatus_QuestDoing" => ::std::option::Option::Some(QuestStatus::QuestStatus_QuestDoing),
+            "QuestStatus_QuestFinish" => ::std::option::Option::Some(QuestStatus::QuestStatus_QuestFinish),
+            "QuestStatus_QuestClose" => ::std::option::Option::Some(QuestStatus::QuestStatus_QuestClose),
+            "QuestStatus_QuestDelete" => ::std::option::Option::Some(QuestStatus::QuestStatus_QuestDelete),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [QuestStatus] = &[
-        QuestStatus::QUEST_NONE,
-        QuestStatus::QUEST_DOING,
-        QuestStatus::QUEST_FINISH,
-        QuestStatus::QUEST_CLOSE,
-        QuestStatus::QUEST_DELETE,
+        QuestStatus::QuestStatus_QuestNone,
+        QuestStatus::QuestStatus_QuestDoing,
+        QuestStatus::QuestStatus_QuestFinish,
+        QuestStatus::QuestStatus_QuestClose,
+        QuestStatus::QuestStatus_QuestDelete,
     ];
 }
 
@@ -91,7 +91,7 @@ impl ::protobuf::EnumFull for QuestStatus {
 
 impl ::std::default::Default for QuestStatus {
     fn default() -> Self {
-        QuestStatus::QUEST_NONE
+        QuestStatus::QuestStatus_QuestNone
     }
 }
 
@@ -102,10 +102,10 @@ impl QuestStatus {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11QuestStatus.proto*c\n\x0bQuestStatus\x12\x0e\n\nQUEST_NONE\x10\0\
-    \x12\x0f\n\x0bQUEST_DOING\x10\x01\x12\x10\n\x0cQUEST_FINISH\x10\x02\x12\
-    \x0f\n\x0bQUEST_CLOSE\x10\x03\x12\x10\n\x0cQUEST_DELETE\x10\x04b\x06prot\
-    o3\
+    \n\x11QuestStatus.proto*\x9a\x01\n\x0bQuestStatus\x12\x19\n\x15QuestStat\
+    us_QuestNone\x10\0\x12\x1a\n\x16QuestStatus_QuestDoing\x10\x01\x12\x1b\n\
+    \x17QuestStatus_QuestFinish\x10\x02\x12\x1a\n\x16QuestStatus_QuestClose\
+    \x10\x03\x12\x1b\n\x17QuestStatus_QuestDelete\x10\x04b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

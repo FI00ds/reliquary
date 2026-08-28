@@ -188,7 +188,7 @@ impl ::protobuf::Message for PunkLordMonsterBasicInfo {
         if self.attacker_num != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.attacker_num);
         }
-        if self.share_type != ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::EOPODGPDKMO_NLCDGIPGFDJ) {
+        if self.share_type != ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::PunkLordShareType_None) {
             my_size += ::protobuf::rt::int32_size(8, self.share_type.value());
         }
         if self.APCMAIJPPEH != false {
@@ -221,7 +221,7 @@ impl ::protobuf::Message for PunkLordMonsterBasicInfo {
         if self.attacker_num != 0 {
             os.write_uint32(7, self.attacker_num)?;
         }
-        if self.share_type != ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::EOPODGPDKMO_NLCDGIPGFDJ) {
+        if self.share_type != ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::PunkLordShareType_None) {
             os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.share_type))?;
         }
         if self.APCMAIJPPEH != false {
@@ -251,7 +251,7 @@ impl ::protobuf::Message for PunkLordMonsterBasicInfo {
         self.create_time = 0;
         self.left_hp = 0;
         self.attacker_num = 0;
-        self.share_type = ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::EOPODGPDKMO_NLCDGIPGFDJ);
+        self.share_type = ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::PunkLordShareType_None);
         self.APCMAIJPPEH = false;
         self.special_fields.clear();
     }

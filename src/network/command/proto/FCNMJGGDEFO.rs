@@ -82,7 +82,7 @@ impl ::protobuf::Message for FCNMJGGDEFO {
                 18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GAJFFBBMMEN)?;
                 },
-                48 => {
+                112 => {
                     self.FGIHKKKOGJD = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for FCNMJGGDEFO {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.FGIHKKKOGJD != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FGIHKKKOGJD);
+            my_size += ::protobuf::rt::uint32_size(14, self.FGIHKKKOGJD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for FCNMJGGDEFO {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.FGIHKKKOGJD != 0 {
-            os.write_uint32(6, self.FGIHKKKOGJD)?;
+            os.write_uint32(14, self.FGIHKKKOGJD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for FCNMJGGDEFO {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FCNMJGGDEFO.proto\x1a\x11PFPPACPMFDJ.proto\"_\n\x0bFCNMJGGDEFO\x12\
     .\n\x0bGAJFFBBMMEN\x18\x02\x20\x01(\x0b2\x0c.PFPPACPMFDJR\x0bGAJFFBBMMEN\
-    \x12\x20\n\x0bFGIHKKKOGJD\x18\x06\x20\x01(\rR\x0bFGIHKKKOGJDb\x06proto3\
+    \x12\x20\n\x0bFGIHKKKOGJD\x18\x0e\x20\x01(\rR\x0bFGIHKKKOGJDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

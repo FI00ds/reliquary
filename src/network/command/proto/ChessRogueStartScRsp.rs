@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueStartScRsp {
     // message fields
+    // @@protoc_insertion_point(field:ChessRogueStartScRsp.CIKPBGDIABO)
+    pub CIKPBGDIABO: ::protobuf::MessageField<super::DJEKEGMEHLK::DJEKEGMEHLK>,
     // @@protoc_insertion_point(field:ChessRogueStartScRsp.stage_info)
     pub stage_info: ::protobuf::MessageField<super::MANINNKMFHG::MANINNKMFHG>,
-    // @@protoc_insertion_point(field:ChessRogueStartScRsp.info)
-    pub info: ::protobuf::MessageField<super::DJEKEGMEHLK::DJEKEGMEHLK>,
     // @@protoc_insertion_point(field:ChessRogueStartScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:ChessRogueStartScRsp.HPHKDGJHIJL)
@@ -55,15 +55,15 @@ impl ChessRogueStartScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DJEKEGMEHLK::DJEKEGMEHLK>(
+            "CIKPBGDIABO",
+            |m: &ChessRogueStartScRsp| { &m.CIKPBGDIABO },
+            |m: &mut ChessRogueStartScRsp| { &mut m.CIKPBGDIABO },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MANINNKMFHG::MANINNKMFHG>(
             "stage_info",
             |m: &ChessRogueStartScRsp| { &m.stage_info },
             |m: &mut ChessRogueStartScRsp| { &mut m.stage_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DJEKEGMEHLK::DJEKEGMEHLK>(
-            "info",
-            |m: &ChessRogueStartScRsp| { &m.info },
-            |m: &mut ChessRogueStartScRsp| { &mut m.info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for ChessRogueStartScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CIKPBGDIABO)?;
+                },
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.info)?;
-                },
-                48 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                90 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HPHKDGJHIJL)?;
                 },
                 tag => {
@@ -117,16 +117,16 @@ impl ::protobuf::Message for ChessRogueStartScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if let Some(v) = self.CIKPBGDIABO.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if let Some(v) = self.stage_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         if let Some(v) = self.HPHKDGJHIJL.as_ref() {
             let len = v.compute_size();
@@ -138,17 +138,17 @@ impl ::protobuf::Message for ChessRogueStartScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.stage_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
-        if let Some(v) = self.info.as_ref() {
+        if let Some(v) = self.CIKPBGDIABO.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
+        if let Some(v) = self.stage_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
         if let Some(v) = self.HPHKDGJHIJL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::Message for ChessRogueStartScRsp {
     }
 
     fn clear(&mut self) {
+        self.CIKPBGDIABO.clear();
         self.stage_info.clear();
-        self.info.clear();
         self.retcode = 0;
         self.HPHKDGJHIJL.clear();
         self.special_fields.clear();
@@ -176,8 +176,8 @@ impl ::protobuf::Message for ChessRogueStartScRsp {
 
     fn default_instance() -> &'static ChessRogueStartScRsp {
         static instance: ChessRogueStartScRsp = ChessRogueStartScRsp {
+            CIKPBGDIABO: ::protobuf::MessageField::none(),
             stage_info: ::protobuf::MessageField::none(),
-            info: ::protobuf::MessageField::none(),
             retcode: 0,
             HPHKDGJHIJL: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -205,11 +205,11 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueStartScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aChessRogueStartScRsp.proto\x1a\x11DJEKEGMEHLK.proto\x1a\x11MANINNK\
-    MFHG.proto\x1a\x11OFGJFLCBBJP.proto\"\xaf\x01\n\x14ChessRogueStartScRsp\
-    \x12+\n\nstage_info\x18\x01\x20\x01(\x0b2\x0c.MANINNKMFHGR\tstageInfo\
-    \x12\x20\n\x04info\x18\x02\x20\x01(\x0b2\x0c.DJEKEGMEHLKR\x04info\x12\
-    \x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12.\n\x0bHPHKDGJHIJL\
-    \x18\x0b\x20\x01(\x0b2\x0c.OFGJFLCBBJPR\x0bHPHKDGJHIJLb\x06proto3\
+    MFHG.proto\x1a\x11OFGJFLCBBJP.proto\"\xbd\x01\n\x14ChessRogueStartScRsp\
+    \x12.\n\x0bCIKPBGDIABO\x18\x02\x20\x01(\x0b2\x0c.DJEKEGMEHLKR\x0bCIKPBGD\
+    IABO\x12+\n\nstage_info\x18\x04\x20\x01(\x0b2\x0c.MANINNKMFHGR\tstageInf\
+    o\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12.\n\x0bHPHKDGJH\
+    IJL\x18\x0f\x20\x01(\x0b2\x0c.OFGJFLCBBJPR\x0bHPHKDGJHIJLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

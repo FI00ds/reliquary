@@ -79,16 +79,16 @@ impl ::protobuf::Message for GMBGLBHEFDI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.HKFDNIFACFH)?;
                 },
-                8 => {
+                56 => {
                     self.HKFDNIFACFH.push(is.read_uint32()?);
                 },
-                66 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.FPPJGGJCJIH)?;
                 },
-                64 => {
+                80 => {
                     self.FPPJGGJCJIH.push(is.read_uint32()?);
                 },
                 tag => {
@@ -103,16 +103,16 @@ impl ::protobuf::Message for GMBGLBHEFDI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.HKFDNIFACFH);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.FPPJGGJCJIH);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.HKFDNIFACFH);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.FPPJGGJCJIH);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.HKFDNIFACFH)?;
-        os.write_repeated_packed_uint32(8, &self.FPPJGGJCJIH)?;
+        os.write_repeated_packed_uint32(7, &self.HKFDNIFACFH)?;
+        os.write_repeated_packed_uint32(10, &self.FPPJGGJCJIH)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -164,8 +164,8 @@ impl ::protobuf::reflect::ProtobufValue for GMBGLBHEFDI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GMBGLBHEFDI.proto\"Q\n\x0bGMBGLBHEFDI\x12\x20\n\x0bHKFDNIFACFH\x18\
-    \x01\x20\x03(\rR\x0bHKFDNIFACFH\x12\x20\n\x0bFPPJGGJCJIH\x18\x08\x20\x03\
-    (\rR\x0bFPPJGGJCJIHb\x06proto3\
+    \x07\x20\x03(\rR\x0bHKFDNIFACFH\x12\x20\n\x0bFPPJGGJCJIH\x18\n\x20\x03(\
+    \rR\x0bFPPJGGJCJIHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

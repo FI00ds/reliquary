@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct ClientObjDownloadData {
     // message fields
     // @@protoc_insertion_point(field:ClientObjDownloadData.sc_info)
-    pub sc_info: ::std::string::String,
+    pub sc_info: ::std::vec::Vec<u8>,
     // @@protoc_insertion_point(field:ClientObjDownloadData.client_obj_download_data)
     pub client_obj_download_data: ::protobuf::MessageField<super::ClientDownloadData::ClientDownloadData>,
     // @@protoc_insertion_point(field:ClientObjDownloadData.dyn_code)
@@ -87,7 +87,7 @@ impl ::protobuf::Message for ClientObjDownloadData {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    self.sc_info = is.read_string()?;
+                    self.sc_info = is.read_bytes()?;
                 },
                 18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.client_obj_download_data)?;
@@ -108,7 +108,7 @@ impl ::protobuf::Message for ClientObjDownloadData {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.sc_info.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.sc_info);
+            my_size += ::protobuf::rt::bytes_size(1, &self.sc_info);
         }
         if let Some(v) = self.client_obj_download_data.as_ref() {
             let len = v.compute_size();
@@ -125,7 +125,7 @@ impl ::protobuf::Message for ClientObjDownloadData {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.sc_info.is_empty() {
-            os.write_string(1, &self.sc_info)?;
+            os.write_bytes(1, &self.sc_info)?;
         }
         if let Some(v) = self.client_obj_download_data.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
@@ -158,7 +158,7 @@ impl ::protobuf::Message for ClientObjDownloadData {
 
     fn default_instance() -> &'static ClientObjDownloadData {
         static instance: ClientObjDownloadData = ClientObjDownloadData {
-            sc_info: ::std::string::String::new(),
+            sc_info: ::std::vec::Vec::new(),
             client_obj_download_data: ::protobuf::MessageField::none(),
             dyn_code: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for ClientObjDownloadData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bClientObjDownloadData.proto\x1a\x18ClientDownloadData.proto\"\xae\
-    \x01\n\x15ClientObjDownloadData\x12\x17\n\x07sc_info\x18\x01\x20\x01(\tR\
-    \x06scInfo\x12L\n\x18client_obj_download_data\x18\x02\x20\x01(\x0b2\x13.\
-    ClientDownloadDataR\x15clientObjDownloadData\x12.\n\x08dyn_code\x18\x03\
-    \x20\x03(\x0b2\x13.ClientDownloadDataR\x07dynCodeb\x06proto3\
+    \x01\n\x15ClientObjDownloadData\x12\x17\n\x07sc_info\x18\x01\x20\x01(\
+    \x0cR\x06scInfo\x12L\n\x18client_obj_download_data\x18\x02\x20\x01(\x0b2\
+    \x13.ClientDownloadDataR\x15clientObjDownloadData\x12.\n\x08dyn_code\x18\
+    \x03\x20\x03(\x0b2\x13.ClientDownloadDataR\x07dynCodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

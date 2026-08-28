@@ -86,13 +86,13 @@ impl ::protobuf::Message for MonopolyGameSettleScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list)?;
                 },
-                114 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NGADCEHJHBE)?;
                 },
-                122 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.AJGOEJHKOKE)?;
                 },
                 tag => {
@@ -126,13 +126,13 @@ impl ::protobuf::Message for MonopolyGameSettleScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if let Some(v) = self.NGADCEHJHBE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if let Some(v) = self.AJGOEJHKOKE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -188,9 +188,9 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyGameSettleScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20MonopolyGameSettleScNotify.proto\x1a\x11GLMGJFEEJHD.proto\x1a\x0eI\
     temList.proto\"\xa1\x01\n\x1aMonopolyGameSettleScNotify\x12&\n\titem_lis\
-    t\x18\t\x20\x01(\x0b2\t.ItemListR\x08itemList\x12+\n\x0bNGADCEHJHBE\x18\
-    \x0e\x20\x01(\x0b2\t.ItemListR\x0bNGADCEHJHBE\x12.\n\x0bAJGOEJHKOKE\x18\
-    \x0f\x20\x01(\x0b2\x0c.GLMGJFEEJHDR\x0bAJGOEJHKOKEb\x06proto3\
+    t\x18\x02\x20\x01(\x0b2\t.ItemListR\x08itemList\x12+\n\x0bNGADCEHJHBE\
+    \x18\x04\x20\x01(\x0b2\t.ItemListR\x0bNGADCEHJHBE\x12.\n\x0bAJGOEJHKOKE\
+    \x18\r\x20\x01(\x0b2\x0c.GLMGJFEEJHDR\x0bAJGOEJHKOKEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

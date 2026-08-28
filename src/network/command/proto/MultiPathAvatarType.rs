@@ -27,32 +27,32 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:MultiPathAvatarType)
 pub enum MultiPathAvatarType {
-    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.MultiPathAvatarTypeNone)
-    MultiPathAvatarTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.Mar_7thKnightType)
-    Mar_7thKnightType = 1001,
-    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.Mar_7thRogueType)
-    Mar_7thRogueType = 1224,
-    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.BoyWarriorType)
-    BoyWarriorType = 8001,
-    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.GirlWarriorType)
-    GirlWarriorType = 8002,
-    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.BoyKnightType)
-    BoyKnightType = 8003,
-    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.GirlKnightType)
-    GirlKnightType = 8004,
-    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.BoyShamanType)
-    BoyShamanType = 8005,
-    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.GirlShamanType)
-    GirlShamanType = 8006,
-    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.BoyMemoryType)
-    BoyMemoryType = 8007,
-    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.GirlMemoryType)
-    GirlMemoryType = 8008,
-    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.BoyElationType)
-    BoyElationType = 8009,
-    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.GirlElationType)
-    GirlElationType = 8010,
+    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.MultiPathAvatarType_None)
+    MultiPathAvatarType_None = 0,
+    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.MultiPathAvatarType_Mar7ThKnightType)
+    MultiPathAvatarType_Mar7ThKnightType = 1001,
+    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.MultiPathAvatarType_Mar7ThRogueType)
+    MultiPathAvatarType_Mar7ThRogueType = 1224,
+    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.MultiPathAvatarType_BoyWarriorType)
+    MultiPathAvatarType_BoyWarriorType = 8001,
+    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.MultiPathAvatarType_GirlWarriorType)
+    MultiPathAvatarType_GirlWarriorType = 8002,
+    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.MultiPathAvatarType_BoyKnightType)
+    MultiPathAvatarType_BoyKnightType = 8003,
+    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.MultiPathAvatarType_GirlKnightType)
+    MultiPathAvatarType_GirlKnightType = 8004,
+    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.MultiPathAvatarType_BoyShamanType)
+    MultiPathAvatarType_BoyShamanType = 8005,
+    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.MultiPathAvatarType_GirlShamanType)
+    MultiPathAvatarType_GirlShamanType = 8006,
+    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.MultiPathAvatarType_BoyMemoryType)
+    MultiPathAvatarType_BoyMemoryType = 8007,
+    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.MultiPathAvatarType_GirlMemoryType)
+    MultiPathAvatarType_GirlMemoryType = 8008,
+    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.MultiPathAvatarType_BoyElationType)
+    MultiPathAvatarType_BoyElationType = 8009,
+    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.MultiPathAvatarType_GirlElationType)
+    MultiPathAvatarType_GirlElationType = 8010,
 }
 
 impl ::protobuf::Enum for MultiPathAvatarType {
@@ -64,56 +64,56 @@ impl ::protobuf::Enum for MultiPathAvatarType {
 
     fn from_i32(value: i32) -> ::std::option::Option<MultiPathAvatarType> {
         match value {
-            0 => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarTypeNone),
-            1001 => ::std::option::Option::Some(MultiPathAvatarType::Mar_7thKnightType),
-            1224 => ::std::option::Option::Some(MultiPathAvatarType::Mar_7thRogueType),
-            8001 => ::std::option::Option::Some(MultiPathAvatarType::BoyWarriorType),
-            8002 => ::std::option::Option::Some(MultiPathAvatarType::GirlWarriorType),
-            8003 => ::std::option::Option::Some(MultiPathAvatarType::BoyKnightType),
-            8004 => ::std::option::Option::Some(MultiPathAvatarType::GirlKnightType),
-            8005 => ::std::option::Option::Some(MultiPathAvatarType::BoyShamanType),
-            8006 => ::std::option::Option::Some(MultiPathAvatarType::GirlShamanType),
-            8007 => ::std::option::Option::Some(MultiPathAvatarType::BoyMemoryType),
-            8008 => ::std::option::Option::Some(MultiPathAvatarType::GirlMemoryType),
-            8009 => ::std::option::Option::Some(MultiPathAvatarType::BoyElationType),
-            8010 => ::std::option::Option::Some(MultiPathAvatarType::GirlElationType),
+            0 => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_None),
+            1001 => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_Mar7ThKnightType),
+            1224 => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_Mar7ThRogueType),
+            8001 => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_BoyWarriorType),
+            8002 => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_GirlWarriorType),
+            8003 => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_BoyKnightType),
+            8004 => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_GirlKnightType),
+            8005 => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_BoyShamanType),
+            8006 => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_GirlShamanType),
+            8007 => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_BoyMemoryType),
+            8008 => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_GirlMemoryType),
+            8009 => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_BoyElationType),
+            8010 => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_GirlElationType),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<MultiPathAvatarType> {
         match str {
-            "MultiPathAvatarTypeNone" => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarTypeNone),
-            "Mar_7thKnightType" => ::std::option::Option::Some(MultiPathAvatarType::Mar_7thKnightType),
-            "Mar_7thRogueType" => ::std::option::Option::Some(MultiPathAvatarType::Mar_7thRogueType),
-            "BoyWarriorType" => ::std::option::Option::Some(MultiPathAvatarType::BoyWarriorType),
-            "GirlWarriorType" => ::std::option::Option::Some(MultiPathAvatarType::GirlWarriorType),
-            "BoyKnightType" => ::std::option::Option::Some(MultiPathAvatarType::BoyKnightType),
-            "GirlKnightType" => ::std::option::Option::Some(MultiPathAvatarType::GirlKnightType),
-            "BoyShamanType" => ::std::option::Option::Some(MultiPathAvatarType::BoyShamanType),
-            "GirlShamanType" => ::std::option::Option::Some(MultiPathAvatarType::GirlShamanType),
-            "BoyMemoryType" => ::std::option::Option::Some(MultiPathAvatarType::BoyMemoryType),
-            "GirlMemoryType" => ::std::option::Option::Some(MultiPathAvatarType::GirlMemoryType),
-            "BoyElationType" => ::std::option::Option::Some(MultiPathAvatarType::BoyElationType),
-            "GirlElationType" => ::std::option::Option::Some(MultiPathAvatarType::GirlElationType),
+            "MultiPathAvatarType_None" => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_None),
+            "MultiPathAvatarType_Mar7ThKnightType" => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_Mar7ThKnightType),
+            "MultiPathAvatarType_Mar7ThRogueType" => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_Mar7ThRogueType),
+            "MultiPathAvatarType_BoyWarriorType" => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_BoyWarriorType),
+            "MultiPathAvatarType_GirlWarriorType" => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_GirlWarriorType),
+            "MultiPathAvatarType_BoyKnightType" => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_BoyKnightType),
+            "MultiPathAvatarType_GirlKnightType" => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_GirlKnightType),
+            "MultiPathAvatarType_BoyShamanType" => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_BoyShamanType),
+            "MultiPathAvatarType_GirlShamanType" => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_GirlShamanType),
+            "MultiPathAvatarType_BoyMemoryType" => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_BoyMemoryType),
+            "MultiPathAvatarType_GirlMemoryType" => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_GirlMemoryType),
+            "MultiPathAvatarType_BoyElationType" => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_BoyElationType),
+            "MultiPathAvatarType_GirlElationType" => ::std::option::Option::Some(MultiPathAvatarType::MultiPathAvatarType_GirlElationType),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [MultiPathAvatarType] = &[
-        MultiPathAvatarType::MultiPathAvatarTypeNone,
-        MultiPathAvatarType::Mar_7thKnightType,
-        MultiPathAvatarType::Mar_7thRogueType,
-        MultiPathAvatarType::BoyWarriorType,
-        MultiPathAvatarType::GirlWarriorType,
-        MultiPathAvatarType::BoyKnightType,
-        MultiPathAvatarType::GirlKnightType,
-        MultiPathAvatarType::BoyShamanType,
-        MultiPathAvatarType::GirlShamanType,
-        MultiPathAvatarType::BoyMemoryType,
-        MultiPathAvatarType::GirlMemoryType,
-        MultiPathAvatarType::BoyElationType,
-        MultiPathAvatarType::GirlElationType,
+        MultiPathAvatarType::MultiPathAvatarType_None,
+        MultiPathAvatarType::MultiPathAvatarType_Mar7ThKnightType,
+        MultiPathAvatarType::MultiPathAvatarType_Mar7ThRogueType,
+        MultiPathAvatarType::MultiPathAvatarType_BoyWarriorType,
+        MultiPathAvatarType::MultiPathAvatarType_GirlWarriorType,
+        MultiPathAvatarType::MultiPathAvatarType_BoyKnightType,
+        MultiPathAvatarType::MultiPathAvatarType_GirlKnightType,
+        MultiPathAvatarType::MultiPathAvatarType_BoyShamanType,
+        MultiPathAvatarType::MultiPathAvatarType_GirlShamanType,
+        MultiPathAvatarType::MultiPathAvatarType_BoyMemoryType,
+        MultiPathAvatarType::MultiPathAvatarType_GirlMemoryType,
+        MultiPathAvatarType::MultiPathAvatarType_BoyElationType,
+        MultiPathAvatarType::MultiPathAvatarType_GirlElationType,
     ];
 }
 
@@ -125,19 +125,19 @@ impl ::protobuf::EnumFull for MultiPathAvatarType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            MultiPathAvatarType::MultiPathAvatarTypeNone => 0,
-            MultiPathAvatarType::Mar_7thKnightType => 1,
-            MultiPathAvatarType::Mar_7thRogueType => 2,
-            MultiPathAvatarType::BoyWarriorType => 3,
-            MultiPathAvatarType::GirlWarriorType => 4,
-            MultiPathAvatarType::BoyKnightType => 5,
-            MultiPathAvatarType::GirlKnightType => 6,
-            MultiPathAvatarType::BoyShamanType => 7,
-            MultiPathAvatarType::GirlShamanType => 8,
-            MultiPathAvatarType::BoyMemoryType => 9,
-            MultiPathAvatarType::GirlMemoryType => 10,
-            MultiPathAvatarType::BoyElationType => 11,
-            MultiPathAvatarType::GirlElationType => 12,
+            MultiPathAvatarType::MultiPathAvatarType_None => 0,
+            MultiPathAvatarType::MultiPathAvatarType_Mar7ThKnightType => 1,
+            MultiPathAvatarType::MultiPathAvatarType_Mar7ThRogueType => 2,
+            MultiPathAvatarType::MultiPathAvatarType_BoyWarriorType => 3,
+            MultiPathAvatarType::MultiPathAvatarType_GirlWarriorType => 4,
+            MultiPathAvatarType::MultiPathAvatarType_BoyKnightType => 5,
+            MultiPathAvatarType::MultiPathAvatarType_GirlKnightType => 6,
+            MultiPathAvatarType::MultiPathAvatarType_BoyShamanType => 7,
+            MultiPathAvatarType::MultiPathAvatarType_GirlShamanType => 8,
+            MultiPathAvatarType::MultiPathAvatarType_BoyMemoryType => 9,
+            MultiPathAvatarType::MultiPathAvatarType_GirlMemoryType => 10,
+            MultiPathAvatarType::MultiPathAvatarType_BoyElationType => 11,
+            MultiPathAvatarType::MultiPathAvatarType_GirlElationType => 12,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -145,7 +145,7 @@ impl ::protobuf::EnumFull for MultiPathAvatarType {
 
 impl ::std::default::Default for MultiPathAvatarType {
     fn default() -> Self {
-        MultiPathAvatarType::MultiPathAvatarTypeNone
+        MultiPathAvatarType::MultiPathAvatarType_None
     }
 }
 
@@ -156,14 +156,17 @@ impl MultiPathAvatarType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19MultiPathAvatarType.proto*\xb2\x02\n\x13MultiPathAvatarType\x12\
-    \x1b\n\x17MultiPathAvatarTypeNone\x10\0\x12\x16\n\x11Mar_7thKnightType\
-    \x10\xe9\x07\x12\x15\n\x10Mar_7thRogueType\x10\xc8\t\x12\x13\n\x0eBoyWar\
-    riorType\x10\xc1>\x12\x14\n\x0fGirlWarriorType\x10\xc2>\x12\x12\n\rBoyKn\
-    ightType\x10\xc3>\x12\x13\n\x0eGirlKnightType\x10\xc4>\x12\x12\n\rBoySha\
-    manType\x10\xc5>\x12\x13\n\x0eGirlShamanType\x10\xc6>\x12\x12\n\rBoyMemo\
-    ryType\x10\xc7>\x12\x13\n\x0eGirlMemoryType\x10\xc8>\x12\x13\n\x0eBoyEla\
-    tionType\x10\xc9>\x12\x14\n\x0fGirlElationType\x10\xca>b\x06proto3\
+    \n\x19MultiPathAvatarType.proto*\xa1\x04\n\x13MultiPathAvatarType\x12\
+    \x1c\n\x18MultiPathAvatarType_None\x10\0\x12)\n$MultiPathAvatarType_Mar7\
+    ThKnightType\x10\xe9\x07\x12(\n#MultiPathAvatarType_Mar7ThRogueType\x10\
+    \xc8\t\x12'\n\"MultiPathAvatarType_BoyWarriorType\x10\xc1>\x12(\n#MultiP\
+    athAvatarType_GirlWarriorType\x10\xc2>\x12&\n!MultiPathAvatarType_BoyKni\
+    ghtType\x10\xc3>\x12'\n\"MultiPathAvatarType_GirlKnightType\x10\xc4>\x12\
+    &\n!MultiPathAvatarType_BoyShamanType\x10\xc5>\x12'\n\"MultiPathAvatarTy\
+    pe_GirlShamanType\x10\xc6>\x12&\n!MultiPathAvatarType_BoyMemoryType\x10\
+    \xc7>\x12'\n\"MultiPathAvatarType_GirlMemoryType\x10\xc8>\x12'\n\"MultiP\
+    athAvatarType_BoyElationType\x10\xc9>\x12(\n#MultiPathAvatarType_GirlEla\
+    tionType\x10\xca>b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

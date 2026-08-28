@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChenLingFesLevelStartScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChenLingFesLevelStartScRsp.FGKPIDLKALL)
-    pub FGKPIDLKALL: u32,
-    // @@protoc_insertion_point(field:ChenLingFesLevelStartScRsp.NLMEEEKBPKO)
-    pub NLMEEEKBPKO: ::std::string::String,
     // @@protoc_insertion_point(field:ChenLingFesLevelStartScRsp.FGGCAOAPGPA)
     pub FGGCAOAPGPA: ::std::string::String,
     // @@protoc_insertion_point(field:ChenLingFesLevelStartScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:ChenLingFesLevelStartScRsp.FGKPIDLKALL)
+    pub FGKPIDLKALL: u32,
+    // @@protoc_insertion_point(field:ChenLingFesLevelStartScRsp.NLMEEEKBPKO)
+    pub NLMEEEKBPKO: ::std::string::String,
     // @@protoc_insertion_point(field:ChenLingFesLevelStartScRsp.level_id)
     pub level_id: u32,
     // special fields
@@ -58,16 +58,6 @@ impl ChenLingFesLevelStartScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FGKPIDLKALL",
-            |m: &ChenLingFesLevelStartScRsp| { &m.FGKPIDLKALL },
-            |m: &mut ChenLingFesLevelStartScRsp| { &mut m.FGKPIDLKALL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NLMEEEKBPKO",
-            |m: &ChenLingFesLevelStartScRsp| { &m.NLMEEEKBPKO },
-            |m: &mut ChenLingFesLevelStartScRsp| { &mut m.NLMEEEKBPKO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FGGCAOAPGPA",
             |m: &ChenLingFesLevelStartScRsp| { &m.FGGCAOAPGPA },
             |m: &mut ChenLingFesLevelStartScRsp| { &mut m.FGGCAOAPGPA },
@@ -76,6 +66,16 @@ impl ChenLingFesLevelStartScRsp {
             "retcode",
             |m: &ChenLingFesLevelStartScRsp| { &m.retcode },
             |m: &mut ChenLingFesLevelStartScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FGKPIDLKALL",
+            |m: &ChenLingFesLevelStartScRsp| { &m.FGKPIDLKALL },
+            |m: &mut ChenLingFesLevelStartScRsp| { &mut m.FGKPIDLKALL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NLMEEEKBPKO",
+            |m: &ChenLingFesLevelStartScRsp| { &m.NLMEEEKBPKO },
+            |m: &mut ChenLingFesLevelStartScRsp| { &mut m.NLMEEEKBPKO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level_id",
@@ -100,17 +100,17 @@ impl ::protobuf::Message for ChenLingFesLevelStartScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.FGKPIDLKALL = is.read_uint32()?;
-                },
-                42 => {
-                    self.NLMEEEKBPKO = is.read_string()?;
-                },
-                74 => {
+                26 => {
                     self.FGGCAOAPGPA = is.read_string()?;
                 },
-                96 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
+                },
+                80 => {
+                    self.FGKPIDLKALL = is.read_uint32()?;
+                },
+                90 => {
+                    self.NLMEEEKBPKO = is.read_string()?;
                 },
                 104 => {
                     self.level_id = is.read_uint32()?;
@@ -127,17 +127,17 @@ impl ::protobuf::Message for ChenLingFesLevelStartScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FGKPIDLKALL != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.FGKPIDLKALL);
-        }
-        if !self.NLMEEEKBPKO.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.NLMEEEKBPKO);
-        }
         if !self.FGGCAOAPGPA.is_empty() {
-            my_size += ::protobuf::rt::string_size(9, &self.FGGCAOAPGPA);
+            my_size += ::protobuf::rt::string_size(3, &self.FGGCAOAPGPA);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        }
+        if self.FGKPIDLKALL != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.FGKPIDLKALL);
+        }
+        if !self.NLMEEEKBPKO.is_empty() {
+            my_size += ::protobuf::rt::string_size(11, &self.NLMEEEKBPKO);
         }
         if self.level_id != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.level_id);
@@ -148,17 +148,17 @@ impl ::protobuf::Message for ChenLingFesLevelStartScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FGKPIDLKALL != 0 {
-            os.write_uint32(2, self.FGKPIDLKALL)?;
-        }
-        if !self.NLMEEEKBPKO.is_empty() {
-            os.write_string(5, &self.NLMEEEKBPKO)?;
-        }
         if !self.FGGCAOAPGPA.is_empty() {
-            os.write_string(9, &self.FGGCAOAPGPA)?;
+            os.write_string(3, &self.FGGCAOAPGPA)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
+        }
+        if self.FGKPIDLKALL != 0 {
+            os.write_uint32(10, self.FGKPIDLKALL)?;
+        }
+        if !self.NLMEEEKBPKO.is_empty() {
+            os.write_string(11, &self.NLMEEEKBPKO)?;
         }
         if self.level_id != 0 {
             os.write_uint32(13, self.level_id)?;
@@ -180,20 +180,20 @@ impl ::protobuf::Message for ChenLingFesLevelStartScRsp {
     }
 
     fn clear(&mut self) {
-        self.FGKPIDLKALL = 0;
-        self.NLMEEEKBPKO.clear();
         self.FGGCAOAPGPA.clear();
         self.retcode = 0;
+        self.FGKPIDLKALL = 0;
+        self.NLMEEEKBPKO.clear();
         self.level_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChenLingFesLevelStartScRsp {
         static instance: ChenLingFesLevelStartScRsp = ChenLingFesLevelStartScRsp {
-            FGKPIDLKALL: 0,
-            NLMEEEKBPKO: ::std::string::String::new(),
             FGGCAOAPGPA: ::std::string::String::new(),
             retcode: 0,
+            FGKPIDLKALL: 0,
+            NLMEEEKBPKO: ::std::string::String::new(),
             level_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -220,10 +220,10 @@ impl ::protobuf::reflect::ProtobufValue for ChenLingFesLevelStartScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20ChenLingFesLevelStartScRsp.proto\"\xb7\x01\n\x1aChenLingFesLevelSt\
-    artScRsp\x12\x20\n\x0bFGKPIDLKALL\x18\x02\x20\x01(\rR\x0bFGKPIDLKALL\x12\
-    \x20\n\x0bNLMEEEKBPKO\x18\x05\x20\x01(\tR\x0bNLMEEEKBPKO\x12\x20\n\x0bFG\
-    GCAOAPGPA\x18\t\x20\x01(\tR\x0bFGGCAOAPGPA\x12\x18\n\x07retcode\x18\x0c\
-    \x20\x01(\rR\x07retcode\x12\x19\n\x08level_id\x18\r\x20\x01(\rR\x07level\
+    artScRsp\x12\x20\n\x0bFGGCAOAPGPA\x18\x03\x20\x01(\tR\x0bFGGCAOAPGPA\x12\
+    \x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12\x20\n\x0bFGKPIDLKAL\
+    L\x18\n\x20\x01(\rR\x0bFGKPIDLKALL\x12\x20\n\x0bNLMEEEKBPKO\x18\x0b\x20\
+    \x01(\tR\x0bNLMEEEKBPKO\x12\x19\n\x08level_id\x18\r\x20\x01(\rR\x07level\
     Idb\x06proto3\
 ";
 

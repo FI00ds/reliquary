@@ -30,20 +30,20 @@ pub struct CBFOJHEPNHE {
     // message fields
     // @@protoc_insertion_point(field:CBFOJHEPNHE.end_status)
     pub end_status: ::protobuf::EnumOrUnknown<super::BattleEndStatus::BattleEndStatus>,
-    // @@protoc_insertion_point(field:CBFOJHEPNHE.damage_score)
-    pub damage_score: u32,
+    // @@protoc_insertion_point(field:CBFOJHEPNHE.total_damage)
+    pub total_damage: u32,
     // @@protoc_insertion_point(field:CBFOJHEPNHE.stage_id)
     pub stage_id: u32,
-    // @@protoc_insertion_point(field:CBFOJHEPNHE.score_id)
-    pub score_id: u32,
     // @@protoc_insertion_point(field:CBFOJHEPNHE.IMCJFGIPIFI)
     pub IMCJFGIPIFI: u32,
+    // @@protoc_insertion_point(field:CBFOJHEPNHE.score_id)
+    pub score_id: u32,
+    // @@protoc_insertion_point(field:CBFOJHEPNHE.BJKBGOALNHA)
+    pub BJKBGOALNHA: u32,
     // @@protoc_insertion_point(field:CBFOJHEPNHE.BMAHOGKMPDJ)
     pub BMAHOGKMPDJ: u32,
     // @@protoc_insertion_point(field:CBFOJHEPNHE.max_score)
     pub max_score: u32,
-    // @@protoc_insertion_point(field:CBFOJHEPNHE.total_damage)
-    pub total_damage: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CBFOJHEPNHE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -69,9 +69,9 @@ impl CBFOJHEPNHE {
             |m: &mut CBFOJHEPNHE| { &mut m.end_status },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "damage_score",
-            |m: &CBFOJHEPNHE| { &m.damage_score },
-            |m: &mut CBFOJHEPNHE| { &mut m.damage_score },
+            "total_damage",
+            |m: &CBFOJHEPNHE| { &m.total_damage },
+            |m: &mut CBFOJHEPNHE| { &mut m.total_damage },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "stage_id",
@@ -79,14 +79,19 @@ impl CBFOJHEPNHE {
             |m: &mut CBFOJHEPNHE| { &mut m.stage_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IMCJFGIPIFI",
+            |m: &CBFOJHEPNHE| { &m.IMCJFGIPIFI },
+            |m: &mut CBFOJHEPNHE| { &mut m.IMCJFGIPIFI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "score_id",
             |m: &CBFOJHEPNHE| { &m.score_id },
             |m: &mut CBFOJHEPNHE| { &mut m.score_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IMCJFGIPIFI",
-            |m: &CBFOJHEPNHE| { &m.IMCJFGIPIFI },
-            |m: &mut CBFOJHEPNHE| { &mut m.IMCJFGIPIFI },
+            "BJKBGOALNHA",
+            |m: &CBFOJHEPNHE| { &m.BJKBGOALNHA },
+            |m: &mut CBFOJHEPNHE| { &mut m.BJKBGOALNHA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BMAHOGKMPDJ",
@@ -97,11 +102,6 @@ impl CBFOJHEPNHE {
             "max_score",
             |m: &CBFOJHEPNHE| { &m.max_score },
             |m: &mut CBFOJHEPNHE| { &mut m.max_score },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "total_damage",
-            |m: &CBFOJHEPNHE| { &m.total_damage },
-            |m: &mut CBFOJHEPNHE| { &mut m.total_damage },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CBFOJHEPNHE>(
             "CBFOJHEPNHE",
@@ -121,29 +121,29 @@ impl ::protobuf::Message for CBFOJHEPNHE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                16 => {
                     self.end_status = is.read_enum_or_unknown()?;
                 },
                 32 => {
-                    self.damage_score = is.read_uint32()?;
+                    self.total_damage = is.read_uint32()?;
                 },
                 40 => {
                     self.stage_id = is.read_uint32()?;
                 },
-                48 => {
-                    self.score_id = is.read_uint32()?;
-                },
                 56 => {
                     self.IMCJFGIPIFI = is.read_uint32()?;
                 },
-                72 => {
+                64 => {
+                    self.score_id = is.read_uint32()?;
+                },
+                80 => {
+                    self.BJKBGOALNHA = is.read_uint32()?;
+                },
+                88 => {
                     self.BMAHOGKMPDJ = is.read_uint32()?;
                 },
                 104 => {
                     self.max_score = is.read_uint32()?;
-                },
-                120 => {
-                    self.total_damage = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -158,28 +158,28 @@ impl ::protobuf::Message for CBFOJHEPNHE {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            my_size += ::protobuf::rt::int32_size(3, self.end_status.value());
+            my_size += ::protobuf::rt::int32_size(2, self.end_status.value());
         }
-        if self.damage_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.damage_score);
+        if self.total_damage != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.total_damage);
         }
         if self.stage_id != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.stage_id);
         }
-        if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.score_id);
-        }
         if self.IMCJFGIPIFI != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.IMCJFGIPIFI);
         }
+        if self.score_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.score_id);
+        }
+        if self.BJKBGOALNHA != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.BJKBGOALNHA);
+        }
         if self.BMAHOGKMPDJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.BMAHOGKMPDJ);
+            my_size += ::protobuf::rt::uint32_size(11, self.BMAHOGKMPDJ);
         }
         if self.max_score != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.max_score);
-        }
-        if self.total_damage != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.total_damage);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -188,28 +188,28 @@ impl ::protobuf::Message for CBFOJHEPNHE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.end_status))?;
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.end_status))?;
         }
-        if self.damage_score != 0 {
-            os.write_uint32(4, self.damage_score)?;
+        if self.total_damage != 0 {
+            os.write_uint32(4, self.total_damage)?;
         }
         if self.stage_id != 0 {
             os.write_uint32(5, self.stage_id)?;
         }
-        if self.score_id != 0 {
-            os.write_uint32(6, self.score_id)?;
-        }
         if self.IMCJFGIPIFI != 0 {
             os.write_uint32(7, self.IMCJFGIPIFI)?;
         }
+        if self.score_id != 0 {
+            os.write_uint32(8, self.score_id)?;
+        }
+        if self.BJKBGOALNHA != 0 {
+            os.write_uint32(10, self.BJKBGOALNHA)?;
+        }
         if self.BMAHOGKMPDJ != 0 {
-            os.write_uint32(9, self.BMAHOGKMPDJ)?;
+            os.write_uint32(11, self.BMAHOGKMPDJ)?;
         }
         if self.max_score != 0 {
             os.write_uint32(13, self.max_score)?;
-        }
-        if self.total_damage != 0 {
-            os.write_uint32(15, self.total_damage)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -229,26 +229,26 @@ impl ::protobuf::Message for CBFOJHEPNHE {
 
     fn clear(&mut self) {
         self.end_status = ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE);
-        self.damage_score = 0;
+        self.total_damage = 0;
         self.stage_id = 0;
-        self.score_id = 0;
         self.IMCJFGIPIFI = 0;
+        self.score_id = 0;
+        self.BJKBGOALNHA = 0;
         self.BMAHOGKMPDJ = 0;
         self.max_score = 0;
-        self.total_damage = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CBFOJHEPNHE {
         static instance: CBFOJHEPNHE = CBFOJHEPNHE {
             end_status: ::protobuf::EnumOrUnknown::from_i32(0),
-            damage_score: 0,
+            total_damage: 0,
             stage_id: 0,
-            score_id: 0,
             IMCJFGIPIFI: 0,
+            score_id: 0,
+            BJKBGOALNHA: 0,
             BMAHOGKMPDJ: 0,
             max_score: 0,
-            total_damage: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -273,14 +273,14 @@ impl ::protobuf::reflect::ProtobufValue for CBFOJHEPNHE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CBFOJHEPNHE.proto\x1a\x15BattleEndStatus.proto\"\x9b\x02\n\x0bCBFO\
-    JHEPNHE\x12/\n\nend_status\x18\x03\x20\x01(\x0e2\x10.BattleEndStatusR\te\
-    ndStatus\x12!\n\x0cdamage_score\x18\x04\x20\x01(\rR\x0bdamageScore\x12\
-    \x19\n\x08stage_id\x18\x05\x20\x01(\rR\x07stageId\x12\x19\n\x08score_id\
-    \x18\x06\x20\x01(\rR\x07scoreId\x12\x20\n\x0bIMCJFGIPIFI\x18\x07\x20\x01\
-    (\rR\x0bIMCJFGIPIFI\x12\x20\n\x0bBMAHOGKMPDJ\x18\t\x20\x01(\rR\x0bBMAHOG\
-    KMPDJ\x12\x1b\n\tmax_score\x18\r\x20\x01(\rR\x08maxScore\x12!\n\x0ctotal\
-    _damage\x18\x0f\x20\x01(\rR\x0btotalDamageb\x06proto3\
+    \n\x11CBFOJHEPNHE.proto\x1a\x15BattleEndStatus.proto\"\x9a\x02\n\x0bCBFO\
+    JHEPNHE\x12/\n\nend_status\x18\x02\x20\x01(\x0e2\x10.BattleEndStatusR\te\
+    ndStatus\x12!\n\x0ctotal_damage\x18\x04\x20\x01(\rR\x0btotalDamage\x12\
+    \x19\n\x08stage_id\x18\x05\x20\x01(\rR\x07stageId\x12\x20\n\x0bIMCJFGIPI\
+    FI\x18\x07\x20\x01(\rR\x0bIMCJFGIPIFI\x12\x19\n\x08score_id\x18\x08\x20\
+    \x01(\rR\x07scoreId\x12\x20\n\x0bBJKBGOALNHA\x18\n\x20\x01(\rR\x0bBJKBGO\
+    ALNHA\x12\x20\n\x0bBMAHOGKMPDJ\x18\x0b\x20\x01(\rR\x0bBMAHOGKMPDJ\x12\
+    \x1b\n\tmax_score\x18\r\x20\x01(\rR\x08maxScoreb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

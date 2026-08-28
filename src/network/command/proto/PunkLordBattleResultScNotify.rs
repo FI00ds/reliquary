@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PunkLordBattleResultScNotify {
     // message fields
-    // @@protoc_insertion_point(field:PunkLordBattleResultScNotify.assist_score)
-    pub assist_score: u32,
-    // @@protoc_insertion_point(field:PunkLordBattleResultScNotify.damage_score)
-    pub damage_score: u32,
+    // @@protoc_insertion_point(field:PunkLordBattleResultScNotify.EJGIOGKKIKH)
+    pub EJGIOGKKIKH: u32,
     // @@protoc_insertion_point(field:PunkLordBattleResultScNotify.ONICJOAOEMA)
     pub ONICJOAOEMA: ::protobuf::MessageField<super::PunkLordMonsterBasicInfo::PunkLordMonsterBasicInfo>,
+    // @@protoc_insertion_point(field:PunkLordBattleResultScNotify.KENLJIJJEJL)
+    pub KENLJIJJEJL: u32,
     // @@protoc_insertion_point(field:PunkLordBattleResultScNotify.FDJHMFAGEOA)
     pub FDJHMFAGEOA: ::protobuf::MessageField<super::CJDIAHDLCNJ::CJDIAHDLCNJ>,
-    // @@protoc_insertion_point(field:PunkLordBattleResultScNotify.final_hit_score)
-    pub final_hit_score: u32,
+    // @@protoc_insertion_point(field:PunkLordBattleResultScNotify.BJKBGOALNHA)
+    pub BJKBGOALNHA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PunkLordBattleResultScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,19 +58,19 @@ impl PunkLordBattleResultScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "assist_score",
-            |m: &PunkLordBattleResultScNotify| { &m.assist_score },
-            |m: &mut PunkLordBattleResultScNotify| { &mut m.assist_score },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "damage_score",
-            |m: &PunkLordBattleResultScNotify| { &m.damage_score },
-            |m: &mut PunkLordBattleResultScNotify| { &mut m.damage_score },
+            "EJGIOGKKIKH",
+            |m: &PunkLordBattleResultScNotify| { &m.EJGIOGKKIKH },
+            |m: &mut PunkLordBattleResultScNotify| { &mut m.EJGIOGKKIKH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PunkLordMonsterBasicInfo::PunkLordMonsterBasicInfo>(
             "ONICJOAOEMA",
             |m: &PunkLordBattleResultScNotify| { &m.ONICJOAOEMA },
             |m: &mut PunkLordBattleResultScNotify| { &mut m.ONICJOAOEMA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KENLJIJJEJL",
+            |m: &PunkLordBattleResultScNotify| { &m.KENLJIJJEJL },
+            |m: &mut PunkLordBattleResultScNotify| { &mut m.KENLJIJJEJL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CJDIAHDLCNJ::CJDIAHDLCNJ>(
             "FDJHMFAGEOA",
@@ -78,9 +78,9 @@ impl PunkLordBattleResultScNotify {
             |m: &mut PunkLordBattleResultScNotify| { &mut m.FDJHMFAGEOA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "final_hit_score",
-            |m: &PunkLordBattleResultScNotify| { &m.final_hit_score },
-            |m: &mut PunkLordBattleResultScNotify| { &mut m.final_hit_score },
+            "BJKBGOALNHA",
+            |m: &PunkLordBattleResultScNotify| { &m.BJKBGOALNHA },
+            |m: &mut PunkLordBattleResultScNotify| { &mut m.BJKBGOALNHA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PunkLordBattleResultScNotify>(
             "PunkLordBattleResultScNotify",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for PunkLordBattleResultScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.assist_score = is.read_uint32()?;
+                40 => {
+                    self.EJGIOGKKIKH = is.read_uint32()?;
                 },
-                48 => {
-                    self.damage_score = is.read_uint32()?;
-                },
-                82 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ONICJOAOEMA)?;
                 },
-                90 => {
+                56 => {
+                    self.KENLJIJJEJL = is.read_uint32()?;
+                },
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FDJHMFAGEOA)?;
                 },
-                104 => {
-                    self.final_hit_score = is.read_uint32()?;
+                88 => {
+                    self.BJKBGOALNHA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,22 +127,22 @@ impl ::protobuf::Message for PunkLordBattleResultScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.assist_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.assist_score);
-        }
-        if self.damage_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.damage_score);
+        if self.EJGIOGKKIKH != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.EJGIOGKKIKH);
         }
         if let Some(v) = self.ONICJOAOEMA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.KENLJIJJEJL != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.KENLJIJJEJL);
+        }
         if let Some(v) = self.FDJHMFAGEOA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.final_hit_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.final_hit_score);
+        if self.BJKBGOALNHA != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.BJKBGOALNHA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,20 +150,20 @@ impl ::protobuf::Message for PunkLordBattleResultScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.assist_score != 0 {
-            os.write_uint32(1, self.assist_score)?;
-        }
-        if self.damage_score != 0 {
-            os.write_uint32(6, self.damage_score)?;
+        if self.EJGIOGKKIKH != 0 {
+            os.write_uint32(5, self.EJGIOGKKIKH)?;
         }
         if let Some(v) = self.ONICJOAOEMA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        if self.KENLJIJJEJL != 0 {
+            os.write_uint32(7, self.KENLJIJJEJL)?;
         }
         if let Some(v) = self.FDJHMFAGEOA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        if self.final_hit_score != 0 {
-            os.write_uint32(13, self.final_hit_score)?;
+        if self.BJKBGOALNHA != 0 {
+            os.write_uint32(11, self.BJKBGOALNHA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,21 +182,21 @@ impl ::protobuf::Message for PunkLordBattleResultScNotify {
     }
 
     fn clear(&mut self) {
-        self.assist_score = 0;
-        self.damage_score = 0;
+        self.EJGIOGKKIKH = 0;
         self.ONICJOAOEMA.clear();
+        self.KENLJIJJEJL = 0;
         self.FDJHMFAGEOA.clear();
-        self.final_hit_score = 0;
+        self.BJKBGOALNHA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PunkLordBattleResultScNotify {
         static instance: PunkLordBattleResultScNotify = PunkLordBattleResultScNotify {
-            assist_score: 0,
-            damage_score: 0,
+            EJGIOGKKIKH: 0,
             ONICJOAOEMA: ::protobuf::MessageField::none(),
+            KENLJIJJEJL: 0,
             FDJHMFAGEOA: ::protobuf::MessageField::none(),
-            final_hit_score: 0,
+            BJKBGOALNHA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -222,12 +222,12 @@ impl ::protobuf::reflect::ProtobufValue for PunkLordBattleResultScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"PunkLordBattleResultScNotify.proto\x1a\x11CJDIAHDLCNJ.proto\x1a\x1eP\
-    unkLordMonsterBasicInfo.proto\"\xf9\x01\n\x1cPunkLordBattleResultScNotif\
-    y\x12!\n\x0cassist_score\x18\x01\x20\x01(\rR\x0bassistScore\x12!\n\x0cda\
-    mage_score\x18\x06\x20\x01(\rR\x0bdamageScore\x12;\n\x0bONICJOAOEMA\x18\
-    \n\x20\x01(\x0b2\x19.PunkLordMonsterBasicInfoR\x0bONICJOAOEMA\x12.\n\x0b\
-    FDJHMFAGEOA\x18\x0b\x20\x01(\x0b2\x0c.CJDIAHDLCNJR\x0bFDJHMFAGEOA\x12&\n\
-    \x0ffinal_hit_score\x18\r\x20\x01(\rR\rfinalHitScoreb\x06proto3\
+    unkLordMonsterBasicInfo.proto\"\xf1\x01\n\x1cPunkLordBattleResultScNotif\
+    y\x12\x20\n\x0bEJGIOGKKIKH\x18\x05\x20\x01(\rR\x0bEJGIOGKKIKH\x12;\n\x0b\
+    ONICJOAOEMA\x18\x06\x20\x01(\x0b2\x19.PunkLordMonsterBasicInfoR\x0bONICJ\
+    OAOEMA\x12\x20\n\x0bKENLJIJJEJL\x18\x07\x20\x01(\rR\x0bKENLJIJJEJL\x12.\
+    \n\x0bFDJHMFAGEOA\x18\n\x20\x01(\x0b2\x0c.CJDIAHDLCNJR\x0bFDJHMFAGEOA\
+    \x12\x20\n\x0bBJKBGOALNHA\x18\x0b\x20\x01(\rR\x0bBJKBGOALNHAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

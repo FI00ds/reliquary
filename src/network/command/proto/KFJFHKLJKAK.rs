@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KFJFHKLJKAK {
     // message fields
-    // @@protoc_insertion_point(field:KFJFHKLJKAK.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:KFJFHKLJKAK.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:KFJFHKLJKAK.AFEMBLFCCCH)
     pub AFEMBLFCCCH: u32,
+    // @@protoc_insertion_point(field:KFJFHKLJKAK.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:KFJFHKLJKAK.level)
     pub level: u32,
     // special fields
@@ -55,11 +55,6 @@ impl KFJFHKLJKAK {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &KFJFHKLJKAK| { &m.retcode },
-            |m: &mut KFJFHKLJKAK| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
             |m: &KFJFHKLJKAK| { &m.reward },
@@ -69,6 +64,11 @@ impl KFJFHKLJKAK {
             "AFEMBLFCCCH",
             |m: &KFJFHKLJKAK| { &m.AFEMBLFCCCH },
             |m: &mut KFJFHKLJKAK| { &mut m.AFEMBLFCCCH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &KFJFHKLJKAK| { &m.retcode },
+            |m: &mut KFJFHKLJKAK| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for KFJFHKLJKAK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                90 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                96 => {
+                32 => {
                     self.AFEMBLFCCCH = is.read_uint32()?;
                 },
                 112 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                120 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -117,18 +117,18 @@ impl ::protobuf::Message for KFJFHKLJKAK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
-        }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.AFEMBLFCCCH != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.AFEMBLFCCCH);
+            my_size += ::protobuf::rt::uint32_size(4, self.AFEMBLFCCCH);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.level);
+            my_size += ::protobuf::rt::uint32_size(15, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for KFJFHKLJKAK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
-        }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.AFEMBLFCCCH != 0 {
-            os.write_uint32(12, self.AFEMBLFCCCH)?;
+            os.write_uint32(4, self.AFEMBLFCCCH)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(14, self.retcode)?;
         }
         if self.level != 0 {
-            os.write_uint32(14, self.level)?;
+            os.write_uint32(15, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for KFJFHKLJKAK {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.reward.clear();
         self.AFEMBLFCCCH = 0;
+        self.retcode = 0;
         self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KFJFHKLJKAK {
         static instance: KFJFHKLJKAK = KFJFHKLJKAK {
-            retcode: 0,
             reward: ::protobuf::MessageField::none(),
             AFEMBLFCCCH: 0,
+            retcode: 0,
             level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for KFJFHKLJKAK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KFJFHKLJKAK.proto\x1a\x0eItemList.proto\"\x82\x01\n\x0bKFJFHKLJKAK\
-    \x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12!\n\x06reward\
-    \x18\x0b\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x20\n\x0bAFEMBLFCCCH\
-    \x18\x0c\x20\x01(\rR\x0bAFEMBLFCCCH\x12\x14\n\x05level\x18\x0e\x20\x01(\
-    \rR\x05levelb\x06proto3\
+    \x12!\n\x06reward\x18\x02\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x20\n\
+    \x0bAFEMBLFCCCH\x18\x04\x20\x01(\rR\x0bAFEMBLFCCCH\x12\x18\n\x07retcode\
+    \x18\x0e\x20\x01(\rR\x07retcode\x12\x14\n\x05level\x18\x0f\x20\x01(\rR\
+    \x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

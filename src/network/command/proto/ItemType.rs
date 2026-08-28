@@ -27,18 +27,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:ItemType)
 pub enum ItemType {
-    // @@protoc_insertion_point(enum_value:ItemType.ITEM_TYPE_NONE)
-    ITEM_TYPE_NONE = 0,
-    // @@protoc_insertion_point(enum_value:ItemType.ITEM_AVATAR_CARD)
-    ITEM_AVATAR_CARD = 1,
-    // @@protoc_insertion_point(enum_value:ItemType.ITEM_EQUIPMENT)
-    ITEM_EQUIPMENT = 2,
-    // @@protoc_insertion_point(enum_value:ItemType.ITEM_MATERIAL)
-    ITEM_MATERIAL = 3,
-    // @@protoc_insertion_point(enum_value:ItemType.ITEM_AVATAR_EXP)
-    ITEM_AVATAR_EXP = 4,
-    // @@protoc_insertion_point(enum_value:ItemType.ITEM_RELIC)
-    ITEM_RELIC = 5,
+    // @@protoc_insertion_point(enum_value:ItemType.ItemType_NLCDGIPGFDJ)
+    ItemType_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:ItemType.ItemType_HGDFFGKMIDI)
+    ItemType_HGDFFGKMIDI = 1,
+    // @@protoc_insertion_point(enum_value:ItemType.ItemType_AOHLPPDPDJK)
+    ItemType_AOHLPPDPDJK = 2,
+    // @@protoc_insertion_point(enum_value:ItemType.ItemType_OEEOPPFKEOA)
+    ItemType_OEEOPPFKEOA = 3,
+    // @@protoc_insertion_point(enum_value:ItemType.ItemType_DLJHAOECAGP)
+    ItemType_DLJHAOECAGP = 4,
+    // @@protoc_insertion_point(enum_value:ItemType.ItemType_CJDPBLADCIH)
+    ItemType_CJDPBLADCIH = 5,
 }
 
 impl ::protobuf::Enum for ItemType {
@@ -50,35 +50,35 @@ impl ::protobuf::Enum for ItemType {
 
     fn from_i32(value: i32) -> ::std::option::Option<ItemType> {
         match value {
-            0 => ::std::option::Option::Some(ItemType::ITEM_TYPE_NONE),
-            1 => ::std::option::Option::Some(ItemType::ITEM_AVATAR_CARD),
-            2 => ::std::option::Option::Some(ItemType::ITEM_EQUIPMENT),
-            3 => ::std::option::Option::Some(ItemType::ITEM_MATERIAL),
-            4 => ::std::option::Option::Some(ItemType::ITEM_AVATAR_EXP),
-            5 => ::std::option::Option::Some(ItemType::ITEM_RELIC),
+            0 => ::std::option::Option::Some(ItemType::ItemType_NLCDGIPGFDJ),
+            1 => ::std::option::Option::Some(ItemType::ItemType_HGDFFGKMIDI),
+            2 => ::std::option::Option::Some(ItemType::ItemType_AOHLPPDPDJK),
+            3 => ::std::option::Option::Some(ItemType::ItemType_OEEOPPFKEOA),
+            4 => ::std::option::Option::Some(ItemType::ItemType_DLJHAOECAGP),
+            5 => ::std::option::Option::Some(ItemType::ItemType_CJDPBLADCIH),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<ItemType> {
         match str {
-            "ITEM_TYPE_NONE" => ::std::option::Option::Some(ItemType::ITEM_TYPE_NONE),
-            "ITEM_AVATAR_CARD" => ::std::option::Option::Some(ItemType::ITEM_AVATAR_CARD),
-            "ITEM_EQUIPMENT" => ::std::option::Option::Some(ItemType::ITEM_EQUIPMENT),
-            "ITEM_MATERIAL" => ::std::option::Option::Some(ItemType::ITEM_MATERIAL),
-            "ITEM_AVATAR_EXP" => ::std::option::Option::Some(ItemType::ITEM_AVATAR_EXP),
-            "ITEM_RELIC" => ::std::option::Option::Some(ItemType::ITEM_RELIC),
+            "ItemType_NLCDGIPGFDJ" => ::std::option::Option::Some(ItemType::ItemType_NLCDGIPGFDJ),
+            "ItemType_HGDFFGKMIDI" => ::std::option::Option::Some(ItemType::ItemType_HGDFFGKMIDI),
+            "ItemType_AOHLPPDPDJK" => ::std::option::Option::Some(ItemType::ItemType_AOHLPPDPDJK),
+            "ItemType_OEEOPPFKEOA" => ::std::option::Option::Some(ItemType::ItemType_OEEOPPFKEOA),
+            "ItemType_DLJHAOECAGP" => ::std::option::Option::Some(ItemType::ItemType_DLJHAOECAGP),
+            "ItemType_CJDPBLADCIH" => ::std::option::Option::Some(ItemType::ItemType_CJDPBLADCIH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [ItemType] = &[
-        ItemType::ITEM_TYPE_NONE,
-        ItemType::ITEM_AVATAR_CARD,
-        ItemType::ITEM_EQUIPMENT,
-        ItemType::ITEM_MATERIAL,
-        ItemType::ITEM_AVATAR_EXP,
-        ItemType::ITEM_RELIC,
+        ItemType::ItemType_NLCDGIPGFDJ,
+        ItemType::ItemType_HGDFFGKMIDI,
+        ItemType::ItemType_AOHLPPDPDJK,
+        ItemType::ItemType_OEEOPPFKEOA,
+        ItemType::ItemType_DLJHAOECAGP,
+        ItemType::ItemType_CJDPBLADCIH,
     ];
 }
 
@@ -96,7 +96,7 @@ impl ::protobuf::EnumFull for ItemType {
 
 impl ::std::default::Default for ItemType {
     fn default() -> Self {
-        ItemType::ITEM_TYPE_NONE
+        ItemType::ItemType_NLCDGIPGFDJ
     }
 }
 
@@ -107,10 +107,11 @@ impl ItemType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0eItemType.proto*\x80\x01\n\x08ItemType\x12\x12\n\x0eITEM_TYPE_NONE\
-    \x10\0\x12\x14\n\x10ITEM_AVATAR_CARD\x10\x01\x12\x12\n\x0eITEM_EQUIPMENT\
-    \x10\x02\x12\x11\n\rITEM_MATERIAL\x10\x03\x12\x13\n\x0fITEM_AVATAR_EXP\
-    \x10\x04\x12\x0e\n\nITEM_RELIC\x10\x05b\x06proto3\
+    \n\x0eItemType.proto*\xa6\x01\n\x08ItemType\x12\x18\n\x14ItemType_NLCDGI\
+    PGFDJ\x10\0\x12\x18\n\x14ItemType_HGDFFGKMIDI\x10\x01\x12\x18\n\x14ItemT\
+    ype_AOHLPPDPDJK\x10\x02\x12\x18\n\x14ItemType_OEEOPPFKEOA\x10\x03\x12\
+    \x18\n\x14ItemType_DLJHAOECAGP\x10\x04\x12\x18\n\x14ItemType_CJDPBLADCIH\
+    \x10\x05b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

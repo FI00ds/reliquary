@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MDJAPHPOABA {
     // message fields
-    // @@protoc_insertion_point(field:MDJAPHPOABA.is_selected)
-    pub is_selected: bool,
+    // @@protoc_insertion_point(field:MDJAPHPOABA.HELJNHNDCJP)
+    pub HELJNHNDCJP: bool,
     // @@protoc_insertion_point(field:MDJAPHPOABA.HAFOKMHCGFM)
     pub HAFOKMHCGFM: u32,
     // special fields
@@ -52,9 +52,9 @@ impl MDJAPHPOABA {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_selected",
-            |m: &MDJAPHPOABA| { &m.is_selected },
-            |m: &mut MDJAPHPOABA| { &mut m.is_selected },
+            "HELJNHNDCJP",
+            |m: &MDJAPHPOABA| { &m.HELJNHNDCJP },
+            |m: &mut MDJAPHPOABA| { &mut m.HELJNHNDCJP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HAFOKMHCGFM",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for MDJAPHPOABA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.is_selected = is.read_bool()?;
+                8 => {
+                    self.HELJNHNDCJP = is.read_bool()?;
                 },
-                24 => {
+                112 => {
                     self.HAFOKMHCGFM = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for MDJAPHPOABA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_selected != false {
+        if self.HELJNHNDCJP != false {
             my_size += 1 + 1;
         }
         if self.HAFOKMHCGFM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.HAFOKMHCGFM);
+            my_size += ::protobuf::rt::uint32_size(14, self.HAFOKMHCGFM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for MDJAPHPOABA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_selected != false {
-            os.write_bool(2, self.is_selected)?;
+        if self.HELJNHNDCJP != false {
+            os.write_bool(1, self.HELJNHNDCJP)?;
         }
         if self.HAFOKMHCGFM != 0 {
-            os.write_uint32(3, self.HAFOKMHCGFM)?;
+            os.write_uint32(14, self.HAFOKMHCGFM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for MDJAPHPOABA {
     }
 
     fn clear(&mut self) {
-        self.is_selected = false;
+        self.HELJNHNDCJP = false;
         self.HAFOKMHCGFM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MDJAPHPOABA {
         static instance: MDJAPHPOABA = MDJAPHPOABA {
-            is_selected: false,
+            HELJNHNDCJP: false,
             HAFOKMHCGFM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for MDJAPHPOABA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MDJAPHPOABA.proto\"P\n\x0bMDJAPHPOABA\x12\x1f\n\x0bis_selected\x18\
-    \x02\x20\x01(\x08R\nisSelected\x12\x20\n\x0bHAFOKMHCGFM\x18\x03\x20\x01(\
-    \rR\x0bHAFOKMHCGFMb\x06proto3\
+    \n\x11MDJAPHPOABA.proto\"Q\n\x0bMDJAPHPOABA\x12\x20\n\x0bHELJNHNDCJP\x18\
+    \x01\x20\x01(\x08R\x0bHELJNHNDCJP\x12\x20\n\x0bHAFOKMHCGFM\x18\x0e\x20\
+    \x01(\rR\x0bHAFOKMHCGFMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

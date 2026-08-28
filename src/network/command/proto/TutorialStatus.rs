@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:TutorialStatus)
 pub enum TutorialStatus {
-    // @@protoc_insertion_point(enum_value:TutorialStatus.TUTORIAL_NONE)
-    TUTORIAL_NONE = 0,
-    // @@protoc_insertion_point(enum_value:TutorialStatus.TUTORIAL_UNLOCK)
-    TUTORIAL_UNLOCK = 1,
-    // @@protoc_insertion_point(enum_value:TutorialStatus.TUTORIAL_FINISH)
-    TUTORIAL_FINISH = 2,
+    // @@protoc_insertion_point(enum_value:TutorialStatus.TutorialStatus_TutorialNone)
+    TutorialStatus_TutorialNone = 0,
+    // @@protoc_insertion_point(enum_value:TutorialStatus.TutorialStatus_TutorialUnlock)
+    TutorialStatus_TutorialUnlock = 1,
+    // @@protoc_insertion_point(enum_value:TutorialStatus.TutorialStatus_TutorialFinish)
+    TutorialStatus_TutorialFinish = 2,
 }
 
 impl ::protobuf::Enum for TutorialStatus {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for TutorialStatus {
 
     fn from_i32(value: i32) -> ::std::option::Option<TutorialStatus> {
         match value {
-            0 => ::std::option::Option::Some(TutorialStatus::TUTORIAL_NONE),
-            1 => ::std::option::Option::Some(TutorialStatus::TUTORIAL_UNLOCK),
-            2 => ::std::option::Option::Some(TutorialStatus::TUTORIAL_FINISH),
+            0 => ::std::option::Option::Some(TutorialStatus::TutorialStatus_TutorialNone),
+            1 => ::std::option::Option::Some(TutorialStatus::TutorialStatus_TutorialUnlock),
+            2 => ::std::option::Option::Some(TutorialStatus::TutorialStatus_TutorialFinish),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<TutorialStatus> {
         match str {
-            "TUTORIAL_NONE" => ::std::option::Option::Some(TutorialStatus::TUTORIAL_NONE),
-            "TUTORIAL_UNLOCK" => ::std::option::Option::Some(TutorialStatus::TUTORIAL_UNLOCK),
-            "TUTORIAL_FINISH" => ::std::option::Option::Some(TutorialStatus::TUTORIAL_FINISH),
+            "TutorialStatus_TutorialNone" => ::std::option::Option::Some(TutorialStatus::TutorialStatus_TutorialNone),
+            "TutorialStatus_TutorialUnlock" => ::std::option::Option::Some(TutorialStatus::TutorialStatus_TutorialUnlock),
+            "TutorialStatus_TutorialFinish" => ::std::option::Option::Some(TutorialStatus::TutorialStatus_TutorialFinish),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [TutorialStatus] = &[
-        TutorialStatus::TUTORIAL_NONE,
-        TutorialStatus::TUTORIAL_UNLOCK,
-        TutorialStatus::TUTORIAL_FINISH,
+        TutorialStatus::TutorialStatus_TutorialNone,
+        TutorialStatus::TutorialStatus_TutorialUnlock,
+        TutorialStatus::TutorialStatus_TutorialFinish,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for TutorialStatus {
 
 impl ::std::default::Default for TutorialStatus {
     fn default() -> Self {
-        TutorialStatus::TUTORIAL_NONE
+        TutorialStatus::TutorialStatus_TutorialNone
     }
 }
 
@@ -92,9 +92,9 @@ impl TutorialStatus {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14TutorialStatus.proto*M\n\x0eTutorialStatus\x12\x11\n\rTUTORIAL_NON\
-    E\x10\0\x12\x13\n\x0fTUTORIAL_UNLOCK\x10\x01\x12\x13\n\x0fTUTORIAL_FINIS\
-    H\x10\x02b\x06proto3\
+    \n\x14TutorialStatus.proto*w\n\x0eTutorialStatus\x12\x1f\n\x1bTutorialSt\
+    atus_TutorialNone\x10\0\x12!\n\x1dTutorialStatus_TutorialUnlock\x10\x01\
+    \x12!\n\x1dTutorialStatus_TutorialFinish\x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

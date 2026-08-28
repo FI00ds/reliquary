@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MNKGDKAIELH {
     // message fields
-    // @@protoc_insertion_point(field:MNKGDKAIELH.HBGLEOAJJGE)
-    pub HBGLEOAJJGE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MNKGDKAIELH.LHNHMFEKNDJ)
+    pub LHNHMFEKNDJ: bool,
     // @@protoc_insertion_point(field:MNKGDKAIELH.DOOACEHOPEE)
     pub DOOACEHOPEE: u32,
     // @@protoc_insertion_point(field:MNKGDKAIELH.status)
     pub status: ::protobuf::EnumOrUnknown<super::TrainVisitorStatus::TrainVisitorStatus>,
     // @@protoc_insertion_point(field:MNKGDKAIELH.IMHLMHKOPLD)
     pub IMHLMHKOPLD: u32,
-    // @@protoc_insertion_point(field:MNKGDKAIELH.LHNHMFEKNDJ)
-    pub LHNHMFEKNDJ: bool,
+    // @@protoc_insertion_point(field:MNKGDKAIELH.HBGLEOAJJGE)
+    pub HBGLEOAJJGE: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MNKGDKAIELH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,10 +57,10 @@ impl MNKGDKAIELH {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HBGLEOAJJGE",
-            |m: &MNKGDKAIELH| { &m.HBGLEOAJJGE },
-            |m: &mut MNKGDKAIELH| { &mut m.HBGLEOAJJGE },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LHNHMFEKNDJ",
+            |m: &MNKGDKAIELH| { &m.LHNHMFEKNDJ },
+            |m: &mut MNKGDKAIELH| { &mut m.LHNHMFEKNDJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DOOACEHOPEE",
@@ -77,10 +77,10 @@ impl MNKGDKAIELH {
             |m: &MNKGDKAIELH| { &m.IMHLMHKOPLD },
             |m: &mut MNKGDKAIELH| { &mut m.IMHLMHKOPLD },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LHNHMFEKNDJ",
-            |m: &MNKGDKAIELH| { &m.LHNHMFEKNDJ },
-            |m: &mut MNKGDKAIELH| { &mut m.LHNHMFEKNDJ },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HBGLEOAJJGE",
+            |m: &MNKGDKAIELH| { &m.HBGLEOAJJGE },
+            |m: &mut MNKGDKAIELH| { &mut m.HBGLEOAJJGE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MNKGDKAIELH>(
             "MNKGDKAIELH",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for MNKGDKAIELH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HBGLEOAJJGE)?;
+                8 => {
+                    self.LHNHMFEKNDJ = is.read_bool()?;
                 },
-                16 => {
-                    self.HBGLEOAJJGE.push(is.read_uint32()?);
-                },
-                40 => {
+                24 => {
                     self.DOOACEHOPEE = is.read_uint32()?;
                 },
-                48 => {
+                32 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
-                64 => {
+                80 => {
                     self.IMHLMHKOPLD = is.read_uint32()?;
                 },
-                104 => {
-                    self.LHNHMFEKNDJ = is.read_bool()?;
+                98 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HBGLEOAJJGE)?;
+                },
+                96 => {
+                    self.HBGLEOAJJGE.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,38 +130,38 @@ impl ::protobuf::Message for MNKGDKAIELH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.HBGLEOAJJGE);
-        if self.DOOACEHOPEE != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.DOOACEHOPEE);
-        }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::TrainVisitorStatus::TrainVisitorStatus::LDMCCFPAPOL_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(6, self.status.value());
-        }
-        if self.IMHLMHKOPLD != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.IMHLMHKOPLD);
-        }
         if self.LHNHMFEKNDJ != false {
             my_size += 1 + 1;
         }
+        if self.DOOACEHOPEE != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.DOOACEHOPEE);
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::TrainVisitorStatus::TrainVisitorStatus::TrainVisitorStatus_None) {
+            my_size += ::protobuf::rt::int32_size(4, self.status.value());
+        }
+        if self.IMHLMHKOPLD != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.IMHLMHKOPLD);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.HBGLEOAJJGE);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.HBGLEOAJJGE)?;
-        if self.DOOACEHOPEE != 0 {
-            os.write_uint32(5, self.DOOACEHOPEE)?;
+        if self.LHNHMFEKNDJ != false {
+            os.write_bool(1, self.LHNHMFEKNDJ)?;
         }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::TrainVisitorStatus::TrainVisitorStatus::LDMCCFPAPOL_NLCDGIPGFDJ) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        if self.DOOACEHOPEE != 0 {
+            os.write_uint32(3, self.DOOACEHOPEE)?;
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::TrainVisitorStatus::TrainVisitorStatus::TrainVisitorStatus_None) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         if self.IMHLMHKOPLD != 0 {
-            os.write_uint32(8, self.IMHLMHKOPLD)?;
+            os.write_uint32(10, self.IMHLMHKOPLD)?;
         }
-        if self.LHNHMFEKNDJ != false {
-            os.write_bool(13, self.LHNHMFEKNDJ)?;
-        }
+        os.write_repeated_packed_uint32(12, &self.HBGLEOAJJGE)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -179,21 +179,21 @@ impl ::protobuf::Message for MNKGDKAIELH {
     }
 
     fn clear(&mut self) {
-        self.HBGLEOAJJGE.clear();
-        self.DOOACEHOPEE = 0;
-        self.status = ::protobuf::EnumOrUnknown::new(super::TrainVisitorStatus::TrainVisitorStatus::LDMCCFPAPOL_NLCDGIPGFDJ);
-        self.IMHLMHKOPLD = 0;
         self.LHNHMFEKNDJ = false;
+        self.DOOACEHOPEE = 0;
+        self.status = ::protobuf::EnumOrUnknown::new(super::TrainVisitorStatus::TrainVisitorStatus::TrainVisitorStatus_None);
+        self.IMHLMHKOPLD = 0;
+        self.HBGLEOAJJGE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MNKGDKAIELH {
         static instance: MNKGDKAIELH = MNKGDKAIELH {
-            HBGLEOAJJGE: ::std::vec::Vec::new(),
+            LHNHMFEKNDJ: false,
             DOOACEHOPEE: 0,
             status: ::protobuf::EnumOrUnknown::from_i32(0),
             IMHLMHKOPLD: 0,
-            LHNHMFEKNDJ: false,
+            HBGLEOAJJGE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for MNKGDKAIELH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MNKGDKAIELH.proto\x1a\x18TrainVisitorStatus.proto\"\xc2\x01\n\x0bM\
-    NKGDKAIELH\x12\x20\n\x0bHBGLEOAJJGE\x18\x02\x20\x03(\rR\x0bHBGLEOAJJGE\
-    \x12\x20\n\x0bDOOACEHOPEE\x18\x05\x20\x01(\rR\x0bDOOACEHOPEE\x12+\n\x06s\
-    tatus\x18\x06\x20\x01(\x0e2\x13.TrainVisitorStatusR\x06status\x12\x20\n\
-    \x0bIMHLMHKOPLD\x18\x08\x20\x01(\rR\x0bIMHLMHKOPLD\x12\x20\n\x0bLHNHMFEK\
-    NDJ\x18\r\x20\x01(\x08R\x0bLHNHMFEKNDJb\x06proto3\
+    NKGDKAIELH\x12\x20\n\x0bLHNHMFEKNDJ\x18\x01\x20\x01(\x08R\x0bLHNHMFEKNDJ\
+    \x12\x20\n\x0bDOOACEHOPEE\x18\x03\x20\x01(\rR\x0bDOOACEHOPEE\x12+\n\x06s\
+    tatus\x18\x04\x20\x01(\x0e2\x13.TrainVisitorStatusR\x06status\x12\x20\n\
+    \x0bIMHLMHKOPLD\x18\n\x20\x01(\rR\x0bIMHLMHKOPLD\x12\x20\n\x0bHBGLEOAJJG\
+    E\x18\x0c\x20\x03(\rR\x0bHBGLEOAJJGEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

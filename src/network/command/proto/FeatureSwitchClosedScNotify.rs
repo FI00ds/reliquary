@@ -87,7 +87,7 @@ impl ::protobuf::Message for FeatureSwitchClosedScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FMGLEBCIBHG != ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::BLOHGFCFEEL_OLLFDOONPPH) {
+        if self.FMGLEBCIBHG != ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::FeatureSwitchType_FeatureSwitchNone) {
             my_size += ::protobuf::rt::int32_size(6, self.FMGLEBCIBHG.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -96,7 +96,7 @@ impl ::protobuf::Message for FeatureSwitchClosedScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FMGLEBCIBHG != ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::BLOHGFCFEEL_OLLFDOONPPH) {
+        if self.FMGLEBCIBHG != ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::FeatureSwitchType_FeatureSwitchNone) {
             os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.FMGLEBCIBHG))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -116,7 +116,7 @@ impl ::protobuf::Message for FeatureSwitchClosedScNotify {
     }
 
     fn clear(&mut self) {
-        self.FMGLEBCIBHG = ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::BLOHGFCFEEL_OLLFDOONPPH);
+        self.FMGLEBCIBHG = ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::FeatureSwitchType_FeatureSwitchNone);
         self.special_fields.clear();
     }
 

@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OGAFHKMJELA {
     // message fields
-    // @@protoc_insertion_point(field:OGAFHKMJELA.total_score)
-    pub total_score: u32,
-    // @@protoc_insertion_point(field:OGAFHKMJELA.reach_point)
-    pub reach_point: u32,
+    // @@protoc_insertion_point(field:OGAFHKMJELA.CELHPMMLHGL)
+    pub CELHPMMLHGL: u32,
+    // @@protoc_insertion_point(field:OGAFHKMJELA.PILDIPCFMIL)
+    pub PILDIPCFMIL: u32,
+    // @@protoc_insertion_point(field:OGAFHKMJELA.OENPDHNALLA)
+    pub OENPDHNALLA: u32,
+    // @@protoc_insertion_point(field:OGAFHKMJELA.DJEIMGGHMGM)
+    pub DJEIMGGHMGM: u32,
+    // @@protoc_insertion_point(field:OGAFHKMJELA.EEOEFLKFNIM)
+    pub EEOEFLKFNIM: ::std::vec::Vec<super::ELBILFGFDHA::ELBILFGFDHA>,
+    // @@protoc_insertion_point(field:OGAFHKMJELA.JPOOHONHFJI)
+    pub JPOOHONHFJI: ::std::vec::Vec<super::DJBJMHKMOMB::DJBJMHKMOMB>,
     // @@protoc_insertion_point(field:OGAFHKMJELA.CLMFKHAJKLH)
     pub CLMFKHAJKLH: u32,
     // @@protoc_insertion_point(field:OGAFHKMJELA.COBENBOBPKD)
     pub COBENBOBPKD: ::std::vec::Vec<super::DKIGCLFPGFO::DKIGCLFPGFO>,
-    // @@protoc_insertion_point(field:OGAFHKMJELA.CELHPMMLHGL)
-    pub CELHPMMLHGL: u32,
-    // @@protoc_insertion_point(field:OGAFHKMJELA.OENPDHNALLA)
-    pub OENPDHNALLA: u32,
-    // @@protoc_insertion_point(field:OGAFHKMJELA.JPOOHONHFJI)
-    pub JPOOHONHFJI: ::std::vec::Vec<super::DJBJMHKMOMB::DJBJMHKMOMB>,
-    // @@protoc_insertion_point(field:OGAFHKMJELA.EEOEFLKFNIM)
-    pub EEOEFLKFNIM: ::std::vec::Vec<super::ELBILFGFDHA::ELBILFGFDHA>,
     // special fields
     // @@protoc_insertion_point(special_field:OGAFHKMJELA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,14 +64,34 @@ impl OGAFHKMJELA {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "total_score",
-            |m: &OGAFHKMJELA| { &m.total_score },
-            |m: &mut OGAFHKMJELA| { &mut m.total_score },
+            "CELHPMMLHGL",
+            |m: &OGAFHKMJELA| { &m.CELHPMMLHGL },
+            |m: &mut OGAFHKMJELA| { &mut m.CELHPMMLHGL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "reach_point",
-            |m: &OGAFHKMJELA| { &m.reach_point },
-            |m: &mut OGAFHKMJELA| { &mut m.reach_point },
+            "PILDIPCFMIL",
+            |m: &OGAFHKMJELA| { &m.PILDIPCFMIL },
+            |m: &mut OGAFHKMJELA| { &mut m.PILDIPCFMIL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OENPDHNALLA",
+            |m: &OGAFHKMJELA| { &m.OENPDHNALLA },
+            |m: &mut OGAFHKMJELA| { &mut m.OENPDHNALLA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DJEIMGGHMGM",
+            |m: &OGAFHKMJELA| { &m.DJEIMGGHMGM },
+            |m: &mut OGAFHKMJELA| { &mut m.DJEIMGGHMGM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EEOEFLKFNIM",
+            |m: &OGAFHKMJELA| { &m.EEOEFLKFNIM },
+            |m: &mut OGAFHKMJELA| { &mut m.EEOEFLKFNIM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JPOOHONHFJI",
+            |m: &OGAFHKMJELA| { &m.JPOOHONHFJI },
+            |m: &mut OGAFHKMJELA| { &mut m.JPOOHONHFJI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CLMFKHAJKLH",
@@ -82,26 +102,6 @@ impl OGAFHKMJELA {
             "COBENBOBPKD",
             |m: &OGAFHKMJELA| { &m.COBENBOBPKD },
             |m: &mut OGAFHKMJELA| { &mut m.COBENBOBPKD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CELHPMMLHGL",
-            |m: &OGAFHKMJELA| { &m.CELHPMMLHGL },
-            |m: &mut OGAFHKMJELA| { &mut m.CELHPMMLHGL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OENPDHNALLA",
-            |m: &OGAFHKMJELA| { &m.OENPDHNALLA },
-            |m: &mut OGAFHKMJELA| { &mut m.OENPDHNALLA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JPOOHONHFJI",
-            |m: &OGAFHKMJELA| { &m.JPOOHONHFJI },
-            |m: &mut OGAFHKMJELA| { &mut m.JPOOHONHFJI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EEOEFLKFNIM",
-            |m: &OGAFHKMJELA| { &m.EEOEFLKFNIM },
-            |m: &mut OGAFHKMJELA| { &mut m.EEOEFLKFNIM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OGAFHKMJELA>(
             "OGAFHKMJELA",
@@ -121,29 +121,29 @@ impl ::protobuf::Message for OGAFHKMJELA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.total_score = is.read_uint32()?;
-                },
-                56 => {
-                    self.reach_point = is.read_uint32()?;
-                },
-                72 => {
-                    self.CLMFKHAJKLH = is.read_uint32()?;
-                },
-                82 => {
-                    self.COBENBOBPKD.push(is.read_message()?);
-                },
-                88 => {
+                8 => {
                     self.CELHPMMLHGL = is.read_uint32()?;
                 },
-                96 => {
+                40 => {
+                    self.PILDIPCFMIL = is.read_uint32()?;
+                },
+                48 => {
                     self.OENPDHNALLA = is.read_uint32()?;
                 },
-                114 => {
+                56 => {
+                    self.DJEIMGGHMGM = is.read_uint32()?;
+                },
+                66 => {
+                    self.EEOEFLKFNIM.push(is.read_message()?);
+                },
+                90 => {
                     self.JPOOHONHFJI.push(is.read_message()?);
                 },
-                122 => {
-                    self.EEOEFLKFNIM.push(is.read_message()?);
+                104 => {
+                    self.CLMFKHAJKLH = is.read_uint32()?;
+                },
+                114 => {
+                    self.COBENBOBPKD.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -157,30 +157,30 @@ impl ::protobuf::Message for OGAFHKMJELA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.total_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.total_score);
+        if self.CELHPMMLHGL != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.CELHPMMLHGL);
         }
-        if self.reach_point != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.reach_point);
+        if self.PILDIPCFMIL != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.PILDIPCFMIL);
         }
-        if self.CLMFKHAJKLH != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.CLMFKHAJKLH);
+        if self.OENPDHNALLA != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.OENPDHNALLA);
         }
-        for value in &self.COBENBOBPKD {
+        if self.DJEIMGGHMGM != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.DJEIMGGHMGM);
+        }
+        for value in &self.EEOEFLKFNIM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.CELHPMMLHGL != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.CELHPMMLHGL);
-        }
-        if self.OENPDHNALLA != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.OENPDHNALLA);
-        }
         for value in &self.JPOOHONHFJI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.EEOEFLKFNIM {
+        if self.CLMFKHAJKLH != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.CLMFKHAJKLH);
+        }
+        for value in &self.COBENBOBPKD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -190,29 +190,29 @@ impl ::protobuf::Message for OGAFHKMJELA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.total_score != 0 {
-            os.write_uint32(2, self.total_score)?;
-        }
-        if self.reach_point != 0 {
-            os.write_uint32(7, self.reach_point)?;
-        }
-        if self.CLMFKHAJKLH != 0 {
-            os.write_uint32(9, self.CLMFKHAJKLH)?;
-        }
-        for v in &self.COBENBOBPKD {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
         if self.CELHPMMLHGL != 0 {
-            os.write_uint32(11, self.CELHPMMLHGL)?;
+            os.write_uint32(1, self.CELHPMMLHGL)?;
+        }
+        if self.PILDIPCFMIL != 0 {
+            os.write_uint32(5, self.PILDIPCFMIL)?;
         }
         if self.OENPDHNALLA != 0 {
-            os.write_uint32(12, self.OENPDHNALLA)?;
+            os.write_uint32(6, self.OENPDHNALLA)?;
         }
-        for v in &self.JPOOHONHFJI {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        };
+        if self.DJEIMGGHMGM != 0 {
+            os.write_uint32(7, self.DJEIMGGHMGM)?;
+        }
         for v in &self.EEOEFLKFNIM {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
+        for v in &self.JPOOHONHFJI {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
+        if self.CLMFKHAJKLH != 0 {
+            os.write_uint32(13, self.CLMFKHAJKLH)?;
+        }
+        for v in &self.COBENBOBPKD {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -231,27 +231,27 @@ impl ::protobuf::Message for OGAFHKMJELA {
     }
 
     fn clear(&mut self) {
-        self.total_score = 0;
-        self.reach_point = 0;
+        self.CELHPMMLHGL = 0;
+        self.PILDIPCFMIL = 0;
+        self.OENPDHNALLA = 0;
+        self.DJEIMGGHMGM = 0;
+        self.EEOEFLKFNIM.clear();
+        self.JPOOHONHFJI.clear();
         self.CLMFKHAJKLH = 0;
         self.COBENBOBPKD.clear();
-        self.CELHPMMLHGL = 0;
-        self.OENPDHNALLA = 0;
-        self.JPOOHONHFJI.clear();
-        self.EEOEFLKFNIM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OGAFHKMJELA {
         static instance: OGAFHKMJELA = OGAFHKMJELA {
-            total_score: 0,
-            reach_point: 0,
+            CELHPMMLHGL: 0,
+            PILDIPCFMIL: 0,
+            OENPDHNALLA: 0,
+            DJEIMGGHMGM: 0,
+            EEOEFLKFNIM: ::std::vec::Vec::new(),
+            JPOOHONHFJI: ::std::vec::Vec::new(),
             CLMFKHAJKLH: 0,
             COBENBOBPKD: ::std::vec::Vec::new(),
-            CELHPMMLHGL: 0,
-            OENPDHNALLA: 0,
-            JPOOHONHFJI: ::std::vec::Vec::new(),
-            EEOEFLKFNIM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -277,15 +277,15 @@ impl ::protobuf::reflect::ProtobufValue for OGAFHKMJELA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OGAFHKMJELA.proto\x1a\x11DJBJMHKMOMB.proto\x1a\x11DKIGCLFPGFO.prot\
-    o\x1a\x11ELBILFGFDHA.proto\"\xc5\x02\n\x0bOGAFHKMJELA\x12\x1f\n\x0btotal\
-    _score\x18\x02\x20\x01(\rR\ntotalScore\x12\x1f\n\x0breach_point\x18\x07\
-    \x20\x01(\rR\nreachPoint\x12\x20\n\x0bCLMFKHAJKLH\x18\t\x20\x01(\rR\x0bC\
-    LMFKHAJKLH\x12.\n\x0bCOBENBOBPKD\x18\n\x20\x03(\x0b2\x0c.DKIGCLFPGFOR\
-    \x0bCOBENBOBPKD\x12\x20\n\x0bCELHPMMLHGL\x18\x0b\x20\x01(\rR\x0bCELHPMML\
-    HGL\x12\x20\n\x0bOENPDHNALLA\x18\x0c\x20\x01(\rR\x0bOENPDHNALLA\x12.\n\
-    \x0bJPOOHONHFJI\x18\x0e\x20\x03(\x0b2\x0c.DJBJMHKMOMBR\x0bJPOOHONHFJI\
-    \x12.\n\x0bEEOEFLKFNIM\x18\x0f\x20\x03(\x0b2\x0c.ELBILFGFDHAR\x0bEEOEFLK\
-    FNIMb\x06proto3\
+    o\x1a\x11ELBILFGFDHA.proto\"\xc7\x02\n\x0bOGAFHKMJELA\x12\x20\n\x0bCELHP\
+    MMLHGL\x18\x01\x20\x01(\rR\x0bCELHPMMLHGL\x12\x20\n\x0bPILDIPCFMIL\x18\
+    \x05\x20\x01(\rR\x0bPILDIPCFMIL\x12\x20\n\x0bOENPDHNALLA\x18\x06\x20\x01\
+    (\rR\x0bOENPDHNALLA\x12\x20\n\x0bDJEIMGGHMGM\x18\x07\x20\x01(\rR\x0bDJEI\
+    MGGHMGM\x12.\n\x0bEEOEFLKFNIM\x18\x08\x20\x03(\x0b2\x0c.ELBILFGFDHAR\x0b\
+    EEOEFLKFNIM\x12.\n\x0bJPOOHONHFJI\x18\x0b\x20\x03(\x0b2\x0c.DJBJMHKMOMBR\
+    \x0bJPOOHONHFJI\x12\x20\n\x0bCLMFKHAJKLH\x18\r\x20\x01(\rR\x0bCLMFKHAJKL\
+    H\x12.\n\x0bCOBENBOBPKD\x18\x0e\x20\x03(\x0b2\x0c.DKIGCLFPGFOR\x0bCOBENB\
+    OBPKDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -82,7 +82,7 @@ impl ::protobuf::Message for LHCOHLJIAII {
                 56 => {
                     self.num = is.read_uint32()?;
                 },
-                104 => {
+                96 => {
                     self.role_id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for LHCOHLJIAII {
             my_size += ::protobuf::rt::uint32_size(7, self.num);
         }
         if self.role_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.role_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.role_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for LHCOHLJIAII {
             os.write_uint32(7, self.num)?;
         }
         if self.role_id != 0 {
-            os.write_uint32(13, self.role_id)?;
+            os.write_uint32(12, self.role_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for LHCOHLJIAII {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LHCOHLJIAII.proto\"8\n\x0bLHCOHLJIAII\x12\x10\n\x03num\x18\x07\x20\
-    \x01(\rR\x03num\x12\x17\n\x07role_id\x18\r\x20\x01(\rR\x06roleIdb\x06pro\
-    to3\
+    \x01(\rR\x03num\x12\x17\n\x07role_id\x18\x0c\x20\x01(\rR\x06roleIdb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

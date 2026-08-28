@@ -31,7 +31,7 @@ pub struct CCGJDDBKIDE {
     // @@protoc_insertion_point(field:CCGJDDBKIDE.IMJBFLJPMJB)
     pub IMJBFLJPMJB: u32,
     // @@protoc_insertion_point(field:CCGJDDBKIDE.type)
-    pub type_: ::protobuf::EnumOrUnknown<super::BBFEFIPJMEB::BBFEFIPJMEB>,
+    pub type_: ::protobuf::EnumOrUnknown<ccgjddbkide::oakdcenfilp::BBFEFIPJMEB>,
     // special fields
     // @@protoc_insertion_point(special_field:CCGJDDBKIDE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -79,7 +79,7 @@ impl ::protobuf::Message for CCGJDDBKIDE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                88 => {
                     self.IMJBFLJPMJB = is.read_uint32()?;
                 },
                 96 => {
@@ -98,9 +98,9 @@ impl ::protobuf::Message for CCGJDDBKIDE {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IMJBFLJPMJB != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.IMJBFLJPMJB);
+            my_size += ::protobuf::rt::uint32_size(11, self.IMJBFLJPMJB);
         }
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::BBFEFIPJMEB::BBFEFIPJMEB::BBFEFIPJMEB_OHDJNICJKLK) {
+        if self.type_ != ::protobuf::EnumOrUnknown::new(ccgjddbkide::oakdcenfilp::BBFEFIPJMEB::BBFEFIPJMEB_OHDJNICJKLK) {
             my_size += ::protobuf::rt::int32_size(12, self.type_.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -110,9 +110,9 @@ impl ::protobuf::Message for CCGJDDBKIDE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IMJBFLJPMJB != 0 {
-            os.write_uint32(1, self.IMJBFLJPMJB)?;
+            os.write_uint32(11, self.IMJBFLJPMJB)?;
         }
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::BBFEFIPJMEB::BBFEFIPJMEB::BBFEFIPJMEB_OHDJNICJKLK) {
+        if self.type_ != ::protobuf::EnumOrUnknown::new(ccgjddbkide::oakdcenfilp::BBFEFIPJMEB::BBFEFIPJMEB_OHDJNICJKLK) {
             os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -133,7 +133,7 @@ impl ::protobuf::Message for CCGJDDBKIDE {
 
     fn clear(&mut self) {
         self.IMJBFLJPMJB = 0;
-        self.type_ = ::protobuf::EnumOrUnknown::new(super::BBFEFIPJMEB::BBFEFIPJMEB::BBFEFIPJMEB_OHDJNICJKLK);
+        self.type_ = ::protobuf::EnumOrUnknown::new(ccgjddbkide::oakdcenfilp::BBFEFIPJMEB::BBFEFIPJMEB_OHDJNICJKLK);
         self.special_fields.clear();
     }
 
@@ -164,10 +164,189 @@ impl ::protobuf::reflect::ProtobufValue for CCGJDDBKIDE {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
+/// Nested message and enums of message `CCGJDDBKIDE`
+pub mod ccgjddbkide {
+    // @@protoc_insertion_point(message:CCGJDDBKIDE.OAKDCENFILP)
+    #[derive(PartialEq,Clone,Default,Debug)]
+    pub struct OAKDCENFILP {
+        // special fields
+        // @@protoc_insertion_point(special_field:CCGJDDBKIDE.OAKDCENFILP.special_fields)
+        pub special_fields: ::protobuf::SpecialFields,
+    }
+
+    impl<'a> ::std::default::Default for &'a OAKDCENFILP {
+        fn default() -> &'a OAKDCENFILP {
+            <OAKDCENFILP as ::protobuf::Message>::default_instance()
+        }
+    }
+
+    impl OAKDCENFILP {
+        pub fn new() -> OAKDCENFILP {
+            ::std::default::Default::default()
+        }
+
+        pub(in super) fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
+            let mut fields = ::std::vec::Vec::with_capacity(0);
+            let mut oneofs = ::std::vec::Vec::with_capacity(0);
+            ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OAKDCENFILP>(
+                "CCGJDDBKIDE.OAKDCENFILP",
+                fields,
+                oneofs,
+            )
+        }
+    }
+
+    impl ::protobuf::Message for OAKDCENFILP {
+        const NAME: &'static str = "OAKDCENFILP";
+
+        fn is_initialized(&self) -> bool {
+            true
+        }
+
+        fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
+            while let Some(tag) = is.read_raw_tag_or_eof()? {
+                match tag {
+                    tag => {
+                        ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
+                    },
+                };
+            }
+            ::std::result::Result::Ok(())
+        }
+
+        // Compute sizes of nested messages
+        #[allow(unused_variables)]
+        fn compute_size(&self) -> u64 {
+            let mut my_size = 0;
+            my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
+            self.special_fields.cached_size().set(my_size as u32);
+            my_size
+        }
+
+        fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+            os.write_unknown_fields(self.special_fields.unknown_fields())?;
+            ::std::result::Result::Ok(())
+        }
+
+        fn special_fields(&self) -> &::protobuf::SpecialFields {
+            &self.special_fields
+        }
+
+        fn mut_special_fields(&mut self) -> &mut ::protobuf::SpecialFields {
+            &mut self.special_fields
+        }
+
+        fn new() -> OAKDCENFILP {
+            OAKDCENFILP::new()
+        }
+
+        fn clear(&mut self) {
+            self.special_fields.clear();
+        }
+
+        fn default_instance() -> &'static OAKDCENFILP {
+            static instance: OAKDCENFILP = OAKDCENFILP {
+                special_fields: ::protobuf::SpecialFields::new(),
+            };
+            &instance
+        }
+    }
+
+    impl ::protobuf::MessageFull for OAKDCENFILP {
+        fn descriptor() -> ::protobuf::reflect::MessageDescriptor {
+            static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::MessageDescriptor> = ::protobuf::rt::Lazy::new();
+            descriptor.get(|| super::file_descriptor().message_by_package_relative_name("CCGJDDBKIDE.OAKDCENFILP").unwrap()).clone()
+        }
+    }
+
+    impl ::std::fmt::Display for OAKDCENFILP {
+        fn fmt(&self, f: &mut ::std::fmt::Formatter<'_>) -> ::std::fmt::Result {
+            ::protobuf::text_format::fmt(self, f)
+        }
+    }
+
+    impl ::protobuf::reflect::ProtobufValue for OAKDCENFILP {
+        type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
+    }
+
+    /// Nested message and enums of message `OAKDCENFILP`
+    pub mod oakdcenfilp {
+        #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
+        // @@protoc_insertion_point(enum:CCGJDDBKIDE.OAKDCENFILP.BBFEFIPJMEB)
+        pub enum BBFEFIPJMEB {
+            // @@protoc_insertion_point(enum_value:CCGJDDBKIDE.OAKDCENFILP.BBFEFIPJMEB.BBFEFIPJMEB_OHDJNICJKLK)
+            BBFEFIPJMEB_OHDJNICJKLK = 0,
+            // @@protoc_insertion_point(enum_value:CCGJDDBKIDE.OAKDCENFILP.BBFEFIPJMEB.BBFEFIPJMEB_NCBOLDFDGNL)
+            BBFEFIPJMEB_NCBOLDFDGNL = 1,
+            // @@protoc_insertion_point(enum_value:CCGJDDBKIDE.OAKDCENFILP.BBFEFIPJMEB.BBFEFIPJMEB_EKGPCJLBINA)
+            BBFEFIPJMEB_EKGPCJLBINA = 2,
+        }
+
+        impl ::protobuf::Enum for BBFEFIPJMEB {
+            const NAME: &'static str = "BBFEFIPJMEB";
+
+            fn value(&self) -> i32 {
+                *self as i32
+            }
+
+            fn from_i32(value: i32) -> ::std::option::Option<BBFEFIPJMEB> {
+                match value {
+                    0 => ::std::option::Option::Some(BBFEFIPJMEB::BBFEFIPJMEB_OHDJNICJKLK),
+                    1 => ::std::option::Option::Some(BBFEFIPJMEB::BBFEFIPJMEB_NCBOLDFDGNL),
+                    2 => ::std::option::Option::Some(BBFEFIPJMEB::BBFEFIPJMEB_EKGPCJLBINA),
+                    _ => ::std::option::Option::None
+                }
+            }
+
+            fn from_str(str: &str) -> ::std::option::Option<BBFEFIPJMEB> {
+                match str {
+                    "BBFEFIPJMEB_OHDJNICJKLK" => ::std::option::Option::Some(BBFEFIPJMEB::BBFEFIPJMEB_OHDJNICJKLK),
+                    "BBFEFIPJMEB_NCBOLDFDGNL" => ::std::option::Option::Some(BBFEFIPJMEB::BBFEFIPJMEB_NCBOLDFDGNL),
+                    "BBFEFIPJMEB_EKGPCJLBINA" => ::std::option::Option::Some(BBFEFIPJMEB::BBFEFIPJMEB_EKGPCJLBINA),
+                    _ => ::std::option::Option::None
+                }
+            }
+
+            const VALUES: &'static [BBFEFIPJMEB] = &[
+                BBFEFIPJMEB::BBFEFIPJMEB_OHDJNICJKLK,
+                BBFEFIPJMEB::BBFEFIPJMEB_NCBOLDFDGNL,
+                BBFEFIPJMEB::BBFEFIPJMEB_EKGPCJLBINA,
+            ];
+        }
+
+        impl ::protobuf::EnumFull for BBFEFIPJMEB {
+            fn enum_descriptor() -> ::protobuf::reflect::EnumDescriptor {
+                static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::EnumDescriptor> = ::protobuf::rt::Lazy::new();
+                descriptor.get(|| super::super::file_descriptor().enum_by_package_relative_name("CCGJDDBKIDE.OAKDCENFILP.BBFEFIPJMEB").unwrap()).clone()
+            }
+
+            fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
+                let index = *self as usize;
+                Self::enum_descriptor().value_by_index(index)
+            }
+        }
+
+        impl ::std::default::Default for BBFEFIPJMEB {
+            fn default() -> Self {
+                BBFEFIPJMEB::BBFEFIPJMEB_OHDJNICJKLK
+            }
+        }
+
+        impl BBFEFIPJMEB {
+            pub(in super::super) fn generated_enum_descriptor_data() -> ::protobuf::reflect::GeneratedEnumDescriptorData {
+                ::protobuf::reflect::GeneratedEnumDescriptorData::new::<BBFEFIPJMEB>("CCGJDDBKIDE.OAKDCENFILP.BBFEFIPJMEB")
+            }
+        }
+    }
+}
+
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CCGJDDBKIDE.proto\x1a\x11BBFEFIPJMEB.proto\"Q\n\x0bCCGJDDBKIDE\x12\
-    \x20\n\x0bIMJBFLJPMJB\x18\x01\x20\x01(\rR\x0bIMJBFLJPMJB\x12\x20\n\x04ty\
-    pe\x18\x0c\x20\x01(\x0e2\x0c.BBFEFIPJMEBR\x04typeb\x06proto3\
+    \n\x11CCGJDDBKIDE.proto\x1a\x11BBFEFIPJMEB.proto\"\xde\x01\n\x0bCCGJDDBK\
+    IDE\x12\x20\n\x0bIMJBFLJPMJB\x18\x0b\x20\x01(\rR\x0bIMJBFLJPMJB\x128\n\
+    \x04type\x18\x0c\x20\x01(\x0e2$.CCGJDDBKIDE.OAKDCENFILP.BBFEFIPJMEBR\x04\
+    type\x1as\n\x0bOAKDCENFILP\"d\n\x0bBBFEFIPJMEB\x12\x1b\n\x17BBFEFIPJMEB_\
+    OHDJNICJKLK\x10\0\x12\x1b\n\x17BBFEFIPJMEB_NCBOLDFDGNL\x10\x01\x12\x1b\n\
+    \x17BBFEFIPJMEB_EKGPCJLBINA\x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -186,9 +365,11 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
             deps.push(super::BBFEFIPJMEB::file_descriptor().clone());
-            let mut messages = ::std::vec::Vec::with_capacity(1);
+            let mut messages = ::std::vec::Vec::with_capacity(2);
             messages.push(CCGJDDBKIDE::generated_message_descriptor_data());
-            let mut enums = ::std::vec::Vec::with_capacity(0);
+            messages.push(ccgjddbkide::OAKDCENFILP::generated_message_descriptor_data());
+            let mut enums = ::std::vec::Vec::with_capacity(1);
+            enums.push(ccgjddbkide::oakdcenfilp::BBFEFIPJMEB::generated_enum_descriptor_data());
             ::protobuf::reflect::GeneratedFileDescriptor::new_generated(
                 file_descriptor_proto(),
                 deps,

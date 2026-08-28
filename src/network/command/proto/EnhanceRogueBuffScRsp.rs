@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct EnhanceRogueBuffScRsp {
     // message fields
     // @@protoc_insertion_point(field:EnhanceRogueBuffScRsp.CNEFDJCKAPL)
-    pub CNEFDJCKAPL: ::protobuf::MessageField<super::KJAMNOGFAMJ::KJAMNOGFAMJ>,
+    pub CNEFDJCKAPL: ::protobuf::MessageField<super::ABOFJEIMLLJ::ABOFJEIMLLJ>,
     // @@protoc_insertion_point(field:EnhanceRogueBuffScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:EnhanceRogueBuffScRsp.KGKEJAKKLDP)
@@ -53,7 +53,7 @@ impl EnhanceRogueBuffScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KJAMNOGFAMJ::KJAMNOGFAMJ>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ABOFJEIMLLJ::ABOFJEIMLLJ>(
             "CNEFDJCKAPL",
             |m: &EnhanceRogueBuffScRsp| { &m.CNEFDJCKAPL },
             |m: &mut EnhanceRogueBuffScRsp| { &mut m.CNEFDJCKAPL },
@@ -86,13 +86,13 @@ impl ::protobuf::Message for EnhanceRogueBuffScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CNEFDJCKAPL)?;
                 },
-                80 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                112 => {
+                72 => {
                     self.KGKEJAKKLDP = is.read_bool()?;
                 },
                 tag => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for EnhanceRogueBuffScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         if self.KGKEJAKKLDP != false {
             my_size += 1 + 1;
@@ -124,13 +124,13 @@ impl ::protobuf::Message for EnhanceRogueBuffScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.CNEFDJCKAPL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
         if self.KGKEJAKKLDP != false {
-            os.write_bool(14, self.KGKEJAKKLDP)?;
+            os.write_bool(9, self.KGKEJAKKLDP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for EnhanceRogueBuffScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bEnhanceRogueBuffScRsp.proto\x1a\x11KJAMNOGFAMJ.proto\"\x83\x01\n\
-    \x15EnhanceRogueBuffScRsp\x12.\n\x0bCNEFDJCKAPL\x18\x01\x20\x01(\x0b2\
-    \x0c.KJAMNOGFAMJR\x0bCNEFDJCKAPL\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\
-    \x07retcode\x12\x20\n\x0bKGKEJAKKLDP\x18\x0e\x20\x01(\x08R\x0bKGKEJAKKLD\
-    Pb\x06proto3\
+    \n\x1bEnhanceRogueBuffScRsp.proto\x1a\x11ABOFJEIMLLJ.proto\"\x83\x01\n\
+    \x15EnhanceRogueBuffScRsp\x12.\n\x0bCNEFDJCKAPL\x18\x05\x20\x01(\x0b2\
+    \x0c.ABOFJEIMLLJR\x0bCNEFDJCKAPL\x12\x18\n\x07retcode\x18\x07\x20\x01(\r\
+    R\x07retcode\x12\x20\n\x0bKGKEJAKKLDP\x18\t\x20\x01(\x08R\x0bKGKEJAKKLDP\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KJAMNOGFAMJ::file_descriptor().clone());
+            deps.push(super::ABOFJEIMLLJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EnhanceRogueBuffScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -82,7 +82,7 @@ impl ::protobuf::Message for PGECGKEKFNC {
                 8 => {
                     self.LPFGIGJDLFM = is.read_uint32()?;
                 },
-                16 => {
+                72 => {
                     self.role_id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for PGECGKEKFNC {
             my_size += ::protobuf::rt::uint32_size(1, self.LPFGIGJDLFM);
         }
         if self.role_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.role_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.role_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for PGECGKEKFNC {
             os.write_uint32(1, self.LPFGIGJDLFM)?;
         }
         if self.role_id != 0 {
-            os.write_uint32(2, self.role_id)?;
+            os.write_uint32(9, self.role_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for PGECGKEKFNC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PGECGKEKFNC.proto\"H\n\x0bPGECGKEKFNC\x12\x20\n\x0bLPFGIGJDLFM\x18\
-    \x01\x20\x01(\rR\x0bLPFGIGJDLFM\x12\x17\n\x07role_id\x18\x02\x20\x01(\rR\
+    \x01\x20\x01(\rR\x0bLPFGIGJDLFM\x12\x17\n\x07role_id\x18\t\x20\x01(\rR\
     \x06roleIdb\x06proto3\
 ";
 

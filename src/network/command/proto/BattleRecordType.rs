@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:BattleRecordType)
 pub enum BattleRecordType {
-    // @@protoc_insertion_point(enum_value:BattleRecordType.BATTLE_RECORD_NONE)
-    BATTLE_RECORD_NONE = 0,
-    // @@protoc_insertion_point(enum_value:BattleRecordType.BATTLE_RECORD_CHALLENGE)
-    BATTLE_RECORD_CHALLENGE = 1,
-    // @@protoc_insertion_point(enum_value:BattleRecordType.BATTLE_RECORD_ROGUE)
-    BATTLE_RECORD_ROGUE = 2,
+    // @@protoc_insertion_point(enum_value:BattleRecordType.BattleRecordType_BattleRecordNone)
+    BattleRecordType_BattleRecordNone = 0,
+    // @@protoc_insertion_point(enum_value:BattleRecordType.BattleRecordType_BattleRecordChallenge)
+    BattleRecordType_BattleRecordChallenge = 1,
+    // @@protoc_insertion_point(enum_value:BattleRecordType.BattleRecordType_BattleRecordRogue)
+    BattleRecordType_BattleRecordRogue = 2,
 }
 
 impl ::protobuf::Enum for BattleRecordType {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for BattleRecordType {
 
     fn from_i32(value: i32) -> ::std::option::Option<BattleRecordType> {
         match value {
-            0 => ::std::option::Option::Some(BattleRecordType::BATTLE_RECORD_NONE),
-            1 => ::std::option::Option::Some(BattleRecordType::BATTLE_RECORD_CHALLENGE),
-            2 => ::std::option::Option::Some(BattleRecordType::BATTLE_RECORD_ROGUE),
+            0 => ::std::option::Option::Some(BattleRecordType::BattleRecordType_BattleRecordNone),
+            1 => ::std::option::Option::Some(BattleRecordType::BattleRecordType_BattleRecordChallenge),
+            2 => ::std::option::Option::Some(BattleRecordType::BattleRecordType_BattleRecordRogue),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<BattleRecordType> {
         match str {
-            "BATTLE_RECORD_NONE" => ::std::option::Option::Some(BattleRecordType::BATTLE_RECORD_NONE),
-            "BATTLE_RECORD_CHALLENGE" => ::std::option::Option::Some(BattleRecordType::BATTLE_RECORD_CHALLENGE),
-            "BATTLE_RECORD_ROGUE" => ::std::option::Option::Some(BattleRecordType::BATTLE_RECORD_ROGUE),
+            "BattleRecordType_BattleRecordNone" => ::std::option::Option::Some(BattleRecordType::BattleRecordType_BattleRecordNone),
+            "BattleRecordType_BattleRecordChallenge" => ::std::option::Option::Some(BattleRecordType::BattleRecordType_BattleRecordChallenge),
+            "BattleRecordType_BattleRecordRogue" => ::std::option::Option::Some(BattleRecordType::BattleRecordType_BattleRecordRogue),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [BattleRecordType] = &[
-        BattleRecordType::BATTLE_RECORD_NONE,
-        BattleRecordType::BATTLE_RECORD_CHALLENGE,
-        BattleRecordType::BATTLE_RECORD_ROGUE,
+        BattleRecordType::BattleRecordType_BattleRecordNone,
+        BattleRecordType::BattleRecordType_BattleRecordChallenge,
+        BattleRecordType::BattleRecordType_BattleRecordRogue,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for BattleRecordType {
 
 impl ::std::default::Default for BattleRecordType {
     fn default() -> Self {
-        BattleRecordType::BATTLE_RECORD_NONE
+        BattleRecordType::BattleRecordType_BattleRecordNone
     }
 }
 
@@ -92,9 +92,10 @@ impl BattleRecordType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16BattleRecordType.proto*`\n\x10BattleRecordType\x12\x16\n\x12BATTLE\
-    _RECORD_NONE\x10\0\x12\x1b\n\x17BATTLE_RECORD_CHALLENGE\x10\x01\x12\x17\
-    \n\x13BATTLE_RECORD_ROGUE\x10\x02b\x06proto3\
+    \n\x16BattleRecordType.proto*\x8d\x01\n\x10BattleRecordType\x12%\n!Battl\
+    eRecordType_BattleRecordNone\x10\0\x12*\n&BattleRecordType_BattleRecordC\
+    hallenge\x10\x01\x12&\n\"BattleRecordType_BattleRecordRogue\x10\x02b\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

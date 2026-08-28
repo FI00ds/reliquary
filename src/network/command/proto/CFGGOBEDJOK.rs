@@ -79,13 +79,13 @@ impl ::protobuf::Message for CFGGOBEDJOK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                32 => {
                     self.JFAADMONJNF = is.read_uint32()?;
                 },
-                120 => {
+                40 => {
                     self.FLINDJJJFLB.push(is.read_enum_or_unknown()?);
                 },
-                122 => {
+                42 => {
                     ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.FLINDJJJFLB)?
                 },
                 tag => {
@@ -101,9 +101,9 @@ impl ::protobuf::Message for CFGGOBEDJOK {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.JFAADMONJNF != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.JFAADMONJNF);
+            my_size += ::protobuf::rt::uint32_size(4, self.JFAADMONJNF);
         }
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(15, &self.FLINDJJJFLB);
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(5, &self.FLINDJJJFLB);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -111,9 +111,9 @@ impl ::protobuf::Message for CFGGOBEDJOK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JFAADMONJNF != 0 {
-            os.write_uint32(14, self.JFAADMONJNF)?;
+            os.write_uint32(4, self.JFAADMONJNF)?;
         }
-        os.write_repeated_packed_enum_or_unknown(15, &self.FLINDJJJFLB)?;
+        os.write_repeated_packed_enum_or_unknown(5, &self.FLINDJJJFLB)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for CFGGOBEDJOK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CFGGOBEDJOK.proto\x1a\x11CFMDKNCDDAL.proto\"_\n\x0bCFGGOBEDJOK\x12\
-    \x20\n\x0bJFAADMONJNF\x18\x0e\x20\x01(\rR\x0bJFAADMONJNF\x12.\n\x0bFLIND\
-    JJJFLB\x18\x0f\x20\x03(\x0e2\x0c.CFMDKNCDDALR\x0bFLINDJJJFLBb\x06proto3\
+    \x20\n\x0bJFAADMONJNF\x18\x04\x20\x01(\rR\x0bJFAADMONJNF\x12.\n\x0bFLIND\
+    JJJFLB\x18\x05\x20\x03(\x0e2\x0c.CFMDKNCDDALR\x0bFLINDJJJFLBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

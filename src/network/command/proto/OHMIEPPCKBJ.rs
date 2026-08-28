@@ -79,10 +79,10 @@ impl ::protobuf::Message for OHMIEPPCKBJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                40 => {
                     self.DCIJEFMACME = is.read_uint32()?;
                 },
-                88 => {
+                64 => {
                     self.DEBPJKJGCIE = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for OHMIEPPCKBJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.DCIJEFMACME != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.DCIJEFMACME);
+            my_size += ::protobuf::rt::uint32_size(5, self.DCIJEFMACME);
         }
         if self.DEBPJKJGCIE != ::protobuf::EnumOrUnknown::new(super::OFLKOBJHFKH::OFLKOBJHFKH::OFLKOBJHFKH_CHDLPMPJLOJ) {
-            my_size += ::protobuf::rt::int32_size(11, self.DEBPJKJGCIE.value());
+            my_size += ::protobuf::rt::int32_size(8, self.DEBPJKJGCIE.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for OHMIEPPCKBJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DCIJEFMACME != 0 {
-            os.write_uint32(1, self.DCIJEFMACME)?;
+            os.write_uint32(5, self.DCIJEFMACME)?;
         }
         if self.DEBPJKJGCIE != ::protobuf::EnumOrUnknown::new(super::OFLKOBJHFKH::OFLKOBJHFKH::OFLKOBJHFKH_CHDLPMPJLOJ) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.DEBPJKJGCIE))?;
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.DEBPJKJGCIE))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for OHMIEPPCKBJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OHMIEPPCKBJ.proto\x1a\x11OFLKOBJHFKH.proto\"_\n\x0bOHMIEPPCKBJ\x12\
-    \x20\n\x0bDCIJEFMACME\x18\x01\x20\x01(\rR\x0bDCIJEFMACME\x12.\n\x0bDEBPJ\
-    KJGCIE\x18\x0b\x20\x01(\x0e2\x0c.OFLKOBJHFKHR\x0bDEBPJKJGCIEb\x06proto3\
+    \x20\n\x0bDCIJEFMACME\x18\x05\x20\x01(\rR\x0bDCIJEFMACME\x12.\n\x0bDEBPJ\
+    KJGCIE\x18\x08\x20\x01(\x0e2\x0c.OFLKOBJHFKHR\x0bDEBPJKJGCIEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

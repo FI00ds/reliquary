@@ -31,9 +31,7 @@ pub fn parse_connection_packet(
             _ => {
                 trace!("handshake established");
                 let conv_id = u32::from_be_bytes(payload[4..8].try_into().unwrap());
-                Ok(ConnectionPacket::HandshakeEstablished {
-                    conv_id,
-                })
+                Ok(ConnectionPacket::HandshakeEstablished { conv_id })
             }
         }
     } else {

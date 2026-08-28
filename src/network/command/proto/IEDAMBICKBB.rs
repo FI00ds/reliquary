@@ -27,9 +27,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 // @@protoc_insertion_point(message:IEDAMBICKBB)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IEDAMBICKBB {
-    // message fields
-    // @@protoc_insertion_point(field:IEDAMBICKBB.KHCGOMAJDGL)
-    pub KHCGOMAJDGL: i64,
+    // message oneof groups
+    pub KKNBOACNCON: ::std::option::Option<iedambickbb::KKNBOACNCON>,
     // special fields
     // @@protoc_insertion_point(special_field:IEDAMBICKBB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -46,14 +45,41 @@ impl IEDAMBICKBB {
         ::std::default::Default::default()
     }
 
+    // int64 KHCGOMAJDGL = 7;
+
+    pub fn KHCGOMAJDGL(&self) -> i64 {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(iedambickbb::KKNBOACNCON::KHCGOMAJDGL(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_KHCGOMAJDGL(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_KHCGOMAJDGL(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(iedambickbb::KKNBOACNCON::KHCGOMAJDGL(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_KHCGOMAJDGL(&mut self, v: i64) {
+        self.KKNBOACNCON = ::std::option::Option::Some(iedambickbb::KKNBOACNCON::KHCGOMAJDGL(v))
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
-        let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+        let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "KHCGOMAJDGL",
-            |m: &IEDAMBICKBB| { &m.KHCGOMAJDGL },
-            |m: &mut IEDAMBICKBB| { &mut m.KHCGOMAJDGL },
+            IEDAMBICKBB::has_KHCGOMAJDGL,
+            IEDAMBICKBB::KHCGOMAJDGL,
+            IEDAMBICKBB::set_KHCGOMAJDGL,
         ));
+        oneofs.push(iedambickbb::KKNBOACNCON::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IEDAMBICKBB>(
             "IEDAMBICKBB",
             fields,
@@ -72,8 +98,8 @@ impl ::protobuf::Message for IEDAMBICKBB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.KHCGOMAJDGL = is.read_int64()?;
+                56 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(iedambickbb::KKNBOACNCON::KHCGOMAJDGL(is.read_int64()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +113,12 @@ impl ::protobuf::Message for IEDAMBICKBB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KHCGOMAJDGL != 0 {
-            my_size += ::protobuf::rt::int64_size(9, self.KHCGOMAJDGL);
+        if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
+            match v {
+                &iedambickbb::KKNBOACNCON::KHCGOMAJDGL(v) => {
+                    my_size += ::protobuf::rt::int64_size(7, v);
+                },
+            };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +126,12 @@ impl ::protobuf::Message for IEDAMBICKBB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KHCGOMAJDGL != 0 {
-            os.write_int64(9, self.KHCGOMAJDGL)?;
+        if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
+            match v {
+                &iedambickbb::KKNBOACNCON::KHCGOMAJDGL(v) => {
+                    os.write_int64(7, v)?;
+                },
+            };
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +150,13 @@ impl ::protobuf::Message for IEDAMBICKBB {
     }
 
     fn clear(&mut self) {
-        self.KHCGOMAJDGL = 0;
+        self.KKNBOACNCON = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IEDAMBICKBB {
         static instance: IEDAMBICKBB = IEDAMBICKBB {
-            KHCGOMAJDGL: 0,
+            KKNBOACNCON: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -146,9 +180,37 @@ impl ::protobuf::reflect::ProtobufValue for IEDAMBICKBB {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
+/// Nested message and enums of message `IEDAMBICKBB`
+pub mod iedambickbb {
+
+    #[derive(Clone,PartialEq,Debug)]
+    #[non_exhaustive]
+    // @@protoc_insertion_point(oneof:IEDAMBICKBB.KKNBOACNCON)
+    pub enum KKNBOACNCON {
+        // @@protoc_insertion_point(oneof_field:IEDAMBICKBB.KHCGOMAJDGL)
+        KHCGOMAJDGL(i64),
+    }
+
+    impl ::protobuf::Oneof for KKNBOACNCON {
+    }
+
+    impl ::protobuf::OneofFull for KKNBOACNCON {
+        fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
+            static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
+            descriptor.get(|| <super::IEDAMBICKBB as ::protobuf::MessageFull>::descriptor().oneof_by_name("KKNBOACNCON").unwrap()).clone()
+        }
+    }
+
+    impl KKNBOACNCON {
+        pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<KKNBOACNCON>("KKNBOACNCON")
+        }
+    }
+}
+
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IEDAMBICKBB.proto\"/\n\x0bIEDAMBICKBB\x12\x20\n\x0bKHCGOMAJDGL\x18\
-    \t\x20\x01(\x03R\x0bKHCGOMAJDGLb\x06proto3\
+    \n\x11IEDAMBICKBB.proto\"@\n\x0bIEDAMBICKBB\x12\"\n\x0bKHCGOMAJDGL\x18\
+    \x07\x20\x01(\x03H\0R\x0bKHCGOMAJDGLB\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

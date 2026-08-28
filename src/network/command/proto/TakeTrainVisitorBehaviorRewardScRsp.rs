@@ -86,16 +86,16 @@ impl ::protobuf::Message for TakeTrainVisitorBehaviorRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                8 => {
                     self.DOOACEHOPEE = is.read_uint32()?;
                 },
-                96 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.HBGLEOAJJGE)?;
                 },
-                112 => {
+                88 => {
                     self.HBGLEOAJJGE.push(is.read_uint32()?);
                 },
                 tag => {
@@ -111,12 +111,12 @@ impl ::protobuf::Message for TakeTrainVisitorBehaviorRewardScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.DOOACEHOPEE != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.DOOACEHOPEE);
+            my_size += ::protobuf::rt::uint32_size(1, self.DOOACEHOPEE);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.HBGLEOAJJGE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.HBGLEOAJJGE);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -124,12 +124,12 @@ impl ::protobuf::Message for TakeTrainVisitorBehaviorRewardScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DOOACEHOPEE != 0 {
-            os.write_uint32(8, self.DOOACEHOPEE)?;
+            os.write_uint32(1, self.DOOACEHOPEE)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
-        os.write_repeated_packed_uint32(14, &self.HBGLEOAJJGE)?;
+        os.write_repeated_packed_uint32(11, &self.HBGLEOAJJGE)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeTrainVisitorBehaviorRewardScRsp 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)TakeTrainVisitorBehaviorRewardScRsp.proto\"\x83\x01\n#TakeTrainVisito\
-    rBehaviorRewardScRsp\x12\x20\n\x0bDOOACEHOPEE\x18\x08\x20\x01(\rR\x0bDOO\
-    ACEHOPEE\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12\x20\n\
-    \x0bHBGLEOAJJGE\x18\x0e\x20\x03(\rR\x0bHBGLEOAJJGEb\x06proto3\
+    rBehaviorRewardScRsp\x12\x20\n\x0bDOOACEHOPEE\x18\x01\x20\x01(\rR\x0bDOO\
+    ACEHOPEE\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12\x20\n\
+    \x0bHBGLEOAJJGE\x18\x0b\x20\x03(\rR\x0bHBGLEOAJJGEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

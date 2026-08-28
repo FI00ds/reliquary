@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HELJNONBKPH {
     // message fields
-    // @@protoc_insertion_point(field:HELJNONBKPH.expire_time)
-    pub expire_time: i64,
+    // @@protoc_insertion_point(field:HELJNONBKPH.KAMOPEEBOHJ)
+    pub KAMOPEEBOHJ: i64,
     // @@protoc_insertion_point(field:HELJNONBKPH.EIKLMFPMJJD)
     pub EIKLMFPMJJD: u32,
     // special fields
@@ -52,9 +52,9 @@ impl HELJNONBKPH {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "expire_time",
-            |m: &HELJNONBKPH| { &m.expire_time },
-            |m: &mut HELJNONBKPH| { &mut m.expire_time },
+            "KAMOPEEBOHJ",
+            |m: &HELJNONBKPH| { &m.KAMOPEEBOHJ },
+            |m: &mut HELJNONBKPH| { &mut m.KAMOPEEBOHJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EIKLMFPMJJD",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for HELJNONBKPH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.expire_time = is.read_int64()?;
+                96 => {
+                    self.KAMOPEEBOHJ = is.read_int64()?;
                 },
-                64 => {
+                120 => {
                     self.EIKLMFPMJJD = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for HELJNONBKPH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.expire_time != 0 {
-            my_size += ::protobuf::rt::int64_size(2, self.expire_time);
+        if self.KAMOPEEBOHJ != 0 {
+            my_size += ::protobuf::rt::int64_size(12, self.KAMOPEEBOHJ);
         }
         if self.EIKLMFPMJJD != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.EIKLMFPMJJD);
+            my_size += ::protobuf::rt::uint32_size(15, self.EIKLMFPMJJD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for HELJNONBKPH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.expire_time != 0 {
-            os.write_int64(2, self.expire_time)?;
+        if self.KAMOPEEBOHJ != 0 {
+            os.write_int64(12, self.KAMOPEEBOHJ)?;
         }
         if self.EIKLMFPMJJD != 0 {
-            os.write_uint32(8, self.EIKLMFPMJJD)?;
+            os.write_uint32(15, self.EIKLMFPMJJD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for HELJNONBKPH {
     }
 
     fn clear(&mut self) {
-        self.expire_time = 0;
+        self.KAMOPEEBOHJ = 0;
         self.EIKLMFPMJJD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HELJNONBKPH {
         static instance: HELJNONBKPH = HELJNONBKPH {
-            expire_time: 0,
+            KAMOPEEBOHJ: 0,
             EIKLMFPMJJD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for HELJNONBKPH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HELJNONBKPH.proto\"P\n\x0bHELJNONBKPH\x12\x1f\n\x0bexpire_time\x18\
-    \x02\x20\x01(\x03R\nexpireTime\x12\x20\n\x0bEIKLMFPMJJD\x18\x08\x20\x01(\
-    \rR\x0bEIKLMFPMJJDb\x06proto3\
+    \n\x11HELJNONBKPH.proto\"Q\n\x0bHELJNONBKPH\x12\x20\n\x0bKAMOPEEBOHJ\x18\
+    \x0c\x20\x01(\x03R\x0bKAMOPEEBOHJ\x12\x20\n\x0bEIKLMFPMJJD\x18\x0f\x20\
+    \x01(\rR\x0bEIKLMFPMJJDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

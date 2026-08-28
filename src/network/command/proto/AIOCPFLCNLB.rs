@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AIOCPFLCNLB {
     // message fields
-    // @@protoc_insertion_point(field:AIOCPFLCNLB.FOOMIPJJKOG)
-    pub FOOMIPJJKOG: ::std::vec::Vec<super::IDBCDHIOKEG::IDBCDHIOKEG>,
     // @@protoc_insertion_point(field:AIOCPFLCNLB.progress)
     pub progress: u32,
     // @@protoc_insertion_point(field:AIOCPFLCNLB.area_id)
     pub area_id: u32,
+    // @@protoc_insertion_point(field:AIOCPFLCNLB.FOOMIPJJKOG)
+    pub FOOMIPJJKOG: ::std::vec::Vec<super::IDBCDHIOKEG::IDBCDHIOKEG>,
     // @@protoc_insertion_point(field:AIOCPFLCNLB.GKENFCLLLJC)
     pub GKENFCLLLJC: u32,
     // special fields
@@ -55,11 +55,6 @@ impl AIOCPFLCNLB {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FOOMIPJJKOG",
-            |m: &AIOCPFLCNLB| { &m.FOOMIPJJKOG },
-            |m: &mut AIOCPFLCNLB| { &mut m.FOOMIPJJKOG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "progress",
             |m: &AIOCPFLCNLB| { &m.progress },
@@ -69,6 +64,11 @@ impl AIOCPFLCNLB {
             "area_id",
             |m: &AIOCPFLCNLB| { &m.area_id },
             |m: &mut AIOCPFLCNLB| { &mut m.area_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FOOMIPJJKOG",
+            |m: &AIOCPFLCNLB| { &m.FOOMIPJJKOG },
+            |m: &mut AIOCPFLCNLB| { &mut m.FOOMIPJJKOG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GKENFCLLLJC",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for AIOCPFLCNLB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.FOOMIPJJKOG.push(is.read_message()?);
-                },
                 16 => {
                     self.progress = is.read_uint32()?;
                 },
-                56 => {
+                32 => {
                     self.area_id = is.read_uint32()?;
                 },
-                80 => {
+                98 => {
+                    self.FOOMIPJJKOG.push(is.read_message()?);
+                },
+                112 => {
                     self.GKENFCLLLJC = is.read_uint32()?;
                 },
                 tag => {
@@ -117,18 +117,18 @@ impl ::protobuf::Message for AIOCPFLCNLB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.FOOMIPJJKOG {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if self.progress != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.progress);
         }
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.area_id);
         }
+        for value in &self.FOOMIPJJKOG {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if self.GKENFCLLLJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.GKENFCLLLJC);
+            my_size += ::protobuf::rt::uint32_size(14, self.GKENFCLLLJC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for AIOCPFLCNLB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FOOMIPJJKOG {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
         if self.progress != 0 {
             os.write_uint32(2, self.progress)?;
         }
         if self.area_id != 0 {
-            os.write_uint32(7, self.area_id)?;
+            os.write_uint32(4, self.area_id)?;
         }
+        for v in &self.FOOMIPJJKOG {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
         if self.GKENFCLLLJC != 0 {
-            os.write_uint32(10, self.GKENFCLLLJC)?;
+            os.write_uint32(14, self.GKENFCLLLJC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for AIOCPFLCNLB {
     }
 
     fn clear(&mut self) {
-        self.FOOMIPJJKOG.clear();
         self.progress = 0;
         self.area_id = 0;
+        self.FOOMIPJJKOG.clear();
         self.GKENFCLLLJC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AIOCPFLCNLB {
         static instance: AIOCPFLCNLB = AIOCPFLCNLB {
-            FOOMIPJJKOG: ::std::vec::Vec::new(),
             progress: 0,
             area_id: 0,
+            FOOMIPJJKOG: ::std::vec::Vec::new(),
             GKENFCLLLJC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for AIOCPFLCNLB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AIOCPFLCNLB.proto\x1a\x11IDBCDHIOKEG.proto\"\x94\x01\n\x0bAIOCPFLC\
-    NLB\x12.\n\x0bFOOMIPJJKOG\x18\x01\x20\x03(\x0b2\x0c.IDBCDHIOKEGR\x0bFOOM\
-    IPJJKOG\x12\x1a\n\x08progress\x18\x02\x20\x01(\rR\x08progress\x12\x17\n\
-    \x07area_id\x18\x07\x20\x01(\rR\x06areaId\x12\x20\n\x0bGKENFCLLLJC\x18\n\
-    \x20\x01(\rR\x0bGKENFCLLLJCb\x06proto3\
+    NLB\x12\x1a\n\x08progress\x18\x02\x20\x01(\rR\x08progress\x12\x17\n\x07a\
+    rea_id\x18\x04\x20\x01(\rR\x06areaId\x12.\n\x0bFOOMIPJJKOG\x18\x0c\x20\
+    \x03(\x0b2\x0c.IDBCDHIOKEGR\x0bFOOMIPJJKOG\x12\x20\n\x0bGKENFCLLLJC\x18\
+    \x0e\x20\x01(\rR\x0bGKENFCLLLJCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

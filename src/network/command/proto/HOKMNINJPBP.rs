@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HOKMNINJPBP {
     // message fields
-    // @@protoc_insertion_point(field:HOKMNINJPBP.tid)
-    pub tid: u32,
-    // @@protoc_insertion_point(field:HOKMNINJPBP.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:HOKMNINJPBP.main_affix_id)
-    pub main_affix_id: u32,
     // @@protoc_insertion_point(field:HOKMNINJPBP.exp)
     pub exp: u32,
+    // @@protoc_insertion_point(field:HOKMNINJPBP.tid)
+    pub tid: u32,
+    // @@protoc_insertion_point(field:HOKMNINJPBP.main_affix_id)
+    pub main_affix_id: u32,
+    // @@protoc_insertion_point(field:HOKMNINJPBP.level)
+    pub level: u32,
     // @@protoc_insertion_point(field:HOKMNINJPBP.sub_affix_list)
     pub sub_affix_list: ::std::vec::Vec<super::RelicAffix::RelicAffix>,
     // special fields
@@ -58,14 +58,14 @@ impl HOKMNINJPBP {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "exp",
+            |m: &HOKMNINJPBP| { &m.exp },
+            |m: &mut HOKMNINJPBP| { &mut m.exp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "tid",
             |m: &HOKMNINJPBP| { &m.tid },
             |m: &mut HOKMNINJPBP| { &mut m.tid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &HOKMNINJPBP| { &m.level },
-            |m: &mut HOKMNINJPBP| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "main_affix_id",
@@ -73,9 +73,9 @@ impl HOKMNINJPBP {
             |m: &mut HOKMNINJPBP| { &mut m.main_affix_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "exp",
-            |m: &HOKMNINJPBP| { &m.exp },
-            |m: &mut HOKMNINJPBP| { &mut m.exp },
+            "level",
+            |m: &HOKMNINJPBP| { &m.level },
+            |m: &mut HOKMNINJPBP| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "sub_affix_list",
@@ -101,18 +101,18 @@ impl ::protobuf::Message for HOKMNINJPBP {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.tid = is.read_uint32()?;
-                },
-                16 => {
-                    self.level = is.read_uint32()?;
-                },
-                24 => {
-                    self.main_affix_id = is.read_uint32()?;
-                },
-                32 => {
                     self.exp = is.read_uint32()?;
                 },
-                58 => {
+                64 => {
+                    self.tid = is.read_uint32()?;
+                },
+                80 => {
+                    self.main_affix_id = is.read_uint32()?;
+                },
+                88 => {
+                    self.level = is.read_uint32()?;
+                },
+                106 => {
                     self.sub_affix_list.push(is.read_message()?);
                 },
                 tag => {
@@ -127,17 +127,17 @@ impl ::protobuf::Message for HOKMNINJPBP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.tid != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.tid);
+        if self.exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.exp);
         }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.level);
+        if self.tid != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.tid);
         }
         if self.main_affix_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.main_affix_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.main_affix_id);
         }
-        if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.exp);
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.level);
         }
         for value in &self.sub_affix_list {
             let len = value.compute_size();
@@ -149,20 +149,20 @@ impl ::protobuf::Message for HOKMNINJPBP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.tid != 0 {
-            os.write_uint32(1, self.tid)?;
+        if self.exp != 0 {
+            os.write_uint32(1, self.exp)?;
         }
-        if self.level != 0 {
-            os.write_uint32(2, self.level)?;
+        if self.tid != 0 {
+            os.write_uint32(8, self.tid)?;
         }
         if self.main_affix_id != 0 {
-            os.write_uint32(3, self.main_affix_id)?;
+            os.write_uint32(10, self.main_affix_id)?;
         }
-        if self.exp != 0 {
-            os.write_uint32(4, self.exp)?;
+        if self.level != 0 {
+            os.write_uint32(11, self.level)?;
         }
         for v in &self.sub_affix_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for HOKMNINJPBP {
     }
 
     fn clear(&mut self) {
-        self.tid = 0;
-        self.level = 0;
-        self.main_affix_id = 0;
         self.exp = 0;
+        self.tid = 0;
+        self.main_affix_id = 0;
+        self.level = 0;
         self.sub_affix_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HOKMNINJPBP {
         static instance: HOKMNINJPBP = HOKMNINJPBP {
-            tid: 0,
-            level: 0,
-            main_affix_id: 0,
             exp: 0,
+            tid: 0,
+            main_affix_id: 0,
+            level: 0,
             sub_affix_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -221,11 +221,10 @@ impl ::protobuf::reflect::ProtobufValue for HOKMNINJPBP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HOKMNINJPBP.proto\x1a\x10RelicAffix.proto\"\x9e\x01\n\x0bHOKMNINJP\
-    BP\x12\x10\n\x03tid\x18\x01\x20\x01(\rR\x03tid\x12\x14\n\x05level\x18\
-    \x02\x20\x01(\rR\x05level\x12\"\n\rmain_affix_id\x18\x03\x20\x01(\rR\x0b\
-    mainAffixId\x12\x10\n\x03exp\x18\x04\x20\x01(\rR\x03exp\x121\n\x0esub_af\
-    fix_list\x18\x07\x20\x03(\x0b2\x0b.RelicAffixR\x0csubAffixListb\x06proto\
-    3\
+    BP\x12\x10\n\x03exp\x18\x01\x20\x01(\rR\x03exp\x12\x10\n\x03tid\x18\x08\
+    \x20\x01(\rR\x03tid\x12\"\n\rmain_affix_id\x18\n\x20\x01(\rR\x0bmainAffi\
+    xId\x12\x14\n\x05level\x18\x0b\x20\x01(\rR\x05level\x121\n\x0esub_affix_\
+    list\x18\r\x20\x03(\x0b2\x0b.RelicAffixR\x0csubAffixListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -82,7 +82,7 @@ impl ::protobuf::Message for NpcStatus {
                 8 => {
                     self.is_finish = is.read_bool()?;
                 },
-                48 => {
+                24 => {
                     self.npc_id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for NpcStatus {
             my_size += 1 + 1;
         }
         if self.npc_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.npc_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.npc_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for NpcStatus {
             os.write_bool(1, self.is_finish)?;
         }
         if self.npc_id != 0 {
-            os.write_uint32(6, self.npc_id)?;
+            os.write_uint32(3, self.npc_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for NpcStatus {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0fNpcStatus.proto\"?\n\tNpcStatus\x12\x1b\n\tis_finish\x18\x01\x20\
-    \x01(\x08R\x08isFinish\x12\x15\n\x06npc_id\x18\x06\x20\x01(\rR\x05npcIdb\
+    \x01(\x08R\x08isFinish\x12\x15\n\x06npc_id\x18\x03\x20\x01(\rR\x05npcIdb\
     \x06proto3\
 ";
 

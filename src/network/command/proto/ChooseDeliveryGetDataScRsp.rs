@@ -79,13 +79,13 @@ impl ::protobuf::Message for ChooseDeliveryGetDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.PCOJLMKPAEL)?;
                 },
-                40 => {
+                8 => {
                     self.PCOJLMKPAEL.push(is.read_uint32()?);
                 },
-                80 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for ChooseDeliveryGetDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.PCOJLMKPAEL);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.PCOJLMKPAEL);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for ChooseDeliveryGetDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.PCOJLMKPAEL)?;
+        os.write_repeated_packed_uint32(1, &self.PCOJLMKPAEL)?;
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for ChooseDeliveryGetDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20ChooseDeliveryGetDataScRsp.proto\"X\n\x1aChooseDeliveryGetDataScRs\
-    p\x12\x20\n\x0bPCOJLMKPAEL\x18\x05\x20\x03(\rR\x0bPCOJLMKPAEL\x12\x18\n\
-    \x07retcode\x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
+    p\x12\x20\n\x0bPCOJLMKPAEL\x18\x01\x20\x03(\rR\x0bPCOJLMKPAEL\x12\x18\n\
+    \x07retcode\x18\x03\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

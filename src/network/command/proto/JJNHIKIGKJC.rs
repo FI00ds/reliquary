@@ -82,7 +82,7 @@ impl ::protobuf::Message for JJNHIKIGKJC {
                 24 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                48 => {
+                112 => {
                     self.item_id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for JJNHIKIGKJC {
             my_size += ::protobuf::rt::uint32_size(3, self.unique_id);
         }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.item_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for JJNHIKIGKJC {
             os.write_uint32(3, self.unique_id)?;
         }
         if self.item_id != 0 {
-            os.write_uint32(6, self.item_id)?;
+            os.write_uint32(14, self.item_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for JJNHIKIGKJC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JJNHIKIGKJC.proto\"C\n\x0bJJNHIKIGKJC\x12\x1b\n\tunique_id\x18\x03\
-    \x20\x01(\rR\x08uniqueId\x12\x17\n\x07item_id\x18\x06\x20\x01(\rR\x06ite\
+    \x20\x01(\rR\x08uniqueId\x12\x17\n\x07item_id\x18\x0e\x20\x01(\rR\x06ite\
     mIdb\x06proto3\
 ";
 

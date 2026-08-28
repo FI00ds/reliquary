@@ -50,7 +50,7 @@ impl PNEGDOHOLDN {
         ::std::default::Default::default()
     }
 
-    // .PJLEILDLONN ODLONPLECJB = 11;
+    // .PJLEILDLONN ODLONPLECJB = 12;
 
     pub fn ODLONPLECJB(&self) -> &super::PJLEILDLONN::PJLEILDLONN {
         match self.AELHFLGJMJN {
@@ -148,7 +148,7 @@ impl PNEGDOHOLDN {
         }
     }
 
-    // .JCNLJNELKEO ICNFMLIAAKE = 6;
+    // .JCNLJNELKEO ICNFMLIAAKE = 10;
 
     pub fn ICNFMLIAAKE(&self) -> &super::JCNLJNELKEO::JCNLJNELKEO {
         match self.AELHFLGJMJN {
@@ -197,7 +197,7 @@ impl PNEGDOHOLDN {
         }
     }
 
-    // .JJIJAMHKNGO GMDCKAOEGNF = 3;
+    // .JJIJAMHKNGO GMDCKAOEGNF = 11;
 
     pub fn GMDCKAOEGNF(&self) -> &super::JJIJAMHKNGO::JJIJAMHKNGO {
         match self.AELHFLGJMJN {
@@ -306,22 +306,22 @@ impl ::protobuf::Message for PNEGDOHOLDN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                8 => {
                     self.panel_id = is.read_uint32()?;
                 },
-                112 => {
+                56 => {
                     self.GJNMHILINHC = is.read_enum_or_unknown()?;
                 },
-                90 => {
+                98 => {
                     self.AELHFLGJMJN = ::std::option::Option::Some(pnegdoholdn::AELHFLGJMJN::ODLONPLECJB(is.read_message()?));
                 },
                 34 => {
                     self.AELHFLGJMJN = ::std::option::Option::Some(pnegdoholdn::AELHFLGJMJN::OCGCLKAHGBK(is.read_message()?));
                 },
-                50 => {
+                82 => {
                     self.AELHFLGJMJN = ::std::option::Option::Some(pnegdoholdn::AELHFLGJMJN::ICNFMLIAAKE(is.read_message()?));
                 },
-                26 => {
+                90 => {
                     self.AELHFLGJMJN = ::std::option::Option::Some(pnegdoholdn::AELHFLGJMJN::GMDCKAOEGNF(is.read_message()?));
                 },
                 tag => {
@@ -337,10 +337,10 @@ impl ::protobuf::Message for PNEGDOHOLDN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.panel_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.panel_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.panel_id);
         }
-        if self.GJNMHILINHC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(14, self.GJNMHILINHC.value());
+        if self.GJNMHILINHC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None) {
+            my_size += ::protobuf::rt::int32_size(7, self.GJNMHILINHC.value());
         }
         if let ::std::option::Option::Some(ref v) = self.AELHFLGJMJN {
             match v {
@@ -369,24 +369,24 @@ impl ::protobuf::Message for PNEGDOHOLDN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.panel_id != 0 {
-            os.write_uint32(13, self.panel_id)?;
+            os.write_uint32(1, self.panel_id)?;
         }
-        if self.GJNMHILINHC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.GJNMHILINHC))?;
+        if self.GJNMHILINHC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None) {
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.GJNMHILINHC))?;
         }
         if let ::std::option::Option::Some(ref v) = self.AELHFLGJMJN {
             match v {
                 &pnegdoholdn::AELHFLGJMJN::ODLONPLECJB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
                 &pnegdoholdn::AELHFLGJMJN::OCGCLKAHGBK(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
                 &pnegdoholdn::AELHFLGJMJN::ICNFMLIAAKE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
                 &pnegdoholdn::AELHFLGJMJN::GMDCKAOEGNF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
             };
         }
@@ -408,7 +408,7 @@ impl ::protobuf::Message for PNEGDOHOLDN {
 
     fn clear(&mut self) {
         self.panel_id = 0;
-        self.GJNMHILINHC = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ);
+        self.GJNMHILINHC = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None);
         self.AELHFLGJMJN = ::std::option::Option::None;
         self.AELHFLGJMJN = ::std::option::Option::None;
         self.AELHFLGJMJN = ::std::option::Option::None;
@@ -481,14 +481,14 @@ pub mod pnegdoholdn {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PNEGDOHOLDN.proto\x1a\x11ECOAKLBOLDA.proto\x1a\x13FightGameMode.pr\
     oto\x1a\x11JCNLJNELKEO.proto\x1a\x11JJIJAMHKNGO.proto\x1a\x11PJLEILDLONN\
-    .proto\"\xb1\x02\n\x0bPNEGDOHOLDN\x12\x19\n\x08panel_id\x18\r\x20\x01(\r\
-    R\x07panelId\x120\n\x0bGJNMHILINHC\x18\x0e\x20\x01(\x0e2\x0e.FightGameMo\
-    deR\x0bGJNMHILINHC\x120\n\x0bODLONPLECJB\x18\x0b\x20\x01(\x0b2\x0c.PJLEI\
-    LDLONNH\0R\x0bODLONPLECJB\x120\n\x0bOCGCLKAHGBK\x18\x04\x20\x01(\x0b2\
-    \x0c.ECOAKLBOLDAH\0R\x0bOCGCLKAHGBK\x120\n\x0bICNFMLIAAKE\x18\x06\x20\
-    \x01(\x0b2\x0c.JCNLJNELKEOH\0R\x0bICNFMLIAAKE\x120\n\x0bGMDCKAOEGNF\x18\
-    \x03\x20\x01(\x0b2\x0c.JJIJAMHKNGOH\0R\x0bGMDCKAOEGNFB\r\n\x0bAELHFLGJMJ\
-    Nb\x06proto3\
+    .proto\"\xb1\x02\n\x0bPNEGDOHOLDN\x12\x19\n\x08panel_id\x18\x01\x20\x01(\
+    \rR\x07panelId\x120\n\x0bGJNMHILINHC\x18\x07\x20\x01(\x0e2\x0e.FightGame\
+    ModeR\x0bGJNMHILINHC\x120\n\x0bODLONPLECJB\x18\x0c\x20\x01(\x0b2\x0c.PJL\
+    EILDLONNH\0R\x0bODLONPLECJB\x120\n\x0bOCGCLKAHGBK\x18\x04\x20\x01(\x0b2\
+    \x0c.ECOAKLBOLDAH\0R\x0bOCGCLKAHGBK\x120\n\x0bICNFMLIAAKE\x18\n\x20\x01(\
+    \x0b2\x0c.JCNLJNELKEOH\0R\x0bICNFMLIAAKE\x120\n\x0bGMDCKAOEGNF\x18\x0b\
+    \x20\x01(\x0b2\x0c.JJIJAMHKNGOH\0R\x0bGMDCKAOEGNFB\r\n\x0bAELHFLGJMJNb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

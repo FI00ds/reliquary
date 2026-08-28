@@ -30,10 +30,10 @@ pub struct DCMHLOEGFBM {
     // message fields
     // @@protoc_insertion_point(field:DCMHLOEGFBM.LCFDOPINEBO)
     pub LCFDOPINEBO: u32,
-    // @@protoc_insertion_point(field:DCMHLOEGFBM.item_list)
-    pub item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:DCMHLOEGFBM.HABHOAMCGLH)
     pub HABHOAMCGLH: u32,
+    // @@protoc_insertion_point(field:DCMHLOEGFBM.item_list)
+    pub item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:DCMHLOEGFBM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl DCMHLOEGFBM {
             |m: &DCMHLOEGFBM| { &m.LCFDOPINEBO },
             |m: &mut DCMHLOEGFBM| { &mut m.LCFDOPINEBO },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "item_list",
-            |m: &DCMHLOEGFBM| { &m.item_list },
-            |m: &mut DCMHLOEGFBM| { &mut m.item_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HABHOAMCGLH",
             |m: &DCMHLOEGFBM| { &m.HABHOAMCGLH },
             |m: &mut DCMHLOEGFBM| { &mut m.HABHOAMCGLH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "item_list",
+            |m: &DCMHLOEGFBM| { &m.item_list },
+            |m: &mut DCMHLOEGFBM| { &mut m.item_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DCMHLOEGFBM>(
             "DCMHLOEGFBM",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for DCMHLOEGFBM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                56 => {
                     self.LCFDOPINEBO = is.read_uint32()?;
                 },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list)?;
-                },
-                120 => {
+                80 => {
                     self.HABHOAMCGLH = is.read_uint32()?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for DCMHLOEGFBM {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LCFDOPINEBO != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.LCFDOPINEBO);
+            my_size += ::protobuf::rt::uint32_size(7, self.LCFDOPINEBO);
+        }
+        if self.HABHOAMCGLH != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.HABHOAMCGLH);
         }
         if let Some(v) = self.item_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.HABHOAMCGLH != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.HABHOAMCGLH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for DCMHLOEGFBM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LCFDOPINEBO != 0 {
-            os.write_uint32(2, self.LCFDOPINEBO)?;
-        }
-        if let Some(v) = self.item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            os.write_uint32(7, self.LCFDOPINEBO)?;
         }
         if self.HABHOAMCGLH != 0 {
-            os.write_uint32(15, self.HABHOAMCGLH)?;
+            os.write_uint32(10, self.HABHOAMCGLH)?;
+        }
+        if let Some(v) = self.item_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for DCMHLOEGFBM {
 
     fn clear(&mut self) {
         self.LCFDOPINEBO = 0;
-        self.item_list.clear();
         self.HABHOAMCGLH = 0;
+        self.item_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DCMHLOEGFBM {
         static instance: DCMHLOEGFBM = DCMHLOEGFBM {
             LCFDOPINEBO: 0,
-            item_list: ::protobuf::MessageField::none(),
             HABHOAMCGLH: 0,
+            item_list: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for DCMHLOEGFBM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DCMHLOEGFBM.proto\x1a\x0eItemList.proto\"y\n\x0bDCMHLOEGFBM\x12\
-    \x20\n\x0bLCFDOPINEBO\x18\x02\x20\x01(\rR\x0bLCFDOPINEBO\x12&\n\titem_li\
-    st\x18\x07\x20\x01(\x0b2\t.ItemListR\x08itemList\x12\x20\n\x0bHABHOAMCGL\
-    H\x18\x0f\x20\x01(\rR\x0bHABHOAMCGLHb\x06proto3\
+    \x20\n\x0bLCFDOPINEBO\x18\x07\x20\x01(\rR\x0bLCFDOPINEBO\x12\x20\n\x0bHA\
+    BHOAMCGLH\x18\n\x20\x01(\rR\x0bHABHOAMCGLH\x12&\n\titem_list\x18\r\x20\
+    \x01(\x0b2\t.ItemListR\x08itemListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,20 +30,20 @@ pub struct NBKKABHMMPP {
     // message fields
     // @@protoc_insertion_point(field:NBKKABHMMPP.NJPMPAAGCCD)
     pub NJPMPAAGCCD: u32,
+    // @@protoc_insertion_point(field:NBKKABHMMPP.ALOFCOLHAGA)
+    pub ALOFCOLHAGA: u32,
+    // @@protoc_insertion_point(field:NBKKABHMMPP.reason)
+    pub reason: ::protobuf::EnumOrUnknown<super::GJIGHKNMILJ::GJIGHKNMILJ>,
+    // @@protoc_insertion_point(field:NBKKABHMMPP.GMLCJEOOCHJ)
+    pub GMLCJEOOCHJ: u32,
     // @@protoc_insertion_point(field:NBKKABHMMPP.score_id)
     pub score_id: u32,
     // @@protoc_insertion_point(field:NBKKABHMMPP.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:NBKKABHMMPP.ALOFCOLHAGA)
-    pub ALOFCOLHAGA: u32,
-    // @@protoc_insertion_point(field:NBKKABHMMPP.GMLCJEOOCHJ)
-    pub GMLCJEOOCHJ: u32,
-    // @@protoc_insertion_point(field:NBKKABHMMPP.reason)
-    pub reason: ::protobuf::EnumOrUnknown<super::GJIGHKNMILJ::GJIGHKNMILJ>,
-    // @@protoc_insertion_point(field:NBKKABHMMPP.OACBLHIIIEH)
-    pub OACBLHIIIEH: u32,
     // @@protoc_insertion_point(field:NBKKABHMMPP.HGBHCLHCGBB)
     pub HGBHCLHCGBB: u32,
+    // @@protoc_insertion_point(field:NBKKABHMMPP.OACBLHIIIEH)
+    pub OACBLHIIIEH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NBKKABHMMPP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -69,6 +69,21 @@ impl NBKKABHMMPP {
             |m: &mut NBKKABHMMPP| { &mut m.NJPMPAAGCCD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ALOFCOLHAGA",
+            |m: &NBKKABHMMPP| { &m.ALOFCOLHAGA },
+            |m: &mut NBKKABHMMPP| { &mut m.ALOFCOLHAGA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "reason",
+            |m: &NBKKABHMMPP| { &m.reason },
+            |m: &mut NBKKABHMMPP| { &mut m.reason },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GMLCJEOOCHJ",
+            |m: &NBKKABHMMPP| { &m.GMLCJEOOCHJ },
+            |m: &mut NBKKABHMMPP| { &mut m.GMLCJEOOCHJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "score_id",
             |m: &NBKKABHMMPP| { &m.score_id },
             |m: &mut NBKKABHMMPP| { &mut m.score_id },
@@ -79,29 +94,14 @@ impl NBKKABHMMPP {
             |m: &mut NBKKABHMMPP| { &mut m.reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ALOFCOLHAGA",
-            |m: &NBKKABHMMPP| { &m.ALOFCOLHAGA },
-            |m: &mut NBKKABHMMPP| { &mut m.ALOFCOLHAGA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GMLCJEOOCHJ",
-            |m: &NBKKABHMMPP| { &m.GMLCJEOOCHJ },
-            |m: &mut NBKKABHMMPP| { &mut m.GMLCJEOOCHJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "reason",
-            |m: &NBKKABHMMPP| { &m.reason },
-            |m: &mut NBKKABHMMPP| { &mut m.reason },
+            "HGBHCLHCGBB",
+            |m: &NBKKABHMMPP| { &m.HGBHCLHCGBB },
+            |m: &mut NBKKABHMMPP| { &mut m.HGBHCLHCGBB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OACBLHIIIEH",
             |m: &NBKKABHMMPP| { &m.OACBLHIIIEH },
             |m: &mut NBKKABHMMPP| { &mut m.OACBLHIIIEH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HGBHCLHCGBB",
-            |m: &NBKKABHMMPP| { &m.HGBHCLHCGBB },
-            |m: &mut NBKKABHMMPP| { &mut m.HGBHCLHCGBB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NBKKABHMMPP>(
             "NBKKABHMMPP",
@@ -124,26 +124,26 @@ impl ::protobuf::Message for NBKKABHMMPP {
                 8 => {
                     self.NJPMPAAGCCD = is.read_uint32()?;
                 },
-                32 => {
-                    self.score_id = is.read_uint32()?;
-                },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
-                },
-                48 => {
+                16 => {
                     self.ALOFCOLHAGA = is.read_uint32()?;
+                },
+                40 => {
+                    self.reason = is.read_enum_or_unknown()?;
                 },
                 56 => {
                     self.GMLCJEOOCHJ = is.read_uint32()?;
                 },
                 88 => {
-                    self.reason = is.read_enum_or_unknown()?;
+                    self.score_id = is.read_uint32()?;
                 },
-                1784 => {
-                    self.OACBLHIIIEH = is.read_uint32()?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                4440 => {
+                7328 => {
                     self.HGBHCLHCGBB = is.read_uint32()?;
+                },
+                12440 => {
+                    self.OACBLHIIIEH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -160,27 +160,27 @@ impl ::protobuf::Message for NBKKABHMMPP {
         if self.NJPMPAAGCCD != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.NJPMPAAGCCD);
         }
+        if self.ALOFCOLHAGA != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.ALOFCOLHAGA);
+        }
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::GJIGHKNMILJ::GJIGHKNMILJ::GJIGHKNMILJ_NCMIMMDPHFM) {
+            my_size += ::protobuf::rt::int32_size(5, self.reason.value());
+        }
+        if self.GMLCJEOOCHJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.GMLCJEOOCHJ);
+        }
         if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.score_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.score_id);
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.ALOFCOLHAGA != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.ALOFCOLHAGA);
-        }
-        if self.GMLCJEOOCHJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.GMLCJEOOCHJ);
-        }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::GJIGHKNMILJ::GJIGHKNMILJ::GJIGHKNMILJ_NCMIMMDPHFM) {
-            my_size += ::protobuf::rt::int32_size(11, self.reason.value());
+        if self.HGBHCLHCGBB != 0 {
+            my_size += ::protobuf::rt::uint32_size(916, self.HGBHCLHCGBB);
         }
         if self.OACBLHIIIEH != 0 {
-            my_size += ::protobuf::rt::uint32_size(223, self.OACBLHIIIEH);
-        }
-        if self.HGBHCLHCGBB != 0 {
-            my_size += ::protobuf::rt::uint32_size(555, self.HGBHCLHCGBB);
+            my_size += ::protobuf::rt::uint32_size(1555, self.OACBLHIIIEH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -191,26 +191,26 @@ impl ::protobuf::Message for NBKKABHMMPP {
         if self.NJPMPAAGCCD != 0 {
             os.write_uint32(1, self.NJPMPAAGCCD)?;
         }
-        if self.score_id != 0 {
-            os.write_uint32(4, self.score_id)?;
-        }
-        if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
         if self.ALOFCOLHAGA != 0 {
-            os.write_uint32(6, self.ALOFCOLHAGA)?;
+            os.write_uint32(2, self.ALOFCOLHAGA)?;
+        }
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::GJIGHKNMILJ::GJIGHKNMILJ::GJIGHKNMILJ_NCMIMMDPHFM) {
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.reason))?;
         }
         if self.GMLCJEOOCHJ != 0 {
             os.write_uint32(7, self.GMLCJEOOCHJ)?;
         }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::GJIGHKNMILJ::GJIGHKNMILJ::GJIGHKNMILJ_NCMIMMDPHFM) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+        if self.score_id != 0 {
+            os.write_uint32(11, self.score_id)?;
         }
-        if self.OACBLHIIIEH != 0 {
-            os.write_uint32(223, self.OACBLHIIIEH)?;
+        if let Some(v) = self.reward.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if self.HGBHCLHCGBB != 0 {
-            os.write_uint32(555, self.HGBHCLHCGBB)?;
+            os.write_uint32(916, self.HGBHCLHCGBB)?;
+        }
+        if self.OACBLHIIIEH != 0 {
+            os.write_uint32(1555, self.OACBLHIIIEH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -230,26 +230,26 @@ impl ::protobuf::Message for NBKKABHMMPP {
 
     fn clear(&mut self) {
         self.NJPMPAAGCCD = 0;
+        self.ALOFCOLHAGA = 0;
+        self.reason = ::protobuf::EnumOrUnknown::new(super::GJIGHKNMILJ::GJIGHKNMILJ::GJIGHKNMILJ_NCMIMMDPHFM);
+        self.GMLCJEOOCHJ = 0;
         self.score_id = 0;
         self.reward.clear();
-        self.ALOFCOLHAGA = 0;
-        self.GMLCJEOOCHJ = 0;
-        self.reason = ::protobuf::EnumOrUnknown::new(super::GJIGHKNMILJ::GJIGHKNMILJ::GJIGHKNMILJ_NCMIMMDPHFM);
-        self.OACBLHIIIEH = 0;
         self.HGBHCLHCGBB = 0;
+        self.OACBLHIIIEH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NBKKABHMMPP {
         static instance: NBKKABHMMPP = NBKKABHMMPP {
             NJPMPAAGCCD: 0,
+            ALOFCOLHAGA: 0,
+            reason: ::protobuf::EnumOrUnknown::from_i32(0),
+            GMLCJEOOCHJ: 0,
             score_id: 0,
             reward: ::protobuf::MessageField::none(),
-            ALOFCOLHAGA: 0,
-            GMLCJEOOCHJ: 0,
-            reason: ::protobuf::EnumOrUnknown::from_i32(0),
-            OACBLHIIIEH: 0,
             HGBHCLHCGBB: 0,
+            OACBLHIIIEH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -276,13 +276,13 @@ impl ::protobuf::reflect::ProtobufValue for NBKKABHMMPP {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NBKKABHMMPP.proto\x1a\x11GJIGHKNMILJ.proto\x1a\x0eItemList.proto\"\
     \x9d\x02\n\x0bNBKKABHMMPP\x12\x20\n\x0bNJPMPAAGCCD\x18\x01\x20\x01(\rR\
-    \x0bNJPMPAAGCCD\x12\x19\n\x08score_id\x18\x04\x20\x01(\rR\x07scoreId\x12\
-    !\n\x06reward\x18\x05\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x20\n\x0bA\
-    LOFCOLHAGA\x18\x06\x20\x01(\rR\x0bALOFCOLHAGA\x12\x20\n\x0bGMLCJEOOCHJ\
-    \x18\x07\x20\x01(\rR\x0bGMLCJEOOCHJ\x12$\n\x06reason\x18\x0b\x20\x01(\
-    \x0e2\x0c.GJIGHKNMILJR\x06reason\x12!\n\x0bOACBLHIIIEH\x18\xdf\x01\x20\
-    \x01(\rR\x0bOACBLHIIIEH\x12!\n\x0bHGBHCLHCGBB\x18\xab\x04\x20\x01(\rR\
-    \x0bHGBHCLHCGBBb\x06proto3\
+    \x0bNJPMPAAGCCD\x12\x20\n\x0bALOFCOLHAGA\x18\x02\x20\x01(\rR\x0bALOFCOLH\
+    AGA\x12$\n\x06reason\x18\x05\x20\x01(\x0e2\x0c.GJIGHKNMILJR\x06reason\
+    \x12\x20\n\x0bGMLCJEOOCHJ\x18\x07\x20\x01(\rR\x0bGMLCJEOOCHJ\x12\x19\n\
+    \x08score_id\x18\x0b\x20\x01(\rR\x07scoreId\x12!\n\x06reward\x18\x0e\x20\
+    \x01(\x0b2\t.ItemListR\x06reward\x12!\n\x0bHGBHCLHCGBB\x18\x94\x07\x20\
+    \x01(\rR\x0bHGBHCLHCGBB\x12!\n\x0bOACBLHIIIEH\x18\x93\x0c\x20\x01(\rR\
+    \x0bOACBLHIIIEHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

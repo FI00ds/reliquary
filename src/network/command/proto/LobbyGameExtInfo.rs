@@ -197,52 +197,52 @@ impl LobbyGameExtInfo {
         }
     }
 
-    // .LobbyGridFightInfo lobby_grid_fight_info = 1004;
+    // .H_ed720ad5 H_4fb8c684 = 1004;
 
-    pub fn lobby_grid_fight_info(&self) -> &super::LobbyGridFightInfo::LobbyGridFightInfo {
+    pub fn H_4fb8c684(&self) -> &super::H_ed720ad5::H_ed720ad5 {
         match self.APEMJMHJHKD {
-            ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::LobbyGridFightInfo(ref v)) => v,
-            _ => <super::LobbyGridFightInfo::LobbyGridFightInfo as ::protobuf::Message>::default_instance(),
+            ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::H4fb8c684(ref v)) => v,
+            _ => <super::H_ed720ad5::H_ed720ad5 as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_lobby_grid_fight_info(&mut self) {
+    pub fn clear_H_4fb8c684(&mut self) {
         self.APEMJMHJHKD = ::std::option::Option::None;
     }
 
-    pub fn has_lobby_grid_fight_info(&self) -> bool {
+    pub fn has_H_4fb8c684(&self) -> bool {
         match self.APEMJMHJHKD {
-            ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::LobbyGridFightInfo(..)) => true,
+            ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::H4fb8c684(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_lobby_grid_fight_info(&mut self, v: super::LobbyGridFightInfo::LobbyGridFightInfo) {
-        self.APEMJMHJHKD = ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::LobbyGridFightInfo(v))
+    pub fn set_H_4fb8c684(&mut self, v: super::H_ed720ad5::H_ed720ad5) {
+        self.APEMJMHJHKD = ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::H4fb8c684(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_lobby_grid_fight_info(&mut self) -> &mut super::LobbyGridFightInfo::LobbyGridFightInfo {
-        if let ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::LobbyGridFightInfo(_)) = self.APEMJMHJHKD {
+    pub fn mut_H_4fb8c684(&mut self) -> &mut super::H_ed720ad5::H_ed720ad5 {
+        if let ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::H4fb8c684(_)) = self.APEMJMHJHKD {
         } else {
-            self.APEMJMHJHKD = ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::LobbyGridFightInfo(super::LobbyGridFightInfo::LobbyGridFightInfo::new()));
+            self.APEMJMHJHKD = ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::H4fb8c684(super::H_ed720ad5::H_ed720ad5::new()));
         }
         match self.APEMJMHJHKD {
-            ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::LobbyGridFightInfo(ref mut v)) => v,
+            ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::H4fb8c684(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_lobby_grid_fight_info(&mut self) -> super::LobbyGridFightInfo::LobbyGridFightInfo {
-        if self.has_lobby_grid_fight_info() {
+    pub fn take_H_4fb8c684(&mut self) -> super::H_ed720ad5::H_ed720ad5 {
+        if self.has_H_4fb8c684() {
             match self.APEMJMHJHKD.take() {
-                ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::LobbyGridFightInfo(v)) => v,
+                ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::H4fb8c684(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::LobbyGridFightInfo::LobbyGridFightInfo::new()
+            super::H_ed720ad5::H_ed720ad5::new()
         }
     }
 
@@ -378,12 +378,12 @@ impl LobbyGameExtInfo {
             LobbyGameExtInfo::mut_PHIBAOMGNOH,
             LobbyGameExtInfo::set_PHIBAOMGNOH,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LobbyGridFightInfo::LobbyGridFightInfo>(
-            "lobby_grid_fight_info",
-            LobbyGameExtInfo::has_lobby_grid_fight_info,
-            LobbyGameExtInfo::lobby_grid_fight_info,
-            LobbyGameExtInfo::mut_lobby_grid_fight_info,
-            LobbyGameExtInfo::set_lobby_grid_fight_info,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::H_ed720ad5::H_ed720ad5>(
+            "H_4fb8c684",
+            LobbyGameExtInfo::has_H_4fb8c684,
+            LobbyGameExtInfo::H_4fb8c684,
+            LobbyGameExtInfo::mut_H_4fb8c684,
+            LobbyGameExtInfo::set_H_4fb8c684,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IPIJFDIPNDE::IPIJFDIPNDE>(
             "GOKJCFBPHCJ",
@@ -434,7 +434,7 @@ impl ::protobuf::Message for LobbyGameExtInfo {
                     self.APEMJMHJHKD = ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::PHIBAOMGNOH(is.read_message()?));
                 },
                 8034 => {
-                    self.APEMJMHJHKD = ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::LobbyGridFightInfo(is.read_message()?));
+                    self.APEMJMHJHKD = ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::H4fb8c684(is.read_message()?));
                 },
                 8042 => {
                     self.APEMJMHJHKD = ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::GOKJCFBPHCJ(is.read_message()?));
@@ -474,7 +474,7 @@ impl ::protobuf::Message for LobbyGameExtInfo {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &lobby_game_ext_info::APEMJMHJHKD::LobbyGridFightInfo(ref v) => {
+                &lobby_game_ext_info::APEMJMHJHKD::H4fb8c684(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -511,7 +511,7 @@ impl ::protobuf::Message for LobbyGameExtInfo {
                 &lobby_game_ext_info::APEMJMHJHKD::PHIBAOMGNOH(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(1003, v, os)?;
                 },
-                &lobby_game_ext_info::APEMJMHJHKD::LobbyGridFightInfo(ref v) => {
+                &lobby_game_ext_info::APEMJMHJHKD::H4fb8c684(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(1004, v, os)?;
                 },
                 &lobby_game_ext_info::APEMJMHJHKD::GOKJCFBPHCJ(ref v) => {
@@ -591,8 +591,8 @@ pub mod lobby_game_ext_info {
         LobbyMarbleInfo(super::super::LobbyMarbleInfo::LobbyMarbleInfo),
         // @@protoc_insertion_point(oneof_field:LobbyGameExtInfo.PHIBAOMGNOH)
         PHIBAOMGNOH(super::super::JMFPICAMLIG::JMFPICAMLIG),
-        // @@protoc_insertion_point(oneof_field:LobbyGameExtInfo.lobby_grid_fight_info)
-        LobbyGridFightInfo(super::super::LobbyGridFightInfo::LobbyGridFightInfo),
+        // @@protoc_insertion_point(oneof_field:LobbyGameExtInfo.H_4fb8c684)
+        H4fb8c684(super::super::H_ed720ad5::H_ed720ad5),
         // @@protoc_insertion_point(oneof_field:LobbyGameExtInfo.GOKJCFBPHCJ)
         GOKJCFBPHCJ(super::super::IPIJFDIPNDE::IPIJFDIPNDE),
         // @@protoc_insertion_point(oneof_field:LobbyGameExtInfo.MPNPIIHHFPN)
@@ -617,20 +617,19 @@ pub mod lobby_game_ext_info {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16LobbyGameExtInfo.proto\x1a\x11IPIJFDIPNDE.proto\x1a\x11JMFPICAMLIG\
-    .proto\x1a\x18LobbyGridFightInfo.proto\x1a\x15LobbyMarbleInfo.proto\x1a\
-    \x14LobbyMarchInfo.proto\x1a\x11PCBLIKPEEJA.proto\"\xc8\x03\n\x10LobbyGa\
-    meExtInfo\x12\x20\n\x0bMLAFBFEBNHB\x18\x01\x20\x03(\tR\x0bMLAFBFEBNHB\
-    \x12\x20\n\x0bELJECOAKNOF\x18\x02\x20\x01(\x08R\x0bELJECOAKNOF\x12<\n\
-    \x10lobby_march_info\x18\xe9\x07\x20\x01(\x0b2\x0f.LobbyMarchInfoH\0R\
-    \x0elobbyMarchInfo\x12?\n\x11lobby_marble_info\x18\xea\x07\x20\x01(\x0b2\
-    \x10.LobbyMarbleInfoH\0R\x0flobbyMarbleInfo\x121\n\x0bPHIBAOMGNOH\x18\
-    \xeb\x07\x20\x01(\x0b2\x0c.JMFPICAMLIGH\0R\x0bPHIBAOMGNOH\x12I\n\x15lobb\
-    y_grid_fight_info\x18\xec\x07\x20\x01(\x0b2\x13.LobbyGridFightInfoH\0R\
-    \x12lobbyGridFightInfo\x121\n\x0bGOKJCFBPHCJ\x18\xed\x07\x20\x01(\x0b2\
-    \x0c.IPIJFDIPNDEH\0R\x0bGOKJCFBPHCJ\x121\n\x0bMPNPIIHHFPN\x18\xee\x07\
-    \x20\x01(\x0b2\x0c.PCBLIKPEEJAH\0R\x0bMPNPIIHHFPNB\r\n\x0bAPEMJMHJHKDb\
-    \x06proto3\
+    \n\x16LobbyGameExtInfo.proto\x1a\x10H_ed720ad5.proto\x1a\x11IPIJFDIPNDE.\
+    proto\x1a\x11JMFPICAMLIG.proto\x1a\x15LobbyMarbleInfo.proto\x1a\x14Lobby\
+    MarchInfo.proto\x1a\x11PCBLIKPEEJA.proto\"\xac\x03\n\x10LobbyGameExtInfo\
+    \x12\x20\n\x0bMLAFBFEBNHB\x18\x01\x20\x03(\tR\x0bMLAFBFEBNHB\x12\x20\n\
+    \x0bELJECOAKNOF\x18\x02\x20\x01(\x08R\x0bELJECOAKNOF\x12<\n\x10lobby_mar\
+    ch_info\x18\xe9\x07\x20\x01(\x0b2\x0f.LobbyMarchInfoH\0R\x0elobbyMarchIn\
+    fo\x12?\n\x11lobby_marble_info\x18\xea\x07\x20\x01(\x0b2\x10.LobbyMarble\
+    InfoH\0R\x0flobbyMarbleInfo\x121\n\x0bPHIBAOMGNOH\x18\xeb\x07\x20\x01(\
+    \x0b2\x0c.JMFPICAMLIGH\0R\x0bPHIBAOMGNOH\x12-\n\nH_4fb8c684\x18\xec\x07\
+    \x20\x01(\x0b2\x0b.H_ed720ad5H\0R\tH4fb8c684\x121\n\x0bGOKJCFBPHCJ\x18\
+    \xed\x07\x20\x01(\x0b2\x0c.IPIJFDIPNDEH\0R\x0bGOKJCFBPHCJ\x121\n\x0bMPNP\
+    IIHHFPN\x18\xee\x07\x20\x01(\x0b2\x0c.PCBLIKPEEJAH\0R\x0bMPNPIIHHFPNB\r\
+    \n\x0bAPEMJMHJHKDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -648,9 +647,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(6);
+            deps.push(super::H_ed720ad5::file_descriptor().clone());
             deps.push(super::IPIJFDIPNDE::file_descriptor().clone());
             deps.push(super::JMFPICAMLIG::file_descriptor().clone());
-            deps.push(super::LobbyGridFightInfo::file_descriptor().clone());
             deps.push(super::LobbyMarbleInfo::file_descriptor().clone());
             deps.push(super::LobbyMarchInfo::file_descriptor().clone());
             deps.push(super::PCBLIKPEEJA::file_descriptor().clone());

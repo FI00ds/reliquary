@@ -79,7 +79,7 @@ impl ::protobuf::Message for EPBFAAHFDNF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                106 => {
                     self.KFNMIEMBJGD.push(is.read_message()?);
                 },
                 120 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for EPBFAAHFDNF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.KFNMIEMBJGD {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         if self.event_id != 0 {
             os.write_uint32(15, self.event_id)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for EPBFAAHFDNF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EPBFAAHFDNF.proto\x1a\x11MGCPEPBPMNG.proto\"X\n\x0bEPBFAAHFDNF\x12\
-    .\n\x0bKFNMIEMBJGD\x18\x0c\x20\x03(\x0b2\x0c.MGCPEPBPMNGR\x0bKFNMIEMBJGD\
+    .\n\x0bKFNMIEMBJGD\x18\r\x20\x03(\x0b2\x0c.MGCPEPBPMNGR\x0bKFNMIEMBJGD\
     \x12\x19\n\x08event_id\x18\x0f\x20\x01(\rR\x07eventIdb\x06proto3\
 ";
 

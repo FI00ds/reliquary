@@ -30,10 +30,10 @@ pub struct GetAiPamNextQuestionScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetAiPamNextQuestionScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetAiPamNextQuestionScRsp.BDPIMPJOJBK)
+    pub BDPIMPJOJBK: ::protobuf::EnumOrUnknown<super::FKNKNLGMACL::FKNKNLGMACL>,
     // @@protoc_insertion_point(field:GetAiPamNextQuestionScRsp.KDOHKGKBFCH)
     pub KDOHKGKBFCH: ::std::vec::Vec<super::NEKAOLPJKEE::NEKAOLPJKEE>,
-    // @@protoc_insertion_point(field:GetAiPamNextQuestionScRsp.role)
-    pub role: ::protobuf::EnumOrUnknown<super::FKNKNLGMACL::FKNKNLGMACL>,
     // special fields
     // @@protoc_insertion_point(special_field:GetAiPamNextQuestionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl GetAiPamNextQuestionScRsp {
             |m: &GetAiPamNextQuestionScRsp| { &m.retcode },
             |m: &mut GetAiPamNextQuestionScRsp| { &mut m.retcode },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BDPIMPJOJBK",
+            |m: &GetAiPamNextQuestionScRsp| { &m.BDPIMPJOJBK },
+            |m: &mut GetAiPamNextQuestionScRsp| { &mut m.BDPIMPJOJBK },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "KDOHKGKBFCH",
             |m: &GetAiPamNextQuestionScRsp| { &m.KDOHKGKBFCH },
             |m: &mut GetAiPamNextQuestionScRsp| { &mut m.KDOHKGKBFCH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "role",
-            |m: &GetAiPamNextQuestionScRsp| { &m.role },
-            |m: &mut GetAiPamNextQuestionScRsp| { &mut m.role },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetAiPamNextQuestionScRsp>(
             "GetAiPamNextQuestionScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetAiPamNextQuestionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                74 => {
-                    self.KDOHKGKBFCH.push(is.read_message()?);
+                80 => {
+                    self.BDPIMPJOJBK = is.read_enum_or_unknown()?;
                 },
-                96 => {
-                    self.role = is.read_enum_or_unknown()?;
+                98 => {
+                    self.KDOHKGKBFCH.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for GetAiPamNextQuestionScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        }
+        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(10, self.BDPIMPJOJBK.value());
         }
         for value in &self.KDOHKGKBFCH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.role != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(12, self.role.value());
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -124,14 +124,14 @@ impl ::protobuf::Message for GetAiPamNextQuestionScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
+        }
+        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.BDPIMPJOJBK))?;
         }
         for v in &self.KDOHKGKBFCH {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
-        if self.role != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.role))?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,16 +150,16 @@ impl ::protobuf::Message for GetAiPamNextQuestionScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
+        self.BDPIMPJOJBK = ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ);
         self.KDOHKGKBFCH.clear();
-        self.role = ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAiPamNextQuestionScRsp {
         static instance: GetAiPamNextQuestionScRsp = GetAiPamNextQuestionScRsp {
             retcode: 0,
+            BDPIMPJOJBK: ::protobuf::EnumOrUnknown::from_i32(0),
             KDOHKGKBFCH: ::std::vec::Vec::new(),
-            role: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for GetAiPamNextQuestionScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fGetAiPamNextQuestionScRsp.proto\x1a\x11FKNKNLGMACL.proto\x1a\x11NE\
-    KAOLPJKEE.proto\"\x87\x01\n\x19GetAiPamNextQuestionScRsp\x12\x18\n\x07re\
-    tcode\x18\x04\x20\x01(\rR\x07retcode\x12.\n\x0bKDOHKGKBFCH\x18\t\x20\x03\
-    (\x0b2\x0c.NEKAOLPJKEER\x0bKDOHKGKBFCH\x12\x20\n\x04role\x18\x0c\x20\x01\
-    (\x0e2\x0c.FKNKNLGMACLR\x04roleb\x06proto3\
+    KAOLPJKEE.proto\"\x95\x01\n\x19GetAiPamNextQuestionScRsp\x12\x18\n\x07re\
+    tcode\x18\x07\x20\x01(\rR\x07retcode\x12.\n\x0bBDPIMPJOJBK\x18\n\x20\x01\
+    (\x0e2\x0c.FKNKNLGMACLR\x0bBDPIMPJOJBK\x12.\n\x0bKDOHKGKBFCH\x18\x0c\x20\
+    \x03(\x0b2\x0c.NEKAOLPJKEER\x0bKDOHKGKBFCHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

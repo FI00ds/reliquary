@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:ChessRogueDiceStatus)
 pub enum ChessRogueDiceStatus {
-    // @@protoc_insertion_point(enum_value:ChessRogueDiceStatus.EEOMEIAMNMB_BBBFNMBDFDE)
-    EEOMEIAMNMB_BBBFNMBDFDE = 0,
-    // @@protoc_insertion_point(enum_value:ChessRogueDiceStatus.EEOMEIAMNMB_BGDFCDGFAML)
-    EEOMEIAMNMB_BGDFCDGFAML = 1,
-    // @@protoc_insertion_point(enum_value:ChessRogueDiceStatus.EEOMEIAMNMB_IMFHIFIKKNK)
-    EEOMEIAMNMB_IMFHIFIKKNK = 2,
-    // @@protoc_insertion_point(enum_value:ChessRogueDiceStatus.EEOMEIAMNMB_DMMCIMLIJOA)
-    EEOMEIAMNMB_DMMCIMLIJOA = 3,
+    // @@protoc_insertion_point(enum_value:ChessRogueDiceStatus.ChessRogueDiceStatus_ChessRogueDiceIdle)
+    ChessRogueDiceStatus_ChessRogueDiceIdle = 0,
+    // @@protoc_insertion_point(enum_value:ChessRogueDiceStatus.ChessRogueDiceStatus_ChessRogueDiceRolled)
+    ChessRogueDiceStatus_ChessRogueDiceRolled = 1,
+    // @@protoc_insertion_point(enum_value:ChessRogueDiceStatus.ChessRogueDiceStatus_ChessRogueDiceConfirmed)
+    ChessRogueDiceStatus_ChessRogueDiceConfirmed = 2,
+    // @@protoc_insertion_point(enum_value:ChessRogueDiceStatus.ChessRogueDiceStatus_ChessRogueDiceGiveup)
+    ChessRogueDiceStatus_ChessRogueDiceGiveup = 3,
 }
 
 impl ::protobuf::Enum for ChessRogueDiceStatus {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for ChessRogueDiceStatus {
 
     fn from_i32(value: i32) -> ::std::option::Option<ChessRogueDiceStatus> {
         match value {
-            0 => ::std::option::Option::Some(ChessRogueDiceStatus::EEOMEIAMNMB_BBBFNMBDFDE),
-            1 => ::std::option::Option::Some(ChessRogueDiceStatus::EEOMEIAMNMB_BGDFCDGFAML),
-            2 => ::std::option::Option::Some(ChessRogueDiceStatus::EEOMEIAMNMB_IMFHIFIKKNK),
-            3 => ::std::option::Option::Some(ChessRogueDiceStatus::EEOMEIAMNMB_DMMCIMLIJOA),
+            0 => ::std::option::Option::Some(ChessRogueDiceStatus::ChessRogueDiceStatus_ChessRogueDiceIdle),
+            1 => ::std::option::Option::Some(ChessRogueDiceStatus::ChessRogueDiceStatus_ChessRogueDiceRolled),
+            2 => ::std::option::Option::Some(ChessRogueDiceStatus::ChessRogueDiceStatus_ChessRogueDiceConfirmed),
+            3 => ::std::option::Option::Some(ChessRogueDiceStatus::ChessRogueDiceStatus_ChessRogueDiceGiveup),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<ChessRogueDiceStatus> {
         match str {
-            "EEOMEIAMNMB_BBBFNMBDFDE" => ::std::option::Option::Some(ChessRogueDiceStatus::EEOMEIAMNMB_BBBFNMBDFDE),
-            "EEOMEIAMNMB_BGDFCDGFAML" => ::std::option::Option::Some(ChessRogueDiceStatus::EEOMEIAMNMB_BGDFCDGFAML),
-            "EEOMEIAMNMB_IMFHIFIKKNK" => ::std::option::Option::Some(ChessRogueDiceStatus::EEOMEIAMNMB_IMFHIFIKKNK),
-            "EEOMEIAMNMB_DMMCIMLIJOA" => ::std::option::Option::Some(ChessRogueDiceStatus::EEOMEIAMNMB_DMMCIMLIJOA),
+            "ChessRogueDiceStatus_ChessRogueDiceIdle" => ::std::option::Option::Some(ChessRogueDiceStatus::ChessRogueDiceStatus_ChessRogueDiceIdle),
+            "ChessRogueDiceStatus_ChessRogueDiceRolled" => ::std::option::Option::Some(ChessRogueDiceStatus::ChessRogueDiceStatus_ChessRogueDiceRolled),
+            "ChessRogueDiceStatus_ChessRogueDiceConfirmed" => ::std::option::Option::Some(ChessRogueDiceStatus::ChessRogueDiceStatus_ChessRogueDiceConfirmed),
+            "ChessRogueDiceStatus_ChessRogueDiceGiveup" => ::std::option::Option::Some(ChessRogueDiceStatus::ChessRogueDiceStatus_ChessRogueDiceGiveup),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [ChessRogueDiceStatus] = &[
-        ChessRogueDiceStatus::EEOMEIAMNMB_BBBFNMBDFDE,
-        ChessRogueDiceStatus::EEOMEIAMNMB_BGDFCDGFAML,
-        ChessRogueDiceStatus::EEOMEIAMNMB_IMFHIFIKKNK,
-        ChessRogueDiceStatus::EEOMEIAMNMB_DMMCIMLIJOA,
+        ChessRogueDiceStatus::ChessRogueDiceStatus_ChessRogueDiceIdle,
+        ChessRogueDiceStatus::ChessRogueDiceStatus_ChessRogueDiceRolled,
+        ChessRogueDiceStatus::ChessRogueDiceStatus_ChessRogueDiceConfirmed,
+        ChessRogueDiceStatus::ChessRogueDiceStatus_ChessRogueDiceGiveup,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for ChessRogueDiceStatus {
 
 impl ::std::default::Default for ChessRogueDiceStatus {
     fn default() -> Self {
-        ChessRogueDiceStatus::EEOMEIAMNMB_BBBFNMBDFDE
+        ChessRogueDiceStatus::ChessRogueDiceStatus_ChessRogueDiceIdle
     }
 }
 
@@ -97,10 +97,11 @@ impl ChessRogueDiceStatus {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aChessRogueDiceStatus.proto*\x8a\x01\n\x14ChessRogueDiceStatus\x12\
-    \x1b\n\x17EEOMEIAMNMB_BBBFNMBDFDE\x10\0\x12\x1b\n\x17EEOMEIAMNMB_BGDFCDG\
-    FAML\x10\x01\x12\x1b\n\x17EEOMEIAMNMB_IMFHIFIKKNK\x10\x02\x12\x1b\n\x17E\
-    EOMEIAMNMB_DMMCIMLIJOA\x10\x03b\x06proto3\
+    \n\x1aChessRogueDiceStatus.proto*\xd3\x01\n\x14ChessRogueDiceStatus\x12+\
+    \n'ChessRogueDiceStatus_ChessRogueDiceIdle\x10\0\x12-\n)ChessRogueDiceSt\
+    atus_ChessRogueDiceRolled\x10\x01\x120\n,ChessRogueDiceStatus_ChessRogue\
+    DiceConfirmed\x10\x02\x12-\n)ChessRogueDiceStatus_ChessRogueDiceGiveup\
+    \x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BLODLKIBCIE {
     // message fields
+    // @@protoc_insertion_point(field:BLODLKIBCIE.ELAENNLBEDD)
+    pub ELAENNLBEDD: u32,
     // @@protoc_insertion_point(field:BLODLKIBCIE.LEGEGIHKLFK)
     pub LEGEGIHKLFK: ::std::vec::Vec<BLODLKIBCIE>,
     // @@protoc_insertion_point(field:BLODLKIBCIE.BOGIJENAEHJ)
     pub BOGIJENAEHJ: u32,
-    // @@protoc_insertion_point(field:BLODLKIBCIE.ELAENNLBEDD)
-    pub ELAENNLBEDD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BLODLKIBCIE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl BLODLKIBCIE {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ELAENNLBEDD",
+            |m: &BLODLKIBCIE| { &m.ELAENNLBEDD },
+            |m: &mut BLODLKIBCIE| { &mut m.ELAENNLBEDD },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "LEGEGIHKLFK",
             |m: &BLODLKIBCIE| { &m.LEGEGIHKLFK },
@@ -62,11 +67,6 @@ impl BLODLKIBCIE {
             "BOGIJENAEHJ",
             |m: &BLODLKIBCIE| { &m.BOGIJENAEHJ },
             |m: &mut BLODLKIBCIE| { &mut m.BOGIJENAEHJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELAENNLBEDD",
-            |m: &BLODLKIBCIE| { &m.ELAENNLBEDD },
-            |m: &mut BLODLKIBCIE| { &mut m.ELAENNLBEDD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BLODLKIBCIE>(
             "BLODLKIBCIE",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for BLODLKIBCIE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                8 => {
+                    self.ELAENNLBEDD = is.read_uint32()?;
+                },
+                58 => {
                     self.LEGEGIHKLFK.push(is.read_message()?);
                 },
-                72 => {
+                80 => {
                     self.BOGIJENAEHJ = is.read_uint32()?;
-                },
-                88 => {
-                    self.ELAENNLBEDD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for BLODLKIBCIE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.ELAENNLBEDD != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.ELAENNLBEDD);
+        }
         for value in &self.LEGEGIHKLFK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.BOGIJENAEHJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.BOGIJENAEHJ);
-        }
-        if self.ELAENNLBEDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.ELAENNLBEDD);
+            my_size += ::protobuf::rt::uint32_size(10, self.BOGIJENAEHJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for BLODLKIBCIE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.ELAENNLBEDD != 0 {
+            os.write_uint32(1, self.ELAENNLBEDD)?;
+        }
         for v in &self.LEGEGIHKLFK {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         if self.BOGIJENAEHJ != 0 {
-            os.write_uint32(9, self.BOGIJENAEHJ)?;
-        }
-        if self.ELAENNLBEDD != 0 {
-            os.write_uint32(11, self.ELAENNLBEDD)?;
+            os.write_uint32(10, self.BOGIJENAEHJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for BLODLKIBCIE {
     }
 
     fn clear(&mut self) {
+        self.ELAENNLBEDD = 0;
         self.LEGEGIHKLFK.clear();
         self.BOGIJENAEHJ = 0;
-        self.ELAENNLBEDD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BLODLKIBCIE {
         static instance: BLODLKIBCIE = BLODLKIBCIE {
+            ELAENNLBEDD: 0,
             LEGEGIHKLFK: ::std::vec::Vec::new(),
             BOGIJENAEHJ: 0,
-            ELAENNLBEDD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for BLODLKIBCIE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BLODLKIBCIE.proto\"\x81\x01\n\x0bBLODLKIBCIE\x12.\n\x0bLEGEGIHKLFK\
-    \x18\x02\x20\x03(\x0b2\x0c.BLODLKIBCIER\x0bLEGEGIHKLFK\x12\x20\n\x0bBOGI\
-    JENAEHJ\x18\t\x20\x01(\rR\x0bBOGIJENAEHJ\x12\x20\n\x0bELAENNLBEDD\x18\
-    \x0b\x20\x01(\rR\x0bELAENNLBEDDb\x06proto3\
+    \n\x11BLODLKIBCIE.proto\"\x81\x01\n\x0bBLODLKIBCIE\x12\x20\n\x0bELAENNLB\
+    EDD\x18\x01\x20\x01(\rR\x0bELAENNLBEDD\x12.\n\x0bLEGEGIHKLFK\x18\x07\x20\
+    \x03(\x0b2\x0c.BLODLKIBCIER\x0bLEGEGIHKLFK\x12\x20\n\x0bBOGIJENAEHJ\x18\
+    \n\x20\x01(\rR\x0bBOGIJENAEHJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

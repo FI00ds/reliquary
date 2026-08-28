@@ -79,10 +79,10 @@ impl ::protobuf::Message for HeliobusUnlockSkillScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                32 => {
                     self.skill_id = is.read_uint32()?;
                 },
-                72 => {
+                96 => {
                     self.ENGEPMPCJPC = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for HeliobusUnlockSkillScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.skill_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.skill_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.skill_id);
         }
         if self.ENGEPMPCJPC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.ENGEPMPCJPC);
+            my_size += ::protobuf::rt::uint32_size(12, self.ENGEPMPCJPC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for HeliobusUnlockSkillScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.skill_id != 0 {
-            os.write_uint32(1, self.skill_id)?;
+            os.write_uint32(4, self.skill_id)?;
         }
         if self.ENGEPMPCJPC != 0 {
-            os.write_uint32(9, self.ENGEPMPCJPC)?;
+            os.write_uint32(12, self.ENGEPMPCJPC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusUnlockSkillScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!HeliobusUnlockSkillScNotify.proto\"Z\n\x1bHeliobusUnlockSkillScNotify\
-    \x12\x19\n\x08skill_id\x18\x01\x20\x01(\rR\x07skillId\x12\x20\n\x0bENGEP\
-    MPCJPC\x18\t\x20\x01(\rR\x0bENGEPMPCJPCb\x06proto3\
+    \x12\x19\n\x08skill_id\x18\x04\x20\x01(\rR\x07skillId\x12\x20\n\x0bENGEP\
+    MPCJPC\x18\x0c\x20\x01(\rR\x0bENGEPMPCJPCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

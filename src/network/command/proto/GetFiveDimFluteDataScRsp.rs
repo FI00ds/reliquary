@@ -92,13 +92,13 @@ impl ::protobuf::Message for GetFiveDimFluteDataScRsp {
                 8 => {
                     self.AOBGMMAIMHJ.push(is.read_uint32()?);
                 },
-                66 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.NFOBNDJIEPL)?;
                 },
-                64 => {
+                32 => {
                     self.NFOBNDJIEPL.push(is.read_uint32()?);
                 },
-                88 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -114,9 +114,9 @@ impl ::protobuf::Message for GetFiveDimFluteDataScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.AOBGMMAIMHJ);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.NFOBNDJIEPL);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.NFOBNDJIEPL);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,9 +125,9 @@ impl ::protobuf::Message for GetFiveDimFluteDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         os.write_repeated_packed_uint32(1, &self.AOBGMMAIMHJ)?;
-        os.write_repeated_packed_uint32(8, &self.NFOBNDJIEPL)?;
+        os.write_repeated_packed_uint32(4, &self.NFOBNDJIEPL)?;
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,8 +183,8 @@ impl ::protobuf::reflect::ProtobufValue for GetFiveDimFluteDataScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eGetFiveDimFluteDataScRsp.proto\"x\n\x18GetFiveDimFluteDataScRsp\
     \x12\x20\n\x0bAOBGMMAIMHJ\x18\x01\x20\x03(\rR\x0bAOBGMMAIMHJ\x12\x20\n\
-    \x0bNFOBNDJIEPL\x18\x08\x20\x03(\rR\x0bNFOBNDJIEPL\x12\x18\n\x07retcode\
-    \x18\x0b\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x0bNFOBNDJIEPL\x18\x04\x20\x03(\rR\x0bNFOBNDJIEPL\x12\x18\n\x07retcode\
+    \x18\x0c\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

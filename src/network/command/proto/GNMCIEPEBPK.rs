@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GNMCIEPEBPK {
     // message fields
-    // @@protoc_insertion_point(field:GNMCIEPEBPK.item_list)
-    pub item_list: ::std::vec::Vec<super::FMKMEFMOJGJ::FMKMEFMOJGJ>,
     // @@protoc_insertion_point(field:GNMCIEPEBPK.item_value)
     pub item_value: ::protobuf::MessageField<super::NCFKHDIKCNI::NCFKHDIKCNI>,
+    // @@protoc_insertion_point(field:GNMCIEPEBPK.item_list)
+    pub item_list: ::std::vec::Vec<super::FMKMEFMOJGJ::FMKMEFMOJGJ>,
     // @@protoc_insertion_point(field:GNMCIEPEBPK.NDMLPIGABGE)
     pub NDMLPIGABGE: ::std::collections::HashMap<u32, u32>,
     // special fields
@@ -53,15 +53,15 @@ impl GNMCIEPEBPK {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "item_list",
-            |m: &GNMCIEPEBPK| { &m.item_list },
-            |m: &mut GNMCIEPEBPK| { &mut m.item_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NCFKHDIKCNI::NCFKHDIKCNI>(
             "item_value",
             |m: &GNMCIEPEBPK| { &m.item_value },
             |m: &mut GNMCIEPEBPK| { &mut m.item_value },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "item_list",
+            |m: &GNMCIEPEBPK| { &m.item_list },
+            |m: &mut GNMCIEPEBPK| { &mut m.item_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "NDMLPIGABGE",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for GNMCIEPEBPK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.item_list.push(is.read_message()?);
-                },
-                50 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_value)?;
                 },
-                106 => {
+                58 => {
+                    self.item_list.push(is.read_message()?);
+                },
+                66 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -119,14 +119,14 @@ impl ::protobuf::Message for GNMCIEPEBPK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.item_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if let Some(v) = self.item_value.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        for value in &self.item_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         for (k, v) in &self.NDMLPIGABGE {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
@@ -139,17 +139,17 @@ impl ::protobuf::Message for GNMCIEPEBPK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
         if let Some(v) = self.item_value.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
+        for v in &self.item_list {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        };
         for (k, v) in &self.NDMLPIGABGE {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(106)?; // Tag.
+            os.write_raw_varint32(66)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
@@ -171,8 +171,8 @@ impl ::protobuf::Message for GNMCIEPEBPK {
     }
 
     fn clear(&mut self) {
-        self.item_list.clear();
         self.item_value.clear();
+        self.item_list.clear();
         self.NDMLPIGABGE.clear();
         self.special_fields.clear();
     }
@@ -202,12 +202,12 @@ impl ::protobuf::reflect::ProtobufValue for GNMCIEPEBPK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GNMCIEPEBPK.proto\x1a\x11FMKMEFMOJGJ.proto\x1a\x11NCFKHDIKCNI.prot\
-    o\"\xe6\x01\n\x0bGNMCIEPEBPK\x12)\n\titem_list\x18\x02\x20\x03(\x0b2\x0c\
-    .FMKMEFMOJGJR\x08itemList\x12+\n\nitem_value\x18\x06\x20\x01(\x0b2\x0c.N\
-    CFKHDIKCNIR\titemValue\x12?\n\x0bNDMLPIGABGE\x18\r\x20\x03(\x0b2\x1d.GNM\
-    CIEPEBPK.NDMLPIGABGEEntryR\x0bNDMLPIGABGE\x1a>\n\x10NDMLPIGABGEEntry\x12\
-    \x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\
-    \x01(\rR\x05value:\x028\x01b\x06proto3\
+    o\"\xe6\x01\n\x0bGNMCIEPEBPK\x12+\n\nitem_value\x18\x01\x20\x01(\x0b2\
+    \x0c.NCFKHDIKCNIR\titemValue\x12)\n\titem_list\x18\x07\x20\x03(\x0b2\x0c\
+    .FMKMEFMOJGJR\x08itemList\x12?\n\x0bNDMLPIGABGE\x18\x08\x20\x03(\x0b2\
+    \x1d.GNMCIEPEBPK.NDMLPIGABGEEntryR\x0bNDMLPIGABGE\x1a>\n\x10NDMLPIGABGEE\
+    ntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\
+    \x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

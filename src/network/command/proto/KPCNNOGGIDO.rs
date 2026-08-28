@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KPCNNOGGIDO {
     // message fields
-    // @@protoc_insertion_point(field:KPCNNOGGIDO.KFGLDLFBFFB)
-    pub KFGLDLFBFFB: u32,
-    // @@protoc_insertion_point(field:KPCNNOGGIDO.CLPAAFFFBKK)
-    pub CLPAAFFFBKK: u32,
     // @@protoc_insertion_point(field:KPCNNOGGIDO.MJOKDHMJBEH)
     pub MJOKDHMJBEH: u32,
-    // @@protoc_insertion_point(field:KPCNNOGGIDO.MGLEKDEAJBB)
-    pub MGLEKDEAJBB: u32,
     // @@protoc_insertion_point(field:KPCNNOGGIDO.MLBMDLBKEEM)
     pub MLBMDLBKEEM: u32,
+    // @@protoc_insertion_point(field:KPCNNOGGIDO.KFGLDLFBFFB)
+    pub KFGLDLFBFFB: u32,
+    // @@protoc_insertion_point(field:KPCNNOGGIDO.MGLEKDEAJBB)
+    pub MGLEKDEAJBB: u32,
+    // @@protoc_insertion_point(field:KPCNNOGGIDO.CLPAAFFFBKK)
+    pub CLPAAFFFBKK: u32,
     // @@protoc_insertion_point(field:KPCNNOGGIDO.CBEFDHFFNLN)
     pub CBEFDHFFNLN: ::std::vec::Vec<super::FGFJNANBJJI::FGFJNANBJJI>,
     // special fields
@@ -60,19 +60,19 @@ impl KPCNNOGGIDO {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KFGLDLFBFFB",
-            |m: &KPCNNOGGIDO| { &m.KFGLDLFBFFB },
-            |m: &mut KPCNNOGGIDO| { &mut m.KFGLDLFBFFB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CLPAAFFFBKK",
-            |m: &KPCNNOGGIDO| { &m.CLPAAFFFBKK },
-            |m: &mut KPCNNOGGIDO| { &mut m.CLPAAFFFBKK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MJOKDHMJBEH",
             |m: &KPCNNOGGIDO| { &m.MJOKDHMJBEH },
             |m: &mut KPCNNOGGIDO| { &mut m.MJOKDHMJBEH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MLBMDLBKEEM",
+            |m: &KPCNNOGGIDO| { &m.MLBMDLBKEEM },
+            |m: &mut KPCNNOGGIDO| { &mut m.MLBMDLBKEEM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KFGLDLFBFFB",
+            |m: &KPCNNOGGIDO| { &m.KFGLDLFBFFB },
+            |m: &mut KPCNNOGGIDO| { &mut m.KFGLDLFBFFB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MGLEKDEAJBB",
@@ -80,9 +80,9 @@ impl KPCNNOGGIDO {
             |m: &mut KPCNNOGGIDO| { &mut m.MGLEKDEAJBB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MLBMDLBKEEM",
-            |m: &KPCNNOGGIDO| { &m.MLBMDLBKEEM },
-            |m: &mut KPCNNOGGIDO| { &mut m.MLBMDLBKEEM },
+            "CLPAAFFFBKK",
+            |m: &KPCNNOGGIDO| { &m.CLPAAFFFBKK },
+            |m: &mut KPCNNOGGIDO| { &mut m.CLPAAFFFBKK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "CBEFDHFFNLN",
@@ -107,20 +107,20 @@ impl ::protobuf::Message for KPCNNOGGIDO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.KFGLDLFBFFB = is.read_uint32()?;
-                },
-                56 => {
-                    self.CLPAAFFFBKK = is.read_uint32()?;
-                },
-                72 => {
+                40 => {
                     self.MJOKDHMJBEH = is.read_uint32()?;
                 },
+                64 => {
+                    self.MLBMDLBKEEM = is.read_uint32()?;
+                },
                 80 => {
+                    self.KFGLDLFBFFB = is.read_uint32()?;
+                },
+                88 => {
                     self.MGLEKDEAJBB = is.read_uint32()?;
                 },
                 96 => {
-                    self.MLBMDLBKEEM = is.read_uint32()?;
+                    self.CLPAAFFFBKK = is.read_uint32()?;
                 },
                 122 => {
                     self.CBEFDHFFNLN.push(is.read_message()?);
@@ -137,20 +137,20 @@ impl ::protobuf::Message for KPCNNOGGIDO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KFGLDLFBFFB != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.KFGLDLFBFFB);
-        }
-        if self.CLPAAFFFBKK != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.CLPAAFFFBKK);
-        }
         if self.MJOKDHMJBEH != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.MJOKDHMJBEH);
-        }
-        if self.MGLEKDEAJBB != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.MGLEKDEAJBB);
+            my_size += ::protobuf::rt::uint32_size(5, self.MJOKDHMJBEH);
         }
         if self.MLBMDLBKEEM != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.MLBMDLBKEEM);
+            my_size += ::protobuf::rt::uint32_size(8, self.MLBMDLBKEEM);
+        }
+        if self.KFGLDLFBFFB != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.KFGLDLFBFFB);
+        }
+        if self.MGLEKDEAJBB != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.MGLEKDEAJBB);
+        }
+        if self.CLPAAFFFBKK != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.CLPAAFFFBKK);
         }
         for value in &self.CBEFDHFFNLN {
             let len = value.compute_size();
@@ -162,20 +162,20 @@ impl ::protobuf::Message for KPCNNOGGIDO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KFGLDLFBFFB != 0 {
-            os.write_uint32(6, self.KFGLDLFBFFB)?;
-        }
-        if self.CLPAAFFFBKK != 0 {
-            os.write_uint32(7, self.CLPAAFFFBKK)?;
-        }
         if self.MJOKDHMJBEH != 0 {
-            os.write_uint32(9, self.MJOKDHMJBEH)?;
-        }
-        if self.MGLEKDEAJBB != 0 {
-            os.write_uint32(10, self.MGLEKDEAJBB)?;
+            os.write_uint32(5, self.MJOKDHMJBEH)?;
         }
         if self.MLBMDLBKEEM != 0 {
-            os.write_uint32(12, self.MLBMDLBKEEM)?;
+            os.write_uint32(8, self.MLBMDLBKEEM)?;
+        }
+        if self.KFGLDLFBFFB != 0 {
+            os.write_uint32(10, self.KFGLDLFBFFB)?;
+        }
+        if self.MGLEKDEAJBB != 0 {
+            os.write_uint32(11, self.MGLEKDEAJBB)?;
+        }
+        if self.CLPAAFFFBKK != 0 {
+            os.write_uint32(12, self.CLPAAFFFBKK)?;
         }
         for v in &self.CBEFDHFFNLN {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
@@ -197,22 +197,22 @@ impl ::protobuf::Message for KPCNNOGGIDO {
     }
 
     fn clear(&mut self) {
-        self.KFGLDLFBFFB = 0;
-        self.CLPAAFFFBKK = 0;
         self.MJOKDHMJBEH = 0;
-        self.MGLEKDEAJBB = 0;
         self.MLBMDLBKEEM = 0;
+        self.KFGLDLFBFFB = 0;
+        self.MGLEKDEAJBB = 0;
+        self.CLPAAFFFBKK = 0;
         self.CBEFDHFFNLN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KPCNNOGGIDO {
         static instance: KPCNNOGGIDO = KPCNNOGGIDO {
-            KFGLDLFBFFB: 0,
-            CLPAAFFFBKK: 0,
             MJOKDHMJBEH: 0,
-            MGLEKDEAJBB: 0,
             MLBMDLBKEEM: 0,
+            KFGLDLFBFFB: 0,
+            MGLEKDEAJBB: 0,
+            CLPAAFFFBKK: 0,
             CBEFDHFFNLN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -239,11 +239,11 @@ impl ::protobuf::reflect::ProtobufValue for KPCNNOGGIDO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KPCNNOGGIDO.proto\x1a\x11FGFJNANBJJI.proto\"\xe7\x01\n\x0bKPCNNOGG\
-    IDO\x12\x20\n\x0bKFGLDLFBFFB\x18\x06\x20\x01(\rR\x0bKFGLDLFBFFB\x12\x20\
-    \n\x0bCLPAAFFFBKK\x18\x07\x20\x01(\rR\x0bCLPAAFFFBKK\x12\x20\n\x0bMJOKDH\
-    MJBEH\x18\t\x20\x01(\rR\x0bMJOKDHMJBEH\x12\x20\n\x0bMGLEKDEAJBB\x18\n\
-    \x20\x01(\rR\x0bMGLEKDEAJBB\x12\x20\n\x0bMLBMDLBKEEM\x18\x0c\x20\x01(\rR\
-    \x0bMLBMDLBKEEM\x12.\n\x0bCBEFDHFFNLN\x18\x0f\x20\x03(\x0b2\x0c.FGFJNANB\
+    IDO\x12\x20\n\x0bMJOKDHMJBEH\x18\x05\x20\x01(\rR\x0bMJOKDHMJBEH\x12\x20\
+    \n\x0bMLBMDLBKEEM\x18\x08\x20\x01(\rR\x0bMLBMDLBKEEM\x12\x20\n\x0bKFGLDL\
+    FBFFB\x18\n\x20\x01(\rR\x0bKFGLDLFBFFB\x12\x20\n\x0bMGLEKDEAJBB\x18\x0b\
+    \x20\x01(\rR\x0bMGLEKDEAJBB\x12\x20\n\x0bCLPAAFFFBKK\x18\x0c\x20\x01(\rR\
+    \x0bCLPAAFFFBKK\x12.\n\x0bCBEFDHFFNLN\x18\x0f\x20\x03(\x0b2\x0c.FGFJNANB\
     JJIR\x0bCBEFDHFFNLNb\x06proto3\
 ";
 

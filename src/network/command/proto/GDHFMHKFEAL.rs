@@ -31,7 +31,7 @@ pub struct GDHFMHKFEAL {
     // @@protoc_insertion_point(field:GDHFMHKFEAL.FKNNKCKLFMD)
     pub FKNNKCKLFMD: u32,
     // @@protoc_insertion_point(field:GDHFMHKFEAL.NMGIABHIJJB)
-    pub NMGIABHIJJB: ::protobuf::MessageField<super::GridFightDropInfo::GridFightDropInfo>,
+    pub NMGIABHIJJB: ::protobuf::MessageField<super::H_cb5e278e::H_cb5e278e>,
     // special fields
     // @@protoc_insertion_point(special_field:GDHFMHKFEAL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,7 +56,7 @@ impl GDHFMHKFEAL {
             |m: &GDHFMHKFEAL| { &m.FKNNKCKLFMD },
             |m: &mut GDHFMHKFEAL| { &mut m.FKNNKCKLFMD },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightDropInfo::GridFightDropInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::H_cb5e278e::H_cb5e278e>(
             "NMGIABHIJJB",
             |m: &GDHFMHKFEAL| { &m.NMGIABHIJJB },
             |m: &mut GDHFMHKFEAL| { &mut m.NMGIABHIJJB },
@@ -79,10 +79,10 @@ impl ::protobuf::Message for GDHFMHKFEAL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                8 => {
                     self.FKNNKCKLFMD = is.read_uint32()?;
                 },
-                90 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NMGIABHIJJB)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GDHFMHKFEAL {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.FKNNKCKLFMD != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FKNNKCKLFMD);
+            my_size += ::protobuf::rt::uint32_size(1, self.FKNNKCKLFMD);
         }
         if let Some(v) = self.NMGIABHIJJB.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GDHFMHKFEAL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.FKNNKCKLFMD != 0 {
-            os.write_uint32(6, self.FKNNKCKLFMD)?;
+            os.write_uint32(1, self.FKNNKCKLFMD)?;
         }
         if let Some(v) = self.NMGIABHIJJB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,10 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for GDHFMHKFEAL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GDHFMHKFEAL.proto\x1a\x17GridFightDropInfo.proto\"e\n\x0bGDHFMHKFE\
-    AL\x12\x20\n\x0bFKNNKCKLFMD\x18\x06\x20\x01(\rR\x0bFKNNKCKLFMD\x124\n\
-    \x0bNMGIABHIJJB\x18\x0b\x20\x01(\x0b2\x12.GridFightDropInfoR\x0bNMGIABHI\
-    JJBb\x06proto3\
+    \n\x11GDHFMHKFEAL.proto\x1a\x10H_cb5e278e.proto\"^\n\x0bGDHFMHKFEAL\x12\
+    \x20\n\x0bFKNNKCKLFMD\x18\x01\x20\x01(\rR\x0bFKNNKCKLFMD\x12-\n\x0bNMGIA\
+    BHIJJB\x18\x0e\x20\x01(\x0b2\x0b.H_cb5e278eR\x0bNMGIABHIJJBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +186,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GridFightDropInfo::file_descriptor().clone());
+            deps.push(super::H_cb5e278e::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GDHFMHKFEAL::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

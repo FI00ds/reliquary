@@ -86,10 +86,10 @@ impl ::protobuf::Message for ChessRogueNousEnableRogueTalentScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JCOBJAMPOAL)?;
                 },
-                80 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
                 104 => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for ChessRogueNousEnableRogueTalentScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         if self.FPCCPKAOGKG != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.FPCCPKAOGKG);
@@ -124,10 +124,10 @@ impl ::protobuf::Message for ChessRogueNousEnableRogueTalentScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.JCOBJAMPOAL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         if self.FPCCPKAOGKG != 0 {
             os.write_uint32(13, self.FPCCPKAOGKG)?;
@@ -186,8 +186,8 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueNousEnableRogueTalentScRsp
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*ChessRogueNousEnableRogueTalentScRsp.proto\x1a\x11FDBDLBAPDBE.proto\"\
     \x92\x01\n$ChessRogueNousEnableRogueTalentScRsp\x12.\n\x0bJCOBJAMPOAL\
-    \x18\x05\x20\x01(\x0b2\x0c.FDBDLBAPDBER\x0bJCOBJAMPOAL\x12\x18\n\x07retc\
-    ode\x18\n\x20\x01(\rR\x07retcode\x12\x20\n\x0bFPCCPKAOGKG\x18\r\x20\x01(\
+    \x18\x02\x20\x01(\x0b2\x0c.FDBDLBAPDBER\x0bJCOBJAMPOAL\x12\x18\n\x07retc\
+    ode\x18\t\x20\x01(\rR\x07retcode\x12\x20\n\x0bFPCCPKAOGKG\x18\r\x20\x01(\
     \rR\x0bFPCCPKAOGKGb\x06proto3\
 ";
 

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightGameStateScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FightGameStateScRsp.room_ext_info)
-    pub room_ext_info: ::protobuf::MessageField<super::OFFMCODMKDL::OFFMCODMKDL>,
-    // @@protoc_insertion_point(field:FightGameStateScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:FightGameStateScRsp.EMIJCKENBKJ)
+    pub EMIJCKENBKJ: ::protobuf::MessageField<super::OFFMCODMKDL::OFFMCODMKDL>,
     // @@protoc_insertion_point(field:FightGameStateScRsp.KAEDKFOMADJ)
     pub KAEDKFOMADJ: ::protobuf::MessageField<super::BFBHKJLJJBJ::BFBHKJLJJBJ>,
+    // @@protoc_insertion_point(field:FightGameStateScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:FightGameStateScRsp.DFLEOIGPLNM)
     pub DFLEOIGPLNM: ::std::vec::Vec<super::LMLNNHKJEIP::LMLNNHKJEIP>,
     // special fields
@@ -56,19 +56,19 @@ impl FightGameStateScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OFFMCODMKDL::OFFMCODMKDL>(
-            "room_ext_info",
-            |m: &FightGameStateScRsp| { &m.room_ext_info },
-            |m: &mut FightGameStateScRsp| { &mut m.room_ext_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &FightGameStateScRsp| { &m.retcode },
-            |m: &mut FightGameStateScRsp| { &mut m.retcode },
+            "EMIJCKENBKJ",
+            |m: &FightGameStateScRsp| { &m.EMIJCKENBKJ },
+            |m: &mut FightGameStateScRsp| { &mut m.EMIJCKENBKJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BFBHKJLJJBJ::BFBHKJLJJBJ>(
             "KAEDKFOMADJ",
             |m: &FightGameStateScRsp| { &m.KAEDKFOMADJ },
             |m: &mut FightGameStateScRsp| { &mut m.KAEDKFOMADJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &FightGameStateScRsp| { &m.retcode },
+            |m: &mut FightGameStateScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DFLEOIGPLNM",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for FightGameStateScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.room_ext_info)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EMIJCKENBKJ)?;
                 },
-                72 => {
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KAEDKFOMADJ)?;
+                },
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
                 98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KAEDKFOMADJ)?;
-                },
-                106 => {
                     self.DFLEOIGPLNM.push(is.read_message()?);
                 },
                 tag => {
@@ -117,16 +117,16 @@ impl ::protobuf::Message for FightGameStateScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.room_ext_info.as_ref() {
+        if let Some(v) = self.EMIJCKENBKJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         if let Some(v) = self.KAEDKFOMADJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         for value in &self.DFLEOIGPLNM {
             let len = value.compute_size();
@@ -138,17 +138,17 @@ impl ::protobuf::Message for FightGameStateScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.room_ext_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+        if let Some(v) = self.EMIJCKENBKJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if let Some(v) = self.KAEDKFOMADJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(5, self.retcode)?;
         }
         for v in &self.DFLEOIGPLNM {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,18 +167,18 @@ impl ::protobuf::Message for FightGameStateScRsp {
     }
 
     fn clear(&mut self) {
-        self.room_ext_info.clear();
-        self.retcode = 0;
+        self.EMIJCKENBKJ.clear();
         self.KAEDKFOMADJ.clear();
+        self.retcode = 0;
         self.DFLEOIGPLNM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightGameStateScRsp {
         static instance: FightGameStateScRsp = FightGameStateScRsp {
-            room_ext_info: ::protobuf::MessageField::none(),
-            retcode: 0,
+            EMIJCKENBKJ: ::protobuf::MessageField::none(),
             KAEDKFOMADJ: ::protobuf::MessageField::none(),
+            retcode: 0,
             DFLEOIGPLNM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -205,11 +205,12 @@ impl ::protobuf::reflect::ProtobufValue for FightGameStateScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19FightGameStateScRsp.proto\x1a\x11BFBHKJLJJBJ.proto\x1a\x11LMLNNHKJ\
-    EIP.proto\x1a\x11OFFMCODMKDL.proto\"\xc1\x01\n\x13FightGameStateScRsp\
-    \x120\n\rroom_ext_info\x18\x05\x20\x01(\x0b2\x0c.OFFMCODMKDLR\x0broomExt\
-    Info\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12.\n\x0bKAEDKFO\
-    MADJ\x18\x0c\x20\x01(\x0b2\x0c.BFBHKJLJJBJR\x0bKAEDKFOMADJ\x12.\n\x0bDFL\
-    EOIGPLNM\x18\r\x20\x03(\x0b2\x0c.LMLNNHKJEIPR\x0bDFLEOIGPLNMb\x06proto3\
+    EIP.proto\x1a\x11OFFMCODMKDL.proto\"\xbf\x01\n\x13FightGameStateScRsp\
+    \x12.\n\x0bEMIJCKENBKJ\x18\x01\x20\x01(\x0b2\x0c.OFFMCODMKDLR\x0bEMIJCKE\
+    NBKJ\x12.\n\x0bKAEDKFOMADJ\x18\x02\x20\x01(\x0b2\x0c.BFBHKJLJJBJR\x0bKAE\
+    DKFOMADJ\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12.\n\x0bD\
+    FLEOIGPLNM\x18\x0c\x20\x03(\x0b2\x0c.LMLNNHKJEIPR\x0bDFLEOIGPLNMb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

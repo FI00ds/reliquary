@@ -32,8 +32,6 @@ pub struct JJHJCIAPADP {
     pub GLHDCCPOGHL: ::protobuf::MessageField<super::ABJGLPCOMMK::ABJGLPCOMMK>,
     // @@protoc_insertion_point(field:JJHJCIAPADP.JBIFDJKPHIJ)
     pub JBIFDJKPHIJ: ::protobuf::MessageField<super::NKAEOPAAJLG::NKAEOPAAJLG>,
-    // @@protoc_insertion_point(field:JJHJCIAPADP.EAGPOCAGMCA)
-    pub EAGPOCAGMCA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:JJHJCIAPADP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,7 +49,7 @@ impl JJHJCIAPADP {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ABJGLPCOMMK::ABJGLPCOMMK>(
             "GLHDCCPOGHL",
@@ -62,11 +60,6 @@ impl JJHJCIAPADP {
             "JBIFDJKPHIJ",
             |m: &JJHJCIAPADP| { &m.JBIFDJKPHIJ },
             |m: &mut JJHJCIAPADP| { &mut m.JBIFDJKPHIJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EAGPOCAGMCA",
-            |m: &JJHJCIAPADP| { &m.EAGPOCAGMCA },
-            |m: &mut JJHJCIAPADP| { &mut m.EAGPOCAGMCA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JJHJCIAPADP>(
             "JJHJCIAPADP",
@@ -92,9 +85,6 @@ impl ::protobuf::Message for JJHJCIAPADP {
                 818 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JBIFDJKPHIJ)?;
                 },
-                8 => {
-                    self.EAGPOCAGMCA = is.read_uint32()?;
-                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -115,9 +105,6 @@ impl ::protobuf::Message for JJHJCIAPADP {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.EAGPOCAGMCA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.EAGPOCAGMCA);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -129,9 +116,6 @@ impl ::protobuf::Message for JJHJCIAPADP {
         }
         if let Some(v) = self.JBIFDJKPHIJ.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(102, v, os)?;
-        }
-        if self.EAGPOCAGMCA != 0 {
-            os.write_uint32(1, self.EAGPOCAGMCA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -152,7 +136,6 @@ impl ::protobuf::Message for JJHJCIAPADP {
     fn clear(&mut self) {
         self.GLHDCCPOGHL.clear();
         self.JBIFDJKPHIJ.clear();
-        self.EAGPOCAGMCA = 0;
         self.special_fields.clear();
     }
 
@@ -160,7 +143,6 @@ impl ::protobuf::Message for JJHJCIAPADP {
         static instance: JJHJCIAPADP = JJHJCIAPADP {
             GLHDCCPOGHL: ::protobuf::MessageField::none(),
             JBIFDJKPHIJ: ::protobuf::MessageField::none(),
-            EAGPOCAGMCA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for JJHJCIAPADP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JJHJCIAPADP.proto\x1a\x11ABJGLPCOMMK.proto\x1a\x11NKAEOPAAJLG.prot\
-    o\"\x8f\x01\n\x0bJJHJCIAPADP\x12.\n\x0bGLHDCCPOGHL\x18e\x20\x01(\x0b2\
-    \x0c.ABJGLPCOMMKR\x0bGLHDCCPOGHL\x12.\n\x0bJBIFDJKPHIJ\x18f\x20\x01(\x0b\
-    2\x0c.NKAEOPAAJLGR\x0bJBIFDJKPHIJ\x12\x20\n\x0bEAGPOCAGMCA\x18\x01\x20\
-    \x01(\rR\x0bEAGPOCAGMCAb\x06proto3\
+    o\"m\n\x0bJJHJCIAPADP\x12.\n\x0bGLHDCCPOGHL\x18e\x20\x01(\x0b2\x0c.ABJGL\
+    PCOMMKR\x0bGLHDCCPOGHL\x12.\n\x0bJBIFDJKPHIJ\x18f\x20\x01(\x0b2\x0c.NKAE\
+    OPAAJLGR\x0bJBIFDJKPHIJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

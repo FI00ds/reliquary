@@ -30,8 +30,8 @@ pub struct PIMNGBAMMAM {
     // message fields
     // @@protoc_insertion_point(field:PIMNGBAMMAM.monster_battle_type)
     pub monster_battle_type: u32,
-    // @@protoc_insertion_point(field:PIMNGBAMMAM.room_uid)
-    pub room_uid: u64,
+    // @@protoc_insertion_point(field:PIMNGBAMMAM.CKLCDAGMFKP)
+    pub CKLCDAGMFKP: u64,
     // @@protoc_insertion_point(field:PIMNGBAMMAM.level_id)
     pub level_id: u32,
     // @@protoc_insertion_point(field:PIMNGBAMMAM.GNAMNBDIEKG)
@@ -77,9 +77,9 @@ impl PIMNGBAMMAM {
             |m: &mut PIMNGBAMMAM| { &mut m.monster_battle_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "room_uid",
-            |m: &PIMNGBAMMAM| { &m.room_uid },
-            |m: &mut PIMNGBAMMAM| { &mut m.room_uid },
+            "CKLCDAGMFKP",
+            |m: &PIMNGBAMMAM| { &m.CKLCDAGMFKP },
+            |m: &mut PIMNGBAMMAM| { &mut m.CKLCDAGMFKP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level_id",
@@ -153,7 +153,7 @@ impl ::protobuf::Message for PIMNGBAMMAM {
                     self.monster_battle_type = is.read_uint32()?;
                 },
                 16 => {
-                    self.room_uid = is.read_uint64()?;
+                    self.CKLCDAGMFKP = is.read_uint64()?;
                 },
                 24 => {
                     self.level_id = is.read_uint32()?;
@@ -203,8 +203,8 @@ impl ::protobuf::Message for PIMNGBAMMAM {
         if self.monster_battle_type != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.monster_battle_type);
         }
-        if self.room_uid != 0 {
-            my_size += ::protobuf::rt::uint64_size(2, self.room_uid);
+        if self.CKLCDAGMFKP != 0 {
+            my_size += ::protobuf::rt::uint64_size(2, self.CKLCDAGMFKP);
         }
         if self.level_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.level_id);
@@ -243,8 +243,8 @@ impl ::protobuf::Message for PIMNGBAMMAM {
         if self.monster_battle_type != 0 {
             os.write_uint32(1, self.monster_battle_type)?;
         }
-        if self.room_uid != 0 {
-            os.write_uint64(2, self.room_uid)?;
+        if self.CKLCDAGMFKP != 0 {
+            os.write_uint64(2, self.CKLCDAGMFKP)?;
         }
         if self.level_id != 0 {
             os.write_uint32(3, self.level_id)?;
@@ -292,7 +292,7 @@ impl ::protobuf::Message for PIMNGBAMMAM {
 
     fn clear(&mut self) {
         self.monster_battle_type = 0;
-        self.room_uid = 0;
+        self.CKLCDAGMFKP = 0;
         self.level_id = 0;
         self.GNAMNBDIEKG = 0;
         self.LLMLOGNFFCD = false;
@@ -309,7 +309,7 @@ impl ::protobuf::Message for PIMNGBAMMAM {
     fn default_instance() -> &'static PIMNGBAMMAM {
         static instance: PIMNGBAMMAM = PIMNGBAMMAM {
             monster_battle_type: 0,
-            room_uid: 0,
+            CKLCDAGMFKP: 0,
             level_id: 0,
             GNAMNBDIEKG: 0,
             LLMLOGNFFCD: false,
@@ -344,17 +344,17 @@ impl ::protobuf::reflect::ProtobufValue for PIMNGBAMMAM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PIMNGBAMMAM.proto\"\x92\x03\n\x0bPIMNGBAMMAM\x12.\n\x13monster_bat\
-    tle_type\x18\x01\x20\x01(\rR\x11monsterBattleType\x12\x19\n\x08room_uid\
-    \x18\x02\x20\x01(\x04R\x07roomUid\x12\x19\n\x08level_id\x18\x03\x20\x01(\
-    \rR\x07levelId\x12\x20\n\x0bGNAMNBDIEKG\x18\x04\x20\x01(\rR\x0bGNAMNBDIE\
-    KG\x12\x20\n\x0bLLMLOGNFFCD\x18\x05\x20\x01(\x08R\x0bLLMLOGNFFCD\x12\x20\
-    \n\x0bAFPHLNMGPHK\x18\x06\x20\x01(\rR\x0bAFPHLNMGPHK\x12\x12\n\x04rank\
-    \x18\x07\x20\x01(\rR\x04rank\x12\x20\n\x0bGAENFKKAKOI\x18\x08\x20\x01(\
-    \x04R\x0bGAENFKKAKOI\x12\x20\n\x0bILLEDJLNGNF\x18\t\x20\x01(\rR\x0bILLED\
-    JLNGNF\x12\x20\n\x0bHKOMBPALIPN\x18\n\x20\x01(\rR\x0bHKOMBPALIPN\x12\x1b\
-    \n\tbuff_list\x18\x0b\x20\x03(\rR\x08buffList\x12\x20\n\x0bNNKBNJKNDKC\
-    \x18\x0c\x20\x01(\rR\x0bNNKBNJKNDKCb\x06proto3\
+    \n\x11PIMNGBAMMAM.proto\"\x99\x03\n\x0bPIMNGBAMMAM\x12.\n\x13monster_bat\
+    tle_type\x18\x01\x20\x01(\rR\x11monsterBattleType\x12\x20\n\x0bCKLCDAGMF\
+    KP\x18\x02\x20\x01(\x04R\x0bCKLCDAGMFKP\x12\x19\n\x08level_id\x18\x03\
+    \x20\x01(\rR\x07levelId\x12\x20\n\x0bGNAMNBDIEKG\x18\x04\x20\x01(\rR\x0b\
+    GNAMNBDIEKG\x12\x20\n\x0bLLMLOGNFFCD\x18\x05\x20\x01(\x08R\x0bLLMLOGNFFC\
+    D\x12\x20\n\x0bAFPHLNMGPHK\x18\x06\x20\x01(\rR\x0bAFPHLNMGPHK\x12\x12\n\
+    \x04rank\x18\x07\x20\x01(\rR\x04rank\x12\x20\n\x0bGAENFKKAKOI\x18\x08\
+    \x20\x01(\x04R\x0bGAENFKKAKOI\x12\x20\n\x0bILLEDJLNGNF\x18\t\x20\x01(\rR\
+    \x0bILLEDJLNGNF\x12\x20\n\x0bHKOMBPALIPN\x18\n\x20\x01(\rR\x0bHKOMBPALIP\
+    N\x12\x1b\n\tbuff_list\x18\x0b\x20\x03(\rR\x08buffList\x12\x20\n\x0bNNKB\
+    NJKNDKC\x18\x0c\x20\x01(\rR\x0bNNKBNJKNDKCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

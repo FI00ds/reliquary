@@ -89,10 +89,10 @@ impl ::protobuf::Message for IHHONELJHJG {
                 8 => {
                     self.item_id = is.read_uint32()?;
                 },
-                40 => {
+                88 => {
                     self.DCPDNBALDOA = is.read_uint32()?;
                 },
-                120 => {
+                112 => {
                     self.HFNNNGHBHGG = is.read_uint32()?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for IHHONELJHJG {
             my_size += ::protobuf::rt::uint32_size(1, self.item_id);
         }
         if self.DCPDNBALDOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.DCPDNBALDOA);
+            my_size += ::protobuf::rt::uint32_size(11, self.DCPDNBALDOA);
         }
         if self.HFNNNGHBHGG != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.HFNNNGHBHGG);
+            my_size += ::protobuf::rt::uint32_size(14, self.HFNNNGHBHGG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,10 +126,10 @@ impl ::protobuf::Message for IHHONELJHJG {
             os.write_uint32(1, self.item_id)?;
         }
         if self.DCPDNBALDOA != 0 {
-            os.write_uint32(5, self.DCPDNBALDOA)?;
+            os.write_uint32(11, self.DCPDNBALDOA)?;
         }
         if self.HFNNNGHBHGG != 0 {
-            os.write_uint32(15, self.HFNNNGHBHGG)?;
+            os.write_uint32(14, self.HFNNNGHBHGG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for IHHONELJHJG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IHHONELJHJG.proto\"j\n\x0bIHHONELJHJG\x12\x17\n\x07item_id\x18\x01\
-    \x20\x01(\rR\x06itemId\x12\x20\n\x0bDCPDNBALDOA\x18\x05\x20\x01(\rR\x0bD\
-    CPDNBALDOA\x12\x20\n\x0bHFNNNGHBHGG\x18\x0f\x20\x01(\rR\x0bHFNNNGHBHGGb\
+    \x20\x01(\rR\x06itemId\x12\x20\n\x0bDCPDNBALDOA\x18\x0b\x20\x01(\rR\x0bD\
+    CPDNBALDOA\x12\x20\n\x0bHFNNNGHBHGG\x18\x0e\x20\x01(\rR\x0bHFNNNGHBHGGb\
     \x06proto3\
 ";
 

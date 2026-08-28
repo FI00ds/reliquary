@@ -28,6 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartRaidCsReq {
     // message fields
+    // @@protoc_insertion_point(field:StartRaidCsReq.avatar_list)
+    pub avatar_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:StartRaidCsReq.is_save)
     pub is_save: u32,
     // @@protoc_insertion_point(field:StartRaidCsReq.world_level)
@@ -36,10 +38,8 @@ pub struct StartRaidCsReq {
     pub prop_entity_id: u32,
     // @@protoc_insertion_point(field:StartRaidCsReq.raid_id)
     pub raid_id: u32,
-    // @@protoc_insertion_point(field:StartRaidCsReq.avatar_list)
-    pub avatar_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:StartRaidCsReq.NIMDEPFJJNI)
-    pub NIMDEPFJJNI: ::std::vec::Vec<super::AvatarIdentifier::AvatarIdentifier>,
+    pub NIMDEPFJJNI: ::std::vec::Vec<super::AvatarLineup::AvatarLineup>,
     // special fields
     // @@protoc_insertion_point(special_field:StartRaidCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,6 +59,11 @@ impl StartRaidCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "avatar_list",
+            |m: &StartRaidCsReq| { &m.avatar_list },
+            |m: &mut StartRaidCsReq| { &mut m.avatar_list },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_save",
             |m: &StartRaidCsReq| { &m.is_save },
@@ -78,11 +83,6 @@ impl StartRaidCsReq {
             "raid_id",
             |m: &StartRaidCsReq| { &m.raid_id },
             |m: &mut StartRaidCsReq| { &mut m.raid_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &StartRaidCsReq| { &m.avatar_list },
-            |m: &mut StartRaidCsReq| { &mut m.avatar_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "NIMDEPFJJNI",
@@ -107,25 +107,25 @@ impl ::protobuf::Message for StartRaidCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.avatar_list)?;
+                },
+                8 => {
+                    self.avatar_list.push(is.read_uint32()?);
+                },
                 24 => {
                     self.is_save = is.read_uint32()?;
                 },
-                32 => {
+                48 => {
                     self.world_level = is.read_uint32()?;
                 },
-                40 => {
+                80 => {
                     self.prop_entity_id = is.read_uint32()?;
                 },
-                56 => {
+                88 => {
                     self.raid_id = is.read_uint32()?;
                 },
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.avatar_list)?;
-                },
-                88 => {
-                    self.avatar_list.push(is.read_uint32()?);
-                },
-                98 => {
+                106 => {
                     self.NIMDEPFJJNI.push(is.read_message()?);
                 },
                 tag => {
@@ -140,19 +140,19 @@ impl ::protobuf::Message for StartRaidCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.avatar_list);
         if self.is_save != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.is_save);
         }
         if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.world_level);
+            my_size += ::protobuf::rt::uint32_size(6, self.world_level);
         }
         if self.prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.prop_entity_id);
         }
         if self.raid_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.raid_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.raid_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.avatar_list);
         for value in &self.NIMDEPFJJNI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -163,21 +163,21 @@ impl ::protobuf::Message for StartRaidCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(1, &self.avatar_list)?;
         if self.is_save != 0 {
             os.write_uint32(3, self.is_save)?;
         }
         if self.world_level != 0 {
-            os.write_uint32(4, self.world_level)?;
+            os.write_uint32(6, self.world_level)?;
         }
         if self.prop_entity_id != 0 {
-            os.write_uint32(5, self.prop_entity_id)?;
+            os.write_uint32(10, self.prop_entity_id)?;
         }
         if self.raid_id != 0 {
-            os.write_uint32(7, self.raid_id)?;
+            os.write_uint32(11, self.raid_id)?;
         }
-        os.write_repeated_packed_uint32(11, &self.avatar_list)?;
         for v in &self.NIMDEPFJJNI {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -196,22 +196,22 @@ impl ::protobuf::Message for StartRaidCsReq {
     }
 
     fn clear(&mut self) {
+        self.avatar_list.clear();
         self.is_save = 0;
         self.world_level = 0;
         self.prop_entity_id = 0;
         self.raid_id = 0;
-        self.avatar_list.clear();
         self.NIMDEPFJJNI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartRaidCsReq {
         static instance: StartRaidCsReq = StartRaidCsReq {
+            avatar_list: ::std::vec::Vec::new(),
             is_save: 0,
             world_level: 0,
             prop_entity_id: 0,
             raid_id: 0,
-            avatar_list: ::std::vec::Vec::new(),
             NIMDEPFJJNI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -237,13 +237,13 @@ impl ::protobuf::reflect::ProtobufValue for StartRaidCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14StartRaidCsReq.proto\x1a\x16AvatarIdentifier.proto\"\xdf\x01\n\x0e\
-    StartRaidCsReq\x12\x17\n\x07is_save\x18\x03\x20\x01(\rR\x06isSave\x12\
-    \x1f\n\x0bworld_level\x18\x04\x20\x01(\rR\nworldLevel\x12$\n\x0eprop_ent\
-    ity_id\x18\x05\x20\x01(\rR\x0cpropEntityId\x12\x17\n\x07raid_id\x18\x07\
-    \x20\x01(\rR\x06raidId\x12\x1f\n\x0bavatar_list\x18\x0b\x20\x03(\rR\nava\
-    tarList\x123\n\x0bNIMDEPFJJNI\x18\x0c\x20\x03(\x0b2\x11.AvatarIdentifier\
-    R\x0bNIMDEPFJJNIb\x06proto3\
+    \n\x14StartRaidCsReq.proto\x1a\x12AvatarLineup.proto\"\xdb\x01\n\x0eStar\
+    tRaidCsReq\x12\x1f\n\x0bavatar_list\x18\x01\x20\x03(\rR\navatarList\x12\
+    \x17\n\x07is_save\x18\x03\x20\x01(\rR\x06isSave\x12\x1f\n\x0bworld_level\
+    \x18\x06\x20\x01(\rR\nworldLevel\x12$\n\x0eprop_entity_id\x18\n\x20\x01(\
+    \rR\x0cpropEntityId\x12\x17\n\x07raid_id\x18\x0b\x20\x01(\rR\x06raidId\
+    \x12/\n\x0bNIMDEPFJJNI\x18\r\x20\x03(\x0b2\r.AvatarLineupR\x0bNIMDEPFJJN\
+    Ib\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -261,7 +261,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::AvatarIdentifier::file_descriptor().clone());
+            deps.push(super::AvatarLineup::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartRaidCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

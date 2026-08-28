@@ -27,16 +27,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:FightFestType)
 pub enum FightFestType {
-    // @@protoc_insertion_point(enum_value:FightFestType.OGOJLBNJKCN_NLCDGIPGFDJ)
-    OGOJLBNJKCN_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:FightFestType.OGOJLBNJKCN_IBAADNINFCG)
-    OGOJLBNJKCN_IBAADNINFCG = 1,
-    // @@protoc_insertion_point(enum_value:FightFestType.OGOJLBNJKCN_score_id)
-    OGOJLBNJKCN_score_id = 2,
-    // @@protoc_insertion_point(enum_value:FightFestType.OGOJLBNJKCN_OCDLPDDMCLP)
-    OGOJLBNJKCN_OCDLPDDMCLP = 3,
-    // @@protoc_insertion_point(enum_value:FightFestType.OGOJLBNJKCN_HNGBFGALLBI)
-    OGOJLBNJKCN_HNGBFGALLBI = 4,
+    // @@protoc_insertion_point(enum_value:FightFestType.FightFestType_None)
+    FightFestType_None = 0,
+    // @@protoc_insertion_point(enum_value:FightFestType.FightFestType_Main)
+    FightFestType_Main = 1,
+    // @@protoc_insertion_point(enum_value:FightFestType.FightFestType_Score)
+    FightFestType_Score = 2,
+    // @@protoc_insertion_point(enum_value:FightFestType.FightFestType_Challenge)
+    FightFestType_Challenge = 3,
+    // @@protoc_insertion_point(enum_value:FightFestType.FightFestType_Teach)
+    FightFestType_Teach = 4,
 }
 
 impl ::protobuf::Enum for FightFestType {
@@ -48,32 +48,32 @@ impl ::protobuf::Enum for FightFestType {
 
     fn from_i32(value: i32) -> ::std::option::Option<FightFestType> {
         match value {
-            0 => ::std::option::Option::Some(FightFestType::OGOJLBNJKCN_NLCDGIPGFDJ),
-            1 => ::std::option::Option::Some(FightFestType::OGOJLBNJKCN_IBAADNINFCG),
-            2 => ::std::option::Option::Some(FightFestType::OGOJLBNJKCN_score_id),
-            3 => ::std::option::Option::Some(FightFestType::OGOJLBNJKCN_OCDLPDDMCLP),
-            4 => ::std::option::Option::Some(FightFestType::OGOJLBNJKCN_HNGBFGALLBI),
+            0 => ::std::option::Option::Some(FightFestType::FightFestType_None),
+            1 => ::std::option::Option::Some(FightFestType::FightFestType_Main),
+            2 => ::std::option::Option::Some(FightFestType::FightFestType_Score),
+            3 => ::std::option::Option::Some(FightFestType::FightFestType_Challenge),
+            4 => ::std::option::Option::Some(FightFestType::FightFestType_Teach),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<FightFestType> {
         match str {
-            "OGOJLBNJKCN_NLCDGIPGFDJ" => ::std::option::Option::Some(FightFestType::OGOJLBNJKCN_NLCDGIPGFDJ),
-            "OGOJLBNJKCN_IBAADNINFCG" => ::std::option::Option::Some(FightFestType::OGOJLBNJKCN_IBAADNINFCG),
-            "OGOJLBNJKCN_score_id" => ::std::option::Option::Some(FightFestType::OGOJLBNJKCN_score_id),
-            "OGOJLBNJKCN_OCDLPDDMCLP" => ::std::option::Option::Some(FightFestType::OGOJLBNJKCN_OCDLPDDMCLP),
-            "OGOJLBNJKCN_HNGBFGALLBI" => ::std::option::Option::Some(FightFestType::OGOJLBNJKCN_HNGBFGALLBI),
+            "FightFestType_None" => ::std::option::Option::Some(FightFestType::FightFestType_None),
+            "FightFestType_Main" => ::std::option::Option::Some(FightFestType::FightFestType_Main),
+            "FightFestType_Score" => ::std::option::Option::Some(FightFestType::FightFestType_Score),
+            "FightFestType_Challenge" => ::std::option::Option::Some(FightFestType::FightFestType_Challenge),
+            "FightFestType_Teach" => ::std::option::Option::Some(FightFestType::FightFestType_Teach),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [FightFestType] = &[
-        FightFestType::OGOJLBNJKCN_NLCDGIPGFDJ,
-        FightFestType::OGOJLBNJKCN_IBAADNINFCG,
-        FightFestType::OGOJLBNJKCN_score_id,
-        FightFestType::OGOJLBNJKCN_OCDLPDDMCLP,
-        FightFestType::OGOJLBNJKCN_HNGBFGALLBI,
+        FightFestType::FightFestType_None,
+        FightFestType::FightFestType_Main,
+        FightFestType::FightFestType_Score,
+        FightFestType::FightFestType_Challenge,
+        FightFestType::FightFestType_Teach,
     ];
 }
 
@@ -91,7 +91,7 @@ impl ::protobuf::EnumFull for FightFestType {
 
 impl ::std::default::Default for FightFestType {
     fn default() -> Self {
-        FightFestType::OGOJLBNJKCN_NLCDGIPGFDJ
+        FightFestType::FightFestType_None
     }
 }
 
@@ -102,10 +102,10 @@ impl FightFestType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13FightFestType.proto*\x9d\x01\n\rFightFestType\x12\x1b\n\x17OGOJLBN\
-    JKCN_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17OGOJLBNJKCN_IBAADNINFCG\x10\x01\x12\
-    \x18\n\x14OGOJLBNJKCN_score_id\x10\x02\x12\x1b\n\x17OGOJLBNJKCN_OCDLPDDM\
-    CLP\x10\x03\x12\x1b\n\x17OGOJLBNJKCN_HNGBFGALLBI\x10\x04b\x06proto3\
+    \n\x13FightFestType.proto*\x8e\x01\n\rFightFestType\x12\x16\n\x12FightFe\
+    stType_None\x10\0\x12\x16\n\x12FightFestType_Main\x10\x01\x12\x17\n\x13F\
+    ightFestType_Score\x10\x02\x12\x1b\n\x17FightFestType_Challenge\x10\x03\
+    \x12\x17\n\x13FightFestType_Teach\x10\x04b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

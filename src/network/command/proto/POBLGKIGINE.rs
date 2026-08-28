@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct POBLGKIGINE {
     // message fields
-    // @@protoc_insertion_point(field:POBLGKIGINE.room_owner_uid)
-    pub room_owner_uid: u32,
+    // @@protoc_insertion_point(field:POBLGKIGINE.PLIDNBMCIJH)
+    pub PLIDNBMCIJH: u32,
     // @@protoc_insertion_point(field:POBLGKIGINE.player_info)
     pub player_info: ::std::vec::Vec<super::JBJNJPAOCDA::JBJNJPAOCDA>,
-    // @@protoc_insertion_point(field:POBLGKIGINE.LNMGOFCOMED)
-    pub LNMGOFCOMED: ::protobuf::MessageField<super::PBMDEBCGNMD::PBMDEBCGNMD>,
+    // message oneof groups
+    pub CBCJBNGJPDJ: ::std::option::Option<poblgkigine::CBCJBNGJPDJ>,
     // special fields
     // @@protoc_insertion_point(special_field:POBLGKIGINE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,24 +50,76 @@ impl POBLGKIGINE {
         ::std::default::Default::default()
     }
 
+    // .PBMDEBCGNMD LNMGOFCOMED = 1092;
+
+    pub fn LNMGOFCOMED(&self) -> &super::PBMDEBCGNMD::PBMDEBCGNMD {
+        match self.CBCJBNGJPDJ {
+            ::std::option::Option::Some(poblgkigine::CBCJBNGJPDJ::LNMGOFCOMED(ref v)) => v,
+            _ => <super::PBMDEBCGNMD::PBMDEBCGNMD as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_LNMGOFCOMED(&mut self) {
+        self.CBCJBNGJPDJ = ::std::option::Option::None;
+    }
+
+    pub fn has_LNMGOFCOMED(&self) -> bool {
+        match self.CBCJBNGJPDJ {
+            ::std::option::Option::Some(poblgkigine::CBCJBNGJPDJ::LNMGOFCOMED(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_LNMGOFCOMED(&mut self, v: super::PBMDEBCGNMD::PBMDEBCGNMD) {
+        self.CBCJBNGJPDJ = ::std::option::Option::Some(poblgkigine::CBCJBNGJPDJ::LNMGOFCOMED(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_LNMGOFCOMED(&mut self) -> &mut super::PBMDEBCGNMD::PBMDEBCGNMD {
+        if let ::std::option::Option::Some(poblgkigine::CBCJBNGJPDJ::LNMGOFCOMED(_)) = self.CBCJBNGJPDJ {
+        } else {
+            self.CBCJBNGJPDJ = ::std::option::Option::Some(poblgkigine::CBCJBNGJPDJ::LNMGOFCOMED(super::PBMDEBCGNMD::PBMDEBCGNMD::new()));
+        }
+        match self.CBCJBNGJPDJ {
+            ::std::option::Option::Some(poblgkigine::CBCJBNGJPDJ::LNMGOFCOMED(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_LNMGOFCOMED(&mut self) -> super::PBMDEBCGNMD::PBMDEBCGNMD {
+        if self.has_LNMGOFCOMED() {
+            match self.CBCJBNGJPDJ.take() {
+                ::std::option::Option::Some(poblgkigine::CBCJBNGJPDJ::LNMGOFCOMED(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::PBMDEBCGNMD::PBMDEBCGNMD::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
-        let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "room_owner_uid",
-            |m: &POBLGKIGINE| { &m.room_owner_uid },
-            |m: &mut POBLGKIGINE| { &mut m.room_owner_uid },
+            "PLIDNBMCIJH",
+            |m: &POBLGKIGINE| { &m.PLIDNBMCIJH },
+            |m: &mut POBLGKIGINE| { &mut m.PLIDNBMCIJH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "player_info",
             |m: &POBLGKIGINE| { &m.player_info },
             |m: &mut POBLGKIGINE| { &mut m.player_info },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PBMDEBCGNMD::PBMDEBCGNMD>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PBMDEBCGNMD::PBMDEBCGNMD>(
             "LNMGOFCOMED",
-            |m: &POBLGKIGINE| { &m.LNMGOFCOMED },
-            |m: &mut POBLGKIGINE| { &mut m.LNMGOFCOMED },
+            POBLGKIGINE::has_LNMGOFCOMED,
+            POBLGKIGINE::LNMGOFCOMED,
+            POBLGKIGINE::mut_LNMGOFCOMED,
+            POBLGKIGINE::set_LNMGOFCOMED,
         ));
+        oneofs.push(poblgkigine::CBCJBNGJPDJ::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<POBLGKIGINE>(
             "POBLGKIGINE",
             fields,
@@ -86,14 +138,14 @@ impl ::protobuf::Message for POBLGKIGINE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.room_owner_uid = is.read_uint32()?;
+                24 => {
+                    self.PLIDNBMCIJH = is.read_uint32()?;
                 },
-                74 => {
+                90 => {
                     self.player_info.push(is.read_message()?);
                 },
-                314 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LNMGOFCOMED)?;
+                8738 => {
+                    self.CBCJBNGJPDJ = ::std::option::Option::Some(poblgkigine::CBCJBNGJPDJ::LNMGOFCOMED(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,16 +159,20 @@ impl ::protobuf::Message for POBLGKIGINE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.room_owner_uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.room_owner_uid);
+        if self.PLIDNBMCIJH != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.PLIDNBMCIJH);
         }
         for value in &self.player_info {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.LNMGOFCOMED.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if let ::std::option::Option::Some(ref v) = self.CBCJBNGJPDJ {
+            match v {
+                &poblgkigine::CBCJBNGJPDJ::LNMGOFCOMED(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+            };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +180,18 @@ impl ::protobuf::Message for POBLGKIGINE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.room_owner_uid != 0 {
-            os.write_uint32(4, self.room_owner_uid)?;
+        if self.PLIDNBMCIJH != 0 {
+            os.write_uint32(3, self.PLIDNBMCIJH)?;
         }
         for v in &self.player_info {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
-        if let Some(v) = self.LNMGOFCOMED.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(39, v, os)?;
+        if let ::std::option::Option::Some(ref v) = self.CBCJBNGJPDJ {
+            match v {
+                &poblgkigine::CBCJBNGJPDJ::LNMGOFCOMED(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1092, v, os)?;
+                },
+            };
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +210,17 @@ impl ::protobuf::Message for POBLGKIGINE {
     }
 
     fn clear(&mut self) {
-        self.room_owner_uid = 0;
+        self.PLIDNBMCIJH = 0;
         self.player_info.clear();
-        self.LNMGOFCOMED.clear();
+        self.CBCJBNGJPDJ = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static POBLGKIGINE {
         static instance: POBLGKIGINE = POBLGKIGINE {
-            room_owner_uid: 0,
+            PLIDNBMCIJH: 0,
             player_info: ::std::vec::Vec::new(),
-            LNMGOFCOMED: ::protobuf::MessageField::none(),
+            CBCJBNGJPDJ: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,12 +244,40 @@ impl ::protobuf::reflect::ProtobufValue for POBLGKIGINE {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
+/// Nested message and enums of message `POBLGKIGINE`
+pub mod poblgkigine {
+
+    #[derive(Clone,PartialEq,Debug)]
+    #[non_exhaustive]
+    // @@protoc_insertion_point(oneof:POBLGKIGINE.CBCJBNGJPDJ)
+    pub enum CBCJBNGJPDJ {
+        // @@protoc_insertion_point(oneof_field:POBLGKIGINE.LNMGOFCOMED)
+        LNMGOFCOMED(super::super::PBMDEBCGNMD::PBMDEBCGNMD),
+    }
+
+    impl ::protobuf::Oneof for CBCJBNGJPDJ {
+    }
+
+    impl ::protobuf::OneofFull for CBCJBNGJPDJ {
+        fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
+            static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
+            descriptor.get(|| <super::POBLGKIGINE as ::protobuf::MessageFull>::descriptor().oneof_by_name("CBCJBNGJPDJ").unwrap()).clone()
+        }
+    }
+
+    impl CBCJBNGJPDJ {
+        pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<CBCJBNGJPDJ>("CBCJBNGJPDJ")
+        }
+    }
+}
+
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11POBLGKIGINE.proto\x1a\x11JBJNJPAOCDA.proto\x1a\x11PBMDEBCGNMD.prot\
-    o\"\x92\x01\n\x0bPOBLGKIGINE\x12$\n\x0eroom_owner_uid\x18\x04\x20\x01(\r\
-    R\x0croomOwnerUid\x12-\n\x0bplayer_info\x18\t\x20\x03(\x0b2\x0c.JBJNJPAO\
-    CDAR\nplayerInfo\x12.\n\x0bLNMGOFCOMED\x18'\x20\x01(\x0b2\x0c.PBMDEBCGNM\
-    DR\x0bLNMGOFCOMEDb\x06proto3\
+    o\"\xa0\x01\n\x0bPOBLGKIGINE\x12\x20\n\x0bPLIDNBMCIJH\x18\x03\x20\x01(\r\
+    R\x0bPLIDNBMCIJH\x12-\n\x0bplayer_info\x18\x0b\x20\x03(\x0b2\x0c.JBJNJPA\
+    OCDAR\nplayerInfo\x121\n\x0bLNMGOFCOMED\x18\xc4\x08\x20\x01(\x0b2\x0c.PB\
+    MDEBCGNMDH\0R\x0bLNMGOFCOMEDB\r\n\x0bCBCJBNGJPDJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

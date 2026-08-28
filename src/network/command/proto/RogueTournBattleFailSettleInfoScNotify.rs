@@ -79,10 +79,10 @@ impl ::protobuf::Message for RogueTournBattleFailSettleInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.IDCMACCPCBH)?;
                 },
-                106 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BFLLJJBHLDF)?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for RogueTournBattleFailSettleInfoScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.IDCMACCPCBH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if let Some(v) = self.BFLLJJBHLDF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,9 +169,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournBattleFailSettleInfoScNoti
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n,RogueTournBattleFailSettleInfoScNotify.proto\x1a\x11FAICNBKIELL.proto\
     \x1a\x11JGAMMPGMCNI.proto\"\x88\x01\n&RogueTournBattleFailSettleInfoScNo\
-    tify\x12.\n\x0bIDCMACCPCBH\x18\x08\x20\x01(\x0b2\x0c.JGAMMPGMCNIR\x0bIDC\
-    MACCPCBH\x12.\n\x0bBFLLJJBHLDF\x18\r\x20\x01(\x0b2\x0c.FAICNBKIELLR\x0bB\
-    FLLJJBHLDFb\x06proto3\
+    tify\x12.\n\x0bIDCMACCPCBH\x18\x01\x20\x01(\x0b2\x0c.JGAMMPGMCNIR\x0bIDC\
+    MACCPCBH\x12.\n\x0bBFLLJJBHLDF\x18\x07\x20\x01(\x0b2\x0c.FAICNBKIELLR\
+    \x0bBFLLJJBHLDFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

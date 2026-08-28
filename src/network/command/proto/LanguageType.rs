@@ -27,34 +27,34 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:LanguageType)
 pub enum LanguageType {
-    // @@protoc_insertion_point(enum_value:LanguageType.LANGUAGE_NONE)
-    LANGUAGE_NONE = 0,
-    // @@protoc_insertion_point(enum_value:LanguageType.LANGUAGE_SC)
-    LANGUAGE_SC = 1,
-    // @@protoc_insertion_point(enum_value:LanguageType.LANGUAGE_TC)
-    LANGUAGE_TC = 2,
-    // @@protoc_insertion_point(enum_value:LanguageType.LANGUAGE_EN)
-    LANGUAGE_EN = 3,
-    // @@protoc_insertion_point(enum_value:LanguageType.LANGUAGE_KR)
-    LANGUAGE_KR = 4,
-    // @@protoc_insertion_point(enum_value:LanguageType.LANGUAGE_JP)
-    LANGUAGE_JP = 5,
-    // @@protoc_insertion_point(enum_value:LanguageType.LANGUAGE_FR)
-    LANGUAGE_FR = 6,
-    // @@protoc_insertion_point(enum_value:LanguageType.LANGUAGE_DE)
-    LANGUAGE_DE = 7,
-    // @@protoc_insertion_point(enum_value:LanguageType.LANGUAGE_ES)
-    LANGUAGE_ES = 8,
-    // @@protoc_insertion_point(enum_value:LanguageType.LANGUAGE_PT)
-    LANGUAGE_PT = 9,
-    // @@protoc_insertion_point(enum_value:LanguageType.LANGUAGE_RU)
-    LANGUAGE_RU = 10,
-    // @@protoc_insertion_point(enum_value:LanguageType.LANGUAGE_TH)
-    LANGUAGE_TH = 11,
-    // @@protoc_insertion_point(enum_value:LanguageType.LANGUAGE_VI)
-    LANGUAGE_VI = 12,
-    // @@protoc_insertion_point(enum_value:LanguageType.LANGUAGE_ID)
-    LANGUAGE_ID = 13,
+    // @@protoc_insertion_point(enum_value:LanguageType.LanguageType_KNBMAAKIECL)
+    LanguageType_KNBMAAKIECL = 0,
+    // @@protoc_insertion_point(enum_value:LanguageType.LanguageType_JCHGOMENBMP)
+    LanguageType_JCHGOMENBMP = 1,
+    // @@protoc_insertion_point(enum_value:LanguageType.LanguageType_KAKBLDBKGLJ)
+    LanguageType_KAKBLDBKGLJ = 2,
+    // @@protoc_insertion_point(enum_value:LanguageType.LanguageType_KJCENENEKGF)
+    LanguageType_KJCENENEKGF = 3,
+    // @@protoc_insertion_point(enum_value:LanguageType.LanguageType_GNJOIGACLAI)
+    LanguageType_GNJOIGACLAI = 4,
+    // @@protoc_insertion_point(enum_value:LanguageType.LanguageType_OOLKOKOHBDC)
+    LanguageType_OOLKOKOHBDC = 5,
+    // @@protoc_insertion_point(enum_value:LanguageType.LanguageType_CDFNDOPDGEC)
+    LanguageType_CDFNDOPDGEC = 6,
+    // @@protoc_insertion_point(enum_value:LanguageType.LanguageType_BAOLNMJCDLA)
+    LanguageType_BAOLNMJCDLA = 7,
+    // @@protoc_insertion_point(enum_value:LanguageType.LanguageType_AIOPFGHMBBH)
+    LanguageType_AIOPFGHMBBH = 8,
+    // @@protoc_insertion_point(enum_value:LanguageType.LanguageType_KNGNBJBNDGF)
+    LanguageType_KNGNBJBNDGF = 9,
+    // @@protoc_insertion_point(enum_value:LanguageType.LanguageType_AMPCJJPMCCC)
+    LanguageType_AMPCJJPMCCC = 10,
+    // @@protoc_insertion_point(enum_value:LanguageType.LanguageType_MNFCLDJKBDH)
+    LanguageType_MNFCLDJKBDH = 11,
+    // @@protoc_insertion_point(enum_value:LanguageType.LanguageType_PDDALKODHBF)
+    LanguageType_PDDALKODHBF = 12,
+    // @@protoc_insertion_point(enum_value:LanguageType.LanguageType_BADEOCDDFGF)
+    LanguageType_BADEOCDDFGF = 13,
 }
 
 impl ::protobuf::Enum for LanguageType {
@@ -66,59 +66,59 @@ impl ::protobuf::Enum for LanguageType {
 
     fn from_i32(value: i32) -> ::std::option::Option<LanguageType> {
         match value {
-            0 => ::std::option::Option::Some(LanguageType::LANGUAGE_NONE),
-            1 => ::std::option::Option::Some(LanguageType::LANGUAGE_SC),
-            2 => ::std::option::Option::Some(LanguageType::LANGUAGE_TC),
-            3 => ::std::option::Option::Some(LanguageType::LANGUAGE_EN),
-            4 => ::std::option::Option::Some(LanguageType::LANGUAGE_KR),
-            5 => ::std::option::Option::Some(LanguageType::LANGUAGE_JP),
-            6 => ::std::option::Option::Some(LanguageType::LANGUAGE_FR),
-            7 => ::std::option::Option::Some(LanguageType::LANGUAGE_DE),
-            8 => ::std::option::Option::Some(LanguageType::LANGUAGE_ES),
-            9 => ::std::option::Option::Some(LanguageType::LANGUAGE_PT),
-            10 => ::std::option::Option::Some(LanguageType::LANGUAGE_RU),
-            11 => ::std::option::Option::Some(LanguageType::LANGUAGE_TH),
-            12 => ::std::option::Option::Some(LanguageType::LANGUAGE_VI),
-            13 => ::std::option::Option::Some(LanguageType::LANGUAGE_ID),
+            0 => ::std::option::Option::Some(LanguageType::LanguageType_KNBMAAKIECL),
+            1 => ::std::option::Option::Some(LanguageType::LanguageType_JCHGOMENBMP),
+            2 => ::std::option::Option::Some(LanguageType::LanguageType_KAKBLDBKGLJ),
+            3 => ::std::option::Option::Some(LanguageType::LanguageType_KJCENENEKGF),
+            4 => ::std::option::Option::Some(LanguageType::LanguageType_GNJOIGACLAI),
+            5 => ::std::option::Option::Some(LanguageType::LanguageType_OOLKOKOHBDC),
+            6 => ::std::option::Option::Some(LanguageType::LanguageType_CDFNDOPDGEC),
+            7 => ::std::option::Option::Some(LanguageType::LanguageType_BAOLNMJCDLA),
+            8 => ::std::option::Option::Some(LanguageType::LanguageType_AIOPFGHMBBH),
+            9 => ::std::option::Option::Some(LanguageType::LanguageType_KNGNBJBNDGF),
+            10 => ::std::option::Option::Some(LanguageType::LanguageType_AMPCJJPMCCC),
+            11 => ::std::option::Option::Some(LanguageType::LanguageType_MNFCLDJKBDH),
+            12 => ::std::option::Option::Some(LanguageType::LanguageType_PDDALKODHBF),
+            13 => ::std::option::Option::Some(LanguageType::LanguageType_BADEOCDDFGF),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<LanguageType> {
         match str {
-            "LANGUAGE_NONE" => ::std::option::Option::Some(LanguageType::LANGUAGE_NONE),
-            "LANGUAGE_SC" => ::std::option::Option::Some(LanguageType::LANGUAGE_SC),
-            "LANGUAGE_TC" => ::std::option::Option::Some(LanguageType::LANGUAGE_TC),
-            "LANGUAGE_EN" => ::std::option::Option::Some(LanguageType::LANGUAGE_EN),
-            "LANGUAGE_KR" => ::std::option::Option::Some(LanguageType::LANGUAGE_KR),
-            "LANGUAGE_JP" => ::std::option::Option::Some(LanguageType::LANGUAGE_JP),
-            "LANGUAGE_FR" => ::std::option::Option::Some(LanguageType::LANGUAGE_FR),
-            "LANGUAGE_DE" => ::std::option::Option::Some(LanguageType::LANGUAGE_DE),
-            "LANGUAGE_ES" => ::std::option::Option::Some(LanguageType::LANGUAGE_ES),
-            "LANGUAGE_PT" => ::std::option::Option::Some(LanguageType::LANGUAGE_PT),
-            "LANGUAGE_RU" => ::std::option::Option::Some(LanguageType::LANGUAGE_RU),
-            "LANGUAGE_TH" => ::std::option::Option::Some(LanguageType::LANGUAGE_TH),
-            "LANGUAGE_VI" => ::std::option::Option::Some(LanguageType::LANGUAGE_VI),
-            "LANGUAGE_ID" => ::std::option::Option::Some(LanguageType::LANGUAGE_ID),
+            "LanguageType_KNBMAAKIECL" => ::std::option::Option::Some(LanguageType::LanguageType_KNBMAAKIECL),
+            "LanguageType_JCHGOMENBMP" => ::std::option::Option::Some(LanguageType::LanguageType_JCHGOMENBMP),
+            "LanguageType_KAKBLDBKGLJ" => ::std::option::Option::Some(LanguageType::LanguageType_KAKBLDBKGLJ),
+            "LanguageType_KJCENENEKGF" => ::std::option::Option::Some(LanguageType::LanguageType_KJCENENEKGF),
+            "LanguageType_GNJOIGACLAI" => ::std::option::Option::Some(LanguageType::LanguageType_GNJOIGACLAI),
+            "LanguageType_OOLKOKOHBDC" => ::std::option::Option::Some(LanguageType::LanguageType_OOLKOKOHBDC),
+            "LanguageType_CDFNDOPDGEC" => ::std::option::Option::Some(LanguageType::LanguageType_CDFNDOPDGEC),
+            "LanguageType_BAOLNMJCDLA" => ::std::option::Option::Some(LanguageType::LanguageType_BAOLNMJCDLA),
+            "LanguageType_AIOPFGHMBBH" => ::std::option::Option::Some(LanguageType::LanguageType_AIOPFGHMBBH),
+            "LanguageType_KNGNBJBNDGF" => ::std::option::Option::Some(LanguageType::LanguageType_KNGNBJBNDGF),
+            "LanguageType_AMPCJJPMCCC" => ::std::option::Option::Some(LanguageType::LanguageType_AMPCJJPMCCC),
+            "LanguageType_MNFCLDJKBDH" => ::std::option::Option::Some(LanguageType::LanguageType_MNFCLDJKBDH),
+            "LanguageType_PDDALKODHBF" => ::std::option::Option::Some(LanguageType::LanguageType_PDDALKODHBF),
+            "LanguageType_BADEOCDDFGF" => ::std::option::Option::Some(LanguageType::LanguageType_BADEOCDDFGF),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [LanguageType] = &[
-        LanguageType::LANGUAGE_NONE,
-        LanguageType::LANGUAGE_SC,
-        LanguageType::LANGUAGE_TC,
-        LanguageType::LANGUAGE_EN,
-        LanguageType::LANGUAGE_KR,
-        LanguageType::LANGUAGE_JP,
-        LanguageType::LANGUAGE_FR,
-        LanguageType::LANGUAGE_DE,
-        LanguageType::LANGUAGE_ES,
-        LanguageType::LANGUAGE_PT,
-        LanguageType::LANGUAGE_RU,
-        LanguageType::LANGUAGE_TH,
-        LanguageType::LANGUAGE_VI,
-        LanguageType::LANGUAGE_ID,
+        LanguageType::LanguageType_KNBMAAKIECL,
+        LanguageType::LanguageType_JCHGOMENBMP,
+        LanguageType::LanguageType_KAKBLDBKGLJ,
+        LanguageType::LanguageType_KJCENENEKGF,
+        LanguageType::LanguageType_GNJOIGACLAI,
+        LanguageType::LanguageType_OOLKOKOHBDC,
+        LanguageType::LanguageType_CDFNDOPDGEC,
+        LanguageType::LanguageType_BAOLNMJCDLA,
+        LanguageType::LanguageType_AIOPFGHMBBH,
+        LanguageType::LanguageType_KNGNBJBNDGF,
+        LanguageType::LanguageType_AMPCJJPMCCC,
+        LanguageType::LanguageType_MNFCLDJKBDH,
+        LanguageType::LanguageType_PDDALKODHBF,
+        LanguageType::LanguageType_BADEOCDDFGF,
     ];
 }
 
@@ -136,7 +136,7 @@ impl ::protobuf::EnumFull for LanguageType {
 
 impl ::std::default::Default for LanguageType {
     fn default() -> Self {
-        LanguageType::LANGUAGE_NONE
+        LanguageType::LanguageType_KNBMAAKIECL
     }
 }
 
@@ -147,14 +147,16 @@ impl LanguageType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12LanguageType.proto*\xfe\x01\n\x0cLanguageType\x12\x11\n\rLANGUAGE_\
-    NONE\x10\0\x12\x0f\n\x0bLANGUAGE_SC\x10\x01\x12\x0f\n\x0bLANGUAGE_TC\x10\
-    \x02\x12\x0f\n\x0bLANGUAGE_EN\x10\x03\x12\x0f\n\x0bLANGUAGE_KR\x10\x04\
-    \x12\x0f\n\x0bLANGUAGE_JP\x10\x05\x12\x0f\n\x0bLANGUAGE_FR\x10\x06\x12\
-    \x0f\n\x0bLANGUAGE_DE\x10\x07\x12\x0f\n\x0bLANGUAGE_ES\x10\x08\x12\x0f\n\
-    \x0bLANGUAGE_PT\x10\t\x12\x0f\n\x0bLANGUAGE_RU\x10\n\x12\x0f\n\x0bLANGUA\
-    GE_TH\x10\x0b\x12\x0f\n\x0bLANGUAGE_VI\x10\x0c\x12\x0f\n\x0bLANGUAGE_ID\
-    \x10\rb\x06proto3\
+    \n\x12LanguageType.proto*\xb2\x03\n\x0cLanguageType\x12\x1c\n\x18Languag\
+    eType_KNBMAAKIECL\x10\0\x12\x1c\n\x18LanguageType_JCHGOMENBMP\x10\x01\
+    \x12\x1c\n\x18LanguageType_KAKBLDBKGLJ\x10\x02\x12\x1c\n\x18LanguageType\
+    _KJCENENEKGF\x10\x03\x12\x1c\n\x18LanguageType_GNJOIGACLAI\x10\x04\x12\
+    \x1c\n\x18LanguageType_OOLKOKOHBDC\x10\x05\x12\x1c\n\x18LanguageType_CDF\
+    NDOPDGEC\x10\x06\x12\x1c\n\x18LanguageType_BAOLNMJCDLA\x10\x07\x12\x1c\n\
+    \x18LanguageType_AIOPFGHMBBH\x10\x08\x12\x1c\n\x18LanguageType_KNGNBJBND\
+    GF\x10\t\x12\x1c\n\x18LanguageType_AMPCJJPMCCC\x10\n\x12\x1c\n\x18Langua\
+    geType_MNFCLDJKBDH\x10\x0b\x12\x1c\n\x18LanguageType_PDDALKODHBF\x10\x0c\
+    \x12\x1c\n\x18LanguageType_BADEOCDDFGF\x10\rb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,8 +30,8 @@ pub struct NDDOMFBJMKE {
     // message fields
     // @@protoc_insertion_point(field:NDDOMFBJMKE.panel_id)
     pub panel_id: u32,
-    // @@protoc_insertion_point(field:NDDOMFBJMKE.content_type)
-    pub content_type: u32,
+    // @@protoc_insertion_point(field:NDDOMFBJMKE.MMNJODIJPOE)
+    pub MMNJODIJPOE: u32,
     // @@protoc_insertion_point(field:NDDOMFBJMKE.HJFDAJAMFAC)
     pub HJFDAJAMFAC: u64,
     // special fields
@@ -59,9 +59,9 @@ impl NDDOMFBJMKE {
             |m: &mut NDDOMFBJMKE| { &mut m.panel_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "content_type",
-            |m: &NDDOMFBJMKE| { &m.content_type },
-            |m: &mut NDDOMFBJMKE| { &mut m.content_type },
+            "MMNJODIJPOE",
+            |m: &NDDOMFBJMKE| { &m.MMNJODIJPOE },
+            |m: &mut NDDOMFBJMKE| { &mut m.MMNJODIJPOE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HJFDAJAMFAC",
@@ -90,7 +90,7 @@ impl ::protobuf::Message for NDDOMFBJMKE {
                     self.panel_id = is.read_uint32()?;
                 },
                 16 => {
-                    self.content_type = is.read_uint32()?;
+                    self.MMNJODIJPOE = is.read_uint32()?;
                 },
                 24 => {
                     self.HJFDAJAMFAC = is.read_uint64()?;
@@ -110,8 +110,8 @@ impl ::protobuf::Message for NDDOMFBJMKE {
         if self.panel_id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.panel_id);
         }
-        if self.content_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.content_type);
+        if self.MMNJODIJPOE != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.MMNJODIJPOE);
         }
         if self.HJFDAJAMFAC != 0 {
             my_size += ::protobuf::rt::uint64_size(3, self.HJFDAJAMFAC);
@@ -125,8 +125,8 @@ impl ::protobuf::Message for NDDOMFBJMKE {
         if self.panel_id != 0 {
             os.write_uint32(1, self.panel_id)?;
         }
-        if self.content_type != 0 {
-            os.write_uint32(2, self.content_type)?;
+        if self.MMNJODIJPOE != 0 {
+            os.write_uint32(2, self.MMNJODIJPOE)?;
         }
         if self.HJFDAJAMFAC != 0 {
             os.write_uint64(3, self.HJFDAJAMFAC)?;
@@ -149,7 +149,7 @@ impl ::protobuf::Message for NDDOMFBJMKE {
 
     fn clear(&mut self) {
         self.panel_id = 0;
-        self.content_type = 0;
+        self.MMNJODIJPOE = 0;
         self.HJFDAJAMFAC = 0;
         self.special_fields.clear();
     }
@@ -157,7 +157,7 @@ impl ::protobuf::Message for NDDOMFBJMKE {
     fn default_instance() -> &'static NDDOMFBJMKE {
         static instance: NDDOMFBJMKE = NDDOMFBJMKE {
             panel_id: 0,
-            content_type: 0,
+            MMNJODIJPOE: 0,
             HJFDAJAMFAC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for NDDOMFBJMKE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NDDOMFBJMKE.proto\"m\n\x0bNDDOMFBJMKE\x12\x19\n\x08panel_id\x18\
-    \x01\x20\x01(\rR\x07panelId\x12!\n\x0ccontent_type\x18\x02\x20\x01(\rR\
-    \x0bcontentType\x12\x20\n\x0bHJFDAJAMFAC\x18\x03\x20\x01(\x04R\x0bHJFDAJ\
+    \n\x11NDDOMFBJMKE.proto\"l\n\x0bNDDOMFBJMKE\x12\x19\n\x08panel_id\x18\
+    \x01\x20\x01(\rR\x07panelId\x12\x20\n\x0bMMNJODIJPOE\x18\x02\x20\x01(\rR\
+    \x0bMMNJODIJPOE\x12\x20\n\x0bHJFDAJAMFAC\x18\x03\x20\x01(\x04R\x0bHJFDAJ\
     AMFACb\x06proto3\
 ";
 

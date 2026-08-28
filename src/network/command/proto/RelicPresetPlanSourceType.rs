@@ -27,20 +27,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:RelicPresetPlanSourceType)
 pub enum RelicPresetPlanSourceType {
-    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.HNBGMOIHOAN_NLCDGIPGFDJ)
-    HNBGMOIHOAN_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.HNBGMOIHOAN_BDNDDMBONNJ)
-    HNBGMOIHOAN_BDNDDMBONNJ = 1,
-    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.HNBGMOIHOAN_DLBLNAKKNKJ)
-    HNBGMOIHOAN_DLBLNAKKNKJ = 2,
-    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.HNBGMOIHOAN_ODFAMIBHIGE)
-    HNBGMOIHOAN_ODFAMIBHIGE = 3,
-    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.HNBGMOIHOAN_LIKOPGNHBPP)
-    HNBGMOIHOAN_LIKOPGNHBPP = 4,
-    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.HNBGMOIHOAN_CPHMEHDCFBF)
-    HNBGMOIHOAN_CPHMEHDCFBF = 5,
-    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.HNBGMOIHOAN_platform)
-    HNBGMOIHOAN_platform = 6,
+    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.RelicPresetPlanSourceType_None)
+    RelicPresetPlanSourceType_None = 0,
+    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.RelicPresetPlanSourceType_Mine)
+    RelicPresetPlanSourceType_Mine = 1,
+    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.RelicPresetPlanSourceType_SmartCustom)
+    RelicPresetPlanSourceType_SmartCustom = 2,
+    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.RelicPresetPlanSourceType_SmartBigData)
+    RelicPresetPlanSourceType_SmartBigData = 3,
+    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.RelicPresetPlanSourceType_SmartSystem)
+    RelicPresetPlanSourceType_SmartSystem = 4,
+    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.RelicPresetPlanSourceType_FromScratch)
+    RelicPresetPlanSourceType_FromScratch = 5,
+    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.RelicPresetPlanSourceType_Platform)
+    RelicPresetPlanSourceType_Platform = 6,
 }
 
 impl ::protobuf::Enum for RelicPresetPlanSourceType {
@@ -52,38 +52,38 @@ impl ::protobuf::Enum for RelicPresetPlanSourceType {
 
     fn from_i32(value: i32) -> ::std::option::Option<RelicPresetPlanSourceType> {
         match value {
-            0 => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_NLCDGIPGFDJ),
-            1 => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_BDNDDMBONNJ),
-            2 => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_DLBLNAKKNKJ),
-            3 => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_ODFAMIBHIGE),
-            4 => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_LIKOPGNHBPP),
-            5 => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_CPHMEHDCFBF),
-            6 => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_platform),
+            0 => ::std::option::Option::Some(RelicPresetPlanSourceType::RelicPresetPlanSourceType_None),
+            1 => ::std::option::Option::Some(RelicPresetPlanSourceType::RelicPresetPlanSourceType_Mine),
+            2 => ::std::option::Option::Some(RelicPresetPlanSourceType::RelicPresetPlanSourceType_SmartCustom),
+            3 => ::std::option::Option::Some(RelicPresetPlanSourceType::RelicPresetPlanSourceType_SmartBigData),
+            4 => ::std::option::Option::Some(RelicPresetPlanSourceType::RelicPresetPlanSourceType_SmartSystem),
+            5 => ::std::option::Option::Some(RelicPresetPlanSourceType::RelicPresetPlanSourceType_FromScratch),
+            6 => ::std::option::Option::Some(RelicPresetPlanSourceType::RelicPresetPlanSourceType_Platform),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<RelicPresetPlanSourceType> {
         match str {
-            "HNBGMOIHOAN_NLCDGIPGFDJ" => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_NLCDGIPGFDJ),
-            "HNBGMOIHOAN_BDNDDMBONNJ" => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_BDNDDMBONNJ),
-            "HNBGMOIHOAN_DLBLNAKKNKJ" => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_DLBLNAKKNKJ),
-            "HNBGMOIHOAN_ODFAMIBHIGE" => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_ODFAMIBHIGE),
-            "HNBGMOIHOAN_LIKOPGNHBPP" => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_LIKOPGNHBPP),
-            "HNBGMOIHOAN_CPHMEHDCFBF" => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_CPHMEHDCFBF),
-            "HNBGMOIHOAN_platform" => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_platform),
+            "RelicPresetPlanSourceType_None" => ::std::option::Option::Some(RelicPresetPlanSourceType::RelicPresetPlanSourceType_None),
+            "RelicPresetPlanSourceType_Mine" => ::std::option::Option::Some(RelicPresetPlanSourceType::RelicPresetPlanSourceType_Mine),
+            "RelicPresetPlanSourceType_SmartCustom" => ::std::option::Option::Some(RelicPresetPlanSourceType::RelicPresetPlanSourceType_SmartCustom),
+            "RelicPresetPlanSourceType_SmartBigData" => ::std::option::Option::Some(RelicPresetPlanSourceType::RelicPresetPlanSourceType_SmartBigData),
+            "RelicPresetPlanSourceType_SmartSystem" => ::std::option::Option::Some(RelicPresetPlanSourceType::RelicPresetPlanSourceType_SmartSystem),
+            "RelicPresetPlanSourceType_FromScratch" => ::std::option::Option::Some(RelicPresetPlanSourceType::RelicPresetPlanSourceType_FromScratch),
+            "RelicPresetPlanSourceType_Platform" => ::std::option::Option::Some(RelicPresetPlanSourceType::RelicPresetPlanSourceType_Platform),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [RelicPresetPlanSourceType] = &[
-        RelicPresetPlanSourceType::HNBGMOIHOAN_NLCDGIPGFDJ,
-        RelicPresetPlanSourceType::HNBGMOIHOAN_BDNDDMBONNJ,
-        RelicPresetPlanSourceType::HNBGMOIHOAN_DLBLNAKKNKJ,
-        RelicPresetPlanSourceType::HNBGMOIHOAN_ODFAMIBHIGE,
-        RelicPresetPlanSourceType::HNBGMOIHOAN_LIKOPGNHBPP,
-        RelicPresetPlanSourceType::HNBGMOIHOAN_CPHMEHDCFBF,
-        RelicPresetPlanSourceType::HNBGMOIHOAN_platform,
+        RelicPresetPlanSourceType::RelicPresetPlanSourceType_None,
+        RelicPresetPlanSourceType::RelicPresetPlanSourceType_Mine,
+        RelicPresetPlanSourceType::RelicPresetPlanSourceType_SmartCustom,
+        RelicPresetPlanSourceType::RelicPresetPlanSourceType_SmartBigData,
+        RelicPresetPlanSourceType::RelicPresetPlanSourceType_SmartSystem,
+        RelicPresetPlanSourceType::RelicPresetPlanSourceType_FromScratch,
+        RelicPresetPlanSourceType::RelicPresetPlanSourceType_Platform,
     ];
 }
 
@@ -101,7 +101,7 @@ impl ::protobuf::EnumFull for RelicPresetPlanSourceType {
 
 impl ::std::default::Default for RelicPresetPlanSourceType {
     fn default() -> Self {
-        RelicPresetPlanSourceType::HNBGMOIHOAN_NLCDGIPGFDJ
+        RelicPresetPlanSourceType::RelicPresetPlanSourceType_None
     }
 }
 
@@ -112,12 +112,13 @@ impl RelicPresetPlanSourceType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fRelicPresetPlanSourceType.proto*\xe3\x01\n\x19RelicPresetPlanSourc\
-    eType\x12\x1b\n\x17HNBGMOIHOAN_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17HNBGMOIHOA\
-    N_BDNDDMBONNJ\x10\x01\x12\x1b\n\x17HNBGMOIHOAN_DLBLNAKKNKJ\x10\x02\x12\
-    \x1b\n\x17HNBGMOIHOAN_ODFAMIBHIGE\x10\x03\x12\x1b\n\x17HNBGMOIHOAN_LIKOP\
-    GNHBPP\x10\x04\x12\x1b\n\x17HNBGMOIHOAN_CPHMEHDCFBF\x10\x05\x12\x18\n\
-    \x14HNBGMOIHOAN_platform\x10\x06b\x06proto3\
+    \n\x1fRelicPresetPlanSourceType.proto*\xb8\x02\n\x19RelicPresetPlanSourc\
+    eType\x12\"\n\x1eRelicPresetPlanSourceType_None\x10\0\x12\"\n\x1eRelicPr\
+    esetPlanSourceType_Mine\x10\x01\x12)\n%RelicPresetPlanSourceType_SmartCu\
+    stom\x10\x02\x12*\n&RelicPresetPlanSourceType_SmartBigData\x10\x03\x12)\
+    \n%RelicPresetPlanSourceType_SmartSystem\x10\x04\x12)\n%RelicPresetPlanS\
+    ourceType_FromScratch\x10\x05\x12&\n\"RelicPresetPlanSourceType_Platform\
+    \x10\x06b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

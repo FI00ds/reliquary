@@ -86,13 +86,13 @@ impl ::protobuf::Message for JGAMMPGMCNI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
-                106 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
-                122 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JNKLNLKHGBB)?;
                 },
                 tag => {
@@ -126,13 +126,13 @@ impl ::protobuf::Message for JGAMMPGMCNI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if let Some(v) = self.JNKLNLKHGBB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -188,9 +188,9 @@ impl ::protobuf::reflect::ProtobufValue for JGAMMPGMCNI {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JGAMMPGMCNI.proto\x1a\x11FHEGNOPNICH.proto\x1a\x10LineupInfo.proto\
     \x1a\x0fSceneInfo.proto\"\x84\x01\n\x0bJGAMMPGMCNI\x12\x20\n\x05scene\
-    \x18\x03\x20\x01(\x0b2\n.SceneInfoR\x05scene\x12#\n\x06lineup\x18\r\x20\
-    \x01(\x0b2\x0b.LineupInfoR\x06lineup\x12.\n\x0bJNKLNLKHGBB\x18\x0f\x20\
-    \x01(\x0b2\x0c.FHEGNOPNICHR\x0bJNKLNLKHGBBb\x06proto3\
+    \x18\n\x20\x01(\x0b2\n.SceneInfoR\x05scene\x12#\n\x06lineup\x18\x0c\x20\
+    \x01(\x0b2\x0b.LineupInfoR\x06lineup\x12.\n\x0bJNKLNLKHGBB\x18\r\x20\x01\
+    (\x0b2\x0c.FHEGNOPNICHR\x0bJNKLNLKHGBBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

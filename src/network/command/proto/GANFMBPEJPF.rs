@@ -93,16 +93,16 @@ impl ::protobuf::Message for GANFMBPEJPF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                18 => {
                     self.JFHKJOGEOND.push(is.read_message()?);
                 },
-                50 => {
+                34 => {
                     self.CEPDOBEIEFG.push(is.read_message()?);
                 },
-                74 => {
+                42 => {
                     self.PAKECMNPEJJ.push(is.read_message()?);
                 },
-                122 => {
+                106 => {
                     self.DPIKOCFILGP.push(is.read_message()?);
                 },
                 tag => {
@@ -140,16 +140,16 @@ impl ::protobuf::Message for GANFMBPEJPF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.JFHKJOGEOND {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         for v in &self.CEPDOBEIEFG {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         for v in &self.PAKECMNPEJJ {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         for v in &self.DPIKOCFILGP {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -207,10 +207,10 @@ impl ::protobuf::reflect::ProtobufValue for GANFMBPEJPF {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GANFMBPEJPF.proto\x1a\x11DGKLPPLJBNB.proto\x1a\x11DIKBPKAKENO.prot\
     o\x1a\x11JMJEIBGACMD.proto\x1a\x11NPAJHGDEIDJ.proto\"\xcd\x01\n\x0bGANFM\
-    BPEJPF\x12.\n\x0bJFHKJOGEOND\x18\x01\x20\x03(\x0b2\x0c.DIKBPKAKENOR\x0bJ\
-    FHKJOGEOND\x12.\n\x0bCEPDOBEIEFG\x18\x06\x20\x03(\x0b2\x0c.JMJEIBGACMDR\
-    \x0bCEPDOBEIEFG\x12.\n\x0bPAKECMNPEJJ\x18\t\x20\x03(\x0b2\x0c.DGKLPPLJBN\
-    BR\x0bPAKECMNPEJJ\x12.\n\x0bDPIKOCFILGP\x18\x0f\x20\x03(\x0b2\x0c.NPAJHG\
+    BPEJPF\x12.\n\x0bJFHKJOGEOND\x18\x02\x20\x03(\x0b2\x0c.DIKBPKAKENOR\x0bJ\
+    FHKJOGEOND\x12.\n\x0bCEPDOBEIEFG\x18\x04\x20\x03(\x0b2\x0c.JMJEIBGACMDR\
+    \x0bCEPDOBEIEFG\x12.\n\x0bPAKECMNPEJJ\x18\x05\x20\x03(\x0b2\x0c.DGKLPPLJ\
+    BNBR\x0bPAKECMNPEJJ\x12.\n\x0bDPIKOCFILGP\x18\r\x20\x03(\x0b2\x0c.NPAJHG\
     DEIDJR\x0bDPIKOCFILGPb\x06proto3\
 ";
 

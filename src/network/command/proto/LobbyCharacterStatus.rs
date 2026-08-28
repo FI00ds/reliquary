@@ -27,22 +27,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:LobbyCharacterStatus)
 pub enum LobbyCharacterStatus {
-    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.JPJAJPOGCJJ_NLCDGIPGFDJ)
-    JPJAJPOGCJJ_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.JPJAJPOGCJJ_BPOCOHFIAOH)
-    JPJAJPOGCJJ_BPOCOHFIAOH = 1,
-    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.JPJAJPOGCJJ_NCIPEHOHDMG)
-    JPJAJPOGCJJ_NCIPEHOHDMG = 2,
-    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.JPJAJPOGCJJ_HMOGOHOFPFG)
-    JPJAJPOGCJJ_HMOGOHOFPFG = 3,
-    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.JPJAJPOGCJJ_HNADONAFDDN)
-    JPJAJPOGCJJ_HNADONAFDDN = 4,
-    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.JPJAJPOGCJJ_ANAIJLLOOHF)
-    JPJAJPOGCJJ_ANAIJLLOOHF = 5,
-    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.JPJAJPOGCJJ_AILKHMPHLEP)
-    JPJAJPOGCJJ_AILKHMPHLEP = 6,
-    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.JPJAJPOGCJJ_HIGMNPCOONG)
-    JPJAJPOGCJJ_HIGMNPCOONG = 7,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.LobbyCharacterStatus_None)
+    LobbyCharacterStatus_None = 0,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.LobbyCharacterStatus_Idle)
+    LobbyCharacterStatus_Idle = 1,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.LobbyCharacterStatus_Operating)
+    LobbyCharacterStatus_Operating = 2,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.LobbyCharacterStatus_Ready)
+    LobbyCharacterStatus_Ready = 3,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.LobbyCharacterStatus_Fighting)
+    LobbyCharacterStatus_Fighting = 4,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.LobbyCharacterStatus_Watching)
+    LobbyCharacterStatus_Watching = 5,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.LobbyCharacterStatus_Matching)
+    LobbyCharacterStatus_Matching = 6,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.LobbyCharacterStatus_LobbyStartFight)
+    LobbyCharacterStatus_LobbyStartFight = 7,
 }
 
 impl ::protobuf::Enum for LobbyCharacterStatus {
@@ -54,41 +54,41 @@ impl ::protobuf::Enum for LobbyCharacterStatus {
 
     fn from_i32(value: i32) -> ::std::option::Option<LobbyCharacterStatus> {
         match value {
-            0 => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_NLCDGIPGFDJ),
-            1 => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_BPOCOHFIAOH),
-            2 => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_NCIPEHOHDMG),
-            3 => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_HMOGOHOFPFG),
-            4 => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_HNADONAFDDN),
-            5 => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_ANAIJLLOOHF),
-            6 => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_AILKHMPHLEP),
-            7 => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_HIGMNPCOONG),
+            0 => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_None),
+            1 => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_Idle),
+            2 => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_Operating),
+            3 => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_Ready),
+            4 => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_Fighting),
+            5 => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_Watching),
+            6 => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_Matching),
+            7 => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_LobbyStartFight),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<LobbyCharacterStatus> {
         match str {
-            "JPJAJPOGCJJ_NLCDGIPGFDJ" => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_NLCDGIPGFDJ),
-            "JPJAJPOGCJJ_BPOCOHFIAOH" => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_BPOCOHFIAOH),
-            "JPJAJPOGCJJ_NCIPEHOHDMG" => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_NCIPEHOHDMG),
-            "JPJAJPOGCJJ_HMOGOHOFPFG" => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_HMOGOHOFPFG),
-            "JPJAJPOGCJJ_HNADONAFDDN" => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_HNADONAFDDN),
-            "JPJAJPOGCJJ_ANAIJLLOOHF" => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_ANAIJLLOOHF),
-            "JPJAJPOGCJJ_AILKHMPHLEP" => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_AILKHMPHLEP),
-            "JPJAJPOGCJJ_HIGMNPCOONG" => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_HIGMNPCOONG),
+            "LobbyCharacterStatus_None" => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_None),
+            "LobbyCharacterStatus_Idle" => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_Idle),
+            "LobbyCharacterStatus_Operating" => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_Operating),
+            "LobbyCharacterStatus_Ready" => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_Ready),
+            "LobbyCharacterStatus_Fighting" => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_Fighting),
+            "LobbyCharacterStatus_Watching" => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_Watching),
+            "LobbyCharacterStatus_Matching" => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_Matching),
+            "LobbyCharacterStatus_LobbyStartFight" => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_LobbyStartFight),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [LobbyCharacterStatus] = &[
-        LobbyCharacterStatus::JPJAJPOGCJJ_NLCDGIPGFDJ,
-        LobbyCharacterStatus::JPJAJPOGCJJ_BPOCOHFIAOH,
-        LobbyCharacterStatus::JPJAJPOGCJJ_NCIPEHOHDMG,
-        LobbyCharacterStatus::JPJAJPOGCJJ_HMOGOHOFPFG,
-        LobbyCharacterStatus::JPJAJPOGCJJ_HNADONAFDDN,
-        LobbyCharacterStatus::JPJAJPOGCJJ_ANAIJLLOOHF,
-        LobbyCharacterStatus::JPJAJPOGCJJ_AILKHMPHLEP,
-        LobbyCharacterStatus::JPJAJPOGCJJ_HIGMNPCOONG,
+        LobbyCharacterStatus::LobbyCharacterStatus_None,
+        LobbyCharacterStatus::LobbyCharacterStatus_Idle,
+        LobbyCharacterStatus::LobbyCharacterStatus_Operating,
+        LobbyCharacterStatus::LobbyCharacterStatus_Ready,
+        LobbyCharacterStatus::LobbyCharacterStatus_Fighting,
+        LobbyCharacterStatus::LobbyCharacterStatus_Watching,
+        LobbyCharacterStatus::LobbyCharacterStatus_Matching,
+        LobbyCharacterStatus::LobbyCharacterStatus_LobbyStartFight,
     ];
 }
 
@@ -106,7 +106,7 @@ impl ::protobuf::EnumFull for LobbyCharacterStatus {
 
 impl ::std::default::Default for LobbyCharacterStatus {
     fn default() -> Self {
-        LobbyCharacterStatus::JPJAJPOGCJJ_NLCDGIPGFDJ
+        LobbyCharacterStatus::LobbyCharacterStatus_None
     }
 }
 
@@ -117,13 +117,13 @@ impl LobbyCharacterStatus {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aLobbyCharacterStatus.proto*\xfe\x01\n\x14LobbyCharacterStatus\x12\
-    \x1b\n\x17JPJAJPOGCJJ_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17JPJAJPOGCJJ_BPOCOHF\
-    IAOH\x10\x01\x12\x1b\n\x17JPJAJPOGCJJ_NCIPEHOHDMG\x10\x02\x12\x1b\n\x17J\
-    PJAJPOGCJJ_HMOGOHOFPFG\x10\x03\x12\x1b\n\x17JPJAJPOGCJJ_HNADONAFDDN\x10\
-    \x04\x12\x1b\n\x17JPJAJPOGCJJ_ANAIJLLOOHF\x10\x05\x12\x1b\n\x17JPJAJPOGC\
-    JJ_AILKHMPHLEP\x10\x06\x12\x1b\n\x17JPJAJPOGCJJ_HIGMNPCOONG\x10\x07b\x06\
-    proto3\
+    \n\x1aLobbyCharacterStatus.proto*\xab\x02\n\x14LobbyCharacterStatus\x12\
+    \x1d\n\x19LobbyCharacterStatus_None\x10\0\x12\x1d\n\x19LobbyCharacterSta\
+    tus_Idle\x10\x01\x12\"\n\x1eLobbyCharacterStatus_Operating\x10\x02\x12\
+    \x1e\n\x1aLobbyCharacterStatus_Ready\x10\x03\x12!\n\x1dLobbyCharacterSta\
+    tus_Fighting\x10\x04\x12!\n\x1dLobbyCharacterStatus_Watching\x10\x05\x12\
+    !\n\x1dLobbyCharacterStatus_Matching\x10\x06\x12(\n$LobbyCharacterStatus\
+    _LobbyStartFight\x10\x07b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

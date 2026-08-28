@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LPJOINCGBBP {
     // message fields
-    // @@protoc_insertion_point(field:LPJOINCGBBP.DJFGDMIDEHJ)
-    pub DJFGDMIDEHJ: u32,
-    // @@protoc_insertion_point(field:LPJOINCGBBP.OINGNAJMFNL)
-    pub OINGNAJMFNL: ::protobuf::EnumOrUnknown<super::BGLIMCBGLAJ::BGLIMCBGLAJ>,
     // @@protoc_insertion_point(field:LPJOINCGBBP.challenge_id)
     pub challenge_id: u32,
+    // @@protoc_insertion_point(field:LPJOINCGBBP.OINGNAJMFNL)
+    pub OINGNAJMFNL: ::protobuf::EnumOrUnknown<super::BGLIMCBGLAJ::BGLIMCBGLAJ>,
+    // @@protoc_insertion_point(field:LPJOINCGBBP.DJFGDMIDEHJ)
+    pub DJFGDMIDEHJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LPJOINCGBBP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl LPJOINCGBBP {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DJFGDMIDEHJ",
-            |m: &LPJOINCGBBP| { &m.DJFGDMIDEHJ },
-            |m: &mut LPJOINCGBBP| { &mut m.DJFGDMIDEHJ },
+            "challenge_id",
+            |m: &LPJOINCGBBP| { &m.challenge_id },
+            |m: &mut LPJOINCGBBP| { &mut m.challenge_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OINGNAJMFNL",
@@ -64,9 +64,9 @@ impl LPJOINCGBBP {
             |m: &mut LPJOINCGBBP| { &mut m.OINGNAJMFNL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "challenge_id",
-            |m: &LPJOINCGBBP| { &m.challenge_id },
-            |m: &mut LPJOINCGBBP| { &mut m.challenge_id },
+            "DJFGDMIDEHJ",
+            |m: &LPJOINCGBBP| { &m.DJFGDMIDEHJ },
+            |m: &mut LPJOINCGBBP| { &mut m.DJFGDMIDEHJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LPJOINCGBBP>(
             "LPJOINCGBBP",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for LPJOINCGBBP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.DJFGDMIDEHJ = is.read_uint32()?;
+                64 => {
+                    self.challenge_id = is.read_uint32()?;
                 },
-                32 => {
+                96 => {
                     self.OINGNAJMFNL = is.read_enum_or_unknown()?;
                 },
-                40 => {
-                    self.challenge_id = is.read_uint32()?;
+                112 => {
+                    self.DJFGDMIDEHJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for LPJOINCGBBP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DJFGDMIDEHJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.DJFGDMIDEHJ);
+        if self.challenge_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.challenge_id);
         }
         if self.OINGNAJMFNL != ::protobuf::EnumOrUnknown::new(super::BGLIMCBGLAJ::BGLIMCBGLAJ::BGLIMCBGLAJ_PICLIGEAJFN) {
-            my_size += ::protobuf::rt::int32_size(4, self.OINGNAJMFNL.value());
+            my_size += ::protobuf::rt::int32_size(12, self.OINGNAJMFNL.value());
         }
-        if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.challenge_id);
+        if self.DJFGDMIDEHJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.DJFGDMIDEHJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for LPJOINCGBBP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DJFGDMIDEHJ != 0 {
-            os.write_uint32(1, self.DJFGDMIDEHJ)?;
+        if self.challenge_id != 0 {
+            os.write_uint32(8, self.challenge_id)?;
         }
         if self.OINGNAJMFNL != ::protobuf::EnumOrUnknown::new(super::BGLIMCBGLAJ::BGLIMCBGLAJ::BGLIMCBGLAJ_PICLIGEAJFN) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.OINGNAJMFNL))?;
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.OINGNAJMFNL))?;
         }
-        if self.challenge_id != 0 {
-            os.write_uint32(5, self.challenge_id)?;
+        if self.DJFGDMIDEHJ != 0 {
+            os.write_uint32(14, self.DJFGDMIDEHJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for LPJOINCGBBP {
     }
 
     fn clear(&mut self) {
-        self.DJFGDMIDEHJ = 0;
-        self.OINGNAJMFNL = ::protobuf::EnumOrUnknown::new(super::BGLIMCBGLAJ::BGLIMCBGLAJ::BGLIMCBGLAJ_PICLIGEAJFN);
         self.challenge_id = 0;
+        self.OINGNAJMFNL = ::protobuf::EnumOrUnknown::new(super::BGLIMCBGLAJ::BGLIMCBGLAJ::BGLIMCBGLAJ_PICLIGEAJFN);
+        self.DJFGDMIDEHJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LPJOINCGBBP {
         static instance: LPJOINCGBBP = LPJOINCGBBP {
-            DJFGDMIDEHJ: 0,
-            OINGNAJMFNL: ::protobuf::EnumOrUnknown::from_i32(0),
             challenge_id: 0,
+            OINGNAJMFNL: ::protobuf::EnumOrUnknown::from_i32(0),
+            DJFGDMIDEHJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for LPJOINCGBBP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LPJOINCGBBP.proto\x1a\x11BGLIMCBGLAJ.proto\"\x82\x01\n\x0bLPJOINCG\
-    BBP\x12\x20\n\x0bDJFGDMIDEHJ\x18\x01\x20\x01(\rR\x0bDJFGDMIDEHJ\x12.\n\
-    \x0bOINGNAJMFNL\x18\x04\x20\x01(\x0e2\x0c.BGLIMCBGLAJR\x0bOINGNAJMFNL\
-    \x12!\n\x0cchallenge_id\x18\x05\x20\x01(\rR\x0bchallengeIdb\x06proto3\
+    BBP\x12!\n\x0cchallenge_id\x18\x08\x20\x01(\rR\x0bchallengeId\x12.\n\x0b\
+    OINGNAJMFNL\x18\x0c\x20\x01(\x0e2\x0c.BGLIMCBGLAJR\x0bOINGNAJMFNL\x12\
+    \x20\n\x0bDJFGDMIDEHJ\x18\x0e\x20\x01(\rR\x0bDJFGDMIDEHJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

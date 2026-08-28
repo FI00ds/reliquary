@@ -86,13 +86,13 @@ impl ::protobuf::Message for ChallengeHistoryMaxLevel {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                16 => {
                     self.HNHCFJJNJCE = is.read_bool()?;
                 },
-                88 => {
+                32 => {
                     self.reward_display_type = is.read_uint32()?;
                 },
-                112 => {
+                80 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for ChallengeHistoryMaxLevel {
             my_size += 1 + 1;
         }
         if self.reward_display_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.reward_display_type);
+            my_size += ::protobuf::rt::uint32_size(4, self.reward_display_type);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.level);
+            my_size += ::protobuf::rt::uint32_size(10, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for ChallengeHistoryMaxLevel {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HNHCFJJNJCE != false {
-            os.write_bool(10, self.HNHCFJJNJCE)?;
+            os.write_bool(2, self.HNHCFJJNJCE)?;
         }
         if self.reward_display_type != 0 {
-            os.write_uint32(11, self.reward_display_type)?;
+            os.write_uint32(4, self.reward_display_type)?;
         }
         if self.level != 0 {
-            os.write_uint32(14, self.level)?;
+            os.write_uint32(10, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeHistoryMaxLevel {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eChallengeHistoryMaxLevel.proto\"\x82\x01\n\x18ChallengeHistoryMaxL\
-    evel\x12\x20\n\x0bHNHCFJJNJCE\x18\n\x20\x01(\x08R\x0bHNHCFJJNJCE\x12.\n\
-    \x13reward_display_type\x18\x0b\x20\x01(\rR\x11rewardDisplayType\x12\x14\
-    \n\x05level\x18\x0e\x20\x01(\rR\x05levelb\x06proto3\
+    evel\x12\x20\n\x0bHNHCFJJNJCE\x18\x02\x20\x01(\x08R\x0bHNHCFJJNJCE\x12.\
+    \n\x13reward_display_type\x18\x04\x20\x01(\rR\x11rewardDisplayType\x12\
+    \x14\n\x05level\x18\n\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

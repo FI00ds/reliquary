@@ -27,28 +27,28 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:PlayingState)
 pub enum PlayingState {
-    // @@protoc_insertion_point(enum_value:PlayingState.PLAYING_STATE_NONE)
-    PLAYING_STATE_NONE = 0,
-    // @@protoc_insertion_point(enum_value:PlayingState.PLAYING_ROGUE_COSMOS)
-    PLAYING_ROGUE_COSMOS = 1,
-    // @@protoc_insertion_point(enum_value:PlayingState.PLAYING_ROGUE_CHESS)
-    PLAYING_ROGUE_CHESS = 2,
-    // @@protoc_insertion_point(enum_value:PlayingState.PLAYING_ROGUE_CHESS_NOUS)
-    PLAYING_ROGUE_CHESS_NOUS = 3,
-    // @@protoc_insertion_point(enum_value:PlayingState.PLAYING_CHALLENGE_MEMORY)
-    PLAYING_CHALLENGE_MEMORY = 4,
-    // @@protoc_insertion_point(enum_value:PlayingState.PLAYING_CHALLENGE_STORY)
-    PLAYING_CHALLENGE_STORY = 5,
-    // @@protoc_insertion_point(enum_value:PlayingState.PLAYING_CHALLENGE_BOSS)
-    PLAYING_CHALLENGE_BOSS = 6,
-    // @@protoc_insertion_point(enum_value:PlayingState.PLAYING_ROGUE_TOURN)
-    PLAYING_ROGUE_TOURN = 7,
-    // @@protoc_insertion_point(enum_value:PlayingState.PLAYING_ROGUE_MAGIC)
-    PLAYING_ROGUE_MAGIC = 8,
-    // @@protoc_insertion_point(enum_value:PlayingState.PLAYING_CHALLENGE_PEAK)
-    PLAYING_CHALLENGE_PEAK = 9,
-    // @@protoc_insertion_point(enum_value:PlayingState.DIHJILNECAD_OAILFPOOBMJ)
-    DIHJILNECAD_OAILFPOOBMJ = 10,
+    // @@protoc_insertion_point(enum_value:PlayingState.PlayingState_None)
+    PlayingState_None = 0,
+    // @@protoc_insertion_point(enum_value:PlayingState.PlayingState_PlayingRogueCosmos)
+    PlayingState_PlayingRogueCosmos = 1,
+    // @@protoc_insertion_point(enum_value:PlayingState.PlayingState_PlayingRogueChess)
+    PlayingState_PlayingRogueChess = 2,
+    // @@protoc_insertion_point(enum_value:PlayingState.PlayingState_PlayingRogueChessNous)
+    PlayingState_PlayingRogueChessNous = 3,
+    // @@protoc_insertion_point(enum_value:PlayingState.PlayingState_PlayingChallengeMemory)
+    PlayingState_PlayingChallengeMemory = 4,
+    // @@protoc_insertion_point(enum_value:PlayingState.PlayingState_PlayingChallengeStory)
+    PlayingState_PlayingChallengeStory = 5,
+    // @@protoc_insertion_point(enum_value:PlayingState.PlayingState_PlayingChallengeBoss)
+    PlayingState_PlayingChallengeBoss = 6,
+    // @@protoc_insertion_point(enum_value:PlayingState.PlayingState_PlayingRogueTourn)
+    PlayingState_PlayingRogueTourn = 7,
+    // @@protoc_insertion_point(enum_value:PlayingState.PlayingState_PlayingRogueMagic)
+    PlayingState_PlayingRogueMagic = 8,
+    // @@protoc_insertion_point(enum_value:PlayingState.PlayingState_PlayingChallengePeak)
+    PlayingState_PlayingChallengePeak = 9,
+    // @@protoc_insertion_point(enum_value:PlayingState.H_6d9e5383)
+    H_6d9e5383 = 10,
 }
 
 impl ::protobuf::Enum for PlayingState {
@@ -60,50 +60,50 @@ impl ::protobuf::Enum for PlayingState {
 
     fn from_i32(value: i32) -> ::std::option::Option<PlayingState> {
         match value {
-            0 => ::std::option::Option::Some(PlayingState::PLAYING_STATE_NONE),
-            1 => ::std::option::Option::Some(PlayingState::PLAYING_ROGUE_COSMOS),
-            2 => ::std::option::Option::Some(PlayingState::PLAYING_ROGUE_CHESS),
-            3 => ::std::option::Option::Some(PlayingState::PLAYING_ROGUE_CHESS_NOUS),
-            4 => ::std::option::Option::Some(PlayingState::PLAYING_CHALLENGE_MEMORY),
-            5 => ::std::option::Option::Some(PlayingState::PLAYING_CHALLENGE_STORY),
-            6 => ::std::option::Option::Some(PlayingState::PLAYING_CHALLENGE_BOSS),
-            7 => ::std::option::Option::Some(PlayingState::PLAYING_ROGUE_TOURN),
-            8 => ::std::option::Option::Some(PlayingState::PLAYING_ROGUE_MAGIC),
-            9 => ::std::option::Option::Some(PlayingState::PLAYING_CHALLENGE_PEAK),
-            10 => ::std::option::Option::Some(PlayingState::DIHJILNECAD_OAILFPOOBMJ),
+            0 => ::std::option::Option::Some(PlayingState::PlayingState_None),
+            1 => ::std::option::Option::Some(PlayingState::PlayingState_PlayingRogueCosmos),
+            2 => ::std::option::Option::Some(PlayingState::PlayingState_PlayingRogueChess),
+            3 => ::std::option::Option::Some(PlayingState::PlayingState_PlayingRogueChessNous),
+            4 => ::std::option::Option::Some(PlayingState::PlayingState_PlayingChallengeMemory),
+            5 => ::std::option::Option::Some(PlayingState::PlayingState_PlayingChallengeStory),
+            6 => ::std::option::Option::Some(PlayingState::PlayingState_PlayingChallengeBoss),
+            7 => ::std::option::Option::Some(PlayingState::PlayingState_PlayingRogueTourn),
+            8 => ::std::option::Option::Some(PlayingState::PlayingState_PlayingRogueMagic),
+            9 => ::std::option::Option::Some(PlayingState::PlayingState_PlayingChallengePeak),
+            10 => ::std::option::Option::Some(PlayingState::H_6d9e5383),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<PlayingState> {
         match str {
-            "PLAYING_STATE_NONE" => ::std::option::Option::Some(PlayingState::PLAYING_STATE_NONE),
-            "PLAYING_ROGUE_COSMOS" => ::std::option::Option::Some(PlayingState::PLAYING_ROGUE_COSMOS),
-            "PLAYING_ROGUE_CHESS" => ::std::option::Option::Some(PlayingState::PLAYING_ROGUE_CHESS),
-            "PLAYING_ROGUE_CHESS_NOUS" => ::std::option::Option::Some(PlayingState::PLAYING_ROGUE_CHESS_NOUS),
-            "PLAYING_CHALLENGE_MEMORY" => ::std::option::Option::Some(PlayingState::PLAYING_CHALLENGE_MEMORY),
-            "PLAYING_CHALLENGE_STORY" => ::std::option::Option::Some(PlayingState::PLAYING_CHALLENGE_STORY),
-            "PLAYING_CHALLENGE_BOSS" => ::std::option::Option::Some(PlayingState::PLAYING_CHALLENGE_BOSS),
-            "PLAYING_ROGUE_TOURN" => ::std::option::Option::Some(PlayingState::PLAYING_ROGUE_TOURN),
-            "PLAYING_ROGUE_MAGIC" => ::std::option::Option::Some(PlayingState::PLAYING_ROGUE_MAGIC),
-            "PLAYING_CHALLENGE_PEAK" => ::std::option::Option::Some(PlayingState::PLAYING_CHALLENGE_PEAK),
-            "DIHJILNECAD_OAILFPOOBMJ" => ::std::option::Option::Some(PlayingState::DIHJILNECAD_OAILFPOOBMJ),
+            "PlayingState_None" => ::std::option::Option::Some(PlayingState::PlayingState_None),
+            "PlayingState_PlayingRogueCosmos" => ::std::option::Option::Some(PlayingState::PlayingState_PlayingRogueCosmos),
+            "PlayingState_PlayingRogueChess" => ::std::option::Option::Some(PlayingState::PlayingState_PlayingRogueChess),
+            "PlayingState_PlayingRogueChessNous" => ::std::option::Option::Some(PlayingState::PlayingState_PlayingRogueChessNous),
+            "PlayingState_PlayingChallengeMemory" => ::std::option::Option::Some(PlayingState::PlayingState_PlayingChallengeMemory),
+            "PlayingState_PlayingChallengeStory" => ::std::option::Option::Some(PlayingState::PlayingState_PlayingChallengeStory),
+            "PlayingState_PlayingChallengeBoss" => ::std::option::Option::Some(PlayingState::PlayingState_PlayingChallengeBoss),
+            "PlayingState_PlayingRogueTourn" => ::std::option::Option::Some(PlayingState::PlayingState_PlayingRogueTourn),
+            "PlayingState_PlayingRogueMagic" => ::std::option::Option::Some(PlayingState::PlayingState_PlayingRogueMagic),
+            "PlayingState_PlayingChallengePeak" => ::std::option::Option::Some(PlayingState::PlayingState_PlayingChallengePeak),
+            "H_6d9e5383" => ::std::option::Option::Some(PlayingState::H_6d9e5383),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [PlayingState] = &[
-        PlayingState::PLAYING_STATE_NONE,
-        PlayingState::PLAYING_ROGUE_COSMOS,
-        PlayingState::PLAYING_ROGUE_CHESS,
-        PlayingState::PLAYING_ROGUE_CHESS_NOUS,
-        PlayingState::PLAYING_CHALLENGE_MEMORY,
-        PlayingState::PLAYING_CHALLENGE_STORY,
-        PlayingState::PLAYING_CHALLENGE_BOSS,
-        PlayingState::PLAYING_ROGUE_TOURN,
-        PlayingState::PLAYING_ROGUE_MAGIC,
-        PlayingState::PLAYING_CHALLENGE_PEAK,
-        PlayingState::DIHJILNECAD_OAILFPOOBMJ,
+        PlayingState::PlayingState_None,
+        PlayingState::PlayingState_PlayingRogueCosmos,
+        PlayingState::PlayingState_PlayingRogueChess,
+        PlayingState::PlayingState_PlayingRogueChessNous,
+        PlayingState::PlayingState_PlayingChallengeMemory,
+        PlayingState::PlayingState_PlayingChallengeStory,
+        PlayingState::PlayingState_PlayingChallengeBoss,
+        PlayingState::PlayingState_PlayingRogueTourn,
+        PlayingState::PlayingState_PlayingRogueMagic,
+        PlayingState::PlayingState_PlayingChallengePeak,
+        PlayingState::H_6d9e5383,
     ];
 }
 
@@ -121,7 +121,7 @@ impl ::protobuf::EnumFull for PlayingState {
 
 impl ::std::default::Default for PlayingState {
     fn default() -> Self {
-        PlayingState::PLAYING_STATE_NONE
+        PlayingState::PlayingState_None
     }
 }
 
@@ -132,14 +132,15 @@ impl PlayingState {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12PlayingState.proto*\xb9\x02\n\x0cPlayingState\x12\x16\n\x12PLAYING\
-    _STATE_NONE\x10\0\x12\x18\n\x14PLAYING_ROGUE_COSMOS\x10\x01\x12\x17\n\
-    \x13PLAYING_ROGUE_CHESS\x10\x02\x12\x1c\n\x18PLAYING_ROGUE_CHESS_NOUS\
-    \x10\x03\x12\x1c\n\x18PLAYING_CHALLENGE_MEMORY\x10\x04\x12\x1b\n\x17PLAY\
-    ING_CHALLENGE_STORY\x10\x05\x12\x1a\n\x16PLAYING_CHALLENGE_BOSS\x10\x06\
-    \x12\x17\n\x13PLAYING_ROGUE_TOURN\x10\x07\x12\x17\n\x13PLAYING_ROGUE_MAG\
-    IC\x10\x08\x12\x1a\n\x16PLAYING_CHALLENGE_PEAK\x10\t\x12\x1b\n\x17DIHJIL\
-    NECAD_OAILFPOOBMJ\x10\nb\x06proto3\
+    \n\x12PlayingState.proto*\x8d\x03\n\x0cPlayingState\x12\x15\n\x11Playing\
+    State_None\x10\0\x12#\n\x1fPlayingState_PlayingRogueCosmos\x10\x01\x12\"\
+    \n\x1ePlayingState_PlayingRogueChess\x10\x02\x12&\n\"PlayingState_Playin\
+    gRogueChessNous\x10\x03\x12'\n#PlayingState_PlayingChallengeMemory\x10\
+    \x04\x12&\n\"PlayingState_PlayingChallengeStory\x10\x05\x12%\n!PlayingSt\
+    ate_PlayingChallengeBoss\x10\x06\x12\"\n\x1ePlayingState_PlayingRogueTou\
+    rn\x10\x07\x12\"\n\x1ePlayingState_PlayingRogueMagic\x10\x08\x12%\n!Play\
+    ingState_PlayingChallengePeak\x10\t\x12\x0e\n\nH_6d9e5383\x10\nb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

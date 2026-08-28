@@ -30,10 +30,10 @@ pub struct FHBHIHJAOPB {
     // message fields
     // @@protoc_insertion_point(field:FHBHIHJAOPB.DCAHJELNJNP)
     pub DCAHJELNJNP: u32,
-    // @@protoc_insertion_point(field:FHBHIHJAOPB.DMLFGGDECDN)
-    pub DMLFGGDECDN: u32,
     // @@protoc_insertion_point(field:FHBHIHJAOPB.ODDKKGOJHFO)
     pub ODDKKGOJHFO: u32,
+    // @@protoc_insertion_point(field:FHBHIHJAOPB.DMLFGGDECDN)
+    pub DMLFGGDECDN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FHBHIHJAOPB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl FHBHIHJAOPB {
             |m: &mut FHBHIHJAOPB| { &mut m.DCAHJELNJNP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DMLFGGDECDN",
-            |m: &FHBHIHJAOPB| { &m.DMLFGGDECDN },
-            |m: &mut FHBHIHJAOPB| { &mut m.DMLFGGDECDN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ODDKKGOJHFO",
             |m: &FHBHIHJAOPB| { &m.ODDKKGOJHFO },
             |m: &mut FHBHIHJAOPB| { &mut m.ODDKKGOJHFO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DMLFGGDECDN",
+            |m: &FHBHIHJAOPB| { &m.DMLFGGDECDN },
+            |m: &mut FHBHIHJAOPB| { &mut m.DMLFGGDECDN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FHBHIHJAOPB>(
             "FHBHIHJAOPB",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for FHBHIHJAOPB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                8 => {
                     self.DCAHJELNJNP = is.read_uint32()?;
                 },
-                96 => {
-                    self.DMLFGGDECDN = is.read_uint32()?;
-                },
-                112 => {
+                48 => {
                     self.ODDKKGOJHFO = is.read_uint32()?;
+                },
+                56 => {
+                    self.DMLFGGDECDN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for FHBHIHJAOPB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.DCAHJELNJNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.DCAHJELNJNP);
-        }
-        if self.DMLFGGDECDN != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.DMLFGGDECDN);
+            my_size += ::protobuf::rt::uint32_size(1, self.DCAHJELNJNP);
         }
         if self.ODDKKGOJHFO != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.ODDKKGOJHFO);
+            my_size += ::protobuf::rt::uint32_size(6, self.ODDKKGOJHFO);
+        }
+        if self.DMLFGGDECDN != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.DMLFGGDECDN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for FHBHIHJAOPB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DCAHJELNJNP != 0 {
-            os.write_uint32(9, self.DCAHJELNJNP)?;
-        }
-        if self.DMLFGGDECDN != 0 {
-            os.write_uint32(12, self.DMLFGGDECDN)?;
+            os.write_uint32(1, self.DCAHJELNJNP)?;
         }
         if self.ODDKKGOJHFO != 0 {
-            os.write_uint32(14, self.ODDKKGOJHFO)?;
+            os.write_uint32(6, self.ODDKKGOJHFO)?;
+        }
+        if self.DMLFGGDECDN != 0 {
+            os.write_uint32(7, self.DMLFGGDECDN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for FHBHIHJAOPB {
 
     fn clear(&mut self) {
         self.DCAHJELNJNP = 0;
-        self.DMLFGGDECDN = 0;
         self.ODDKKGOJHFO = 0;
+        self.DMLFGGDECDN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FHBHIHJAOPB {
         static instance: FHBHIHJAOPB = FHBHIHJAOPB {
             DCAHJELNJNP: 0,
-            DMLFGGDECDN: 0,
             ODDKKGOJHFO: 0,
+            DMLFGGDECDN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for FHBHIHJAOPB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FHBHIHJAOPB.proto\"s\n\x0bFHBHIHJAOPB\x12\x20\n\x0bDCAHJELNJNP\x18\
-    \t\x20\x01(\rR\x0bDCAHJELNJNP\x12\x20\n\x0bDMLFGGDECDN\x18\x0c\x20\x01(\
-    \rR\x0bDMLFGGDECDN\x12\x20\n\x0bODDKKGOJHFO\x18\x0e\x20\x01(\rR\x0bODDKK\
-    GOJHFOb\x06proto3\
+    \x01\x20\x01(\rR\x0bDCAHJELNJNP\x12\x20\n\x0bODDKKGOJHFO\x18\x06\x20\x01\
+    (\rR\x0bODDKKGOJHFO\x12\x20\n\x0bDMLFGGDECDN\x18\x07\x20\x01(\rR\x0bDMLF\
+    GGDECDNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

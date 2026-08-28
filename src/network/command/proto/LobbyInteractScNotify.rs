@@ -79,10 +79,10 @@ impl ::protobuf::Message for LobbyInteractScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                80 => {
                     self.DNBKKDBFFAJ = is.read_enum_or_unknown()?;
                 },
-                64 => {
+                88 => {
                     self.CPOCELOLNHL = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for LobbyInteractScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DNBKKDBFFAJ != ::protobuf::EnumOrUnknown::new(super::LobbyInteractType::LobbyInteractType::ODPJEOGDIKF_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(1, self.DNBKKDBFFAJ.value());
+        if self.DNBKKDBFFAJ != ::protobuf::EnumOrUnknown::new(super::LobbyInteractType::LobbyInteractType::LobbyInteractType_None) {
+            my_size += ::protobuf::rt::int32_size(10, self.DNBKKDBFFAJ.value());
         }
         if self.CPOCELOLNHL != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.CPOCELOLNHL);
+            my_size += ::protobuf::rt::uint32_size(11, self.CPOCELOLNHL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for LobbyInteractScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DNBKKDBFFAJ != ::protobuf::EnumOrUnknown::new(super::LobbyInteractType::LobbyInteractType::ODPJEOGDIKF_NLCDGIPGFDJ) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.DNBKKDBFFAJ))?;
+        if self.DNBKKDBFFAJ != ::protobuf::EnumOrUnknown::new(super::LobbyInteractType::LobbyInteractType::LobbyInteractType_None) {
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.DNBKKDBFFAJ))?;
         }
         if self.CPOCELOLNHL != 0 {
-            os.write_uint32(8, self.CPOCELOLNHL)?;
+            os.write_uint32(11, self.CPOCELOLNHL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,7 +132,7 @@ impl ::protobuf::Message for LobbyInteractScNotify {
     }
 
     fn clear(&mut self) {
-        self.DNBKKDBFFAJ = ::protobuf::EnumOrUnknown::new(super::LobbyInteractType::LobbyInteractType::ODPJEOGDIKF_NLCDGIPGFDJ);
+        self.DNBKKDBFFAJ = ::protobuf::EnumOrUnknown::new(super::LobbyInteractType::LobbyInteractType::LobbyInteractType_None);
         self.CPOCELOLNHL = 0;
         self.special_fields.clear();
     }
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for LobbyInteractScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bLobbyInteractScNotify.proto\x1a\x17LobbyInteractType.proto\"o\n\
-    \x15LobbyInteractScNotify\x124\n\x0bDNBKKDBFFAJ\x18\x01\x20\x01(\x0e2\
-    \x12.LobbyInteractTypeR\x0bDNBKKDBFFAJ\x12\x20\n\x0bCPOCELOLNHL\x18\x08\
-    \x20\x01(\rR\x0bCPOCELOLNHLb\x06proto3\
+    \x15LobbyInteractScNotify\x124\n\x0bDNBKKDBFFAJ\x18\n\x20\x01(\x0e2\x12.\
+    LobbyInteractTypeR\x0bDNBKKDBFFAJ\x12\x20\n\x0bCPOCELOLNHL\x18\x0b\x20\
+    \x01(\rR\x0bCPOCELOLNHLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

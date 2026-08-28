@@ -48,7 +48,7 @@ impl PropExtraInfo {
         ::std::default::Default::default()
     }
 
-    // .PropRogueInfo rogue_game_info = 14;
+    // .PropRogueInfo rogue_game_info = 11;
 
     pub fn rogue_game_info(&self) -> &super::PropRogueInfo::PropRogueInfo {
         match self.KKNBOACNCON {
@@ -97,7 +97,7 @@ impl PropExtraInfo {
         }
     }
 
-    // .HLFAKEOBFAB AEFMMOHKCHJ = 12;
+    // .HLFAKEOBFAB AEFMMOHKCHJ = 15;
 
     pub fn AEFMMOHKCHJ(&self) -> &super::HLFAKEOBFAB::HLFAKEOBFAB {
         match self.KKNBOACNCON {
@@ -146,7 +146,7 @@ impl PropExtraInfo {
         }
     }
 
-    // .BGFLAKMOIGC OGLJIOJBIEN = 1;
+    // .BGFLAKMOIGC OGLJIOJBIEN = 10;
 
     pub fn OGLJIOJBIEN(&self) -> &super::BGFLAKMOIGC::BGFLAKMOIGC {
         match self.KKNBOACNCON {
@@ -195,7 +195,7 @@ impl PropExtraInfo {
         }
     }
 
-    // .EBBOJACNHEC ADNHHAELLNC = 13;
+    // .EBBOJACNHEC ADNHHAELLNC = 4;
 
     pub fn ADNHHAELLNC(&self) -> &super::EBBOJACNHEC::EBBOJACNHEC {
         match self.KKNBOACNCON {
@@ -244,7 +244,7 @@ impl PropExtraInfo {
         }
     }
 
-    // .APKENKIDMGC ACJPMKHJLDB = 15;
+    // .APKENKIDMGC ACJPMKHJLDB = 14;
 
     pub fn ACJPMKHJLDB(&self) -> &super::APKENKIDMGC::APKENKIDMGC {
         match self.KKNBOACNCON {
@@ -293,7 +293,7 @@ impl PropExtraInfo {
         }
     }
 
-    // .NBDKNCJGOMN OEMHOKEMBKM = 4;
+    // .NBDKNCJGOMN OEMHOKEMBKM = 6;
 
     pub fn OEMHOKEMBKM(&self) -> &super::NBDKNCJGOMN::NBDKNCJGOMN {
         match self.KKNBOACNCON {
@@ -342,7 +342,7 @@ impl PropExtraInfo {
         }
     }
 
-    // .ONNEJIPGHCK MFCPLGHHPNP = 2;
+    // .ONNEJIPGHCK MFCPLGHHPNP = 8;
 
     pub fn MFCPLGHHPNP(&self) -> &super::ONNEJIPGHCK::ONNEJIPGHCK {
         match self.KKNBOACNCON {
@@ -391,7 +391,7 @@ impl PropExtraInfo {
         }
     }
 
-    // .PGLLFCMEFKG IDMAELPELLA = 9;
+    // .PGLLFCMEFKG IDMAELPELLA = 12;
 
     pub fn IDMAELPELLA(&self) -> &super::PGLLFCMEFKG::PGLLFCMEFKG {
         match self.KKNBOACNCON {
@@ -523,31 +523,31 @@ impl ::protobuf::Message for PropExtraInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.timeline_info)?;
                 },
-                114 => {
+                90 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::RogueGameInfo(is.read_message()?));
                 },
-                98 => {
+                122 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::AEFMMOHKCHJ(is.read_message()?));
                 },
-                10 => {
+                82 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OGLJIOJBIEN(is.read_message()?));
                 },
-                106 => {
+                34 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ADNHHAELLNC(is.read_message()?));
                 },
-                122 => {
+                114 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ACJPMKHJLDB(is.read_message()?));
                 },
-                34 => {
+                50 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OEMHOKEMBKM(is.read_message()?));
                 },
-                18 => {
+                66 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::MFCPLGHHPNP(is.read_message()?));
                 },
-                74 => {
+                98 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::IDMAELPELLA(is.read_message()?));
                 },
                 tag => {
@@ -609,33 +609,33 @@ impl ::protobuf::Message for PropExtraInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.timeline_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &prop_extra_info::KKNBOACNCON::RogueGameInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
                 &prop_extra_info::KKNBOACNCON::AEFMMOHKCHJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-                },
-                &prop_extra_info::KKNBOACNCON::OGLJIOJBIEN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-                },
-                &prop_extra_info::KKNBOACNCON::ADNHHAELLNC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-                },
-                &prop_extra_info::KKNBOACNCON::ACJPMKHJLDB(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
-                &prop_extra_info::KKNBOACNCON::OEMHOKEMBKM(ref v) => {
+                &prop_extra_info::KKNBOACNCON::OGLJIOJBIEN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                },
+                &prop_extra_info::KKNBOACNCON::ADNHHAELLNC(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
+                &prop_extra_info::KKNBOACNCON::ACJPMKHJLDB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                },
+                &prop_extra_info::KKNBOACNCON::OEMHOKEMBKM(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                },
                 &prop_extra_info::KKNBOACNCON::MFCPLGHHPNP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
                 &prop_extra_info::KKNBOACNCON::IDMAELPELLA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
             };
         }
@@ -742,17 +742,17 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     oto\x1a\x11EBBOJACNHEC.proto\x1a\x11HLFAKEOBFAB.proto\x1a\x11NBDKNCJGOMN\
     .proto\x1a\x11ONNEJIPGHCK.proto\x1a\x11PGLLFCMEFKG.proto\x1a\x13PropRogu\
     eInfo.proto\x1a\x16PropTimelineInfo.proto\"\xee\x03\n\rPropExtraInfo\x12\
-    6\n\rtimeline_info\x18\x0b\x20\x01(\x0b2\x11.PropTimelineInfoR\x0ctimeli\
-    neInfo\x128\n\x0frogue_game_info\x18\x0e\x20\x01(\x0b2\x0e.PropRogueInfo\
-    H\0R\rrogueGameInfo\x120\n\x0bAEFMMOHKCHJ\x18\x0c\x20\x01(\x0b2\x0c.HLFA\
-    KEOBFABH\0R\x0bAEFMMOHKCHJ\x120\n\x0bOGLJIOJBIEN\x18\x01\x20\x01(\x0b2\
-    \x0c.BGFLAKMOIGCH\0R\x0bOGLJIOJBIEN\x120\n\x0bADNHHAELLNC\x18\r\x20\x01(\
-    \x0b2\x0c.EBBOJACNHECH\0R\x0bADNHHAELLNC\x120\n\x0bACJPMKHJLDB\x18\x0f\
+    6\n\rtimeline_info\x18\x02\x20\x01(\x0b2\x11.PropTimelineInfoR\x0ctimeli\
+    neInfo\x128\n\x0frogue_game_info\x18\x0b\x20\x01(\x0b2\x0e.PropRogueInfo\
+    H\0R\rrogueGameInfo\x120\n\x0bAEFMMOHKCHJ\x18\x0f\x20\x01(\x0b2\x0c.HLFA\
+    KEOBFABH\0R\x0bAEFMMOHKCHJ\x120\n\x0bOGLJIOJBIEN\x18\n\x20\x01(\x0b2\x0c\
+    .BGFLAKMOIGCH\0R\x0bOGLJIOJBIEN\x120\n\x0bADNHHAELLNC\x18\x04\x20\x01(\
+    \x0b2\x0c.EBBOJACNHECH\0R\x0bADNHHAELLNC\x120\n\x0bACJPMKHJLDB\x18\x0e\
     \x20\x01(\x0b2\x0c.APKENKIDMGCH\0R\x0bACJPMKHJLDB\x120\n\x0bOEMHOKEMBKM\
-    \x18\x04\x20\x01(\x0b2\x0c.NBDKNCJGOMNH\0R\x0bOEMHOKEMBKM\x120\n\x0bMFCP\
-    LGHHPNP\x18\x02\x20\x01(\x0b2\x0c.ONNEJIPGHCKH\0R\x0bMFCPLGHHPNP\x120\n\
-    \x0bIDMAELPELLA\x18\t\x20\x01(\x0b2\x0c.PGLLFCMEFKGH\0R\x0bIDMAELPELLAB\
-    \r\n\x0bKKNBOACNCONb\x06proto3\
+    \x18\x06\x20\x01(\x0b2\x0c.NBDKNCJGOMNH\0R\x0bOEMHOKEMBKM\x120\n\x0bMFCP\
+    LGHHPNP\x18\x08\x20\x01(\x0b2\x0c.ONNEJIPGHCKH\0R\x0bMFCPLGHHPNP\x120\n\
+    \x0bIDMAELPELLA\x18\x0c\x20\x01(\x0b2\x0c.PGLLFCMEFKGH\0R\x0bIDMAELPELLA\
+    B\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

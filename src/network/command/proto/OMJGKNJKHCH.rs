@@ -30,10 +30,10 @@ pub struct OMJGKNJKHCH {
     // message fields
     // @@protoc_insertion_point(field:OMJGKNJKHCH.NGIBKCODMAL)
     pub NGIBKCODMAL: i32,
-    // @@protoc_insertion_point(field:OMJGKNJKHCH.JOCCAPDMHGB)
-    pub JOCCAPDMHGB: i32,
     // @@protoc_insertion_point(field:OMJGKNJKHCH.IGNACLJKFGO)
     pub IGNACLJKFGO: u32,
+    // @@protoc_insertion_point(field:OMJGKNJKHCH.JOCCAPDMHGB)
+    pub JOCCAPDMHGB: i32,
     // special fields
     // @@protoc_insertion_point(special_field:OMJGKNJKHCH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl OMJGKNJKHCH {
             |m: &mut OMJGKNJKHCH| { &mut m.NGIBKCODMAL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JOCCAPDMHGB",
-            |m: &OMJGKNJKHCH| { &m.JOCCAPDMHGB },
-            |m: &mut OMJGKNJKHCH| { &mut m.JOCCAPDMHGB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IGNACLJKFGO",
             |m: &OMJGKNJKHCH| { &m.IGNACLJKFGO },
             |m: &mut OMJGKNJKHCH| { &mut m.IGNACLJKFGO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JOCCAPDMHGB",
+            |m: &OMJGKNJKHCH| { &m.JOCCAPDMHGB },
+            |m: &mut OMJGKNJKHCH| { &mut m.JOCCAPDMHGB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OMJGKNJKHCH>(
             "OMJGKNJKHCH",
@@ -90,10 +90,10 @@ impl ::protobuf::Message for OMJGKNJKHCH {
                     self.NGIBKCODMAL = is.read_int32()?;
                 },
                 72 => {
-                    self.JOCCAPDMHGB = is.read_int32()?;
-                },
-                80 => {
                     self.IGNACLJKFGO = is.read_uint32()?;
+                },
+                112 => {
+                    self.JOCCAPDMHGB = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,11 +110,11 @@ impl ::protobuf::Message for OMJGKNJKHCH {
         if self.NGIBKCODMAL != 0 {
             my_size += ::protobuf::rt::int32_size(2, self.NGIBKCODMAL);
         }
-        if self.JOCCAPDMHGB != 0 {
-            my_size += ::protobuf::rt::int32_size(9, self.JOCCAPDMHGB);
-        }
         if self.IGNACLJKFGO != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.IGNACLJKFGO);
+            my_size += ::protobuf::rt::uint32_size(9, self.IGNACLJKFGO);
+        }
+        if self.JOCCAPDMHGB != 0 {
+            my_size += ::protobuf::rt::int32_size(14, self.JOCCAPDMHGB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,11 +125,11 @@ impl ::protobuf::Message for OMJGKNJKHCH {
         if self.NGIBKCODMAL != 0 {
             os.write_int32(2, self.NGIBKCODMAL)?;
         }
-        if self.JOCCAPDMHGB != 0 {
-            os.write_int32(9, self.JOCCAPDMHGB)?;
-        }
         if self.IGNACLJKFGO != 0 {
-            os.write_uint32(10, self.IGNACLJKFGO)?;
+            os.write_uint32(9, self.IGNACLJKFGO)?;
+        }
+        if self.JOCCAPDMHGB != 0 {
+            os.write_int32(14, self.JOCCAPDMHGB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for OMJGKNJKHCH {
 
     fn clear(&mut self) {
         self.NGIBKCODMAL = 0;
-        self.JOCCAPDMHGB = 0;
         self.IGNACLJKFGO = 0;
+        self.JOCCAPDMHGB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OMJGKNJKHCH {
         static instance: OMJGKNJKHCH = OMJGKNJKHCH {
             NGIBKCODMAL: 0,
-            JOCCAPDMHGB: 0,
             IGNACLJKFGO: 0,
+            JOCCAPDMHGB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for OMJGKNJKHCH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OMJGKNJKHCH.proto\"s\n\x0bOMJGKNJKHCH\x12\x20\n\x0bNGIBKCODMAL\x18\
-    \x02\x20\x01(\x05R\x0bNGIBKCODMAL\x12\x20\n\x0bJOCCAPDMHGB\x18\t\x20\x01\
-    (\x05R\x0bJOCCAPDMHGB\x12\x20\n\x0bIGNACLJKFGO\x18\n\x20\x01(\rR\x0bIGNA\
-    CLJKFGOb\x06proto3\
+    \x02\x20\x01(\x05R\x0bNGIBKCODMAL\x12\x20\n\x0bIGNACLJKFGO\x18\t\x20\x01\
+    (\rR\x0bIGNACLJKFGO\x12\x20\n\x0bJOCCAPDMHGB\x18\x0e\x20\x01(\x05R\x0bJO\
+    CCAPDMHGBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

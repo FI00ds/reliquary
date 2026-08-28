@@ -86,13 +86,13 @@ impl ::protobuf::Message for BANELIGFLCO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                48 => {
                     self.CBILPMICEKC = is.read_uint32()?;
                 },
-                80 => {
+                56 => {
                     self.level = is.read_uint32()?;
                 },
-                96 => {
+                72 => {
                     self.MFKHDANPCIC = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for BANELIGFLCO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CBILPMICEKC != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.CBILPMICEKC);
+            my_size += ::protobuf::rt::uint32_size(6, self.CBILPMICEKC);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.level);
+            my_size += ::protobuf::rt::uint32_size(7, self.level);
         }
         if self.MFKHDANPCIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.MFKHDANPCIC);
+            my_size += ::protobuf::rt::uint32_size(9, self.MFKHDANPCIC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for BANELIGFLCO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CBILPMICEKC != 0 {
-            os.write_uint32(4, self.CBILPMICEKC)?;
+            os.write_uint32(6, self.CBILPMICEKC)?;
         }
         if self.level != 0 {
-            os.write_uint32(10, self.level)?;
+            os.write_uint32(7, self.level)?;
         }
         if self.MFKHDANPCIC != 0 {
-            os.write_uint32(12, self.MFKHDANPCIC)?;
+            os.write_uint32(9, self.MFKHDANPCIC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for BANELIGFLCO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BANELIGFLCO.proto\"g\n\x0bBANELIGFLCO\x12\x20\n\x0bCBILPMICEKC\x18\
-    \x04\x20\x01(\rR\x0bCBILPMICEKC\x12\x14\n\x05level\x18\n\x20\x01(\rR\x05\
-    level\x12\x20\n\x0bMFKHDANPCIC\x18\x0c\x20\x01(\rR\x0bMFKHDANPCICb\x06pr\
-    oto3\
+    \x06\x20\x01(\rR\x0bCBILPMICEKC\x12\x14\n\x05level\x18\x07\x20\x01(\rR\
+    \x05level\x12\x20\n\x0bMFKHDANPCIC\x18\t\x20\x01(\rR\x0bMFKHDANPCICb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

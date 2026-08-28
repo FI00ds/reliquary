@@ -79,10 +79,10 @@ impl ::protobuf::Message for Tutorial {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                16 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
-                80 => {
+                112 => {
                     self.id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for Tutorial {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.status != ::protobuf::EnumOrUnknown::new(super::TutorialStatus::TutorialStatus::TUTORIAL_NONE) {
-            my_size += ::protobuf::rt::int32_size(3, self.status.value());
+        if self.status != ::protobuf::EnumOrUnknown::new(super::TutorialStatus::TutorialStatus::TutorialStatus_TutorialNone) {
+            my_size += ::protobuf::rt::int32_size(2, self.status.value());
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.id);
+            my_size += ::protobuf::rt::uint32_size(14, self.id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for Tutorial {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.status != ::protobuf::EnumOrUnknown::new(super::TutorialStatus::TutorialStatus::TUTORIAL_NONE) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        if self.status != ::protobuf::EnumOrUnknown::new(super::TutorialStatus::TutorialStatus::TutorialStatus_TutorialNone) {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         if self.id != 0 {
-            os.write_uint32(10, self.id)?;
+            os.write_uint32(14, self.id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,7 +132,7 @@ impl ::protobuf::Message for Tutorial {
     }
 
     fn clear(&mut self) {
-        self.status = ::protobuf::EnumOrUnknown::new(super::TutorialStatus::TutorialStatus::TUTORIAL_NONE);
+        self.status = ::protobuf::EnumOrUnknown::new(super::TutorialStatus::TutorialStatus::TutorialStatus_TutorialNone);
         self.id = 0;
         self.special_fields.clear();
     }
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for Tutorial {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0eTutorial.proto\x1a\x14TutorialStatus.proto\"C\n\x08Tutorial\x12'\n\
-    \x06status\x18\x03\x20\x01(\x0e2\x0f.TutorialStatusR\x06status\x12\x0e\n\
-    \x02id\x18\n\x20\x01(\rR\x02idb\x06proto3\
+    \x06status\x18\x02\x20\x01(\x0e2\x0f.TutorialStatusR\x06status\x12\x0e\n\
+    \x02id\x18\x0e\x20\x01(\rR\x02idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

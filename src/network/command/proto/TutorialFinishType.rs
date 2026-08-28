@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:TutorialFinishType)
 pub enum TutorialFinishType {
-    // @@protoc_insertion_point(enum_value:TutorialFinishType.CEBJAAAIPDA_NLCDGIPGFDJ)
-    CEBJAAAIPDA_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:TutorialFinishType.CEBJAAAIPDA_CNPNACJBHJG)
-    CEBJAAAIPDA_CNPNACJBHJG = 1,
-    // @@protoc_insertion_point(enum_value:TutorialFinishType.CEBJAAAIPDA_NNAIDJINDHO)
-    CEBJAAAIPDA_NNAIDJINDHO = 2,
+    // @@protoc_insertion_point(enum_value:TutorialFinishType.TutorialFinishType_None)
+    TutorialFinishType_None = 0,
+    // @@protoc_insertion_point(enum_value:TutorialFinishType.TutorialFinishType_Manual)
+    TutorialFinishType_Manual = 1,
+    // @@protoc_insertion_point(enum_value:TutorialFinishType.TutorialFinishType_Automatic)
+    TutorialFinishType_Automatic = 2,
 }
 
 impl ::protobuf::Enum for TutorialFinishType {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for TutorialFinishType {
 
     fn from_i32(value: i32) -> ::std::option::Option<TutorialFinishType> {
         match value {
-            0 => ::std::option::Option::Some(TutorialFinishType::CEBJAAAIPDA_NLCDGIPGFDJ),
-            1 => ::std::option::Option::Some(TutorialFinishType::CEBJAAAIPDA_CNPNACJBHJG),
-            2 => ::std::option::Option::Some(TutorialFinishType::CEBJAAAIPDA_NNAIDJINDHO),
+            0 => ::std::option::Option::Some(TutorialFinishType::TutorialFinishType_None),
+            1 => ::std::option::Option::Some(TutorialFinishType::TutorialFinishType_Manual),
+            2 => ::std::option::Option::Some(TutorialFinishType::TutorialFinishType_Automatic),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<TutorialFinishType> {
         match str {
-            "CEBJAAAIPDA_NLCDGIPGFDJ" => ::std::option::Option::Some(TutorialFinishType::CEBJAAAIPDA_NLCDGIPGFDJ),
-            "CEBJAAAIPDA_CNPNACJBHJG" => ::std::option::Option::Some(TutorialFinishType::CEBJAAAIPDA_CNPNACJBHJG),
-            "CEBJAAAIPDA_NNAIDJINDHO" => ::std::option::Option::Some(TutorialFinishType::CEBJAAAIPDA_NNAIDJINDHO),
+            "TutorialFinishType_None" => ::std::option::Option::Some(TutorialFinishType::TutorialFinishType_None),
+            "TutorialFinishType_Manual" => ::std::option::Option::Some(TutorialFinishType::TutorialFinishType_Manual),
+            "TutorialFinishType_Automatic" => ::std::option::Option::Some(TutorialFinishType::TutorialFinishType_Automatic),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [TutorialFinishType] = &[
-        TutorialFinishType::CEBJAAAIPDA_NLCDGIPGFDJ,
-        TutorialFinishType::CEBJAAAIPDA_CNPNACJBHJG,
-        TutorialFinishType::CEBJAAAIPDA_NNAIDJINDHO,
+        TutorialFinishType::TutorialFinishType_None,
+        TutorialFinishType::TutorialFinishType_Manual,
+        TutorialFinishType::TutorialFinishType_Automatic,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for TutorialFinishType {
 
 impl ::std::default::Default for TutorialFinishType {
     fn default() -> Self {
-        TutorialFinishType::CEBJAAAIPDA_NLCDGIPGFDJ
+        TutorialFinishType::TutorialFinishType_None
     }
 }
 
@@ -92,9 +92,9 @@ impl TutorialFinishType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18TutorialFinishType.proto*k\n\x12TutorialFinishType\x12\x1b\n\x17CE\
-    BJAAAIPDA_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17CEBJAAAIPDA_CNPNACJBHJG\x10\x01\
-    \x12\x1b\n\x17CEBJAAAIPDA_NNAIDJINDHO\x10\x02b\x06proto3\
+    \n\x18TutorialFinishType.proto*r\n\x12TutorialFinishType\x12\x1b\n\x17Tu\
+    torialFinishType_None\x10\0\x12\x1d\n\x19TutorialFinishType_Manual\x10\
+    \x01\x12\x20\n\x1cTutorialFinishType_Automatic\x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

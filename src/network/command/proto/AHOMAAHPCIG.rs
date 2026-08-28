@@ -79,10 +79,10 @@ impl ::protobuf::Message for AHOMAAHPCIG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.DAPJMJMGCFC)?;
                 },
-                40 => {
+                16 => {
                     self.DAPJMJMGCFC.push(is.read_uint32()?);
                 },
                 90 => {
@@ -103,7 +103,7 @@ impl ::protobuf::Message for AHOMAAHPCIG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.DAPJMJMGCFC);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.DAPJMJMGCFC);
         my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.EKJDLEFFGHD);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,7 +111,7 @@ impl ::protobuf::Message for AHOMAAHPCIG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.DAPJMJMGCFC)?;
+        os.write_repeated_packed_uint32(2, &self.DAPJMJMGCFC)?;
         os.write_repeated_packed_uint32(11, &self.EKJDLEFFGHD)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,7 +164,7 @@ impl ::protobuf::reflect::ProtobufValue for AHOMAAHPCIG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AHOMAAHPCIG.proto\"Q\n\x0bAHOMAAHPCIG\x12\x20\n\x0bDAPJMJMGCFC\x18\
-    \x05\x20\x03(\rR\x0bDAPJMJMGCFC\x12\x20\n\x0bEKJDLEFFGHD\x18\x0b\x20\x03\
+    \x02\x20\x03(\rR\x0bDAPJMJMGCFC\x12\x20\n\x0bEKJDLEFFGHD\x18\x0b\x20\x03\
     (\rR\x0bEKJDLEFFGHDb\x06proto3\
 ";
 

@@ -86,10 +86,10 @@ impl ::protobuf::Message for TakeBenefitActivityRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                58 => {
                     self.switch_list.push(is.read_message()?);
                 },
-                74 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JJOKIIKIHNL)?;
                 },
                 104 => {
@@ -125,10 +125,10 @@ impl ::protobuf::Message for TakeBenefitActivityRewardScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.switch_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         if let Some(v) = self.JJOKIIKIHNL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.retcode != 0 {
             os.write_uint32(13, self.retcode)?;
@@ -187,9 +187,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeBenefitActivityRewardScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$TakeBenefitActivityRewardScRsp.proto\x1a\x0eItemList.proto\x1a\x11OIE\
     AMBAGHBK.proto\"\x96\x01\n\x1eTakeBenefitActivityRewardScRsp\x12-\n\x0bs\
-    witch_list\x18\x04\x20\x03(\x0b2\x0c.OIEAMBAGHBKR\nswitchList\x12+\n\x0b\
-    JJOKIIKIHNL\x18\t\x20\x01(\x0b2\t.ItemListR\x0bJJOKIIKIHNL\x12\x18\n\x07\
-    retcode\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
+    witch_list\x18\x07\x20\x03(\x0b2\x0c.OIEAMBAGHBKR\nswitchList\x12+\n\x0b\
+    JJOKIIKIHNL\x18\x0c\x20\x01(\x0b2\t.ItemListR\x0bJJOKIIKIHNL\x12\x18\n\
+    \x07retcode\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

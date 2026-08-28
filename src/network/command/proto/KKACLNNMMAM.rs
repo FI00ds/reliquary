@@ -79,13 +79,13 @@ impl ::protobuf::Message for KKACLNNMMAM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                72 => {
                     self.JMAODNEONPF = is.read_bool()?;
                 },
-                114 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.BPAOGJPLENJ)?;
                 },
-                112 => {
+                104 => {
                     self.BPAOGJPLENJ.push(is.read_uint32()?);
                 },
                 tag => {
@@ -103,7 +103,7 @@ impl ::protobuf::Message for KKACLNNMMAM {
         if self.JMAODNEONPF != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.BPAOGJPLENJ);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.BPAOGJPLENJ);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -111,9 +111,9 @@ impl ::protobuf::Message for KKACLNNMMAM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JMAODNEONPF != false {
-            os.write_bool(3, self.JMAODNEONPF)?;
+            os.write_bool(9, self.JMAODNEONPF)?;
         }
-        os.write_repeated_packed_uint32(14, &self.BPAOGJPLENJ)?;
+        os.write_repeated_packed_uint32(13, &self.BPAOGJPLENJ)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for KKACLNNMMAM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KKACLNNMMAM.proto\"Q\n\x0bKKACLNNMMAM\x12\x20\n\x0bJMAODNEONPF\x18\
-    \x03\x20\x01(\x08R\x0bJMAODNEONPF\x12\x20\n\x0bBPAOGJPLENJ\x18\x0e\x20\
-    \x03(\rR\x0bBPAOGJPLENJb\x06proto3\
+    \t\x20\x01(\x08R\x0bJMAODNEONPF\x12\x20\n\x0bBPAOGJPLENJ\x18\r\x20\x03(\
+    \rR\x0bBPAOGJPLENJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

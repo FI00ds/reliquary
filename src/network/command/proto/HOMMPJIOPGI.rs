@@ -36,8 +36,8 @@ pub struct HOMMPJIOPGI {
     pub GMKFBAMNDEA: u32,
     // @@protoc_insertion_point(field:HOMMPJIOPGI.CBLOAJFJKKI)
     pub CBLOAJFJKKI: ::std::vec::Vec<super::DKPHAFPGDLO::DKPHAFPGDLO>,
-    // @@protoc_insertion_point(field:HOMMPJIOPGI.delay)
-    pub delay: f32,
+    // @@protoc_insertion_point(field:HOMMPJIOPGI.PNJEGPAFNCI)
+    pub PNJEGPAFNCI: f32,
     // special fields
     // @@protoc_insertion_point(special_field:HOMMPJIOPGI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -78,9 +78,9 @@ impl HOMMPJIOPGI {
             |m: &mut HOMMPJIOPGI| { &mut m.CBLOAJFJKKI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "delay",
-            |m: &HOMMPJIOPGI| { &m.delay },
-            |m: &mut HOMMPJIOPGI| { &mut m.delay },
+            "PNJEGPAFNCI",
+            |m: &HOMMPJIOPGI| { &m.PNJEGPAFNCI },
+            |m: &mut HOMMPJIOPGI| { &mut m.PNJEGPAFNCI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HOMMPJIOPGI>(
             "HOMMPJIOPGI",
@@ -113,7 +113,7 @@ impl ::protobuf::Message for HOMMPJIOPGI {
                     self.CBLOAJFJKKI.push(is.read_message()?);
                 },
                 45 => {
-                    self.delay = is.read_float()?;
+                    self.PNJEGPAFNCI = is.read_float()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,7 +140,7 @@ impl ::protobuf::Message for HOMMPJIOPGI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.delay != 0. {
+        if self.PNJEGPAFNCI != 0. {
             my_size += 1 + 4;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -161,8 +161,8 @@ impl ::protobuf::Message for HOMMPJIOPGI {
         for v in &self.CBLOAJFJKKI {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
-        if self.delay != 0. {
-            os.write_float(5, self.delay)?;
+        if self.PNJEGPAFNCI != 0. {
+            os.write_float(5, self.PNJEGPAFNCI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,7 +185,7 @@ impl ::protobuf::Message for HOMMPJIOPGI {
         self.score_id = 0;
         self.GMKFBAMNDEA = 0;
         self.CBLOAJFJKKI.clear();
-        self.delay = 0.;
+        self.PNJEGPAFNCI = 0.;
         self.special_fields.clear();
     }
 
@@ -195,7 +195,7 @@ impl ::protobuf::Message for HOMMPJIOPGI {
             score_id: 0,
             GMKFBAMNDEA: 0,
             CBLOAJFJKKI: ::std::vec::Vec::new(),
-            delay: 0.,
+            PNJEGPAFNCI: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,12 +220,12 @@ impl ::protobuf::reflect::ProtobufValue for HOMMPJIOPGI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HOMMPJIOPGI.proto\x1a\x11DKPHAFPGDLO.proto\"\xa4\x01\n\x0bHOMMPJIO\
+    \n\x11HOMMPJIOPGI.proto\x1a\x11DKPHAFPGDLO.proto\"\xb0\x01\n\x0bHOMMPJIO\
     PGI\x12\x12\n\x04wave\x18\x01\x20\x01(\rR\x04wave\x12\x19\n\x08score_id\
     \x18\x02\x20\x01(\rR\x07scoreId\x12\x20\n\x0bGMKFBAMNDEA\x18\x03\x20\x01\
     (\rR\x0bGMKFBAMNDEA\x12.\n\x0bCBLOAJFJKKI\x18\x04\x20\x03(\x0b2\x0c.DKPH\
-    AFPGDLOR\x0bCBLOAJFJKKI\x12\x14\n\x05delay\x18\x05\x20\x01(\x02R\x05dela\
-    yb\x06proto3\
+    AFPGDLOR\x0bCBLOAJFJKKI\x12\x20\n\x0bPNJEGPAFNCI\x18\x05\x20\x01(\x02R\
+    \x0bPNJEGPAFNCIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

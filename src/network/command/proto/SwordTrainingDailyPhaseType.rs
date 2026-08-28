@@ -27,16 +27,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:SwordTrainingDailyPhaseType)
 pub enum SwordTrainingDailyPhaseType {
-    // @@protoc_insertion_point(enum_value:SwordTrainingDailyPhaseType.GFEKOONGJBL_NLCDGIPGFDJ)
-    GFEKOONGJBL_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:SwordTrainingDailyPhaseType.GFEKOONGJBL_JIMMOJHFOKE)
-    GFEKOONGJBL_JIMMOJHFOKE = 1,
-    // @@protoc_insertion_point(enum_value:SwordTrainingDailyPhaseType.GFEKOONGJBL_JMCHLJLGPPD)
-    GFEKOONGJBL_JMCHLJLGPPD = 2,
-    // @@protoc_insertion_point(enum_value:SwordTrainingDailyPhaseType.GFEKOONGJBL_OHDHBFKJIKL)
-    GFEKOONGJBL_OHDHBFKJIKL = 3,
-    // @@protoc_insertion_point(enum_value:SwordTrainingDailyPhaseType.GFEKOONGJBL_NPJHPLIALIN)
-    GFEKOONGJBL_NPJHPLIALIN = 4,
+    // @@protoc_insertion_point(enum_value:SwordTrainingDailyPhaseType.SwordTrainingDailyPhaseType_None)
+    SwordTrainingDailyPhaseType_None = 0,
+    // @@protoc_insertion_point(enum_value:SwordTrainingDailyPhaseType.SwordTrainingDailyPhaseType_Morning)
+    SwordTrainingDailyPhaseType_Morning = 1,
+    // @@protoc_insertion_point(enum_value:SwordTrainingDailyPhaseType.SwordTrainingDailyPhaseType_Noon)
+    SwordTrainingDailyPhaseType_Noon = 2,
+    // @@protoc_insertion_point(enum_value:SwordTrainingDailyPhaseType.SwordTrainingDailyPhaseType_Afternoon)
+    SwordTrainingDailyPhaseType_Afternoon = 3,
+    // @@protoc_insertion_point(enum_value:SwordTrainingDailyPhaseType.SwordTrainingDailyPhaseType_Evening)
+    SwordTrainingDailyPhaseType_Evening = 4,
 }
 
 impl ::protobuf::Enum for SwordTrainingDailyPhaseType {
@@ -48,32 +48,32 @@ impl ::protobuf::Enum for SwordTrainingDailyPhaseType {
 
     fn from_i32(value: i32) -> ::std::option::Option<SwordTrainingDailyPhaseType> {
         match value {
-            0 => ::std::option::Option::Some(SwordTrainingDailyPhaseType::GFEKOONGJBL_NLCDGIPGFDJ),
-            1 => ::std::option::Option::Some(SwordTrainingDailyPhaseType::GFEKOONGJBL_JIMMOJHFOKE),
-            2 => ::std::option::Option::Some(SwordTrainingDailyPhaseType::GFEKOONGJBL_JMCHLJLGPPD),
-            3 => ::std::option::Option::Some(SwordTrainingDailyPhaseType::GFEKOONGJBL_OHDHBFKJIKL),
-            4 => ::std::option::Option::Some(SwordTrainingDailyPhaseType::GFEKOONGJBL_NPJHPLIALIN),
+            0 => ::std::option::Option::Some(SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_None),
+            1 => ::std::option::Option::Some(SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_Morning),
+            2 => ::std::option::Option::Some(SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_Noon),
+            3 => ::std::option::Option::Some(SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_Afternoon),
+            4 => ::std::option::Option::Some(SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_Evening),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<SwordTrainingDailyPhaseType> {
         match str {
-            "GFEKOONGJBL_NLCDGIPGFDJ" => ::std::option::Option::Some(SwordTrainingDailyPhaseType::GFEKOONGJBL_NLCDGIPGFDJ),
-            "GFEKOONGJBL_JIMMOJHFOKE" => ::std::option::Option::Some(SwordTrainingDailyPhaseType::GFEKOONGJBL_JIMMOJHFOKE),
-            "GFEKOONGJBL_JMCHLJLGPPD" => ::std::option::Option::Some(SwordTrainingDailyPhaseType::GFEKOONGJBL_JMCHLJLGPPD),
-            "GFEKOONGJBL_OHDHBFKJIKL" => ::std::option::Option::Some(SwordTrainingDailyPhaseType::GFEKOONGJBL_OHDHBFKJIKL),
-            "GFEKOONGJBL_NPJHPLIALIN" => ::std::option::Option::Some(SwordTrainingDailyPhaseType::GFEKOONGJBL_NPJHPLIALIN),
+            "SwordTrainingDailyPhaseType_None" => ::std::option::Option::Some(SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_None),
+            "SwordTrainingDailyPhaseType_Morning" => ::std::option::Option::Some(SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_Morning),
+            "SwordTrainingDailyPhaseType_Noon" => ::std::option::Option::Some(SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_Noon),
+            "SwordTrainingDailyPhaseType_Afternoon" => ::std::option::Option::Some(SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_Afternoon),
+            "SwordTrainingDailyPhaseType_Evening" => ::std::option::Option::Some(SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_Evening),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [SwordTrainingDailyPhaseType] = &[
-        SwordTrainingDailyPhaseType::GFEKOONGJBL_NLCDGIPGFDJ,
-        SwordTrainingDailyPhaseType::GFEKOONGJBL_JIMMOJHFOKE,
-        SwordTrainingDailyPhaseType::GFEKOONGJBL_JMCHLJLGPPD,
-        SwordTrainingDailyPhaseType::GFEKOONGJBL_OHDHBFKJIKL,
-        SwordTrainingDailyPhaseType::GFEKOONGJBL_NPJHPLIALIN,
+        SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_None,
+        SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_Morning,
+        SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_Noon,
+        SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_Afternoon,
+        SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_Evening,
     ];
 }
 
@@ -91,7 +91,7 @@ impl ::protobuf::EnumFull for SwordTrainingDailyPhaseType {
 
 impl ::std::default::Default for SwordTrainingDailyPhaseType {
     fn default() -> Self {
-        SwordTrainingDailyPhaseType::GFEKOONGJBL_NLCDGIPGFDJ
+        SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_None
     }
 }
 
@@ -102,11 +102,11 @@ impl SwordTrainingDailyPhaseType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!SwordTrainingDailyPhaseType.proto*\xae\x01\n\x1bSwordTrainingDailyPha\
-    seType\x12\x1b\n\x17GFEKOONGJBL_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17GFEKOONGJ\
-    BL_JIMMOJHFOKE\x10\x01\x12\x1b\n\x17GFEKOONGJBL_JMCHLJLGPPD\x10\x02\x12\
-    \x1b\n\x17GFEKOONGJBL_OHDHBFKJIKL\x10\x03\x12\x1b\n\x17GFEKOONGJBL_NPJHP\
-    LIALIN\x10\x04b\x06proto3\
+    \n!SwordTrainingDailyPhaseType.proto*\xe6\x01\n\x1bSwordTrainingDailyPha\
+    seType\x12$\n\x20SwordTrainingDailyPhaseType_None\x10\0\x12'\n#SwordTrai\
+    ningDailyPhaseType_Morning\x10\x01\x12$\n\x20SwordTrainingDailyPhaseType\
+    _Noon\x10\x02\x12)\n%SwordTrainingDailyPhaseType_Afternoon\x10\x03\x12'\
+    \n#SwordTrainingDailyPhaseType_Evening\x10\x04b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

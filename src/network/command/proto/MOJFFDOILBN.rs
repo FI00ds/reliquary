@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MOJFFDOILBN {
     // message fields
-    // @@protoc_insertion_point(field:MOJFFDOILBN.star_num)
-    pub star_num: u32,
+    // @@protoc_insertion_point(field:MOJFFDOILBN.MHIJJHMGHFN)
+    pub MHIJJHMGHFN: u32,
+    // @@protoc_insertion_point(field:MOJFFDOILBN.KBBDABKELKB)
+    pub KBBDABKELKB: u32,
     // @@protoc_insertion_point(field:MOJFFDOILBN.EMPIEBNCANN)
     pub EMPIEBNCANN: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:MOJFFDOILBN.score_id)
     pub score_id: u32,
-    // @@protoc_insertion_point(field:MOJFFDOILBN.phase_index)
-    pub phase_index: u32,
     // @@protoc_insertion_point(field:MOJFFDOILBN.MNOOFEPDHOO)
     pub MNOOFEPDHOO: ::std::vec::Vec<u32>,
     // special fields
@@ -58,9 +58,14 @@ impl MOJFFDOILBN {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "star_num",
-            |m: &MOJFFDOILBN| { &m.star_num },
-            |m: &mut MOJFFDOILBN| { &mut m.star_num },
+            "MHIJJHMGHFN",
+            |m: &MOJFFDOILBN| { &m.MHIJJHMGHFN },
+            |m: &mut MOJFFDOILBN| { &mut m.MHIJJHMGHFN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KBBDABKELKB",
+            |m: &MOJFFDOILBN| { &m.KBBDABKELKB },
+            |m: &mut MOJFFDOILBN| { &mut m.KBBDABKELKB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "EMPIEBNCANN",
@@ -71,11 +76,6 @@ impl MOJFFDOILBN {
             "score_id",
             |m: &MOJFFDOILBN| { &m.score_id },
             |m: &mut MOJFFDOILBN| { &mut m.score_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "phase_index",
-            |m: &MOJFFDOILBN| { &m.phase_index },
-            |m: &mut MOJFFDOILBN| { &mut m.phase_index },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "MNOOFEPDHOO",
@@ -101,24 +101,24 @@ impl ::protobuf::Message for MOJFFDOILBN {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.star_num = is.read_uint32()?;
+                    self.MHIJJHMGHFN = is.read_uint32()?;
                 },
-                50 => {
+                24 => {
+                    self.KBBDABKELKB = is.read_uint32()?;
+                },
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.EMPIEBNCANN)?;
                 },
-                48 => {
+                32 => {
                     self.EMPIEBNCANN.push(is.read_uint32()?);
                 },
-                64 => {
+                104 => {
                     self.score_id = is.read_uint32()?;
                 },
-                88 => {
-                    self.phase_index = is.read_uint32()?;
-                },
-                114 => {
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.MNOOFEPDHOO)?;
                 },
-                112 => {
+                120 => {
                     self.MNOOFEPDHOO.push(is.read_uint32()?);
                 },
                 tag => {
@@ -133,34 +133,34 @@ impl ::protobuf::Message for MOJFFDOILBN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.star_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.star_num);
+        if self.MHIJJHMGHFN != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.MHIJJHMGHFN);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.EMPIEBNCANN);
+        if self.KBBDABKELKB != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.KBBDABKELKB);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.EMPIEBNCANN);
         if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.score_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.score_id);
         }
-        if self.phase_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.phase_index);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.MNOOFEPDHOO);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.MNOOFEPDHOO);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.star_num != 0 {
-            os.write_uint32(1, self.star_num)?;
+        if self.MHIJJHMGHFN != 0 {
+            os.write_uint32(1, self.MHIJJHMGHFN)?;
         }
-        os.write_repeated_packed_uint32(6, &self.EMPIEBNCANN)?;
+        if self.KBBDABKELKB != 0 {
+            os.write_uint32(3, self.KBBDABKELKB)?;
+        }
+        os.write_repeated_packed_uint32(4, &self.EMPIEBNCANN)?;
         if self.score_id != 0 {
-            os.write_uint32(8, self.score_id)?;
+            os.write_uint32(13, self.score_id)?;
         }
-        if self.phase_index != 0 {
-            os.write_uint32(11, self.phase_index)?;
-        }
-        os.write_repeated_packed_uint32(14, &self.MNOOFEPDHOO)?;
+        os.write_repeated_packed_uint32(15, &self.MNOOFEPDHOO)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -178,20 +178,20 @@ impl ::protobuf::Message for MOJFFDOILBN {
     }
 
     fn clear(&mut self) {
-        self.star_num = 0;
+        self.MHIJJHMGHFN = 0;
+        self.KBBDABKELKB = 0;
         self.EMPIEBNCANN.clear();
         self.score_id = 0;
-        self.phase_index = 0;
         self.MNOOFEPDHOO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MOJFFDOILBN {
         static instance: MOJFFDOILBN = MOJFFDOILBN {
-            star_num: 0,
+            MHIJJHMGHFN: 0,
+            KBBDABKELKB: 0,
             EMPIEBNCANN: ::std::vec::Vec::new(),
             score_id: 0,
-            phase_index: 0,
             MNOOFEPDHOO: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -217,11 +217,11 @@ impl ::protobuf::reflect::ProtobufValue for MOJFFDOILBN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MOJFFDOILBN.proto\"\xa8\x01\n\x0bMOJFFDOILBN\x12\x19\n\x08star_num\
-    \x18\x01\x20\x01(\rR\x07starNum\x12\x20\n\x0bEMPIEBNCANN\x18\x06\x20\x03\
-    (\rR\x0bEMPIEBNCANN\x12\x19\n\x08score_id\x18\x08\x20\x01(\rR\x07scoreId\
-    \x12\x1f\n\x0bphase_index\x18\x0b\x20\x01(\rR\nphaseIndex\x12\x20\n\x0bM\
-    NOOFEPDHOO\x18\x0e\x20\x03(\rR\x0bMNOOFEPDHOOb\x06proto3\
+    \n\x11MOJFFDOILBN.proto\"\xb0\x01\n\x0bMOJFFDOILBN\x12\x20\n\x0bMHIJJHMG\
+    HFN\x18\x01\x20\x01(\rR\x0bMHIJJHMGHFN\x12\x20\n\x0bKBBDABKELKB\x18\x03\
+    \x20\x01(\rR\x0bKBBDABKELKB\x12\x20\n\x0bEMPIEBNCANN\x18\x04\x20\x03(\rR\
+    \x0bEMPIEBNCANN\x12\x19\n\x08score_id\x18\r\x20\x01(\rR\x07scoreId\x12\
+    \x20\n\x0bMNOOFEPDHOO\x18\x0f\x20\x03(\rR\x0bMNOOFEPDHOOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

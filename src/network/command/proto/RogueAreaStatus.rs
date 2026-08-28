@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:RogueAreaStatus)
 pub enum RogueAreaStatus {
-    // @@protoc_insertion_point(enum_value:RogueAreaStatus.HNPHKCCICPM_GAJGBBFELEL)
-    HNPHKCCICPM_GAJGBBFELEL = 0,
-    // @@protoc_insertion_point(enum_value:RogueAreaStatus.HNPHKCCICPM_BFADFAELKLJ)
-    HNPHKCCICPM_BFADFAELKLJ = 1,
-    // @@protoc_insertion_point(enum_value:RogueAreaStatus.HNPHKCCICPM_MKHFMMCKAEI)
-    HNPHKCCICPM_MKHFMMCKAEI = 2,
-    // @@protoc_insertion_point(enum_value:RogueAreaStatus.HNPHKCCICPM_PDKLDMNAJBO)
-    HNPHKCCICPM_PDKLDMNAJBO = 3,
+    // @@protoc_insertion_point(enum_value:RogueAreaStatus.RogueAreaStatus_Lock)
+    RogueAreaStatus_Lock = 0,
+    // @@protoc_insertion_point(enum_value:RogueAreaStatus.RogueAreaStatus_Unlock)
+    RogueAreaStatus_Unlock = 1,
+    // @@protoc_insertion_point(enum_value:RogueAreaStatus.RogueAreaStatus_FirstPass)
+    RogueAreaStatus_FirstPass = 2,
+    // @@protoc_insertion_point(enum_value:RogueAreaStatus.RogueAreaStatus_Close)
+    RogueAreaStatus_Close = 3,
 }
 
 impl ::protobuf::Enum for RogueAreaStatus {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for RogueAreaStatus {
 
     fn from_i32(value: i32) -> ::std::option::Option<RogueAreaStatus> {
         match value {
-            0 => ::std::option::Option::Some(RogueAreaStatus::HNPHKCCICPM_GAJGBBFELEL),
-            1 => ::std::option::Option::Some(RogueAreaStatus::HNPHKCCICPM_BFADFAELKLJ),
-            2 => ::std::option::Option::Some(RogueAreaStatus::HNPHKCCICPM_MKHFMMCKAEI),
-            3 => ::std::option::Option::Some(RogueAreaStatus::HNPHKCCICPM_PDKLDMNAJBO),
+            0 => ::std::option::Option::Some(RogueAreaStatus::RogueAreaStatus_Lock),
+            1 => ::std::option::Option::Some(RogueAreaStatus::RogueAreaStatus_Unlock),
+            2 => ::std::option::Option::Some(RogueAreaStatus::RogueAreaStatus_FirstPass),
+            3 => ::std::option::Option::Some(RogueAreaStatus::RogueAreaStatus_Close),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<RogueAreaStatus> {
         match str {
-            "HNPHKCCICPM_GAJGBBFELEL" => ::std::option::Option::Some(RogueAreaStatus::HNPHKCCICPM_GAJGBBFELEL),
-            "HNPHKCCICPM_BFADFAELKLJ" => ::std::option::Option::Some(RogueAreaStatus::HNPHKCCICPM_BFADFAELKLJ),
-            "HNPHKCCICPM_MKHFMMCKAEI" => ::std::option::Option::Some(RogueAreaStatus::HNPHKCCICPM_MKHFMMCKAEI),
-            "HNPHKCCICPM_PDKLDMNAJBO" => ::std::option::Option::Some(RogueAreaStatus::HNPHKCCICPM_PDKLDMNAJBO),
+            "RogueAreaStatus_Lock" => ::std::option::Option::Some(RogueAreaStatus::RogueAreaStatus_Lock),
+            "RogueAreaStatus_Unlock" => ::std::option::Option::Some(RogueAreaStatus::RogueAreaStatus_Unlock),
+            "RogueAreaStatus_FirstPass" => ::std::option::Option::Some(RogueAreaStatus::RogueAreaStatus_FirstPass),
+            "RogueAreaStatus_Close" => ::std::option::Option::Some(RogueAreaStatus::RogueAreaStatus_Close),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [RogueAreaStatus] = &[
-        RogueAreaStatus::HNPHKCCICPM_GAJGBBFELEL,
-        RogueAreaStatus::HNPHKCCICPM_BFADFAELKLJ,
-        RogueAreaStatus::HNPHKCCICPM_MKHFMMCKAEI,
-        RogueAreaStatus::HNPHKCCICPM_PDKLDMNAJBO,
+        RogueAreaStatus::RogueAreaStatus_Lock,
+        RogueAreaStatus::RogueAreaStatus_Unlock,
+        RogueAreaStatus::RogueAreaStatus_FirstPass,
+        RogueAreaStatus::RogueAreaStatus_Close,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for RogueAreaStatus {
 
 impl ::std::default::Default for RogueAreaStatus {
     fn default() -> Self {
-        RogueAreaStatus::HNPHKCCICPM_GAJGBBFELEL
+        RogueAreaStatus::RogueAreaStatus_Lock
     }
 }
 
@@ -97,10 +97,10 @@ impl RogueAreaStatus {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15RogueAreaStatus.proto*\x85\x01\n\x0fRogueAreaStatus\x12\x1b\n\x17H\
-    NPHKCCICPM_GAJGBBFELEL\x10\0\x12\x1b\n\x17HNPHKCCICPM_BFADFAELKLJ\x10\
-    \x01\x12\x1b\n\x17HNPHKCCICPM_MKHFMMCKAEI\x10\x02\x12\x1b\n\x17HNPHKCCIC\
-    PM_PDKLDMNAJBO\x10\x03b\x06proto3\
+    \n\x15RogueAreaStatus.proto*\x81\x01\n\x0fRogueAreaStatus\x12\x18\n\x14R\
+    ogueAreaStatus_Lock\x10\0\x12\x1a\n\x16RogueAreaStatus_Unlock\x10\x01\
+    \x12\x1d\n\x19RogueAreaStatus_FirstPass\x10\x02\x12\x19\n\x15RogueAreaSt\
+    atus_Close\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

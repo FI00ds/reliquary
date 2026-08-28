@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyEventSelectFriendScRsp {
     // message fields
+    // @@protoc_insertion_point(field:MonopolyEventSelectFriendScRsp.DDCLCNPONOH)
+    pub DDCLCNPONOH: u32,
     // @@protoc_insertion_point(field:MonopolyEventSelectFriendScRsp.NLGNNDIFGGF)
     pub NLGNNDIFGGF: u32,
-    // @@protoc_insertion_point(field:MonopolyEventSelectFriendScRsp.add_coin)
-    pub add_coin: u32,
     // @@protoc_insertion_point(field:MonopolyEventSelectFriendScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -54,14 +54,14 @@ impl MonopolyEventSelectFriendScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DDCLCNPONOH",
+            |m: &MonopolyEventSelectFriendScRsp| { &m.DDCLCNPONOH },
+            |m: &mut MonopolyEventSelectFriendScRsp| { &mut m.DDCLCNPONOH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NLGNNDIFGGF",
             |m: &MonopolyEventSelectFriendScRsp| { &m.NLGNNDIFGGF },
             |m: &mut MonopolyEventSelectFriendScRsp| { &mut m.NLGNNDIFGGF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "add_coin",
-            |m: &MonopolyEventSelectFriendScRsp| { &m.add_coin },
-            |m: &mut MonopolyEventSelectFriendScRsp| { &mut m.add_coin },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,11 +86,11 @@ impl ::protobuf::Message for MonopolyEventSelectFriendScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.NLGNNDIFGGF = is.read_uint32()?;
+                24 => {
+                    self.DDCLCNPONOH = is.read_uint32()?;
                 },
-                40 => {
-                    self.add_coin = is.read_uint32()?;
+                48 => {
+                    self.NLGNNDIFGGF = is.read_uint32()?;
                 },
                 64 => {
                     self.retcode = is.read_uint32()?;
@@ -107,11 +107,11 @@ impl ::protobuf::Message for MonopolyEventSelectFriendScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NLGNNDIFGGF != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.NLGNNDIFGGF);
+        if self.DDCLCNPONOH != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.DDCLCNPONOH);
         }
-        if self.add_coin != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.add_coin);
+        if self.NLGNNDIFGGF != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.NLGNNDIFGGF);
         }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.retcode);
@@ -122,11 +122,11 @@ impl ::protobuf::Message for MonopolyEventSelectFriendScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NLGNNDIFGGF != 0 {
-            os.write_uint32(2, self.NLGNNDIFGGF)?;
+        if self.DDCLCNPONOH != 0 {
+            os.write_uint32(3, self.DDCLCNPONOH)?;
         }
-        if self.add_coin != 0 {
-            os.write_uint32(5, self.add_coin)?;
+        if self.NLGNNDIFGGF != 0 {
+            os.write_uint32(6, self.NLGNNDIFGGF)?;
         }
         if self.retcode != 0 {
             os.write_uint32(8, self.retcode)?;
@@ -148,16 +148,16 @@ impl ::protobuf::Message for MonopolyEventSelectFriendScRsp {
     }
 
     fn clear(&mut self) {
+        self.DDCLCNPONOH = 0;
         self.NLGNNDIFGGF = 0;
-        self.add_coin = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyEventSelectFriendScRsp {
         static instance: MonopolyEventSelectFriendScRsp = MonopolyEventSelectFriendScRsp {
+            DDCLCNPONOH: 0,
             NLGNNDIFGGF: 0,
-            add_coin: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyEventSelectFriendScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$MonopolyEventSelectFriendScRsp.proto\"w\n\x1eMonopolyEventSelectFrien\
-    dScRsp\x12\x20\n\x0bNLGNNDIFGGF\x18\x02\x20\x01(\rR\x0bNLGNNDIFGGF\x12\
-    \x19\n\x08add_coin\x18\x05\x20\x01(\rR\x07addCoin\x12\x18\n\x07retcode\
-    \x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n$MonopolyEventSelectFriendScRsp.proto\"~\n\x1eMonopolyEventSelectFrien\
+    dScRsp\x12\x20\n\x0bDDCLCNPONOH\x18\x03\x20\x01(\rR\x0bDDCLCNPONOH\x12\
+    \x20\n\x0bNLGNNDIFGGF\x18\x06\x20\x01(\rR\x0bNLGNNDIFGGF\x12\x18\n\x07re\
+    tcode\x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

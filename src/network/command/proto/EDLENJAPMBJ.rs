@@ -100,7 +100,7 @@ impl ::protobuf::Message for EDLENJAPMBJ {
         if self.stage_id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.stage_id);
         }
-        if self.DLFHABGGHFF != ::protobuf::EnumOrUnknown::new(super::TeamTowersGameType::TeamTowersGameType::OCLACMHKMFO_NLCDGIPGFDJ) {
+        if self.DLFHABGGHFF != ::protobuf::EnumOrUnknown::new(super::TeamTowersGameType::TeamTowersGameType::TeamTowersGameType_None) {
             my_size += ::protobuf::rt::int32_size(2, self.DLFHABGGHFF.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -112,7 +112,7 @@ impl ::protobuf::Message for EDLENJAPMBJ {
         if self.stage_id != 0 {
             os.write_uint32(1, self.stage_id)?;
         }
-        if self.DLFHABGGHFF != ::protobuf::EnumOrUnknown::new(super::TeamTowersGameType::TeamTowersGameType::OCLACMHKMFO_NLCDGIPGFDJ) {
+        if self.DLFHABGGHFF != ::protobuf::EnumOrUnknown::new(super::TeamTowersGameType::TeamTowersGameType::TeamTowersGameType_None) {
             os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.DLFHABGGHFF))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -133,7 +133,7 @@ impl ::protobuf::Message for EDLENJAPMBJ {
 
     fn clear(&mut self) {
         self.stage_id = 0;
-        self.DLFHABGGHFF = ::protobuf::EnumOrUnknown::new(super::TeamTowersGameType::TeamTowersGameType::OCLACMHKMFO_NLCDGIPGFDJ);
+        self.DLFHABGGHFF = ::protobuf::EnumOrUnknown::new(super::TeamTowersGameType::TeamTowersGameType::TeamTowersGameType_None);
         self.special_fields.clear();
     }
 

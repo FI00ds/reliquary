@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NJHFBDDHCEN {
     // message fields
-    // @@protoc_insertion_point(field:NJHFBDDHCEN.LHGIFDNPIDE)
-    pub LHGIFDNPIDE: bool,
-    // @@protoc_insertion_point(field:NJHFBDDHCEN.grid_fight_equipment_id)
-    pub grid_fight_equipment_id: u32,
+    // @@protoc_insertion_point(field:NJHFBDDHCEN.H_ac273741)
+    pub H_ac273741: u32,
     // @@protoc_insertion_point(field:NJHFBDDHCEN.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:NJHFBDDHCEN.LHGIFDNPIDE)
+    pub LHGIFDNPIDE: bool,
     // special fields
     // @@protoc_insertion_point(special_field:NJHFBDDHCEN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl NJHFBDDHCEN {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LHGIFDNPIDE",
-            |m: &NJHFBDDHCEN| { &m.LHGIFDNPIDE },
-            |m: &mut NJHFBDDHCEN| { &mut m.LHGIFDNPIDE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "grid_fight_equipment_id",
-            |m: &NJHFBDDHCEN| { &m.grid_fight_equipment_id },
-            |m: &mut NJHFBDDHCEN| { &mut m.grid_fight_equipment_id },
+            "H_ac273741",
+            |m: &NJHFBDDHCEN| { &m.H_ac273741 },
+            |m: &mut NJHFBDDHCEN| { &mut m.H_ac273741 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &NJHFBDDHCEN| { &m.level },
             |m: &mut NJHFBDDHCEN| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LHGIFDNPIDE",
+            |m: &NJHFBDDHCEN| { &m.LHGIFDNPIDE },
+            |m: &mut NJHFBDDHCEN| { &mut m.LHGIFDNPIDE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NJHFBDDHCEN>(
             "NJHFBDDHCEN",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for NJHFBDDHCEN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.LHGIFDNPIDE = is.read_bool()?;
+                64 => {
+                    self.H_ac273741 = is.read_uint32()?;
                 },
-                40 => {
-                    self.grid_fight_equipment_id = is.read_uint32()?;
-                },
-                88 => {
+                80 => {
                     self.level = is.read_uint32()?;
+                },
+                112 => {
+                    self.LHGIFDNPIDE = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for NJHFBDDHCEN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LHGIFDNPIDE != false {
-            my_size += 1 + 1;
-        }
-        if self.grid_fight_equipment_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.grid_fight_equipment_id);
+        if self.H_ac273741 != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.H_ac273741);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.level);
+            my_size += ::protobuf::rt::uint32_size(10, self.level);
+        }
+        if self.LHGIFDNPIDE != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for NJHFBDDHCEN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LHGIFDNPIDE != false {
-            os.write_bool(4, self.LHGIFDNPIDE)?;
-        }
-        if self.grid_fight_equipment_id != 0 {
-            os.write_uint32(5, self.grid_fight_equipment_id)?;
+        if self.H_ac273741 != 0 {
+            os.write_uint32(8, self.H_ac273741)?;
         }
         if self.level != 0 {
-            os.write_uint32(11, self.level)?;
+            os.write_uint32(10, self.level)?;
+        }
+        if self.LHGIFDNPIDE != false {
+            os.write_bool(14, self.LHGIFDNPIDE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for NJHFBDDHCEN {
     }
 
     fn clear(&mut self) {
-        self.LHGIFDNPIDE = false;
-        self.grid_fight_equipment_id = 0;
+        self.H_ac273741 = 0;
         self.level = 0;
+        self.LHGIFDNPIDE = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NJHFBDDHCEN {
         static instance: NJHFBDDHCEN = NJHFBDDHCEN {
-            LHGIFDNPIDE: false,
-            grid_fight_equipment_id: 0,
+            H_ac273741: 0,
             level: 0,
+            LHGIFDNPIDE: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for NJHFBDDHCEN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NJHFBDDHCEN.proto\"|\n\x0bNJHFBDDHCEN\x12\x20\n\x0bLHGIFDNPIDE\x18\
-    \x04\x20\x01(\x08R\x0bLHGIFDNPIDE\x125\n\x17grid_fight_equipment_id\x18\
-    \x05\x20\x01(\rR\x14gridFightEquipmentId\x12\x14\n\x05level\x18\x0b\x20\
-    \x01(\rR\x05levelb\x06proto3\
+    \n\x11NJHFBDDHCEN.proto\"d\n\x0bNJHFBDDHCEN\x12\x1d\n\nH_ac273741\x18\
+    \x08\x20\x01(\rR\tHAc273741\x12\x14\n\x05level\x18\n\x20\x01(\rR\x05leve\
+    l\x12\x20\n\x0bLHGIFDNPIDE\x18\x0e\x20\x01(\x08R\x0bLHGIFDNPIDEb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

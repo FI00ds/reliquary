@@ -30,12 +30,12 @@ pub struct RogueTournUseSuperRewardKeyScRsp {
     // message fields
     // @@protoc_insertion_point(field:RogueTournUseSuperRewardKeyScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:RogueTournUseSuperRewardKeyScRsp.ABEMLCJBIEF)
+    pub ABEMLCJBIEF: ::protobuf::MessageField<super::LMDPKOELKFL::LMDPKOELKFL>,
     // @@protoc_insertion_point(field:RogueTournUseSuperRewardKeyScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:RogueTournUseSuperRewardKeyScRsp.drop_data)
     pub drop_data: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:RogueTournUseSuperRewardKeyScRsp.ABEMLCJBIEF)
-    pub ABEMLCJBIEF: ::protobuf::MessageField<super::LMDPKOELKFL::LMDPKOELKFL>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournUseSuperRewardKeyScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,6 +60,11 @@ impl RogueTournUseSuperRewardKeyScRsp {
             |m: &RogueTournUseSuperRewardKeyScRsp| { &m.retcode },
             |m: &mut RogueTournUseSuperRewardKeyScRsp| { &mut m.retcode },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LMDPKOELKFL::LMDPKOELKFL>(
+            "ABEMLCJBIEF",
+            |m: &RogueTournUseSuperRewardKeyScRsp| { &m.ABEMLCJBIEF },
+            |m: &mut RogueTournUseSuperRewardKeyScRsp| { &mut m.ABEMLCJBIEF },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
             |m: &RogueTournUseSuperRewardKeyScRsp| { &m.reward },
@@ -69,11 +74,6 @@ impl RogueTournUseSuperRewardKeyScRsp {
             "drop_data",
             |m: &RogueTournUseSuperRewardKeyScRsp| { &m.drop_data },
             |m: &mut RogueTournUseSuperRewardKeyScRsp| { &mut m.drop_data },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LMDPKOELKFL::LMDPKOELKFL>(
-            "ABEMLCJBIEF",
-            |m: &RogueTournUseSuperRewardKeyScRsp| { &m.ABEMLCJBIEF },
-            |m: &mut RogueTournUseSuperRewardKeyScRsp| { &mut m.ABEMLCJBIEF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournUseSuperRewardKeyScRsp>(
             "RogueTournUseSuperRewardKeyScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for RogueTournUseSuperRewardKeyScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
+                },
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ABEMLCJBIEF)?;
                 },
                 50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                66 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.drop_data)?;
-                },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ABEMLCJBIEF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for RogueTournUseSuperRewardKeyScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        }
+        if let Some(v) = self.ABEMLCJBIEF.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.drop_data.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.ABEMLCJBIEF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -139,16 +139,16 @@ impl ::protobuf::Message for RogueTournUseSuperRewardKeyScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
+        }
+        if let Some(v) = self.ABEMLCJBIEF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if let Some(v) = self.reward.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if let Some(v) = self.drop_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
-        if let Some(v) = self.ABEMLCJBIEF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,18 +168,18 @@ impl ::protobuf::Message for RogueTournUseSuperRewardKeyScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
+        self.ABEMLCJBIEF.clear();
         self.reward.clear();
         self.drop_data.clear();
-        self.ABEMLCJBIEF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournUseSuperRewardKeyScRsp {
         static instance: RogueTournUseSuperRewardKeyScRsp = RogueTournUseSuperRewardKeyScRsp {
             retcode: 0,
+            ABEMLCJBIEF: ::protobuf::MessageField::none(),
             reward: ::protobuf::MessageField::none(),
             drop_data: ::protobuf::MessageField::none(),
-            ABEMLCJBIEF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -206,10 +206,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournUseSuperRewardKeyScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&RogueTournUseSuperRewardKeyScRsp.proto\x1a\x0eItemList.proto\x1a\x11L\
     MDPKOELKFL.proto\"\xb7\x01\n\x20RogueTournUseSuperRewardKeyScRsp\x12\x18\
-    \n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12!\n\x06reward\x18\x06\
-    \x20\x01(\x0b2\t.ItemListR\x06reward\x12&\n\tdrop_data\x18\x08\x20\x01(\
-    \x0b2\t.ItemListR\x08dropData\x12.\n\x0bABEMLCJBIEF\x18\t\x20\x01(\x0b2\
-    \x0c.LMDPKOELKFLR\x0bABEMLCJBIEFb\x06proto3\
+    \n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12.\n\x0bABEMLCJBIEF\x18\
+    \x05\x20\x01(\x0b2\x0c.LMDPKOELKFLR\x0bABEMLCJBIEF\x12!\n\x06reward\x18\
+    \x06\x20\x01(\x0b2\t.ItemListR\x06reward\x12&\n\tdrop_data\x18\r\x20\x01\
+    (\x0b2\t.ItemListR\x08dropDatab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

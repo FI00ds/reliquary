@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:AvatarSlotType)
 pub enum AvatarSlotType {
-    // @@protoc_insertion_point(enum_value:AvatarSlotType.AVATAR_SLOT_1)
-    AVATAR_SLOT_1 = 0,
-    // @@protoc_insertion_point(enum_value:AvatarSlotType.AVATAR_SLOT_2)
-    AVATAR_SLOT_2 = 1,
-    // @@protoc_insertion_point(enum_value:AvatarSlotType.AVATAR_SLOT_3)
-    AVATAR_SLOT_3 = 2,
+    // @@protoc_insertion_point(enum_value:AvatarSlotType.AvatarSlotType_NKJPJMOOPBI)
+    AvatarSlotType_NKJPJMOOPBI = 0,
+    // @@protoc_insertion_point(enum_value:AvatarSlotType.AvatarSlotType_OCFOOCNNGAM)
+    AvatarSlotType_OCFOOCNNGAM = 1,
+    // @@protoc_insertion_point(enum_value:AvatarSlotType.AvatarSlotType_NBDAACKONFF)
+    AvatarSlotType_NBDAACKONFF = 2,
 }
 
 impl ::protobuf::Enum for AvatarSlotType {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for AvatarSlotType {
 
     fn from_i32(value: i32) -> ::std::option::Option<AvatarSlotType> {
         match value {
-            0 => ::std::option::Option::Some(AvatarSlotType::AVATAR_SLOT_1),
-            1 => ::std::option::Option::Some(AvatarSlotType::AVATAR_SLOT_2),
-            2 => ::std::option::Option::Some(AvatarSlotType::AVATAR_SLOT_3),
+            0 => ::std::option::Option::Some(AvatarSlotType::AvatarSlotType_NKJPJMOOPBI),
+            1 => ::std::option::Option::Some(AvatarSlotType::AvatarSlotType_OCFOOCNNGAM),
+            2 => ::std::option::Option::Some(AvatarSlotType::AvatarSlotType_NBDAACKONFF),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<AvatarSlotType> {
         match str {
-            "AVATAR_SLOT_1" => ::std::option::Option::Some(AvatarSlotType::AVATAR_SLOT_1),
-            "AVATAR_SLOT_2" => ::std::option::Option::Some(AvatarSlotType::AVATAR_SLOT_2),
-            "AVATAR_SLOT_3" => ::std::option::Option::Some(AvatarSlotType::AVATAR_SLOT_3),
+            "AvatarSlotType_NKJPJMOOPBI" => ::std::option::Option::Some(AvatarSlotType::AvatarSlotType_NKJPJMOOPBI),
+            "AvatarSlotType_OCFOOCNNGAM" => ::std::option::Option::Some(AvatarSlotType::AvatarSlotType_OCFOOCNNGAM),
+            "AvatarSlotType_NBDAACKONFF" => ::std::option::Option::Some(AvatarSlotType::AvatarSlotType_NBDAACKONFF),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [AvatarSlotType] = &[
-        AvatarSlotType::AVATAR_SLOT_1,
-        AvatarSlotType::AVATAR_SLOT_2,
-        AvatarSlotType::AVATAR_SLOT_3,
+        AvatarSlotType::AvatarSlotType_NKJPJMOOPBI,
+        AvatarSlotType::AvatarSlotType_OCFOOCNNGAM,
+        AvatarSlotType::AvatarSlotType_NBDAACKONFF,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for AvatarSlotType {
 
 impl ::std::default::Default for AvatarSlotType {
     fn default() -> Self {
-        AvatarSlotType::AVATAR_SLOT_1
+        AvatarSlotType::AvatarSlotType_NKJPJMOOPBI
     }
 }
 
@@ -92,9 +92,9 @@ impl AvatarSlotType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14AvatarSlotType.proto*I\n\x0eAvatarSlotType\x12\x11\n\rAVATAR_SLOT_\
-    1\x10\0\x12\x11\n\rAVATAR_SLOT_2\x10\x01\x12\x11\n\rAVATAR_SLOT_3\x10\
-    \x02b\x06proto3\
+    \n\x14AvatarSlotType.proto*p\n\x0eAvatarSlotType\x12\x1e\n\x1aAvatarSlot\
+    Type_NKJPJMOOPBI\x10\0\x12\x1e\n\x1aAvatarSlotType_OCFOOCNNGAM\x10\x01\
+    \x12\x1e\n\x1aAvatarSlotType_NBDAACKONFF\x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

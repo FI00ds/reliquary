@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JBNGCJJDLHL {
     // message fields
-    // @@protoc_insertion_point(field:JBNGCJJDLHL.gift_type)
-    pub gift_type: u32,
     // @@protoc_insertion_point(field:JBNGCJJDLHL.end_time)
     pub end_time: i64,
-    // @@protoc_insertion_point(field:JBNGCJJDLHL.start_time)
-    pub start_time: i64,
-    // @@protoc_insertion_point(field:JBNGCJJDLHL.status_list)
-    pub status_list: ::std::vec::Vec<super::IJHPILBBHDI::IJHPILBBHDI>,
+    // @@protoc_insertion_point(field:JBNGCJJDLHL.gift_type)
+    pub gift_type: u32,
+    // @@protoc_insertion_point(field:JBNGCJJDLHL.IFEPJHGNCOI)
+    pub IFEPJHGNCOI: i64,
+    // @@protoc_insertion_point(field:JBNGCJJDLHL.CFNNMOCBBFM)
+    pub CFNNMOCBBFM: ::std::vec::Vec<super::IJHPILBBHDI::IJHPILBBHDI>,
     // special fields
     // @@protoc_insertion_point(special_field:JBNGCJJDLHL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl JBNGCJJDLHL {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "gift_type",
-            |m: &JBNGCJJDLHL| { &m.gift_type },
-            |m: &mut JBNGCJJDLHL| { &mut m.gift_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "end_time",
             |m: &JBNGCJJDLHL| { &m.end_time },
             |m: &mut JBNGCJJDLHL| { &mut m.end_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "start_time",
-            |m: &JBNGCJJDLHL| { &m.start_time },
-            |m: &mut JBNGCJJDLHL| { &mut m.start_time },
+            "gift_type",
+            |m: &JBNGCJJDLHL| { &m.gift_type },
+            |m: &mut JBNGCJJDLHL| { &mut m.gift_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IFEPJHGNCOI",
+            |m: &JBNGCJJDLHL| { &m.IFEPJHGNCOI },
+            |m: &mut JBNGCJJDLHL| { &mut m.IFEPJHGNCOI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "status_list",
-            |m: &JBNGCJJDLHL| { &m.status_list },
-            |m: &mut JBNGCJJDLHL| { &mut m.status_list },
+            "CFNNMOCBBFM",
+            |m: &JBNGCJJDLHL| { &m.CFNNMOCBBFM },
+            |m: &mut JBNGCJJDLHL| { &mut m.CFNNMOCBBFM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JBNGCJJDLHL>(
             "JBNGCJJDLHL",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for JBNGCJJDLHL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.gift_type = is.read_uint32()?;
-                },
-                24 => {
+                8 => {
                     self.end_time = is.read_int64()?;
                 },
                 40 => {
-                    self.start_time = is.read_int64()?;
+                    self.gift_type = is.read_uint32()?;
                 },
-                66 => {
-                    self.status_list.push(is.read_message()?);
+                72 => {
+                    self.IFEPJHGNCOI = is.read_int64()?;
+                },
+                122 => {
+                    self.CFNNMOCBBFM.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,16 +117,16 @@ impl ::protobuf::Message for JBNGCJJDLHL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.gift_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.gift_type);
-        }
         if self.end_time != 0 {
-            my_size += ::protobuf::rt::int64_size(3, self.end_time);
+            my_size += ::protobuf::rt::int64_size(1, self.end_time);
         }
-        if self.start_time != 0 {
-            my_size += ::protobuf::rt::int64_size(5, self.start_time);
+        if self.gift_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.gift_type);
         }
-        for value in &self.status_list {
+        if self.IFEPJHGNCOI != 0 {
+            my_size += ::protobuf::rt::int64_size(9, self.IFEPJHGNCOI);
+        }
+        for value in &self.CFNNMOCBBFM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -136,17 +136,17 @@ impl ::protobuf::Message for JBNGCJJDLHL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.gift_type != 0 {
-            os.write_uint32(2, self.gift_type)?;
-        }
         if self.end_time != 0 {
-            os.write_int64(3, self.end_time)?;
+            os.write_int64(1, self.end_time)?;
         }
-        if self.start_time != 0 {
-            os.write_int64(5, self.start_time)?;
+        if self.gift_type != 0 {
+            os.write_uint32(5, self.gift_type)?;
         }
-        for v in &self.status_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if self.IFEPJHGNCOI != 0 {
+            os.write_int64(9, self.IFEPJHGNCOI)?;
+        }
+        for v in &self.CFNNMOCBBFM {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for JBNGCJJDLHL {
     }
 
     fn clear(&mut self) {
-        self.gift_type = 0;
         self.end_time = 0;
-        self.start_time = 0;
-        self.status_list.clear();
+        self.gift_type = 0;
+        self.IFEPJHGNCOI = 0;
+        self.CFNNMOCBBFM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JBNGCJJDLHL {
         static instance: JBNGCJJDLHL = JBNGCJJDLHL {
-            gift_type: 0,
             end_time: 0,
-            start_time: 0,
-            status_list: ::std::vec::Vec::new(),
+            gift_type: 0,
+            IFEPJHGNCOI: 0,
+            CFNNMOCBBFM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for JBNGCJJDLHL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JBNGCJJDLHL.proto\x1a\x11IJHPILBBHDI.proto\"\x93\x01\n\x0bJBNGCJJD\
-    LHL\x12\x1b\n\tgift_type\x18\x02\x20\x01(\rR\x08giftType\x12\x19\n\x08en\
-    d_time\x18\x03\x20\x01(\x03R\x07endTime\x12\x1d\n\nstart_time\x18\x05\
-    \x20\x01(\x03R\tstartTime\x12-\n\x0bstatus_list\x18\x08\x20\x03(\x0b2\
-    \x0c.IJHPILBBHDIR\nstatusListb\x06proto3\
+    \n\x11JBNGCJJDLHL.proto\x1a\x11IJHPILBBHDI.proto\"\x97\x01\n\x0bJBNGCJJD\
+    LHL\x12\x19\n\x08end_time\x18\x01\x20\x01(\x03R\x07endTime\x12\x1b\n\tgi\
+    ft_type\x18\x05\x20\x01(\rR\x08giftType\x12\x20\n\x0bIFEPJHGNCOI\x18\t\
+    \x20\x01(\x03R\x0bIFEPJHGNCOI\x12.\n\x0bCFNNMOCBBFM\x18\x0f\x20\x03(\x0b\
+    2\x0c.IJHPILBBHDIR\x0bCFNNMOCBBFMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

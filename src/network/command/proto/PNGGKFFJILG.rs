@@ -32,8 +32,8 @@ pub struct PNGGKFFJILG {
     pub room_id: u64,
     // @@protoc_insertion_point(field:PNGGKFFJILG.MPDHNFNCIEA)
     pub MPDHNFNCIEA: u32,
-    // @@protoc_insertion_point(field:PNGGKFFJILG.turn)
-    pub turn: u32,
+    // @@protoc_insertion_point(field:PNGGKFFJILG.HJPBAJEPAGE)
+    pub HJPBAJEPAGE: u32,
     // @@protoc_insertion_point(field:PNGGKFFJILG.type)
     pub type_: u32,
     // @@protoc_insertion_point(field:PNGGKFFJILG.reason)
@@ -74,9 +74,9 @@ impl PNGGKFFJILG {
             |m: &mut PNGGKFFJILG| { &mut m.MPDHNFNCIEA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "turn",
-            |m: &PNGGKFFJILG| { &m.turn },
-            |m: &mut PNGGKFFJILG| { &mut m.turn },
+            "HJPBAJEPAGE",
+            |m: &PNGGKFFJILG| { &m.HJPBAJEPAGE },
+            |m: &mut PNGGKFFJILG| { &mut m.HJPBAJEPAGE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "type",
@@ -128,7 +128,7 @@ impl ::protobuf::Message for PNGGKFFJILG {
                     self.MPDHNFNCIEA = is.read_uint32()?;
                 },
                 24 => {
-                    self.turn = is.read_uint32()?;
+                    self.HJPBAJEPAGE = is.read_uint32()?;
                 },
                 32 => {
                     self.type_ = is.read_uint32()?;
@@ -166,8 +166,8 @@ impl ::protobuf::Message for PNGGKFFJILG {
         if self.MPDHNFNCIEA != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.MPDHNFNCIEA);
         }
-        if self.turn != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.turn);
+        if self.HJPBAJEPAGE != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.HJPBAJEPAGE);
         }
         if self.type_ != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.type_);
@@ -194,8 +194,8 @@ impl ::protobuf::Message for PNGGKFFJILG {
         if self.MPDHNFNCIEA != 0 {
             os.write_uint32(2, self.MPDHNFNCIEA)?;
         }
-        if self.turn != 0 {
-            os.write_uint32(3, self.turn)?;
+        if self.HJPBAJEPAGE != 0 {
+            os.write_uint32(3, self.HJPBAJEPAGE)?;
         }
         if self.type_ != 0 {
             os.write_uint32(4, self.type_)?;
@@ -229,7 +229,7 @@ impl ::protobuf::Message for PNGGKFFJILG {
     fn clear(&mut self) {
         self.room_id = 0;
         self.MPDHNFNCIEA = 0;
-        self.turn = 0;
+        self.HJPBAJEPAGE = 0;
         self.type_ = 0;
         self.reason = 0;
         self.HEPCHHCHHPF.clear();
@@ -242,7 +242,7 @@ impl ::protobuf::Message for PNGGKFFJILG {
         static instance: PNGGKFFJILG = PNGGKFFJILG {
             room_id: 0,
             MPDHNFNCIEA: 0,
-            turn: 0,
+            HJPBAJEPAGE: 0,
             type_: 0,
             reason: 0,
             HEPCHHCHHPF: ::std::vec::Vec::new(),
@@ -272,14 +272,14 @@ impl ::protobuf::reflect::ProtobufValue for PNGGKFFJILG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PNGGKFFJILG.proto\"\xee\x01\n\x0bPNGGKFFJILG\x12\x17\n\x07room_id\
+    \n\x11PNGGKFFJILG.proto\"\xfc\x01\n\x0bPNGGKFFJILG\x12\x17\n\x07room_id\
     \x18\x01\x20\x01(\x04R\x06roomId\x12\x20\n\x0bMPDHNFNCIEA\x18\x02\x20\
-    \x01(\rR\x0bMPDHNFNCIEA\x12\x12\n\x04turn\x18\x03\x20\x01(\rR\x04turn\
-    \x12\x12\n\x04type\x18\x04\x20\x01(\rR\x04type\x12\x16\n\x06reason\x18\
-    \x05\x20\x01(\rR\x06reason\x12\x20\n\x0bHEPCHHCHHPF\x18\x06\x20\x03(\rR\
-    \x0bHEPCHHCHHPF\x12\x20\n\x0bKCCJCGFKCCC\x18\x07\x20\x01(\x05R\x0bKCCJCG\
-    FKCCC\x12\x20\n\x0bFOJGIEEHHNG\x18\x08\x20\x01(\rR\x0bFOJGIEEHHNGb\x06pr\
-    oto3\
+    \x01(\rR\x0bMPDHNFNCIEA\x12\x20\n\x0bHJPBAJEPAGE\x18\x03\x20\x01(\rR\x0b\
+    HJPBAJEPAGE\x12\x12\n\x04type\x18\x04\x20\x01(\rR\x04type\x12\x16\n\x06r\
+    eason\x18\x05\x20\x01(\rR\x06reason\x12\x20\n\x0bHEPCHHCHHPF\x18\x06\x20\
+    \x03(\rR\x0bHEPCHHCHHPF\x12\x20\n\x0bKCCJCGFKCCC\x18\x07\x20\x01(\x05R\
+    \x0bKCCJCGFKCCC\x12\x20\n\x0bFOJGIEEHHNG\x18\x08\x20\x01(\rR\x0bFOJGIEEH\
+    HNGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

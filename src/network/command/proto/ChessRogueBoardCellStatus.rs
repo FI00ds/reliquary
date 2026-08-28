@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:ChessRogueBoardCellStatus)
 pub enum ChessRogueBoardCellStatus {
-    // @@protoc_insertion_point(enum_value:ChessRogueBoardCellStatus.GOBKHHAEIAF_BPOCOHFIAOH)
-    GOBKHHAEIAF_BPOCOHFIAOH = 0,
-    // @@protoc_insertion_point(enum_value:ChessRogueBoardCellStatus.GOBKHHAEIAF_EAPFJHJHIFK)
-    GOBKHHAEIAF_EAPFJHJHIFK = 1,
-    // @@protoc_insertion_point(enum_value:ChessRogueBoardCellStatus.GOBKHHAEIAF_LOOAKNHDBLL)
-    GOBKHHAEIAF_LOOAKNHDBLL = 2,
-    // @@protoc_insertion_point(enum_value:ChessRogueBoardCellStatus.GOBKHHAEIAF_CIHFGJDCHIA)
-    GOBKHHAEIAF_CIHFGJDCHIA = 3,
+    // @@protoc_insertion_point(enum_value:ChessRogueBoardCellStatus.ChessRogueBoardCellStatus_Idle)
+    ChessRogueBoardCellStatus_Idle = 0,
+    // @@protoc_insertion_point(enum_value:ChessRogueBoardCellStatus.ChessRogueBoardCellStatus_Selected)
+    ChessRogueBoardCellStatus_Selected = 1,
+    // @@protoc_insertion_point(enum_value:ChessRogueBoardCellStatus.ChessRogueBoardCellStatus_Processing)
+    ChessRogueBoardCellStatus_Processing = 2,
+    // @@protoc_insertion_point(enum_value:ChessRogueBoardCellStatus.ChessRogueBoardCellStatus_Finish)
+    ChessRogueBoardCellStatus_Finish = 3,
 }
 
 impl ::protobuf::Enum for ChessRogueBoardCellStatus {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for ChessRogueBoardCellStatus {
 
     fn from_i32(value: i32) -> ::std::option::Option<ChessRogueBoardCellStatus> {
         match value {
-            0 => ::std::option::Option::Some(ChessRogueBoardCellStatus::GOBKHHAEIAF_BPOCOHFIAOH),
-            1 => ::std::option::Option::Some(ChessRogueBoardCellStatus::GOBKHHAEIAF_EAPFJHJHIFK),
-            2 => ::std::option::Option::Some(ChessRogueBoardCellStatus::GOBKHHAEIAF_LOOAKNHDBLL),
-            3 => ::std::option::Option::Some(ChessRogueBoardCellStatus::GOBKHHAEIAF_CIHFGJDCHIA),
+            0 => ::std::option::Option::Some(ChessRogueBoardCellStatus::ChessRogueBoardCellStatus_Idle),
+            1 => ::std::option::Option::Some(ChessRogueBoardCellStatus::ChessRogueBoardCellStatus_Selected),
+            2 => ::std::option::Option::Some(ChessRogueBoardCellStatus::ChessRogueBoardCellStatus_Processing),
+            3 => ::std::option::Option::Some(ChessRogueBoardCellStatus::ChessRogueBoardCellStatus_Finish),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<ChessRogueBoardCellStatus> {
         match str {
-            "GOBKHHAEIAF_BPOCOHFIAOH" => ::std::option::Option::Some(ChessRogueBoardCellStatus::GOBKHHAEIAF_BPOCOHFIAOH),
-            "GOBKHHAEIAF_EAPFJHJHIFK" => ::std::option::Option::Some(ChessRogueBoardCellStatus::GOBKHHAEIAF_EAPFJHJHIFK),
-            "GOBKHHAEIAF_LOOAKNHDBLL" => ::std::option::Option::Some(ChessRogueBoardCellStatus::GOBKHHAEIAF_LOOAKNHDBLL),
-            "GOBKHHAEIAF_CIHFGJDCHIA" => ::std::option::Option::Some(ChessRogueBoardCellStatus::GOBKHHAEIAF_CIHFGJDCHIA),
+            "ChessRogueBoardCellStatus_Idle" => ::std::option::Option::Some(ChessRogueBoardCellStatus::ChessRogueBoardCellStatus_Idle),
+            "ChessRogueBoardCellStatus_Selected" => ::std::option::Option::Some(ChessRogueBoardCellStatus::ChessRogueBoardCellStatus_Selected),
+            "ChessRogueBoardCellStatus_Processing" => ::std::option::Option::Some(ChessRogueBoardCellStatus::ChessRogueBoardCellStatus_Processing),
+            "ChessRogueBoardCellStatus_Finish" => ::std::option::Option::Some(ChessRogueBoardCellStatus::ChessRogueBoardCellStatus_Finish),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [ChessRogueBoardCellStatus] = &[
-        ChessRogueBoardCellStatus::GOBKHHAEIAF_BPOCOHFIAOH,
-        ChessRogueBoardCellStatus::GOBKHHAEIAF_EAPFJHJHIFK,
-        ChessRogueBoardCellStatus::GOBKHHAEIAF_LOOAKNHDBLL,
-        ChessRogueBoardCellStatus::GOBKHHAEIAF_CIHFGJDCHIA,
+        ChessRogueBoardCellStatus::ChessRogueBoardCellStatus_Idle,
+        ChessRogueBoardCellStatus::ChessRogueBoardCellStatus_Selected,
+        ChessRogueBoardCellStatus::ChessRogueBoardCellStatus_Processing,
+        ChessRogueBoardCellStatus::ChessRogueBoardCellStatus_Finish,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for ChessRogueBoardCellStatus {
 
 impl ::std::default::Default for ChessRogueBoardCellStatus {
     fn default() -> Self {
-        ChessRogueBoardCellStatus::GOBKHHAEIAF_BPOCOHFIAOH
+        ChessRogueBoardCellStatus::ChessRogueBoardCellStatus_Idle
     }
 }
 
@@ -97,10 +97,11 @@ impl ChessRogueBoardCellStatus {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fChessRogueBoardCellStatus.proto*\x8f\x01\n\x19ChessRogueBoardCellS\
-    tatus\x12\x1b\n\x17GOBKHHAEIAF_BPOCOHFIAOH\x10\0\x12\x1b\n\x17GOBKHHAEIA\
-    F_EAPFJHJHIFK\x10\x01\x12\x1b\n\x17GOBKHHAEIAF_LOOAKNHDBLL\x10\x02\x12\
-    \x1b\n\x17GOBKHHAEIAF_CIHFGJDCHIA\x10\x03b\x06proto3\
+    \n\x1fChessRogueBoardCellStatus.proto*\xb7\x01\n\x19ChessRogueBoardCellS\
+    tatus\x12\"\n\x1eChessRogueBoardCellStatus_Idle\x10\0\x12&\n\"ChessRogue\
+    BoardCellStatus_Selected\x10\x01\x12(\n$ChessRogueBoardCellStatus_Proces\
+    sing\x10\x02\x12$\n\x20ChessRogueBoardCellStatus_Finish\x10\x03b\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

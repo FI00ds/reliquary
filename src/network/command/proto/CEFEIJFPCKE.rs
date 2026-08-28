@@ -79,10 +79,10 @@ impl ::protobuf::Message for CEFEIJFPCKE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.switch_list)?;
                 },
-                24 => {
+                32 => {
                     self.switch_list.push(is.read_uint32()?);
                 },
                 72 => {
@@ -100,7 +100,7 @@ impl ::protobuf::Message for CEFEIJFPCKE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.switch_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.switch_list);
         if self.MNLAMKJIAOC != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.MNLAMKJIAOC);
         }
@@ -110,7 +110,7 @@ impl ::protobuf::Message for CEFEIJFPCKE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.switch_list)?;
+        os.write_repeated_packed_uint32(4, &self.switch_list)?;
         if self.MNLAMKJIAOC != 0 {
             os.write_uint32(9, self.MNLAMKJIAOC)?;
         }
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for CEFEIJFPCKE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CEFEIJFPCKE.proto\"P\n\x0bCEFEIJFPCKE\x12\x1f\n\x0bswitch_list\x18\
-    \x03\x20\x03(\rR\nswitchList\x12\x20\n\x0bMNLAMKJIAOC\x18\t\x20\x01(\rR\
+    \x04\x20\x03(\rR\nswitchList\x12\x20\n\x0bMNLAMKJIAOC\x18\t\x20\x01(\rR\
     \x0bMNLAMKJIAOCb\x06proto3\
 ";
 

@@ -79,7 +79,7 @@ impl ::protobuf::Message for TrialActivityInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                32 => {
                     self.taken_reward = is.read_bool()?;
                 },
                 96 => {
@@ -110,7 +110,7 @@ impl ::protobuf::Message for TrialActivityInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.taken_reward != false {
-            os.write_bool(1, self.taken_reward)?;
+            os.write_bool(4, self.taken_reward)?;
         }
         if self.stage_id != 0 {
             os.write_uint32(12, self.stage_id)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for TrialActivityInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17TrialActivityInfo.proto\"Q\n\x11TrialActivityInfo\x12!\n\x0ctaken_\
-    reward\x18\x01\x20\x01(\x08R\x0btakenReward\x12\x19\n\x08stage_id\x18\
+    reward\x18\x04\x20\x01(\x08R\x0btakenReward\x12\x19\n\x08stage_id\x18\
     \x0c\x20\x01(\rR\x07stageIdb\x06proto3\
 ";
 

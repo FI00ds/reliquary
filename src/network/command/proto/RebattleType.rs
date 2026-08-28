@@ -27,20 +27,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:RebattleType)
 pub enum RebattleType {
-    // @@protoc_insertion_point(enum_value:RebattleType.REBATTLE_TYPE_NONE)
-    REBATTLE_TYPE_NONE = 0,
-    // @@protoc_insertion_point(enum_value:RebattleType.REBATTLE_TYPE_REBATTLE_MIDWAY)
-    REBATTLE_TYPE_REBATTLE_MIDWAY = 1,
-    // @@protoc_insertion_point(enum_value:RebattleType.REBATTLE_TYPE_REBATTLE_LOSE)
-    REBATTLE_TYPE_REBATTLE_LOSE = 2,
-    // @@protoc_insertion_point(enum_value:RebattleType.REBATTLE_TYPE_REBATTLE_MIDWAY_LINEUP)
-    REBATTLE_TYPE_REBATTLE_MIDWAY_LINEUP = 3,
-    // @@protoc_insertion_point(enum_value:RebattleType.REBATTLE_TYPE_REBATTLE_LOSE_LINEUP)
-    REBATTLE_TYPE_REBATTLE_LOSE_LINEUP = 4,
-    // @@protoc_insertion_point(enum_value:RebattleType.REBATTLE_TYPE_QUIT_MIDWAY)
-    REBATTLE_TYPE_QUIT_MIDWAY = 5,
-    // @@protoc_insertion_point(enum_value:RebattleType.REBATTLE_TYPE_QUIT_LOSE)
-    REBATTLE_TYPE_QUIT_LOSE = 6,
+    // @@protoc_insertion_point(enum_value:RebattleType.RebattleType_NLCDGIPGFDJ)
+    RebattleType_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:RebattleType.RebattleType_AKPJOEFJDJA)
+    RebattleType_AKPJOEFJDJA = 1,
+    // @@protoc_insertion_point(enum_value:RebattleType.RebattleType_LKDANDLLMGO)
+    RebattleType_LKDANDLLMGO = 2,
+    // @@protoc_insertion_point(enum_value:RebattleType.RebattleType_LMEICBOLGOE)
+    RebattleType_LMEICBOLGOE = 3,
+    // @@protoc_insertion_point(enum_value:RebattleType.RebattleType_BNHFCBOIBFD)
+    RebattleType_BNHFCBOIBFD = 4,
+    // @@protoc_insertion_point(enum_value:RebattleType.RebattleType_ADMCMCLBJNP)
+    RebattleType_ADMCMCLBJNP = 5,
+    // @@protoc_insertion_point(enum_value:RebattleType.RebattleType_EBOMPJJMBGE)
+    RebattleType_EBOMPJJMBGE = 6,
 }
 
 impl ::protobuf::Enum for RebattleType {
@@ -52,38 +52,38 @@ impl ::protobuf::Enum for RebattleType {
 
     fn from_i32(value: i32) -> ::std::option::Option<RebattleType> {
         match value {
-            0 => ::std::option::Option::Some(RebattleType::REBATTLE_TYPE_NONE),
-            1 => ::std::option::Option::Some(RebattleType::REBATTLE_TYPE_REBATTLE_MIDWAY),
-            2 => ::std::option::Option::Some(RebattleType::REBATTLE_TYPE_REBATTLE_LOSE),
-            3 => ::std::option::Option::Some(RebattleType::REBATTLE_TYPE_REBATTLE_MIDWAY_LINEUP),
-            4 => ::std::option::Option::Some(RebattleType::REBATTLE_TYPE_REBATTLE_LOSE_LINEUP),
-            5 => ::std::option::Option::Some(RebattleType::REBATTLE_TYPE_QUIT_MIDWAY),
-            6 => ::std::option::Option::Some(RebattleType::REBATTLE_TYPE_QUIT_LOSE),
+            0 => ::std::option::Option::Some(RebattleType::RebattleType_NLCDGIPGFDJ),
+            1 => ::std::option::Option::Some(RebattleType::RebattleType_AKPJOEFJDJA),
+            2 => ::std::option::Option::Some(RebattleType::RebattleType_LKDANDLLMGO),
+            3 => ::std::option::Option::Some(RebattleType::RebattleType_LMEICBOLGOE),
+            4 => ::std::option::Option::Some(RebattleType::RebattleType_BNHFCBOIBFD),
+            5 => ::std::option::Option::Some(RebattleType::RebattleType_ADMCMCLBJNP),
+            6 => ::std::option::Option::Some(RebattleType::RebattleType_EBOMPJJMBGE),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<RebattleType> {
         match str {
-            "REBATTLE_TYPE_NONE" => ::std::option::Option::Some(RebattleType::REBATTLE_TYPE_NONE),
-            "REBATTLE_TYPE_REBATTLE_MIDWAY" => ::std::option::Option::Some(RebattleType::REBATTLE_TYPE_REBATTLE_MIDWAY),
-            "REBATTLE_TYPE_REBATTLE_LOSE" => ::std::option::Option::Some(RebattleType::REBATTLE_TYPE_REBATTLE_LOSE),
-            "REBATTLE_TYPE_REBATTLE_MIDWAY_LINEUP" => ::std::option::Option::Some(RebattleType::REBATTLE_TYPE_REBATTLE_MIDWAY_LINEUP),
-            "REBATTLE_TYPE_REBATTLE_LOSE_LINEUP" => ::std::option::Option::Some(RebattleType::REBATTLE_TYPE_REBATTLE_LOSE_LINEUP),
-            "REBATTLE_TYPE_QUIT_MIDWAY" => ::std::option::Option::Some(RebattleType::REBATTLE_TYPE_QUIT_MIDWAY),
-            "REBATTLE_TYPE_QUIT_LOSE" => ::std::option::Option::Some(RebattleType::REBATTLE_TYPE_QUIT_LOSE),
+            "RebattleType_NLCDGIPGFDJ" => ::std::option::Option::Some(RebattleType::RebattleType_NLCDGIPGFDJ),
+            "RebattleType_AKPJOEFJDJA" => ::std::option::Option::Some(RebattleType::RebattleType_AKPJOEFJDJA),
+            "RebattleType_LKDANDLLMGO" => ::std::option::Option::Some(RebattleType::RebattleType_LKDANDLLMGO),
+            "RebattleType_LMEICBOLGOE" => ::std::option::Option::Some(RebattleType::RebattleType_LMEICBOLGOE),
+            "RebattleType_BNHFCBOIBFD" => ::std::option::Option::Some(RebattleType::RebattleType_BNHFCBOIBFD),
+            "RebattleType_ADMCMCLBJNP" => ::std::option::Option::Some(RebattleType::RebattleType_ADMCMCLBJNP),
+            "RebattleType_EBOMPJJMBGE" => ::std::option::Option::Some(RebattleType::RebattleType_EBOMPJJMBGE),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [RebattleType] = &[
-        RebattleType::REBATTLE_TYPE_NONE,
-        RebattleType::REBATTLE_TYPE_REBATTLE_MIDWAY,
-        RebattleType::REBATTLE_TYPE_REBATTLE_LOSE,
-        RebattleType::REBATTLE_TYPE_REBATTLE_MIDWAY_LINEUP,
-        RebattleType::REBATTLE_TYPE_REBATTLE_LOSE_LINEUP,
-        RebattleType::REBATTLE_TYPE_QUIT_MIDWAY,
-        RebattleType::REBATTLE_TYPE_QUIT_LOSE,
+        RebattleType::RebattleType_NLCDGIPGFDJ,
+        RebattleType::RebattleType_AKPJOEFJDJA,
+        RebattleType::RebattleType_LKDANDLLMGO,
+        RebattleType::RebattleType_LMEICBOLGOE,
+        RebattleType::RebattleType_BNHFCBOIBFD,
+        RebattleType::RebattleType_ADMCMCLBJNP,
+        RebattleType::RebattleType_EBOMPJJMBGE,
     ];
 }
 
@@ -101,7 +101,7 @@ impl ::protobuf::EnumFull for RebattleType {
 
 impl ::std::default::Default for RebattleType {
     fn default() -> Self {
-        RebattleType::REBATTLE_TYPE_NONE
+        RebattleType::RebattleType_NLCDGIPGFDJ
     }
 }
 
@@ -112,12 +112,12 @@ impl RebattleType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12RebattleType.proto*\xf8\x01\n\x0cRebattleType\x12\x16\n\x12REBATTL\
-    E_TYPE_NONE\x10\0\x12!\n\x1dREBATTLE_TYPE_REBATTLE_MIDWAY\x10\x01\x12\
-    \x1f\n\x1bREBATTLE_TYPE_REBATTLE_LOSE\x10\x02\x12(\n$REBATTLE_TYPE_REBAT\
-    TLE_MIDWAY_LINEUP\x10\x03\x12&\n\"REBATTLE_TYPE_REBATTLE_LOSE_LINEUP\x10\
-    \x04\x12\x1d\n\x19REBATTLE_TYPE_QUIT_MIDWAY\x10\x05\x12\x1b\n\x17REBATTL\
-    E_TYPE_QUIT_LOSE\x10\x06b\x06proto3\
+    \n\x12RebattleType.proto*\xe0\x01\n\x0cRebattleType\x12\x1c\n\x18Rebattl\
+    eType_NLCDGIPGFDJ\x10\0\x12\x1c\n\x18RebattleType_AKPJOEFJDJA\x10\x01\
+    \x12\x1c\n\x18RebattleType_LKDANDLLMGO\x10\x02\x12\x1c\n\x18RebattleType\
+    _LMEICBOLGOE\x10\x03\x12\x1c\n\x18RebattleType_BNHFCBOIBFD\x10\x04\x12\
+    \x1c\n\x18RebattleType_ADMCMCLBJNP\x10\x05\x12\x1c\n\x18RebattleType_EBO\
+    MPJJMBGE\x10\x06b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

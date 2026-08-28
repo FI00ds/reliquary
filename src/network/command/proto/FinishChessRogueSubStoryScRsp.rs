@@ -86,13 +86,13 @@ impl ::protobuf::Message for FinishChessRogueSubStoryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                8 => {
                     self.KPDLMKFLJAI = is.read_uint32()?;
                 },
-                88 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                120 => {
+                64 => {
                     self.HONCDMKPBEG = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for FinishChessRogueSubStoryScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KPDLMKFLJAI != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.KPDLMKFLJAI);
+            my_size += ::protobuf::rt::uint32_size(1, self.KPDLMKFLJAI);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         if self.HONCDMKPBEG != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.HONCDMKPBEG);
+            my_size += ::protobuf::rt::uint32_size(8, self.HONCDMKPBEG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for FinishChessRogueSubStoryScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KPDLMKFLJAI != 0 {
-            os.write_uint32(10, self.KPDLMKFLJAI)?;
+            os.write_uint32(1, self.KPDLMKFLJAI)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
         if self.HONCDMKPBEG != 0 {
-            os.write_uint32(15, self.HONCDMKPBEG)?;
+            os.write_uint32(8, self.HONCDMKPBEG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for FinishChessRogueSubStoryScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#FinishChessRogueSubStoryScRsp.proto\"}\n\x1dFinishChessRogueSubStoryS\
-    cRsp\x12\x20\n\x0bKPDLMKFLJAI\x18\n\x20\x01(\rR\x0bKPDLMKFLJAI\x12\x18\n\
-    \x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12\x20\n\x0bHONCDMKPBEG\x18\
-    \x0f\x20\x01(\rR\x0bHONCDMKPBEGb\x06proto3\
+    cRsp\x12\x20\n\x0bKPDLMKFLJAI\x18\x01\x20\x01(\rR\x0bKPDLMKFLJAI\x12\x18\
+    \n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12\x20\n\x0bHONCDMKPBEG\
+    \x18\x08\x20\x01(\rR\x0bHONCDMKPBEGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

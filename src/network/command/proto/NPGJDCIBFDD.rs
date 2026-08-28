@@ -45,7 +45,7 @@ impl NPGJDCIBFDD {
         ::std::default::Default::default()
     }
 
-    // .BLJHLKBNGEC NGOCELLBHCF = 13;
+    // .BLJHLKBNGEC NGOCELLBHCF = 4;
 
     pub fn NGOCELLBHCF(&self) -> &super::BLJHLKBNGEC::BLJHLKBNGEC {
         match self.KKNBOACNCON {
@@ -143,7 +143,7 @@ impl NPGJDCIBFDD {
         }
     }
 
-    // .GELEHDAJMED NCLBFAALLFJ = 4;
+    // .GELEHDAJMED NCLBFAALLFJ = 13;
 
     pub fn NCLBFAALLFJ(&self) -> &super::GELEHDAJMED::GELEHDAJMED {
         match self.KKNBOACNCON {
@@ -241,7 +241,7 @@ impl NPGJDCIBFDD {
         }
     }
 
-    // .JADFEJKNOCO KGPMPPHJHLD = 6;
+    // .JADFEJKNOCO KGPMPPHJHLD = 5;
 
     pub fn KGPMPPHJHLD(&self) -> &super::JADFEJKNOCO::JADFEJKNOCO {
         match self.KKNBOACNCON {
@@ -290,7 +290,7 @@ impl NPGJDCIBFDD {
         }
     }
 
-    // .OKOJCBKENEJ OLHMHOOMGCK = 7;
+    // .OKOJCBKENEJ OLHMHOOMGCK = 9;
 
     pub fn OLHMHOOMGCK(&self) -> &super::OKOJCBKENEJ::OKOJCBKENEJ {
         match self.KKNBOACNCON {
@@ -388,7 +388,7 @@ impl NPGJDCIBFDD {
         }
     }
 
-    // .ECPHOKOPKBP GJNINFABDBN = 8;
+    // .ECPHOKOPKBP GJNINFABDBN = 10;
 
     pub fn GJNINFABDBN(&self) -> &super::ECPHOKOPKBP::ECPHOKOPKBP {
         match self.KKNBOACNCON {
@@ -515,28 +515,28 @@ impl ::protobuf::Message for NPGJDCIBFDD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                34 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(npgjdcibfdd::KKNBOACNCON::NGOCELLBHCF(is.read_message()?));
                 },
                 10 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(npgjdcibfdd::KKNBOACNCON::KNDKCOGGEKL(is.read_message()?));
                 },
-                34 => {
+                106 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(npgjdcibfdd::KKNBOACNCON::NCLBFAALLFJ(is.read_message()?));
                 },
                 98 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(npgjdcibfdd::KKNBOACNCON::DOCGLPKMHDM(is.read_message()?));
                 },
-                50 => {
+                42 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(npgjdcibfdd::KKNBOACNCON::KGPMPPHJHLD(is.read_message()?));
                 },
-                58 => {
+                74 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(npgjdcibfdd::KKNBOACNCON::OLHMHOOMGCK(is.read_message()?));
                 },
                 90 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(npgjdcibfdd::KKNBOACNCON::MHLPJEDILFJ(is.read_message()?));
                 },
-                66 => {
+                82 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(npgjdcibfdd::KKNBOACNCON::GJNINFABDBN(is.read_message()?));
                 },
                 tag => {
@@ -596,28 +596,28 @@ impl ::protobuf::Message for NPGJDCIBFDD {
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &npgjdcibfdd::KKNBOACNCON::NGOCELLBHCF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
                 &npgjdcibfdd::KKNBOACNCON::KNDKCOGGEKL(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
                 &npgjdcibfdd::KKNBOACNCON::NCLBFAALLFJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
                 &npgjdcibfdd::KKNBOACNCON::DOCGLPKMHDM(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
                 &npgjdcibfdd::KKNBOACNCON::KGPMPPHJHLD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
                 &npgjdcibfdd::KKNBOACNCON::OLHMHOOMGCK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
                 &npgjdcibfdd::KKNBOACNCON::MHLPJEDILFJ(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
                 &npgjdcibfdd::KKNBOACNCON::GJNINFABDBN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
             };
         }
@@ -721,16 +721,16 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NPGJDCIBFDD.proto\x1a\x11AKFBNFPFKJJ.proto\x1a\x11BLJHLKBNGEC.prot\
     o\x1a\x11ECPHOKOPKBP.proto\x1a\x11GELEHDAJMED.proto\x1a\x11IKGLCLFLAKO.p\
     roto\x1a\x11JADFEJKNOCO.proto\x1a\x11OKOJCBKENEJ.proto\x1a\x11PJKNNJGEEB\
-    J.proto\"\xac\x03\n\x0bNPGJDCIBFDD\x120\n\x0bNGOCELLBHCF\x18\r\x20\x01(\
-    \x0b2\x0c.BLJHLKBNGECH\0R\x0bNGOCELLBHCF\x120\n\x0bKNDKCOGGEKL\x18\x01\
+    J.proto\"\xac\x03\n\x0bNPGJDCIBFDD\x120\n\x0bNGOCELLBHCF\x18\x04\x20\x01\
+    (\x0b2\x0c.BLJHLKBNGECH\0R\x0bNGOCELLBHCF\x120\n\x0bKNDKCOGGEKL\x18\x01\
     \x20\x01(\x0b2\x0c.PJKNNJGEEBJH\0R\x0bKNDKCOGGEKL\x120\n\x0bNCLBFAALLFJ\
-    \x18\x04\x20\x01(\x0b2\x0c.GELEHDAJMEDH\0R\x0bNCLBFAALLFJ\x120\n\x0bDOCG\
-    LPKMHDM\x18\x0c\x20\x01(\x0b2\x0c.AKFBNFPFKJJH\0R\x0bDOCGLPKMHDM\x120\n\
-    \x0bKGPMPPHJHLD\x18\x06\x20\x01(\x0b2\x0c.JADFEJKNOCOH\0R\x0bKGPMPPHJHLD\
-    \x120\n\x0bOLHMHOOMGCK\x18\x07\x20\x01(\x0b2\x0c.OKOJCBKENEJH\0R\x0bOLHM\
-    HOOMGCK\x120\n\x0bMHLPJEDILFJ\x18\x0b\x20\x01(\x0b2\x0c.IKGLCLFLAKOH\0R\
-    \x0bMHLPJEDILFJ\x120\n\x0bGJNINFABDBN\x18\x08\x20\x01(\x0b2\x0c.ECPHOKOP\
-    KBPH\0R\x0bGJNINFABDBNB\r\n\x0bKKNBOACNCONb\x06proto3\
+    \x18\r\x20\x01(\x0b2\x0c.GELEHDAJMEDH\0R\x0bNCLBFAALLFJ\x120\n\x0bDOCGLP\
+    KMHDM\x18\x0c\x20\x01(\x0b2\x0c.AKFBNFPFKJJH\0R\x0bDOCGLPKMHDM\x120\n\
+    \x0bKGPMPPHJHLD\x18\x05\x20\x01(\x0b2\x0c.JADFEJKNOCOH\0R\x0bKGPMPPHJHLD\
+    \x120\n\x0bOLHMHOOMGCK\x18\t\x20\x01(\x0b2\x0c.OKOJCBKENEJH\0R\x0bOLHMHO\
+    OMGCK\x120\n\x0bMHLPJEDILFJ\x18\x0b\x20\x01(\x0b2\x0c.IKGLCLFLAKOH\0R\
+    \x0bMHLPJEDILFJ\x120\n\x0bGJNINFABDBN\x18\n\x20\x01(\x0b2\x0c.ECPHOKOPKB\
+    PH\0R\x0bGJNINFABDBNB\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,16 +79,16 @@ impl ::protobuf::Message for PFNHCOJOBKH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                50 => {
                     is.read_repeated_packed_uint32_into(&mut self.ABMLLCOKOLN)?;
                 },
-                32 => {
+                48 => {
                     self.ABMLLCOKOLN.push(is.read_uint32()?);
                 },
-                90 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.LKAKMGKENOI)?;
                 },
-                88 => {
+                104 => {
                     self.LKAKMGKENOI.push(is.read_uint32()?);
                 },
                 tag => {
@@ -103,16 +103,16 @@ impl ::protobuf::Message for PFNHCOJOBKH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.ABMLLCOKOLN);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.LKAKMGKENOI);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.ABMLLCOKOLN);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.LKAKMGKENOI);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(4, &self.ABMLLCOKOLN)?;
-        os.write_repeated_packed_uint32(11, &self.LKAKMGKENOI)?;
+        os.write_repeated_packed_uint32(6, &self.ABMLLCOKOLN)?;
+        os.write_repeated_packed_uint32(13, &self.LKAKMGKENOI)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -164,8 +164,8 @@ impl ::protobuf::reflect::ProtobufValue for PFNHCOJOBKH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PFNHCOJOBKH.proto\"Q\n\x0bPFNHCOJOBKH\x12\x20\n\x0bABMLLCOKOLN\x18\
-    \x04\x20\x03(\rR\x0bABMLLCOKOLN\x12\x20\n\x0bLKAKMGKENOI\x18\x0b\x20\x03\
-    (\rR\x0bLKAKMGKENOIb\x06proto3\
+    \x06\x20\x03(\rR\x0bABMLLCOKOLN\x12\x20\n\x0bLKAKMGKENOI\x18\r\x20\x03(\
+    \rR\x0bLKAKMGKENOIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

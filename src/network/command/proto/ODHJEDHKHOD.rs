@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ODHJEDHKHOD {
     // message fields
-    // @@protoc_insertion_point(field:ODHJEDHKHOD.NMMCOBBKKHA)
-    pub NMMCOBBKKHA: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ODHJEDHKHOD.BIMFEAHDMIK)
     pub BIMFEAHDMIK: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ODHJEDHKHOD.NMMCOBBKKHA)
+    pub NMMCOBBKKHA: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:ODHJEDHKHOD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ODHJEDHKHOD {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NMMCOBBKKHA",
-            |m: &ODHJEDHKHOD| { &m.NMMCOBBKKHA },
-            |m: &mut ODHJEDHKHOD| { &mut m.NMMCOBBKKHA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "BIMFEAHDMIK",
             |m: &ODHJEDHKHOD| { &m.BIMFEAHDMIK },
             |m: &mut ODHJEDHKHOD| { &mut m.BIMFEAHDMIK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NMMCOBBKKHA",
+            |m: &ODHJEDHKHOD| { &m.NMMCOBBKKHA },
+            |m: &mut ODHJEDHKHOD| { &mut m.NMMCOBBKKHA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ODHJEDHKHOD>(
             "ODHJEDHKHOD",
@@ -80,16 +80,16 @@ impl ::protobuf::Message for ODHJEDHKHOD {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NMMCOBBKKHA)?;
-                },
-                24 => {
-                    self.NMMCOBBKKHA.push(is.read_uint32()?);
-                },
-                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.BIMFEAHDMIK)?;
                 },
-                112 => {
+                24 => {
                     self.BIMFEAHDMIK.push(is.read_uint32()?);
+                },
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.NMMCOBBKKHA)?;
+                },
+                40 => {
+                    self.NMMCOBBKKHA.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -103,16 +103,16 @@ impl ::protobuf::Message for ODHJEDHKHOD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.NMMCOBBKKHA);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.BIMFEAHDMIK);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.BIMFEAHDMIK);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.NMMCOBBKKHA);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.NMMCOBBKKHA)?;
-        os.write_repeated_packed_uint32(14, &self.BIMFEAHDMIK)?;
+        os.write_repeated_packed_uint32(3, &self.BIMFEAHDMIK)?;
+        os.write_repeated_packed_uint32(5, &self.NMMCOBBKKHA)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -130,15 +130,15 @@ impl ::protobuf::Message for ODHJEDHKHOD {
     }
 
     fn clear(&mut self) {
-        self.NMMCOBBKKHA.clear();
         self.BIMFEAHDMIK.clear();
+        self.NMMCOBBKKHA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ODHJEDHKHOD {
         static instance: ODHJEDHKHOD = ODHJEDHKHOD {
-            NMMCOBBKKHA: ::std::vec::Vec::new(),
             BIMFEAHDMIK: ::std::vec::Vec::new(),
+            NMMCOBBKKHA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -163,9 +163,9 @@ impl ::protobuf::reflect::ProtobufValue for ODHJEDHKHOD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ODHJEDHKHOD.proto\"Q\n\x0bODHJEDHKHOD\x12\x20\n\x0bNMMCOBBKKHA\x18\
-    \x03\x20\x03(\rR\x0bNMMCOBBKKHA\x12\x20\n\x0bBIMFEAHDMIK\x18\x0e\x20\x03\
-    (\rR\x0bBIMFEAHDMIKb\x06proto3\
+    \n\x11ODHJEDHKHOD.proto\"Q\n\x0bODHJEDHKHOD\x12\x20\n\x0bBIMFEAHDMIK\x18\
+    \x03\x20\x03(\rR\x0bBIMFEAHDMIK\x12\x20\n\x0bNMMCOBBKKHA\x18\x05\x20\x03\
+    (\rR\x0bNMMCOBBKKHAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

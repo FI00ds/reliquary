@@ -79,10 +79,10 @@ impl ::protobuf::Message for SetGenderScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                48 => {
                     self.cur_avatar_path = is.read_enum_or_unknown()?;
                 },
-                96 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SetGenderScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.cur_avatar_path != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            my_size += ::protobuf::rt::int32_size(8, self.cur_avatar_path.value());
+        if self.cur_avatar_path != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarType_None) {
+            my_size += ::protobuf::rt::int32_size(6, self.cur_avatar_path.value());
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SetGenderScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.cur_avatar_path != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.cur_avatar_path))?;
+        if self.cur_avatar_path != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarType_None) {
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.cur_avatar_path))?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,7 +132,7 @@ impl ::protobuf::Message for SetGenderScRsp {
     }
 
     fn clear(&mut self) {
-        self.cur_avatar_path = ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone);
+        self.cur_avatar_path = ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarType_None);
         self.retcode = 0;
         self.special_fields.clear();
     }
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SetGenderScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14SetGenderScRsp.proto\x1a\x19MultiPathAvatarType.proto\"h\n\x0eSetG\
-    enderScRsp\x12<\n\x0fcur_avatar_path\x18\x08\x20\x01(\x0e2\x14.MultiPath\
-    AvatarTypeR\rcurAvatarPath\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07r\
+    enderScRsp\x12<\n\x0fcur_avatar_path\x18\x06\x20\x01(\x0e2\x14.MultiPath\
+    AvatarTypeR\rcurAvatarPath\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07r\
     etcodeb\x06proto3\
 ";
 

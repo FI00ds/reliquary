@@ -1,8 +1,8 @@
 use proc_macro::TokenStream;
 
-use quote::{format_ident, quote, ToTokens};
+use quote::{ToTokens, format_ident, quote};
 use syn::spanned::Spanned;
-use syn::{parse_macro_input, Data, DeriveInput, Field, Fields, Meta};
+use syn::{Data, DeriveInput, Field, Fields, Meta, parse_macro_input};
 
 #[proc_macro_derive(Resource, attributes(resource_key))]
 pub fn derive(input: TokenStream) -> TokenStream {
@@ -18,41 +18,44 @@ pub fn derive(input: TokenStream) -> TokenStream {
     };
 
     let Fields::Named(ref fields) = struc.fields else {
-        return syn::Error::new(struc.fields.span(), "Can only implement resource on struct with named fields")
-            .to_compile_error()
-            .into();
+        return syn::Error::new(
+            struc.fields.span(),
+            "Can only implement resource on struct with named fields",
+        )
+        .to_compile_error()
+        .into();
     };
 
-    let key_fields: Vec<&Field> = fields.named.iter()
+    let key_fields: Vec<&Field> = fields
+        .named
+        .iter()
         .filter(|&f| {
-            f.attrs.iter()
-                .any(|a| {
-                    if let Meta::Path(ref p) = a.meta {
-                        p.is_ident("resource_key")
-                    } else {
-                        false
-                    }
-                })
+            f.attrs.iter().any(|a| {
+                if let Meta::Path(ref p) = a.meta {
+                    p.is_ident("resource_key")
+                } else {
+                    false
+                }
+            })
         })
         .collect();
 
-    let key_names = key_fields.iter()
-        .map(|&f| f.ident.to_token_stream());
-    
-    let doc = format!("Map type containing all [`{}`] in (nested) map format. Can be deserialized into.", struct_name);
+    let key_names = key_fields.iter().map(|&f| f.ident.to_token_stream());
+
+    let doc = format!(
+        "Map type containing all [`{}`] in (nested) map format. Can be deserialized into.",
+        struct_name
+    );
     let warning = format!("could not find {} config", struct_name);
     let json_name = format!("{}.json", struct_name);
-    
-    let get_method_args = key_fields.iter()
-        .map(|&f| {
-            let name = f.ident.as_ref().unwrap();
-            let ty = &f.ty;
-            quote! { #name: &#ty }
-        });
 
+    let get_method_args = key_fields.iter().map(|&f| {
+        let name = f.ident.as_ref().unwrap();
+        let ty = &f.ty;
+        quote! { #name: &#ty }
+    });
 
-    let matching = key_names
-        .map(|field| quote! { config.#field == *#field });
+    let matching = key_names.map(|field| quote! { config.#field == *#field });
 
     let expanded = quote! {
         #[derive(serde::Deserialize, serde::Serialize)]

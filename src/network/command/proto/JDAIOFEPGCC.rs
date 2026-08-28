@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JDAIOFEPGCC {
     // message fields
-    // @@protoc_insertion_point(field:JDAIOFEPGCC.GDOBLPPEGKD)
-    pub GDOBLPPEGKD: bool,
     // @@protoc_insertion_point(field:JDAIOFEPGCC.KDKPDJNMMCM)
     pub KDKPDJNMMCM: u32,
+    // @@protoc_insertion_point(field:JDAIOFEPGCC.GDOBLPPEGKD)
+    pub GDOBLPPEGKD: bool,
     // @@protoc_insertion_point(field:JDAIOFEPGCC.cnt)
     pub cnt: u32,
     // @@protoc_insertion_point(field:JDAIOFEPGCC.buff_id)
@@ -56,14 +56,14 @@ impl JDAIOFEPGCC {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GDOBLPPEGKD",
-            |m: &JDAIOFEPGCC| { &m.GDOBLPPEGKD },
-            |m: &mut JDAIOFEPGCC| { &mut m.GDOBLPPEGKD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KDKPDJNMMCM",
             |m: &JDAIOFEPGCC| { &m.KDKPDJNMMCM },
             |m: &mut JDAIOFEPGCC| { &mut m.KDKPDJNMMCM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GDOBLPPEGKD",
+            |m: &JDAIOFEPGCC| { &m.GDOBLPPEGKD },
+            |m: &mut JDAIOFEPGCC| { &mut m.GDOBLPPEGKD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cnt",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for JDAIOFEPGCC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.GDOBLPPEGKD = is.read_bool()?;
-                },
-                80 => {
+                8 => {
                     self.KDKPDJNMMCM = is.read_uint32()?;
                 },
-                88 => {
+                24 => {
+                    self.GDOBLPPEGKD = is.read_bool()?;
+                },
+                48 => {
                     self.cnt = is.read_uint32()?;
                 },
-                112 => {
+                120 => {
                     self.buff_id = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for JDAIOFEPGCC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.KDKPDJNMMCM != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.KDKPDJNMMCM);
+        }
         if self.GDOBLPPEGKD != false {
             my_size += 1 + 1;
         }
-        if self.KDKPDJNMMCM != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.KDKPDJNMMCM);
-        }
         if self.cnt != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.cnt);
+            my_size += ::protobuf::rt::uint32_size(6, self.cnt);
         }
         if self.buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.buff_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.buff_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for JDAIOFEPGCC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GDOBLPPEGKD != false {
-            os.write_bool(9, self.GDOBLPPEGKD)?;
-        }
         if self.KDKPDJNMMCM != 0 {
-            os.write_uint32(10, self.KDKPDJNMMCM)?;
+            os.write_uint32(1, self.KDKPDJNMMCM)?;
+        }
+        if self.GDOBLPPEGKD != false {
+            os.write_bool(3, self.GDOBLPPEGKD)?;
         }
         if self.cnt != 0 {
-            os.write_uint32(11, self.cnt)?;
+            os.write_uint32(6, self.cnt)?;
         }
         if self.buff_id != 0 {
-            os.write_uint32(14, self.buff_id)?;
+            os.write_uint32(15, self.buff_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,8 +164,8 @@ impl ::protobuf::Message for JDAIOFEPGCC {
     }
 
     fn clear(&mut self) {
-        self.GDOBLPPEGKD = false;
         self.KDKPDJNMMCM = 0;
+        self.GDOBLPPEGKD = false;
         self.cnt = 0;
         self.buff_id = 0;
         self.special_fields.clear();
@@ -173,8 +173,8 @@ impl ::protobuf::Message for JDAIOFEPGCC {
 
     fn default_instance() -> &'static JDAIOFEPGCC {
         static instance: JDAIOFEPGCC = JDAIOFEPGCC {
-            GDOBLPPEGKD: false,
             KDKPDJNMMCM: 0,
+            GDOBLPPEGKD: false,
             cnt: 0,
             buff_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for JDAIOFEPGCC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JDAIOFEPGCC.proto\"|\n\x0bJDAIOFEPGCC\x12\x20\n\x0bGDOBLPPEGKD\x18\
-    \t\x20\x01(\x08R\x0bGDOBLPPEGKD\x12\x20\n\x0bKDKPDJNMMCM\x18\n\x20\x01(\
-    \rR\x0bKDKPDJNMMCM\x12\x10\n\x03cnt\x18\x0b\x20\x01(\rR\x03cnt\x12\x17\n\
-    \x07buff_id\x18\x0e\x20\x01(\rR\x06buffIdb\x06proto3\
+    \n\x11JDAIOFEPGCC.proto\"|\n\x0bJDAIOFEPGCC\x12\x20\n\x0bKDKPDJNMMCM\x18\
+    \x01\x20\x01(\rR\x0bKDKPDJNMMCM\x12\x20\n\x0bGDOBLPPEGKD\x18\x03\x20\x01\
+    (\x08R\x0bGDOBLPPEGKD\x12\x10\n\x03cnt\x18\x06\x20\x01(\rR\x03cnt\x12\
+    \x17\n\x07buff_id\x18\x0f\x20\x01(\rR\x06buffIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

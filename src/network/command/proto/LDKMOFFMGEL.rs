@@ -30,10 +30,10 @@ pub struct LDKMOFFMGEL {
     // message fields
     // @@protoc_insertion_point(field:LDKMOFFMGEL.type)
     pub type_: u32,
-    // @@protoc_insertion_point(field:LDKMOFFMGEL.LPOLPDBELON)
-    pub LPOLPDBELON: u32,
     // @@protoc_insertion_point(field:LDKMOFFMGEL.slot)
     pub slot: u32,
+    // @@protoc_insertion_point(field:LDKMOFFMGEL.LPOLPDBELON)
+    pub LPOLPDBELON: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LDKMOFFMGEL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl LDKMOFFMGEL {
             |m: &mut LDKMOFFMGEL| { &mut m.type_ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LPOLPDBELON",
-            |m: &LDKMOFFMGEL| { &m.LPOLPDBELON },
-            |m: &mut LDKMOFFMGEL| { &mut m.LPOLPDBELON },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "slot",
             |m: &LDKMOFFMGEL| { &m.slot },
             |m: &mut LDKMOFFMGEL| { &mut m.slot },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LPOLPDBELON",
+            |m: &LDKMOFFMGEL| { &m.LPOLPDBELON },
+            |m: &mut LDKMOFFMGEL| { &mut m.LPOLPDBELON },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LDKMOFFMGEL>(
             "LDKMOFFMGEL",
@@ -89,11 +89,11 @@ impl ::protobuf::Message for LDKMOFFMGEL {
                 32 => {
                     self.type_ = is.read_uint32()?;
                 },
-                80 => {
-                    self.LPOLPDBELON = is.read_uint32()?;
-                },
                 88 => {
                     self.slot = is.read_uint32()?;
+                },
+                104 => {
+                    self.LPOLPDBELON = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,11 +110,11 @@ impl ::protobuf::Message for LDKMOFFMGEL {
         if self.type_ != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.type_);
         }
-        if self.LPOLPDBELON != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.LPOLPDBELON);
-        }
         if self.slot != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.slot);
+        }
+        if self.LPOLPDBELON != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.LPOLPDBELON);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,11 +125,11 @@ impl ::protobuf::Message for LDKMOFFMGEL {
         if self.type_ != 0 {
             os.write_uint32(4, self.type_)?;
         }
-        if self.LPOLPDBELON != 0 {
-            os.write_uint32(10, self.LPOLPDBELON)?;
-        }
         if self.slot != 0 {
             os.write_uint32(11, self.slot)?;
+        }
+        if self.LPOLPDBELON != 0 {
+            os.write_uint32(13, self.LPOLPDBELON)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for LDKMOFFMGEL {
 
     fn clear(&mut self) {
         self.type_ = 0;
-        self.LPOLPDBELON = 0;
         self.slot = 0;
+        self.LPOLPDBELON = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LDKMOFFMGEL {
         static instance: LDKMOFFMGEL = LDKMOFFMGEL {
             type_: 0,
-            LPOLPDBELON: 0,
             slot: 0,
+            LPOLPDBELON: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for LDKMOFFMGEL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LDKMOFFMGEL.proto\"W\n\x0bLDKMOFFMGEL\x12\x12\n\x04type\x18\x04\
-    \x20\x01(\rR\x04type\x12\x20\n\x0bLPOLPDBELON\x18\n\x20\x01(\rR\x0bLPOLP\
-    DBELON\x12\x12\n\x04slot\x18\x0b\x20\x01(\rR\x04slotb\x06proto3\
+    \x20\x01(\rR\x04type\x12\x12\n\x04slot\x18\x0b\x20\x01(\rR\x04slot\x12\
+    \x20\n\x0bLPOLPDBELON\x18\r\x20\x01(\rR\x0bLPOLPDBELONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

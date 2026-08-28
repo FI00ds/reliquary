@@ -28,42 +28,42 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChimeraGetDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChimeraGetDataScRsp.finish_work_cnt)
-    pub finish_work_cnt: u32,
-    // @@protoc_insertion_point(field:ChimeraGetDataScRsp.HCENDLKKHOC)
-    pub HCENDLKKHOC: u32,
-    // @@protoc_insertion_point(field:ChimeraGetDataScRsp.CMBJOLCGMAI)
-    pub CMBJOLCGMAI: ::std::vec::Vec<super::ONNMLLIEENI::ONNMLLIEENI>,
-    // @@protoc_insertion_point(field:ChimeraGetDataScRsp.IOMEILDMBNE)
-    pub IOMEILDMBNE: u32,
-    // @@protoc_insertion_point(field:ChimeraGetDataScRsp.PIGPKIDNMDH)
-    pub PIGPKIDNMDH: u32,
-    // @@protoc_insertion_point(field:ChimeraGetDataScRsp.HFPGDCJMNIK)
-    pub HFPGDCJMNIK: ::protobuf::EnumOrUnknown<super::HDIOKENOFNJ::HDIOKENOFNJ>,
-    // @@protoc_insertion_point(field:ChimeraGetDataScRsp.MMFKMEGECOI)
-    pub MMFKMEGECOI: u32,
-    // @@protoc_insertion_point(field:ChimeraGetDataScRsp.ICBIMKIEOEP)
-    pub ICBIMKIEOEP: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ChimeraGetDataScRsp.IMCGJPMBPPJ)
     pub IMCGJPMBPPJ: u32,
-    // @@protoc_insertion_point(field:ChimeraGetDataScRsp.JCOAGOJEAPB)
-    pub JCOAGOJEAPB: ::std::vec::Vec<super::GADFFIFFNHM::GADFFIFFNHM>,
-    // @@protoc_insertion_point(field:ChimeraGetDataScRsp.JIDBIMNMLJP)
-    pub JIDBIMNMLJP: u32,
-    // @@protoc_insertion_point(field:ChimeraGetDataScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:ChimeraGetDataScRsp.lineup)
     pub lineup: ::protobuf::MessageField<super::GCFGCHAMNOL::GCFGCHAMNOL>,
+    // @@protoc_insertion_point(field:ChimeraGetDataScRsp.ICBIMKIEOEP)
+    pub ICBIMKIEOEP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChimeraGetDataScRsp.JIDBIMNMLJP)
+    pub JIDBIMNMLJP: u32,
+    // @@protoc_insertion_point(field:ChimeraGetDataScRsp.HCENDLKKHOC)
+    pub HCENDLKKHOC: u32,
     // @@protoc_insertion_point(field:ChimeraGetDataScRsp.FBNEKMPIAKD)
     pub FBNEKMPIAKD: u32,
+    // @@protoc_insertion_point(field:ChimeraGetDataScRsp.JCOAGOJEAPB)
+    pub JCOAGOJEAPB: ::std::vec::Vec<super::GADFFIFFNHM::GADFFIFFNHM>,
+    // @@protoc_insertion_point(field:ChimeraGetDataScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:ChimeraGetDataScRsp.PIGPKIDNMDH)
+    pub PIGPKIDNMDH: u32,
+    // @@protoc_insertion_point(field:ChimeraGetDataScRsp.IOMEILDMBNE)
+    pub IOMEILDMBNE: u32,
+    // @@protoc_insertion_point(field:ChimeraGetDataScRsp.MMFKMEGECOI)
+    pub MMFKMEGECOI: u32,
+    // @@protoc_insertion_point(field:ChimeraGetDataScRsp.CJLBLDFGELH)
+    pub CJLBLDFGELH: u32,
+    // @@protoc_insertion_point(field:ChimeraGetDataScRsp.CMBJOLCGMAI)
+    pub CMBJOLCGMAI: ::std::vec::Vec<super::ONNMLLIEENI::ONNMLLIEENI>,
+    // @@protoc_insertion_point(field:ChimeraGetDataScRsp.HFPGDCJMNIK)
+    pub HFPGDCJMNIK: ::protobuf::EnumOrUnknown<super::HDIOKENOFNJ::HDIOKENOFNJ>,
+    // @@protoc_insertion_point(field:ChimeraGetDataScRsp.GGPKMPBBENP)
+    pub GGPKMPBBENP: u32,
     // @@protoc_insertion_point(field:ChimeraGetDataScRsp.ENMLPFBMPNI)
     pub ENMLPFBMPNI: u32,
     // @@protoc_insertion_point(field:ChimeraGetDataScRsp.NMPCJAOIOHJ)
     pub NMPCJAOIOHJ: u32,
     // @@protoc_insertion_point(field:ChimeraGetDataScRsp.KCCACINBEEA)
     pub KCCACINBEEA: u32,
-    // @@protoc_insertion_point(field:ChimeraGetDataScRsp.GGPKMPBBENP)
-    pub GGPKMPBBENP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChimeraGetDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -84,39 +84,14 @@ impl ChimeraGetDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(18);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "finish_work_cnt",
-            |m: &ChimeraGetDataScRsp| { &m.finish_work_cnt },
-            |m: &mut ChimeraGetDataScRsp| { &mut m.finish_work_cnt },
+            "IMCGJPMBPPJ",
+            |m: &ChimeraGetDataScRsp| { &m.IMCGJPMBPPJ },
+            |m: &mut ChimeraGetDataScRsp| { &mut m.IMCGJPMBPPJ },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HCENDLKKHOC",
-            |m: &ChimeraGetDataScRsp| { &m.HCENDLKKHOC },
-            |m: &mut ChimeraGetDataScRsp| { &mut m.HCENDLKKHOC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CMBJOLCGMAI",
-            |m: &ChimeraGetDataScRsp| { &m.CMBJOLCGMAI },
-            |m: &mut ChimeraGetDataScRsp| { &mut m.CMBJOLCGMAI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IOMEILDMBNE",
-            |m: &ChimeraGetDataScRsp| { &m.IOMEILDMBNE },
-            |m: &mut ChimeraGetDataScRsp| { &mut m.IOMEILDMBNE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PIGPKIDNMDH",
-            |m: &ChimeraGetDataScRsp| { &m.PIGPKIDNMDH },
-            |m: &mut ChimeraGetDataScRsp| { &mut m.PIGPKIDNMDH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HFPGDCJMNIK",
-            |m: &ChimeraGetDataScRsp| { &m.HFPGDCJMNIK },
-            |m: &mut ChimeraGetDataScRsp| { &mut m.HFPGDCJMNIK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MMFKMEGECOI",
-            |m: &ChimeraGetDataScRsp| { &m.MMFKMEGECOI },
-            |m: &mut ChimeraGetDataScRsp| { &mut m.MMFKMEGECOI },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GCFGCHAMNOL::GCFGCHAMNOL>(
+            "lineup",
+            |m: &ChimeraGetDataScRsp| { &m.lineup },
+            |m: &mut ChimeraGetDataScRsp| { &mut m.lineup },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "ICBIMKIEOEP",
@@ -124,9 +99,19 @@ impl ChimeraGetDataScRsp {
             |m: &mut ChimeraGetDataScRsp| { &mut m.ICBIMKIEOEP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IMCGJPMBPPJ",
-            |m: &ChimeraGetDataScRsp| { &m.IMCGJPMBPPJ },
-            |m: &mut ChimeraGetDataScRsp| { &mut m.IMCGJPMBPPJ },
+            "JIDBIMNMLJP",
+            |m: &ChimeraGetDataScRsp| { &m.JIDBIMNMLJP },
+            |m: &mut ChimeraGetDataScRsp| { &mut m.JIDBIMNMLJP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HCENDLKKHOC",
+            |m: &ChimeraGetDataScRsp| { &m.HCENDLKKHOC },
+            |m: &mut ChimeraGetDataScRsp| { &mut m.HCENDLKKHOC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FBNEKMPIAKD",
+            |m: &ChimeraGetDataScRsp| { &m.FBNEKMPIAKD },
+            |m: &mut ChimeraGetDataScRsp| { &mut m.FBNEKMPIAKD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "JCOAGOJEAPB",
@@ -134,24 +119,44 @@ impl ChimeraGetDataScRsp {
             |m: &mut ChimeraGetDataScRsp| { &mut m.JCOAGOJEAPB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JIDBIMNMLJP",
-            |m: &ChimeraGetDataScRsp| { &m.JIDBIMNMLJP },
-            |m: &mut ChimeraGetDataScRsp| { &mut m.JIDBIMNMLJP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &ChimeraGetDataScRsp| { &m.retcode },
             |m: &mut ChimeraGetDataScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GCFGCHAMNOL::GCFGCHAMNOL>(
-            "lineup",
-            |m: &ChimeraGetDataScRsp| { &m.lineup },
-            |m: &mut ChimeraGetDataScRsp| { &mut m.lineup },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PIGPKIDNMDH",
+            |m: &ChimeraGetDataScRsp| { &m.PIGPKIDNMDH },
+            |m: &mut ChimeraGetDataScRsp| { &mut m.PIGPKIDNMDH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FBNEKMPIAKD",
-            |m: &ChimeraGetDataScRsp| { &m.FBNEKMPIAKD },
-            |m: &mut ChimeraGetDataScRsp| { &mut m.FBNEKMPIAKD },
+            "IOMEILDMBNE",
+            |m: &ChimeraGetDataScRsp| { &m.IOMEILDMBNE },
+            |m: &mut ChimeraGetDataScRsp| { &mut m.IOMEILDMBNE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MMFKMEGECOI",
+            |m: &ChimeraGetDataScRsp| { &m.MMFKMEGECOI },
+            |m: &mut ChimeraGetDataScRsp| { &mut m.MMFKMEGECOI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CJLBLDFGELH",
+            |m: &ChimeraGetDataScRsp| { &m.CJLBLDFGELH },
+            |m: &mut ChimeraGetDataScRsp| { &mut m.CJLBLDFGELH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CMBJOLCGMAI",
+            |m: &ChimeraGetDataScRsp| { &m.CMBJOLCGMAI },
+            |m: &mut ChimeraGetDataScRsp| { &mut m.CMBJOLCGMAI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HFPGDCJMNIK",
+            |m: &ChimeraGetDataScRsp| { &m.HFPGDCJMNIK },
+            |m: &mut ChimeraGetDataScRsp| { &mut m.HFPGDCJMNIK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GGPKMPBBENP",
+            |m: &ChimeraGetDataScRsp| { &m.GGPKMPBBENP },
+            |m: &mut ChimeraGetDataScRsp| { &mut m.GGPKMPBBENP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ENMLPFBMPNI",
@@ -167,11 +172,6 @@ impl ChimeraGetDataScRsp {
             "KCCACINBEEA",
             |m: &ChimeraGetDataScRsp| { &m.KCCACINBEEA },
             |m: &mut ChimeraGetDataScRsp| { &mut m.KCCACINBEEA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GGPKMPBBENP",
-            |m: &ChimeraGetDataScRsp| { &m.GGPKMPBBENP },
-            |m: &mut ChimeraGetDataScRsp| { &mut m.GGPKMPBBENP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChimeraGetDataScRsp>(
             "ChimeraGetDataScRsp",
@@ -192,61 +192,61 @@ impl ::protobuf::Message for ChimeraGetDataScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.finish_work_cnt = is.read_uint32()?;
-                },
-                16 => {
-                    self.HCENDLKKHOC = is.read_uint32()?;
-                },
-                26 => {
-                    self.CMBJOLCGMAI.push(is.read_message()?);
-                },
-                32 => {
-                    self.IOMEILDMBNE = is.read_uint32()?;
-                },
-                48 => {
-                    self.PIGPKIDNMDH = is.read_uint32()?;
-                },
-                56 => {
-                    self.HFPGDCJMNIK = is.read_enum_or_unknown()?;
-                },
-                64 => {
-                    self.MMFKMEGECOI = is.read_uint32()?;
-                },
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ICBIMKIEOEP)?;
-                },
-                72 => {
-                    self.ICBIMKIEOEP.push(is.read_uint32()?);
-                },
-                80 => {
                     self.IMCGJPMBPPJ = is.read_uint32()?;
                 },
-                90 => {
-                    self.JCOAGOJEAPB.push(is.read_message()?);
-                },
-                96 => {
-                    self.JIDBIMNMLJP = is.read_uint32()?;
-                },
-                104 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                114 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
-                120 => {
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.ICBIMKIEOEP)?;
+                },
+                24 => {
+                    self.ICBIMKIEOEP.push(is.read_uint32()?);
+                },
+                32 => {
+                    self.JIDBIMNMLJP = is.read_uint32()?;
+                },
+                40 => {
+                    self.HCENDLKKHOC = is.read_uint32()?;
+                },
+                56 => {
                     self.FBNEKMPIAKD = is.read_uint32()?;
                 },
-                9440 => {
+                66 => {
+                    self.JCOAGOJEAPB.push(is.read_message()?);
+                },
+                72 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                80 => {
+                    self.PIGPKIDNMDH = is.read_uint32()?;
+                },
+                88 => {
+                    self.IOMEILDMBNE = is.read_uint32()?;
+                },
+                96 => {
+                    self.MMFKMEGECOI = is.read_uint32()?;
+                },
+                104 => {
+                    self.CJLBLDFGELH = is.read_uint32()?;
+                },
+                114 => {
+                    self.CMBJOLCGMAI.push(is.read_message()?);
+                },
+                120 => {
+                    self.HFPGDCJMNIK = is.read_enum_or_unknown()?;
+                },
+                2872 => {
+                    self.GGPKMPBBENP = is.read_uint32()?;
+                },
+                4344 => {
                     self.ENMLPFBMPNI = is.read_uint32()?;
                 },
-                9952 => {
+                9072 => {
                     self.NMPCJAOIOHJ = is.read_uint32()?;
                 },
-                11032 => {
+                11144 => {
                     self.KCCACINBEEA = is.read_uint32()?;
-                },
-                12696 => {
-                    self.GGPKMPBBENP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -260,60 +260,60 @@ impl ::protobuf::Message for ChimeraGetDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.finish_work_cnt != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.finish_work_cnt);
-        }
-        if self.HCENDLKKHOC != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.HCENDLKKHOC);
-        }
-        for value in &self.CMBJOLCGMAI {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.IOMEILDMBNE != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.IOMEILDMBNE);
-        }
-        if self.PIGPKIDNMDH != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.PIGPKIDNMDH);
-        }
-        if self.HFPGDCJMNIK != ::protobuf::EnumOrUnknown::new(super::HDIOKENOFNJ::HDIOKENOFNJ::HDIOKENOFNJ_EEGFMMCGCNH) {
-            my_size += ::protobuf::rt::int32_size(7, self.HFPGDCJMNIK.value());
-        }
-        if self.MMFKMEGECOI != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.MMFKMEGECOI);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.ICBIMKIEOEP);
         if self.IMCGJPMBPPJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.IMCGJPMBPPJ);
-        }
-        for value in &self.JCOAGOJEAPB {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.JIDBIMNMLJP != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.JIDBIMNMLJP);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.IMCGJPMBPPJ);
         }
         if let Some(v) = self.lineup.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.ICBIMKIEOEP);
+        if self.JIDBIMNMLJP != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.JIDBIMNMLJP);
+        }
+        if self.HCENDLKKHOC != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.HCENDLKKHOC);
+        }
         if self.FBNEKMPIAKD != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.FBNEKMPIAKD);
+            my_size += ::protobuf::rt::uint32_size(7, self.FBNEKMPIAKD);
         }
-        if self.ENMLPFBMPNI != 0 {
-            my_size += ::protobuf::rt::uint32_size(1180, self.ENMLPFBMPNI);
+        for value in &self.JCOAGOJEAPB {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
-        if self.NMPCJAOIOHJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(1244, self.NMPCJAOIOHJ);
+        if self.PIGPKIDNMDH != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.PIGPKIDNMDH);
         }
-        if self.KCCACINBEEA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1379, self.KCCACINBEEA);
+        if self.IOMEILDMBNE != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.IOMEILDMBNE);
+        }
+        if self.MMFKMEGECOI != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.MMFKMEGECOI);
+        }
+        if self.CJLBLDFGELH != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.CJLBLDFGELH);
+        }
+        for value in &self.CMBJOLCGMAI {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.HFPGDCJMNIK != ::protobuf::EnumOrUnknown::new(super::HDIOKENOFNJ::HDIOKENOFNJ::HDIOKENOFNJ_EEGFMMCGCNH) {
+            my_size += ::protobuf::rt::int32_size(15, self.HFPGDCJMNIK.value());
         }
         if self.GGPKMPBBENP != 0 {
-            my_size += ::protobuf::rt::uint32_size(1587, self.GGPKMPBBENP);
+            my_size += ::protobuf::rt::uint32_size(359, self.GGPKMPBBENP);
+        }
+        if self.ENMLPFBMPNI != 0 {
+            my_size += ::protobuf::rt::uint32_size(543, self.ENMLPFBMPNI);
+        }
+        if self.NMPCJAOIOHJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(1134, self.NMPCJAOIOHJ);
+        }
+        if self.KCCACINBEEA != 0 {
+            my_size += ::protobuf::rt::uint32_size(1393, self.KCCACINBEEA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -321,57 +321,57 @@ impl ::protobuf::Message for ChimeraGetDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.finish_work_cnt != 0 {
-            os.write_uint32(1, self.finish_work_cnt)?;
-        }
-        if self.HCENDLKKHOC != 0 {
-            os.write_uint32(2, self.HCENDLKKHOC)?;
-        }
-        for v in &self.CMBJOLCGMAI {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        };
-        if self.IOMEILDMBNE != 0 {
-            os.write_uint32(4, self.IOMEILDMBNE)?;
-        }
-        if self.PIGPKIDNMDH != 0 {
-            os.write_uint32(6, self.PIGPKIDNMDH)?;
-        }
-        if self.HFPGDCJMNIK != ::protobuf::EnumOrUnknown::new(super::HDIOKENOFNJ::HDIOKENOFNJ::HDIOKENOFNJ_EEGFMMCGCNH) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.HFPGDCJMNIK))?;
-        }
-        if self.MMFKMEGECOI != 0 {
-            os.write_uint32(8, self.MMFKMEGECOI)?;
-        }
-        os.write_repeated_packed_uint32(9, &self.ICBIMKIEOEP)?;
         if self.IMCGJPMBPPJ != 0 {
-            os.write_uint32(10, self.IMCGJPMBPPJ)?;
-        }
-        for v in &self.JCOAGOJEAPB {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        };
-        if self.JIDBIMNMLJP != 0 {
-            os.write_uint32(12, self.JIDBIMNMLJP)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(1, self.IMCGJPMBPPJ)?;
         }
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        os.write_repeated_packed_uint32(3, &self.ICBIMKIEOEP)?;
+        if self.JIDBIMNMLJP != 0 {
+            os.write_uint32(4, self.JIDBIMNMLJP)?;
+        }
+        if self.HCENDLKKHOC != 0 {
+            os.write_uint32(5, self.HCENDLKKHOC)?;
         }
         if self.FBNEKMPIAKD != 0 {
-            os.write_uint32(15, self.FBNEKMPIAKD)?;
+            os.write_uint32(7, self.FBNEKMPIAKD)?;
         }
-        if self.ENMLPFBMPNI != 0 {
-            os.write_uint32(1180, self.ENMLPFBMPNI)?;
+        for v in &self.JCOAGOJEAPB {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
+        if self.retcode != 0 {
+            os.write_uint32(9, self.retcode)?;
         }
-        if self.NMPCJAOIOHJ != 0 {
-            os.write_uint32(1244, self.NMPCJAOIOHJ)?;
+        if self.PIGPKIDNMDH != 0 {
+            os.write_uint32(10, self.PIGPKIDNMDH)?;
         }
-        if self.KCCACINBEEA != 0 {
-            os.write_uint32(1379, self.KCCACINBEEA)?;
+        if self.IOMEILDMBNE != 0 {
+            os.write_uint32(11, self.IOMEILDMBNE)?;
+        }
+        if self.MMFKMEGECOI != 0 {
+            os.write_uint32(12, self.MMFKMEGECOI)?;
+        }
+        if self.CJLBLDFGELH != 0 {
+            os.write_uint32(13, self.CJLBLDFGELH)?;
+        }
+        for v in &self.CMBJOLCGMAI {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
+        if self.HFPGDCJMNIK != ::protobuf::EnumOrUnknown::new(super::HDIOKENOFNJ::HDIOKENOFNJ::HDIOKENOFNJ_EEGFMMCGCNH) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.HFPGDCJMNIK))?;
         }
         if self.GGPKMPBBENP != 0 {
-            os.write_uint32(1587, self.GGPKMPBBENP)?;
+            os.write_uint32(359, self.GGPKMPBBENP)?;
+        }
+        if self.ENMLPFBMPNI != 0 {
+            os.write_uint32(543, self.ENMLPFBMPNI)?;
+        }
+        if self.NMPCJAOIOHJ != 0 {
+            os.write_uint32(1134, self.NMPCJAOIOHJ)?;
+        }
+        if self.KCCACINBEEA != 0 {
+            os.write_uint32(1393, self.KCCACINBEEA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -390,47 +390,47 @@ impl ::protobuf::Message for ChimeraGetDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.finish_work_cnt = 0;
-        self.HCENDLKKHOC = 0;
-        self.CMBJOLCGMAI.clear();
-        self.IOMEILDMBNE = 0;
-        self.PIGPKIDNMDH = 0;
-        self.HFPGDCJMNIK = ::protobuf::EnumOrUnknown::new(super::HDIOKENOFNJ::HDIOKENOFNJ::HDIOKENOFNJ_EEGFMMCGCNH);
-        self.MMFKMEGECOI = 0;
-        self.ICBIMKIEOEP.clear();
         self.IMCGJPMBPPJ = 0;
-        self.JCOAGOJEAPB.clear();
-        self.JIDBIMNMLJP = 0;
-        self.retcode = 0;
         self.lineup.clear();
+        self.ICBIMKIEOEP.clear();
+        self.JIDBIMNMLJP = 0;
+        self.HCENDLKKHOC = 0;
         self.FBNEKMPIAKD = 0;
+        self.JCOAGOJEAPB.clear();
+        self.retcode = 0;
+        self.PIGPKIDNMDH = 0;
+        self.IOMEILDMBNE = 0;
+        self.MMFKMEGECOI = 0;
+        self.CJLBLDFGELH = 0;
+        self.CMBJOLCGMAI.clear();
+        self.HFPGDCJMNIK = ::protobuf::EnumOrUnknown::new(super::HDIOKENOFNJ::HDIOKENOFNJ::HDIOKENOFNJ_EEGFMMCGCNH);
+        self.GGPKMPBBENP = 0;
         self.ENMLPFBMPNI = 0;
         self.NMPCJAOIOHJ = 0;
         self.KCCACINBEEA = 0;
-        self.GGPKMPBBENP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChimeraGetDataScRsp {
         static instance: ChimeraGetDataScRsp = ChimeraGetDataScRsp {
-            finish_work_cnt: 0,
-            HCENDLKKHOC: 0,
-            CMBJOLCGMAI: ::std::vec::Vec::new(),
-            IOMEILDMBNE: 0,
-            PIGPKIDNMDH: 0,
-            HFPGDCJMNIK: ::protobuf::EnumOrUnknown::from_i32(0),
-            MMFKMEGECOI: 0,
-            ICBIMKIEOEP: ::std::vec::Vec::new(),
             IMCGJPMBPPJ: 0,
-            JCOAGOJEAPB: ::std::vec::Vec::new(),
-            JIDBIMNMLJP: 0,
-            retcode: 0,
             lineup: ::protobuf::MessageField::none(),
+            ICBIMKIEOEP: ::std::vec::Vec::new(),
+            JIDBIMNMLJP: 0,
+            HCENDLKKHOC: 0,
             FBNEKMPIAKD: 0,
+            JCOAGOJEAPB: ::std::vec::Vec::new(),
+            retcode: 0,
+            PIGPKIDNMDH: 0,
+            IOMEILDMBNE: 0,
+            MMFKMEGECOI: 0,
+            CJLBLDFGELH: 0,
+            CMBJOLCGMAI: ::std::vec::Vec::new(),
+            HFPGDCJMNIK: ::protobuf::EnumOrUnknown::from_i32(0),
+            GGPKMPBBENP: 0,
             ENMLPFBMPNI: 0,
             NMPCJAOIOHJ: 0,
             KCCACINBEEA: 0,
-            GGPKMPBBENP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -456,24 +456,24 @@ impl ::protobuf::reflect::ProtobufValue for ChimeraGetDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19ChimeraGetDataScRsp.proto\x1a\x11GADFFIFFNHM.proto\x1a\x11GCFGCHAM\
-    NOL.proto\x1a\x11HDIOKENOFNJ.proto\x1a\x11ONNMLLIEENI.proto\"\xa9\x05\n\
-    \x13ChimeraGetDataScRsp\x12&\n\x0ffinish_work_cnt\x18\x01\x20\x01(\rR\rf\
-    inishWorkCnt\x12\x20\n\x0bHCENDLKKHOC\x18\x02\x20\x01(\rR\x0bHCENDLKKHOC\
-    \x12.\n\x0bCMBJOLCGMAI\x18\x03\x20\x03(\x0b2\x0c.ONNMLLIEENIR\x0bCMBJOLC\
-    GMAI\x12\x20\n\x0bIOMEILDMBNE\x18\x04\x20\x01(\rR\x0bIOMEILDMBNE\x12\x20\
-    \n\x0bPIGPKIDNMDH\x18\x06\x20\x01(\rR\x0bPIGPKIDNMDH\x12.\n\x0bHFPGDCJMN\
-    IK\x18\x07\x20\x01(\x0e2\x0c.HDIOKENOFNJR\x0bHFPGDCJMNIK\x12\x20\n\x0bMM\
-    FKMEGECOI\x18\x08\x20\x01(\rR\x0bMMFKMEGECOI\x12\x20\n\x0bICBIMKIEOEP\
-    \x18\t\x20\x03(\rR\x0bICBIMKIEOEP\x12\x20\n\x0bIMCGJPMBPPJ\x18\n\x20\x01\
-    (\rR\x0bIMCGJPMBPPJ\x12.\n\x0bJCOAGOJEAPB\x18\x0b\x20\x03(\x0b2\x0c.GADF\
-    FIFFNHMR\x0bJCOAGOJEAPB\x12\x20\n\x0bJIDBIMNMLJP\x18\x0c\x20\x01(\rR\x0b\
-    JIDBIMNMLJP\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12$\n\x06\
-    lineup\x18\x0e\x20\x01(\x0b2\x0c.GCFGCHAMNOLR\x06lineup\x12\x20\n\x0bFBN\
-    EKMPIAKD\x18\x0f\x20\x01(\rR\x0bFBNEKMPIAKD\x12!\n\x0bENMLPFBMPNI\x18\
-    \x9c\t\x20\x01(\rR\x0bENMLPFBMPNI\x12!\n\x0bNMPCJAOIOHJ\x18\xdc\t\x20\
-    \x01(\rR\x0bNMPCJAOIOHJ\x12!\n\x0bKCCACINBEEA\x18\xe3\n\x20\x01(\rR\x0bK\
-    CCACINBEEA\x12!\n\x0bGGPKMPBBENP\x18\xb3\x0c\x20\x01(\rR\x0bGGPKMPBBENPb\
-    \x06proto3\
+    NOL.proto\x1a\x11HDIOKENOFNJ.proto\x1a\x11ONNMLLIEENI.proto\"\xa3\x05\n\
+    \x13ChimeraGetDataScRsp\x12\x20\n\x0bIMCGJPMBPPJ\x18\x01\x20\x01(\rR\x0b\
+    IMCGJPMBPPJ\x12$\n\x06lineup\x18\x02\x20\x01(\x0b2\x0c.GCFGCHAMNOLR\x06l\
+    ineup\x12\x20\n\x0bICBIMKIEOEP\x18\x03\x20\x03(\rR\x0bICBIMKIEOEP\x12\
+    \x20\n\x0bJIDBIMNMLJP\x18\x04\x20\x01(\rR\x0bJIDBIMNMLJP\x12\x20\n\x0bHC\
+    ENDLKKHOC\x18\x05\x20\x01(\rR\x0bHCENDLKKHOC\x12\x20\n\x0bFBNEKMPIAKD\
+    \x18\x07\x20\x01(\rR\x0bFBNEKMPIAKD\x12.\n\x0bJCOAGOJEAPB\x18\x08\x20\
+    \x03(\x0b2\x0c.GADFFIFFNHMR\x0bJCOAGOJEAPB\x12\x18\n\x07retcode\x18\t\
+    \x20\x01(\rR\x07retcode\x12\x20\n\x0bPIGPKIDNMDH\x18\n\x20\x01(\rR\x0bPI\
+    GPKIDNMDH\x12\x20\n\x0bIOMEILDMBNE\x18\x0b\x20\x01(\rR\x0bIOMEILDMBNE\
+    \x12\x20\n\x0bMMFKMEGECOI\x18\x0c\x20\x01(\rR\x0bMMFKMEGECOI\x12\x20\n\
+    \x0bCJLBLDFGELH\x18\r\x20\x01(\rR\x0bCJLBLDFGELH\x12.\n\x0bCMBJOLCGMAI\
+    \x18\x0e\x20\x03(\x0b2\x0c.ONNMLLIEENIR\x0bCMBJOLCGMAI\x12.\n\x0bHFPGDCJ\
+    MNIK\x18\x0f\x20\x01(\x0e2\x0c.HDIOKENOFNJR\x0bHFPGDCJMNIK\x12!\n\x0bGGP\
+    KMPBBENP\x18\xe7\x02\x20\x01(\rR\x0bGGPKMPBBENP\x12!\n\x0bENMLPFBMPNI\
+    \x18\x9f\x04\x20\x01(\rR\x0bENMLPFBMPNI\x12!\n\x0bNMPCJAOIOHJ\x18\xee\
+    \x08\x20\x01(\rR\x0bNMPCJAOIOHJ\x12!\n\x0bKCCACINBEEA\x18\xf1\n\x20\x01(\
+    \rR\x0bKCCACINBEEAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

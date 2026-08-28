@@ -27,9 +27,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 // @@protoc_insertion_point(message:LJHDMKEBPDH)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LJHDMKEBPDH {
-    // message fields
-    // @@protoc_insertion_point(field:LJHDMKEBPDH.EIGMKOJOEEI)
-    pub EIGMKOJOEEI: ::protobuf::MessageField<super::ALIMNHEENPP::ALIMNHEENPP>,
+    // message oneof groups
+    pub teleport_nigger: ::std::option::Option<ljhdmkebpdh::Teleport_nigger>,
     // special fields
     // @@protoc_insertion_point(special_field:LJHDMKEBPDH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -46,14 +45,66 @@ impl LJHDMKEBPDH {
         ::std::default::Default::default()
     }
 
+    // .ALIMNHEENPP EIGMKOJOEEI = 101;
+
+    pub fn EIGMKOJOEEI(&self) -> &super::ALIMNHEENPP::ALIMNHEENPP {
+        match self.teleport_nigger {
+            ::std::option::Option::Some(ljhdmkebpdh::Teleport_nigger::EIGMKOJOEEI(ref v)) => v,
+            _ => <super::ALIMNHEENPP::ALIMNHEENPP as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_EIGMKOJOEEI(&mut self) {
+        self.teleport_nigger = ::std::option::Option::None;
+    }
+
+    pub fn has_EIGMKOJOEEI(&self) -> bool {
+        match self.teleport_nigger {
+            ::std::option::Option::Some(ljhdmkebpdh::Teleport_nigger::EIGMKOJOEEI(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_EIGMKOJOEEI(&mut self, v: super::ALIMNHEENPP::ALIMNHEENPP) {
+        self.teleport_nigger = ::std::option::Option::Some(ljhdmkebpdh::Teleport_nigger::EIGMKOJOEEI(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_EIGMKOJOEEI(&mut self) -> &mut super::ALIMNHEENPP::ALIMNHEENPP {
+        if let ::std::option::Option::Some(ljhdmkebpdh::Teleport_nigger::EIGMKOJOEEI(_)) = self.teleport_nigger {
+        } else {
+            self.teleport_nigger = ::std::option::Option::Some(ljhdmkebpdh::Teleport_nigger::EIGMKOJOEEI(super::ALIMNHEENPP::ALIMNHEENPP::new()));
+        }
+        match self.teleport_nigger {
+            ::std::option::Option::Some(ljhdmkebpdh::Teleport_nigger::EIGMKOJOEEI(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_EIGMKOJOEEI(&mut self) -> super::ALIMNHEENPP::ALIMNHEENPP {
+        if self.has_EIGMKOJOEEI() {
+            match self.teleport_nigger.take() {
+                ::std::option::Option::Some(ljhdmkebpdh::Teleport_nigger::EIGMKOJOEEI(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::ALIMNHEENPP::ALIMNHEENPP::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
-        let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ALIMNHEENPP::ALIMNHEENPP>(
+        let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ALIMNHEENPP::ALIMNHEENPP>(
             "EIGMKOJOEEI",
-            |m: &LJHDMKEBPDH| { &m.EIGMKOJOEEI },
-            |m: &mut LJHDMKEBPDH| { &mut m.EIGMKOJOEEI },
+            LJHDMKEBPDH::has_EIGMKOJOEEI,
+            LJHDMKEBPDH::EIGMKOJOEEI,
+            LJHDMKEBPDH::mut_EIGMKOJOEEI,
+            LJHDMKEBPDH::set_EIGMKOJOEEI,
         ));
+        oneofs.push(ljhdmkebpdh::Teleport_nigger::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LJHDMKEBPDH>(
             "LJHDMKEBPDH",
             fields,
@@ -73,7 +124,7 @@ impl ::protobuf::Message for LJHDMKEBPDH {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 810 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EIGMKOJOEEI)?;
+                    self.teleport_nigger = ::std::option::Option::Some(ljhdmkebpdh::Teleport_nigger::EIGMKOJOEEI(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,9 +138,13 @@ impl ::protobuf::Message for LJHDMKEBPDH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.EIGMKOJOEEI.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if let ::std::option::Option::Some(ref v) = self.teleport_nigger {
+            match v {
+                &ljhdmkebpdh::Teleport_nigger::EIGMKOJOEEI(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+            };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +152,12 @@ impl ::protobuf::Message for LJHDMKEBPDH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.EIGMKOJOEEI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(101, v, os)?;
+        if let ::std::option::Option::Some(ref v) = self.teleport_nigger {
+            match v {
+                &ljhdmkebpdh::Teleport_nigger::EIGMKOJOEEI(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(101, v, os)?;
+                },
+            };
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +176,13 @@ impl ::protobuf::Message for LJHDMKEBPDH {
     }
 
     fn clear(&mut self) {
-        self.EIGMKOJOEEI.clear();
+        self.teleport_nigger = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LJHDMKEBPDH {
         static instance: LJHDMKEBPDH = LJHDMKEBPDH {
-            EIGMKOJOEEI: ::protobuf::MessageField::none(),
+            teleport_nigger: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,10 +206,38 @@ impl ::protobuf::reflect::ProtobufValue for LJHDMKEBPDH {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
+/// Nested message and enums of message `LJHDMKEBPDH`
+pub mod ljhdmkebpdh {
+
+    #[derive(Clone,PartialEq,Debug)]
+    #[non_exhaustive]
+    // @@protoc_insertion_point(oneof:LJHDMKEBPDH.teleport_nigger)
+    pub enum Teleport_nigger {
+        // @@protoc_insertion_point(oneof_field:LJHDMKEBPDH.EIGMKOJOEEI)
+        EIGMKOJOEEI(super::super::ALIMNHEENPP::ALIMNHEENPP),
+    }
+
+    impl ::protobuf::Oneof for Teleport_nigger {
+    }
+
+    impl ::protobuf::OneofFull for Teleport_nigger {
+        fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
+            static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
+            descriptor.get(|| <super::LJHDMKEBPDH as ::protobuf::MessageFull>::descriptor().oneof_by_name("teleport_nigger").unwrap()).clone()
+        }
+    }
+
+    impl Teleport_nigger {
+        pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<Teleport_nigger>("teleport_nigger")
+        }
+    }
+}
+
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LJHDMKEBPDH.proto\x1a\x11ALIMNHEENPP.proto\"=\n\x0bLJHDMKEBPDH\x12\
-    .\n\x0bEIGMKOJOEEI\x18e\x20\x01(\x0b2\x0c.ALIMNHEENPPR\x0bEIGMKOJOEEIb\
-    \x06proto3\
+    \n\x11LJHDMKEBPDH.proto\x1a\x11ALIMNHEENPP.proto\"R\n\x0bLJHDMKEBPDH\x12\
+    0\n\x0bEIGMKOJOEEI\x18e\x20\x01(\x0b2\x0c.ALIMNHEENPPH\0R\x0bEIGMKOJOEEI\
+    B\x11\n\x0fteleport_niggerb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

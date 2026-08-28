@@ -79,10 +79,10 @@ impl ::protobuf::Message for SyncAllPresetLineupNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                42 => {
                     self.lineup_list.push(is.read_message()?);
                 },
-                104 => {
+                64 => {
                     self.cur_index = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for SyncAllPresetLineupNotify {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.cur_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.cur_index);
+            my_size += ::protobuf::rt::uint32_size(8, self.cur_index);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SyncAllPresetLineupNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.lineup_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         if self.cur_index != 0 {
-            os.write_uint32(13, self.cur_index)?;
+            os.write_uint32(8, self.cur_index)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncAllPresetLineupNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fSyncAllPresetLineupNotify.proto\x1a\x10LineupInfo.proto\"f\n\x19Sy\
-    ncAllPresetLineupNotify\x12,\n\x0blineup_list\x18\n\x20\x03(\x0b2\x0b.Li\
-    neupInfoR\nlineupList\x12\x1b\n\tcur_index\x18\r\x20\x01(\rR\x08curIndex\
-    b\x06proto3\
+    ncAllPresetLineupNotify\x12,\n\x0blineup_list\x18\x05\x20\x03(\x0b2\x0b.\
+    LineupInfoR\nlineupList\x12\x1b\n\tcur_index\x18\x08\x20\x01(\rR\x08curI\
+    ndexb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

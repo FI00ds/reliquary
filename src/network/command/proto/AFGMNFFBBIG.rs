@@ -34,8 +34,8 @@ pub struct AFGMNFFBBIG {
     pub monster_id: u32,
     // @@protoc_insertion_point(field:AFGMNFFBBIG.OFHCHNKEFMD)
     pub OFHCHNKEFMD: ::std::vec::Vec<super::GHCDMMNHNHO::GHCDMMNHNHO>,
-    // @@protoc_insertion_point(field:AFGMNFFBBIG.delay)
-    pub delay: u32,
+    // @@protoc_insertion_point(field:AFGMNFFBBIG.PNJEGPAFNCI)
+    pub PNJEGPAFNCI: u32,
     // @@protoc_insertion_point(field:AFGMNFFBBIG.JNFCFEIAABH)
     pub JNFCFEIAABH: ::std::vec::Vec<super::GANDCEDCLDL::GANDCEDCLDL>,
     // special fields
@@ -73,9 +73,9 @@ impl AFGMNFFBBIG {
             |m: &mut AFGMNFFBBIG| { &mut m.OFHCHNKEFMD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "delay",
-            |m: &AFGMNFFBBIG| { &m.delay },
-            |m: &mut AFGMNFFBBIG| { &mut m.delay },
+            "PNJEGPAFNCI",
+            |m: &AFGMNFFBBIG| { &m.PNJEGPAFNCI },
+            |m: &mut AFGMNFFBBIG| { &mut m.PNJEGPAFNCI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "JNFCFEIAABH",
@@ -110,7 +110,7 @@ impl ::protobuf::Message for AFGMNFFBBIG {
                     self.OFHCHNKEFMD.push(is.read_message()?);
                 },
                 32 => {
-                    self.delay = is.read_uint32()?;
+                    self.PNJEGPAFNCI = is.read_uint32()?;
                 },
                 42 => {
                     self.JNFCFEIAABH.push(is.read_message()?);
@@ -137,8 +137,8 @@ impl ::protobuf::Message for AFGMNFFBBIG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.delay != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.delay);
+        if self.PNJEGPAFNCI != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.PNJEGPAFNCI);
         }
         for value in &self.JNFCFEIAABH {
             let len = value.compute_size();
@@ -159,8 +159,8 @@ impl ::protobuf::Message for AFGMNFFBBIG {
         for v in &self.OFHCHNKEFMD {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
-        if self.delay != 0 {
-            os.write_uint32(4, self.delay)?;
+        if self.PNJEGPAFNCI != 0 {
+            os.write_uint32(4, self.PNJEGPAFNCI)?;
         }
         for v in &self.JNFCFEIAABH {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
@@ -185,7 +185,7 @@ impl ::protobuf::Message for AFGMNFFBBIG {
         self.BKPDKFLDLDD = 0;
         self.monster_id = 0;
         self.OFHCHNKEFMD.clear();
-        self.delay = 0;
+        self.PNJEGPAFNCI = 0;
         self.JNFCFEIAABH.clear();
         self.special_fields.clear();
     }
@@ -195,7 +195,7 @@ impl ::protobuf::Message for AFGMNFFBBIG {
             BKPDKFLDLDD: 0,
             monster_id: 0,
             OFHCHNKEFMD: ::std::vec::Vec::new(),
-            delay: 0,
+            PNJEGPAFNCI: 0,
             JNFCFEIAABH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -222,11 +222,12 @@ impl ::protobuf::reflect::ProtobufValue for AFGMNFFBBIG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AFGMNFFBBIG.proto\x1a\x11GANDCEDCLDL.proto\x1a\x11GHCDMMNHNHO.prot\
-    o\"\xc4\x01\n\x0bAFGMNFFBBIG\x12\x20\n\x0bBKPDKFLDLDD\x18\x01\x20\x01(\r\
+    o\"\xd0\x01\n\x0bAFGMNFFBBIG\x12\x20\n\x0bBKPDKFLDLDD\x18\x01\x20\x01(\r\
     R\x0bBKPDKFLDLDD\x12\x1d\n\nmonster_id\x18\x02\x20\x01(\rR\tmonsterId\
     \x12.\n\x0bOFHCHNKEFMD\x18\x03\x20\x03(\x0b2\x0c.GHCDMMNHNHOR\x0bOFHCHNK\
-    EFMD\x12\x14\n\x05delay\x18\x04\x20\x01(\rR\x05delay\x12.\n\x0bJNFCFEIAA\
-    BH\x18\x05\x20\x03(\x0b2\x0c.GANDCEDCLDLR\x0bJNFCFEIAABHb\x06proto3\
+    EFMD\x12\x20\n\x0bPNJEGPAFNCI\x18\x04\x20\x01(\rR\x0bPNJEGPAFNCI\x12.\n\
+    \x0bJNFCFEIAABH\x18\x05\x20\x03(\x0b2\x0c.GANDCEDCLDLR\x0bJNFCFEIAABHb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

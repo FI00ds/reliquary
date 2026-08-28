@@ -86,16 +86,16 @@ impl ::protobuf::Message for OKJCHGLGBHP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                8 => {
                     self.type_ = is.read_uint32()?;
                 },
-                66 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.JLNOCDGJDLI)?;
                 },
-                64 => {
+                16 => {
                     self.JLNOCDGJDLI.push(is.read_uint32()?);
                 },
-                120 => {
+                32 => {
                     self.NADCIHPPPBC = is.read_uint32()?;
                 },
                 tag => {
@@ -111,11 +111,11 @@ impl ::protobuf::Message for OKJCHGLGBHP {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.type_ != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.type_);
+            my_size += ::protobuf::rt::uint32_size(1, self.type_);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.JLNOCDGJDLI);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.JLNOCDGJDLI);
         if self.NADCIHPPPBC != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.NADCIHPPPBC);
+            my_size += ::protobuf::rt::uint32_size(4, self.NADCIHPPPBC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,11 +124,11 @@ impl ::protobuf::Message for OKJCHGLGBHP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.type_ != 0 {
-            os.write_uint32(4, self.type_)?;
+            os.write_uint32(1, self.type_)?;
         }
-        os.write_repeated_packed_uint32(8, &self.JLNOCDGJDLI)?;
+        os.write_repeated_packed_uint32(2, &self.JLNOCDGJDLI)?;
         if self.NADCIHPPPBC != 0 {
-            os.write_uint32(15, self.NADCIHPPPBC)?;
+            os.write_uint32(4, self.NADCIHPPPBC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,9 +182,9 @@ impl ::protobuf::reflect::ProtobufValue for OKJCHGLGBHP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OKJCHGLGBHP.proto\"e\n\x0bOKJCHGLGBHP\x12\x12\n\x04type\x18\x04\
-    \x20\x01(\rR\x04type\x12\x20\n\x0bJLNOCDGJDLI\x18\x08\x20\x03(\rR\x0bJLN\
-    OCDGJDLI\x12\x20\n\x0bNADCIHPPPBC\x18\x0f\x20\x01(\rR\x0bNADCIHPPPBCb\
+    \n\x11OKJCHGLGBHP.proto\"e\n\x0bOKJCHGLGBHP\x12\x12\n\x04type\x18\x01\
+    \x20\x01(\rR\x04type\x12\x20\n\x0bJLNOCDGJDLI\x18\x02\x20\x03(\rR\x0bJLN\
+    OCDGJDLI\x12\x20\n\x0bNADCIHPPPBC\x18\x04\x20\x01(\rR\x0bNADCIHPPPBCb\
     \x06proto3\
 ";
 

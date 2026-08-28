@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DEFFFLGJAEM {
     // message fields
+    // @@protoc_insertion_point(field:DEFFFLGJAEM.OKPLPEELPBC)
+    pub OKPLPEELPBC: bool,
     // @@protoc_insertion_point(field:DEFFFLGJAEM.DOOACEHOPEE)
     pub DOOACEHOPEE: u32,
-    // @@protoc_insertion_point(field:DEFFFLGJAEM.is_meet)
-    pub is_meet: bool,
     // special fields
     // @@protoc_insertion_point(special_field:DEFFFLGJAEM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl DEFFFLGJAEM {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OKPLPEELPBC",
+            |m: &DEFFFLGJAEM| { &m.OKPLPEELPBC },
+            |m: &mut DEFFFLGJAEM| { &mut m.OKPLPEELPBC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DOOACEHOPEE",
             |m: &DEFFFLGJAEM| { &m.DOOACEHOPEE },
             |m: &mut DEFFFLGJAEM| { &mut m.DOOACEHOPEE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_meet",
-            |m: &DEFFFLGJAEM| { &m.is_meet },
-            |m: &mut DEFFFLGJAEM| { &mut m.is_meet },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DEFFFLGJAEM>(
             "DEFFFLGJAEM",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for DEFFFLGJAEM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.DOOACEHOPEE = is.read_uint32()?;
+                8 => {
+                    self.OKPLPEELPBC = is.read_bool()?;
                 },
-                56 => {
-                    self.is_meet = is.read_bool()?;
+                120 => {
+                    self.DOOACEHOPEE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for DEFFFLGJAEM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DOOACEHOPEE != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.DOOACEHOPEE);
-        }
-        if self.is_meet != false {
+        if self.OKPLPEELPBC != false {
             my_size += 1 + 1;
+        }
+        if self.DOOACEHOPEE != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.DOOACEHOPEE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for DEFFFLGJAEM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DOOACEHOPEE != 0 {
-            os.write_uint32(6, self.DOOACEHOPEE)?;
+        if self.OKPLPEELPBC != false {
+            os.write_bool(1, self.OKPLPEELPBC)?;
         }
-        if self.is_meet != false {
-            os.write_bool(7, self.is_meet)?;
+        if self.DOOACEHOPEE != 0 {
+            os.write_uint32(15, self.DOOACEHOPEE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for DEFFFLGJAEM {
     }
 
     fn clear(&mut self) {
+        self.OKPLPEELPBC = false;
         self.DOOACEHOPEE = 0;
-        self.is_meet = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DEFFFLGJAEM {
         static instance: DEFFFLGJAEM = DEFFFLGJAEM {
+            OKPLPEELPBC: false,
             DOOACEHOPEE: 0,
-            is_meet: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for DEFFFLGJAEM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DEFFFLGJAEM.proto\"H\n\x0bDEFFFLGJAEM\x12\x20\n\x0bDOOACEHOPEE\x18\
-    \x06\x20\x01(\rR\x0bDOOACEHOPEE\x12\x17\n\x07is_meet\x18\x07\x20\x01(\
-    \x08R\x06isMeetb\x06proto3\
+    \n\x11DEFFFLGJAEM.proto\"Q\n\x0bDEFFFLGJAEM\x12\x20\n\x0bOKPLPEELPBC\x18\
+    \x01\x20\x01(\x08R\x0bOKPLPEELPBC\x12\x20\n\x0bDOOACEHOPEE\x18\x0f\x20\
+    \x01(\rR\x0bDOOACEHOPEEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,8 +27,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:BlackLimitLevel)
 pub enum BlackLimitLevel {
-    // @@protoc_insertion_point(enum_value:BlackLimitLevel.BLACK_LIMIT_LEVEL_ALL)
-    BLACK_LIMIT_LEVEL_ALL = 0,
+    // @@protoc_insertion_point(enum_value:BlackLimitLevel.BlackLimitLevel_ACAOCKPIGPL)
+    BlackLimitLevel_ACAOCKPIGPL = 0,
 }
 
 impl ::protobuf::Enum for BlackLimitLevel {
@@ -40,20 +40,20 @@ impl ::protobuf::Enum for BlackLimitLevel {
 
     fn from_i32(value: i32) -> ::std::option::Option<BlackLimitLevel> {
         match value {
-            0 => ::std::option::Option::Some(BlackLimitLevel::BLACK_LIMIT_LEVEL_ALL),
+            0 => ::std::option::Option::Some(BlackLimitLevel::BlackLimitLevel_ACAOCKPIGPL),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<BlackLimitLevel> {
         match str {
-            "BLACK_LIMIT_LEVEL_ALL" => ::std::option::Option::Some(BlackLimitLevel::BLACK_LIMIT_LEVEL_ALL),
+            "BlackLimitLevel_ACAOCKPIGPL" => ::std::option::Option::Some(BlackLimitLevel::BlackLimitLevel_ACAOCKPIGPL),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [BlackLimitLevel] = &[
-        BlackLimitLevel::BLACK_LIMIT_LEVEL_ALL,
+        BlackLimitLevel::BlackLimitLevel_ACAOCKPIGPL,
     ];
 }
 
@@ -71,7 +71,7 @@ impl ::protobuf::EnumFull for BlackLimitLevel {
 
 impl ::std::default::Default for BlackLimitLevel {
     fn default() -> Self {
-        BlackLimitLevel::BLACK_LIMIT_LEVEL_ALL
+        BlackLimitLevel::BlackLimitLevel_ACAOCKPIGPL
     }
 }
 
@@ -82,8 +82,8 @@ impl BlackLimitLevel {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15BlackLimitLevel.proto*,\n\x0fBlackLimitLevel\x12\x19\n\x15BLACK_LI\
-    MIT_LEVEL_ALL\x10\0b\x06proto3\
+    \n\x15BlackLimitLevel.proto*2\n\x0fBlackLimitLevel\x12\x1f\n\x1bBlackLim\
+    itLevel_ACAOCKPIGPL\x10\0b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

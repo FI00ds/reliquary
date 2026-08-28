@@ -86,10 +86,10 @@ impl ::protobuf::Message for BKGPJOBNMKJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                32 => {
                     self.num = is.read_uint32()?;
                 },
-                64 => {
+                56 => {
                     self.tid = is.read_uint32()?;
                 },
                 112 => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for BKGPJOBNMKJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.num);
+            my_size += ::protobuf::rt::uint32_size(4, self.num);
         }
         if self.tid != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.tid);
+            my_size += ::protobuf::rt::uint32_size(7, self.tid);
         }
         if self.expire_time != 0 {
             my_size += ::protobuf::rt::uint64_size(14, self.expire_time);
@@ -123,10 +123,10 @@ impl ::protobuf::Message for BKGPJOBNMKJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.num != 0 {
-            os.write_uint32(5, self.num)?;
+            os.write_uint32(4, self.num)?;
         }
         if self.tid != 0 {
-            os.write_uint32(8, self.tid)?;
+            os.write_uint32(7, self.tid)?;
         }
         if self.expire_time != 0 {
             os.write_uint64(14, self.expire_time)?;
@@ -183,8 +183,8 @@ impl ::protobuf::reflect::ProtobufValue for BKGPJOBNMKJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BKGPJOBNMKJ.proto\"R\n\x0bBKGPJOBNMKJ\x12\x10\n\x03num\x18\x05\x20\
-    \x01(\rR\x03num\x12\x10\n\x03tid\x18\x08\x20\x01(\rR\x03tid\x12\x1f\n\
+    \n\x11BKGPJOBNMKJ.proto\"R\n\x0bBKGPJOBNMKJ\x12\x10\n\x03num\x18\x04\x20\
+    \x01(\rR\x03num\x12\x10\n\x03tid\x18\x07\x20\x01(\rR\x03tid\x12\x1f\n\
     \x0bexpire_time\x18\x0e\x20\x01(\x04R\nexpireTimeb\x06proto3\
 ";
 

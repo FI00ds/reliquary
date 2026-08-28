@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:FightMarbleHpChangeType)
 pub enum FightMarbleHpChangeType {
-    // @@protoc_insertion_point(enum_value:FightMarbleHpChangeType.LMGECGDAPEN_NLPOGHCIEGN)
-    LMGECGDAPEN_NLPOGHCIEGN = 0,
-    // @@protoc_insertion_point(enum_value:FightMarbleHpChangeType.LMGECGDAPEN_BNOHJNMEOBI)
-    LMGECGDAPEN_BNOHJNMEOBI = 1,
-    // @@protoc_insertion_point(enum_value:FightMarbleHpChangeType.LMGECGDAPEN_ALGLGIGKDOO)
-    LMGECGDAPEN_ALGLGIGKDOO = 2,
+    // @@protoc_insertion_point(enum_value:FightMarbleHpChangeType.FightMarbleHpChangeType_MarbleHpChangeTypeNone)
+    FightMarbleHpChangeType_MarbleHpChangeTypeNone = 0,
+    // @@protoc_insertion_point(enum_value:FightMarbleHpChangeType.FightMarbleHpChangeType_MarbleHpChangeTypeCritical)
+    FightMarbleHpChangeType_MarbleHpChangeTypeCritical = 1,
+    // @@protoc_insertion_point(enum_value:FightMarbleHpChangeType.FightMarbleHpChangeType_MarbleHpChangeTypeSpine)
+    FightMarbleHpChangeType_MarbleHpChangeTypeSpine = 2,
 }
 
 impl ::protobuf::Enum for FightMarbleHpChangeType {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for FightMarbleHpChangeType {
 
     fn from_i32(value: i32) -> ::std::option::Option<FightMarbleHpChangeType> {
         match value {
-            0 => ::std::option::Option::Some(FightMarbleHpChangeType::LMGECGDAPEN_NLPOGHCIEGN),
-            1 => ::std::option::Option::Some(FightMarbleHpChangeType::LMGECGDAPEN_BNOHJNMEOBI),
-            2 => ::std::option::Option::Some(FightMarbleHpChangeType::LMGECGDAPEN_ALGLGIGKDOO),
+            0 => ::std::option::Option::Some(FightMarbleHpChangeType::FightMarbleHpChangeType_MarbleHpChangeTypeNone),
+            1 => ::std::option::Option::Some(FightMarbleHpChangeType::FightMarbleHpChangeType_MarbleHpChangeTypeCritical),
+            2 => ::std::option::Option::Some(FightMarbleHpChangeType::FightMarbleHpChangeType_MarbleHpChangeTypeSpine),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<FightMarbleHpChangeType> {
         match str {
-            "LMGECGDAPEN_NLPOGHCIEGN" => ::std::option::Option::Some(FightMarbleHpChangeType::LMGECGDAPEN_NLPOGHCIEGN),
-            "LMGECGDAPEN_BNOHJNMEOBI" => ::std::option::Option::Some(FightMarbleHpChangeType::LMGECGDAPEN_BNOHJNMEOBI),
-            "LMGECGDAPEN_ALGLGIGKDOO" => ::std::option::Option::Some(FightMarbleHpChangeType::LMGECGDAPEN_ALGLGIGKDOO),
+            "FightMarbleHpChangeType_MarbleHpChangeTypeNone" => ::std::option::Option::Some(FightMarbleHpChangeType::FightMarbleHpChangeType_MarbleHpChangeTypeNone),
+            "FightMarbleHpChangeType_MarbleHpChangeTypeCritical" => ::std::option::Option::Some(FightMarbleHpChangeType::FightMarbleHpChangeType_MarbleHpChangeTypeCritical),
+            "FightMarbleHpChangeType_MarbleHpChangeTypeSpine" => ::std::option::Option::Some(FightMarbleHpChangeType::FightMarbleHpChangeType_MarbleHpChangeTypeSpine),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [FightMarbleHpChangeType] = &[
-        FightMarbleHpChangeType::LMGECGDAPEN_NLPOGHCIEGN,
-        FightMarbleHpChangeType::LMGECGDAPEN_BNOHJNMEOBI,
-        FightMarbleHpChangeType::LMGECGDAPEN_ALGLGIGKDOO,
+        FightMarbleHpChangeType::FightMarbleHpChangeType_MarbleHpChangeTypeNone,
+        FightMarbleHpChangeType::FightMarbleHpChangeType_MarbleHpChangeTypeCritical,
+        FightMarbleHpChangeType::FightMarbleHpChangeType_MarbleHpChangeTypeSpine,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for FightMarbleHpChangeType {
 
 impl ::std::default::Default for FightMarbleHpChangeType {
     fn default() -> Self {
-        FightMarbleHpChangeType::LMGECGDAPEN_NLPOGHCIEGN
+        FightMarbleHpChangeType::FightMarbleHpChangeType_MarbleHpChangeTypeNone
     }
 }
 
@@ -92,9 +92,10 @@ impl FightMarbleHpChangeType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dFightMarbleHpChangeType.proto*p\n\x17FightMarbleHpChangeType\x12\
-    \x1b\n\x17LMGECGDAPEN_NLPOGHCIEGN\x10\0\x12\x1b\n\x17LMGECGDAPEN_BNOHJNM\
-    EOBI\x10\x01\x12\x1b\n\x17LMGECGDAPEN_ALGLGIGKDOO\x10\x02b\x06proto3\
+    \n\x1dFightMarbleHpChangeType.proto*\xba\x01\n\x17FightMarbleHpChangeTyp\
+    e\x122\n.FightMarbleHpChangeType_MarbleHpChangeTypeNone\x10\0\x126\n2Fig\
+    htMarbleHpChangeType_MarbleHpChangeTypeCritical\x10\x01\x123\n/FightMarb\
+    leHpChangeType_MarbleHpChangeTypeSpine\x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

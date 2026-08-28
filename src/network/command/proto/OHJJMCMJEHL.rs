@@ -30,12 +30,12 @@ pub struct OHJJMCMJEHL {
     // message fields
     // @@protoc_insertion_point(field:OHJJMCMJEHL.BLAHNLDHINC)
     pub BLAHNLDHINC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:OHJJMCMJEHL.ODBKCIBGLLP)
+    pub ODBKCIBGLLP: bool,
     // @@protoc_insertion_point(field:OHJJMCMJEHL.DAEMEBCKHIK)
     pub DAEMEBCKHIK: u32,
     // @@protoc_insertion_point(field:OHJJMCMJEHL.NAENAEGAEAF)
     pub NAENAEGAEAF: u32,
-    // @@protoc_insertion_point(field:OHJJMCMJEHL.ODBKCIBGLLP)
-    pub ODBKCIBGLLP: bool,
     // @@protoc_insertion_point(field:OHJJMCMJEHL.MLJHCOGNJEL)
     pub MLJHCOGNJEL: u32,
     // special fields
@@ -63,6 +63,11 @@ impl OHJJMCMJEHL {
             |m: &mut OHJJMCMJEHL| { &mut m.BLAHNLDHINC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ODBKCIBGLLP",
+            |m: &OHJJMCMJEHL| { &m.ODBKCIBGLLP },
+            |m: &mut OHJJMCMJEHL| { &mut m.ODBKCIBGLLP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DAEMEBCKHIK",
             |m: &OHJJMCMJEHL| { &m.DAEMEBCKHIK },
             |m: &mut OHJJMCMJEHL| { &mut m.DAEMEBCKHIK },
@@ -71,11 +76,6 @@ impl OHJJMCMJEHL {
             "NAENAEGAEAF",
             |m: &OHJJMCMJEHL| { &m.NAENAEGAEAF },
             |m: &mut OHJJMCMJEHL| { &mut m.NAENAEGAEAF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ODBKCIBGLLP",
-            |m: &OHJJMCMJEHL| { &m.ODBKCIBGLLP },
-            |m: &mut OHJJMCMJEHL| { &mut m.ODBKCIBGLLP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MLJHCOGNJEL",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for OHJJMCMJEHL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.BLAHNLDHINC)?;
                 },
-                40 => {
+                16 => {
                     self.BLAHNLDHINC.push(is.read_uint32()?);
                 },
-                48 => {
+                24 => {
+                    self.ODBKCIBGLLP = is.read_bool()?;
+                },
+                56 => {
                     self.DAEMEBCKHIK = is.read_uint32()?;
                 },
-                72 => {
-                    self.NAENAEGAEAF = is.read_uint32()?;
-                },
                 80 => {
-                    self.ODBKCIBGLLP = is.read_bool()?;
+                    self.NAENAEGAEAF = is.read_uint32()?;
                 },
                 112 => {
                     self.MLJHCOGNJEL = is.read_uint32()?;
@@ -130,15 +130,15 @@ impl ::protobuf::Message for OHJJMCMJEHL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.BLAHNLDHINC);
-        if self.DAEMEBCKHIK != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.DAEMEBCKHIK);
-        }
-        if self.NAENAEGAEAF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.NAENAEGAEAF);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.BLAHNLDHINC);
         if self.ODBKCIBGLLP != false {
             my_size += 1 + 1;
+        }
+        if self.DAEMEBCKHIK != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.DAEMEBCKHIK);
+        }
+        if self.NAENAEGAEAF != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.NAENAEGAEAF);
         }
         if self.MLJHCOGNJEL != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.MLJHCOGNJEL);
@@ -149,15 +149,15 @@ impl ::protobuf::Message for OHJJMCMJEHL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.BLAHNLDHINC)?;
+        os.write_repeated_packed_uint32(2, &self.BLAHNLDHINC)?;
+        if self.ODBKCIBGLLP != false {
+            os.write_bool(3, self.ODBKCIBGLLP)?;
+        }
         if self.DAEMEBCKHIK != 0 {
-            os.write_uint32(6, self.DAEMEBCKHIK)?;
+            os.write_uint32(7, self.DAEMEBCKHIK)?;
         }
         if self.NAENAEGAEAF != 0 {
-            os.write_uint32(9, self.NAENAEGAEAF)?;
-        }
-        if self.ODBKCIBGLLP != false {
-            os.write_bool(10, self.ODBKCIBGLLP)?;
+            os.write_uint32(10, self.NAENAEGAEAF)?;
         }
         if self.MLJHCOGNJEL != 0 {
             os.write_uint32(14, self.MLJHCOGNJEL)?;
@@ -180,9 +180,9 @@ impl ::protobuf::Message for OHJJMCMJEHL {
 
     fn clear(&mut self) {
         self.BLAHNLDHINC.clear();
+        self.ODBKCIBGLLP = false;
         self.DAEMEBCKHIK = 0;
         self.NAENAEGAEAF = 0;
-        self.ODBKCIBGLLP = false;
         self.MLJHCOGNJEL = 0;
         self.special_fields.clear();
     }
@@ -190,9 +190,9 @@ impl ::protobuf::Message for OHJJMCMJEHL {
     fn default_instance() -> &'static OHJJMCMJEHL {
         static instance: OHJJMCMJEHL = OHJJMCMJEHL {
             BLAHNLDHINC: ::std::vec::Vec::new(),
+            ODBKCIBGLLP: false,
             DAEMEBCKHIK: 0,
             NAENAEGAEAF: 0,
-            ODBKCIBGLLP: false,
             MLJHCOGNJEL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for OHJJMCMJEHL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OHJJMCMJEHL.proto\"\xb7\x01\n\x0bOHJJMCMJEHL\x12\x20\n\x0bBLAHNLDH\
-    INC\x18\x05\x20\x03(\rR\x0bBLAHNLDHINC\x12\x20\n\x0bDAEMEBCKHIK\x18\x06\
-    \x20\x01(\rR\x0bDAEMEBCKHIK\x12\x20\n\x0bNAENAEGAEAF\x18\t\x20\x01(\rR\
-    \x0bNAENAEGAEAF\x12\x20\n\x0bODBKCIBGLLP\x18\n\x20\x01(\x08R\x0bODBKCIBG\
-    LLP\x12\x20\n\x0bMLJHCOGNJEL\x18\x0e\x20\x01(\rR\x0bMLJHCOGNJELb\x06prot\
-    o3\
+    INC\x18\x02\x20\x03(\rR\x0bBLAHNLDHINC\x12\x20\n\x0bODBKCIBGLLP\x18\x03\
+    \x20\x01(\x08R\x0bODBKCIBGLLP\x12\x20\n\x0bDAEMEBCKHIK\x18\x07\x20\x01(\
+    \rR\x0bDAEMEBCKHIK\x12\x20\n\x0bNAENAEGAEAF\x18\n\x20\x01(\rR\x0bNAENAEG\
+    AEAF\x12\x20\n\x0bMLJHCOGNJEL\x18\x0e\x20\x01(\rR\x0bMLJHCOGNJELb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

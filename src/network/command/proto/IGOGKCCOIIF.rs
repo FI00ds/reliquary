@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IGOGKCCOIIF {
     // message fields
-    // @@protoc_insertion_point(field:IGOGKCCOIIF.AJIMPLLIFIE)
-    pub AJIMPLLIFIE: u32,
     // @@protoc_insertion_point(field:IGOGKCCOIIF.FKIIFFFJKJH)
     pub FKIIFFFJKJH: u32,
+    // @@protoc_insertion_point(field:IGOGKCCOIIF.AJIMPLLIFIE)
+    pub AJIMPLLIFIE: u32,
     // @@protoc_insertion_point(field:IGOGKCCOIIF.title)
     pub title: ::std::string::String,
     // special fields
@@ -54,14 +54,14 @@ impl IGOGKCCOIIF {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AJIMPLLIFIE",
-            |m: &IGOGKCCOIIF| { &m.AJIMPLLIFIE },
-            |m: &mut IGOGKCCOIIF| { &mut m.AJIMPLLIFIE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FKIIFFFJKJH",
             |m: &IGOGKCCOIIF| { &m.FKIIFFFJKJH },
             |m: &mut IGOGKCCOIIF| { &mut m.FKIIFFFJKJH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AJIMPLLIFIE",
+            |m: &IGOGKCCOIIF| { &m.AJIMPLLIFIE },
+            |m: &mut IGOGKCCOIIF| { &mut m.AJIMPLLIFIE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "title",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for IGOGKCCOIIF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.AJIMPLLIFIE = is.read_uint32()?;
-                },
-                72 => {
+                48 => {
                     self.FKIIFFFJKJH = is.read_uint32()?;
                 },
-                122 => {
+                56 => {
+                    self.AJIMPLLIFIE = is.read_uint32()?;
+                },
+                106 => {
                     self.title = is.read_string()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for IGOGKCCOIIF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AJIMPLLIFIE != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.AJIMPLLIFIE);
-        }
         if self.FKIIFFFJKJH != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.FKIIFFFJKJH);
+            my_size += ::protobuf::rt::uint32_size(6, self.FKIIFFFJKJH);
+        }
+        if self.AJIMPLLIFIE != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.AJIMPLLIFIE);
         }
         if !self.title.is_empty() {
-            my_size += ::protobuf::rt::string_size(15, &self.title);
+            my_size += ::protobuf::rt::string_size(13, &self.title);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for IGOGKCCOIIF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AJIMPLLIFIE != 0 {
-            os.write_uint32(2, self.AJIMPLLIFIE)?;
-        }
         if self.FKIIFFFJKJH != 0 {
-            os.write_uint32(9, self.FKIIFFFJKJH)?;
+            os.write_uint32(6, self.FKIIFFFJKJH)?;
+        }
+        if self.AJIMPLLIFIE != 0 {
+            os.write_uint32(7, self.AJIMPLLIFIE)?;
         }
         if !self.title.is_empty() {
-            os.write_string(15, &self.title)?;
+            os.write_string(13, &self.title)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for IGOGKCCOIIF {
     }
 
     fn clear(&mut self) {
-        self.AJIMPLLIFIE = 0;
         self.FKIIFFFJKJH = 0;
+        self.AJIMPLLIFIE = 0;
         self.title.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IGOGKCCOIIF {
         static instance: IGOGKCCOIIF = IGOGKCCOIIF {
-            AJIMPLLIFIE: 0,
             FKIIFFFJKJH: 0,
+            AJIMPLLIFIE: 0,
             title: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for IGOGKCCOIIF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IGOGKCCOIIF.proto\"g\n\x0bIGOGKCCOIIF\x12\x20\n\x0bAJIMPLLIFIE\x18\
-    \x02\x20\x01(\rR\x0bAJIMPLLIFIE\x12\x20\n\x0bFKIIFFFJKJH\x18\t\x20\x01(\
-    \rR\x0bFKIIFFFJKJH\x12\x14\n\x05title\x18\x0f\x20\x01(\tR\x05titleb\x06p\
-    roto3\
+    \n\x11IGOGKCCOIIF.proto\"g\n\x0bIGOGKCCOIIF\x12\x20\n\x0bFKIIFFFJKJH\x18\
+    \x06\x20\x01(\rR\x0bFKIIFFFJKJH\x12\x20\n\x0bAJIMPLLIFIE\x18\x07\x20\x01\
+    (\rR\x0bAJIMPLLIFIE\x12\x14\n\x05title\x18\r\x20\x01(\tR\x05titleb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

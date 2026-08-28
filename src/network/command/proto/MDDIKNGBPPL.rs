@@ -97,7 +97,7 @@ impl MDDIKNGBPPL {
         }
     }
 
-    // .PEGDBKDLJDJ FDNLIPKGBLM = 3;
+    // .PEGDBKDLJDJ FDNLIPKGBLM = 8;
 
     pub fn FDNLIPKGBLM(&self) -> &super::PEGDBKDLJDJ::PEGDBKDLJDJ {
         match self.EEFKMMOBNOJ {
@@ -146,7 +146,7 @@ impl MDDIKNGBPPL {
         }
     }
 
-    // .NIKCDPGKKLF ABIPNABIDPE = 2;
+    // .NIKCDPGKKLF ABIPNABIDPE = 5;
 
     pub fn ABIPNABIDPE(&self) -> &super::NIKCDPGKKLF::NIKCDPGKKLF {
         match self.EEFKMMOBNOJ {
@@ -195,7 +195,7 @@ impl MDDIKNGBPPL {
         }
     }
 
-    // .KOCBHDOKFNF BPMEBJHDOFC = 13;
+    // .KOCBHDOKFNF BPMEBJHDOFC = 9;
 
     pub fn BPMEBJHDOFC(&self) -> &super::KOCBHDOKFNF::KOCBHDOKFNF {
         match self.EEFKMMOBNOJ {
@@ -244,7 +244,7 @@ impl MDDIKNGBPPL {
         }
     }
 
-    // .IEFICANECDH HGHBDACDJKP = 8;
+    // .IEFICANECDH HGHBDACDJKP = 3;
 
     pub fn HGHBDACDJKP(&self) -> &super::IEFICANECDH::IEFICANECDH {
         match self.EEFKMMOBNOJ {
@@ -293,7 +293,7 @@ impl MDDIKNGBPPL {
         }
     }
 
-    // .FFDLJDAGEML DLNGPBMGMKM = 9;
+    // .FFDLJDAGEML DLNGPBMGMKM = 13;
 
     pub fn DLNGPBMGMKM(&self) -> &super::FFDLJDAGEML::FFDLJDAGEML {
         match self.EEFKMMOBNOJ {
@@ -342,7 +342,7 @@ impl MDDIKNGBPPL {
         }
     }
 
-    // .FOFGKMONJHJ BELJJJLLCBK = 12;
+    // .FOFGKMONJHJ BELJJJLLCBK = 1;
 
     pub fn BELJJJLLCBK(&self) -> &super::FOFGKMONJHJ::FOFGKMONJHJ {
         match self.EEFKMMOBNOJ {
@@ -391,7 +391,7 @@ impl MDDIKNGBPPL {
         }
     }
 
-    // bool ALFNNIIMBLM = 1;
+    // bool ALFNNIIMBLM = 6;
 
     pub fn ALFNNIIMBLM(&self) -> bool {
         match self.EEFKMMOBNOJ {
@@ -498,31 +498,31 @@ impl ::protobuf::Message for MDDIKNGBPPL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                56 => {
                     self.JGPHDBDHKKO = is.read_uint32()?;
                 },
                 114 => {
                     self.EEFKMMOBNOJ = ::std::option::Option::Some(mddikngbppl::EEFKMMOBNOJ::ICPMABKBLCD(is.read_message()?));
                 },
-                26 => {
+                66 => {
                     self.EEFKMMOBNOJ = ::std::option::Option::Some(mddikngbppl::EEFKMMOBNOJ::FDNLIPKGBLM(is.read_message()?));
                 },
-                18 => {
+                42 => {
                     self.EEFKMMOBNOJ = ::std::option::Option::Some(mddikngbppl::EEFKMMOBNOJ::ABIPNABIDPE(is.read_message()?));
                 },
-                106 => {
+                74 => {
                     self.EEFKMMOBNOJ = ::std::option::Option::Some(mddikngbppl::EEFKMMOBNOJ::BPMEBJHDOFC(is.read_message()?));
                 },
-                66 => {
+                26 => {
                     self.EEFKMMOBNOJ = ::std::option::Option::Some(mddikngbppl::EEFKMMOBNOJ::HGHBDACDJKP(is.read_message()?));
                 },
-                74 => {
+                106 => {
                     self.EEFKMMOBNOJ = ::std::option::Option::Some(mddikngbppl::EEFKMMOBNOJ::DLNGPBMGMKM(is.read_message()?));
                 },
-                98 => {
+                10 => {
                     self.EEFKMMOBNOJ = ::std::option::Option::Some(mddikngbppl::EEFKMMOBNOJ::BELJJJLLCBK(is.read_message()?));
                 },
-                8 => {
+                48 => {
                     self.EEFKMMOBNOJ = ::std::option::Option::Some(mddikngbppl::EEFKMMOBNOJ::ALFNNIIMBLM(is.read_bool()?));
                 },
                 tag => {
@@ -538,7 +538,7 @@ impl ::protobuf::Message for MDDIKNGBPPL {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.JGPHDBDHKKO != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.JGPHDBDHKKO);
+            my_size += ::protobuf::rt::uint32_size(7, self.JGPHDBDHKKO);
         }
         if let ::std::option::Option::Some(ref v) = self.EEFKMMOBNOJ {
             match v {
@@ -582,7 +582,7 @@ impl ::protobuf::Message for MDDIKNGBPPL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JGPHDBDHKKO != 0 {
-            os.write_uint32(5, self.JGPHDBDHKKO)?;
+            os.write_uint32(7, self.JGPHDBDHKKO)?;
         }
         if let ::std::option::Option::Some(ref v) = self.EEFKMMOBNOJ {
             match v {
@@ -590,25 +590,25 @@ impl ::protobuf::Message for MDDIKNGBPPL {
                     ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
                 &mddikngbppl::EEFKMMOBNOJ::FDNLIPKGBLM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-                },
-                &mddikngbppl::EEFKMMOBNOJ::ABIPNABIDPE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-                },
-                &mddikngbppl::EEFKMMOBNOJ::BPMEBJHDOFC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-                },
-                &mddikngbppl::EEFKMMOBNOJ::HGHBDACDJKP(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
-                &mddikngbppl::EEFKMMOBNOJ::DLNGPBMGMKM(ref v) => {
+                &mddikngbppl::EEFKMMOBNOJ::ABIPNABIDPE(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                },
+                &mddikngbppl::EEFKMMOBNOJ::BPMEBJHDOFC(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
+                &mddikngbppl::EEFKMMOBNOJ::HGHBDACDJKP(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                },
+                &mddikngbppl::EEFKMMOBNOJ::DLNGPBMGMKM(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                },
                 &mddikngbppl::EEFKMMOBNOJ::BELJJJLLCBK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
                 &mddikngbppl::EEFKMMOBNOJ::ALFNNIIMBLM(v) => {
-                    os.write_bool(1, v)?;
+                    os.write_bool(6, v)?;
                 },
             };
         }
@@ -714,16 +714,16 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MDDIKNGBPPL.proto\x1a\x11CNOAGGFCDAL.proto\x1a\x11FFDLJDAGEML.prot\
     o\x1a\x11FOFGKMONJHJ.proto\x1a\x11IEFICANECDH.proto\x1a\x11KOCBHDOKFNF.p\
     roto\x1a\x11NIKCDPGKKLF.proto\x1a\x11PEGDBKDLJDJ.proto\"\xc0\x03\n\x0bMD\
-    DIKNGBPPL\x12\x20\n\x0bJGPHDBDHKKO\x18\x05\x20\x01(\rR\x0bJGPHDBDHKKO\
+    DIKNGBPPL\x12\x20\n\x0bJGPHDBDHKKO\x18\x07\x20\x01(\rR\x0bJGPHDBDHKKO\
     \x120\n\x0bICPMABKBLCD\x18\x0e\x20\x01(\x0b2\x0c.CNOAGGFCDALH\0R\x0bICPM\
-    ABKBLCD\x120\n\x0bFDNLIPKGBLM\x18\x03\x20\x01(\x0b2\x0c.PEGDBKDLJDJH\0R\
-    \x0bFDNLIPKGBLM\x120\n\x0bABIPNABIDPE\x18\x02\x20\x01(\x0b2\x0c.NIKCDPGK\
-    KLFH\0R\x0bABIPNABIDPE\x120\n\x0bBPMEBJHDOFC\x18\r\x20\x01(\x0b2\x0c.KOC\
-    BHDOKFNFH\0R\x0bBPMEBJHDOFC\x120\n\x0bHGHBDACDJKP\x18\x08\x20\x01(\x0b2\
-    \x0c.IEFICANECDHH\0R\x0bHGHBDACDJKP\x120\n\x0bDLNGPBMGMKM\x18\t\x20\x01(\
-    \x0b2\x0c.FFDLJDAGEMLH\0R\x0bDLNGPBMGMKM\x120\n\x0bBELJJJLLCBK\x18\x0c\
+    ABKBLCD\x120\n\x0bFDNLIPKGBLM\x18\x08\x20\x01(\x0b2\x0c.PEGDBKDLJDJH\0R\
+    \x0bFDNLIPKGBLM\x120\n\x0bABIPNABIDPE\x18\x05\x20\x01(\x0b2\x0c.NIKCDPGK\
+    KLFH\0R\x0bABIPNABIDPE\x120\n\x0bBPMEBJHDOFC\x18\t\x20\x01(\x0b2\x0c.KOC\
+    BHDOKFNFH\0R\x0bBPMEBJHDOFC\x120\n\x0bHGHBDACDJKP\x18\x03\x20\x01(\x0b2\
+    \x0c.IEFICANECDHH\0R\x0bHGHBDACDJKP\x120\n\x0bDLNGPBMGMKM\x18\r\x20\x01(\
+    \x0b2\x0c.FFDLJDAGEMLH\0R\x0bDLNGPBMGMKM\x120\n\x0bBELJJJLLCBK\x18\x01\
     \x20\x01(\x0b2\x0c.FOFGKMONJHJH\0R\x0bBELJJJLLCBK\x12\"\n\x0bALFNNIIMBLM\
-    \x18\x01\x20\x01(\x08H\0R\x0bALFNNIIMBLMB\r\n\x0bEEFKMMOBNOJb\x06proto3\
+    \x18\x06\x20\x01(\x08H\0R\x0bALFNNIIMBLMB\r\n\x0bEEFKMMOBNOJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

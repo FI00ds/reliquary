@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EFDAIBDBFEA {
     // message fields
-    // @@protoc_insertion_point(field:EFDAIBDBFEA.DGGCFDKJDPO)
-    pub DGGCFDKJDPO: u32,
     // @@protoc_insertion_point(field:EFDAIBDBFEA.LJCEOGPOGBE)
     pub LJCEOGPOGBE: u32,
     // @@protoc_insertion_point(field:EFDAIBDBFEA.NPHAJEKCBKF)
     pub NPHAJEKCBKF: u32,
-    // @@protoc_insertion_point(field:EFDAIBDBFEA.total_count)
-    pub total_count: u32,
+    // @@protoc_insertion_point(field:EFDAIBDBFEA.AADNIFFHHDD)
+    pub AADNIFFHHDD: u32,
+    // @@protoc_insertion_point(field:EFDAIBDBFEA.DGGCFDKJDPO)
+    pub DGGCFDKJDPO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EFDAIBDBFEA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,11 +56,6 @@ impl EFDAIBDBFEA {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DGGCFDKJDPO",
-            |m: &EFDAIBDBFEA| { &m.DGGCFDKJDPO },
-            |m: &mut EFDAIBDBFEA| { &mut m.DGGCFDKJDPO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LJCEOGPOGBE",
             |m: &EFDAIBDBFEA| { &m.LJCEOGPOGBE },
             |m: &mut EFDAIBDBFEA| { &mut m.LJCEOGPOGBE },
@@ -71,9 +66,14 @@ impl EFDAIBDBFEA {
             |m: &mut EFDAIBDBFEA| { &mut m.NPHAJEKCBKF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "total_count",
-            |m: &EFDAIBDBFEA| { &m.total_count },
-            |m: &mut EFDAIBDBFEA| { &mut m.total_count },
+            "AADNIFFHHDD",
+            |m: &EFDAIBDBFEA| { &m.AADNIFFHHDD },
+            |m: &mut EFDAIBDBFEA| { &mut m.AADNIFFHHDD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DGGCFDKJDPO",
+            |m: &EFDAIBDBFEA| { &m.DGGCFDKJDPO },
+            |m: &mut EFDAIBDBFEA| { &mut m.DGGCFDKJDPO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EFDAIBDBFEA>(
             "EFDAIBDBFEA",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for EFDAIBDBFEA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.DGGCFDKJDPO = is.read_uint32()?;
-                },
-                32 => {
+                8 => {
                     self.LJCEOGPOGBE = is.read_uint32()?;
                 },
                 80 => {
                     self.NPHAJEKCBKF = is.read_uint32()?;
                 },
-                88 => {
-                    self.total_count = is.read_uint32()?;
+                96 => {
+                    self.AADNIFFHHDD = is.read_uint32()?;
+                },
+                120 => {
+                    self.DGGCFDKJDPO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for EFDAIBDBFEA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DGGCFDKJDPO != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.DGGCFDKJDPO);
-        }
         if self.LJCEOGPOGBE != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.LJCEOGPOGBE);
+            my_size += ::protobuf::rt::uint32_size(1, self.LJCEOGPOGBE);
         }
         if self.NPHAJEKCBKF != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.NPHAJEKCBKF);
         }
-        if self.total_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.total_count);
+        if self.AADNIFFHHDD != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.AADNIFFHHDD);
+        }
+        if self.DGGCFDKJDPO != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.DGGCFDKJDPO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for EFDAIBDBFEA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DGGCFDKJDPO != 0 {
-            os.write_uint32(2, self.DGGCFDKJDPO)?;
-        }
         if self.LJCEOGPOGBE != 0 {
-            os.write_uint32(4, self.LJCEOGPOGBE)?;
+            os.write_uint32(1, self.LJCEOGPOGBE)?;
         }
         if self.NPHAJEKCBKF != 0 {
             os.write_uint32(10, self.NPHAJEKCBKF)?;
         }
-        if self.total_count != 0 {
-            os.write_uint32(11, self.total_count)?;
+        if self.AADNIFFHHDD != 0 {
+            os.write_uint32(12, self.AADNIFFHHDD)?;
+        }
+        if self.DGGCFDKJDPO != 0 {
+            os.write_uint32(15, self.DGGCFDKJDPO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for EFDAIBDBFEA {
     }
 
     fn clear(&mut self) {
-        self.DGGCFDKJDPO = 0;
         self.LJCEOGPOGBE = 0;
         self.NPHAJEKCBKF = 0;
-        self.total_count = 0;
+        self.AADNIFFHHDD = 0;
+        self.DGGCFDKJDPO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EFDAIBDBFEA {
         static instance: EFDAIBDBFEA = EFDAIBDBFEA {
-            DGGCFDKJDPO: 0,
             LJCEOGPOGBE: 0,
             NPHAJEKCBKF: 0,
-            total_count: 0,
+            AADNIFFHHDD: 0,
+            DGGCFDKJDPO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for EFDAIBDBFEA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EFDAIBDBFEA.proto\"\x94\x01\n\x0bEFDAIBDBFEA\x12\x20\n\x0bDGGCFDKJ\
-    DPO\x18\x02\x20\x01(\rR\x0bDGGCFDKJDPO\x12\x20\n\x0bLJCEOGPOGBE\x18\x04\
-    \x20\x01(\rR\x0bLJCEOGPOGBE\x12\x20\n\x0bNPHAJEKCBKF\x18\n\x20\x01(\rR\
-    \x0bNPHAJEKCBKF\x12\x1f\n\x0btotal_count\x18\x0b\x20\x01(\rR\ntotalCount\
-    b\x06proto3\
+    \n\x11EFDAIBDBFEA.proto\"\x95\x01\n\x0bEFDAIBDBFEA\x12\x20\n\x0bLJCEOGPO\
+    GBE\x18\x01\x20\x01(\rR\x0bLJCEOGPOGBE\x12\x20\n\x0bNPHAJEKCBKF\x18\n\
+    \x20\x01(\rR\x0bNPHAJEKCBKF\x12\x20\n\x0bAADNIFFHHDD\x18\x0c\x20\x01(\rR\
+    \x0bAADNIFFHHDD\x12\x20\n\x0bDGGCFDKJDPO\x18\x0f\x20\x01(\rR\x0bDGGCFDKJ\
+    DPOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

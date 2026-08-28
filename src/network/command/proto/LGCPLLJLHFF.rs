@@ -79,10 +79,10 @@ impl ::protobuf::Message for LGCPLLJLHFF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                88 => {
                     self.item_value = is.read_uint32()?;
                 },
-                66 => {
+                122 => {
                     self.buff_list.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for LGCPLLJLHFF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.item_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.item_value);
+            my_size += ::protobuf::rt::uint32_size(11, self.item_value);
         }
         for value in &self.buff_list {
             let len = value.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for LGCPLLJLHFF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.item_value != 0 {
-            os.write_uint32(6, self.item_value)?;
+            os.write_uint32(11, self.item_value)?;
         }
         for v in &self.buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for LGCPLLJLHFF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LGCPLLJLHFF.proto\x1a\x11KJAMNOGFAMJ.proto\"W\n\x0bLGCPLLJLHFF\x12\
-    \x1d\n\nitem_value\x18\x06\x20\x01(\rR\titemValue\x12)\n\tbuff_list\x18\
-    \x08\x20\x03(\x0b2\x0c.KJAMNOGFAMJR\x08buffListb\x06proto3\
+    \x1d\n\nitem_value\x18\x0b\x20\x01(\rR\titemValue\x12)\n\tbuff_list\x18\
+    \x0f\x20\x03(\x0b2\x0c.KJAMNOGFAMJR\x08buffListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

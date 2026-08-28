@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DAAKGEDPPJJ {
     // message fields
-    // @@protoc_insertion_point(field:DAAKGEDPPJJ.is_valid)
-    pub is_valid: bool,
+    // @@protoc_insertion_point(field:DAAKGEDPPJJ.KKKIONIDKFA)
+    pub KKKIONIDKFA: bool,
     // @@protoc_insertion_point(field:DAAKGEDPPJJ.func_id)
     pub func_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl DAAKGEDPPJJ {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_valid",
-            |m: &DAAKGEDPPJJ| { &m.is_valid },
-            |m: &mut DAAKGEDPPJJ| { &mut m.is_valid },
+            "KKKIONIDKFA",
+            |m: &DAAKGEDPPJJ| { &m.KKKIONIDKFA },
+            |m: &mut DAAKGEDPPJJ| { &mut m.KKKIONIDKFA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "func_id",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for DAAKGEDPPJJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.is_valid = is.read_bool()?;
+                16 => {
+                    self.KKKIONIDKFA = is.read_bool()?;
                 },
-                112 => {
+                72 => {
                     self.func_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for DAAKGEDPPJJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_valid != false {
+        if self.KKKIONIDKFA != false {
             my_size += 1 + 1;
         }
         if self.func_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.func_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.func_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for DAAKGEDPPJJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_valid != false {
-            os.write_bool(1, self.is_valid)?;
+        if self.KKKIONIDKFA != false {
+            os.write_bool(2, self.KKKIONIDKFA)?;
         }
         if self.func_id != 0 {
-            os.write_uint32(14, self.func_id)?;
+            os.write_uint32(9, self.func_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for DAAKGEDPPJJ {
     }
 
     fn clear(&mut self) {
-        self.is_valid = false;
+        self.KKKIONIDKFA = false;
         self.func_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DAAKGEDPPJJ {
         static instance: DAAKGEDPPJJ = DAAKGEDPPJJ {
-            is_valid: false,
+            KKKIONIDKFA: false,
             func_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for DAAKGEDPPJJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DAAKGEDPPJJ.proto\"A\n\x0bDAAKGEDPPJJ\x12\x19\n\x08is_valid\x18\
-    \x01\x20\x01(\x08R\x07isValid\x12\x17\n\x07func_id\x18\x0e\x20\x01(\rR\
+    \n\x11DAAKGEDPPJJ.proto\"H\n\x0bDAAKGEDPPJJ\x12\x20\n\x0bKKKIONIDKFA\x18\
+    \x02\x20\x01(\x08R\x0bKKKIONIDKFA\x12\x17\n\x07func_id\x18\t\x20\x01(\rR\
     \x06funcIdb\x06proto3\
 ";
 

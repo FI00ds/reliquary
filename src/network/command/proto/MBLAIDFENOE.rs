@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MBLAIDFENOE {
     // message fields
-    // @@protoc_insertion_point(field:MBLAIDFENOE.NCHBLJHJNID)
-    pub NCHBLJHJNID: u32,
-    // @@protoc_insertion_point(field:MBLAIDFENOE.source_type)
-    pub source_type: ::protobuf::EnumOrUnknown<super::GJCOFAFLAEI::GJCOFAFLAEI>,
+    // @@protoc_insertion_point(field:MBLAIDFENOE.NFMKOFNEKLA)
+    pub NFMKOFNEKLA: ::protobuf::EnumOrUnknown<super::GJCOFAFLAEI::GJCOFAFLAEI>,
     // @@protoc_insertion_point(field:MBLAIDFENOE.exp)
     pub exp: u32,
+    // @@protoc_insertion_point(field:MBLAIDFENOE.NCHBLJHJNID)
+    pub NCHBLJHJNID: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MBLAIDFENOE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl MBLAIDFENOE {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NCHBLJHJNID",
-            |m: &MBLAIDFENOE| { &m.NCHBLJHJNID },
-            |m: &mut MBLAIDFENOE| { &mut m.NCHBLJHJNID },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "source_type",
-            |m: &MBLAIDFENOE| { &m.source_type },
-            |m: &mut MBLAIDFENOE| { &mut m.source_type },
+            "NFMKOFNEKLA",
+            |m: &MBLAIDFENOE| { &m.NFMKOFNEKLA },
+            |m: &mut MBLAIDFENOE| { &mut m.NFMKOFNEKLA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "exp",
             |m: &MBLAIDFENOE| { &m.exp },
             |m: &mut MBLAIDFENOE| { &mut m.exp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NCHBLJHJNID",
+            |m: &MBLAIDFENOE| { &m.NCHBLJHJNID },
+            |m: &mut MBLAIDFENOE| { &mut m.NCHBLJHJNID },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MBLAIDFENOE>(
             "MBLAIDFENOE",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MBLAIDFENOE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.NCHBLJHJNID = is.read_uint32()?;
+                40 => {
+                    self.NFMKOFNEKLA = is.read_enum_or_unknown()?;
                 },
-                80 => {
-                    self.source_type = is.read_enum_or_unknown()?;
+                88 => {
+                    self.exp = is.read_uint32()?;
                 },
                 120 => {
-                    self.exp = is.read_uint32()?;
+                    self.NCHBLJHJNID = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for MBLAIDFENOE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NCHBLJHJNID != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.NCHBLJHJNID);
-        }
-        if self.source_type != ::protobuf::EnumOrUnknown::new(super::GJCOFAFLAEI::GJCOFAFLAEI::GJCOFAFLAEI_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(10, self.source_type.value());
+        if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::GJCOFAFLAEI::GJCOFAFLAEI::GJCOFAFLAEI_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(5, self.NFMKOFNEKLA.value());
         }
         if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.exp);
+            my_size += ::protobuf::rt::uint32_size(11, self.exp);
+        }
+        if self.NCHBLJHJNID != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.NCHBLJHJNID);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for MBLAIDFENOE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NCHBLJHJNID != 0 {
-            os.write_uint32(7, self.NCHBLJHJNID)?;
-        }
-        if self.source_type != ::protobuf::EnumOrUnknown::new(super::GJCOFAFLAEI::GJCOFAFLAEI::GJCOFAFLAEI_NLCDGIPGFDJ) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.source_type))?;
+        if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::GJCOFAFLAEI::GJCOFAFLAEI::GJCOFAFLAEI_NLCDGIPGFDJ) {
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.NFMKOFNEKLA))?;
         }
         if self.exp != 0 {
-            os.write_uint32(15, self.exp)?;
+            os.write_uint32(11, self.exp)?;
+        }
+        if self.NCHBLJHJNID != 0 {
+            os.write_uint32(15, self.NCHBLJHJNID)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for MBLAIDFENOE {
     }
 
     fn clear(&mut self) {
-        self.NCHBLJHJNID = 0;
-        self.source_type = ::protobuf::EnumOrUnknown::new(super::GJCOFAFLAEI::GJCOFAFLAEI::GJCOFAFLAEI_NLCDGIPGFDJ);
+        self.NFMKOFNEKLA = ::protobuf::EnumOrUnknown::new(super::GJCOFAFLAEI::GJCOFAFLAEI::GJCOFAFLAEI_NLCDGIPGFDJ);
         self.exp = 0;
+        self.NCHBLJHJNID = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MBLAIDFENOE {
         static instance: MBLAIDFENOE = MBLAIDFENOE {
-            NCHBLJHJNID: 0,
-            source_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            NFMKOFNEKLA: ::protobuf::EnumOrUnknown::from_i32(0),
             exp: 0,
+            NCHBLJHJNID: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for MBLAIDFENOE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MBLAIDFENOE.proto\x1a\x11GJCOFAFLAEI.proto\"p\n\x0bMBLAIDFENOE\x12\
-    \x20\n\x0bNCHBLJHJNID\x18\x07\x20\x01(\rR\x0bNCHBLJHJNID\x12-\n\x0bsourc\
-    e_type\x18\n\x20\x01(\x0e2\x0c.GJCOFAFLAEIR\nsourceType\x12\x10\n\x03exp\
-    \x18\x0f\x20\x01(\rR\x03expb\x06proto3\
+    \n\x11MBLAIDFENOE.proto\x1a\x11GJCOFAFLAEI.proto\"q\n\x0bMBLAIDFENOE\x12\
+    .\n\x0bNFMKOFNEKLA\x18\x05\x20\x01(\x0e2\x0c.GJCOFAFLAEIR\x0bNFMKOFNEKLA\
+    \x12\x10\n\x03exp\x18\x0b\x20\x01(\rR\x03exp\x12\x20\n\x0bNCHBLJHJNID\
+    \x18\x0f\x20\x01(\rR\x0bNCHBLJHJNIDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

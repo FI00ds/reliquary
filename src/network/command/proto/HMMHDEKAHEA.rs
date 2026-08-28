@@ -27,9 +27,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 // @@protoc_insertion_point(message:HMMHDEKAHEA)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HMMHDEKAHEA {
-    // message fields
-    // @@protoc_insertion_point(field:HMMHDEKAHEA.IHPJDDCIIDB)
-    pub IHPJDDCIIDB: bool,
+    // message oneof groups
+    pub NEBNJDMFELO: ::std::option::Option<hmmhdekahea::NEBNJDMFELO>,
     // special fields
     // @@protoc_insertion_point(special_field:HMMHDEKAHEA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -46,14 +45,41 @@ impl HMMHDEKAHEA {
         ::std::default::Default::default()
     }
 
+    // bool IHPJDDCIIDB = 10;
+
+    pub fn IHPJDDCIIDB(&self) -> bool {
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(hmmhdekahea::NEBNJDMFELO::IHPJDDCIIDB(v)) => v,
+            _ => false,
+        }
+    }
+
+    pub fn clear_IHPJDDCIIDB(&mut self) {
+        self.NEBNJDMFELO = ::std::option::Option::None;
+    }
+
+    pub fn has_IHPJDDCIIDB(&self) -> bool {
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(hmmhdekahea::NEBNJDMFELO::IHPJDDCIIDB(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_IHPJDDCIIDB(&mut self, v: bool) {
+        self.NEBNJDMFELO = ::std::option::Option::Some(hmmhdekahea::NEBNJDMFELO::IHPJDDCIIDB(v))
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
-        let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+        let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "IHPJDDCIIDB",
-            |m: &HMMHDEKAHEA| { &m.IHPJDDCIIDB },
-            |m: &mut HMMHDEKAHEA| { &mut m.IHPJDDCIIDB },
+            HMMHDEKAHEA::has_IHPJDDCIIDB,
+            HMMHDEKAHEA::IHPJDDCIIDB,
+            HMMHDEKAHEA::set_IHPJDDCIIDB,
         ));
+        oneofs.push(hmmhdekahea::NEBNJDMFELO::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HMMHDEKAHEA>(
             "HMMHDEKAHEA",
             fields,
@@ -73,7 +99,7 @@ impl ::protobuf::Message for HMMHDEKAHEA {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 80 => {
-                    self.IHPJDDCIIDB = is.read_bool()?;
+                    self.NEBNJDMFELO = ::std::option::Option::Some(hmmhdekahea::NEBNJDMFELO::IHPJDDCIIDB(is.read_bool()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +113,12 @@ impl ::protobuf::Message for HMMHDEKAHEA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IHPJDDCIIDB != false {
-            my_size += 1 + 1;
+        if let ::std::option::Option::Some(ref v) = self.NEBNJDMFELO {
+            match v {
+                &hmmhdekahea::NEBNJDMFELO::IHPJDDCIIDB(v) => {
+                    my_size += 1 + 1;
+                },
+            };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +126,12 @@ impl ::protobuf::Message for HMMHDEKAHEA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IHPJDDCIIDB != false {
-            os.write_bool(10, self.IHPJDDCIIDB)?;
+        if let ::std::option::Option::Some(ref v) = self.NEBNJDMFELO {
+            match v {
+                &hmmhdekahea::NEBNJDMFELO::IHPJDDCIIDB(v) => {
+                    os.write_bool(10, v)?;
+                },
+            };
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +150,13 @@ impl ::protobuf::Message for HMMHDEKAHEA {
     }
 
     fn clear(&mut self) {
-        self.IHPJDDCIIDB = false;
+        self.NEBNJDMFELO = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HMMHDEKAHEA {
         static instance: HMMHDEKAHEA = HMMHDEKAHEA {
-            IHPJDDCIIDB: false,
+            NEBNJDMFELO: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -146,9 +180,37 @@ impl ::protobuf::reflect::ProtobufValue for HMMHDEKAHEA {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
+/// Nested message and enums of message `HMMHDEKAHEA`
+pub mod hmmhdekahea {
+
+    #[derive(Clone,PartialEq,Debug)]
+    #[non_exhaustive]
+    // @@protoc_insertion_point(oneof:HMMHDEKAHEA.NEBNJDMFELO)
+    pub enum NEBNJDMFELO {
+        // @@protoc_insertion_point(oneof_field:HMMHDEKAHEA.IHPJDDCIIDB)
+        IHPJDDCIIDB(bool),
+    }
+
+    impl ::protobuf::Oneof for NEBNJDMFELO {
+    }
+
+    impl ::protobuf::OneofFull for NEBNJDMFELO {
+        fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
+            static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
+            descriptor.get(|| <super::HMMHDEKAHEA as ::protobuf::MessageFull>::descriptor().oneof_by_name("NEBNJDMFELO").unwrap()).clone()
+        }
+    }
+
+    impl NEBNJDMFELO {
+        pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<NEBNJDMFELO>("NEBNJDMFELO")
+        }
+    }
+}
+
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HMMHDEKAHEA.proto\"/\n\x0bHMMHDEKAHEA\x12\x20\n\x0bIHPJDDCIIDB\x18\
-    \n\x20\x01(\x08R\x0bIHPJDDCIIDBb\x06proto3\
+    \n\x11HMMHDEKAHEA.proto\"@\n\x0bHMMHDEKAHEA\x12\"\n\x0bIHPJDDCIIDB\x18\n\
+    \x20\x01(\x08H\0R\x0bIHPJDDCIIDBB\r\n\x0bNEBNJDMFELOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

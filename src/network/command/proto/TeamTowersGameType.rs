@@ -27,16 +27,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:TeamTowersGameType)
 pub enum TeamTowersGameType {
-    // @@protoc_insertion_point(enum_value:TeamTowersGameType.OCLACMHKMFO_NLCDGIPGFDJ)
-    OCLACMHKMFO_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:TeamTowersGameType.OCLACMHKMFO_AJNDODBCPDB)
-    OCLACMHKMFO_AJNDODBCPDB = 1,
-    // @@protoc_insertion_point(enum_value:TeamTowersGameType.OCLACMHKMFO_GCNBGNABMKN)
-    OCLACMHKMFO_GCNBGNABMKN = 2,
-    // @@protoc_insertion_point(enum_value:TeamTowersGameType.OCLACMHKMFO_HOIHEMDINEH)
-    OCLACMHKMFO_HOIHEMDINEH = 3,
-    // @@protoc_insertion_point(enum_value:TeamTowersGameType.OCLACMHKMFO_CBFHENKAMKO)
-    OCLACMHKMFO_CBFHENKAMKO = 4,
+    // @@protoc_insertion_point(enum_value:TeamTowersGameType.TeamTowersGameType_None)
+    TeamTowersGameType_None = 0,
+    // @@protoc_insertion_point(enum_value:TeamTowersGameType.TeamTowersGameType_RandomStage)
+    TeamTowersGameType_RandomStage = 1,
+    // @@protoc_insertion_point(enum_value:TeamTowersGameType.TeamTowersGameType_Survival)
+    TeamTowersGameType_Survival = 2,
+    // @@protoc_insertion_point(enum_value:TeamTowersGameType.TeamTowersGameType_Race)
+    TeamTowersGameType_Race = 3,
+    // @@protoc_insertion_point(enum_value:TeamTowersGameType.TeamTowersGameType_Endless)
+    TeamTowersGameType_Endless = 4,
 }
 
 impl ::protobuf::Enum for TeamTowersGameType {
@@ -48,32 +48,32 @@ impl ::protobuf::Enum for TeamTowersGameType {
 
     fn from_i32(value: i32) -> ::std::option::Option<TeamTowersGameType> {
         match value {
-            0 => ::std::option::Option::Some(TeamTowersGameType::OCLACMHKMFO_NLCDGIPGFDJ),
-            1 => ::std::option::Option::Some(TeamTowersGameType::OCLACMHKMFO_AJNDODBCPDB),
-            2 => ::std::option::Option::Some(TeamTowersGameType::OCLACMHKMFO_GCNBGNABMKN),
-            3 => ::std::option::Option::Some(TeamTowersGameType::OCLACMHKMFO_HOIHEMDINEH),
-            4 => ::std::option::Option::Some(TeamTowersGameType::OCLACMHKMFO_CBFHENKAMKO),
+            0 => ::std::option::Option::Some(TeamTowersGameType::TeamTowersGameType_None),
+            1 => ::std::option::Option::Some(TeamTowersGameType::TeamTowersGameType_RandomStage),
+            2 => ::std::option::Option::Some(TeamTowersGameType::TeamTowersGameType_Survival),
+            3 => ::std::option::Option::Some(TeamTowersGameType::TeamTowersGameType_Race),
+            4 => ::std::option::Option::Some(TeamTowersGameType::TeamTowersGameType_Endless),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<TeamTowersGameType> {
         match str {
-            "OCLACMHKMFO_NLCDGIPGFDJ" => ::std::option::Option::Some(TeamTowersGameType::OCLACMHKMFO_NLCDGIPGFDJ),
-            "OCLACMHKMFO_AJNDODBCPDB" => ::std::option::Option::Some(TeamTowersGameType::OCLACMHKMFO_AJNDODBCPDB),
-            "OCLACMHKMFO_GCNBGNABMKN" => ::std::option::Option::Some(TeamTowersGameType::OCLACMHKMFO_GCNBGNABMKN),
-            "OCLACMHKMFO_HOIHEMDINEH" => ::std::option::Option::Some(TeamTowersGameType::OCLACMHKMFO_HOIHEMDINEH),
-            "OCLACMHKMFO_CBFHENKAMKO" => ::std::option::Option::Some(TeamTowersGameType::OCLACMHKMFO_CBFHENKAMKO),
+            "TeamTowersGameType_None" => ::std::option::Option::Some(TeamTowersGameType::TeamTowersGameType_None),
+            "TeamTowersGameType_RandomStage" => ::std::option::Option::Some(TeamTowersGameType::TeamTowersGameType_RandomStage),
+            "TeamTowersGameType_Survival" => ::std::option::Option::Some(TeamTowersGameType::TeamTowersGameType_Survival),
+            "TeamTowersGameType_Race" => ::std::option::Option::Some(TeamTowersGameType::TeamTowersGameType_Race),
+            "TeamTowersGameType_Endless" => ::std::option::Option::Some(TeamTowersGameType::TeamTowersGameType_Endless),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [TeamTowersGameType] = &[
-        TeamTowersGameType::OCLACMHKMFO_NLCDGIPGFDJ,
-        TeamTowersGameType::OCLACMHKMFO_AJNDODBCPDB,
-        TeamTowersGameType::OCLACMHKMFO_GCNBGNABMKN,
-        TeamTowersGameType::OCLACMHKMFO_HOIHEMDINEH,
-        TeamTowersGameType::OCLACMHKMFO_CBFHENKAMKO,
+        TeamTowersGameType::TeamTowersGameType_None,
+        TeamTowersGameType::TeamTowersGameType_RandomStage,
+        TeamTowersGameType::TeamTowersGameType_Survival,
+        TeamTowersGameType::TeamTowersGameType_Race,
+        TeamTowersGameType::TeamTowersGameType_Endless,
     ];
 }
 
@@ -91,7 +91,7 @@ impl ::protobuf::EnumFull for TeamTowersGameType {
 
 impl ::std::default::Default for TeamTowersGameType {
     fn default() -> Self {
-        TeamTowersGameType::OCLACMHKMFO_NLCDGIPGFDJ
+        TeamTowersGameType::TeamTowersGameType_None
     }
 }
 
@@ -102,11 +102,11 @@ impl TeamTowersGameType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18TeamTowersGameType.proto*\xa5\x01\n\x12TeamTowersGameType\x12\x1b\
-    \n\x17OCLACMHKMFO_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17OCLACMHKMFO_AJNDODBCPDB\
-    \x10\x01\x12\x1b\n\x17OCLACMHKMFO_GCNBGNABMKN\x10\x02\x12\x1b\n\x17OCLAC\
-    MHKMFO_HOIHEMDINEH\x10\x03\x12\x1b\n\x17OCLACMHKMFO_CBFHENKAMKO\x10\x04b\
-    \x06proto3\
+    \n\x18TeamTowersGameType.proto*\xb3\x01\n\x12TeamTowersGameType\x12\x1b\
+    \n\x17TeamTowersGameType_None\x10\0\x12\"\n\x1eTeamTowersGameType_Random\
+    Stage\x10\x01\x12\x1f\n\x1bTeamTowersGameType_Survival\x10\x02\x12\x1b\n\
+    \x17TeamTowersGameType_Race\x10\x03\x12\x1e\n\x1aTeamTowersGameType_Endl\
+    ess\x10\x04b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -32,8 +32,8 @@ pub struct KPCHPLEJCKC {
     pub LALGADHLMCB: u32,
     // @@protoc_insertion_point(field:KPCHPLEJCKC.count)
     pub count: u32,
-    // @@protoc_insertion_point(field:KPCHPLEJCKC.pos)
-    pub pos: u32,
+    // @@protoc_insertion_point(field:KPCHPLEJCKC.pos_index)
+    pub pos_index: u32,
     // @@protoc_insertion_point(field:KPCHPLEJCKC.HBONKLEOEEI)
     pub HBONKLEOEEI: u32,
     // special fields
@@ -66,9 +66,9 @@ impl KPCHPLEJCKC {
             |m: &mut KPCHPLEJCKC| { &mut m.count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "pos",
-            |m: &KPCHPLEJCKC| { &m.pos },
-            |m: &mut KPCHPLEJCKC| { &mut m.pos },
+            "pos_index",
+            |m: &KPCHPLEJCKC| { &m.pos_index },
+            |m: &mut KPCHPLEJCKC| { &mut m.pos_index },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HBONKLEOEEI",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for KPCHPLEJCKC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                8 => {
                     self.LALGADHLMCB = is.read_uint32()?;
                 },
-                88 => {
+                56 => {
                     self.count = is.read_uint32()?;
                 },
-                112 => {
-                    self.pos = is.read_uint32()?;
+                64 => {
+                    self.pos_index = is.read_uint32()?;
                 },
-                120 => {
+                96 => {
                     self.HBONKLEOEEI = is.read_uint32()?;
                 },
                 tag => {
@@ -118,16 +118,16 @@ impl ::protobuf::Message for KPCHPLEJCKC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LALGADHLMCB != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.LALGADHLMCB);
+            my_size += ::protobuf::rt::uint32_size(1, self.LALGADHLMCB);
         }
         if self.count != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.count);
+            my_size += ::protobuf::rt::uint32_size(7, self.count);
         }
-        if self.pos != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.pos);
+        if self.pos_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.pos_index);
         }
         if self.HBONKLEOEEI != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.HBONKLEOEEI);
+            my_size += ::protobuf::rt::uint32_size(12, self.HBONKLEOEEI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,16 +136,16 @@ impl ::protobuf::Message for KPCHPLEJCKC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LALGADHLMCB != 0 {
-            os.write_uint32(7, self.LALGADHLMCB)?;
+            os.write_uint32(1, self.LALGADHLMCB)?;
         }
         if self.count != 0 {
-            os.write_uint32(11, self.count)?;
+            os.write_uint32(7, self.count)?;
         }
-        if self.pos != 0 {
-            os.write_uint32(14, self.pos)?;
+        if self.pos_index != 0 {
+            os.write_uint32(8, self.pos_index)?;
         }
         if self.HBONKLEOEEI != 0 {
-            os.write_uint32(15, self.HBONKLEOEEI)?;
+            os.write_uint32(12, self.HBONKLEOEEI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::Message for KPCHPLEJCKC {
     fn clear(&mut self) {
         self.LALGADHLMCB = 0;
         self.count = 0;
-        self.pos = 0;
+        self.pos_index = 0;
         self.HBONKLEOEEI = 0;
         self.special_fields.clear();
     }
@@ -175,7 +175,7 @@ impl ::protobuf::Message for KPCHPLEJCKC {
         static instance: KPCHPLEJCKC = KPCHPLEJCKC {
             LALGADHLMCB: 0,
             count: 0,
-            pos: 0,
+            pos_index: 0,
             HBONKLEOEEI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for KPCHPLEJCKC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KPCHPLEJCKC.proto\"y\n\x0bKPCHPLEJCKC\x12\x20\n\x0bLALGADHLMCB\x18\
-    \x07\x20\x01(\rR\x0bLALGADHLMCB\x12\x14\n\x05count\x18\x0b\x20\x01(\rR\
-    \x05count\x12\x10\n\x03pos\x18\x0e\x20\x01(\rR\x03pos\x12\x20\n\x0bHBONK\
-    LEOEEI\x18\x0f\x20\x01(\rR\x0bHBONKLEOEEIb\x06proto3\
+    \n\x11KPCHPLEJCKC.proto\"\x84\x01\n\x0bKPCHPLEJCKC\x12\x20\n\x0bLALGADHL\
+    MCB\x18\x01\x20\x01(\rR\x0bLALGADHLMCB\x12\x14\n\x05count\x18\x07\x20\
+    \x01(\rR\x05count\x12\x1b\n\tpos_index\x18\x08\x20\x01(\rR\x08posIndex\
+    \x12\x20\n\x0bHBONKLEOEEI\x18\x0c\x20\x01(\rR\x0bHBONKLEOEEIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

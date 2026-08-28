@@ -86,10 +86,10 @@ impl ::protobuf::Message for MatchThreeLevelEndScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                80 => {
+                72 => {
                     self.level_id = is.read_uint32()?;
                 },
                 112 => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for MatchThreeLevelEndScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         if self.level_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.level_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.level_id);
         }
         if self.KKHPKMAHDMK != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.KKHPKMAHDMK);
@@ -123,10 +123,10 @@ impl ::protobuf::Message for MatchThreeLevelEndScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         if self.level_id != 0 {
-            os.write_uint32(10, self.level_id)?;
+            os.write_uint32(9, self.level_id)?;
         }
         if self.KKHPKMAHDMK != 0 {
             os.write_uint32(14, self.KKHPKMAHDMK)?;
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for MatchThreeLevelEndScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dMatchThreeLevelEndScRsp.proto\"p\n\x17MatchThreeLevelEndScRsp\x12\
-    \x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12\x19\n\x08level_id\
-    \x18\n\x20\x01(\rR\x07levelId\x12\x20\n\x0bKKHPKMAHDMK\x18\x0e\x20\x01(\
+    \x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12\x19\n\x08level_id\
+    \x18\t\x20\x01(\rR\x07levelId\x12\x20\n\x0bKKHPKMAHDMK\x18\x0e\x20\x01(\
     \rR\x0bKKHPKMAHDMKb\x06proto3\
 ";
 

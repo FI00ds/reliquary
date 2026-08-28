@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ONNHCHDGBAB {
     // message fields
-    // @@protoc_insertion_point(field:ONNHCHDGBAB.JGPHDBDHKKO)
-    pub JGPHDBDHKKO: u32,
     // @@protoc_insertion_point(field:ONNHCHDGBAB.script_id)
     pub script_id: u32,
     // @@protoc_insertion_point(field:ONNHCHDGBAB.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:ONNHCHDGBAB.HABJHGPFGEB)
     pub HABJHGPFGEB: ::protobuf::MessageField<super::ClockParkBuffList::ClockParkBuffList>,
+    // @@protoc_insertion_point(field:ONNHCHDGBAB.JGPHDBDHKKO)
+    pub JGPHDBDHKKO: u32,
     // message oneof groups
     pub BAHFDOOAGPP: ::std::option::Option<onnhchdgbab::BAHFDOOAGPP>,
     // special fields
@@ -54,7 +54,7 @@ impl ONNHCHDGBAB {
         ::std::default::Default::default()
     }
 
-    // .IIMHLPBEDDH CENIOBBIJMF = 1877;
+    // .IIMHLPBEDDH CENIOBBIJMF = 23;
 
     pub fn CENIOBBIJMF(&self) -> &super::IIMHLPBEDDH::IIMHLPBEDDH {
         match self.BAHFDOOAGPP {
@@ -103,7 +103,7 @@ impl ONNHCHDGBAB {
         }
     }
 
-    // .LOBFOKCKPKB JOFJEIFLGBP = 992;
+    // .LOBFOKCKPKB JOFJEIFLGBP = 538;
 
     pub fn JOFJEIFLGBP(&self) -> &super::LOBFOKCKPKB::LOBFOKCKPKB {
         match self.BAHFDOOAGPP {
@@ -156,11 +156,6 @@ impl ONNHCHDGBAB {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JGPHDBDHKKO",
-            |m: &ONNHCHDGBAB| { &m.JGPHDBDHKKO },
-            |m: &mut ONNHCHDGBAB| { &mut m.JGPHDBDHKKO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "script_id",
             |m: &ONNHCHDGBAB| { &m.script_id },
             |m: &mut ONNHCHDGBAB| { &mut m.script_id },
@@ -174,6 +169,11 @@ impl ONNHCHDGBAB {
             "HABJHGPFGEB",
             |m: &ONNHCHDGBAB| { &m.HABJHGPFGEB },
             |m: &mut ONNHCHDGBAB| { &mut m.HABJHGPFGEB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JGPHDBDHKKO",
+            |m: &ONNHCHDGBAB| { &m.JGPHDBDHKKO },
+            |m: &mut ONNHCHDGBAB| { &mut m.JGPHDBDHKKO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IIMHLPBEDDH::IIMHLPBEDDH>(
             "CENIOBBIJMF",
@@ -209,21 +209,21 @@ impl ::protobuf::Message for ONNHCHDGBAB {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 24 => {
-                    self.JGPHDBDHKKO = is.read_uint32()?;
-                },
-                40 => {
                     self.script_id = is.read_uint32()?;
                 },
-                72 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HABJHGPFGEB)?;
                 },
-                15018 => {
+                96 => {
+                    self.JGPHDBDHKKO = is.read_uint32()?;
+                },
+                186 => {
                     self.BAHFDOOAGPP = ::std::option::Option::Some(onnhchdgbab::BAHFDOOAGPP::CENIOBBIJMF(is.read_message()?));
                 },
-                7938 => {
+                4306 => {
                     self.BAHFDOOAGPP = ::std::option::Option::Some(onnhchdgbab::BAHFDOOAGPP::JOFJEIFLGBP(is.read_message()?));
                 },
                 tag => {
@@ -238,18 +238,18 @@ impl ::protobuf::Message for ONNHCHDGBAB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JGPHDBDHKKO != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.JGPHDBDHKKO);
-        }
         if self.script_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.script_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.script_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         if let Some(v) = self.HABJHGPFGEB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.JGPHDBDHKKO != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.JGPHDBDHKKO);
         }
         if let ::std::option::Option::Some(ref v) = self.BAHFDOOAGPP {
             match v {
@@ -269,25 +269,25 @@ impl ::protobuf::Message for ONNHCHDGBAB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JGPHDBDHKKO != 0 {
-            os.write_uint32(3, self.JGPHDBDHKKO)?;
-        }
         if self.script_id != 0 {
-            os.write_uint32(5, self.script_id)?;
+            os.write_uint32(3, self.script_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         if let Some(v) = self.HABJHGPFGEB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if self.JGPHDBDHKKO != 0 {
+            os.write_uint32(12, self.JGPHDBDHKKO)?;
         }
         if let ::std::option::Option::Some(ref v) = self.BAHFDOOAGPP {
             match v {
                 &onnhchdgbab::BAHFDOOAGPP::CENIOBBIJMF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1877, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(23, v, os)?;
                 },
                 &onnhchdgbab::BAHFDOOAGPP::JOFJEIFLGBP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(992, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(538, v, os)?;
                 },
             };
         }
@@ -308,10 +308,10 @@ impl ::protobuf::Message for ONNHCHDGBAB {
     }
 
     fn clear(&mut self) {
-        self.JGPHDBDHKKO = 0;
         self.script_id = 0;
         self.retcode = 0;
         self.HABJHGPFGEB.clear();
+        self.JGPHDBDHKKO = 0;
         self.BAHFDOOAGPP = ::std::option::Option::None;
         self.BAHFDOOAGPP = ::std::option::Option::None;
         self.special_fields.clear();
@@ -319,10 +319,10 @@ impl ::protobuf::Message for ONNHCHDGBAB {
 
     fn default_instance() -> &'static ONNHCHDGBAB {
         static instance: ONNHCHDGBAB = ONNHCHDGBAB {
-            JGPHDBDHKKO: 0,
             script_id: 0,
             retcode: 0,
             HABJHGPFGEB: ::protobuf::MessageField::none(),
+            JGPHDBDHKKO: 0,
             BAHFDOOAGPP: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -379,12 +379,12 @@ pub mod onnhchdgbab {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ONNHCHDGBAB.proto\x1a\x17ClockParkBuffList.proto\x1a\x11IIMHLPBEDD\
-    H.proto\x1a\x11LOBFOKCKPKB.proto\"\x91\x02\n\x0bONNHCHDGBAB\x12\x20\n\
-    \x0bJGPHDBDHKKO\x18\x03\x20\x01(\rR\x0bJGPHDBDHKKO\x12\x1b\n\tscript_id\
-    \x18\x05\x20\x01(\rR\x08scriptId\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\
-    \x07retcode\x124\n\x0bHABJHGPFGEB\x18\r\x20\x01(\x0b2\x12.ClockParkBuffL\
-    istR\x0bHABJHGPFGEB\x121\n\x0bCENIOBBIJMF\x18\xd5\x0e\x20\x01(\x0b2\x0c.\
-    IIMHLPBEDDHH\0R\x0bCENIOBBIJMF\x121\n\x0bJOFJEIFLGBP\x18\xe0\x07\x20\x01\
+    H.proto\x1a\x11LOBFOKCKPKB.proto\"\x90\x02\n\x0bONNHCHDGBAB\x12\x1b\n\ts\
+    cript_id\x18\x03\x20\x01(\rR\x08scriptId\x12\x18\n\x07retcode\x18\x04\
+    \x20\x01(\rR\x07retcode\x124\n\x0bHABJHGPFGEB\x18\x05\x20\x01(\x0b2\x12.\
+    ClockParkBuffListR\x0bHABJHGPFGEB\x12\x20\n\x0bJGPHDBDHKKO\x18\x0c\x20\
+    \x01(\rR\x0bJGPHDBDHKKO\x120\n\x0bCENIOBBIJMF\x18\x17\x20\x01(\x0b2\x0c.\
+    IIMHLPBEDDHH\0R\x0bCENIOBBIJMF\x121\n\x0bJOFJEIFLGBP\x18\x9a\x04\x20\x01\
     (\x0b2\x0c.LOBFOKCKPKBH\0R\x0bJOFJEIFLGBPB\r\n\x0bBAHFDOOAGPPb\x06proto3\
 ";
 

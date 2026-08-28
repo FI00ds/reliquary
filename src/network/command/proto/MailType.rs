@@ -27,10 +27,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:MailType)
 pub enum MailType {
-    // @@protoc_insertion_point(enum_value:MailType.MAIL_TYPE_NORMAL)
-    MAIL_TYPE_NORMAL = 0,
-    // @@protoc_insertion_point(enum_value:MailType.MAIL_TYPE_STAR)
-    MAIL_TYPE_STAR = 1,
+    // @@protoc_insertion_point(enum_value:MailType.MailType_Normal)
+    MailType_Normal = 0,
+    // @@protoc_insertion_point(enum_value:MailType.MailType_Star)
+    MailType_Star = 1,
 }
 
 impl ::protobuf::Enum for MailType {
@@ -42,23 +42,23 @@ impl ::protobuf::Enum for MailType {
 
     fn from_i32(value: i32) -> ::std::option::Option<MailType> {
         match value {
-            0 => ::std::option::Option::Some(MailType::MAIL_TYPE_NORMAL),
-            1 => ::std::option::Option::Some(MailType::MAIL_TYPE_STAR),
+            0 => ::std::option::Option::Some(MailType::MailType_Normal),
+            1 => ::std::option::Option::Some(MailType::MailType_Star),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<MailType> {
         match str {
-            "MAIL_TYPE_NORMAL" => ::std::option::Option::Some(MailType::MAIL_TYPE_NORMAL),
-            "MAIL_TYPE_STAR" => ::std::option::Option::Some(MailType::MAIL_TYPE_STAR),
+            "MailType_Normal" => ::std::option::Option::Some(MailType::MailType_Normal),
+            "MailType_Star" => ::std::option::Option::Some(MailType::MailType_Star),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [MailType] = &[
-        MailType::MAIL_TYPE_NORMAL,
-        MailType::MAIL_TYPE_STAR,
+        MailType::MailType_Normal,
+        MailType::MailType_Star,
     ];
 }
 
@@ -76,7 +76,7 @@ impl ::protobuf::EnumFull for MailType {
 
 impl ::std::default::Default for MailType {
     fn default() -> Self {
-        MailType::MAIL_TYPE_NORMAL
+        MailType::MailType_Normal
     }
 }
 
@@ -87,8 +87,8 @@ impl MailType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0eMailType.proto*4\n\x08MailType\x12\x14\n\x10MAIL_TYPE_NORMAL\x10\0\
-    \x12\x12\n\x0eMAIL_TYPE_STAR\x10\x01b\x06proto3\
+    \n\x0eMailType.proto*2\n\x08MailType\x12\x13\n\x0fMailType_Normal\x10\0\
+    \x12\x11\n\rMailType_Star\x10\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

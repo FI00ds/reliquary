@@ -27,22 +27,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:EntityType)
 pub enum EntityType {
-    // @@protoc_insertion_point(enum_value:EntityType.ENTITY_NONE)
-    ENTITY_NONE = 0,
-    // @@protoc_insertion_point(enum_value:EntityType.ENTITY_AVATAR)
-    ENTITY_AVATAR = 1,
-    // @@protoc_insertion_point(enum_value:EntityType.ENTITY_MONSTER)
-    ENTITY_MONSTER = 2,
-    // @@protoc_insertion_point(enum_value:EntityType.ENTITY_NPC)
-    ENTITY_NPC = 3,
-    // @@protoc_insertion_point(enum_value:EntityType.ENTITY_PROP)
-    ENTITY_PROP = 4,
-    // @@protoc_insertion_point(enum_value:EntityType.ENTITY_TRIGGER)
-    ENTITY_TRIGGER = 5,
-    // @@protoc_insertion_point(enum_value:EntityType.ENTITY_ENV)
-    ENTITY_ENV = 6,
-    // @@protoc_insertion_point(enum_value:EntityType.ENTITY_SUMMON_UNIT)
-    ENTITY_SUMMON_UNIT = 7,
+    // @@protoc_insertion_point(enum_value:EntityType.EntityType_NGEAEEOPAMH)
+    EntityType_NGEAEEOPAMH = 0,
+    // @@protoc_insertion_point(enum_value:EntityType.EntityType_EPGGBBALCHJ)
+    EntityType_EPGGBBALCHJ = 1,
+    // @@protoc_insertion_point(enum_value:EntityType.EntityType_LPBOFLFJONP)
+    EntityType_LPBOFLFJONP = 2,
+    // @@protoc_insertion_point(enum_value:EntityType.EntityType_CMCKJBDDOLG)
+    EntityType_CMCKJBDDOLG = 3,
+    // @@protoc_insertion_point(enum_value:EntityType.EntityType_HACAEPJDOMH)
+    EntityType_HACAEPJDOMH = 4,
+    // @@protoc_insertion_point(enum_value:EntityType.EntityType_LFPIGPLMANC)
+    EntityType_LFPIGPLMANC = 5,
+    // @@protoc_insertion_point(enum_value:EntityType.EntityType_NDLKEIFGJAE)
+    EntityType_NDLKEIFGJAE = 6,
+    // @@protoc_insertion_point(enum_value:EntityType.EntityType_KHHJDHFFLHD)
+    EntityType_KHHJDHFFLHD = 7,
 }
 
 impl ::protobuf::Enum for EntityType {
@@ -54,41 +54,41 @@ impl ::protobuf::Enum for EntityType {
 
     fn from_i32(value: i32) -> ::std::option::Option<EntityType> {
         match value {
-            0 => ::std::option::Option::Some(EntityType::ENTITY_NONE),
-            1 => ::std::option::Option::Some(EntityType::ENTITY_AVATAR),
-            2 => ::std::option::Option::Some(EntityType::ENTITY_MONSTER),
-            3 => ::std::option::Option::Some(EntityType::ENTITY_NPC),
-            4 => ::std::option::Option::Some(EntityType::ENTITY_PROP),
-            5 => ::std::option::Option::Some(EntityType::ENTITY_TRIGGER),
-            6 => ::std::option::Option::Some(EntityType::ENTITY_ENV),
-            7 => ::std::option::Option::Some(EntityType::ENTITY_SUMMON_UNIT),
+            0 => ::std::option::Option::Some(EntityType::EntityType_NGEAEEOPAMH),
+            1 => ::std::option::Option::Some(EntityType::EntityType_EPGGBBALCHJ),
+            2 => ::std::option::Option::Some(EntityType::EntityType_LPBOFLFJONP),
+            3 => ::std::option::Option::Some(EntityType::EntityType_CMCKJBDDOLG),
+            4 => ::std::option::Option::Some(EntityType::EntityType_HACAEPJDOMH),
+            5 => ::std::option::Option::Some(EntityType::EntityType_LFPIGPLMANC),
+            6 => ::std::option::Option::Some(EntityType::EntityType_NDLKEIFGJAE),
+            7 => ::std::option::Option::Some(EntityType::EntityType_KHHJDHFFLHD),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<EntityType> {
         match str {
-            "ENTITY_NONE" => ::std::option::Option::Some(EntityType::ENTITY_NONE),
-            "ENTITY_AVATAR" => ::std::option::Option::Some(EntityType::ENTITY_AVATAR),
-            "ENTITY_MONSTER" => ::std::option::Option::Some(EntityType::ENTITY_MONSTER),
-            "ENTITY_NPC" => ::std::option::Option::Some(EntityType::ENTITY_NPC),
-            "ENTITY_PROP" => ::std::option::Option::Some(EntityType::ENTITY_PROP),
-            "ENTITY_TRIGGER" => ::std::option::Option::Some(EntityType::ENTITY_TRIGGER),
-            "ENTITY_ENV" => ::std::option::Option::Some(EntityType::ENTITY_ENV),
-            "ENTITY_SUMMON_UNIT" => ::std::option::Option::Some(EntityType::ENTITY_SUMMON_UNIT),
+            "EntityType_NGEAEEOPAMH" => ::std::option::Option::Some(EntityType::EntityType_NGEAEEOPAMH),
+            "EntityType_EPGGBBALCHJ" => ::std::option::Option::Some(EntityType::EntityType_EPGGBBALCHJ),
+            "EntityType_LPBOFLFJONP" => ::std::option::Option::Some(EntityType::EntityType_LPBOFLFJONP),
+            "EntityType_CMCKJBDDOLG" => ::std::option::Option::Some(EntityType::EntityType_CMCKJBDDOLG),
+            "EntityType_HACAEPJDOMH" => ::std::option::Option::Some(EntityType::EntityType_HACAEPJDOMH),
+            "EntityType_LFPIGPLMANC" => ::std::option::Option::Some(EntityType::EntityType_LFPIGPLMANC),
+            "EntityType_NDLKEIFGJAE" => ::std::option::Option::Some(EntityType::EntityType_NDLKEIFGJAE),
+            "EntityType_KHHJDHFFLHD" => ::std::option::Option::Some(EntityType::EntityType_KHHJDHFFLHD),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [EntityType] = &[
-        EntityType::ENTITY_NONE,
-        EntityType::ENTITY_AVATAR,
-        EntityType::ENTITY_MONSTER,
-        EntityType::ENTITY_NPC,
-        EntityType::ENTITY_PROP,
-        EntityType::ENTITY_TRIGGER,
-        EntityType::ENTITY_ENV,
-        EntityType::ENTITY_SUMMON_UNIT,
+        EntityType::EntityType_NGEAEEOPAMH,
+        EntityType::EntityType_EPGGBBALCHJ,
+        EntityType::EntityType_LPBOFLFJONP,
+        EntityType::EntityType_CMCKJBDDOLG,
+        EntityType::EntityType_HACAEPJDOMH,
+        EntityType::EntityType_LFPIGPLMANC,
+        EntityType::EntityType_NDLKEIFGJAE,
+        EntityType::EntityType_KHHJDHFFLHD,
     ];
 }
 
@@ -106,7 +106,7 @@ impl ::protobuf::EnumFull for EntityType {
 
 impl ::std::default::Default for EntityType {
     fn default() -> Self {
-        EntityType::ENTITY_NONE
+        EntityType::EntityType_NGEAEEOPAMH
     }
 }
 
@@ -117,11 +117,12 @@ impl EntityType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x10EntityType.proto*\xa1\x01\n\nEntityType\x12\x0f\n\x0bENTITY_NONE\
-    \x10\0\x12\x11\n\rENTITY_AVATAR\x10\x01\x12\x12\n\x0eENTITY_MONSTER\x10\
-    \x02\x12\x0e\n\nENTITY_NPC\x10\x03\x12\x0f\n\x0bENTITY_PROP\x10\x04\x12\
-    \x12\n\x0eENTITY_TRIGGER\x10\x05\x12\x0e\n\nENTITY_ENV\x10\x06\x12\x16\n\
-    \x12ENTITY_SUMMON_UNIT\x10\x07b\x06proto3\
+    \n\x10EntityType.proto*\xec\x01\n\nEntityType\x12\x1a\n\x16EntityType_NG\
+    EAEEOPAMH\x10\0\x12\x1a\n\x16EntityType_EPGGBBALCHJ\x10\x01\x12\x1a\n\
+    \x16EntityType_LPBOFLFJONP\x10\x02\x12\x1a\n\x16EntityType_CMCKJBDDOLG\
+    \x10\x03\x12\x1a\n\x16EntityType_HACAEPJDOMH\x10\x04\x12\x1a\n\x16Entity\
+    Type_LFPIGPLMANC\x10\x05\x12\x1a\n\x16EntityType_NDLKEIFGJAE\x10\x06\x12\
+    \x1a\n\x16EntityType_KHHJDHFFLHD\x10\x07b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

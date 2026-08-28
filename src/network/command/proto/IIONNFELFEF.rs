@@ -30,8 +30,8 @@ pub struct IIONNFELFEF {
     // message fields
     // @@protoc_insertion_point(field:IIONNFELFEF.dice_slot_id)
     pub dice_slot_id: u32,
-    // @@protoc_insertion_point(field:IIONNFELFEF.pose)
-    pub pose: u32,
+    // @@protoc_insertion_point(field:IIONNFELFEF.JPMAKCCNOLI)
+    pub JPMAKCCNOLI: u32,
     // @@protoc_insertion_point(field:IIONNFELFEF.DMIOBEKLDED)
     pub DMIOBEKLDED: ::std::vec::Vec<u32>,
     // special fields
@@ -59,9 +59,9 @@ impl IIONNFELFEF {
             |m: &mut IIONNFELFEF| { &mut m.dice_slot_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "pose",
-            |m: &IIONNFELFEF| { &m.pose },
-            |m: &mut IIONNFELFEF| { &mut m.pose },
+            "JPMAKCCNOLI",
+            |m: &IIONNFELFEF| { &m.JPMAKCCNOLI },
+            |m: &mut IIONNFELFEF| { &mut m.JPMAKCCNOLI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DMIOBEKLDED",
@@ -90,7 +90,7 @@ impl ::protobuf::Message for IIONNFELFEF {
                     self.dice_slot_id = is.read_uint32()?;
                 },
                 16 => {
-                    self.pose = is.read_uint32()?;
+                    self.JPMAKCCNOLI = is.read_uint32()?;
                 },
                 26 => {
                     is.read_repeated_packed_uint32_into(&mut self.DMIOBEKLDED)?;
@@ -113,8 +113,8 @@ impl ::protobuf::Message for IIONNFELFEF {
         if self.dice_slot_id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.dice_slot_id);
         }
-        if self.pose != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.pose);
+        if self.JPMAKCCNOLI != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.JPMAKCCNOLI);
         }
         my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.DMIOBEKLDED);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -126,8 +126,8 @@ impl ::protobuf::Message for IIONNFELFEF {
         if self.dice_slot_id != 0 {
             os.write_uint32(1, self.dice_slot_id)?;
         }
-        if self.pose != 0 {
-            os.write_uint32(2, self.pose)?;
+        if self.JPMAKCCNOLI != 0 {
+            os.write_uint32(2, self.JPMAKCCNOLI)?;
         }
         os.write_repeated_packed_uint32(3, &self.DMIOBEKLDED)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -148,7 +148,7 @@ impl ::protobuf::Message for IIONNFELFEF {
 
     fn clear(&mut self) {
         self.dice_slot_id = 0;
-        self.pose = 0;
+        self.JPMAKCCNOLI = 0;
         self.DMIOBEKLDED.clear();
         self.special_fields.clear();
     }
@@ -156,7 +156,7 @@ impl ::protobuf::Message for IIONNFELFEF {
     fn default_instance() -> &'static IIONNFELFEF {
         static instance: IIONNFELFEF = IIONNFELFEF {
             dice_slot_id: 0,
-            pose: 0,
+            JPMAKCCNOLI: 0,
             DMIOBEKLDED: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -182,10 +182,10 @@ impl ::protobuf::reflect::ProtobufValue for IIONNFELFEF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IIONNFELFEF.proto\"e\n\x0bIIONNFELFEF\x12\x20\n\x0cdice_slot_id\
-    \x18\x01\x20\x01(\rR\ndiceSlotId\x12\x12\n\x04pose\x18\x02\x20\x01(\rR\
-    \x04pose\x12\x20\n\x0bDMIOBEKLDED\x18\x03\x20\x03(\rR\x0bDMIOBEKLDEDb\
-    \x06proto3\
+    \n\x11IIONNFELFEF.proto\"s\n\x0bIIONNFELFEF\x12\x20\n\x0cdice_slot_id\
+    \x18\x01\x20\x01(\rR\ndiceSlotId\x12\x20\n\x0bJPMAKCCNOLI\x18\x02\x20\
+    \x01(\rR\x0bJPMAKCCNOLI\x12\x20\n\x0bDMIOBEKLDED\x18\x03\x20\x03(\rR\x0b\
+    DMIOBEKLDEDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

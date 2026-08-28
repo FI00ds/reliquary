@@ -27,28 +27,28 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:MsgType)
 pub enum MsgType {
-    // @@protoc_insertion_point(enum_value:MsgType.MSG_TYPE_NONE)
-    MSG_TYPE_NONE = 0,
-    // @@protoc_insertion_point(enum_value:MsgType.MSG_TYPE_CUSTOM_TEXT)
-    MSG_TYPE_CUSTOM_TEXT = 1,
-    // @@protoc_insertion_point(enum_value:MsgType.MSG_TYPE_EMOJI)
-    MSG_TYPE_EMOJI = 2,
-    // @@protoc_insertion_point(enum_value:MsgType.MSG_TYPE_INVITE)
-    MSG_TYPE_INVITE = 3,
-    // @@protoc_insertion_point(enum_value:MsgType.MSG_TYPE_PLANET_FES)
-    MSG_TYPE_PLANET_FES = 4,
-    // @@protoc_insertion_point(enum_value:MsgType.MSG_TYPE_ACIELMOLELB)
-    MSG_TYPE_ACIELMOLELB = 5,
-    // @@protoc_insertion_point(enum_value:MsgType.MSG_TYPE_BGDMLGDMDIF)
-    MSG_TYPE_BGDMLGDMDIF = 6,
-    // @@protoc_insertion_point(enum_value:MsgType.MSG_TYPE_MGLPLOPECGJ)
-    MSG_TYPE_MGLPLOPECGJ = 7,
-    // @@protoc_insertion_point(enum_value:MsgType.MSG_TYPE_PPGBFMOGAHC)
-    MSG_TYPE_PPGBFMOGAHC = 8,
-    // @@protoc_insertion_point(enum_value:MsgType.MSG_TYPE_BAEKHOHLLKJ)
-    MSG_TYPE_BAEKHOHLLKJ = 9,
-    // @@protoc_insertion_point(enum_value:MsgType.MSG_TYPE_MJIEABMBEDP)
-    MSG_TYPE_MJIEABMBEDP = 10,
+    // @@protoc_insertion_point(enum_value:MsgType.MsgType_None)
+    MsgType_None = 0,
+    // @@protoc_insertion_point(enum_value:MsgType.MsgType_CustomText)
+    MsgType_CustomText = 1,
+    // @@protoc_insertion_point(enum_value:MsgType.MsgType_Emoji)
+    MsgType_Emoji = 2,
+    // @@protoc_insertion_point(enum_value:MsgType.MsgType_Invite)
+    MsgType_Invite = 3,
+    // @@protoc_insertion_point(enum_value:MsgType.MsgType_PlanetFes)
+    MsgType_PlanetFes = 4,
+    // @@protoc_insertion_point(enum_value:MsgType.MsgType_AiPamFunctionCall)
+    MsgType_AiPamFunctionCall = 5,
+    // @@protoc_insertion_point(enum_value:MsgType.MsgType_UrlCitation)
+    MsgType_UrlCitation = 6,
+    // @@protoc_insertion_point(enum_value:MsgType.MsgType_AiPamQuickFunction)
+    MsgType_AiPamQuickFunction = 7,
+    // @@protoc_insertion_point(enum_value:MsgType.MsgType_AiPamLineupInterp)
+    MsgType_AiPamLineupInterp = 8,
+    // @@protoc_insertion_point(enum_value:MsgType.MsgType_AiPamRelicInterp)
+    MsgType_AiPamRelicInterp = 9,
+    // @@protoc_insertion_point(enum_value:MsgType.MsgType_AiPamPoke)
+    MsgType_AiPamPoke = 10,
 }
 
 impl ::protobuf::Enum for MsgType {
@@ -60,50 +60,50 @@ impl ::protobuf::Enum for MsgType {
 
     fn from_i32(value: i32) -> ::std::option::Option<MsgType> {
         match value {
-            0 => ::std::option::Option::Some(MsgType::MSG_TYPE_NONE),
-            1 => ::std::option::Option::Some(MsgType::MSG_TYPE_CUSTOM_TEXT),
-            2 => ::std::option::Option::Some(MsgType::MSG_TYPE_EMOJI),
-            3 => ::std::option::Option::Some(MsgType::MSG_TYPE_INVITE),
-            4 => ::std::option::Option::Some(MsgType::MSG_TYPE_PLANET_FES),
-            5 => ::std::option::Option::Some(MsgType::MSG_TYPE_ACIELMOLELB),
-            6 => ::std::option::Option::Some(MsgType::MSG_TYPE_BGDMLGDMDIF),
-            7 => ::std::option::Option::Some(MsgType::MSG_TYPE_MGLPLOPECGJ),
-            8 => ::std::option::Option::Some(MsgType::MSG_TYPE_PPGBFMOGAHC),
-            9 => ::std::option::Option::Some(MsgType::MSG_TYPE_BAEKHOHLLKJ),
-            10 => ::std::option::Option::Some(MsgType::MSG_TYPE_MJIEABMBEDP),
+            0 => ::std::option::Option::Some(MsgType::MsgType_None),
+            1 => ::std::option::Option::Some(MsgType::MsgType_CustomText),
+            2 => ::std::option::Option::Some(MsgType::MsgType_Emoji),
+            3 => ::std::option::Option::Some(MsgType::MsgType_Invite),
+            4 => ::std::option::Option::Some(MsgType::MsgType_PlanetFes),
+            5 => ::std::option::Option::Some(MsgType::MsgType_AiPamFunctionCall),
+            6 => ::std::option::Option::Some(MsgType::MsgType_UrlCitation),
+            7 => ::std::option::Option::Some(MsgType::MsgType_AiPamQuickFunction),
+            8 => ::std::option::Option::Some(MsgType::MsgType_AiPamLineupInterp),
+            9 => ::std::option::Option::Some(MsgType::MsgType_AiPamRelicInterp),
+            10 => ::std::option::Option::Some(MsgType::MsgType_AiPamPoke),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<MsgType> {
         match str {
-            "MSG_TYPE_NONE" => ::std::option::Option::Some(MsgType::MSG_TYPE_NONE),
-            "MSG_TYPE_CUSTOM_TEXT" => ::std::option::Option::Some(MsgType::MSG_TYPE_CUSTOM_TEXT),
-            "MSG_TYPE_EMOJI" => ::std::option::Option::Some(MsgType::MSG_TYPE_EMOJI),
-            "MSG_TYPE_INVITE" => ::std::option::Option::Some(MsgType::MSG_TYPE_INVITE),
-            "MSG_TYPE_PLANET_FES" => ::std::option::Option::Some(MsgType::MSG_TYPE_PLANET_FES),
-            "MSG_TYPE_ACIELMOLELB" => ::std::option::Option::Some(MsgType::MSG_TYPE_ACIELMOLELB),
-            "MSG_TYPE_BGDMLGDMDIF" => ::std::option::Option::Some(MsgType::MSG_TYPE_BGDMLGDMDIF),
-            "MSG_TYPE_MGLPLOPECGJ" => ::std::option::Option::Some(MsgType::MSG_TYPE_MGLPLOPECGJ),
-            "MSG_TYPE_PPGBFMOGAHC" => ::std::option::Option::Some(MsgType::MSG_TYPE_PPGBFMOGAHC),
-            "MSG_TYPE_BAEKHOHLLKJ" => ::std::option::Option::Some(MsgType::MSG_TYPE_BAEKHOHLLKJ),
-            "MSG_TYPE_MJIEABMBEDP" => ::std::option::Option::Some(MsgType::MSG_TYPE_MJIEABMBEDP),
+            "MsgType_None" => ::std::option::Option::Some(MsgType::MsgType_None),
+            "MsgType_CustomText" => ::std::option::Option::Some(MsgType::MsgType_CustomText),
+            "MsgType_Emoji" => ::std::option::Option::Some(MsgType::MsgType_Emoji),
+            "MsgType_Invite" => ::std::option::Option::Some(MsgType::MsgType_Invite),
+            "MsgType_PlanetFes" => ::std::option::Option::Some(MsgType::MsgType_PlanetFes),
+            "MsgType_AiPamFunctionCall" => ::std::option::Option::Some(MsgType::MsgType_AiPamFunctionCall),
+            "MsgType_UrlCitation" => ::std::option::Option::Some(MsgType::MsgType_UrlCitation),
+            "MsgType_AiPamQuickFunction" => ::std::option::Option::Some(MsgType::MsgType_AiPamQuickFunction),
+            "MsgType_AiPamLineupInterp" => ::std::option::Option::Some(MsgType::MsgType_AiPamLineupInterp),
+            "MsgType_AiPamRelicInterp" => ::std::option::Option::Some(MsgType::MsgType_AiPamRelicInterp),
+            "MsgType_AiPamPoke" => ::std::option::Option::Some(MsgType::MsgType_AiPamPoke),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [MsgType] = &[
-        MsgType::MSG_TYPE_NONE,
-        MsgType::MSG_TYPE_CUSTOM_TEXT,
-        MsgType::MSG_TYPE_EMOJI,
-        MsgType::MSG_TYPE_INVITE,
-        MsgType::MSG_TYPE_PLANET_FES,
-        MsgType::MSG_TYPE_ACIELMOLELB,
-        MsgType::MSG_TYPE_BGDMLGDMDIF,
-        MsgType::MSG_TYPE_MGLPLOPECGJ,
-        MsgType::MSG_TYPE_PPGBFMOGAHC,
-        MsgType::MSG_TYPE_BAEKHOHLLKJ,
-        MsgType::MSG_TYPE_MJIEABMBEDP,
+        MsgType::MsgType_None,
+        MsgType::MsgType_CustomText,
+        MsgType::MsgType_Emoji,
+        MsgType::MsgType_Invite,
+        MsgType::MsgType_PlanetFes,
+        MsgType::MsgType_AiPamFunctionCall,
+        MsgType::MsgType_UrlCitation,
+        MsgType::MsgType_AiPamQuickFunction,
+        MsgType::MsgType_AiPamLineupInterp,
+        MsgType::MsgType_AiPamRelicInterp,
+        MsgType::MsgType_AiPamPoke,
     ];
 }
 
@@ -121,7 +121,7 @@ impl ::protobuf::EnumFull for MsgType {
 
 impl ::std::default::Default for MsgType {
     fn default() -> Self {
-        MsgType::MSG_TYPE_NONE
+        MsgType::MsgType_None
     }
 }
 
@@ -132,13 +132,13 @@ impl MsgType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\rMsgType.proto*\x94\x02\n\x07MsgType\x12\x11\n\rMSG_TYPE_NONE\x10\0\
-    \x12\x18\n\x14MSG_TYPE_CUSTOM_TEXT\x10\x01\x12\x12\n\x0eMSG_TYPE_EMOJI\
-    \x10\x02\x12\x13\n\x0fMSG_TYPE_INVITE\x10\x03\x12\x17\n\x13MSG_TYPE_PLAN\
-    ET_FES\x10\x04\x12\x18\n\x14MSG_TYPE_ACIELMOLELB\x10\x05\x12\x18\n\x14MS\
-    G_TYPE_BGDMLGDMDIF\x10\x06\x12\x18\n\x14MSG_TYPE_MGLPLOPECGJ\x10\x07\x12\
-    \x18\n\x14MSG_TYPE_PPGBFMOGAHC\x10\x08\x12\x18\n\x14MSG_TYPE_BAEKHOHLLKJ\
-    \x10\t\x12\x18\n\x14MSG_TYPE_MJIEABMBEDP\x10\nb\x06proto3\
+    \n\rMsgType.proto*\x9d\x02\n\x07MsgType\x12\x10\n\x0cMsgType_None\x10\0\
+    \x12\x16\n\x12MsgType_CustomText\x10\x01\x12\x11\n\rMsgType_Emoji\x10\
+    \x02\x12\x12\n\x0eMsgType_Invite\x10\x03\x12\x15\n\x11MsgType_PlanetFes\
+    \x10\x04\x12\x1d\n\x19MsgType_AiPamFunctionCall\x10\x05\x12\x17\n\x13Msg\
+    Type_UrlCitation\x10\x06\x12\x1e\n\x1aMsgType_AiPamQuickFunction\x10\x07\
+    \x12\x1d\n\x19MsgType_AiPamLineupInterp\x10\x08\x12\x1c\n\x18MsgType_AiP\
+    amRelicInterp\x10\t\x12\x15\n\x11MsgType_AiPamPoke\x10\nb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

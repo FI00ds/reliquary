@@ -40,8 +40,8 @@ pub struct JDPDGMBJKML {
     pub DCAHJELNJNP: u32,
     // @@protoc_insertion_point(field:JDPDGMBJKML.section_id)
     pub section_id: u32,
-    // @@protoc_insertion_point(field:JDPDGMBJKML.grid_game_role_list)
-    pub grid_game_role_list: ::std::vec::Vec<super::OIJHAJAIFFH::OIJHAJAIFFH>,
+    // @@protoc_insertion_point(field:JDPDGMBJKML.H_8a3e191f)
+    pub H_8a3e191f: ::std::vec::Vec<super::OIJHAJAIFFH::OIJHAJAIFFH>,
     // @@protoc_insertion_point(field:JDPDGMBJKML.AKBMAMDMOFD)
     pub AKBMAMDMOFD: ::protobuf::MessageField<super::APFOIAIFHEN::APFOIAIFHEN>,
     // special fields
@@ -94,9 +94,9 @@ impl JDPDGMBJKML {
             |m: &mut JDPDGMBJKML| { &mut m.section_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "grid_game_role_list",
-            |m: &JDPDGMBJKML| { &m.grid_game_role_list },
-            |m: &mut JDPDGMBJKML| { &mut m.grid_game_role_list },
+            "H_8a3e191f",
+            |m: &JDPDGMBJKML| { &m.H_8a3e191f },
+            |m: &mut JDPDGMBJKML| { &mut m.H_8a3e191f },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::APFOIAIFHEN::APFOIAIFHEN>(
             "AKBMAMDMOFD",
@@ -140,7 +140,7 @@ impl ::protobuf::Message for JDPDGMBJKML {
                     self.section_id = is.read_uint32()?;
                 },
                 58 => {
-                    self.grid_game_role_list.push(is.read_message()?);
+                    self.H_8a3e191f.push(is.read_message()?);
                 },
                 66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.AKBMAMDMOFD)?;
@@ -175,7 +175,7 @@ impl ::protobuf::Message for JDPDGMBJKML {
         if self.section_id != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.section_id);
         }
-        for value in &self.grid_game_role_list {
+        for value in &self.H_8a3e191f {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -207,7 +207,7 @@ impl ::protobuf::Message for JDPDGMBJKML {
         if self.section_id != 0 {
             os.write_uint32(6, self.section_id)?;
         }
-        for v in &self.grid_game_role_list {
+        for v in &self.H_8a3e191f {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         if let Some(v) = self.AKBMAMDMOFD.as_ref() {
@@ -236,7 +236,7 @@ impl ::protobuf::Message for JDPDGMBJKML {
         self.NHDBBIGPAFO = 0;
         self.DCAHJELNJNP = 0;
         self.section_id = 0;
-        self.grid_game_role_list.clear();
+        self.H_8a3e191f.clear();
         self.AKBMAMDMOFD.clear();
         self.special_fields.clear();
     }
@@ -249,7 +249,7 @@ impl ::protobuf::Message for JDPDGMBJKML {
             NHDBBIGPAFO: 0,
             DCAHJELNJNP: 0,
             section_id: 0,
-            grid_game_role_list: ::std::vec::Vec::new(),
+            H_8a3e191f: ::std::vec::Vec::new(),
             AKBMAMDMOFD: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -276,14 +276,14 @@ impl ::protobuf::reflect::ProtobufValue for JDPDGMBJKML {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JDPDGMBJKML.proto\x1a\x11APFOIAIFHEN.proto\x1a\x11OIJHAJAIFFH.prot\
-    o\"\xb3\x02\n\x0bJDPDGMBJKML\x12\x10\n\x03uid\x18\x01\x20\x01(\rR\x03uid\
+    o\"\xa3\x02\n\x0bJDPDGMBJKML\x12\x10\n\x03uid\x18\x01\x20\x01(\rR\x03uid\
     \x12\x20\n\x0bEHNJDIDABHD\x18\x02\x20\x01(\rR\x0bEHNJDIDABHD\x12\x20\n\
     \x0bAACGBEBGDPE\x18\x03\x20\x01(\rR\x0bAACGBEBGDPE\x12\x20\n\x0bNHDBBIGP\
     AFO\x18\x04\x20\x01(\rR\x0bNHDBBIGPAFO\x12\x20\n\x0bDCAHJELNJNP\x18\x05\
     \x20\x01(\rR\x0bDCAHJELNJNP\x12\x1d\n\nsection_id\x18\x06\x20\x01(\rR\ts\
-    ectionId\x12;\n\x13grid_game_role_list\x18\x07\x20\x03(\x0b2\x0c.OIJHAJA\
-    IFFHR\x10gridGameRoleList\x12.\n\x0bAKBMAMDMOFD\x18\x08\x20\x01(\x0b2\
-    \x0c.APFOIAIFHENR\x0bAKBMAMDMOFDb\x06proto3\
+    ectionId\x12+\n\nH_8a3e191f\x18\x07\x20\x03(\x0b2\x0c.OIJHAJAIFFHR\tH8a3\
+    e191f\x12.\n\x0bAKBMAMDMOFD\x18\x08\x20\x01(\x0b2\x0c.APFOIAIFHENR\x0bAK\
+    BMAMDMOFDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

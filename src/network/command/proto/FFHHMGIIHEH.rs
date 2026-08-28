@@ -35,7 +35,7 @@ pub struct FFHHMGIIHEH {
     // @@protoc_insertion_point(field:FFHHMGIIHEH.stt)
     pub stt: ::protobuf::MessageField<super::BattleStatistics::BattleStatistics>,
     // @@protoc_insertion_point(field:FFHHMGIIHEH.IJHANPILBAM)
-    pub IJHANPILBAM: ::std::string::String,
+    pub IJHANPILBAM: ::std::vec::Vec<u8>,
     // @@protoc_insertion_point(field:FFHHMGIIHEH.DCLGGMAEMAO)
     pub DCLGGMAEMAO: ::std::collections::HashMap<::std::string::String, u32>,
     // @@protoc_insertion_point(field:FFHHMGIIHEH.EAHGEKNLHPN)
@@ -124,7 +124,7 @@ impl ::protobuf::Message for FFHHMGIIHEH {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
                 },
                 34 => {
-                    self.IJHANPILBAM = is.read_string()?;
+                    self.IJHANPILBAM = is.read_bytes()?;
                 },
                 42 => {
                     let len = is.read_raw_varint32()?;
@@ -170,7 +170,7 @@ impl ::protobuf::Message for FFHHMGIIHEH {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if !self.IJHANPILBAM.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.IJHANPILBAM);
+            my_size += ::protobuf::rt::bytes_size(4, &self.IJHANPILBAM);
         }
         for (k, v) in &self.DCLGGMAEMAO {
             let mut entry_size = 0;
@@ -200,7 +200,7 @@ impl ::protobuf::Message for FFHHMGIIHEH {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if !self.IJHANPILBAM.is_empty() {
-            os.write_string(4, &self.IJHANPILBAM)?;
+            os.write_bytes(4, &self.IJHANPILBAM)?;
         }
         for (k, v) in &self.DCLGGMAEMAO {
             let mut entry_size = 0;
@@ -273,12 +273,12 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x07retcode\x18\x01\x20\x01(\x0e2\x0c.AKBCEFGFJCJR\x07retcode\x12/\n\nen\
     d_status\x18\x02\x20\x01(\x0e2\x10.BattleEndStatusR\tendStatus\x12#\n\
     \x03stt\x18\x03\x20\x01(\x0b2\x11.BattleStatisticsR\x03stt\x12\x20\n\x0b\
-    IJHANPILBAM\x18\x04\x20\x01(\tR\x0bIJHANPILBAM\x12?\n\x0bDCLGGMAEMAO\x18\
-    \x05\x20\x03(\x0b2\x1d.FFHHMGIIHEH.DCLGGMAEMAOEntryR\x0bDCLGGMAEMAO\x12\
-    \x20\n\x0bEAHGEKNLHPN\x18\x06\x20\x01(\rR\x0bEAHGEKNLHPN\x12\x20\n\x0bGN\
-    LAPGBAAOO\x18\x07\x20\x01(\rR\x0bGNLAPGBAAOO\x1a>\n\x10DCLGGMAEMAOEntry\
-    \x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\x05value\x18\x02\
-    \x20\x01(\rR\x05value:\x028\x01b\x06proto3\
+    IJHANPILBAM\x18\x04\x20\x01(\x0cR\x0bIJHANPILBAM\x12?\n\x0bDCLGGMAEMAO\
+    \x18\x05\x20\x03(\x0b2\x1d.FFHHMGIIHEH.DCLGGMAEMAOEntryR\x0bDCLGGMAEMAO\
+    \x12\x20\n\x0bEAHGEKNLHPN\x18\x06\x20\x01(\rR\x0bEAHGEKNLHPN\x12\x20\n\
+    \x0bGNLAPGBAAOO\x18\x07\x20\x01(\rR\x0bGNLAPGBAAOO\x1a>\n\x10DCLGGMAEMAO\
+    Entry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\x05value\x18\
+    \x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,16 +30,16 @@ pub struct LOKPJGLJIIH {
     // message fields
     // @@protoc_insertion_point(field:LOKPJGLJIIH.monster_battle_type)
     pub monster_battle_type: u32,
-    // @@protoc_insertion_point(field:LOKPJGLJIIH.room_uid)
-    pub room_uid: u64,
+    // @@protoc_insertion_point(field:LOKPJGLJIIH.CKLCDAGMFKP)
+    pub CKLCDAGMFKP: u64,
     // @@protoc_insertion_point(field:LOKPJGLJIIH.level_id)
     pub level_id: u32,
     // @@protoc_insertion_point(field:LOKPJGLJIIH.GNAMNBDIEKG)
     pub GNAMNBDIEKG: u32,
     // @@protoc_insertion_point(field:LOKPJGLJIIH.AFPHLNMGPHK)
     pub AFPHLNMGPHK: u32,
-    // @@protoc_insertion_point(field:LOKPJGLJIIH.seal_id)
-    pub seal_id: u32,
+    // @@protoc_insertion_point(field:LOKPJGLJIIH.JJFOLKFOOLI)
+    pub JJFOLKFOOLI: u32,
     // @@protoc_insertion_point(field:LOKPJGLJIIH.PMGEPADBKKK)
     pub PMGEPADBKKK: bool,
     // @@protoc_insertion_point(field:LOKPJGLJIIH.DLGDKGGFCBF)
@@ -85,9 +85,9 @@ impl LOKPJGLJIIH {
             |m: &mut LOKPJGLJIIH| { &mut m.monster_battle_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "room_uid",
-            |m: &LOKPJGLJIIH| { &m.room_uid },
-            |m: &mut LOKPJGLJIIH| { &mut m.room_uid },
+            "CKLCDAGMFKP",
+            |m: &LOKPJGLJIIH| { &m.CKLCDAGMFKP },
+            |m: &mut LOKPJGLJIIH| { &mut m.CKLCDAGMFKP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level_id",
@@ -105,9 +105,9 @@ impl LOKPJGLJIIH {
             |m: &mut LOKPJGLJIIH| { &mut m.AFPHLNMGPHK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "seal_id",
-            |m: &LOKPJGLJIIH| { &m.seal_id },
-            |m: &mut LOKPJGLJIIH| { &mut m.seal_id },
+            "JJFOLKFOOLI",
+            |m: &LOKPJGLJIIH| { &m.JJFOLKFOOLI },
+            |m: &mut LOKPJGLJIIH| { &mut m.JJFOLKFOOLI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PMGEPADBKKK",
@@ -181,7 +181,7 @@ impl ::protobuf::Message for LOKPJGLJIIH {
                     self.monster_battle_type = is.read_uint32()?;
                 },
                 16 => {
-                    self.room_uid = is.read_uint64()?;
+                    self.CKLCDAGMFKP = is.read_uint64()?;
                 },
                 24 => {
                     self.level_id = is.read_uint32()?;
@@ -193,7 +193,7 @@ impl ::protobuf::Message for LOKPJGLJIIH {
                     self.AFPHLNMGPHK = is.read_uint32()?;
                 },
                 48 => {
-                    self.seal_id = is.read_uint32()?;
+                    self.JJFOLKFOOLI = is.read_uint32()?;
                 },
                 56 => {
                     self.PMGEPADBKKK = is.read_bool()?;
@@ -240,8 +240,8 @@ impl ::protobuf::Message for LOKPJGLJIIH {
         if self.monster_battle_type != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.monster_battle_type);
         }
-        if self.room_uid != 0 {
-            my_size += ::protobuf::rt::uint64_size(2, self.room_uid);
+        if self.CKLCDAGMFKP != 0 {
+            my_size += ::protobuf::rt::uint64_size(2, self.CKLCDAGMFKP);
         }
         if self.level_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.level_id);
@@ -252,8 +252,8 @@ impl ::protobuf::Message for LOKPJGLJIIH {
         if self.AFPHLNMGPHK != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.AFPHLNMGPHK);
         }
-        if self.seal_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.seal_id);
+        if self.JJFOLKFOOLI != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.JJFOLKFOOLI);
         }
         if self.PMGEPADBKKK != false {
             my_size += 1 + 1;
@@ -300,8 +300,8 @@ impl ::protobuf::Message for LOKPJGLJIIH {
         if self.monster_battle_type != 0 {
             os.write_uint32(1, self.monster_battle_type)?;
         }
-        if self.room_uid != 0 {
-            os.write_uint64(2, self.room_uid)?;
+        if self.CKLCDAGMFKP != 0 {
+            os.write_uint64(2, self.CKLCDAGMFKP)?;
         }
         if self.level_id != 0 {
             os.write_uint32(3, self.level_id)?;
@@ -312,8 +312,8 @@ impl ::protobuf::Message for LOKPJGLJIIH {
         if self.AFPHLNMGPHK != 0 {
             os.write_uint32(5, self.AFPHLNMGPHK)?;
         }
-        if self.seal_id != 0 {
-            os.write_uint32(6, self.seal_id)?;
+        if self.JJFOLKFOOLI != 0 {
+            os.write_uint32(6, self.JJFOLKFOOLI)?;
         }
         if self.PMGEPADBKKK != false {
             os.write_bool(7, self.PMGEPADBKKK)?;
@@ -363,11 +363,11 @@ impl ::protobuf::Message for LOKPJGLJIIH {
 
     fn clear(&mut self) {
         self.monster_battle_type = 0;
-        self.room_uid = 0;
+        self.CKLCDAGMFKP = 0;
         self.level_id = 0;
         self.GNAMNBDIEKG = 0;
         self.AFPHLNMGPHK = 0;
-        self.seal_id = 0;
+        self.JJFOLKFOOLI = 0;
         self.PMGEPADBKKK = false;
         self.DLGDKGGFCBF.clear();
         self.rank = 0;
@@ -384,11 +384,11 @@ impl ::protobuf::Message for LOKPJGLJIIH {
     fn default_instance() -> &'static LOKPJGLJIIH {
         static instance: LOKPJGLJIIH = LOKPJGLJIIH {
             monster_battle_type: 0,
-            room_uid: 0,
+            CKLCDAGMFKP: 0,
             level_id: 0,
             GNAMNBDIEKG: 0,
             AFPHLNMGPHK: 0,
-            seal_id: 0,
+            JJFOLKFOOLI: 0,
             PMGEPADBKKK: false,
             DLGDKGGFCBF: ::std::vec::Vec::new(),
             rank: 0,
@@ -424,22 +424,22 @@ impl ::protobuf::reflect::ProtobufValue for LOKPJGLJIIH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LOKPJGLJIIH.proto\x1a\x11GPGLNCGCLLG.proto\x1a\x11LDEKBGAOMFJ.prot\
-    o\x1a\x11OGHAIFPHMPE.proto\"\xe7\x04\n\x0bLOKPJGLJIIH\x12.\n\x13monster_\
-    battle_type\x18\x01\x20\x01(\rR\x11monsterBattleType\x12\x19\n\x08room_u\
-    id\x18\x02\x20\x01(\x04R\x07roomUid\x12\x19\n\x08level_id\x18\x03\x20\
-    \x01(\rR\x07levelId\x12\x20\n\x0bGNAMNBDIEKG\x18\x04\x20\x01(\rR\x0bGNAM\
-    NBDIEKG\x12\x20\n\x0bAFPHLNMGPHK\x18\x05\x20\x01(\rR\x0bAFPHLNMGPHK\x12\
-    \x17\n\x07seal_id\x18\x06\x20\x01(\rR\x06sealId\x12\x20\n\x0bPMGEPADBKKK\
-    \x18\x07\x20\x01(\x08R\x0bPMGEPADBKKK\x12.\n\x0bDLGDKGGFCBF\x18\x08\x20\
-    \x03(\x0b2\x0c.OGHAIFPHMPER\x0bDLGDKGGFCBF\x12\x12\n\x04rank\x18\t\x20\
-    \x01(\rR\x04rank\x12.\n\x0bFPAEBHJFEKK\x18\n\x20\x03(\x0b2\x0c.OGHAIFPHM\
-    PER\x0bFPAEBHJFEKK\x12\x20\n\x0bILLEDJLNGNF\x18\x0b\x20\x01(\rR\x0bILLED\
-    JLNGNF\x12+\n\nskill_info\x18\x0c\x20\x03(\x0b2\x0c.GPGLNCGCLLGR\tskillI\
-    nfo\x12.\n\x0bMPACDDPOCLM\x18\r\x20\x03(\x0b2\x0c.LDEKBGAOMFJR\x0bMPACDD\
-    POCLM\x12.\n\x0bIPAIBGOAGGN\x18\x0e\x20\x03(\x0b2\x0c.OGHAIFPHMPER\x0bIP\
-    AIBGOAGGN\x12.\n\x0bEHNHHAFAKDP\x18\x0f\x20\x03(\x0b2\x0c.OGHAIFPHMPER\
-    \x0bEHNHHAFAKDP\x12\x20\n\x0bNNKBNJKNDKC\x18\x10\x20\x01(\rR\x0bNNKBNJKN\
-    DKCb\x06proto3\
+    o\x1a\x11OGHAIFPHMPE.proto\"\xf7\x04\n\x0bLOKPJGLJIIH\x12.\n\x13monster_\
+    battle_type\x18\x01\x20\x01(\rR\x11monsterBattleType\x12\x20\n\x0bCKLCDA\
+    GMFKP\x18\x02\x20\x01(\x04R\x0bCKLCDAGMFKP\x12\x19\n\x08level_id\x18\x03\
+    \x20\x01(\rR\x07levelId\x12\x20\n\x0bGNAMNBDIEKG\x18\x04\x20\x01(\rR\x0b\
+    GNAMNBDIEKG\x12\x20\n\x0bAFPHLNMGPHK\x18\x05\x20\x01(\rR\x0bAFPHLNMGPHK\
+    \x12\x20\n\x0bJJFOLKFOOLI\x18\x06\x20\x01(\rR\x0bJJFOLKFOOLI\x12\x20\n\
+    \x0bPMGEPADBKKK\x18\x07\x20\x01(\x08R\x0bPMGEPADBKKK\x12.\n\x0bDLGDKGGFC\
+    BF\x18\x08\x20\x03(\x0b2\x0c.OGHAIFPHMPER\x0bDLGDKGGFCBF\x12\x12\n\x04ra\
+    nk\x18\t\x20\x01(\rR\x04rank\x12.\n\x0bFPAEBHJFEKK\x18\n\x20\x03(\x0b2\
+    \x0c.OGHAIFPHMPER\x0bFPAEBHJFEKK\x12\x20\n\x0bILLEDJLNGNF\x18\x0b\x20\
+    \x01(\rR\x0bILLEDJLNGNF\x12+\n\nskill_info\x18\x0c\x20\x03(\x0b2\x0c.GPG\
+    LNCGCLLGR\tskillInfo\x12.\n\x0bMPACDDPOCLM\x18\r\x20\x03(\x0b2\x0c.LDEKB\
+    GAOMFJR\x0bMPACDDPOCLM\x12.\n\x0bIPAIBGOAGGN\x18\x0e\x20\x03(\x0b2\x0c.O\
+    GHAIFPHMPER\x0bIPAIBGOAGGN\x12.\n\x0bEHNHHAFAKDP\x18\x0f\x20\x03(\x0b2\
+    \x0c.OGHAIFPHMPER\x0bEHNHHAFAKDP\x12\x20\n\x0bNNKBNJKNDKC\x18\x10\x20\
+    \x01(\rR\x0bNNKBNJKNDKCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

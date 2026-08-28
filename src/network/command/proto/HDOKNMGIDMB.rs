@@ -107,7 +107,7 @@ impl ::protobuf::Message for HDOKNMGIDMB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::BLOHGFCFEEL_OLLFDOONPPH) {
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::FeatureSwitchType_FeatureSwitchNone) {
             my_size += ::protobuf::rt::int32_size(1, self.type_.value());
         }
         for value in &self.BGNKLMIMBPI {
@@ -123,7 +123,7 @@ impl ::protobuf::Message for HDOKNMGIDMB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::BLOHGFCFEEL_OLLFDOONPPH) {
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::FeatureSwitchType_FeatureSwitchNone) {
             os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
         for v in &self.BGNKLMIMBPI {
@@ -149,7 +149,7 @@ impl ::protobuf::Message for HDOKNMGIDMB {
     }
 
     fn clear(&mut self) {
-        self.type_ = ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::BLOHGFCFEEL_OLLFDOONPPH);
+        self.type_ = ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::FeatureSwitchType_FeatureSwitchNone);
         self.BGNKLMIMBPI.clear();
         self.KPCPABKPAKL = false;
         self.special_fields.clear();

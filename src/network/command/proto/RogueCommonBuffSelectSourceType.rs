@@ -27,16 +27,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:RogueCommonBuffSelectSourceType)
 pub enum RogueCommonBuffSelectSourceType {
-    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.CLNECBOMHMN_NLCDGIPGFDJ)
-    CLNECBOMHMN_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.CLNECBOMHMN_OHFGCMENFDH)
-    CLNECBOMHMN_OHFGCMENFDH = 1,
-    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.CLNECBOMHMN_BGDGIIOKHGF)
-    CLNECBOMHMN_BGDGIIOKHGF = 2,
-    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.CLNECBOMHMN_MCGGEAAHBPD)
-    CLNECBOMHMN_MCGGEAAHBPD = 3,
-    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.CLNECBOMHMN_EMALBALANLH)
-    CLNECBOMHMN_EMALBALANLH = 4,
+    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.RogueCommonBuffSelectSourceType_None)
+    RogueCommonBuffSelectSourceType_None = 0,
+    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.RogueCommonBuffSelectSourceType_DiceRoll)
+    RogueCommonBuffSelectSourceType_DiceRoll = 1,
+    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.RogueCommonBuffSelectSourceType_Aeon)
+    RogueCommonBuffSelectSourceType_Aeon = 2,
+    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.RogueCommonBuffSelectSourceType_BoardEvent)
+    RogueCommonBuffSelectSourceType_BoardEvent = 3,
+    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.RogueCommonBuffSelectSourceType_LevelMechanism)
+    RogueCommonBuffSelectSourceType_LevelMechanism = 4,
 }
 
 impl ::protobuf::Enum for RogueCommonBuffSelectSourceType {
@@ -48,32 +48,32 @@ impl ::protobuf::Enum for RogueCommonBuffSelectSourceType {
 
     fn from_i32(value: i32) -> ::std::option::Option<RogueCommonBuffSelectSourceType> {
         match value {
-            0 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::CLNECBOMHMN_NLCDGIPGFDJ),
-            1 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::CLNECBOMHMN_OHFGCMENFDH),
-            2 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::CLNECBOMHMN_BGDGIIOKHGF),
-            3 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::CLNECBOMHMN_MCGGEAAHBPD),
-            4 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::CLNECBOMHMN_EMALBALANLH),
+            0 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_None),
+            1 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_DiceRoll),
+            2 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_Aeon),
+            3 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_BoardEvent),
+            4 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_LevelMechanism),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<RogueCommonBuffSelectSourceType> {
         match str {
-            "CLNECBOMHMN_NLCDGIPGFDJ" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::CLNECBOMHMN_NLCDGIPGFDJ),
-            "CLNECBOMHMN_OHFGCMENFDH" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::CLNECBOMHMN_OHFGCMENFDH),
-            "CLNECBOMHMN_BGDGIIOKHGF" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::CLNECBOMHMN_BGDGIIOKHGF),
-            "CLNECBOMHMN_MCGGEAAHBPD" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::CLNECBOMHMN_MCGGEAAHBPD),
-            "CLNECBOMHMN_EMALBALANLH" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::CLNECBOMHMN_EMALBALANLH),
+            "RogueCommonBuffSelectSourceType_None" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_None),
+            "RogueCommonBuffSelectSourceType_DiceRoll" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_DiceRoll),
+            "RogueCommonBuffSelectSourceType_Aeon" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_Aeon),
+            "RogueCommonBuffSelectSourceType_BoardEvent" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_BoardEvent),
+            "RogueCommonBuffSelectSourceType_LevelMechanism" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_LevelMechanism),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [RogueCommonBuffSelectSourceType] = &[
-        RogueCommonBuffSelectSourceType::CLNECBOMHMN_NLCDGIPGFDJ,
-        RogueCommonBuffSelectSourceType::CLNECBOMHMN_OHFGCMENFDH,
-        RogueCommonBuffSelectSourceType::CLNECBOMHMN_BGDGIIOKHGF,
-        RogueCommonBuffSelectSourceType::CLNECBOMHMN_MCGGEAAHBPD,
-        RogueCommonBuffSelectSourceType::CLNECBOMHMN_EMALBALANLH,
+        RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_None,
+        RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_DiceRoll,
+        RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_Aeon,
+        RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_BoardEvent,
+        RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_LevelMechanism,
     ];
 }
 
@@ -91,7 +91,7 @@ impl ::protobuf::EnumFull for RogueCommonBuffSelectSourceType {
 
 impl ::std::default::Default for RogueCommonBuffSelectSourceType {
     fn default() -> Self {
-        RogueCommonBuffSelectSourceType::CLNECBOMHMN_NLCDGIPGFDJ
+        RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_None
     }
 }
 
@@ -102,11 +102,12 @@ impl RogueCommonBuffSelectSourceType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n%RogueCommonBuffSelectSourceType.proto*\xb2\x01\n\x1fRogueCommonBuffSe\
-    lectSourceType\x12\x1b\n\x17CLNECBOMHMN_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17C\
-    LNECBOMHMN_OHFGCMENFDH\x10\x01\x12\x1b\n\x17CLNECBOMHMN_BGDGIIOKHGF\x10\
-    \x02\x12\x1b\n\x17CLNECBOMHMN_MCGGEAAHBPD\x10\x03\x12\x1b\n\x17CLNECBOMH\
-    MN_EMALBALANLH\x10\x04b\x06proto3\
+    \n%RogueCommonBuffSelectSourceType.proto*\x87\x02\n\x1fRogueCommonBuffSe\
+    lectSourceType\x12(\n$RogueCommonBuffSelectSourceType_None\x10\0\x12,\n(\
+    RogueCommonBuffSelectSourceType_DiceRoll\x10\x01\x12(\n$RogueCommonBuffS\
+    electSourceType_Aeon\x10\x02\x12.\n*RogueCommonBuffSelectSourceType_Boar\
+    dEvent\x10\x03\x122\n.RogueCommonBuffSelectSourceType_LevelMechanism\x10\
+    \x04b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

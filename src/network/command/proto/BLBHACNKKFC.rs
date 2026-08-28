@@ -30,14 +30,14 @@ pub struct BLBHACNKKFC {
     // message fields
     // @@protoc_insertion_point(field:BLBHACNKKFC.EECIJBLGLNG)
     pub EECIJBLGLNG: u32,
-    // @@protoc_insertion_point(field:BLBHACNKKFC.GALOHJONKCG)
-    pub GALOHJONKCG: i32,
-    // @@protoc_insertion_point(field:BLBHACNKKFC.is_win)
-    pub is_win: bool,
+    // @@protoc_insertion_point(field:BLBHACNKKFC.JJMAINNIJKO)
+    pub JJMAINNIJKO: bool,
     // @@protoc_insertion_point(field:BLBHACNKKFC.LEHIGGFKPMN)
     pub LEHIGGFKPMN: u32,
-    // @@protoc_insertion_point(field:BLBHACNKKFC.is_friend)
-    pub is_friend: bool,
+    // @@protoc_insertion_point(field:BLBHACNKKFC.is_win)
+    pub is_win: bool,
+    // @@protoc_insertion_point(field:BLBHACNKKFC.GALOHJONKCG)
+    pub GALOHJONKCG: i32,
     // special fields
     // @@protoc_insertion_point(special_field:BLBHACNKKFC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,14 +63,9 @@ impl BLBHACNKKFC {
             |m: &mut BLBHACNKKFC| { &mut m.EECIJBLGLNG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GALOHJONKCG",
-            |m: &BLBHACNKKFC| { &m.GALOHJONKCG },
-            |m: &mut BLBHACNKKFC| { &mut m.GALOHJONKCG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_win",
-            |m: &BLBHACNKKFC| { &m.is_win },
-            |m: &mut BLBHACNKKFC| { &mut m.is_win },
+            "JJMAINNIJKO",
+            |m: &BLBHACNKKFC| { &m.JJMAINNIJKO },
+            |m: &mut BLBHACNKKFC| { &mut m.JJMAINNIJKO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LEHIGGFKPMN",
@@ -78,9 +73,14 @@ impl BLBHACNKKFC {
             |m: &mut BLBHACNKKFC| { &mut m.LEHIGGFKPMN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_friend",
-            |m: &BLBHACNKKFC| { &m.is_friend },
-            |m: &mut BLBHACNKKFC| { &mut m.is_friend },
+            "is_win",
+            |m: &BLBHACNKKFC| { &m.is_win },
+            |m: &mut BLBHACNKKFC| { &mut m.is_win },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GALOHJONKCG",
+            |m: &BLBHACNKKFC| { &m.GALOHJONKCG },
+            |m: &mut BLBHACNKKFC| { &mut m.GALOHJONKCG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BLBHACNKKFC>(
             "BLBHACNKKFC",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for BLBHACNKKFC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                16 => {
                     self.EECIJBLGLNG = is.read_uint32()?;
                 },
+                24 => {
+                    self.JJMAINNIJKO = is.read_bool()?;
+                },
                 48 => {
-                    self.GALOHJONKCG = is.read_int32()?;
-                },
-                72 => {
-                    self.is_win = is.read_bool()?;
-                },
-                88 => {
                     self.LEHIGGFKPMN = is.read_uint32()?;
                 },
-                96 => {
-                    self.is_friend = is.read_bool()?;
+                56 => {
+                    self.is_win = is.read_bool()?;
+                },
+                80 => {
+                    self.GALOHJONKCG = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,19 +128,19 @@ impl ::protobuf::Message for BLBHACNKKFC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.EECIJBLGLNG != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.EECIJBLGLNG);
+            my_size += ::protobuf::rt::uint32_size(2, self.EECIJBLGLNG);
         }
-        if self.GALOHJONKCG != 0 {
-            my_size += ::protobuf::rt::int32_size(6, self.GALOHJONKCG);
+        if self.JJMAINNIJKO != false {
+            my_size += 1 + 1;
+        }
+        if self.LEHIGGFKPMN != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.LEHIGGFKPMN);
         }
         if self.is_win != false {
             my_size += 1 + 1;
         }
-        if self.LEHIGGFKPMN != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LEHIGGFKPMN);
-        }
-        if self.is_friend != false {
-            my_size += 1 + 1;
+        if self.GALOHJONKCG != 0 {
+            my_size += ::protobuf::rt::int32_size(10, self.GALOHJONKCG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,19 +149,19 @@ impl ::protobuf::Message for BLBHACNKKFC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EECIJBLGLNG != 0 {
-            os.write_uint32(1, self.EECIJBLGLNG)?;
+            os.write_uint32(2, self.EECIJBLGLNG)?;
         }
-        if self.GALOHJONKCG != 0 {
-            os.write_int32(6, self.GALOHJONKCG)?;
-        }
-        if self.is_win != false {
-            os.write_bool(9, self.is_win)?;
+        if self.JJMAINNIJKO != false {
+            os.write_bool(3, self.JJMAINNIJKO)?;
         }
         if self.LEHIGGFKPMN != 0 {
-            os.write_uint32(11, self.LEHIGGFKPMN)?;
+            os.write_uint32(6, self.LEHIGGFKPMN)?;
         }
-        if self.is_friend != false {
-            os.write_bool(12, self.is_friend)?;
+        if self.is_win != false {
+            os.write_bool(7, self.is_win)?;
+        }
+        if self.GALOHJONKCG != 0 {
+            os.write_int32(10, self.GALOHJONKCG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for BLBHACNKKFC {
 
     fn clear(&mut self) {
         self.EECIJBLGLNG = 0;
-        self.GALOHJONKCG = 0;
-        self.is_win = false;
+        self.JJMAINNIJKO = false;
         self.LEHIGGFKPMN = 0;
-        self.is_friend = false;
+        self.is_win = false;
+        self.GALOHJONKCG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BLBHACNKKFC {
         static instance: BLBHACNKKFC = BLBHACNKKFC {
             EECIJBLGLNG: 0,
-            GALOHJONKCG: 0,
-            is_win: false,
+            JJMAINNIJKO: false,
             LEHIGGFKPMN: 0,
-            is_friend: false,
+            is_win: false,
+            GALOHJONKCG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for BLBHACNKKFC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BLBHACNKKFC.proto\"\xa7\x01\n\x0bBLBHACNKKFC\x12\x20\n\x0bEECIJBLG\
-    LNG\x18\x01\x20\x01(\rR\x0bEECIJBLGLNG\x12\x20\n\x0bGALOHJONKCG\x18\x06\
-    \x20\x01(\x05R\x0bGALOHJONKCG\x12\x15\n\x06is_win\x18\t\x20\x01(\x08R\
-    \x05isWin\x12\x20\n\x0bLEHIGGFKPMN\x18\x0b\x20\x01(\rR\x0bLEHIGGFKPMN\
-    \x12\x1b\n\tis_friend\x18\x0c\x20\x01(\x08R\x08isFriendb\x06proto3\
+    \n\x11BLBHACNKKFC.proto\"\xac\x01\n\x0bBLBHACNKKFC\x12\x20\n\x0bEECIJBLG\
+    LNG\x18\x02\x20\x01(\rR\x0bEECIJBLGLNG\x12\x20\n\x0bJJMAINNIJKO\x18\x03\
+    \x20\x01(\x08R\x0bJJMAINNIJKO\x12\x20\n\x0bLEHIGGFKPMN\x18\x06\x20\x01(\
+    \rR\x0bLEHIGGFKPMN\x12\x15\n\x06is_win\x18\x07\x20\x01(\x08R\x05isWin\
+    \x12\x20\n\x0bGALOHJONKCG\x18\n\x20\x01(\x05R\x0bGALOHJONKCGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

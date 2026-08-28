@@ -79,13 +79,13 @@ impl ::protobuf::Message for LMOPAFOIJNF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.PDKAMAGEFEK)?;
                 },
-                72 => {
+                32 => {
                     self.PDKAMAGEFEK.push(is.read_uint32()?);
                 },
-                90 => {
+                74 => {
                     self.FCKIOLPLANI.push(is.read_message()?);
                 },
                 tag => {
@@ -100,7 +100,7 @@ impl ::protobuf::Message for LMOPAFOIJNF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.PDKAMAGEFEK);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.PDKAMAGEFEK);
         for value in &self.FCKIOLPLANI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -111,9 +111,9 @@ impl ::protobuf::Message for LMOPAFOIJNF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.PDKAMAGEFEK)?;
+        os.write_repeated_packed_uint32(4, &self.PDKAMAGEFEK)?;
         for v in &self.FCKIOLPLANI {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for LMOPAFOIJNF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LMOPAFOIJNF.proto\x1a\x12FateBuffData.proto\"`\n\x0bLMOPAFOIJNF\
-    \x12\x20\n\x0bPDKAMAGEFEK\x18\t\x20\x03(\rR\x0bPDKAMAGEFEK\x12/\n\x0bFCK\
-    IOLPLANI\x18\x0b\x20\x03(\x0b2\r.FateBuffDataR\x0bFCKIOLPLANIb\x06proto3\
+    \x12\x20\n\x0bPDKAMAGEFEK\x18\x04\x20\x03(\rR\x0bPDKAMAGEFEK\x12/\n\x0bF\
+    CKIOLPLANI\x18\t\x20\x03(\x0b2\r.FateBuffDataR\x0bFCKIOLPLANIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

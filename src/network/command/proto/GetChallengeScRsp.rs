@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetChallengeScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetChallengeScRsp.challenge_group_list)
-    pub challenge_group_list: ::std::vec::Vec<super::ChallengeGroup::ChallengeGroup>,
-    // @@protoc_insertion_point(field:GetChallengeScRsp.KKIAFPFKLGE)
-    pub KKIAFPFKLGE: ::std::vec::Vec<super::FMDAAIKLAJA::FMDAAIKLAJA>,
-    // @@protoc_insertion_point(field:GetChallengeScRsp.challenge_list)
-    pub challenge_list: ::std::vec::Vec<super::Challenge::Challenge>,
     // @@protoc_insertion_point(field:GetChallengeScRsp.max_level_list)
     pub max_level_list: ::std::vec::Vec<super::ChallengeHistoryMaxLevel::ChallengeHistoryMaxLevel>,
     // @@protoc_insertion_point(field:GetChallengeScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetChallengeScRsp.challenge_group_list)
+    pub challenge_group_list: ::std::vec::Vec<super::ChallengeGroup::ChallengeGroup>,
+    // @@protoc_insertion_point(field:GetChallengeScRsp.challenge_list)
+    pub challenge_list: ::std::vec::Vec<super::Challenge::Challenge>,
+    // @@protoc_insertion_point(field:GetChallengeScRsp.KKIAFPFKLGE)
+    pub KKIAFPFKLGE: ::std::vec::Vec<super::FMDAAIKLAJA::FMDAAIKLAJA>,
     // special fields
     // @@protoc_insertion_point(special_field:GetChallengeScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,21 +58,6 @@ impl GetChallengeScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "challenge_group_list",
-            |m: &GetChallengeScRsp| { &m.challenge_group_list },
-            |m: &mut GetChallengeScRsp| { &mut m.challenge_group_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KKIAFPFKLGE",
-            |m: &GetChallengeScRsp| { &m.KKIAFPFKLGE },
-            |m: &mut GetChallengeScRsp| { &mut m.KKIAFPFKLGE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "challenge_list",
-            |m: &GetChallengeScRsp| { &m.challenge_list },
-            |m: &mut GetChallengeScRsp| { &mut m.challenge_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "max_level_list",
             |m: &GetChallengeScRsp| { &m.max_level_list },
             |m: &mut GetChallengeScRsp| { &mut m.max_level_list },
@@ -81,6 +66,21 @@ impl GetChallengeScRsp {
             "retcode",
             |m: &GetChallengeScRsp| { &m.retcode },
             |m: &mut GetChallengeScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "challenge_group_list",
+            |m: &GetChallengeScRsp| { &m.challenge_group_list },
+            |m: &mut GetChallengeScRsp| { &mut m.challenge_group_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "challenge_list",
+            |m: &GetChallengeScRsp| { &m.challenge_list },
+            |m: &mut GetChallengeScRsp| { &mut m.challenge_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KKIAFPFKLGE",
+            |m: &GetChallengeScRsp| { &m.KKIAFPFKLGE },
+            |m: &mut GetChallengeScRsp| { &mut m.KKIAFPFKLGE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetChallengeScRsp>(
             "GetChallengeScRsp",
@@ -101,19 +101,19 @@ impl ::protobuf::Message for GetChallengeScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    self.challenge_group_list.push(is.read_message()?);
+                    self.max_level_list.push(is.read_message()?);
                 },
-                50 => {
-                    self.KKIAFPFKLGE.push(is.read_message()?);
+                48 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                74 => {
+                    self.challenge_group_list.push(is.read_message()?);
                 },
                 82 => {
                     self.challenge_list.push(is.read_message()?);
                 },
-                90 => {
-                    self.max_level_list.push(is.read_message()?);
-                },
-                96 => {
-                    self.retcode = is.read_uint32()?;
+                98 => {
+                    self.KKIAFPFKLGE.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,11 +127,14 @@ impl ::protobuf::Message for GetChallengeScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.challenge_group_list {
+        for value in &self.max_level_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.KKIAFPFKLGE {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        }
+        for value in &self.challenge_group_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -139,34 +142,31 @@ impl ::protobuf::Message for GetChallengeScRsp {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.max_level_list {
+        for value in &self.KKIAFPFKLGE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.challenge_group_list {
+        for v in &self.max_level_list {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        for v in &self.KKIAFPFKLGE {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(6, self.retcode)?;
+        }
+        for v in &self.challenge_group_list {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         for v in &self.challenge_list {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
-        for v in &self.max_level_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        for v in &self.KKIAFPFKLGE {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
-        if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -184,21 +184,21 @@ impl ::protobuf::Message for GetChallengeScRsp {
     }
 
     fn clear(&mut self) {
-        self.challenge_group_list.clear();
-        self.KKIAFPFKLGE.clear();
-        self.challenge_list.clear();
         self.max_level_list.clear();
         self.retcode = 0;
+        self.challenge_group_list.clear();
+        self.challenge_list.clear();
+        self.KKIAFPFKLGE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetChallengeScRsp {
         static instance: GetChallengeScRsp = GetChallengeScRsp {
-            challenge_group_list: ::std::vec::Vec::new(),
-            KKIAFPFKLGE: ::std::vec::Vec::new(),
-            challenge_list: ::std::vec::Vec::new(),
             max_level_list: ::std::vec::Vec::new(),
             retcode: 0,
+            challenge_group_list: ::std::vec::Vec::new(),
+            challenge_list: ::std::vec::Vec::new(),
+            KKIAFPFKLGE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -225,13 +225,13 @@ impl ::protobuf::reflect::ProtobufValue for GetChallengeScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17GetChallengeScRsp.proto\x1a\x0fChallenge.proto\x1a\x14ChallengeGro\
     up.proto\x1a\x1eChallengeHistoryMaxLevel.proto\x1a\x11FMDAAIKLAJA.proto\
-    \"\x94\x02\n\x11GetChallengeScRsp\x12A\n\x14challenge_group_list\x18\x01\
-    \x20\x03(\x0b2\x0f.ChallengeGroupR\x12challengeGroupList\x12.\n\x0bKKIAF\
-    PFKLGE\x18\x06\x20\x03(\x0b2\x0c.FMDAAIKLAJAR\x0bKKIAFPFKLGE\x121\n\x0ec\
-    hallenge_list\x18\n\x20\x03(\x0b2\n.ChallengeR\rchallengeList\x12?\n\x0e\
-    max_level_list\x18\x0b\x20\x03(\x0b2\x19.ChallengeHistoryMaxLevelR\x0cma\
-    xLevelList\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcodeb\x06proto\
-    3\
+    \"\x94\x02\n\x11GetChallengeScRsp\x12?\n\x0emax_level_list\x18\x01\x20\
+    \x03(\x0b2\x19.ChallengeHistoryMaxLevelR\x0cmaxLevelList\x12\x18\n\x07re\
+    tcode\x18\x06\x20\x01(\rR\x07retcode\x12A\n\x14challenge_group_list\x18\
+    \t\x20\x03(\x0b2\x0f.ChallengeGroupR\x12challengeGroupList\x121\n\x0echa\
+    llenge_list\x18\n\x20\x03(\x0b2\n.ChallengeR\rchallengeList\x12.\n\x0bKK\
+    IAFPFKLGE\x18\x0c\x20\x03(\x0b2\x0c.FMDAAIKLAJAR\x0bKKIAFPFKLGEb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetChallengeGroupStatisticsScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetChallengeGroupStatisticsScRsp.group_id)
-    pub group_id: u32,
     // @@protoc_insertion_point(field:GetChallengeGroupStatisticsScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetChallengeGroupStatisticsScRsp.group_id)
+    pub group_id: u32,
     // @@protoc_insertion_point(field:GetChallengeGroupStatisticsScRsp.MEGBIPBAFBP)
-    pub MEGBIPBAFBP: ::protobuf::MessageField<super::PlayerChallengeTierceRecord::PlayerChallengeTierceRecord>,
+    pub MEGBIPBAFBP: ::protobuf::MessageField<super::BBBIAPEHABA::BBBIAPEHABA>,
     // message oneof groups
     pub EDKOHAAMONH: ::std::option::Option<get_challenge_group_statistics_sc_rsp::EDKOHAAMONH>,
     // special fields
@@ -52,7 +52,7 @@ impl GetChallengeGroupStatisticsScRsp {
         ::std::default::Default::default()
     }
 
-    // .ChallengeStatistics challenge_default = 2;
+    // .ChallengeStatistics challenge_default = 8;
 
     pub fn challenge_default(&self) -> &super::ChallengeStatistics::ChallengeStatistics {
         match self.EDKOHAAMONH {
@@ -101,7 +101,7 @@ impl GetChallengeGroupStatisticsScRsp {
         }
     }
 
-    // .ChallengeStoryStatistics challenge_story = 8;
+    // .ChallengeStoryStatistics challenge_story = 2;
 
     pub fn challenge_story(&self) -> &super::ChallengeStoryStatistics::ChallengeStoryStatistics {
         match self.EDKOHAAMONH {
@@ -150,7 +150,7 @@ impl GetChallengeGroupStatisticsScRsp {
         }
     }
 
-    // .ChallengeBossStatistics challenge_boss = 11;
+    // .ChallengeBossStatistics challenge_boss = 9;
 
     pub fn challenge_boss(&self) -> &super::ChallengeBossStatistics::ChallengeBossStatistics {
         match self.EDKOHAAMONH {
@@ -203,16 +203,16 @@ impl GetChallengeGroupStatisticsScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "group_id",
-            |m: &GetChallengeGroupStatisticsScRsp| { &m.group_id },
-            |m: &mut GetChallengeGroupStatisticsScRsp| { &mut m.group_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetChallengeGroupStatisticsScRsp| { &m.retcode },
             |m: &mut GetChallengeGroupStatisticsScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerChallengeTierceRecord::PlayerChallengeTierceRecord>(
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "group_id",
+            |m: &GetChallengeGroupStatisticsScRsp| { &m.group_id },
+            |m: &mut GetChallengeGroupStatisticsScRsp| { &mut m.group_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BBBIAPEHABA::BBBIAPEHABA>(
             "MEGBIPBAFBP",
             |m: &GetChallengeGroupStatisticsScRsp| { &m.MEGBIPBAFBP },
             |m: &mut GetChallengeGroupStatisticsScRsp| { &mut m.MEGBIPBAFBP },
@@ -257,22 +257,22 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.group_id = is.read_uint32()?;
-                },
-                120 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
-                5706 => {
+                120 => {
+                    self.group_id = is.read_uint32()?;
+                },
+                6642 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MEGBIPBAFBP)?;
                 },
-                18 => {
+                66 => {
                     self.EDKOHAAMONH = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::EDKOHAAMONH::ChallengeDefault(is.read_message()?));
                 },
-                66 => {
+                18 => {
                     self.EDKOHAAMONH = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::EDKOHAAMONH::ChallengeStory(is.read_message()?));
                 },
-                90 => {
+                74 => {
                     self.EDKOHAAMONH = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::EDKOHAAMONH::ChallengeBoss(is.read_message()?));
                 },
                 tag => {
@@ -287,11 +287,11 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.group_id);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
+        if self.group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.group_id);
         }
         if let Some(v) = self.MEGBIPBAFBP.as_ref() {
             let len = v.compute_size();
@@ -319,25 +319,25 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.group_id != 0 {
-            os.write_uint32(9, self.group_id)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
+        }
+        if self.group_id != 0 {
+            os.write_uint32(15, self.group_id)?;
         }
         if let Some(v) = self.MEGBIPBAFBP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(713, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(830, v, os)?;
         }
         if let ::std::option::Option::Some(ref v) = self.EDKOHAAMONH {
             match v {
                 &get_challenge_group_statistics_sc_rsp::EDKOHAAMONH::ChallengeDefault(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-                },
-                &get_challenge_group_statistics_sc_rsp::EDKOHAAMONH::ChallengeStory(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
+                &get_challenge_group_statistics_sc_rsp::EDKOHAAMONH::ChallengeStory(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                },
                 &get_challenge_group_statistics_sc_rsp::EDKOHAAMONH::ChallengeBoss(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
             };
         }
@@ -358,8 +358,8 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
     }
 
     fn clear(&mut self) {
-        self.group_id = 0;
         self.retcode = 0;
+        self.group_id = 0;
         self.MEGBIPBAFBP.clear();
         self.EDKOHAAMONH = ::std::option::Option::None;
         self.EDKOHAAMONH = ::std::option::Option::None;
@@ -369,8 +369,8 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
 
     fn default_instance() -> &'static GetChallengeGroupStatisticsScRsp {
         static instance: GetChallengeGroupStatisticsScRsp = GetChallengeGroupStatisticsScRsp {
-            group_id: 0,
             retcode: 0,
+            group_id: 0,
             MEGBIPBAFBP: ::protobuf::MessageField::none(),
             EDKOHAAMONH: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -429,17 +429,17 @@ pub mod get_challenge_group_statistics_sc_rsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n&GetChallengeGroupStatisticsScRsp.proto\x1a\x1dChallengeBossStatistics\
-    .proto\x1a\x19ChallengeStatistics.proto\x1a\x1eChallengeStoryStatistics.\
-    proto\x1a!PlayerChallengeTierceRecord.proto\"\xf5\x02\n\x20GetChallengeG\
-    roupStatisticsScRsp\x12\x19\n\x08group_id\x18\t\x20\x01(\rR\x07groupId\
-    \x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12?\n\x0bMEGBIPBAF\
-    BP\x18\xc9\x05\x20\x01(\x0b2\x1c.PlayerChallengeTierceRecordR\x0bMEGBIPB\
-    AFBP\x12C\n\x11challenge_default\x18\x02\x20\x01(\x0b2\x14.ChallengeStat\
-    isticsH\0R\x10challengeDefault\x12D\n\x0fchallenge_story\x18\x08\x20\x01\
-    (\x0b2\x19.ChallengeStoryStatisticsH\0R\x0echallengeStory\x12A\n\x0echal\
-    lenge_boss\x18\x0b\x20\x01(\x0b2\x18.ChallengeBossStatisticsH\0R\rchalle\
-    ngeBossB\r\n\x0bEDKOHAAMONHb\x06proto3\
+    \n&GetChallengeGroupStatisticsScRsp.proto\x1a\x11BBBIAPEHABA.proto\x1a\
+    \x1dChallengeBossStatistics.proto\x1a\x19ChallengeStatistics.proto\x1a\
+    \x1eChallengeStoryStatistics.proto\"\xe5\x02\n\x20GetChallengeGroupStati\
+    sticsScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12\x19\n\
+    \x08group_id\x18\x0f\x20\x01(\rR\x07groupId\x12/\n\x0bMEGBIPBAFBP\x18\
+    \xbe\x06\x20\x01(\x0b2\x0c.BBBIAPEHABAR\x0bMEGBIPBAFBP\x12C\n\x11challen\
+    ge_default\x18\x08\x20\x01(\x0b2\x14.ChallengeStatisticsH\0R\x10challeng\
+    eDefault\x12D\n\x0fchallenge_story\x18\x02\x20\x01(\x0b2\x19.ChallengeSt\
+    oryStatisticsH\0R\x0echallengeStory\x12A\n\x0echallenge_boss\x18\t\x20\
+    \x01(\x0b2\x18.ChallengeBossStatisticsH\0R\rchallengeBossB\r\n\x0bEDKOHA\
+    AMONHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -457,10 +457,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
+            deps.push(super::BBBIAPEHABA::file_descriptor().clone());
             deps.push(super::ChallengeBossStatistics::file_descriptor().clone());
             deps.push(super::ChallengeStatistics::file_descriptor().clone());
             deps.push(super::ChallengeStoryStatistics::file_descriptor().clone());
-            deps.push(super::PlayerChallengeTierceRecord::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetChallengeGroupStatisticsScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

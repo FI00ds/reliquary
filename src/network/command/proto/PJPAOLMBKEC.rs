@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PJPAOLMBKEC {
     // message fields
-    // @@protoc_insertion_point(field:PJPAOLMBKEC.unique_id)
-    pub unique_id: i32,
-    // @@protoc_insertion_point(field:PJPAOLMBKEC.pos)
-    pub pos: ::protobuf::MessageField<super::KIAKKNFLEPN::KIAKKNFLEPN>,
     // @@protoc_insertion_point(field:PJPAOLMBKEC.GDIGGOLJIBJ)
     pub GDIGGOLJIBJ: u32,
+    // @@protoc_insertion_point(field:PJPAOLMBKEC.unique_id)
+    pub unique_id: i32,
+    // @@protoc_insertion_point(field:PJPAOLMBKEC.pos_index)
+    pub pos_index: ::protobuf::MessageField<super::KIAKKNFLEPN::KIAKKNFLEPN>,
     // special fields
     // @@protoc_insertion_point(special_field:PJPAOLMBKEC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl PJPAOLMBKEC {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GDIGGOLJIBJ",
+            |m: &PJPAOLMBKEC| { &m.GDIGGOLJIBJ },
+            |m: &mut PJPAOLMBKEC| { &mut m.GDIGGOLJIBJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unique_id",
             |m: &PJPAOLMBKEC| { &m.unique_id },
             |m: &mut PJPAOLMBKEC| { &mut m.unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KIAKKNFLEPN::KIAKKNFLEPN>(
-            "pos",
-            |m: &PJPAOLMBKEC| { &m.pos },
-            |m: &mut PJPAOLMBKEC| { &mut m.pos },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GDIGGOLJIBJ",
-            |m: &PJPAOLMBKEC| { &m.GDIGGOLJIBJ },
-            |m: &mut PJPAOLMBKEC| { &mut m.GDIGGOLJIBJ },
+            "pos_index",
+            |m: &PJPAOLMBKEC| { &m.pos_index },
+            |m: &mut PJPAOLMBKEC| { &mut m.pos_index },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PJPAOLMBKEC>(
             "PJPAOLMBKEC",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PJPAOLMBKEC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                16 => {
+                    self.GDIGGOLJIBJ = is.read_uint32()?;
+                },
+                40 => {
                     self.unique_id = is.read_int32()?;
                 },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.pos)?;
-                },
-                72 => {
-                    self.GDIGGOLJIBJ = is.read_uint32()?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.pos_index)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for PJPAOLMBKEC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::int32_size(1, self.unique_id);
+        if self.GDIGGOLJIBJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.GDIGGOLJIBJ);
         }
-        if let Some(v) = self.pos.as_ref() {
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::int32_size(5, self.unique_id);
+        }
+        if let Some(v) = self.pos_index.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.GDIGGOLJIBJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.GDIGGOLJIBJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for PJPAOLMBKEC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.unique_id != 0 {
-            os.write_int32(1, self.unique_id)?;
-        }
-        if let Some(v) = self.pos.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
         if self.GDIGGOLJIBJ != 0 {
-            os.write_uint32(9, self.GDIGGOLJIBJ)?;
+            os.write_uint32(2, self.GDIGGOLJIBJ)?;
+        }
+        if self.unique_id != 0 {
+            os.write_int32(5, self.unique_id)?;
+        }
+        if let Some(v) = self.pos_index.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for PJPAOLMBKEC {
     }
 
     fn clear(&mut self) {
-        self.unique_id = 0;
-        self.pos.clear();
         self.GDIGGOLJIBJ = 0;
+        self.unique_id = 0;
+        self.pos_index.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PJPAOLMBKEC {
         static instance: PJPAOLMBKEC = PJPAOLMBKEC {
-            unique_id: 0,
-            pos: ::protobuf::MessageField::none(),
             GDIGGOLJIBJ: 0,
+            unique_id: 0,
+            pos_index: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for PJPAOLMBKEC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PJPAOLMBKEC.proto\x1a\x11KIAKKNFLEPN.proto\"l\n\x0bPJPAOLMBKEC\x12\
-    \x1b\n\tunique_id\x18\x01\x20\x01(\x05R\x08uniqueId\x12\x1e\n\x03pos\x18\
-    \x06\x20\x01(\x0b2\x0c.KIAKKNFLEPNR\x03pos\x12\x20\n\x0bGDIGGOLJIBJ\x18\
-    \t\x20\x01(\rR\x0bGDIGGOLJIBJb\x06proto3\
+    \n\x11PJPAOLMBKEC.proto\x1a\x11KIAKKNFLEPN.proto\"w\n\x0bPJPAOLMBKEC\x12\
+    \x20\n\x0bGDIGGOLJIBJ\x18\x02\x20\x01(\rR\x0bGDIGGOLJIBJ\x12\x1b\n\tuniq\
+    ue_id\x18\x05\x20\x01(\x05R\x08uniqueId\x12)\n\tpos_index\x18\x0c\x20\
+    \x01(\x0b2\x0c.KIAKKNFLEPNR\x08posIndexb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

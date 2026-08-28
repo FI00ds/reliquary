@@ -30,22 +30,22 @@ pub struct CJDIAHDLCNJ {
     // message fields
     // @@protoc_insertion_point(field:CJDIAHDLCNJ.uid)
     pub uid: u32,
-    // @@protoc_insertion_point(field:CJDIAHDLCNJ.damage_hp)
-    pub damage_hp: u32,
-    // @@protoc_insertion_point(field:CJDIAHDLCNJ.is_final_hit)
-    pub is_final_hit: bool,
-    // @@protoc_insertion_point(field:CJDIAHDLCNJ.over_kill_damage_hp)
-    pub over_kill_damage_hp: u32,
-    // @@protoc_insertion_point(field:CJDIAHDLCNJ.battle_replay_key)
-    pub battle_replay_key: ::std::string::String,
+    // @@protoc_insertion_point(field:CJDIAHDLCNJ.PBIBDJIJAGL)
+    pub PBIBDJIJAGL: u32,
+    // @@protoc_insertion_point(field:CJDIAHDLCNJ.EGGFCGLPDMM)
+    pub EGGFCGLPDMM: bool,
+    // @@protoc_insertion_point(field:CJDIAHDLCNJ.BCKOLCNHCCM)
+    pub BCKOLCNHCCM: u32,
+    // @@protoc_insertion_point(field:CJDIAHDLCNJ.replay_name)
+    pub replay_name: ::std::string::String,
     // @@protoc_insertion_point(field:CJDIAHDLCNJ.avatar_list)
     pub avatar_list: ::std::vec::Vec<super::GOFFDNPBHIK::GOFFDNPBHIK>,
-    // @@protoc_insertion_point(field:CJDIAHDLCNJ.assist_score)
-    pub assist_score: u32,
-    // @@protoc_insertion_point(field:CJDIAHDLCNJ.damage_score)
-    pub damage_score: u32,
-    // @@protoc_insertion_point(field:CJDIAHDLCNJ.final_hit_score)
-    pub final_hit_score: u32,
+    // @@protoc_insertion_point(field:CJDIAHDLCNJ.EJGIOGKKIKH)
+    pub EJGIOGKKIKH: u32,
+    // @@protoc_insertion_point(field:CJDIAHDLCNJ.BJKBGOALNHA)
+    pub BJKBGOALNHA: u32,
+    // @@protoc_insertion_point(field:CJDIAHDLCNJ.KENLJIJJEJL)
+    pub KENLJIJJEJL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CJDIAHDLCNJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -71,24 +71,24 @@ impl CJDIAHDLCNJ {
             |m: &mut CJDIAHDLCNJ| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "damage_hp",
-            |m: &CJDIAHDLCNJ| { &m.damage_hp },
-            |m: &mut CJDIAHDLCNJ| { &mut m.damage_hp },
+            "PBIBDJIJAGL",
+            |m: &CJDIAHDLCNJ| { &m.PBIBDJIJAGL },
+            |m: &mut CJDIAHDLCNJ| { &mut m.PBIBDJIJAGL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_final_hit",
-            |m: &CJDIAHDLCNJ| { &m.is_final_hit },
-            |m: &mut CJDIAHDLCNJ| { &mut m.is_final_hit },
+            "EGGFCGLPDMM",
+            |m: &CJDIAHDLCNJ| { &m.EGGFCGLPDMM },
+            |m: &mut CJDIAHDLCNJ| { &mut m.EGGFCGLPDMM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "over_kill_damage_hp",
-            |m: &CJDIAHDLCNJ| { &m.over_kill_damage_hp },
-            |m: &mut CJDIAHDLCNJ| { &mut m.over_kill_damage_hp },
+            "BCKOLCNHCCM",
+            |m: &CJDIAHDLCNJ| { &m.BCKOLCNHCCM },
+            |m: &mut CJDIAHDLCNJ| { &mut m.BCKOLCNHCCM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "battle_replay_key",
-            |m: &CJDIAHDLCNJ| { &m.battle_replay_key },
-            |m: &mut CJDIAHDLCNJ| { &mut m.battle_replay_key },
+            "replay_name",
+            |m: &CJDIAHDLCNJ| { &m.replay_name },
+            |m: &mut CJDIAHDLCNJ| { &mut m.replay_name },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_list",
@@ -96,19 +96,19 @@ impl CJDIAHDLCNJ {
             |m: &mut CJDIAHDLCNJ| { &mut m.avatar_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "assist_score",
-            |m: &CJDIAHDLCNJ| { &m.assist_score },
-            |m: &mut CJDIAHDLCNJ| { &mut m.assist_score },
+            "EJGIOGKKIKH",
+            |m: &CJDIAHDLCNJ| { &m.EJGIOGKKIKH },
+            |m: &mut CJDIAHDLCNJ| { &mut m.EJGIOGKKIKH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "damage_score",
-            |m: &CJDIAHDLCNJ| { &m.damage_score },
-            |m: &mut CJDIAHDLCNJ| { &mut m.damage_score },
+            "BJKBGOALNHA",
+            |m: &CJDIAHDLCNJ| { &m.BJKBGOALNHA },
+            |m: &mut CJDIAHDLCNJ| { &mut m.BJKBGOALNHA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "final_hit_score",
-            |m: &CJDIAHDLCNJ| { &m.final_hit_score },
-            |m: &mut CJDIAHDLCNJ| { &mut m.final_hit_score },
+            "KENLJIJJEJL",
+            |m: &CJDIAHDLCNJ| { &m.KENLJIJJEJL },
+            |m: &mut CJDIAHDLCNJ| { &mut m.KENLJIJJEJL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CJDIAHDLCNJ>(
             "CJDIAHDLCNJ",
@@ -132,28 +132,28 @@ impl ::protobuf::Message for CJDIAHDLCNJ {
                     self.uid = is.read_uint32()?;
                 },
                 16 => {
-                    self.damage_hp = is.read_uint32()?;
+                    self.PBIBDJIJAGL = is.read_uint32()?;
                 },
                 24 => {
-                    self.is_final_hit = is.read_bool()?;
+                    self.EGGFCGLPDMM = is.read_bool()?;
                 },
                 32 => {
-                    self.over_kill_damage_hp = is.read_uint32()?;
+                    self.BCKOLCNHCCM = is.read_uint32()?;
                 },
                 42 => {
-                    self.battle_replay_key = is.read_string()?;
+                    self.replay_name = is.read_string()?;
                 },
                 50 => {
                     self.avatar_list.push(is.read_message()?);
                 },
                 56 => {
-                    self.assist_score = is.read_uint32()?;
+                    self.EJGIOGKKIKH = is.read_uint32()?;
                 },
                 64 => {
-                    self.damage_score = is.read_uint32()?;
+                    self.BJKBGOALNHA = is.read_uint32()?;
                 },
                 72 => {
-                    self.final_hit_score = is.read_uint32()?;
+                    self.KENLJIJJEJL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -170,30 +170,30 @@ impl ::protobuf::Message for CJDIAHDLCNJ {
         if self.uid != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.uid);
         }
-        if self.damage_hp != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.damage_hp);
+        if self.PBIBDJIJAGL != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.PBIBDJIJAGL);
         }
-        if self.is_final_hit != false {
+        if self.EGGFCGLPDMM != false {
             my_size += 1 + 1;
         }
-        if self.over_kill_damage_hp != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.over_kill_damage_hp);
+        if self.BCKOLCNHCCM != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.BCKOLCNHCCM);
         }
-        if !self.battle_replay_key.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.battle_replay_key);
+        if !self.replay_name.is_empty() {
+            my_size += ::protobuf::rt::string_size(5, &self.replay_name);
         }
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.assist_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.assist_score);
+        if self.EJGIOGKKIKH != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.EJGIOGKKIKH);
         }
-        if self.damage_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.damage_score);
+        if self.BJKBGOALNHA != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.BJKBGOALNHA);
         }
-        if self.final_hit_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.final_hit_score);
+        if self.KENLJIJJEJL != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.KENLJIJJEJL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -204,29 +204,29 @@ impl ::protobuf::Message for CJDIAHDLCNJ {
         if self.uid != 0 {
             os.write_uint32(1, self.uid)?;
         }
-        if self.damage_hp != 0 {
-            os.write_uint32(2, self.damage_hp)?;
+        if self.PBIBDJIJAGL != 0 {
+            os.write_uint32(2, self.PBIBDJIJAGL)?;
         }
-        if self.is_final_hit != false {
-            os.write_bool(3, self.is_final_hit)?;
+        if self.EGGFCGLPDMM != false {
+            os.write_bool(3, self.EGGFCGLPDMM)?;
         }
-        if self.over_kill_damage_hp != 0 {
-            os.write_uint32(4, self.over_kill_damage_hp)?;
+        if self.BCKOLCNHCCM != 0 {
+            os.write_uint32(4, self.BCKOLCNHCCM)?;
         }
-        if !self.battle_replay_key.is_empty() {
-            os.write_string(5, &self.battle_replay_key)?;
+        if !self.replay_name.is_empty() {
+            os.write_string(5, &self.replay_name)?;
         }
         for v in &self.avatar_list {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        if self.assist_score != 0 {
-            os.write_uint32(7, self.assist_score)?;
+        if self.EJGIOGKKIKH != 0 {
+            os.write_uint32(7, self.EJGIOGKKIKH)?;
         }
-        if self.damage_score != 0 {
-            os.write_uint32(8, self.damage_score)?;
+        if self.BJKBGOALNHA != 0 {
+            os.write_uint32(8, self.BJKBGOALNHA)?;
         }
-        if self.final_hit_score != 0 {
-            os.write_uint32(9, self.final_hit_score)?;
+        if self.KENLJIJJEJL != 0 {
+            os.write_uint32(9, self.KENLJIJJEJL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -246,28 +246,28 @@ impl ::protobuf::Message for CJDIAHDLCNJ {
 
     fn clear(&mut self) {
         self.uid = 0;
-        self.damage_hp = 0;
-        self.is_final_hit = false;
-        self.over_kill_damage_hp = 0;
-        self.battle_replay_key.clear();
+        self.PBIBDJIJAGL = 0;
+        self.EGGFCGLPDMM = false;
+        self.BCKOLCNHCCM = 0;
+        self.replay_name.clear();
         self.avatar_list.clear();
-        self.assist_score = 0;
-        self.damage_score = 0;
-        self.final_hit_score = 0;
+        self.EJGIOGKKIKH = 0;
+        self.BJKBGOALNHA = 0;
+        self.KENLJIJJEJL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CJDIAHDLCNJ {
         static instance: CJDIAHDLCNJ = CJDIAHDLCNJ {
             uid: 0,
-            damage_hp: 0,
-            is_final_hit: false,
-            over_kill_damage_hp: 0,
-            battle_replay_key: ::std::string::String::new(),
+            PBIBDJIJAGL: 0,
+            EGGFCGLPDMM: false,
+            BCKOLCNHCCM: 0,
+            replay_name: ::std::string::String::new(),
             avatar_list: ::std::vec::Vec::new(),
-            assist_score: 0,
-            damage_score: 0,
-            final_hit_score: 0,
+            EJGIOGKKIKH: 0,
+            BJKBGOALNHA: 0,
+            KENLJIJJEJL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -292,15 +292,15 @@ impl ::protobuf::reflect::ProtobufValue for CJDIAHDLCNJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CJDIAHDLCNJ.proto\x1a\x11GOFFDNPBHIK.proto\"\xd6\x02\n\x0bCJDIAHDL\
-    CNJ\x12\x10\n\x03uid\x18\x01\x20\x01(\rR\x03uid\x12\x1b\n\tdamage_hp\x18\
-    \x02\x20\x01(\rR\x08damageHp\x12\x20\n\x0cis_final_hit\x18\x03\x20\x01(\
-    \x08R\nisFinalHit\x12-\n\x13over_kill_damage_hp\x18\x04\x20\x01(\rR\x10o\
-    verKillDamageHp\x12*\n\x11battle_replay_key\x18\x05\x20\x01(\tR\x0fbattl\
-    eReplayKey\x12-\n\x0bavatar_list\x18\x06\x20\x03(\x0b2\x0c.GOFFDNPBHIKR\
-    \navatarList\x12!\n\x0cassist_score\x18\x07\x20\x01(\rR\x0bassistScore\
-    \x12!\n\x0cdamage_score\x18\x08\x20\x01(\rR\x0bdamageScore\x12&\n\x0ffin\
-    al_hit_score\x18\t\x20\x01(\rR\rfinalHitScoreb\x06proto3\
+    \n\x11CJDIAHDLCNJ.proto\x1a\x11GOFFDNPBHIK.proto\"\xbb\x02\n\x0bCJDIAHDL\
+    CNJ\x12\x10\n\x03uid\x18\x01\x20\x01(\rR\x03uid\x12\x20\n\x0bPBIBDJIJAGL\
+    \x18\x02\x20\x01(\rR\x0bPBIBDJIJAGL\x12\x20\n\x0bEGGFCGLPDMM\x18\x03\x20\
+    \x01(\x08R\x0bEGGFCGLPDMM\x12\x20\n\x0bBCKOLCNHCCM\x18\x04\x20\x01(\rR\
+    \x0bBCKOLCNHCCM\x12\x1f\n\x0breplay_name\x18\x05\x20\x01(\tR\nreplayName\
+    \x12-\n\x0bavatar_list\x18\x06\x20\x03(\x0b2\x0c.GOFFDNPBHIKR\navatarLis\
+    t\x12\x20\n\x0bEJGIOGKKIKH\x18\x07\x20\x01(\rR\x0bEJGIOGKKIKH\x12\x20\n\
+    \x0bBJKBGOALNHA\x18\x08\x20\x01(\rR\x0bBJKBGOALNHA\x12\x20\n\x0bKENLJIJJ\
+    EJL\x18\t\x20\x01(\rR\x0bKENLJIJJEJLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -86,10 +86,10 @@ impl ::protobuf::Message for PGEDFOBAEBC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                32 => {
                     self.PLFMKDOCPLP = is.read_uint32()?;
                 },
-                96 => {
+                48 => {
                     self.OMFGAABELHE = is.read_uint32()?;
                 },
                 120 => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for PGEDFOBAEBC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PLFMKDOCPLP != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.PLFMKDOCPLP);
+            my_size += ::protobuf::rt::uint32_size(4, self.PLFMKDOCPLP);
         }
         if self.OMFGAABELHE != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.OMFGAABELHE);
+            my_size += ::protobuf::rt::uint32_size(6, self.OMFGAABELHE);
         }
         if self.FCFLEFOKLFD != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.FCFLEFOKLFD);
@@ -123,10 +123,10 @@ impl ::protobuf::Message for PGEDFOBAEBC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PLFMKDOCPLP != 0 {
-            os.write_uint32(9, self.PLFMKDOCPLP)?;
+            os.write_uint32(4, self.PLFMKDOCPLP)?;
         }
         if self.OMFGAABELHE != 0 {
-            os.write_uint32(12, self.OMFGAABELHE)?;
+            os.write_uint32(6, self.OMFGAABELHE)?;
         }
         if self.FCFLEFOKLFD != 0 {
             os.write_uint32(15, self.FCFLEFOKLFD)?;
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for PGEDFOBAEBC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PGEDFOBAEBC.proto\"s\n\x0bPGEDFOBAEBC\x12\x20\n\x0bPLFMKDOCPLP\x18\
-    \t\x20\x01(\rR\x0bPLFMKDOCPLP\x12\x20\n\x0bOMFGAABELHE\x18\x0c\x20\x01(\
-    \rR\x0bOMFGAABELHE\x12\x20\n\x0bFCFLEFOKLFD\x18\x0f\x20\x01(\rR\x0bFCFLE\
-    FOKLFDb\x06proto3\
+    \x04\x20\x01(\rR\x0bPLFMKDOCPLP\x12\x20\n\x0bOMFGAABELHE\x18\x06\x20\x01\
+    (\rR\x0bOMFGAABELHE\x12\x20\n\x0bFCFLEFOKLFD\x18\x0f\x20\x01(\rR\x0bFCFL\
+    EFOKLFDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

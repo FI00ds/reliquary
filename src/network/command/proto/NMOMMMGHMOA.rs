@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NMOMMMGHMOA {
     // message fields
-    // @@protoc_insertion_point(field:NMOMMMGHMOA.is_unlock)
-    pub is_unlock: bool,
+    // @@protoc_insertion_point(field:NMOMMMGHMOA.GNACLLNFHFD)
+    pub GNACLLNFHFD: bool,
     // @@protoc_insertion_point(field:NMOMMMGHMOA.DFBDPEHAAMG)
     pub DFBDPEHAAMG: u32,
     // special fields
@@ -52,9 +52,9 @@ impl NMOMMMGHMOA {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_unlock",
-            |m: &NMOMMMGHMOA| { &m.is_unlock },
-            |m: &mut NMOMMMGHMOA| { &mut m.is_unlock },
+            "GNACLLNFHFD",
+            |m: &NMOMMMGHMOA| { &m.GNACLLNFHFD },
+            |m: &mut NMOMMMGHMOA| { &mut m.GNACLLNFHFD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DFBDPEHAAMG",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for NMOMMMGHMOA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.is_unlock = is.read_bool()?;
+                24 => {
+                    self.GNACLLNFHFD = is.read_bool()?;
                 },
-                48 => {
+                120 => {
                     self.DFBDPEHAAMG = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for NMOMMMGHMOA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_unlock != false {
+        if self.GNACLLNFHFD != false {
             my_size += 1 + 1;
         }
         if self.DFBDPEHAAMG != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.DFBDPEHAAMG);
+            my_size += ::protobuf::rt::uint32_size(15, self.DFBDPEHAAMG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for NMOMMMGHMOA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_unlock != false {
-            os.write_bool(4, self.is_unlock)?;
+        if self.GNACLLNFHFD != false {
+            os.write_bool(3, self.GNACLLNFHFD)?;
         }
         if self.DFBDPEHAAMG != 0 {
-            os.write_uint32(6, self.DFBDPEHAAMG)?;
+            os.write_uint32(15, self.DFBDPEHAAMG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for NMOMMMGHMOA {
     }
 
     fn clear(&mut self) {
-        self.is_unlock = false;
+        self.GNACLLNFHFD = false;
         self.DFBDPEHAAMG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NMOMMMGHMOA {
         static instance: NMOMMMGHMOA = NMOMMMGHMOA {
-            is_unlock: false,
+            GNACLLNFHFD: false,
             DFBDPEHAAMG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for NMOMMMGHMOA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NMOMMMGHMOA.proto\"L\n\x0bNMOMMMGHMOA\x12\x1b\n\tis_unlock\x18\x04\
-    \x20\x01(\x08R\x08isUnlock\x12\x20\n\x0bDFBDPEHAAMG\x18\x06\x20\x01(\rR\
-    \x0bDFBDPEHAAMGb\x06proto3\
+    \n\x11NMOMMMGHMOA.proto\"Q\n\x0bNMOMMMGHMOA\x12\x20\n\x0bGNACLLNFHFD\x18\
+    \x03\x20\x01(\x08R\x0bGNACLLNFHFD\x12\x20\n\x0bDFBDPEHAAMG\x18\x0f\x20\
+    \x01(\rR\x0bDFBDPEHAAMGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

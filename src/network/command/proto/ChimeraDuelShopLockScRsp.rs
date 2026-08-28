@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChimeraDuelShopLockScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChimeraDuelShopLockScRsp.is_locked)
-    pub is_locked: bool,
     // @@protoc_insertion_point(field:ChimeraDuelShopLockScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:ChimeraDuelShopLockScRsp.is_locked)
+    pub is_locked: bool,
     // message oneof groups
     pub KKNBOACNCON: ::std::option::Option<chimera_duel_shop_lock_sc_rsp::KKNBOACNCON>,
     // special fields
@@ -50,7 +50,7 @@ impl ChimeraDuelShopLockScRsp {
         ::std::default::Default::default()
     }
 
-    // uint32 NDJGKJMPPHJ = 4;
+    // uint32 NDJGKJMPPHJ = 12;
 
     pub fn NDJGKJMPPHJ(&self) -> u32 {
         match self.KKNBOACNCON {
@@ -75,7 +75,7 @@ impl ChimeraDuelShopLockScRsp {
         self.KKNBOACNCON = ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::KKNBOACNCON::NDJGKJMPPHJ(v))
     }
 
-    // uint32 AGBAIFPNKII = 3;
+    // uint32 AGBAIFPNKII = 14;
 
     pub fn AGBAIFPNKII(&self) -> u32 {
         match self.KKNBOACNCON {
@@ -104,14 +104,14 @@ impl ChimeraDuelShopLockScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_locked",
-            |m: &ChimeraDuelShopLockScRsp| { &m.is_locked },
-            |m: &mut ChimeraDuelShopLockScRsp| { &mut m.is_locked },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &ChimeraDuelShopLockScRsp| { &m.retcode },
             |m: &mut ChimeraDuelShopLockScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_locked",
+            |m: &ChimeraDuelShopLockScRsp| { &m.is_locked },
+            |m: &mut ChimeraDuelShopLockScRsp| { &mut m.is_locked },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "NDJGKJMPPHJ",
@@ -144,16 +144,16 @@ impl ::protobuf::Message for ChimeraDuelShopLockScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.is_locked = is.read_bool()?;
-                },
-                16 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                32 => {
+                56 => {
+                    self.is_locked = is.read_bool()?;
+                },
+                96 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::KKNBOACNCON::NDJGKJMPPHJ(is.read_uint32()?));
                 },
-                24 => {
+                112 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::KKNBOACNCON::AGBAIFPNKII(is.read_uint32()?));
                 },
                 tag => {
@@ -168,19 +168,19 @@ impl ::protobuf::Message for ChimeraDuelShopLockScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        }
         if self.is_locked != false {
             my_size += 1 + 1;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &chimera_duel_shop_lock_sc_rsp::KKNBOACNCON::NDJGKJMPPHJ(v) => {
-                    my_size += ::protobuf::rt::uint32_size(4, v);
+                    my_size += ::protobuf::rt::uint32_size(12, v);
                 },
                 &chimera_duel_shop_lock_sc_rsp::KKNBOACNCON::AGBAIFPNKII(v) => {
-                    my_size += ::protobuf::rt::uint32_size(3, v);
+                    my_size += ::protobuf::rt::uint32_size(14, v);
                 },
             };
         }
@@ -190,19 +190,19 @@ impl ::protobuf::Message for ChimeraDuelShopLockScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_locked != false {
-            os.write_bool(1, self.is_locked)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
+        }
+        if self.is_locked != false {
+            os.write_bool(7, self.is_locked)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &chimera_duel_shop_lock_sc_rsp::KKNBOACNCON::NDJGKJMPPHJ(v) => {
-                    os.write_uint32(4, v)?;
+                    os.write_uint32(12, v)?;
                 },
                 &chimera_duel_shop_lock_sc_rsp::KKNBOACNCON::AGBAIFPNKII(v) => {
-                    os.write_uint32(3, v)?;
+                    os.write_uint32(14, v)?;
                 },
             };
         }
@@ -223,8 +223,8 @@ impl ::protobuf::Message for ChimeraDuelShopLockScRsp {
     }
 
     fn clear(&mut self) {
-        self.is_locked = false;
         self.retcode = 0;
+        self.is_locked = false;
         self.KKNBOACNCON = ::std::option::Option::None;
         self.KKNBOACNCON = ::std::option::Option::None;
         self.special_fields.clear();
@@ -232,8 +232,8 @@ impl ::protobuf::Message for ChimeraDuelShopLockScRsp {
 
     fn default_instance() -> &'static ChimeraDuelShopLockScRsp {
         static instance: ChimeraDuelShopLockScRsp = ChimeraDuelShopLockScRsp {
-            is_locked: false,
             retcode: 0,
+            is_locked: false,
             KKNBOACNCON: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -290,10 +290,10 @@ pub mod chimera_duel_shop_lock_sc_rsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eChimeraDuelShopLockScRsp.proto\"\xa8\x01\n\x18ChimeraDuelShopLockS\
-    cRsp\x12\x1b\n\tis_locked\x18\x01\x20\x01(\x08R\x08isLocked\x12\x18\n\
-    \x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\"\n\x0bNDJGKJMPPHJ\x18\
-    \x04\x20\x01(\rH\0R\x0bNDJGKJMPPHJ\x12\"\n\x0bAGBAIFPNKII\x18\x03\x20\
-    \x01(\rH\0R\x0bAGBAIFPNKIIB\r\n\x0bKKNBOACNCONb\x06proto3\
+    cRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12\x1b\n\tis_l\
+    ocked\x18\x07\x20\x01(\x08R\x08isLocked\x12\"\n\x0bNDJGKJMPPHJ\x18\x0c\
+    \x20\x01(\rH\0R\x0bNDJGKJMPPHJ\x12\"\n\x0bAGBAIFPNKII\x18\x0e\x20\x01(\r\
+    H\0R\x0bAGBAIFPNKIIB\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

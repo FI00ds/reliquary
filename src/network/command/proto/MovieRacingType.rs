@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:MovieRacingType)
 pub enum MovieRacingType {
-    // @@protoc_insertion_point(enum_value:MovieRacingType.KKBNKEKDPFM_BIFLGLFOBBM)
-    KKBNKEKDPFM_BIFLGLFOBBM = 0,
-    // @@protoc_insertion_point(enum_value:MovieRacingType.KKBNKEKDPFM_DNKHLGPJNJO)
-    KKBNKEKDPFM_DNKHLGPJNJO = 1,
-    // @@protoc_insertion_point(enum_value:MovieRacingType.KKBNKEKDPFM_FPGEONEKIPD)
-    KKBNKEKDPFM_FPGEONEKIPD = 2,
-    // @@protoc_insertion_point(enum_value:MovieRacingType.KKBNKEKDPFM_CGMLGHICNPN)
-    KKBNKEKDPFM_CGMLGHICNPN = 3,
+    // @@protoc_insertion_point(enum_value:MovieRacingType.MovieRacingType_MovieRacingOverTake)
+    MovieRacingType_MovieRacingOverTake = 0,
+    // @@protoc_insertion_point(enum_value:MovieRacingType.MovieRacingType_MovieRacingOverTakeEndless)
+    MovieRacingType_MovieRacingOverTakeEndless = 1,
+    // @@protoc_insertion_point(enum_value:MovieRacingType.MovieRacingType_MovieRacingShooting)
+    MovieRacingType_MovieRacingShooting = 2,
+    // @@protoc_insertion_point(enum_value:MovieRacingType.MovieRacingType_MovieRacingShootingEndless)
+    MovieRacingType_MovieRacingShootingEndless = 3,
 }
 
 impl ::protobuf::Enum for MovieRacingType {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for MovieRacingType {
 
     fn from_i32(value: i32) -> ::std::option::Option<MovieRacingType> {
         match value {
-            0 => ::std::option::Option::Some(MovieRacingType::KKBNKEKDPFM_BIFLGLFOBBM),
-            1 => ::std::option::Option::Some(MovieRacingType::KKBNKEKDPFM_DNKHLGPJNJO),
-            2 => ::std::option::Option::Some(MovieRacingType::KKBNKEKDPFM_FPGEONEKIPD),
-            3 => ::std::option::Option::Some(MovieRacingType::KKBNKEKDPFM_CGMLGHICNPN),
+            0 => ::std::option::Option::Some(MovieRacingType::MovieRacingType_MovieRacingOverTake),
+            1 => ::std::option::Option::Some(MovieRacingType::MovieRacingType_MovieRacingOverTakeEndless),
+            2 => ::std::option::Option::Some(MovieRacingType::MovieRacingType_MovieRacingShooting),
+            3 => ::std::option::Option::Some(MovieRacingType::MovieRacingType_MovieRacingShootingEndless),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<MovieRacingType> {
         match str {
-            "KKBNKEKDPFM_BIFLGLFOBBM" => ::std::option::Option::Some(MovieRacingType::KKBNKEKDPFM_BIFLGLFOBBM),
-            "KKBNKEKDPFM_DNKHLGPJNJO" => ::std::option::Option::Some(MovieRacingType::KKBNKEKDPFM_DNKHLGPJNJO),
-            "KKBNKEKDPFM_FPGEONEKIPD" => ::std::option::Option::Some(MovieRacingType::KKBNKEKDPFM_FPGEONEKIPD),
-            "KKBNKEKDPFM_CGMLGHICNPN" => ::std::option::Option::Some(MovieRacingType::KKBNKEKDPFM_CGMLGHICNPN),
+            "MovieRacingType_MovieRacingOverTake" => ::std::option::Option::Some(MovieRacingType::MovieRacingType_MovieRacingOverTake),
+            "MovieRacingType_MovieRacingOverTakeEndless" => ::std::option::Option::Some(MovieRacingType::MovieRacingType_MovieRacingOverTakeEndless),
+            "MovieRacingType_MovieRacingShooting" => ::std::option::Option::Some(MovieRacingType::MovieRacingType_MovieRacingShooting),
+            "MovieRacingType_MovieRacingShootingEndless" => ::std::option::Option::Some(MovieRacingType::MovieRacingType_MovieRacingShootingEndless),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [MovieRacingType] = &[
-        MovieRacingType::KKBNKEKDPFM_BIFLGLFOBBM,
-        MovieRacingType::KKBNKEKDPFM_DNKHLGPJNJO,
-        MovieRacingType::KKBNKEKDPFM_FPGEONEKIPD,
-        MovieRacingType::KKBNKEKDPFM_CGMLGHICNPN,
+        MovieRacingType::MovieRacingType_MovieRacingOverTake,
+        MovieRacingType::MovieRacingType_MovieRacingOverTakeEndless,
+        MovieRacingType::MovieRacingType_MovieRacingShooting,
+        MovieRacingType::MovieRacingType_MovieRacingShootingEndless,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for MovieRacingType {
 
 impl ::std::default::Default for MovieRacingType {
     fn default() -> Self {
-        MovieRacingType::KKBNKEKDPFM_BIFLGLFOBBM
+        MovieRacingType::MovieRacingType_MovieRacingOverTake
     }
 }
 
@@ -97,10 +97,10 @@ impl MovieRacingType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15MovieRacingType.proto*\x85\x01\n\x0fMovieRacingType\x12\x1b\n\x17K\
-    KBNKEKDPFM_BIFLGLFOBBM\x10\0\x12\x1b\n\x17KKBNKEKDPFM_DNKHLGPJNJO\x10\
-    \x01\x12\x1b\n\x17KKBNKEKDPFM_FPGEONEKIPD\x10\x02\x12\x1b\n\x17KKBNKEKDP\
-    FM_CGMLGHICNPN\x10\x03b\x06proto3\
+    \n\x15MovieRacingType.proto*\xc3\x01\n\x0fMovieRacingType\x12'\n#MovieRa\
+    cingType_MovieRacingOverTake\x10\0\x12.\n*MovieRacingType_MovieRacingOve\
+    rTakeEndless\x10\x01\x12'\n#MovieRacingType_MovieRacingShooting\x10\x02\
+    \x12.\n*MovieRacingType_MovieRacingShootingEndless\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

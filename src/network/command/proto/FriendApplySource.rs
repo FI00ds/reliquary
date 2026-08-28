@@ -27,28 +27,28 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:FriendApplySource)
 pub enum FriendApplySource {
-    // @@protoc_insertion_point(enum_value:FriendApplySource.HPEKGMDHFLO_NLCDGIPGFDJ)
-    HPEKGMDHFLO_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:FriendApplySource.HPEKGMDHFLO_GODCHGIMIAJ)
-    HPEKGMDHFLO_GODCHGIMIAJ = 1,
-    // @@protoc_insertion_point(enum_value:FriendApplySource.HPEKGMDHFLO_BLNBLLNHICH)
-    HPEKGMDHFLO_BLNBLLNHICH = 2,
-    // @@protoc_insertion_point(enum_value:FriendApplySource.HPEKGMDHFLO_ODHMGPNECFO)
-    HPEKGMDHFLO_ODHMGPNECFO = 3,
-    // @@protoc_insertion_point(enum_value:FriendApplySource.HPEKGMDHFLO_OBPHECNLKAP)
-    HPEKGMDHFLO_OBPHECNLKAP = 4,
-    // @@protoc_insertion_point(enum_value:FriendApplySource.HPEKGMDHFLO_OKJJPJKLIOG)
-    HPEKGMDHFLO_OKJJPJKLIOG = 5,
-    // @@protoc_insertion_point(enum_value:FriendApplySource.HPEKGMDHFLO_OGCABAGJIIK)
-    HPEKGMDHFLO_OGCABAGJIIK = 6,
-    // @@protoc_insertion_point(enum_value:FriendApplySource.HPEKGMDHFLO_CGMPJEGGEED)
-    HPEKGMDHFLO_CGMPJEGGEED = 7,
-    // @@protoc_insertion_point(enum_value:FriendApplySource.HPEKGMDHFLO_JGFGNCLKIBO)
-    HPEKGMDHFLO_JGFGNCLKIBO = 8,
-    // @@protoc_insertion_point(enum_value:FriendApplySource.HPEKGMDHFLO_MKHLALNLOLA)
-    HPEKGMDHFLO_MKHLALNLOLA = 9,
-    // @@protoc_insertion_point(enum_value:FriendApplySource.HPEKGMDHFLO_CILGIDDHODG)
-    HPEKGMDHFLO_CILGIDDHODG = 10,
+    // @@protoc_insertion_point(enum_value:FriendApplySource.FriendApplySource_None)
+    FriendApplySource_None = 0,
+    // @@protoc_insertion_point(enum_value:FriendApplySource.FriendApplySource_Search)
+    FriendApplySource_Search = 1,
+    // @@protoc_insertion_point(enum_value:FriendApplySource.FriendApplySource_Recommend)
+    FriendApplySource_Recommend = 2,
+    // @@protoc_insertion_point(enum_value:FriendApplySource.FriendApplySource_Assist)
+    FriendApplySource_Assist = 3,
+    // @@protoc_insertion_point(enum_value:FriendApplySource.FriendApplySource_RecommendAssist)
+    FriendApplySource_RecommendAssist = 4,
+    // @@protoc_insertion_point(enum_value:FriendApplySource.FriendApplySource_PsnFriend)
+    FriendApplySource_PsnFriend = 5,
+    // @@protoc_insertion_point(enum_value:FriendApplySource.FriendApplySource_AssistReward)
+    FriendApplySource_AssistReward = 6,
+    // @@protoc_insertion_point(enum_value:FriendApplySource.FriendApplySource_SocialPlay)
+    FriendApplySource_SocialPlay = 7,
+    // @@protoc_insertion_point(enum_value:FriendApplySource.FriendApplySource_Roaming)
+    FriendApplySource_Roaming = 8,
+    // @@protoc_insertion_point(enum_value:FriendApplySource.FriendApplySource_DiceCombatV2)
+    FriendApplySource_DiceCombatV2 = 9,
+    // @@protoc_insertion_point(enum_value:FriendApplySource.FriendApplySource_RecentVisitor)
+    FriendApplySource_RecentVisitor = 10,
 }
 
 impl ::protobuf::Enum for FriendApplySource {
@@ -60,50 +60,50 @@ impl ::protobuf::Enum for FriendApplySource {
 
     fn from_i32(value: i32) -> ::std::option::Option<FriendApplySource> {
         match value {
-            0 => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_NLCDGIPGFDJ),
-            1 => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_GODCHGIMIAJ),
-            2 => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_BLNBLLNHICH),
-            3 => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_ODHMGPNECFO),
-            4 => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_OBPHECNLKAP),
-            5 => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_OKJJPJKLIOG),
-            6 => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_OGCABAGJIIK),
-            7 => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_CGMPJEGGEED),
-            8 => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_JGFGNCLKIBO),
-            9 => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_MKHLALNLOLA),
-            10 => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_CILGIDDHODG),
+            0 => ::std::option::Option::Some(FriendApplySource::FriendApplySource_None),
+            1 => ::std::option::Option::Some(FriendApplySource::FriendApplySource_Search),
+            2 => ::std::option::Option::Some(FriendApplySource::FriendApplySource_Recommend),
+            3 => ::std::option::Option::Some(FriendApplySource::FriendApplySource_Assist),
+            4 => ::std::option::Option::Some(FriendApplySource::FriendApplySource_RecommendAssist),
+            5 => ::std::option::Option::Some(FriendApplySource::FriendApplySource_PsnFriend),
+            6 => ::std::option::Option::Some(FriendApplySource::FriendApplySource_AssistReward),
+            7 => ::std::option::Option::Some(FriendApplySource::FriendApplySource_SocialPlay),
+            8 => ::std::option::Option::Some(FriendApplySource::FriendApplySource_Roaming),
+            9 => ::std::option::Option::Some(FriendApplySource::FriendApplySource_DiceCombatV2),
+            10 => ::std::option::Option::Some(FriendApplySource::FriendApplySource_RecentVisitor),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<FriendApplySource> {
         match str {
-            "HPEKGMDHFLO_NLCDGIPGFDJ" => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_NLCDGIPGFDJ),
-            "HPEKGMDHFLO_GODCHGIMIAJ" => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_GODCHGIMIAJ),
-            "HPEKGMDHFLO_BLNBLLNHICH" => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_BLNBLLNHICH),
-            "HPEKGMDHFLO_ODHMGPNECFO" => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_ODHMGPNECFO),
-            "HPEKGMDHFLO_OBPHECNLKAP" => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_OBPHECNLKAP),
-            "HPEKGMDHFLO_OKJJPJKLIOG" => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_OKJJPJKLIOG),
-            "HPEKGMDHFLO_OGCABAGJIIK" => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_OGCABAGJIIK),
-            "HPEKGMDHFLO_CGMPJEGGEED" => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_CGMPJEGGEED),
-            "HPEKGMDHFLO_JGFGNCLKIBO" => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_JGFGNCLKIBO),
-            "HPEKGMDHFLO_MKHLALNLOLA" => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_MKHLALNLOLA),
-            "HPEKGMDHFLO_CILGIDDHODG" => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_CILGIDDHODG),
+            "FriendApplySource_None" => ::std::option::Option::Some(FriendApplySource::FriendApplySource_None),
+            "FriendApplySource_Search" => ::std::option::Option::Some(FriendApplySource::FriendApplySource_Search),
+            "FriendApplySource_Recommend" => ::std::option::Option::Some(FriendApplySource::FriendApplySource_Recommend),
+            "FriendApplySource_Assist" => ::std::option::Option::Some(FriendApplySource::FriendApplySource_Assist),
+            "FriendApplySource_RecommendAssist" => ::std::option::Option::Some(FriendApplySource::FriendApplySource_RecommendAssist),
+            "FriendApplySource_PsnFriend" => ::std::option::Option::Some(FriendApplySource::FriendApplySource_PsnFriend),
+            "FriendApplySource_AssistReward" => ::std::option::Option::Some(FriendApplySource::FriendApplySource_AssistReward),
+            "FriendApplySource_SocialPlay" => ::std::option::Option::Some(FriendApplySource::FriendApplySource_SocialPlay),
+            "FriendApplySource_Roaming" => ::std::option::Option::Some(FriendApplySource::FriendApplySource_Roaming),
+            "FriendApplySource_DiceCombatV2" => ::std::option::Option::Some(FriendApplySource::FriendApplySource_DiceCombatV2),
+            "FriendApplySource_RecentVisitor" => ::std::option::Option::Some(FriendApplySource::FriendApplySource_RecentVisitor),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [FriendApplySource] = &[
-        FriendApplySource::HPEKGMDHFLO_NLCDGIPGFDJ,
-        FriendApplySource::HPEKGMDHFLO_GODCHGIMIAJ,
-        FriendApplySource::HPEKGMDHFLO_BLNBLLNHICH,
-        FriendApplySource::HPEKGMDHFLO_ODHMGPNECFO,
-        FriendApplySource::HPEKGMDHFLO_OBPHECNLKAP,
-        FriendApplySource::HPEKGMDHFLO_OKJJPJKLIOG,
-        FriendApplySource::HPEKGMDHFLO_OGCABAGJIIK,
-        FriendApplySource::HPEKGMDHFLO_CGMPJEGGEED,
-        FriendApplySource::HPEKGMDHFLO_JGFGNCLKIBO,
-        FriendApplySource::HPEKGMDHFLO_MKHLALNLOLA,
-        FriendApplySource::HPEKGMDHFLO_CILGIDDHODG,
+        FriendApplySource::FriendApplySource_None,
+        FriendApplySource::FriendApplySource_Search,
+        FriendApplySource::FriendApplySource_Recommend,
+        FriendApplySource::FriendApplySource_Assist,
+        FriendApplySource::FriendApplySource_RecommendAssist,
+        FriendApplySource::FriendApplySource_PsnFriend,
+        FriendApplySource::FriendApplySource_AssistReward,
+        FriendApplySource::FriendApplySource_SocialPlay,
+        FriendApplySource::FriendApplySource_Roaming,
+        FriendApplySource::FriendApplySource_DiceCombatV2,
+        FriendApplySource::FriendApplySource_RecentVisitor,
     ];
 }
 
@@ -121,7 +121,7 @@ impl ::protobuf::EnumFull for FriendApplySource {
 
 impl ::std::default::Default for FriendApplySource {
     fn default() -> Self {
-        FriendApplySource::HPEKGMDHFLO_NLCDGIPGFDJ
+        FriendApplySource::FriendApplySource_None
     }
 }
 
@@ -132,14 +132,15 @@ impl FriendApplySource {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17FriendApplySource.proto*\xd2\x02\n\x11FriendApplySource\x12\x1b\n\
-    \x17HPEKGMDHFLO_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17HPEKGMDHFLO_GODCHGIMIAJ\
-    \x10\x01\x12\x1b\n\x17HPEKGMDHFLO_BLNBLLNHICH\x10\x02\x12\x1b\n\x17HPEKG\
-    MDHFLO_ODHMGPNECFO\x10\x03\x12\x1b\n\x17HPEKGMDHFLO_OBPHECNLKAP\x10\x04\
-    \x12\x1b\n\x17HPEKGMDHFLO_OKJJPJKLIOG\x10\x05\x12\x1b\n\x17HPEKGMDHFLO_O\
-    GCABAGJIIK\x10\x06\x12\x1b\n\x17HPEKGMDHFLO_CGMPJEGGEED\x10\x07\x12\x1b\
-    \n\x17HPEKGMDHFLO_JGFGNCLKIBO\x10\x08\x12\x1b\n\x17HPEKGMDHFLO_MKHLALNLO\
-    LA\x10\t\x12\x1b\n\x17HPEKGMDHFLO_CILGIDDHODG\x10\nb\x06proto3\
+    \n\x17FriendApplySource.proto*\x82\x03\n\x11FriendApplySource\x12\x1a\n\
+    \x16FriendApplySource_None\x10\0\x12\x1c\n\x18FriendApplySource_Search\
+    \x10\x01\x12\x1f\n\x1bFriendApplySource_Recommend\x10\x02\x12\x1c\n\x18F\
+    riendApplySource_Assist\x10\x03\x12%\n!FriendApplySource_RecommendAssist\
+    \x10\x04\x12\x1f\n\x1bFriendApplySource_PsnFriend\x10\x05\x12\"\n\x1eFri\
+    endApplySource_AssistReward\x10\x06\x12\x20\n\x1cFriendApplySource_Socia\
+    lPlay\x10\x07\x12\x1d\n\x19FriendApplySource_Roaming\x10\x08\x12\"\n\x1e\
+    FriendApplySource_DiceCombatV2\x10\t\x12#\n\x1fFriendApplySource_RecentV\
+    isitor\x10\nb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

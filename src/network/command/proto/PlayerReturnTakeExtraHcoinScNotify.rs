@@ -86,13 +86,13 @@ impl ::protobuf::Message for PlayerReturnTakeExtraHcoinScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                16 => {
                     self.ONAEMDLNJDA = is.read_uint32()?;
                 },
-                40 => {
+                56 => {
                     self.LHGKNPENJDO = is.read_uint32()?;
                 },
-                64 => {
+                72 => {
                     self.EAJKAIKEHOL = is.read_bool()?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for PlayerReturnTakeExtraHcoinScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.ONAEMDLNJDA != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ONAEMDLNJDA);
+            my_size += ::protobuf::rt::uint32_size(2, self.ONAEMDLNJDA);
         }
         if self.LHGKNPENJDO != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.LHGKNPENJDO);
+            my_size += ::protobuf::rt::uint32_size(7, self.LHGKNPENJDO);
         }
         if self.EAJKAIKEHOL != false {
             my_size += 1 + 1;
@@ -123,13 +123,13 @@ impl ::protobuf::Message for PlayerReturnTakeExtraHcoinScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.ONAEMDLNJDA != 0 {
-            os.write_uint32(3, self.ONAEMDLNJDA)?;
+            os.write_uint32(2, self.ONAEMDLNJDA)?;
         }
         if self.LHGKNPENJDO != 0 {
-            os.write_uint32(5, self.LHGKNPENJDO)?;
+            os.write_uint32(7, self.LHGKNPENJDO)?;
         }
         if self.EAJKAIKEHOL != false {
-            os.write_bool(8, self.EAJKAIKEHOL)?;
+            os.write_bool(9, self.EAJKAIKEHOL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for PlayerReturnTakeExtraHcoinScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(PlayerReturnTakeExtraHcoinScNotify.proto\"\x8a\x01\n\"PlayerReturnTak\
-    eExtraHcoinScNotify\x12\x20\n\x0bONAEMDLNJDA\x18\x03\x20\x01(\rR\x0bONAE\
-    MDLNJDA\x12\x20\n\x0bLHGKNPENJDO\x18\x05\x20\x01(\rR\x0bLHGKNPENJDO\x12\
-    \x20\n\x0bEAJKAIKEHOL\x18\x08\x20\x01(\x08R\x0bEAJKAIKEHOLb\x06proto3\
+    eExtraHcoinScNotify\x12\x20\n\x0bONAEMDLNJDA\x18\x02\x20\x01(\rR\x0bONAE\
+    MDLNJDA\x12\x20\n\x0bLHGKNPENJDO\x18\x07\x20\x01(\rR\x0bLHGKNPENJDO\x12\
+    \x20\n\x0bEAJKAIKEHOL\x18\t\x20\x01(\x08R\x0bEAJKAIKEHOLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

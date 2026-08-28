@@ -30,18 +30,18 @@ pub struct FFEEHEBBLCI {
     // message fields
     // @@protoc_insertion_point(field:FFEEHEBBLCI.PKDANDJFAON)
     pub PKDANDJFAON: u32,
-    // @@protoc_insertion_point(field:FFEEHEBBLCI.state)
-    pub state: ::protobuf::EnumOrUnknown<super::MuseumRandomEventState::MuseumRandomEventState>,
     // @@protoc_insertion_point(field:FFEEHEBBLCI.OMILGFHKGBC)
     pub OMILGFHKGBC: u32,
     // @@protoc_insertion_point(field:FFEEHEBBLCI.JJBKGGDAGIM)
     pub JJBKGGDAGIM: u32,
     // @@protoc_insertion_point(field:FFEEHEBBLCI.JGPIOFGPBGE)
     pub JGPIOFGPBGE: u32,
-    // @@protoc_insertion_point(field:FFEEHEBBLCI.DAHOMKDLEGI)
-    pub DAHOMKDLEGI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:FFEEHEBBLCI.state)
+    pub state: ::protobuf::EnumOrUnknown<super::MuseumRandomEventState::MuseumRandomEventState>,
     // @@protoc_insertion_point(field:FFEEHEBBLCI.event_id)
     pub event_id: u32,
+    // @@protoc_insertion_point(field:FFEEHEBBLCI.DAHOMKDLEGI)
+    pub DAHOMKDLEGI: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:FFEEHEBBLCI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -67,11 +67,6 @@ impl FFEEHEBBLCI {
             |m: &mut FFEEHEBBLCI| { &mut m.PKDANDJFAON },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "state",
-            |m: &FFEEHEBBLCI| { &m.state },
-            |m: &mut FFEEHEBBLCI| { &mut m.state },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OMILGFHKGBC",
             |m: &FFEEHEBBLCI| { &m.OMILGFHKGBC },
             |m: &mut FFEEHEBBLCI| { &mut m.OMILGFHKGBC },
@@ -86,15 +81,20 @@ impl FFEEHEBBLCI {
             |m: &FFEEHEBBLCI| { &m.JGPIOFGPBGE },
             |m: &mut FFEEHEBBLCI| { &mut m.JGPIOFGPBGE },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DAHOMKDLEGI",
-            |m: &FFEEHEBBLCI| { &m.DAHOMKDLEGI },
-            |m: &mut FFEEHEBBLCI| { &mut m.DAHOMKDLEGI },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "state",
+            |m: &FFEEHEBBLCI| { &m.state },
+            |m: &mut FFEEHEBBLCI| { &mut m.state },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "event_id",
             |m: &FFEEHEBBLCI| { &m.event_id },
             |m: &mut FFEEHEBBLCI| { &mut m.event_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DAHOMKDLEGI",
+            |m: &FFEEHEBBLCI| { &m.DAHOMKDLEGI },
+            |m: &mut FFEEHEBBLCI| { &mut m.DAHOMKDLEGI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FFEEHEBBLCI>(
             "FFEEHEBBLCI",
@@ -114,29 +114,29 @@ impl ::protobuf::Message for FFEEHEBBLCI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                8 => {
                     self.PKDANDJFAON = is.read_uint32()?;
                 },
                 24 => {
-                    self.state = is.read_enum_or_unknown()?;
-                },
-                40 => {
                     self.OMILGFHKGBC = is.read_uint32()?;
                 },
-                64 => {
+                32 => {
                     self.JJBKGGDAGIM = is.read_uint32()?;
                 },
-                72 => {
+                48 => {
                     self.JGPIOFGPBGE = is.read_uint32()?;
                 },
-                98 => {
+                56 => {
+                    self.state = is.read_enum_or_unknown()?;
+                },
+                64 => {
+                    self.event_id = is.read_uint32()?;
+                },
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.DAHOMKDLEGI)?;
                 },
-                96 => {
+                88 => {
                     self.DAHOMKDLEGI.push(is.read_uint32()?);
-                },
-                112 => {
-                    self.event_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -151,24 +151,24 @@ impl ::protobuf::Message for FFEEHEBBLCI {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PKDANDJFAON != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.PKDANDJFAON);
-        }
-        if self.state != ::protobuf::EnumOrUnknown::new(super::MuseumRandomEventState::MuseumRandomEventState::NLAEDPNBHBP_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(3, self.state.value());
+            my_size += ::protobuf::rt::uint32_size(1, self.PKDANDJFAON);
         }
         if self.OMILGFHKGBC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.OMILGFHKGBC);
+            my_size += ::protobuf::rt::uint32_size(3, self.OMILGFHKGBC);
         }
         if self.JJBKGGDAGIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.JJBKGGDAGIM);
+            my_size += ::protobuf::rt::uint32_size(4, self.JJBKGGDAGIM);
         }
         if self.JGPIOFGPBGE != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.JGPIOFGPBGE);
+            my_size += ::protobuf::rt::uint32_size(6, self.JGPIOFGPBGE);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.DAHOMKDLEGI);
+        if self.state != ::protobuf::EnumOrUnknown::new(super::MuseumRandomEventState::MuseumRandomEventState::MuseumRandomEventState_None) {
+            my_size += ::protobuf::rt::int32_size(7, self.state.value());
+        }
         if self.event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.event_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.event_id);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.DAHOMKDLEGI);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -176,24 +176,24 @@ impl ::protobuf::Message for FFEEHEBBLCI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PKDANDJFAON != 0 {
-            os.write_uint32(2, self.PKDANDJFAON)?;
-        }
-        if self.state != ::protobuf::EnumOrUnknown::new(super::MuseumRandomEventState::MuseumRandomEventState::NLAEDPNBHBP_NLCDGIPGFDJ) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.state))?;
+            os.write_uint32(1, self.PKDANDJFAON)?;
         }
         if self.OMILGFHKGBC != 0 {
-            os.write_uint32(5, self.OMILGFHKGBC)?;
+            os.write_uint32(3, self.OMILGFHKGBC)?;
         }
         if self.JJBKGGDAGIM != 0 {
-            os.write_uint32(8, self.JJBKGGDAGIM)?;
+            os.write_uint32(4, self.JJBKGGDAGIM)?;
         }
         if self.JGPIOFGPBGE != 0 {
-            os.write_uint32(9, self.JGPIOFGPBGE)?;
+            os.write_uint32(6, self.JGPIOFGPBGE)?;
         }
-        os.write_repeated_packed_uint32(12, &self.DAHOMKDLEGI)?;
+        if self.state != ::protobuf::EnumOrUnknown::new(super::MuseumRandomEventState::MuseumRandomEventState::MuseumRandomEventState_None) {
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.state))?;
+        }
         if self.event_id != 0 {
-            os.write_uint32(14, self.event_id)?;
+            os.write_uint32(8, self.event_id)?;
         }
+        os.write_repeated_packed_uint32(11, &self.DAHOMKDLEGI)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -212,24 +212,24 @@ impl ::protobuf::Message for FFEEHEBBLCI {
 
     fn clear(&mut self) {
         self.PKDANDJFAON = 0;
-        self.state = ::protobuf::EnumOrUnknown::new(super::MuseumRandomEventState::MuseumRandomEventState::NLAEDPNBHBP_NLCDGIPGFDJ);
         self.OMILGFHKGBC = 0;
         self.JJBKGGDAGIM = 0;
         self.JGPIOFGPBGE = 0;
-        self.DAHOMKDLEGI.clear();
+        self.state = ::protobuf::EnumOrUnknown::new(super::MuseumRandomEventState::MuseumRandomEventState::MuseumRandomEventState_None);
         self.event_id = 0;
+        self.DAHOMKDLEGI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FFEEHEBBLCI {
         static instance: FFEEHEBBLCI = FFEEHEBBLCI {
             PKDANDJFAON: 0,
-            state: ::protobuf::EnumOrUnknown::from_i32(0),
             OMILGFHKGBC: 0,
             JJBKGGDAGIM: 0,
             JGPIOFGPBGE: 0,
-            DAHOMKDLEGI: ::std::vec::Vec::new(),
+            state: ::protobuf::EnumOrUnknown::from_i32(0),
             event_id: 0,
+            DAHOMKDLEGI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -255,13 +255,13 @@ impl ::protobuf::reflect::ProtobufValue for FFEEHEBBLCI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FFEEHEBBLCI.proto\x1a\x1cMuseumRandomEventState.proto\"\x81\x02\n\
-    \x0bFFEEHEBBLCI\x12\x20\n\x0bPKDANDJFAON\x18\x02\x20\x01(\rR\x0bPKDANDJF\
-    AON\x12-\n\x05state\x18\x03\x20\x01(\x0e2\x17.MuseumRandomEventStateR\
-    \x05state\x12\x20\n\x0bOMILGFHKGBC\x18\x05\x20\x01(\rR\x0bOMILGFHKGBC\
-    \x12\x20\n\x0bJJBKGGDAGIM\x18\x08\x20\x01(\rR\x0bJJBKGGDAGIM\x12\x20\n\
-    \x0bJGPIOFGPBGE\x18\t\x20\x01(\rR\x0bJGPIOFGPBGE\x12\x20\n\x0bDAHOMKDLEG\
-    I\x18\x0c\x20\x03(\rR\x0bDAHOMKDLEGI\x12\x19\n\x08event_id\x18\x0e\x20\
-    \x01(\rR\x07eventIdb\x06proto3\
+    \x0bFFEEHEBBLCI\x12\x20\n\x0bPKDANDJFAON\x18\x01\x20\x01(\rR\x0bPKDANDJF\
+    AON\x12\x20\n\x0bOMILGFHKGBC\x18\x03\x20\x01(\rR\x0bOMILGFHKGBC\x12\x20\
+    \n\x0bJJBKGGDAGIM\x18\x04\x20\x01(\rR\x0bJJBKGGDAGIM\x12\x20\n\x0bJGPIOF\
+    GPBGE\x18\x06\x20\x01(\rR\x0bJGPIOFGPBGE\x12-\n\x05state\x18\x07\x20\x01\
+    (\x0e2\x17.MuseumRandomEventStateR\x05state\x12\x19\n\x08event_id\x18\
+    \x08\x20\x01(\rR\x07eventId\x12\x20\n\x0bDAHOMKDLEGI\x18\x0b\x20\x03(\rR\
+    \x0bDAHOMKDLEGIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

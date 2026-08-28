@@ -82,7 +82,7 @@ impl ::protobuf::Message for MonopolyAcceptQuizScRsp {
                 88 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LOCHFJEECKL)?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for MonopolyAcceptQuizScRsp {
             os.write_uint32(11, self.retcode)?;
         }
         if let Some(v) = self.LOCHFJEECKL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyAcceptQuizScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dMonopolyAcceptQuizScRsp.proto\x1a\x11JGKNADEDNHB.proto\"c\n\x17Mon\
     opolyAcceptQuizScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\
-    \x12.\n\x0bLOCHFJEECKL\x18\x0e\x20\x01(\x0b2\x0c.JGKNADEDNHBR\x0bLOCHFJE\
+    \x12.\n\x0bLOCHFJEECKL\x18\x0f\x20\x01(\x0b2\x0c.JGKNADEDNHBR\x0bLOCHFJE\
     ECKLb\x06proto3\
 ";
 

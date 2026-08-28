@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TutorialGuide {
     // message fields
-    // @@protoc_insertion_point(field:TutorialGuide.id)
-    pub id: u32,
     // @@protoc_insertion_point(field:TutorialGuide.status)
     pub status: ::protobuf::EnumOrUnknown<super::TutorialStatus::TutorialStatus>,
     // @@protoc_insertion_point(field:TutorialGuide.type)
     pub type_: ::protobuf::EnumOrUnknown<super::TutorialGuideType::TutorialGuideType>,
+    // @@protoc_insertion_point(field:TutorialGuide.id)
+    pub id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TutorialGuide.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl TutorialGuide {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "id",
-            |m: &TutorialGuide| { &m.id },
-            |m: &mut TutorialGuide| { &mut m.id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
             |m: &TutorialGuide| { &m.status },
             |m: &mut TutorialGuide| { &mut m.status },
@@ -67,6 +62,11 @@ impl TutorialGuide {
             "type",
             |m: &TutorialGuide| { &m.type_ },
             |m: &mut TutorialGuide| { &mut m.type_ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "id",
+            |m: &TutorialGuide| { &m.id },
+            |m: &mut TutorialGuide| { &mut m.id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TutorialGuide>(
             "TutorialGuide",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for TutorialGuide {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.id = is.read_uint32()?;
-                },
-                16 => {
+                24 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
-                56 => {
+                48 => {
                     self.type_ = is.read_enum_or_unknown()?;
+                },
+                104 => {
+                    self.id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for TutorialGuide {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.status != ::protobuf::EnumOrUnknown::new(super::TutorialStatus::TutorialStatus::TutorialStatus_TutorialNone) {
+            my_size += ::protobuf::rt::int32_size(3, self.status.value());
+        }
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::TutorialGuideType::TutorialGuideType::TutorialGuideType_TutorialGuideDefault) {
+            my_size += ::protobuf::rt::int32_size(6, self.type_.value());
+        }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.id);
-        }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::TutorialStatus::TutorialStatus::TUTORIAL_NONE) {
-            my_size += ::protobuf::rt::int32_size(2, self.status.value());
-        }
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::TutorialGuideType::TutorialGuideType::AOCCEBGNPJA_GINFCGDDDOM) {
-            my_size += ::protobuf::rt::int32_size(7, self.type_.value());
+            my_size += ::protobuf::rt::uint32_size(13, self.id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for TutorialGuide {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.status != ::protobuf::EnumOrUnknown::new(super::TutorialStatus::TutorialStatus::TutorialStatus_TutorialNone) {
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        }
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::TutorialGuideType::TutorialGuideType::TutorialGuideType_TutorialGuideDefault) {
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+        }
         if self.id != 0 {
-            os.write_uint32(1, self.id)?;
-        }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::TutorialStatus::TutorialStatus::TUTORIAL_NONE) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.status))?;
-        }
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::TutorialGuideType::TutorialGuideType::AOCCEBGNPJA_GINFCGDDDOM) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+            os.write_uint32(13, self.id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for TutorialGuide {
     }
 
     fn clear(&mut self) {
+        self.status = ::protobuf::EnumOrUnknown::new(super::TutorialStatus::TutorialStatus::TutorialStatus_TutorialNone);
+        self.type_ = ::protobuf::EnumOrUnknown::new(super::TutorialGuideType::TutorialGuideType::TutorialGuideType_TutorialGuideDefault);
         self.id = 0;
-        self.status = ::protobuf::EnumOrUnknown::new(super::TutorialStatus::TutorialStatus::TUTORIAL_NONE);
-        self.type_ = ::protobuf::EnumOrUnknown::new(super::TutorialGuideType::TutorialGuideType::AOCCEBGNPJA_GINFCGDDDOM);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TutorialGuide {
         static instance: TutorialGuide = TutorialGuide {
-            id: 0,
             status: ::protobuf::EnumOrUnknown::from_i32(0),
             type_: ::protobuf::EnumOrUnknown::from_i32(0),
+            id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for TutorialGuide {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13TutorialGuide.proto\x1a\x17TutorialGuideType.proto\x1a\x14Tutorial\
-    Status.proto\"p\n\rTutorialGuide\x12\x0e\n\x02id\x18\x01\x20\x01(\rR\x02\
-    id\x12'\n\x06status\x18\x02\x20\x01(\x0e2\x0f.TutorialStatusR\x06status\
-    \x12&\n\x04type\x18\x07\x20\x01(\x0e2\x12.TutorialGuideTypeR\x04typeb\
-    \x06proto3\
+    Status.proto\"p\n\rTutorialGuide\x12'\n\x06status\x18\x03\x20\x01(\x0e2\
+    \x0f.TutorialStatusR\x06status\x12&\n\x04type\x18\x06\x20\x01(\x0e2\x12.\
+    TutorialGuideTypeR\x04type\x12\x0e\n\x02id\x18\r\x20\x01(\rR\x02idb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

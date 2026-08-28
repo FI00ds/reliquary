@@ -82,7 +82,7 @@ impl ::protobuf::Message for CakeRaceStartPveScRsp {
                 16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                88 => {
+                40 => {
                     self.LOPNADHJKBF = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for CakeRaceStartPveScRsp {
             my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         if self.LOPNADHJKBF != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LOPNADHJKBF);
+            my_size += ::protobuf::rt::uint32_size(5, self.LOPNADHJKBF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for CakeRaceStartPveScRsp {
             os.write_uint32(2, self.retcode)?;
         }
         if self.LOPNADHJKBF != 0 {
-            os.write_uint32(11, self.LOPNADHJKBF)?;
+            os.write_uint32(5, self.LOPNADHJKBF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for CakeRaceStartPveScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bCakeRaceStartPveScRsp.proto\"S\n\x15CakeRaceStartPveScRsp\x12\x18\
     \n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x20\n\x0bLOPNADHJKBF\
-    \x18\x0b\x20\x01(\rR\x0bLOPNADHJKBFb\x06proto3\
+    \x18\x05\x20\x01(\rR\x0bLOPNADHJKBFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

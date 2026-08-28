@@ -30,10 +30,10 @@ pub struct KINJHHBJNJP {
     // message fields
     // @@protoc_insertion_point(field:KINJHHBJNJP.trait_id)
     pub trait_id: u32,
-    // @@protoc_insertion_point(field:KINJHHBJNJP.layer)
-    pub layer: u32,
     // @@protoc_insertion_point(field:KINJHHBJNJP.damage)
     pub damage: f64,
+    // @@protoc_insertion_point(field:KINJHHBJNJP.KOJFHFAKKFO)
+    pub KOJFHFAKKFO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KINJHHBJNJP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl KINJHHBJNJP {
             |m: &mut KINJHHBJNJP| { &mut m.trait_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "layer",
-            |m: &KINJHHBJNJP| { &m.layer },
-            |m: &mut KINJHHBJNJP| { &mut m.layer },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "damage",
             |m: &KINJHHBJNJP| { &m.damage },
             |m: &mut KINJHHBJNJP| { &mut m.damage },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KOJFHFAKKFO",
+            |m: &KINJHHBJNJP| { &m.KOJFHFAKKFO },
+            |m: &mut KINJHHBJNJP| { &mut m.KOJFHFAKKFO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KINJHHBJNJP>(
             "KINJHHBJNJP",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for KINJHHBJNJP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                48 => {
                     self.trait_id = is.read_uint32()?;
                 },
-                72 => {
-                    self.layer = is.read_uint32()?;
-                },
-                105 => {
+                65 => {
                     self.damage = is.read_double()?;
+                },
+                104 => {
+                    self.KOJFHFAKKFO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for KINJHHBJNJP {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.trait_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.trait_id);
-        }
-        if self.layer != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.layer);
+            my_size += ::protobuf::rt::uint32_size(6, self.trait_id);
         }
         if self.damage != 0. {
             my_size += 1 + 8;
+        }
+        if self.KOJFHFAKKFO != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.KOJFHFAKKFO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for KINJHHBJNJP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.trait_id != 0 {
-            os.write_uint32(7, self.trait_id)?;
-        }
-        if self.layer != 0 {
-            os.write_uint32(9, self.layer)?;
+            os.write_uint32(6, self.trait_id)?;
         }
         if self.damage != 0. {
-            os.write_double(13, self.damage)?;
+            os.write_double(8, self.damage)?;
+        }
+        if self.KOJFHFAKKFO != 0 {
+            os.write_uint32(13, self.KOJFHFAKKFO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for KINJHHBJNJP {
 
     fn clear(&mut self) {
         self.trait_id = 0;
-        self.layer = 0;
         self.damage = 0.;
+        self.KOJFHFAKKFO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KINJHHBJNJP {
         static instance: KINJHHBJNJP = KINJHHBJNJP {
             trait_id: 0,
-            layer: 0,
             damage: 0.,
+            KOJFHFAKKFO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for KINJHHBJNJP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KINJHHBJNJP.proto\"V\n\x0bKINJHHBJNJP\x12\x19\n\x08trait_id\x18\
-    \x07\x20\x01(\rR\x07traitId\x12\x14\n\x05layer\x18\t\x20\x01(\rR\x05laye\
-    r\x12\x16\n\x06damage\x18\r\x20\x01(\x01R\x06damageb\x06proto3\
+    \n\x11KINJHHBJNJP.proto\"b\n\x0bKINJHHBJNJP\x12\x19\n\x08trait_id\x18\
+    \x06\x20\x01(\rR\x07traitId\x12\x16\n\x06damage\x18\x08\x20\x01(\x01R\
+    \x06damage\x12\x20\n\x0bKOJFHFAKKFO\x18\r\x20\x01(\rR\x0bKOJFHFAKKFOb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

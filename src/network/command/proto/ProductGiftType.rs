@@ -27,58 +27,58 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:ProductGiftType)
 pub enum ProductGiftType {
-    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_NONE)
-    PRODUCT_GIFT_NONE = 0,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_COIN)
-    PRODUCT_GIFT_COIN = 1,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_MONTH_CARD)
-    PRODUCT_GIFT_MONTH_CARD = 2,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_BP_68)
-    PRODUCT_GIFT_BP_68 = 3,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_BP_128)
-    PRODUCT_GIFT_BP_128 = 4,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_BP68_UPGRADE_128)
-    PRODUCT_GIFT_BP68_UPGRADE_128 = 5,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_POINT_CARD)
-    PRODUCT_GIFT_POINT_CARD = 6,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_PS_PRE_ORDER_1)
-    PRODUCT_GIFT_PS_PRE_ORDER_1 = 7,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_PS_PRE_ORDER_2)
-    PRODUCT_GIFT_PS_PRE_ORDER_2 = 8,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_GOOGLE_POINTS_100)
-    PRODUCT_GIFT_GOOGLE_POINTS_100 = 9,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_GOOGLE_POINTS_150)
-    PRODUCT_GIFT_GOOGLE_POINTS_150 = 10,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_PS_POINT_CARD_030)
-    PRODUCT_GIFT_PS_POINT_CARD_030 = 11,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_PS_POINT_CARD_050)
-    PRODUCT_GIFT_PS_POINT_CARD_050 = 12,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_PS_POINT_CARD_100)
-    PRODUCT_GIFT_PS_POINT_CARD_100 = 13,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_PSN_PLUS)
-    PRODUCT_GIFT_PSN_PLUS = 14,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_SINGLE_6)
-    PRODUCT_GIFT_SINGLE_6 = 15,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_DAILY_LOGIN_30)
-    PRODUCT_GIFT_DAILY_LOGIN_30 = 16,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_APPLE_GIFT_CARD)
-    PRODUCT_GIFT_APPLE_GIFT_CARD = 17,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_FTC_UP_GACHA_TICKET_1)
-    PRODUCT_GIFT_FTC_UP_GACHA_TICKET_1 = 18,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_FTC_UP_GACHA_TICKET_10)
-    PRODUCT_GIFT_FTC_UP_GACHA_TICKET_10 = 19,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_1)
-    PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_1 = 20,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_10)
-    PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_10 = 21,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_TICKET_10)
-    PRODUCT_GIFT_TICKET_10 = 22,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.EJEBHIIKAJF_DBIADNGNFMD)
-    EJEBHIIKAJF_DBIADNGNFMD = 23,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_OOLBPMEJANG)
-    ProductGiftType_OOLBPMEJANG = 24,
-    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_NKJADAFIFIK)
-    ProductGiftType_NKJADAFIFIK = 25,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftNone)
+    ProductGiftType_ProductGiftNone = 0,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftCoin)
+    ProductGiftType_ProductGiftCoin = 1,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftMonthCard)
+    ProductGiftType_ProductGiftMonthCard = 2,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftBp68)
+    ProductGiftType_ProductGiftBp68 = 3,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftBp128)
+    ProductGiftType_ProductGiftBp128 = 4,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftBp68Upgrade128)
+    ProductGiftType_ProductGiftBp68Upgrade128 = 5,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftPointCard)
+    ProductGiftType_ProductGiftPointCard = 6,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftPsPreOrder1)
+    ProductGiftType_ProductGiftPsPreOrder1 = 7,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftPsPreOrder2)
+    ProductGiftType_ProductGiftPsPreOrder2 = 8,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftGooglePoints100)
+    ProductGiftType_ProductGiftGooglePoints100 = 9,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftGooglePoints150)
+    ProductGiftType_ProductGiftGooglePoints150 = 10,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftPsPointCard030)
+    ProductGiftType_ProductGiftPsPointCard030 = 11,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftPsPointCard050)
+    ProductGiftType_ProductGiftPsPointCard050 = 12,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftPsPointCard100)
+    ProductGiftType_ProductGiftPsPointCard100 = 13,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftPsnPlus)
+    ProductGiftType_ProductGiftPsnPlus = 14,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftSingle6)
+    ProductGiftType_ProductGiftSingle6 = 15,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftDailyLogin30)
+    ProductGiftType_ProductGiftDailyLogin30 = 16,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftAppleGiftCard)
+    ProductGiftType_ProductGiftAppleGiftCard = 17,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftFtcUpGachaTicket1)
+    ProductGiftType_ProductGiftFtcUpGachaTicket1 = 18,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftFtcUpGachaTicket10)
+    ProductGiftType_ProductGiftFtcUpGachaTicket10 = 19,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftFtcNormalGachaTicket1)
+    ProductGiftType_ProductGiftFtcNormalGachaTicket1 = 20,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftFtcNormalGachaTicket10)
+    ProductGiftType_ProductGiftFtcNormalGachaTicket10 = 21,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftTicket10)
+    ProductGiftType_ProductGiftTicket10 = 22,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftPlayerHeadDecor)
+    ProductGiftType_ProductGiftPlayerHeadDecor = 23,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftReturnSign)
+    ProductGiftType_ProductGiftReturnSign = 24,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.ProductGiftType_ProductGiftExtraValueTicket1)
+    ProductGiftType_ProductGiftExtraValueTicket1 = 25,
 }
 
 impl ::protobuf::Enum for ProductGiftType {
@@ -90,95 +90,95 @@ impl ::protobuf::Enum for ProductGiftType {
 
     fn from_i32(value: i32) -> ::std::option::Option<ProductGiftType> {
         match value {
-            0 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_NONE),
-            1 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_COIN),
-            2 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_MONTH_CARD),
-            3 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_BP_68),
-            4 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_BP_128),
-            5 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_BP68_UPGRADE_128),
-            6 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_POINT_CARD),
-            7 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_PS_PRE_ORDER_1),
-            8 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_PS_PRE_ORDER_2),
-            9 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_GOOGLE_POINTS_100),
-            10 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_GOOGLE_POINTS_150),
-            11 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_PS_POINT_CARD_030),
-            12 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_PS_POINT_CARD_050),
-            13 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_PS_POINT_CARD_100),
-            14 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_PSN_PLUS),
-            15 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_SINGLE_6),
-            16 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_DAILY_LOGIN_30),
-            17 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_APPLE_GIFT_CARD),
-            18 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_FTC_UP_GACHA_TICKET_1),
-            19 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_FTC_UP_GACHA_TICKET_10),
-            20 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_1),
-            21 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_10),
-            22 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_TICKET_10),
-            23 => ::std::option::Option::Some(ProductGiftType::EJEBHIIKAJF_DBIADNGNFMD),
-            24 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_OOLBPMEJANG),
-            25 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_NKJADAFIFIK),
+            0 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftNone),
+            1 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftCoin),
+            2 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftMonthCard),
+            3 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftBp68),
+            4 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftBp128),
+            5 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftBp68Upgrade128),
+            6 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftPointCard),
+            7 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftPsPreOrder1),
+            8 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftPsPreOrder2),
+            9 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftGooglePoints100),
+            10 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftGooglePoints150),
+            11 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftPsPointCard030),
+            12 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftPsPointCard050),
+            13 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftPsPointCard100),
+            14 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftPsnPlus),
+            15 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftSingle6),
+            16 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftDailyLogin30),
+            17 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftAppleGiftCard),
+            18 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftFtcUpGachaTicket1),
+            19 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftFtcUpGachaTicket10),
+            20 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftFtcNormalGachaTicket1),
+            21 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftFtcNormalGachaTicket10),
+            22 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftTicket10),
+            23 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftPlayerHeadDecor),
+            24 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftReturnSign),
+            25 => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftExtraValueTicket1),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<ProductGiftType> {
         match str {
-            "PRODUCT_GIFT_NONE" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_NONE),
-            "PRODUCT_GIFT_COIN" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_COIN),
-            "PRODUCT_GIFT_MONTH_CARD" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_MONTH_CARD),
-            "PRODUCT_GIFT_BP_68" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_BP_68),
-            "PRODUCT_GIFT_BP_128" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_BP_128),
-            "PRODUCT_GIFT_BP68_UPGRADE_128" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_BP68_UPGRADE_128),
-            "PRODUCT_GIFT_POINT_CARD" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_POINT_CARD),
-            "PRODUCT_GIFT_PS_PRE_ORDER_1" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_PS_PRE_ORDER_1),
-            "PRODUCT_GIFT_PS_PRE_ORDER_2" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_PS_PRE_ORDER_2),
-            "PRODUCT_GIFT_GOOGLE_POINTS_100" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_GOOGLE_POINTS_100),
-            "PRODUCT_GIFT_GOOGLE_POINTS_150" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_GOOGLE_POINTS_150),
-            "PRODUCT_GIFT_PS_POINT_CARD_030" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_PS_POINT_CARD_030),
-            "PRODUCT_GIFT_PS_POINT_CARD_050" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_PS_POINT_CARD_050),
-            "PRODUCT_GIFT_PS_POINT_CARD_100" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_PS_POINT_CARD_100),
-            "PRODUCT_GIFT_PSN_PLUS" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_PSN_PLUS),
-            "PRODUCT_GIFT_SINGLE_6" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_SINGLE_6),
-            "PRODUCT_GIFT_DAILY_LOGIN_30" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_DAILY_LOGIN_30),
-            "PRODUCT_GIFT_APPLE_GIFT_CARD" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_APPLE_GIFT_CARD),
-            "PRODUCT_GIFT_FTC_UP_GACHA_TICKET_1" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_FTC_UP_GACHA_TICKET_1),
-            "PRODUCT_GIFT_FTC_UP_GACHA_TICKET_10" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_FTC_UP_GACHA_TICKET_10),
-            "PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_1" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_1),
-            "PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_10" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_10),
-            "PRODUCT_GIFT_TICKET_10" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_TICKET_10),
-            "EJEBHIIKAJF_DBIADNGNFMD" => ::std::option::Option::Some(ProductGiftType::EJEBHIIKAJF_DBIADNGNFMD),
-            "ProductGiftType_OOLBPMEJANG" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_OOLBPMEJANG),
-            "ProductGiftType_NKJADAFIFIK" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_NKJADAFIFIK),
+            "ProductGiftType_ProductGiftNone" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftNone),
+            "ProductGiftType_ProductGiftCoin" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftCoin),
+            "ProductGiftType_ProductGiftMonthCard" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftMonthCard),
+            "ProductGiftType_ProductGiftBp68" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftBp68),
+            "ProductGiftType_ProductGiftBp128" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftBp128),
+            "ProductGiftType_ProductGiftBp68Upgrade128" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftBp68Upgrade128),
+            "ProductGiftType_ProductGiftPointCard" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftPointCard),
+            "ProductGiftType_ProductGiftPsPreOrder1" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftPsPreOrder1),
+            "ProductGiftType_ProductGiftPsPreOrder2" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftPsPreOrder2),
+            "ProductGiftType_ProductGiftGooglePoints100" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftGooglePoints100),
+            "ProductGiftType_ProductGiftGooglePoints150" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftGooglePoints150),
+            "ProductGiftType_ProductGiftPsPointCard030" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftPsPointCard030),
+            "ProductGiftType_ProductGiftPsPointCard050" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftPsPointCard050),
+            "ProductGiftType_ProductGiftPsPointCard100" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftPsPointCard100),
+            "ProductGiftType_ProductGiftPsnPlus" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftPsnPlus),
+            "ProductGiftType_ProductGiftSingle6" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftSingle6),
+            "ProductGiftType_ProductGiftDailyLogin30" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftDailyLogin30),
+            "ProductGiftType_ProductGiftAppleGiftCard" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftAppleGiftCard),
+            "ProductGiftType_ProductGiftFtcUpGachaTicket1" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftFtcUpGachaTicket1),
+            "ProductGiftType_ProductGiftFtcUpGachaTicket10" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftFtcUpGachaTicket10),
+            "ProductGiftType_ProductGiftFtcNormalGachaTicket1" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftFtcNormalGachaTicket1),
+            "ProductGiftType_ProductGiftFtcNormalGachaTicket10" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftFtcNormalGachaTicket10),
+            "ProductGiftType_ProductGiftTicket10" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftTicket10),
+            "ProductGiftType_ProductGiftPlayerHeadDecor" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftPlayerHeadDecor),
+            "ProductGiftType_ProductGiftReturnSign" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftReturnSign),
+            "ProductGiftType_ProductGiftExtraValueTicket1" => ::std::option::Option::Some(ProductGiftType::ProductGiftType_ProductGiftExtraValueTicket1),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [ProductGiftType] = &[
-        ProductGiftType::PRODUCT_GIFT_NONE,
-        ProductGiftType::PRODUCT_GIFT_COIN,
-        ProductGiftType::PRODUCT_GIFT_MONTH_CARD,
-        ProductGiftType::PRODUCT_GIFT_BP_68,
-        ProductGiftType::PRODUCT_GIFT_BP_128,
-        ProductGiftType::PRODUCT_GIFT_BP68_UPGRADE_128,
-        ProductGiftType::PRODUCT_GIFT_POINT_CARD,
-        ProductGiftType::PRODUCT_GIFT_PS_PRE_ORDER_1,
-        ProductGiftType::PRODUCT_GIFT_PS_PRE_ORDER_2,
-        ProductGiftType::PRODUCT_GIFT_GOOGLE_POINTS_100,
-        ProductGiftType::PRODUCT_GIFT_GOOGLE_POINTS_150,
-        ProductGiftType::PRODUCT_GIFT_PS_POINT_CARD_030,
-        ProductGiftType::PRODUCT_GIFT_PS_POINT_CARD_050,
-        ProductGiftType::PRODUCT_GIFT_PS_POINT_CARD_100,
-        ProductGiftType::PRODUCT_GIFT_PSN_PLUS,
-        ProductGiftType::PRODUCT_GIFT_SINGLE_6,
-        ProductGiftType::PRODUCT_GIFT_DAILY_LOGIN_30,
-        ProductGiftType::PRODUCT_GIFT_APPLE_GIFT_CARD,
-        ProductGiftType::PRODUCT_GIFT_FTC_UP_GACHA_TICKET_1,
-        ProductGiftType::PRODUCT_GIFT_FTC_UP_GACHA_TICKET_10,
-        ProductGiftType::PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_1,
-        ProductGiftType::PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_10,
-        ProductGiftType::PRODUCT_GIFT_TICKET_10,
-        ProductGiftType::EJEBHIIKAJF_DBIADNGNFMD,
-        ProductGiftType::ProductGiftType_OOLBPMEJANG,
-        ProductGiftType::ProductGiftType_NKJADAFIFIK,
+        ProductGiftType::ProductGiftType_ProductGiftNone,
+        ProductGiftType::ProductGiftType_ProductGiftCoin,
+        ProductGiftType::ProductGiftType_ProductGiftMonthCard,
+        ProductGiftType::ProductGiftType_ProductGiftBp68,
+        ProductGiftType::ProductGiftType_ProductGiftBp128,
+        ProductGiftType::ProductGiftType_ProductGiftBp68Upgrade128,
+        ProductGiftType::ProductGiftType_ProductGiftPointCard,
+        ProductGiftType::ProductGiftType_ProductGiftPsPreOrder1,
+        ProductGiftType::ProductGiftType_ProductGiftPsPreOrder2,
+        ProductGiftType::ProductGiftType_ProductGiftGooglePoints100,
+        ProductGiftType::ProductGiftType_ProductGiftGooglePoints150,
+        ProductGiftType::ProductGiftType_ProductGiftPsPointCard030,
+        ProductGiftType::ProductGiftType_ProductGiftPsPointCard050,
+        ProductGiftType::ProductGiftType_ProductGiftPsPointCard100,
+        ProductGiftType::ProductGiftType_ProductGiftPsnPlus,
+        ProductGiftType::ProductGiftType_ProductGiftSingle6,
+        ProductGiftType::ProductGiftType_ProductGiftDailyLogin30,
+        ProductGiftType::ProductGiftType_ProductGiftAppleGiftCard,
+        ProductGiftType::ProductGiftType_ProductGiftFtcUpGachaTicket1,
+        ProductGiftType::ProductGiftType_ProductGiftFtcUpGachaTicket10,
+        ProductGiftType::ProductGiftType_ProductGiftFtcNormalGachaTicket1,
+        ProductGiftType::ProductGiftType_ProductGiftFtcNormalGachaTicket10,
+        ProductGiftType::ProductGiftType_ProductGiftTicket10,
+        ProductGiftType::ProductGiftType_ProductGiftPlayerHeadDecor,
+        ProductGiftType::ProductGiftType_ProductGiftReturnSign,
+        ProductGiftType::ProductGiftType_ProductGiftExtraValueTicket1,
     ];
 }
 
@@ -196,7 +196,7 @@ impl ::protobuf::EnumFull for ProductGiftType {
 
 impl ::std::default::Default for ProductGiftType {
     fn default() -> Self {
-        ProductGiftType::PRODUCT_GIFT_NONE
+        ProductGiftType::ProductGiftType_ProductGiftNone
     }
 }
 
@@ -207,25 +207,27 @@ impl ProductGiftType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15ProductGiftType.proto*\xe1\x06\n\x0fProductGiftType\x12\x15\n\x11P\
-    RODUCT_GIFT_NONE\x10\0\x12\x15\n\x11PRODUCT_GIFT_COIN\x10\x01\x12\x1b\n\
-    \x17PRODUCT_GIFT_MONTH_CARD\x10\x02\x12\x16\n\x12PRODUCT_GIFT_BP_68\x10\
-    \x03\x12\x17\n\x13PRODUCT_GIFT_BP_128\x10\x04\x12!\n\x1dPRODUCT_GIFT_BP6\
-    8_UPGRADE_128\x10\x05\x12\x1b\n\x17PRODUCT_GIFT_POINT_CARD\x10\x06\x12\
-    \x1f\n\x1bPRODUCT_GIFT_PS_PRE_ORDER_1\x10\x07\x12\x1f\n\x1bPRODUCT_GIFT_\
-    PS_PRE_ORDER_2\x10\x08\x12\"\n\x1ePRODUCT_GIFT_GOOGLE_POINTS_100\x10\t\
-    \x12\"\n\x1ePRODUCT_GIFT_GOOGLE_POINTS_150\x10\n\x12\"\n\x1ePRODUCT_GIFT\
-    _PS_POINT_CARD_030\x10\x0b\x12\"\n\x1ePRODUCT_GIFT_PS_POINT_CARD_050\x10\
-    \x0c\x12\"\n\x1ePRODUCT_GIFT_PS_POINT_CARD_100\x10\r\x12\x19\n\x15PRODUC\
-    T_GIFT_PSN_PLUS\x10\x0e\x12\x19\n\x15PRODUCT_GIFT_SINGLE_6\x10\x0f\x12\
-    \x1f\n\x1bPRODUCT_GIFT_DAILY_LOGIN_30\x10\x10\x12\x20\n\x1cPRODUCT_GIFT_\
-    APPLE_GIFT_CARD\x10\x11\x12&\n\"PRODUCT_GIFT_FTC_UP_GACHA_TICKET_1\x10\
-    \x12\x12'\n#PRODUCT_GIFT_FTC_UP_GACHA_TICKET_10\x10\x13\x12*\n&PRODUCT_G\
-    IFT_FTC_NORMAL_GACHA_TICKET_1\x10\x14\x12+\n'PRODUCT_GIFT_FTC_NORMAL_GAC\
-    HA_TICKET_10\x10\x15\x12\x1a\n\x16PRODUCT_GIFT_TICKET_10\x10\x16\x12\x1b\
-    \n\x17EJEBHIIKAJF_DBIADNGNFMD\x10\x17\x12\x1f\n\x1bProductGiftType_OOLBP\
-    MEJANG\x10\x18\x12\x1f\n\x1bProductGiftType_NKJADAFIFIK\x10\x19b\x06prot\
-    o3\
+    \n\x15ProductGiftType.proto*\xa1\t\n\x0fProductGiftType\x12#\n\x1fProduc\
+    tGiftType_ProductGiftNone\x10\0\x12#\n\x1fProductGiftType_ProductGiftCoi\
+    n\x10\x01\x12(\n$ProductGiftType_ProductGiftMonthCard\x10\x02\x12#\n\x1f\
+    ProductGiftType_ProductGiftBp68\x10\x03\x12$\n\x20ProductGiftType_Produc\
+    tGiftBp128\x10\x04\x12-\n)ProductGiftType_ProductGiftBp68Upgrade128\x10\
+    \x05\x12(\n$ProductGiftType_ProductGiftPointCard\x10\x06\x12*\n&ProductG\
+    iftType_ProductGiftPsPreOrder1\x10\x07\x12*\n&ProductGiftType_ProductGif\
+    tPsPreOrder2\x10\x08\x12.\n*ProductGiftType_ProductGiftGooglePoints100\
+    \x10\t\x12.\n*ProductGiftType_ProductGiftGooglePoints150\x10\n\x12-\n)Pr\
+    oductGiftType_ProductGiftPsPointCard030\x10\x0b\x12-\n)ProductGiftType_P\
+    roductGiftPsPointCard050\x10\x0c\x12-\n)ProductGiftType_ProductGiftPsPoi\
+    ntCard100\x10\r\x12&\n\"ProductGiftType_ProductGiftPsnPlus\x10\x0e\x12&\
+    \n\"ProductGiftType_ProductGiftSingle6\x10\x0f\x12+\n'ProductGiftType_Pr\
+    oductGiftDailyLogin30\x10\x10\x12,\n(ProductGiftType_ProductGiftAppleGif\
+    tCard\x10\x11\x120\n,ProductGiftType_ProductGiftFtcUpGachaTicket1\x10\
+    \x12\x121\n-ProductGiftType_ProductGiftFtcUpGachaTicket10\x10\x13\x124\n\
+    0ProductGiftType_ProductGiftFtcNormalGachaTicket1\x10\x14\x125\n1Product\
+    GiftType_ProductGiftFtcNormalGachaTicket10\x10\x15\x12'\n#ProductGiftTyp\
+    e_ProductGiftTicket10\x10\x16\x12.\n*ProductGiftType_ProductGiftPlayerHe\
+    adDecor\x10\x17\x12)\n%ProductGiftType_ProductGiftReturnSign\x10\x18\x12\
+    0\n,ProductGiftType_ProductGiftExtraValueTicket1\x10\x19b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MOOKMKEKMKC {
     // message fields
-    // @@protoc_insertion_point(field:MOOKMKEKMKC.PEGDMOMCFAD)
-    pub PEGDMOMCFAD: ::std::collections::HashMap<u32, bool>,
     // @@protoc_insertion_point(field:MOOKMKEKMKC.BILCGENIGJM)
     pub BILCGENIGJM: ::std::vec::Vec<super::HGCIAPKELAF::HGCIAPKELAF>,
     // @@protoc_insertion_point(field:MOOKMKEKMKC.ADLKMLFOFPF)
     pub ADLKMLFOFPF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MOOKMKEKMKC.PEGDMOMCFAD)
+    pub PEGDMOMCFAD: ::std::collections::HashMap<u32, bool>,
     // special fields
     // @@protoc_insertion_point(special_field:MOOKMKEKMKC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,6 @@ impl MOOKMKEKMKC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "PEGDMOMCFAD",
-            |m: &MOOKMKEKMKC| { &m.PEGDMOMCFAD },
-            |m: &mut MOOKMKEKMKC| { &mut m.PEGDMOMCFAD },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "BILCGENIGJM",
             |m: &MOOKMKEKMKC| { &m.BILCGENIGJM },
@@ -67,6 +62,11 @@ impl MOOKMKEKMKC {
             "ADLKMLFOFPF",
             |m: &MOOKMKEKMKC| { &m.ADLKMLFOFPF },
             |m: &mut MOOKMKEKMKC| { &mut m.ADLKMLFOFPF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "PEGDMOMCFAD",
+            |m: &MOOKMKEKMKC| { &m.PEGDMOMCFAD },
+            |m: &mut MOOKMKEKMKC| { &mut m.PEGDMOMCFAD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MOOKMKEKMKC>(
             "MOOKMKEKMKC",
@@ -86,7 +86,16 @@ impl ::protobuf::Message for MOOKMKEKMKC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                26 => {
+                    self.BILCGENIGJM.push(is.read_message()?);
+                },
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.ADLKMLFOFPF)?;
+                },
+                40 => {
+                    self.ADLKMLFOFPF.push(is.read_uint32()?);
+                },
+                122 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -101,15 +110,6 @@ impl ::protobuf::Message for MOOKMKEKMKC {
                     is.pop_limit(old_limit);
                     self.PEGDMOMCFAD.insert(key, value);
                 },
-                42 => {
-                    self.BILCGENIGJM.push(is.read_message()?);
-                },
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ADLKMLFOFPF)?;
-                },
-                48 => {
-                    self.ADLKMLFOFPF.push(is.read_uint32()?);
-                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -122,36 +122,36 @@ impl ::protobuf::Message for MOOKMKEKMKC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        for value in &self.BILCGENIGJM {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.ADLKMLFOFPF);
         for (k, v) in &self.PEGDMOMCFAD {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += 1 + 1;
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        for value in &self.BILCGENIGJM {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.ADLKMLFOFPF);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.BILCGENIGJM {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
+        os.write_repeated_packed_uint32(5, &self.ADLKMLFOFPF)?;
         for (k, v) in &self.PEGDMOMCFAD {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += 1 + 1;
-            os.write_raw_varint32(10)?; // Tag.
+            os.write_raw_varint32(122)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_bool(2, *v)?;
         };
-        for v in &self.BILCGENIGJM {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
-        os.write_repeated_packed_uint32(6, &self.ADLKMLFOFPF)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -169,9 +169,9 @@ impl ::protobuf::Message for MOOKMKEKMKC {
     }
 
     fn clear(&mut self) {
-        self.PEGDMOMCFAD.clear();
         self.BILCGENIGJM.clear();
         self.ADLKMLFOFPF.clear();
+        self.PEGDMOMCFAD.clear();
         self.special_fields.clear();
     }
 
@@ -200,10 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for MOOKMKEKMKC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MOOKMKEKMKC.proto\x1a\x11HGCIAPKELAF.proto\"\xe0\x01\n\x0bMOOKMKEK\
-    MKC\x12?\n\x0bPEGDMOMCFAD\x18\x01\x20\x03(\x0b2\x1d.MOOKMKEKMKC.PEGDMOMC\
-    FADEntryR\x0bPEGDMOMCFAD\x12.\n\x0bBILCGENIGJM\x18\x05\x20\x03(\x0b2\x0c\
-    .HGCIAPKELAFR\x0bBILCGENIGJM\x12\x20\n\x0bADLKMLFOFPF\x18\x06\x20\x03(\r\
-    R\x0bADLKMLFOFPF\x1a>\n\x10PEGDMOMCFADEntry\x12\x10\n\x03key\x18\x01\x20\
+    MKC\x12.\n\x0bBILCGENIGJM\x18\x03\x20\x03(\x0b2\x0c.HGCIAPKELAFR\x0bBILC\
+    GENIGJM\x12\x20\n\x0bADLKMLFOFPF\x18\x05\x20\x03(\rR\x0bADLKMLFOFPF\x12?\
+    \n\x0bPEGDMOMCFAD\x18\x0f\x20\x03(\x0b2\x1d.MOOKMKEKMKC.PEGDMOMCFADEntry\
+    R\x0bPEGDMOMCFAD\x1a>\n\x10PEGDMOMCFADEntry\x12\x10\n\x03key\x18\x01\x20\
     \x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\x08R\x05value:\x028\
     \x01b\x06proto3\
 ";

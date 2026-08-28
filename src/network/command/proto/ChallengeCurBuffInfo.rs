@@ -45,7 +45,7 @@ impl ChallengeCurBuffInfo {
         ::std::default::Default::default()
     }
 
-    // .ChallengeStoryBuffList cur_story_buffs = 1;
+    // .ChallengeStoryBuffList cur_story_buffs = 5;
 
     pub fn cur_story_buffs(&self) -> &super::ChallengeStoryBuffList::ChallengeStoryBuffList {
         match self.KKNBOACNCON {
@@ -94,7 +94,7 @@ impl ChallengeCurBuffInfo {
         }
     }
 
-    // .ChallengeBossBuffList cur_boss_buffs = 9;
+    // .ChallengeBossBuffList cur_boss_buffs = 7;
 
     pub fn cur_boss_buffs(&self) -> &super::ChallengeBossBuffList::ChallengeBossBuffList {
         match self.KKNBOACNCON {
@@ -179,10 +179,10 @@ impl ::protobuf::Message for ChallengeCurBuffInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                42 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(challenge_cur_buff_info::KKNBOACNCON::CurStoryBuffs(is.read_message()?));
                 },
-                74 => {
+                58 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(challenge_cur_buff_info::KKNBOACNCON::CurBossBuffs(is.read_message()?));
                 },
                 tag => {
@@ -218,10 +218,10 @@ impl ::protobuf::Message for ChallengeCurBuffInfo {
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &challenge_cur_buff_info::KKNBOACNCON::CurStoryBuffs(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
                 &challenge_cur_buff_info::KKNBOACNCON::CurBossBuffs(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
             };
         }
@@ -306,9 +306,9 @@ pub mod challenge_cur_buff_info {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aChallengeCurBuffInfo.proto\x1a\x1bChallengeBossBuffList.proto\x1a\
     \x1cChallengeStoryBuffList.proto\"\xa8\x01\n\x14ChallengeCurBuffInfo\x12\
-    A\n\x0fcur_story_buffs\x18\x01\x20\x01(\x0b2\x17.ChallengeStoryBuffListH\
-    \0R\rcurStoryBuffs\x12>\n\x0ecur_boss_buffs\x18\t\x20\x01(\x0b2\x16.Chal\
-    lengeBossBuffListH\0R\x0ccurBossBuffsB\r\n\x0bKKNBOACNCONb\x06proto3\
+    A\n\x0fcur_story_buffs\x18\x05\x20\x01(\x0b2\x17.ChallengeStoryBuffListH\
+    \0R\rcurStoryBuffs\x12>\n\x0ecur_boss_buffs\x18\x07\x20\x01(\x0b2\x16.Ch\
+    allengeBossBuffListH\0R\x0ccurBossBuffsB\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

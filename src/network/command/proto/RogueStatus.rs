@@ -27,16 +27,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:RogueStatus)
 pub enum RogueStatus {
-    // @@protoc_insertion_point(enum_value:RogueStatus.NOGKOJCAFAE_NLCDGIPGFDJ)
-    NOGKOJCAFAE_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:RogueStatus.NOGKOJCAFAE_BMOOGBNPEAA)
-    NOGKOJCAFAE_BMOOGBNPEAA = 1,
-    // @@protoc_insertion_point(enum_value:RogueStatus.NOGKOJCAFAE_IGGJEJAHPIJ)
-    NOGKOJCAFAE_IGGJEJAHPIJ = 2,
-    // @@protoc_insertion_point(enum_value:RogueStatus.NOGKOJCAFAE_CBFHENKAMKO)
-    NOGKOJCAFAE_CBFHENKAMKO = 3,
-    // @@protoc_insertion_point(enum_value:RogueStatus.NOGKOJCAFAE_CIHFGJDCHIA)
-    NOGKOJCAFAE_CIHFGJDCHIA = 4,
+    // @@protoc_insertion_point(enum_value:RogueStatus.RogueStatus_None)
+    RogueStatus_None = 0,
+    // @@protoc_insertion_point(enum_value:RogueStatus.RogueStatus_Doing)
+    RogueStatus_Doing = 1,
+    // @@protoc_insertion_point(enum_value:RogueStatus.RogueStatus_Pending)
+    RogueStatus_Pending = 2,
+    // @@protoc_insertion_point(enum_value:RogueStatus.RogueStatus_Endless)
+    RogueStatus_Endless = 3,
+    // @@protoc_insertion_point(enum_value:RogueStatus.RogueStatus_Finish)
+    RogueStatus_Finish = 4,
 }
 
 impl ::protobuf::Enum for RogueStatus {
@@ -48,32 +48,32 @@ impl ::protobuf::Enum for RogueStatus {
 
     fn from_i32(value: i32) -> ::std::option::Option<RogueStatus> {
         match value {
-            0 => ::std::option::Option::Some(RogueStatus::NOGKOJCAFAE_NLCDGIPGFDJ),
-            1 => ::std::option::Option::Some(RogueStatus::NOGKOJCAFAE_BMOOGBNPEAA),
-            2 => ::std::option::Option::Some(RogueStatus::NOGKOJCAFAE_IGGJEJAHPIJ),
-            3 => ::std::option::Option::Some(RogueStatus::NOGKOJCAFAE_CBFHENKAMKO),
-            4 => ::std::option::Option::Some(RogueStatus::NOGKOJCAFAE_CIHFGJDCHIA),
+            0 => ::std::option::Option::Some(RogueStatus::RogueStatus_None),
+            1 => ::std::option::Option::Some(RogueStatus::RogueStatus_Doing),
+            2 => ::std::option::Option::Some(RogueStatus::RogueStatus_Pending),
+            3 => ::std::option::Option::Some(RogueStatus::RogueStatus_Endless),
+            4 => ::std::option::Option::Some(RogueStatus::RogueStatus_Finish),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<RogueStatus> {
         match str {
-            "NOGKOJCAFAE_NLCDGIPGFDJ" => ::std::option::Option::Some(RogueStatus::NOGKOJCAFAE_NLCDGIPGFDJ),
-            "NOGKOJCAFAE_BMOOGBNPEAA" => ::std::option::Option::Some(RogueStatus::NOGKOJCAFAE_BMOOGBNPEAA),
-            "NOGKOJCAFAE_IGGJEJAHPIJ" => ::std::option::Option::Some(RogueStatus::NOGKOJCAFAE_IGGJEJAHPIJ),
-            "NOGKOJCAFAE_CBFHENKAMKO" => ::std::option::Option::Some(RogueStatus::NOGKOJCAFAE_CBFHENKAMKO),
-            "NOGKOJCAFAE_CIHFGJDCHIA" => ::std::option::Option::Some(RogueStatus::NOGKOJCAFAE_CIHFGJDCHIA),
+            "RogueStatus_None" => ::std::option::Option::Some(RogueStatus::RogueStatus_None),
+            "RogueStatus_Doing" => ::std::option::Option::Some(RogueStatus::RogueStatus_Doing),
+            "RogueStatus_Pending" => ::std::option::Option::Some(RogueStatus::RogueStatus_Pending),
+            "RogueStatus_Endless" => ::std::option::Option::Some(RogueStatus::RogueStatus_Endless),
+            "RogueStatus_Finish" => ::std::option::Option::Some(RogueStatus::RogueStatus_Finish),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [RogueStatus] = &[
-        RogueStatus::NOGKOJCAFAE_NLCDGIPGFDJ,
-        RogueStatus::NOGKOJCAFAE_BMOOGBNPEAA,
-        RogueStatus::NOGKOJCAFAE_IGGJEJAHPIJ,
-        RogueStatus::NOGKOJCAFAE_CBFHENKAMKO,
-        RogueStatus::NOGKOJCAFAE_CIHFGJDCHIA,
+        RogueStatus::RogueStatus_None,
+        RogueStatus::RogueStatus_Doing,
+        RogueStatus::RogueStatus_Pending,
+        RogueStatus::RogueStatus_Endless,
+        RogueStatus::RogueStatus_Finish,
     ];
 }
 
@@ -91,7 +91,7 @@ impl ::protobuf::EnumFull for RogueStatus {
 
 impl ::std::default::Default for RogueStatus {
     fn default() -> Self {
-        RogueStatus::NOGKOJCAFAE_NLCDGIPGFDJ
+        RogueStatus::RogueStatus_None
     }
 }
 
@@ -102,10 +102,10 @@ impl RogueStatus {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11RogueStatus.proto*\x9e\x01\n\x0bRogueStatus\x12\x1b\n\x17NOGKOJCAF\
-    AE_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17NOGKOJCAFAE_BMOOGBNPEAA\x10\x01\x12\
-    \x1b\n\x17NOGKOJCAFAE_IGGJEJAHPIJ\x10\x02\x12\x1b\n\x17NOGKOJCAFAE_CBFHE\
-    NKAMKO\x10\x03\x12\x1b\n\x17NOGKOJCAFAE_CIHFGJDCHIA\x10\x04b\x06proto3\
+    \n\x11RogueStatus.proto*\x84\x01\n\x0bRogueStatus\x12\x14\n\x10RogueStat\
+    us_None\x10\0\x12\x15\n\x11RogueStatus_Doing\x10\x01\x12\x17\n\x13RogueS\
+    tatus_Pending\x10\x02\x12\x17\n\x13RogueStatus_Endless\x10\x03\x12\x16\n\
+    \x12RogueStatus_Finish\x10\x04b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

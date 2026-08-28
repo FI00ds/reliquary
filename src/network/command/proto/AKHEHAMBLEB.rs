@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AKHEHAMBLEB {
     // message fields
-    // @@protoc_insertion_point(field:AKHEHAMBLEB.start_time)
-    pub start_time: i64,
     // @@protoc_insertion_point(field:AKHEHAMBLEB.KAHFEFACFIE)
     pub KAHFEFACFIE: i64,
+    // @@protoc_insertion_point(field:AKHEHAMBLEB.IFEPJHGNCOI)
+    pub IFEPJHGNCOI: i64,
     // special fields
     // @@protoc_insertion_point(special_field:AKHEHAMBLEB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl AKHEHAMBLEB {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "start_time",
-            |m: &AKHEHAMBLEB| { &m.start_time },
-            |m: &mut AKHEHAMBLEB| { &mut m.start_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KAHFEFACFIE",
             |m: &AKHEHAMBLEB| { &m.KAHFEFACFIE },
             |m: &mut AKHEHAMBLEB| { &mut m.KAHFEFACFIE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IFEPJHGNCOI",
+            |m: &AKHEHAMBLEB| { &m.IFEPJHGNCOI },
+            |m: &mut AKHEHAMBLEB| { &mut m.IFEPJHGNCOI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AKHEHAMBLEB>(
             "AKHEHAMBLEB",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for AKHEHAMBLEB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.start_time = is.read_int64()?;
-                },
-                96 => {
+                32 => {
                     self.KAHFEFACFIE = is.read_int64()?;
+                },
+                48 => {
+                    self.IFEPJHGNCOI = is.read_int64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for AKHEHAMBLEB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.start_time != 0 {
-            my_size += ::protobuf::rt::int64_size(11, self.start_time);
-        }
         if self.KAHFEFACFIE != 0 {
-            my_size += ::protobuf::rt::int64_size(12, self.KAHFEFACFIE);
+            my_size += ::protobuf::rt::int64_size(4, self.KAHFEFACFIE);
+        }
+        if self.IFEPJHGNCOI != 0 {
+            my_size += ::protobuf::rt::int64_size(6, self.IFEPJHGNCOI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for AKHEHAMBLEB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.start_time != 0 {
-            os.write_int64(11, self.start_time)?;
-        }
         if self.KAHFEFACFIE != 0 {
-            os.write_int64(12, self.KAHFEFACFIE)?;
+            os.write_int64(4, self.KAHFEFACFIE)?;
+        }
+        if self.IFEPJHGNCOI != 0 {
+            os.write_int64(6, self.IFEPJHGNCOI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for AKHEHAMBLEB {
     }
 
     fn clear(&mut self) {
-        self.start_time = 0;
         self.KAHFEFACFIE = 0;
+        self.IFEPJHGNCOI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AKHEHAMBLEB {
         static instance: AKHEHAMBLEB = AKHEHAMBLEB {
-            start_time: 0,
             KAHFEFACFIE: 0,
+            IFEPJHGNCOI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for AKHEHAMBLEB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AKHEHAMBLEB.proto\"N\n\x0bAKHEHAMBLEB\x12\x1d\n\nstart_time\x18\
-    \x0b\x20\x01(\x03R\tstartTime\x12\x20\n\x0bKAHFEFACFIE\x18\x0c\x20\x01(\
-    \x03R\x0bKAHFEFACFIEb\x06proto3\
+    \n\x11AKHEHAMBLEB.proto\"Q\n\x0bAKHEHAMBLEB\x12\x20\n\x0bKAHFEFACFIE\x18\
+    \x04\x20\x01(\x03R\x0bKAHFEFACFIE\x12\x20\n\x0bIFEPJHGNCOI\x18\x06\x20\
+    \x01(\x03R\x0bIFEPJHGNCOIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

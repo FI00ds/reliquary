@@ -30,8 +30,8 @@ pub struct INHBMHCJJCN {
     // message fields
     // @@protoc_insertion_point(field:INHBMHCJJCN.queue_position)
     pub queue_position: u32,
-    // @@protoc_insertion_point(field:INHBMHCJJCN.detail)
-    pub detail: ::protobuf::MessageField<super::DCFPEIMAMCN::DCFPEIMAMCN>,
+    // @@protoc_insertion_point(field:INHBMHCJJCN.BBEHHCHKMNL)
+    pub BBEHHCHKMNL: ::protobuf::MessageField<super::DCFPEIMAMCN::DCFPEIMAMCN>,
     // special fields
     // @@protoc_insertion_point(special_field:INHBMHCJJCN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl INHBMHCJJCN {
             |m: &mut INHBMHCJJCN| { &mut m.queue_position },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DCFPEIMAMCN::DCFPEIMAMCN>(
-            "detail",
-            |m: &INHBMHCJJCN| { &m.detail },
-            |m: &mut INHBMHCJJCN| { &mut m.detail },
+            "BBEHHCHKMNL",
+            |m: &INHBMHCJJCN| { &m.BBEHHCHKMNL },
+            |m: &mut INHBMHCJJCN| { &mut m.BBEHHCHKMNL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<INHBMHCJJCN>(
             "INHBMHCJJCN",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for INHBMHCJJCN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                104 => {
                     self.queue_position = is.read_uint32()?;
                 },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.detail)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BBEHHCHKMNL)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for INHBMHCJJCN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.queue_position != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.queue_position);
+            my_size += ::protobuf::rt::uint32_size(13, self.queue_position);
         }
-        if let Some(v) = self.detail.as_ref() {
+        if let Some(v) = self.BBEHHCHKMNL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for INHBMHCJJCN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.queue_position != 0 {
-            os.write_uint32(2, self.queue_position)?;
+            os.write_uint32(13, self.queue_position)?;
         }
-        if let Some(v) = self.detail.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if let Some(v) = self.BBEHHCHKMNL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for INHBMHCJJCN {
 
     fn clear(&mut self) {
         self.queue_position = 0;
-        self.detail.clear();
+        self.BBEHHCHKMNL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static INHBMHCJJCN {
         static instance: INHBMHCJJCN = INHBMHCJJCN {
             queue_position: 0,
-            detail: ::protobuf::MessageField::none(),
+            BBEHHCHKMNL: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for INHBMHCJJCN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11INHBMHCJJCN.proto\x1a\x11DCFPEIMAMCN.proto\"Z\n\x0bINHBMHCJJCN\x12\
-    %\n\x0equeue_position\x18\x02\x20\x01(\rR\rqueuePosition\x12$\n\x06detai\
-    l\x18\x05\x20\x01(\x0b2\x0c.DCFPEIMAMCNR\x06detailb\x06proto3\
+    \n\x11INHBMHCJJCN.proto\x1a\x11DCFPEIMAMCN.proto\"d\n\x0bINHBMHCJJCN\x12\
+    %\n\x0equeue_position\x18\r\x20\x01(\rR\rqueuePosition\x12.\n\x0bBBEHHCH\
+    KMNL\x18\x0f\x20\x01(\x0b2\x0c.DCFPEIMAMCNR\x0bBBEHHCHKMNLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:StatType)
 pub enum StatType {
-    // @@protoc_insertion_point(enum_value:StatType.GOPHGIHIDPP_NLCDGIPGFDJ)
-    GOPHGIHIDPP_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:StatType.GOPHGIHIDPP_INJOMKCIBPI)
-    GOPHGIHIDPP_INJOMKCIBPI = 1,
-    // @@protoc_insertion_point(enum_value:StatType.GOPHGIHIDPP_GMKNIIHMCBO)
-    GOPHGIHIDPP_GMKNIIHMCBO = 2,
-    // @@protoc_insertion_point(enum_value:StatType.GOPHGIHIDPP_HNMLECBEGPB)
-    GOPHGIHIDPP_HNMLECBEGPB = 3,
+    // @@protoc_insertion_point(enum_value:StatType.StatType_None)
+    StatType_None = 0,
+    // @@protoc_insertion_point(enum_value:StatType.StatType_Art)
+    StatType_Art = 1,
+    // @@protoc_insertion_point(enum_value:StatType.StatType_Culture)
+    StatType_Culture = 2,
+    // @@protoc_insertion_point(enum_value:StatType.StatType_Popular)
+    StatType_Popular = 3,
 }
 
 impl ::protobuf::Enum for StatType {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for StatType {
 
     fn from_i32(value: i32) -> ::std::option::Option<StatType> {
         match value {
-            0 => ::std::option::Option::Some(StatType::GOPHGIHIDPP_NLCDGIPGFDJ),
-            1 => ::std::option::Option::Some(StatType::GOPHGIHIDPP_INJOMKCIBPI),
-            2 => ::std::option::Option::Some(StatType::GOPHGIHIDPP_GMKNIIHMCBO),
-            3 => ::std::option::Option::Some(StatType::GOPHGIHIDPP_HNMLECBEGPB),
+            0 => ::std::option::Option::Some(StatType::StatType_None),
+            1 => ::std::option::Option::Some(StatType::StatType_Art),
+            2 => ::std::option::Option::Some(StatType::StatType_Culture),
+            3 => ::std::option::Option::Some(StatType::StatType_Popular),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<StatType> {
         match str {
-            "GOPHGIHIDPP_NLCDGIPGFDJ" => ::std::option::Option::Some(StatType::GOPHGIHIDPP_NLCDGIPGFDJ),
-            "GOPHGIHIDPP_INJOMKCIBPI" => ::std::option::Option::Some(StatType::GOPHGIHIDPP_INJOMKCIBPI),
-            "GOPHGIHIDPP_GMKNIIHMCBO" => ::std::option::Option::Some(StatType::GOPHGIHIDPP_GMKNIIHMCBO),
-            "GOPHGIHIDPP_HNMLECBEGPB" => ::std::option::Option::Some(StatType::GOPHGIHIDPP_HNMLECBEGPB),
+            "StatType_None" => ::std::option::Option::Some(StatType::StatType_None),
+            "StatType_Art" => ::std::option::Option::Some(StatType::StatType_Art),
+            "StatType_Culture" => ::std::option::Option::Some(StatType::StatType_Culture),
+            "StatType_Popular" => ::std::option::Option::Some(StatType::StatType_Popular),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [StatType] = &[
-        StatType::GOPHGIHIDPP_NLCDGIPGFDJ,
-        StatType::GOPHGIHIDPP_INJOMKCIBPI,
-        StatType::GOPHGIHIDPP_GMKNIIHMCBO,
-        StatType::GOPHGIHIDPP_HNMLECBEGPB,
+        StatType::StatType_None,
+        StatType::StatType_Art,
+        StatType::StatType_Culture,
+        StatType::StatType_Popular,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for StatType {
 
 impl ::std::default::Default for StatType {
     fn default() -> Self {
-        StatType::GOPHGIHIDPP_NLCDGIPGFDJ
+        StatType::StatType_None
     }
 }
 
@@ -97,10 +97,9 @@ impl StatType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0eStatType.proto*~\n\x08StatType\x12\x1b\n\x17GOPHGIHIDPP_NLCDGIPGFD\
-    J\x10\0\x12\x1b\n\x17GOPHGIHIDPP_INJOMKCIBPI\x10\x01\x12\x1b\n\x17GOPHGI\
-    HIDPP_GMKNIIHMCBO\x10\x02\x12\x1b\n\x17GOPHGIHIDPP_HNMLECBEGPB\x10\x03b\
-    \x06proto3\
+    \n\x0eStatType.proto*[\n\x08StatType\x12\x11\n\rStatType_None\x10\0\x12\
+    \x10\n\x0cStatType_Art\x10\x01\x12\x14\n\x10StatType_Culture\x10\x02\x12\
+    \x14\n\x10StatType_Popular\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

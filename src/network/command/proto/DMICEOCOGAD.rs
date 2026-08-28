@@ -82,7 +82,7 @@ impl ::protobuf::Message for DMICEOCOGAD {
                 10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.data)?;
                 },
-                16 => {
+                64 => {
                     self.floor_id = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for DMICEOCOGAD {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.floor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.floor_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.floor_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for DMICEOCOGAD {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.floor_id != 0 {
-            os.write_uint32(2, self.floor_id)?;
+            os.write_uint32(8, self.floor_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for DMICEOCOGAD {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DMICEOCOGAD.proto\x1a\x11KKFMGCNDHGH.proto\"J\n\x0bDMICEOCOGAD\x12\
     \x20\n\x04data\x18\x01\x20\x01(\x0b2\x0c.KKFMGCNDHGHR\x04data\x12\x19\n\
-    \x08floor_id\x18\x02\x20\x01(\rR\x07floorIdb\x06proto3\
+    \x08floor_id\x18\x08\x20\x01(\rR\x07floorIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

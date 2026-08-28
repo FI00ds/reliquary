@@ -82,7 +82,7 @@ impl ::protobuf::Message for OCKGMNGKIEE {
                 32 => {
                     self.AMMPOLONOBC = is.read_uint32()?;
                 },
-                112 => {
+                80 => {
                     self.IGOOJKMPMDC = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for OCKGMNGKIEE {
             my_size += ::protobuf::rt::uint32_size(4, self.AMMPOLONOBC);
         }
         if self.IGOOJKMPMDC != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.IGOOJKMPMDC);
+            my_size += ::protobuf::rt::uint32_size(10, self.IGOOJKMPMDC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for OCKGMNGKIEE {
             os.write_uint32(4, self.AMMPOLONOBC)?;
         }
         if self.IGOOJKMPMDC != 0 {
-            os.write_uint32(14, self.IGOOJKMPMDC)?;
+            os.write_uint32(10, self.IGOOJKMPMDC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for OCKGMNGKIEE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OCKGMNGKIEE.proto\"Q\n\x0bOCKGMNGKIEE\x12\x20\n\x0bAMMPOLONOBC\x18\
-    \x04\x20\x01(\rR\x0bAMMPOLONOBC\x12\x20\n\x0bIGOOJKMPMDC\x18\x0e\x20\x01\
-    (\rR\x0bIGOOJKMPMDCb\x06proto3\
+    \x04\x20\x01(\rR\x0bAMMPOLONOBC\x12\x20\n\x0bIGOOJKMPMDC\x18\n\x20\x01(\
+    \rR\x0bIGOOJKMPMDCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

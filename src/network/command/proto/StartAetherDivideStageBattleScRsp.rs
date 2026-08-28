@@ -82,7 +82,7 @@ impl ::protobuf::Message for StartAetherDivideStageBattleScRsp {
                 32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                74 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for StartAetherDivideStageBattleScRsp {
             os.write_uint32(4, self.retcode)?;
         }
         if let Some(v) = self.battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for StartAetherDivideStageBattleScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'StartAetherDivideStageBattleScRsp.proto\x1a\x1cAetherDivideBattleInfo\
     .proto\"w\n!StartAetherDivideStageBattleScRsp\x12\x18\n\x07retcode\x18\
-    \x04\x20\x01(\rR\x07retcode\x128\n\x0bbattle_info\x18\t\x20\x01(\x0b2\
+    \x04\x20\x01(\rR\x07retcode\x128\n\x0bbattle_info\x18\x0c\x20\x01(\x0b2\
     \x17.AetherDivideBattleInfoR\nbattleInfob\x06proto3\
 ";
 

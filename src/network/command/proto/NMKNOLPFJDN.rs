@@ -93,16 +93,16 @@ impl ::protobuf::Message for NMKNOLPFJDN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                8 => {
                     self.KOHGFNGKFPE = is.read_uint32()?;
                 },
-                74 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.CKLIEKOIGOG)?;
                 },
-                72 => {
+                64 => {
                     self.CKLIEKOIGOG.push(is.read_uint32()?);
                 },
-                112 => {
+                80 => {
                     self.JCKKPPELFHC = is.read_uint32()?;
                 },
                 122 => {
@@ -124,11 +124,11 @@ impl ::protobuf::Message for NMKNOLPFJDN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KOHGFNGKFPE != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.KOHGFNGKFPE);
+            my_size += ::protobuf::rt::uint32_size(1, self.KOHGFNGKFPE);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.CKLIEKOIGOG);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.CKLIEKOIGOG);
         if self.JCKKPPELFHC != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.JCKKPPELFHC);
+            my_size += ::protobuf::rt::uint32_size(10, self.JCKKPPELFHC);
         }
         my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.HGDNMKBNMBK);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -138,11 +138,11 @@ impl ::protobuf::Message for NMKNOLPFJDN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KOHGFNGKFPE != 0 {
-            os.write_uint32(2, self.KOHGFNGKFPE)?;
+            os.write_uint32(1, self.KOHGFNGKFPE)?;
         }
-        os.write_repeated_packed_uint32(9, &self.CKLIEKOIGOG)?;
+        os.write_repeated_packed_uint32(8, &self.CKLIEKOIGOG)?;
         if self.JCKKPPELFHC != 0 {
-            os.write_uint32(14, self.JCKKPPELFHC)?;
+            os.write_uint32(10, self.JCKKPPELFHC)?;
         }
         os.write_repeated_packed_uint32(15, &self.HGDNMKBNMBK)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -200,8 +200,8 @@ impl ::protobuf::reflect::ProtobufValue for NMKNOLPFJDN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NMKNOLPFJDN.proto\"\x95\x01\n\x0bNMKNOLPFJDN\x12\x20\n\x0bKOHGFNGK\
-    FPE\x18\x02\x20\x01(\rR\x0bKOHGFNGKFPE\x12\x20\n\x0bCKLIEKOIGOG\x18\t\
-    \x20\x03(\rR\x0bCKLIEKOIGOG\x12\x20\n\x0bJCKKPPELFHC\x18\x0e\x20\x01(\rR\
+    FPE\x18\x01\x20\x01(\rR\x0bKOHGFNGKFPE\x12\x20\n\x0bCKLIEKOIGOG\x18\x08\
+    \x20\x03(\rR\x0bCKLIEKOIGOG\x12\x20\n\x0bJCKKPPELFHC\x18\n\x20\x01(\rR\
     \x0bJCKKPPELFHC\x12\x20\n\x0bHGDNMKBNMBK\x18\x0f\x20\x03(\rR\x0bHGDNMKBN\
     MBKb\x06proto3\
 ";

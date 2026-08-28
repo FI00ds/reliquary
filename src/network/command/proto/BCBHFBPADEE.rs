@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BCBHFBPADEE {
     // message fields
-    // @@protoc_insertion_point(field:BCBHFBPADEE.JNOPBGBACOO)
-    pub JNOPBGBACOO: u32,
     // @@protoc_insertion_point(field:BCBHFBPADEE.MGGNKENIPFC)
     pub MGGNKENIPFC: u32,
+    // @@protoc_insertion_point(field:BCBHFBPADEE.JNOPBGBACOO)
+    pub JNOPBGBACOO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BCBHFBPADEE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl BCBHFBPADEE {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JNOPBGBACOO",
-            |m: &BCBHFBPADEE| { &m.JNOPBGBACOO },
-            |m: &mut BCBHFBPADEE| { &mut m.JNOPBGBACOO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MGGNKENIPFC",
             |m: &BCBHFBPADEE| { &m.MGGNKENIPFC },
             |m: &mut BCBHFBPADEE| { &mut m.MGGNKENIPFC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JNOPBGBACOO",
+            |m: &BCBHFBPADEE| { &m.JNOPBGBACOO },
+            |m: &mut BCBHFBPADEE| { &mut m.JNOPBGBACOO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BCBHFBPADEE>(
             "BCBHFBPADEE",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for BCBHFBPADEE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.JNOPBGBACOO = is.read_uint32()?;
-                },
-                96 => {
+                48 => {
                     self.MGGNKENIPFC = is.read_uint32()?;
+                },
+                56 => {
+                    self.JNOPBGBACOO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for BCBHFBPADEE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JNOPBGBACOO != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.JNOPBGBACOO);
-        }
         if self.MGGNKENIPFC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.MGGNKENIPFC);
+            my_size += ::protobuf::rt::uint32_size(6, self.MGGNKENIPFC);
+        }
+        if self.JNOPBGBACOO != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.JNOPBGBACOO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for BCBHFBPADEE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JNOPBGBACOO != 0 {
-            os.write_uint32(4, self.JNOPBGBACOO)?;
-        }
         if self.MGGNKENIPFC != 0 {
-            os.write_uint32(12, self.MGGNKENIPFC)?;
+            os.write_uint32(6, self.MGGNKENIPFC)?;
+        }
+        if self.JNOPBGBACOO != 0 {
+            os.write_uint32(7, self.JNOPBGBACOO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for BCBHFBPADEE {
     }
 
     fn clear(&mut self) {
-        self.JNOPBGBACOO = 0;
         self.MGGNKENIPFC = 0;
+        self.JNOPBGBACOO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BCBHFBPADEE {
         static instance: BCBHFBPADEE = BCBHFBPADEE {
-            JNOPBGBACOO: 0,
             MGGNKENIPFC: 0,
+            JNOPBGBACOO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for BCBHFBPADEE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BCBHFBPADEE.proto\"Q\n\x0bBCBHFBPADEE\x12\x20\n\x0bJNOPBGBACOO\x18\
-    \x04\x20\x01(\rR\x0bJNOPBGBACOO\x12\x20\n\x0bMGGNKENIPFC\x18\x0c\x20\x01\
-    (\rR\x0bMGGNKENIPFCb\x06proto3\
+    \n\x11BCBHFBPADEE.proto\"Q\n\x0bBCBHFBPADEE\x12\x20\n\x0bMGGNKENIPFC\x18\
+    \x06\x20\x01(\rR\x0bMGGNKENIPFC\x12\x20\n\x0bJNOPBGBACOO\x18\x07\x20\x01\
+    (\rR\x0bJNOPBGBACOOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetChallangeTierceScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetChallangeTierceScRsp.KNKGIENCLJJ)
-    pub KNKGIENCLJJ: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetChallangeTierceScRsp.NJIIPBHBEDK)
     pub NJIIPBHBEDK: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetChallangeTierceScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:GetChallangeTierceScRsp.GCMOKMIEHDB)
     pub GCMOKMIEHDB: i64,
+    // @@protoc_insertion_point(field:GetChallangeTierceScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetChallangeTierceScRsp.KNKGIENCLJJ)
+    pub KNKGIENCLJJ: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetChallangeTierceScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl GetChallangeTierceScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KNKGIENCLJJ",
-            |m: &GetChallangeTierceScRsp| { &m.KNKGIENCLJJ },
-            |m: &mut GetChallangeTierceScRsp| { &mut m.KNKGIENCLJJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "NJIIPBHBEDK",
             |m: &GetChallangeTierceScRsp| { &m.NJIIPBHBEDK },
             |m: &mut GetChallangeTierceScRsp| { &mut m.NJIIPBHBEDK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GCMOKMIEHDB",
+            |m: &GetChallangeTierceScRsp| { &m.GCMOKMIEHDB },
+            |m: &mut GetChallangeTierceScRsp| { &mut m.GCMOKMIEHDB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetChallangeTierceScRsp| { &m.retcode },
             |m: &mut GetChallangeTierceScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCMOKMIEHDB",
-            |m: &GetChallangeTierceScRsp| { &m.GCMOKMIEHDB },
-            |m: &mut GetChallangeTierceScRsp| { &mut m.GCMOKMIEHDB },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KNKGIENCLJJ",
+            |m: &GetChallangeTierceScRsp| { &m.KNKGIENCLJJ },
+            |m: &mut GetChallangeTierceScRsp| { &mut m.KNKGIENCLJJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetChallangeTierceScRsp>(
             "GetChallangeTierceScRsp",
@@ -93,23 +93,23 @@ impl ::protobuf::Message for GetChallangeTierceScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.KNKGIENCLJJ)?;
-                },
-                8 => {
-                    self.KNKGIENCLJJ.push(is.read_uint32()?);
-                },
                 34 => {
                     is.read_repeated_packed_uint32_into(&mut self.NJIIPBHBEDK)?;
                 },
                 32 => {
                     self.NJIIPBHBEDK.push(is.read_uint32()?);
                 },
-                64 => {
+                56 => {
+                    self.GCMOKMIEHDB = is.read_int64()?;
+                },
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
-                120 => {
-                    self.GCMOKMIEHDB = is.read_int64()?;
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.KNKGIENCLJJ)?;
+                },
+                104 => {
+                    self.KNKGIENCLJJ.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -123,28 +123,28 @@ impl ::protobuf::Message for GetChallangeTierceScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.KNKGIENCLJJ);
         my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.NJIIPBHBEDK);
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
-        }
         if self.GCMOKMIEHDB != 0 {
-            my_size += ::protobuf::rt::int64_size(15, self.GCMOKMIEHDB);
+            my_size += ::protobuf::rt::int64_size(7, self.GCMOKMIEHDB);
         }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.KNKGIENCLJJ);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.KNKGIENCLJJ)?;
         os.write_repeated_packed_uint32(4, &self.NJIIPBHBEDK)?;
-        if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
-        }
         if self.GCMOKMIEHDB != 0 {
-            os.write_int64(15, self.GCMOKMIEHDB)?;
+            os.write_int64(7, self.GCMOKMIEHDB)?;
         }
+        if self.retcode != 0 {
+            os.write_uint32(11, self.retcode)?;
+        }
+        os.write_repeated_packed_uint32(13, &self.KNKGIENCLJJ)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -162,19 +162,19 @@ impl ::protobuf::Message for GetChallangeTierceScRsp {
     }
 
     fn clear(&mut self) {
-        self.KNKGIENCLJJ.clear();
         self.NJIIPBHBEDK.clear();
-        self.retcode = 0;
         self.GCMOKMIEHDB = 0;
+        self.retcode = 0;
+        self.KNKGIENCLJJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetChallangeTierceScRsp {
         static instance: GetChallangeTierceScRsp = GetChallangeTierceScRsp {
-            KNKGIENCLJJ: ::std::vec::Vec::new(),
             NJIIPBHBEDK: ::std::vec::Vec::new(),
-            retcode: 0,
             GCMOKMIEHDB: 0,
+            retcode: 0,
+            KNKGIENCLJJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,10 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for GetChallangeTierceScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dGetChallangeTierceScRsp.proto\"\x99\x01\n\x17GetChallangeTierceScR\
-    sp\x12\x20\n\x0bKNKGIENCLJJ\x18\x01\x20\x03(\rR\x0bKNKGIENCLJJ\x12\x20\n\
-    \x0bNJIIPBHBEDK\x18\x04\x20\x03(\rR\x0bNJIIPBHBEDK\x12\x18\n\x07retcode\
-    \x18\x08\x20\x01(\rR\x07retcode\x12\x20\n\x0bGCMOKMIEHDB\x18\x0f\x20\x01\
-    (\x03R\x0bGCMOKMIEHDBb\x06proto3\
+    sp\x12\x20\n\x0bNJIIPBHBEDK\x18\x04\x20\x03(\rR\x0bNJIIPBHBEDK\x12\x20\n\
+    \x0bGCMOKMIEHDB\x18\x07\x20\x01(\x03R\x0bGCMOKMIEHDB\x12\x18\n\x07retcod\
+    e\x18\x0b\x20\x01(\rR\x07retcode\x12\x20\n\x0bKNKGIENCLJJ\x18\r\x20\x03(\
+    \rR\x0bKNKGIENCLJJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -129,6 +129,8 @@ pub enum PlayerActionType {
     PlayerActionType_PlayerActionBattleFailedReport = 1012,
     // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionSecurityReport)
     PlayerActionType_PlayerActionSecurityReport = 1013,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionClientVideoSetting)
+    PlayerActionType_PlayerActionClientVideoSetting = 1014,
     // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionAvatarPromotion)
     PlayerActionType_PlayerActionAvatarPromotion = 1101,
     // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionAvatarAdd)
@@ -531,8 +533,8 @@ pub enum PlayerActionType {
     PlayerActionType_PlayerActionChallengeTierceStart = 2282,
     // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionChallengeTierceBattleEnd)
     PlayerActionType_PlayerActionChallengeTierceBattleEnd = 2283,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionChallengeTierceSyncSingleStage)
-    PlayerActionType_PlayerActionChallengeTierceSyncSingleStage = 2284,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionChallengeTierceStageSettle)
+    PlayerActionType_PlayerActionChallengeTierceStageSettle = 2284,
     // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionChallengeTierceGradeReset)
     PlayerActionType_PlayerActionChallengeTierceGradeReset = 2285,
     // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionTeamInfoChange)
@@ -1629,6 +1631,14 @@ pub enum PlayerActionType {
     PlayerActionType_PlayerActionRogueTournPersonaRoomCardReroll = 6267,
     // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionRogueTournMiracleStatusChange)
     PlayerActionType_PlayerActionRogueTournMiracleStatusChange = 6268,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionRogueTournPersonaStyleSelectRefresh)
+    PlayerActionType_PlayerActionRogueTournPersonaStyleSelectRefresh = 6269,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionRogueTournPersonaAncientCoinChange)
+    PlayerActionType_PlayerActionRogueTournPersonaAncientCoinChange = 6270,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionRogueTournPersonaLeverageBondSettle)
+    PlayerActionType_PlayerActionRogueTournPersonaLeverageBondSettle = 6271,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionRogueTournPersonaLeverageBondRepayRecord)
+    PlayerActionType_PlayerActionRogueTournPersonaLeverageBondRepayRecord = 6272,
     // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionRogueWorkbenchReforgeFormula)
     PlayerActionType_PlayerActionRogueWorkbenchReforgeFormula = 6281,
     // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionRogueWorkbenchReforgeMiracle)
@@ -2157,98 +2167,100 @@ pub enum PlayerActionType {
     PlayerActionType_PlayerActionMazePuzzleLeaveFiveDimGame = 7206,
     // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionMazePuzzleFiveDimGameSkillChange)
     PlayerActionType_PlayerActionMazePuzzleFiveDimGameSkillChange = 7207,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightGameStart)
-    PlayerActionType_PlayerActionGridFightGameStart = 7251,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightGameEnd)
-    PlayerActionType_PlayerActionGridFightGameEnd = 7252,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightRoundStart)
-    PlayerActionType_PlayerActionGridFightRoundStart = 7253,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightRoundEnd)
-    PlayerActionType_PlayerActionGridFightRoundEnd = 7254,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightBattleStart)
-    PlayerActionType_PlayerActionGridFightBattleStart = 7255,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightBattleEnd)
-    PlayerActionType_PlayerActionGridFightBattleEnd = 7256,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightBattleRole)
-    PlayerActionType_PlayerActionGridFightBattleRole = 7257,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightPortalRefresh)
-    PlayerActionType_PlayerActionGridFightPortalRefresh = 7258,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightPortalSelect)
-    PlayerActionType_PlayerActionGridFightPortalSelect = 7259,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightAugmentRefresh)
-    PlayerActionType_PlayerActionGridFightAugmentRefresh = 7260,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightAugmentSelect)
-    PlayerActionType_PlayerActionGridFightAugmentSelect = 7261,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightShopRefresh)
-    PlayerActionType_PlayerActionGridFightShopRefresh = 7262,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightShopBuy)
-    PlayerActionType_PlayerActionGridFightShopBuy = 7263,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightSupplyRefresh)
-    PlayerActionType_PlayerActionGridFightSupplyRefresh = 7264,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightSupplySelect)
-    PlayerActionType_PlayerActionGridFightSupplySelect = 7265,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightForgeOpen)
-    PlayerActionType_PlayerActionGridFightForgeOpen = 7266,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightSpecialShopBuy)
-    PlayerActionType_PlayerActionGridFightSpecialShopBuy = 7267,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightGetExp)
-    PlayerActionType_PlayerActionGridFightGetExp = 7268,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightGetOrb)
-    PlayerActionType_PlayerActionGridFightGetOrb = 7269,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightUseOrb)
-    PlayerActionType_PlayerActionGridFightUseOrb = 7270,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightGetRole)
-    PlayerActionType_PlayerActionGridFightGetRole = 7271,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightGetCoin)
-    PlayerActionType_PlayerActionGridFightGetCoin = 7272,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightGetFreeRefresh)
-    PlayerActionType_PlayerActionGridFightGetFreeRefresh = 7273,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightGetItem)
-    PlayerActionType_PlayerActionGridFightGetItem = 7274,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightGetEquip)
-    PlayerActionType_PlayerActionGridFightGetEquip = 7275,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightDressEquip)
-    PlayerActionType_PlayerActionGridFightDressEquip = 7276,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightGetHp)
-    PlayerActionType_PlayerActionGridFightGetHp = 7277,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightWeeklyScoreChange)
-    PlayerActionType_PlayerActionGridFightWeeklyScoreChange = 7278,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightGetWeeklyReward)
-    PlayerActionType_PlayerActionGridFightGetWeeklyReward = 7279,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightSeasonExpChange)
-    PlayerActionType_PlayerActionGridFightSeasonExpChange = 7280,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightTalentEnable)
-    PlayerActionType_PlayerActionGridFightTalentEnable = 7281,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightTalentReset)
-    PlayerActionType_PlayerActionGridFightTalentReset = 7282,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightTutorialTaskFinish)
-    PlayerActionType_PlayerActionGridFightTutorialTaskFinish = 7283,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightEliteBranchRefresh)
-    PlayerActionType_PlayerActionGridFightEliteBranchRefresh = 7284,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightTutorialResume)
-    PlayerActionType_PlayerActionGridFightTutorialResume = 7285,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightGetProjection)
-    PlayerActionType_PlayerActionGridFightGetProjection = 7286,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightGetPresent)
-    PlayerActionType_PlayerActionGridFightGetPresent = 7287,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightOpenPresent)
-    PlayerActionType_PlayerActionGridFightOpenPresent = 7288,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightSettleSeasonEnd)
-    PlayerActionType_PlayerActionGridFightSettleSeasonEnd = 7289,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightFavoriteArchive)
-    PlayerActionType_PlayerActionGridFightFavoriteArchive = 7290,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightFormationEdit)
-    PlayerActionType_PlayerActionGridFightFormationEdit = 7291,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightModifierUpdate)
-    PlayerActionType_PlayerActionGridFightModifierUpdate = 7292,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightFormationUgcUpdate)
-    PlayerActionType_PlayerActionGridFightFormationUgcUpdate = 7293,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightPartnerRoleChoose)
-    PlayerActionType_PlayerActionGridFightPartnerRoleChoose = 7294,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightPrayQuestSelect)
-    PlayerActionType_PlayerActionGridFightPrayQuestSelect = 7295,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionGridFightPrayQuestFinish)
-    PlayerActionType_PlayerActionGridFightPrayQuestFinish = 7296,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_68286c01)
+    H_68286c01 = 7251,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_c585af9f)
+    H_c585af9f = 7252,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_f1b5c5ab)
+    H_f1b5c5ab = 7253,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_6c1c4c2f)
+    H_6c1c4c2f = 7254,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_5c0fb240)
+    H_5c0fb240 = 7255,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_b8633faf)
+    H_b8633faf = 7256,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_72b8407e)
+    H_72b8407e = 7257,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_21a6dcf9)
+    H_21a6dcf9 = 7258,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_24249c7b)
+    H_24249c7b = 7259,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_4a203fba)
+    H_4a203fba = 7260,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_88777c0b)
+    H_88777c0b = 7261,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_0c57357e)
+    H_0c57357e = 7262,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_ba2a8cec)
+    H_ba2a8cec = 7263,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_29455603)
+    H_29455603 = 7264,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_1acb9a50)
+    H_1acb9a50 = 7265,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_70a00719)
+    H_70a00719 = 7266,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_4a9a52d1)
+    H_4a9a52d1 = 7267,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_188c6675)
+    H_188c6675 = 7268,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_f0cd30ae)
+    H_f0cd30ae = 7269,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_0ef09a2b)
+    H_0ef09a2b = 7270,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_90a3cc0c)
+    H_90a3cc0c = 7271,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_1015e989)
+    H_1015e989 = 7272,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_5e539b86)
+    H_5e539b86 = 7273,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_49dc71a7)
+    H_49dc71a7 = 7274,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_2594b7a2)
+    H_2594b7a2 = 7275,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_1224a868)
+    H_1224a868 = 7276,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_8910a071)
+    H_8910a071 = 7277,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_c1773cdf)
+    H_c1773cdf = 7278,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_43e5abd0)
+    H_43e5abd0 = 7279,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_e5a72344)
+    H_e5a72344 = 7280,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_1dc03631)
+    H_1dc03631 = 7281,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_78c3f20f)
+    H_78c3f20f = 7282,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_81e24de9)
+    H_81e24de9 = 7283,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_7804d7f7)
+    H_7804d7f7 = 7284,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_18734592)
+    H_18734592 = 7285,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_aa36cece)
+    H_aa36cece = 7286,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_497730d6)
+    H_497730d6 = 7287,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_73267c71)
+    H_73267c71 = 7288,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_a196af40)
+    H_a196af40 = 7289,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_bc2ee045)
+    H_bc2ee045 = 7290,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_f2b3b1e6)
+    H_f2b3b1e6 = 7291,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_9b16622c)
+    H_9b16622c = 7292,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_0424e912)
+    H_0424e912 = 7293,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_cc44d6de)
+    H_cc44d6de = 7294,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_224a011e)
+    H_224a011e = 7295,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_07a2c6c8)
+    H_07a2c6c8 = 7296,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_a90a81dd)
+    H_a90a81dd = 7297,
     // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionLocalLegendBattleBegin)
     PlayerActionType_PlayerActionLocalLegendBattleBegin = 7361,
     // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionLocalLegendBattleEnd)
@@ -2409,6 +2421,22 @@ pub enum PlayerActionType {
     PlayerActionType_PlayerActionLimaoNewsFinishOfficeEvent = 7496,
     // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionLimaoNewsUpvoteContent)
     PlayerActionType_PlayerActionLimaoNewsUpvoteContent = 7497,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionLimaoNewsFinishWork)
+    PlayerActionType_PlayerActionLimaoNewsFinishWork = 7498,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionLimaoNewsFinishPlan)
+    PlayerActionType_PlayerActionLimaoNewsFinishPlan = 7499,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionLimaoNewsActivatePlan)
+    PlayerActionType_PlayerActionLimaoNewsActivatePlan = 7500,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionLimaoNewsEnterPlanPhase)
+    PlayerActionType_PlayerActionLimaoNewsEnterPlanPhase = 7501,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionLimaoNewsFinishPlanPhase)
+    PlayerActionType_PlayerActionLimaoNewsFinishPlanPhase = 7502,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionLimaoNewsStartWork)
+    PlayerActionType_PlayerActionLimaoNewsStartWork = 7503,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionLimaoNewsAdvanceWork)
+    PlayerActionType_PlayerActionLimaoNewsAdvanceWork = 7504,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionLimaoNewsFinishEmployeeCheckOption)
+    PlayerActionType_PlayerActionLimaoNewsFinishEmployeeCheckOption = 7505,
     // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionChenLingBattleActivatePrivilege)
     PlayerActionType_PlayerActionChenLingBattleActivatePrivilege = 7506,
     // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionChenLingBattleConquerLevelUp)
@@ -2461,6 +2489,18 @@ pub enum PlayerActionType {
     PlayerActionType_PlayerActionRelicPresetPlanDelete = 7582,
     // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionRelicPresetPlanModifyName)
     PlayerActionType_PlayerActionRelicPresetPlanModifyName = 7583,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionB51RacingStartMatch)
+    PlayerActionType_PlayerActionB51RacingStartMatch = 7591,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionB51RacingEndMatch)
+    PlayerActionType_PlayerActionB51RacingEndMatch = 7592,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionB51RacingStartDay)
+    PlayerActionType_PlayerActionB51RacingStartDay = 7593,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionB51RacingFinishDay)
+    PlayerActionType_PlayerActionB51RacingFinishDay = 7594,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionB51RacingCarLiveryChange)
+    PlayerActionType_PlayerActionB51RacingCarLiveryChange = 7595,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionB51RacingDevelopAction)
+    PlayerActionType_PlayerActionB51RacingDevelopAction = 7596,
     // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionPixAirUnlockPlane)
     PlayerActionType_PlayerActionPixAirUnlockPlane = 7611,
     // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionPixAirStageStart)
@@ -2575,6 +2615,7 @@ impl ::protobuf::Enum for PlayerActionType {
             1011 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionMoveCheckFailedReport),
             1012 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionBattleFailedReport),
             1013 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionSecurityReport),
+            1014 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionClientVideoSetting),
             1101 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionAvatarPromotion),
             1103 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionAvatarAdd),
             1104 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionAvatarUseExpItem),
@@ -2776,7 +2817,7 @@ impl ::protobuf::Enum for PlayerActionType {
             2281 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionChallengeTierceRecommendLineup),
             2282 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionChallengeTierceStart),
             2283 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionChallengeTierceBattleEnd),
-            2284 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionChallengeTierceSyncSingleStage),
+            2284 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionChallengeTierceStageSettle),
             2285 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionChallengeTierceGradeReset),
             2301 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionTeamInfoChange),
             2302 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionChangeCurrentAvatar),
@@ -3325,6 +3366,10 @@ impl ::protobuf::Enum for PlayerActionType {
             6266 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaStyleGiftSelectRefresh),
             6267 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaRoomCardReroll),
             6268 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRogueTournMiracleStatusChange),
+            6269 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaStyleSelectRefresh),
+            6270 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaAncientCoinChange),
+            6271 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaLeverageBondSettle),
+            6272 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaLeverageBondRepayRecord),
             6281 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRogueWorkbenchReforgeFormula),
             6282 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRogueWorkbenchReforgeMiracle),
             6283 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRogueWorkbenchComposeMiracle),
@@ -3589,52 +3634,53 @@ impl ::protobuf::Enum for PlayerActionType {
             7205 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionMazePuzzleEnterFiveDimGame),
             7206 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionMazePuzzleLeaveFiveDimGame),
             7207 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionMazePuzzleFiveDimGameSkillChange),
-            7251 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGameStart),
-            7252 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGameEnd),
-            7253 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightRoundStart),
-            7254 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightRoundEnd),
-            7255 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightBattleStart),
-            7256 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightBattleEnd),
-            7257 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightBattleRole),
-            7258 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightPortalRefresh),
-            7259 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightPortalSelect),
-            7260 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightAugmentRefresh),
-            7261 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightAugmentSelect),
-            7262 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightShopRefresh),
-            7263 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightShopBuy),
-            7264 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightSupplyRefresh),
-            7265 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightSupplySelect),
-            7266 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightForgeOpen),
-            7267 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightSpecialShopBuy),
-            7268 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGetExp),
-            7269 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGetOrb),
-            7270 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightUseOrb),
-            7271 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGetRole),
-            7272 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGetCoin),
-            7273 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGetFreeRefresh),
-            7274 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGetItem),
-            7275 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGetEquip),
-            7276 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightDressEquip),
-            7277 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGetHp),
-            7278 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightWeeklyScoreChange),
-            7279 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGetWeeklyReward),
-            7280 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightSeasonExpChange),
-            7281 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightTalentEnable),
-            7282 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightTalentReset),
-            7283 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightTutorialTaskFinish),
-            7284 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightEliteBranchRefresh),
-            7285 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightTutorialResume),
-            7286 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGetProjection),
-            7287 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGetPresent),
-            7288 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightOpenPresent),
-            7289 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightSettleSeasonEnd),
-            7290 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightFavoriteArchive),
-            7291 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightFormationEdit),
-            7292 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightModifierUpdate),
-            7293 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightFormationUgcUpdate),
-            7294 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightPartnerRoleChoose),
-            7295 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightPrayQuestSelect),
-            7296 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightPrayQuestFinish),
+            7251 => ::std::option::Option::Some(PlayerActionType::H_68286c01),
+            7252 => ::std::option::Option::Some(PlayerActionType::H_c585af9f),
+            7253 => ::std::option::Option::Some(PlayerActionType::H_f1b5c5ab),
+            7254 => ::std::option::Option::Some(PlayerActionType::H_6c1c4c2f),
+            7255 => ::std::option::Option::Some(PlayerActionType::H_5c0fb240),
+            7256 => ::std::option::Option::Some(PlayerActionType::H_b8633faf),
+            7257 => ::std::option::Option::Some(PlayerActionType::H_72b8407e),
+            7258 => ::std::option::Option::Some(PlayerActionType::H_21a6dcf9),
+            7259 => ::std::option::Option::Some(PlayerActionType::H_24249c7b),
+            7260 => ::std::option::Option::Some(PlayerActionType::H_4a203fba),
+            7261 => ::std::option::Option::Some(PlayerActionType::H_88777c0b),
+            7262 => ::std::option::Option::Some(PlayerActionType::H_0c57357e),
+            7263 => ::std::option::Option::Some(PlayerActionType::H_ba2a8cec),
+            7264 => ::std::option::Option::Some(PlayerActionType::H_29455603),
+            7265 => ::std::option::Option::Some(PlayerActionType::H_1acb9a50),
+            7266 => ::std::option::Option::Some(PlayerActionType::H_70a00719),
+            7267 => ::std::option::Option::Some(PlayerActionType::H_4a9a52d1),
+            7268 => ::std::option::Option::Some(PlayerActionType::H_188c6675),
+            7269 => ::std::option::Option::Some(PlayerActionType::H_f0cd30ae),
+            7270 => ::std::option::Option::Some(PlayerActionType::H_0ef09a2b),
+            7271 => ::std::option::Option::Some(PlayerActionType::H_90a3cc0c),
+            7272 => ::std::option::Option::Some(PlayerActionType::H_1015e989),
+            7273 => ::std::option::Option::Some(PlayerActionType::H_5e539b86),
+            7274 => ::std::option::Option::Some(PlayerActionType::H_49dc71a7),
+            7275 => ::std::option::Option::Some(PlayerActionType::H_2594b7a2),
+            7276 => ::std::option::Option::Some(PlayerActionType::H_1224a868),
+            7277 => ::std::option::Option::Some(PlayerActionType::H_8910a071),
+            7278 => ::std::option::Option::Some(PlayerActionType::H_c1773cdf),
+            7279 => ::std::option::Option::Some(PlayerActionType::H_43e5abd0),
+            7280 => ::std::option::Option::Some(PlayerActionType::H_e5a72344),
+            7281 => ::std::option::Option::Some(PlayerActionType::H_1dc03631),
+            7282 => ::std::option::Option::Some(PlayerActionType::H_78c3f20f),
+            7283 => ::std::option::Option::Some(PlayerActionType::H_81e24de9),
+            7284 => ::std::option::Option::Some(PlayerActionType::H_7804d7f7),
+            7285 => ::std::option::Option::Some(PlayerActionType::H_18734592),
+            7286 => ::std::option::Option::Some(PlayerActionType::H_aa36cece),
+            7287 => ::std::option::Option::Some(PlayerActionType::H_497730d6),
+            7288 => ::std::option::Option::Some(PlayerActionType::H_73267c71),
+            7289 => ::std::option::Option::Some(PlayerActionType::H_a196af40),
+            7290 => ::std::option::Option::Some(PlayerActionType::H_bc2ee045),
+            7291 => ::std::option::Option::Some(PlayerActionType::H_f2b3b1e6),
+            7292 => ::std::option::Option::Some(PlayerActionType::H_9b16622c),
+            7293 => ::std::option::Option::Some(PlayerActionType::H_0424e912),
+            7294 => ::std::option::Option::Some(PlayerActionType::H_cc44d6de),
+            7295 => ::std::option::Option::Some(PlayerActionType::H_224a011e),
+            7296 => ::std::option::Option::Some(PlayerActionType::H_07a2c6c8),
+            7297 => ::std::option::Option::Some(PlayerActionType::H_a90a81dd),
             7361 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLocalLegendBattleBegin),
             7362 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLocalLegendBattleEnd),
             7351 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionDiceCombatBuyShopGood),
@@ -3715,6 +3761,14 @@ impl ::protobuf::Enum for PlayerActionType {
             7495 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLimaoNewsTriggerOfficeEvent),
             7496 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishOfficeEvent),
             7497 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLimaoNewsUpvoteContent),
+            7498 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishWork),
+            7499 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishPlan),
+            7500 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLimaoNewsActivatePlan),
+            7501 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLimaoNewsEnterPlanPhase),
+            7502 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishPlanPhase),
+            7503 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLimaoNewsStartWork),
+            7504 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLimaoNewsAdvanceWork),
+            7505 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishEmployeeCheckOption),
             7506 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionChenLingBattleActivatePrivilege),
             7507 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionChenLingBattleConquerLevelUp),
             7508 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionChenLingBattleStartStage),
@@ -3741,6 +3795,12 @@ impl ::protobuf::Enum for PlayerActionType {
             7581 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRelicPresetPlanSave),
             7582 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRelicPresetPlanDelete),
             7583 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRelicPresetPlanModifyName),
+            7591 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionB51RacingStartMatch),
+            7592 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionB51RacingEndMatch),
+            7593 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionB51RacingStartDay),
+            7594 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionB51RacingFinishDay),
+            7595 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionB51RacingCarLiveryChange),
+            7596 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionB51RacingDevelopAction),
             7611 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionPixAirUnlockPlane),
             7612 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionPixAirStageStart),
             7613 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionPixAirBattleGen),
@@ -3824,6 +3884,7 @@ impl ::protobuf::Enum for PlayerActionType {
             "PlayerActionType_PlayerActionMoveCheckFailedReport" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionMoveCheckFailedReport),
             "PlayerActionType_PlayerActionBattleFailedReport" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionBattleFailedReport),
             "PlayerActionType_PlayerActionSecurityReport" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionSecurityReport),
+            "PlayerActionType_PlayerActionClientVideoSetting" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionClientVideoSetting),
             "PlayerActionType_PlayerActionAvatarPromotion" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionAvatarPromotion),
             "PlayerActionType_PlayerActionAvatarAdd" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionAvatarAdd),
             "PlayerActionType_PlayerActionAvatarUseExpItem" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionAvatarUseExpItem),
@@ -4025,7 +4086,7 @@ impl ::protobuf::Enum for PlayerActionType {
             "PlayerActionType_PlayerActionChallengeTierceRecommendLineup" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionChallengeTierceRecommendLineup),
             "PlayerActionType_PlayerActionChallengeTierceStart" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionChallengeTierceStart),
             "PlayerActionType_PlayerActionChallengeTierceBattleEnd" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionChallengeTierceBattleEnd),
-            "PlayerActionType_PlayerActionChallengeTierceSyncSingleStage" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionChallengeTierceSyncSingleStage),
+            "PlayerActionType_PlayerActionChallengeTierceStageSettle" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionChallengeTierceStageSettle),
             "PlayerActionType_PlayerActionChallengeTierceGradeReset" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionChallengeTierceGradeReset),
             "PlayerActionType_PlayerActionTeamInfoChange" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionTeamInfoChange),
             "PlayerActionType_PlayerActionChangeCurrentAvatar" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionChangeCurrentAvatar),
@@ -4574,6 +4635,10 @@ impl ::protobuf::Enum for PlayerActionType {
             "PlayerActionType_PlayerActionRogueTournPersonaStyleGiftSelectRefresh" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaStyleGiftSelectRefresh),
             "PlayerActionType_PlayerActionRogueTournPersonaRoomCardReroll" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaRoomCardReroll),
             "PlayerActionType_PlayerActionRogueTournMiracleStatusChange" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRogueTournMiracleStatusChange),
+            "PlayerActionType_PlayerActionRogueTournPersonaStyleSelectRefresh" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaStyleSelectRefresh),
+            "PlayerActionType_PlayerActionRogueTournPersonaAncientCoinChange" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaAncientCoinChange),
+            "PlayerActionType_PlayerActionRogueTournPersonaLeverageBondSettle" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaLeverageBondSettle),
+            "PlayerActionType_PlayerActionRogueTournPersonaLeverageBondRepayRecord" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaLeverageBondRepayRecord),
             "PlayerActionType_PlayerActionRogueWorkbenchReforgeFormula" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRogueWorkbenchReforgeFormula),
             "PlayerActionType_PlayerActionRogueWorkbenchReforgeMiracle" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRogueWorkbenchReforgeMiracle),
             "PlayerActionType_PlayerActionRogueWorkbenchComposeMiracle" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRogueWorkbenchComposeMiracle),
@@ -4838,52 +4903,53 @@ impl ::protobuf::Enum for PlayerActionType {
             "PlayerActionType_PlayerActionMazePuzzleEnterFiveDimGame" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionMazePuzzleEnterFiveDimGame),
             "PlayerActionType_PlayerActionMazePuzzleLeaveFiveDimGame" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionMazePuzzleLeaveFiveDimGame),
             "PlayerActionType_PlayerActionMazePuzzleFiveDimGameSkillChange" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionMazePuzzleFiveDimGameSkillChange),
-            "PlayerActionType_PlayerActionGridFightGameStart" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGameStart),
-            "PlayerActionType_PlayerActionGridFightGameEnd" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGameEnd),
-            "PlayerActionType_PlayerActionGridFightRoundStart" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightRoundStart),
-            "PlayerActionType_PlayerActionGridFightRoundEnd" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightRoundEnd),
-            "PlayerActionType_PlayerActionGridFightBattleStart" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightBattleStart),
-            "PlayerActionType_PlayerActionGridFightBattleEnd" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightBattleEnd),
-            "PlayerActionType_PlayerActionGridFightBattleRole" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightBattleRole),
-            "PlayerActionType_PlayerActionGridFightPortalRefresh" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightPortalRefresh),
-            "PlayerActionType_PlayerActionGridFightPortalSelect" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightPortalSelect),
-            "PlayerActionType_PlayerActionGridFightAugmentRefresh" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightAugmentRefresh),
-            "PlayerActionType_PlayerActionGridFightAugmentSelect" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightAugmentSelect),
-            "PlayerActionType_PlayerActionGridFightShopRefresh" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightShopRefresh),
-            "PlayerActionType_PlayerActionGridFightShopBuy" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightShopBuy),
-            "PlayerActionType_PlayerActionGridFightSupplyRefresh" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightSupplyRefresh),
-            "PlayerActionType_PlayerActionGridFightSupplySelect" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightSupplySelect),
-            "PlayerActionType_PlayerActionGridFightForgeOpen" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightForgeOpen),
-            "PlayerActionType_PlayerActionGridFightSpecialShopBuy" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightSpecialShopBuy),
-            "PlayerActionType_PlayerActionGridFightGetExp" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGetExp),
-            "PlayerActionType_PlayerActionGridFightGetOrb" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGetOrb),
-            "PlayerActionType_PlayerActionGridFightUseOrb" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightUseOrb),
-            "PlayerActionType_PlayerActionGridFightGetRole" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGetRole),
-            "PlayerActionType_PlayerActionGridFightGetCoin" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGetCoin),
-            "PlayerActionType_PlayerActionGridFightGetFreeRefresh" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGetFreeRefresh),
-            "PlayerActionType_PlayerActionGridFightGetItem" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGetItem),
-            "PlayerActionType_PlayerActionGridFightGetEquip" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGetEquip),
-            "PlayerActionType_PlayerActionGridFightDressEquip" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightDressEquip),
-            "PlayerActionType_PlayerActionGridFightGetHp" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGetHp),
-            "PlayerActionType_PlayerActionGridFightWeeklyScoreChange" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightWeeklyScoreChange),
-            "PlayerActionType_PlayerActionGridFightGetWeeklyReward" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGetWeeklyReward),
-            "PlayerActionType_PlayerActionGridFightSeasonExpChange" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightSeasonExpChange),
-            "PlayerActionType_PlayerActionGridFightTalentEnable" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightTalentEnable),
-            "PlayerActionType_PlayerActionGridFightTalentReset" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightTalentReset),
-            "PlayerActionType_PlayerActionGridFightTutorialTaskFinish" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightTutorialTaskFinish),
-            "PlayerActionType_PlayerActionGridFightEliteBranchRefresh" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightEliteBranchRefresh),
-            "PlayerActionType_PlayerActionGridFightTutorialResume" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightTutorialResume),
-            "PlayerActionType_PlayerActionGridFightGetProjection" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGetProjection),
-            "PlayerActionType_PlayerActionGridFightGetPresent" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightGetPresent),
-            "PlayerActionType_PlayerActionGridFightOpenPresent" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightOpenPresent),
-            "PlayerActionType_PlayerActionGridFightSettleSeasonEnd" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightSettleSeasonEnd),
-            "PlayerActionType_PlayerActionGridFightFavoriteArchive" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightFavoriteArchive),
-            "PlayerActionType_PlayerActionGridFightFormationEdit" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightFormationEdit),
-            "PlayerActionType_PlayerActionGridFightModifierUpdate" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightModifierUpdate),
-            "PlayerActionType_PlayerActionGridFightFormationUgcUpdate" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightFormationUgcUpdate),
-            "PlayerActionType_PlayerActionGridFightPartnerRoleChoose" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightPartnerRoleChoose),
-            "PlayerActionType_PlayerActionGridFightPrayQuestSelect" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightPrayQuestSelect),
-            "PlayerActionType_PlayerActionGridFightPrayQuestFinish" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionGridFightPrayQuestFinish),
+            "H_68286c01" => ::std::option::Option::Some(PlayerActionType::H_68286c01),
+            "H_c585af9f" => ::std::option::Option::Some(PlayerActionType::H_c585af9f),
+            "H_f1b5c5ab" => ::std::option::Option::Some(PlayerActionType::H_f1b5c5ab),
+            "H_6c1c4c2f" => ::std::option::Option::Some(PlayerActionType::H_6c1c4c2f),
+            "H_5c0fb240" => ::std::option::Option::Some(PlayerActionType::H_5c0fb240),
+            "H_b8633faf" => ::std::option::Option::Some(PlayerActionType::H_b8633faf),
+            "H_72b8407e" => ::std::option::Option::Some(PlayerActionType::H_72b8407e),
+            "H_21a6dcf9" => ::std::option::Option::Some(PlayerActionType::H_21a6dcf9),
+            "H_24249c7b" => ::std::option::Option::Some(PlayerActionType::H_24249c7b),
+            "H_4a203fba" => ::std::option::Option::Some(PlayerActionType::H_4a203fba),
+            "H_88777c0b" => ::std::option::Option::Some(PlayerActionType::H_88777c0b),
+            "H_0c57357e" => ::std::option::Option::Some(PlayerActionType::H_0c57357e),
+            "H_ba2a8cec" => ::std::option::Option::Some(PlayerActionType::H_ba2a8cec),
+            "H_29455603" => ::std::option::Option::Some(PlayerActionType::H_29455603),
+            "H_1acb9a50" => ::std::option::Option::Some(PlayerActionType::H_1acb9a50),
+            "H_70a00719" => ::std::option::Option::Some(PlayerActionType::H_70a00719),
+            "H_4a9a52d1" => ::std::option::Option::Some(PlayerActionType::H_4a9a52d1),
+            "H_188c6675" => ::std::option::Option::Some(PlayerActionType::H_188c6675),
+            "H_f0cd30ae" => ::std::option::Option::Some(PlayerActionType::H_f0cd30ae),
+            "H_0ef09a2b" => ::std::option::Option::Some(PlayerActionType::H_0ef09a2b),
+            "H_90a3cc0c" => ::std::option::Option::Some(PlayerActionType::H_90a3cc0c),
+            "H_1015e989" => ::std::option::Option::Some(PlayerActionType::H_1015e989),
+            "H_5e539b86" => ::std::option::Option::Some(PlayerActionType::H_5e539b86),
+            "H_49dc71a7" => ::std::option::Option::Some(PlayerActionType::H_49dc71a7),
+            "H_2594b7a2" => ::std::option::Option::Some(PlayerActionType::H_2594b7a2),
+            "H_1224a868" => ::std::option::Option::Some(PlayerActionType::H_1224a868),
+            "H_8910a071" => ::std::option::Option::Some(PlayerActionType::H_8910a071),
+            "H_c1773cdf" => ::std::option::Option::Some(PlayerActionType::H_c1773cdf),
+            "H_43e5abd0" => ::std::option::Option::Some(PlayerActionType::H_43e5abd0),
+            "H_e5a72344" => ::std::option::Option::Some(PlayerActionType::H_e5a72344),
+            "H_1dc03631" => ::std::option::Option::Some(PlayerActionType::H_1dc03631),
+            "H_78c3f20f" => ::std::option::Option::Some(PlayerActionType::H_78c3f20f),
+            "H_81e24de9" => ::std::option::Option::Some(PlayerActionType::H_81e24de9),
+            "H_7804d7f7" => ::std::option::Option::Some(PlayerActionType::H_7804d7f7),
+            "H_18734592" => ::std::option::Option::Some(PlayerActionType::H_18734592),
+            "H_aa36cece" => ::std::option::Option::Some(PlayerActionType::H_aa36cece),
+            "H_497730d6" => ::std::option::Option::Some(PlayerActionType::H_497730d6),
+            "H_73267c71" => ::std::option::Option::Some(PlayerActionType::H_73267c71),
+            "H_a196af40" => ::std::option::Option::Some(PlayerActionType::H_a196af40),
+            "H_bc2ee045" => ::std::option::Option::Some(PlayerActionType::H_bc2ee045),
+            "H_f2b3b1e6" => ::std::option::Option::Some(PlayerActionType::H_f2b3b1e6),
+            "H_9b16622c" => ::std::option::Option::Some(PlayerActionType::H_9b16622c),
+            "H_0424e912" => ::std::option::Option::Some(PlayerActionType::H_0424e912),
+            "H_cc44d6de" => ::std::option::Option::Some(PlayerActionType::H_cc44d6de),
+            "H_224a011e" => ::std::option::Option::Some(PlayerActionType::H_224a011e),
+            "H_07a2c6c8" => ::std::option::Option::Some(PlayerActionType::H_07a2c6c8),
+            "H_a90a81dd" => ::std::option::Option::Some(PlayerActionType::H_a90a81dd),
             "PlayerActionType_PlayerActionLocalLegendBattleBegin" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLocalLegendBattleBegin),
             "PlayerActionType_PlayerActionLocalLegendBattleEnd" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLocalLegendBattleEnd),
             "PlayerActionType_PlayerActionDiceCombatBuyShopGood" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionDiceCombatBuyShopGood),
@@ -4964,6 +5030,14 @@ impl ::protobuf::Enum for PlayerActionType {
             "PlayerActionType_PlayerActionLimaoNewsTriggerOfficeEvent" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLimaoNewsTriggerOfficeEvent),
             "PlayerActionType_PlayerActionLimaoNewsFinishOfficeEvent" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishOfficeEvent),
             "PlayerActionType_PlayerActionLimaoNewsUpvoteContent" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLimaoNewsUpvoteContent),
+            "PlayerActionType_PlayerActionLimaoNewsFinishWork" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishWork),
+            "PlayerActionType_PlayerActionLimaoNewsFinishPlan" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishPlan),
+            "PlayerActionType_PlayerActionLimaoNewsActivatePlan" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLimaoNewsActivatePlan),
+            "PlayerActionType_PlayerActionLimaoNewsEnterPlanPhase" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLimaoNewsEnterPlanPhase),
+            "PlayerActionType_PlayerActionLimaoNewsFinishPlanPhase" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishPlanPhase),
+            "PlayerActionType_PlayerActionLimaoNewsStartWork" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLimaoNewsStartWork),
+            "PlayerActionType_PlayerActionLimaoNewsAdvanceWork" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLimaoNewsAdvanceWork),
+            "PlayerActionType_PlayerActionLimaoNewsFinishEmployeeCheckOption" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishEmployeeCheckOption),
             "PlayerActionType_PlayerActionChenLingBattleActivatePrivilege" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionChenLingBattleActivatePrivilege),
             "PlayerActionType_PlayerActionChenLingBattleConquerLevelUp" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionChenLingBattleConquerLevelUp),
             "PlayerActionType_PlayerActionChenLingBattleStartStage" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionChenLingBattleStartStage),
@@ -4990,6 +5064,12 @@ impl ::protobuf::Enum for PlayerActionType {
             "PlayerActionType_PlayerActionRelicPresetPlanSave" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRelicPresetPlanSave),
             "PlayerActionType_PlayerActionRelicPresetPlanDelete" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRelicPresetPlanDelete),
             "PlayerActionType_PlayerActionRelicPresetPlanModifyName" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionRelicPresetPlanModifyName),
+            "PlayerActionType_PlayerActionB51RacingStartMatch" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionB51RacingStartMatch),
+            "PlayerActionType_PlayerActionB51RacingEndMatch" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionB51RacingEndMatch),
+            "PlayerActionType_PlayerActionB51RacingStartDay" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionB51RacingStartDay),
+            "PlayerActionType_PlayerActionB51RacingFinishDay" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionB51RacingFinishDay),
+            "PlayerActionType_PlayerActionB51RacingCarLiveryChange" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionB51RacingCarLiveryChange),
+            "PlayerActionType_PlayerActionB51RacingDevelopAction" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionB51RacingDevelopAction),
             "PlayerActionType_PlayerActionPixAirUnlockPlane" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionPixAirUnlockPlane),
             "PlayerActionType_PlayerActionPixAirStageStart" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionPixAirStageStart),
             "PlayerActionType_PlayerActionPixAirBattleGen" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionPixAirBattleGen),
@@ -5072,6 +5152,7 @@ impl ::protobuf::Enum for PlayerActionType {
         PlayerActionType::PlayerActionType_PlayerActionMoveCheckFailedReport,
         PlayerActionType::PlayerActionType_PlayerActionBattleFailedReport,
         PlayerActionType::PlayerActionType_PlayerActionSecurityReport,
+        PlayerActionType::PlayerActionType_PlayerActionClientVideoSetting,
         PlayerActionType::PlayerActionType_PlayerActionAvatarPromotion,
         PlayerActionType::PlayerActionType_PlayerActionAvatarAdd,
         PlayerActionType::PlayerActionType_PlayerActionAvatarUseExpItem,
@@ -5273,7 +5354,7 @@ impl ::protobuf::Enum for PlayerActionType {
         PlayerActionType::PlayerActionType_PlayerActionChallengeTierceRecommendLineup,
         PlayerActionType::PlayerActionType_PlayerActionChallengeTierceStart,
         PlayerActionType::PlayerActionType_PlayerActionChallengeTierceBattleEnd,
-        PlayerActionType::PlayerActionType_PlayerActionChallengeTierceSyncSingleStage,
+        PlayerActionType::PlayerActionType_PlayerActionChallengeTierceStageSettle,
         PlayerActionType::PlayerActionType_PlayerActionChallengeTierceGradeReset,
         PlayerActionType::PlayerActionType_PlayerActionTeamInfoChange,
         PlayerActionType::PlayerActionType_PlayerActionChangeCurrentAvatar,
@@ -5822,6 +5903,10 @@ impl ::protobuf::Enum for PlayerActionType {
         PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaStyleGiftSelectRefresh,
         PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaRoomCardReroll,
         PlayerActionType::PlayerActionType_PlayerActionRogueTournMiracleStatusChange,
+        PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaStyleSelectRefresh,
+        PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaAncientCoinChange,
+        PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaLeverageBondSettle,
+        PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaLeverageBondRepayRecord,
         PlayerActionType::PlayerActionType_PlayerActionRogueWorkbenchReforgeFormula,
         PlayerActionType::PlayerActionType_PlayerActionRogueWorkbenchReforgeMiracle,
         PlayerActionType::PlayerActionType_PlayerActionRogueWorkbenchComposeMiracle,
@@ -6086,52 +6171,53 @@ impl ::protobuf::Enum for PlayerActionType {
         PlayerActionType::PlayerActionType_PlayerActionMazePuzzleEnterFiveDimGame,
         PlayerActionType::PlayerActionType_PlayerActionMazePuzzleLeaveFiveDimGame,
         PlayerActionType::PlayerActionType_PlayerActionMazePuzzleFiveDimGameSkillChange,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightGameStart,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightGameEnd,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightRoundStart,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightRoundEnd,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightBattleStart,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightBattleEnd,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightBattleRole,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightPortalRefresh,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightPortalSelect,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightAugmentRefresh,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightAugmentSelect,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightShopRefresh,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightShopBuy,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightSupplyRefresh,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightSupplySelect,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightForgeOpen,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightSpecialShopBuy,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightGetExp,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightGetOrb,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightUseOrb,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightGetRole,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightGetCoin,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightGetFreeRefresh,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightGetItem,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightGetEquip,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightDressEquip,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightGetHp,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightWeeklyScoreChange,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightGetWeeklyReward,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightSeasonExpChange,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightTalentEnable,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightTalentReset,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightTutorialTaskFinish,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightEliteBranchRefresh,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightTutorialResume,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightGetProjection,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightGetPresent,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightOpenPresent,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightSettleSeasonEnd,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightFavoriteArchive,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightFormationEdit,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightModifierUpdate,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightFormationUgcUpdate,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightPartnerRoleChoose,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightPrayQuestSelect,
-        PlayerActionType::PlayerActionType_PlayerActionGridFightPrayQuestFinish,
+        PlayerActionType::H_68286c01,
+        PlayerActionType::H_c585af9f,
+        PlayerActionType::H_f1b5c5ab,
+        PlayerActionType::H_6c1c4c2f,
+        PlayerActionType::H_5c0fb240,
+        PlayerActionType::H_b8633faf,
+        PlayerActionType::H_72b8407e,
+        PlayerActionType::H_21a6dcf9,
+        PlayerActionType::H_24249c7b,
+        PlayerActionType::H_4a203fba,
+        PlayerActionType::H_88777c0b,
+        PlayerActionType::H_0c57357e,
+        PlayerActionType::H_ba2a8cec,
+        PlayerActionType::H_29455603,
+        PlayerActionType::H_1acb9a50,
+        PlayerActionType::H_70a00719,
+        PlayerActionType::H_4a9a52d1,
+        PlayerActionType::H_188c6675,
+        PlayerActionType::H_f0cd30ae,
+        PlayerActionType::H_0ef09a2b,
+        PlayerActionType::H_90a3cc0c,
+        PlayerActionType::H_1015e989,
+        PlayerActionType::H_5e539b86,
+        PlayerActionType::H_49dc71a7,
+        PlayerActionType::H_2594b7a2,
+        PlayerActionType::H_1224a868,
+        PlayerActionType::H_8910a071,
+        PlayerActionType::H_c1773cdf,
+        PlayerActionType::H_43e5abd0,
+        PlayerActionType::H_e5a72344,
+        PlayerActionType::H_1dc03631,
+        PlayerActionType::H_78c3f20f,
+        PlayerActionType::H_81e24de9,
+        PlayerActionType::H_7804d7f7,
+        PlayerActionType::H_18734592,
+        PlayerActionType::H_aa36cece,
+        PlayerActionType::H_497730d6,
+        PlayerActionType::H_73267c71,
+        PlayerActionType::H_a196af40,
+        PlayerActionType::H_bc2ee045,
+        PlayerActionType::H_f2b3b1e6,
+        PlayerActionType::H_9b16622c,
+        PlayerActionType::H_0424e912,
+        PlayerActionType::H_cc44d6de,
+        PlayerActionType::H_224a011e,
+        PlayerActionType::H_07a2c6c8,
+        PlayerActionType::H_a90a81dd,
         PlayerActionType::PlayerActionType_PlayerActionLocalLegendBattleBegin,
         PlayerActionType::PlayerActionType_PlayerActionLocalLegendBattleEnd,
         PlayerActionType::PlayerActionType_PlayerActionDiceCombatBuyShopGood,
@@ -6212,6 +6298,14 @@ impl ::protobuf::Enum for PlayerActionType {
         PlayerActionType::PlayerActionType_PlayerActionLimaoNewsTriggerOfficeEvent,
         PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishOfficeEvent,
         PlayerActionType::PlayerActionType_PlayerActionLimaoNewsUpvoteContent,
+        PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishWork,
+        PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishPlan,
+        PlayerActionType::PlayerActionType_PlayerActionLimaoNewsActivatePlan,
+        PlayerActionType::PlayerActionType_PlayerActionLimaoNewsEnterPlanPhase,
+        PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishPlanPhase,
+        PlayerActionType::PlayerActionType_PlayerActionLimaoNewsStartWork,
+        PlayerActionType::PlayerActionType_PlayerActionLimaoNewsAdvanceWork,
+        PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishEmployeeCheckOption,
         PlayerActionType::PlayerActionType_PlayerActionChenLingBattleActivatePrivilege,
         PlayerActionType::PlayerActionType_PlayerActionChenLingBattleConquerLevelUp,
         PlayerActionType::PlayerActionType_PlayerActionChenLingBattleStartStage,
@@ -6238,6 +6332,12 @@ impl ::protobuf::Enum for PlayerActionType {
         PlayerActionType::PlayerActionType_PlayerActionRelicPresetPlanSave,
         PlayerActionType::PlayerActionType_PlayerActionRelicPresetPlanDelete,
         PlayerActionType::PlayerActionType_PlayerActionRelicPresetPlanModifyName,
+        PlayerActionType::PlayerActionType_PlayerActionB51RacingStartMatch,
+        PlayerActionType::PlayerActionType_PlayerActionB51RacingEndMatch,
+        PlayerActionType::PlayerActionType_PlayerActionB51RacingStartDay,
+        PlayerActionType::PlayerActionType_PlayerActionB51RacingFinishDay,
+        PlayerActionType::PlayerActionType_PlayerActionB51RacingCarLiveryChange,
+        PlayerActionType::PlayerActionType_PlayerActionB51RacingDevelopAction,
         PlayerActionType::PlayerActionType_PlayerActionPixAirUnlockPlane,
         PlayerActionType::PlayerActionType_PlayerActionPixAirStageStart,
         PlayerActionType::PlayerActionType_PlayerActionPixAirBattleGen,
@@ -6326,1198 +6426,1218 @@ impl ::protobuf::EnumFull for PlayerActionType {
             PlayerActionType::PlayerActionType_PlayerActionMoveCheckFailedReport => 48,
             PlayerActionType::PlayerActionType_PlayerActionBattleFailedReport => 49,
             PlayerActionType::PlayerActionType_PlayerActionSecurityReport => 50,
-            PlayerActionType::PlayerActionType_PlayerActionAvatarPromotion => 51,
-            PlayerActionType::PlayerActionType_PlayerActionAvatarAdd => 52,
-            PlayerActionType::PlayerActionType_PlayerActionAvatarUseExpItem => 53,
-            PlayerActionType::PlayerActionType_PlayerActionAvatarLevelUp => 54,
-            PlayerActionType::PlayerActionType_PlayerActionSkillTreeUp => 55,
-            PlayerActionType::PlayerActionType_PlayerActionAvatarHpChange => 56,
-            PlayerActionType::PlayerActionType_PlayerActionAvatarMpChange => 57,
-            PlayerActionType::PlayerActionType_PlayerActionAvatarAddExp => 58,
-            PlayerActionType::PlayerActionType_PlayerActionAvatarRankUp => 59,
-            PlayerActionType::PlayerActionType_PlayerActionAvatarRepeated => 60,
-            PlayerActionType::PlayerActionType_PlayerActionMpMaxChange => 61,
-            PlayerActionType::PlayerActionType_PlayerActionAvatarTakePromotionReward => 62,
-            PlayerActionType::PlayerActionType_PlayerActionAvatarRelicAffixInfo => 63,
-            PlayerActionType::PlayerActionType_PlayerActionAvatarMark => 64,
-            PlayerActionType::PlayerActionType_PlayerActionAvatarSystemPowerReset => 65,
-            PlayerActionType::PlayerActionType_PlayerActionAvatarChangePath => 66,
-            PlayerActionType::PlayerActionType_PlayerActionSetGrowthTargetAvatar => 67,
-            PlayerActionType::PlayerActionType_PlayerActionDelAvatar => 68,
-            PlayerActionType::PlayerActionType_PlayerActionAvatarSkinChange => 69,
-            PlayerActionType::PlayerActionType_PlayerActionSetGrowthTargetFunctionConfig => 70,
-            PlayerActionType::PlayerActionType_PlayerActionAvatarSkinActivityReissue => 71,
-            PlayerActionType::PlayerActionType_PlayerActionSetAvatarEnhancedId => 72,
-            PlayerActionType::PlayerActionType_PlayerActionDressPlayerOutfit => 73,
-            PlayerActionType::PlayerActionType_PlayerActionStageBegin => 74,
-            PlayerActionType::PlayerActionType_PlayerActionStageEnd => 75,
-            PlayerActionType::PlayerActionType_PlayerActionCocoonStageBegin => 76,
-            PlayerActionType::PlayerActionType_PlayerActionCocoonStageEnd => 77,
-            PlayerActionType::PlayerActionType_PlayerActionFarmElementEnd => 78,
-            PlayerActionType::PlayerActionType_PlayerActionElementStageEnd => 79,
-            PlayerActionType::PlayerActionType_PlayerActionCocoonSweep => 80,
-            PlayerActionType::PlayerActionType_PlayerActionFarmElementSweep => 81,
-            PlayerActionType::PlayerActionType_PlayerActionRecoverStamina => 82,
-            PlayerActionType::PlayerActionType_PlayerActionExchangeStamina => 83,
-            PlayerActionType::PlayerActionType_PlayerActionLoginReward => 84,
-            PlayerActionType::PlayerActionType_PlayerActionModifyNickname => 85,
-            PlayerActionType::PlayerActionType_PlayerActionGetLevelReward => 86,
-            PlayerActionType::PlayerActionType_PlayerActionWorldLevelUp => 87,
-            PlayerActionType::PlayerActionType_PlayerActionAddStamina => 88,
-            PlayerActionType::PlayerActionType_PlayerActionGameplayBirthdayRewardMail => 89,
-            PlayerActionType::PlayerActionType_PlayerActionRechargeRebateReward => 90,
-            PlayerActionType::PlayerActionType_PlayerActionGameplayBirthdaySet => 91,
-            PlayerActionType::PlayerActionType_PlayerActionReserveStaminaExchange => 92,
-            PlayerActionType::PlayerActionType_PlayerActionReserveStaminaAdd => 93,
-            PlayerActionType::PlayerActionType_PlayerActionReserveStaminaChange => 94,
-            PlayerActionType::PlayerActionType_PlayerActionNowStamina => 95,
-            PlayerActionType::PlayerActionType_PlayerActionFtcResetNickname => 96,
-            PlayerActionType::PlayerActionType_PlayerActionReserveAndFuelExchangeStamina => 97,
-            PlayerActionType::PlayerActionType_PlayerActionMail => 98,
-            PlayerActionType::PlayerActionType_PlayerActionMailOpByUser => 99,
-            PlayerActionType::PlayerActionType_PlayerActionMailOpByMuip => 100,
-            PlayerActionType::PlayerActionType_PlayerActionMailOpByGm => 101,
-            PlayerActionType::PlayerActionType_PlayerActionMailOpByFull => 102,
-            PlayerActionType::PlayerActionType_PlayerActionMailOpByExpire => 103,
-            PlayerActionType::PlayerActionType_PlayerActionMailOpByInternal => 104,
-            PlayerActionType::PlayerActionType_PlayerActionAddMail => 105,
-            PlayerActionType::PlayerActionType_PlayerActionDelMail => 106,
-            PlayerActionType::PlayerActionType_PlayerActionTakeAttachment => 107,
-            PlayerActionType::PlayerActionType_PlayerActionReadMail => 108,
-            PlayerActionType::PlayerActionType_PlayerActionBattleAvatar => 109,
-            PlayerActionType::PlayerActionType_PlayerActionBattleMonster => 110,
-            PlayerActionType::PlayerActionType_PlayerActionBattleEnd => 111,
-            PlayerActionType::PlayerActionType_PlayerActionBattleReplay => 112,
-            PlayerActionType::PlayerActionType_PlayerActionBattleAvatarDeath => 113,
-            PlayerActionType::PlayerActionType_PlayerActionBattleSwitchPhase => 114,
-            PlayerActionType::PlayerActionType_PlayerActionBattleMonsterSkill => 115,
-            PlayerActionType::PlayerActionType_PlayerActionBattleRebattle => 116,
-            PlayerActionType::PlayerActionType_PlayerActionBattleAvatarServant => 117,
-            PlayerActionType::PlayerActionType_PlayerActionMissionReward => 118,
-            PlayerActionType::PlayerActionType_PlayerActionQuestAccept => 119,
-            PlayerActionType::PlayerActionType_PlayerActionQuestFinish => 120,
-            PlayerActionType::PlayerActionType_PlayerActionQuestRemove => 121,
-            PlayerActionType::PlayerActionType_PlayerActionQuestReward => 122,
-            PlayerActionType::PlayerActionType_PlayerActionQuestAutoClose => 123,
-            PlayerActionType::PlayerActionType_PlayerActionQuestExpired => 124,
-            PlayerActionType::PlayerActionType_PlayerActionMissionRequired => 125,
-            PlayerActionType::PlayerActionType_PlayerActionSubmissionReward => 126,
-            PlayerActionType::PlayerActionType_PlayerActionAchievementLevelReward => 127,
-            PlayerActionType::PlayerActionType_PlayerActionQuestDelete => 128,
-            PlayerActionType::PlayerActionType_PlayerActionSubMissionReward2 => 129,
-            PlayerActionType::PlayerActionType_PlayerActionMissionCompensate => 130,
-            PlayerActionType::PlayerActionType_PlayerActionMissionRecycle => 131,
-            PlayerActionType::PlayerActionType_PlayerActionQuestReset => 132,
-            PlayerActionType::PlayerActionType_PlayerActionQuestOptionalReward => 133,
-            PlayerActionType::PlayerActionType_PlayerActionMcvChange => 134,
-            PlayerActionType::PlayerActionType_PlayerActionQuestReissue => 135,
-            PlayerActionType::PlayerActionType_PlayerActionPropInteract => 136,
-            PlayerActionType::PlayerActionType_PlayerActionAvatarMazeSkill => 137,
-            PlayerActionType::PlayerActionType_PlayerActionEnterMaze => 138,
-            PlayerActionType::PlayerActionType_PlayerActionOrdinaryInteract => 139,
-            PlayerActionType::PlayerActionType_PlayerActionChestInteract => 140,
-            PlayerActionType::PlayerActionType_PlayerActionCheckPointUnlock => 141,
-            PlayerActionType::PlayerActionType_PlayerActionCheckPointInteract => 142,
-            PlayerActionType::PlayerActionType_PlayerActionCheckPointRevive => 143,
-            PlayerActionType::PlayerActionType_PlayerActionCheckPointTransfer => 144,
-            PlayerActionType::PlayerActionType_PlayerActionMonsterInteract => 145,
-            PlayerActionType::PlayerActionType_PlayerActionNpcInteract => 146,
-            PlayerActionType::PlayerActionType_PlayerActionPropHit => 147,
-            PlayerActionType::PlayerActionType_PlayerActionPrelogueRevive => 148,
-            PlayerActionType::PlayerActionType_PlayerActionPropState => 149,
-            PlayerActionType::PlayerActionType_PlayerActionCheckPointRecover => 150,
-            PlayerActionType::PlayerActionType_PlayerActionMechanismBar => 151,
-            PlayerActionType::PlayerActionType_PlayerActionSubmitOrigamiItem => 152,
-            PlayerActionType::PlayerActionType_PlayerActionMazeBuffDropItem => 153,
-            PlayerActionType::PlayerActionType_PlayerActionFsvChange => 154,
-            PlayerActionType::PlayerActionType_PlayerActionTimelinePropState => 155,
-            PlayerActionType::PlayerActionType_PlayerActionGroupPropertyChange => 156,
-            PlayerActionType::PlayerActionType_PlayerActionOpenGroupPropertyChest => 157,
-            PlayerActionType::PlayerActionType_PlayerActionEquipmentPromotion => 158,
-            PlayerActionType::PlayerActionType_PlayerActionAddItem => 159,
-            PlayerActionType::PlayerActionType_PlayerActionUseItem => 160,
-            PlayerActionType::PlayerActionType_PlayerActionEquipmentRankUp => 161,
-            PlayerActionType::PlayerActionType_PlayerActionEquipmentLevelUp => 162,
-            PlayerActionType::PlayerActionType_PlayerActionExpUpEquipmentReturn => 163,
-            PlayerActionType::PlayerActionType_PlayerActionBagFullRewardMail => 164,
-            PlayerActionType::PlayerActionType_PlayerActionEquipmentAdd => 165,
-            PlayerActionType::PlayerActionType_PlayerActionEquipmentWear => 166,
-            PlayerActionType::PlayerActionType_PlayerActionItemCompose => 167,
-            PlayerActionType::PlayerActionType_PlayerActionRelicLevelUp => 168,
-            PlayerActionType::PlayerActionType_PlayerActionExpUpRelicReturn => 169,
-            PlayerActionType::PlayerActionType_PlayerActionRelicNumChanged => 170,
-            PlayerActionType::PlayerActionType_PlayerActionRelicWear => 171,
-            PlayerActionType::PlayerActionType_PlayerActionRelicCompose => 172,
-            PlayerActionType::PlayerActionType_PlayerActionSellItem => 173,
-            PlayerActionType::PlayerActionType_PlayerActionUnlockMusic => 174,
-            PlayerActionType::PlayerActionType_PlayerActionExchangeHcoinWithPayMcoin => 175,
-            PlayerActionType::PlayerActionType_PlayerActionGetReward => 176,
-            PlayerActionType::PlayerActionType_PlayerActionExchangeHcoinWithFreeMcoin => 177,
-            PlayerActionType::PlayerActionType_PlayerActionItemComposeFormulaUnlock => 178,
-            PlayerActionType::PlayerActionType_PlayerActionExchangeHcoin => 179,
-            PlayerActionType::PlayerActionType_PlayerActionCityShopLevelReward => 180,
-            PlayerActionType::PlayerActionType_PlayerActionItemRecycle => 181,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumFundsConsume => 182,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumEventBuyStuff => 183,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumMarketBuyStuff => 184,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumRandomEvent => 185,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumInitialItem => 186,
-            PlayerActionType::PlayerActionType_PlayerActionOptionalBoxReward => 187,
-            PlayerActionType::PlayerActionType_PlayerActionDestroyItem => 188,
-            PlayerActionType::PlayerActionType_PlayerActionTransferExp => 189,
-            PlayerActionType::PlayerActionType_PlayerActionOndutyUse => 190,
-            PlayerActionType::PlayerActionType_PlayerActionItemMark => 191,
-            PlayerActionType::PlayerActionType_PlayerActionRelicDiscard => 192,
-            PlayerActionType::PlayerActionType_PlayerActionGeneralVirtualItemChange => 193,
-            PlayerActionType::PlayerActionType_PlayerActionRelicLock => 194,
-            PlayerActionType::PlayerActionType_PlayerActionRelicFilterPlanSave => 195,
-            PlayerActionType::PlayerActionType_PlayerActionRelicFilterPlanDelete => 196,
-            PlayerActionType::PlayerActionType_PlayerActionRelicFilterPlanMark => 197,
-            PlayerActionType::PlayerActionType_PlayerActionRelicSell => 198,
-            PlayerActionType::PlayerActionType_PlayerActionRelicReforge => 199,
-            PlayerActionType::PlayerActionType_PlayerActionRelicSmartWearCustomPlan => 200,
-            PlayerActionType::PlayerActionType_PlayerActionRecoverRelic => 201,
-            PlayerActionType::PlayerActionType_PlayerActionRecoverEquipment => 202,
-            PlayerActionType::PlayerActionType_PlayerActionEquipmentSell => 203,
-            PlayerActionType::PlayerActionType_PlayerActionRelicSmartWearPinRelic => 204,
-            PlayerActionType::PlayerActionType_PlayerActionRelicCocoonSetting => 205,
-            PlayerActionType::PlayerActionType_PlayerActionPersonalCardChange => 206,
-            PlayerActionType::PlayerActionType_PlayerActionPhoneCaseChange => 207,
-            PlayerActionType::PlayerActionType_PlayerActionDeliveryItemReward => 208,
-            PlayerActionType::PlayerActionType_PlayerActionItemAutoTransfer => 209,
-            PlayerActionType::PlayerActionType_PlayerActionItemAutoTransferInBag => 210,
-            PlayerActionType::PlayerActionType_PlayerActionItemAutoTransferOnAdd => 211,
-            PlayerActionType::PlayerActionType_PlayerActionAddExtraCoin => 212,
-            PlayerActionType::PlayerActionType_PlayerActionVariableDiceExchangePartnerCoin => 213,
-            PlayerActionType::PlayerActionType_PlayerActionRelicBox => 214,
-            PlayerActionType::PlayerActionType_PlayerActionRelicBoxSettle => 215,
-            PlayerActionType::PlayerActionType_PlayerActionRelicBoxRegular => 216,
-            PlayerActionType::PlayerActionType_PlayerActionRelicReplace => 217,
-            PlayerActionType::PlayerActionType_PlayerActionEquipmentUpCostPileSetting => 218,
-            PlayerActionType::PlayerActionType_PlayerActionRelicBoxShow => 219,
-            PlayerActionType::PlayerActionType_PlayerActionTutorialGuideFinish => 220,
-            PlayerActionType::PlayerActionType_PlayerActionTutorial => 221,
-            PlayerActionType::PlayerActionType_PlayerActionTutorialGuide => 222,
-            PlayerActionType::PlayerActionType_PlayerActionMonsterDrop => 223,
-            PlayerActionType::PlayerActionType_PlayerActionFinishChallenge => 224,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeStars => 225,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeStart => 226,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeEnd => 227,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeWin => 228,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeFail => 229,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeLeave => 230,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeSwitch => 231,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeBonusReward => 232,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeStarsReward => 233,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeRestart => 234,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeStoryStart => 235,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeStoryEnd => 236,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeFastPass => 237,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeStoryFastPass => 238,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeMemoryFastPass => 239,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeBattleTarget => 240,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeBossEnd => 241,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeBossFastPass => 242,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeStartPartial => 243,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeBossPhaseStart => 244,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeBossPhaseEnd => 245,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeBossPhaseEndBeforeBattle => 246,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeRecommendLineup => 247,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeStoryFeverBattleEnd => 248,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeTierceRecommendLineup => 249,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeTierceStart => 250,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeTierceBattleEnd => 251,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeTierceSyncSingleStage => 252,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeTierceGradeReset => 253,
-            PlayerActionType::PlayerActionType_PlayerActionTeamInfoChange => 254,
-            PlayerActionType::PlayerActionType_PlayerActionChangeCurrentAvatar => 255,
-            PlayerActionType::PlayerActionType_PlayerActionCreateVirtualTeam => 256,
-            PlayerActionType::PlayerActionType_PlayerActionTeamNameEdit => 257,
-            PlayerActionType::PlayerActionType_PlayerActionReplaceLineupAvatar => 258,
-            PlayerActionType::PlayerActionType_PlayerActionAvatarBuffChange => 259,
-            PlayerActionType::PlayerActionType_PlayerActionEnvBuffChange => 260,
-            PlayerActionType::PlayerActionType_PlayerActionGameCore => 261,
-            PlayerActionType::PlayerActionType_PlayerActionAvatarGlobalBuff => 262,
-            PlayerActionType::PlayerActionType_PlayerActionRogueExploreStart => 263,
-            PlayerActionType::PlayerActionType_PlayerActionRogueEnterRoom => 264,
-            PlayerActionType::PlayerActionType_PlayerActionRogueLeaveRoom => 265,
-            PlayerActionType::PlayerActionType_PlayerActionRogueExploreFinish => 266,
-            PlayerActionType::PlayerActionType_PlayerActionRogueSelectBuff => 267,
-            PlayerActionType::PlayerActionType_PlayerActionRogueRollBuff => 268,
-            PlayerActionType::PlayerActionType_PlayerActionRogueRevive => 269,
-            PlayerActionType::PlayerActionType_PlayerActionRogueChallengeStart => 270,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMiracle => 271,
-            PlayerActionType::PlayerActionType_PlayerActionRogueAddBuff => 272,
-            PlayerActionType::PlayerActionType_PlayerActionRoguePickAvatar => 273,
-            PlayerActionType::PlayerActionType_PlayerActionRogueSeasonChanged => 274,
-            PlayerActionType::PlayerActionType_PlayerActionRogueAeonLevelUp => 275,
-            PlayerActionType::PlayerActionType_PlayerActionRogueOpenDoor => 276,
-            PlayerActionType::PlayerActionType_PlayerActionRogueScoreReward => 277,
-            PlayerActionType::PlayerActionType_PlayerActionRogueEnhanceBuff => 278,
-            PlayerActionType::PlayerActionType_PlayerActionRogueSelectBonus => 279,
-            PlayerActionType::PlayerActionType_PlayerActionRogueAreaFirstReward => 280,
-            PlayerActionType::PlayerActionType_PlayerActionRogueEnableTalent => 281,
-            PlayerActionType::PlayerActionType_PlayerActionRogueAeonUnlock => 282,
-            PlayerActionType::PlayerActionType_PlayerActionRogueAeonAddExp => 283,
-            PlayerActionType::PlayerActionType_PlayerActionRogueImmerseLevelUp => 284,
-            PlayerActionType::PlayerActionType_PlayerActionRogueSelectMiracle => 285,
-            PlayerActionType::PlayerActionType_PlayerActionRogueUnlockArea => 286,
-            PlayerActionType::PlayerActionType_PlayerActionRogueExploreScoreChange => 287,
-            PlayerActionType::PlayerActionType_PlayerActionRogueUpdateRewardPool => 288,
-            PlayerActionType::PlayerActionType_PlayerActionRogueSwapBuff => 289,
-            PlayerActionType::PlayerActionType_PlayerActionRogueWeeklyRefresh => 290,
-            PlayerActionType::PlayerActionType_PlayerActionRogueExchangeKey => 291,
-            PlayerActionType::PlayerActionType_PlayerActionRogueGetObjectReward => 292,
-            PlayerActionType::PlayerActionType_PlayerActionRogueAreaMonsterDrop => 293,
-            PlayerActionType::PlayerActionType_PlayerActionRogueAddMiracle => 294,
-            PlayerActionType::PlayerActionType_PlayerActionRogueSwapMiracle => 295,
-            PlayerActionType::PlayerActionType_PlayerActionRogueOpenObjectReward => 296,
-            PlayerActionType::PlayerActionType_PlayerActionRogueAeonEffect => 297,
-            PlayerActionType::PlayerActionType_PlayerActionRogueReforgeBuff => 298,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTradeMiracle => 299,
-            PlayerActionType::PlayerActionType_PlayerActionRogueRemoveAvatar => 300,
-            PlayerActionType::PlayerActionType_PlayerActionRogueDialogueSelect => 301,
-            PlayerActionType::PlayerActionType_PlayerActionRogueSelectAeon => 302,
-            PlayerActionType::PlayerActionType_PlayerActionRogueDialogueFinish => 303,
-            PlayerActionType::PlayerActionType_PlayerActionRogueHandbookReward => 304,
-            PlayerActionType::PlayerActionType_PlayerActionRogueAdventureRoomReward => 305,
-            PlayerActionType::PlayerActionType_PlayerActionRogueShopBuy => 306,
-            PlayerActionType::PlayerActionType_PlayerActionRogueRepairMiracle => 307,
-            PlayerActionType::PlayerActionType_PlayerActionRogueReplaceAllMiracle => 308,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMiracleBroken => 309,
-            PlayerActionType::PlayerActionType_PlayerActionRogueShopRefresh => 310,
-            PlayerActionType::PlayerActionType_PlayerActionRogueLevelMechanism => 311,
-            PlayerActionType::PlayerActionType_PlayerActionRogueRemoveMiracle => 312,
-            PlayerActionType::PlayerActionType_PlayerActionRogueDropBuff => 313,
-            PlayerActionType::PlayerActionType_PlayerActionRogueDestroyMiracle => 314,
-            PlayerActionType::PlayerActionType_PlayerActionRogueActivateFormula => 315,
-            PlayerActionType::PlayerActionType_PlayerActionRogueDeactivateFormula => 316,
-            PlayerActionType::PlayerActionType_PlayerActionRogueRemoveBuff => 317,
-            PlayerActionType::PlayerActionType_PlayerActionRogueSelectFormula => 318,
-            PlayerActionType::PlayerActionType_PlayerActionRogueDropFormula => 319,
-            PlayerActionType::PlayerActionType_PlayerActionRogueRollFormula => 320,
-            PlayerActionType::PlayerActionType_PlayerActionRogueReforgeFormula => 321,
-            PlayerActionType::PlayerActionType_PlayerActionRogueComposeMiracle => 322,
-            PlayerActionType::PlayerActionType_PlayerActionRogueReforgeMiracle => 323,
-            PlayerActionType::PlayerActionType_PlayerActionRogueDoGamble => 324,
-            PlayerActionType::PlayerActionType_PlayerActionRogueKeywordActivate => 325,
-            PlayerActionType::PlayerActionType_PlayerActionRogueKeywordDeactivate => 326,
-            PlayerActionType::PlayerActionType_PlayerActionRogueSourceDefault => 327,
-            PlayerActionType::PlayerActionType_PlayerActionRoguePlayerSelect => 328,
-            PlayerActionType::PlayerActionType_PlayerActionRogueLayerSettlement => 329,
-            PlayerActionType::PlayerActionType_PlayerActionRogueFormula => 330,
-            PlayerActionType::PlayerActionType_PlayerActionRogueWorkbench => 331,
-            PlayerActionType::PlayerActionType_PlayerActionRogueModifier => 332,
-            PlayerActionType::PlayerActionType_PlayerActionRogueReforge => 333,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTalent => 334,
-            PlayerActionType::PlayerActionType_PlayerActionRogueReroll => 335,
-            PlayerActionType::PlayerActionType_PlayerActionRogueCoinChange => 336,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMagicScepterShop => 337,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMagicUnitShop => 338,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMagicScepterLevelUp => 339,
-            PlayerActionType::PlayerActionType_PlayerActionGacha => 340,
-            PlayerActionType::PlayerActionType_PlayerActionAddGachaTicket => 341,
-            PlayerActionType::PlayerActionType_PlayerActionGachaExchange => 342,
-            PlayerActionType::PlayerActionType_PlayerActionSetGachaDecideItem => 343,
-            PlayerActionType::PlayerActionType_PlayerActionEventMissionAccept => 344,
-            PlayerActionType::PlayerActionType_PlayerActionEventMissionFinish => 345,
-            PlayerActionType::PlayerActionType_PlayerActionEventMissionReward => 346,
-            PlayerActionType::PlayerActionType_PlayerActionRaidFinish => 347,
-            PlayerActionType::PlayerActionType_PlayerActionRaidBegin => 348,
-            PlayerActionType::PlayerActionType_PlayerActionChallengeRaidReward => 349,
-            PlayerActionType::PlayerActionType_PlayerActionStartRaid => 350,
-            PlayerActionType::PlayerActionType_PlayerActionEndRaid => 351,
-            PlayerActionType::PlayerActionType_PlayerActionRaidTargetFinish => 352,
-            PlayerActionType::PlayerActionType_PlayerActionArchiveRaid => 353,
-            PlayerActionType::PlayerActionType_PlayerActionHeroBaseTypeChange => 354,
-            PlayerActionType::PlayerActionType_PlayerActionHeroBaseTypeAddByMission => 355,
-            PlayerActionType::PlayerActionType_PlayerActionHeroBaseTypeAddByReq => 356,
-            PlayerActionType::PlayerActionType_PlayerActionHeroBaseTypeAdd => 357,
-            PlayerActionType::PlayerActionType_PlayerActionDialogueSelect => 358,
-            PlayerActionType::PlayerActionType_PlayerActionExpeditionStart => 359,
-            PlayerActionType::PlayerActionType_PlayerActionExpeditionFinish => 360,
-            PlayerActionType::PlayerActionType_PlayerActionExpeditionReward => 361,
-            PlayerActionType::PlayerActionType_PlayerActionActivityExpeditionStart => 362,
-            PlayerActionType::PlayerActionType_PlayerActionActivityExpeditionFinish => 363,
-            PlayerActionType::PlayerActionType_PlayerActionActivityExpeditionReward => 364,
-            PlayerActionType::PlayerActionType_PlayerActionActivityExpeditionBegin => 365,
-            PlayerActionType::PlayerActionType_PlayerActionActivityExpeditionEnd => 366,
-            PlayerActionType::PlayerActionType_PlayerActionExpeditionSet => 367,
-            PlayerActionType::PlayerActionType_PlayerActionExpeditionTakeReward => 368,
-            PlayerActionType::PlayerActionType_PlayerActionActivityLoginReward => 369,
-            PlayerActionType::PlayerActionType_PlayerActionFriendReport => 370,
-            PlayerActionType::PlayerActionType_PlayerActionAssistReward => 371,
-            PlayerActionType::PlayerActionType_PlayerActionAssistAvatarRefresh => 372,
-            PlayerActionType::PlayerActionType_PlayerActionAssistAvatarBattleStart => 373,
-            PlayerActionType::PlayerActionType_PlayerActionAssistAvatarBattleEnd => 374,
-            PlayerActionType::PlayerActionType_PlayerActionFriendApply => 375,
-            PlayerActionType::PlayerActionType_PlayerActionFriendManage => 376,
-            PlayerActionType::PlayerActionType_PlayerActionFriendBlacklist => 377,
-            PlayerActionType::PlayerActionType_PlayerActionFriendModifyRemarkName => 378,
-            PlayerActionType::PlayerActionType_PlayerActionFriendMark => 379,
-            PlayerActionType::PlayerActionType_PlayerActionFriendAssistList => 380,
-            PlayerActionType::PlayerActionType_PlayerActionBattlePassLevelReward => 381,
-            PlayerActionType::PlayerActionType_PlayerActionBattlePass128TierReward => 382,
-            PlayerActionType::PlayerActionType_PlayerActionBattlePassLevelRewardAutoMail => 383,
-            PlayerActionType::PlayerActionType_PlayerActionBuyBattlePass => 384,
-            PlayerActionType::PlayerActionType_PlayerActionAddBattlePassExp => 385,
-            PlayerActionType::PlayerActionType_PlayerActionBattlePassLevelUp => 386,
-            PlayerActionType::PlayerActionType_PlayerActionBuyBattlePassLevel => 387,
-            PlayerActionType::PlayerActionType_PlayerActionBattlePassEndMail => 388,
-            PlayerActionType::PlayerActionType_PlayerActionBattlePass68TierReward => 389,
-            PlayerActionType::PlayerActionType_PlayerActionModifySign => 390,
-            PlayerActionType::PlayerActionType_PlayerActionDisplayAvatarSet => 391,
-            PlayerActionType::PlayerActionType_PlayerActionAssistAvatarSet => 392,
-            PlayerActionType::PlayerActionType_PlayerActionAchievementFinish => 393,
-            PlayerActionType::PlayerActionType_PlayerActionAchievementReward => 394,
-            PlayerActionType::PlayerActionType_PlayerActionAchievementAddExp => 395,
-            PlayerActionType::PlayerActionType_PlayerActionAchievementLevelUp => 396,
-            PlayerActionType::PlayerActionType_PlayerActionPunkLordReward => 397,
-            PlayerActionType::PlayerActionType_PlayerActionPunkLordBossSearch => 398,
-            PlayerActionType::PlayerActionType_PlayerActionPunkLordBossShare => 399,
-            PlayerActionType::PlayerActionType_PlayerActionStartPunkLordRaid => 400,
-            PlayerActionType::PlayerActionType_PlayerActionPunkLordSupportTimes => 401,
-            PlayerActionType::PlayerActionType_PlayerActionPunkLordScoreReward => 402,
-            PlayerActionType::PlayerActionType_PlayerActionPunkLordListRefresh => 403,
-            PlayerActionType::PlayerActionType_PlayerActionPunkLordPowerAttack => 404,
-            PlayerActionType::PlayerActionType_PlayerActionPunkLordBattleEnd => 405,
-            PlayerActionType::PlayerActionType_PlayerActionPunkLordBossDeath => 406,
-            PlayerActionType::PlayerActionType_PlayerActionPunkLordBossScore => 407,
-            PlayerActionType::PlayerActionType_PlayerActionDailyActiveLevelReward => 408,
-            PlayerActionType::PlayerActionType_PlayerActionDailyActiveAddPoint => 409,
-            PlayerActionType::PlayerActionType_PlayerActionDailyActiveDeleteOldQuest => 410,
-            PlayerActionType::PlayerActionType_PlayerActionFightActivityBegin => 411,
-            PlayerActionType::PlayerActionType_PlayerActionFightActivityEnd => 412,
-            PlayerActionType::PlayerActionType_PlayerActionFightActivityReward => 413,
-            PlayerActionType::PlayerActionType_PlayerActionActivityEndMail => 414,
-            PlayerActionType::PlayerActionType_PlayerActionAppointmentMail => 415,
-            PlayerActionType::PlayerActionType_PlayerActionShareReward => 416,
-            PlayerActionType::PlayerActionType_PlayerActionActivityTrialReward => 417,
-            PlayerActionType::PlayerActionType_PlayerActionActivityTrialStart => 418,
-            PlayerActionType::PlayerActionType_PlayerActionPsPreOrderMail1 => 419,
-            PlayerActionType::PlayerActionType_PlayerActionPsPreOrderMail2 => 420,
-            PlayerActionType::PlayerActionType_PlayerActionPsLoginMail => 421,
-            PlayerActionType::PlayerActionType_PlayerActionLoginMail => 422,
-            PlayerActionType::PlayerActionType_PlayerActionGooglePoints100Mail => 423,
-            PlayerActionType::PlayerActionType_PlayerActionGooglePoints150Mail => 424,
-            PlayerActionType::PlayerActionType_PlayerActionTrainVisitorBehaviorFinish => 425,
-            PlayerActionType::PlayerActionType_PlayerActionEnterViewTrain => 426,
-            PlayerActionType::PlayerActionType_PlayerActionTrainVisitorBehaviorRewardForceSend => 427,
-            PlayerActionType::PlayerActionType_PlayerActionTrainVisitorRegisterOpen => 428,
-            PlayerActionType::PlayerActionType_PlayerActionTrainVisitorBehaviorRewardForceSendByRegister => 429,
-            PlayerActionType::PlayerActionType_PlayerActionTrainVisitorClearLastTrainVisitor => 430,
-            PlayerActionType::PlayerActionType_PlayerActionTrainVisitorRefreshTrainVisitor => 431,
-            PlayerActionType::PlayerActionType_PlayerActionTrainVisitorRefreshNpc => 432,
-            PlayerActionType::PlayerActionType_PlayerActionMessageGroupAccept => 433,
-            PlayerActionType::PlayerActionType_PlayerActionMessageSectionAccept => 434,
-            PlayerActionType::PlayerActionType_PlayerActionMessageSectionFinish => 435,
-            PlayerActionType::PlayerActionType_PlayerActionMessageItemFinish => 436,
-            PlayerActionType::PlayerActionType_PlayerActionFinishMessageGroupReward => 437,
-            PlayerActionType::PlayerActionType_PlayerActionSubstituteMessageGroupReward => 438,
-            PlayerActionType::PlayerActionType_PlayerActionDeleteMessageGroup => 439,
-            PlayerActionType::PlayerActionType_PlayerActionDeleteMessageSection => 440,
-            PlayerActionType::PlayerActionType_PlayerActionDeleteMessageGroupByConfig => 441,
-            PlayerActionType::PlayerActionType_PlayerActionDeleteMessageGroupByActivity => 442,
-            PlayerActionType::PlayerActionType_PlayerActionDeleteMessageGroupByMission => 443,
-            PlayerActionType::PlayerActionType_PlayerActionTextJoinSave => 444,
-            PlayerActionType::PlayerActionType_PlayerActionBoxingClubStart => 445,
-            PlayerActionType::PlayerActionType_PlayerActionBoxingClubFinish => 446,
-            PlayerActionType::PlayerActionType_PlayerActionBoxingClubPause => 447,
-            PlayerActionType::PlayerActionType_PlayerActionBoxingClubStageStart => 448,
-            PlayerActionType::PlayerActionType_PlayerActionTalkSend => 449,
-            PlayerActionType::PlayerActionType_PlayerActionSelectInclinationText => 450,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumSettleTurnOpen => 451,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumUpgradeArea => 452,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumUpgradeAreaStat => 453,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumDispatchRewardRegular => 454,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumDispatchRewardDirectional => 455,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumPhaseTargetFinished => 456,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumGetStuff => 457,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumGetExhibit => 458,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumTakeCollectMission => 459,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumAreaUnlock => 460,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumAreaUpgrade => 461,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumAreaStatUpgrade => 462,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumEnterNextRound => 463,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumStartDispatch => 464,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumSettleDispatch => 465,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumRenewPointChanged => 466,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumTargetReward => 467,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumPhaseUpgrade => 468,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumCollectReward => 469,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumTargetStart => 470,
-            PlayerActionType::PlayerActionType_PlayerActionMuseumTargetFinish => 471,
-            PlayerActionType::PlayerActionType_PlayerActionActivityMonsterResearchConsumeMaterial => 472,
-            PlayerActionType::PlayerActionType_PlayerActionActivityMonsterResearchTakeReward => 473,
-            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnStart => 474,
-            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnSign => 475,
-            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnPoint => 476,
-            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnCountdown => 477,
-            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnFinish => 478,
-            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnCompensate => 479,
-            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnGetRelic => 480,
-            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnBpExpExtra => 481,
-            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnHcoinExtra => 482,
-            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnCustomRelic => 483,
-            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnAssistChange => 484,
-            PlayerActionType::PlayerActionType_PlayerActionRogueChallengeActivityStart => 485,
-            PlayerActionType::PlayerActionType_PlayerActionRogueChallengeActivityFinish => 486,
-            PlayerActionType::PlayerActionType_PlayerActionRogueChallengeActivitySave => 487,
-            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnLoginMail => 488,
-            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnExtraHcoinProgressChange => 489,
-            PlayerActionType::PlayerActionType_PlayerActionAetherDivideUsePassiveSkillItem => 490,
-            PlayerActionType::PlayerActionType_PlayerActionAetherDivideClearPassiveSkill => 491,
-            PlayerActionType::PlayerActionType_PlayerActionAetherDivideFinishChallenge => 492,
-            PlayerActionType::PlayerActionType_PlayerActionAetherDivideOverflowChunkReward => 493,
-            PlayerActionType::PlayerActionType_PlayerActionAetherDivideLevelUp => 494,
-            PlayerActionType::PlayerActionType_PlayerActionAetherDivideNewReward => 495,
-            PlayerActionType::PlayerActionType_PlayerActionAetherDivideMonsterAdd => 496,
-            PlayerActionType::PlayerActionType_PlayerActionAetherDivideMonsterLevel => 497,
-            PlayerActionType::PlayerActionType_PlayerActionAetherDivideMonsterSkillWear => 498,
-            PlayerActionType::PlayerActionType_PlayerActionAetherDivideTeamChange => 499,
-            PlayerActionType::PlayerActionType_PlayerActionAetherDivideStageBegin => 500,
-            PlayerActionType::PlayerActionType_PlayerActionAetherDivideStageEnd => 501,
-            PlayerActionType::PlayerActionType_PlayerActionAetherDivideStageRoll => 502,
-            PlayerActionType::PlayerActionType_PlayerActionAlleyEventFinish => 503,
-            PlayerActionType::PlayerActionType_PlayerActionAlleyTakeReward => 504,
-            PlayerActionType::PlayerActionType_PlayerActionAlleyPrestigeLevelUp => 505,
-            PlayerActionType::PlayerActionType_PlayerActionAlleyLogisticsFinish => 506,
-            PlayerActionType::PlayerActionType_PlayerActionAlleyPlacingGameFinish => 507,
-            PlayerActionType::PlayerActionType_PlayerActionAlleyGuaranteedFunds => 508,
-            PlayerActionType::PlayerActionType_PlayerActionAlleyTakeEventReward => 509,
-            PlayerActionType::PlayerActionType_PlayerActionAlleySpecialOrderFinish => 510,
-            PlayerActionType::PlayerActionType_PlayerActionSensitiveWordShield => 511,
-            PlayerActionType::PlayerActionType_PlayerActionSensitiveWordServerInternalError => 512,
-            PlayerActionType::PlayerActionType_PlayerActionSensitiveWordPlatformError => 513,
-            PlayerActionType::PlayerActionType_PlayerActionTreasureDungeonStart => 514,
-            PlayerActionType::PlayerActionType_PlayerActionTreasureDungeonFinish => 515,
-            PlayerActionType::PlayerActionType_PlayerActionTreasureDungeonEnterFloor => 516,
-            PlayerActionType::PlayerActionType_PlayerActionTreasureDungeonLeaveFloor => 517,
-            PlayerActionType::PlayerActionType_PlayerActionTreasureDungeonUseItem => 518,
-            PlayerActionType::PlayerActionType_PlayerActionTreasureDungeonAvatarChange => 519,
-            PlayerActionType::PlayerActionType_PlayerActionTreasureDungeonBattleStart => 520,
-            PlayerActionType::PlayerActionType_PlayerActionTreasureDungeonBattleEnd => 521,
-            PlayerActionType::PlayerActionType_PlayerActionTreasureDungeonPickupBuff => 522,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueFirstFinish => 523,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueGiveupDice => 524,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueSubStorySelect => 525,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueActionPoint => 526,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueReviveByProp => 527,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueStartLevel => 528,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueDiceEffect => 529,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueMainStoryFinish => 530,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueAeonTalentEffect => 531,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueModifierOthersEffect => 532,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueAddBuff => 533,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueReforgeBuff => 534,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueBuffLevelUp => 535,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueEnhanceBuff => 536,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueAddMiracle => 537,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueSwapMiracle => 538,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueSelectBonus => 539,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueDialogueFinish => 540,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueSubStoryFinish => 541,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueAdventureRoomFinish => 542,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueFinishLevel => 543,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueStartLayer => 544,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueFinishLayer => 545,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueEnterRoom => 546,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueLeaveRoom => 547,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueRollDice => 548,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueSelectDice => 549,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueUnlockDice => 550,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueBoardEvent => 551,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueDimensionPoint => 552,
-            PlayerActionType::PlayerActionType_PlayerActionChessRoguePickAvatar => 553,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueReviveAvatar => 554,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousSubStorySelect => 555,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueLevelMechanism => 556,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousStartLevel => 557,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousFinishLevel => 558,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousStartLayer => 559,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousFinishLayer => 560,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousEnterRoom => 561,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousLeaveRoom => 562,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousSelectDice => 563,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousUnlockDiceBranch => 564,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousUnlockDiceSurface => 565,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousEditDice => 566,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousValueChange => 567,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousMainStoryTrigger => 568,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousMainStoryFinish => 569,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousSubStoryTrigger => 570,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousSubStoryFinish => 571,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousEnableTalent => 572,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueSelectBuff => 573,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueSelectMiracle => 574,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueRemoveMiracle => 575,
-            PlayerActionType::PlayerActionType_PlayerActionChessRogueBoardCell => 576,
-            PlayerActionType::PlayerActionType_PlayerActionFantasticStoryBattleBegin => 577,
-            PlayerActionType::PlayerActionType_PlayerActionFantasticStoryBattleEnd => 578,
-            PlayerActionType::PlayerActionType_PlayerActionRogueEndlessReward => 579,
-            PlayerActionType::PlayerActionType_PlayerActionRogueEndlessLevelStart => 580,
-            PlayerActionType::PlayerActionType_PlayerActionRogueEndlessStageBegin => 581,
-            PlayerActionType::PlayerActionType_PlayerActionRogueEndlessStageEnd => 582,
-            PlayerActionType::PlayerActionType_PlayerActionBattleCollegeReward => 583,
-            PlayerActionType::PlayerActionType_PlayerActionCommonRogueMiracleForBuffShop => 584,
-            PlayerActionType::PlayerActionType_PlayerActionCommonRogueAdventureRoomFinish => 585,
-            PlayerActionType::PlayerActionType_PlayerActionCommonRogueBuyBuffShop => 586,
-            PlayerActionType::PlayerActionType_PlayerActionCommonRogueBuyBuffShopRefresh => 587,
-            PlayerActionType::PlayerActionType_PlayerActionCommonRogueCollectionUnlock => 588,
-            PlayerActionType::PlayerActionType_PlayerActionCommonRogueCollectionSet => 589,
-            PlayerActionType::PlayerActionType_PlayerActionCommonRogueExhibitionUnlock => 590,
-            PlayerActionType::PlayerActionType_PlayerActionCommonRogueExhibitionSet => 591,
-            PlayerActionType::PlayerActionType_PlayerActionCommonRogueChestInteract => 592,
-            PlayerActionType::PlayerActionType_PlayerActionCommonRogueAdventureRoomWolfgunFinish => 593,
-            PlayerActionType::PlayerActionType_PlayerActionHeliobusPostIncomeReward => 594,
-            PlayerActionType::PlayerActionType_PlayerActionHeliobusPostFansReward => 595,
-            PlayerActionType::PlayerActionType_PlayerActionHeliobusLevelUpgrade => 596,
-            PlayerActionType::PlayerActionType_PlayerActionHeliobusPostReplyReward => 597,
-            PlayerActionType::PlayerActionType_PlayerActionHeliobusCommentReplyReward => 598,
-            PlayerActionType::PlayerActionType_PlayerActionHeliobusChallengeFirstReward => 599,
-            PlayerActionType::PlayerActionType_PlayerActionHeliobusFansAdd => 600,
-            PlayerActionType::PlayerActionType_PlayerActionHeliobusActionDaySettle => 601,
-            PlayerActionType::PlayerActionType_PlayerActionHeliobusSkillUnlock => 602,
-            PlayerActionType::PlayerActionType_PlayerActionHeliobusStageBegin => 603,
-            PlayerActionType::PlayerActionType_PlayerActionHeliobusStageEnd => 604,
-            PlayerActionType::PlayerActionType_PlayerActionHeliobusSnsRead => 605,
-            PlayerActionType::PlayerActionType_PlayerActionHeliobusSnsPostUnlock => 606,
-            PlayerActionType::PlayerActionType_PlayerActionHeliobusSnsCommentUnlock => 607,
-            PlayerActionType::PlayerActionType_PlayerActionHeliobusSnsComment => 608,
-            PlayerActionType::PlayerActionType_PlayerActionHeliobusSnsPost => 609,
-            PlayerActionType::PlayerActionType_PlayerActionHeliobusSnsLike => 610,
-            PlayerActionType::PlayerActionType_PlayerActionHeliobusPhaseUpgrade => 611,
-            PlayerActionType::PlayerActionType_PlayerActionPsPointCard30Reward => 612,
-            PlayerActionType::PlayerActionType_PlayerActionPsPointCard50Reward => 613,
-            PlayerActionType::PlayerActionType_PlayerActionPsPointCard100Reward => 614,
-            PlayerActionType::PlayerActionType_PlayerActionPsnPlusGiftReward => 615,
-            PlayerActionType::PlayerActionType_PlayerActionAppleGiftCardReward => 616,
-            PlayerActionType::PlayerActionType_PlayerActionHeartDialSubmitItem => 617,
-            PlayerActionType::PlayerActionType_PlayerActionHeartDialDialoguePerform => 618,
-            PlayerActionType::PlayerActionType_PlayerActionHeartDialTraceConsume => 619,
-            PlayerActionType::PlayerActionType_PlayerActionHeartDialChangeEmotion => 620,
-            PlayerActionType::PlayerActionType_PlayerActionTravelBrochureAddDefaultPaster => 621,
-            PlayerActionType::PlayerActionType_PlayerActionSpaceZooBorn => 622,
-            PlayerActionType::PlayerActionType_PlayerActionSpaceZooMutate => 623,
-            PlayerActionType::PlayerActionType_PlayerActionSpaceZooDelete => 624,
-            PlayerActionType::PlayerActionType_PlayerActionSpaceZooExchangeItem => 625,
-            PlayerActionType::PlayerActionType_PlayerActionSpaceZooExpPoint => 626,
-            PlayerActionType::PlayerActionType_PlayerActionSpaceZooTakeReward => 627,
-            PlayerActionType::PlayerActionType_PlayerActionSpaceZooCollection => 628,
-            PlayerActionType::PlayerActionType_PlayerActionSpaceZooShow => 629,
-            PlayerActionType::PlayerActionType_PlayerActionSpaceZooSpecialData => 630,
-            PlayerActionType::PlayerActionType_PlayerActionStrongChallengeBattleBegin => 631,
-            PlayerActionType::PlayerActionType_PlayerActionStrongChallengeBattleEnd => 632,
-            PlayerActionType::PlayerActionType_PlayerActionRollShopDoGacha => 633,
-            PlayerActionType::PlayerActionType_PlayerActionRollShopTakeReward => 634,
-            PlayerActionType::PlayerActionType_PlayerActionOfferingSubmitItem => 635,
-            PlayerActionType::PlayerActionType_PlayerActionOfferingTakeReward => 636,
-            PlayerActionType::PlayerActionType_PlayerActionTravelBrochurePageUnlock => 637,
-            PlayerActionType::PlayerActionType_PlayerActionTravelBrochurePageInteractAward => 638,
-            PlayerActionType::PlayerActionType_PlayerActionTravelBrochureStickerUnlock => 639,
-            PlayerActionType::PlayerActionType_PlayerActionTravelBrochureStickerApply => 640,
-            PlayerActionType::PlayerActionType_PlayerActionTravelBrochureStickerRemove => 641,
-            PlayerActionType::PlayerActionType_PlayerActionTravelBrochurePageReset => 642,
-            PlayerActionType::PlayerActionType_PlayerActionTrackMainMissionId => 643,
-            PlayerActionType::PlayerActionType_PlayerActionWolfBroBegin => 644,
-            PlayerActionType::PlayerActionType_PlayerActionWolfBroGroupStateChange => 645,
-            PlayerActionType::PlayerActionType_PlayerActionWolfBroEnd => 646,
-            PlayerActionType::PlayerActionType_PlayerActionWolfBroBulletZero => 647,
-            PlayerActionType::PlayerActionType_PlayerActionWolfBroActivateBullet => 648,
-            PlayerActionType::PlayerActionType_PlayerActionWolfBroBulletNumChange => 649,
-            PlayerActionType::PlayerActionType_PlayerActionWolfBroUseBulletNull => 650,
-            PlayerActionType::PlayerActionType_PlayerActionWolfBroUseBulletHitMonster => 651,
-            PlayerActionType::PlayerActionType_PlayerActionWolfBroPickUpBullet => 652,
-            PlayerActionType::PlayerActionType_PlayerActionWolfBroRestoreArchive => 653,
-            PlayerActionType::PlayerActionType_PlayerActionTelevisionActivityBattleBegin => 654,
-            PlayerActionType::PlayerActionType_PlayerActionTelevisionActivityBattleEnd => 655,
-            PlayerActionType::PlayerActionType_PlayerActionFeverTimeActivityBattleBegin => 656,
-            PlayerActionType::PlayerActionType_PlayerActionFeverTimeActivityBattleEnd => 657,
-            PlayerActionType::PlayerActionType_PlayerActionGunPlayEnd => 658,
-            PlayerActionType::PlayerActionType_PlayerActionActivityStarFightBegin => 659,
-            PlayerActionType::PlayerActionType_PlayerActionActivityStarFightEnd => 660,
-            PlayerActionType::PlayerActionType_PlayerActionMapRotationEnterRegion => 661,
-            PlayerActionType::PlayerActionType_PlayerActionMapRotationLeaveRegion => 662,
-            PlayerActionType::PlayerActionType_PlayerActionMapRotationInteractCharger => 663,
-            PlayerActionType::PlayerActionType_PlayerActionMapRotationDeployRotater => 664,
-            PlayerActionType::PlayerActionType_PlayerActionMapRotationRotateMap => 665,
-            PlayerActionType::PlayerActionType_PlayerActionMapRotationAddEnergy => 666,
-            PlayerActionType::PlayerActionType_PlayerActionMapRotationSetMaxEnergy => 667,
-            PlayerActionType::PlayerActionType_PlayerActionMapRotationRemoveRotater => 668,
-            PlayerActionType::PlayerActionType_PlayerActionMapRotationAutoDeployRotater => 669,
-            PlayerActionType::PlayerActionType_PlayerActionMapRotationAutoRemoveRotater => 670,
-            PlayerActionType::PlayerActionType_PlayerActionDrinkMakerAddTips => 671,
-            PlayerActionType::PlayerActionType_PlayerActionDrinkMakerFinishChallenge => 672,
-            PlayerActionType::PlayerActionType_PlayerActionDrinkMakerGuestMaxFaithReward => 673,
-            PlayerActionType::PlayerActionType_PlayerActionDrinkMakerMakeDrink => 674,
-            PlayerActionType::PlayerActionType_PlayerActionDrinkMakerSaveCustomDrink => 675,
-            PlayerActionType::PlayerActionType_PlayerActionDrinkMakerEndSequence => 676,
-            PlayerActionType::PlayerActionType_PlayerActionDrinkMakerCheersMakeDrink => 677,
-            PlayerActionType::PlayerActionType_PlayerActionDrinkMakerCheersNpcDrink => 678,
-            PlayerActionType::PlayerActionType_PlayerActionChangeStoryLine => 679,
-            PlayerActionType::PlayerActionType_PlayerActionContentPackageStatusChange => 680,
-            PlayerActionType::PlayerActionType_PlayerActionContentPackageTrackChange => 681,
-            PlayerActionType::PlayerActionType_PlayerActionContentPackageAcceptMainMission => 682,
-            PlayerActionType::PlayerActionType_PlayerActionWorldDirectUnlock => 683,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyTurnFinish => 684,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyAssetTurntax => 685,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyAssetBonus => 686,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyEventEffect => 687,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyMiniGameSettle => 688,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyGameRaiseRatio => 689,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyMoveRollDice => 690,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyMove => 691,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyBuyGoods => 692,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyUpgradeAsset => 693,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyEventRerollRandom => 694,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyDailyRefresh => 695,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyGameGuessBuyInformation => 696,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyDailyFirstEnterActivity => 697,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolySocialEvent => 698,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyRaffleTicketReward => 699,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyLike => 700,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyPhaseReward => 701,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyMbtiReportReward => 702,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyDailySettle => 703,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyStart => 704,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyGetBuff => 705,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyAssetFundsChange => 706,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyAssetUpgrade => 707,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyDirectCoinGameSettle => 708,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyExtractRaffleTicket => 709,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyMbtiProgressChange => 710,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyQuizGameSettle => 711,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyEventSettle => 712,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyItemChange => 713,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyCellTrigger => 714,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyEventTrigger => 715,
-            PlayerActionType::PlayerActionType_PlayerActionMonopolyClickEffect => 716,
-            PlayerActionType::PlayerActionType_PlayerActionEvolveBuildLevelFinish => 717,
-            PlayerActionType::PlayerActionType_PlayerActionEvolveBuildShopAbilityUp => 718,
-            PlayerActionType::PlayerActionType_PlayerActionEvolveBuildShopAbilityDown => 719,
-            PlayerActionType::PlayerActionType_PlayerActionEvolveBuildTakeExpReward => 720,
-            PlayerActionType::PlayerActionType_PlayerActionEvolveBuildBattleEndAddCoin => 721,
-            PlayerActionType::PlayerActionType_PlayerActionEvolveBuildShopAbilityReset => 722,
-            PlayerActionType::PlayerActionType_PlayerActionEvolveBuildLevelStart => 723,
-            PlayerActionType::PlayerActionType_PlayerActionEvolveBuildLevelEnd => 724,
-            PlayerActionType::PlayerActionType_PlayerActionEvolveBuildStageStart => 725,
-            PlayerActionType::PlayerActionType_PlayerActionEvolveBuildStageEnd => 726,
-            PlayerActionType::PlayerActionType_PlayerActionEvolveBuildLevelLeave => 727,
-            PlayerActionType::PlayerActionType_PlayerActionClockParkUnlockScript => 728,
-            PlayerActionType::PlayerActionType_PlayerActionClockParkUnlockTalent => 729,
-            PlayerActionType::PlayerActionType_PlayerActionClockParkFinishScript => 730,
-            PlayerActionType::PlayerActionType_PlayerActionClockParkRoundUpdate => 731,
-            PlayerActionType::PlayerActionType_PlayerActionClockParkScriptBegin => 732,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournStartLevel => 733,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournFinishLevel => 734,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournExpReward => 735,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournFinishWeekChallenge => 736,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournPermanentTalentEffect => 737,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournFinishFormulaStory => 738,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournRevive => 739,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournStageBegin => 740,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournStageEnd => 741,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournPermanentEnableTalent => 742,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournPermanentResetTalent => 743,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournCocoonStageBegin => 744,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournCocoonStageEnd => 745,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournExpUpdate => 746,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournEnterRoom => 747,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournLeaveRoom => 748,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournArchiveSave => 749,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournSelectBonus => 750,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournDialogueFinish => 751,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournDoGamble => 752,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournRoomContentGenerate => 753,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournAddMiracle => 754,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournRemoveMiracle => 755,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournSelectMiracle => 756,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournDropMiracle => 757,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournAddBuff => 758,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournSelectBuff => 759,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournBuffLevelUp => 760,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournRemoveBuff => 761,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournAddFormula => 762,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournRemoveFormula => 763,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournSelectFormula => 764,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournActivateFormula => 765,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournAdventureRoomFinish => 766,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournAlterLineup => 767,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournSeasonEnableTalent => 768,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournTitanStartLevel => 769,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournTitanFinishLevel => 770,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournTitanEnterRoom => 771,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournTitanLeaveRoom => 772,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournTitanStageBegin => 773,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournTitanStageEnd => 774,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournTitanArchiveSave => 775,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournTitanAddTitanBless => 776,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournTitanSelectTitanBless => 777,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournDivisionChange => 778,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournSelectReRollMiracle => 779,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournTriggerBattleByShop => 780,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournUseSuperRewardKey => 781,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaStyleExpChange => 782,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaStyleSelect => 783,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaStartLevel => 784,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaFinishLevel => 785,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaEnterRoom => 786,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaLeaveRoom => 787,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaStageBegin => 788,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaStageEnd => 789,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaArchiveSave => 790,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournHexEquipmentChange => 791,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaRoomCardChange => 792,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaRoomCardLevelChange => 793,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaRoomCardAttributeChange => 794,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaRoomCardSelect => 795,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaRoomCardWash => 796,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaStyleGiftSelect => 797,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaStyleGiftSelectRefresh => 798,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaRoomCardReroll => 799,
-            PlayerActionType::PlayerActionType_PlayerActionRogueTournMiracleStatusChange => 800,
-            PlayerActionType::PlayerActionType_PlayerActionRogueWorkbenchReforgeFormula => 801,
-            PlayerActionType::PlayerActionType_PlayerActionRogueWorkbenchReforgeMiracle => 802,
-            PlayerActionType::PlayerActionType_PlayerActionRogueWorkbenchComposeMiracle => 803,
-            PlayerActionType::PlayerActionType_PlayerActionRogueWorkbenchReforgeBuff => 804,
-            PlayerActionType::PlayerActionType_PlayerActionRogueWorkbenchEnhanceBuff => 805,
-            PlayerActionType::PlayerActionType_PlayerActionMatchThreePveSettle => 806,
-            PlayerActionType::PlayerActionType_PlayerActionMatchThreeSettle => 807,
-            PlayerActionType::PlayerActionType_PlayerActionFightMatch3GameStart => 808,
-            PlayerActionType::PlayerActionType_PlayerActionFightMatch3GameEnd => 809,
-            PlayerActionType::PlayerActionType_PlayerActionFightMatch3TurnEnd => 810,
-            PlayerActionType::PlayerActionType_PlayerActionMatchThreeBirdPos => 811,
-            PlayerActionType::PlayerActionType_PlayerActionMultiplePlayInvite => 812,
-            PlayerActionType::PlayerActionType_PlayerActionMultiplePlayInviteRespond => 813,
-            PlayerActionType::PlayerActionType_PlayerActionMultiplePlayLobbyEnter => 814,
-            PlayerActionType::PlayerActionType_PlayerActionMultiplePlayLobbyQuit => 815,
-            PlayerActionType::PlayerActionType_PlayerActionMultiplePlayLobbyKick => 816,
-            PlayerActionType::PlayerActionType_PlayerActionMultiplePlayLobbyMatch => 817,
-            PlayerActionType::PlayerActionType_PlayerActionMarbleSettle => 818,
-            PlayerActionType::PlayerActionType_PlayerActionMatchThreeSoloSettle => 819,
-            PlayerActionType::PlayerActionType_PlayerActionMatchThreeV2BattleitemLevelup => 820,
-            PlayerActionType::PlayerActionType_PlayerActionMatchThreeV2PveSettle => 821,
-            PlayerActionType::PlayerActionType_PlayerActionMatchThreeV2PvpSettle => 822,
-            PlayerActionType::PlayerActionType_PlayerActionMatch3SoloGameStart => 823,
-            PlayerActionType::PlayerActionType_PlayerActionMatch3SoloGameEnd => 824,
-            PlayerActionType::PlayerActionType_PlayerActionMatch3SoloRoundEnd => 825,
-            PlayerActionType::PlayerActionType_PlayerActionMatch3RoyaleSettle => 826,
-            PlayerActionType::PlayerActionType_PlayerActionMatch3RoyaleGameStart => 827,
-            PlayerActionType::PlayerActionType_PlayerActionMatch3RoyaleGameEnd => 828,
-            PlayerActionType::PlayerActionType_PlayerActionMatch3RoyaleRoundEnd => 829,
-            PlayerActionType::PlayerActionType_PlayerActionDiceCombatSettle => 830,
-            PlayerActionType::PlayerActionType_PlayerActionDiceCombatV2Settle => 831,
-            PlayerActionType::PlayerActionType_PlayerActionTeamTowersSettle => 832,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingLearnSkill => 833,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingNormalAction => 834,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingStoryEffect => 835,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingEndingHint => 836,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingActionHint => 837,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingRestoreGameByExam => 838,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingStoryLineFirstClear => 839,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingTakeEndingReward => 840,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingStoryLineBegin => 841,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingEnterTurn => 842,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingPlanAction => 843,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingActionPhaseEnd => 844,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingStory => 845,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingStatusChange => 846,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingMoodChange => 847,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingBattleBegin => 848,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingBattleEnd => 849,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingCombatRankChange => 850,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingStoryLineEnd => 851,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingResumeStoryLine => 852,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingGameSuccess => 853,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingGameGiveUp => 854,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingExam => 855,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingDialogue => 856,
-            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingSetSkillTrace => 857,
-            PlayerActionType::PlayerActionType_PlayerActionFightFestFinishScoreRaceMission => 858,
-            PlayerActionType::PlayerActionType_PlayerActionFightFestFinishScoreRacePhase => 859,
-            PlayerActionType::PlayerActionType_PlayerActionFightFestRaceStart => 860,
-            PlayerActionType::PlayerActionType_PlayerActionFightFestRaceEnd => 861,
-            PlayerActionType::PlayerActionType_PlayerActionFightFestChallengeStart => 862,
-            PlayerActionType::PlayerActionType_PlayerActionFightFestChallengeEnd => 863,
-            PlayerActionType::PlayerActionType_PlayerActionFightFestGetCoachItem => 864,
-            PlayerActionType::PlayerActionType_PlayerActionFightFestAcceptScoreRaceMission => 865,
-            PlayerActionType::PlayerActionType_PlayerActionPetUse => 866,
-            PlayerActionType::PlayerActionType_PlayerActionMusicRhythmPassLevelStar => 867,
-            PlayerActionType::PlayerActionType_PlayerActionMusicRhythmLevelBegin => 868,
-            PlayerActionType::PlayerActionType_PlayerActionMusicRhythmLevelEnd => 869,
-            PlayerActionType::PlayerActionType_PlayerActionTrackPhotoStageBegin => 870,
-            PlayerActionType::PlayerActionType_PlayerActionTrackPhotoStageEnd => 871,
-            PlayerActionType::PlayerActionType_PlayerActionSummonActivityBattleBegin => 872,
-            PlayerActionType::PlayerActionType_PlayerActionSummonActivityBattleEnd => 873,
-            PlayerActionType::PlayerActionType_PlayerActionRaidCollectionEnterNextRaid => 874,
-            PlayerActionType::PlayerActionType_PlayerActionDifficultyAdjustmentSet => 875,
-            PlayerActionType::PlayerActionType_PlayerActionDifficultyAdjustmentUnset => 876,
-            PlayerActionType::PlayerActionType_PlayerActionRogueArcadeAdventureRoomStart => 877,
-            PlayerActionType::PlayerActionType_PlayerActionRogueArcadeAdventureRoomFinish => 878,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMagicStartLevel => 879,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMagicFinishLevel => 880,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMagicRevive => 881,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMagicEnterRoom => 882,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMagicLeaveRoom => 883,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMagicAddMiracle => 884,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMagicRemoveMiracle => 885,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMagicStageBegin => 886,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMagicStageEnd => 887,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMagicEnableTalent => 888,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMagicFinishStory => 889,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMagicAddScepter => 890,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMagicSelectScepter => 891,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMagicMountUnit => 892,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMagicAutoMountUnit => 893,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMagicAddMagicUnit => 894,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMagicRemoveMagicUnit => 895,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMagicWorkbenchComposeMagicUnit => 896,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMagicWorkbenchReforgeMagicUnit => 897,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMagicWorkbenchLevelUpScepter => 898,
-            PlayerActionType::PlayerActionType_PlayerActionTrainPartyGamePlayStart => 899,
-            PlayerActionType::PlayerActionType_PlayerActionTrainPartyPhaseBegin => 900,
-            PlayerActionType::PlayerActionType_PlayerActionTrainPartyPhaseEnd => 901,
-            PlayerActionType::PlayerActionType_PlayerActionTrainPartyRound => 902,
-            PlayerActionType::PlayerActionType_PlayerActionTrainPartyMeetingBegin => 903,
-            PlayerActionType::PlayerActionType_PlayerActionTrainPartyMeetingEnd => 904,
-            PlayerActionType::PlayerActionType_PlayerActionTrainPartyMeetingPlayCard => 905,
-            PlayerActionType::PlayerActionType_PlayerActionTrainPartyMeetingReRoll => 906,
-            PlayerActionType::PlayerActionType_PlayerActionTrainPartyBuildAreaUnlock => 907,
-            PlayerActionType::PlayerActionType_PlayerActionTrainPartyBuildStep => 908,
-            PlayerActionType::PlayerActionType_PlayerActionTrainPartyBuildLevelAward => 909,
-            PlayerActionType::PlayerActionType_PlayerActionTrainPartyBuildingDynamicBuff => 910,
-            PlayerActionType::PlayerActionType_PlayerActionTrainPartyBuildDiy => 911,
-            PlayerActionType::PlayerActionType_PlayerActionSelfRoomBuildDiy => 912,
-            PlayerActionType::PlayerActionType_PlayerActionSkipUnlockSelfRoom => 913,
-            PlayerActionType::PlayerActionType_PlayerActionSelfRoomBuildDiyMerge => 914,
-            PlayerActionType::PlayerActionType_PlayerActionPlayerRoomDisplayAreaChange => 915,
-            PlayerActionType::PlayerActionType_PlayerActionSwitchHandOpPropState => 916,
-            PlayerActionType::PlayerActionType_PlayerActionEraFlipperChangeRegionState => 917,
-            PlayerActionType::PlayerActionType_PlayerActionEraFlipperChangePropState => 918,
-            PlayerActionType::PlayerActionType_PlayerActionActivityBenefitReward => 919,
-            PlayerActionType::PlayerActionType_PlayerActionActivityBenefitJoin => 920,
-            PlayerActionType::PlayerActionType_PlayerActionActivityBenefitInitialReward => 921,
-            PlayerActionType::PlayerActionType_PlayerActionActiveActivityReward => 922,
-            PlayerActionType::PlayerActionType_PlayerActionPamSkinChangeSkin => 923,
-            PlayerActionType::PlayerActionType_PlayerActionChestFind => 924,
-            PlayerActionType::PlayerActionType_PlayerActionReissueMarkChestItemMail => 925,
-            PlayerActionType::PlayerActionType_PlayerActionMarblePassMatch => 926,
-            PlayerActionType::PlayerActionType_PlayerActionMarbleBuySeal => 927,
-            PlayerActionType::PlayerActionType_PlayerActionMarbleFightGameBegin => 928,
-            PlayerActionType::PlayerActionType_PlayerActionMarbleFightGameEnd => 929,
-            PlayerActionType::PlayerActionType_PlayerActionMarbleFightGameRound => 930,
-            PlayerActionType::PlayerActionType_PlayerActionMarbleFightGameTurn => 931,
-            PlayerActionType::PlayerActionType_PlayerActionPlanetFesLevelUp => 932,
-            PlayerActionType::PlayerActionType_PlayerActionPlanetFesActivityInit => 933,
-            PlayerActionType::PlayerActionType_PlayerActionPlanetFesAvatarLevelUp => 934,
-            PlayerActionType::PlayerActionType_PlayerActionPlanetFesTakeRegionPhaseReward => 935,
-            PlayerActionType::PlayerActionType_PlayerActionPlanetFesAddItem => 936,
-            PlayerActionType::PlayerActionType_PlayerActionPlanetFesQuest => 937,
-            PlayerActionType::PlayerActionType_PlayerActionPlanetFesBusinessDayFinish => 938,
-            PlayerActionType::PlayerActionType_PlayerActionPlanetFesAvatarStarUp => 939,
-            PlayerActionType::PlayerActionType_PlayerActionPlanetFesUnlockLand => 940,
-            PlayerActionType::PlayerActionType_PlayerActionPlanetFesBusinessEventFinish => 941,
-            PlayerActionType::PlayerActionType_PlayerActionPlanetFesActivateCard => 942,
-            PlayerActionType::PlayerActionType_PlayerActionPlanetFesSkillLevelUp => 943,
-            PlayerActionType::PlayerActionType_PlayerActionPlanetFesGacha => 944,
-            PlayerActionType::PlayerActionType_PlayerActionPlanetFesBusinessEventHandle => 945,
-            PlayerActionType::PlayerActionType_PlayerActionPlanetFesCardApplyPermission => 946,
-            PlayerActionType::PlayerActionType_PlayerActionPlanetFesCardInteract => 947,
-            PlayerActionType::PlayerActionType_PlayerActionPlanetFesToSns => 948,
-            PlayerActionType::PlayerActionType_PlayerActionPlanetFesSetWorkAvatar => 949,
-            PlayerActionType::PlayerActionType_PlayerActionPlanetFesSummary => 950,
-            PlayerActionType::PlayerActionType_PlayerActionTarotBookCharacterLevelUp => 951,
-            PlayerActionType::PlayerActionType_PlayerActionTarotBookOpenPack => 952,
-            PlayerActionType::PlayerActionType_PlayerActionTarotBookUnlockStory => 953,
-            PlayerActionType::PlayerActionType_PlayerActionTarotBookUnlockStorySingle => 954,
-            PlayerActionType::PlayerActionType_PlayerActionTarotBookFinishStory => 955,
-            PlayerActionType::PlayerActionType_PlayerActionTarotBookFinishInteraction => 956,
-            PlayerActionType::PlayerActionType_PlayerActionTarotBookChangeEnergy => 957,
-            PlayerActionType::PlayerActionType_PlayerActionTarotBookUnlockInteraction => 958,
-            PlayerActionType::PlayerActionType_PlayerActionChimeraRoundStart => 959,
-            PlayerActionType::PlayerActionType_PlayerActionChimeraRoundWorkStart => 960,
-            PlayerActionType::PlayerActionType_PlayerActionChimeraRoundWorkEnd => 961,
-            PlayerActionType::PlayerActionType_PlayerActionChimeraEndlessStart => 962,
-            PlayerActionType::PlayerActionType_PlayerActionChimeraEndlessEnd => 963,
-            PlayerActionType::PlayerActionType_PlayerActionChimeraEndlessWorkStart => 964,
-            PlayerActionType::PlayerActionType_PlayerActionChimeraEndlessWorkEnd => 965,
-            PlayerActionType::PlayerActionType_PlayerActionChimeraRankChange => 966,
-            PlayerActionType::PlayerActionType_PlayerActionChimeraGet => 967,
-            PlayerActionType::PlayerActionType_PlayerActionStoryTokenTakeActivityReward => 968,
-            PlayerActionType::PlayerActionType_PlayerActionReissueAvatarTokenItem => 969,
-            PlayerActionType::PlayerActionType_PlayerActionAvatarDeliverRewardActivityTakeReward => 970,
-            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantBuyField => 971,
-            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantPlantSeed => 972,
-            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantRecycleSeed => 973,
-            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantHarvestCrop => 974,
-            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantUpgradeEmployeeLevel => 975,
-            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantUpgradeFacilityLevel => 976,
-            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantUpgradeRecipeLevel => 977,
-            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantBuyShopItem => 978,
-            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantFinishTradeOrder => 979,
-            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantTakeVillagerReward => 980,
-            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantSettleRestaurantPlay => 981,
-            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantInit => 982,
-            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantSettleProgress => 983,
-            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantSettleDay => 984,
-            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantAddItem => 985,
-            PlayerActionType::PlayerActionType_PlayerActionLocalLegendReward => 986,
-            PlayerActionType::PlayerActionType_PlayerActionFateLevelStart => 987,
-            PlayerActionType::PlayerActionType_PlayerActionFateLevelSettle => 988,
-            PlayerActionType::PlayerActionType_PlayerActionFateBattleStart => 989,
-            PlayerActionType::PlayerActionType_PlayerActionFateBattleEnd => 990,
-            PlayerActionType::PlayerActionType_PlayerActionFateAddHougu => 991,
-            PlayerActionType::PlayerActionType_PlayerActionFateSelectHougu => 992,
-            PlayerActionType::PlayerActionType_PlayerActionFateSelectReiju => 993,
-            PlayerActionType::PlayerActionType_PlayerActionFateRefreshReiju => 994,
-            PlayerActionType::PlayerActionType_PlayerActionFateAddCoin => 995,
-            PlayerActionType::PlayerActionType_PlayerActionFateBuyBuff => 996,
-            PlayerActionType::PlayerActionType_PlayerActionFateSellBuff => 997,
-            PlayerActionType::PlayerActionType_PlayerActionFateRefreshShop => 998,
-            PlayerActionType::PlayerActionType_PlayerActionFateLockGoods => 999,
-            PlayerActionType::PlayerActionType_PlayerActionFateUnlockGoods => 1000,
-            PlayerActionType::PlayerActionType_PlayerActionFateTakeExpReward => 1001,
-            PlayerActionType::PlayerActionType_PlayerActionFateAddExp => 1002,
-            PlayerActionType::PlayerActionType_PlayerActionFateMasterHpChange => 1003,
-            PlayerActionType::PlayerActionType_PlayerActionParkourStartLevel => 1004,
-            PlayerActionType::PlayerActionType_PlayerActionParkourEndLevel => 1005,
-            PlayerActionType::PlayerActionType_PlayerActionBasinChestInteractResult => 1006,
-            PlayerActionType::PlayerActionType_PlayerActionRogueMiracleSwap => 1007,
-            PlayerActionType::PlayerActionType_PlayerActionHipplenEndingTakeReward => 1008,
-            PlayerActionType::PlayerActionType_PlayerActionHipplenGiftDeliverReward => 1009,
-            PlayerActionType::PlayerActionType_PlayerActionHipplenCycleStart => 1010,
-            PlayerActionType::PlayerActionType_PlayerActionHipplenCycleFinish => 1011,
-            PlayerActionType::PlayerActionType_PlayerActionHipplenAgendaPlan => 1012,
-            PlayerActionType::PlayerActionType_PlayerActionHipplenAgendaSettle => 1013,
-            PlayerActionType::PlayerActionType_PlayerActionHipplenTrialStart => 1014,
-            PlayerActionType::PlayerActionType_PlayerActionHipplenTrialFinish => 1015,
-            PlayerActionType::PlayerActionType_PlayerActionHipplenStatusChange => 1016,
-            PlayerActionType::PlayerActionType_PlayerActionHipplenOutfitChange => 1017,
-            PlayerActionType::PlayerActionType_PlayerActionHipplenTraitUnlock => 1018,
-            PlayerActionType::PlayerActionType_PlayerActionHipplenEndingUnlock => 1019,
-            PlayerActionType::PlayerActionType_PlayerActionHipplenOutfitUnlock => 1020,
-            PlayerActionType::PlayerActionType_PlayerActionHipplenGiftUnlock => 1021,
-            PlayerActionType::PlayerActionType_PlayerActionHipplenIncidentFinish => 1022,
-            PlayerActionType::PlayerActionType_PlayerActionChallengePeakStart => 1023,
-            PlayerActionType::PlayerActionType_PlayerActionChallengePeakReward => 1024,
-            PlayerActionType::PlayerActionType_PlayerActionChallengePeakMobStart => 1025,
-            PlayerActionType::PlayerActionType_PlayerActionChallengePeakMobSettle => 1026,
-            PlayerActionType::PlayerActionType_PlayerActionChallengePeakBossStart => 1027,
-            PlayerActionType::PlayerActionType_PlayerActionChallengePeakBossSettle => 1028,
-            PlayerActionType::PlayerActionType_PlayerActionChallengePeakFastPass => 1029,
-            PlayerActionType::PlayerActionType_PlayerActionChallengePeakRecommendLineup => 1030,
-            PlayerActionType::PlayerActionType_PlayerActionChallengePeakMobBattleEnd => 1031,
-            PlayerActionType::PlayerActionType_PlayerActionChallengePeakMobRecordClear => 1032,
-            PlayerActionType::PlayerActionType_PlayerActionCakeRaceLoan => 1033,
-            PlayerActionType::PlayerActionType_PlayerActionCakeRaceSectionBegin => 1034,
-            PlayerActionType::PlayerActionType_PlayerActionCakeRaceSectionEnd => 1035,
-            PlayerActionType::PlayerActionType_PlayerActionCakeRaceRoomSectionSettle => 1036,
-            PlayerActionType::PlayerActionType_PlayerActionCakeRaceGameSettle => 1037,
-            PlayerActionType::PlayerActionType_PlayerActionCakeRaceGameBetCat => 1038,
-            PlayerActionType::PlayerActionType_PlayerActionCakeRaceGameWinCoin => 1039,
-            PlayerActionType::PlayerActionType_PlayerActionCakeRaceLikeFriendRanking => 1040,
-            PlayerActionType::PlayerActionType_PlayerActionElationBattleBegin => 1041,
-            PlayerActionType::PlayerActionType_PlayerActionElationBattleEnd => 1042,
-            PlayerActionType::PlayerActionType_PlayerActionActivityHotDataChange => 1043,
-            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelGameSettle => 1044,
-            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelMasterUnlock => 1045,
-            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelGameStart => 1046,
-            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelBattleStart => 1047,
-            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelBattleEnd => 1048,
-            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelChimeraBuy => 1049,
-            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelItemBuy => 1050,
-            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelShopRefresh => 1051,
-            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelChimeraEnhance => 1052,
-            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelChimeraSell => 1053,
-            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelShopStart => 1054,
-            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelShopEnd => 1055,
-            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelFriendPvpLineupSave => 1056,
-            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelDefendLineupSet => 1057,
-            PlayerActionType::PlayerActionType_PlayerActionMazePuzzleFinishChenLingGameBoy => 1058,
-            PlayerActionType::PlayerActionType_PlayerActionMazePuzzleFiveDimMoneyChange => 1059,
-            PlayerActionType::PlayerActionType_PlayerActionMazePuzzleFinishFiveDimMiniGame => 1060,
-            PlayerActionType::PlayerActionType_PlayerActionMazePuzzleOpenChenLingGameBoyCheatMode => 1061,
-            PlayerActionType::PlayerActionType_PlayerActionMazePuzzleEnterFiveDimGame => 1062,
-            PlayerActionType::PlayerActionType_PlayerActionMazePuzzleLeaveFiveDimGame => 1063,
-            PlayerActionType::PlayerActionType_PlayerActionMazePuzzleFiveDimGameSkillChange => 1064,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightGameStart => 1065,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightGameEnd => 1066,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightRoundStart => 1067,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightRoundEnd => 1068,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightBattleStart => 1069,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightBattleEnd => 1070,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightBattleRole => 1071,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightPortalRefresh => 1072,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightPortalSelect => 1073,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightAugmentRefresh => 1074,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightAugmentSelect => 1075,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightShopRefresh => 1076,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightShopBuy => 1077,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightSupplyRefresh => 1078,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightSupplySelect => 1079,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightForgeOpen => 1080,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightSpecialShopBuy => 1081,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightGetExp => 1082,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightGetOrb => 1083,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightUseOrb => 1084,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightGetRole => 1085,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightGetCoin => 1086,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightGetFreeRefresh => 1087,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightGetItem => 1088,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightGetEquip => 1089,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightDressEquip => 1090,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightGetHp => 1091,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightWeeklyScoreChange => 1092,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightGetWeeklyReward => 1093,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightSeasonExpChange => 1094,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightTalentEnable => 1095,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightTalentReset => 1096,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightTutorialTaskFinish => 1097,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightEliteBranchRefresh => 1098,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightTutorialResume => 1099,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightGetProjection => 1100,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightGetPresent => 1101,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightOpenPresent => 1102,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightSettleSeasonEnd => 1103,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightFavoriteArchive => 1104,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightFormationEdit => 1105,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightModifierUpdate => 1106,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightFormationUgcUpdate => 1107,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightPartnerRoleChoose => 1108,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightPrayQuestSelect => 1109,
-            PlayerActionType::PlayerActionType_PlayerActionGridFightPrayQuestFinish => 1110,
-            PlayerActionType::PlayerActionType_PlayerActionLocalLegendBattleBegin => 1111,
-            PlayerActionType::PlayerActionType_PlayerActionLocalLegendBattleEnd => 1112,
-            PlayerActionType::PlayerActionType_PlayerActionDiceCombatBuyShopGood => 1113,
-            PlayerActionType::PlayerActionType_PlayerActionDiceCombatUpgradeAvatar => 1114,
-            PlayerActionType::PlayerActionType_PlayerActionDiceCombatFinishPveStage => 1115,
-            PlayerActionType::PlayerActionType_PlayerActionDiceCombatBegin => 1116,
-            PlayerActionType::PlayerActionType_PlayerActionDiceCombatTurnEnd => 1117,
-            PlayerActionType::PlayerActionType_PlayerActionDiceCombatEnd => 1118,
-            PlayerActionType::PlayerActionType_PlayerActionDiceCombatScoreChange => 1119,
-            PlayerActionType::PlayerActionType_PlayerActionDiceCombatChangeColorDice => 1120,
-            PlayerActionType::PlayerActionType_PlayerActionInteractiveTriggerMazeBuffAdd => 1121,
-            PlayerActionType::PlayerActionType_PlayerActionLlmChat => 1122,
-            PlayerActionType::PlayerActionType_PlayerActionLlmChatNextQuestion => 1123,
-            PlayerActionType::PlayerActionType_PlayerActionLlmChatFeedback => 1124,
-            PlayerActionType::PlayerActionType_PlayerActionAiPamChatPointChange => 1125,
-            PlayerActionType::PlayerActionType_PlayerActionTrainCakeCatchCatGodInteract => 1126,
-            PlayerActionType::PlayerActionType_PlayerActionTrainCakeCatchOpenBox => 1127,
-            PlayerActionType::PlayerActionType_PlayerActionTrainCakeCatchSearchCat => 1128,
-            PlayerActionType::PlayerActionType_PlayerActionTrainCakeCatchUnlockPerformance => 1129,
-            PlayerActionType::PlayerActionType_PlayerActionTrainCakeCatchUpdateDiyInfo => 1130,
-            PlayerActionType::PlayerActionType_PlayerActionSocialPlayTalk => 1131,
-            PlayerActionType::PlayerActionType_PlayerActionSocialPlayKickOutPlayer => 1132,
-            PlayerActionType::PlayerActionType_PlayerActionSocialPlayPopularityValue => 1133,
-            PlayerActionType::PlayerActionType_PlayerActionSocialPlayLeaveRoom => 1134,
-            PlayerActionType::PlayerActionType_PlayerActionSocialPlayEnterRoom => 1135,
-            PlayerActionType::PlayerActionType_PlayerActionTrainCakeCatchCatGodAppear => 1136,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveUpgradeTeamSlot => 1137,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveFinishSubNode => 1138,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveFinishChapterFinalAct => 1139,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveCollectIncome => 1140,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveOpenChest => 1141,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveTakeTaskReward => 1142,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveTechTreeChange => 1143,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveModifyCustomTitle => 1144,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveCatchUpReward => 1145,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveTakeMessageReward => 1146,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveTakeGiftReward => 1147,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveEndDungeon => 1148,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveActivityInit => 1149,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveEquipDiscard => 1150,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveDoGacha => 1151,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveAddAvatar => 1152,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveTaskChange => 1153,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveReplaceTeam => 1154,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveHandleNormalEquip => 1155,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveUpgradeSpecialEquip => 1156,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveDressSpecialEquip => 1157,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveAddItem => 1158,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveQuestionChange => 1159,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveStartNodeBattle => 1160,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveFinishNodeBattle => 1161,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveFinishNode => 1162,
-            PlayerActionType::PlayerActionType_PlayerActionIdleLiveMessageChange => 1163,
-            PlayerActionType::PlayerActionType_PlayerActionNewYearBoatTakeReward => 1164,
-            PlayerActionType::PlayerActionType_PlayerActionNewYearBoatSelectBoat => 1165,
-            PlayerActionType::PlayerActionType_PlayerActionNewYearBoatPeriodSettle => 1166,
-            PlayerActionType::PlayerActionType_PlayerActionBenefitV2ActivityTakeReward => 1167,
-            PlayerActionType::PlayerActionType_PlayerActionBenefitV2ActivityDraw => 1168,
-            PlayerActionType::PlayerActionType_PlayerActionJukeboxSetting => 1169,
-            PlayerActionType::PlayerActionType_PlayerActionJukeboxSettingReset => 1170,
-            PlayerActionType::PlayerActionType_PlayerActionDiceCombatV2FinishPveStage => 1171,
-            PlayerActionType::PlayerActionType_PlayerActionDiceCombatV2Begin => 1172,
-            PlayerActionType::PlayerActionType_PlayerActionDiceCombatV2TurnEnd => 1173,
-            PlayerActionType::PlayerActionType_PlayerActionDiceCombatV2End => 1174,
-            PlayerActionType::PlayerActionType_PlayerActionDiceCombatV2TacticsPointChange => 1175,
-            PlayerActionType::PlayerActionType_PlayerActionDiceCombatV2TacticsCardChange => 1176,
-            PlayerActionType::PlayerActionType_PlayerActionDiceCombatV2DiceChangeRequest => 1177,
-            PlayerActionType::PlayerActionType_PlayerActionDiceCombatV2DiceChange => 1178,
-            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsSubmitIssue => 1179,
-            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsSubmitPost => 1180,
-            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsOfficeSurveyStateChange => 1181,
-            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsTriggerMessage => 1182,
-            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishMessage => 1183,
-            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishCondition => 1184,
-            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsUnlockPost => 1185,
-            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsReplyComment => 1186,
-            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsBanPost => 1187,
-            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsTriggerOfficeEvent => 1188,
-            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishOfficeEvent => 1189,
-            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsUpvoteContent => 1190,
-            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleActivatePrivilege => 1191,
-            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleConquerLevelUp => 1192,
-            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleStartStage => 1193,
-            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleSettleStage => 1194,
-            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleStartBattle => 1195,
-            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleFinishBattle => 1196,
-            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleFinishWave => 1197,
-            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleSelectCard => 1198,
-            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleRefreshCard => 1199,
-            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleBuyShopItem => 1200,
-            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleRefreshShop => 1201,
-            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleSelectPolicy => 1202,
-            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleRefreshPolicy => 1203,
-            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleAddHandCard => 1204,
-            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleUseHandCard => 1205,
-            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleSellHandCard => 1206,
-            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleEntityUpgrade => 1207,
-            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleCloneEntity => 1208,
-            PlayerActionType::PlayerActionType_PlayerActionCycleScoreChange => 1209,
-            PlayerActionType::PlayerActionType_PlayerActionCycleScoreTakeReward => 1210,
-            PlayerActionType::PlayerActionType_PlayerActionFateRinFightStart => 1211,
-            PlayerActionType::PlayerActionType_PlayerActionFateRinFightEnd => 1212,
-            PlayerActionType::PlayerActionType_PlayerActionFateRinDeckModify => 1213,
-            PlayerActionType::PlayerActionType_PlayerActionRelicPresetPlanSave => 1214,
-            PlayerActionType::PlayerActionType_PlayerActionRelicPresetPlanDelete => 1215,
-            PlayerActionType::PlayerActionType_PlayerActionRelicPresetPlanModifyName => 1216,
-            PlayerActionType::PlayerActionType_PlayerActionPixAirUnlockPlane => 1217,
-            PlayerActionType::PlayerActionType_PlayerActionPixAirStageStart => 1218,
-            PlayerActionType::PlayerActionType_PlayerActionPixAirBattleGen => 1219,
-            PlayerActionType::PlayerActionType_PlayerActionPixAirBattleEnd => 1220,
-            PlayerActionType::PlayerActionType_PlayerActionPixAirLootEquipSelect => 1221,
-            PlayerActionType::PlayerActionType_PlayerActionPixAirBuyEquip => 1222,
-            PlayerActionType::PlayerActionType_PlayerActionPixAirRefreshShop => 1223,
-            PlayerActionType::PlayerActionType_PlayerActionPixAirNodeSelectContent => 1224,
-            PlayerActionType::PlayerActionType_PlayerActionPixAirGrantReward => 1225,
-            PlayerActionType::PlayerActionType_PlayerActionPixAirEvent => 1226,
-            PlayerActionType::PlayerActionType_PlayerActionPixAirNewEquip => 1227,
-            PlayerActionType::PlayerActionType_PlayerActionPixAirSellEquip => 1228,
-            PlayerActionType::PlayerActionType_PlayerActionPixAirEquipUpgrade => 1229,
-            PlayerActionType::PlayerActionType_PlayerActionPixAirEquipEnchant => 1230,
-            PlayerActionType::PlayerActionType_PlayerActionPixAirCoinChange => 1231,
-            PlayerActionType::PlayerActionType_PlayerActionPixAirStageSettle => 1232,
-            PlayerActionType::PlayerActionType_PlayerActionExpeditionBattleGameStart => 1233,
-            PlayerActionType::PlayerActionType_PlayerActionExpeditionBattleGameEnd => 1234,
-            PlayerActionType::PlayerActionType_PlayerActionChenLingFesLevelStart => 1235,
-            PlayerActionType::PlayerActionType_PlayerActionChenLingFesBusinessDayEnd => 1236,
-            PlayerActionType::PlayerActionType_PlayerActionChenLingFesPhaseSettle => 1237,
-            PlayerActionType::PlayerActionType_PlayerActionChenLingFesLevelSettle => 1238,
-            PlayerActionType::PlayerActionType_PlayerActionChooseDeliveryChoose => 1239,
-            PlayerActionType::PlayerActionType_PlayerActionTeamTowersPveEnd => 1240,
-            PlayerActionType::PlayerActionType_PlayerActionTeamTowersPvpStart => 1241,
-            PlayerActionType::PlayerActionType_PlayerActionTeamTowersPvpEnd => 1242,
+            PlayerActionType::PlayerActionType_PlayerActionClientVideoSetting => 51,
+            PlayerActionType::PlayerActionType_PlayerActionAvatarPromotion => 52,
+            PlayerActionType::PlayerActionType_PlayerActionAvatarAdd => 53,
+            PlayerActionType::PlayerActionType_PlayerActionAvatarUseExpItem => 54,
+            PlayerActionType::PlayerActionType_PlayerActionAvatarLevelUp => 55,
+            PlayerActionType::PlayerActionType_PlayerActionSkillTreeUp => 56,
+            PlayerActionType::PlayerActionType_PlayerActionAvatarHpChange => 57,
+            PlayerActionType::PlayerActionType_PlayerActionAvatarMpChange => 58,
+            PlayerActionType::PlayerActionType_PlayerActionAvatarAddExp => 59,
+            PlayerActionType::PlayerActionType_PlayerActionAvatarRankUp => 60,
+            PlayerActionType::PlayerActionType_PlayerActionAvatarRepeated => 61,
+            PlayerActionType::PlayerActionType_PlayerActionMpMaxChange => 62,
+            PlayerActionType::PlayerActionType_PlayerActionAvatarTakePromotionReward => 63,
+            PlayerActionType::PlayerActionType_PlayerActionAvatarRelicAffixInfo => 64,
+            PlayerActionType::PlayerActionType_PlayerActionAvatarMark => 65,
+            PlayerActionType::PlayerActionType_PlayerActionAvatarSystemPowerReset => 66,
+            PlayerActionType::PlayerActionType_PlayerActionAvatarChangePath => 67,
+            PlayerActionType::PlayerActionType_PlayerActionSetGrowthTargetAvatar => 68,
+            PlayerActionType::PlayerActionType_PlayerActionDelAvatar => 69,
+            PlayerActionType::PlayerActionType_PlayerActionAvatarSkinChange => 70,
+            PlayerActionType::PlayerActionType_PlayerActionSetGrowthTargetFunctionConfig => 71,
+            PlayerActionType::PlayerActionType_PlayerActionAvatarSkinActivityReissue => 72,
+            PlayerActionType::PlayerActionType_PlayerActionSetAvatarEnhancedId => 73,
+            PlayerActionType::PlayerActionType_PlayerActionDressPlayerOutfit => 74,
+            PlayerActionType::PlayerActionType_PlayerActionStageBegin => 75,
+            PlayerActionType::PlayerActionType_PlayerActionStageEnd => 76,
+            PlayerActionType::PlayerActionType_PlayerActionCocoonStageBegin => 77,
+            PlayerActionType::PlayerActionType_PlayerActionCocoonStageEnd => 78,
+            PlayerActionType::PlayerActionType_PlayerActionFarmElementEnd => 79,
+            PlayerActionType::PlayerActionType_PlayerActionElementStageEnd => 80,
+            PlayerActionType::PlayerActionType_PlayerActionCocoonSweep => 81,
+            PlayerActionType::PlayerActionType_PlayerActionFarmElementSweep => 82,
+            PlayerActionType::PlayerActionType_PlayerActionRecoverStamina => 83,
+            PlayerActionType::PlayerActionType_PlayerActionExchangeStamina => 84,
+            PlayerActionType::PlayerActionType_PlayerActionLoginReward => 85,
+            PlayerActionType::PlayerActionType_PlayerActionModifyNickname => 86,
+            PlayerActionType::PlayerActionType_PlayerActionGetLevelReward => 87,
+            PlayerActionType::PlayerActionType_PlayerActionWorldLevelUp => 88,
+            PlayerActionType::PlayerActionType_PlayerActionAddStamina => 89,
+            PlayerActionType::PlayerActionType_PlayerActionGameplayBirthdayRewardMail => 90,
+            PlayerActionType::PlayerActionType_PlayerActionRechargeRebateReward => 91,
+            PlayerActionType::PlayerActionType_PlayerActionGameplayBirthdaySet => 92,
+            PlayerActionType::PlayerActionType_PlayerActionReserveStaminaExchange => 93,
+            PlayerActionType::PlayerActionType_PlayerActionReserveStaminaAdd => 94,
+            PlayerActionType::PlayerActionType_PlayerActionReserveStaminaChange => 95,
+            PlayerActionType::PlayerActionType_PlayerActionNowStamina => 96,
+            PlayerActionType::PlayerActionType_PlayerActionFtcResetNickname => 97,
+            PlayerActionType::PlayerActionType_PlayerActionReserveAndFuelExchangeStamina => 98,
+            PlayerActionType::PlayerActionType_PlayerActionMail => 99,
+            PlayerActionType::PlayerActionType_PlayerActionMailOpByUser => 100,
+            PlayerActionType::PlayerActionType_PlayerActionMailOpByMuip => 101,
+            PlayerActionType::PlayerActionType_PlayerActionMailOpByGm => 102,
+            PlayerActionType::PlayerActionType_PlayerActionMailOpByFull => 103,
+            PlayerActionType::PlayerActionType_PlayerActionMailOpByExpire => 104,
+            PlayerActionType::PlayerActionType_PlayerActionMailOpByInternal => 105,
+            PlayerActionType::PlayerActionType_PlayerActionAddMail => 106,
+            PlayerActionType::PlayerActionType_PlayerActionDelMail => 107,
+            PlayerActionType::PlayerActionType_PlayerActionTakeAttachment => 108,
+            PlayerActionType::PlayerActionType_PlayerActionReadMail => 109,
+            PlayerActionType::PlayerActionType_PlayerActionBattleAvatar => 110,
+            PlayerActionType::PlayerActionType_PlayerActionBattleMonster => 111,
+            PlayerActionType::PlayerActionType_PlayerActionBattleEnd => 112,
+            PlayerActionType::PlayerActionType_PlayerActionBattleReplay => 113,
+            PlayerActionType::PlayerActionType_PlayerActionBattleAvatarDeath => 114,
+            PlayerActionType::PlayerActionType_PlayerActionBattleSwitchPhase => 115,
+            PlayerActionType::PlayerActionType_PlayerActionBattleMonsterSkill => 116,
+            PlayerActionType::PlayerActionType_PlayerActionBattleRebattle => 117,
+            PlayerActionType::PlayerActionType_PlayerActionBattleAvatarServant => 118,
+            PlayerActionType::PlayerActionType_PlayerActionMissionReward => 119,
+            PlayerActionType::PlayerActionType_PlayerActionQuestAccept => 120,
+            PlayerActionType::PlayerActionType_PlayerActionQuestFinish => 121,
+            PlayerActionType::PlayerActionType_PlayerActionQuestRemove => 122,
+            PlayerActionType::PlayerActionType_PlayerActionQuestReward => 123,
+            PlayerActionType::PlayerActionType_PlayerActionQuestAutoClose => 124,
+            PlayerActionType::PlayerActionType_PlayerActionQuestExpired => 125,
+            PlayerActionType::PlayerActionType_PlayerActionMissionRequired => 126,
+            PlayerActionType::PlayerActionType_PlayerActionSubmissionReward => 127,
+            PlayerActionType::PlayerActionType_PlayerActionAchievementLevelReward => 128,
+            PlayerActionType::PlayerActionType_PlayerActionQuestDelete => 129,
+            PlayerActionType::PlayerActionType_PlayerActionSubMissionReward2 => 130,
+            PlayerActionType::PlayerActionType_PlayerActionMissionCompensate => 131,
+            PlayerActionType::PlayerActionType_PlayerActionMissionRecycle => 132,
+            PlayerActionType::PlayerActionType_PlayerActionQuestReset => 133,
+            PlayerActionType::PlayerActionType_PlayerActionQuestOptionalReward => 134,
+            PlayerActionType::PlayerActionType_PlayerActionMcvChange => 135,
+            PlayerActionType::PlayerActionType_PlayerActionQuestReissue => 136,
+            PlayerActionType::PlayerActionType_PlayerActionPropInteract => 137,
+            PlayerActionType::PlayerActionType_PlayerActionAvatarMazeSkill => 138,
+            PlayerActionType::PlayerActionType_PlayerActionEnterMaze => 139,
+            PlayerActionType::PlayerActionType_PlayerActionOrdinaryInteract => 140,
+            PlayerActionType::PlayerActionType_PlayerActionChestInteract => 141,
+            PlayerActionType::PlayerActionType_PlayerActionCheckPointUnlock => 142,
+            PlayerActionType::PlayerActionType_PlayerActionCheckPointInteract => 143,
+            PlayerActionType::PlayerActionType_PlayerActionCheckPointRevive => 144,
+            PlayerActionType::PlayerActionType_PlayerActionCheckPointTransfer => 145,
+            PlayerActionType::PlayerActionType_PlayerActionMonsterInteract => 146,
+            PlayerActionType::PlayerActionType_PlayerActionNpcInteract => 147,
+            PlayerActionType::PlayerActionType_PlayerActionPropHit => 148,
+            PlayerActionType::PlayerActionType_PlayerActionPrelogueRevive => 149,
+            PlayerActionType::PlayerActionType_PlayerActionPropState => 150,
+            PlayerActionType::PlayerActionType_PlayerActionCheckPointRecover => 151,
+            PlayerActionType::PlayerActionType_PlayerActionMechanismBar => 152,
+            PlayerActionType::PlayerActionType_PlayerActionSubmitOrigamiItem => 153,
+            PlayerActionType::PlayerActionType_PlayerActionMazeBuffDropItem => 154,
+            PlayerActionType::PlayerActionType_PlayerActionFsvChange => 155,
+            PlayerActionType::PlayerActionType_PlayerActionTimelinePropState => 156,
+            PlayerActionType::PlayerActionType_PlayerActionGroupPropertyChange => 157,
+            PlayerActionType::PlayerActionType_PlayerActionOpenGroupPropertyChest => 158,
+            PlayerActionType::PlayerActionType_PlayerActionEquipmentPromotion => 159,
+            PlayerActionType::PlayerActionType_PlayerActionAddItem => 160,
+            PlayerActionType::PlayerActionType_PlayerActionUseItem => 161,
+            PlayerActionType::PlayerActionType_PlayerActionEquipmentRankUp => 162,
+            PlayerActionType::PlayerActionType_PlayerActionEquipmentLevelUp => 163,
+            PlayerActionType::PlayerActionType_PlayerActionExpUpEquipmentReturn => 164,
+            PlayerActionType::PlayerActionType_PlayerActionBagFullRewardMail => 165,
+            PlayerActionType::PlayerActionType_PlayerActionEquipmentAdd => 166,
+            PlayerActionType::PlayerActionType_PlayerActionEquipmentWear => 167,
+            PlayerActionType::PlayerActionType_PlayerActionItemCompose => 168,
+            PlayerActionType::PlayerActionType_PlayerActionRelicLevelUp => 169,
+            PlayerActionType::PlayerActionType_PlayerActionExpUpRelicReturn => 170,
+            PlayerActionType::PlayerActionType_PlayerActionRelicNumChanged => 171,
+            PlayerActionType::PlayerActionType_PlayerActionRelicWear => 172,
+            PlayerActionType::PlayerActionType_PlayerActionRelicCompose => 173,
+            PlayerActionType::PlayerActionType_PlayerActionSellItem => 174,
+            PlayerActionType::PlayerActionType_PlayerActionUnlockMusic => 175,
+            PlayerActionType::PlayerActionType_PlayerActionExchangeHcoinWithPayMcoin => 176,
+            PlayerActionType::PlayerActionType_PlayerActionGetReward => 177,
+            PlayerActionType::PlayerActionType_PlayerActionExchangeHcoinWithFreeMcoin => 178,
+            PlayerActionType::PlayerActionType_PlayerActionItemComposeFormulaUnlock => 179,
+            PlayerActionType::PlayerActionType_PlayerActionExchangeHcoin => 180,
+            PlayerActionType::PlayerActionType_PlayerActionCityShopLevelReward => 181,
+            PlayerActionType::PlayerActionType_PlayerActionItemRecycle => 182,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumFundsConsume => 183,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumEventBuyStuff => 184,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumMarketBuyStuff => 185,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumRandomEvent => 186,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumInitialItem => 187,
+            PlayerActionType::PlayerActionType_PlayerActionOptionalBoxReward => 188,
+            PlayerActionType::PlayerActionType_PlayerActionDestroyItem => 189,
+            PlayerActionType::PlayerActionType_PlayerActionTransferExp => 190,
+            PlayerActionType::PlayerActionType_PlayerActionOndutyUse => 191,
+            PlayerActionType::PlayerActionType_PlayerActionItemMark => 192,
+            PlayerActionType::PlayerActionType_PlayerActionRelicDiscard => 193,
+            PlayerActionType::PlayerActionType_PlayerActionGeneralVirtualItemChange => 194,
+            PlayerActionType::PlayerActionType_PlayerActionRelicLock => 195,
+            PlayerActionType::PlayerActionType_PlayerActionRelicFilterPlanSave => 196,
+            PlayerActionType::PlayerActionType_PlayerActionRelicFilterPlanDelete => 197,
+            PlayerActionType::PlayerActionType_PlayerActionRelicFilterPlanMark => 198,
+            PlayerActionType::PlayerActionType_PlayerActionRelicSell => 199,
+            PlayerActionType::PlayerActionType_PlayerActionRelicReforge => 200,
+            PlayerActionType::PlayerActionType_PlayerActionRelicSmartWearCustomPlan => 201,
+            PlayerActionType::PlayerActionType_PlayerActionRecoverRelic => 202,
+            PlayerActionType::PlayerActionType_PlayerActionRecoverEquipment => 203,
+            PlayerActionType::PlayerActionType_PlayerActionEquipmentSell => 204,
+            PlayerActionType::PlayerActionType_PlayerActionRelicSmartWearPinRelic => 205,
+            PlayerActionType::PlayerActionType_PlayerActionRelicCocoonSetting => 206,
+            PlayerActionType::PlayerActionType_PlayerActionPersonalCardChange => 207,
+            PlayerActionType::PlayerActionType_PlayerActionPhoneCaseChange => 208,
+            PlayerActionType::PlayerActionType_PlayerActionDeliveryItemReward => 209,
+            PlayerActionType::PlayerActionType_PlayerActionItemAutoTransfer => 210,
+            PlayerActionType::PlayerActionType_PlayerActionItemAutoTransferInBag => 211,
+            PlayerActionType::PlayerActionType_PlayerActionItemAutoTransferOnAdd => 212,
+            PlayerActionType::PlayerActionType_PlayerActionAddExtraCoin => 213,
+            PlayerActionType::PlayerActionType_PlayerActionVariableDiceExchangePartnerCoin => 214,
+            PlayerActionType::PlayerActionType_PlayerActionRelicBox => 215,
+            PlayerActionType::PlayerActionType_PlayerActionRelicBoxSettle => 216,
+            PlayerActionType::PlayerActionType_PlayerActionRelicBoxRegular => 217,
+            PlayerActionType::PlayerActionType_PlayerActionRelicReplace => 218,
+            PlayerActionType::PlayerActionType_PlayerActionEquipmentUpCostPileSetting => 219,
+            PlayerActionType::PlayerActionType_PlayerActionRelicBoxShow => 220,
+            PlayerActionType::PlayerActionType_PlayerActionTutorialGuideFinish => 221,
+            PlayerActionType::PlayerActionType_PlayerActionTutorial => 222,
+            PlayerActionType::PlayerActionType_PlayerActionTutorialGuide => 223,
+            PlayerActionType::PlayerActionType_PlayerActionMonsterDrop => 224,
+            PlayerActionType::PlayerActionType_PlayerActionFinishChallenge => 225,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeStars => 226,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeStart => 227,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeEnd => 228,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeWin => 229,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeFail => 230,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeLeave => 231,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeSwitch => 232,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeBonusReward => 233,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeStarsReward => 234,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeRestart => 235,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeStoryStart => 236,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeStoryEnd => 237,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeFastPass => 238,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeStoryFastPass => 239,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeMemoryFastPass => 240,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeBattleTarget => 241,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeBossEnd => 242,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeBossFastPass => 243,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeStartPartial => 244,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeBossPhaseStart => 245,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeBossPhaseEnd => 246,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeBossPhaseEndBeforeBattle => 247,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeRecommendLineup => 248,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeStoryFeverBattleEnd => 249,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeTierceRecommendLineup => 250,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeTierceStart => 251,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeTierceBattleEnd => 252,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeTierceStageSettle => 253,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeTierceGradeReset => 254,
+            PlayerActionType::PlayerActionType_PlayerActionTeamInfoChange => 255,
+            PlayerActionType::PlayerActionType_PlayerActionChangeCurrentAvatar => 256,
+            PlayerActionType::PlayerActionType_PlayerActionCreateVirtualTeam => 257,
+            PlayerActionType::PlayerActionType_PlayerActionTeamNameEdit => 258,
+            PlayerActionType::PlayerActionType_PlayerActionReplaceLineupAvatar => 259,
+            PlayerActionType::PlayerActionType_PlayerActionAvatarBuffChange => 260,
+            PlayerActionType::PlayerActionType_PlayerActionEnvBuffChange => 261,
+            PlayerActionType::PlayerActionType_PlayerActionGameCore => 262,
+            PlayerActionType::PlayerActionType_PlayerActionAvatarGlobalBuff => 263,
+            PlayerActionType::PlayerActionType_PlayerActionRogueExploreStart => 264,
+            PlayerActionType::PlayerActionType_PlayerActionRogueEnterRoom => 265,
+            PlayerActionType::PlayerActionType_PlayerActionRogueLeaveRoom => 266,
+            PlayerActionType::PlayerActionType_PlayerActionRogueExploreFinish => 267,
+            PlayerActionType::PlayerActionType_PlayerActionRogueSelectBuff => 268,
+            PlayerActionType::PlayerActionType_PlayerActionRogueRollBuff => 269,
+            PlayerActionType::PlayerActionType_PlayerActionRogueRevive => 270,
+            PlayerActionType::PlayerActionType_PlayerActionRogueChallengeStart => 271,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMiracle => 272,
+            PlayerActionType::PlayerActionType_PlayerActionRogueAddBuff => 273,
+            PlayerActionType::PlayerActionType_PlayerActionRoguePickAvatar => 274,
+            PlayerActionType::PlayerActionType_PlayerActionRogueSeasonChanged => 275,
+            PlayerActionType::PlayerActionType_PlayerActionRogueAeonLevelUp => 276,
+            PlayerActionType::PlayerActionType_PlayerActionRogueOpenDoor => 277,
+            PlayerActionType::PlayerActionType_PlayerActionRogueScoreReward => 278,
+            PlayerActionType::PlayerActionType_PlayerActionRogueEnhanceBuff => 279,
+            PlayerActionType::PlayerActionType_PlayerActionRogueSelectBonus => 280,
+            PlayerActionType::PlayerActionType_PlayerActionRogueAreaFirstReward => 281,
+            PlayerActionType::PlayerActionType_PlayerActionRogueEnableTalent => 282,
+            PlayerActionType::PlayerActionType_PlayerActionRogueAeonUnlock => 283,
+            PlayerActionType::PlayerActionType_PlayerActionRogueAeonAddExp => 284,
+            PlayerActionType::PlayerActionType_PlayerActionRogueImmerseLevelUp => 285,
+            PlayerActionType::PlayerActionType_PlayerActionRogueSelectMiracle => 286,
+            PlayerActionType::PlayerActionType_PlayerActionRogueUnlockArea => 287,
+            PlayerActionType::PlayerActionType_PlayerActionRogueExploreScoreChange => 288,
+            PlayerActionType::PlayerActionType_PlayerActionRogueUpdateRewardPool => 289,
+            PlayerActionType::PlayerActionType_PlayerActionRogueSwapBuff => 290,
+            PlayerActionType::PlayerActionType_PlayerActionRogueWeeklyRefresh => 291,
+            PlayerActionType::PlayerActionType_PlayerActionRogueExchangeKey => 292,
+            PlayerActionType::PlayerActionType_PlayerActionRogueGetObjectReward => 293,
+            PlayerActionType::PlayerActionType_PlayerActionRogueAreaMonsterDrop => 294,
+            PlayerActionType::PlayerActionType_PlayerActionRogueAddMiracle => 295,
+            PlayerActionType::PlayerActionType_PlayerActionRogueSwapMiracle => 296,
+            PlayerActionType::PlayerActionType_PlayerActionRogueOpenObjectReward => 297,
+            PlayerActionType::PlayerActionType_PlayerActionRogueAeonEffect => 298,
+            PlayerActionType::PlayerActionType_PlayerActionRogueReforgeBuff => 299,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTradeMiracle => 300,
+            PlayerActionType::PlayerActionType_PlayerActionRogueRemoveAvatar => 301,
+            PlayerActionType::PlayerActionType_PlayerActionRogueDialogueSelect => 302,
+            PlayerActionType::PlayerActionType_PlayerActionRogueSelectAeon => 303,
+            PlayerActionType::PlayerActionType_PlayerActionRogueDialogueFinish => 304,
+            PlayerActionType::PlayerActionType_PlayerActionRogueHandbookReward => 305,
+            PlayerActionType::PlayerActionType_PlayerActionRogueAdventureRoomReward => 306,
+            PlayerActionType::PlayerActionType_PlayerActionRogueShopBuy => 307,
+            PlayerActionType::PlayerActionType_PlayerActionRogueRepairMiracle => 308,
+            PlayerActionType::PlayerActionType_PlayerActionRogueReplaceAllMiracle => 309,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMiracleBroken => 310,
+            PlayerActionType::PlayerActionType_PlayerActionRogueShopRefresh => 311,
+            PlayerActionType::PlayerActionType_PlayerActionRogueLevelMechanism => 312,
+            PlayerActionType::PlayerActionType_PlayerActionRogueRemoveMiracle => 313,
+            PlayerActionType::PlayerActionType_PlayerActionRogueDropBuff => 314,
+            PlayerActionType::PlayerActionType_PlayerActionRogueDestroyMiracle => 315,
+            PlayerActionType::PlayerActionType_PlayerActionRogueActivateFormula => 316,
+            PlayerActionType::PlayerActionType_PlayerActionRogueDeactivateFormula => 317,
+            PlayerActionType::PlayerActionType_PlayerActionRogueRemoveBuff => 318,
+            PlayerActionType::PlayerActionType_PlayerActionRogueSelectFormula => 319,
+            PlayerActionType::PlayerActionType_PlayerActionRogueDropFormula => 320,
+            PlayerActionType::PlayerActionType_PlayerActionRogueRollFormula => 321,
+            PlayerActionType::PlayerActionType_PlayerActionRogueReforgeFormula => 322,
+            PlayerActionType::PlayerActionType_PlayerActionRogueComposeMiracle => 323,
+            PlayerActionType::PlayerActionType_PlayerActionRogueReforgeMiracle => 324,
+            PlayerActionType::PlayerActionType_PlayerActionRogueDoGamble => 325,
+            PlayerActionType::PlayerActionType_PlayerActionRogueKeywordActivate => 326,
+            PlayerActionType::PlayerActionType_PlayerActionRogueKeywordDeactivate => 327,
+            PlayerActionType::PlayerActionType_PlayerActionRogueSourceDefault => 328,
+            PlayerActionType::PlayerActionType_PlayerActionRoguePlayerSelect => 329,
+            PlayerActionType::PlayerActionType_PlayerActionRogueLayerSettlement => 330,
+            PlayerActionType::PlayerActionType_PlayerActionRogueFormula => 331,
+            PlayerActionType::PlayerActionType_PlayerActionRogueWorkbench => 332,
+            PlayerActionType::PlayerActionType_PlayerActionRogueModifier => 333,
+            PlayerActionType::PlayerActionType_PlayerActionRogueReforge => 334,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTalent => 335,
+            PlayerActionType::PlayerActionType_PlayerActionRogueReroll => 336,
+            PlayerActionType::PlayerActionType_PlayerActionRogueCoinChange => 337,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMagicScepterShop => 338,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMagicUnitShop => 339,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMagicScepterLevelUp => 340,
+            PlayerActionType::PlayerActionType_PlayerActionGacha => 341,
+            PlayerActionType::PlayerActionType_PlayerActionAddGachaTicket => 342,
+            PlayerActionType::PlayerActionType_PlayerActionGachaExchange => 343,
+            PlayerActionType::PlayerActionType_PlayerActionSetGachaDecideItem => 344,
+            PlayerActionType::PlayerActionType_PlayerActionEventMissionAccept => 345,
+            PlayerActionType::PlayerActionType_PlayerActionEventMissionFinish => 346,
+            PlayerActionType::PlayerActionType_PlayerActionEventMissionReward => 347,
+            PlayerActionType::PlayerActionType_PlayerActionRaidFinish => 348,
+            PlayerActionType::PlayerActionType_PlayerActionRaidBegin => 349,
+            PlayerActionType::PlayerActionType_PlayerActionChallengeRaidReward => 350,
+            PlayerActionType::PlayerActionType_PlayerActionStartRaid => 351,
+            PlayerActionType::PlayerActionType_PlayerActionEndRaid => 352,
+            PlayerActionType::PlayerActionType_PlayerActionRaidTargetFinish => 353,
+            PlayerActionType::PlayerActionType_PlayerActionArchiveRaid => 354,
+            PlayerActionType::PlayerActionType_PlayerActionHeroBaseTypeChange => 355,
+            PlayerActionType::PlayerActionType_PlayerActionHeroBaseTypeAddByMission => 356,
+            PlayerActionType::PlayerActionType_PlayerActionHeroBaseTypeAddByReq => 357,
+            PlayerActionType::PlayerActionType_PlayerActionHeroBaseTypeAdd => 358,
+            PlayerActionType::PlayerActionType_PlayerActionDialogueSelect => 359,
+            PlayerActionType::PlayerActionType_PlayerActionExpeditionStart => 360,
+            PlayerActionType::PlayerActionType_PlayerActionExpeditionFinish => 361,
+            PlayerActionType::PlayerActionType_PlayerActionExpeditionReward => 362,
+            PlayerActionType::PlayerActionType_PlayerActionActivityExpeditionStart => 363,
+            PlayerActionType::PlayerActionType_PlayerActionActivityExpeditionFinish => 364,
+            PlayerActionType::PlayerActionType_PlayerActionActivityExpeditionReward => 365,
+            PlayerActionType::PlayerActionType_PlayerActionActivityExpeditionBegin => 366,
+            PlayerActionType::PlayerActionType_PlayerActionActivityExpeditionEnd => 367,
+            PlayerActionType::PlayerActionType_PlayerActionExpeditionSet => 368,
+            PlayerActionType::PlayerActionType_PlayerActionExpeditionTakeReward => 369,
+            PlayerActionType::PlayerActionType_PlayerActionActivityLoginReward => 370,
+            PlayerActionType::PlayerActionType_PlayerActionFriendReport => 371,
+            PlayerActionType::PlayerActionType_PlayerActionAssistReward => 372,
+            PlayerActionType::PlayerActionType_PlayerActionAssistAvatarRefresh => 373,
+            PlayerActionType::PlayerActionType_PlayerActionAssistAvatarBattleStart => 374,
+            PlayerActionType::PlayerActionType_PlayerActionAssistAvatarBattleEnd => 375,
+            PlayerActionType::PlayerActionType_PlayerActionFriendApply => 376,
+            PlayerActionType::PlayerActionType_PlayerActionFriendManage => 377,
+            PlayerActionType::PlayerActionType_PlayerActionFriendBlacklist => 378,
+            PlayerActionType::PlayerActionType_PlayerActionFriendModifyRemarkName => 379,
+            PlayerActionType::PlayerActionType_PlayerActionFriendMark => 380,
+            PlayerActionType::PlayerActionType_PlayerActionFriendAssistList => 381,
+            PlayerActionType::PlayerActionType_PlayerActionBattlePassLevelReward => 382,
+            PlayerActionType::PlayerActionType_PlayerActionBattlePass128TierReward => 383,
+            PlayerActionType::PlayerActionType_PlayerActionBattlePassLevelRewardAutoMail => 384,
+            PlayerActionType::PlayerActionType_PlayerActionBuyBattlePass => 385,
+            PlayerActionType::PlayerActionType_PlayerActionAddBattlePassExp => 386,
+            PlayerActionType::PlayerActionType_PlayerActionBattlePassLevelUp => 387,
+            PlayerActionType::PlayerActionType_PlayerActionBuyBattlePassLevel => 388,
+            PlayerActionType::PlayerActionType_PlayerActionBattlePassEndMail => 389,
+            PlayerActionType::PlayerActionType_PlayerActionBattlePass68TierReward => 390,
+            PlayerActionType::PlayerActionType_PlayerActionModifySign => 391,
+            PlayerActionType::PlayerActionType_PlayerActionDisplayAvatarSet => 392,
+            PlayerActionType::PlayerActionType_PlayerActionAssistAvatarSet => 393,
+            PlayerActionType::PlayerActionType_PlayerActionAchievementFinish => 394,
+            PlayerActionType::PlayerActionType_PlayerActionAchievementReward => 395,
+            PlayerActionType::PlayerActionType_PlayerActionAchievementAddExp => 396,
+            PlayerActionType::PlayerActionType_PlayerActionAchievementLevelUp => 397,
+            PlayerActionType::PlayerActionType_PlayerActionPunkLordReward => 398,
+            PlayerActionType::PlayerActionType_PlayerActionPunkLordBossSearch => 399,
+            PlayerActionType::PlayerActionType_PlayerActionPunkLordBossShare => 400,
+            PlayerActionType::PlayerActionType_PlayerActionStartPunkLordRaid => 401,
+            PlayerActionType::PlayerActionType_PlayerActionPunkLordSupportTimes => 402,
+            PlayerActionType::PlayerActionType_PlayerActionPunkLordScoreReward => 403,
+            PlayerActionType::PlayerActionType_PlayerActionPunkLordListRefresh => 404,
+            PlayerActionType::PlayerActionType_PlayerActionPunkLordPowerAttack => 405,
+            PlayerActionType::PlayerActionType_PlayerActionPunkLordBattleEnd => 406,
+            PlayerActionType::PlayerActionType_PlayerActionPunkLordBossDeath => 407,
+            PlayerActionType::PlayerActionType_PlayerActionPunkLordBossScore => 408,
+            PlayerActionType::PlayerActionType_PlayerActionDailyActiveLevelReward => 409,
+            PlayerActionType::PlayerActionType_PlayerActionDailyActiveAddPoint => 410,
+            PlayerActionType::PlayerActionType_PlayerActionDailyActiveDeleteOldQuest => 411,
+            PlayerActionType::PlayerActionType_PlayerActionFightActivityBegin => 412,
+            PlayerActionType::PlayerActionType_PlayerActionFightActivityEnd => 413,
+            PlayerActionType::PlayerActionType_PlayerActionFightActivityReward => 414,
+            PlayerActionType::PlayerActionType_PlayerActionActivityEndMail => 415,
+            PlayerActionType::PlayerActionType_PlayerActionAppointmentMail => 416,
+            PlayerActionType::PlayerActionType_PlayerActionShareReward => 417,
+            PlayerActionType::PlayerActionType_PlayerActionActivityTrialReward => 418,
+            PlayerActionType::PlayerActionType_PlayerActionActivityTrialStart => 419,
+            PlayerActionType::PlayerActionType_PlayerActionPsPreOrderMail1 => 420,
+            PlayerActionType::PlayerActionType_PlayerActionPsPreOrderMail2 => 421,
+            PlayerActionType::PlayerActionType_PlayerActionPsLoginMail => 422,
+            PlayerActionType::PlayerActionType_PlayerActionLoginMail => 423,
+            PlayerActionType::PlayerActionType_PlayerActionGooglePoints100Mail => 424,
+            PlayerActionType::PlayerActionType_PlayerActionGooglePoints150Mail => 425,
+            PlayerActionType::PlayerActionType_PlayerActionTrainVisitorBehaviorFinish => 426,
+            PlayerActionType::PlayerActionType_PlayerActionEnterViewTrain => 427,
+            PlayerActionType::PlayerActionType_PlayerActionTrainVisitorBehaviorRewardForceSend => 428,
+            PlayerActionType::PlayerActionType_PlayerActionTrainVisitorRegisterOpen => 429,
+            PlayerActionType::PlayerActionType_PlayerActionTrainVisitorBehaviorRewardForceSendByRegister => 430,
+            PlayerActionType::PlayerActionType_PlayerActionTrainVisitorClearLastTrainVisitor => 431,
+            PlayerActionType::PlayerActionType_PlayerActionTrainVisitorRefreshTrainVisitor => 432,
+            PlayerActionType::PlayerActionType_PlayerActionTrainVisitorRefreshNpc => 433,
+            PlayerActionType::PlayerActionType_PlayerActionMessageGroupAccept => 434,
+            PlayerActionType::PlayerActionType_PlayerActionMessageSectionAccept => 435,
+            PlayerActionType::PlayerActionType_PlayerActionMessageSectionFinish => 436,
+            PlayerActionType::PlayerActionType_PlayerActionMessageItemFinish => 437,
+            PlayerActionType::PlayerActionType_PlayerActionFinishMessageGroupReward => 438,
+            PlayerActionType::PlayerActionType_PlayerActionSubstituteMessageGroupReward => 439,
+            PlayerActionType::PlayerActionType_PlayerActionDeleteMessageGroup => 440,
+            PlayerActionType::PlayerActionType_PlayerActionDeleteMessageSection => 441,
+            PlayerActionType::PlayerActionType_PlayerActionDeleteMessageGroupByConfig => 442,
+            PlayerActionType::PlayerActionType_PlayerActionDeleteMessageGroupByActivity => 443,
+            PlayerActionType::PlayerActionType_PlayerActionDeleteMessageGroupByMission => 444,
+            PlayerActionType::PlayerActionType_PlayerActionTextJoinSave => 445,
+            PlayerActionType::PlayerActionType_PlayerActionBoxingClubStart => 446,
+            PlayerActionType::PlayerActionType_PlayerActionBoxingClubFinish => 447,
+            PlayerActionType::PlayerActionType_PlayerActionBoxingClubPause => 448,
+            PlayerActionType::PlayerActionType_PlayerActionBoxingClubStageStart => 449,
+            PlayerActionType::PlayerActionType_PlayerActionTalkSend => 450,
+            PlayerActionType::PlayerActionType_PlayerActionSelectInclinationText => 451,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumSettleTurnOpen => 452,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumUpgradeArea => 453,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumUpgradeAreaStat => 454,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumDispatchRewardRegular => 455,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumDispatchRewardDirectional => 456,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumPhaseTargetFinished => 457,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumGetStuff => 458,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumGetExhibit => 459,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumTakeCollectMission => 460,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumAreaUnlock => 461,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumAreaUpgrade => 462,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumAreaStatUpgrade => 463,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumEnterNextRound => 464,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumStartDispatch => 465,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumSettleDispatch => 466,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumRenewPointChanged => 467,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumTargetReward => 468,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumPhaseUpgrade => 469,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumCollectReward => 470,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumTargetStart => 471,
+            PlayerActionType::PlayerActionType_PlayerActionMuseumTargetFinish => 472,
+            PlayerActionType::PlayerActionType_PlayerActionActivityMonsterResearchConsumeMaterial => 473,
+            PlayerActionType::PlayerActionType_PlayerActionActivityMonsterResearchTakeReward => 474,
+            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnStart => 475,
+            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnSign => 476,
+            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnPoint => 477,
+            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnCountdown => 478,
+            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnFinish => 479,
+            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnCompensate => 480,
+            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnGetRelic => 481,
+            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnBpExpExtra => 482,
+            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnHcoinExtra => 483,
+            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnCustomRelic => 484,
+            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnAssistChange => 485,
+            PlayerActionType::PlayerActionType_PlayerActionRogueChallengeActivityStart => 486,
+            PlayerActionType::PlayerActionType_PlayerActionRogueChallengeActivityFinish => 487,
+            PlayerActionType::PlayerActionType_PlayerActionRogueChallengeActivitySave => 488,
+            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnLoginMail => 489,
+            PlayerActionType::PlayerActionType_PlayerActionPlayerReturnExtraHcoinProgressChange => 490,
+            PlayerActionType::PlayerActionType_PlayerActionAetherDivideUsePassiveSkillItem => 491,
+            PlayerActionType::PlayerActionType_PlayerActionAetherDivideClearPassiveSkill => 492,
+            PlayerActionType::PlayerActionType_PlayerActionAetherDivideFinishChallenge => 493,
+            PlayerActionType::PlayerActionType_PlayerActionAetherDivideOverflowChunkReward => 494,
+            PlayerActionType::PlayerActionType_PlayerActionAetherDivideLevelUp => 495,
+            PlayerActionType::PlayerActionType_PlayerActionAetherDivideNewReward => 496,
+            PlayerActionType::PlayerActionType_PlayerActionAetherDivideMonsterAdd => 497,
+            PlayerActionType::PlayerActionType_PlayerActionAetherDivideMonsterLevel => 498,
+            PlayerActionType::PlayerActionType_PlayerActionAetherDivideMonsterSkillWear => 499,
+            PlayerActionType::PlayerActionType_PlayerActionAetherDivideTeamChange => 500,
+            PlayerActionType::PlayerActionType_PlayerActionAetherDivideStageBegin => 501,
+            PlayerActionType::PlayerActionType_PlayerActionAetherDivideStageEnd => 502,
+            PlayerActionType::PlayerActionType_PlayerActionAetherDivideStageRoll => 503,
+            PlayerActionType::PlayerActionType_PlayerActionAlleyEventFinish => 504,
+            PlayerActionType::PlayerActionType_PlayerActionAlleyTakeReward => 505,
+            PlayerActionType::PlayerActionType_PlayerActionAlleyPrestigeLevelUp => 506,
+            PlayerActionType::PlayerActionType_PlayerActionAlleyLogisticsFinish => 507,
+            PlayerActionType::PlayerActionType_PlayerActionAlleyPlacingGameFinish => 508,
+            PlayerActionType::PlayerActionType_PlayerActionAlleyGuaranteedFunds => 509,
+            PlayerActionType::PlayerActionType_PlayerActionAlleyTakeEventReward => 510,
+            PlayerActionType::PlayerActionType_PlayerActionAlleySpecialOrderFinish => 511,
+            PlayerActionType::PlayerActionType_PlayerActionSensitiveWordShield => 512,
+            PlayerActionType::PlayerActionType_PlayerActionSensitiveWordServerInternalError => 513,
+            PlayerActionType::PlayerActionType_PlayerActionSensitiveWordPlatformError => 514,
+            PlayerActionType::PlayerActionType_PlayerActionTreasureDungeonStart => 515,
+            PlayerActionType::PlayerActionType_PlayerActionTreasureDungeonFinish => 516,
+            PlayerActionType::PlayerActionType_PlayerActionTreasureDungeonEnterFloor => 517,
+            PlayerActionType::PlayerActionType_PlayerActionTreasureDungeonLeaveFloor => 518,
+            PlayerActionType::PlayerActionType_PlayerActionTreasureDungeonUseItem => 519,
+            PlayerActionType::PlayerActionType_PlayerActionTreasureDungeonAvatarChange => 520,
+            PlayerActionType::PlayerActionType_PlayerActionTreasureDungeonBattleStart => 521,
+            PlayerActionType::PlayerActionType_PlayerActionTreasureDungeonBattleEnd => 522,
+            PlayerActionType::PlayerActionType_PlayerActionTreasureDungeonPickupBuff => 523,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueFirstFinish => 524,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueGiveupDice => 525,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueSubStorySelect => 526,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueActionPoint => 527,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueReviveByProp => 528,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueStartLevel => 529,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueDiceEffect => 530,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueMainStoryFinish => 531,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueAeonTalentEffect => 532,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueModifierOthersEffect => 533,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueAddBuff => 534,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueReforgeBuff => 535,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueBuffLevelUp => 536,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueEnhanceBuff => 537,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueAddMiracle => 538,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueSwapMiracle => 539,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueSelectBonus => 540,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueDialogueFinish => 541,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueSubStoryFinish => 542,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueAdventureRoomFinish => 543,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueFinishLevel => 544,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueStartLayer => 545,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueFinishLayer => 546,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueEnterRoom => 547,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueLeaveRoom => 548,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueRollDice => 549,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueSelectDice => 550,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueUnlockDice => 551,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueBoardEvent => 552,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueDimensionPoint => 553,
+            PlayerActionType::PlayerActionType_PlayerActionChessRoguePickAvatar => 554,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueReviveAvatar => 555,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousSubStorySelect => 556,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueLevelMechanism => 557,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousStartLevel => 558,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousFinishLevel => 559,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousStartLayer => 560,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousFinishLayer => 561,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousEnterRoom => 562,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousLeaveRoom => 563,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousSelectDice => 564,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousUnlockDiceBranch => 565,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousUnlockDiceSurface => 566,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousEditDice => 567,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousValueChange => 568,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousMainStoryTrigger => 569,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousMainStoryFinish => 570,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousSubStoryTrigger => 571,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousSubStoryFinish => 572,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueNousEnableTalent => 573,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueSelectBuff => 574,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueSelectMiracle => 575,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueRemoveMiracle => 576,
+            PlayerActionType::PlayerActionType_PlayerActionChessRogueBoardCell => 577,
+            PlayerActionType::PlayerActionType_PlayerActionFantasticStoryBattleBegin => 578,
+            PlayerActionType::PlayerActionType_PlayerActionFantasticStoryBattleEnd => 579,
+            PlayerActionType::PlayerActionType_PlayerActionRogueEndlessReward => 580,
+            PlayerActionType::PlayerActionType_PlayerActionRogueEndlessLevelStart => 581,
+            PlayerActionType::PlayerActionType_PlayerActionRogueEndlessStageBegin => 582,
+            PlayerActionType::PlayerActionType_PlayerActionRogueEndlessStageEnd => 583,
+            PlayerActionType::PlayerActionType_PlayerActionBattleCollegeReward => 584,
+            PlayerActionType::PlayerActionType_PlayerActionCommonRogueMiracleForBuffShop => 585,
+            PlayerActionType::PlayerActionType_PlayerActionCommonRogueAdventureRoomFinish => 586,
+            PlayerActionType::PlayerActionType_PlayerActionCommonRogueBuyBuffShop => 587,
+            PlayerActionType::PlayerActionType_PlayerActionCommonRogueBuyBuffShopRefresh => 588,
+            PlayerActionType::PlayerActionType_PlayerActionCommonRogueCollectionUnlock => 589,
+            PlayerActionType::PlayerActionType_PlayerActionCommonRogueCollectionSet => 590,
+            PlayerActionType::PlayerActionType_PlayerActionCommonRogueExhibitionUnlock => 591,
+            PlayerActionType::PlayerActionType_PlayerActionCommonRogueExhibitionSet => 592,
+            PlayerActionType::PlayerActionType_PlayerActionCommonRogueChestInteract => 593,
+            PlayerActionType::PlayerActionType_PlayerActionCommonRogueAdventureRoomWolfgunFinish => 594,
+            PlayerActionType::PlayerActionType_PlayerActionHeliobusPostIncomeReward => 595,
+            PlayerActionType::PlayerActionType_PlayerActionHeliobusPostFansReward => 596,
+            PlayerActionType::PlayerActionType_PlayerActionHeliobusLevelUpgrade => 597,
+            PlayerActionType::PlayerActionType_PlayerActionHeliobusPostReplyReward => 598,
+            PlayerActionType::PlayerActionType_PlayerActionHeliobusCommentReplyReward => 599,
+            PlayerActionType::PlayerActionType_PlayerActionHeliobusChallengeFirstReward => 600,
+            PlayerActionType::PlayerActionType_PlayerActionHeliobusFansAdd => 601,
+            PlayerActionType::PlayerActionType_PlayerActionHeliobusActionDaySettle => 602,
+            PlayerActionType::PlayerActionType_PlayerActionHeliobusSkillUnlock => 603,
+            PlayerActionType::PlayerActionType_PlayerActionHeliobusStageBegin => 604,
+            PlayerActionType::PlayerActionType_PlayerActionHeliobusStageEnd => 605,
+            PlayerActionType::PlayerActionType_PlayerActionHeliobusSnsRead => 606,
+            PlayerActionType::PlayerActionType_PlayerActionHeliobusSnsPostUnlock => 607,
+            PlayerActionType::PlayerActionType_PlayerActionHeliobusSnsCommentUnlock => 608,
+            PlayerActionType::PlayerActionType_PlayerActionHeliobusSnsComment => 609,
+            PlayerActionType::PlayerActionType_PlayerActionHeliobusSnsPost => 610,
+            PlayerActionType::PlayerActionType_PlayerActionHeliobusSnsLike => 611,
+            PlayerActionType::PlayerActionType_PlayerActionHeliobusPhaseUpgrade => 612,
+            PlayerActionType::PlayerActionType_PlayerActionPsPointCard30Reward => 613,
+            PlayerActionType::PlayerActionType_PlayerActionPsPointCard50Reward => 614,
+            PlayerActionType::PlayerActionType_PlayerActionPsPointCard100Reward => 615,
+            PlayerActionType::PlayerActionType_PlayerActionPsnPlusGiftReward => 616,
+            PlayerActionType::PlayerActionType_PlayerActionAppleGiftCardReward => 617,
+            PlayerActionType::PlayerActionType_PlayerActionHeartDialSubmitItem => 618,
+            PlayerActionType::PlayerActionType_PlayerActionHeartDialDialoguePerform => 619,
+            PlayerActionType::PlayerActionType_PlayerActionHeartDialTraceConsume => 620,
+            PlayerActionType::PlayerActionType_PlayerActionHeartDialChangeEmotion => 621,
+            PlayerActionType::PlayerActionType_PlayerActionTravelBrochureAddDefaultPaster => 622,
+            PlayerActionType::PlayerActionType_PlayerActionSpaceZooBorn => 623,
+            PlayerActionType::PlayerActionType_PlayerActionSpaceZooMutate => 624,
+            PlayerActionType::PlayerActionType_PlayerActionSpaceZooDelete => 625,
+            PlayerActionType::PlayerActionType_PlayerActionSpaceZooExchangeItem => 626,
+            PlayerActionType::PlayerActionType_PlayerActionSpaceZooExpPoint => 627,
+            PlayerActionType::PlayerActionType_PlayerActionSpaceZooTakeReward => 628,
+            PlayerActionType::PlayerActionType_PlayerActionSpaceZooCollection => 629,
+            PlayerActionType::PlayerActionType_PlayerActionSpaceZooShow => 630,
+            PlayerActionType::PlayerActionType_PlayerActionSpaceZooSpecialData => 631,
+            PlayerActionType::PlayerActionType_PlayerActionStrongChallengeBattleBegin => 632,
+            PlayerActionType::PlayerActionType_PlayerActionStrongChallengeBattleEnd => 633,
+            PlayerActionType::PlayerActionType_PlayerActionRollShopDoGacha => 634,
+            PlayerActionType::PlayerActionType_PlayerActionRollShopTakeReward => 635,
+            PlayerActionType::PlayerActionType_PlayerActionOfferingSubmitItem => 636,
+            PlayerActionType::PlayerActionType_PlayerActionOfferingTakeReward => 637,
+            PlayerActionType::PlayerActionType_PlayerActionTravelBrochurePageUnlock => 638,
+            PlayerActionType::PlayerActionType_PlayerActionTravelBrochurePageInteractAward => 639,
+            PlayerActionType::PlayerActionType_PlayerActionTravelBrochureStickerUnlock => 640,
+            PlayerActionType::PlayerActionType_PlayerActionTravelBrochureStickerApply => 641,
+            PlayerActionType::PlayerActionType_PlayerActionTravelBrochureStickerRemove => 642,
+            PlayerActionType::PlayerActionType_PlayerActionTravelBrochurePageReset => 643,
+            PlayerActionType::PlayerActionType_PlayerActionTrackMainMissionId => 644,
+            PlayerActionType::PlayerActionType_PlayerActionWolfBroBegin => 645,
+            PlayerActionType::PlayerActionType_PlayerActionWolfBroGroupStateChange => 646,
+            PlayerActionType::PlayerActionType_PlayerActionWolfBroEnd => 647,
+            PlayerActionType::PlayerActionType_PlayerActionWolfBroBulletZero => 648,
+            PlayerActionType::PlayerActionType_PlayerActionWolfBroActivateBullet => 649,
+            PlayerActionType::PlayerActionType_PlayerActionWolfBroBulletNumChange => 650,
+            PlayerActionType::PlayerActionType_PlayerActionWolfBroUseBulletNull => 651,
+            PlayerActionType::PlayerActionType_PlayerActionWolfBroUseBulletHitMonster => 652,
+            PlayerActionType::PlayerActionType_PlayerActionWolfBroPickUpBullet => 653,
+            PlayerActionType::PlayerActionType_PlayerActionWolfBroRestoreArchive => 654,
+            PlayerActionType::PlayerActionType_PlayerActionTelevisionActivityBattleBegin => 655,
+            PlayerActionType::PlayerActionType_PlayerActionTelevisionActivityBattleEnd => 656,
+            PlayerActionType::PlayerActionType_PlayerActionFeverTimeActivityBattleBegin => 657,
+            PlayerActionType::PlayerActionType_PlayerActionFeverTimeActivityBattleEnd => 658,
+            PlayerActionType::PlayerActionType_PlayerActionGunPlayEnd => 659,
+            PlayerActionType::PlayerActionType_PlayerActionActivityStarFightBegin => 660,
+            PlayerActionType::PlayerActionType_PlayerActionActivityStarFightEnd => 661,
+            PlayerActionType::PlayerActionType_PlayerActionMapRotationEnterRegion => 662,
+            PlayerActionType::PlayerActionType_PlayerActionMapRotationLeaveRegion => 663,
+            PlayerActionType::PlayerActionType_PlayerActionMapRotationInteractCharger => 664,
+            PlayerActionType::PlayerActionType_PlayerActionMapRotationDeployRotater => 665,
+            PlayerActionType::PlayerActionType_PlayerActionMapRotationRotateMap => 666,
+            PlayerActionType::PlayerActionType_PlayerActionMapRotationAddEnergy => 667,
+            PlayerActionType::PlayerActionType_PlayerActionMapRotationSetMaxEnergy => 668,
+            PlayerActionType::PlayerActionType_PlayerActionMapRotationRemoveRotater => 669,
+            PlayerActionType::PlayerActionType_PlayerActionMapRotationAutoDeployRotater => 670,
+            PlayerActionType::PlayerActionType_PlayerActionMapRotationAutoRemoveRotater => 671,
+            PlayerActionType::PlayerActionType_PlayerActionDrinkMakerAddTips => 672,
+            PlayerActionType::PlayerActionType_PlayerActionDrinkMakerFinishChallenge => 673,
+            PlayerActionType::PlayerActionType_PlayerActionDrinkMakerGuestMaxFaithReward => 674,
+            PlayerActionType::PlayerActionType_PlayerActionDrinkMakerMakeDrink => 675,
+            PlayerActionType::PlayerActionType_PlayerActionDrinkMakerSaveCustomDrink => 676,
+            PlayerActionType::PlayerActionType_PlayerActionDrinkMakerEndSequence => 677,
+            PlayerActionType::PlayerActionType_PlayerActionDrinkMakerCheersMakeDrink => 678,
+            PlayerActionType::PlayerActionType_PlayerActionDrinkMakerCheersNpcDrink => 679,
+            PlayerActionType::PlayerActionType_PlayerActionChangeStoryLine => 680,
+            PlayerActionType::PlayerActionType_PlayerActionContentPackageStatusChange => 681,
+            PlayerActionType::PlayerActionType_PlayerActionContentPackageTrackChange => 682,
+            PlayerActionType::PlayerActionType_PlayerActionContentPackageAcceptMainMission => 683,
+            PlayerActionType::PlayerActionType_PlayerActionWorldDirectUnlock => 684,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyTurnFinish => 685,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyAssetTurntax => 686,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyAssetBonus => 687,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyEventEffect => 688,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyMiniGameSettle => 689,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyGameRaiseRatio => 690,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyMoveRollDice => 691,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyMove => 692,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyBuyGoods => 693,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyUpgradeAsset => 694,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyEventRerollRandom => 695,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyDailyRefresh => 696,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyGameGuessBuyInformation => 697,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyDailyFirstEnterActivity => 698,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolySocialEvent => 699,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyRaffleTicketReward => 700,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyLike => 701,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyPhaseReward => 702,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyMbtiReportReward => 703,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyDailySettle => 704,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyStart => 705,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyGetBuff => 706,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyAssetFundsChange => 707,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyAssetUpgrade => 708,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyDirectCoinGameSettle => 709,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyExtractRaffleTicket => 710,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyMbtiProgressChange => 711,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyQuizGameSettle => 712,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyEventSettle => 713,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyItemChange => 714,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyCellTrigger => 715,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyEventTrigger => 716,
+            PlayerActionType::PlayerActionType_PlayerActionMonopolyClickEffect => 717,
+            PlayerActionType::PlayerActionType_PlayerActionEvolveBuildLevelFinish => 718,
+            PlayerActionType::PlayerActionType_PlayerActionEvolveBuildShopAbilityUp => 719,
+            PlayerActionType::PlayerActionType_PlayerActionEvolveBuildShopAbilityDown => 720,
+            PlayerActionType::PlayerActionType_PlayerActionEvolveBuildTakeExpReward => 721,
+            PlayerActionType::PlayerActionType_PlayerActionEvolveBuildBattleEndAddCoin => 722,
+            PlayerActionType::PlayerActionType_PlayerActionEvolveBuildShopAbilityReset => 723,
+            PlayerActionType::PlayerActionType_PlayerActionEvolveBuildLevelStart => 724,
+            PlayerActionType::PlayerActionType_PlayerActionEvolveBuildLevelEnd => 725,
+            PlayerActionType::PlayerActionType_PlayerActionEvolveBuildStageStart => 726,
+            PlayerActionType::PlayerActionType_PlayerActionEvolveBuildStageEnd => 727,
+            PlayerActionType::PlayerActionType_PlayerActionEvolveBuildLevelLeave => 728,
+            PlayerActionType::PlayerActionType_PlayerActionClockParkUnlockScript => 729,
+            PlayerActionType::PlayerActionType_PlayerActionClockParkUnlockTalent => 730,
+            PlayerActionType::PlayerActionType_PlayerActionClockParkFinishScript => 731,
+            PlayerActionType::PlayerActionType_PlayerActionClockParkRoundUpdate => 732,
+            PlayerActionType::PlayerActionType_PlayerActionClockParkScriptBegin => 733,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournStartLevel => 734,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournFinishLevel => 735,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournExpReward => 736,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournFinishWeekChallenge => 737,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournPermanentTalentEffect => 738,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournFinishFormulaStory => 739,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournRevive => 740,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournStageBegin => 741,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournStageEnd => 742,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournPermanentEnableTalent => 743,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournPermanentResetTalent => 744,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournCocoonStageBegin => 745,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournCocoonStageEnd => 746,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournExpUpdate => 747,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournEnterRoom => 748,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournLeaveRoom => 749,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournArchiveSave => 750,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournSelectBonus => 751,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournDialogueFinish => 752,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournDoGamble => 753,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournRoomContentGenerate => 754,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournAddMiracle => 755,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournRemoveMiracle => 756,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournSelectMiracle => 757,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournDropMiracle => 758,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournAddBuff => 759,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournSelectBuff => 760,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournBuffLevelUp => 761,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournRemoveBuff => 762,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournAddFormula => 763,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournRemoveFormula => 764,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournSelectFormula => 765,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournActivateFormula => 766,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournAdventureRoomFinish => 767,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournAlterLineup => 768,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournSeasonEnableTalent => 769,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournTitanStartLevel => 770,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournTitanFinishLevel => 771,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournTitanEnterRoom => 772,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournTitanLeaveRoom => 773,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournTitanStageBegin => 774,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournTitanStageEnd => 775,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournTitanArchiveSave => 776,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournTitanAddTitanBless => 777,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournTitanSelectTitanBless => 778,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournDivisionChange => 779,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournSelectReRollMiracle => 780,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournTriggerBattleByShop => 781,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournUseSuperRewardKey => 782,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaStyleExpChange => 783,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaStyleSelect => 784,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaStartLevel => 785,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaFinishLevel => 786,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaEnterRoom => 787,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaLeaveRoom => 788,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaStageBegin => 789,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaStageEnd => 790,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaArchiveSave => 791,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournHexEquipmentChange => 792,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaRoomCardChange => 793,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaRoomCardLevelChange => 794,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaRoomCardAttributeChange => 795,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaRoomCardSelect => 796,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaRoomCardWash => 797,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaStyleGiftSelect => 798,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaStyleGiftSelectRefresh => 799,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaRoomCardReroll => 800,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournMiracleStatusChange => 801,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaStyleSelectRefresh => 802,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaAncientCoinChange => 803,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaLeverageBondSettle => 804,
+            PlayerActionType::PlayerActionType_PlayerActionRogueTournPersonaLeverageBondRepayRecord => 805,
+            PlayerActionType::PlayerActionType_PlayerActionRogueWorkbenchReforgeFormula => 806,
+            PlayerActionType::PlayerActionType_PlayerActionRogueWorkbenchReforgeMiracle => 807,
+            PlayerActionType::PlayerActionType_PlayerActionRogueWorkbenchComposeMiracle => 808,
+            PlayerActionType::PlayerActionType_PlayerActionRogueWorkbenchReforgeBuff => 809,
+            PlayerActionType::PlayerActionType_PlayerActionRogueWorkbenchEnhanceBuff => 810,
+            PlayerActionType::PlayerActionType_PlayerActionMatchThreePveSettle => 811,
+            PlayerActionType::PlayerActionType_PlayerActionMatchThreeSettle => 812,
+            PlayerActionType::PlayerActionType_PlayerActionFightMatch3GameStart => 813,
+            PlayerActionType::PlayerActionType_PlayerActionFightMatch3GameEnd => 814,
+            PlayerActionType::PlayerActionType_PlayerActionFightMatch3TurnEnd => 815,
+            PlayerActionType::PlayerActionType_PlayerActionMatchThreeBirdPos => 816,
+            PlayerActionType::PlayerActionType_PlayerActionMultiplePlayInvite => 817,
+            PlayerActionType::PlayerActionType_PlayerActionMultiplePlayInviteRespond => 818,
+            PlayerActionType::PlayerActionType_PlayerActionMultiplePlayLobbyEnter => 819,
+            PlayerActionType::PlayerActionType_PlayerActionMultiplePlayLobbyQuit => 820,
+            PlayerActionType::PlayerActionType_PlayerActionMultiplePlayLobbyKick => 821,
+            PlayerActionType::PlayerActionType_PlayerActionMultiplePlayLobbyMatch => 822,
+            PlayerActionType::PlayerActionType_PlayerActionMarbleSettle => 823,
+            PlayerActionType::PlayerActionType_PlayerActionMatchThreeSoloSettle => 824,
+            PlayerActionType::PlayerActionType_PlayerActionMatchThreeV2BattleitemLevelup => 825,
+            PlayerActionType::PlayerActionType_PlayerActionMatchThreeV2PveSettle => 826,
+            PlayerActionType::PlayerActionType_PlayerActionMatchThreeV2PvpSettle => 827,
+            PlayerActionType::PlayerActionType_PlayerActionMatch3SoloGameStart => 828,
+            PlayerActionType::PlayerActionType_PlayerActionMatch3SoloGameEnd => 829,
+            PlayerActionType::PlayerActionType_PlayerActionMatch3SoloRoundEnd => 830,
+            PlayerActionType::PlayerActionType_PlayerActionMatch3RoyaleSettle => 831,
+            PlayerActionType::PlayerActionType_PlayerActionMatch3RoyaleGameStart => 832,
+            PlayerActionType::PlayerActionType_PlayerActionMatch3RoyaleGameEnd => 833,
+            PlayerActionType::PlayerActionType_PlayerActionMatch3RoyaleRoundEnd => 834,
+            PlayerActionType::PlayerActionType_PlayerActionDiceCombatSettle => 835,
+            PlayerActionType::PlayerActionType_PlayerActionDiceCombatV2Settle => 836,
+            PlayerActionType::PlayerActionType_PlayerActionTeamTowersSettle => 837,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingLearnSkill => 838,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingNormalAction => 839,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingStoryEffect => 840,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingEndingHint => 841,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingActionHint => 842,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingRestoreGameByExam => 843,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingStoryLineFirstClear => 844,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingTakeEndingReward => 845,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingStoryLineBegin => 846,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingEnterTurn => 847,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingPlanAction => 848,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingActionPhaseEnd => 849,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingStory => 850,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingStatusChange => 851,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingMoodChange => 852,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingBattleBegin => 853,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingBattleEnd => 854,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingCombatRankChange => 855,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingStoryLineEnd => 856,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingResumeStoryLine => 857,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingGameSuccess => 858,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingGameGiveUp => 859,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingExam => 860,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingDialogue => 861,
+            PlayerActionType::PlayerActionType_PlayerActionSwordTrainingSetSkillTrace => 862,
+            PlayerActionType::PlayerActionType_PlayerActionFightFestFinishScoreRaceMission => 863,
+            PlayerActionType::PlayerActionType_PlayerActionFightFestFinishScoreRacePhase => 864,
+            PlayerActionType::PlayerActionType_PlayerActionFightFestRaceStart => 865,
+            PlayerActionType::PlayerActionType_PlayerActionFightFestRaceEnd => 866,
+            PlayerActionType::PlayerActionType_PlayerActionFightFestChallengeStart => 867,
+            PlayerActionType::PlayerActionType_PlayerActionFightFestChallengeEnd => 868,
+            PlayerActionType::PlayerActionType_PlayerActionFightFestGetCoachItem => 869,
+            PlayerActionType::PlayerActionType_PlayerActionFightFestAcceptScoreRaceMission => 870,
+            PlayerActionType::PlayerActionType_PlayerActionPetUse => 871,
+            PlayerActionType::PlayerActionType_PlayerActionMusicRhythmPassLevelStar => 872,
+            PlayerActionType::PlayerActionType_PlayerActionMusicRhythmLevelBegin => 873,
+            PlayerActionType::PlayerActionType_PlayerActionMusicRhythmLevelEnd => 874,
+            PlayerActionType::PlayerActionType_PlayerActionTrackPhotoStageBegin => 875,
+            PlayerActionType::PlayerActionType_PlayerActionTrackPhotoStageEnd => 876,
+            PlayerActionType::PlayerActionType_PlayerActionSummonActivityBattleBegin => 877,
+            PlayerActionType::PlayerActionType_PlayerActionSummonActivityBattleEnd => 878,
+            PlayerActionType::PlayerActionType_PlayerActionRaidCollectionEnterNextRaid => 879,
+            PlayerActionType::PlayerActionType_PlayerActionDifficultyAdjustmentSet => 880,
+            PlayerActionType::PlayerActionType_PlayerActionDifficultyAdjustmentUnset => 881,
+            PlayerActionType::PlayerActionType_PlayerActionRogueArcadeAdventureRoomStart => 882,
+            PlayerActionType::PlayerActionType_PlayerActionRogueArcadeAdventureRoomFinish => 883,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMagicStartLevel => 884,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMagicFinishLevel => 885,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMagicRevive => 886,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMagicEnterRoom => 887,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMagicLeaveRoom => 888,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMagicAddMiracle => 889,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMagicRemoveMiracle => 890,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMagicStageBegin => 891,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMagicStageEnd => 892,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMagicEnableTalent => 893,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMagicFinishStory => 894,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMagicAddScepter => 895,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMagicSelectScepter => 896,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMagicMountUnit => 897,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMagicAutoMountUnit => 898,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMagicAddMagicUnit => 899,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMagicRemoveMagicUnit => 900,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMagicWorkbenchComposeMagicUnit => 901,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMagicWorkbenchReforgeMagicUnit => 902,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMagicWorkbenchLevelUpScepter => 903,
+            PlayerActionType::PlayerActionType_PlayerActionTrainPartyGamePlayStart => 904,
+            PlayerActionType::PlayerActionType_PlayerActionTrainPartyPhaseBegin => 905,
+            PlayerActionType::PlayerActionType_PlayerActionTrainPartyPhaseEnd => 906,
+            PlayerActionType::PlayerActionType_PlayerActionTrainPartyRound => 907,
+            PlayerActionType::PlayerActionType_PlayerActionTrainPartyMeetingBegin => 908,
+            PlayerActionType::PlayerActionType_PlayerActionTrainPartyMeetingEnd => 909,
+            PlayerActionType::PlayerActionType_PlayerActionTrainPartyMeetingPlayCard => 910,
+            PlayerActionType::PlayerActionType_PlayerActionTrainPartyMeetingReRoll => 911,
+            PlayerActionType::PlayerActionType_PlayerActionTrainPartyBuildAreaUnlock => 912,
+            PlayerActionType::PlayerActionType_PlayerActionTrainPartyBuildStep => 913,
+            PlayerActionType::PlayerActionType_PlayerActionTrainPartyBuildLevelAward => 914,
+            PlayerActionType::PlayerActionType_PlayerActionTrainPartyBuildingDynamicBuff => 915,
+            PlayerActionType::PlayerActionType_PlayerActionTrainPartyBuildDiy => 916,
+            PlayerActionType::PlayerActionType_PlayerActionSelfRoomBuildDiy => 917,
+            PlayerActionType::PlayerActionType_PlayerActionSkipUnlockSelfRoom => 918,
+            PlayerActionType::PlayerActionType_PlayerActionSelfRoomBuildDiyMerge => 919,
+            PlayerActionType::PlayerActionType_PlayerActionPlayerRoomDisplayAreaChange => 920,
+            PlayerActionType::PlayerActionType_PlayerActionSwitchHandOpPropState => 921,
+            PlayerActionType::PlayerActionType_PlayerActionEraFlipperChangeRegionState => 922,
+            PlayerActionType::PlayerActionType_PlayerActionEraFlipperChangePropState => 923,
+            PlayerActionType::PlayerActionType_PlayerActionActivityBenefitReward => 924,
+            PlayerActionType::PlayerActionType_PlayerActionActivityBenefitJoin => 925,
+            PlayerActionType::PlayerActionType_PlayerActionActivityBenefitInitialReward => 926,
+            PlayerActionType::PlayerActionType_PlayerActionActiveActivityReward => 927,
+            PlayerActionType::PlayerActionType_PlayerActionPamSkinChangeSkin => 928,
+            PlayerActionType::PlayerActionType_PlayerActionChestFind => 929,
+            PlayerActionType::PlayerActionType_PlayerActionReissueMarkChestItemMail => 930,
+            PlayerActionType::PlayerActionType_PlayerActionMarblePassMatch => 931,
+            PlayerActionType::PlayerActionType_PlayerActionMarbleBuySeal => 932,
+            PlayerActionType::PlayerActionType_PlayerActionMarbleFightGameBegin => 933,
+            PlayerActionType::PlayerActionType_PlayerActionMarbleFightGameEnd => 934,
+            PlayerActionType::PlayerActionType_PlayerActionMarbleFightGameRound => 935,
+            PlayerActionType::PlayerActionType_PlayerActionMarbleFightGameTurn => 936,
+            PlayerActionType::PlayerActionType_PlayerActionPlanetFesLevelUp => 937,
+            PlayerActionType::PlayerActionType_PlayerActionPlanetFesActivityInit => 938,
+            PlayerActionType::PlayerActionType_PlayerActionPlanetFesAvatarLevelUp => 939,
+            PlayerActionType::PlayerActionType_PlayerActionPlanetFesTakeRegionPhaseReward => 940,
+            PlayerActionType::PlayerActionType_PlayerActionPlanetFesAddItem => 941,
+            PlayerActionType::PlayerActionType_PlayerActionPlanetFesQuest => 942,
+            PlayerActionType::PlayerActionType_PlayerActionPlanetFesBusinessDayFinish => 943,
+            PlayerActionType::PlayerActionType_PlayerActionPlanetFesAvatarStarUp => 944,
+            PlayerActionType::PlayerActionType_PlayerActionPlanetFesUnlockLand => 945,
+            PlayerActionType::PlayerActionType_PlayerActionPlanetFesBusinessEventFinish => 946,
+            PlayerActionType::PlayerActionType_PlayerActionPlanetFesActivateCard => 947,
+            PlayerActionType::PlayerActionType_PlayerActionPlanetFesSkillLevelUp => 948,
+            PlayerActionType::PlayerActionType_PlayerActionPlanetFesGacha => 949,
+            PlayerActionType::PlayerActionType_PlayerActionPlanetFesBusinessEventHandle => 950,
+            PlayerActionType::PlayerActionType_PlayerActionPlanetFesCardApplyPermission => 951,
+            PlayerActionType::PlayerActionType_PlayerActionPlanetFesCardInteract => 952,
+            PlayerActionType::PlayerActionType_PlayerActionPlanetFesToSns => 953,
+            PlayerActionType::PlayerActionType_PlayerActionPlanetFesSetWorkAvatar => 954,
+            PlayerActionType::PlayerActionType_PlayerActionPlanetFesSummary => 955,
+            PlayerActionType::PlayerActionType_PlayerActionTarotBookCharacterLevelUp => 956,
+            PlayerActionType::PlayerActionType_PlayerActionTarotBookOpenPack => 957,
+            PlayerActionType::PlayerActionType_PlayerActionTarotBookUnlockStory => 958,
+            PlayerActionType::PlayerActionType_PlayerActionTarotBookUnlockStorySingle => 959,
+            PlayerActionType::PlayerActionType_PlayerActionTarotBookFinishStory => 960,
+            PlayerActionType::PlayerActionType_PlayerActionTarotBookFinishInteraction => 961,
+            PlayerActionType::PlayerActionType_PlayerActionTarotBookChangeEnergy => 962,
+            PlayerActionType::PlayerActionType_PlayerActionTarotBookUnlockInteraction => 963,
+            PlayerActionType::PlayerActionType_PlayerActionChimeraRoundStart => 964,
+            PlayerActionType::PlayerActionType_PlayerActionChimeraRoundWorkStart => 965,
+            PlayerActionType::PlayerActionType_PlayerActionChimeraRoundWorkEnd => 966,
+            PlayerActionType::PlayerActionType_PlayerActionChimeraEndlessStart => 967,
+            PlayerActionType::PlayerActionType_PlayerActionChimeraEndlessEnd => 968,
+            PlayerActionType::PlayerActionType_PlayerActionChimeraEndlessWorkStart => 969,
+            PlayerActionType::PlayerActionType_PlayerActionChimeraEndlessWorkEnd => 970,
+            PlayerActionType::PlayerActionType_PlayerActionChimeraRankChange => 971,
+            PlayerActionType::PlayerActionType_PlayerActionChimeraGet => 972,
+            PlayerActionType::PlayerActionType_PlayerActionStoryTokenTakeActivityReward => 973,
+            PlayerActionType::PlayerActionType_PlayerActionReissueAvatarTokenItem => 974,
+            PlayerActionType::PlayerActionType_PlayerActionAvatarDeliverRewardActivityTakeReward => 975,
+            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantBuyField => 976,
+            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantPlantSeed => 977,
+            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantRecycleSeed => 978,
+            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantHarvestCrop => 979,
+            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantUpgradeEmployeeLevel => 980,
+            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantUpgradeFacilityLevel => 981,
+            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantUpgradeRecipeLevel => 982,
+            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantBuyShopItem => 983,
+            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantFinishTradeOrder => 984,
+            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantTakeVillagerReward => 985,
+            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantSettleRestaurantPlay => 986,
+            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantInit => 987,
+            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantSettleProgress => 988,
+            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantSettleDay => 989,
+            PlayerActionType::PlayerActionType_PlayerActionElfRestaurantAddItem => 990,
+            PlayerActionType::PlayerActionType_PlayerActionLocalLegendReward => 991,
+            PlayerActionType::PlayerActionType_PlayerActionFateLevelStart => 992,
+            PlayerActionType::PlayerActionType_PlayerActionFateLevelSettle => 993,
+            PlayerActionType::PlayerActionType_PlayerActionFateBattleStart => 994,
+            PlayerActionType::PlayerActionType_PlayerActionFateBattleEnd => 995,
+            PlayerActionType::PlayerActionType_PlayerActionFateAddHougu => 996,
+            PlayerActionType::PlayerActionType_PlayerActionFateSelectHougu => 997,
+            PlayerActionType::PlayerActionType_PlayerActionFateSelectReiju => 998,
+            PlayerActionType::PlayerActionType_PlayerActionFateRefreshReiju => 999,
+            PlayerActionType::PlayerActionType_PlayerActionFateAddCoin => 1000,
+            PlayerActionType::PlayerActionType_PlayerActionFateBuyBuff => 1001,
+            PlayerActionType::PlayerActionType_PlayerActionFateSellBuff => 1002,
+            PlayerActionType::PlayerActionType_PlayerActionFateRefreshShop => 1003,
+            PlayerActionType::PlayerActionType_PlayerActionFateLockGoods => 1004,
+            PlayerActionType::PlayerActionType_PlayerActionFateUnlockGoods => 1005,
+            PlayerActionType::PlayerActionType_PlayerActionFateTakeExpReward => 1006,
+            PlayerActionType::PlayerActionType_PlayerActionFateAddExp => 1007,
+            PlayerActionType::PlayerActionType_PlayerActionFateMasterHpChange => 1008,
+            PlayerActionType::PlayerActionType_PlayerActionParkourStartLevel => 1009,
+            PlayerActionType::PlayerActionType_PlayerActionParkourEndLevel => 1010,
+            PlayerActionType::PlayerActionType_PlayerActionBasinChestInteractResult => 1011,
+            PlayerActionType::PlayerActionType_PlayerActionRogueMiracleSwap => 1012,
+            PlayerActionType::PlayerActionType_PlayerActionHipplenEndingTakeReward => 1013,
+            PlayerActionType::PlayerActionType_PlayerActionHipplenGiftDeliverReward => 1014,
+            PlayerActionType::PlayerActionType_PlayerActionHipplenCycleStart => 1015,
+            PlayerActionType::PlayerActionType_PlayerActionHipplenCycleFinish => 1016,
+            PlayerActionType::PlayerActionType_PlayerActionHipplenAgendaPlan => 1017,
+            PlayerActionType::PlayerActionType_PlayerActionHipplenAgendaSettle => 1018,
+            PlayerActionType::PlayerActionType_PlayerActionHipplenTrialStart => 1019,
+            PlayerActionType::PlayerActionType_PlayerActionHipplenTrialFinish => 1020,
+            PlayerActionType::PlayerActionType_PlayerActionHipplenStatusChange => 1021,
+            PlayerActionType::PlayerActionType_PlayerActionHipplenOutfitChange => 1022,
+            PlayerActionType::PlayerActionType_PlayerActionHipplenTraitUnlock => 1023,
+            PlayerActionType::PlayerActionType_PlayerActionHipplenEndingUnlock => 1024,
+            PlayerActionType::PlayerActionType_PlayerActionHipplenOutfitUnlock => 1025,
+            PlayerActionType::PlayerActionType_PlayerActionHipplenGiftUnlock => 1026,
+            PlayerActionType::PlayerActionType_PlayerActionHipplenIncidentFinish => 1027,
+            PlayerActionType::PlayerActionType_PlayerActionChallengePeakStart => 1028,
+            PlayerActionType::PlayerActionType_PlayerActionChallengePeakReward => 1029,
+            PlayerActionType::PlayerActionType_PlayerActionChallengePeakMobStart => 1030,
+            PlayerActionType::PlayerActionType_PlayerActionChallengePeakMobSettle => 1031,
+            PlayerActionType::PlayerActionType_PlayerActionChallengePeakBossStart => 1032,
+            PlayerActionType::PlayerActionType_PlayerActionChallengePeakBossSettle => 1033,
+            PlayerActionType::PlayerActionType_PlayerActionChallengePeakFastPass => 1034,
+            PlayerActionType::PlayerActionType_PlayerActionChallengePeakRecommendLineup => 1035,
+            PlayerActionType::PlayerActionType_PlayerActionChallengePeakMobBattleEnd => 1036,
+            PlayerActionType::PlayerActionType_PlayerActionChallengePeakMobRecordClear => 1037,
+            PlayerActionType::PlayerActionType_PlayerActionCakeRaceLoan => 1038,
+            PlayerActionType::PlayerActionType_PlayerActionCakeRaceSectionBegin => 1039,
+            PlayerActionType::PlayerActionType_PlayerActionCakeRaceSectionEnd => 1040,
+            PlayerActionType::PlayerActionType_PlayerActionCakeRaceRoomSectionSettle => 1041,
+            PlayerActionType::PlayerActionType_PlayerActionCakeRaceGameSettle => 1042,
+            PlayerActionType::PlayerActionType_PlayerActionCakeRaceGameBetCat => 1043,
+            PlayerActionType::PlayerActionType_PlayerActionCakeRaceGameWinCoin => 1044,
+            PlayerActionType::PlayerActionType_PlayerActionCakeRaceLikeFriendRanking => 1045,
+            PlayerActionType::PlayerActionType_PlayerActionElationBattleBegin => 1046,
+            PlayerActionType::PlayerActionType_PlayerActionElationBattleEnd => 1047,
+            PlayerActionType::PlayerActionType_PlayerActionActivityHotDataChange => 1048,
+            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelGameSettle => 1049,
+            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelMasterUnlock => 1050,
+            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelGameStart => 1051,
+            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelBattleStart => 1052,
+            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelBattleEnd => 1053,
+            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelChimeraBuy => 1054,
+            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelItemBuy => 1055,
+            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelShopRefresh => 1056,
+            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelChimeraEnhance => 1057,
+            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelChimeraSell => 1058,
+            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelShopStart => 1059,
+            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelShopEnd => 1060,
+            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelFriendPvpLineupSave => 1061,
+            PlayerActionType::PlayerActionType_PlayerActionChimeraDuelDefendLineupSet => 1062,
+            PlayerActionType::PlayerActionType_PlayerActionMazePuzzleFinishChenLingGameBoy => 1063,
+            PlayerActionType::PlayerActionType_PlayerActionMazePuzzleFiveDimMoneyChange => 1064,
+            PlayerActionType::PlayerActionType_PlayerActionMazePuzzleFinishFiveDimMiniGame => 1065,
+            PlayerActionType::PlayerActionType_PlayerActionMazePuzzleOpenChenLingGameBoyCheatMode => 1066,
+            PlayerActionType::PlayerActionType_PlayerActionMazePuzzleEnterFiveDimGame => 1067,
+            PlayerActionType::PlayerActionType_PlayerActionMazePuzzleLeaveFiveDimGame => 1068,
+            PlayerActionType::PlayerActionType_PlayerActionMazePuzzleFiveDimGameSkillChange => 1069,
+            PlayerActionType::H_68286c01 => 1070,
+            PlayerActionType::H_c585af9f => 1071,
+            PlayerActionType::H_f1b5c5ab => 1072,
+            PlayerActionType::H_6c1c4c2f => 1073,
+            PlayerActionType::H_5c0fb240 => 1074,
+            PlayerActionType::H_b8633faf => 1075,
+            PlayerActionType::H_72b8407e => 1076,
+            PlayerActionType::H_21a6dcf9 => 1077,
+            PlayerActionType::H_24249c7b => 1078,
+            PlayerActionType::H_4a203fba => 1079,
+            PlayerActionType::H_88777c0b => 1080,
+            PlayerActionType::H_0c57357e => 1081,
+            PlayerActionType::H_ba2a8cec => 1082,
+            PlayerActionType::H_29455603 => 1083,
+            PlayerActionType::H_1acb9a50 => 1084,
+            PlayerActionType::H_70a00719 => 1085,
+            PlayerActionType::H_4a9a52d1 => 1086,
+            PlayerActionType::H_188c6675 => 1087,
+            PlayerActionType::H_f0cd30ae => 1088,
+            PlayerActionType::H_0ef09a2b => 1089,
+            PlayerActionType::H_90a3cc0c => 1090,
+            PlayerActionType::H_1015e989 => 1091,
+            PlayerActionType::H_5e539b86 => 1092,
+            PlayerActionType::H_49dc71a7 => 1093,
+            PlayerActionType::H_2594b7a2 => 1094,
+            PlayerActionType::H_1224a868 => 1095,
+            PlayerActionType::H_8910a071 => 1096,
+            PlayerActionType::H_c1773cdf => 1097,
+            PlayerActionType::H_43e5abd0 => 1098,
+            PlayerActionType::H_e5a72344 => 1099,
+            PlayerActionType::H_1dc03631 => 1100,
+            PlayerActionType::H_78c3f20f => 1101,
+            PlayerActionType::H_81e24de9 => 1102,
+            PlayerActionType::H_7804d7f7 => 1103,
+            PlayerActionType::H_18734592 => 1104,
+            PlayerActionType::H_aa36cece => 1105,
+            PlayerActionType::H_497730d6 => 1106,
+            PlayerActionType::H_73267c71 => 1107,
+            PlayerActionType::H_a196af40 => 1108,
+            PlayerActionType::H_bc2ee045 => 1109,
+            PlayerActionType::H_f2b3b1e6 => 1110,
+            PlayerActionType::H_9b16622c => 1111,
+            PlayerActionType::H_0424e912 => 1112,
+            PlayerActionType::H_cc44d6de => 1113,
+            PlayerActionType::H_224a011e => 1114,
+            PlayerActionType::H_07a2c6c8 => 1115,
+            PlayerActionType::H_a90a81dd => 1116,
+            PlayerActionType::PlayerActionType_PlayerActionLocalLegendBattleBegin => 1117,
+            PlayerActionType::PlayerActionType_PlayerActionLocalLegendBattleEnd => 1118,
+            PlayerActionType::PlayerActionType_PlayerActionDiceCombatBuyShopGood => 1119,
+            PlayerActionType::PlayerActionType_PlayerActionDiceCombatUpgradeAvatar => 1120,
+            PlayerActionType::PlayerActionType_PlayerActionDiceCombatFinishPveStage => 1121,
+            PlayerActionType::PlayerActionType_PlayerActionDiceCombatBegin => 1122,
+            PlayerActionType::PlayerActionType_PlayerActionDiceCombatTurnEnd => 1123,
+            PlayerActionType::PlayerActionType_PlayerActionDiceCombatEnd => 1124,
+            PlayerActionType::PlayerActionType_PlayerActionDiceCombatScoreChange => 1125,
+            PlayerActionType::PlayerActionType_PlayerActionDiceCombatChangeColorDice => 1126,
+            PlayerActionType::PlayerActionType_PlayerActionInteractiveTriggerMazeBuffAdd => 1127,
+            PlayerActionType::PlayerActionType_PlayerActionLlmChat => 1128,
+            PlayerActionType::PlayerActionType_PlayerActionLlmChatNextQuestion => 1129,
+            PlayerActionType::PlayerActionType_PlayerActionLlmChatFeedback => 1130,
+            PlayerActionType::PlayerActionType_PlayerActionAiPamChatPointChange => 1131,
+            PlayerActionType::PlayerActionType_PlayerActionTrainCakeCatchCatGodInteract => 1132,
+            PlayerActionType::PlayerActionType_PlayerActionTrainCakeCatchOpenBox => 1133,
+            PlayerActionType::PlayerActionType_PlayerActionTrainCakeCatchSearchCat => 1134,
+            PlayerActionType::PlayerActionType_PlayerActionTrainCakeCatchUnlockPerformance => 1135,
+            PlayerActionType::PlayerActionType_PlayerActionTrainCakeCatchUpdateDiyInfo => 1136,
+            PlayerActionType::PlayerActionType_PlayerActionSocialPlayTalk => 1137,
+            PlayerActionType::PlayerActionType_PlayerActionSocialPlayKickOutPlayer => 1138,
+            PlayerActionType::PlayerActionType_PlayerActionSocialPlayPopularityValue => 1139,
+            PlayerActionType::PlayerActionType_PlayerActionSocialPlayLeaveRoom => 1140,
+            PlayerActionType::PlayerActionType_PlayerActionSocialPlayEnterRoom => 1141,
+            PlayerActionType::PlayerActionType_PlayerActionTrainCakeCatchCatGodAppear => 1142,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveUpgradeTeamSlot => 1143,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveFinishSubNode => 1144,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveFinishChapterFinalAct => 1145,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveCollectIncome => 1146,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveOpenChest => 1147,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveTakeTaskReward => 1148,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveTechTreeChange => 1149,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveModifyCustomTitle => 1150,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveCatchUpReward => 1151,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveTakeMessageReward => 1152,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveTakeGiftReward => 1153,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveEndDungeon => 1154,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveActivityInit => 1155,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveEquipDiscard => 1156,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveDoGacha => 1157,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveAddAvatar => 1158,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveTaskChange => 1159,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveReplaceTeam => 1160,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveHandleNormalEquip => 1161,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveUpgradeSpecialEquip => 1162,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveDressSpecialEquip => 1163,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveAddItem => 1164,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveQuestionChange => 1165,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveStartNodeBattle => 1166,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveFinishNodeBattle => 1167,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveFinishNode => 1168,
+            PlayerActionType::PlayerActionType_PlayerActionIdleLiveMessageChange => 1169,
+            PlayerActionType::PlayerActionType_PlayerActionNewYearBoatTakeReward => 1170,
+            PlayerActionType::PlayerActionType_PlayerActionNewYearBoatSelectBoat => 1171,
+            PlayerActionType::PlayerActionType_PlayerActionNewYearBoatPeriodSettle => 1172,
+            PlayerActionType::PlayerActionType_PlayerActionBenefitV2ActivityTakeReward => 1173,
+            PlayerActionType::PlayerActionType_PlayerActionBenefitV2ActivityDraw => 1174,
+            PlayerActionType::PlayerActionType_PlayerActionJukeboxSetting => 1175,
+            PlayerActionType::PlayerActionType_PlayerActionJukeboxSettingReset => 1176,
+            PlayerActionType::PlayerActionType_PlayerActionDiceCombatV2FinishPveStage => 1177,
+            PlayerActionType::PlayerActionType_PlayerActionDiceCombatV2Begin => 1178,
+            PlayerActionType::PlayerActionType_PlayerActionDiceCombatV2TurnEnd => 1179,
+            PlayerActionType::PlayerActionType_PlayerActionDiceCombatV2End => 1180,
+            PlayerActionType::PlayerActionType_PlayerActionDiceCombatV2TacticsPointChange => 1181,
+            PlayerActionType::PlayerActionType_PlayerActionDiceCombatV2TacticsCardChange => 1182,
+            PlayerActionType::PlayerActionType_PlayerActionDiceCombatV2DiceChangeRequest => 1183,
+            PlayerActionType::PlayerActionType_PlayerActionDiceCombatV2DiceChange => 1184,
+            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsSubmitIssue => 1185,
+            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsSubmitPost => 1186,
+            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsOfficeSurveyStateChange => 1187,
+            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsTriggerMessage => 1188,
+            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishMessage => 1189,
+            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishCondition => 1190,
+            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsUnlockPost => 1191,
+            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsReplyComment => 1192,
+            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsBanPost => 1193,
+            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsTriggerOfficeEvent => 1194,
+            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishOfficeEvent => 1195,
+            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsUpvoteContent => 1196,
+            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishWork => 1197,
+            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishPlan => 1198,
+            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsActivatePlan => 1199,
+            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsEnterPlanPhase => 1200,
+            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishPlanPhase => 1201,
+            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsStartWork => 1202,
+            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsAdvanceWork => 1203,
+            PlayerActionType::PlayerActionType_PlayerActionLimaoNewsFinishEmployeeCheckOption => 1204,
+            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleActivatePrivilege => 1205,
+            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleConquerLevelUp => 1206,
+            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleStartStage => 1207,
+            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleSettleStage => 1208,
+            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleStartBattle => 1209,
+            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleFinishBattle => 1210,
+            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleFinishWave => 1211,
+            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleSelectCard => 1212,
+            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleRefreshCard => 1213,
+            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleBuyShopItem => 1214,
+            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleRefreshShop => 1215,
+            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleSelectPolicy => 1216,
+            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleRefreshPolicy => 1217,
+            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleAddHandCard => 1218,
+            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleUseHandCard => 1219,
+            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleSellHandCard => 1220,
+            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleEntityUpgrade => 1221,
+            PlayerActionType::PlayerActionType_PlayerActionChenLingBattleCloneEntity => 1222,
+            PlayerActionType::PlayerActionType_PlayerActionCycleScoreChange => 1223,
+            PlayerActionType::PlayerActionType_PlayerActionCycleScoreTakeReward => 1224,
+            PlayerActionType::PlayerActionType_PlayerActionFateRinFightStart => 1225,
+            PlayerActionType::PlayerActionType_PlayerActionFateRinFightEnd => 1226,
+            PlayerActionType::PlayerActionType_PlayerActionFateRinDeckModify => 1227,
+            PlayerActionType::PlayerActionType_PlayerActionRelicPresetPlanSave => 1228,
+            PlayerActionType::PlayerActionType_PlayerActionRelicPresetPlanDelete => 1229,
+            PlayerActionType::PlayerActionType_PlayerActionRelicPresetPlanModifyName => 1230,
+            PlayerActionType::PlayerActionType_PlayerActionB51RacingStartMatch => 1231,
+            PlayerActionType::PlayerActionType_PlayerActionB51RacingEndMatch => 1232,
+            PlayerActionType::PlayerActionType_PlayerActionB51RacingStartDay => 1233,
+            PlayerActionType::PlayerActionType_PlayerActionB51RacingFinishDay => 1234,
+            PlayerActionType::PlayerActionType_PlayerActionB51RacingCarLiveryChange => 1235,
+            PlayerActionType::PlayerActionType_PlayerActionB51RacingDevelopAction => 1236,
+            PlayerActionType::PlayerActionType_PlayerActionPixAirUnlockPlane => 1237,
+            PlayerActionType::PlayerActionType_PlayerActionPixAirStageStart => 1238,
+            PlayerActionType::PlayerActionType_PlayerActionPixAirBattleGen => 1239,
+            PlayerActionType::PlayerActionType_PlayerActionPixAirBattleEnd => 1240,
+            PlayerActionType::PlayerActionType_PlayerActionPixAirLootEquipSelect => 1241,
+            PlayerActionType::PlayerActionType_PlayerActionPixAirBuyEquip => 1242,
+            PlayerActionType::PlayerActionType_PlayerActionPixAirRefreshShop => 1243,
+            PlayerActionType::PlayerActionType_PlayerActionPixAirNodeSelectContent => 1244,
+            PlayerActionType::PlayerActionType_PlayerActionPixAirGrantReward => 1245,
+            PlayerActionType::PlayerActionType_PlayerActionPixAirEvent => 1246,
+            PlayerActionType::PlayerActionType_PlayerActionPixAirNewEquip => 1247,
+            PlayerActionType::PlayerActionType_PlayerActionPixAirSellEquip => 1248,
+            PlayerActionType::PlayerActionType_PlayerActionPixAirEquipUpgrade => 1249,
+            PlayerActionType::PlayerActionType_PlayerActionPixAirEquipEnchant => 1250,
+            PlayerActionType::PlayerActionType_PlayerActionPixAirCoinChange => 1251,
+            PlayerActionType::PlayerActionType_PlayerActionPixAirStageSettle => 1252,
+            PlayerActionType::PlayerActionType_PlayerActionExpeditionBattleGameStart => 1253,
+            PlayerActionType::PlayerActionType_PlayerActionExpeditionBattleGameEnd => 1254,
+            PlayerActionType::PlayerActionType_PlayerActionChenLingFesLevelStart => 1255,
+            PlayerActionType::PlayerActionType_PlayerActionChenLingFesBusinessDayEnd => 1256,
+            PlayerActionType::PlayerActionType_PlayerActionChenLingFesPhaseSettle => 1257,
+            PlayerActionType::PlayerActionType_PlayerActionChenLingFesLevelSettle => 1258,
+            PlayerActionType::PlayerActionType_PlayerActionChooseDeliveryChoose => 1259,
+            PlayerActionType::PlayerActionType_PlayerActionTeamTowersPveEnd => 1260,
+            PlayerActionType::PlayerActionType_PlayerActionTeamTowersPvpStart => 1261,
+            PlayerActionType::PlayerActionType_PlayerActionTeamTowersPvpEnd => 1262,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -7536,7 +7656,7 @@ impl PlayerActionType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16PlayerActionType.proto*\xab\x9e\x04\n\x10PlayerActionType\x12%\n!P\
+    \n\x16PlayerActionType.proto*\x8f\x99\x04\n\x10PlayerActionType\x12%\n!P\
     layerActionType_PlayerActionNone\x10\0\x12)\n%PlayerActionType_PlayerAct\
     ionRegister\x10\x01\x12&\n\"PlayerActionType_PlayerActionLogin\x10\x02\
     \x12'\n#PlayerActionType_PlayerActionLogout\x10\x03\x12'\n#PlayerActionT\
@@ -7579,754 +7699,759 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     nType_PlayerActionAvatarValueInfo\x10\xf2\x07\x127\n2PlayerActionType_Pl\
     ayerActionMoveCheckFailedReport\x10\xf3\x07\x124\n/PlayerActionType_Play\
     erActionBattleFailedReport\x10\xf4\x07\x120\n+PlayerActionType_PlayerAct\
-    ionSecurityReport\x10\xf5\x07\x121\n,PlayerActionType_PlayerActionAvatar\
-    Promotion\x10\xcd\x08\x12+\n&PlayerActionType_PlayerActionAvatarAdd\x10\
-    \xcf\x08\x122\n-PlayerActionType_PlayerActionAvatarUseExpItem\x10\xd0\
-    \x08\x12/\n*PlayerActionType_PlayerActionAvatarLevelUp\x10\xd1\x08\x12-\
-    \n(PlayerActionType_PlayerActionSkillTreeUp\x10\xd2\x08\x120\n+PlayerAct\
-    ionType_PlayerActionAvatarHpChange\x10\xd3\x08\x120\n+PlayerActionType_P\
-    layerActionAvatarMpChange\x10\xd4\x08\x12.\n)PlayerActionType_PlayerActi\
-    onAvatarAddExp\x10\xd5\x08\x12.\n)PlayerActionType_PlayerActionAvatarRan\
-    kUp\x10\xd6\x08\x120\n+PlayerActionType_PlayerActionAvatarRepeated\x10\
-    \xd7\x08\x12-\n(PlayerActionType_PlayerActionMpMaxChange\x10\xd8\x08\x12\
-    ;\n6PlayerActionType_PlayerActionAvatarTakePromotionReward\x10\xd9\x08\
-    \x126\n1PlayerActionType_PlayerActionAvatarRelicAffixInfo\x10\xda\x08\
-    \x12,\n'PlayerActionType_PlayerActionAvatarMark\x10\xdb\x08\x128\n3Playe\
-    rActionType_PlayerActionAvatarSystemPowerReset\x10\xdc\x08\x122\n-Player\
-    ActionType_PlayerActionAvatarChangePath\x10\xdf\x08\x127\n2PlayerActionT\
-    ype_PlayerActionSetGrowthTargetAvatar\x10\xe0\x08\x12+\n&PlayerActionTyp\
-    e_PlayerActionDelAvatar\x10\xe1\x08\x122\n-PlayerActionType_PlayerAction\
-    AvatarSkinChange\x10\xe2\x08\x12?\n:PlayerActionType_PlayerActionSetGrow\
-    thTargetFunctionConfig\x10\xe3\x08\x12;\n6PlayerActionType_PlayerActionA\
-    vatarSkinActivityReissue\x10\xe4\x08\x125\n0PlayerActionType_PlayerActio\
-    nSetAvatarEnhancedId\x10\xe5\x08\x123\n.PlayerActionType_PlayerActionDre\
-    ssPlayerOutfit\x10\xe6\x08\x12,\n'PlayerActionType_PlayerActionStageBegi\
-    n\x10\xb2\t\x12*\n%PlayerActionType_PlayerActionStageEnd\x10\xb3\t\x122\
-    \n-PlayerActionType_PlayerActionCocoonStageBegin\x10\xb5\t\x120\n+Player\
-    ActionType_PlayerActionCocoonStageEnd\x10\xb6\t\x120\n+PlayerActionType_\
-    PlayerActionFarmElementEnd\x10\xb7\t\x121\n,PlayerActionType_PlayerActio\
-    nElementStageEnd\x10\xb8\t\x12-\n(PlayerActionType_PlayerActionCocoonSwe\
-    ep\x10\xb9\t\x122\n-PlayerActionType_PlayerActionFarmElementSweep\x10\
-    \xba\t\x120\n+PlayerActionType_PlayerActionRecoverStamina\x10\x95\n\x121\
-    \n,PlayerActionType_PlayerActionExchangeStamina\x10\x96\n\x12-\n(PlayerA\
-    ctionType_PlayerActionLoginReward\x10\x97\n\x120\n+PlayerActionType_Play\
-    erActionModifyNickname\x10\x98\n\x120\n+PlayerActionType_PlayerActionGet\
-    LevelReward\x10\x99\n\x12.\n)PlayerActionType_PlayerActionWorldLevelUp\
-    \x10\x9a\n\x12,\n'PlayerActionType_PlayerActionAddStamina\x10\x9b\n\x12<\
-    \n7PlayerActionType_PlayerActionGameplayBirthdayRewardMail\x10\x9c\n\x12\
-    6\n1PlayerActionType_PlayerActionRechargeRebateReward\x10\x9d\n\x125\n0P\
-    layerActionType_PlayerActionGameplayBirthdaySet\x10\x9e\n\x128\n3PlayerA\
-    ctionType_PlayerActionReserveStaminaExchange\x10\x9f\n\x123\n.PlayerActi\
-    onType_PlayerActionReserveStaminaAdd\x10\xa0\n\x126\n1PlayerActionType_P\
-    layerActionReserveStaminaChange\x10\xa1\n\x12,\n'PlayerActionType_Player\
-    ActionNowStamina\x10\xa2\n\x122\n-PlayerActionType_PlayerActionFtcResetN\
-    ickname\x10\xa3\n\x12?\n:PlayerActionType_PlayerActionReserveAndFuelExch\
-    angeStamina\x10\xa4\n\x12&\n!PlayerActionType_PlayerActionMail\x10\xf9\n\
-    \x12.\n)PlayerActionType_PlayerActionMailOpByUser\x10\xfa\n\x12.\n)Playe\
-    rActionType_PlayerActionMailOpByMuip\x10\xfb\n\x12,\n'PlayerActionType_P\
-    layerActionMailOpByGm\x10\xfc\n\x12.\n)PlayerActionType_PlayerActionMail\
-    OpByFull\x10\xfd\n\x120\n+PlayerActionType_PlayerActionMailOpByExpire\
-    \x10\xfe\n\x122\n-PlayerActionType_PlayerActionMailOpByInternal\x10\xff\
-    \n\x12)\n$PlayerActionType_PlayerActionAddMail\x10\x80\x0b\x12)\n$Player\
-    ActionType_PlayerActionDelMail\x10\x81\x0b\x120\n+PlayerActionType_Playe\
-    rActionTakeAttachment\x10\x82\x0b\x12*\n%PlayerActionType_PlayerActionRe\
-    adMail\x10\x83\x0b\x12.\n)PlayerActionType_PlayerActionBattleAvatar\x10\
-    \xdd\x0b\x12/\n*PlayerActionType_PlayerActionBattleMonster\x10\xde\x0b\
-    \x12+\n&PlayerActionType_PlayerActionBattleEnd\x10\xe0\x0b\x12.\n)Player\
-    ActionType_PlayerActionBattleReplay\x10\xe1\x0b\x123\n.PlayerActionType_\
-    PlayerActionBattleAvatarDeath\x10\xe2\x0b\x123\n.PlayerActionType_Player\
-    ActionBattleSwitchPhase\x10\xe3\x0b\x124\n/PlayerActionType_PlayerAction\
-    BattleMonsterSkill\x10\xe4\x0b\x120\n+PlayerActionType_PlayerActionBattl\
-    eRebattle\x10\xe5\x0b\x125\n0PlayerActionType_PlayerActionBattleAvatarSe\
-    rvant\x10\xe6\x0b\x12/\n*PlayerActionType_PlayerActionMissionReward\x10\
-    \xc2\x0c\x12-\n(PlayerActionType_PlayerActionQuestAccept\x10\xc3\x0c\x12\
-    -\n(PlayerActionType_PlayerActionQuestFinish\x10\xc4\x0c\x12-\n(PlayerAc\
-    tionType_PlayerActionQuestRemove\x10\xc5\x0c\x12-\n(PlayerActionType_Pla\
-    yerActionQuestReward\x10\xc6\x0c\x120\n+PlayerActionType_PlayerActionQue\
-    stAutoClose\x10\xc7\x0c\x12.\n)PlayerActionType_PlayerActionQuestExpired\
-    \x10\xc8\x0c\x121\n,PlayerActionType_PlayerActionMissionRequired\x10\xc9\
-    \x0c\x122\n-PlayerActionType_PlayerActionSubmissionReward\x10\xca\x0c\
-    \x128\n3PlayerActionType_PlayerActionAchievementLevelReward\x10\xcb\x0c\
-    \x12-\n(PlayerActionType_PlayerActionQuestDelete\x10\xcc\x0c\x123\n.Play\
-    erActionType_PlayerActionSubMissionReward2\x10\xcd\x0c\x123\n.PlayerActi\
-    onType_PlayerActionMissionCompensate\x10\xce\x0c\x120\n+PlayerActionType\
-    _PlayerActionMissionRecycle\x10\xcf\x0c\x12,\n'PlayerActionType_PlayerAc\
-    tionQuestReset\x10\xd0\x0c\x125\n0PlayerActionType_PlayerActionQuestOpti\
-    onalReward\x10\xd1\x0c\x12+\n&PlayerActionType_PlayerActionMcvChange\x10\
-    \xd2\x0c\x12.\n)PlayerActionType_PlayerActionQuestReissue\x10\xd3\x0c\
-    \x12.\n)PlayerActionType_PlayerActionPropInteract\x10\xa8\r\x121\n,Playe\
-    rActionType_PlayerActionAvatarMazeSkill\x10\xa9\r\x12+\n&PlayerActionTyp\
-    e_PlayerActionEnterMaze\x10\xaa\r\x122\n-PlayerActionType_PlayerActionOr\
-    dinaryInteract\x10\xab\r\x12/\n*PlayerActionType_PlayerActionChestIntera\
-    ct\x10\xac\r\x122\n-PlayerActionType_PlayerActionCheckPointUnlock\x10\
-    \xad\r\x124\n/PlayerActionType_PlayerActionCheckPointInteract\x10\xae\r\
-    \x122\n-PlayerActionType_PlayerActionCheckPointRevive\x10\xaf\r\x124\n/P\
-    layerActionType_PlayerActionCheckPointTransfer\x10\xb0\r\x121\n,PlayerAc\
-    tionType_PlayerActionMonsterInteract\x10\xb2\r\x12-\n(PlayerActionType_P\
-    layerActionNpcInteract\x10\xb4\r\x12)\n$PlayerActionType_PlayerActionPro\
-    pHit\x10\xb5\r\x120\n+PlayerActionType_PlayerActionPrelogueRevive\x10\
-    \xb6\r\x12+\n&PlayerActionType_PlayerActionPropState\x10\xb7\r\x123\n.Pl\
-    ayerActionType_PlayerActionCheckPointRecover\x10\xb8\r\x12.\n)PlayerActi\
-    onType_PlayerActionMechanismBar\x10\xba\r\x123\n.PlayerActionType_Player\
-    ActionSubmitOrigamiItem\x10\xbb\r\x122\n-PlayerActionType_PlayerActionMa\
-    zeBuffDropItem\x10\xbc\r\x12+\n&PlayerActionType_PlayerActionFsvChange\
-    \x10\xbd\r\x123\n.PlayerActionType_PlayerActionTimelinePropState\x10\xbe\
-    \r\x125\n0PlayerActionType_PlayerActionGroupPropertyChange\x10\xbf\r\x12\
-    8\n3PlayerActionType_PlayerActionOpenGroupPropertyChest\x10\xc0\r\x124\n\
-    /PlayerActionType_PlayerActionEquipmentPromotion\x10\xed\x0e\x12)\n$Play\
-    erActionType_PlayerActionAddItem\x10\xee\x0e\x12)\n$PlayerActionType_Pla\
-    yerActionUseItem\x10\xf0\x0e\x121\n,PlayerActionType_PlayerActionEquipme\
-    ntRankUp\x10\xf1\x0e\x122\n-PlayerActionType_PlayerActionEquipmentLevelU\
-    p\x10\xf2\x0e\x126\n1PlayerActionType_PlayerActionExpUpEquipmentReturn\
-    \x10\xf3\x0e\x123\n.PlayerActionType_PlayerActionBagFullRewardMail\x10\
-    \xf4\x0e\x12.\n)PlayerActionType_PlayerActionEquipmentAdd\x10\xf5\x0e\
-    \x12/\n*PlayerActionType_PlayerActionEquipmentWear\x10\xf6\x0e\x12-\n(Pl\
-    ayerActionType_PlayerActionItemCompose\x10\xf7\x0e\x12.\n)PlayerActionTy\
-    pe_PlayerActionRelicLevelUp\x10\xf8\x0e\x122\n-PlayerActionType_PlayerAc\
-    tionExpUpRelicReturn\x10\xf9\x0e\x121\n,PlayerActionType_PlayerActionRel\
-    icNumChanged\x10\xfa\x0e\x12+\n&PlayerActionType_PlayerActionRelicWear\
-    \x10\xfb\x0e\x12.\n)PlayerActionType_PlayerActionRelicCompose\x10\xfc\
-    \x0e\x12*\n%PlayerActionType_PlayerActionSellItem\x10\xfd\x0e\x12-\n(Pla\
-    yerActionType_PlayerActionUnlockMusic\x10\xfe\x0e\x12;\n6PlayerActionTyp\
-    e_PlayerActionExchangeHcoinWithPayMcoin\x10\xff\x0e\x12+\n&PlayerActionT\
-    ype_PlayerActionGetReward\x10\x80\x0f\x12<\n7PlayerActionType_PlayerActi\
-    onExchangeHcoinWithFreeMcoin\x10\x81\x0f\x12:\n5PlayerActionType_PlayerA\
-    ctionItemComposeFormulaUnlock\x10\x82\x0f\x12/\n*PlayerActionType_Player\
-    ActionExchangeHcoin\x10\x83\x0f\x125\n0PlayerActionType_PlayerActionCity\
-    ShopLevelReward\x10\x84\x0f\x12-\n(PlayerActionType_PlayerActionItemRecy\
-    cle\x10\x85\x0f\x124\n/PlayerActionType_PlayerActionMuseumFundsConsume\
-    \x10\x86\x0f\x125\n0PlayerActionType_PlayerActionMuseumEventBuyStuff\x10\
-    \x87\x0f\x126\n1PlayerActionType_PlayerActionMuseumMarketBuyStuff\x10\
-    \x88\x0f\x123\n.PlayerActionType_PlayerActionMuseumRandomEvent\x10\x89\
-    \x0f\x123\n.PlayerActionType_PlayerActionMuseumInitialItem\x10\x8a\x0f\
-    \x123\n.PlayerActionType_PlayerActionOptionalBoxReward\x10\x8b\x0f\x12-\
-    \n(PlayerActionType_PlayerActionDestroyItem\x10\x8c\x0f\x12-\n(PlayerAct\
-    ionType_PlayerActionTransferExp\x10\x8d\x0f\x12+\n&PlayerActionType_Play\
-    erActionOndutyUse\x10\x8e\x0f\x12*\n%PlayerActionType_PlayerActionItemMa\
-    rk\x10\x8f\x0f\x12.\n)PlayerActionType_PlayerActionRelicDiscard\x10\x90\
-    \x0f\x12:\n5PlayerActionType_PlayerActionGeneralVirtualItemChange\x10\
-    \x91\x0f\x12+\n&PlayerActionType_PlayerActionRelicLock\x10\x92\x0f\x125\
-    \n0PlayerActionType_PlayerActionRelicFilterPlanSave\x10\x93\x0f\x127\n2P\
-    layerActionType_PlayerActionRelicFilterPlanDelete\x10\x94\x0f\x125\n0Pla\
-    yerActionType_PlayerActionRelicFilterPlanMark\x10\x95\x0f\x12+\n&PlayerA\
-    ctionType_PlayerActionRelicSell\x10\x96\x0f\x12.\n)PlayerActionType_Play\
-    erActionRelicReforge\x10\x97\x0f\x12:\n5PlayerActionType_PlayerActionRel\
-    icSmartWearCustomPlan\x10\x98\x0f\x12.\n)PlayerActionType_PlayerActionRe\
-    coverRelic\x10\x99\x0f\x122\n-PlayerActionType_PlayerActionRecoverEquipm\
-    ent\x10\x9a\x0f\x12/\n*PlayerActionType_PlayerActionEquipmentSell\x10\
-    \x9b\x0f\x128\n3PlayerActionType_PlayerActionRelicSmartWearPinRelic\x10\
-    \x9c\x0f\x124\n/PlayerActionType_PlayerActionRelicCocoonSetting\x10\x9d\
-    \x0f\x124\n/PlayerActionType_PlayerActionPersonalCardChange\x10\x9e\x0f\
-    \x121\n,PlayerActionType_PlayerActionPhoneCaseChange\x10\x9f\x0f\x124\n/\
-    PlayerActionType_PlayerActionDeliveryItemReward\x10\xa0\x0f\x122\n-Playe\
-    rActionType_PlayerActionItemAutoTransfer\x10\xa1\x0f\x127\n2PlayerAction\
-    Type_PlayerActionItemAutoTransferInBag\x10\xa2\x0f\x127\n2PlayerActionTy\
-    pe_PlayerActionItemAutoTransferOnAdd\x10\xa3\x0f\x12.\n)PlayerActionType\
-    _PlayerActionAddExtraCoin\x10\xa4\x0f\x12A\n<PlayerActionType_PlayerActi\
-    onVariableDiceExchangePartnerCoin\x10\xa5\x0f\x12*\n%PlayerActionType_Pl\
-    ayerActionRelicBox\x10\xa6\x0f\x120\n+PlayerActionType_PlayerActionRelic\
-    BoxSettle\x10\xa7\x0f\x121\n,PlayerActionType_PlayerActionRelicBoxRegula\
-    r\x10\xa8\x0f\x12.\n)PlayerActionType_PlayerActionRelicReplace\x10\xa9\
-    \x0f\x12<\n7PlayerActionType_PlayerActionEquipmentUpCostPileSetting\x10\
-    \xaa\x0f\x12.\n)PlayerActionType_PlayerActionRelicBoxShow\x10\xab\x0f\
-    \x125\n0PlayerActionType_PlayerActionTutorialGuideFinish\x10\xd1\x0f\x12\
-    *\n%PlayerActionType_PlayerActionTutorial\x10\xd2\x0f\x12/\n*PlayerActio\
-    nType_PlayerActionTutorialGuide\x10\xd3\x0f\x12-\n(PlayerActionType_Play\
-    erActionMonsterDrop\x10\xb5\x10\x121\n,PlayerActionType_PlayerActionFini\
-    shChallenge\x10\x99\x11\x120\n+PlayerActionType_PlayerActionChallengeSta\
-    rs\x10\x9a\x11\x120\n+PlayerActionType_PlayerActionChallengeStart\x10\
-    \x9b\x11\x12.\n)PlayerActionType_PlayerActionChallengeEnd\x10\x9c\x11\
-    \x12.\n)PlayerActionType_PlayerActionChallengeWin\x10\x9d\x11\x12/\n*Pla\
-    yerActionType_PlayerActionChallengeFail\x10\x9e\x11\x120\n+PlayerActionT\
-    ype_PlayerActionChallengeLeave\x10\x9f\x11\x121\n,PlayerActionType_Playe\
-    rActionChallengeSwitch\x10\xa0\x11\x126\n1PlayerActionType_PlayerActionC\
-    hallengeBonusReward\x10\xa2\x11\x126\n1PlayerActionType_PlayerActionChal\
-    lengeStarsReward\x10\xa3\x11\x122\n-PlayerActionType_PlayerActionChallen\
-    geRestart\x10\xa4\x11\x125\n0PlayerActionType_PlayerActionChallengeStory\
-    Start\x10\xa5\x11\x123\n.PlayerActionType_PlayerActionChallengeStoryEnd\
-    \x10\xa6\x11\x123\n.PlayerActionType_PlayerActionChallengeFastPass\x10\
-    \xa7\x11\x128\n3PlayerActionType_PlayerActionChallengeStoryFastPass\x10\
-    \xa8\x11\x129\n4PlayerActionType_PlayerActionChallengeMemoryFastPass\x10\
-    \xa9\x11\x127\n2PlayerActionType_PlayerActionChallengeBattleTarget\x10\
-    \xaa\x11\x122\n-PlayerActionType_PlayerActionChallengeBossEnd\x10\xab\
-    \x11\x127\n2PlayerActionType_PlayerActionChallengeBossFastPass\x10\xac\
-    \x11\x127\n2PlayerActionType_PlayerActionChallengeStartPartial\x10\xad\
-    \x11\x129\n4PlayerActionType_PlayerActionChallengeBossPhaseStart\x10\xae\
-    \x11\x127\n2PlayerActionType_PlayerActionChallengeBossPhaseEnd\x10\xaf\
-    \x11\x12C\n>PlayerActionType_PlayerActionChallengeBossPhaseEndBeforeBatt\
-    le\x10\xb0\x11\x12:\n5PlayerActionType_PlayerActionChallengeRecommendLin\
-    eup\x10\xb1\x11\x12>\n9PlayerActionType_PlayerActionChallengeStoryFeverB\
-    attleEnd\x10\xb2\x11\x12@\n;PlayerActionType_PlayerActionChallengeTierce\
-    RecommendLineup\x10\xe9\x11\x126\n1PlayerActionType_PlayerActionChalleng\
-    eTierceStart\x10\xea\x11\x12:\n5PlayerActionType_PlayerActionChallengeTi\
-    erceBattleEnd\x10\xeb\x11\x12@\n;PlayerActionType_PlayerActionChallengeT\
-    ierceSyncSingleStage\x10\xec\x11\x12;\n6PlayerActionType_PlayerActionCha\
-    llengeTierceGradeReset\x10\xed\x11\x120\n+PlayerActionType_PlayerActionT\
-    eamInfoChange\x10\xfd\x11\x125\n0PlayerActionType_PlayerActionChangeCurr\
-    entAvatar\x10\xfe\x11\x123\n.PlayerActionType_PlayerActionCreateVirtualT\
-    eam\x10\xff\x11\x12.\n)PlayerActionType_PlayerActionTeamNameEdit\x10\x80\
-    \x12\x125\n0PlayerActionType_PlayerActionReplaceLineupAvatar\x10\x81\x12\
-    \x122\n-PlayerActionType_PlayerActionAvatarBuffChange\x10\xe1\x12\x12/\n\
-    *PlayerActionType_PlayerActionEnvBuffChange\x10\xe2\x12\x12*\n%PlayerAct\
-    ionType_PlayerActionGameCore\x10\xe3\x12\x122\n-PlayerActionType_PlayerA\
-    ctionAvatarGlobalBuff\x10\xe4\x12\x123\n.PlayerActionType_PlayerActionRo\
-    gueExploreStart\x10\xc5\x13\x120\n+PlayerActionType_PlayerActionRogueEnt\
-    erRoom\x10\xc6\x13\x120\n+PlayerActionType_PlayerActionRogueLeaveRoom\
-    \x10\xc7\x13\x124\n/PlayerActionType_PlayerActionRogueExploreFinish\x10\
-    \xc8\x13\x121\n,PlayerActionType_PlayerActionRogueSelectBuff\x10\xc9\x13\
-    \x12/\n*PlayerActionType_PlayerActionRogueRollBuff\x10\xca\x13\x12-\n(Pl\
-    ayerActionType_PlayerActionRogueRevive\x10\xcb\x13\x125\n0PlayerActionTy\
-    pe_PlayerActionRogueChallengeStart\x10\xd0\x13\x12.\n)PlayerActionType_P\
-    layerActionRogueMiracle\x10\xd2\x13\x12.\n)PlayerActionType_PlayerAction\
-    RogueAddBuff\x10\xd3\x13\x121\n,PlayerActionType_PlayerActionRoguePickAv\
-    atar\x10\xd4\x13\x124\n/PlayerActionType_PlayerActionRogueSeasonChanged\
-    \x10\xda\x13\x122\n-PlayerActionType_PlayerActionRogueAeonLevelUp\x10\
-    \xdc\x13\x12/\n*PlayerActionType_PlayerActionRogueOpenDoor\x10\xdd\x13\
-    \x122\n-PlayerActionType_PlayerActionRogueScoreReward\x10\xde\x13\x122\n\
-    -PlayerActionType_PlayerActionRogueEnhanceBuff\x10\xdf\x13\x122\n-Player\
-    ActionType_PlayerActionRogueSelectBonus\x10\xe0\x13\x126\n1PlayerActionT\
-    ype_PlayerActionRogueAreaFirstReward\x10\xe1\x13\x123\n.PlayerActionType\
-    _PlayerActionRogueEnableTalent\x10\xe2\x13\x121\n,PlayerActionType_Playe\
-    rActionRogueAeonUnlock\x10\xe3\x13\x121\n,PlayerActionType_PlayerActionR\
-    ogueAeonAddExp\x10\xe4\x13\x125\n0PlayerActionType_PlayerActionRogueImme\
-    rseLevelUp\x10\xe5\x13\x124\n/PlayerActionType_PlayerActionRogueSelectMi\
-    racle\x10\xe6\x13\x121\n,PlayerActionType_PlayerActionRogueUnlockArea\
-    \x10\xe7\x13\x129\n4PlayerActionType_PlayerActionRogueExploreScoreChange\
-    \x10\xe8\x13\x127\n2PlayerActionType_PlayerActionRogueUpdateRewardPool\
-    \x10\xe9\x13\x12/\n*PlayerActionType_PlayerActionRogueSwapBuff\x10\xeb\
-    \x13\x124\n/PlayerActionType_PlayerActionRogueWeeklyRefresh\x10\xec\x13\
-    \x122\n-PlayerActionType_PlayerActionRogueExchangeKey\x10\xed\x13\x126\n\
-    1PlayerActionType_PlayerActionRogueGetObjectReward\x10\xee\x13\x126\n1Pl\
-    ayerActionType_PlayerActionRogueAreaMonsterDrop\x10\xef\x13\x121\n,Playe\
-    rActionType_PlayerActionRogueAddMiracle\x10\xf0\x13\x122\n-PlayerActionT\
-    ype_PlayerActionRogueSwapMiracle\x10\xf1\x13\x127\n2PlayerActionType_Pla\
-    yerActionRogueOpenObjectReward\x10\xf2\x13\x121\n,PlayerActionType_Playe\
-    rActionRogueAeonEffect\x10\xf3\x13\x122\n-PlayerActionType_PlayerActionR\
-    ogueReforgeBuff\x10\xf4\x13\x123\n.PlayerActionType_PlayerActionRogueTra\
-    deMiracle\x10\xf5\x13\x123\n.PlayerActionType_PlayerActionRogueRemoveAva\
-    tar\x10\xf6\x13\x125\n0PlayerActionType_PlayerActionRogueDialogueSelect\
-    \x10\xf7\x13\x121\n,PlayerActionType_PlayerActionRogueSelectAeon\x10\xf8\
-    \x13\x125\n0PlayerActionType_PlayerActionRogueDialogueFinish\x10\xf9\x13\
-    \x125\n0PlayerActionType_PlayerActionRogueHandbookReward\x10\xfa\x13\x12\
-    :\n5PlayerActionType_PlayerActionRogueAdventureRoomReward\x10\xfb\x13\
-    \x12.\n)PlayerActionType_PlayerActionRogueShopBuy\x10\xfc\x13\x124\n/Pla\
-    yerActionType_PlayerActionRogueRepairMiracle\x10\xfd\x13\x128\n3PlayerAc\
-    tionType_PlayerActionRogueReplaceAllMiracle\x10\xfe\x13\x124\n/PlayerAct\
-    ionType_PlayerActionRogueMiracleBroken\x10\xff\x13\x122\n-PlayerActionTy\
-    pe_PlayerActionRogueShopRefresh\x10\x80\x14\x125\n0PlayerActionType_Play\
-    erActionRogueLevelMechanism\x10\x81\x14\x124\n/PlayerActionType_PlayerAc\
-    tionRogueRemoveMiracle\x10\x82\x14\x12/\n*PlayerActionType_PlayerActionR\
-    ogueDropBuff\x10\x83\x14\x125\n0PlayerActionType_PlayerActionRogueDestro\
-    yMiracle\x10\x84\x14\x126\n1PlayerActionType_PlayerActionRogueActivateFo\
-    rmula\x10\x85\x14\x128\n3PlayerActionType_PlayerActionRogueDeactivateFor\
-    mula\x10\x86\x14\x121\n,PlayerActionType_PlayerActionRogueRemoveBuff\x10\
-    \x87\x14\x124\n/PlayerActionType_PlayerActionRogueSelectFormula\x10\x88\
-    \x14\x122\n-PlayerActionType_PlayerActionRogueDropFormula\x10\x89\x14\
-    \x122\n-PlayerActionType_PlayerActionRogueRollFormula\x10\x8a\x14\x125\n\
-    0PlayerActionType_PlayerActionRogueReforgeFormula\x10\x8b\x14\x125\n0Pla\
-    yerActionType_PlayerActionRogueComposeMiracle\x10\x8c\x14\x125\n0PlayerA\
-    ctionType_PlayerActionRogueReforgeMiracle\x10\x8d\x14\x12/\n*PlayerActio\
-    nType_PlayerActionRogueDoGamble\x10\x8e\x14\x126\n1PlayerActionType_Play\
-    erActionRogueKeywordActivate\x10\x8f\x14\x128\n3PlayerActionType_PlayerA\
-    ctionRogueKeywordDeactivate\x10\x90\x14\x124\n/PlayerActionType_PlayerAc\
-    tionRogueSourceDefault\x10\x91\x14\x123\n.PlayerActionType_PlayerActionR\
-    oguePlayerSelect\x10\x92\x14\x126\n1PlayerActionType_PlayerActionRogueLa\
-    yerSettlement\x10\x93\x14\x12.\n)PlayerActionType_PlayerActionRogueFormu\
-    la\x10\x94\x14\x120\n+PlayerActionType_PlayerActionRogueWorkbench\x10\
-    \x95\x14\x12/\n*PlayerActionType_PlayerActionRogueModifier\x10\x96\x14\
-    \x12.\n)PlayerActionType_PlayerActionRogueReforge\x10\x97\x14\x12-\n(Pla\
-    yerActionType_PlayerActionRogueTalent\x10\x98\x14\x12-\n(PlayerActionTyp\
-    e_PlayerActionRogueReroll\x10\x99\x14\x121\n,PlayerActionType_PlayerActi\
-    onRogueCoinChange\x10\x9a\x14\x127\n2PlayerActionType_PlayerActionRogueM\
-    agicScepterShop\x10\x9b\x14\x124\n/PlayerActionType_PlayerActionRogueMag\
-    icUnitShop\x10\x9c\x14\x12:\n5PlayerActionType_PlayerActionRogueMagicSce\
-    pterLevelUp\x10\x9d\x14\x12'\n\"PlayerActionType_PlayerActionGacha\x10\
-    \xa9\x14\x120\n+PlayerActionType_PlayerActionAddGachaTicket\x10\xaa\x14\
-    \x12/\n*PlayerActionType_PlayerActionGachaExchange\x10\xab\x14\x124\n/Pl\
-    ayerActionType_PlayerActionSetGachaDecideItem\x10\xac\x14\x124\n/PlayerA\
-    ctionType_PlayerActionEventMissionAccept\x10\xf1\x15\x124\n/PlayerAction\
-    Type_PlayerActionEventMissionFinish\x10\xf2\x15\x124\n/PlayerActionType_\
-    PlayerActionEventMissionReward\x10\xf3\x15\x12,\n'PlayerActionType_Playe\
-    rActionRaidFinish\x10\xd5\x16\x12+\n&PlayerActionType_PlayerActionRaidBe\
-    gin\x10\xd6\x16\x125\n0PlayerActionType_PlayerActionChallengeRaidReward\
-    \x10\xd7\x16\x12+\n&PlayerActionType_PlayerActionStartRaid\x10\xd8\x16\
-    \x12)\n$PlayerActionType_PlayerActionEndRaid\x10\xd9\x16\x122\n-PlayerAc\
-    tionType_PlayerActionRaidTargetFinish\x10\xda\x16\x12-\n(PlayerActionTyp\
-    e_PlayerActionArchiveRaid\x10\xdb\x16\x124\n/PlayerActionType_PlayerActi\
-    onHeroBaseTypeChange\x10\xeb\x17\x12:\n5PlayerActionType_PlayerActionHer\
-    oBaseTypeAddByMission\x10\xec\x17\x126\n1PlayerActionType_PlayerActionHe\
-    roBaseTypeAddByReq\x10\xed\x17\x121\n,PlayerActionType_PlayerActionHeroB\
-    aseTypeAdd\x10\xee\x17\x120\n+PlayerActionType_PlayerActionDialogueSelec\
-    t\x10\x9d\x18\x121\n,PlayerActionType_PlayerActionExpeditionStart\x10\
-    \xcf\x18\x122\n-PlayerActionType_PlayerActionExpeditionFinish\x10\xd0\
-    \x18\x122\n-PlayerActionType_PlayerActionExpeditionReward\x10\xd1\x18\
-    \x129\n4PlayerActionType_PlayerActionActivityExpeditionStart\x10\xd2\x18\
-    \x12:\n5PlayerActionType_PlayerActionActivityExpeditionFinish\x10\xd3\
-    \x18\x12:\n5PlayerActionType_PlayerActionActivityExpeditionReward\x10\
-    \xd4\x18\x129\n4PlayerActionType_PlayerActionActivityExpeditionBegin\x10\
-    \xd5\x18\x127\n2PlayerActionType_PlayerActionActivityExpeditionEnd\x10\
-    \xd6\x18\x12/\n*PlayerActionType_PlayerActionExpeditionSet\x10\xd7\x18\
-    \x126\n1PlayerActionType_PlayerActionExpeditionTakeReward\x10\xd8\x18\
-    \x125\n0PlayerActionType_PlayerActionActivityLoginReward\x10\x81\x19\x12\
-    .\n)PlayerActionType_PlayerActionFriendReport\x10\xe5\x19\x12.\n)PlayerA\
-    ctionType_PlayerActionAssistReward\x10\xe6\x19\x125\n0PlayerActionType_P\
-    layerActionAssistAvatarRefresh\x10\xe7\x19\x129\n4PlayerActionType_Playe\
-    rActionAssistAvatarBattleStart\x10\xe8\x19\x127\n2PlayerActionType_Playe\
-    rActionAssistAvatarBattleEnd\x10\xe9\x19\x12-\n(PlayerActionType_PlayerA\
-    ctionFriendApply\x10\xea\x19\x12.\n)PlayerActionType_PlayerActionFriendM\
-    anage\x10\xeb\x19\x121\n,PlayerActionType_PlayerActionFriendBlacklist\
-    \x10\xec\x19\x128\n3PlayerActionType_PlayerActionFriendModifyRemarkName\
-    \x10\xed\x19\x12,\n'PlayerActionType_PlayerActionFriendMark\x10\xee\x19\
-    \x122\n-PlayerActionType_PlayerActionFriendAssistList\x10\xef\x19\x127\n\
-    2PlayerActionType_PlayerActionBattlePassLevelReward\x10\x82\x19\x129\n4P\
-    layerActionType_PlayerActionBattlePass128TierReward\x10\x83\x19\x12?\n:P\
-    layerActionType_PlayerActionBattlePassLevelRewardAutoMail\x10\x84\x19\
-    \x12/\n*PlayerActionType_PlayerActionBuyBattlePass\x10\x85\x19\x122\n-Pl\
-    ayerActionType_PlayerActionAddBattlePassExp\x10\x86\x19\x123\n.PlayerAct\
-    ionType_PlayerActionBattlePassLevelUp\x10\x87\x19\x124\n/PlayerActionTyp\
-    e_PlayerActionBuyBattlePassLevel\x10\x88\x19\x123\n.PlayerActionType_Pla\
-    yerActionBattlePassEndMail\x10\x89\x19\x128\n3PlayerActionType_PlayerAct\
-    ionBattlePass68TierReward\x10\x8a\x19\x12,\n'PlayerActionType_PlayerActi\
-    onModifySign\x10\xc9\x1a\x122\n-PlayerActionType_PlayerActionDisplayAvat\
-    arSet\x10\xca\x1a\x121\n,PlayerActionType_PlayerActionAssistAvatarSet\
-    \x10\xcb\x1a\x123\n.PlayerActionType_PlayerActionAchievementFinish\x10\
-    \xad\x1b\x123\n.PlayerActionType_PlayerActionAchievementReward\x10\xae\
-    \x1b\x123\n.PlayerActionType_PlayerActionAchievementAddExp\x10\xaf\x1b\
-    \x124\n/PlayerActionType_PlayerActionAchievementLevelUp\x10\xb0\x1b\x120\
-    \n+PlayerActionType_PlayerActionPunkLordReward\x10\x91\x1c\x124\n/Player\
-    ActionType_PlayerActionPunkLordBossSearch\x10\x94\x1c\x123\n.PlayerActio\
-    nType_PlayerActionPunkLordBossShare\x10\x95\x1c\x123\n.PlayerActionType_\
-    PlayerActionStartPunkLordRaid\x10\x96\x1c\x126\n1PlayerActionType_Player\
-    ActionPunkLordSupportTimes\x10\x98\x1c\x125\n0PlayerActionType_PlayerAct\
-    ionPunkLordScoreReward\x10\x99\x1c\x125\n0PlayerActionType_PlayerActionP\
-    unkLordListRefresh\x10\x9a\x1c\x125\n0PlayerActionType_PlayerActionPunkL\
-    ordPowerAttack\x10\x9b\x1c\x123\n.PlayerActionType_PlayerActionPunkLordB\
-    attleEnd\x10\x9c\x1c\x123\n.PlayerActionType_PlayerActionPunkLordBossDea\
-    th\x10\x9d\x1c\x123\n.PlayerActionType_PlayerActionPunkLordBossScore\x10\
-    \x9e\x1c\x128\n3PlayerActionType_PlayerActionDailyActiveLevelReward\x10\
-    \xf5\x1c\x125\n0PlayerActionType_PlayerActionDailyActiveAddPoint\x10\xf6\
-    \x1c\x12;\n6PlayerActionType_PlayerActionDailyActiveDeleteOldQuest\x10\
-    \xf7\x1c\x124\n/PlayerActionType_PlayerActionFightActivityBegin\x10\xcf\
-    \x1d\x122\n-PlayerActionType_PlayerActionFightActivityEnd\x10\xd0\x1d\
-    \x125\n0PlayerActionType_PlayerActionFightActivityReward\x10\xd9\x1d\x12\
-    1\n,PlayerActionType_PlayerActionActivityEndMail\x10\xda\x1d\x121\n,Play\
-    erActionType_PlayerActionAppointmentMail\x10\xdb\x1d\x12-\n(PlayerAction\
-    Type_PlayerActionShareReward\x10\xdc\x1d\x125\n0PlayerActionType_PlayerA\
-    ctionActivityTrialReward\x10\xdd\x1d\x124\n/PlayerActionType_PlayerActio\
-    nActivityTrialStart\x10\xde\x1d\x121\n,PlayerActionType_PlayerActionPsPr\
-    eOrderMail1\x10\xe3\x1d\x121\n,PlayerActionType_PlayerActionPsPreOrderMa\
-    il2\x10\xe4\x1d\x12-\n(PlayerActionType_PlayerActionPsLoginMail\x10\xe5\
-    \x1d\x12+\n&PlayerActionType_PlayerActionLoginMail\x10\xe6\x1d\x125\n0Pl\
-    ayerActionType_PlayerActionGooglePoints100Mail\x10\xed\x1d\x125\n0Player\
-    ActionType_PlayerActionGooglePoints150Mail\x10\xee\x1d\x12<\n7PlayerActi\
-    onType_PlayerActionTrainVisitorBehaviorFinish\x10\xbd\x1e\x120\n+PlayerA\
-    ctionType_PlayerActionEnterViewTrain\x10\xbe\x1e\x12E\n@PlayerActionType\
-    _PlayerActionTrainVisitorBehaviorRewardForceSend\x10\xbf\x1e\x12:\n5Play\
-    erActionType_PlayerActionTrainVisitorRegisterOpen\x10\xc0\x1e\x12O\nJPla\
-    yerActionType_PlayerActionTrainVisitorBehaviorRewardForceSendByRegister\
-    \x10\xc1\x1e\x12C\n>PlayerActionType_PlayerActionTrainVisitorClearLastTr\
-    ainVisitor\x10\xc2\x1e\x12A\n<PlayerActionType_PlayerActionTrainVisitorR\
-    efreshTrainVisitor\x10\xc3\x1e\x128\n3PlayerActionType_PlayerActionTrain\
-    VisitorRefreshNpc\x10\xc4\x1e\x124\n/PlayerActionType_PlayerActionMessag\
-    eGroupAccept\x10\xef\x1e\x126\n1PlayerActionType_PlayerActionMessageSect\
-    ionAccept\x10\xf0\x1e\x126\n1PlayerActionType_PlayerActionMessageSection\
-    Finish\x10\xf1\x1e\x123\n.PlayerActionType_PlayerActionMessageItemFinish\
-    \x10\xf2\x1e\x12:\n5PlayerActionType_PlayerActionFinishMessageGroupRewar\
-    d\x10\xf3\x1e\x12>\n9PlayerActionType_PlayerActionSubstituteMessageGroup\
-    Reward\x10\xf4\x1e\x124\n/PlayerActionType_PlayerActionDeleteMessageGrou\
-    p\x10\xf5\x1e\x126\n1PlayerActionType_PlayerActionDeleteMessageSection\
-    \x10\xf6\x1e\x12<\n7PlayerActionType_PlayerActionDeleteMessageGroupByCon\
-    fig\x10\xf7\x1e\x12>\n9PlayerActionType_PlayerActionDeleteMessageGroupBy\
-    Activity\x10\xf8\x1e\x12=\n8PlayerActionType_PlayerActionDeleteMessageGr\
-    oupByMission\x10\xf9\x1e\x12.\n)PlayerActionType_PlayerActionTextJoinSav\
-    e\x10\xa1\x1f\x121\n,PlayerActionType_PlayerActionBoxingClubStart\x10\
-    \xd3\x1f\x122\n-PlayerActionType_PlayerActionBoxingClubFinish\x10\xd4\
-    \x1f\x121\n,PlayerActionType_PlayerActionBoxingClubPause\x10\xd5\x1f\x12\
-    6\n1PlayerActionType_PlayerActionBoxingClubStageStart\x10\xd6\x1f\x12*\n\
-    %PlayerActionType_PlayerActionTalkSend\x10\x85\x20\x127\n2PlayerActionTy\
-    pe_PlayerActionSelectInclinationText\x10\x86\x20\x126\n1PlayerActionType\
-    _PlayerActionMuseumSettleTurnOpen\x10\xe9\x20\x123\n.PlayerActionType_Pl\
-    ayerActionMuseumUpgradeArea\x10\xea\x20\x127\n2PlayerActionType_PlayerAc\
-    tionMuseumUpgradeAreaStat\x10\xeb\x20\x12=\n8PlayerActionType_PlayerActi\
-    onMuseumDispatchRewardRegular\x10\xec\x20\x12A\n<PlayerActionType_Player\
-    ActionMuseumDispatchRewardDirectional\x10\xed\x20\x12;\n6PlayerActionTyp\
-    e_PlayerActionMuseumPhaseTargetFinished\x10\xee\x20\x120\n+PlayerActionT\
-    ype_PlayerActionMuseumGetStuff\x10\xef\x20\x122\n-PlayerActionType_Playe\
-    rActionMuseumGetExhibit\x10\xf0\x20\x12:\n5PlayerActionType_PlayerAction\
-    MuseumTakeCollectMission\x10\xf1\x20\x122\n-PlayerActionType_PlayerActio\
-    nMuseumAreaUnlock\x10\xf2\x20\x123\n.PlayerActionType_PlayerActionMuseum\
-    AreaUpgrade\x10\xf3\x20\x127\n2PlayerActionType_PlayerActionMuseumAreaSt\
-    atUpgrade\x10\xf4\x20\x126\n1PlayerActionType_PlayerActionMuseumEnterNex\
-    tRound\x10\xf5\x20\x125\n0PlayerActionType_PlayerActionMuseumStartDispat\
-    ch\x10\xf6\x20\x126\n1PlayerActionType_PlayerActionMuseumSettleDispatch\
-    \x10\xf7\x20\x129\n4PlayerActionType_PlayerActionMuseumRenewPointChanged\
-    \x10\xf8\x20\x124\n/PlayerActionType_PlayerActionMuseumTargetReward\x10\
-    \xf9\x20\x124\n/PlayerActionType_PlayerActionMuseumPhaseUpgrade\x10\xfa\
-    \x20\x125\n0PlayerActionType_PlayerActionMuseumCollectReward\x10\xfb\x20\
-    \x123\n.PlayerActionType_PlayerActionMuseumTargetStart\x10\xfc\x20\x124\
-    \n/PlayerActionType_PlayerActionMuseumTargetFinish\x10\xfd\x20\x12H\nCPl\
-    ayerActionType_PlayerActionActivityMonsterResearchConsumeMaterial\x10\
-    \xcd!\x12C\n>PlayerActionType_PlayerActionActivityMonsterResearchTakeRew\
-    ard\x10\xce!\x123\n.PlayerActionType_PlayerActionPlayerReturnStart\x10\
-    \xb1\"\x122\n-PlayerActionType_PlayerActionPlayerReturnSign\x10\xb2\"\
-    \x123\n.PlayerActionType_PlayerActionPlayerReturnPoint\x10\xb3\"\x127\n2\
-    PlayerActionType_PlayerActionPlayerReturnCountdown\x10\xb4\"\x124\n/Play\
-    erActionType_PlayerActionPlayerReturnFinish\x10\xb5\"\x128\n3PlayerActio\
-    nType_PlayerActionPlayerReturnCompensate\x10\xb6\"\x126\n1PlayerActionTy\
-    pe_PlayerActionPlayerReturnGetRelic\x10\xb7\"\x128\n3PlayerActionType_Pl\
-    ayerActionPlayerReturnBpExpExtra\x10\xb8\"\x128\n3PlayerActionType_Playe\
-    rActionPlayerReturnHcoinExtra\x10\xb9\"\x129\n4PlayerActionType_PlayerAc\
-    tionPlayerReturnCustomRelic\x10\xba\"\x12:\n5PlayerActionType_PlayerActi\
-    onPlayerReturnAssistChange\x10\xc5\"\x12=\n8PlayerActionType_PlayerActio\
-    nRogueChallengeActivityStart\x10\xbb\"\x12>\n9PlayerActionType_PlayerAct\
-    ionRogueChallengeActivityFinish\x10\xbc\"\x12<\n7PlayerActionType_Player\
-    ActionRogueChallengeActivitySave\x10\xbd\"\x127\n2PlayerActionType_Playe\
-    rActionPlayerReturnLoginMail\x10\xcf\"\x12F\nAPlayerActionType_PlayerAct\
-    ionPlayerReturnExtraHcoinProgressChange\x10\xd0\"\x12A\n<PlayerActionTyp\
-    e_PlayerActionAetherDivideUsePassiveSkillItem\x10\xe2\"\x12?\n:PlayerAct\
-    ionType_PlayerActionAetherDivideClearPassiveSkill\x10\xe3\"\x12=\n8Playe\
-    rActionType_PlayerActionAetherDivideFinishChallenge\x10\xe4\"\x12A\n<Pla\
-    yerActionType_PlayerActionAetherDivideOverflowChunkReward\x10\xe5\"\x125\
-    \n0PlayerActionType_PlayerActionAetherDivideLevelUp\x10\xe6\"\x127\n2Pla\
-    yerActionType_PlayerActionAetherDivideNewReward\x10\xe7\"\x128\n3PlayerA\
-    ctionType_PlayerActionAetherDivideMonsterAdd\x10\xe8\"\x12:\n5PlayerActi\
-    onType_PlayerActionAetherDivideMonsterLevel\x10\xe9\"\x12>\n9PlayerActio\
-    nType_PlayerActionAetherDivideMonsterSkillWear\x10\xea\"\x128\n3PlayerAc\
-    tionType_PlayerActionAetherDivideTeamChange\x10\xeb\"\x128\n3PlayerActio\
-    nType_PlayerActionAetherDivideStageBegin\x10\xec\"\x126\n1PlayerActionTy\
-    pe_PlayerActionAetherDivideStageEnd\x10\xed\"\x127\n2PlayerActionType_Pl\
-    ayerActionAetherDivideStageRoll\x10\xee\"\x122\n-PlayerActionType_Player\
-    ActionAlleyEventFinish\x10\x95#\x121\n,PlayerActionType_PlayerActionAlle\
-    yTakeReward\x10\x96#\x126\n1PlayerActionType_PlayerActionAlleyPrestigeLe\
-    velUp\x10\x97#\x126\n1PlayerActionType_PlayerActionAlleyLogisticsFinish\
-    \x10\x98#\x128\n3PlayerActionType_PlayerActionAlleyPlacingGameFinish\x10\
-    \x99#\x126\n1PlayerActionType_PlayerActionAlleyGuaranteedFunds\x10\x9a#\
-    \x126\n1PlayerActionType_PlayerActionAlleyTakeEventReward\x10\x9b#\x129\
-    \n4PlayerActionType_PlayerActionAlleySpecialOrderFinish\x10\x9c#\x125\n0\
-    PlayerActionType_PlayerActionSensitiveWordShield\x10\xf9#\x12B\n=PlayerA\
-    ctionType_PlayerActionSensitiveWordServerInternalError\x10\xfa#\x12<\n7P\
-    layerActionType_PlayerActionSensitiveWordPlatformError\x10\xfb#\x126\n1P\
-    layerActionType_PlayerActionTreasureDungeonStart\x10\xdd$\x127\n2PlayerA\
-    ctionType_PlayerActionTreasureDungeonFinish\x10\xde$\x12;\n6PlayerAction\
-    Type_PlayerActionTreasureDungeonEnterFloor\x10\xdf$\x12;\n6PlayerActionT\
-    ype_PlayerActionTreasureDungeonLeaveFloor\x10\xe0$\x128\n3PlayerActionTy\
-    pe_PlayerActionTreasureDungeonUseItem\x10\xe1$\x12=\n8PlayerActionType_P\
-    layerActionTreasureDungeonAvatarChange\x10\xe2$\x12<\n7PlayerActionType_\
-    PlayerActionTreasureDungeonBattleStart\x10\xe3$\x12:\n5PlayerActionType_\
-    PlayerActionTreasureDungeonBattleEnd\x10\xe4$\x12;\n6PlayerActionType_Pl\
-    ayerActionTreasureDungeonPickupBuff\x10\xe5$\x127\n2PlayerActionType_Pla\
-    yerActionChessRogueFirstFinish\x10\xc1%\x126\n1PlayerActionType_PlayerAc\
-    tionChessRogueGiveupDice\x10\xc2%\x12:\n5PlayerActionType_PlayerActionCh\
-    essRogueSubStorySelect\x10\xc3%\x127\n2PlayerActionType_PlayerActionChes\
-    sRogueActionPoint\x10\xc4%\x128\n3PlayerActionType_PlayerActionChessRogu\
-    eReviveByProp\x10\xc5%\x126\n1PlayerActionType_PlayerActionChessRogueSta\
-    rtLevel\x10\xc6%\x126\n1PlayerActionType_PlayerActionChessRogueDiceEffec\
-    t\x10\xc7%\x12;\n6PlayerActionType_PlayerActionChessRogueMainStoryFinish\
-    \x10\xc8%\x12<\n7PlayerActionType_PlayerActionChessRogueAeonTalentEffect\
-    \x10\xc9%\x12@\n;PlayerActionType_PlayerActionChessRogueModifierOthersEf\
-    fect\x10\xca%\x123\n.PlayerActionType_PlayerActionChessRogueAddBuff\x10\
-    \xcb%\x127\n2PlayerActionType_PlayerActionChessRogueReforgeBuff\x10\xcc%\
-    \x127\n2PlayerActionType_PlayerActionChessRogueBuffLevelUp\x10\xcd%\x127\
-    \n2PlayerActionType_PlayerActionChessRogueEnhanceBuff\x10\xce%\x126\n1Pl\
-    ayerActionType_PlayerActionChessRogueAddMiracle\x10\xcf%\x127\n2PlayerAc\
-    tionType_PlayerActionChessRogueSwapMiracle\x10\xd0%\x127\n2PlayerActionT\
-    ype_PlayerActionChessRogueSelectBonus\x10\xd1%\x12:\n5PlayerActionType_P\
-    layerActionChessRogueDialogueFinish\x10\xd2%\x12:\n5PlayerActionType_Pla\
-    yerActionChessRogueSubStoryFinish\x10\xd3%\x12?\n:PlayerActionType_Playe\
-    rActionChessRogueAdventureRoomFinish\x10\xd4%\x127\n2PlayerActionType_Pl\
-    ayerActionChessRogueFinishLevel\x10\xd5%\x126\n1PlayerActionType_PlayerA\
-    ctionChessRogueStartLayer\x10\xd6%\x127\n2PlayerActionType_PlayerActionC\
-    hessRogueFinishLayer\x10\xd7%\x125\n0PlayerActionType_PlayerActionChessR\
-    ogueEnterRoom\x10\xd8%\x125\n0PlayerActionType_PlayerActionChessRogueLea\
-    veRoom\x10\xd9%\x124\n/PlayerActionType_PlayerActionChessRogueRollDice\
-    \x10\xda%\x126\n1PlayerActionType_PlayerActionChessRogueSelectDice\x10\
-    \xdb%\x126\n1PlayerActionType_PlayerActionChessRogueUnlockDice\x10\xdc%\
-    \x126\n1PlayerActionType_PlayerActionChessRogueBoardEvent\x10\xdd%\x12:\
-    \n5PlayerActionType_PlayerActionChessRogueDimensionPoint\x10\xde%\x126\n\
-    1PlayerActionType_PlayerActionChessRoguePickAvatar\x10\xdf%\x128\n3Playe\
-    rActionType_PlayerActionChessRogueReviveAvatar\x10\xe0%\x12>\n9PlayerAct\
-    ionType_PlayerActionChessRogueNousSubStorySelect\x10\xe1%\x12:\n5PlayerA\
-    ctionType_PlayerActionChessRogueLevelMechanism\x10\xec%\x12:\n5PlayerAct\
-    ionType_PlayerActionChessRogueNousStartLevel\x10\xed%\x12;\n6PlayerActio\
-    nType_PlayerActionChessRogueNousFinishLevel\x10\xee%\x12:\n5PlayerAction\
-    Type_PlayerActionChessRogueNousStartLayer\x10\xef%\x12;\n6PlayerActionTy\
-    pe_PlayerActionChessRogueNousFinishLayer\x10\xf0%\x129\n4PlayerActionTyp\
-    e_PlayerActionChessRogueNousEnterRoom\x10\xf1%\x129\n4PlayerActionType_P\
-    layerActionChessRogueNousLeaveRoom\x10\xf2%\x12:\n5PlayerActionType_Play\
-    erActionChessRogueNousSelectDice\x10\xf3%\x12@\n;PlayerActionType_Player\
-    ActionChessRogueNousUnlockDiceBranch\x10\xf4%\x12A\n<PlayerActionType_Pl\
-    ayerActionChessRogueNousUnlockDiceSurface\x10\xf5%\x128\n3PlayerActionTy\
-    pe_PlayerActionChessRogueNousEditDice\x10\xf6%\x12;\n6PlayerActionType_P\
-    layerActionChessRogueNousValueChange\x10\xf7%\x12@\n;PlayerActionType_Pl\
-    ayerActionChessRogueNousMainStoryTrigger\x10\xf8%\x12?\n:PlayerActionTyp\
-    e_PlayerActionChessRogueNousMainStoryFinish\x10\xf9%\x12?\n:PlayerAction\
-    Type_PlayerActionChessRogueNousSubStoryTrigger\x10\xfa%\x12>\n9PlayerAct\
-    ionType_PlayerActionChessRogueNousSubStoryFinish\x10\xfb%\x12<\n7PlayerA\
-    ctionType_PlayerActionChessRogueNousEnableTalent\x10\xfc%\x126\n1PlayerA\
-    ctionType_PlayerActionChessRogueSelectBuff\x10\xfd%\x129\n4PlayerActionT\
-    ype_PlayerActionChessRogueSelectMiracle\x10\xfe%\x129\n4PlayerActionType\
-    _PlayerActionChessRogueRemoveMiracle\x10\xff%\x125\n0PlayerActionType_Pl\
-    ayerActionChessRogueBoardCell\x10\x80&\x12;\n6PlayerActionType_PlayerAct\
-    ionFantasticStoryBattleBegin\x10\xa5&\x129\n4PlayerActionType_PlayerActi\
-    onFantasticStoryBattleEnd\x10\xa6&\x124\n/PlayerActionType_PlayerActionR\
-    ogueEndlessReward\x10\xd6&\x128\n3PlayerActionType_PlayerActionRogueEndl\
-    essLevelStart\x10\xd7&\x128\n3PlayerActionType_PlayerActionRogueEndlessS\
-    tageBegin\x10\xd8&\x126\n1PlayerActionType_PlayerActionRogueEndlessStage\
-    End\x10\xd9&\x125\n0PlayerActionType_PlayerActionBattleCollegeReward\x10\
-    \x89'\x12?\n:PlayerActionType_PlayerActionCommonRogueMiracleForBuffShop\
-    \x10\xbb'\x12@\n;PlayerActionType_PlayerActionCommonRogueAdventureRoomFi\
-    nish\x10\xbc'\x128\n3PlayerActionType_PlayerActionCommonRogueBuyBuffShop\
-    \x10\xbd'\x12?\n:PlayerActionType_PlayerActionCommonRogueBuyBuffShopRefr\
-    esh\x10\xbe'\x12=\n8PlayerActionType_PlayerActionCommonRogueCollectionUn\
-    lock\x10\xbf'\x12:\n5PlayerActionType_PlayerActionCommonRogueCollectionS\
-    et\x10\xc0'\x12=\n8PlayerActionType_PlayerActionCommonRogueExhibitionUnl\
-    ock\x10\xc1'\x12:\n5PlayerActionType_PlayerActionCommonRogueExhibitionSe\
-    t\x10\xc2'\x12:\n5PlayerActionType_PlayerActionCommonRogueChestInteract\
-    \x10\xc3'\x12G\nBPlayerActionType_PlayerActionCommonRogueAdventureRoomWo\
-    lfgunFinish\x10\xc4'\x12:\n5PlayerActionType_PlayerActionHeliobusPostInc\
-    omeReward\x10\xed'\x128\n3PlayerActionType_PlayerActionHeliobusPostFansR\
-    eward\x10\xee'\x126\n1PlayerActionType_PlayerActionHeliobusLevelUpgrade\
-    \x10\xef'\x129\n4PlayerActionType_PlayerActionHeliobusPostReplyReward\
-    \x10\xf0'\x12<\n7PlayerActionType_PlayerActionHeliobusCommentReplyReward\
-    \x10\xf1'\x12>\n9PlayerActionType_PlayerActionHeliobusChallengeFirstRewa\
-    rd\x10\xf2'\x121\n,PlayerActionType_PlayerActionHeliobusFansAdd\x10\xf3'\
-    \x129\n4PlayerActionType_PlayerActionHeliobusActionDaySettle\x10\xf4'\
-    \x125\n0PlayerActionType_PlayerActionHeliobusSkillUnlock\x10\xf5'\x124\n\
-    /PlayerActionType_PlayerActionHeliobusStageBegin\x10\xf6'\x122\n-PlayerA\
-    ctionType_PlayerActionHeliobusStageEnd\x10\xf7'\x121\n,PlayerActionType_\
-    PlayerActionHeliobusSnsRead\x10\xf8'\x127\n2PlayerActionType_PlayerActio\
-    nHeliobusSnsPostUnlock\x10\xf9'\x12:\n5PlayerActionType_PlayerActionHeli\
-    obusSnsCommentUnlock\x10\xfa'\x124\n/PlayerActionType_PlayerActionHeliob\
-    usSnsComment\x10\xfb'\x121\n,PlayerActionType_PlayerActionHeliobusSnsPos\
-    t\x10\xfc'\x121\n,PlayerActionType_PlayerActionHeliobusSnsLike\x10\xfd'\
-    \x126\n1PlayerActionType_PlayerActionHeliobusPhaseUpgrade\x10\xfe'\x125\
-    \n0PlayerActionType_PlayerActionPsPointCard30Reward\x10\xd1(\x125\n0Play\
-    erActionType_PlayerActionPsPointCard50Reward\x10\xd2(\x126\n1PlayerActio\
-    nType_PlayerActionPsPointCard100Reward\x10\xd3(\x123\n.PlayerActionType_\
-    PlayerActionPsnPlusGiftReward\x10\xd4(\x125\n0PlayerActionType_PlayerAct\
-    ionAppleGiftCardReward\x10\xd5(\x125\n0PlayerActionType_PlayerActionHear\
-    tDialSubmitItem\x10\xb5)\x12:\n5PlayerActionType_PlayerActionHeartDialDi\
-    aloguePerform\x10\xb6)\x127\n2PlayerActionType_PlayerActionHeartDialTrac\
-    eConsume\x10\xb7)\x128\n3PlayerActionType_PlayerActionHeartDialChangeEmo\
-    tion\x10\xb8)\x12@\n;PlayerActionType_PlayerActionTravelBrochureAddDefau\
-    ltPaster\x10\x99*\x12.\n)PlayerActionType_PlayerActionSpaceZooBorn\x10\
-    \xfd*\x120\n+PlayerActionType_PlayerActionSpaceZooMutate\x10\xfe*\x120\n\
-    +PlayerActionType_PlayerActionSpaceZooDelete\x10\xff*\x126\n1PlayerActio\
-    nType_PlayerActionSpaceZooExchangeItem\x10\x80+\x122\n-PlayerActionType_\
-    PlayerActionSpaceZooExpPoint\x10\x81+\x124\n/PlayerActionType_PlayerActi\
-    onSpaceZooTakeReward\x10\x82+\x124\n/PlayerActionType_PlayerActionSpaceZ\
-    ooCollection\x10\x83+\x12.\n)PlayerActionType_PlayerActionSpaceZooShow\
-    \x10\x84+\x125\n0PlayerActionType_PlayerActionSpaceZooSpecialData\x10\
-    \x85+\x12<\n7PlayerActionType_PlayerActionStrongChallengeBattleBegin\x10\
-    \xc5,\x12:\n5PlayerActionType_PlayerActionStrongChallengeBattleEnd\x10\
-    \xc6,\x121\n,PlayerActionType_PlayerActionRollShopDoGacha\x10\xf7,\x124\
-    \n/PlayerActionType_PlayerActionRollShopTakeReward\x10\xf8,\x124\n/Playe\
-    rActionType_PlayerActionOfferingSubmitItem\x10\xa9-\x124\n/PlayerActionT\
-    ype_PlayerActionOfferingTakeReward\x10\xaa-\x12:\n5PlayerActionType_Play\
-    erActionTravelBrochurePageUnlock\x10\xdb-\x12A\n<PlayerActionType_Player\
-    ActionTravelBrochurePageInteractAward\x10\xdc-\x12=\n8PlayerActionType_P\
-    layerActionTravelBrochureStickerUnlock\x10\xdd-\x12<\n7PlayerActionType_\
-    PlayerActionTravelBrochureStickerApply\x10\xde-\x12=\n8PlayerActionType_\
-    PlayerActionTravelBrochureStickerRemove\x10\xdf-\x129\n4PlayerActionType\
-    _PlayerActionTravelBrochurePageReset\x10\xe0-\x124\n/PlayerActionType_Pl\
-    ayerActionTrackMainMissionId\x10\x8d.\x12.\n)PlayerActionType_PlayerActi\
-    onWolfBroBegin\x10\x97.\x129\n4PlayerActionType_PlayerActionWolfBroGroup\
-    StateChange\x10\x98.\x12,\n'PlayerActionType_PlayerActionWolfBroEnd\x10\
-    \x99.\x123\n.PlayerActionType_PlayerActionWolfBroBulletZero\x10\x9a.\x12\
-    7\n2PlayerActionType_PlayerActionWolfBroActivateBullet\x10\x9b.\x128\n3P\
-    layerActionType_PlayerActionWolfBroBulletNumChange\x10\x9c.\x126\n1Playe\
-    rActionType_PlayerActionWolfBroUseBulletNull\x10\x9d.\x12<\n7PlayerActio\
-    nType_PlayerActionWolfBroUseBulletHitMonster\x10\x9e.\x125\n0PlayerActio\
-    nType_PlayerActionWolfBroPickUpBullet\x10\x9f.\x127\n2PlayerActionType_P\
-    layerActionWolfBroRestoreArchive\x10\xa0.\x12?\n:PlayerActionType_Player\
-    ActionTelevisionActivityBattleBegin\x10\xa1.\x12=\n8PlayerActionType_Pla\
-    yerActionTelevisionActivityBattleEnd\x10\xa2.\x12>\n9PlayerActionType_Pl\
-    ayerActionFeverTimeActivityBattleBegin\x10\xa3.\x12<\n7PlayerActionType_\
-    PlayerActionFeverTimeActivityBattleEnd\x10\xa4.\x12,\n'PlayerActionType_\
-    PlayerActionGunPlayEnd\x10\xa5.\x128\n3PlayerActionType_PlayerActionActi\
-    vityStarFightBegin\x10\xa6.\x126\n1PlayerActionType_PlayerActionActivity\
-    StarFightEnd\x10\xa7.\x128\n3PlayerActionType_PlayerActionMapRotationEnt\
-    erRegion\x10\xab.\x128\n3PlayerActionType_PlayerActionMapRotationLeaveRe\
-    gion\x10\xac.\x12<\n7PlayerActionType_PlayerActionMapRotationInteractCha\
-    rger\x10\xad.\x12:\n5PlayerActionType_PlayerActionMapRotationDeployRotat\
-    er\x10\xae.\x126\n1PlayerActionType_PlayerActionMapRotationRotateMap\x10\
-    \xaf.\x126\n1PlayerActionType_PlayerActionMapRotationAddEnergy\x10\xb0.\
-    \x129\n4PlayerActionType_PlayerActionMapRotationSetMaxEnergy\x10\xb1.\
-    \x12:\n5PlayerActionType_PlayerActionMapRotationRemoveRotater\x10\xb2.\
-    \x12>\n9PlayerActionType_PlayerActionMapRotationAutoDeployRotater\x10\
-    \xb3.\x12>\n9PlayerActionType_PlayerActionMapRotationAutoRemoveRotater\
-    \x10\xb4.\x123\n.PlayerActionType_PlayerActionDrinkMakerAddTips\x10\xbf.\
-    \x12;\n6PlayerActionType_PlayerActionDrinkMakerFinishChallenge\x10\xc0.\
-    \x12?\n:PlayerActionType_PlayerActionDrinkMakerGuestMaxFaithReward\x10\
-    \xc1.\x125\n0PlayerActionType_PlayerActionDrinkMakerMakeDrink\x10\xc2.\
-    \x12;\n6PlayerActionType_PlayerActionDrinkMakerSaveCustomDrink\x10\xc3.\
-    \x127\n2PlayerActionType_PlayerActionDrinkMakerEndSequence\x10\xc4.\x12;\
-    \n6PlayerActionType_PlayerActionDrinkMakerCheersMakeDrink\x10\xc5.\x12:\
-    \n5PlayerActionType_PlayerActionDrinkMakerCheersNpcDrink\x10\xc6.\x121\n\
-    ,PlayerActionType_PlayerActionChangeStoryLine\x10\xf1.\x12<\n7PlayerActi\
-    onType_PlayerActionContentPackageStatusChange\x10\xfb.\x12;\n6PlayerActi\
-    onType_PlayerActionContentPackageTrackChange\x10\xfc.\x12A\n<PlayerActio\
-    nType_PlayerActionContentPackageAcceptMainMission\x10\xfd.\x123\n.Player\
-    ActionType_PlayerActionWorldDirectUnlock\x10\x99/\x124\n/PlayerActionTyp\
-    e_PlayerActionMonopolyTurnFinish\x10\xa3/\x126\n1PlayerActionType_Player\
-    ActionMonopolyAssetTurntax\x10\xa4/\x124\n/PlayerActionType_PlayerAction\
-    MonopolyAssetBonus\x10\xa5/\x125\n0PlayerActionType_PlayerActionMonopoly\
-    EventEffect\x10\xa6/\x128\n3PlayerActionType_PlayerActionMonopolyMiniGam\
-    eSettle\x10\xa7/\x128\n3PlayerActionType_PlayerActionMonopolyGameRaiseRa\
-    tio\x10\xa8/\x126\n1PlayerActionType_PlayerActionMonopolyMoveRollDice\
-    \x10\xa9/\x12.\n)PlayerActionType_PlayerActionMonopolyMove\x10\xab/\x122\
-    \n-PlayerActionType_PlayerActionMonopolyBuyGoods\x10\xac/\x126\n1PlayerA\
-    ctionType_PlayerActionMonopolyUpgradeAsset\x10\xad/\x12;\n6PlayerActionT\
-    ype_PlayerActionMonopolyEventRerollRandom\x10\xae/\x126\n1PlayerActionTy\
-    pe_PlayerActionMonopolyDailyRefresh\x10\xaf/\x12A\n<PlayerActionType_Pla\
-    yerActionMonopolyGameGuessBuyInformation\x10\xb0/\x12A\n<PlayerActionTyp\
-    e_PlayerActionMonopolyDailyFirstEnterActivity\x10\xb1/\x125\n0PlayerActi\
-    onType_PlayerActionMonopolySocialEvent\x10\xb2/\x12<\n7PlayerActionType_\
-    PlayerActionMonopolyRaffleTicketReward\x10\xb3/\x12.\n)PlayerActionType_\
-    PlayerActionMonopolyLike\x10\xb4/\x125\n0PlayerActionType_PlayerActionMo\
-    nopolyPhaseReward\x10\xb5/\x12:\n5PlayerActionType_PlayerActionMonopolyM\
-    btiReportReward\x10\xb6/\x125\n0PlayerActionType_PlayerActionMonopolyDai\
-    lySettle\x10\xb7/\x12/\n*PlayerActionType_PlayerActionMonopolyStart\x10\
-    \xb8/\x121\n,PlayerActionType_PlayerActionMonopolyGetBuff\x10\xb9/\x12:\
-    \n5PlayerActionType_PlayerActionMonopolyAssetFundsChange\x10\xba/\x126\n\
-    1PlayerActionType_PlayerActionMonopolyAssetUpgrade\x10\xbb/\x12>\n9Playe\
-    rActionType_PlayerActionMonopolyDirectCoinGameSettle\x10\xbc/\x12=\n8Pla\
-    yerActionType_PlayerActionMonopolyExtractRaffleTicket\x10\xbd/\x12<\n7Pl\
-    ayerActionType_PlayerActionMonopolyMbtiProgressChange\x10\xbe/\x128\n3Pl\
-    ayerActionType_PlayerActionMonopolyQuizGameSettle\x10\xbf/\x125\n0Player\
-    ActionType_PlayerActionMonopolyEventSettle\x10\xc0/\x124\n/PlayerActionT\
-    ype_PlayerActionMonopolyItemChange\x10\xc1/\x125\n0PlayerActionType_Play\
-    erActionMonopolyCellTrigger\x10\xc2/\x126\n1PlayerActionType_PlayerActio\
-    nMonopolyEventTrigger\x10\xc3/\x125\n0PlayerActionType_PlayerActionMonop\
-    olyClickEffect\x10\xc4/\x128\n3PlayerActionType_PlayerActionEvolveBuildL\
-    evelFinish\x10\xd5/\x12:\n5PlayerActionType_PlayerActionEvolveBuildShopA\
-    bilityUp\x10\xd6/\x12<\n7PlayerActionType_PlayerActionEvolveBuildShopAbi\
-    lityDown\x10\xd7/\x12:\n5PlayerActionType_PlayerActionEvolveBuildTakeExp\
-    Reward\x10\xd8/\x12=\n8PlayerActionType_PlayerActionEvolveBuildBattleEnd\
-    AddCoin\x10\xd9/\x12=\n8PlayerActionType_PlayerActionEvolveBuildShopAbil\
-    ityReset\x10\xda/\x127\n2PlayerActionType_PlayerActionEvolveBuildLevelSt\
-    art\x10\xdb/\x125\n0PlayerActionType_PlayerActionEvolveBuildLevelEnd\x10\
-    \xdc/\x127\n2PlayerActionType_PlayerActionEvolveBuildStageStart\x10\xdd/\
-    \x125\n0PlayerActionType_PlayerActionEvolveBuildStageEnd\x10\xde/\x127\n\
-    2PlayerActionType_PlayerActionEvolveBuildLevelLeave\x10\xdf/\x127\n2Play\
-    erActionType_PlayerActionClockParkUnlockScript\x10\x870\x127\n2PlayerAct\
-    ionType_PlayerActionClockParkUnlockTalent\x10\x880\x127\n2PlayerActionTy\
-    pe_PlayerActionClockParkFinishScript\x10\x890\x126\n1PlayerActionType_Pl\
-    ayerActionClockParkRoundUpdate\x10\x8a0\x126\n1PlayerActionType_PlayerAc\
-    tionClockParkScriptBegin\x10\x8b0\x126\n1PlayerActionType_PlayerActionRo\
-    gueTournStartLevel\x10\xb80\x127\n2PlayerActionType_PlayerActionRogueTou\
-    rnFinishLevel\x10\xb90\x125\n0PlayerActionType_PlayerActionRogueTournExp\
-    Reward\x10\xba0\x12?\n:PlayerActionType_PlayerActionRogueTournFinishWeek\
-    Challenge\x10\xbb0\x12A\n<PlayerActionType_PlayerActionRogueTournPermane\
-    ntTalentEffect\x10\xbc0\x12>\n9PlayerActionType_PlayerActionRogueTournFi\
-    nishFormulaStory\x10\xbd0\x122\n-PlayerActionType_PlayerActionRogueTourn\
-    Revive\x10\xbe0\x126\n1PlayerActionType_PlayerActionRogueTournStageBegin\
-    \x10\xbf0\x124\n/PlayerActionType_PlayerActionRogueTournStageEnd\x10\xc0\
-    0\x12A\n<PlayerActionType_PlayerActionRogueTournPermanentEnableTalent\
-    \x10\xc10\x12@\n;PlayerActionType_PlayerActionRogueTournPermanentResetTa\
-    lent\x10\xc20\x12<\n7PlayerActionType_PlayerActionRogueTournCocoonStageB\
-    egin\x10\xc30\x12:\n5PlayerActionType_PlayerActionRogueTournCocoonStageE\
-    nd\x10\xc40\x125\n0PlayerActionType_PlayerActionRogueTournExpUpdate\x10\
-    \xc50\x125\n0PlayerActionType_PlayerActionRogueTournEnterRoom\x10\xc60\
-    \x125\n0PlayerActionType_PlayerActionRogueTournLeaveRoom\x10\xc70\x127\n\
-    2PlayerActionType_PlayerActionRogueTournArchiveSave\x10\xc80\x127\n2Play\
-    erActionType_PlayerActionRogueTournSelectBonus\x10\xc90\x12:\n5PlayerAct\
-    ionType_PlayerActionRogueTournDialogueFinish\x10\xca0\x124\n/PlayerActio\
-    nType_PlayerActionRogueTournDoGamble\x10\xcb0\x12?\n:PlayerActionType_Pl\
-    ayerActionRogueTournRoomContentGenerate\x10\xcc0\x126\n1PlayerActionType\
-    _PlayerActionRogueTournAddMiracle\x10\xcd0\x129\n4PlayerActionType_Playe\
-    rActionRogueTournRemoveMiracle\x10\xce0\x129\n4PlayerActionType_PlayerAc\
-    tionRogueTournSelectMiracle\x10\xcf0\x127\n2PlayerActionType_PlayerActio\
-    nRogueTournDropMiracle\x10\xd00\x123\n.PlayerActionType_PlayerActionRogu\
-    eTournAddBuff\x10\xd10\x126\n1PlayerActionType_PlayerActionRogueTournSel\
-    ectBuff\x10\xd20\x127\n2PlayerActionType_PlayerActionRogueTournBuffLevel\
-    Up\x10\xd30\x126\n1PlayerActionType_PlayerActionRogueTournRemoveBuff\x10\
-    \xd40\x126\n1PlayerActionType_PlayerActionRogueTournAddFormula\x10\xd50\
-    \x129\n4PlayerActionType_PlayerActionRogueTournRemoveFormula\x10\xd60\
-    \x129\n4PlayerActionType_PlayerActionRogueTournSelectFormula\x10\xd70\
-    \x12;\n6PlayerActionType_PlayerActionRogueTournActivateFormula\x10\xd80\
-    \x12?\n:PlayerActionType_PlayerActionRogueTournAdventureRoomFinish\x10\
-    \xd90\x127\n2PlayerActionType_PlayerActionRogueTournAlterLineup\x10\xda0\
-    \x12>\n9PlayerActionType_PlayerActionRogueTournSeasonEnableTalent\x10\
-    \xdb0\x12;\n6PlayerActionType_PlayerActionRogueTournTitanStartLevel\x10\
-    \xdc0\x12<\n7PlayerActionType_PlayerActionRogueTournTitanFinishLevel\x10\
-    \xdd0\x12:\n5PlayerActionType_PlayerActionRogueTournTitanEnterRoom\x10\
-    \xde0\x12:\n5PlayerActionType_PlayerActionRogueTournTitanLeaveRoom\x10\
-    \xdf0\x12;\n6PlayerActionType_PlayerActionRogueTournTitanStageBegin\x10\
-    \xe00\x129\n4PlayerActionType_PlayerActionRogueTournTitanStageEnd\x10\
-    \xe10\x12<\n7PlayerActionType_PlayerActionRogueTournTitanArchiveSave\x10\
-    \xe30\x12>\n9PlayerActionType_PlayerActionRogueTournTitanAddTitanBless\
-    \x10\xe40\x12A\n<PlayerActionType_PlayerActionRogueTournTitanSelectTitan\
-    Bless\x10\xe50\x12:\n5PlayerActionType_PlayerActionRogueTournDivisionCha\
-    nge\x10\xe60\x12?\n:PlayerActionType_PlayerActionRogueTournSelectReRollM\
-    iracle\x10\xe70\x12?\n:PlayerActionType_PlayerActionRogueTournTriggerBat\
-    tleByShop\x10\xe80\x12=\n8PlayerActionType_PlayerActionRogueTournUseSupe\
-    rRewardKey\x10\xe90\x12A\n<PlayerActionType_PlayerActionRogueTournPerson\
-    aStyleExpChange\x10\xea0\x12>\n9PlayerActionType_PlayerActionRogueTournP\
-    ersonaStyleSelect\x10\xeb0\x12=\n8PlayerActionType_PlayerActionRogueTour\
-    nPersonaStartLevel\x10\xec0\x12>\n9PlayerActionType_PlayerActionRogueTou\
-    rnPersonaFinishLevel\x10\xed0\x12<\n7PlayerActionType_PlayerActionRogueT\
-    ournPersonaEnterRoom\x10\xee0\x12<\n7PlayerActionType_PlayerActionRogueT\
-    ournPersonaLeaveRoom\x10\xef0\x12=\n8PlayerActionType_PlayerActionRogueT\
-    ournPersonaStageBegin\x10\xf00\x12;\n6PlayerActionType_PlayerActionRogue\
-    TournPersonaStageEnd\x10\xf10\x12>\n9PlayerActionType_PlayerActionRogueT\
-    ournPersonaArchiveSave\x10\xf20\x12>\n9PlayerActionType_PlayerActionRogu\
-    eTournHexEquipmentChange\x10\xf30\x12A\n<PlayerActionType_PlayerActionRo\
-    gueTournPersonaRoomCardChange\x10\xf40\x12F\nAPlayerActionType_PlayerAct\
-    ionRogueTournPersonaRoomCardLevelChange\x10\xf50\x12J\nEPlayerActionType\
-    _PlayerActionRogueTournPersonaRoomCardAttributeChange\x10\xf60\x12A\n<Pl\
-    ayerActionType_PlayerActionRogueTournPersonaRoomCardSelect\x10\xf70\x12?\
-    \n:PlayerActionType_PlayerActionRogueTournPersonaRoomCardWash\x10\xf80\
-    \x12B\n=PlayerActionType_PlayerActionRogueTournPersonaStyleGiftSelect\
-    \x10\xf90\x12I\nDPlayerActionType_PlayerActionRogueTournPersonaStyleGift\
-    SelectRefresh\x10\xfa0\x12A\n<PlayerActionType_PlayerActionRogueTournPer\
-    sonaRoomCardReroll\x10\xfb0\x12?\n:PlayerActionType_PlayerActionRogueTou\
-    rnMiracleStatusChange\x10\xfc0\x12>\n9PlayerActionType_PlayerActionRogue\
-    WorkbenchReforgeFormula\x10\x891\x12>\n9PlayerActionType_PlayerActionRog\
-    ueWorkbenchReforgeMiracle\x10\x8a1\x12>\n9PlayerActionType_PlayerActionR\
-    ogueWorkbenchComposeMiracle\x10\x8b1\x12;\n6PlayerActionType_PlayerActio\
-    nRogueWorkbenchReforgeBuff\x10\x8c1\x12;\n6PlayerActionType_PlayerAction\
-    RogueWorkbenchEnhanceBuff\x10\x8d1\x125\n0PlayerActionType_PlayerActionM\
-    atchThreePveSettle\x10\x9d1\x122\n-PlayerActionType_PlayerActionMatchThr\
-    eeSettle\x10\x9e1\x126\n1PlayerActionType_PlayerActionFightMatch3GameSta\
-    rt\x10\x9f1\x124\n/PlayerActionType_PlayerActionFightMatch3GameEnd\x10\
-    \xa01\x124\n/PlayerActionType_PlayerActionFightMatch3TurnEnd\x10\xa11\
-    \x123\n.PlayerActionType_PlayerActionMatchThreeBirdPos\x10\xa21\x124\n/P\
-    layerActionType_PlayerActionMultiplePlayInvite\x10\xa31\x12;\n6PlayerAct\
-    ionType_PlayerActionMultiplePlayInviteRespond\x10\xa41\x128\n3PlayerActi\
-    onType_PlayerActionMultiplePlayLobbyEnter\x10\xa51\x127\n2PlayerActionTy\
-    pe_PlayerActionMultiplePlayLobbyQuit\x10\xa61\x127\n2PlayerActionType_Pl\
-    ayerActionMultiplePlayLobbyKick\x10\xa71\x128\n3PlayerActionType_PlayerA\
-    ctionMultiplePlayLobbyMatch\x10\xa81\x12.\n)PlayerActionType_PlayerActio\
-    nMarbleSettle\x10\xa91\x126\n1PlayerActionType_PlayerActionMatchThreeSol\
-    oSettle\x10\xaa1\x12?\n:PlayerActionType_PlayerActionMatchThreeV2Battlei\
-    temLevelup\x10\xab1\x127\n2PlayerActionType_PlayerActionMatchThreeV2PveS\
-    ettle\x10\xac1\x127\n2PlayerActionType_PlayerActionMatchThreeV2PvpSettle\
-    \x10\xad1\x125\n0PlayerActionType_PlayerActionMatch3SoloGameStart\x10\
-    \xae1\x123\n.PlayerActionType_PlayerActionMatch3SoloGameEnd\x10\xaf1\x12\
-    4\n/PlayerActionType_PlayerActionMatch3SoloRoundEnd\x10\xb01\x124\n/Play\
-    erActionType_PlayerActionMatch3RoyaleSettle\x10\xb11\x127\n2PlayerAction\
-    Type_PlayerActionMatch3RoyaleGameStart\x10\xb21\x125\n0PlayerActionType_\
-    PlayerActionMatch3RoyaleGameEnd\x10\xb31\x126\n1PlayerActionType_PlayerA\
-    ctionMatch3RoyaleRoundEnd\x10\xb41\x122\n-PlayerActionType_PlayerActionD\
-    iceCombatSettle\x10\xb51\x124\n/PlayerActionType_PlayerActionDiceCombatV\
-    2Settle\x10\xb61\x122\n-PlayerActionType_PlayerActionTeamTowersSettle\
-    \x10\xb71\x129\n4PlayerActionType_PlayerActionSwordTrainingLearnSkill\
-    \x10\xcf1\x12;\n6PlayerActionType_PlayerActionSwordTrainingNormalAction\
-    \x10\xd01\x12:\n5PlayerActionType_PlayerActionSwordTrainingStoryEffect\
-    \x10\xd11\x129\n4PlayerActionType_PlayerActionSwordTrainingEndingHint\
-    \x10\xd21\x129\n4PlayerActionType_PlayerActionSwordTrainingActionHint\
-    \x10\xd31\x12@\n;PlayerActionType_PlayerActionSwordTrainingRestoreGameBy\
-    Exam\x10\xd41\x12B\n=PlayerActionType_PlayerActionSwordTrainingStoryLine\
-    FirstClear\x10\xd51\x12?\n:PlayerActionType_PlayerActionSwordTrainingTak\
-    eEndingReward\x10\xd61\x12=\n8PlayerActionType_PlayerActionSwordTraining\
-    StoryLineBegin\x10\xd71\x128\n3PlayerActionType_PlayerActionSwordTrainin\
-    gEnterTurn\x10\xd81\x129\n4PlayerActionType_PlayerActionSwordTrainingPla\
-    nAction\x10\xd91\x12=\n8PlayerActionType_PlayerActionSwordTrainingAction\
-    PhaseEnd\x10\xda1\x124\n/PlayerActionType_PlayerActionSwordTrainingStory\
-    \x10\xdb1\x12;\n6PlayerActionType_PlayerActionSwordTrainingStatusChange\
-    \x10\xdc1\x129\n4PlayerActionType_PlayerActionSwordTrainingMoodChange\
-    \x10\xdd1\x12:\n5PlayerActionType_PlayerActionSwordTrainingBattleBegin\
+    ionSecurityReport\x10\xf5\x07\x124\n/PlayerActionType_PlayerActionClient\
+    VideoSetting\x10\xf6\x07\x121\n,PlayerActionType_PlayerActionAvatarPromo\
+    tion\x10\xcd\x08\x12+\n&PlayerActionType_PlayerActionAvatarAdd\x10\xcf\
+    \x08\x122\n-PlayerActionType_PlayerActionAvatarUseExpItem\x10\xd0\x08\
+    \x12/\n*PlayerActionType_PlayerActionAvatarLevelUp\x10\xd1\x08\x12-\n(Pl\
+    ayerActionType_PlayerActionSkillTreeUp\x10\xd2\x08\x120\n+PlayerActionTy\
+    pe_PlayerActionAvatarHpChange\x10\xd3\x08\x120\n+PlayerActionType_Player\
+    ActionAvatarMpChange\x10\xd4\x08\x12.\n)PlayerActionType_PlayerActionAva\
+    tarAddExp\x10\xd5\x08\x12.\n)PlayerActionType_PlayerActionAvatarRankUp\
+    \x10\xd6\x08\x120\n+PlayerActionType_PlayerActionAvatarRepeated\x10\xd7\
+    \x08\x12-\n(PlayerActionType_PlayerActionMpMaxChange\x10\xd8\x08\x12;\n6\
+    PlayerActionType_PlayerActionAvatarTakePromotionReward\x10\xd9\x08\x126\
+    \n1PlayerActionType_PlayerActionAvatarRelicAffixInfo\x10\xda\x08\x12,\n'\
+    PlayerActionType_PlayerActionAvatarMark\x10\xdb\x08\x128\n3PlayerActionT\
+    ype_PlayerActionAvatarSystemPowerReset\x10\xdc\x08\x122\n-PlayerActionTy\
+    pe_PlayerActionAvatarChangePath\x10\xdf\x08\x127\n2PlayerActionType_Play\
+    erActionSetGrowthTargetAvatar\x10\xe0\x08\x12+\n&PlayerActionType_Player\
+    ActionDelAvatar\x10\xe1\x08\x122\n-PlayerActionType_PlayerActionAvatarSk\
+    inChange\x10\xe2\x08\x12?\n:PlayerActionType_PlayerActionSetGrowthTarget\
+    FunctionConfig\x10\xe3\x08\x12;\n6PlayerActionType_PlayerActionAvatarSki\
+    nActivityReissue\x10\xe4\x08\x125\n0PlayerActionType_PlayerActionSetAvat\
+    arEnhancedId\x10\xe5\x08\x123\n.PlayerActionType_PlayerActionDressPlayer\
+    Outfit\x10\xe6\x08\x12,\n'PlayerActionType_PlayerActionStageBegin\x10\
+    \xb2\t\x12*\n%PlayerActionType_PlayerActionStageEnd\x10\xb3\t\x122\n-Pla\
+    yerActionType_PlayerActionCocoonStageBegin\x10\xb5\t\x120\n+PlayerAction\
+    Type_PlayerActionCocoonStageEnd\x10\xb6\t\x120\n+PlayerActionType_Player\
+    ActionFarmElementEnd\x10\xb7\t\x121\n,PlayerActionType_PlayerActionEleme\
+    ntStageEnd\x10\xb8\t\x12-\n(PlayerActionType_PlayerActionCocoonSweep\x10\
+    \xb9\t\x122\n-PlayerActionType_PlayerActionFarmElementSweep\x10\xba\t\
+    \x120\n+PlayerActionType_PlayerActionRecoverStamina\x10\x95\n\x121\n,Pla\
+    yerActionType_PlayerActionExchangeStamina\x10\x96\n\x12-\n(PlayerActionT\
+    ype_PlayerActionLoginReward\x10\x97\n\x120\n+PlayerActionType_PlayerActi\
+    onModifyNickname\x10\x98\n\x120\n+PlayerActionType_PlayerActionGetLevelR\
+    eward\x10\x99\n\x12.\n)PlayerActionType_PlayerActionWorldLevelUp\x10\x9a\
+    \n\x12,\n'PlayerActionType_PlayerActionAddStamina\x10\x9b\n\x12<\n7Playe\
+    rActionType_PlayerActionGameplayBirthdayRewardMail\x10\x9c\n\x126\n1Play\
+    erActionType_PlayerActionRechargeRebateReward\x10\x9d\n\x125\n0PlayerAct\
+    ionType_PlayerActionGameplayBirthdaySet\x10\x9e\n\x128\n3PlayerActionTyp\
+    e_PlayerActionReserveStaminaExchange\x10\x9f\n\x123\n.PlayerActionType_P\
+    layerActionReserveStaminaAdd\x10\xa0\n\x126\n1PlayerActionType_PlayerAct\
+    ionReserveStaminaChange\x10\xa1\n\x12,\n'PlayerActionType_PlayerActionNo\
+    wStamina\x10\xa2\n\x122\n-PlayerActionType_PlayerActionFtcResetNickname\
+    \x10\xa3\n\x12?\n:PlayerActionType_PlayerActionReserveAndFuelExchangeSta\
+    mina\x10\xa4\n\x12&\n!PlayerActionType_PlayerActionMail\x10\xf9\n\x12.\n\
+    )PlayerActionType_PlayerActionMailOpByUser\x10\xfa\n\x12.\n)PlayerAction\
+    Type_PlayerActionMailOpByMuip\x10\xfb\n\x12,\n'PlayerActionType_PlayerAc\
+    tionMailOpByGm\x10\xfc\n\x12.\n)PlayerActionType_PlayerActionMailOpByFul\
+    l\x10\xfd\n\x120\n+PlayerActionType_PlayerActionMailOpByExpire\x10\xfe\n\
+    \x122\n-PlayerActionType_PlayerActionMailOpByInternal\x10\xff\n\x12)\n$P\
+    layerActionType_PlayerActionAddMail\x10\x80\x0b\x12)\n$PlayerActionType_\
+    PlayerActionDelMail\x10\x81\x0b\x120\n+PlayerActionType_PlayerActionTake\
+    Attachment\x10\x82\x0b\x12*\n%PlayerActionType_PlayerActionReadMail\x10\
+    \x83\x0b\x12.\n)PlayerActionType_PlayerActionBattleAvatar\x10\xdd\x0b\
+    \x12/\n*PlayerActionType_PlayerActionBattleMonster\x10\xde\x0b\x12+\n&Pl\
+    ayerActionType_PlayerActionBattleEnd\x10\xe0\x0b\x12.\n)PlayerActionType\
+    _PlayerActionBattleReplay\x10\xe1\x0b\x123\n.PlayerActionType_PlayerActi\
+    onBattleAvatarDeath\x10\xe2\x0b\x123\n.PlayerActionType_PlayerActionBatt\
+    leSwitchPhase\x10\xe3\x0b\x124\n/PlayerActionType_PlayerActionBattleMons\
+    terSkill\x10\xe4\x0b\x120\n+PlayerActionType_PlayerActionBattleRebattle\
+    \x10\xe5\x0b\x125\n0PlayerActionType_PlayerActionBattleAvatarServant\x10\
+    \xe6\x0b\x12/\n*PlayerActionType_PlayerActionMissionReward\x10\xc2\x0c\
+    \x12-\n(PlayerActionType_PlayerActionQuestAccept\x10\xc3\x0c\x12-\n(Play\
+    erActionType_PlayerActionQuestFinish\x10\xc4\x0c\x12-\n(PlayerActionType\
+    _PlayerActionQuestRemove\x10\xc5\x0c\x12-\n(PlayerActionType_PlayerActio\
+    nQuestReward\x10\xc6\x0c\x120\n+PlayerActionType_PlayerActionQuestAutoCl\
+    ose\x10\xc7\x0c\x12.\n)PlayerActionType_PlayerActionQuestExpired\x10\xc8\
+    \x0c\x121\n,PlayerActionType_PlayerActionMissionRequired\x10\xc9\x0c\x12\
+    2\n-PlayerActionType_PlayerActionSubmissionReward\x10\xca\x0c\x128\n3Pla\
+    yerActionType_PlayerActionAchievementLevelReward\x10\xcb\x0c\x12-\n(Play\
+    erActionType_PlayerActionQuestDelete\x10\xcc\x0c\x123\n.PlayerActionType\
+    _PlayerActionSubMissionReward2\x10\xcd\x0c\x123\n.PlayerActionType_Playe\
+    rActionMissionCompensate\x10\xce\x0c\x120\n+PlayerActionType_PlayerActio\
+    nMissionRecycle\x10\xcf\x0c\x12,\n'PlayerActionType_PlayerActionQuestRes\
+    et\x10\xd0\x0c\x125\n0PlayerActionType_PlayerActionQuestOptionalReward\
+    \x10\xd1\x0c\x12+\n&PlayerActionType_PlayerActionMcvChange\x10\xd2\x0c\
+    \x12.\n)PlayerActionType_PlayerActionQuestReissue\x10\xd3\x0c\x12.\n)Pla\
+    yerActionType_PlayerActionPropInteract\x10\xa8\r\x121\n,PlayerActionType\
+    _PlayerActionAvatarMazeSkill\x10\xa9\r\x12+\n&PlayerActionType_PlayerAct\
+    ionEnterMaze\x10\xaa\r\x122\n-PlayerActionType_PlayerActionOrdinaryInter\
+    act\x10\xab\r\x12/\n*PlayerActionType_PlayerActionChestInteract\x10\xac\
+    \r\x122\n-PlayerActionType_PlayerActionCheckPointUnlock\x10\xad\r\x124\n\
+    /PlayerActionType_PlayerActionCheckPointInteract\x10\xae\r\x122\n-Player\
+    ActionType_PlayerActionCheckPointRevive\x10\xaf\r\x124\n/PlayerActionTyp\
+    e_PlayerActionCheckPointTransfer\x10\xb0\r\x121\n,PlayerActionType_Playe\
+    rActionMonsterInteract\x10\xb2\r\x12-\n(PlayerActionType_PlayerActionNpc\
+    Interact\x10\xb4\r\x12)\n$PlayerActionType_PlayerActionPropHit\x10\xb5\r\
+    \x120\n+PlayerActionType_PlayerActionPrelogueRevive\x10\xb6\r\x12+\n&Pla\
+    yerActionType_PlayerActionPropState\x10\xb7\r\x123\n.PlayerActionType_Pl\
+    ayerActionCheckPointRecover\x10\xb8\r\x12.\n)PlayerActionType_PlayerActi\
+    onMechanismBar\x10\xba\r\x123\n.PlayerActionType_PlayerActionSubmitOriga\
+    miItem\x10\xbb\r\x122\n-PlayerActionType_PlayerActionMazeBuffDropItem\
+    \x10\xbc\r\x12+\n&PlayerActionType_PlayerActionFsvChange\x10\xbd\r\x123\
+    \n.PlayerActionType_PlayerActionTimelinePropState\x10\xbe\r\x125\n0Playe\
+    rActionType_PlayerActionGroupPropertyChange\x10\xbf\r\x128\n3PlayerActio\
+    nType_PlayerActionOpenGroupPropertyChest\x10\xc0\r\x124\n/PlayerActionTy\
+    pe_PlayerActionEquipmentPromotion\x10\xed\x0e\x12)\n$PlayerActionType_Pl\
+    ayerActionAddItem\x10\xee\x0e\x12)\n$PlayerActionType_PlayerActionUseIte\
+    m\x10\xf0\x0e\x121\n,PlayerActionType_PlayerActionEquipmentRankUp\x10\
+    \xf1\x0e\x122\n-PlayerActionType_PlayerActionEquipmentLevelUp\x10\xf2\
+    \x0e\x126\n1PlayerActionType_PlayerActionExpUpEquipmentReturn\x10\xf3\
+    \x0e\x123\n.PlayerActionType_PlayerActionBagFullRewardMail\x10\xf4\x0e\
+    \x12.\n)PlayerActionType_PlayerActionEquipmentAdd\x10\xf5\x0e\x12/\n*Pla\
+    yerActionType_PlayerActionEquipmentWear\x10\xf6\x0e\x12-\n(PlayerActionT\
+    ype_PlayerActionItemCompose\x10\xf7\x0e\x12.\n)PlayerActionType_PlayerAc\
+    tionRelicLevelUp\x10\xf8\x0e\x122\n-PlayerActionType_PlayerActionExpUpRe\
+    licReturn\x10\xf9\x0e\x121\n,PlayerActionType_PlayerActionRelicNumChange\
+    d\x10\xfa\x0e\x12+\n&PlayerActionType_PlayerActionRelicWear\x10\xfb\x0e\
+    \x12.\n)PlayerActionType_PlayerActionRelicCompose\x10\xfc\x0e\x12*\n%Pla\
+    yerActionType_PlayerActionSellItem\x10\xfd\x0e\x12-\n(PlayerActionType_P\
+    layerActionUnlockMusic\x10\xfe\x0e\x12;\n6PlayerActionType_PlayerActionE\
+    xchangeHcoinWithPayMcoin\x10\xff\x0e\x12+\n&PlayerActionType_PlayerActio\
+    nGetReward\x10\x80\x0f\x12<\n7PlayerActionType_PlayerActionExchangeHcoin\
+    WithFreeMcoin\x10\x81\x0f\x12:\n5PlayerActionType_PlayerActionItemCompos\
+    eFormulaUnlock\x10\x82\x0f\x12/\n*PlayerActionType_PlayerActionExchangeH\
+    coin\x10\x83\x0f\x125\n0PlayerActionType_PlayerActionCityShopLevelReward\
+    \x10\x84\x0f\x12-\n(PlayerActionType_PlayerActionItemRecycle\x10\x85\x0f\
+    \x124\n/PlayerActionType_PlayerActionMuseumFundsConsume\x10\x86\x0f\x125\
+    \n0PlayerActionType_PlayerActionMuseumEventBuyStuff\x10\x87\x0f\x126\n1P\
+    layerActionType_PlayerActionMuseumMarketBuyStuff\x10\x88\x0f\x123\n.Play\
+    erActionType_PlayerActionMuseumRandomEvent\x10\x89\x0f\x123\n.PlayerActi\
+    onType_PlayerActionMuseumInitialItem\x10\x8a\x0f\x123\n.PlayerActionType\
+    _PlayerActionOptionalBoxReward\x10\x8b\x0f\x12-\n(PlayerActionType_Playe\
+    rActionDestroyItem\x10\x8c\x0f\x12-\n(PlayerActionType_PlayerActionTrans\
+    ferExp\x10\x8d\x0f\x12+\n&PlayerActionType_PlayerActionOndutyUse\x10\x8e\
+    \x0f\x12*\n%PlayerActionType_PlayerActionItemMark\x10\x8f\x0f\x12.\n)Pla\
+    yerActionType_PlayerActionRelicDiscard\x10\x90\x0f\x12:\n5PlayerActionTy\
+    pe_PlayerActionGeneralVirtualItemChange\x10\x91\x0f\x12+\n&PlayerActionT\
+    ype_PlayerActionRelicLock\x10\x92\x0f\x125\n0PlayerActionType_PlayerActi\
+    onRelicFilterPlanSave\x10\x93\x0f\x127\n2PlayerActionType_PlayerActionRe\
+    licFilterPlanDelete\x10\x94\x0f\x125\n0PlayerActionType_PlayerActionReli\
+    cFilterPlanMark\x10\x95\x0f\x12+\n&PlayerActionType_PlayerActionRelicSel\
+    l\x10\x96\x0f\x12.\n)PlayerActionType_PlayerActionRelicReforge\x10\x97\
+    \x0f\x12:\n5PlayerActionType_PlayerActionRelicSmartWearCustomPlan\x10\
+    \x98\x0f\x12.\n)PlayerActionType_PlayerActionRecoverRelic\x10\x99\x0f\
+    \x122\n-PlayerActionType_PlayerActionRecoverEquipment\x10\x9a\x0f\x12/\n\
+    *PlayerActionType_PlayerActionEquipmentSell\x10\x9b\x0f\x128\n3PlayerAct\
+    ionType_PlayerActionRelicSmartWearPinRelic\x10\x9c\x0f\x124\n/PlayerActi\
+    onType_PlayerActionRelicCocoonSetting\x10\x9d\x0f\x124\n/PlayerActionTyp\
+    e_PlayerActionPersonalCardChange\x10\x9e\x0f\x121\n,PlayerActionType_Pla\
+    yerActionPhoneCaseChange\x10\x9f\x0f\x124\n/PlayerActionType_PlayerActio\
+    nDeliveryItemReward\x10\xa0\x0f\x122\n-PlayerActionType_PlayerActionItem\
+    AutoTransfer\x10\xa1\x0f\x127\n2PlayerActionType_PlayerActionItemAutoTra\
+    nsferInBag\x10\xa2\x0f\x127\n2PlayerActionType_PlayerActionItemAutoTrans\
+    ferOnAdd\x10\xa3\x0f\x12.\n)PlayerActionType_PlayerActionAddExtraCoin\
+    \x10\xa4\x0f\x12A\n<PlayerActionType_PlayerActionVariableDiceExchangePar\
+    tnerCoin\x10\xa5\x0f\x12*\n%PlayerActionType_PlayerActionRelicBox\x10\
+    \xa6\x0f\x120\n+PlayerActionType_PlayerActionRelicBoxSettle\x10\xa7\x0f\
+    \x121\n,PlayerActionType_PlayerActionRelicBoxRegular\x10\xa8\x0f\x12.\n)\
+    PlayerActionType_PlayerActionRelicReplace\x10\xa9\x0f\x12<\n7PlayerActio\
+    nType_PlayerActionEquipmentUpCostPileSetting\x10\xaa\x0f\x12.\n)PlayerAc\
+    tionType_PlayerActionRelicBoxShow\x10\xab\x0f\x125\n0PlayerActionType_Pl\
+    ayerActionTutorialGuideFinish\x10\xd1\x0f\x12*\n%PlayerActionType_Player\
+    ActionTutorial\x10\xd2\x0f\x12/\n*PlayerActionType_PlayerActionTutorialG\
+    uide\x10\xd3\x0f\x12-\n(PlayerActionType_PlayerActionMonsterDrop\x10\xb5\
+    \x10\x121\n,PlayerActionType_PlayerActionFinishChallenge\x10\x99\x11\x12\
+    0\n+PlayerActionType_PlayerActionChallengeStars\x10\x9a\x11\x120\n+Playe\
+    rActionType_PlayerActionChallengeStart\x10\x9b\x11\x12.\n)PlayerActionTy\
+    pe_PlayerActionChallengeEnd\x10\x9c\x11\x12.\n)PlayerActionType_PlayerAc\
+    tionChallengeWin\x10\x9d\x11\x12/\n*PlayerActionType_PlayerActionChallen\
+    geFail\x10\x9e\x11\x120\n+PlayerActionType_PlayerActionChallengeLeave\
+    \x10\x9f\x11\x121\n,PlayerActionType_PlayerActionChallengeSwitch\x10\xa0\
+    \x11\x126\n1PlayerActionType_PlayerActionChallengeBonusReward\x10\xa2\
+    \x11\x126\n1PlayerActionType_PlayerActionChallengeStarsReward\x10\xa3\
+    \x11\x122\n-PlayerActionType_PlayerActionChallengeRestart\x10\xa4\x11\
+    \x125\n0PlayerActionType_PlayerActionChallengeStoryStart\x10\xa5\x11\x12\
+    3\n.PlayerActionType_PlayerActionChallengeStoryEnd\x10\xa6\x11\x123\n.Pl\
+    ayerActionType_PlayerActionChallengeFastPass\x10\xa7\x11\x128\n3PlayerAc\
+    tionType_PlayerActionChallengeStoryFastPass\x10\xa8\x11\x129\n4PlayerAct\
+    ionType_PlayerActionChallengeMemoryFastPass\x10\xa9\x11\x127\n2PlayerAct\
+    ionType_PlayerActionChallengeBattleTarget\x10\xaa\x11\x122\n-PlayerActio\
+    nType_PlayerActionChallengeBossEnd\x10\xab\x11\x127\n2PlayerActionType_P\
+    layerActionChallengeBossFastPass\x10\xac\x11\x127\n2PlayerActionType_Pla\
+    yerActionChallengeStartPartial\x10\xad\x11\x129\n4PlayerActionType_Playe\
+    rActionChallengeBossPhaseStart\x10\xae\x11\x127\n2PlayerActionType_Playe\
+    rActionChallengeBossPhaseEnd\x10\xaf\x11\x12C\n>PlayerActionType_PlayerA\
+    ctionChallengeBossPhaseEndBeforeBattle\x10\xb0\x11\x12:\n5PlayerActionTy\
+    pe_PlayerActionChallengeRecommendLineup\x10\xb1\x11\x12>\n9PlayerActionT\
+    ype_PlayerActionChallengeStoryFeverBattleEnd\x10\xb2\x11\x12@\n;PlayerAc\
+    tionType_PlayerActionChallengeTierceRecommendLineup\x10\xe9\x11\x126\n1P\
+    layerActionType_PlayerActionChallengeTierceStart\x10\xea\x11\x12:\n5Play\
+    erActionType_PlayerActionChallengeTierceBattleEnd\x10\xeb\x11\x12<\n7Pla\
+    yerActionType_PlayerActionChallengeTierceStageSettle\x10\xec\x11\x12;\n6\
+    PlayerActionType_PlayerActionChallengeTierceGradeReset\x10\xed\x11\x120\
+    \n+PlayerActionType_PlayerActionTeamInfoChange\x10\xfd\x11\x125\n0Player\
+    ActionType_PlayerActionChangeCurrentAvatar\x10\xfe\x11\x123\n.PlayerActi\
+    onType_PlayerActionCreateVirtualTeam\x10\xff\x11\x12.\n)PlayerActionType\
+    _PlayerActionTeamNameEdit\x10\x80\x12\x125\n0PlayerActionType_PlayerActi\
+    onReplaceLineupAvatar\x10\x81\x12\x122\n-PlayerActionType_PlayerActionAv\
+    atarBuffChange\x10\xe1\x12\x12/\n*PlayerActionType_PlayerActionEnvBuffCh\
+    ange\x10\xe2\x12\x12*\n%PlayerActionType_PlayerActionGameCore\x10\xe3\
+    \x12\x122\n-PlayerActionType_PlayerActionAvatarGlobalBuff\x10\xe4\x12\
+    \x123\n.PlayerActionType_PlayerActionRogueExploreStart\x10\xc5\x13\x120\
+    \n+PlayerActionType_PlayerActionRogueEnterRoom\x10\xc6\x13\x120\n+Player\
+    ActionType_PlayerActionRogueLeaveRoom\x10\xc7\x13\x124\n/PlayerActionTyp\
+    e_PlayerActionRogueExploreFinish\x10\xc8\x13\x121\n,PlayerActionType_Pla\
+    yerActionRogueSelectBuff\x10\xc9\x13\x12/\n*PlayerActionType_PlayerActio\
+    nRogueRollBuff\x10\xca\x13\x12-\n(PlayerActionType_PlayerActionRogueRevi\
+    ve\x10\xcb\x13\x125\n0PlayerActionType_PlayerActionRogueChallengeStart\
+    \x10\xd0\x13\x12.\n)PlayerActionType_PlayerActionRogueMiracle\x10\xd2\
+    \x13\x12.\n)PlayerActionType_PlayerActionRogueAddBuff\x10\xd3\x13\x121\n\
+    ,PlayerActionType_PlayerActionRoguePickAvatar\x10\xd4\x13\x124\n/PlayerA\
+    ctionType_PlayerActionRogueSeasonChanged\x10\xda\x13\x122\n-PlayerAction\
+    Type_PlayerActionRogueAeonLevelUp\x10\xdc\x13\x12/\n*PlayerActionType_Pl\
+    ayerActionRogueOpenDoor\x10\xdd\x13\x122\n-PlayerActionType_PlayerAction\
+    RogueScoreReward\x10\xde\x13\x122\n-PlayerActionType_PlayerActionRogueEn\
+    hanceBuff\x10\xdf\x13\x122\n-PlayerActionType_PlayerActionRogueSelectBon\
+    us\x10\xe0\x13\x126\n1PlayerActionType_PlayerActionRogueAreaFirstReward\
+    \x10\xe1\x13\x123\n.PlayerActionType_PlayerActionRogueEnableTalent\x10\
+    \xe2\x13\x121\n,PlayerActionType_PlayerActionRogueAeonUnlock\x10\xe3\x13\
+    \x121\n,PlayerActionType_PlayerActionRogueAeonAddExp\x10\xe4\x13\x125\n0\
+    PlayerActionType_PlayerActionRogueImmerseLevelUp\x10\xe5\x13\x124\n/Play\
+    erActionType_PlayerActionRogueSelectMiracle\x10\xe6\x13\x121\n,PlayerAct\
+    ionType_PlayerActionRogueUnlockArea\x10\xe7\x13\x129\n4PlayerActionType_\
+    PlayerActionRogueExploreScoreChange\x10\xe8\x13\x127\n2PlayerActionType_\
+    PlayerActionRogueUpdateRewardPool\x10\xe9\x13\x12/\n*PlayerActionType_Pl\
+    ayerActionRogueSwapBuff\x10\xeb\x13\x124\n/PlayerActionType_PlayerAction\
+    RogueWeeklyRefresh\x10\xec\x13\x122\n-PlayerActionType_PlayerActionRogue\
+    ExchangeKey\x10\xed\x13\x126\n1PlayerActionType_PlayerActionRogueGetObje\
+    ctReward\x10\xee\x13\x126\n1PlayerActionType_PlayerActionRogueAreaMonste\
+    rDrop\x10\xef\x13\x121\n,PlayerActionType_PlayerActionRogueAddMiracle\
+    \x10\xf0\x13\x122\n-PlayerActionType_PlayerActionRogueSwapMiracle\x10\
+    \xf1\x13\x127\n2PlayerActionType_PlayerActionRogueOpenObjectReward\x10\
+    \xf2\x13\x121\n,PlayerActionType_PlayerActionRogueAeonEffect\x10\xf3\x13\
+    \x122\n-PlayerActionType_PlayerActionRogueReforgeBuff\x10\xf4\x13\x123\n\
+    .PlayerActionType_PlayerActionRogueTradeMiracle\x10\xf5\x13\x123\n.Playe\
+    rActionType_PlayerActionRogueRemoveAvatar\x10\xf6\x13\x125\n0PlayerActio\
+    nType_PlayerActionRogueDialogueSelect\x10\xf7\x13\x121\n,PlayerActionTyp\
+    e_PlayerActionRogueSelectAeon\x10\xf8\x13\x125\n0PlayerActionType_Player\
+    ActionRogueDialogueFinish\x10\xf9\x13\x125\n0PlayerActionType_PlayerActi\
+    onRogueHandbookReward\x10\xfa\x13\x12:\n5PlayerActionType_PlayerActionRo\
+    gueAdventureRoomReward\x10\xfb\x13\x12.\n)PlayerActionType_PlayerActionR\
+    ogueShopBuy\x10\xfc\x13\x124\n/PlayerActionType_PlayerActionRogueRepairM\
+    iracle\x10\xfd\x13\x128\n3PlayerActionType_PlayerActionRogueReplaceAllMi\
+    racle\x10\xfe\x13\x124\n/PlayerActionType_PlayerActionRogueMiracleBroken\
+    \x10\xff\x13\x122\n-PlayerActionType_PlayerActionRogueShopRefresh\x10\
+    \x80\x14\x125\n0PlayerActionType_PlayerActionRogueLevelMechanism\x10\x81\
+    \x14\x124\n/PlayerActionType_PlayerActionRogueRemoveMiracle\x10\x82\x14\
+    \x12/\n*PlayerActionType_PlayerActionRogueDropBuff\x10\x83\x14\x125\n0Pl\
+    ayerActionType_PlayerActionRogueDestroyMiracle\x10\x84\x14\x126\n1Player\
+    ActionType_PlayerActionRogueActivateFormula\x10\x85\x14\x128\n3PlayerAct\
+    ionType_PlayerActionRogueDeactivateFormula\x10\x86\x14\x121\n,PlayerActi\
+    onType_PlayerActionRogueRemoveBuff\x10\x87\x14\x124\n/PlayerActionType_P\
+    layerActionRogueSelectFormula\x10\x88\x14\x122\n-PlayerActionType_Player\
+    ActionRogueDropFormula\x10\x89\x14\x122\n-PlayerActionType_PlayerActionR\
+    ogueRollFormula\x10\x8a\x14\x125\n0PlayerActionType_PlayerActionRogueRef\
+    orgeFormula\x10\x8b\x14\x125\n0PlayerActionType_PlayerActionRogueCompose\
+    Miracle\x10\x8c\x14\x125\n0PlayerActionType_PlayerActionRogueReforgeMira\
+    cle\x10\x8d\x14\x12/\n*PlayerActionType_PlayerActionRogueDoGamble\x10\
+    \x8e\x14\x126\n1PlayerActionType_PlayerActionRogueKeywordActivate\x10\
+    \x8f\x14\x128\n3PlayerActionType_PlayerActionRogueKeywordDeactivate\x10\
+    \x90\x14\x124\n/PlayerActionType_PlayerActionRogueSourceDefault\x10\x91\
+    \x14\x123\n.PlayerActionType_PlayerActionRoguePlayerSelect\x10\x92\x14\
+    \x126\n1PlayerActionType_PlayerActionRogueLayerSettlement\x10\x93\x14\
+    \x12.\n)PlayerActionType_PlayerActionRogueFormula\x10\x94\x14\x120\n+Pla\
+    yerActionType_PlayerActionRogueWorkbench\x10\x95\x14\x12/\n*PlayerAction\
+    Type_PlayerActionRogueModifier\x10\x96\x14\x12.\n)PlayerActionType_Playe\
+    rActionRogueReforge\x10\x97\x14\x12-\n(PlayerActionType_PlayerActionRogu\
+    eTalent\x10\x98\x14\x12-\n(PlayerActionType_PlayerActionRogueReroll\x10\
+    \x99\x14\x121\n,PlayerActionType_PlayerActionRogueCoinChange\x10\x9a\x14\
+    \x127\n2PlayerActionType_PlayerActionRogueMagicScepterShop\x10\x9b\x14\
+    \x124\n/PlayerActionType_PlayerActionRogueMagicUnitShop\x10\x9c\x14\x12:\
+    \n5PlayerActionType_PlayerActionRogueMagicScepterLevelUp\x10\x9d\x14\x12\
+    '\n\"PlayerActionType_PlayerActionGacha\x10\xa9\x14\x120\n+PlayerActionT\
+    ype_PlayerActionAddGachaTicket\x10\xaa\x14\x12/\n*PlayerActionType_Playe\
+    rActionGachaExchange\x10\xab\x14\x124\n/PlayerActionType_PlayerActionSet\
+    GachaDecideItem\x10\xac\x14\x124\n/PlayerActionType_PlayerActionEventMis\
+    sionAccept\x10\xf1\x15\x124\n/PlayerActionType_PlayerActionEventMissionF\
+    inish\x10\xf2\x15\x124\n/PlayerActionType_PlayerActionEventMissionReward\
+    \x10\xf3\x15\x12,\n'PlayerActionType_PlayerActionRaidFinish\x10\xd5\x16\
+    \x12+\n&PlayerActionType_PlayerActionRaidBegin\x10\xd6\x16\x125\n0Player\
+    ActionType_PlayerActionChallengeRaidReward\x10\xd7\x16\x12+\n&PlayerActi\
+    onType_PlayerActionStartRaid\x10\xd8\x16\x12)\n$PlayerActionType_PlayerA\
+    ctionEndRaid\x10\xd9\x16\x122\n-PlayerActionType_PlayerActionRaidTargetF\
+    inish\x10\xda\x16\x12-\n(PlayerActionType_PlayerActionArchiveRaid\x10\
+    \xdb\x16\x124\n/PlayerActionType_PlayerActionHeroBaseTypeChange\x10\xeb\
+    \x17\x12:\n5PlayerActionType_PlayerActionHeroBaseTypeAddByMission\x10\
+    \xec\x17\x126\n1PlayerActionType_PlayerActionHeroBaseTypeAddByReq\x10\
+    \xed\x17\x121\n,PlayerActionType_PlayerActionHeroBaseTypeAdd\x10\xee\x17\
+    \x120\n+PlayerActionType_PlayerActionDialogueSelect\x10\x9d\x18\x121\n,P\
+    layerActionType_PlayerActionExpeditionStart\x10\xcf\x18\x122\n-PlayerAct\
+    ionType_PlayerActionExpeditionFinish\x10\xd0\x18\x122\n-PlayerActionType\
+    _PlayerActionExpeditionReward\x10\xd1\x18\x129\n4PlayerActionType_Player\
+    ActionActivityExpeditionStart\x10\xd2\x18\x12:\n5PlayerActionType_Player\
+    ActionActivityExpeditionFinish\x10\xd3\x18\x12:\n5PlayerActionType_Playe\
+    rActionActivityExpeditionReward\x10\xd4\x18\x129\n4PlayerActionType_Play\
+    erActionActivityExpeditionBegin\x10\xd5\x18\x127\n2PlayerActionType_Play\
+    erActionActivityExpeditionEnd\x10\xd6\x18\x12/\n*PlayerActionType_Player\
+    ActionExpeditionSet\x10\xd7\x18\x126\n1PlayerActionType_PlayerActionExpe\
+    ditionTakeReward\x10\xd8\x18\x125\n0PlayerActionType_PlayerActionActivit\
+    yLoginReward\x10\x81\x19\x12.\n)PlayerActionType_PlayerActionFriendRepor\
+    t\x10\xe5\x19\x12.\n)PlayerActionType_PlayerActionAssistReward\x10\xe6\
+    \x19\x125\n0PlayerActionType_PlayerActionAssistAvatarRefresh\x10\xe7\x19\
+    \x129\n4PlayerActionType_PlayerActionAssistAvatarBattleStart\x10\xe8\x19\
+    \x127\n2PlayerActionType_PlayerActionAssistAvatarBattleEnd\x10\xe9\x19\
+    \x12-\n(PlayerActionType_PlayerActionFriendApply\x10\xea\x19\x12.\n)Play\
+    erActionType_PlayerActionFriendManage\x10\xeb\x19\x121\n,PlayerActionTyp\
+    e_PlayerActionFriendBlacklist\x10\xec\x19\x128\n3PlayerActionType_Player\
+    ActionFriendModifyRemarkName\x10\xed\x19\x12,\n'PlayerActionType_PlayerA\
+    ctionFriendMark\x10\xee\x19\x122\n-PlayerActionType_PlayerActionFriendAs\
+    sistList\x10\xef\x19\x127\n2PlayerActionType_PlayerActionBattlePassLevel\
+    Reward\x10\x82\x19\x129\n4PlayerActionType_PlayerActionBattlePass128Tier\
+    Reward\x10\x83\x19\x12?\n:PlayerActionType_PlayerActionBattlePassLevelRe\
+    wardAutoMail\x10\x84\x19\x12/\n*PlayerActionType_PlayerActionBuyBattlePa\
+    ss\x10\x85\x19\x122\n-PlayerActionType_PlayerActionAddBattlePassExp\x10\
+    \x86\x19\x123\n.PlayerActionType_PlayerActionBattlePassLevelUp\x10\x87\
+    \x19\x124\n/PlayerActionType_PlayerActionBuyBattlePassLevel\x10\x88\x19\
+    \x123\n.PlayerActionType_PlayerActionBattlePassEndMail\x10\x89\x19\x128\
+    \n3PlayerActionType_PlayerActionBattlePass68TierReward\x10\x8a\x19\x12,\
+    \n'PlayerActionType_PlayerActionModifySign\x10\xc9\x1a\x122\n-PlayerActi\
+    onType_PlayerActionDisplayAvatarSet\x10\xca\x1a\x121\n,PlayerActionType_\
+    PlayerActionAssistAvatarSet\x10\xcb\x1a\x123\n.PlayerActionType_PlayerAc\
+    tionAchievementFinish\x10\xad\x1b\x123\n.PlayerActionType_PlayerActionAc\
+    hievementReward\x10\xae\x1b\x123\n.PlayerActionType_PlayerActionAchievem\
+    entAddExp\x10\xaf\x1b\x124\n/PlayerActionType_PlayerActionAchievementLev\
+    elUp\x10\xb0\x1b\x120\n+PlayerActionType_PlayerActionPunkLordReward\x10\
+    \x91\x1c\x124\n/PlayerActionType_PlayerActionPunkLordBossSearch\x10\x94\
+    \x1c\x123\n.PlayerActionType_PlayerActionPunkLordBossShare\x10\x95\x1c\
+    \x123\n.PlayerActionType_PlayerActionStartPunkLordRaid\x10\x96\x1c\x126\
+    \n1PlayerActionType_PlayerActionPunkLordSupportTimes\x10\x98\x1c\x125\n0\
+    PlayerActionType_PlayerActionPunkLordScoreReward\x10\x99\x1c\x125\n0Play\
+    erActionType_PlayerActionPunkLordListRefresh\x10\x9a\x1c\x125\n0PlayerAc\
+    tionType_PlayerActionPunkLordPowerAttack\x10\x9b\x1c\x123\n.PlayerAction\
+    Type_PlayerActionPunkLordBattleEnd\x10\x9c\x1c\x123\n.PlayerActionType_P\
+    layerActionPunkLordBossDeath\x10\x9d\x1c\x123\n.PlayerActionType_PlayerA\
+    ctionPunkLordBossScore\x10\x9e\x1c\x128\n3PlayerActionType_PlayerActionD\
+    ailyActiveLevelReward\x10\xf5\x1c\x125\n0PlayerActionType_PlayerActionDa\
+    ilyActiveAddPoint\x10\xf6\x1c\x12;\n6PlayerActionType_PlayerActionDailyA\
+    ctiveDeleteOldQuest\x10\xf7\x1c\x124\n/PlayerActionType_PlayerActionFigh\
+    tActivityBegin\x10\xcf\x1d\x122\n-PlayerActionType_PlayerActionFightActi\
+    vityEnd\x10\xd0\x1d\x125\n0PlayerActionType_PlayerActionFightActivityRew\
+    ard\x10\xd9\x1d\x121\n,PlayerActionType_PlayerActionActivityEndMail\x10\
+    \xda\x1d\x121\n,PlayerActionType_PlayerActionAppointmentMail\x10\xdb\x1d\
+    \x12-\n(PlayerActionType_PlayerActionShareReward\x10\xdc\x1d\x125\n0Play\
+    erActionType_PlayerActionActivityTrialReward\x10\xdd\x1d\x124\n/PlayerAc\
+    tionType_PlayerActionActivityTrialStart\x10\xde\x1d\x121\n,PlayerActionT\
+    ype_PlayerActionPsPreOrderMail1\x10\xe3\x1d\x121\n,PlayerActionType_Play\
+    erActionPsPreOrderMail2\x10\xe4\x1d\x12-\n(PlayerActionType_PlayerAction\
+    PsLoginMail\x10\xe5\x1d\x12+\n&PlayerActionType_PlayerActionLoginMail\
+    \x10\xe6\x1d\x125\n0PlayerActionType_PlayerActionGooglePoints100Mail\x10\
+    \xed\x1d\x125\n0PlayerActionType_PlayerActionGooglePoints150Mail\x10\xee\
+    \x1d\x12<\n7PlayerActionType_PlayerActionTrainVisitorBehaviorFinish\x10\
+    \xbd\x1e\x120\n+PlayerActionType_PlayerActionEnterViewTrain\x10\xbe\x1e\
+    \x12E\n@PlayerActionType_PlayerActionTrainVisitorBehaviorRewardForceSend\
+    \x10\xbf\x1e\x12:\n5PlayerActionType_PlayerActionTrainVisitorRegisterOpe\
+    n\x10\xc0\x1e\x12O\nJPlayerActionType_PlayerActionTrainVisitorBehaviorRe\
+    wardForceSendByRegister\x10\xc1\x1e\x12C\n>PlayerActionType_PlayerAction\
+    TrainVisitorClearLastTrainVisitor\x10\xc2\x1e\x12A\n<PlayerActionType_Pl\
+    ayerActionTrainVisitorRefreshTrainVisitor\x10\xc3\x1e\x128\n3PlayerActio\
+    nType_PlayerActionTrainVisitorRefreshNpc\x10\xc4\x1e\x124\n/PlayerAction\
+    Type_PlayerActionMessageGroupAccept\x10\xef\x1e\x126\n1PlayerActionType_\
+    PlayerActionMessageSectionAccept\x10\xf0\x1e\x126\n1PlayerActionType_Pla\
+    yerActionMessageSectionFinish\x10\xf1\x1e\x123\n.PlayerActionType_Player\
+    ActionMessageItemFinish\x10\xf2\x1e\x12:\n5PlayerActionType_PlayerAction\
+    FinishMessageGroupReward\x10\xf3\x1e\x12>\n9PlayerActionType_PlayerActio\
+    nSubstituteMessageGroupReward\x10\xf4\x1e\x124\n/PlayerActionType_Player\
+    ActionDeleteMessageGroup\x10\xf5\x1e\x126\n1PlayerActionType_PlayerActio\
+    nDeleteMessageSection\x10\xf6\x1e\x12<\n7PlayerActionType_PlayerActionDe\
+    leteMessageGroupByConfig\x10\xf7\x1e\x12>\n9PlayerActionType_PlayerActio\
+    nDeleteMessageGroupByActivity\x10\xf8\x1e\x12=\n8PlayerActionType_Player\
+    ActionDeleteMessageGroupByMission\x10\xf9\x1e\x12.\n)PlayerActionType_Pl\
+    ayerActionTextJoinSave\x10\xa1\x1f\x121\n,PlayerActionType_PlayerActionB\
+    oxingClubStart\x10\xd3\x1f\x122\n-PlayerActionType_PlayerActionBoxingClu\
+    bFinish\x10\xd4\x1f\x121\n,PlayerActionType_PlayerActionBoxingClubPause\
+    \x10\xd5\x1f\x126\n1PlayerActionType_PlayerActionBoxingClubStageStart\
+    \x10\xd6\x1f\x12*\n%PlayerActionType_PlayerActionTalkSend\x10\x85\x20\
+    \x127\n2PlayerActionType_PlayerActionSelectInclinationText\x10\x86\x20\
+    \x126\n1PlayerActionType_PlayerActionMuseumSettleTurnOpen\x10\xe9\x20\
+    \x123\n.PlayerActionType_PlayerActionMuseumUpgradeArea\x10\xea\x20\x127\
+    \n2PlayerActionType_PlayerActionMuseumUpgradeAreaStat\x10\xeb\x20\x12=\n\
+    8PlayerActionType_PlayerActionMuseumDispatchRewardRegular\x10\xec\x20\
+    \x12A\n<PlayerActionType_PlayerActionMuseumDispatchRewardDirectional\x10\
+    \xed\x20\x12;\n6PlayerActionType_PlayerActionMuseumPhaseTargetFinished\
+    \x10\xee\x20\x120\n+PlayerActionType_PlayerActionMuseumGetStuff\x10\xef\
+    \x20\x122\n-PlayerActionType_PlayerActionMuseumGetExhibit\x10\xf0\x20\
+    \x12:\n5PlayerActionType_PlayerActionMuseumTakeCollectMission\x10\xf1\
+    \x20\x122\n-PlayerActionType_PlayerActionMuseumAreaUnlock\x10\xf2\x20\
+    \x123\n.PlayerActionType_PlayerActionMuseumAreaUpgrade\x10\xf3\x20\x127\
+    \n2PlayerActionType_PlayerActionMuseumAreaStatUpgrade\x10\xf4\x20\x126\n\
+    1PlayerActionType_PlayerActionMuseumEnterNextRound\x10\xf5\x20\x125\n0Pl\
+    ayerActionType_PlayerActionMuseumStartDispatch\x10\xf6\x20\x126\n1Player\
+    ActionType_PlayerActionMuseumSettleDispatch\x10\xf7\x20\x129\n4PlayerAct\
+    ionType_PlayerActionMuseumRenewPointChanged\x10\xf8\x20\x124\n/PlayerAct\
+    ionType_PlayerActionMuseumTargetReward\x10\xf9\x20\x124\n/PlayerActionTy\
+    pe_PlayerActionMuseumPhaseUpgrade\x10\xfa\x20\x125\n0PlayerActionType_Pl\
+    ayerActionMuseumCollectReward\x10\xfb\x20\x123\n.PlayerActionType_Player\
+    ActionMuseumTargetStart\x10\xfc\x20\x124\n/PlayerActionType_PlayerAction\
+    MuseumTargetFinish\x10\xfd\x20\x12H\nCPlayerActionType_PlayerActionActiv\
+    ityMonsterResearchConsumeMaterial\x10\xcd!\x12C\n>PlayerActionType_Playe\
+    rActionActivityMonsterResearchTakeReward\x10\xce!\x123\n.PlayerActionTyp\
+    e_PlayerActionPlayerReturnStart\x10\xb1\"\x122\n-PlayerActionType_Player\
+    ActionPlayerReturnSign\x10\xb2\"\x123\n.PlayerActionType_PlayerActionPla\
+    yerReturnPoint\x10\xb3\"\x127\n2PlayerActionType_PlayerActionPlayerRetur\
+    nCountdown\x10\xb4\"\x124\n/PlayerActionType_PlayerActionPlayerReturnFin\
+    ish\x10\xb5\"\x128\n3PlayerActionType_PlayerActionPlayerReturnCompensate\
+    \x10\xb6\"\x126\n1PlayerActionType_PlayerActionPlayerReturnGetRelic\x10\
+    \xb7\"\x128\n3PlayerActionType_PlayerActionPlayerReturnBpExpExtra\x10\
+    \xb8\"\x128\n3PlayerActionType_PlayerActionPlayerReturnHcoinExtra\x10\
+    \xb9\"\x129\n4PlayerActionType_PlayerActionPlayerReturnCustomRelic\x10\
+    \xba\"\x12:\n5PlayerActionType_PlayerActionPlayerReturnAssistChange\x10\
+    \xc5\"\x12=\n8PlayerActionType_PlayerActionRogueChallengeActivityStart\
+    \x10\xbb\"\x12>\n9PlayerActionType_PlayerActionRogueChallengeActivityFin\
+    ish\x10\xbc\"\x12<\n7PlayerActionType_PlayerActionRogueChallengeActivity\
+    Save\x10\xbd\"\x127\n2PlayerActionType_PlayerActionPlayerReturnLoginMail\
+    \x10\xcf\"\x12F\nAPlayerActionType_PlayerActionPlayerReturnExtraHcoinPro\
+    gressChange\x10\xd0\"\x12A\n<PlayerActionType_PlayerActionAetherDivideUs\
+    ePassiveSkillItem\x10\xe2\"\x12?\n:PlayerActionType_PlayerActionAetherDi\
+    videClearPassiveSkill\x10\xe3\"\x12=\n8PlayerActionType_PlayerActionAeth\
+    erDivideFinishChallenge\x10\xe4\"\x12A\n<PlayerActionType_PlayerActionAe\
+    therDivideOverflowChunkReward\x10\xe5\"\x125\n0PlayerActionType_PlayerAc\
+    tionAetherDivideLevelUp\x10\xe6\"\x127\n2PlayerActionType_PlayerActionAe\
+    therDivideNewReward\x10\xe7\"\x128\n3PlayerActionType_PlayerActionAether\
+    DivideMonsterAdd\x10\xe8\"\x12:\n5PlayerActionType_PlayerActionAetherDiv\
+    ideMonsterLevel\x10\xe9\"\x12>\n9PlayerActionType_PlayerActionAetherDivi\
+    deMonsterSkillWear\x10\xea\"\x128\n3PlayerActionType_PlayerActionAetherD\
+    ivideTeamChange\x10\xeb\"\x128\n3PlayerActionType_PlayerActionAetherDivi\
+    deStageBegin\x10\xec\"\x126\n1PlayerActionType_PlayerActionAetherDivideS\
+    tageEnd\x10\xed\"\x127\n2PlayerActionType_PlayerActionAetherDivideStageR\
+    oll\x10\xee\"\x122\n-PlayerActionType_PlayerActionAlleyEventFinish\x10\
+    \x95#\x121\n,PlayerActionType_PlayerActionAlleyTakeReward\x10\x96#\x126\
+    \n1PlayerActionType_PlayerActionAlleyPrestigeLevelUp\x10\x97#\x126\n1Pla\
+    yerActionType_PlayerActionAlleyLogisticsFinish\x10\x98#\x128\n3PlayerAct\
+    ionType_PlayerActionAlleyPlacingGameFinish\x10\x99#\x126\n1PlayerActionT\
+    ype_PlayerActionAlleyGuaranteedFunds\x10\x9a#\x126\n1PlayerActionType_Pl\
+    ayerActionAlleyTakeEventReward\x10\x9b#\x129\n4PlayerActionType_PlayerAc\
+    tionAlleySpecialOrderFinish\x10\x9c#\x125\n0PlayerActionType_PlayerActio\
+    nSensitiveWordShield\x10\xf9#\x12B\n=PlayerActionType_PlayerActionSensit\
+    iveWordServerInternalError\x10\xfa#\x12<\n7PlayerActionType_PlayerAction\
+    SensitiveWordPlatformError\x10\xfb#\x126\n1PlayerActionType_PlayerAction\
+    TreasureDungeonStart\x10\xdd$\x127\n2PlayerActionType_PlayerActionTreasu\
+    reDungeonFinish\x10\xde$\x12;\n6PlayerActionType_PlayerActionTreasureDun\
+    geonEnterFloor\x10\xdf$\x12;\n6PlayerActionType_PlayerActionTreasureDung\
+    eonLeaveFloor\x10\xe0$\x128\n3PlayerActionType_PlayerActionTreasureDunge\
+    onUseItem\x10\xe1$\x12=\n8PlayerActionType_PlayerActionTreasureDungeonAv\
+    atarChange\x10\xe2$\x12<\n7PlayerActionType_PlayerActionTreasureDungeonB\
+    attleStart\x10\xe3$\x12:\n5PlayerActionType_PlayerActionTreasureDungeonB\
+    attleEnd\x10\xe4$\x12;\n6PlayerActionType_PlayerActionTreasureDungeonPic\
+    kupBuff\x10\xe5$\x127\n2PlayerActionType_PlayerActionChessRogueFirstFini\
+    sh\x10\xc1%\x126\n1PlayerActionType_PlayerActionChessRogueGiveupDice\x10\
+    \xc2%\x12:\n5PlayerActionType_PlayerActionChessRogueSubStorySelect\x10\
+    \xc3%\x127\n2PlayerActionType_PlayerActionChessRogueActionPoint\x10\xc4%\
+    \x128\n3PlayerActionType_PlayerActionChessRogueReviveByProp\x10\xc5%\x12\
+    6\n1PlayerActionType_PlayerActionChessRogueStartLevel\x10\xc6%\x126\n1Pl\
+    ayerActionType_PlayerActionChessRogueDiceEffect\x10\xc7%\x12;\n6PlayerAc\
+    tionType_PlayerActionChessRogueMainStoryFinish\x10\xc8%\x12<\n7PlayerAct\
+    ionType_PlayerActionChessRogueAeonTalentEffect\x10\xc9%\x12@\n;PlayerAct\
+    ionType_PlayerActionChessRogueModifierOthersEffect\x10\xca%\x123\n.Playe\
+    rActionType_PlayerActionChessRogueAddBuff\x10\xcb%\x127\n2PlayerActionTy\
+    pe_PlayerActionChessRogueReforgeBuff\x10\xcc%\x127\n2PlayerActionType_Pl\
+    ayerActionChessRogueBuffLevelUp\x10\xcd%\x127\n2PlayerActionType_PlayerA\
+    ctionChessRogueEnhanceBuff\x10\xce%\x126\n1PlayerActionType_PlayerAction\
+    ChessRogueAddMiracle\x10\xcf%\x127\n2PlayerActionType_PlayerActionChessR\
+    ogueSwapMiracle\x10\xd0%\x127\n2PlayerActionType_PlayerActionChessRogueS\
+    electBonus\x10\xd1%\x12:\n5PlayerActionType_PlayerActionChessRogueDialog\
+    ueFinish\x10\xd2%\x12:\n5PlayerActionType_PlayerActionChessRogueSubStory\
+    Finish\x10\xd3%\x12?\n:PlayerActionType_PlayerActionChessRogueAdventureR\
+    oomFinish\x10\xd4%\x127\n2PlayerActionType_PlayerActionChessRogueFinishL\
+    evel\x10\xd5%\x126\n1PlayerActionType_PlayerActionChessRogueStartLayer\
+    \x10\xd6%\x127\n2PlayerActionType_PlayerActionChessRogueFinishLayer\x10\
+    \xd7%\x125\n0PlayerActionType_PlayerActionChessRogueEnterRoom\x10\xd8%\
+    \x125\n0PlayerActionType_PlayerActionChessRogueLeaveRoom\x10\xd9%\x124\n\
+    /PlayerActionType_PlayerActionChessRogueRollDice\x10\xda%\x126\n1PlayerA\
+    ctionType_PlayerActionChessRogueSelectDice\x10\xdb%\x126\n1PlayerActionT\
+    ype_PlayerActionChessRogueUnlockDice\x10\xdc%\x126\n1PlayerActionType_Pl\
+    ayerActionChessRogueBoardEvent\x10\xdd%\x12:\n5PlayerActionType_PlayerAc\
+    tionChessRogueDimensionPoint\x10\xde%\x126\n1PlayerActionType_PlayerActi\
+    onChessRoguePickAvatar\x10\xdf%\x128\n3PlayerActionType_PlayerActionChes\
+    sRogueReviveAvatar\x10\xe0%\x12>\n9PlayerActionType_PlayerActionChessRog\
+    ueNousSubStorySelect\x10\xe1%\x12:\n5PlayerActionType_PlayerActionChessR\
+    ogueLevelMechanism\x10\xec%\x12:\n5PlayerActionType_PlayerActionChessRog\
+    ueNousStartLevel\x10\xed%\x12;\n6PlayerActionType_PlayerActionChessRogue\
+    NousFinishLevel\x10\xee%\x12:\n5PlayerActionType_PlayerActionChessRogueN\
+    ousStartLayer\x10\xef%\x12;\n6PlayerActionType_PlayerActionChessRogueNou\
+    sFinishLayer\x10\xf0%\x129\n4PlayerActionType_PlayerActionChessRogueNous\
+    EnterRoom\x10\xf1%\x129\n4PlayerActionType_PlayerActionChessRogueNousLea\
+    veRoom\x10\xf2%\x12:\n5PlayerActionType_PlayerActionChessRogueNousSelect\
+    Dice\x10\xf3%\x12@\n;PlayerActionType_PlayerActionChessRogueNousUnlockDi\
+    ceBranch\x10\xf4%\x12A\n<PlayerActionType_PlayerActionChessRogueNousUnlo\
+    ckDiceSurface\x10\xf5%\x128\n3PlayerActionType_PlayerActionChessRogueNou\
+    sEditDice\x10\xf6%\x12;\n6PlayerActionType_PlayerActionChessRogueNousVal\
+    ueChange\x10\xf7%\x12@\n;PlayerActionType_PlayerActionChessRogueNousMain\
+    StoryTrigger\x10\xf8%\x12?\n:PlayerActionType_PlayerActionChessRogueNous\
+    MainStoryFinish\x10\xf9%\x12?\n:PlayerActionType_PlayerActionChessRogueN\
+    ousSubStoryTrigger\x10\xfa%\x12>\n9PlayerActionType_PlayerActionChessRog\
+    ueNousSubStoryFinish\x10\xfb%\x12<\n7PlayerActionType_PlayerActionChessR\
+    ogueNousEnableTalent\x10\xfc%\x126\n1PlayerActionType_PlayerActionChessR\
+    ogueSelectBuff\x10\xfd%\x129\n4PlayerActionType_PlayerActionChessRogueSe\
+    lectMiracle\x10\xfe%\x129\n4PlayerActionType_PlayerActionChessRogueRemov\
+    eMiracle\x10\xff%\x125\n0PlayerActionType_PlayerActionChessRogueBoardCel\
+    l\x10\x80&\x12;\n6PlayerActionType_PlayerActionFantasticStoryBattleBegin\
+    \x10\xa5&\x129\n4PlayerActionType_PlayerActionFantasticStoryBattleEnd\
+    \x10\xa6&\x124\n/PlayerActionType_PlayerActionRogueEndlessReward\x10\xd6\
+    &\x128\n3PlayerActionType_PlayerActionRogueEndlessLevelStart\x10\xd7&\
+    \x128\n3PlayerActionType_PlayerActionRogueEndlessStageBegin\x10\xd8&\x12\
+    6\n1PlayerActionType_PlayerActionRogueEndlessStageEnd\x10\xd9&\x125\n0Pl\
+    ayerActionType_PlayerActionBattleCollegeReward\x10\x89'\x12?\n:PlayerAct\
+    ionType_PlayerActionCommonRogueMiracleForBuffShop\x10\xbb'\x12@\n;Player\
+    ActionType_PlayerActionCommonRogueAdventureRoomFinish\x10\xbc'\x128\n3Pl\
+    ayerActionType_PlayerActionCommonRogueBuyBuffShop\x10\xbd'\x12?\n:Player\
+    ActionType_PlayerActionCommonRogueBuyBuffShopRefresh\x10\xbe'\x12=\n8Pla\
+    yerActionType_PlayerActionCommonRogueCollectionUnlock\x10\xbf'\x12:\n5Pl\
+    ayerActionType_PlayerActionCommonRogueCollectionSet\x10\xc0'\x12=\n8Play\
+    erActionType_PlayerActionCommonRogueExhibitionUnlock\x10\xc1'\x12:\n5Pla\
+    yerActionType_PlayerActionCommonRogueExhibitionSet\x10\xc2'\x12:\n5Playe\
+    rActionType_PlayerActionCommonRogueChestInteract\x10\xc3'\x12G\nBPlayerA\
+    ctionType_PlayerActionCommonRogueAdventureRoomWolfgunFinish\x10\xc4'\x12\
+    :\n5PlayerActionType_PlayerActionHeliobusPostIncomeReward\x10\xed'\x128\
+    \n3PlayerActionType_PlayerActionHeliobusPostFansReward\x10\xee'\x126\n1P\
+    layerActionType_PlayerActionHeliobusLevelUpgrade\x10\xef'\x129\n4PlayerA\
+    ctionType_PlayerActionHeliobusPostReplyReward\x10\xf0'\x12<\n7PlayerActi\
+    onType_PlayerActionHeliobusCommentReplyReward\x10\xf1'\x12>\n9PlayerActi\
+    onType_PlayerActionHeliobusChallengeFirstReward\x10\xf2'\x121\n,PlayerAc\
+    tionType_PlayerActionHeliobusFansAdd\x10\xf3'\x129\n4PlayerActionType_Pl\
+    ayerActionHeliobusActionDaySettle\x10\xf4'\x125\n0PlayerActionType_Playe\
+    rActionHeliobusSkillUnlock\x10\xf5'\x124\n/PlayerActionType_PlayerAction\
+    HeliobusStageBegin\x10\xf6'\x122\n-PlayerActionType_PlayerActionHeliobus\
+    StageEnd\x10\xf7'\x121\n,PlayerActionType_PlayerActionHeliobusSnsRead\
+    \x10\xf8'\x127\n2PlayerActionType_PlayerActionHeliobusSnsPostUnlock\x10\
+    \xf9'\x12:\n5PlayerActionType_PlayerActionHeliobusSnsCommentUnlock\x10\
+    \xfa'\x124\n/PlayerActionType_PlayerActionHeliobusSnsComment\x10\xfb'\
+    \x121\n,PlayerActionType_PlayerActionHeliobusSnsPost\x10\xfc'\x121\n,Pla\
+    yerActionType_PlayerActionHeliobusSnsLike\x10\xfd'\x126\n1PlayerActionTy\
+    pe_PlayerActionHeliobusPhaseUpgrade\x10\xfe'\x125\n0PlayerActionType_Pla\
+    yerActionPsPointCard30Reward\x10\xd1(\x125\n0PlayerActionType_PlayerActi\
+    onPsPointCard50Reward\x10\xd2(\x126\n1PlayerActionType_PlayerActionPsPoi\
+    ntCard100Reward\x10\xd3(\x123\n.PlayerActionType_PlayerActionPsnPlusGift\
+    Reward\x10\xd4(\x125\n0PlayerActionType_PlayerActionAppleGiftCardReward\
+    \x10\xd5(\x125\n0PlayerActionType_PlayerActionHeartDialSubmitItem\x10\
+    \xb5)\x12:\n5PlayerActionType_PlayerActionHeartDialDialoguePerform\x10\
+    \xb6)\x127\n2PlayerActionType_PlayerActionHeartDialTraceConsume\x10\xb7)\
+    \x128\n3PlayerActionType_PlayerActionHeartDialChangeEmotion\x10\xb8)\x12\
+    @\n;PlayerActionType_PlayerActionTravelBrochureAddDefaultPaster\x10\x99*\
+    \x12.\n)PlayerActionType_PlayerActionSpaceZooBorn\x10\xfd*\x120\n+Player\
+    ActionType_PlayerActionSpaceZooMutate\x10\xfe*\x120\n+PlayerActionType_P\
+    layerActionSpaceZooDelete\x10\xff*\x126\n1PlayerActionType_PlayerActionS\
+    paceZooExchangeItem\x10\x80+\x122\n-PlayerActionType_PlayerActionSpaceZo\
+    oExpPoint\x10\x81+\x124\n/PlayerActionType_PlayerActionSpaceZooTakeRewar\
+    d\x10\x82+\x124\n/PlayerActionType_PlayerActionSpaceZooCollection\x10\
+    \x83+\x12.\n)PlayerActionType_PlayerActionSpaceZooShow\x10\x84+\x125\n0P\
+    layerActionType_PlayerActionSpaceZooSpecialData\x10\x85+\x12<\n7PlayerAc\
+    tionType_PlayerActionStrongChallengeBattleBegin\x10\xc5,\x12:\n5PlayerAc\
+    tionType_PlayerActionStrongChallengeBattleEnd\x10\xc6,\x121\n,PlayerActi\
+    onType_PlayerActionRollShopDoGacha\x10\xf7,\x124\n/PlayerActionType_Play\
+    erActionRollShopTakeReward\x10\xf8,\x124\n/PlayerActionType_PlayerAction\
+    OfferingSubmitItem\x10\xa9-\x124\n/PlayerActionType_PlayerActionOffering\
+    TakeReward\x10\xaa-\x12:\n5PlayerActionType_PlayerActionTravelBrochurePa\
+    geUnlock\x10\xdb-\x12A\n<PlayerActionType_PlayerActionTravelBrochurePage\
+    InteractAward\x10\xdc-\x12=\n8PlayerActionType_PlayerActionTravelBrochur\
+    eStickerUnlock\x10\xdd-\x12<\n7PlayerActionType_PlayerActionTravelBrochu\
+    reStickerApply\x10\xde-\x12=\n8PlayerActionType_PlayerActionTravelBrochu\
+    reStickerRemove\x10\xdf-\x129\n4PlayerActionType_PlayerActionTravelBroch\
+    urePageReset\x10\xe0-\x124\n/PlayerActionType_PlayerActionTrackMainMissi\
+    onId\x10\x8d.\x12.\n)PlayerActionType_PlayerActionWolfBroBegin\x10\x97.\
+    \x129\n4PlayerActionType_PlayerActionWolfBroGroupStateChange\x10\x98.\
+    \x12,\n'PlayerActionType_PlayerActionWolfBroEnd\x10\x99.\x123\n.PlayerAc\
+    tionType_PlayerActionWolfBroBulletZero\x10\x9a.\x127\n2PlayerActionType_\
+    PlayerActionWolfBroActivateBullet\x10\x9b.\x128\n3PlayerActionType_Playe\
+    rActionWolfBroBulletNumChange\x10\x9c.\x126\n1PlayerActionType_PlayerAct\
+    ionWolfBroUseBulletNull\x10\x9d.\x12<\n7PlayerActionType_PlayerActionWol\
+    fBroUseBulletHitMonster\x10\x9e.\x125\n0PlayerActionType_PlayerActionWol\
+    fBroPickUpBullet\x10\x9f.\x127\n2PlayerActionType_PlayerActionWolfBroRes\
+    toreArchive\x10\xa0.\x12?\n:PlayerActionType_PlayerActionTelevisionActiv\
+    ityBattleBegin\x10\xa1.\x12=\n8PlayerActionType_PlayerActionTelevisionAc\
+    tivityBattleEnd\x10\xa2.\x12>\n9PlayerActionType_PlayerActionFeverTimeAc\
+    tivityBattleBegin\x10\xa3.\x12<\n7PlayerActionType_PlayerActionFeverTime\
+    ActivityBattleEnd\x10\xa4.\x12,\n'PlayerActionType_PlayerActionGunPlayEn\
+    d\x10\xa5.\x128\n3PlayerActionType_PlayerActionActivityStarFightBegin\
+    \x10\xa6.\x126\n1PlayerActionType_PlayerActionActivityStarFightEnd\x10\
+    \xa7.\x128\n3PlayerActionType_PlayerActionMapRotationEnterRegion\x10\xab\
+    .\x128\n3PlayerActionType_PlayerActionMapRotationLeaveRegion\x10\xac.\
+    \x12<\n7PlayerActionType_PlayerActionMapRotationInteractCharger\x10\xad.\
+    \x12:\n5PlayerActionType_PlayerActionMapRotationDeployRotater\x10\xae.\
+    \x126\n1PlayerActionType_PlayerActionMapRotationRotateMap\x10\xaf.\x126\
+    \n1PlayerActionType_PlayerActionMapRotationAddEnergy\x10\xb0.\x129\n4Pla\
+    yerActionType_PlayerActionMapRotationSetMaxEnergy\x10\xb1.\x12:\n5Player\
+    ActionType_PlayerActionMapRotationRemoveRotater\x10\xb2.\x12>\n9PlayerAc\
+    tionType_PlayerActionMapRotationAutoDeployRotater\x10\xb3.\x12>\n9Player\
+    ActionType_PlayerActionMapRotationAutoRemoveRotater\x10\xb4.\x123\n.Play\
+    erActionType_PlayerActionDrinkMakerAddTips\x10\xbf.\x12;\n6PlayerActionT\
+    ype_PlayerActionDrinkMakerFinishChallenge\x10\xc0.\x12?\n:PlayerActionTy\
+    pe_PlayerActionDrinkMakerGuestMaxFaithReward\x10\xc1.\x125\n0PlayerActio\
+    nType_PlayerActionDrinkMakerMakeDrink\x10\xc2.\x12;\n6PlayerActionType_P\
+    layerActionDrinkMakerSaveCustomDrink\x10\xc3.\x127\n2PlayerActionType_Pl\
+    ayerActionDrinkMakerEndSequence\x10\xc4.\x12;\n6PlayerActionType_PlayerA\
+    ctionDrinkMakerCheersMakeDrink\x10\xc5.\x12:\n5PlayerActionType_PlayerAc\
+    tionDrinkMakerCheersNpcDrink\x10\xc6.\x121\n,PlayerActionType_PlayerActi\
+    onChangeStoryLine\x10\xf1.\x12<\n7PlayerActionType_PlayerActionContentPa\
+    ckageStatusChange\x10\xfb.\x12;\n6PlayerActionType_PlayerActionContentPa\
+    ckageTrackChange\x10\xfc.\x12A\n<PlayerActionType_PlayerActionContentPac\
+    kageAcceptMainMission\x10\xfd.\x123\n.PlayerActionType_PlayerActionWorld\
+    DirectUnlock\x10\x99/\x124\n/PlayerActionType_PlayerActionMonopolyTurnFi\
+    nish\x10\xa3/\x126\n1PlayerActionType_PlayerActionMonopolyAssetTurntax\
+    \x10\xa4/\x124\n/PlayerActionType_PlayerActionMonopolyAssetBonus\x10\xa5\
+    /\x125\n0PlayerActionType_PlayerActionMonopolyEventEffect\x10\xa6/\x128\
+    \n3PlayerActionType_PlayerActionMonopolyMiniGameSettle\x10\xa7/\x128\n3P\
+    layerActionType_PlayerActionMonopolyGameRaiseRatio\x10\xa8/\x126\n1Playe\
+    rActionType_PlayerActionMonopolyMoveRollDice\x10\xa9/\x12.\n)PlayerActio\
+    nType_PlayerActionMonopolyMove\x10\xab/\x122\n-PlayerActionType_PlayerAc\
+    tionMonopolyBuyGoods\x10\xac/\x126\n1PlayerActionType_PlayerActionMonopo\
+    lyUpgradeAsset\x10\xad/\x12;\n6PlayerActionType_PlayerActionMonopolyEven\
+    tRerollRandom\x10\xae/\x126\n1PlayerActionType_PlayerActionMonopolyDaily\
+    Refresh\x10\xaf/\x12A\n<PlayerActionType_PlayerActionMonopolyGameGuessBu\
+    yInformation\x10\xb0/\x12A\n<PlayerActionType_PlayerActionMonopolyDailyF\
+    irstEnterActivity\x10\xb1/\x125\n0PlayerActionType_PlayerActionMonopolyS\
+    ocialEvent\x10\xb2/\x12<\n7PlayerActionType_PlayerActionMonopolyRaffleTi\
+    cketReward\x10\xb3/\x12.\n)PlayerActionType_PlayerActionMonopolyLike\x10\
+    \xb4/\x125\n0PlayerActionType_PlayerActionMonopolyPhaseReward\x10\xb5/\
+    \x12:\n5PlayerActionType_PlayerActionMonopolyMbtiReportReward\x10\xb6/\
+    \x125\n0PlayerActionType_PlayerActionMonopolyDailySettle\x10\xb7/\x12/\n\
+    *PlayerActionType_PlayerActionMonopolyStart\x10\xb8/\x121\n,PlayerAction\
+    Type_PlayerActionMonopolyGetBuff\x10\xb9/\x12:\n5PlayerActionType_Player\
+    ActionMonopolyAssetFundsChange\x10\xba/\x126\n1PlayerActionType_PlayerAc\
+    tionMonopolyAssetUpgrade\x10\xbb/\x12>\n9PlayerActionType_PlayerActionMo\
+    nopolyDirectCoinGameSettle\x10\xbc/\x12=\n8PlayerActionType_PlayerAction\
+    MonopolyExtractRaffleTicket\x10\xbd/\x12<\n7PlayerActionType_PlayerActio\
+    nMonopolyMbtiProgressChange\x10\xbe/\x128\n3PlayerActionType_PlayerActio\
+    nMonopolyQuizGameSettle\x10\xbf/\x125\n0PlayerActionType_PlayerActionMon\
+    opolyEventSettle\x10\xc0/\x124\n/PlayerActionType_PlayerActionMonopolyIt\
+    emChange\x10\xc1/\x125\n0PlayerActionType_PlayerActionMonopolyCellTrigge\
+    r\x10\xc2/\x126\n1PlayerActionType_PlayerActionMonopolyEventTrigger\x10\
+    \xc3/\x125\n0PlayerActionType_PlayerActionMonopolyClickEffect\x10\xc4/\
+    \x128\n3PlayerActionType_PlayerActionEvolveBuildLevelFinish\x10\xd5/\x12\
+    :\n5PlayerActionType_PlayerActionEvolveBuildShopAbilityUp\x10\xd6/\x12<\
+    \n7PlayerActionType_PlayerActionEvolveBuildShopAbilityDown\x10\xd7/\x12:\
+    \n5PlayerActionType_PlayerActionEvolveBuildTakeExpReward\x10\xd8/\x12=\n\
+    8PlayerActionType_PlayerActionEvolveBuildBattleEndAddCoin\x10\xd9/\x12=\
+    \n8PlayerActionType_PlayerActionEvolveBuildShopAbilityReset\x10\xda/\x12\
+    7\n2PlayerActionType_PlayerActionEvolveBuildLevelStart\x10\xdb/\x125\n0P\
+    layerActionType_PlayerActionEvolveBuildLevelEnd\x10\xdc/\x127\n2PlayerAc\
+    tionType_PlayerActionEvolveBuildStageStart\x10\xdd/\x125\n0PlayerActionT\
+    ype_PlayerActionEvolveBuildStageEnd\x10\xde/\x127\n2PlayerActionType_Pla\
+    yerActionEvolveBuildLevelLeave\x10\xdf/\x127\n2PlayerActionType_PlayerAc\
+    tionClockParkUnlockScript\x10\x870\x127\n2PlayerActionType_PlayerActionC\
+    lockParkUnlockTalent\x10\x880\x127\n2PlayerActionType_PlayerActionClockP\
+    arkFinishScript\x10\x890\x126\n1PlayerActionType_PlayerActionClockParkRo\
+    undUpdate\x10\x8a0\x126\n1PlayerActionType_PlayerActionClockParkScriptBe\
+    gin\x10\x8b0\x126\n1PlayerActionType_PlayerActionRogueTournStartLevel\
+    \x10\xb80\x127\n2PlayerActionType_PlayerActionRogueTournFinishLevel\x10\
+    \xb90\x125\n0PlayerActionType_PlayerActionRogueTournExpReward\x10\xba0\
+    \x12?\n:PlayerActionType_PlayerActionRogueTournFinishWeekChallenge\x10\
+    \xbb0\x12A\n<PlayerActionType_PlayerActionRogueTournPermanentTalentEffec\
+    t\x10\xbc0\x12>\n9PlayerActionType_PlayerActionRogueTournFinishFormulaSt\
+    ory\x10\xbd0\x122\n-PlayerActionType_PlayerActionRogueTournRevive\x10\
+    \xbe0\x126\n1PlayerActionType_PlayerActionRogueTournStageBegin\x10\xbf0\
+    \x124\n/PlayerActionType_PlayerActionRogueTournStageEnd\x10\xc00\x12A\n<\
+    PlayerActionType_PlayerActionRogueTournPermanentEnableTalent\x10\xc10\
+    \x12@\n;PlayerActionType_PlayerActionRogueTournPermanentResetTalent\x10\
+    \xc20\x12<\n7PlayerActionType_PlayerActionRogueTournCocoonStageBegin\x10\
+    \xc30\x12:\n5PlayerActionType_PlayerActionRogueTournCocoonStageEnd\x10\
+    \xc40\x125\n0PlayerActionType_PlayerActionRogueTournExpUpdate\x10\xc50\
+    \x125\n0PlayerActionType_PlayerActionRogueTournEnterRoom\x10\xc60\x125\n\
+    0PlayerActionType_PlayerActionRogueTournLeaveRoom\x10\xc70\x127\n2Player\
+    ActionType_PlayerActionRogueTournArchiveSave\x10\xc80\x127\n2PlayerActio\
+    nType_PlayerActionRogueTournSelectBonus\x10\xc90\x12:\n5PlayerActionType\
+    _PlayerActionRogueTournDialogueFinish\x10\xca0\x124\n/PlayerActionType_P\
+    layerActionRogueTournDoGamble\x10\xcb0\x12?\n:PlayerActionType_PlayerAct\
+    ionRogueTournRoomContentGenerate\x10\xcc0\x126\n1PlayerActionType_Player\
+    ActionRogueTournAddMiracle\x10\xcd0\x129\n4PlayerActionType_PlayerAction\
+    RogueTournRemoveMiracle\x10\xce0\x129\n4PlayerActionType_PlayerActionRog\
+    ueTournSelectMiracle\x10\xcf0\x127\n2PlayerActionType_PlayerActionRogueT\
+    ournDropMiracle\x10\xd00\x123\n.PlayerActionType_PlayerActionRogueTournA\
+    ddBuff\x10\xd10\x126\n1PlayerActionType_PlayerActionRogueTournSelectBuff\
+    \x10\xd20\x127\n2PlayerActionType_PlayerActionRogueTournBuffLevelUp\x10\
+    \xd30\x126\n1PlayerActionType_PlayerActionRogueTournRemoveBuff\x10\xd40\
+    \x126\n1PlayerActionType_PlayerActionRogueTournAddFormula\x10\xd50\x129\
+    \n4PlayerActionType_PlayerActionRogueTournRemoveFormula\x10\xd60\x129\n4\
+    PlayerActionType_PlayerActionRogueTournSelectFormula\x10\xd70\x12;\n6Pla\
+    yerActionType_PlayerActionRogueTournActivateFormula\x10\xd80\x12?\n:Play\
+    erActionType_PlayerActionRogueTournAdventureRoomFinish\x10\xd90\x127\n2P\
+    layerActionType_PlayerActionRogueTournAlterLineup\x10\xda0\x12>\n9Player\
+    ActionType_PlayerActionRogueTournSeasonEnableTalent\x10\xdb0\x12;\n6Play\
+    erActionType_PlayerActionRogueTournTitanStartLevel\x10\xdc0\x12<\n7Playe\
+    rActionType_PlayerActionRogueTournTitanFinishLevel\x10\xdd0\x12:\n5Playe\
+    rActionType_PlayerActionRogueTournTitanEnterRoom\x10\xde0\x12:\n5PlayerA\
+    ctionType_PlayerActionRogueTournTitanLeaveRoom\x10\xdf0\x12;\n6PlayerAct\
+    ionType_PlayerActionRogueTournTitanStageBegin\x10\xe00\x129\n4PlayerActi\
+    onType_PlayerActionRogueTournTitanStageEnd\x10\xe10\x12<\n7PlayerActionT\
+    ype_PlayerActionRogueTournTitanArchiveSave\x10\xe30\x12>\n9PlayerActionT\
+    ype_PlayerActionRogueTournTitanAddTitanBless\x10\xe40\x12A\n<PlayerActio\
+    nType_PlayerActionRogueTournTitanSelectTitanBless\x10\xe50\x12:\n5Player\
+    ActionType_PlayerActionRogueTournDivisionChange\x10\xe60\x12?\n:PlayerAc\
+    tionType_PlayerActionRogueTournSelectReRollMiracle\x10\xe70\x12?\n:Playe\
+    rActionType_PlayerActionRogueTournTriggerBattleByShop\x10\xe80\x12=\n8Pl\
+    ayerActionType_PlayerActionRogueTournUseSuperRewardKey\x10\xe90\x12A\n<P\
+    layerActionType_PlayerActionRogueTournPersonaStyleExpChange\x10\xea0\x12\
+    >\n9PlayerActionType_PlayerActionRogueTournPersonaStyleSelect\x10\xeb0\
+    \x12=\n8PlayerActionType_PlayerActionRogueTournPersonaStartLevel\x10\xec\
+    0\x12>\n9PlayerActionType_PlayerActionRogueTournPersonaFinishLevel\x10\
+    \xed0\x12<\n7PlayerActionType_PlayerActionRogueTournPersonaEnterRoom\x10\
+    \xee0\x12<\n7PlayerActionType_PlayerActionRogueTournPersonaLeaveRoom\x10\
+    \xef0\x12=\n8PlayerActionType_PlayerActionRogueTournPersonaStageBegin\
+    \x10\xf00\x12;\n6PlayerActionType_PlayerActionRogueTournPersonaStageEnd\
+    \x10\xf10\x12>\n9PlayerActionType_PlayerActionRogueTournPersonaArchiveSa\
+    ve\x10\xf20\x12>\n9PlayerActionType_PlayerActionRogueTournHexEquipmentCh\
+    ange\x10\xf30\x12A\n<PlayerActionType_PlayerActionRogueTournPersonaRoomC\
+    ardChange\x10\xf40\x12F\nAPlayerActionType_PlayerActionRogueTournPersona\
+    RoomCardLevelChange\x10\xf50\x12J\nEPlayerActionType_PlayerActionRogueTo\
+    urnPersonaRoomCardAttributeChange\x10\xf60\x12A\n<PlayerActionType_Playe\
+    rActionRogueTournPersonaRoomCardSelect\x10\xf70\x12?\n:PlayerActionType_\
+    PlayerActionRogueTournPersonaRoomCardWash\x10\xf80\x12B\n=PlayerActionTy\
+    pe_PlayerActionRogueTournPersonaStyleGiftSelect\x10\xf90\x12I\nDPlayerAc\
+    tionType_PlayerActionRogueTournPersonaStyleGiftSelectRefresh\x10\xfa0\
+    \x12A\n<PlayerActionType_PlayerActionRogueTournPersonaRoomCardReroll\x10\
+    \xfb0\x12?\n:PlayerActionType_PlayerActionRogueTournMiracleStatusChange\
+    \x10\xfc0\x12E\n@PlayerActionType_PlayerActionRogueTournPersonaStyleSele\
+    ctRefresh\x10\xfd0\x12D\n?PlayerActionType_PlayerActionRogueTournPersona\
+    AncientCoinChange\x10\xfe0\x12E\n@PlayerActionType_PlayerActionRogueTour\
+    nPersonaLeverageBondSettle\x10\xff0\x12J\nEPlayerActionType_PlayerAction\
+    RogueTournPersonaLeverageBondRepayRecord\x10\x801\x12>\n9PlayerActionTyp\
+    e_PlayerActionRogueWorkbenchReforgeFormula\x10\x891\x12>\n9PlayerActionT\
+    ype_PlayerActionRogueWorkbenchReforgeMiracle\x10\x8a1\x12>\n9PlayerActio\
+    nType_PlayerActionRogueWorkbenchComposeMiracle\x10\x8b1\x12;\n6PlayerAct\
+    ionType_PlayerActionRogueWorkbenchReforgeBuff\x10\x8c1\x12;\n6PlayerActi\
+    onType_PlayerActionRogueWorkbenchEnhanceBuff\x10\x8d1\x125\n0PlayerActio\
+    nType_PlayerActionMatchThreePveSettle\x10\x9d1\x122\n-PlayerActionType_P\
+    layerActionMatchThreeSettle\x10\x9e1\x126\n1PlayerActionType_PlayerActio\
+    nFightMatch3GameStart\x10\x9f1\x124\n/PlayerActionType_PlayerActionFight\
+    Match3GameEnd\x10\xa01\x124\n/PlayerActionType_PlayerActionFightMatch3Tu\
+    rnEnd\x10\xa11\x123\n.PlayerActionType_PlayerActionMatchThreeBirdPos\x10\
+    \xa21\x124\n/PlayerActionType_PlayerActionMultiplePlayInvite\x10\xa31\
+    \x12;\n6PlayerActionType_PlayerActionMultiplePlayInviteRespond\x10\xa41\
+    \x128\n3PlayerActionType_PlayerActionMultiplePlayLobbyEnter\x10\xa51\x12\
+    7\n2PlayerActionType_PlayerActionMultiplePlayLobbyQuit\x10\xa61\x127\n2P\
+    layerActionType_PlayerActionMultiplePlayLobbyKick\x10\xa71\x128\n3Player\
+    ActionType_PlayerActionMultiplePlayLobbyMatch\x10\xa81\x12.\n)PlayerActi\
+    onType_PlayerActionMarbleSettle\x10\xa91\x126\n1PlayerActionType_PlayerA\
+    ctionMatchThreeSoloSettle\x10\xaa1\x12?\n:PlayerActionType_PlayerActionM\
+    atchThreeV2BattleitemLevelup\x10\xab1\x127\n2PlayerActionType_PlayerActi\
+    onMatchThreeV2PveSettle\x10\xac1\x127\n2PlayerActionType_PlayerActionMat\
+    chThreeV2PvpSettle\x10\xad1\x125\n0PlayerActionType_PlayerActionMatch3So\
+    loGameStart\x10\xae1\x123\n.PlayerActionType_PlayerActionMatch3SoloGameE\
+    nd\x10\xaf1\x124\n/PlayerActionType_PlayerActionMatch3SoloRoundEnd\x10\
+    \xb01\x124\n/PlayerActionType_PlayerActionMatch3RoyaleSettle\x10\xb11\
+    \x127\n2PlayerActionType_PlayerActionMatch3RoyaleGameStart\x10\xb21\x125\
+    \n0PlayerActionType_PlayerActionMatch3RoyaleGameEnd\x10\xb31\x126\n1Play\
+    erActionType_PlayerActionMatch3RoyaleRoundEnd\x10\xb41\x122\n-PlayerActi\
+    onType_PlayerActionDiceCombatSettle\x10\xb51\x124\n/PlayerActionType_Pla\
+    yerActionDiceCombatV2Settle\x10\xb61\x122\n-PlayerActionType_PlayerActio\
+    nTeamTowersSettle\x10\xb71\x129\n4PlayerActionType_PlayerActionSwordTrai\
+    ningLearnSkill\x10\xcf1\x12;\n6PlayerActionType_PlayerActionSwordTrainin\
+    gNormalAction\x10\xd01\x12:\n5PlayerActionType_PlayerActionSwordTraining\
+    StoryEffect\x10\xd11\x129\n4PlayerActionType_PlayerActionSwordTrainingEn\
+    dingHint\x10\xd21\x129\n4PlayerActionType_PlayerActionSwordTrainingActio\
+    nHint\x10\xd31\x12@\n;PlayerActionType_PlayerActionSwordTrainingRestoreG\
+    ameByExam\x10\xd41\x12B\n=PlayerActionType_PlayerActionSwordTrainingStor\
+    yLineFirstClear\x10\xd51\x12?\n:PlayerActionType_PlayerActionSwordTraini\
+    ngTakeEndingReward\x10\xd61\x12=\n8PlayerActionType_PlayerActionSwordTra\
+    iningStoryLineBegin\x10\xd71\x128\n3PlayerActionType_PlayerActionSwordTr\
+    ainingEnterTurn\x10\xd81\x129\n4PlayerActionType_PlayerActionSwordTraini\
+    ngPlanAction\x10\xd91\x12=\n8PlayerActionType_PlayerActionSwordTrainingA\
+    ctionPhaseEnd\x10\xda1\x124\n/PlayerActionType_PlayerActionSwordTraining\
+    Story\x10\xdb1\x12;\n6PlayerActionType_PlayerActionSwordTrainingStatusCh\
+    ange\x10\xdc1\x129\n4PlayerActionType_PlayerActionSwordTrainingMoodChang\
+    e\x10\xdd1\x12:\n5PlayerActionType_PlayerActionSwordTrainingBattleBegin\
     \x10\xde1\x128\n3PlayerActionType_PlayerActionSwordTrainingBattleEnd\x10\
     \xdf1\x12?\n:PlayerActionType_PlayerActionSwordTrainingCombatRankChange\
     \x10\xe01\x12;\n6PlayerActionType_PlayerActionSwordTrainingStoryLineEnd\
@@ -8530,173 +8655,164 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x12<\n7PlayerActionType_PlayerActionMazePuzzleEnterFiveDimGame\x10\xa58\
     \x12<\n7PlayerActionType_PlayerActionMazePuzzleLeaveFiveDimGame\x10\xa68\
     \x12B\n=PlayerActionType_PlayerActionMazePuzzleFiveDimGameSkillChange\
-    \x10\xa78\x124\n/PlayerActionType_PlayerActionGridFightGameStart\x10\xd3\
-    8\x122\n-PlayerActionType_PlayerActionGridFightGameEnd\x10\xd48\x125\n0P\
-    layerActionType_PlayerActionGridFightRoundStart\x10\xd58\x123\n.PlayerAc\
-    tionType_PlayerActionGridFightRoundEnd\x10\xd68\x126\n1PlayerActionType_\
-    PlayerActionGridFightBattleStart\x10\xd78\x124\n/PlayerActionType_Player\
-    ActionGridFightBattleEnd\x10\xd88\x125\n0PlayerActionType_PlayerActionGr\
-    idFightBattleRole\x10\xd98\x128\n3PlayerActionType_PlayerActionGridFight\
-    PortalRefresh\x10\xda8\x127\n2PlayerActionType_PlayerActionGridFightPort\
-    alSelect\x10\xdb8\x129\n4PlayerActionType_PlayerActionGridFightAugmentRe\
-    fresh\x10\xdc8\x128\n3PlayerActionType_PlayerActionGridFightAugmentSelec\
-    t\x10\xdd8\x126\n1PlayerActionType_PlayerActionGridFightShopRefresh\x10\
-    \xde8\x122\n-PlayerActionType_PlayerActionGridFightShopBuy\x10\xdf8\x128\
-    \n3PlayerActionType_PlayerActionGridFightSupplyRefresh\x10\xe08\x127\n2P\
-    layerActionType_PlayerActionGridFightSupplySelect\x10\xe18\x124\n/Player\
-    ActionType_PlayerActionGridFightForgeOpen\x10\xe28\x129\n4PlayerActionTy\
-    pe_PlayerActionGridFightSpecialShopBuy\x10\xe38\x121\n,PlayerActionType_\
-    PlayerActionGridFightGetExp\x10\xe48\x121\n,PlayerActionType_PlayerActio\
-    nGridFightGetOrb\x10\xe58\x121\n,PlayerActionType_PlayerActionGridFightU\
-    seOrb\x10\xe68\x122\n-PlayerActionType_PlayerActionGridFightGetRole\x10\
-    \xe78\x122\n-PlayerActionType_PlayerActionGridFightGetCoin\x10\xe88\x129\
-    \n4PlayerActionType_PlayerActionGridFightGetFreeRefresh\x10\xe98\x122\n-\
-    PlayerActionType_PlayerActionGridFightGetItem\x10\xea8\x123\n.PlayerActi\
-    onType_PlayerActionGridFightGetEquip\x10\xeb8\x125\n0PlayerActionType_Pl\
-    ayerActionGridFightDressEquip\x10\xec8\x120\n+PlayerActionType_PlayerAct\
-    ionGridFightGetHp\x10\xed8\x12<\n7PlayerActionType_PlayerActionGridFight\
-    WeeklyScoreChange\x10\xee8\x12:\n5PlayerActionType_PlayerActionGridFight\
-    GetWeeklyReward\x10\xef8\x12:\n5PlayerActionType_PlayerActionGridFightSe\
-    asonExpChange\x10\xf08\x127\n2PlayerActionType_PlayerActionGridFightTale\
-    ntEnable\x10\xf18\x126\n1PlayerActionType_PlayerActionGridFightTalentRes\
-    et\x10\xf28\x12=\n8PlayerActionType_PlayerActionGridFightTutorialTaskFin\
-    ish\x10\xf38\x12=\n8PlayerActionType_PlayerActionGridFightEliteBranchRef\
-    resh\x10\xf48\x129\n4PlayerActionType_PlayerActionGridFightTutorialResum\
-    e\x10\xf58\x128\n3PlayerActionType_PlayerActionGridFightGetProjection\
-    \x10\xf68\x125\n0PlayerActionType_PlayerActionGridFightGetPresent\x10\
-    \xf78\x126\n1PlayerActionType_PlayerActionGridFightOpenPresent\x10\xf88\
-    \x12:\n5PlayerActionType_PlayerActionGridFightSettleSeasonEnd\x10\xf98\
-    \x12:\n5PlayerActionType_PlayerActionGridFightFavoriteArchive\x10\xfa8\
-    \x128\n3PlayerActionType_PlayerActionGridFightFormationEdit\x10\xfb8\x12\
-    9\n4PlayerActionType_PlayerActionGridFightModifierUpdate\x10\xfc8\x12=\n\
-    8PlayerActionType_PlayerActionGridFightFormationUgcUpdate\x10\xfd8\x12<\
-    \n7PlayerActionType_PlayerActionGridFightPartnerRoleChoose\x10\xfe8\x12:\
-    \n5PlayerActionType_PlayerActionGridFightPrayQuestSelect\x10\xff8\x12:\n\
-    5PlayerActionType_PlayerActionGridFightPrayQuestFinish\x10\x809\x128\n3P\
-    layerActionType_PlayerActionLocalLegendBattleBegin\x10\xc19\x126\n1Playe\
-    rActionType_PlayerActionLocalLegendBattleEnd\x10\xc29\x127\n2PlayerActio\
-    nType_PlayerActionDiceCombatBuyShopGood\x10\xb79\x129\n4PlayerActionType\
-    _PlayerActionDiceCombatUpgradeAvatar\x10\xb89\x12:\n5PlayerActionType_Pl\
-    ayerActionDiceCombatFinishPveStage\x10\xb99\x121\n,PlayerActionType_Play\
-    erActionDiceCombatBegin\x10\xba9\x123\n.PlayerActionType_PlayerActionDic\
-    eCombatTurnEnd\x10\xbb9\x12/\n*PlayerActionType_PlayerActionDiceCombatEn\
-    d\x10\xbc9\x127\n2PlayerActionType_PlayerActionDiceCombatScoreChange\x10\
-    \xbd9\x12;\n6PlayerActionType_PlayerActionDiceCombatChangeColorDice\x10\
-    \xbe9\x12?\n:PlayerActionType_PlayerActionInteractiveTriggerMazeBuffAdd\
-    \x10\xcb9\x12)\n$PlayerActionType_PlayerActionLlmChat\x10\xd09\x125\n0Pl\
-    ayerActionType_PlayerActionLlmChatNextQuestion\x10\xd19\x121\n,PlayerAct\
-    ionType_PlayerActionLlmChatFeedback\x10\xd29\x126\n1PlayerActionType_Pla\
-    yerActionAiPamChatPointChange\x10\xd39\x12>\n9PlayerActionType_PlayerAct\
-    ionTrainCakeCatchCatGodInteract\x10\xd59\x127\n2PlayerActionType_PlayerA\
-    ctionTrainCakeCatchOpenBox\x10\xd69\x129\n4PlayerActionType_PlayerAction\
-    TrainCakeCatchSearchCat\x10\xd79\x12A\n<PlayerActionType_PlayerActionTra\
-    inCakeCatchUnlockPerformance\x10\xd89\x12=\n8PlayerActionType_PlayerActi\
-    onTrainCakeCatchUpdateDiyInfo\x10\xd99\x120\n+PlayerActionType_PlayerAct\
-    ionSocialPlayTalk\x10\xda9\x129\n4PlayerActionType_PlayerActionSocialPla\
-    yKickOutPlayer\x10\xdb9\x12;\n6PlayerActionType_PlayerActionSocialPlayPo\
-    pularityValue\x10\xdc9\x125\n0PlayerActionType_PlayerActionSocialPlayLea\
-    veRoom\x10\xdd9\x125\n0PlayerActionType_PlayerActionSocialPlayEnterRoom\
-    \x10\xde9\x12<\n7PlayerActionType_PlayerActionTrainCakeCatchCatGodAppear\
-    \x10\xdf9\x129\n4PlayerActionType_PlayerActionIdleLiveUpgradeTeamSlot\
-    \x10\xe99\x127\n2PlayerActionType_PlayerActionIdleLiveFinishSubNode\x10\
-    \xea9\x12?\n:PlayerActionType_PlayerActionIdleLiveFinishChapterFinalAct\
-    \x10\xeb9\x127\n2PlayerActionType_PlayerActionIdleLiveCollectIncome\x10\
-    \xec9\x123\n.PlayerActionType_PlayerActionIdleLiveOpenChest\x10\xed9\x12\
-    8\n3PlayerActionType_PlayerActionIdleLiveTakeTaskReward\x10\xee9\x128\n3\
-    PlayerActionType_PlayerActionIdleLiveTechTreeChange\x10\xef9\x12;\n6Play\
-    erActionType_PlayerActionIdleLiveModifyCustomTitle\x10\xf09\x127\n2Playe\
-    rActionType_PlayerActionIdleLiveCatchUpReward\x10\xf19\x12;\n6PlayerActi\
-    onType_PlayerActionIdleLiveTakeMessageReward\x10\xf29\x128\n3PlayerActio\
-    nType_PlayerActionIdleLiveTakeGiftReward\x10\xf39\x124\n/PlayerActionTyp\
-    e_PlayerActionIdleLiveEndDungeon\x10\xf49\x126\n1PlayerActionType_Player\
-    ActionIdleLiveActivityInit\x10\xf59\x126\n1PlayerActionType_PlayerAction\
-    IdleLiveEquipDiscard\x10\xf69\x121\n,PlayerActionType_PlayerActionIdleLi\
-    veDoGacha\x10\xf79\x123\n.PlayerActionType_PlayerActionIdleLiveAddAvatar\
-    \x10\xf89\x124\n/PlayerActionType_PlayerActionIdleLiveTaskChange\x10\xf9\
-    9\x125\n0PlayerActionType_PlayerActionIdleLiveReplaceTeam\x10\xfa9\x12;\
-    \n6PlayerActionType_PlayerActionIdleLiveHandleNormalEquip\x10\xfb9\x12=\
-    \n8PlayerActionType_PlayerActionIdleLiveUpgradeSpecialEquip\x10\xfc9\x12\
-    ;\n6PlayerActionType_PlayerActionIdleLiveDressSpecialEquip\x10\xfd9\x121\
-    \n,PlayerActionType_PlayerActionIdleLiveAddItem\x10\xfe9\x128\n3PlayerAc\
-    tionType_PlayerActionIdleLiveQuestionChange\x10\xff9\x129\n4PlayerAction\
-    Type_PlayerActionIdleLiveStartNodeBattle\x10\x80:\x12:\n5PlayerActionTyp\
-    e_PlayerActionIdleLiveFinishNodeBattle\x10\x81:\x124\n/PlayerActionType_\
-    PlayerActionIdleLiveFinishNode\x10\x82:\x127\n2PlayerActionType_PlayerAc\
-    tionIdleLiveMessageChange\x10\x83:\x127\n2PlayerActionType_PlayerActionN\
-    ewYearBoatTakeReward\x10\x9b:\x127\n2PlayerActionType_PlayerActionNewYea\
-    rBoatSelectBoat\x10\x9c:\x129\n4PlayerActionType_PlayerActionNewYearBoat\
-    PeriodSettle\x10\x9d:\x12=\n8PlayerActionType_PlayerActionBenefitV2Activ\
-    ityTakeReward\x10\x9e:\x127\n2PlayerActionType_PlayerActionBenefitV2Acti\
-    vityDraw\x10\x9f:\x120\n+PlayerActionType_PlayerActionJukeboxSetting\x10\
-    \xaf:\x125\n0PlayerActionType_PlayerActionJukeboxSettingReset\x10\xb0:\
-    \x12<\n7PlayerActionType_PlayerActionDiceCombatV2FinishPveStage\x10\xb4:\
-    \x123\n.PlayerActionType_PlayerActionDiceCombatV2Begin\x10\xb5:\x125\n0P\
-    layerActionType_PlayerActionDiceCombatV2TurnEnd\x10\xb6:\x121\n,PlayerAc\
-    tionType_PlayerActionDiceCombatV2End\x10\xb7:\x12@\n;PlayerActionType_Pl\
-    ayerActionDiceCombatV2TacticsPointChange\x10\xb8:\x12?\n:PlayerActionTyp\
-    e_PlayerActionDiceCombatV2TacticsCardChange\x10\xb9:\x12?\n:PlayerAction\
-    Type_PlayerActionDiceCombatV2DiceChangeRequest\x10\xba:\x128\n3PlayerAct\
-    ionType_PlayerActionDiceCombatV2DiceChange\x10\xbb:\x126\n1PlayerActionT\
-    ype_PlayerActionLimaoNewsSubmitIssue\x10\xbe:\x125\n0PlayerActionType_Pl\
-    ayerActionLimaoNewsSubmitPost\x10\xbf:\x12B\n=PlayerActionType_PlayerAct\
-    ionLimaoNewsOfficeSurveyStateChange\x10\xc0:\x129\n4PlayerActionType_Pla\
-    yerActionLimaoNewsTriggerMessage\x10\xc1:\x128\n3PlayerActionType_Player\
-    ActionLimaoNewsFinishMessage\x10\xc2:\x12:\n5PlayerActionType_PlayerActi\
-    onLimaoNewsFinishCondition\x10\xc3:\x125\n0PlayerActionType_PlayerAction\
-    LimaoNewsUnlockPost\x10\xc4:\x127\n2PlayerActionType_PlayerActionLimaoNe\
-    wsReplyComment\x10\xc5:\x122\n-PlayerActionType_PlayerActionLimaoNewsBan\
-    Post\x10\xc6:\x12=\n8PlayerActionType_PlayerActionLimaoNewsTriggerOffice\
-    Event\x10\xc7:\x12<\n7PlayerActionType_PlayerActionLimaoNewsFinishOffice\
-    Event\x10\xc8:\x128\n3PlayerActionType_PlayerActionLimaoNewsUpvoteConten\
-    t\x10\xc9:\x12A\n<PlayerActionType_PlayerActionChenLingBattleActivatePri\
-    vilege\x10\xd2:\x12>\n9PlayerActionType_PlayerActionChenLingBattleConque\
-    rLevelUp\x10\xd3:\x12:\n5PlayerActionType_PlayerActionChenLingBattleStar\
-    tStage\x10\xd4:\x12;\n6PlayerActionType_PlayerActionChenLingBattleSettle\
-    Stage\x10\xd5:\x12;\n6PlayerActionType_PlayerActionChenLingBattleStartBa\
-    ttle\x10\xd6:\x12<\n7PlayerActionType_PlayerActionChenLingBattleFinishBa\
-    ttle\x10\xd7:\x12:\n5PlayerActionType_PlayerActionChenLingBattleFinishWa\
-    ve\x10\xd8:\x12:\n5PlayerActionType_PlayerActionChenLingBattleSelectCard\
-    \x10\xd9:\x12;\n6PlayerActionType_PlayerActionChenLingBattleRefreshCard\
-    \x10\xda:\x12;\n6PlayerActionType_PlayerActionChenLingBattleBuyShopItem\
-    \x10\xdb:\x12;\n6PlayerActionType_PlayerActionChenLingBattleRefreshShop\
-    \x10\xdc:\x12<\n7PlayerActionType_PlayerActionChenLingBattleSelectPolicy\
-    \x10\xdd:\x12=\n8PlayerActionType_PlayerActionChenLingBattleRefreshPolic\
-    y\x10\xde:\x12;\n6PlayerActionType_PlayerActionChenLingBattleAddHandCard\
-    \x10\xdf:\x12;\n6PlayerActionType_PlayerActionChenLingBattleUseHandCard\
-    \x10\xe0:\x12<\n7PlayerActionType_PlayerActionChenLingBattleSellHandCard\
-    \x10\xe1:\x12=\n8PlayerActionType_PlayerActionChenLingBattleEntityUpgrad\
-    e\x10\xe2:\x12;\n6PlayerActionType_PlayerActionChenLingBattleCloneEntity\
-    \x10\xe3:\x122\n-PlayerActionType_PlayerActionCycleScoreChange\x10\xf5:\
-    \x126\n1PlayerActionType_PlayerActionCycleScoreTakeReward\x10\xf6:\x123\
-    \n.PlayerActionType_PlayerActionFateRinFightStart\x10\xfa:\x121\n,Player\
-    ActionType_PlayerActionFateRinFightEnd\x10\xfb:\x123\n.PlayerActionType_\
-    PlayerActionFateRinDeckModify\x10\xfc:\x125\n0PlayerActionType_PlayerAct\
-    ionRelicPresetPlanSave\x10\x9d;\x127\n2PlayerActionType_PlayerActionReli\
-    cPresetPlanDelete\x10\x9e;\x12;\n6PlayerActionType_PlayerActionRelicPres\
-    etPlanModifyName\x10\x9f;\x123\n.PlayerActionType_PlayerActionPixAirUnlo\
-    ckPlane\x10\xbb;\x122\n-PlayerActionType_PlayerActionPixAirStageStart\
-    \x10\xbc;\x121\n,PlayerActionType_PlayerActionPixAirBattleGen\x10\xbd;\
-    \x121\n,PlayerActionType_PlayerActionPixAirBattleEnd\x10\xbe;\x127\n2Pla\
-    yerActionType_PlayerActionPixAirLootEquipSelect\x10\xbf;\x120\n+PlayerAc\
-    tionType_PlayerActionPixAirBuyEquip\x10\xc0;\x123\n.PlayerActionType_Pla\
-    yerActionPixAirRefreshShop\x10\xc1;\x129\n4PlayerActionType_PlayerAction\
-    PixAirNodeSelectContent\x10\xc2;\x123\n.PlayerActionType_PlayerActionPix\
-    AirGrantReward\x10\xc3;\x12-\n(PlayerActionType_PlayerActionPixAirEvent\
-    \x10\xc4;\x120\n+PlayerActionType_PlayerActionPixAirNewEquip\x10\xc5;\
-    \x121\n,PlayerActionType_PlayerActionPixAirSellEquip\x10\xc6;\x124\n/Pla\
-    yerActionType_PlayerActionPixAirEquipUpgrade\x10\xc7;\x124\n/PlayerActio\
-    nType_PlayerActionPixAirEquipEnchant\x10\xc8;\x122\n-PlayerActionType_Pl\
-    ayerActionPixAirCoinChange\x10\xc9;\x123\n.PlayerActionType_PlayerAction\
-    PixAirStageSettle\x10\xce;\x12;\n6PlayerActionType_PlayerActionExpeditio\
-    nBattleGameStart\x10\xcf;\x129\n4PlayerActionType_PlayerActionExpedition\
-    BattleGameEnd\x10\xd0;\x127\n2PlayerActionType_PlayerActionChenLingFesLe\
-    velStart\x10\xd9;\x12;\n6PlayerActionType_PlayerActionChenLingFesBusines\
-    sDayEnd\x10\xda;\x128\n3PlayerActionType_PlayerActionChenLingFesPhaseSet\
-    tle\x10\xdb;\x128\n3PlayerActionType_PlayerActionChenLingFesLevelSettle\
-    \x10\xdc;\x126\n1PlayerActionType_PlayerActionChooseDeliveryChoose\x10\
-    \xed;\x122\n-PlayerActionType_PlayerActionTeamTowersPveEnd\x10\xf7;\x124\
-    \n/PlayerActionType_PlayerActionTeamTowersPvpStart\x10\xf8;\x122\n-Playe\
-    rActionType_PlayerActionTeamTowersPvpEnd\x10\xf9;b\x06proto3\
+    \x10\xa78\x12\x0f\n\nH_68286c01\x10\xd38\x12\x0f\n\nH_c585af9f\x10\xd48\
+    \x12\x0f\n\nH_f1b5c5ab\x10\xd58\x12\x0f\n\nH_6c1c4c2f\x10\xd68\x12\x0f\n\
+    \nH_5c0fb240\x10\xd78\x12\x0f\n\nH_b8633faf\x10\xd88\x12\x0f\n\nH_72b840\
+    7e\x10\xd98\x12\x0f\n\nH_21a6dcf9\x10\xda8\x12\x0f\n\nH_24249c7b\x10\xdb\
+    8\x12\x0f\n\nH_4a203fba\x10\xdc8\x12\x0f\n\nH_88777c0b\x10\xdd8\x12\x0f\
+    \n\nH_0c57357e\x10\xde8\x12\x0f\n\nH_ba2a8cec\x10\xdf8\x12\x0f\n\nH_2945\
+    5603\x10\xe08\x12\x0f\n\nH_1acb9a50\x10\xe18\x12\x0f\n\nH_70a00719\x10\
+    \xe28\x12\x0f\n\nH_4a9a52d1\x10\xe38\x12\x0f\n\nH_188c6675\x10\xe48\x12\
+    \x0f\n\nH_f0cd30ae\x10\xe58\x12\x0f\n\nH_0ef09a2b\x10\xe68\x12\x0f\n\nH_\
+    90a3cc0c\x10\xe78\x12\x0f\n\nH_1015e989\x10\xe88\x12\x0f\n\nH_5e539b86\
+    \x10\xe98\x12\x0f\n\nH_49dc71a7\x10\xea8\x12\x0f\n\nH_2594b7a2\x10\xeb8\
+    \x12\x0f\n\nH_1224a868\x10\xec8\x12\x0f\n\nH_8910a071\x10\xed8\x12\x0f\n\
+    \nH_c1773cdf\x10\xee8\x12\x0f\n\nH_43e5abd0\x10\xef8\x12\x0f\n\nH_e5a723\
+    44\x10\xf08\x12\x0f\n\nH_1dc03631\x10\xf18\x12\x0f\n\nH_78c3f20f\x10\xf2\
+    8\x12\x0f\n\nH_81e24de9\x10\xf38\x12\x0f\n\nH_7804d7f7\x10\xf48\x12\x0f\
+    \n\nH_18734592\x10\xf58\x12\x0f\n\nH_aa36cece\x10\xf68\x12\x0f\n\nH_4977\
+    30d6\x10\xf78\x12\x0f\n\nH_73267c71\x10\xf88\x12\x0f\n\nH_a196af40\x10\
+    \xf98\x12\x0f\n\nH_bc2ee045\x10\xfa8\x12\x0f\n\nH_f2b3b1e6\x10\xfb8\x12\
+    \x0f\n\nH_9b16622c\x10\xfc8\x12\x0f\n\nH_0424e912\x10\xfd8\x12\x0f\n\nH_\
+    cc44d6de\x10\xfe8\x12\x0f\n\nH_224a011e\x10\xff8\x12\x0f\n\nH_07a2c6c8\
+    \x10\x809\x12\x0f\n\nH_a90a81dd\x10\x819\x128\n3PlayerActionType_PlayerA\
+    ctionLocalLegendBattleBegin\x10\xc19\x126\n1PlayerActionType_PlayerActio\
+    nLocalLegendBattleEnd\x10\xc29\x127\n2PlayerActionType_PlayerActionDiceC\
+    ombatBuyShopGood\x10\xb79\x129\n4PlayerActionType_PlayerActionDiceCombat\
+    UpgradeAvatar\x10\xb89\x12:\n5PlayerActionType_PlayerActionDiceCombatFin\
+    ishPveStage\x10\xb99\x121\n,PlayerActionType_PlayerActionDiceCombatBegin\
+    \x10\xba9\x123\n.PlayerActionType_PlayerActionDiceCombatTurnEnd\x10\xbb9\
+    \x12/\n*PlayerActionType_PlayerActionDiceCombatEnd\x10\xbc9\x127\n2Playe\
+    rActionType_PlayerActionDiceCombatScoreChange\x10\xbd9\x12;\n6PlayerActi\
+    onType_PlayerActionDiceCombatChangeColorDice\x10\xbe9\x12?\n:PlayerActio\
+    nType_PlayerActionInteractiveTriggerMazeBuffAdd\x10\xcb9\x12)\n$PlayerAc\
+    tionType_PlayerActionLlmChat\x10\xd09\x125\n0PlayerActionType_PlayerActi\
+    onLlmChatNextQuestion\x10\xd19\x121\n,PlayerActionType_PlayerActionLlmCh\
+    atFeedback\x10\xd29\x126\n1PlayerActionType_PlayerActionAiPamChatPointCh\
+    ange\x10\xd39\x12>\n9PlayerActionType_PlayerActionTrainCakeCatchCatGodIn\
+    teract\x10\xd59\x127\n2PlayerActionType_PlayerActionTrainCakeCatchOpenBo\
+    x\x10\xd69\x129\n4PlayerActionType_PlayerActionTrainCakeCatchSearchCat\
+    \x10\xd79\x12A\n<PlayerActionType_PlayerActionTrainCakeCatchUnlockPerfor\
+    mance\x10\xd89\x12=\n8PlayerActionType_PlayerActionTrainCakeCatchUpdateD\
+    iyInfo\x10\xd99\x120\n+PlayerActionType_PlayerActionSocialPlayTalk\x10\
+    \xda9\x129\n4PlayerActionType_PlayerActionSocialPlayKickOutPlayer\x10\
+    \xdb9\x12;\n6PlayerActionType_PlayerActionSocialPlayPopularityValue\x10\
+    \xdc9\x125\n0PlayerActionType_PlayerActionSocialPlayLeaveRoom\x10\xdd9\
+    \x125\n0PlayerActionType_PlayerActionSocialPlayEnterRoom\x10\xde9\x12<\n\
+    7PlayerActionType_PlayerActionTrainCakeCatchCatGodAppear\x10\xdf9\x129\n\
+    4PlayerActionType_PlayerActionIdleLiveUpgradeTeamSlot\x10\xe99\x127\n2Pl\
+    ayerActionType_PlayerActionIdleLiveFinishSubNode\x10\xea9\x12?\n:PlayerA\
+    ctionType_PlayerActionIdleLiveFinishChapterFinalAct\x10\xeb9\x127\n2Play\
+    erActionType_PlayerActionIdleLiveCollectIncome\x10\xec9\x123\n.PlayerAct\
+    ionType_PlayerActionIdleLiveOpenChest\x10\xed9\x128\n3PlayerActionType_P\
+    layerActionIdleLiveTakeTaskReward\x10\xee9\x128\n3PlayerActionType_Playe\
+    rActionIdleLiveTechTreeChange\x10\xef9\x12;\n6PlayerActionType_PlayerAct\
+    ionIdleLiveModifyCustomTitle\x10\xf09\x127\n2PlayerActionType_PlayerActi\
+    onIdleLiveCatchUpReward\x10\xf19\x12;\n6PlayerActionType_PlayerActionIdl\
+    eLiveTakeMessageReward\x10\xf29\x128\n3PlayerActionType_PlayerActionIdle\
+    LiveTakeGiftReward\x10\xf39\x124\n/PlayerActionType_PlayerActionIdleLive\
+    EndDungeon\x10\xf49\x126\n1PlayerActionType_PlayerActionIdleLiveActivity\
+    Init\x10\xf59\x126\n1PlayerActionType_PlayerActionIdleLiveEquipDiscard\
+    \x10\xf69\x121\n,PlayerActionType_PlayerActionIdleLiveDoGacha\x10\xf79\
+    \x123\n.PlayerActionType_PlayerActionIdleLiveAddAvatar\x10\xf89\x124\n/P\
+    layerActionType_PlayerActionIdleLiveTaskChange\x10\xf99\x125\n0PlayerAct\
+    ionType_PlayerActionIdleLiveReplaceTeam\x10\xfa9\x12;\n6PlayerActionType\
+    _PlayerActionIdleLiveHandleNormalEquip\x10\xfb9\x12=\n8PlayerActionType_\
+    PlayerActionIdleLiveUpgradeSpecialEquip\x10\xfc9\x12;\n6PlayerActionType\
+    _PlayerActionIdleLiveDressSpecialEquip\x10\xfd9\x121\n,PlayerActionType_\
+    PlayerActionIdleLiveAddItem\x10\xfe9\x128\n3PlayerActionType_PlayerActio\
+    nIdleLiveQuestionChange\x10\xff9\x129\n4PlayerActionType_PlayerActionIdl\
+    eLiveStartNodeBattle\x10\x80:\x12:\n5PlayerActionType_PlayerActionIdleLi\
+    veFinishNodeBattle\x10\x81:\x124\n/PlayerActionType_PlayerActionIdleLive\
+    FinishNode\x10\x82:\x127\n2PlayerActionType_PlayerActionIdleLiveMessageC\
+    hange\x10\x83:\x127\n2PlayerActionType_PlayerActionNewYearBoatTakeReward\
+    \x10\x9b:\x127\n2PlayerActionType_PlayerActionNewYearBoatSelectBoat\x10\
+    \x9c:\x129\n4PlayerActionType_PlayerActionNewYearBoatPeriodSettle\x10\
+    \x9d:\x12=\n8PlayerActionType_PlayerActionBenefitV2ActivityTakeReward\
+    \x10\x9e:\x127\n2PlayerActionType_PlayerActionBenefitV2ActivityDraw\x10\
+    \x9f:\x120\n+PlayerActionType_PlayerActionJukeboxSetting\x10\xaf:\x125\n\
+    0PlayerActionType_PlayerActionJukeboxSettingReset\x10\xb0:\x12<\n7Player\
+    ActionType_PlayerActionDiceCombatV2FinishPveStage\x10\xb4:\x123\n.Player\
+    ActionType_PlayerActionDiceCombatV2Begin\x10\xb5:\x125\n0PlayerActionTyp\
+    e_PlayerActionDiceCombatV2TurnEnd\x10\xb6:\x121\n,PlayerActionType_Playe\
+    rActionDiceCombatV2End\x10\xb7:\x12@\n;PlayerActionType_PlayerActionDice\
+    CombatV2TacticsPointChange\x10\xb8:\x12?\n:PlayerActionType_PlayerAction\
+    DiceCombatV2TacticsCardChange\x10\xb9:\x12?\n:PlayerActionType_PlayerAct\
+    ionDiceCombatV2DiceChangeRequest\x10\xba:\x128\n3PlayerActionType_Player\
+    ActionDiceCombatV2DiceChange\x10\xbb:\x126\n1PlayerActionType_PlayerActi\
+    onLimaoNewsSubmitIssue\x10\xbe:\x125\n0PlayerActionType_PlayerActionLima\
+    oNewsSubmitPost\x10\xbf:\x12B\n=PlayerActionType_PlayerActionLimaoNewsOf\
+    ficeSurveyStateChange\x10\xc0:\x129\n4PlayerActionType_PlayerActionLimao\
+    NewsTriggerMessage\x10\xc1:\x128\n3PlayerActionType_PlayerActionLimaoNew\
+    sFinishMessage\x10\xc2:\x12:\n5PlayerActionType_PlayerActionLimaoNewsFin\
+    ishCondition\x10\xc3:\x125\n0PlayerActionType_PlayerActionLimaoNewsUnloc\
+    kPost\x10\xc4:\x127\n2PlayerActionType_PlayerActionLimaoNewsReplyComment\
+    \x10\xc5:\x122\n-PlayerActionType_PlayerActionLimaoNewsBanPost\x10\xc6:\
+    \x12=\n8PlayerActionType_PlayerActionLimaoNewsTriggerOfficeEvent\x10\xc7\
+    :\x12<\n7PlayerActionType_PlayerActionLimaoNewsFinishOfficeEvent\x10\xc8\
+    :\x128\n3PlayerActionType_PlayerActionLimaoNewsUpvoteContent\x10\xc9:\
+    \x125\n0PlayerActionType_PlayerActionLimaoNewsFinishWork\x10\xca:\x125\n\
+    0PlayerActionType_PlayerActionLimaoNewsFinishPlan\x10\xcb:\x127\n2Player\
+    ActionType_PlayerActionLimaoNewsActivatePlan\x10\xcc:\x129\n4PlayerActio\
+    nType_PlayerActionLimaoNewsEnterPlanPhase\x10\xcd:\x12:\n5PlayerActionTy\
+    pe_PlayerActionLimaoNewsFinishPlanPhase\x10\xce:\x124\n/PlayerActionType\
+    _PlayerActionLimaoNewsStartWork\x10\xcf:\x126\n1PlayerActionType_PlayerA\
+    ctionLimaoNewsAdvanceWork\x10\xd0:\x12D\n?PlayerActionType_PlayerActionL\
+    imaoNewsFinishEmployeeCheckOption\x10\xd1:\x12A\n<PlayerActionType_Playe\
+    rActionChenLingBattleActivatePrivilege\x10\xd2:\x12>\n9PlayerActionType_\
+    PlayerActionChenLingBattleConquerLevelUp\x10\xd3:\x12:\n5PlayerActionTyp\
+    e_PlayerActionChenLingBattleStartStage\x10\xd4:\x12;\n6PlayerActionType_\
+    PlayerActionChenLingBattleSettleStage\x10\xd5:\x12;\n6PlayerActionType_P\
+    layerActionChenLingBattleStartBattle\x10\xd6:\x12<\n7PlayerActionType_Pl\
+    ayerActionChenLingBattleFinishBattle\x10\xd7:\x12:\n5PlayerActionType_Pl\
+    ayerActionChenLingBattleFinishWave\x10\xd8:\x12:\n5PlayerActionType_Play\
+    erActionChenLingBattleSelectCard\x10\xd9:\x12;\n6PlayerActionType_Player\
+    ActionChenLingBattleRefreshCard\x10\xda:\x12;\n6PlayerActionType_PlayerA\
+    ctionChenLingBattleBuyShopItem\x10\xdb:\x12;\n6PlayerActionType_PlayerAc\
+    tionChenLingBattleRefreshShop\x10\xdc:\x12<\n7PlayerActionType_PlayerAct\
+    ionChenLingBattleSelectPolicy\x10\xdd:\x12=\n8PlayerActionType_PlayerAct\
+    ionChenLingBattleRefreshPolicy\x10\xde:\x12;\n6PlayerActionType_PlayerAc\
+    tionChenLingBattleAddHandCard\x10\xdf:\x12;\n6PlayerActionType_PlayerAct\
+    ionChenLingBattleUseHandCard\x10\xe0:\x12<\n7PlayerActionType_PlayerActi\
+    onChenLingBattleSellHandCard\x10\xe1:\x12=\n8PlayerActionType_PlayerActi\
+    onChenLingBattleEntityUpgrade\x10\xe2:\x12;\n6PlayerActionType_PlayerAct\
+    ionChenLingBattleCloneEntity\x10\xe3:\x122\n-PlayerActionType_PlayerActi\
+    onCycleScoreChange\x10\xf5:\x126\n1PlayerActionType_PlayerActionCycleSco\
+    reTakeReward\x10\xf6:\x123\n.PlayerActionType_PlayerActionFateRinFightSt\
+    art\x10\xfa:\x121\n,PlayerActionType_PlayerActionFateRinFightEnd\x10\xfb\
+    :\x123\n.PlayerActionType_PlayerActionFateRinDeckModify\x10\xfc:\x125\n0\
+    PlayerActionType_PlayerActionRelicPresetPlanSave\x10\x9d;\x127\n2PlayerA\
+    ctionType_PlayerActionRelicPresetPlanDelete\x10\x9e;\x12;\n6PlayerAction\
+    Type_PlayerActionRelicPresetPlanModifyName\x10\x9f;\x125\n0PlayerActionT\
+    ype_PlayerActionB51RacingStartMatch\x10\xa7;\x123\n.PlayerActionType_Pla\
+    yerActionB51RacingEndMatch\x10\xa8;\x123\n.PlayerActionType_PlayerAction\
+    B51RacingStartDay\x10\xa9;\x124\n/PlayerActionType_PlayerActionB51Racing\
+    FinishDay\x10\xaa;\x12:\n5PlayerActionType_PlayerActionB51RacingCarLiver\
+    yChange\x10\xab;\x128\n3PlayerActionType_PlayerActionB51RacingDevelopAct\
+    ion\x10\xac;\x123\n.PlayerActionType_PlayerActionPixAirUnlockPlane\x10\
+    \xbb;\x122\n-PlayerActionType_PlayerActionPixAirStageStart\x10\xbc;\x121\
+    \n,PlayerActionType_PlayerActionPixAirBattleGen\x10\xbd;\x121\n,PlayerAc\
+    tionType_PlayerActionPixAirBattleEnd\x10\xbe;\x127\n2PlayerActionType_Pl\
+    ayerActionPixAirLootEquipSelect\x10\xbf;\x120\n+PlayerActionType_PlayerA\
+    ctionPixAirBuyEquip\x10\xc0;\x123\n.PlayerActionType_PlayerActionPixAirR\
+    efreshShop\x10\xc1;\x129\n4PlayerActionType_PlayerActionPixAirNodeSelect\
+    Content\x10\xc2;\x123\n.PlayerActionType_PlayerActionPixAirGrantReward\
+    \x10\xc3;\x12-\n(PlayerActionType_PlayerActionPixAirEvent\x10\xc4;\x120\
+    \n+PlayerActionType_PlayerActionPixAirNewEquip\x10\xc5;\x121\n,PlayerAct\
+    ionType_PlayerActionPixAirSellEquip\x10\xc6;\x124\n/PlayerActionType_Pla\
+    yerActionPixAirEquipUpgrade\x10\xc7;\x124\n/PlayerActionType_PlayerActio\
+    nPixAirEquipEnchant\x10\xc8;\x122\n-PlayerActionType_PlayerActionPixAirC\
+    oinChange\x10\xc9;\x123\n.PlayerActionType_PlayerActionPixAirStageSettle\
+    \x10\xce;\x12;\n6PlayerActionType_PlayerActionExpeditionBattleGameStart\
+    \x10\xcf;\x129\n4PlayerActionType_PlayerActionExpeditionBattleGameEnd\
+    \x10\xd0;\x127\n2PlayerActionType_PlayerActionChenLingFesLevelStart\x10\
+    \xd9;\x12;\n6PlayerActionType_PlayerActionChenLingFesBusinessDayEnd\x10\
+    \xda;\x128\n3PlayerActionType_PlayerActionChenLingFesPhaseSettle\x10\xdb\
+    ;\x128\n3PlayerActionType_PlayerActionChenLingFesLevelSettle\x10\xdc;\
+    \x126\n1PlayerActionType_PlayerActionChooseDeliveryChoose\x10\xed;\x122\
+    \n-PlayerActionType_PlayerActionTeamTowersPveEnd\x10\xf7;\x124\n/PlayerA\
+    ctionType_PlayerActionTeamTowersPvpStart\x10\xf8;\x122\n-PlayerActionTyp\
+    e_PlayerActionTeamTowersPvpEnd\x10\xf9;b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

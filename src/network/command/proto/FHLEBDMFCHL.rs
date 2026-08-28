@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FHLEBDMFCHL {
     // message fields
+    // @@protoc_insertion_point(field:FHLEBDMFCHL.MMNJODIJPOE)
+    pub MMNJODIJPOE: ::protobuf::EnumOrUnknown<super::LPPKGHJGOCC::LPPKGHJGOCC>,
     // @@protoc_insertion_point(field:FHLEBDMFCHL.content_id)
     pub content_id: u32,
-    // @@protoc_insertion_point(field:FHLEBDMFCHL.content_type)
-    pub content_type: ::protobuf::EnumOrUnknown<super::LPPKGHJGOCC::LPPKGHJGOCC>,
     // special fields
     // @@protoc_insertion_point(special_field:FHLEBDMFCHL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl FHLEBDMFCHL {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MMNJODIJPOE",
+            |m: &FHLEBDMFCHL| { &m.MMNJODIJPOE },
+            |m: &mut FHLEBDMFCHL| { &mut m.MMNJODIJPOE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "content_id",
             |m: &FHLEBDMFCHL| { &m.content_id },
             |m: &mut FHLEBDMFCHL| { &mut m.content_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "content_type",
-            |m: &FHLEBDMFCHL| { &m.content_type },
-            |m: &mut FHLEBDMFCHL| { &mut m.content_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FHLEBDMFCHL>(
             "FHLEBDMFCHL",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FHLEBDMFCHL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.content_id = is.read_uint32()?;
+                40 => {
+                    self.MMNJODIJPOE = is.read_enum_or_unknown()?;
                 },
-                64 => {
-                    self.content_type = is.read_enum_or_unknown()?;
+                88 => {
+                    self.content_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FHLEBDMFCHL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.content_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.content_id);
+        if self.MMNJODIJPOE != ::protobuf::EnumOrUnknown::new(super::LPPKGHJGOCC::LPPKGHJGOCC::LPPKGHJGOCC_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(5, self.MMNJODIJPOE.value());
         }
-        if self.content_type != ::protobuf::EnumOrUnknown::new(super::LPPKGHJGOCC::LPPKGHJGOCC::LPPKGHJGOCC_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(8, self.content_type.value());
+        if self.content_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.content_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for FHLEBDMFCHL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.content_id != 0 {
-            os.write_uint32(2, self.content_id)?;
+        if self.MMNJODIJPOE != ::protobuf::EnumOrUnknown::new(super::LPPKGHJGOCC::LPPKGHJGOCC::LPPKGHJGOCC_NLCDGIPGFDJ) {
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.MMNJODIJPOE))?;
         }
-        if self.content_type != ::protobuf::EnumOrUnknown::new(super::LPPKGHJGOCC::LPPKGHJGOCC::LPPKGHJGOCC_NLCDGIPGFDJ) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.content_type))?;
+        if self.content_id != 0 {
+            os.write_uint32(11, self.content_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for FHLEBDMFCHL {
     }
 
     fn clear(&mut self) {
+        self.MMNJODIJPOE = ::protobuf::EnumOrUnknown::new(super::LPPKGHJGOCC::LPPKGHJGOCC::LPPKGHJGOCC_NLCDGIPGFDJ);
         self.content_id = 0;
-        self.content_type = ::protobuf::EnumOrUnknown::new(super::LPPKGHJGOCC::LPPKGHJGOCC::LPPKGHJGOCC_NLCDGIPGFDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FHLEBDMFCHL {
         static instance: FHLEBDMFCHL = FHLEBDMFCHL {
+            MMNJODIJPOE: ::protobuf::EnumOrUnknown::from_i32(0),
             content_id: 0,
-            content_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for FHLEBDMFCHL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FHLEBDMFCHL.proto\x1a\x11LPPKGHJGOCC.proto\"]\n\x0bFHLEBDMFCHL\x12\
-    \x1d\n\ncontent_id\x18\x02\x20\x01(\rR\tcontentId\x12/\n\x0ccontent_type\
-    \x18\x08\x20\x01(\x0e2\x0c.LPPKGHJGOCCR\x0bcontentTypeb\x06proto3\
+    \n\x11FHLEBDMFCHL.proto\x1a\x11LPPKGHJGOCC.proto\"\\\n\x0bFHLEBDMFCHL\
+    \x12.\n\x0bMMNJODIJPOE\x18\x05\x20\x01(\x0e2\x0c.LPPKGHJGOCCR\x0bMMNJODI\
+    JPOE\x12\x1d\n\ncontent_id\x18\x0b\x20\x01(\rR\tcontentIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

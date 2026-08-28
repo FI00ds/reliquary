@@ -79,10 +79,10 @@ impl ::protobuf::Message for FriendApplyInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                8 => {
                     self.apply_time = is.read_int64()?;
                 },
-                82 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_info)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for FriendApplyInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.apply_time != 0 {
-            my_size += ::protobuf::rt::int64_size(5, self.apply_time);
+            my_size += ::protobuf::rt::int64_size(1, self.apply_time);
         }
         if let Some(v) = self.player_info.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for FriendApplyInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.apply_time != 0 {
-            os.write_int64(5, self.apply_time)?;
+            os.write_int64(1, self.apply_time)?;
         }
         if let Some(v) = self.player_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for FriendApplyInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15FriendApplyInfo.proto\x1a\x16PlayerSimpleInfo.proto\"d\n\x0fFriend\
-    ApplyInfo\x12\x1d\n\napply_time\x18\x05\x20\x01(\x03R\tapplyTime\x122\n\
-    \x0bplayer_info\x18\n\x20\x01(\x0b2\x11.PlayerSimpleInfoR\nplayerInfob\
+    ApplyInfo\x12\x1d\n\napply_time\x18\x01\x20\x01(\x03R\tapplyTime\x122\n\
+    \x0bplayer_info\x18\x03\x20\x01(\x0b2\x11.PlayerSimpleInfoR\nplayerInfob\
     \x06proto3\
 ";
 

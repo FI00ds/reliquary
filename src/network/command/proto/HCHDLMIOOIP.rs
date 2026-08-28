@@ -36,10 +36,10 @@ pub struct HCHDLMIOOIP {
     pub PJGILAADCPN: u32,
     // @@protoc_insertion_point(field:HCHDLMIOOIP.IDPIIMCMPDJ)
     pub IDPIIMCMPDJ: bool,
-    // @@protoc_insertion_point(field:HCHDLMIOOIP.result)
-    pub result: u32,
-    // @@protoc_insertion_point(field:HCHDLMIOOIP.max_wave)
-    pub max_wave: u32,
+    // @@protoc_insertion_point(field:HCHDLMIOOIP.JCHFCNFHCMM)
+    pub JCHFCNFHCMM: u32,
+    // @@protoc_insertion_point(field:HCHDLMIOOIP.EMMGMLIBHGP)
+    pub EMMGMLIBHGP: u32,
     // @@protoc_insertion_point(field:HCHDLMIOOIP.cost_time)
     pub cost_time: u32,
     // special fields
@@ -82,14 +82,14 @@ impl HCHDLMIOOIP {
             |m: &mut HCHDLMIOOIP| { &mut m.IDPIIMCMPDJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "result",
-            |m: &HCHDLMIOOIP| { &m.result },
-            |m: &mut HCHDLMIOOIP| { &mut m.result },
+            "JCHFCNFHCMM",
+            |m: &HCHDLMIOOIP| { &m.JCHFCNFHCMM },
+            |m: &mut HCHDLMIOOIP| { &mut m.JCHFCNFHCMM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "max_wave",
-            |m: &HCHDLMIOOIP| { &m.max_wave },
-            |m: &mut HCHDLMIOOIP| { &mut m.max_wave },
+            "EMMGMLIBHGP",
+            |m: &HCHDLMIOOIP| { &m.EMMGMLIBHGP },
+            |m: &mut HCHDLMIOOIP| { &mut m.EMMGMLIBHGP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cost_time",
@@ -127,10 +127,10 @@ impl ::protobuf::Message for HCHDLMIOOIP {
                     self.IDPIIMCMPDJ = is.read_bool()?;
                 },
                 40 => {
-                    self.result = is.read_uint32()?;
+                    self.JCHFCNFHCMM = is.read_uint32()?;
                 },
                 48 => {
-                    self.max_wave = is.read_uint32()?;
+                    self.EMMGMLIBHGP = is.read_uint32()?;
                 },
                 56 => {
                     self.cost_time = is.read_uint32()?;
@@ -159,11 +159,11 @@ impl ::protobuf::Message for HCHDLMIOOIP {
         if self.IDPIIMCMPDJ != false {
             my_size += 1 + 1;
         }
-        if self.result != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.result);
+        if self.JCHFCNFHCMM != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.JCHFCNFHCMM);
         }
-        if self.max_wave != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.max_wave);
+        if self.EMMGMLIBHGP != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.EMMGMLIBHGP);
         }
         if self.cost_time != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.cost_time);
@@ -186,11 +186,11 @@ impl ::protobuf::Message for HCHDLMIOOIP {
         if self.IDPIIMCMPDJ != false {
             os.write_bool(4, self.IDPIIMCMPDJ)?;
         }
-        if self.result != 0 {
-            os.write_uint32(5, self.result)?;
+        if self.JCHFCNFHCMM != 0 {
+            os.write_uint32(5, self.JCHFCNFHCMM)?;
         }
-        if self.max_wave != 0 {
-            os.write_uint32(6, self.max_wave)?;
+        if self.EMMGMLIBHGP != 0 {
+            os.write_uint32(6, self.EMMGMLIBHGP)?;
         }
         if self.cost_time != 0 {
             os.write_uint32(7, self.cost_time)?;
@@ -216,8 +216,8 @@ impl ::protobuf::Message for HCHDLMIOOIP {
         self.room_id = 0;
         self.PJGILAADCPN = 0;
         self.IDPIIMCMPDJ = false;
-        self.result = 0;
-        self.max_wave = 0;
+        self.JCHFCNFHCMM = 0;
+        self.EMMGMLIBHGP = 0;
         self.cost_time = 0;
         self.special_fields.clear();
     }
@@ -228,8 +228,8 @@ impl ::protobuf::Message for HCHDLMIOOIP {
             room_id: 0,
             PJGILAADCPN: 0,
             IDPIIMCMPDJ: false,
-            result: 0,
-            max_wave: 0,
+            JCHFCNFHCMM: 0,
+            EMMGMLIBHGP: 0,
             cost_time: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -255,13 +255,13 @@ impl ::protobuf::reflect::ProtobufValue for HCHDLMIOOIP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HCHDLMIOOIP.proto\"\xd5\x01\n\x0bHCHDLMIOOIP\x12\x19\n\x08stage_id\
+    \n\x11HCHDLMIOOIP.proto\"\xe6\x01\n\x0bHCHDLMIOOIP\x12\x19\n\x08stage_id\
     \x18\x01\x20\x01(\rR\x07stageId\x12\x17\n\x07room_id\x18\x02\x20\x01(\
     \x04R\x06roomId\x12\x20\n\x0bPJGILAADCPN\x18\x03\x20\x01(\rR\x0bPJGILAAD\
     CPN\x12\x20\n\x0bIDPIIMCMPDJ\x18\x04\x20\x01(\x08R\x0bIDPIIMCMPDJ\x12\
-    \x16\n\x06result\x18\x05\x20\x01(\rR\x06result\x12\x19\n\x08max_wave\x18\
-    \x06\x20\x01(\rR\x07maxWave\x12\x1b\n\tcost_time\x18\x07\x20\x01(\rR\x08\
-    costTimeb\x06proto3\
+    \x20\n\x0bJCHFCNFHCMM\x18\x05\x20\x01(\rR\x0bJCHFCNFHCMM\x12\x20\n\x0bEM\
+    MGMLIBHGP\x18\x06\x20\x01(\rR\x0bEMMGMLIBHGP\x12\x1b\n\tcost_time\x18\
+    \x07\x20\x01(\rR\x08costTimeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

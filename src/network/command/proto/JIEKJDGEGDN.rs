@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JIEKJDGEGDN {
     // message fields
-    // @@protoc_insertion_point(field:JIEKJDGEGDN.is_active)
-    pub is_active: bool,
     // @@protoc_insertion_point(field:JIEKJDGEGDN.PDICFEGEPNM)
     pub PDICFEGEPNM: u32,
     // @@protoc_insertion_point(field:JIEKJDGEGDN.CJAINJMLDFC)
     pub CJAINJMLDFC: u32,
+    // @@protoc_insertion_point(field:JIEKJDGEGDN.CAGCHKJHMPD)
+    pub CAGCHKJHMPD: bool,
     // special fields
     // @@protoc_insertion_point(special_field:JIEKJDGEGDN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl JIEKJDGEGDN {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_active",
-            |m: &JIEKJDGEGDN| { &m.is_active },
-            |m: &mut JIEKJDGEGDN| { &mut m.is_active },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PDICFEGEPNM",
             |m: &JIEKJDGEGDN| { &m.PDICFEGEPNM },
             |m: &mut JIEKJDGEGDN| { &mut m.PDICFEGEPNM },
@@ -67,6 +62,11 @@ impl JIEKJDGEGDN {
             "CJAINJMLDFC",
             |m: &JIEKJDGEGDN| { &m.CJAINJMLDFC },
             |m: &mut JIEKJDGEGDN| { &mut m.CJAINJMLDFC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CAGCHKJHMPD",
+            |m: &JIEKJDGEGDN| { &m.CAGCHKJHMPD },
+            |m: &mut JIEKJDGEGDN| { &mut m.CAGCHKJHMPD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JIEKJDGEGDN>(
             "JIEKJDGEGDN",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for JIEKJDGEGDN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.is_active = is.read_bool()?;
-                },
-                32 => {
+                8 => {
                     self.PDICFEGEPNM = is.read_uint32()?;
                 },
-                88 => {
+                16 => {
                     self.CJAINJMLDFC = is.read_uint32()?;
+                },
+                72 => {
+                    self.CAGCHKJHMPD = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for JIEKJDGEGDN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_active != false {
-            my_size += 1 + 1;
-        }
         if self.PDICFEGEPNM != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.PDICFEGEPNM);
+            my_size += ::protobuf::rt::uint32_size(1, self.PDICFEGEPNM);
         }
         if self.CJAINJMLDFC != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.CJAINJMLDFC);
+            my_size += ::protobuf::rt::uint32_size(2, self.CJAINJMLDFC);
+        }
+        if self.CAGCHKJHMPD != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for JIEKJDGEGDN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_active != false {
-            os.write_bool(3, self.is_active)?;
-        }
         if self.PDICFEGEPNM != 0 {
-            os.write_uint32(4, self.PDICFEGEPNM)?;
+            os.write_uint32(1, self.PDICFEGEPNM)?;
         }
         if self.CJAINJMLDFC != 0 {
-            os.write_uint32(11, self.CJAINJMLDFC)?;
+            os.write_uint32(2, self.CJAINJMLDFC)?;
+        }
+        if self.CAGCHKJHMPD != false {
+            os.write_bool(9, self.CAGCHKJHMPD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for JIEKJDGEGDN {
     }
 
     fn clear(&mut self) {
-        self.is_active = false;
         self.PDICFEGEPNM = 0;
         self.CJAINJMLDFC = 0;
+        self.CAGCHKJHMPD = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JIEKJDGEGDN {
         static instance: JIEKJDGEGDN = JIEKJDGEGDN {
-            is_active: false,
             PDICFEGEPNM: 0,
             CJAINJMLDFC: 0,
+            CAGCHKJHMPD: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for JIEKJDGEGDN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JIEKJDGEGDN.proto\"n\n\x0bJIEKJDGEGDN\x12\x1b\n\tis_active\x18\x03\
-    \x20\x01(\x08R\x08isActive\x12\x20\n\x0bPDICFEGEPNM\x18\x04\x20\x01(\rR\
-    \x0bPDICFEGEPNM\x12\x20\n\x0bCJAINJMLDFC\x18\x0b\x20\x01(\rR\x0bCJAINJML\
-    DFCb\x06proto3\
+    \n\x11JIEKJDGEGDN.proto\"s\n\x0bJIEKJDGEGDN\x12\x20\n\x0bPDICFEGEPNM\x18\
+    \x01\x20\x01(\rR\x0bPDICFEGEPNM\x12\x20\n\x0bCJAINJMLDFC\x18\x02\x20\x01\
+    (\rR\x0bCJAINJMLDFC\x12\x20\n\x0bCAGCHKJHMPD\x18\t\x20\x01(\x08R\x0bCAGC\
+    HKJHMPDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

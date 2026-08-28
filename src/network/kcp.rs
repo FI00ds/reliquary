@@ -1,8 +1,8 @@
 use std::time::SystemTime;
 
-use kcp::{get_conv, Kcp, KCP_OVERHEAD};
+use kcp::{KCP_OVERHEAD, Kcp, get_conv};
 use thiserror::Error;
-use tracing::{error, info, instrument, span, trace, warn, Level};
+use tracing::{Level, info, instrument, span, trace, warn};
 
 use crate::network::bytes_as_hex;
 
@@ -16,13 +16,17 @@ pub enum KcpError {
         "kcp packet does not belong to expected conversation (expected {expected}, was {actual})"
     )]
     PacketDoesNotBelongToConversation { expected: u32, actual: u32 },
-    #[error("segment at offset {offset} is too short (need at least {min_size} bytes, but only {remaining} bytes remain)")]
+    #[error(
+        "segment at offset {offset} is too short (need at least {min_size} bytes, but only {remaining} bytes remain)"
+    )]
     SegmentTooShort {
         offset: usize,
         min_size: usize,
         remaining: usize,
     },
-    #[error("segment content length {content_len} at offset {offset} exceeds remaining data (only {remaining} bytes remain)")]
+    #[error(
+        "segment content length {content_len} at offset {offset} exceeds remaining data (only {remaining} bytes remain)"
+    )]
     ContentLengthExceedsData {
         offset: usize,
         content_len: usize,

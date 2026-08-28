@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MKGHJJCPBLP {
     // message fields
-    // @@protoc_insertion_point(field:MKGHJJCPBLP.panel_id)
-    pub panel_id: u32,
     // @@protoc_insertion_point(field:MKGHJJCPBLP.CNBCDMMBCKI)
     pub CNBCDMMBCKI: u32,
     // @@protoc_insertion_point(field:MKGHJJCPBLP.max_score)
     pub max_score: u32,
     // @@protoc_insertion_point(field:MKGHJJCPBLP.stage_id)
     pub stage_id: u32,
+    // @@protoc_insertion_point(field:MKGHJJCPBLP.panel_id)
+    pub panel_id: u32,
     // @@protoc_insertion_point(field:MKGHJJCPBLP.LMDGHCEHJCG)
     pub LMDGHCEHJCG: ::protobuf::MessageField<super::NAFMBLMMAAG::NAFMBLMMAAG>,
     // special fields
@@ -58,11 +58,6 @@ impl MKGHJJCPBLP {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "panel_id",
-            |m: &MKGHJJCPBLP| { &m.panel_id },
-            |m: &mut MKGHJJCPBLP| { &mut m.panel_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CNBCDMMBCKI",
             |m: &MKGHJJCPBLP| { &m.CNBCDMMBCKI },
             |m: &mut MKGHJJCPBLP| { &mut m.CNBCDMMBCKI },
@@ -76,6 +71,11 @@ impl MKGHJJCPBLP {
             "stage_id",
             |m: &MKGHJJCPBLP| { &m.stage_id },
             |m: &mut MKGHJJCPBLP| { &mut m.stage_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "panel_id",
+            |m: &MKGHJJCPBLP| { &m.panel_id },
+            |m: &mut MKGHJJCPBLP| { &mut m.panel_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NAFMBLMMAAG::NAFMBLMMAAG>(
             "LMDGHCEHJCG",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for MKGHJJCPBLP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.panel_id = is.read_uint32()?;
-                },
-                32 => {
+                8 => {
                     self.CNBCDMMBCKI = is.read_uint32()?;
                 },
-                40 => {
+                24 => {
                     self.max_score = is.read_uint32()?;
                 },
                 48 => {
                     self.stage_id = is.read_uint32()?;
                 },
-                106 => {
+                80 => {
+                    self.panel_id = is.read_uint32()?;
+                },
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LMDGHCEHJCG)?;
                 },
                 tag => {
@@ -127,17 +127,17 @@ impl ::protobuf::Message for MKGHJJCPBLP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.panel_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.panel_id);
-        }
         if self.CNBCDMMBCKI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.CNBCDMMBCKI);
+            my_size += ::protobuf::rt::uint32_size(1, self.CNBCDMMBCKI);
         }
         if self.max_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.max_score);
+            my_size += ::protobuf::rt::uint32_size(3, self.max_score);
         }
         if self.stage_id != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.stage_id);
+        }
+        if self.panel_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.panel_id);
         }
         if let Some(v) = self.LMDGHCEHJCG.as_ref() {
             let len = v.compute_size();
@@ -149,20 +149,20 @@ impl ::protobuf::Message for MKGHJJCPBLP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.panel_id != 0 {
-            os.write_uint32(2, self.panel_id)?;
-        }
         if self.CNBCDMMBCKI != 0 {
-            os.write_uint32(4, self.CNBCDMMBCKI)?;
+            os.write_uint32(1, self.CNBCDMMBCKI)?;
         }
         if self.max_score != 0 {
-            os.write_uint32(5, self.max_score)?;
+            os.write_uint32(3, self.max_score)?;
         }
         if self.stage_id != 0 {
             os.write_uint32(6, self.stage_id)?;
         }
+        if self.panel_id != 0 {
+            os.write_uint32(10, self.panel_id)?;
+        }
         if let Some(v) = self.LMDGHCEHJCG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for MKGHJJCPBLP {
     }
 
     fn clear(&mut self) {
-        self.panel_id = 0;
         self.CNBCDMMBCKI = 0;
         self.max_score = 0;
         self.stage_id = 0;
+        self.panel_id = 0;
         self.LMDGHCEHJCG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MKGHJJCPBLP {
         static instance: MKGHJJCPBLP = MKGHJJCPBLP {
-            panel_id: 0,
             CNBCDMMBCKI: 0,
             max_score: 0,
             stage_id: 0,
+            panel_id: 0,
             LMDGHCEHJCG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for MKGHJJCPBLP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MKGHJJCPBLP.proto\x1a\x11NAFMBLMMAAG.proto\"\xb2\x01\n\x0bMKGHJJCP\
-    BLP\x12\x19\n\x08panel_id\x18\x02\x20\x01(\rR\x07panelId\x12\x20\n\x0bCN\
-    BCDMMBCKI\x18\x04\x20\x01(\rR\x0bCNBCDMMBCKI\x12\x1b\n\tmax_score\x18\
-    \x05\x20\x01(\rR\x08maxScore\x12\x19\n\x08stage_id\x18\x06\x20\x01(\rR\
-    \x07stageId\x12.\n\x0bLMDGHCEHJCG\x18\r\x20\x01(\x0b2\x0c.NAFMBLMMAAGR\
-    \x0bLMDGHCEHJCGb\x06proto3\
+    BLP\x12\x20\n\x0bCNBCDMMBCKI\x18\x01\x20\x01(\rR\x0bCNBCDMMBCKI\x12\x1b\
+    \n\tmax_score\x18\x03\x20\x01(\rR\x08maxScore\x12\x19\n\x08stage_id\x18\
+    \x06\x20\x01(\rR\x07stageId\x12\x19\n\x08panel_id\x18\n\x20\x01(\rR\x07p\
+    anelId\x12.\n\x0bLMDGHCEHJCG\x18\x0e\x20\x01(\x0b2\x0c.NAFMBLMMAAGR\x0bL\
+    MDGHCEHJCGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

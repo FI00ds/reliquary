@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AddItemRsp {
     // message fields
-    // @@protoc_insertion_point(field:AddItemRsp.unlock_time)
-    pub unlock_time: i64,
+    // @@protoc_insertion_point(field:AddItemRsp.unlock_timestamp)
+    pub unlock_timestamp: i64,
     // @@protoc_insertion_point(field:AddItemRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // message oneof groups
@@ -50,7 +50,7 @@ impl AddItemRsp {
         ::std::default::Default::default()
     }
 
-    // uint32 avatar_id = 6;
+    // uint32 avatar_id = 11;
 
     pub fn avatar_id(&self) -> u32 {
         match self.FJIANHMABAB {
@@ -75,7 +75,7 @@ impl AddItemRsp {
         self.FJIANHMABAB = ::std::option::Option::Some(add_item_rsp::FJIANHMABAB::AvatarId(v))
     }
 
-    // uint32 CLEKAKLPNBP = 2;
+    // uint32 CLEKAKLPNBP = 13;
 
     pub fn CLEKAKLPNBP(&self) -> u32 {
         match self.FJIANHMABAB {
@@ -104,9 +104,9 @@ impl AddItemRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unlock_time",
-            |m: &AddItemRsp| { &m.unlock_time },
-            |m: &mut AddItemRsp| { &mut m.unlock_time },
+            "unlock_timestamp",
+            |m: &AddItemRsp| { &m.unlock_timestamp },
+            |m: &mut AddItemRsp| { &mut m.unlock_timestamp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
@@ -144,16 +144,16 @@ impl ::protobuf::Message for AddItemRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.unlock_time = is.read_int64()?;
+                112 => {
+                    self.unlock_timestamp = is.read_int64()?;
                 },
-                66 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                48 => {
+                88 => {
                     self.FJIANHMABAB = ::std::option::Option::Some(add_item_rsp::FJIANHMABAB::AvatarId(is.read_uint32()?));
                 },
-                16 => {
+                104 => {
                     self.FJIANHMABAB = ::std::option::Option::Some(add_item_rsp::FJIANHMABAB::CLEKAKLPNBP(is.read_uint32()?));
                 },
                 tag => {
@@ -168,8 +168,8 @@ impl ::protobuf::Message for AddItemRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.unlock_time != 0 {
-            my_size += ::protobuf::rt::int64_size(7, self.unlock_time);
+        if self.unlock_timestamp != 0 {
+            my_size += ::protobuf::rt::int64_size(14, self.unlock_timestamp);
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
@@ -178,10 +178,10 @@ impl ::protobuf::Message for AddItemRsp {
         if let ::std::option::Option::Some(ref v) = self.FJIANHMABAB {
             match v {
                 &add_item_rsp::FJIANHMABAB::AvatarId(v) => {
-                    my_size += ::protobuf::rt::uint32_size(6, v);
+                    my_size += ::protobuf::rt::uint32_size(11, v);
                 },
                 &add_item_rsp::FJIANHMABAB::CLEKAKLPNBP(v) => {
-                    my_size += ::protobuf::rt::uint32_size(2, v);
+                    my_size += ::protobuf::rt::uint32_size(13, v);
                 },
             };
         }
@@ -191,19 +191,19 @@ impl ::protobuf::Message for AddItemRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.unlock_time != 0 {
-            os.write_int64(7, self.unlock_time)?;
+        if self.unlock_timestamp != 0 {
+            os.write_int64(14, self.unlock_timestamp)?;
         }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if let ::std::option::Option::Some(ref v) = self.FJIANHMABAB {
             match v {
                 &add_item_rsp::FJIANHMABAB::AvatarId(v) => {
-                    os.write_uint32(6, v)?;
+                    os.write_uint32(11, v)?;
                 },
                 &add_item_rsp::FJIANHMABAB::CLEKAKLPNBP(v) => {
-                    os.write_uint32(2, v)?;
+                    os.write_uint32(13, v)?;
                 },
             };
         }
@@ -224,7 +224,7 @@ impl ::protobuf::Message for AddItemRsp {
     }
 
     fn clear(&mut self) {
-        self.unlock_time = 0;
+        self.unlock_timestamp = 0;
         self.reward.clear();
         self.FJIANHMABAB = ::std::option::Option::None;
         self.FJIANHMABAB = ::std::option::Option::None;
@@ -233,7 +233,7 @@ impl ::protobuf::Message for AddItemRsp {
 
     fn default_instance() -> &'static AddItemRsp {
         static instance: AddItemRsp = AddItemRsp {
-            unlock_time: 0,
+            unlock_timestamp: 0,
             reward: ::protobuf::MessageField::none(),
             FJIANHMABAB: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -290,11 +290,11 @@ pub mod add_item_rsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x10AddItemRsp.proto\x1a\x0eItemList.proto\"\xa2\x01\n\nAddItemRsp\x12\
-    \x1f\n\x0bunlock_time\x18\x07\x20\x01(\x03R\nunlockTime\x12!\n\x06reward\
-    \x18\x08\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x1d\n\tavatar_id\x18\
-    \x06\x20\x01(\rH\0R\x08avatarId\x12\"\n\x0bCLEKAKLPNBP\x18\x02\x20\x01(\
-    \rH\0R\x0bCLEKAKLPNBPB\r\n\x0bFJIANHMABABb\x06proto3\
+    \n\x10AddItemRsp.proto\x1a\x0eItemList.proto\"\xac\x01\n\nAddItemRsp\x12\
+    )\n\x10unlock_timestamp\x18\x0e\x20\x01(\x03R\x0funlockTimestamp\x12!\n\
+    \x06reward\x18\x0f\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x1d\n\tavatar\
+    _id\x18\x0b\x20\x01(\rH\0R\x08avatarId\x12\"\n\x0bCLEKAKLPNBP\x18\r\x20\
+    \x01(\rH\0R\x0bCLEKAKLPNBPB\r\n\x0bFJIANHMABABb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

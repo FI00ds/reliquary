@@ -27,44 +27,44 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:ExtraLineupType)
 pub enum ExtraLineupType {
-    // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_NONE)
-    LINEUP_NONE = 0,
-    // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_CHALLENGE)
-    LINEUP_CHALLENGE = 1,
-    // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_ROGUE)
-    LINEUP_ROGUE = 2,
-    // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_CHALLENGE_2)
-    LINEUP_CHALLENGE_2 = 3,
-    // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_CHALLENGE_3)
-    LINEUP_CHALLENGE_3 = 4,
-    // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_ROGUE_CHALLENGE)
-    LINEUP_ROGUE_CHALLENGE = 5,
-    // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_STAGE_TRIAL)
-    LINEUP_STAGE_TRIAL = 6,
-    // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_ROGUE_TRIAL)
-    LINEUP_ROGUE_TRIAL = 7,
-    // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_ACTIVITY)
-    LINEUP_ACTIVITY = 8,
-    // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_BOXING_CLUB)
-    LINEUP_BOXING_CLUB = 9,
-    // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_TREASURE_DUNGEON)
-    LINEUP_TREASURE_DUNGEON = 11,
-    // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_CHESS_ROGUE)
-    LINEUP_CHESS_ROGUE = 12,
-    // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_HELIOBUS)
-    LINEUP_HELIOBUS = 13,
-    // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_TOURN_ROGUE)
-    LINEUP_TOURN_ROGUE = 14,
-    // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_RELIC_ROGUE)
-    LINEUP_RELIC_ROGUE = 15,
-    // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_ARCADE_ROGUE)
-    LINEUP_ARCADE_ROGUE = 16,
-    // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_MAGIC_ROGUE)
-    LINEUP_MAGIC_ROGUE = 17,
-    // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_FATE)
-    LINEUP_FATE = 18,
-    // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_GRID_FIGHT)
-    LINEUP_GRID_FIGHT = 19,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.ExtraLineupType_LineupNone)
+    ExtraLineupType_LineupNone = 0,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.ExtraLineupType_LineupChallenge)
+    ExtraLineupType_LineupChallenge = 1,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.ExtraLineupType_LineupRogue)
+    ExtraLineupType_LineupRogue = 2,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.ExtraLineupType_LineupChallenge2)
+    ExtraLineupType_LineupChallenge2 = 3,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.ExtraLineupType_LineupChallenge3)
+    ExtraLineupType_LineupChallenge3 = 4,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.ExtraLineupType_LineupRogueChallenge)
+    ExtraLineupType_LineupRogueChallenge = 5,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.ExtraLineupType_LineupStageTrial)
+    ExtraLineupType_LineupStageTrial = 6,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.ExtraLineupType_LineupRogueTrial)
+    ExtraLineupType_LineupRogueTrial = 7,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.ExtraLineupType_LineupActivity)
+    ExtraLineupType_LineupActivity = 8,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.ExtraLineupType_LineupBoxingClub)
+    ExtraLineupType_LineupBoxingClub = 9,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.ExtraLineupType_LineupTreasureDungeon)
+    ExtraLineupType_LineupTreasureDungeon = 11,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.ExtraLineupType_LineupChessRogue)
+    ExtraLineupType_LineupChessRogue = 12,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.ExtraLineupType_LineupHeliobus)
+    ExtraLineupType_LineupHeliobus = 13,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.ExtraLineupType_LineupTournRogue)
+    ExtraLineupType_LineupTournRogue = 14,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.ExtraLineupType_LineupRelicRogue)
+    ExtraLineupType_LineupRelicRogue = 15,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.ExtraLineupType_LineupArcadeRogue)
+    ExtraLineupType_LineupArcadeRogue = 16,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.ExtraLineupType_LineupMagicRogue)
+    ExtraLineupType_LineupMagicRogue = 17,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.ExtraLineupType_LineupFate)
+    ExtraLineupType_LineupFate = 18,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.H_135ef918)
+    H_135ef918 = 19,
 }
 
 impl ::protobuf::Enum for ExtraLineupType {
@@ -76,74 +76,74 @@ impl ::protobuf::Enum for ExtraLineupType {
 
     fn from_i32(value: i32) -> ::std::option::Option<ExtraLineupType> {
         match value {
-            0 => ::std::option::Option::Some(ExtraLineupType::LINEUP_NONE),
-            1 => ::std::option::Option::Some(ExtraLineupType::LINEUP_CHALLENGE),
-            2 => ::std::option::Option::Some(ExtraLineupType::LINEUP_ROGUE),
-            3 => ::std::option::Option::Some(ExtraLineupType::LINEUP_CHALLENGE_2),
-            4 => ::std::option::Option::Some(ExtraLineupType::LINEUP_CHALLENGE_3),
-            5 => ::std::option::Option::Some(ExtraLineupType::LINEUP_ROGUE_CHALLENGE),
-            6 => ::std::option::Option::Some(ExtraLineupType::LINEUP_STAGE_TRIAL),
-            7 => ::std::option::Option::Some(ExtraLineupType::LINEUP_ROGUE_TRIAL),
-            8 => ::std::option::Option::Some(ExtraLineupType::LINEUP_ACTIVITY),
-            9 => ::std::option::Option::Some(ExtraLineupType::LINEUP_BOXING_CLUB),
-            11 => ::std::option::Option::Some(ExtraLineupType::LINEUP_TREASURE_DUNGEON),
-            12 => ::std::option::Option::Some(ExtraLineupType::LINEUP_CHESS_ROGUE),
-            13 => ::std::option::Option::Some(ExtraLineupType::LINEUP_HELIOBUS),
-            14 => ::std::option::Option::Some(ExtraLineupType::LINEUP_TOURN_ROGUE),
-            15 => ::std::option::Option::Some(ExtraLineupType::LINEUP_RELIC_ROGUE),
-            16 => ::std::option::Option::Some(ExtraLineupType::LINEUP_ARCADE_ROGUE),
-            17 => ::std::option::Option::Some(ExtraLineupType::LINEUP_MAGIC_ROGUE),
-            18 => ::std::option::Option::Some(ExtraLineupType::LINEUP_FATE),
-            19 => ::std::option::Option::Some(ExtraLineupType::LINEUP_GRID_FIGHT),
+            0 => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupNone),
+            1 => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupChallenge),
+            2 => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupRogue),
+            3 => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupChallenge2),
+            4 => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupChallenge3),
+            5 => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupRogueChallenge),
+            6 => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupStageTrial),
+            7 => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupRogueTrial),
+            8 => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupActivity),
+            9 => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupBoxingClub),
+            11 => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupTreasureDungeon),
+            12 => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupChessRogue),
+            13 => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupHeliobus),
+            14 => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupTournRogue),
+            15 => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupRelicRogue),
+            16 => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupArcadeRogue),
+            17 => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupMagicRogue),
+            18 => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupFate),
+            19 => ::std::option::Option::Some(ExtraLineupType::H_135ef918),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<ExtraLineupType> {
         match str {
-            "LINEUP_NONE" => ::std::option::Option::Some(ExtraLineupType::LINEUP_NONE),
-            "LINEUP_CHALLENGE" => ::std::option::Option::Some(ExtraLineupType::LINEUP_CHALLENGE),
-            "LINEUP_ROGUE" => ::std::option::Option::Some(ExtraLineupType::LINEUP_ROGUE),
-            "LINEUP_CHALLENGE_2" => ::std::option::Option::Some(ExtraLineupType::LINEUP_CHALLENGE_2),
-            "LINEUP_CHALLENGE_3" => ::std::option::Option::Some(ExtraLineupType::LINEUP_CHALLENGE_3),
-            "LINEUP_ROGUE_CHALLENGE" => ::std::option::Option::Some(ExtraLineupType::LINEUP_ROGUE_CHALLENGE),
-            "LINEUP_STAGE_TRIAL" => ::std::option::Option::Some(ExtraLineupType::LINEUP_STAGE_TRIAL),
-            "LINEUP_ROGUE_TRIAL" => ::std::option::Option::Some(ExtraLineupType::LINEUP_ROGUE_TRIAL),
-            "LINEUP_ACTIVITY" => ::std::option::Option::Some(ExtraLineupType::LINEUP_ACTIVITY),
-            "LINEUP_BOXING_CLUB" => ::std::option::Option::Some(ExtraLineupType::LINEUP_BOXING_CLUB),
-            "LINEUP_TREASURE_DUNGEON" => ::std::option::Option::Some(ExtraLineupType::LINEUP_TREASURE_DUNGEON),
-            "LINEUP_CHESS_ROGUE" => ::std::option::Option::Some(ExtraLineupType::LINEUP_CHESS_ROGUE),
-            "LINEUP_HELIOBUS" => ::std::option::Option::Some(ExtraLineupType::LINEUP_HELIOBUS),
-            "LINEUP_TOURN_ROGUE" => ::std::option::Option::Some(ExtraLineupType::LINEUP_TOURN_ROGUE),
-            "LINEUP_RELIC_ROGUE" => ::std::option::Option::Some(ExtraLineupType::LINEUP_RELIC_ROGUE),
-            "LINEUP_ARCADE_ROGUE" => ::std::option::Option::Some(ExtraLineupType::LINEUP_ARCADE_ROGUE),
-            "LINEUP_MAGIC_ROGUE" => ::std::option::Option::Some(ExtraLineupType::LINEUP_MAGIC_ROGUE),
-            "LINEUP_FATE" => ::std::option::Option::Some(ExtraLineupType::LINEUP_FATE),
-            "LINEUP_GRID_FIGHT" => ::std::option::Option::Some(ExtraLineupType::LINEUP_GRID_FIGHT),
+            "ExtraLineupType_LineupNone" => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupNone),
+            "ExtraLineupType_LineupChallenge" => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupChallenge),
+            "ExtraLineupType_LineupRogue" => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupRogue),
+            "ExtraLineupType_LineupChallenge2" => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupChallenge2),
+            "ExtraLineupType_LineupChallenge3" => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupChallenge3),
+            "ExtraLineupType_LineupRogueChallenge" => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupRogueChallenge),
+            "ExtraLineupType_LineupStageTrial" => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupStageTrial),
+            "ExtraLineupType_LineupRogueTrial" => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupRogueTrial),
+            "ExtraLineupType_LineupActivity" => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupActivity),
+            "ExtraLineupType_LineupBoxingClub" => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupBoxingClub),
+            "ExtraLineupType_LineupTreasureDungeon" => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupTreasureDungeon),
+            "ExtraLineupType_LineupChessRogue" => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupChessRogue),
+            "ExtraLineupType_LineupHeliobus" => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupHeliobus),
+            "ExtraLineupType_LineupTournRogue" => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupTournRogue),
+            "ExtraLineupType_LineupRelicRogue" => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupRelicRogue),
+            "ExtraLineupType_LineupArcadeRogue" => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupArcadeRogue),
+            "ExtraLineupType_LineupMagicRogue" => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupMagicRogue),
+            "ExtraLineupType_LineupFate" => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupFate),
+            "H_135ef918" => ::std::option::Option::Some(ExtraLineupType::H_135ef918),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [ExtraLineupType] = &[
-        ExtraLineupType::LINEUP_NONE,
-        ExtraLineupType::LINEUP_CHALLENGE,
-        ExtraLineupType::LINEUP_ROGUE,
-        ExtraLineupType::LINEUP_CHALLENGE_2,
-        ExtraLineupType::LINEUP_CHALLENGE_3,
-        ExtraLineupType::LINEUP_ROGUE_CHALLENGE,
-        ExtraLineupType::LINEUP_STAGE_TRIAL,
-        ExtraLineupType::LINEUP_ROGUE_TRIAL,
-        ExtraLineupType::LINEUP_ACTIVITY,
-        ExtraLineupType::LINEUP_BOXING_CLUB,
-        ExtraLineupType::LINEUP_TREASURE_DUNGEON,
-        ExtraLineupType::LINEUP_CHESS_ROGUE,
-        ExtraLineupType::LINEUP_HELIOBUS,
-        ExtraLineupType::LINEUP_TOURN_ROGUE,
-        ExtraLineupType::LINEUP_RELIC_ROGUE,
-        ExtraLineupType::LINEUP_ARCADE_ROGUE,
-        ExtraLineupType::LINEUP_MAGIC_ROGUE,
-        ExtraLineupType::LINEUP_FATE,
-        ExtraLineupType::LINEUP_GRID_FIGHT,
+        ExtraLineupType::ExtraLineupType_LineupNone,
+        ExtraLineupType::ExtraLineupType_LineupChallenge,
+        ExtraLineupType::ExtraLineupType_LineupRogue,
+        ExtraLineupType::ExtraLineupType_LineupChallenge2,
+        ExtraLineupType::ExtraLineupType_LineupChallenge3,
+        ExtraLineupType::ExtraLineupType_LineupRogueChallenge,
+        ExtraLineupType::ExtraLineupType_LineupStageTrial,
+        ExtraLineupType::ExtraLineupType_LineupRogueTrial,
+        ExtraLineupType::ExtraLineupType_LineupActivity,
+        ExtraLineupType::ExtraLineupType_LineupBoxingClub,
+        ExtraLineupType::ExtraLineupType_LineupTreasureDungeon,
+        ExtraLineupType::ExtraLineupType_LineupChessRogue,
+        ExtraLineupType::ExtraLineupType_LineupHeliobus,
+        ExtraLineupType::ExtraLineupType_LineupTournRogue,
+        ExtraLineupType::ExtraLineupType_LineupRelicRogue,
+        ExtraLineupType::ExtraLineupType_LineupArcadeRogue,
+        ExtraLineupType::ExtraLineupType_LineupMagicRogue,
+        ExtraLineupType::ExtraLineupType_LineupFate,
+        ExtraLineupType::H_135ef918,
     ];
 }
 
@@ -155,25 +155,25 @@ impl ::protobuf::EnumFull for ExtraLineupType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            ExtraLineupType::LINEUP_NONE => 0,
-            ExtraLineupType::LINEUP_CHALLENGE => 1,
-            ExtraLineupType::LINEUP_ROGUE => 2,
-            ExtraLineupType::LINEUP_CHALLENGE_2 => 3,
-            ExtraLineupType::LINEUP_CHALLENGE_3 => 4,
-            ExtraLineupType::LINEUP_ROGUE_CHALLENGE => 5,
-            ExtraLineupType::LINEUP_STAGE_TRIAL => 6,
-            ExtraLineupType::LINEUP_ROGUE_TRIAL => 7,
-            ExtraLineupType::LINEUP_ACTIVITY => 8,
-            ExtraLineupType::LINEUP_BOXING_CLUB => 9,
-            ExtraLineupType::LINEUP_TREASURE_DUNGEON => 10,
-            ExtraLineupType::LINEUP_CHESS_ROGUE => 11,
-            ExtraLineupType::LINEUP_HELIOBUS => 12,
-            ExtraLineupType::LINEUP_TOURN_ROGUE => 13,
-            ExtraLineupType::LINEUP_RELIC_ROGUE => 14,
-            ExtraLineupType::LINEUP_ARCADE_ROGUE => 15,
-            ExtraLineupType::LINEUP_MAGIC_ROGUE => 16,
-            ExtraLineupType::LINEUP_FATE => 17,
-            ExtraLineupType::LINEUP_GRID_FIGHT => 18,
+            ExtraLineupType::ExtraLineupType_LineupNone => 0,
+            ExtraLineupType::ExtraLineupType_LineupChallenge => 1,
+            ExtraLineupType::ExtraLineupType_LineupRogue => 2,
+            ExtraLineupType::ExtraLineupType_LineupChallenge2 => 3,
+            ExtraLineupType::ExtraLineupType_LineupChallenge3 => 4,
+            ExtraLineupType::ExtraLineupType_LineupRogueChallenge => 5,
+            ExtraLineupType::ExtraLineupType_LineupStageTrial => 6,
+            ExtraLineupType::ExtraLineupType_LineupRogueTrial => 7,
+            ExtraLineupType::ExtraLineupType_LineupActivity => 8,
+            ExtraLineupType::ExtraLineupType_LineupBoxingClub => 9,
+            ExtraLineupType::ExtraLineupType_LineupTreasureDungeon => 10,
+            ExtraLineupType::ExtraLineupType_LineupChessRogue => 11,
+            ExtraLineupType::ExtraLineupType_LineupHeliobus => 12,
+            ExtraLineupType::ExtraLineupType_LineupTournRogue => 13,
+            ExtraLineupType::ExtraLineupType_LineupRelicRogue => 14,
+            ExtraLineupType::ExtraLineupType_LineupArcadeRogue => 15,
+            ExtraLineupType::ExtraLineupType_LineupMagicRogue => 16,
+            ExtraLineupType::ExtraLineupType_LineupFate => 17,
+            ExtraLineupType::H_135ef918 => 18,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -181,7 +181,7 @@ impl ::protobuf::EnumFull for ExtraLineupType {
 
 impl ::std::default::Default for ExtraLineupType {
     fn default() -> Self {
-        ExtraLineupType::LINEUP_NONE
+        ExtraLineupType::ExtraLineupType_LineupNone
     }
 }
 
@@ -192,18 +192,20 @@ impl ExtraLineupType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15ExtraLineupType.proto*\xc6\x03\n\x0fExtraLineupType\x12\x0f\n\x0bL\
-    INEUP_NONE\x10\0\x12\x14\n\x10LINEUP_CHALLENGE\x10\x01\x12\x10\n\x0cLINE\
-    UP_ROGUE\x10\x02\x12\x16\n\x12LINEUP_CHALLENGE_2\x10\x03\x12\x16\n\x12LI\
-    NEUP_CHALLENGE_3\x10\x04\x12\x1a\n\x16LINEUP_ROGUE_CHALLENGE\x10\x05\x12\
-    \x16\n\x12LINEUP_STAGE_TRIAL\x10\x06\x12\x16\n\x12LINEUP_ROGUE_TRIAL\x10\
-    \x07\x12\x13\n\x0fLINEUP_ACTIVITY\x10\x08\x12\x16\n\x12LINEUP_BOXING_CLU\
-    B\x10\t\x12\x1b\n\x17LINEUP_TREASURE_DUNGEON\x10\x0b\x12\x16\n\x12LINEUP\
-    _CHESS_ROGUE\x10\x0c\x12\x13\n\x0fLINEUP_HELIOBUS\x10\r\x12\x16\n\x12LIN\
-    EUP_TOURN_ROGUE\x10\x0e\x12\x16\n\x12LINEUP_RELIC_ROGUE\x10\x0f\x12\x17\
-    \n\x13LINEUP_ARCADE_ROGUE\x10\x10\x12\x16\n\x12LINEUP_MAGIC_ROGUE\x10\
-    \x11\x12\x0f\n\x0bLINEUP_FATE\x10\x12\x12\x15\n\x11LINEUP_GRID_FIGHT\x10\
-    \x13b\x06proto3\
+    \n\x15ExtraLineupType.proto*\xc1\x05\n\x0fExtraLineupType\x12\x1e\n\x1aE\
+    xtraLineupType_LineupNone\x10\0\x12#\n\x1fExtraLineupType_LineupChalleng\
+    e\x10\x01\x12\x1f\n\x1bExtraLineupType_LineupRogue\x10\x02\x12$\n\x20Ext\
+    raLineupType_LineupChallenge2\x10\x03\x12$\n\x20ExtraLineupType_LineupCh\
+    allenge3\x10\x04\x12(\n$ExtraLineupType_LineupRogueChallenge\x10\x05\x12\
+    $\n\x20ExtraLineupType_LineupStageTrial\x10\x06\x12$\n\x20ExtraLineupTyp\
+    e_LineupRogueTrial\x10\x07\x12\"\n\x1eExtraLineupType_LineupActivity\x10\
+    \x08\x12$\n\x20ExtraLineupType_LineupBoxingClub\x10\t\x12)\n%ExtraLineup\
+    Type_LineupTreasureDungeon\x10\x0b\x12$\n\x20ExtraLineupType_LineupChess\
+    Rogue\x10\x0c\x12\"\n\x1eExtraLineupType_LineupHeliobus\x10\r\x12$\n\x20\
+    ExtraLineupType_LineupTournRogue\x10\x0e\x12$\n\x20ExtraLineupType_Lineu\
+    pRelicRogue\x10\x0f\x12%\n!ExtraLineupType_LineupArcadeRogue\x10\x10\x12\
+    $\n\x20ExtraLineupType_LineupMagicRogue\x10\x11\x12\x1e\n\x1aExtraLineup\
+    Type_LineupFate\x10\x12\x12\x0e\n\nH_135ef918\x10\x13b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

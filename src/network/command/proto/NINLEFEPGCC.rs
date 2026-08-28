@@ -38,8 +38,8 @@ pub struct NINLEFEPGCC {
     pub OOJGMIMJAGC: u32,
     // @@protoc_insertion_point(field:NINLEFEPGCC.CJNHAILKEPN)
     pub CJNHAILKEPN: bool,
-    // @@protoc_insertion_point(field:NINLEFEPGCC.turn)
-    pub turn: u32,
+    // @@protoc_insertion_point(field:NINLEFEPGCC.HJPBAJEPAGE)
+    pub HJPBAJEPAGE: u32,
     // @@protoc_insertion_point(field:NINLEFEPGCC.FDAOAJKBJKM)
     pub FDAOAJKBJKM: u32,
     // @@protoc_insertion_point(field:NINLEFEPGCC.COGGJELNFCN)
@@ -101,9 +101,9 @@ impl NINLEFEPGCC {
             |m: &mut NINLEFEPGCC| { &mut m.CJNHAILKEPN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "turn",
-            |m: &NINLEFEPGCC| { &m.turn },
-            |m: &mut NINLEFEPGCC| { &mut m.turn },
+            "HJPBAJEPAGE",
+            |m: &NINLEFEPGCC| { &m.HJPBAJEPAGE },
+            |m: &mut NINLEFEPGCC| { &mut m.HJPBAJEPAGE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FDAOAJKBJKM",
@@ -179,7 +179,7 @@ impl ::protobuf::Message for NINLEFEPGCC {
                     self.CJNHAILKEPN = is.read_bool()?;
                 },
                 48 => {
-                    self.turn = is.read_uint32()?;
+                    self.HJPBAJEPAGE = is.read_uint32()?;
                 },
                 56 => {
                     self.FDAOAJKBJKM = is.read_uint32()?;
@@ -232,8 +232,8 @@ impl ::protobuf::Message for NINLEFEPGCC {
         if self.CJNHAILKEPN != false {
             my_size += 1 + 1;
         }
-        if self.turn != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.turn);
+        if self.HJPBAJEPAGE != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.HJPBAJEPAGE);
         }
         if self.FDAOAJKBJKM != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.FDAOAJKBJKM);
@@ -284,8 +284,8 @@ impl ::protobuf::Message for NINLEFEPGCC {
         if self.CJNHAILKEPN != false {
             os.write_bool(5, self.CJNHAILKEPN)?;
         }
-        if self.turn != 0 {
-            os.write_uint32(6, self.turn)?;
+        if self.HJPBAJEPAGE != 0 {
+            os.write_uint32(6, self.HJPBAJEPAGE)?;
         }
         if self.FDAOAJKBJKM != 0 {
             os.write_uint32(7, self.FDAOAJKBJKM)?;
@@ -333,7 +333,7 @@ impl ::protobuf::Message for NINLEFEPGCC {
         self.GAENFKKAKOI = 0;
         self.OOJGMIMJAGC = 0;
         self.CJNHAILKEPN = false;
-        self.turn = 0;
+        self.HJPBAJEPAGE = 0;
         self.FDAOAJKBJKM = 0;
         self.COGGJELNFCN.clear();
         self.IDBGCLFLCGE.clear();
@@ -352,7 +352,7 @@ impl ::protobuf::Message for NINLEFEPGCC {
             GAENFKKAKOI: 0,
             OOJGMIMJAGC: 0,
             CJNHAILKEPN: false,
-            turn: 0,
+            HJPBAJEPAGE: 0,
             FDAOAJKBJKM: 0,
             COGGJELNFCN: ::protobuf::MessageField::none(),
             IDBGCLFLCGE: ::protobuf::MessageField::none(),
@@ -386,19 +386,19 @@ impl ::protobuf::reflect::ProtobufValue for NINLEFEPGCC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NINLEFEPGCC.proto\x1a\x11CKODNPNBOEN.proto\x1a\x11FDNOPLPDLFC.prot\
-    o\"\x84\x04\n\x0bNINLEFEPGCC\x12\x17\n\x07room_id\x18\x01\x20\x01(\x04R\
+    o\"\x92\x04\n\x0bNINLEFEPGCC\x12\x17\n\x07room_id\x18\x01\x20\x01(\x04R\
     \x06roomId\x12\x20\n\x0bGLHKJMBKKPI\x18\x02\x20\x01(\rR\x0bGLHKJMBKKPI\
     \x12\x20\n\x0bGAENFKKAKOI\x18\x03\x20\x01(\rR\x0bGAENFKKAKOI\x12\x20\n\
     \x0bOOJGMIMJAGC\x18\x04\x20\x01(\rR\x0bOOJGMIMJAGC\x12\x20\n\x0bCJNHAILK\
-    EPN\x18\x05\x20\x01(\x08R\x0bCJNHAILKEPN\x12\x12\n\x04turn\x18\x06\x20\
-    \x01(\rR\x04turn\x12\x20\n\x0bFDAOAJKBJKM\x18\x07\x20\x01(\rR\x0bFDAOAJK\
-    BJKM\x12.\n\x0bCOGGJELNFCN\x18\x08\x20\x01(\x0b2\x0c.CKODNPNBOENR\x0bCOG\
-    GJELNFCN\x12.\n\x0bIDBGCLFLCGE\x18\t\x20\x01(\x0b2\x0c.CKODNPNBOENR\x0bI\
-    DBGCLFLCGE\x12\x1f\n\x0battack_type\x18\n\x20\x01(\rR\nattackType\x12.\n\
-    \x0bADHHMELLEHA\x18\x0b\x20\x01(\x0b2\x0c.FDNOPLPDLFCR\x0bADHHMELLEHA\
-    \x12.\n\x0bKNMNGCBMNMJ\x18\x0c\x20\x01(\x0b2\x0c.FDNOPLPDLFCR\x0bKNMNGCB\
-    MNMJ\x12\x20\n\x0bKFEMJMKMGIJ\x18\r\x20\x01(\rR\x0bKFEMJMKMGIJ\x12\x1b\n\
-    \tcost_time\x18\x0e\x20\x01(\rR\x08costTimeb\x06proto3\
+    EPN\x18\x05\x20\x01(\x08R\x0bCJNHAILKEPN\x12\x20\n\x0bHJPBAJEPAGE\x18\
+    \x06\x20\x01(\rR\x0bHJPBAJEPAGE\x12\x20\n\x0bFDAOAJKBJKM\x18\x07\x20\x01\
+    (\rR\x0bFDAOAJKBJKM\x12.\n\x0bCOGGJELNFCN\x18\x08\x20\x01(\x0b2\x0c.CKOD\
+    NPNBOENR\x0bCOGGJELNFCN\x12.\n\x0bIDBGCLFLCGE\x18\t\x20\x01(\x0b2\x0c.CK\
+    ODNPNBOENR\x0bIDBGCLFLCGE\x12\x1f\n\x0battack_type\x18\n\x20\x01(\rR\nat\
+    tackType\x12.\n\x0bADHHMELLEHA\x18\x0b\x20\x01(\x0b2\x0c.FDNOPLPDLFCR\
+    \x0bADHHMELLEHA\x12.\n\x0bKNMNGCBMNMJ\x18\x0c\x20\x01(\x0b2\x0c.FDNOPLPD\
+    LFCR\x0bKNMNGCBMNMJ\x12\x20\n\x0bKFEMJMKMGIJ\x18\r\x20\x01(\rR\x0bKFEMJM\
+    KMGIJ\x12\x1b\n\tcost_time\x18\x0e\x20\x01(\rR\x08costTimeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

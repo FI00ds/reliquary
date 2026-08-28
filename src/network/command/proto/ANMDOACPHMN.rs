@@ -27,9 +27,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 // @@protoc_insertion_point(message:ANMDOACPHMN)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ANMDOACPHMN {
-    // message fields
-    // @@protoc_insertion_point(field:ANMDOACPHMN.POOGLPNNDAB)
-    pub POOGLPNNDAB: ::protobuf::MessageField<super::BDPHJAEBKAD::BDPHJAEBKAD>,
+    // message oneof groups
+    pub KKNBOACNCON: ::std::option::Option<anmdoacphmn::KKNBOACNCON>,
     // special fields
     // @@protoc_insertion_point(special_field:ANMDOACPHMN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -46,14 +45,66 @@ impl ANMDOACPHMN {
         ::std::default::Default::default()
     }
 
+    // .BDPHJAEBKAD POOGLPNNDAB = 10;
+
+    pub fn POOGLPNNDAB(&self) -> &super::BDPHJAEBKAD::BDPHJAEBKAD {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(anmdoacphmn::KKNBOACNCON::POOGLPNNDAB(ref v)) => v,
+            _ => <super::BDPHJAEBKAD::BDPHJAEBKAD as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_POOGLPNNDAB(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_POOGLPNNDAB(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(anmdoacphmn::KKNBOACNCON::POOGLPNNDAB(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_POOGLPNNDAB(&mut self, v: super::BDPHJAEBKAD::BDPHJAEBKAD) {
+        self.KKNBOACNCON = ::std::option::Option::Some(anmdoacphmn::KKNBOACNCON::POOGLPNNDAB(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_POOGLPNNDAB(&mut self) -> &mut super::BDPHJAEBKAD::BDPHJAEBKAD {
+        if let ::std::option::Option::Some(anmdoacphmn::KKNBOACNCON::POOGLPNNDAB(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(anmdoacphmn::KKNBOACNCON::POOGLPNNDAB(super::BDPHJAEBKAD::BDPHJAEBKAD::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(anmdoacphmn::KKNBOACNCON::POOGLPNNDAB(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_POOGLPNNDAB(&mut self) -> super::BDPHJAEBKAD::BDPHJAEBKAD {
+        if self.has_POOGLPNNDAB() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(anmdoacphmn::KKNBOACNCON::POOGLPNNDAB(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::BDPHJAEBKAD::BDPHJAEBKAD::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
-        let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BDPHJAEBKAD::BDPHJAEBKAD>(
+        let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BDPHJAEBKAD::BDPHJAEBKAD>(
             "POOGLPNNDAB",
-            |m: &ANMDOACPHMN| { &m.POOGLPNNDAB },
-            |m: &mut ANMDOACPHMN| { &mut m.POOGLPNNDAB },
+            ANMDOACPHMN::has_POOGLPNNDAB,
+            ANMDOACPHMN::POOGLPNNDAB,
+            ANMDOACPHMN::mut_POOGLPNNDAB,
+            ANMDOACPHMN::set_POOGLPNNDAB,
         ));
+        oneofs.push(anmdoacphmn::KKNBOACNCON::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ANMDOACPHMN>(
             "ANMDOACPHMN",
             fields,
@@ -72,8 +123,8 @@ impl ::protobuf::Message for ANMDOACPHMN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.POOGLPNNDAB)?;
+                82 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(anmdoacphmn::KKNBOACNCON::POOGLPNNDAB(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,9 +138,13 @@ impl ::protobuf::Message for ANMDOACPHMN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.POOGLPNNDAB.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
+            match v {
+                &anmdoacphmn::KKNBOACNCON::POOGLPNNDAB(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+            };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +152,12 @@ impl ::protobuf::Message for ANMDOACPHMN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.POOGLPNNDAB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
+            match v {
+                &anmdoacphmn::KKNBOACNCON::POOGLPNNDAB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                },
+            };
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +176,13 @@ impl ::protobuf::Message for ANMDOACPHMN {
     }
 
     fn clear(&mut self) {
-        self.POOGLPNNDAB.clear();
+        self.KKNBOACNCON = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ANMDOACPHMN {
         static instance: ANMDOACPHMN = ANMDOACPHMN {
-            POOGLPNNDAB: ::protobuf::MessageField::none(),
+            KKNBOACNCON: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,10 +206,38 @@ impl ::protobuf::reflect::ProtobufValue for ANMDOACPHMN {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
+/// Nested message and enums of message `ANMDOACPHMN`
+pub mod anmdoacphmn {
+
+    #[derive(Clone,PartialEq,Debug)]
+    #[non_exhaustive]
+    // @@protoc_insertion_point(oneof:ANMDOACPHMN.KKNBOACNCON)
+    pub enum KKNBOACNCON {
+        // @@protoc_insertion_point(oneof_field:ANMDOACPHMN.POOGLPNNDAB)
+        POOGLPNNDAB(super::super::BDPHJAEBKAD::BDPHJAEBKAD),
+    }
+
+    impl ::protobuf::Oneof for KKNBOACNCON {
+    }
+
+    impl ::protobuf::OneofFull for KKNBOACNCON {
+        fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
+            static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
+            descriptor.get(|| <super::ANMDOACPHMN as ::protobuf::MessageFull>::descriptor().oneof_by_name("KKNBOACNCON").unwrap()).clone()
+        }
+    }
+
+    impl KKNBOACNCON {
+        pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<KKNBOACNCON>("KKNBOACNCON")
+        }
+    }
+}
+
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ANMDOACPHMN.proto\x1a\x11BDPHJAEBKAD.proto\"=\n\x0bANMDOACPHMN\x12\
-    .\n\x0bPOOGLPNNDAB\x18\x01\x20\x01(\x0b2\x0c.BDPHJAEBKADR\x0bPOOGLPNNDAB\
-    b\x06proto3\
+    \n\x11ANMDOACPHMN.proto\x1a\x11BDPHJAEBKAD.proto\"N\n\x0bANMDOACPHMN\x12\
+    0\n\x0bPOOGLPNNDAB\x18\n\x20\x01(\x0b2\x0c.BDPHJAEBKADH\0R\x0bPOOGLPNNDA\
+    BB\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

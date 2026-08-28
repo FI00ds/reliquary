@@ -79,7 +79,7 @@ impl ::protobuf::Message for LMACKMNOJBF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GJLDDMIIILF)?;
                 },
                 112 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for LMACKMNOJBF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.GJLDDMIIILF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if self.retcode != 0 {
             os.write_uint32(14, self.retcode)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for LMACKMNOJBF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LMACKMNOJBF.proto\x1a\x11JBMDMFOCOAK.proto\"W\n\x0bLMACKMNOJBF\x12\
-    .\n\x0bGJLDDMIIILF\x18\x07\x20\x01(\x0b2\x0c.JBMDMFOCOAKR\x0bGJLDDMIIILF\
+    .\n\x0bGJLDDMIIILF\x18\n\x20\x01(\x0b2\x0c.JBMDMFOCOAKR\x0bGJLDDMIIILF\
     \x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 

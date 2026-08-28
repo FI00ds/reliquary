@@ -36,10 +36,10 @@ pub struct CLDOIEGCNLD {
     pub slot: u32,
     // @@protoc_insertion_point(field:CLDOIEGCNLD.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:CLDOIEGCNLD.skin_id)
-    pub skin_id: u32,
-    // @@protoc_insertion_point(field:CLDOIEGCNLD.equipment)
-    pub equipment: ::protobuf::MessageField<super::ChallengeBossEquipmentInfo::ChallengeBossEquipmentInfo>,
+    // @@protoc_insertion_point(field:CLDOIEGCNLD.MDOJNENGCFE)
+    pub MDOJNENGCFE: u32,
+    // @@protoc_insertion_point(field:CLDOIEGCNLD.PAGPNOKLNOM)
+    pub PAGPNOKLNOM: ::protobuf::MessageField<super::ChallengeBossEquipmentInfo::ChallengeBossEquipmentInfo>,
     // @@protoc_insertion_point(field:CLDOIEGCNLD.OKCGHKDMFAM)
     pub OKCGHKDMFAM: ::protobuf::MessageField<super::ChallengeBossAvatarRelicInfo::ChallengeBossAvatarRelicInfo>,
     // special fields
@@ -82,14 +82,14 @@ impl CLDOIEGCNLD {
             |m: &mut CLDOIEGCNLD| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "skin_id",
-            |m: &CLDOIEGCNLD| { &m.skin_id },
-            |m: &mut CLDOIEGCNLD| { &mut m.skin_id },
+            "MDOJNENGCFE",
+            |m: &CLDOIEGCNLD| { &m.MDOJNENGCFE },
+            |m: &mut CLDOIEGCNLD| { &mut m.MDOJNENGCFE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeBossEquipmentInfo::ChallengeBossEquipmentInfo>(
-            "equipment",
-            |m: &CLDOIEGCNLD| { &m.equipment },
-            |m: &mut CLDOIEGCNLD| { &mut m.equipment },
+            "PAGPNOKLNOM",
+            |m: &CLDOIEGCNLD| { &m.PAGPNOKLNOM },
+            |m: &mut CLDOIEGCNLD| { &mut m.PAGPNOKLNOM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeBossAvatarRelicInfo::ChallengeBossAvatarRelicInfo>(
             "OKCGHKDMFAM",
@@ -127,10 +127,10 @@ impl ::protobuf::Message for CLDOIEGCNLD {
                     self.level = is.read_uint32()?;
                 },
                 40 => {
-                    self.skin_id = is.read_uint32()?;
+                    self.MDOJNENGCFE = is.read_uint32()?;
                 },
                 50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.equipment)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PAGPNOKLNOM)?;
                 },
                 58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OKCGHKDMFAM)?;
@@ -159,10 +159,10 @@ impl ::protobuf::Message for CLDOIEGCNLD {
         if self.level != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.level);
         }
-        if self.skin_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.skin_id);
+        if self.MDOJNENGCFE != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.MDOJNENGCFE);
         }
-        if let Some(v) = self.equipment.as_ref() {
+        if let Some(v) = self.PAGPNOKLNOM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -188,10 +188,10 @@ impl ::protobuf::Message for CLDOIEGCNLD {
         if self.level != 0 {
             os.write_uint32(4, self.level)?;
         }
-        if self.skin_id != 0 {
-            os.write_uint32(5, self.skin_id)?;
+        if self.MDOJNENGCFE != 0 {
+            os.write_uint32(5, self.MDOJNENGCFE)?;
         }
-        if let Some(v) = self.equipment.as_ref() {
+        if let Some(v) = self.PAGPNOKLNOM.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if let Some(v) = self.OKCGHKDMFAM.as_ref() {
@@ -218,8 +218,8 @@ impl ::protobuf::Message for CLDOIEGCNLD {
         self.avatar_type = 0;
         self.slot = 0;
         self.level = 0;
-        self.skin_id = 0;
-        self.equipment.clear();
+        self.MDOJNENGCFE = 0;
+        self.PAGPNOKLNOM.clear();
         self.OKCGHKDMFAM.clear();
         self.special_fields.clear();
     }
@@ -230,8 +230,8 @@ impl ::protobuf::Message for CLDOIEGCNLD {
             avatar_type: 0,
             slot: 0,
             level: 0,
-            skin_id: 0,
-            equipment: ::protobuf::MessageField::none(),
+            MDOJNENGCFE: 0,
+            PAGPNOKLNOM: ::protobuf::MessageField::none(),
             OKCGHKDMFAM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -258,14 +258,14 @@ impl ::protobuf::reflect::ProtobufValue for CLDOIEGCNLD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CLDOIEGCNLD.proto\x1a\"ChallengeBossAvatarRelicInfo.proto\x1a\x20C\
-    hallengeBossEquipmentInfo.proto\"\x8a\x02\n\x0bCLDOIEGCNLD\x12\x1b\n\tav\
+    hallengeBossEquipmentInfo.proto\"\x97\x02\n\x0bCLDOIEGCNLD\x12\x1b\n\tav\
     atar_id\x18\x01\x20\x01(\rR\x08avatarId\x12\x1f\n\x0bavatar_type\x18\x02\
     \x20\x01(\rR\navatarType\x12\x12\n\x04slot\x18\x03\x20\x01(\rR\x04slot\
-    \x12\x14\n\x05level\x18\x04\x20\x01(\rR\x05level\x12\x17\n\x07skin_id\
-    \x18\x05\x20\x01(\rR\x06skinId\x129\n\tequipment\x18\x06\x20\x01(\x0b2\
-    \x1b.ChallengeBossEquipmentInfoR\tequipment\x12?\n\x0bOKCGHKDMFAM\x18\
-    \x07\x20\x01(\x0b2\x1d.ChallengeBossAvatarRelicInfoR\x0bOKCGHKDMFAMb\x06\
-    proto3\
+    \x12\x14\n\x05level\x18\x04\x20\x01(\rR\x05level\x12\x20\n\x0bMDOJNENGCF\
+    E\x18\x05\x20\x01(\rR\x0bMDOJNENGCFE\x12=\n\x0bPAGPNOKLNOM\x18\x06\x20\
+    \x01(\x0b2\x1b.ChallengeBossEquipmentInfoR\x0bPAGPNOKLNOM\x12?\n\x0bOKCG\
+    HKDMFAM\x18\x07\x20\x01(\x0b2\x1d.ChallengeBossAvatarRelicInfoR\x0bOKCGH\
+    KDMFAMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,44 +27,44 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:DevelopmentType)
 pub enum DevelopmentType {
-    // @@protoc_insertion_point(enum_value:DevelopmentType.KMJKPKLCPNM_BEEHIFFKOIH)
-    KMJKPKLCPNM_BEEHIFFKOIH = 0,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.KMJKPKLCPNM_FJMKBHBKDNG)
-    KMJKPKLCPNM_FJMKBHBKDNG = 1,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.KMJKPKLCPNM_OMMMLICONEG)
-    KMJKPKLCPNM_OMMMLICONEG = 2,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.KMJKPKLCPNM_LMDJOBNEFFL)
-    KMJKPKLCPNM_LMDJOBNEFFL = 3,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.KMJKPKLCPNM_CMAPLLHGPOF)
-    KMJKPKLCPNM_CMAPLLHGPOF = 4,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.KMJKPKLCPNM_AOCOLEGAICP)
-    KMJKPKLCPNM_AOCOLEGAICP = 5,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.KMJKPKLCPNM_LODAGLNGOKA)
-    KMJKPKLCPNM_LODAGLNGOKA = 6,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.KMJKPKLCPNM_OCOKANBLFMA)
-    KMJKPKLCPNM_OCOKANBLFMA = 7,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.KMJKPKLCPNM_GPCJDNIHAGB)
-    KMJKPKLCPNM_GPCJDNIHAGB = 8,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.KMJKPKLCPNM_LMAAEEHHJNC)
-    KMJKPKLCPNM_LMAAEEHHJNC = 9,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.KMJKPKLCPNM_HEJAOMEJGKJ)
-    KMJKPKLCPNM_HEJAOMEJGKJ = 10,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.KMJKPKLCPNM_PHKEACMKMAA)
-    KMJKPKLCPNM_PHKEACMKMAA = 11,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.KMJKPKLCPNM_MPHKBCGINLC)
-    KMJKPKLCPNM_MPHKBCGINLC = 12,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.KMJKPKLCPNM_NPAIBBCODOH)
-    KMJKPKLCPNM_NPAIBBCODOH = 13,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.KMJKPKLCPNM_BIAIKCLDIFD)
-    KMJKPKLCPNM_BIAIKCLDIFD = 14,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.KMJKPKLCPNM_FCIBLPLMEMI)
-    KMJKPKLCPNM_FCIBLPLMEMI = 15,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.KMJKPKLCPNM_JAEMAKHBNHD)
-    KMJKPKLCPNM_JAEMAKHBNHD = 16,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.KMJKPKLCPNM_LDPOJOODFEH)
-    KMJKPKLCPNM_LDPOJOODFEH = 17,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.KMJKPKLCPNM_ODDKNGFCBKO)
-    KMJKPKLCPNM_ODDKNGFCBKO = 18,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_DevelopmentNone)
+    DevelopmentType_DevelopmentNone = 0,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_DevelopmentRogueCosmos)
+    DevelopmentType_DevelopmentRogueCosmos = 1,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_DevelopmentRogueChess)
+    DevelopmentType_DevelopmentRogueChess = 2,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_DevelopmentRogueChessNous)
+    DevelopmentType_DevelopmentRogueChessNous = 3,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_DevelopmentMemoryChallenge)
+    DevelopmentType_DevelopmentMemoryChallenge = 4,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_DevelopmentStoryChallenge)
+    DevelopmentType_DevelopmentStoryChallenge = 5,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_DevelopmentUnlockAvatar)
+    DevelopmentType_DevelopmentUnlockAvatar = 6,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_DevelopmentUnlockEquipment)
+    DevelopmentType_DevelopmentUnlockEquipment = 7,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_DevelopmentActivityStart)
+    DevelopmentType_DevelopmentActivityStart = 8,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_DevelopmentActivityEnd)
+    DevelopmentType_DevelopmentActivityEnd = 9,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_DevelopmentBossChallenge)
+    DevelopmentType_DevelopmentBossChallenge = 10,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_DevelopmentRogueTourn)
+    DevelopmentType_DevelopmentRogueTourn = 11,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_DevelopmentRogueTournWeek)
+    DevelopmentType_DevelopmentRogueTournWeek = 12,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_DevelopmentRogueMagic)
+    DevelopmentType_DevelopmentRogueMagic = 13,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_DevelopmentChallengePeak)
+    DevelopmentType_DevelopmentChallengePeak = 14,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_DevelopmentRogueTournDivision)
+    DevelopmentType_DevelopmentRogueTournDivision = 15,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.H_c15b6193)
+    H_c15b6193 = 16,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.H_a9f176b9)
+    H_a9f176b9 = 17,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.H_748bbdec)
+    H_748bbdec = 18,
 }
 
 impl ::protobuf::Enum for DevelopmentType {
@@ -76,74 +76,74 @@ impl ::protobuf::Enum for DevelopmentType {
 
     fn from_i32(value: i32) -> ::std::option::Option<DevelopmentType> {
         match value {
-            0 => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_BEEHIFFKOIH),
-            1 => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_FJMKBHBKDNG),
-            2 => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_OMMMLICONEG),
-            3 => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_LMDJOBNEFFL),
-            4 => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_CMAPLLHGPOF),
-            5 => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_AOCOLEGAICP),
-            6 => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_LODAGLNGOKA),
-            7 => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_OCOKANBLFMA),
-            8 => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_GPCJDNIHAGB),
-            9 => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_LMAAEEHHJNC),
-            10 => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_HEJAOMEJGKJ),
-            11 => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_PHKEACMKMAA),
-            12 => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_MPHKBCGINLC),
-            13 => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_NPAIBBCODOH),
-            14 => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_BIAIKCLDIFD),
-            15 => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_FCIBLPLMEMI),
-            16 => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_JAEMAKHBNHD),
-            17 => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_LDPOJOODFEH),
-            18 => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_ODDKNGFCBKO),
+            0 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentNone),
+            1 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentRogueCosmos),
+            2 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentRogueChess),
+            3 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentRogueChessNous),
+            4 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentMemoryChallenge),
+            5 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentStoryChallenge),
+            6 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentUnlockAvatar),
+            7 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentUnlockEquipment),
+            8 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentActivityStart),
+            9 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentActivityEnd),
+            10 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentBossChallenge),
+            11 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentRogueTourn),
+            12 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentRogueTournWeek),
+            13 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentRogueMagic),
+            14 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentChallengePeak),
+            15 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentRogueTournDivision),
+            16 => ::std::option::Option::Some(DevelopmentType::H_c15b6193),
+            17 => ::std::option::Option::Some(DevelopmentType::H_a9f176b9),
+            18 => ::std::option::Option::Some(DevelopmentType::H_748bbdec),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<DevelopmentType> {
         match str {
-            "KMJKPKLCPNM_BEEHIFFKOIH" => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_BEEHIFFKOIH),
-            "KMJKPKLCPNM_FJMKBHBKDNG" => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_FJMKBHBKDNG),
-            "KMJKPKLCPNM_OMMMLICONEG" => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_OMMMLICONEG),
-            "KMJKPKLCPNM_LMDJOBNEFFL" => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_LMDJOBNEFFL),
-            "KMJKPKLCPNM_CMAPLLHGPOF" => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_CMAPLLHGPOF),
-            "KMJKPKLCPNM_AOCOLEGAICP" => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_AOCOLEGAICP),
-            "KMJKPKLCPNM_LODAGLNGOKA" => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_LODAGLNGOKA),
-            "KMJKPKLCPNM_OCOKANBLFMA" => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_OCOKANBLFMA),
-            "KMJKPKLCPNM_GPCJDNIHAGB" => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_GPCJDNIHAGB),
-            "KMJKPKLCPNM_LMAAEEHHJNC" => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_LMAAEEHHJNC),
-            "KMJKPKLCPNM_HEJAOMEJGKJ" => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_HEJAOMEJGKJ),
-            "KMJKPKLCPNM_PHKEACMKMAA" => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_PHKEACMKMAA),
-            "KMJKPKLCPNM_MPHKBCGINLC" => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_MPHKBCGINLC),
-            "KMJKPKLCPNM_NPAIBBCODOH" => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_NPAIBBCODOH),
-            "KMJKPKLCPNM_BIAIKCLDIFD" => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_BIAIKCLDIFD),
-            "KMJKPKLCPNM_FCIBLPLMEMI" => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_FCIBLPLMEMI),
-            "KMJKPKLCPNM_JAEMAKHBNHD" => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_JAEMAKHBNHD),
-            "KMJKPKLCPNM_LDPOJOODFEH" => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_LDPOJOODFEH),
-            "KMJKPKLCPNM_ODDKNGFCBKO" => ::std::option::Option::Some(DevelopmentType::KMJKPKLCPNM_ODDKNGFCBKO),
+            "DevelopmentType_DevelopmentNone" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentNone),
+            "DevelopmentType_DevelopmentRogueCosmos" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentRogueCosmos),
+            "DevelopmentType_DevelopmentRogueChess" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentRogueChess),
+            "DevelopmentType_DevelopmentRogueChessNous" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentRogueChessNous),
+            "DevelopmentType_DevelopmentMemoryChallenge" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentMemoryChallenge),
+            "DevelopmentType_DevelopmentStoryChallenge" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentStoryChallenge),
+            "DevelopmentType_DevelopmentUnlockAvatar" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentUnlockAvatar),
+            "DevelopmentType_DevelopmentUnlockEquipment" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentUnlockEquipment),
+            "DevelopmentType_DevelopmentActivityStart" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentActivityStart),
+            "DevelopmentType_DevelopmentActivityEnd" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentActivityEnd),
+            "DevelopmentType_DevelopmentBossChallenge" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentBossChallenge),
+            "DevelopmentType_DevelopmentRogueTourn" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentRogueTourn),
+            "DevelopmentType_DevelopmentRogueTournWeek" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentRogueTournWeek),
+            "DevelopmentType_DevelopmentRogueMagic" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentRogueMagic),
+            "DevelopmentType_DevelopmentChallengePeak" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentChallengePeak),
+            "DevelopmentType_DevelopmentRogueTournDivision" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentRogueTournDivision),
+            "H_c15b6193" => ::std::option::Option::Some(DevelopmentType::H_c15b6193),
+            "H_a9f176b9" => ::std::option::Option::Some(DevelopmentType::H_a9f176b9),
+            "H_748bbdec" => ::std::option::Option::Some(DevelopmentType::H_748bbdec),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [DevelopmentType] = &[
-        DevelopmentType::KMJKPKLCPNM_BEEHIFFKOIH,
-        DevelopmentType::KMJKPKLCPNM_FJMKBHBKDNG,
-        DevelopmentType::KMJKPKLCPNM_OMMMLICONEG,
-        DevelopmentType::KMJKPKLCPNM_LMDJOBNEFFL,
-        DevelopmentType::KMJKPKLCPNM_CMAPLLHGPOF,
-        DevelopmentType::KMJKPKLCPNM_AOCOLEGAICP,
-        DevelopmentType::KMJKPKLCPNM_LODAGLNGOKA,
-        DevelopmentType::KMJKPKLCPNM_OCOKANBLFMA,
-        DevelopmentType::KMJKPKLCPNM_GPCJDNIHAGB,
-        DevelopmentType::KMJKPKLCPNM_LMAAEEHHJNC,
-        DevelopmentType::KMJKPKLCPNM_HEJAOMEJGKJ,
-        DevelopmentType::KMJKPKLCPNM_PHKEACMKMAA,
-        DevelopmentType::KMJKPKLCPNM_MPHKBCGINLC,
-        DevelopmentType::KMJKPKLCPNM_NPAIBBCODOH,
-        DevelopmentType::KMJKPKLCPNM_BIAIKCLDIFD,
-        DevelopmentType::KMJKPKLCPNM_FCIBLPLMEMI,
-        DevelopmentType::KMJKPKLCPNM_JAEMAKHBNHD,
-        DevelopmentType::KMJKPKLCPNM_LDPOJOODFEH,
-        DevelopmentType::KMJKPKLCPNM_ODDKNGFCBKO,
+        DevelopmentType::DevelopmentType_DevelopmentNone,
+        DevelopmentType::DevelopmentType_DevelopmentRogueCosmos,
+        DevelopmentType::DevelopmentType_DevelopmentRogueChess,
+        DevelopmentType::DevelopmentType_DevelopmentRogueChessNous,
+        DevelopmentType::DevelopmentType_DevelopmentMemoryChallenge,
+        DevelopmentType::DevelopmentType_DevelopmentStoryChallenge,
+        DevelopmentType::DevelopmentType_DevelopmentUnlockAvatar,
+        DevelopmentType::DevelopmentType_DevelopmentUnlockEquipment,
+        DevelopmentType::DevelopmentType_DevelopmentActivityStart,
+        DevelopmentType::DevelopmentType_DevelopmentActivityEnd,
+        DevelopmentType::DevelopmentType_DevelopmentBossChallenge,
+        DevelopmentType::DevelopmentType_DevelopmentRogueTourn,
+        DevelopmentType::DevelopmentType_DevelopmentRogueTournWeek,
+        DevelopmentType::DevelopmentType_DevelopmentRogueMagic,
+        DevelopmentType::DevelopmentType_DevelopmentChallengePeak,
+        DevelopmentType::DevelopmentType_DevelopmentRogueTournDivision,
+        DevelopmentType::H_c15b6193,
+        DevelopmentType::H_a9f176b9,
+        DevelopmentType::H_748bbdec,
     ];
 }
 
@@ -161,7 +161,7 @@ impl ::protobuf::EnumFull for DevelopmentType {
 
 impl ::std::default::Default for DevelopmentType {
     fn default() -> Self {
-        DevelopmentType::KMJKPKLCPNM_BEEHIFFKOIH
+        DevelopmentType::DevelopmentType_DevelopmentNone
     }
 }
 
@@ -172,19 +172,21 @@ impl DevelopmentType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15DevelopmentType.proto*\xb8\x04\n\x0fDevelopmentType\x12\x1b\n\x17K\
-    MJKPKLCPNM_BEEHIFFKOIH\x10\0\x12\x1b\n\x17KMJKPKLCPNM_FJMKBHBKDNG\x10\
-    \x01\x12\x1b\n\x17KMJKPKLCPNM_OMMMLICONEG\x10\x02\x12\x1b\n\x17KMJKPKLCP\
-    NM_LMDJOBNEFFL\x10\x03\x12\x1b\n\x17KMJKPKLCPNM_CMAPLLHGPOF\x10\x04\x12\
-    \x1b\n\x17KMJKPKLCPNM_AOCOLEGAICP\x10\x05\x12\x1b\n\x17KMJKPKLCPNM_LODAG\
-    LNGOKA\x10\x06\x12\x1b\n\x17KMJKPKLCPNM_OCOKANBLFMA\x10\x07\x12\x1b\n\
-    \x17KMJKPKLCPNM_GPCJDNIHAGB\x10\x08\x12\x1b\n\x17KMJKPKLCPNM_LMAAEEHHJNC\
-    \x10\t\x12\x1b\n\x17KMJKPKLCPNM_HEJAOMEJGKJ\x10\n\x12\x1b\n\x17KMJKPKLCP\
-    NM_PHKEACMKMAA\x10\x0b\x12\x1b\n\x17KMJKPKLCPNM_MPHKBCGINLC\x10\x0c\x12\
-    \x1b\n\x17KMJKPKLCPNM_NPAIBBCODOH\x10\r\x12\x1b\n\x17KMJKPKLCPNM_BIAIKCL\
-    DIFD\x10\x0e\x12\x1b\n\x17KMJKPKLCPNM_FCIBLPLMEMI\x10\x0f\x12\x1b\n\x17K\
-    MJKPKLCPNM_JAEMAKHBNHD\x10\x10\x12\x1b\n\x17KMJKPKLCPNM_LDPOJOODFEH\x10\
-    \x11\x12\x1b\n\x17KMJKPKLCPNM_ODDKNGFCBKO\x10\x12b\x06proto3\
+    \n\x15DevelopmentType.proto*\x96\x06\n\x0fDevelopmentType\x12#\n\x1fDeve\
+    lopmentType_DevelopmentNone\x10\0\x12*\n&DevelopmentType_DevelopmentRogu\
+    eCosmos\x10\x01\x12)\n%DevelopmentType_DevelopmentRogueChess\x10\x02\x12\
+    -\n)DevelopmentType_DevelopmentRogueChessNous\x10\x03\x12.\n*Development\
+    Type_DevelopmentMemoryChallenge\x10\x04\x12-\n)DevelopmentType_Developme\
+    ntStoryChallenge\x10\x05\x12+\n'DevelopmentType_DevelopmentUnlockAvatar\
+    \x10\x06\x12.\n*DevelopmentType_DevelopmentUnlockEquipment\x10\x07\x12,\
+    \n(DevelopmentType_DevelopmentActivityStart\x10\x08\x12*\n&DevelopmentTy\
+    pe_DevelopmentActivityEnd\x10\t\x12,\n(DevelopmentType_DevelopmentBossCh\
+    allenge\x10\n\x12)\n%DevelopmentType_DevelopmentRogueTourn\x10\x0b\x12-\
+    \n)DevelopmentType_DevelopmentRogueTournWeek\x10\x0c\x12)\n%DevelopmentT\
+    ype_DevelopmentRogueMagic\x10\r\x12,\n(DevelopmentType_DevelopmentChalle\
+    ngePeak\x10\x0e\x121\n-DevelopmentType_DevelopmentRogueTournDivision\x10\
+    \x0f\x12\x0e\n\nH_c15b6193\x10\x10\x12\x0e\n\nH_a9f176b9\x10\x11\x12\x0e\
+    \n\nH_748bbdec\x10\x12b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

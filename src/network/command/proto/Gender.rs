@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:Gender)
 pub enum Gender {
-    // @@protoc_insertion_point(enum_value:Gender.GenderNone)
-    GenderNone = 0,
-    // @@protoc_insertion_point(enum_value:Gender.GenderMan)
-    GenderMan = 1,
-    // @@protoc_insertion_point(enum_value:Gender.GenderWoman)
-    GenderWoman = 2,
+    // @@protoc_insertion_point(enum_value:Gender.Gender_None)
+    Gender_None = 0,
+    // @@protoc_insertion_point(enum_value:Gender.Gender_Man)
+    Gender_Man = 1,
+    // @@protoc_insertion_point(enum_value:Gender.Gender_Woman)
+    Gender_Woman = 2,
 }
 
 impl ::protobuf::Enum for Gender {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for Gender {
 
     fn from_i32(value: i32) -> ::std::option::Option<Gender> {
         match value {
-            0 => ::std::option::Option::Some(Gender::GenderNone),
-            1 => ::std::option::Option::Some(Gender::GenderMan),
-            2 => ::std::option::Option::Some(Gender::GenderWoman),
+            0 => ::std::option::Option::Some(Gender::Gender_None),
+            1 => ::std::option::Option::Some(Gender::Gender_Man),
+            2 => ::std::option::Option::Some(Gender::Gender_Woman),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<Gender> {
         match str {
-            "GenderNone" => ::std::option::Option::Some(Gender::GenderNone),
-            "GenderMan" => ::std::option::Option::Some(Gender::GenderMan),
-            "GenderWoman" => ::std::option::Option::Some(Gender::GenderWoman),
+            "Gender_None" => ::std::option::Option::Some(Gender::Gender_None),
+            "Gender_Man" => ::std::option::Option::Some(Gender::Gender_Man),
+            "Gender_Woman" => ::std::option::Option::Some(Gender::Gender_Woman),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [Gender] = &[
-        Gender::GenderNone,
-        Gender::GenderMan,
-        Gender::GenderWoman,
+        Gender::Gender_None,
+        Gender::Gender_Man,
+        Gender::Gender_Woman,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for Gender {
 
 impl ::std::default::Default for Gender {
     fn default() -> Self {
-        Gender::GenderNone
+        Gender::Gender_None
     }
 }
 
@@ -92,8 +92,8 @@ impl Gender {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0cGender.proto*8\n\x06Gender\x12\x0e\n\nGenderNone\x10\0\x12\r\n\tGe\
-    nderMan\x10\x01\x12\x0f\n\x0bGenderWoman\x10\x02b\x06proto3\
+    \n\x0cGender.proto*;\n\x06Gender\x12\x0f\n\x0bGender_None\x10\0\x12\x0e\
+    \n\nGender_Man\x10\x01\x12\x10\n\x0cGender_Woman\x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -42,8 +42,8 @@ pub struct PPKKBLFDLBE {
     pub HEOMGKNDJHE: u64,
     // @@protoc_insertion_point(field:PPKKBLFDLBE.FBFDDOMMLNA)
     pub FBFDDOMMLNA: ::protobuf::EnumOrUnknown<super::FIBDGJBOJEA::FIBDGJBOJEA>,
-    // @@protoc_insertion_point(field:PPKKBLFDLBE.room_ext_info)
-    pub room_ext_info: ::protobuf::MessageField<super::PJMGBLIFDFP::PJMGBLIFDFP>,
+    // @@protoc_insertion_point(field:PPKKBLFDLBE.EMIJCKENBKJ)
+    pub EMIJCKENBKJ: ::protobuf::MessageField<super::PJMGBLIFDFP::PJMGBLIFDFP>,
     // @@protoc_insertion_point(field:PPKKBLFDLBE.NNOPIKIANCA)
     pub NNOPIKIANCA: ::protobuf::MessageField<super::AECGFCJJLNI::AECGFCJJLNI>,
     // special fields
@@ -101,9 +101,9 @@ impl PPKKBLFDLBE {
             |m: &mut PPKKBLFDLBE| { &mut m.FBFDDOMMLNA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PJMGBLIFDFP::PJMGBLIFDFP>(
-            "room_ext_info",
-            |m: &PPKKBLFDLBE| { &m.room_ext_info },
-            |m: &mut PPKKBLFDLBE| { &mut m.room_ext_info },
+            "EMIJCKENBKJ",
+            |m: &PPKKBLFDLBE| { &m.EMIJCKENBKJ },
+            |m: &mut PPKKBLFDLBE| { &mut m.EMIJCKENBKJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AECGFCJJLNI::AECGFCJJLNI>(
             "NNOPIKIANCA",
@@ -150,7 +150,7 @@ impl ::protobuf::Message for PPKKBLFDLBE {
                     self.FBFDDOMMLNA = is.read_enum_or_unknown()?;
                 },
                 74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.room_ext_info)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EMIJCKENBKJ)?;
                 },
                 90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NNOPIKIANCA)?;
@@ -170,7 +170,7 @@ impl ::protobuf::Message for PPKKBLFDLBE {
         if self.id != 0 {
             my_size += ::protobuf::rt::uint64_size(1, self.id);
         }
-        if self.MJBKMFOMNPO != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ) {
+        if self.MJBKMFOMNPO != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None) {
             my_size += ::protobuf::rt::int32_size(2, self.MJBKMFOMNPO.value());
         }
         for value in &self.HJOPHLKBLHL {
@@ -189,7 +189,7 @@ impl ::protobuf::Message for PPKKBLFDLBE {
         if self.FBFDDOMMLNA != ::protobuf::EnumOrUnknown::new(super::FIBDGJBOJEA::FIBDGJBOJEA::FIBDGJBOJEA_NLCDGIPGFDJ) {
             my_size += ::protobuf::rt::int32_size(8, self.FBFDDOMMLNA.value());
         }
-        if let Some(v) = self.room_ext_info.as_ref() {
+        if let Some(v) = self.EMIJCKENBKJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -206,7 +206,7 @@ impl ::protobuf::Message for PPKKBLFDLBE {
         if self.id != 0 {
             os.write_uint64(1, self.id)?;
         }
-        if self.MJBKMFOMNPO != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ) {
+        if self.MJBKMFOMNPO != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None) {
             os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.MJBKMFOMNPO))?;
         }
         for v in &self.HJOPHLKBLHL {
@@ -224,7 +224,7 @@ impl ::protobuf::Message for PPKKBLFDLBE {
         if self.FBFDDOMMLNA != ::protobuf::EnumOrUnknown::new(super::FIBDGJBOJEA::FIBDGJBOJEA::FIBDGJBOJEA_NLCDGIPGFDJ) {
             os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.FBFDDOMMLNA))?;
         }
-        if let Some(v) = self.room_ext_info.as_ref() {
+        if let Some(v) = self.EMIJCKENBKJ.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if let Some(v) = self.NNOPIKIANCA.as_ref() {
@@ -248,13 +248,13 @@ impl ::protobuf::Message for PPKKBLFDLBE {
 
     fn clear(&mut self) {
         self.id = 0;
-        self.MJBKMFOMNPO = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ);
+        self.MJBKMFOMNPO = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None);
         self.HJOPHLKBLHL.clear();
         self.type_ = ::protobuf::EnumOrUnknown::new(super::OJNEFJDGGEM::OJNEFJDGGEM::OJNEFJDGGEM_NLCDGIPGFDJ);
         self.ANBJMMOEGJE = 0;
         self.HEOMGKNDJHE = 0;
         self.FBFDDOMMLNA = ::protobuf::EnumOrUnknown::new(super::FIBDGJBOJEA::FIBDGJBOJEA::FIBDGJBOJEA_NLCDGIPGFDJ);
-        self.room_ext_info.clear();
+        self.EMIJCKENBKJ.clear();
         self.NNOPIKIANCA.clear();
         self.special_fields.clear();
     }
@@ -268,7 +268,7 @@ impl ::protobuf::Message for PPKKBLFDLBE {
             ANBJMMOEGJE: 0,
             HEOMGKNDJHE: 0,
             FBFDDOMMLNA: ::protobuf::EnumOrUnknown::from_i32(0),
-            room_ext_info: ::protobuf::MessageField::none(),
+            EMIJCKENBKJ: ::protobuf::MessageField::none(),
             NNOPIKIANCA: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -296,15 +296,15 @@ impl ::protobuf::reflect::ProtobufValue for PPKKBLFDLBE {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PPKKBLFDLBE.proto\x1a\x11AECGFCJJLNI.proto\x1a\x11FIBDGJBOJEA.prot\
     o\x1a\x13FightGameMode.proto\x1a\x11LMLNNHKJEIP.proto\x1a\x11OJNEFJDGGEM\
-    .proto\x1a\x11PJMGBLIFDFP.proto\"\xf7\x02\n\x0bPPKKBLFDLBE\x12\x0e\n\x02\
+    .proto\x1a\x11PJMGBLIFDFP.proto\"\xf5\x02\n\x0bPPKKBLFDLBE\x12\x0e\n\x02\
     id\x18\x01\x20\x01(\x04R\x02id\x120\n\x0bMJBKMFOMNPO\x18\x02\x20\x01(\
     \x0e2\x0e.FightGameModeR\x0bMJBKMFOMNPO\x12.\n\x0bHJOPHLKBLHL\x18\x03\
     \x20\x03(\x0b2\x0c.LMLNNHKJEIPR\x0bHJOPHLKBLHL\x12\x20\n\x04type\x18\x04\
     \x20\x01(\x0e2\x0c.OJNEFJDGGEMR\x04type\x12\x20\n\x0bANBJMMOEGJE\x18\x05\
     \x20\x01(\x04R\x0bANBJMMOEGJE\x12\x20\n\x0bHEOMGKNDJHE\x18\x06\x20\x01(\
     \x04R\x0bHEOMGKNDJHE\x12.\n\x0bFBFDDOMMLNA\x18\x08\x20\x01(\x0e2\x0c.FIB\
-    DGJBOJEAR\x0bFBFDDOMMLNA\x120\n\rroom_ext_info\x18\t\x20\x01(\x0b2\x0c.P\
-    JMGBLIFDFPR\x0broomExtInfo\x12.\n\x0bNNOPIKIANCA\x18\x0b\x20\x01(\x0b2\
+    DGJBOJEAR\x0bFBFDDOMMLNA\x12.\n\x0bEMIJCKENBKJ\x18\t\x20\x01(\x0b2\x0c.P\
+    JMGBLIFDFPR\x0bEMIJCKENBKJ\x12.\n\x0bNNOPIKIANCA\x18\x0b\x20\x01(\x0b2\
     \x0c.AECGFCJJLNIR\x0bNNOPIKIANCAb\x06proto3\
 ";
 

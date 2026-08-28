@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesStartMiniGameScRsp {
     // message fields
+    // @@protoc_insertion_point(field:PlanetFesStartMiniGameScRsp.CFDIKLBINHK)
+    pub CFDIKLBINHK: ::protobuf::MessageField<super::PGPHEKKPBLD::PGPHEKKPBLD>,
     // @@protoc_insertion_point(field:PlanetFesStartMiniGameScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:PlanetFesStartMiniGameScRsp.reward)
     pub reward: ::protobuf::MessageField<super::GNMCIEPEBPK::GNMCIEPEBPK>,
-    // @@protoc_insertion_point(field:PlanetFesStartMiniGameScRsp.CFDIKLBINHK)
-    pub CFDIKLBINHK: ::protobuf::MessageField<super::PGPHEKKPBLD::PGPHEKKPBLD>,
-    // @@protoc_insertion_point(field:PlanetFesStartMiniGameScRsp.HMMBBENHIFE)
-    pub HMMBBENHIFE: ::protobuf::MessageField<super::PBAPKAGHGFB::PBAPKAGHGFB>,
+    // message oneof groups
+    pub JIOMPHMGALF: ::std::option::Option<planet_fes_start_mini_game_sc_rsp::JIOMPHMGALF>,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesStartMiniGameScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,9 +52,63 @@ impl PlanetFesStartMiniGameScRsp {
         ::std::default::Default::default()
     }
 
+    // .PBAPKAGHGFB HMMBBENHIFE = 4;
+
+    pub fn HMMBBENHIFE(&self) -> &super::PBAPKAGHGFB::PBAPKAGHGFB {
+        match self.JIOMPHMGALF {
+            ::std::option::Option::Some(planet_fes_start_mini_game_sc_rsp::JIOMPHMGALF::HMMBBENHIFE(ref v)) => v,
+            _ => <super::PBAPKAGHGFB::PBAPKAGHGFB as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_HMMBBENHIFE(&mut self) {
+        self.JIOMPHMGALF = ::std::option::Option::None;
+    }
+
+    pub fn has_HMMBBENHIFE(&self) -> bool {
+        match self.JIOMPHMGALF {
+            ::std::option::Option::Some(planet_fes_start_mini_game_sc_rsp::JIOMPHMGALF::HMMBBENHIFE(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_HMMBBENHIFE(&mut self, v: super::PBAPKAGHGFB::PBAPKAGHGFB) {
+        self.JIOMPHMGALF = ::std::option::Option::Some(planet_fes_start_mini_game_sc_rsp::JIOMPHMGALF::HMMBBENHIFE(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_HMMBBENHIFE(&mut self) -> &mut super::PBAPKAGHGFB::PBAPKAGHGFB {
+        if let ::std::option::Option::Some(planet_fes_start_mini_game_sc_rsp::JIOMPHMGALF::HMMBBENHIFE(_)) = self.JIOMPHMGALF {
+        } else {
+            self.JIOMPHMGALF = ::std::option::Option::Some(planet_fes_start_mini_game_sc_rsp::JIOMPHMGALF::HMMBBENHIFE(super::PBAPKAGHGFB::PBAPKAGHGFB::new()));
+        }
+        match self.JIOMPHMGALF {
+            ::std::option::Option::Some(planet_fes_start_mini_game_sc_rsp::JIOMPHMGALF::HMMBBENHIFE(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_HMMBBENHIFE(&mut self) -> super::PBAPKAGHGFB::PBAPKAGHGFB {
+        if self.has_HMMBBENHIFE() {
+            match self.JIOMPHMGALF.take() {
+                ::std::option::Option::Some(planet_fes_start_mini_game_sc_rsp::JIOMPHMGALF::HMMBBENHIFE(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::PBAPKAGHGFB::PBAPKAGHGFB::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
-        let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PGPHEKKPBLD::PGPHEKKPBLD>(
+            "CFDIKLBINHK",
+            |m: &PlanetFesStartMiniGameScRsp| { &m.CFDIKLBINHK },
+            |m: &mut PlanetFesStartMiniGameScRsp| { &mut m.CFDIKLBINHK },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &PlanetFesStartMiniGameScRsp| { &m.retcode },
@@ -65,16 +119,14 @@ impl PlanetFesStartMiniGameScRsp {
             |m: &PlanetFesStartMiniGameScRsp| { &m.reward },
             |m: &mut PlanetFesStartMiniGameScRsp| { &mut m.reward },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PGPHEKKPBLD::PGPHEKKPBLD>(
-            "CFDIKLBINHK",
-            |m: &PlanetFesStartMiniGameScRsp| { &m.CFDIKLBINHK },
-            |m: &mut PlanetFesStartMiniGameScRsp| { &mut m.CFDIKLBINHK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PBAPKAGHGFB::PBAPKAGHGFB>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PBAPKAGHGFB::PBAPKAGHGFB>(
             "HMMBBENHIFE",
-            |m: &PlanetFesStartMiniGameScRsp| { &m.HMMBBENHIFE },
-            |m: &mut PlanetFesStartMiniGameScRsp| { &mut m.HMMBBENHIFE },
+            PlanetFesStartMiniGameScRsp::has_HMMBBENHIFE,
+            PlanetFesStartMiniGameScRsp::HMMBBENHIFE,
+            PlanetFesStartMiniGameScRsp::mut_HMMBBENHIFE,
+            PlanetFesStartMiniGameScRsp::set_HMMBBENHIFE,
         ));
+        oneofs.push(planet_fes_start_mini_game_sc_rsp::JIOMPHMGALF::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesStartMiniGameScRsp>(
             "PlanetFesStartMiniGameScRsp",
             fields,
@@ -93,17 +145,17 @@ impl ::protobuf::Message for PlanetFesStartMiniGameScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CFDIKLBINHK)?;
+                },
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
                 74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CFDIKLBINHK)?;
-                },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HMMBBENHIFE)?;
+                34 => {
+                    self.JIOMPHMGALF = ::std::option::Option::Some(planet_fes_start_mini_game_sc_rsp::JIOMPHMGALF::HMMBBENHIFE(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,20 +169,24 @@ impl ::protobuf::Message for PlanetFesStartMiniGameScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if let Some(v) = self.CFDIKLBINHK.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.CFDIKLBINHK.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.HMMBBENHIFE.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if let ::std::option::Option::Some(ref v) = self.JIOMPHMGALF {
+            match v {
+                &planet_fes_start_mini_game_sc_rsp::JIOMPHMGALF::HMMBBENHIFE(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+            };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,17 +194,21 @@ impl ::protobuf::Message for PlanetFesStartMiniGameScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if let Some(v) = self.CFDIKLBINHK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
         if let Some(v) = self.reward.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        if let Some(v) = self.CFDIKLBINHK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
-        if let Some(v) = self.HMMBBENHIFE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let ::std::option::Option::Some(ref v) = self.JIOMPHMGALF {
+            match v {
+                &planet_fes_start_mini_game_sc_rsp::JIOMPHMGALF::HMMBBENHIFE(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                },
+            };
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,19 +227,19 @@ impl ::protobuf::Message for PlanetFesStartMiniGameScRsp {
     }
 
     fn clear(&mut self) {
+        self.CFDIKLBINHK.clear();
         self.retcode = 0;
         self.reward.clear();
-        self.CFDIKLBINHK.clear();
-        self.HMMBBENHIFE.clear();
+        self.JIOMPHMGALF = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesStartMiniGameScRsp {
         static instance: PlanetFesStartMiniGameScRsp = PlanetFesStartMiniGameScRsp {
+            CFDIKLBINHK: ::protobuf::MessageField::none(),
             retcode: 0,
             reward: ::protobuf::MessageField::none(),
-            CFDIKLBINHK: ::protobuf::MessageField::none(),
-            HMMBBENHIFE: ::protobuf::MessageField::none(),
+            JIOMPHMGALF: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,14 +263,42 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesStartMiniGameScRsp {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
+/// Nested message and enums of message `PlanetFesStartMiniGameScRsp`
+pub mod planet_fes_start_mini_game_sc_rsp {
+
+    #[derive(Clone,PartialEq,Debug)]
+    #[non_exhaustive]
+    // @@protoc_insertion_point(oneof:PlanetFesStartMiniGameScRsp.JIOMPHMGALF)
+    pub enum JIOMPHMGALF {
+        // @@protoc_insertion_point(oneof_field:PlanetFesStartMiniGameScRsp.HMMBBENHIFE)
+        HMMBBENHIFE(super::super::PBAPKAGHGFB::PBAPKAGHGFB),
+    }
+
+    impl ::protobuf::Oneof for JIOMPHMGALF {
+    }
+
+    impl ::protobuf::OneofFull for JIOMPHMGALF {
+        fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
+            static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
+            descriptor.get(|| <super::PlanetFesStartMiniGameScRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("JIOMPHMGALF").unwrap()).clone()
+        }
+    }
+
+    impl JIOMPHMGALF {
+        pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<JIOMPHMGALF>("JIOMPHMGALF")
+        }
+    }
+}
+
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!PlanetFesStartMiniGameScRsp.proto\x1a\x11GNMCIEPEBPK.proto\x1a\x11PBA\
-    PKAGHGFB.proto\x1a\x11PGPHEKKPBLD.proto\"\xbd\x01\n\x1bPlanetFesStartMin\
-    iGameScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12$\n\
-    \x06reward\x18\t\x20\x01(\x0b2\x0c.GNMCIEPEBPKR\x06reward\x12.\n\x0bCFDI\
-    KLBINHK\x18\n\x20\x01(\x0b2\x0c.PGPHEKKPBLDR\x0bCFDIKLBINHK\x12.\n\x0bHM\
-    MBBENHIFE\x18\x0b\x20\x01(\x0b2\x0c.PBAPKAGHGFBR\x0bHMMBBENHIFEb\x06prot\
-    o3\
+    PKAGHGFB.proto\x1a\x11PGPHEKKPBLD.proto\"\xce\x01\n\x1bPlanetFesStartMin\
+    iGameScRsp\x12.\n\x0bCFDIKLBINHK\x18\x02\x20\x01(\x0b2\x0c.PGPHEKKPBLDR\
+    \x0bCFDIKLBINHK\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12$\
+    \n\x06reward\x18\t\x20\x01(\x0b2\x0c.GNMCIEPEBPKR\x06reward\x120\n\x0bHM\
+    MBBENHIFE\x18\x04\x20\x01(\x0b2\x0c.PBAPKAGHGFBH\0R\x0bHMMBBENHIFEB\r\n\
+    \x0bJIOMPHMGALFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

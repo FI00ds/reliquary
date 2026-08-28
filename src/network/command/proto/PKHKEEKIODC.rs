@@ -45,7 +45,7 @@ impl PKHKEEKIODC {
         ::std::default::Default::default()
     }
 
-    // .NPCIGEBNOFG DDCLCNPONOH = 5;
+    // .NPCIGEBNOFG DDCLCNPONOH = 1;
 
     pub fn DDCLCNPONOH(&self) -> &super::NPCIGEBNOFG::NPCIGEBNOFG {
         match self.KKNBOACNCON {
@@ -94,7 +94,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .NPCIGEBNOFG CONDGFPOFKD = 14;
+    // .NPCIGEBNOFG CONDGFPOFKD = 3;
 
     pub fn CONDGFPOFKD(&self) -> &super::NPCIGEBNOFG::NPCIGEBNOFG {
         match self.KKNBOACNCON {
@@ -143,7 +143,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .KJAMNOGFAMJ IFOOEPKGGAG = 1986;
+    // .KJAMNOGFAMJ IFOOEPKGGAG = 1614;
 
     pub fn IFOOEPKGGAG(&self) -> &super::KJAMNOGFAMJ::KJAMNOGFAMJ {
         match self.KKNBOACNCON {
@@ -192,7 +192,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .KJAMNOGFAMJ CMPNCFCJCNE = 703;
+    // .KJAMNOGFAMJ CMPNCFCJCNE = 170;
 
     pub fn CMPNCFCJCNE(&self) -> &super::KJAMNOGFAMJ::KJAMNOGFAMJ {
         match self.KKNBOACNCON {
@@ -241,7 +241,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .IOMEMIEAPJO GPJJMPCMAAA = 250;
+    // .IOMEMIEAPJO GPJJMPCMAAA = 51;
 
     pub fn GPJJMPCMAAA(&self) -> &super::IOMEMIEAPJO::IOMEMIEAPJO {
         match self.KKNBOACNCON {
@@ -290,7 +290,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .IKHMHNOIGAB LAEFENCCBBC = 1047;
+    // .IKHMHNOIGAB LAEFENCCBBC = 710;
 
     pub fn LAEFENCCBBC(&self) -> &super::IKHMHNOIGAB::IKHMHNOIGAB {
         match self.KKNBOACNCON {
@@ -339,7 +339,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .LHKNCMFEPFK KDJBDMLDMHG = 198;
+    // .LHKNCMFEPFK KDJBDMLDMHG = 1449;
 
     pub fn KDJBDMLDMHG(&self) -> &super::LHKNCMFEPFK::LHKNCMFEPFK {
         match self.KKNBOACNCON {
@@ -388,7 +388,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .OKBLBLPOENO CBPINAOHEBD = 329;
+    // .OKBLBLPOENO CBPINAOHEBD = 2001;
 
     pub fn CBPINAOHEBD(&self) -> &super::OKBLBLPOENO::OKBLBLPOENO {
         match self.KKNBOACNCON {
@@ -437,7 +437,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .JLHJICBCHMO OMFLCEBLLMI = 1684;
+    // .JLHJICBCHMO OMFLCEBLLMI = 288;
 
     pub fn OMFLCEBLLMI(&self) -> &super::JLHJICBCHMO::JLHJICBCHMO {
         match self.KKNBOACNCON {
@@ -486,7 +486,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .CKEOMFNPKPO FLGGFGCIGNJ = 1145;
+    // .CKEOMFNPKPO FLGGFGCIGNJ = 2011;
 
     pub fn FLGGFGCIGNJ(&self) -> &super::CKEOMFNPKPO::CKEOMFNPKPO {
         match self.KKNBOACNCON {
@@ -535,7 +535,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .KNEJEHOOFGI ACIFEIPPILA = 1974;
+    // .KNEJEHOOFGI ACIFEIPPILA = 721;
 
     pub fn ACIFEIPPILA(&self) -> &super::KNEJEHOOFGI::KNEJEHOOFGI {
         match self.KKNBOACNCON {
@@ -584,7 +584,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .JJEMDNEIMOJ MDGNDLLEFJE = 986;
+    // .JJEMDNEIMOJ MDGNDLLEFJE = 1427;
 
     pub fn MDGNDLLEFJE(&self) -> &super::JJEMDNEIMOJ::JJEMDNEIMOJ {
         match self.KKNBOACNCON {
@@ -633,7 +633,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .MKNALGLEBNA JOCLINGHBHE = 1496;
+    // .MKNALGLEBNA JOCLINGHBHE = 983;
 
     pub fn JOCLINGHBHE(&self) -> &super::MKNALGLEBNA::MKNALGLEBNA {
         match self.KKNBOACNCON {
@@ -682,7 +682,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .PKOHBLEGMAO HPMJHOGCLGG = 101;
+    // .PKOHBLEGMAO HPMJHOGCLGG = 409;
 
     pub fn HPMJHOGCLGG(&self) -> &super::PKOHBLEGMAO::PKOHBLEGMAO {
         match self.KKNBOACNCON {
@@ -731,7 +731,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .FBGIINJFCCD KMAMKBKNCPM = 1592;
+    // .FBGIINJFCCD KMAMKBKNCPM = 1844;
 
     pub fn KMAMKBKNCPM(&self) -> &super::FBGIINJFCCD::FBGIINJFCCD {
         match self.KKNBOACNCON {
@@ -780,7 +780,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .CFJNAPDIMKM JEJCFJEDOLA = 1007;
+    // .CFJNAPDIMKM JEJCFJEDOLA = 1120;
 
     pub fn JEJCFJEDOLA(&self) -> &super::CFJNAPDIMKM::CFJNAPDIMKM {
         match self.KKNBOACNCON {
@@ -829,7 +829,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .CJAFLDKHDAF JEBLGELGBHM = 99;
+    // .CJAFLDKHDAF JEBLGELGBHM = 1861;
 
     pub fn JEBLGELGBHM(&self) -> &super::CJAFLDKHDAF::CJAFLDKHDAF {
         match self.KKNBOACNCON {
@@ -878,7 +878,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .HCNEFGJCCMB GHMKDCKJILO = 137;
+    // .HCNEFGJCCMB GHMKDCKJILO = 1052;
 
     pub fn GHMKDCKJILO(&self) -> &super::HCNEFGJCCMB::HCNEFGJCCMB {
         match self.KKNBOACNCON {
@@ -927,7 +927,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .LFLMJKLKBIL CEICJPEMGHD = 221;
+    // .LFLMJKLKBIL CEICJPEMGHD = 55;
 
     pub fn CEICJPEMGHD(&self) -> &super::LFLMJKLKBIL::LFLMJKLKBIL {
         match self.KKNBOACNCON {
@@ -976,7 +976,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .GNGIHJIJGMD EBFCOMCMGLC = 1284;
+    // .GNGIHJIJGMD EBFCOMCMGLC = 763;
 
     pub fn EBFCOMCMGLC(&self) -> &super::GNGIHJIJGMD::GNGIHJIJGMD {
         match self.KKNBOACNCON {
@@ -1025,7 +1025,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .LBBCNOOOCNE JDCMEPIOMPN = 663;
+    // .LBBCNOOOCNE JDCMEPIOMPN = 644;
 
     pub fn JDCMEPIOMPN(&self) -> &super::LBBCNOOOCNE::LBBCNOOOCNE {
         match self.KKNBOACNCON {
@@ -1074,7 +1074,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .AOFKCKOIFCM KCGHLOHDMBM = 1991;
+    // .AOFKCKOIFCM KCGHLOHDMBM = 969;
 
     pub fn KCGHLOHDMBM(&self) -> &super::AOFKCKOIFCM::AOFKCKOIFCM {
         match self.KKNBOACNCON {
@@ -1123,7 +1123,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .MMBBHFNJILI JMJPONNLJEJ = 449;
+    // .MMBBHFNJILI JMJPONNLJEJ = 195;
 
     pub fn JMJPONNLJEJ(&self) -> &super::MMBBHFNJILI::MMBBHFNJILI {
         match self.KKNBOACNCON {
@@ -1172,7 +1172,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .MMBBHFNJILI MCPKPJHBEAK = 895;
+    // .MMBBHFNJILI MCPKPJHBEAK = 747;
 
     pub fn MCPKPJHBEAK(&self) -> &super::MMBBHFNJILI::MMBBHFNJILI {
         match self.KKNBOACNCON {
@@ -1221,7 +1221,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .MMBBHFNJILI GDABGNBKFPA = 2015;
+    // .MMBBHFNJILI GDABGNBKFPA = 387;
 
     pub fn GDABGNBKFPA(&self) -> &super::MMBBHFNJILI::MMBBHFNJILI {
         match self.KKNBOACNCON {
@@ -1270,7 +1270,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .DNLKMHLAPHC APGPOGAKPAC = 486;
+    // .DNLKMHLAPHC APGPOGAKPAC = 477;
 
     pub fn APGPOGAKPAC(&self) -> &super::DNLKMHLAPHC::DNLKMHLAPHC {
         match self.KKNBOACNCON {
@@ -1319,7 +1319,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .NEMJDLLBBGN JOLNBCHMDNN = 685;
+    // .NEMJDLLBBGN JOLNBCHMDNN = 1925;
 
     pub fn JOLNBCHMDNN(&self) -> &super::NEMJDLLBBGN::NEMJDLLBBGN {
         match self.KKNBOACNCON {
@@ -1368,7 +1368,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .NBFAGOOJIOB KOHOCJAMJAN = 1026;
+    // .NBFAGOOJIOB KOHOCJAMJAN = 445;
 
     pub fn KOHOCJAMJAN(&self) -> &super::NBFAGOOJIOB::NBFAGOOJIOB {
         match self.KKNBOACNCON {
@@ -1417,7 +1417,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .NBFAGOOJIOB AEGMECDFNBE = 897;
+    // .NBFAGOOJIOB AEGMECDFNBE = 1628;
 
     pub fn AEGMECDFNBE(&self) -> &super::NBFAGOOJIOB::NBFAGOOJIOB {
         match self.KKNBOACNCON {
@@ -1466,7 +1466,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .NKOBPBBONDJ CIOLGFNLEBB = 1082;
+    // .NKOBPBBONDJ CIOLGFNLEBB = 1584;
 
     pub fn CIOLGFNLEBB(&self) -> &super::NKOBPBBONDJ::NKOBPBBONDJ {
         match self.KKNBOACNCON {
@@ -1515,7 +1515,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .IPKOBBJPKML BIJODAGIKNF = 246;
+    // .IPKOBBJPKML BIJODAGIKNF = 543;
 
     pub fn BIJODAGIKNF(&self) -> &super::IPKOBBJPKML::IPKOBBJPKML {
         match self.KKNBOACNCON {
@@ -1564,7 +1564,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .GNLBCCHFILK MELCFMHKECA = 518;
+    // .GNLBCCHFILK MELCFMHKECA = 1435;
 
     pub fn MELCFMHKECA(&self) -> &super::GNLBCCHFILK::GNLBCCHFILK {
         match self.KKNBOACNCON {
@@ -1613,7 +1613,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .EDDEOKAIJAB EMKIGHCFKCN = 141;
+    // .EDDEOKAIJAB EMKIGHCFKCN = 261;
 
     pub fn EMKIGHCFKCN(&self) -> &super::EDDEOKAIJAB::EDDEOKAIJAB {
         match self.KKNBOACNCON {
@@ -1662,7 +1662,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .PKOOFPOCNKB KAHKMDHFLOH = 950;
+    // .PKOOFPOCNKB KAHKMDHFLOH = 1267;
 
     pub fn KAHKMDHFLOH(&self) -> &super::PKOOFPOCNKB::PKOOFPOCNKB {
         match self.KKNBOACNCON {
@@ -1711,7 +1711,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .HIMJNABCJMM ALNEINEOJOJ = 903;
+    // .HIMJNABCJMM ALNEINEOJOJ = 453;
 
     pub fn ALNEINEOJOJ(&self) -> &super::HIMJNABCJMM::HIMJNABCJMM {
         match self.KKNBOACNCON {
@@ -1760,7 +1760,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .PPHLEBFJIGM EGPLOEAAFGL = 1429;
+    // .PPHLEBFJIGM EGPLOEAAFGL = 1854;
 
     pub fn EGPLOEAAFGL(&self) -> &super::PPHLEBFJIGM::PPHLEBFJIGM {
         match self.KKNBOACNCON {
@@ -1809,7 +1809,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .JGCMGAMHDHM JKLJBCBFNPL = 985;
+    // .JGCMGAMHDHM JKLJBCBFNPL = 61;
 
     pub fn JKLJBCBFNPL(&self) -> &super::JGCMGAMHDHM::JGCMGAMHDHM {
         match self.KKNBOACNCON {
@@ -1858,7 +1858,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .OECNJOAPCKO MIDFLEHKPBF = 945;
+    // .OECNJOAPCKO MIDFLEHKPBF = 60;
 
     pub fn MIDFLEHKPBF(&self) -> &super::OECNJOAPCKO::OECNJOAPCKO {
         match self.KKNBOACNCON {
@@ -1907,7 +1907,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .OMACAKFNAOA NBEKLDCBJCH = 2011;
+    // .OMACAKFNAOA NBEKLDCBJCH = 1885;
 
     pub fn NBEKLDCBJCH(&self) -> &super::OMACAKFNAOA::OMACAKFNAOA {
         match self.KKNBOACNCON {
@@ -1956,7 +1956,105 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .GBKILNHHGLB DFJCKBLAOBN = 1617;
+    // .NPCIGEBNOFG NBDEKEHMGNA = 1372;
+
+    pub fn NBDEKEHMGNA(&self) -> &super::NPCIGEBNOFG::NPCIGEBNOFG {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::NBDEKEHMGNA(ref v)) => v,
+            _ => <super::NPCIGEBNOFG::NPCIGEBNOFG as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_NBDEKEHMGNA(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_NBDEKEHMGNA(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::NBDEKEHMGNA(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_NBDEKEHMGNA(&mut self, v: super::NPCIGEBNOFG::NPCIGEBNOFG) {
+        self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::NBDEKEHMGNA(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_NBDEKEHMGNA(&mut self) -> &mut super::NPCIGEBNOFG::NPCIGEBNOFG {
+        if let ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::NBDEKEHMGNA(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::NBDEKEHMGNA(super::NPCIGEBNOFG::NPCIGEBNOFG::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::NBDEKEHMGNA(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_NBDEKEHMGNA(&mut self) -> super::NPCIGEBNOFG::NPCIGEBNOFG {
+        if self.has_NBDEKEHMGNA() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::NBDEKEHMGNA(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::NPCIGEBNOFG::NPCIGEBNOFG::new()
+        }
+    }
+
+    // .NPCIGEBNOFG EMNGKIJHLHL = 1909;
+
+    pub fn EMNGKIJHLHL(&self) -> &super::NPCIGEBNOFG::NPCIGEBNOFG {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::EMNGKIJHLHL(ref v)) => v,
+            _ => <super::NPCIGEBNOFG::NPCIGEBNOFG as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_EMNGKIJHLHL(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_EMNGKIJHLHL(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::EMNGKIJHLHL(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_EMNGKIJHLHL(&mut self, v: super::NPCIGEBNOFG::NPCIGEBNOFG) {
+        self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::EMNGKIJHLHL(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_EMNGKIJHLHL(&mut self) -> &mut super::NPCIGEBNOFG::NPCIGEBNOFG {
+        if let ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::EMNGKIJHLHL(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::EMNGKIJHLHL(super::NPCIGEBNOFG::NPCIGEBNOFG::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::EMNGKIJHLHL(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_EMNGKIJHLHL(&mut self) -> super::NPCIGEBNOFG::NPCIGEBNOFG {
+        if self.has_EMNGKIJHLHL() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::EMNGKIJHLHL(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::NPCIGEBNOFG::NPCIGEBNOFG::new()
+        }
+    }
+
+    // .GBKILNHHGLB DFJCKBLAOBN = 1079;
 
     pub fn DFJCKBLAOBN(&self) -> &super::GBKILNHHGLB::GBKILNHHGLB {
         match self.KKNBOACNCON {
@@ -2005,7 +2103,7 @@ impl PKHKEEKIODC {
         }
     }
 
-    // .OEPIHJOHLKM FLPDILMMCFK = 364;
+    // .OEPIHJOHLKM FLPDILMMCFK = 534;
 
     pub fn FLPDILMMCFK(&self) -> &super::OEPIHJOHLKM::OEPIHJOHLKM {
         match self.KKNBOACNCON {
@@ -2055,7 +2153,7 @@ impl PKHKEEKIODC {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(41);
+        let mut fields = ::std::vec::Vec::with_capacity(43);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NPCIGEBNOFG::NPCIGEBNOFG>(
             "DDCLCNPONOH",
@@ -2330,6 +2428,20 @@ impl PKHKEEKIODC {
             PKHKEEKIODC::mut_NBEKLDCBJCH,
             PKHKEEKIODC::set_NBEKLDCBJCH,
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NPCIGEBNOFG::NPCIGEBNOFG>(
+            "NBDEKEHMGNA",
+            PKHKEEKIODC::has_NBDEKEHMGNA,
+            PKHKEEKIODC::NBDEKEHMGNA,
+            PKHKEEKIODC::mut_NBDEKEHMGNA,
+            PKHKEEKIODC::set_NBDEKEHMGNA,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NPCIGEBNOFG::NPCIGEBNOFG>(
+            "EMNGKIJHLHL",
+            PKHKEEKIODC::has_EMNGKIJHLHL,
+            PKHKEEKIODC::EMNGKIJHLHL,
+            PKHKEEKIODC::mut_EMNGKIJHLHL,
+            PKHKEEKIODC::set_EMNGKIJHLHL,
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GBKILNHHGLB::GBKILNHHGLB>(
             "DFJCKBLAOBN",
             PKHKEEKIODC::has_DFJCKBLAOBN,
@@ -2363,127 +2475,133 @@ impl ::protobuf::Message for PKHKEEKIODC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                10 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::DDCLCNPONOH(is.read_message()?));
                 },
-                114 => {
+                26 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::CONDGFPOFKD(is.read_message()?));
                 },
-                15890 => {
+                12914 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::IFOOEPKGGAG(is.read_message()?));
                 },
-                5626 => {
+                1362 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::CMPNCFCJCNE(is.read_message()?));
                 },
-                2002 => {
+                410 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::GPJJMPCMAAA(is.read_message()?));
                 },
-                8378 => {
+                5682 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::LAEFENCCBBC(is.read_message()?));
                 },
-                1586 => {
+                11594 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::KDJBDMLDMHG(is.read_message()?));
                 },
-                2634 => {
+                16010 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::CBPINAOHEBD(is.read_message()?));
                 },
-                13474 => {
+                2306 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::OMFLCEBLLMI(is.read_message()?));
                 },
-                9162 => {
+                16090 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::FLGGFGCIGNJ(is.read_message()?));
                 },
-                15794 => {
+                5770 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::ACIFEIPPILA(is.read_message()?));
                 },
-                7890 => {
+                11418 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::MDGNDLLEFJE(is.read_message()?));
                 },
-                11970 => {
+                7866 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::JOCLINGHBHE(is.read_message()?));
                 },
-                810 => {
+                3274 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::HPMJHOGCLGG(is.read_message()?));
                 },
-                12738 => {
+                14754 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::KMAMKBKNCPM(is.read_message()?));
                 },
-                8058 => {
+                8962 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::JEJCFJEDOLA(is.read_message()?));
                 },
-                794 => {
+                14890 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::JEBLGELGBHM(is.read_message()?));
                 },
-                1098 => {
+                8418 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::GHMKDCKJILO(is.read_message()?));
                 },
-                1770 => {
+                442 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::CEICJPEMGHD(is.read_message()?));
                 },
-                10274 => {
+                6106 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::EBFCOMCMGLC(is.read_message()?));
                 },
-                5306 => {
+                5154 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::JDCMEPIOMPN(is.read_message()?));
                 },
-                15930 => {
+                7754 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::KCGHLOHDMBM(is.read_message()?));
                 },
-                3594 => {
+                1562 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::JMJPONNLJEJ(is.read_message()?));
                 },
-                7162 => {
+                5978 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::MCPKPJHBEAK(is.read_message()?));
                 },
-                16122 => {
+                3098 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::GDABGNBKFPA(is.read_message()?));
                 },
-                3890 => {
+                3818 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::APGPOGAKPAC(is.read_message()?));
                 },
-                5482 => {
+                15402 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::JOLNBCHMDNN(is.read_message()?));
                 },
-                8210 => {
+                3562 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::KOHOCJAMJAN(is.read_message()?));
                 },
-                7178 => {
+                13026 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::AEGMECDFNBE(is.read_message()?));
                 },
-                8658 => {
+                12674 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::CIOLGFNLEBB(is.read_message()?));
                 },
-                1970 => {
+                4346 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::BIJODAGIKNF(is.read_message()?));
                 },
-                4146 => {
+                11482 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::MELCFMHKECA(is.read_message()?));
                 },
-                1130 => {
+                2090 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::EMKIGHCFKCN(is.read_message()?));
                 },
-                7602 => {
+                10138 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::KAHKMDHFLOH(is.read_message()?));
                 },
-                7226 => {
+                3626 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::ALNEINEOJOJ(is.read_message()?));
                 },
-                11434 => {
+                14834 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::EGPLOEAAFGL(is.read_message()?));
                 },
-                7882 => {
+                490 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::JKLJBCBFNPL(is.read_message()?));
                 },
-                7562 => {
+                482 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::MIDFLEHKPBF(is.read_message()?));
                 },
-                16090 => {
+                15082 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::NBEKLDCBJCH(is.read_message()?));
                 },
-                12938 => {
+                10978 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::NBDEKEHMGNA(is.read_message()?));
+                },
+                15274 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::EMNGKIJHLHL(is.read_message()?));
+                },
+                8634 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::DFJCKBLAOBN(is.read_message()?));
                 },
-                2914 => {
+                4274 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(pkhkeekiodc::KKNBOACNCON::FLPDILMMCFK(is.read_message()?));
                 },
                 tag => {
@@ -2656,6 +2774,14 @@ impl ::protobuf::Message for PKHKEEKIODC {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
+                &pkhkeekiodc::KKNBOACNCON::NBDEKEHMGNA(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &pkhkeekiodc::KKNBOACNCON::EMNGKIJHLHL(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
                 &pkhkeekiodc::KKNBOACNCON::DFJCKBLAOBN(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -2675,127 +2801,133 @@ impl ::protobuf::Message for PKHKEEKIODC {
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &pkhkeekiodc::KKNBOACNCON::DDCLCNPONOH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
                 &pkhkeekiodc::KKNBOACNCON::CONDGFPOFKD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
                 &pkhkeekiodc::KKNBOACNCON::IFOOEPKGGAG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1986, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1614, v, os)?;
                 },
                 &pkhkeekiodc::KKNBOACNCON::CMPNCFCJCNE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(703, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(170, v, os)?;
                 },
                 &pkhkeekiodc::KKNBOACNCON::GPJJMPCMAAA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(250, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(51, v, os)?;
                 },
                 &pkhkeekiodc::KKNBOACNCON::LAEFENCCBBC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1047, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(710, v, os)?;
                 },
                 &pkhkeekiodc::KKNBOACNCON::KDJBDMLDMHG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(198, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1449, v, os)?;
                 },
                 &pkhkeekiodc::KKNBOACNCON::CBPINAOHEBD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(329, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(2001, v, os)?;
                 },
                 &pkhkeekiodc::KKNBOACNCON::OMFLCEBLLMI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1684, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(288, v, os)?;
                 },
                 &pkhkeekiodc::KKNBOACNCON::FLGGFGCIGNJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1145, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::ACIFEIPPILA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1974, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::MDGNDLLEFJE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(986, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::JOCLINGHBHE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1496, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::HPMJHOGCLGG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(101, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::KMAMKBKNCPM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1592, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::JEJCFJEDOLA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1007, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::JEBLGELGBHM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(99, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::GHMKDCKJILO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(137, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::CEICJPEMGHD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(221, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::EBFCOMCMGLC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1284, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::JDCMEPIOMPN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(663, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::KCGHLOHDMBM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1991, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::JMJPONNLJEJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(449, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::MCPKPJHBEAK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(895, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::GDABGNBKFPA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2015, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::APGPOGAKPAC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(486, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::JOLNBCHMDNN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(685, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::KOHOCJAMJAN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1026, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::AEGMECDFNBE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(897, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::CIOLGFNLEBB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1082, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::BIJODAGIKNF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(246, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::MELCFMHKECA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(518, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::EMKIGHCFKCN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(141, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::KAHKMDHFLOH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(950, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::ALNEINEOJOJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(903, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::EGPLOEAAFGL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1429, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::JKLJBCBFNPL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(985, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::MIDFLEHKPBF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(945, v, os)?;
-                },
-                &pkhkeekiodc::KKNBOACNCON::NBEKLDCBJCH(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(2011, v, os)?;
                 },
+                &pkhkeekiodc::KKNBOACNCON::ACIFEIPPILA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(721, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::MDGNDLLEFJE(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1427, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::JOCLINGHBHE(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(983, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::HPMJHOGCLGG(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(409, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::KMAMKBKNCPM(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1844, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::JEJCFJEDOLA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1120, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::JEBLGELGBHM(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1861, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::GHMKDCKJILO(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1052, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::CEICJPEMGHD(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(55, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::EBFCOMCMGLC(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(763, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::JDCMEPIOMPN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(644, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::KCGHLOHDMBM(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(969, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::JMJPONNLJEJ(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(195, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::MCPKPJHBEAK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(747, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::GDABGNBKFPA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(387, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::APGPOGAKPAC(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(477, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::JOLNBCHMDNN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1925, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::KOHOCJAMJAN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(445, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::AEGMECDFNBE(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1628, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::CIOLGFNLEBB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1584, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::BIJODAGIKNF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(543, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::MELCFMHKECA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1435, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::EMKIGHCFKCN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(261, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::KAHKMDHFLOH(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1267, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::ALNEINEOJOJ(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(453, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::EGPLOEAAFGL(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1854, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::JKLJBCBFNPL(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(61, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::MIDFLEHKPBF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(60, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::NBEKLDCBJCH(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1885, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::NBDEKEHMGNA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1372, v, os)?;
+                },
+                &pkhkeekiodc::KKNBOACNCON::EMNGKIJHLHL(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1909, v, os)?;
+                },
                 &pkhkeekiodc::KKNBOACNCON::DFJCKBLAOBN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1617, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1079, v, os)?;
                 },
                 &pkhkeekiodc::KKNBOACNCON::FLPDILMMCFK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(364, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(534, v, os)?;
                 },
             };
         }
@@ -2816,6 +2948,8 @@ impl ::protobuf::Message for PKHKEEKIODC {
     }
 
     fn clear(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
         self.KKNBOACNCON = ::std::option::Option::None;
         self.KKNBOACNCON = ::std::option::Option::None;
         self.KKNBOACNCON = ::std::option::Option::None;
@@ -2971,6 +3105,10 @@ pub mod pkhkeekiodc {
         MIDFLEHKPBF(super::super::OECNJOAPCKO::OECNJOAPCKO),
         // @@protoc_insertion_point(oneof_field:PKHKEEKIODC.NBEKLDCBJCH)
         NBEKLDCBJCH(super::super::OMACAKFNAOA::OMACAKFNAOA),
+        // @@protoc_insertion_point(oneof_field:PKHKEEKIODC.NBDEKEHMGNA)
+        NBDEKEHMGNA(super::super::NPCIGEBNOFG::NPCIGEBNOFG),
+        // @@protoc_insertion_point(oneof_field:PKHKEEKIODC.EMNGKIJHLHL)
+        EMNGKIJHLHL(super::super::NPCIGEBNOFG::NPCIGEBNOFG),
         // @@protoc_insertion_point(oneof_field:PKHKEEKIODC.DFJCKBLAOBN)
         DFJCKBLAOBN(super::super::GBKILNHHGLB::GBKILNHHGLB),
         // @@protoc_insertion_point(oneof_field:PKHKEEKIODC.FLPDILMMCFK)
@@ -3007,55 +3145,58 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     oto\x1a\x11NBFAGOOJIOB.proto\x1a\x11NEMJDLLBBGN.proto\x1a\x11NKOBPBBONDJ\
     .proto\x1a\x11NPCIGEBNOFG.proto\x1a\x11OECNJOAPCKO.proto\x1a\x11OEPIHJOH\
     LKM.proto\x1a\x11OKBLBLPOENO.proto\x1a\x11OMACAKFNAOA.proto\x1a\x11PKOHB\
-    LEGMAO.proto\x1a\x11PKOOFPOCNKB.proto\x1a\x11PPHLEBFJIGM.proto\"\xc3\x10\
-    \n\x0bPKHKEEKIODC\x120\n\x0bDDCLCNPONOH\x18\x05\x20\x01(\x0b2\x0c.NPCIGE\
-    BNOFGH\0R\x0bDDCLCNPONOH\x120\n\x0bCONDGFPOFKD\x18\x0e\x20\x01(\x0b2\x0c\
-    .NPCIGEBNOFGH\0R\x0bCONDGFPOFKD\x121\n\x0bIFOOEPKGGAG\x18\xc2\x0f\x20\
+    LEGMAO.proto\x1a\x11PKOOFPOCNKB.proto\x1a\x11PPHLEBFJIGM.proto\"\xa7\x11\
+    \n\x0bPKHKEEKIODC\x120\n\x0bDDCLCNPONOH\x18\x01\x20\x01(\x0b2\x0c.NPCIGE\
+    BNOFGH\0R\x0bDDCLCNPONOH\x120\n\x0bCONDGFPOFKD\x18\x03\x20\x01(\x0b2\x0c\
+    .NPCIGEBNOFGH\0R\x0bCONDGFPOFKD\x121\n\x0bIFOOEPKGGAG\x18\xce\x0c\x20\
     \x01(\x0b2\x0c.KJAMNOGFAMJH\0R\x0bIFOOEPKGGAG\x121\n\x0bCMPNCFCJCNE\x18\
-    \xbf\x05\x20\x01(\x0b2\x0c.KJAMNOGFAMJH\0R\x0bCMPNCFCJCNE\x121\n\x0bGPJJ\
-    MPCMAAA\x18\xfa\x01\x20\x01(\x0b2\x0c.IOMEMIEAPJOH\0R\x0bGPJJMPCMAAA\x12\
-    1\n\x0bLAEFENCCBBC\x18\x97\x08\x20\x01(\x0b2\x0c.IKHMHNOIGABH\0R\x0bLAEF\
-    ENCCBBC\x121\n\x0bKDJBDMLDMHG\x18\xc6\x01\x20\x01(\x0b2\x0c.LHKNCMFEPFKH\
-    \0R\x0bKDJBDMLDMHG\x121\n\x0bCBPINAOHEBD\x18\xc9\x02\x20\x01(\x0b2\x0c.O\
-    KBLBLPOENOH\0R\x0bCBPINAOHEBD\x121\n\x0bOMFLCEBLLMI\x18\x94\r\x20\x01(\
-    \x0b2\x0c.JLHJICBCHMOH\0R\x0bOMFLCEBLLMI\x121\n\x0bFLGGFGCIGNJ\x18\xf9\
-    \x08\x20\x01(\x0b2\x0c.CKEOMFNPKPOH\0R\x0bFLGGFGCIGNJ\x121\n\x0bACIFEIPP\
-    ILA\x18\xb6\x0f\x20\x01(\x0b2\x0c.KNEJEHOOFGIH\0R\x0bACIFEIPPILA\x121\n\
-    \x0bMDGNDLLEFJE\x18\xda\x07\x20\x01(\x0b2\x0c.JJEMDNEIMOJH\0R\x0bMDGNDLL\
-    EFJE\x121\n\x0bJOCLINGHBHE\x18\xd8\x0b\x20\x01(\x0b2\x0c.MKNALGLEBNAH\0R\
-    \x0bJOCLINGHBHE\x120\n\x0bHPMJHOGCLGG\x18e\x20\x01(\x0b2\x0c.PKOHBLEGMAO\
-    H\0R\x0bHPMJHOGCLGG\x121\n\x0bKMAMKBKNCPM\x18\xb8\x0c\x20\x01(\x0b2\x0c.\
-    FBGIINJFCCDH\0R\x0bKMAMKBKNCPM\x121\n\x0bJEJCFJEDOLA\x18\xef\x07\x20\x01\
-    (\x0b2\x0c.CFJNAPDIMKMH\0R\x0bJEJCFJEDOLA\x120\n\x0bJEBLGELGBHM\x18c\x20\
-    \x01(\x0b2\x0c.CJAFLDKHDAFH\0R\x0bJEBLGELGBHM\x121\n\x0bGHMKDCKJILO\x18\
-    \x89\x01\x20\x01(\x0b2\x0c.HCNEFGJCCMBH\0R\x0bGHMKDCKJILO\x121\n\x0bCEIC\
-    JPEMGHD\x18\xdd\x01\x20\x01(\x0b2\x0c.LFLMJKLKBILH\0R\x0bCEICJPEMGHD\x12\
-    1\n\x0bEBFCOMCMGLC\x18\x84\n\x20\x01(\x0b2\x0c.GNGIHJIJGMDH\0R\x0bEBFCOM\
-    CMGLC\x121\n\x0bJDCMEPIOMPN\x18\x97\x05\x20\x01(\x0b2\x0c.LBBCNOOOCNEH\0\
-    R\x0bJDCMEPIOMPN\x121\n\x0bKCGHLOHDMBM\x18\xc7\x0f\x20\x01(\x0b2\x0c.AOF\
-    KCKOIFCMH\0R\x0bKCGHLOHDMBM\x121\n\x0bJMJPONNLJEJ\x18\xc1\x03\x20\x01(\
-    \x0b2\x0c.MMBBHFNJILIH\0R\x0bJMJPONNLJEJ\x121\n\x0bMCPKPJHBEAK\x18\xff\
-    \x06\x20\x01(\x0b2\x0c.MMBBHFNJILIH\0R\x0bMCPKPJHBEAK\x121\n\x0bGDABGNBK\
-    FPA\x18\xdf\x0f\x20\x01(\x0b2\x0c.MMBBHFNJILIH\0R\x0bGDABGNBKFPA\x121\n\
-    \x0bAPGPOGAKPAC\x18\xe6\x03\x20\x01(\x0b2\x0c.DNLKMHLAPHCH\0R\x0bAPGPOGA\
-    KPAC\x121\n\x0bJOLNBCHMDNN\x18\xad\x05\x20\x01(\x0b2\x0c.NEMJDLLBBGNH\0R\
-    \x0bJOLNBCHMDNN\x121\n\x0bKOHOCJAMJAN\x18\x82\x08\x20\x01(\x0b2\x0c.NBFA\
-    GOOJIOBH\0R\x0bKOHOCJAMJAN\x121\n\x0bAEGMECDFNBE\x18\x81\x07\x20\x01(\
-    \x0b2\x0c.NBFAGOOJIOBH\0R\x0bAEGMECDFNBE\x121\n\x0bCIOLGFNLEBB\x18\xba\
-    \x08\x20\x01(\x0b2\x0c.NKOBPBBONDJH\0R\x0bCIOLGFNLEBB\x121\n\x0bBIJODAGI\
-    KNF\x18\xf6\x01\x20\x01(\x0b2\x0c.IPKOBBJPKMLH\0R\x0bBIJODAGIKNF\x121\n\
-    \x0bMELCFMHKECA\x18\x86\x04\x20\x01(\x0b2\x0c.GNLBCCHFILKH\0R\x0bMELCFMH\
-    KECA\x121\n\x0bEMKIGHCFKCN\x18\x8d\x01\x20\x01(\x0b2\x0c.EDDEOKAIJABH\0R\
-    \x0bEMKIGHCFKCN\x121\n\x0bKAHKMDHFLOH\x18\xb6\x07\x20\x01(\x0b2\x0c.PKOO\
-    FPOCNKBH\0R\x0bKAHKMDHFLOH\x121\n\x0bALNEINEOJOJ\x18\x87\x07\x20\x01(\
-    \x0b2\x0c.HIMJNABCJMMH\0R\x0bALNEINEOJOJ\x121\n\x0bEGPLOEAAFGL\x18\x95\
-    \x0b\x20\x01(\x0b2\x0c.PPHLEBFJIGMH\0R\x0bEGPLOEAAFGL\x121\n\x0bJKLJBCBF\
-    NPL\x18\xd9\x07\x20\x01(\x0b2\x0c.JGCMGAMHDHMH\0R\x0bJKLJBCBFNPL\x121\n\
-    \x0bMIDFLEHKPBF\x18\xb1\x07\x20\x01(\x0b2\x0c.OECNJOAPCKOH\0R\x0bMIDFLEH\
-    KPBF\x121\n\x0bNBEKLDCBJCH\x18\xdb\x0f\x20\x01(\x0b2\x0c.OMACAKFNAOAH\0R\
-    \x0bNBEKLDCBJCH\x121\n\x0bDFJCKBLAOBN\x18\xd1\x0c\x20\x01(\x0b2\x0c.GBKI\
-    LNHHGLBH\0R\x0bDFJCKBLAOBN\x121\n\x0bFLPDILMMCFK\x18\xec\x02\x20\x01(\
-    \x0b2\x0c.OEPIHJOHLKMH\0R\x0bFLPDILMMCFKB\r\n\x0bKKNBOACNCONb\x06proto3\
+    \xaa\x01\x20\x01(\x0b2\x0c.KJAMNOGFAMJH\0R\x0bCMPNCFCJCNE\x120\n\x0bGPJJ\
+    MPCMAAA\x183\x20\x01(\x0b2\x0c.IOMEMIEAPJOH\0R\x0bGPJJMPCMAAA\x121\n\x0b\
+    LAEFENCCBBC\x18\xc6\x05\x20\x01(\x0b2\x0c.IKHMHNOIGABH\0R\x0bLAEFENCCBBC\
+    \x121\n\x0bKDJBDMLDMHG\x18\xa9\x0b\x20\x01(\x0b2\x0c.LHKNCMFEPFKH\0R\x0b\
+    KDJBDMLDMHG\x121\n\x0bCBPINAOHEBD\x18\xd1\x0f\x20\x01(\x0b2\x0c.OKBLBLPO\
+    ENOH\0R\x0bCBPINAOHEBD\x121\n\x0bOMFLCEBLLMI\x18\xa0\x02\x20\x01(\x0b2\
+    \x0c.JLHJICBCHMOH\0R\x0bOMFLCEBLLMI\x121\n\x0bFLGGFGCIGNJ\x18\xdb\x0f\
+    \x20\x01(\x0b2\x0c.CKEOMFNPKPOH\0R\x0bFLGGFGCIGNJ\x121\n\x0bACIFEIPPILA\
+    \x18\xd1\x05\x20\x01(\x0b2\x0c.KNEJEHOOFGIH\0R\x0bACIFEIPPILA\x121\n\x0b\
+    MDGNDLLEFJE\x18\x93\x0b\x20\x01(\x0b2\x0c.JJEMDNEIMOJH\0R\x0bMDGNDLLEFJE\
+    \x121\n\x0bJOCLINGHBHE\x18\xd7\x07\x20\x01(\x0b2\x0c.MKNALGLEBNAH\0R\x0b\
+    JOCLINGHBHE\x121\n\x0bHPMJHOGCLGG\x18\x99\x03\x20\x01(\x0b2\x0c.PKOHBLEG\
+    MAOH\0R\x0bHPMJHOGCLGG\x121\n\x0bKMAMKBKNCPM\x18\xb4\x0e\x20\x01(\x0b2\
+    \x0c.FBGIINJFCCDH\0R\x0bKMAMKBKNCPM\x121\n\x0bJEJCFJEDOLA\x18\xe0\x08\
+    \x20\x01(\x0b2\x0c.CFJNAPDIMKMH\0R\x0bJEJCFJEDOLA\x121\n\x0bJEBLGELGBHM\
+    \x18\xc5\x0e\x20\x01(\x0b2\x0c.CJAFLDKHDAFH\0R\x0bJEBLGELGBHM\x121\n\x0b\
+    GHMKDCKJILO\x18\x9c\x08\x20\x01(\x0b2\x0c.HCNEFGJCCMBH\0R\x0bGHMKDCKJILO\
+    \x120\n\x0bCEICJPEMGHD\x187\x20\x01(\x0b2\x0c.LFLMJKLKBILH\0R\x0bCEICJPE\
+    MGHD\x121\n\x0bEBFCOMCMGLC\x18\xfb\x05\x20\x01(\x0b2\x0c.GNGIHJIJGMDH\0R\
+    \x0bEBFCOMCMGLC\x121\n\x0bJDCMEPIOMPN\x18\x84\x05\x20\x01(\x0b2\x0c.LBBC\
+    NOOOCNEH\0R\x0bJDCMEPIOMPN\x121\n\x0bKCGHLOHDMBM\x18\xc9\x07\x20\x01(\
+    \x0b2\x0c.AOFKCKOIFCMH\0R\x0bKCGHLOHDMBM\x121\n\x0bJMJPONNLJEJ\x18\xc3\
+    \x01\x20\x01(\x0b2\x0c.MMBBHFNJILIH\0R\x0bJMJPONNLJEJ\x121\n\x0bMCPKPJHB\
+    EAK\x18\xeb\x05\x20\x01(\x0b2\x0c.MMBBHFNJILIH\0R\x0bMCPKPJHBEAK\x121\n\
+    \x0bGDABGNBKFPA\x18\x83\x03\x20\x01(\x0b2\x0c.MMBBHFNJILIH\0R\x0bGDABGNB\
+    KFPA\x121\n\x0bAPGPOGAKPAC\x18\xdd\x03\x20\x01(\x0b2\x0c.DNLKMHLAPHCH\0R\
+    \x0bAPGPOGAKPAC\x121\n\x0bJOLNBCHMDNN\x18\x85\x0f\x20\x01(\x0b2\x0c.NEMJ\
+    DLLBBGNH\0R\x0bJOLNBCHMDNN\x121\n\x0bKOHOCJAMJAN\x18\xbd\x03\x20\x01(\
+    \x0b2\x0c.NBFAGOOJIOBH\0R\x0bKOHOCJAMJAN\x121\n\x0bAEGMECDFNBE\x18\xdc\
+    \x0c\x20\x01(\x0b2\x0c.NBFAGOOJIOBH\0R\x0bAEGMECDFNBE\x121\n\x0bCIOLGFNL\
+    EBB\x18\xb0\x0c\x20\x01(\x0b2\x0c.NKOBPBBONDJH\0R\x0bCIOLGFNLEBB\x121\n\
+    \x0bBIJODAGIKNF\x18\x9f\x04\x20\x01(\x0b2\x0c.IPKOBBJPKMLH\0R\x0bBIJODAG\
+    IKNF\x121\n\x0bMELCFMHKECA\x18\x9b\x0b\x20\x01(\x0b2\x0c.GNLBCCHFILKH\0R\
+    \x0bMELCFMHKECA\x121\n\x0bEMKIGHCFKCN\x18\x85\x02\x20\x01(\x0b2\x0c.EDDE\
+    OKAIJABH\0R\x0bEMKIGHCFKCN\x121\n\x0bKAHKMDHFLOH\x18\xf3\t\x20\x01(\x0b2\
+    \x0c.PKOOFPOCNKBH\0R\x0bKAHKMDHFLOH\x121\n\x0bALNEINEOJOJ\x18\xc5\x03\
+    \x20\x01(\x0b2\x0c.HIMJNABCJMMH\0R\x0bALNEINEOJOJ\x121\n\x0bEGPLOEAAFGL\
+    \x18\xbe\x0e\x20\x01(\x0b2\x0c.PPHLEBFJIGMH\0R\x0bEGPLOEAAFGL\x120\n\x0b\
+    JKLJBCBFNPL\x18=\x20\x01(\x0b2\x0c.JGCMGAMHDHMH\0R\x0bJKLJBCBFNPL\x120\n\
+    \x0bMIDFLEHKPBF\x18<\x20\x01(\x0b2\x0c.OECNJOAPCKOH\0R\x0bMIDFLEHKPBF\
+    \x121\n\x0bNBEKLDCBJCH\x18\xdd\x0e\x20\x01(\x0b2\x0c.OMACAKFNAOAH\0R\x0b\
+    NBEKLDCBJCH\x121\n\x0bNBDEKEHMGNA\x18\xdc\n\x20\x01(\x0b2\x0c.NPCIGEBNOF\
+    GH\0R\x0bNBDEKEHMGNA\x121\n\x0bEMNGKIJHLHL\x18\xf5\x0e\x20\x01(\x0b2\x0c\
+    .NPCIGEBNOFGH\0R\x0bEMNGKIJHLHL\x121\n\x0bDFJCKBLAOBN\x18\xb7\x08\x20\
+    \x01(\x0b2\x0c.GBKILNHHGLBH\0R\x0bDFJCKBLAOBN\x121\n\x0bFLPDILMMCFK\x18\
+    \x96\x04\x20\x01(\x0b2\x0c.OEPIHJOHLKMH\0R\x0bFLPDILMMCFKB\r\n\x0bKKNBOA\
+    CNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

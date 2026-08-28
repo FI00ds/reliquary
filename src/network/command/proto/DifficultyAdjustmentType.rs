@@ -27,10 +27,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:DifficultyAdjustmentType)
 pub enum DifficultyAdjustmentType {
-    // @@protoc_insertion_point(enum_value:DifficultyAdjustmentType.JNECPMMFEKP_AANHCEGHCFA)
-    JNECPMMFEKP_AANHCEGHCFA = 0,
-    // @@protoc_insertion_point(enum_value:DifficultyAdjustmentType.JNECPMMFEKP_AEDDONPLOFJ)
-    JNECPMMFEKP_AEDDONPLOFJ = 1,
+    // @@protoc_insertion_point(enum_value:DifficultyAdjustmentType.DifficultyAdjustmentType_DifficultyAjustmentTypeDefault)
+    DifficultyAdjustmentType_DifficultyAjustmentTypeDefault = 0,
+    // @@protoc_insertion_point(enum_value:DifficultyAdjustmentType.DifficultyAdjustmentType_DifficultyAjustmentTypeEasy)
+    DifficultyAdjustmentType_DifficultyAjustmentTypeEasy = 1,
 }
 
 impl ::protobuf::Enum for DifficultyAdjustmentType {
@@ -42,23 +42,23 @@ impl ::protobuf::Enum for DifficultyAdjustmentType {
 
     fn from_i32(value: i32) -> ::std::option::Option<DifficultyAdjustmentType> {
         match value {
-            0 => ::std::option::Option::Some(DifficultyAdjustmentType::JNECPMMFEKP_AANHCEGHCFA),
-            1 => ::std::option::Option::Some(DifficultyAdjustmentType::JNECPMMFEKP_AEDDONPLOFJ),
+            0 => ::std::option::Option::Some(DifficultyAdjustmentType::DifficultyAdjustmentType_DifficultyAjustmentTypeDefault),
+            1 => ::std::option::Option::Some(DifficultyAdjustmentType::DifficultyAdjustmentType_DifficultyAjustmentTypeEasy),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<DifficultyAdjustmentType> {
         match str {
-            "JNECPMMFEKP_AANHCEGHCFA" => ::std::option::Option::Some(DifficultyAdjustmentType::JNECPMMFEKP_AANHCEGHCFA),
-            "JNECPMMFEKP_AEDDONPLOFJ" => ::std::option::Option::Some(DifficultyAdjustmentType::JNECPMMFEKP_AEDDONPLOFJ),
+            "DifficultyAdjustmentType_DifficultyAjustmentTypeDefault" => ::std::option::Option::Some(DifficultyAdjustmentType::DifficultyAdjustmentType_DifficultyAjustmentTypeDefault),
+            "DifficultyAdjustmentType_DifficultyAjustmentTypeEasy" => ::std::option::Option::Some(DifficultyAdjustmentType::DifficultyAdjustmentType_DifficultyAjustmentTypeEasy),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [DifficultyAdjustmentType] = &[
-        DifficultyAdjustmentType::JNECPMMFEKP_AANHCEGHCFA,
-        DifficultyAdjustmentType::JNECPMMFEKP_AEDDONPLOFJ,
+        DifficultyAdjustmentType::DifficultyAdjustmentType_DifficultyAjustmentTypeDefault,
+        DifficultyAdjustmentType::DifficultyAdjustmentType_DifficultyAjustmentTypeEasy,
     ];
 }
 
@@ -76,7 +76,7 @@ impl ::protobuf::EnumFull for DifficultyAdjustmentType {
 
 impl ::std::default::Default for DifficultyAdjustmentType {
     fn default() -> Self {
-        DifficultyAdjustmentType::JNECPMMFEKP_AANHCEGHCFA
+        DifficultyAdjustmentType::DifficultyAdjustmentType_DifficultyAjustmentTypeDefault
     }
 }
 
@@ -87,9 +87,10 @@ impl DifficultyAdjustmentType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eDifficultyAdjustmentType.proto*T\n\x18DifficultyAdjustmentType\x12\
-    \x1b\n\x17JNECPMMFEKP_AANHCEGHCFA\x10\0\x12\x1b\n\x17JNECPMMFEKP_AEDDONP\
-    LOFJ\x10\x01b\x06proto3\
+    \n\x1eDifficultyAdjustmentType.proto*\x91\x01\n\x18DifficultyAdjustmentT\
+    ype\x12;\n7DifficultyAdjustmentType_DifficultyAjustmentTypeDefault\x10\0\
+    \x128\n4DifficultyAdjustmentType_DifficultyAjustmentTypeEasy\x10\x01b\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

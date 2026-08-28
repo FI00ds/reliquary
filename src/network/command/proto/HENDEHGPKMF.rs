@@ -35,7 +35,7 @@ pub struct HENDEHGPKMF {
     // @@protoc_insertion_point(field:HENDEHGPKMF.KFPMJKCOJAJ)
     pub KFPMJKCOJAJ: ::std::string::String,
     // @@protoc_insertion_point(field:HENDEHGPKMF.JLFIAFKGCOJ)
-    pub JLFIAFKGCOJ: ::std::string::String,
+    pub JLFIAFKGCOJ: ::std::vec::Vec<u8>,
     // @@protoc_insertion_point(field:HENDEHGPKMF.MILBDIPBJGP)
     pub MILBDIPBJGP: ::std::string::String,
     // special fields
@@ -110,7 +110,7 @@ impl ::protobuf::Message for HENDEHGPKMF {
                     self.KFPMJKCOJAJ = is.read_string()?;
                 },
                 42 => {
-                    self.JLFIAFKGCOJ = is.read_string()?;
+                    self.JLFIAFKGCOJ = is.read_bytes()?;
                 },
                 50 => {
                     self.MILBDIPBJGP = is.read_string()?;
@@ -137,7 +137,7 @@ impl ::protobuf::Message for HENDEHGPKMF {
             my_size += ::protobuf::rt::string_size(4, &self.KFPMJKCOJAJ);
         }
         if !self.JLFIAFKGCOJ.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.JLFIAFKGCOJ);
+            my_size += ::protobuf::rt::bytes_size(5, &self.JLFIAFKGCOJ);
         }
         if !self.MILBDIPBJGP.is_empty() {
             my_size += ::protobuf::rt::string_size(6, &self.MILBDIPBJGP);
@@ -158,7 +158,7 @@ impl ::protobuf::Message for HENDEHGPKMF {
             os.write_string(4, &self.KFPMJKCOJAJ)?;
         }
         if !self.JLFIAFKGCOJ.is_empty() {
-            os.write_string(5, &self.JLFIAFKGCOJ)?;
+            os.write_bytes(5, &self.JLFIAFKGCOJ)?;
         }
         if !self.MILBDIPBJGP.is_empty() {
             os.write_string(6, &self.MILBDIPBJGP)?;
@@ -193,7 +193,7 @@ impl ::protobuf::Message for HENDEHGPKMF {
             dice_slot_id: 0,
             name: ::std::string::String::new(),
             KFPMJKCOJAJ: ::std::string::String::new(),
-            JLFIAFKGCOJ: ::std::string::String::new(),
+            JLFIAFKGCOJ: ::std::vec::Vec::new(),
             MILBDIPBJGP: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -222,7 +222,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HENDEHGPKMF.proto\"\xa9\x01\n\x0bHENDEHGPKMF\x12\x20\n\x0cdice_slo\
     t_id\x18\x01\x20\x01(\rR\ndiceSlotId\x12\x12\n\x04name\x18\x02\x20\x01(\
     \tR\x04name\x12\x20\n\x0bKFPMJKCOJAJ\x18\x04\x20\x01(\tR\x0bKFPMJKCOJAJ\
-    \x12\x20\n\x0bJLFIAFKGCOJ\x18\x05\x20\x01(\tR\x0bJLFIAFKGCOJ\x12\x20\n\
+    \x12\x20\n\x0bJLFIAFKGCOJ\x18\x05\x20\x01(\x0cR\x0bJLFIAFKGCOJ\x12\x20\n\
     \x0bMILBDIPBJGP\x18\x06\x20\x01(\tR\x0bMILBDIPBJGPb\x06proto3\
 ";
 

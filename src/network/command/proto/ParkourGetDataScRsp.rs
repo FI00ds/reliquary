@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ParkourGetDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ParkourGetDataScRsp.CGIPFMLDPNA)
-    pub CGIPFMLDPNA: ::std::vec::Vec<super::BADOONPCDLO::BADOONPCDLO>,
     // @@protoc_insertion_point(field:ParkourGetDataScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:ParkourGetDataScRsp.CGIPFMLDPNA)
+    pub CGIPFMLDPNA: ::std::vec::Vec<super::BADOONPCDLO::BADOONPCDLO>,
     // special fields
     // @@protoc_insertion_point(special_field:ParkourGetDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl ParkourGetDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CGIPFMLDPNA",
-            |m: &ParkourGetDataScRsp| { &m.CGIPFMLDPNA },
-            |m: &mut ParkourGetDataScRsp| { &mut m.CGIPFMLDPNA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &ParkourGetDataScRsp| { &m.retcode },
             |m: &mut ParkourGetDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CGIPFMLDPNA",
+            |m: &ParkourGetDataScRsp| { &m.CGIPFMLDPNA },
+            |m: &mut ParkourGetDataScRsp| { &mut m.CGIPFMLDPNA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ParkourGetDataScRsp>(
             "ParkourGetDataScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ParkourGetDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.CGIPFMLDPNA.push(is.read_message()?);
-                },
-                96 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
+                },
+                42 => {
+                    self.CGIPFMLDPNA.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for ParkourGetDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        }
         for value in &self.CGIPFMLDPNA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.CGIPFMLDPNA {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
+        for v in &self.CGIPFMLDPNA {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for ParkourGetDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.CGIPFMLDPNA.clear();
         self.retcode = 0;
+        self.CGIPFMLDPNA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ParkourGetDataScRsp {
         static instance: ParkourGetDataScRsp = ParkourGetDataScRsp {
-            CGIPFMLDPNA: ::std::vec::Vec::new(),
             retcode: 0,
+            CGIPFMLDPNA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for ParkourGetDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19ParkourGetDataScRsp.proto\x1a\x11BADOONPCDLO.proto\"_\n\x13Parkour\
-    GetDataScRsp\x12.\n\x0bCGIPFMLDPNA\x18\x08\x20\x03(\x0b2\x0c.BADOONPCDLO\
-    R\x0bCGIPFMLDPNA\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcodeb\
+    GetDataScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12.\n\
+    \x0bCGIPFMLDPNA\x18\x05\x20\x03(\x0b2\x0c.BADOONPCDLOR\x0bCGIPFMLDPNAb\
     \x06proto3\
 ";
 

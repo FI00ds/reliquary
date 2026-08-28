@@ -30,10 +30,10 @@ pub struct BLICCEHIOLH {
     // message fields
     // @@protoc_insertion_point(field:BLICCEHIOLH.cur_num)
     pub cur_num: u32,
-    // @@protoc_insertion_point(field:BLICCEHIOLH.max_num)
-    pub max_num: u32,
     // @@protoc_insertion_point(field:BLICCEHIOLH.LBEIHAOKHAD)
     pub LBEIHAOKHAD: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:BLICCEHIOLH.max_num)
+    pub max_num: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BLICCEHIOLH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl BLICCEHIOLH {
             |m: &BLICCEHIOLH| { &m.cur_num },
             |m: &mut BLICCEHIOLH| { &mut m.cur_num },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "max_num",
-            |m: &BLICCEHIOLH| { &m.max_num },
-            |m: &mut BLICCEHIOLH| { &mut m.max_num },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "LBEIHAOKHAD",
             |m: &BLICCEHIOLH| { &m.LBEIHAOKHAD },
             |m: &mut BLICCEHIOLH| { &mut m.LBEIHAOKHAD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "max_num",
+            |m: &BLICCEHIOLH| { &m.max_num },
+            |m: &mut BLICCEHIOLH| { &mut m.max_num },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BLICCEHIOLH>(
             "BLICCEHIOLH",
@@ -89,9 +89,6 @@ impl ::protobuf::Message for BLICCEHIOLH {
                 24 => {
                     self.cur_num = is.read_uint32()?;
                 },
-                32 => {
-                    self.max_num = is.read_uint32()?;
-                },
                 90 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
@@ -106,6 +103,9 @@ impl ::protobuf::Message for BLICCEHIOLH {
                     }
                     is.pop_limit(old_limit);
                     self.LBEIHAOKHAD.insert(key, value);
+                },
+                96 => {
+                    self.max_num = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -122,15 +122,15 @@ impl ::protobuf::Message for BLICCEHIOLH {
         if self.cur_num != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.cur_num);
         }
-        if self.max_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.max_num);
-        }
         for (k, v) in &self.LBEIHAOKHAD {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
+        if self.max_num != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.max_num);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -139,9 +139,6 @@ impl ::protobuf::Message for BLICCEHIOLH {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.cur_num != 0 {
             os.write_uint32(3, self.cur_num)?;
-        }
-        if self.max_num != 0 {
-            os.write_uint32(4, self.max_num)?;
         }
         for (k, v) in &self.LBEIHAOKHAD {
             let mut entry_size = 0;
@@ -152,6 +149,9 @@ impl ::protobuf::Message for BLICCEHIOLH {
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
+        if self.max_num != 0 {
+            os.write_uint32(12, self.max_num)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -170,8 +170,8 @@ impl ::protobuf::Message for BLICCEHIOLH {
 
     fn clear(&mut self) {
         self.cur_num = 0;
-        self.max_num = 0;
         self.LBEIHAOKHAD.clear();
+        self.max_num = 0;
         self.special_fields.clear();
     }
 
@@ -200,11 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for BLICCEHIOLH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BLICCEHIOLH.proto\"\xc0\x01\n\x0bBLICCEHIOLH\x12\x17\n\x07cur_num\
-    \x18\x03\x20\x01(\rR\x06curNum\x12\x17\n\x07max_num\x18\x04\x20\x01(\rR\
-    \x06maxNum\x12?\n\x0bLBEIHAOKHAD\x18\x0b\x20\x03(\x0b2\x1d.BLICCEHIOLH.L\
-    BEIHAOKHADEntryR\x0bLBEIHAOKHAD\x1a>\n\x10LBEIHAOKHADEntry\x12\x10\n\x03\
-    key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\
-    \x05value:\x028\x01b\x06proto3\
+    \x18\x03\x20\x01(\rR\x06curNum\x12?\n\x0bLBEIHAOKHAD\x18\x0b\x20\x03(\
+    \x0b2\x1d.BLICCEHIOLH.LBEIHAOKHADEntryR\x0bLBEIHAOKHAD\x12\x17\n\x07max_\
+    num\x18\x0c\x20\x01(\rR\x06maxNum\x1a>\n\x10LBEIHAOKHADEntry\x12\x10\n\
+    \x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\r\
+    R\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

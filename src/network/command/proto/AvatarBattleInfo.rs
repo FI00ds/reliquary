@@ -667,7 +667,7 @@ impl ::protobuf::Message for AvatarBattleInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
+        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None) {
             my_size += ::protobuf::rt::int32_size(1, self.avatar_type.value());
         }
         if self.id != 0 {
@@ -864,7 +864,7 @@ impl ::protobuf::Message for AvatarBattleInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
+        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None) {
             os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
         }
         if self.id != 0 {
@@ -1058,7 +1058,7 @@ impl ::protobuf::Message for AvatarBattleInfo {
     }
 
     fn clear(&mut self) {
-        self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
+        self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None);
         self.id = 0;
         self.avatar_level = 0;
         self.avatar_rank = 0;

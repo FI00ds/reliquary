@@ -86,10 +86,10 @@ impl ::protobuf::Message for LMDPKOELKFL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                80 => {
                     self.ABFCDBOCMCF = is.read_bool()?;
                 },
-                42 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.return_item_list)?;
                 },
                 114 => {
@@ -125,10 +125,10 @@ impl ::protobuf::Message for LMDPKOELKFL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.ABFCDBOCMCF != false {
-            os.write_bool(1, self.ABFCDBOCMCF)?;
+            os.write_bool(10, self.ABFCDBOCMCF)?;
         }
         if let Some(v) = self.return_item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_repeated_packed_uint32(14, &self.relic_ids)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for LMDPKOELKFL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LMDPKOELKFL.proto\x1a\x0eItemList.proto\"\x81\x01\n\x0bLMDPKOELKFL\
-    \x12\x20\n\x0bABFCDBOCMCF\x18\x01\x20\x01(\x08R\x0bABFCDBOCMCF\x123\n\
-    \x10return_item_list\x18\x05\x20\x01(\x0b2\t.ItemListR\x0ereturnItemList\
-    \x12\x1b\n\trelic_ids\x18\x0e\x20\x03(\rR\x08relicIdsb\x06proto3\
+    \x12\x20\n\x0bABFCDBOCMCF\x18\n\x20\x01(\x08R\x0bABFCDBOCMCF\x123\n\x10r\
+    eturn_item_list\x18\x0b\x20\x01(\x0b2\t.ItemListR\x0ereturnItemList\x12\
+    \x1b\n\trelic_ids\x18\x0e\x20\x03(\rR\x08relicIdsb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

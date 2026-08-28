@@ -32,8 +32,8 @@ pub struct ECOGPFKDJDF {
     pub LHHJFMMCBAF: u32,
     // @@protoc_insertion_point(field:ECOGPFKDJDF.rank)
     pub rank: u32,
-    // @@protoc_insertion_point(field:ECOGPFKDJDF.position)
-    pub position: u32,
+    // @@protoc_insertion_point(field:ECOGPFKDJDF.BBFOLEOPPPL)
+    pub BBFOLEOPPPL: u32,
     // @@protoc_insertion_point(field:ECOGPFKDJDF.NEGCJDDIIJP)
     pub NEGCJDDIIJP: u32,
     // @@protoc_insertion_point(field:ECOGPFKDJDF.MKIOMOINKOF)
@@ -70,9 +70,9 @@ impl ECOGPFKDJDF {
             |m: &mut ECOGPFKDJDF| { &mut m.rank },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "position",
-            |m: &ECOGPFKDJDF| { &m.position },
-            |m: &mut ECOGPFKDJDF| { &mut m.position },
+            "BBFOLEOPPPL",
+            |m: &ECOGPFKDJDF| { &m.BBFOLEOPPPL },
+            |m: &mut ECOGPFKDJDF| { &mut m.BBFOLEOPPPL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NEGCJDDIIJP",
@@ -114,7 +114,7 @@ impl ::protobuf::Message for ECOGPFKDJDF {
                     self.rank = is.read_uint32()?;
                 },
                 24 => {
-                    self.position = is.read_uint32()?;
+                    self.BBFOLEOPPPL = is.read_uint32()?;
                 },
                 32 => {
                     self.NEGCJDDIIJP = is.read_uint32()?;
@@ -143,8 +143,8 @@ impl ::protobuf::Message for ECOGPFKDJDF {
         if self.rank != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.rank);
         }
-        if self.position != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.position);
+        if self.BBFOLEOPPPL != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.BBFOLEOPPPL);
         }
         if self.NEGCJDDIIJP != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.NEGCJDDIIJP);
@@ -168,8 +168,8 @@ impl ::protobuf::Message for ECOGPFKDJDF {
         if self.rank != 0 {
             os.write_uint32(2, self.rank)?;
         }
-        if self.position != 0 {
-            os.write_uint32(3, self.position)?;
+        if self.BBFOLEOPPPL != 0 {
+            os.write_uint32(3, self.BBFOLEOPPPL)?;
         }
         if self.NEGCJDDIIJP != 0 {
             os.write_uint32(4, self.NEGCJDDIIJP)?;
@@ -199,7 +199,7 @@ impl ::protobuf::Message for ECOGPFKDJDF {
     fn clear(&mut self) {
         self.LHHJFMMCBAF = 0;
         self.rank = 0;
-        self.position = 0;
+        self.BBFOLEOPPPL = 0;
         self.NEGCJDDIIJP = 0;
         self.MKIOMOINKOF.clear();
         self.FADDJCGMJGB = 0;
@@ -210,7 +210,7 @@ impl ::protobuf::Message for ECOGPFKDJDF {
         static instance: ECOGPFKDJDF = ECOGPFKDJDF {
             LHHJFMMCBAF: 0,
             rank: 0,
-            position: 0,
+            BBFOLEOPPPL: 0,
             NEGCJDDIIJP: 0,
             MKIOMOINKOF: ::std::vec::Vec::new(),
             FADDJCGMJGB: 0,
@@ -238,13 +238,13 @@ impl ::protobuf::reflect::ProtobufValue for ECOGPFKDJDF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ECOGPFKDJDF.proto\x1a\x11KFKLPGEKJLA.proto\"\xd3\x01\n\x0bECOGPFKD\
+    \n\x11ECOGPFKDJDF.proto\x1a\x11KFKLPGEKJLA.proto\"\xd9\x01\n\x0bECOGPFKD\
     JDF\x12\x20\n\x0bLHHJFMMCBAF\x18\x01\x20\x01(\rR\x0bLHHJFMMCBAF\x12\x12\
-    \n\x04rank\x18\x02\x20\x01(\rR\x04rank\x12\x1a\n\x08position\x18\x03\x20\
-    \x01(\rR\x08position\x12\x20\n\x0bNEGCJDDIIJP\x18\x04\x20\x01(\rR\x0bNEG\
-    CJDDIIJP\x12.\n\x0bMKIOMOINKOF\x18\x05\x20\x03(\x0b2\x0c.KFKLPGEKJLAR\
-    \x0bMKIOMOINKOF\x12\x20\n\x0bFADDJCGMJGB\x18\x06\x20\x01(\rR\x0bFADDJCGM\
-    JGBb\x06proto3\
+    \n\x04rank\x18\x02\x20\x01(\rR\x04rank\x12\x20\n\x0bBBFOLEOPPPL\x18\x03\
+    \x20\x01(\rR\x0bBBFOLEOPPPL\x12\x20\n\x0bNEGCJDDIIJP\x18\x04\x20\x01(\rR\
+    \x0bNEGCJDDIIJP\x12.\n\x0bMKIOMOINKOF\x18\x05\x20\x03(\x0b2\x0c.KFKLPGEK\
+    JLAR\x0bMKIOMOINKOF\x12\x20\n\x0bFADDJCGMJGB\x18\x06\x20\x01(\rR\x0bFADD\
+    JCGMJGBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
